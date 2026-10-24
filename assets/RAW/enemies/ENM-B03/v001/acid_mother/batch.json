@@ -1,0 +1,590 @@
+{
+  "effects": [
+    {
+      "id": "ELT-03_idle",
+      "name": "idle",
+      "enemyId": "ELT-03",
+      "gameEnemyId": "acid_mother",
+      "label": "酸液母体 idle",
+      "sourcePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B03/v001/acid_mother/acid_mother_A_v002.png",
+      "sourceRects": [
+        [
+          0,
+          0,
+          314,
+          314
+        ],
+        [
+          314,
+          0,
+          313,
+          314
+        ],
+        [
+          627,
+          0,
+          313,
+          314
+        ],
+        [
+          940,
+          0,
+          314,
+          314
+        ]
+      ],
+      "sourceAnchors": [
+        [
+          157.0,
+          300
+        ],
+        [
+          156.5,
+          300
+        ],
+        [
+          156.5,
+          301
+        ],
+        [
+          157.0,
+          301
+        ]
+      ],
+      "sourceColumns": 4,
+      "sourceRows": 4,
+      "sourceIndices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "target": [
+        96,
+        96
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "scale": 0.3,
+      "fps": 8,
+      "loop": true,
+      "kind": "body",
+      "phases": [
+        "idle"
+      ],
+      "notes": [
+        "v002 generated transparent-gutter revision preserves identity and action order; fixed scale across whole enemy. Death final fade is component-driven."
+      ],
+      "promptPath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B03/v001/acid_mother/acid_mother_A_v002.prompt.txt",
+      "provenancePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B03/v001/acid_mother/acid_mother_A_v002.provenance.json",
+      "generationMode": "built-in image_gen"
+    },
+    {
+      "id": "ELT-03_move",
+      "name": "move",
+      "enemyId": "ELT-03",
+      "gameEnemyId": "acid_mother",
+      "label": "酸液母体 move",
+      "sourcePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B03/v001/acid_mother/acid_mother_A_v002.png",
+      "sourceRects": [
+        [
+          0,
+          314,
+          314,
+          313
+        ],
+        [
+          314,
+          314,
+          313,
+          313
+        ],
+        [
+          627,
+          314,
+          313,
+          313
+        ],
+        [
+          940,
+          314,
+          314,
+          313
+        ]
+      ],
+      "sourceAnchors": [
+        [
+          157.0,
+          276
+        ],
+        [
+          156.5,
+          277
+        ],
+        [
+          156.5,
+          277
+        ],
+        [
+          157.0,
+          277
+        ]
+      ],
+      "sourceColumns": 4,
+      "sourceRows": 4,
+      "sourceIndices": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "target": [
+        96,
+        96
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "scale": 0.3,
+      "fps": 10,
+      "loop": true,
+      "kind": "body",
+      "phases": [
+        "move"
+      ],
+      "notes": [
+        "v002 generated transparent-gutter revision preserves identity and action order; fixed scale across whole enemy. Death final fade is component-driven."
+      ],
+      "promptPath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B03/v001/acid_mother/acid_mother_A_v002.prompt.txt",
+      "provenancePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B03/v001/acid_mother/acid_mother_A_v002.provenance.json",
+      "generationMode": "built-in image_gen"
+    },
+    {
+      "id": "ELT-03_telegraph",
+      "name": "telegraph",
+      "enemyId": "ELT-03",
+      "gameEnemyId": "acid_mother",
+      "label": "酸液母体 telegraph",
+      "sourcePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B03/v001/acid_mother/acid_mother_A_v002.png",
+      "sourceRects": [
+        [
+          0,
+          627,
+          314,
+          313
+        ],
+        [
+          314,
+          627,
+          313,
+          313
+        ],
+        [
+          627,
+          627,
+          313,
+          313
+        ],
+        [
+          940,
+          627,
+          314,
+          313
+        ]
+      ],
+      "sourceAnchors": [
+        [
+          157.0,
+          283
+        ],
+        [
+          156.5,
+          281
+        ],
+        [
+          156.5,
+          282
+        ],
+        [
+          157.0,
+          282
+        ]
+      ],
+      "sourceColumns": 4,
+      "sourceRows": 4,
+      "sourceIndices": [
+        8,
+        9,
+        10,
+        11
+      ],
+      "target": [
+        96,
+        96
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "scale": 0.3,
+      "fps": 8,
+      "loop": false,
+      "kind": "body",
+      "phases": [
+        "telegraph"
+      ],
+      "notes": [
+        "v002 generated transparent-gutter revision preserves identity and action order; fixed scale across whole enemy. Death final fade is component-driven."
+      ],
+      "promptPath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B03/v001/acid_mother/acid_mother_A_v002.prompt.txt",
+      "provenancePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B03/v001/acid_mother/acid_mother_A_v002.provenance.json",
+      "generationMode": "built-in image_gen"
+    },
+    {
+      "id": "ELT-03_attack",
+      "name": "attack",
+      "enemyId": "ELT-03",
+      "gameEnemyId": "acid_mother",
+      "label": "酸液母体 attack",
+      "sourcePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B03/v001/acid_mother/acid_mother_A_v002.png",
+      "sourceRects": [
+        [
+          0,
+          940,
+          314,
+          314
+        ],
+        [
+          314,
+          940,
+          313,
+          314
+        ],
+        [
+          627,
+          940,
+          313,
+          314
+        ],
+        [
+          940,
+          940,
+          314,
+          314
+        ]
+      ],
+      "sourceAnchors": [
+        [
+          157.0,
+          248
+        ],
+        [
+          156.5,
+          247
+        ],
+        [
+          156.5,
+          249
+        ],
+        [
+          157.0,
+          249
+        ]
+      ],
+      "sourceColumns": 4,
+      "sourceRows": 4,
+      "sourceIndices": [
+        12,
+        13,
+        14,
+        15
+      ],
+      "target": [
+        96,
+        96
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "scale": 0.3,
+      "fps": 12,
+      "loop": false,
+      "kind": "body",
+      "phases": [
+        "attack"
+      ],
+      "notes": [
+        "v002 generated transparent-gutter revision preserves identity and action order; fixed scale across whole enemy. Death final fade is component-driven."
+      ],
+      "promptPath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B03/v001/acid_mother/acid_mother_A_v002.prompt.txt",
+      "provenancePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B03/v001/acid_mother/acid_mother_A_v002.provenance.json",
+      "generationMode": "built-in image_gen"
+    },
+    {
+      "id": "ELT-03_recover",
+      "name": "recover",
+      "enemyId": "ELT-03",
+      "gameEnemyId": "acid_mother",
+      "label": "酸液母体 recover",
+      "sourcePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B03/v001/acid_mother/acid_mother_B_v002.png",
+      "sourceRects": [
+        [
+          0,
+          0,
+          314,
+          365
+        ],
+        [
+          314,
+          0,
+          313,
+          365
+        ],
+        [
+          627,
+          0,
+          313,
+          365
+        ],
+        [
+          940,
+          0,
+          314,
+          365
+        ]
+      ],
+      "sourceAnchors": [
+        [
+          157.0,
+          322
+        ],
+        [
+          156.5,
+          322
+        ],
+        [
+          156.5,
+          323
+        ],
+        [
+          157.0,
+          323
+        ]
+      ],
+      "target": [
+        96,
+        96
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "scale": 0.3,
+      "fps": 10,
+      "loop": false,
+      "kind": "body",
+      "phases": [
+        "recover"
+      ],
+      "notes": [
+        "v002 generated transparent-gutter revision preserves identity and action order; fixed scale across whole enemy. Death final fade is component-driven.",
+        "Explicit nonuniform source row boundaries [0,365,680,990,1254] match generated layout; ground anchored to actual belly foot baseline."
+      ],
+      "promptPath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B03/v001/acid_mother/acid_mother_B_v002.prompt.txt",
+      "provenancePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B03/v001/acid_mother/acid_mother_B_v002.provenance.json",
+      "generationMode": "built-in image_gen"
+    },
+    {
+      "id": "ELT-03_hurt",
+      "name": "hurt",
+      "enemyId": "ELT-03",
+      "gameEnemyId": "acid_mother",
+      "label": "酸液母体 hurt",
+      "sourcePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B03/v001/acid_mother/acid_mother_B_v002.png",
+      "sourceRects": [
+        [
+          0,
+          365,
+          314,
+          315
+        ],
+        [
+          314,
+          365,
+          313,
+          315
+        ],
+        [
+          627,
+          365,
+          313,
+          315
+        ],
+        [
+          940,
+          365,
+          314,
+          315
+        ]
+      ],
+      "sourceAnchors": [
+        [
+          157.0,
+          262
+        ],
+        [
+          156.5,
+          261
+        ],
+        [
+          156.5,
+          260
+        ],
+        [
+          157.0,
+          260
+        ]
+      ],
+      "target": [
+        96,
+        96
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "scale": 0.3,
+      "fps": 12,
+      "loop": false,
+      "kind": "body",
+      "phases": [
+        "hurt"
+      ],
+      "notes": [
+        "v002 generated transparent-gutter revision preserves identity and action order; fixed scale across whole enemy. Death final fade is component-driven.",
+        "Explicit nonuniform source row boundaries [0,365,680,990,1254] match generated layout; ground anchored to actual belly foot baseline."
+      ],
+      "promptPath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B03/v001/acid_mother/acid_mother_B_v002.prompt.txt",
+      "provenancePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B03/v001/acid_mother/acid_mother_B_v002.provenance.json",
+      "generationMode": "built-in image_gen"
+    },
+    {
+      "id": "ELT-03_death",
+      "name": "death",
+      "enemyId": "ELT-03",
+      "gameEnemyId": "acid_mother",
+      "label": "酸液母体 death",
+      "sourcePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B03/v001/acid_mother/acid_mother_B_v002.png",
+      "sourceRects": [
+        [
+          0,
+          680,
+          314,
+          310
+        ],
+        [
+          314,
+          680,
+          313,
+          310
+        ],
+        [
+          627,
+          680,
+          313,
+          310
+        ],
+        [
+          940,
+          680,
+          314,
+          310
+        ],
+        [
+          0,
+          990,
+          314,
+          264
+        ],
+        [
+          314,
+          990,
+          313,
+          264
+        ],
+        [
+          627,
+          990,
+          313,
+          264
+        ],
+        [
+          940,
+          990,
+          314,
+          264
+        ]
+      ],
+      "sourceAnchors": [
+        [
+          157.0,
+          246
+        ],
+        [
+          156.5,
+          245
+        ],
+        [
+          156.5,
+          247
+        ],
+        [
+          157.0,
+          252
+        ],
+        [
+          157.0,
+          204
+        ],
+        [
+          156.5,
+          205
+        ],
+        [
+          156.5,
+          204
+        ],
+        [
+          157.0,
+          206
+        ]
+      ],
+      "target": [
+        96,
+        96
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "scale": 0.3,
+      "fps": 10,
+      "loop": false,
+      "kind": "body",
+      "phases": [
+        "death"
+      ],
+      "notes": [
+        "v002 generated transparent-gutter revision preserves identity and action order; fixed scale across whole enemy. Death final fade is component-driven.",
+        "Explicit nonuniform source row boundaries [0,365,680,990,1254] match generated layout; ground anchored to actual belly foot baseline."
+      ],
+      "promptPath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B03/v001/acid_mother/acid_mother_B_v002.prompt.txt",
+      "provenancePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B03/v001/acid_mother/acid_mother_B_v002.provenance.json",
+      "generationMode": "built-in image_gen"
+    }
+  ]
+}

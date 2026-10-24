@@ -1,0 +1,337 @@
+{
+  "id": "NPC-S06",
+  "rawVersion": "v003",
+  "processedVersion": "v002",
+  "master": {
+    "path": "NPC-S06_master_right_v002.png",
+    "source": "assets/RAW/characters/NPC-S06/v003/NPC-S06_master_right_v003.png",
+    "sourceAnchor": [
+      204,
+      387
+    ],
+    "uniformScale": 0.11796246648793565
+  },
+  "animations": {
+    "idle": {
+      "frameCount": 6,
+      "sources": [
+        {
+          "id": "NPC-S06_idle_talk_right_sheet_v003_idle",
+          "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S06/v003/NPC-S06_idle_talk_right_sheet_v003.png",
+          "sha256": "17f32ce422b5b0c9f4f2bb9cba025c542d26291e1cc30c640ff5a056a488a3de",
+          "cellIndex": 0,
+          "rect": [
+            0,
+            0,
+            397,
+            396
+          ],
+          "anchor": [
+            204,
+            387
+          ],
+          "originalSource": null
+        },
+        {
+          "id": "NPC-S06_idle_talk_right_sheet_v003_idle",
+          "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S06/v003/NPC-S06_idle_talk_right_sheet_v003.png",
+          "sha256": "17f32ce422b5b0c9f4f2bb9cba025c542d26291e1cc30c640ff5a056a488a3de",
+          "cellIndex": 1,
+          "rect": [
+            397,
+            0,
+            396,
+            396
+          ],
+          "anchor": [
+            201,
+            387
+          ],
+          "originalSource": null
+        },
+        {
+          "id": "NPC-S06_idle_talk_right_sheet_v003_idle",
+          "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S06/v003/NPC-S06_idle_talk_right_sheet_v003.png",
+          "sha256": "17f32ce422b5b0c9f4f2bb9cba025c542d26291e1cc30c640ff5a056a488a3de",
+          "cellIndex": 2,
+          "rect": [
+            793,
+            0,
+            397,
+            396
+          ],
+          "anchor": [
+            198,
+            387
+          ],
+          "originalSource": null
+        },
+        {
+          "id": "NPC-S06_idle_talk_right_sheet_v003_idle",
+          "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S06/v003/NPC-S06_idle_talk_right_sheet_v003.png",
+          "sha256": "17f32ce422b5b0c9f4f2bb9cba025c542d26291e1cc30c640ff5a056a488a3de",
+          "cellIndex": 3,
+          "rect": [
+            1190,
+            0,
+            396,
+            396
+          ],
+          "anchor": [
+            193,
+            387
+          ],
+          "originalSource": null
+        },
+        {
+          "id": "NPC-S06_idle_talk_right_sheet_v003_idle",
+          "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S06/v003/NPC-S06_idle_talk_right_sheet_v003.png",
+          "sha256": "17f32ce422b5b0c9f4f2bb9cba025c542d26291e1cc30c640ff5a056a488a3de",
+          "cellIndex": 4,
+          "rect": [
+            1586,
+            0,
+            397,
+            396
+          ],
+          "anchor": [
+            189,
+            387
+          ],
+          "originalSource": null
+        },
+        {
+          "id": "NPC-S06_idle_talk_right_sheet_v003_idle",
+          "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S06/v003/NPC-S06_idle_talk_right_sheet_v003.png",
+          "sha256": "17f32ce422b5b0c9f4f2bb9cba025c542d26291e1cc30c640ff5a056a488a3de",
+          "cellIndex": 5,
+          "rect": [
+            0,
+            396,
+            397,
+            397
+          ],
+          "anchor": [
+            204,
+            384
+          ],
+          "originalSource": null
+        }
+      ]
+    },
+    "walk": {
+      "frameCount": 8,
+      "sources": [
+        {
+          "id": "NPC-S06_walk_right_sheet_v003_walk",
+          "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S06/v003/NPC-S06_walk_right_sheet_v003.png",
+          "sha256": "a2b37a85635c461ae937712649fecf6c26cdbf361eca7f099ade62a66b259970",
+          "cellIndex": 0,
+          "rect": [
+            0,
+            0,
+            444,
+            444
+          ],
+          "anchor": [
+            250,
+            434
+          ],
+          "originalSource": null
+        },
+        {
+          "id": "NPC-S06_walk_right_sheet_v003_walk",
+          "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S06/v003/NPC-S06_walk_right_sheet_v003.png",
+          "sha256": "a2b37a85635c461ae937712649fecf6c26cdbf361eca7f099ade62a66b259970",
+          "cellIndex": 1,
+          "rect": [
+            444,
+            0,
+            443,
+            444
+          ],
+          "anchor": [
+            242,
+            434
+          ],
+          "originalSource": null
+        },
+        {
+          "id": "NPC-S06_walk_right_sheet_v003_walk",
+          "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S06/v003/NPC-S06_walk_right_sheet_v003.png",
+          "sha256": "a2b37a85635c461ae937712649fecf6c26cdbf361eca7f099ade62a66b259970",
+          "cellIndex": 2,
+          "rect": [
+            887,
+            0,
+            443,
+            444
+          ],
+          "anchor": [
+            234,
+            434
+          ],
+          "originalSource": null
+        },
+        {
+          "id": "NPC-S06_walk_right_sheet_v003_walk",
+          "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S06/v003/NPC-S06_walk_right_sheet_v003.png",
+          "sha256": "a2b37a85635c461ae937712649fecf6c26cdbf361eca7f099ade62a66b259970",
+          "cellIndex": 3,
+          "rect": [
+            1330,
+            0,
+            444,
+            444
+          ],
+          "anchor": [
+            248,
+            434
+          ],
+          "originalSource": null
+        },
+        {
+          "id": "NPC-S06_walk_right_sheet_v003_walk",
+          "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S06/v003/NPC-S06_walk_right_sheet_v003.png",
+          "sha256": "a2b37a85635c461ae937712649fecf6c26cdbf361eca7f099ade62a66b259970",
+          "cellIndex": 4,
+          "rect": [
+            0,
+            444,
+            444,
+            443
+          ],
+          "anchor": [
+            245,
+            422
+          ],
+          "originalSource": null
+        },
+        {
+          "id": "NPC-S06_walk_right_sheet_v003_walk",
+          "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S06/v003/NPC-S06_walk_right_sheet_v003.png",
+          "sha256": "a2b37a85635c461ae937712649fecf6c26cdbf361eca7f099ade62a66b259970",
+          "cellIndex": 5,
+          "rect": [
+            444,
+            444,
+            443,
+            443
+          ],
+          "anchor": [
+            245,
+            422
+          ],
+          "originalSource": null
+        },
+        {
+          "id": "NPC-S06_walk_right_sheet_v003_walk",
+          "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S06/v003/NPC-S06_walk_right_sheet_v003.png",
+          "sha256": "a2b37a85635c461ae937712649fecf6c26cdbf361eca7f099ade62a66b259970",
+          "cellIndex": 6,
+          "rect": [
+            887,
+            444,
+            443,
+            443
+          ],
+          "anchor": [
+            235,
+            422
+          ],
+          "originalSource": null
+        },
+        {
+          "id": "NPC-S06_walk_right_sheet_v003_walk",
+          "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S06/v003/NPC-S06_walk_right_sheet_v003.png",
+          "sha256": "a2b37a85635c461ae937712649fecf6c26cdbf361eca7f099ade62a66b259970",
+          "cellIndex": 7,
+          "rect": [
+            1330,
+            444,
+            444,
+            443
+          ],
+          "anchor": [
+            248,
+            422
+          ],
+          "originalSource": null
+        }
+      ]
+    },
+    "talk": {
+      "frameCount": 4,
+      "sources": [
+        {
+          "id": "NPC-S06_idle_talk_right_sheet_v003_talk",
+          "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S06/v003/NPC-S06_idle_talk_right_sheet_v003.png",
+          "sha256": "17f32ce422b5b0c9f4f2bb9cba025c542d26291e1cc30c640ff5a056a488a3de",
+          "cellIndex": 0,
+          "rect": [
+            397,
+            396,
+            396,
+            397
+          ],
+          "anchor": [
+            201,
+            384
+          ],
+          "originalSource": null
+        },
+        {
+          "id": "NPC-S06_idle_talk_right_sheet_v003_talk",
+          "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S06/v003/NPC-S06_idle_talk_right_sheet_v003.png",
+          "sha256": "17f32ce422b5b0c9f4f2bb9cba025c542d26291e1cc30c640ff5a056a488a3de",
+          "cellIndex": 1,
+          "rect": [
+            793,
+            396,
+            397,
+            397
+          ],
+          "anchor": [
+            198,
+            384
+          ],
+          "originalSource": null
+        },
+        {
+          "id": "NPC-S06_idle_talk_right_sheet_v003_talk",
+          "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S06/v003/NPC-S06_idle_talk_right_sheet_v003.png",
+          "sha256": "17f32ce422b5b0c9f4f2bb9cba025c542d26291e1cc30c640ff5a056a488a3de",
+          "cellIndex": 2,
+          "rect": [
+            1190,
+            396,
+            396,
+            397
+          ],
+          "anchor": [
+            193,
+            384
+          ],
+          "originalSource": null
+        },
+        {
+          "id": "NPC-S06_idle_talk_right_sheet_v003_talk",
+          "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S06/v003/NPC-S06_idle_talk_right_sheet_v003.png",
+          "sha256": "17f32ce422b5b0c9f4f2bb9cba025c542d26291e1cc30c640ff5a056a488a3de",
+          "cellIndex": 3,
+          "rect": [
+            1586,
+            396,
+            397,
+            397
+          ],
+          "anchor": [
+            189,
+            384
+          ],
+          "originalSource": null
+        }
+      ]
+    }
+  }
+}

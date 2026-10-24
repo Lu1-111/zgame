@@ -1,0 +1,179 @@
+{
+  "id": "ENM-11_hurt",
+  "enemyId": "ENM-11",
+  "gameEnemyId": "milk_moth",
+  "label": "飞奶蛾",
+  "name": "hurt",
+  "kind": "body",
+  "generationMode": "built-in image_gen",
+  "sourcePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-11/ENM-11_actions_B.png",
+  "sourceRects": [
+    [
+      0,
+      254,
+      366,
+      256
+    ],
+    [
+      366,
+      254,
+      420,
+      256
+    ],
+    [
+      786,
+      254,
+      366,
+      256
+    ],
+    [
+      1152,
+      254,
+      384,
+      256
+    ]
+  ],
+  "sourceAnchors": [
+    [
+      230,
+      148
+    ],
+    [
+      248,
+      148
+    ],
+    [
+      212,
+      148
+    ],
+    [
+      230,
+      148
+    ]
+  ],
+  "sourceSize": [
+    1536,
+    1024
+  ],
+  "sourceSha256": "6118216976156fe8d9bfc8b40ca2a899b7d0e30abfe4940296f6e1245992283e",
+  "sourceBatch": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-11/batch.json",
+  "promptPath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-11/ENM-11_B_retry.prompt.txt",
+  "provenancePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-11/provenance.json",
+  "target": [
+    88,
+    64
+  ],
+  "anchor": [
+    44,
+    32
+  ],
+  "rootType": "flying",
+  "scale": 0.16,
+  "fps": 12,
+  "loop": false,
+  "frameCount": 4,
+  "frames": [
+    "frames/ENM-11_hurt/ENM-11_hurt_00.png",
+    "frames/ENM-11_hurt/ENM-11_hurt_01.png",
+    "frames/ENM-11_hurt/ENM-11_hurt_02.png",
+    "frames/ENM-11_hurt/ENM-11_hurt_03.png"
+  ],
+  "sheet": "sheets/ENM-11_hurt.png",
+  "frameDetails": [
+    {
+      "sourceRect": [
+        0,
+        254,
+        366,
+        256
+      ],
+      "sourceAnchor": [
+        230,
+        148
+      ],
+      "offset": [
+        7,
+        8
+      ],
+      "alphaBBox": [
+        11,
+        8,
+        62,
+        49
+      ]
+    },
+    {
+      "sourceRect": [
+        366,
+        254,
+        420,
+        256
+      ],
+      "sourceAnchor": [
+        248,
+        148
+      ],
+      "offset": [
+        4,
+        8
+      ],
+      "alphaBBox": [
+        4,
+        8,
+        71,
+        49
+      ]
+    },
+    {
+      "sourceRect": [
+        786,
+        254,
+        366,
+        256
+      ],
+      "sourceAnchor": [
+        212,
+        148
+      ],
+      "offset": [
+        10,
+        8
+      ],
+      "alphaBBox": [
+        10,
+        8,
+        69,
+        49
+      ]
+    },
+    {
+      "sourceRect": [
+        1152,
+        254,
+        384,
+        256
+      ],
+      "sourceAnchor": [
+        230,
+        148
+      ],
+      "offset": [
+        7,
+        8
+      ],
+      "alphaBBox": [
+        7,
+        8,
+        66,
+        49
+      ]
+    }
+  ],
+  "fadeStartNormalized": 1.0,
+  "phases": [
+    "hurt1",
+    "hurt2",
+    "hurt3",
+    "hurt4"
+  ]
+}

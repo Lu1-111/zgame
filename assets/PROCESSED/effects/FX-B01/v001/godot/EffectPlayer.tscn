@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" path="EffectPlayer.gd" id="1_script"]
+[ext_resource type="SpriteFrames" path="FX_sprite_frames.tres" id="2_frames"]
+
+[node name="EffectPlayer" type="Node2D"]
+visible = false
+script = ExtResource("1_script")
+
+[node name="VisualRoot" type="Node2D" parent="."]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="VisualRoot"]
+texture_filter = 1
+sprite_frames = ExtResource("2_frames")
+animation = &"physical_hit"
+centered = false
+offset = Vector2(-32, -32)

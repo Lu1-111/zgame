@@ -1,0 +1,435 @@
+{
+  "id": "ELT-02_death",
+  "name": "death",
+  "enemyId": "ELT-02",
+  "gameEnemyId": "hive_guard",
+  "label": "蜂巢守卫 death",
+  "sourcePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B03/v001/hive_guard/hive_guard_B_v002.png",
+  "sourceRects": [
+    [
+      0,
+      627,
+      314,
+      313
+    ],
+    [
+      314,
+      627,
+      313,
+      313
+    ],
+    [
+      627,
+      627,
+      313,
+      313
+    ],
+    [
+      940,
+      627,
+      314,
+      313
+    ],
+    [
+      0,
+      940,
+      314,
+      314
+    ],
+    [
+      314,
+      940,
+      313,
+      314
+    ],
+    [
+      627,
+      940,
+      313,
+      314
+    ],
+    [
+      940,
+      940,
+      314,
+      314
+    ]
+  ],
+  "sourceAnchors": [
+    [
+      200,
+      165
+    ],
+    [
+      200,
+      165
+    ],
+    [
+      200,
+      165
+    ],
+    [
+      200,
+      165
+    ],
+    [
+      200,
+      167
+    ],
+    [
+      200,
+      167
+    ],
+    [
+      200,
+      167
+    ],
+    [
+      200,
+      167
+    ]
+  ],
+  "sourceColumns": 4,
+  "sourceRows": 4,
+  "sourceIndices": [
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "target": [
+    120,
+    112
+  ],
+  "anchor": [
+    66,
+    56
+  ],
+  "scale": 0.32,
+  "fps": 10,
+  "loop": false,
+  "kind": "body",
+  "phases": [
+    "death"
+  ],
+  "notes": [
+    "v002 generated transparent-gutter revision preserves identity and action order; fixed scale across whole enemy. Death final fade is component-driven."
+  ],
+  "promptPath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B03/v001/hive_guard/hive_guard_B_v002.prompt.txt",
+  "provenancePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B03/v001/hive_guard/hive_guard_B_v002.provenance.json",
+  "generationMode": "built-in image_gen",
+  "canvasExpansionReason": "统一透明扩展：原画布所有非零alpha并集[-16, -6, 96, 96]；全动作统一画布+2px边；保留源倍率、全部alpha与语义root。",
+  "frames": [
+    "frames/ELT-02_death/ELT-02_death_00.png",
+    "frames/ELT-02_death/ELT-02_death_01.png",
+    "frames/ELT-02_death/ELT-02_death_02.png",
+    "frames/ELT-02_death/ELT-02_death_03.png",
+    "frames/ELT-02_death/ELT-02_death_04.png",
+    "frames/ELT-02_death/ELT-02_death_05.png",
+    "frames/ELT-02_death/ELT-02_death_06.png",
+    "frames/ELT-02_death/ELT-02_death_07.png"
+  ],
+  "sheet": "sheets/ELT-02_death.png",
+  "sheetRects": [
+    [
+      0,
+      0,
+      120,
+      112
+    ],
+    [
+      120,
+      0,
+      120,
+      112
+    ],
+    [
+      240,
+      0,
+      120,
+      112
+    ],
+    [
+      360,
+      0,
+      120,
+      112
+    ],
+    [
+      480,
+      0,
+      120,
+      112
+    ],
+    [
+      600,
+      0,
+      120,
+      112
+    ],
+    [
+      720,
+      0,
+      120,
+      112
+    ],
+    [
+      840,
+      0,
+      120,
+      112
+    ]
+  ],
+  "atlas": "atlas/ELT-02_death.png",
+  "atlasColumns": 3,
+  "atlasRows": 3,
+  "atlasRects": [
+    [
+      0,
+      0,
+      120,
+      112
+    ],
+    [
+      120,
+      0,
+      120,
+      112
+    ],
+    [
+      240,
+      0,
+      120,
+      112
+    ],
+    [
+      0,
+      112,
+      120,
+      112
+    ],
+    [
+      120,
+      112,
+      120,
+      112
+    ],
+    [
+      240,
+      112,
+      120,
+      112
+    ],
+    [
+      0,
+      224,
+      120,
+      112
+    ],
+    [
+      120,
+      224,
+      120,
+      112
+    ]
+  ],
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "sourceSha256": "600f6e5d69e0431c194d22d7c4f19721cc56be42d3ed07f7d2c50887fb536472",
+  "sourceBatch": "/home/lululu/zgame/assets/RAW/enemies/ENM-B03/v001/hive_guard/batch.json",
+  "frameCount": 8,
+  "frameDetails": [
+    {
+      "sourceRect": [
+        0,
+        627,
+        314,
+        313
+      ],
+      "sourceAnchor": [
+        200,
+        165
+      ],
+      "offset": [
+        2,
+        3
+      ],
+      "alphaBBox": [
+        9,
+        3,
+        102,
+        103
+      ],
+      "sourceEdgeAlpha": 1
+    },
+    {
+      "sourceRect": [
+        314,
+        627,
+        313,
+        313
+      ],
+      "sourceAnchor": [
+        200,
+        165
+      ],
+      "offset": [
+        2,
+        3
+      ],
+      "alphaBBox": [
+        2,
+        3,
+        102,
+        103
+      ],
+      "sourceEdgeAlpha": 1
+    },
+    {
+      "sourceRect": [
+        627,
+        627,
+        313,
+        313
+      ],
+      "sourceAnchor": [
+        200,
+        165
+      ],
+      "offset": [
+        2,
+        3
+      ],
+      "alphaBBox": [
+        2,
+        3,
+        102,
+        103
+      ],
+      "sourceEdgeAlpha": 1
+    },
+    {
+      "sourceRect": [
+        940,
+        627,
+        314,
+        313
+      ],
+      "sourceAnchor": [
+        200,
+        165
+      ],
+      "offset": [
+        2,
+        3
+      ],
+      "alphaBBox": [
+        2,
+        3,
+        94,
+        101
+      ],
+      "sourceEdgeAlpha": 1
+    },
+    {
+      "sourceRect": [
+        0,
+        940,
+        314,
+        314
+      ],
+      "sourceAnchor": [
+        200,
+        167
+      ],
+      "offset": [
+        2,
+        3
+      ],
+      "alphaBBox": [
+        11,
+        3,
+        101,
+        90
+      ],
+      "sourceEdgeAlpha": 1
+    },
+    {
+      "sourceRect": [
+        314,
+        940,
+        313,
+        314
+      ],
+      "sourceAnchor": [
+        200,
+        167
+      ],
+      "offset": [
+        2,
+        3
+      ],
+      "alphaBBox": [
+        3,
+        3,
+        102,
+        93
+      ],
+      "sourceEdgeAlpha": 1
+    },
+    {
+      "sourceRect": [
+        627,
+        940,
+        313,
+        314
+      ],
+      "sourceAnchor": [
+        200,
+        167
+      ],
+      "offset": [
+        2,
+        3
+      ],
+      "alphaBBox": [
+        2,
+        3,
+        102,
+        95
+      ],
+      "sourceEdgeAlpha": 1
+    },
+    {
+      "sourceRect": [
+        940,
+        940,
+        314,
+        314
+      ],
+      "sourceAnchor": [
+        200,
+        167
+      ],
+      "offset": [
+        2,
+        3
+      ],
+      "alphaBBox": [
+        2,
+        6,
+        91,
+        97
+      ],
+      "sourceEdgeAlpha": 1
+    }
+  ],
+  "fadeStartNormalized": 0.65,
+  "loopBoundaryMeanDifference": 15.0
+}

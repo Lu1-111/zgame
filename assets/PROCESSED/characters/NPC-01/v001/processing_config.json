@@ -1,0 +1,348 @@
+{
+  "assetId": "NPC-01",
+  "version": "v001",
+  "title": "篝火向导 · 奶兔",
+  "outputDir": "/home/lululu/zgame/assets/PROCESSED/characters/NPC-01/v001",
+  "target": {
+    "width": 64,
+    "height": 64,
+    "anchor": [
+      32,
+      58
+    ]
+  },
+  "alphaThreshold": 127,
+  "direction": "right",
+  "sources": [
+    {
+      "id": "idle",
+      "path": "/home/lululu/zgame/assets/RAW/characters/NPC-01/v001/NPC-01_actions_right_v001.png",
+      "rects": [
+        [
+          0,
+          0,
+          295,
+          332
+        ],
+        [
+          295,
+          0,
+          296,
+          332
+        ],
+        [
+          591,
+          0,
+          296,
+          332
+        ],
+        [
+          887,
+          0,
+          296,
+          332
+        ],
+        [
+          1183,
+          0,
+          296,
+          332
+        ],
+        [
+          1479,
+          0,
+          295,
+          332
+        ]
+      ],
+      "scale": 0.15064102564102563,
+      "calibration": {
+        "method": "one fixed scale per generated animation row, median standing height",
+        "sourceMedianHeight": 312,
+        "targetHeight": 47
+      },
+      "notes": [
+        "Generated animation rows differ in original size; row scale is constant across all six frames.",
+        "Source anchor is manual boot contact midpoint."
+      ]
+    },
+    {
+      "id": "talk",
+      "path": "/home/lululu/zgame/assets/RAW/characters/NPC-01/v001/NPC-01_talk_right_v002.png",
+      "rects": [
+        [
+          0,
+          0,
+          512,
+          512
+        ],
+        [
+          512,
+          0,
+          512,
+          512
+        ],
+        [
+          1024,
+          0,
+          512,
+          512
+        ],
+        [
+          0,
+          512,
+          512,
+          512
+        ],
+        [
+          512,
+          512,
+          512,
+          512
+        ],
+        [
+          1024,
+          512,
+          512,
+          512
+        ]
+      ],
+      "scale": 0.10021321961620469,
+      "calibration": {
+        "method": "fixed scale for entire independently regenerated talk sheet",
+        "sourceMedianHeight": 469,
+        "targetHeight": 47
+      },
+      "notes": [
+        "Talk regenerated v002 to preserve idle proportions. One sheet scale across all six frames."
+      ]
+    },
+    {
+      "id": "greet",
+      "path": "/home/lululu/zgame/assets/RAW/characters/NPC-01/v001/NPC-01_greet_right_v002.png",
+      "rects": [
+        [
+          0,
+          0,
+          512,
+          512
+        ],
+        [
+          512,
+          0,
+          512,
+          512
+        ],
+        [
+          1024,
+          0,
+          512,
+          512
+        ],
+        [
+          0,
+          512,
+          512,
+          512
+        ],
+        [
+          512,
+          512,
+          512,
+          512
+        ],
+        [
+          1024,
+          512,
+          512,
+          512
+        ]
+      ],
+      "scale": 0.09832635983263599,
+      "calibration": {
+        "method": "fixed scale for entire independently regenerated greet sheet",
+        "sourceMedianHeight": 478,
+        "targetHeight": 47
+      },
+      "notes": [
+        "Greet regenerated v002 to preserve idle proportions. One sheet scale across all six frames."
+      ]
+    }
+  ],
+  "animations": [
+    {
+      "name": "idle",
+      "label": "待机",
+      "fps": 6,
+      "loop": true,
+      "snapContact": true,
+      "anchorMode": "ground",
+      "frames": [
+        {
+          "source": "idle",
+          "index": 0,
+          "anchor": [
+            201,
+            326
+          ]
+        },
+        {
+          "source": "idle",
+          "index": 1,
+          "anchor": [
+            199,
+            326
+          ]
+        },
+        {
+          "source": "idle",
+          "index": 2,
+          "anchor": [
+            185,
+            325
+          ]
+        },
+        {
+          "source": "idle",
+          "index": 3,
+          "anchor": [
+            164,
+            326
+          ]
+        },
+        {
+          "source": "idle",
+          "index": 4,
+          "anchor": [
+            149.5,
+            327
+          ]
+        },
+        {
+          "source": "idle",
+          "index": 5,
+          "anchor": [
+            137,
+            326
+          ]
+        }
+      ]
+    },
+    {
+      "name": "talk",
+      "label": "交谈",
+      "fps": 8,
+      "loop": true,
+      "snapContact": true,
+      "anchorMode": "ground",
+      "frames": [
+        {
+          "source": "talk",
+          "index": 0,
+          "anchor": [
+            332.5,
+            491
+          ]
+        },
+        {
+          "source": "talk",
+          "index": 1,
+          "anchor": [
+            259,
+            491
+          ]
+        },
+        {
+          "source": "talk",
+          "index": 2,
+          "anchor": [
+            186,
+            491
+          ]
+        },
+        {
+          "source": "talk",
+          "index": 3,
+          "anchor": [
+            332.5,
+            489
+          ]
+        },
+        {
+          "source": "talk",
+          "index": 4,
+          "anchor": [
+            259.5,
+            489
+          ]
+        },
+        {
+          "source": "talk",
+          "index": 5,
+          "anchor": [
+            186,
+            489
+          ]
+        }
+      ]
+    },
+    {
+      "name": "greet",
+      "label": "招呼",
+      "fps": 8,
+      "loop": false,
+      "snapContact": true,
+      "anchorMode": "ground",
+      "frames": [
+        {
+          "source": "greet",
+          "index": 0,
+          "anchor": [
+            299,
+            499
+          ]
+        },
+        {
+          "source": "greet",
+          "index": 1,
+          "anchor": [
+            261.5,
+            499
+          ]
+        },
+        {
+          "source": "greet",
+          "index": 2,
+          "anchor": [
+            226,
+            499
+          ]
+        },
+        {
+          "source": "greet",
+          "index": 3,
+          "anchor": [
+            298,
+            493
+          ]
+        },
+        {
+          "source": "greet",
+          "index": 4,
+          "anchor": [
+            261.5,
+            493
+          ]
+        },
+        {
+          "source": "greet",
+          "index": 5,
+          "anchor": [
+            229,
+            493
+          ]
+        }
+      ]
+    }
+  ]
+}

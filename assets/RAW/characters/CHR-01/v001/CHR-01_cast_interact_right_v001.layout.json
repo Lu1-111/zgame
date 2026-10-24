@@ -1,0 +1,55 @@
+{
+  "sourceId": "cast",
+  "file": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_cast_interact_right_v001.png",
+  "columns": 4,
+  "rows": 3,
+  "calibration": {
+    "referenceCell": 0,
+    "targetStandingHeight": 40
+  },
+  "animations": [
+    {
+      "name": "cast",
+      "label": "通用施法",
+      "fps": 10,
+      "loop": false,
+      "anchorMode": "ground",
+      "cells": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "name": "heal",
+      "label": "治疗施法",
+      "fps": 8,
+      "loop": false,
+      "anchorMode": "ground",
+      "cells": [
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "name": "interact",
+      "label": "交互",
+      "fps": 8,
+      "loop": false,
+      "anchorMode": "ground",
+      "cells": [
+        8,
+        9,
+        10,
+        11
+      ]
+    }
+  ],
+  "anchors": {},
+  "notes": [
+    "Transparent generated raw. Need precise per-row source rects and foot-root identification."
+  ]
+}

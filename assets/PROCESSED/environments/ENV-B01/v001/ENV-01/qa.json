@@ -1,0 +1,279 @@
+{
+  "id": "ENV-01",
+  "raw_count": 4,
+  "terrain": {
+    "size": [
+      64,
+      64
+    ],
+    "tile_size": 16,
+    "tile_count": 16,
+    "rgba": true,
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "center_fully_opaque": true,
+    "thin_platform_alpha_below_row_6": true
+  },
+  "seams": {
+    "top_repeat": {
+      "exact_edge_match": true,
+      "mismatched_edge_pixels": 0
+    },
+    "center_repeat_x": {
+      "exact_edge_match": true,
+      "mismatched_edge_pixels": 0
+    },
+    "center_repeat_y": {
+      "exact_edge_match": true,
+      "mismatched_edge_pixels": 0
+    },
+    "top_to_center": {
+      "exact_edge_match": true,
+      "mismatched_edge_pixels": 0
+    },
+    "wood_repeat": {
+      "exact_edge_match": true,
+      "mismatched_edge_pixels": 0
+    },
+    "TL_to_T": {
+      "exact_edge_match": true,
+      "mismatched_edge_pixels": 0
+    },
+    "T_to_TR": {
+      "exact_edge_match": true,
+      "mismatched_edge_pixels": 0
+    },
+    "L_to_C": {
+      "exact_edge_match": true,
+      "mismatched_edge_pixels": 0
+    },
+    "C_to_R": {
+      "exact_edge_match": true,
+      "mismatched_edge_pixels": 0
+    },
+    "BL_to_B": {
+      "exact_edge_match": true,
+      "mismatched_edge_pixels": 0
+    },
+    "B_to_BR": {
+      "exact_edge_match": true,
+      "mismatched_edge_pixels": 0
+    },
+    "TL_to_L": {
+      "exact_edge_match": true,
+      "mismatched_edge_pixels": 0
+    },
+    "L_to_BL": {
+      "exact_edge_match": true,
+      "mismatched_edge_pixels": 0
+    },
+    "TR_to_R": {
+      "exact_edge_match": true,
+      "mismatched_edge_pixels": 0
+    },
+    "R_to_BR": {
+      "exact_edge_match": true,
+      "mismatched_edge_pixels": 0
+    },
+    "C_to_B": {
+      "exact_edge_match": true,
+      "mismatched_edge_pixels": 0
+    },
+    "wood_left_to_mid": {
+      "exact_edge_match": true,
+      "mismatched_edge_pixels": 0
+    },
+    "wood_mid_to_right": {
+      "exact_edge_match": true,
+      "mismatched_edge_pixels": 0
+    }
+  },
+  "props": [
+    {
+      "id": "cottage",
+      "size": [
+        144,
+        112
+      ],
+      "grid_multiple_16": true,
+      "rgba": true,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_is_binary": true,
+      "has_real_transparency": true
+    },
+    {
+      "id": "tent",
+      "size": [
+        128,
+        80
+      ],
+      "grid_multiple_16": true,
+      "rgba": true,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_is_binary": true,
+      "has_real_transparency": true
+    },
+    {
+      "id": "milk_spring",
+      "size": [
+        128,
+        80
+      ],
+      "grid_multiple_16": true,
+      "rgba": true,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_is_binary": true,
+      "has_real_transparency": true
+    },
+    {
+      "id": "shelf",
+      "size": [
+        96,
+        80
+      ],
+      "grid_multiple_16": true,
+      "rgba": true,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_is_binary": true,
+      "has_real_transparency": true
+    },
+    {
+      "id": "campfire",
+      "size": [
+        48,
+        48
+      ],
+      "grid_multiple_16": true,
+      "rgba": true,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_is_binary": true,
+      "has_real_transparency": true
+    },
+    {
+      "id": "chest",
+      "size": [
+        64,
+        48
+      ],
+      "grid_multiple_16": true,
+      "rgba": true,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_is_binary": true,
+      "has_real_transparency": true
+    },
+    {
+      "id": "return_arch",
+      "size": [
+        96,
+        96
+      ],
+      "grid_multiple_16": true,
+      "rgba": true,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_is_binary": true,
+      "has_real_transparency": true
+    },
+    {
+      "id": "crates_sign",
+      "size": [
+        96,
+        80
+      ],
+      "grid_multiple_16": true,
+      "rgba": true,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_is_binary": true,
+      "has_real_transparency": true
+    },
+    {
+      "id": "return_glyph",
+      "size": [
+        32,
+        32
+      ],
+      "grid_multiple_16": true,
+      "rgba": true,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_is_binary": true,
+      "has_real_transparency": true
+    }
+  ],
+  "background": {
+    "size": [
+      640,
+      360
+    ],
+    "opaque": true,
+    "room_stretch": false,
+    "repeat_edge_match": true
+  },
+  "return_glyph": {
+    "size": [
+      32,
+      32
+    ],
+    "anchor": [
+      16,
+      32
+    ],
+    "source_crop": [
+      33,
+      34,
+      63,
+      90
+    ],
+    "scaled_content_size": [
+      15,
+      28
+    ],
+    "true_alpha": true,
+    "pixel_colors_preserved": true,
+    "raw_count_unchanged": true,
+    "creative_redraw": false
+  },
+  "visual_review": {
+    "reviewed": true,
+    "images": [
+      "terrain.png",
+      "atlas_preview.png",
+      "background.png",
+      "interior_background.png",
+      "props/*.png"
+    ],
+    "findings": [
+      "原画中的独立建筑、奶泉、篝火、货架与门框完整可辨，无文字和假棋盘格。",
+      "Nearest降采样后复核轮廓并减低土层石粒亮度，避免大面积地形噪声。",
+      "材质原画以像素风绘制，处理仅裁切、固定缩放、色板约束和边缘校准。"
+    ]
+  },
+  "passed": true
+}

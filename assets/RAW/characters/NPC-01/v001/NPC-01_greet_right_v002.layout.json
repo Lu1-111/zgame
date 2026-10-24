@@ -1,0 +1,146 @@
+{
+  "id": "NPC-01",
+  "sheet": "NPC-01_greet_right_v002.png",
+  "sheet_size": [
+    1536,
+    1024
+  ],
+  "frames": [
+    {
+      "action": "greet",
+      "frame": 0,
+      "rect_xywh": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "alpha128_bbox_xyxy": [
+        155,
+        24,
+        406,
+        499
+      ],
+      "suggested_source_root_xy": [
+        299.0,
+        499
+      ]
+    },
+    {
+      "action": "greet",
+      "frame": 1,
+      "rect_xywh": [
+        512,
+        0,
+        512,
+        512
+      ],
+      "alpha128_bbox_xyxy": [
+        630,
+        24,
+        906,
+        499
+      ],
+      "suggested_source_root_xy": [
+        773.5,
+        499
+      ]
+    },
+    {
+      "action": "greet",
+      "frame": 2,
+      "rect_xywh": [
+        1024,
+        0,
+        512,
+        512
+      ],
+      "alpha128_bbox_xyxy": [
+        1109,
+        24,
+        1363,
+        499
+      ],
+      "suggested_source_root_xy": [
+        1250.0,
+        499
+      ]
+    },
+    {
+      "action": "greet",
+      "frame": 3,
+      "rect_xywh": [
+        0,
+        512,
+        512,
+        512
+      ],
+      "alpha128_bbox_xyxy": [
+        153,
+        527,
+        436,
+        1005
+      ],
+      "suggested_source_root_xy": [
+        298.0,
+        1005
+      ]
+    },
+    {
+      "action": "greet",
+      "frame": 4,
+      "rect_xywh": [
+        512,
+        512,
+        512,
+        512
+      ],
+      "alpha128_bbox_xyxy": [
+        629,
+        527,
+        896,
+        1005
+      ],
+      "suggested_source_root_xy": [
+        773.5,
+        1005
+      ]
+    },
+    {
+      "action": "greet",
+      "frame": 5,
+      "rect_xywh": [
+        1024,
+        512,
+        512,
+        512
+      ],
+      "alpha128_bbox_xyxy": [
+        1108,
+        527,
+        1360,
+        1005
+      ],
+      "suggested_source_root_xy": [
+        1253.0,
+        1005
+      ]
+    }
+  ],
+  "fps": 8,
+  "loop": false,
+  "target_canvas": [
+    64,
+    64
+  ],
+  "target_root": [
+    32,
+    58
+  ],
+  "target_height": 47,
+  "reference": "work/npc01_source/idle_neutral_reference.png",
+  "notes": [
+    "Transparent RGB may display brown in raw viewer; composite against opaque background to assess real alpha.",
+    "Use same constant scale per action, no per-frame stretch."
+  ]
+}

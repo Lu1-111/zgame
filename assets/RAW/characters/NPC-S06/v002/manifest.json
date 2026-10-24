@@ -1,0 +1,62 @@
+{
+  "format": "nailong-raw-npc-single-v1",
+  "version": "v002",
+  "npc": {
+    "id": "NPC-S06",
+    "slug": "milk_bird_courier",
+    "name": "奶鸟信使",
+    "role": "传信",
+    "outfit": "#4f7d8c",
+    "notes": "羽冠、上下喙、翼手、邮袋",
+    "animations": {
+      "idle": {
+        "frames": 6,
+        "fps": 8,
+        "sheet": "NPC-S06/v002/NPC-S06_milk_bird_courier_idle_front_v002_sheet.png",
+        "loop": true,
+        "files": [
+          "NPC-S06/v002/frames/NPC-S06_milk_bird_courier_idle_front_v002_f01.png",
+          "NPC-S06/v002/frames/NPC-S06_milk_bird_courier_idle_front_v002_f02.png",
+          "NPC-S06/v002/frames/NPC-S06_milk_bird_courier_idle_front_v002_f03.png",
+          "NPC-S06/v002/frames/NPC-S06_milk_bird_courier_idle_front_v002_f04.png",
+          "NPC-S06/v002/frames/NPC-S06_milk_bird_courier_idle_front_v002_f05.png",
+          "NPC-S06/v002/frames/NPC-S06_milk_bird_courier_idle_front_v002_f06.png"
+        ]
+      },
+      "walk": {
+        "frames": 8,
+        "fps": 12,
+        "sheet": "NPC-S06/v002/NPC-S06_milk_bird_courier_walk_front_v002_sheet.png",
+        "loop": true,
+        "files": [
+          "NPC-S06/v002/frames/NPC-S06_milk_bird_courier_walk_front_v002_f01.png",
+          "NPC-S06/v002/frames/NPC-S06_milk_bird_courier_walk_front_v002_f02.png",
+          "NPC-S06/v002/frames/NPC-S06_milk_bird_courier_walk_front_v002_f03.png",
+          "NPC-S06/v002/frames/NPC-S06_milk_bird_courier_walk_front_v002_f04.png",
+          "NPC-S06/v002/frames/NPC-S06_milk_bird_courier_walk_front_v002_f05.png",
+          "NPC-S06/v002/frames/NPC-S06_milk_bird_courier_walk_front_v002_f06.png",
+          "NPC-S06/v002/frames/NPC-S06_milk_bird_courier_walk_front_v002_f07.png",
+          "NPC-S06/v002/frames/NPC-S06_milk_bird_courier_walk_front_v002_f08.png"
+        ]
+      },
+      "talk": {
+        "frames": 4,
+        "fps": 8,
+        "sheet": "NPC-S06/v002/NPC-S06_milk_bird_courier_talk_front_v002_sheet.png",
+        "loop": false,
+        "files": [
+          "NPC-S06/v002/frames/NPC-S06_milk_bird_courier_talk_front_v002_f01.png",
+          "NPC-S06/v002/frames/NPC-S06_milk_bird_courier_talk_front_v002_f02.png",
+          "NPC-S06/v002/frames/NPC-S06_milk_bird_courier_talk_front_v002_f03.png",
+          "NPC-S06/v002/frames/NPC-S06_milk_bird_courier_talk_front_v002_f04.png"
+        ]
+      }
+    },
+    "master": "NPC-S06/v002/NPC-S06_milk_bird_courier_master_front_v002.png",
+    "root": [
+      32,
+      58
+    ],
+    "reference": "assets/RAW/characters/CHR-01/v001/CHR-01_master_right_v001.png"
+  }
+}

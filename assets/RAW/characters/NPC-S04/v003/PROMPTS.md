@@ -1,0 +1,15 @@
+# NPC-S04 v003
+
+内置 image_gen 生成，CHR-01 作为首要画风参考，旧 v002 只作身份参考。全新右向3/4造型；真正Alpha；64×64，root(32,58)，含角冠高度44px。未修改灰盒游戏。
+
+## Idle6 + Talk4
+
+Use case: stylized-concept. Professional pixel-art game character sprite sheet: EXACT10 full-body poses,5 columns2 rows,transparent alpha PNG. Image1 PRIMARY style reference CHR01: warm golden yellow round body,cream volume,large green eyes,warm brown outline,crisp chunky pixel edges,three-step shadows,unblurred blocky pixels. Image2 old identity reference ONLY,replace thin stick-like proportions with rounded weight matching CHR01. Right-facing3/4 side view EVERY frame. Same body proportions and scale EVERY frame,feet baseline fixed,complete silhouette with ample margins. Slots1-6 idle6: neutral,inhaling,blink,exhale,settle,neutral; slots7-10 talk4: neutral,small mouth open,small hand gesture,neutral. Sequence row-major. No text/labels/grid/background/shadows/effects. Target64x64 root32,58,body40 pixels plus horns/crest to44. Scholar DRAGON distinct from protagonist: shorter broad rounded head,small two ivory backward horns,short purple membrane wings tucked at back,short curved tail,purple scholarly collar and waist sash,large open brown book with cream pages held steadily at belly in both dark brown small claws. Face is thoughtful and friendly,cream muzzle. Book and wings stay identical and fixed to body in all poses,only mouth and tiny head motion while reading. Do not simply put a book on CHR01. Readable dragon scholar silhouette.
+
+## Master 来源
+
+NPC-S04_master_right_v003.png 是 idle_talk sheet 第一格的机械截取，非独立生图。source尺寸1983×793，第一格rect(0,0,396,396)。保留原始alpha与所有原图。
+
+## Walk8
+
+Use case: identity-preserve. EXACTLY8 fullbody frames game pixel sprite WALK cycle,4columns2rows,transparent PNG. Reference image is LOCKED identity and proportions. Same scholar dragon with two ivory horns,purple membrane wings and purple collar medallion and waist sash,open brown book with cream pages and tiny gold emblem at belly,short curved tail. Book held steady in two claws all frames; wings gently counter-sway. Keep same warm golden palette,round body volumes,warm brown outline,3-step shadows,crisp chunky pixel edges. All frames facing RIGHT side3/4 like reference,orthographic horizontal platformer. IN-PLACE walk,8 sequential poses row-major:1 left foot forward heel contact/right rear toe;2 lower passing weight;3 left support/right knee bent stepping through;4 high right knee/left toe push;5 right foot forward heel contact/left rear toe;6 lower passing weight;7 right support/left knee bends stepping through;8 high left knee/right toe push and back to1. Clear alternating feet articulated hip knee ankle; feet and legs change pose visibly. Neither all identical nor sliding whole body. Body scale identical each frame,small natural2px bob only; SAME local ground baseline each cell with empty margins all sides,entire horns/crest feet/tail visible. Target64x64 root32,58,body40px plus horns/crest44. NO text/grid/numbers/shadows/background/motionlines. Do not compress body between rows.

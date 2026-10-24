@@ -1,0 +1,187 @@
+{
+  "images": {
+    "terrain.png": {
+      "width": 64,
+      "height": 64,
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "cc99b1392e00006319ab29bca29bb0ba369a2dc46417974f87837ba8007f4a83"
+    },
+    "background.png": {
+      "width": 640,
+      "height": 360,
+      "mode": "RGB",
+      "alpha_extrema": null,
+      "sha256": "3790a487fe4af65982922f4d4b831845ea5aeb3955bdda33d34ba6d9c827fbf6"
+    },
+    "props/extractor.png": {
+      "width": 80,
+      "height": 96,
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "1f242c0ea448e6063ad58248f17fa058dbf609e0f03861685152d8ab72a873ea"
+    },
+    "props/honey_cells.png": {
+      "width": 64,
+      "height": 80,
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "1eb4eae43a5744e1f8cc11a500b06aefaa8aadca8be380796cdc604b2619a256"
+    },
+    "props/wax_pillar.png": {
+      "width": 64,
+      "height": 112,
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "8cf5143fe64c82ad4c393683a72febd30f9be6ebe65ff852bc337681ad80501e"
+    },
+    "props/pipeline.png": {
+      "width": 96,
+      "height": 80,
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "53cdc10b3a1f067d45485eb7289ba6e451bc34898e50f4c1b6a1f85891829a95"
+    },
+    "background_wide.png": {
+      "width": 1280,
+      "height": 360,
+      "mode": "RGB",
+      "alpha_extrema": null,
+      "sha256": "8afe5d0902e22bb7e2fee6ea8a68b48b8765a529efb7c292e20171fa212c8844"
+    }
+  },
+  "join_checks": [
+    {
+      "join": "0->1",
+      "axis": "h",
+      "different_pixels": 0
+    },
+    {
+      "join": "1->1",
+      "axis": "h",
+      "different_pixels": 0
+    },
+    {
+      "join": "1->2",
+      "axis": "h",
+      "different_pixels": 0
+    },
+    {
+      "join": "3->4",
+      "axis": "h",
+      "different_pixels": 0
+    },
+    {
+      "join": "4->4",
+      "axis": "h",
+      "different_pixels": 0
+    },
+    {
+      "join": "4->5",
+      "axis": "h",
+      "different_pixels": 0
+    },
+    {
+      "join": "6->7",
+      "axis": "h",
+      "different_pixels": 0
+    },
+    {
+      "join": "7->7",
+      "axis": "h",
+      "different_pixels": 0
+    },
+    {
+      "join": "7->8",
+      "axis": "h",
+      "different_pixels": 0
+    },
+    {
+      "join": "0->3",
+      "axis": "v",
+      "different_pixels": 0
+    },
+    {
+      "join": "3->6",
+      "axis": "v",
+      "different_pixels": 0
+    },
+    {
+      "join": "1->4",
+      "axis": "v",
+      "different_pixels": 0
+    },
+    {
+      "join": "4->7",
+      "axis": "v",
+      "different_pixels": 0
+    },
+    {
+      "join": "2->5",
+      "axis": "v",
+      "different_pixels": 0
+    },
+    {
+      "join": "5->8",
+      "axis": "v",
+      "different_pixels": 0
+    },
+    {
+      "join": "10->11",
+      "axis": "h",
+      "different_pixels": 0
+    },
+    {
+      "join": "11->11",
+      "axis": "h",
+      "different_pixels": 0
+    },
+    {
+      "join": "11->12",
+      "axis": "h",
+      "different_pixels": 0
+    }
+  ],
+  "seam_check_passed": true,
+  "visual_inspection": "terrain/background/props/contact_sheet reviewed via view_image",
+  "notes": [
+    "Raw images remain unchanged.",
+    "Processed tiles use deterministic source-pixel cropping, nearest resize, copied edge strips and palette reduction.",
+    "Props use binary true alpha and 16px-multiple canvases.",
+    "Background is a visual layer only; no hazard or collision is baked."
+  ],
+  "wide_background": {
+    "raw_dimensions": [
+      2172,
+      724
+    ],
+    "source_crop": [
+      62,
+      74,
+      2110,
+      650
+    ],
+    "aspect_ratio_preserved": true,
+    "central_empty_zone_x": [
+      256,
+      1024
+    ],
+    "visual_inspection": "view_image checked: no central pillar, no center honeycomb motif, no platforms, floor or actors",
+    "source_repetition": false
+  }
+}

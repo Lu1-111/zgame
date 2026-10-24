@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "records": [
+    {
+      "animation": "grab_ready",
+      "capture": "01_ready_exclamation",
+      "effectVisible": false,
+      "elapsed": 0.3,
+      "frame": 2,
+      "state": "telegraph"
+    },
+    {
+      "animation": "grab_attack",
+      "capture": "02_attack_open",
+      "effectVisible": false,
+      "elapsed": 0.3,
+      "frame": 3,
+      "state": "attack"
+    },
+    {
+      "animation": "grab_attack",
+      "capture": "03_attack_closed",
+      "effectVisible": false,
+      "elapsed": 0.5,
+      "frame": 5,
+      "state": "attack"
+    }
+  ]
+}

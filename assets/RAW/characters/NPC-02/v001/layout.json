@@ -1,0 +1,511 @@
+{
+  "sheet": "NPC-02_actions_right_sheet_v001.png",
+  "source_size": [
+    1536,
+    1024
+  ],
+  "target_canvas": [
+    64,
+    64
+  ],
+  "target_root": [
+    32,
+    58
+  ],
+  "target_standing_height": 42,
+  "frames": [
+    {
+      "action": "idle",
+      "frame": 1,
+      "rect_xywh": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "alpha160_bbox_xyxy": [
+        77,
+        16,
+        242,
+        243
+      ],
+      "suggested_source_root_xy": [
+        165.5,
+        243
+      ]
+    },
+    {
+      "action": "idle",
+      "frame": 2,
+      "rect_xywh": [
+        256,
+        0,
+        256,
+        256
+      ],
+      "alpha160_bbox_xyxy": [
+        332,
+        15,
+        495,
+        243
+      ],
+      "suggested_source_root_xy": [
+        418.0,
+        243
+      ]
+    },
+    {
+      "action": "idle",
+      "frame": 3,
+      "rect_xywh": [
+        512,
+        0,
+        256,
+        256
+      ],
+      "alpha160_bbox_xyxy": [
+        574,
+        15,
+        734,
+        243
+      ],
+      "suggested_source_root_xy": [
+        660.0,
+        243
+      ]
+    },
+    {
+      "action": "idle",
+      "frame": 4,
+      "rect_xywh": [
+        768,
+        0,
+        256,
+        256
+      ],
+      "alpha160_bbox_xyxy": [
+        814,
+        15,
+        973,
+        243
+      ],
+      "suggested_source_root_xy": [
+        898.0,
+        243
+      ]
+    },
+    {
+      "action": "idle",
+      "frame": 5,
+      "rect_xywh": [
+        1024,
+        0,
+        256,
+        256
+      ],
+      "alpha160_bbox_xyxy": [
+        1059,
+        15,
+        1221,
+        243
+      ],
+      "suggested_source_root_xy": [
+        1145.5,
+        243
+      ]
+    },
+    {
+      "action": "idle",
+      "frame": 6,
+      "rect_xywh": [
+        1280,
+        0,
+        256,
+        256
+      ],
+      "alpha160_bbox_xyxy": [
+        1307,
+        15,
+        1467,
+        243
+      ],
+      "suggested_source_root_xy": [
+        1391.5,
+        243
+      ]
+    },
+    {
+      "action": "talk",
+      "frame": 1,
+      "rect_xywh": [
+        0,
+        256,
+        256,
+        256
+      ],
+      "alpha160_bbox_xyxy": [
+        78,
+        265,
+        242,
+        496
+      ],
+      "suggested_source_root_xy": [
+        165.0,
+        496
+      ]
+    },
+    {
+      "action": "talk",
+      "frame": 2,
+      "rect_xywh": [
+        256,
+        256,
+        256,
+        256
+      ],
+      "alpha160_bbox_xyxy": [
+        326,
+        262,
+        510,
+        496
+      ],
+      "suggested_source_root_xy": [
+        414.5,
+        496
+      ]
+    },
+    {
+      "action": "talk",
+      "frame": 3,
+      "rect_xywh": [
+        512,
+        256,
+        256,
+        256
+      ],
+      "alpha160_bbox_xyxy": [
+        571,
+        265,
+        749,
+        496
+      ],
+      "suggested_source_root_xy": [
+        658.5,
+        496
+      ]
+    },
+    {
+      "action": "talk",
+      "frame": 4,
+      "rect_xywh": [
+        768,
+        256,
+        256,
+        256
+      ],
+      "alpha160_bbox_xyxy": [
+        811,
+        265,
+        995,
+        496
+      ],
+      "suggested_source_root_xy": [
+        897.0,
+        496
+      ]
+    },
+    {
+      "action": "talk",
+      "frame": 5,
+      "rect_xywh": [
+        1024,
+        256,
+        256,
+        256
+      ],
+      "alpha160_bbox_xyxy": [
+        1061,
+        263,
+        1251,
+        496
+      ],
+      "suggested_source_root_xy": [
+        1147.0,
+        496
+      ]
+    },
+    {
+      "action": "talk",
+      "frame": 6,
+      "rect_xywh": [
+        1280,
+        256,
+        256,
+        256
+      ],
+      "alpha160_bbox_xyxy": [
+        1307,
+        265,
+        1468,
+        496
+      ],
+      "suggested_source_root_xy": [
+        1391.5,
+        496
+      ]
+    },
+    {
+      "action": "trade_offer",
+      "frame": 1,
+      "rect_xywh": [
+        0,
+        512,
+        256,
+        256
+      ],
+      "alpha160_bbox_xyxy": [
+        78,
+        517,
+        242,
+        751
+      ],
+      "suggested_source_root_xy": [
+        165.5,
+        751
+      ]
+    },
+    {
+      "action": "trade_offer",
+      "frame": 2,
+      "rect_xywh": [
+        256,
+        512,
+        256,
+        256
+      ],
+      "alpha160_bbox_xyxy": [
+        326,
+        520,
+        493,
+        751
+      ],
+      "suggested_source_root_xy": [
+        416.5,
+        751
+      ]
+    },
+    {
+      "action": "trade_offer",
+      "frame": 3,
+      "rect_xywh": [
+        512,
+        512,
+        256,
+        256
+      ],
+      "alpha160_bbox_xyxy": [
+        577,
+        517,
+        737,
+        751
+      ],
+      "suggested_source_root_xy": [
+        662.5,
+        751
+      ]
+    },
+    {
+      "action": "trade_offer",
+      "frame": 4,
+      "rect_xywh": [
+        768,
+        512,
+        256,
+        256
+      ],
+      "alpha160_bbox_xyxy": [
+        814,
+        518,
+        1012,
+        750
+      ],
+      "suggested_source_root_xy": [
+        901.0,
+        750
+      ]
+    },
+    {
+      "action": "trade_offer",
+      "frame": 5,
+      "rect_xywh": [
+        1024,
+        512,
+        256,
+        256
+      ],
+      "alpha160_bbox_xyxy": [
+        1061,
+        518,
+        1220,
+        751
+      ],
+      "suggested_source_root_xy": [
+        1149.5,
+        751
+      ]
+    },
+    {
+      "action": "trade_offer",
+      "frame": 6,
+      "rect_xywh": [
+        1280,
+        512,
+        256,
+        256
+      ],
+      "alpha160_bbox_xyxy": [
+        1307,
+        517,
+        1468,
+        751
+      ],
+      "suggested_source_root_xy": [
+        1392.5,
+        751
+      ]
+    },
+    {
+      "action": "trade_confirm",
+      "frame": 1,
+      "rect_xywh": [
+        0,
+        768,
+        256,
+        256
+      ],
+      "alpha160_bbox_xyxy": [
+        78,
+        770,
+        242,
+        1003
+      ],
+      "suggested_source_root_xy": [
+        165.0,
+        1003
+      ]
+    },
+    {
+      "action": "trade_confirm",
+      "frame": 2,
+      "rect_xywh": [
+        256,
+        768,
+        284,
+        256
+      ],
+      "alpha160_bbox_xyxy": [
+        328,
+        771,
+        518,
+        1003
+      ],
+      "suggested_source_root_xy": [
+        415.5,
+        1003
+      ]
+    },
+    {
+      "action": "trade_confirm",
+      "frame": 3,
+      "rect_xywh": [
+        540,
+        768,
+        228,
+        256
+      ],
+      "alpha160_bbox_xyxy": [
+        574,
+        771,
+        753,
+        1003
+      ],
+      "suggested_source_root_xy": [
+        658.5,
+        1003
+      ]
+    },
+    {
+      "action": "trade_confirm",
+      "frame": 4,
+      "rect_xywh": [
+        768,
+        768,
+        256,
+        256
+      ],
+      "alpha160_bbox_xyxy": [
+        821,
+        770,
+        986,
+        1003
+      ],
+      "suggested_source_root_xy": [
+        907.0,
+        1003
+      ]
+    },
+    {
+      "action": "trade_confirm",
+      "frame": 5,
+      "rect_xywh": [
+        1024,
+        768,
+        256,
+        256
+      ],
+      "alpha160_bbox_xyxy": [
+        1064,
+        770,
+        1229,
+        1003
+      ],
+      "suggested_source_root_xy": [
+        1149.5,
+        1003
+      ]
+    },
+    {
+      "action": "trade_confirm",
+      "frame": 6,
+      "rect_xywh": [
+        1280,
+        768,
+        256,
+        256
+      ],
+      "alpha160_bbox_xyxy": [
+        1307,
+        771,
+        1469,
+        1003
+      ],
+      "suggested_source_root_xy": [
+        1393.0,
+        1003
+      ]
+    }
+  ],
+  "fps": {
+    "idle": 8,
+    "talk": 8,
+    "trade_offer": 8,
+    "trade_confirm": 8
+  },
+  "loop": {
+    "idle": true,
+    "talk": true,
+    "trade_offer": false,
+    "trade_confirm": false
+  },
+  "notes": "Generated pixels preserve real alpha; hidden RGB colors exist only under transparent background. Fixed per-row scale permitted; no per-frame bounding-box scaling. Pouch is partly occluded by arm in neutral and revealed on hand gesture. First idle can serve as derived master."
+}

@@ -1,0 +1,247 @@
+{
+  "id": "ELT-03_move",
+  "name": "move",
+  "enemyId": "ELT-03",
+  "gameEnemyId": "acid_mother",
+  "label": "酸液母体 move",
+  "sourcePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B03/v001/acid_mother/acid_mother_A_v002.png",
+  "sourceRects": [
+    [
+      0,
+      314,
+      314,
+      313
+    ],
+    [
+      314,
+      314,
+      313,
+      313
+    ],
+    [
+      627,
+      314,
+      313,
+      313
+    ],
+    [
+      940,
+      314,
+      314,
+      313
+    ]
+  ],
+  "sourceAnchors": [
+    [
+      157.0,
+      276
+    ],
+    [
+      156.5,
+      277
+    ],
+    [
+      156.5,
+      277
+    ],
+    [
+      157.0,
+      277
+    ]
+  ],
+  "sourceColumns": 4,
+  "sourceRows": 4,
+  "sourceIndices": [
+    4,
+    5,
+    6,
+    7
+  ],
+  "target": [
+    104,
+    120
+  ],
+  "anchor": [
+    50,
+    97
+  ],
+  "scale": 0.3,
+  "fps": 10,
+  "loop": true,
+  "kind": "body",
+  "phases": [
+    "move"
+  ],
+  "notes": [
+    "v002 generated transparent-gutter revision preserves identity and action order; fixed scale across whole enemy. Death final fade is component-driven."
+  ],
+  "promptPath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B03/v001/acid_mother/acid_mother_A_v002.prompt.txt",
+  "provenancePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B03/v001/acid_mother/acid_mother_A_v002.provenance.json",
+  "generationMode": "built-in image_gen",
+  "canvasExpansionReason": "统一透明扩展：原画布所有非零alpha并集[0, -11, 96, 103]；全动作统一画布+2px边；保留源倍率、全部alpha与语义root。",
+  "frames": [
+    "frames/ELT-03_move/ELT-03_move_00.png",
+    "frames/ELT-03_move/ELT-03_move_01.png",
+    "frames/ELT-03_move/ELT-03_move_02.png",
+    "frames/ELT-03_move/ELT-03_move_03.png"
+  ],
+  "sheet": "sheets/ELT-03_move.png",
+  "sheetRects": [
+    [
+      0,
+      0,
+      104,
+      120
+    ],
+    [
+      104,
+      0,
+      104,
+      120
+    ],
+    [
+      208,
+      0,
+      104,
+      120
+    ],
+    [
+      312,
+      0,
+      104,
+      120
+    ]
+  ],
+  "atlas": "atlas/ELT-03_move.png",
+  "atlasColumns": 2,
+  "atlasRows": 2,
+  "atlasRects": [
+    [
+      0,
+      0,
+      104,
+      120
+    ],
+    [
+      104,
+      0,
+      104,
+      120
+    ],
+    [
+      0,
+      120,
+      104,
+      120
+    ],
+    [
+      104,
+      120,
+      104,
+      120
+    ]
+  ],
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "sourceSha256": "0cc99097bb2443829e00f9a461456c0b0199442fb286d0ffee6c893478406ee8",
+  "sourceBatch": "/home/lululu/zgame/assets/RAW/enemies/ENM-B03/v001/acid_mother/batch.json",
+  "frameCount": 4,
+  "frameDetails": [
+    {
+      "sourceRect": [
+        0,
+        314,
+        314,
+        313
+      ],
+      "sourceAnchor": [
+        157.0,
+        276
+      ],
+      "offset": [
+        3,
+        14
+      ],
+      "alphaBBox": [
+        15,
+        18,
+        89,
+        99
+      ],
+      "sourceEdgeAlpha": 1
+    },
+    {
+      "sourceRect": [
+        314,
+        314,
+        313,
+        313
+      ],
+      "sourceAnchor": [
+        156.5,
+        277
+      ],
+      "offset": [
+        3,
+        14
+      ],
+      "alphaBBox": [
+        11,
+        19,
+        93,
+        100
+      ],
+      "sourceEdgeAlpha": 1
+    },
+    {
+      "sourceRect": [
+        627,
+        314,
+        313,
+        313
+      ],
+      "sourceAnchor": [
+        156.5,
+        277
+      ],
+      "offset": [
+        3,
+        14
+      ],
+      "alphaBBox": [
+        8,
+        40,
+        90,
+        99
+      ],
+      "sourceEdgeAlpha": 1
+    },
+    {
+      "sourceRect": [
+        940,
+        314,
+        314,
+        313
+      ],
+      "sourceAnchor": [
+        157.0,
+        277
+      ],
+      "offset": [
+        3,
+        14
+      ],
+      "alphaBBox": [
+        10,
+        23,
+        88,
+        99
+      ],
+      "sourceEdgeAlpha": 0
+    }
+  ],
+  "fadeStartNormalized": 1.0,
+  "loopBoundaryMeanDifference": 12.666666666666666
+}

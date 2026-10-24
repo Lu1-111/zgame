@@ -1,0 +1,58 @@
+{
+  "skills": [
+    {
+      "id": "skill_bubble",
+      "name": "奶泡弹",
+      "mana_cost": 8,
+      "cooldown": 0.6,
+      "damage_mult": 1.0,
+      "unlock": "initial",
+      "shape": "projectile_line",
+      "slow": 30,
+      "desc": "初始技能。直线奶泡弹，命中造成 1.0 倍法术伤害并减速 30%。"
+    },
+    {
+      "id": "skill_shield",
+      "name": "奶盾",
+      "mana_cost": 15,
+      "cooldown": 8.0,
+      "damage_mult": null,
+      "unlock": "talent_milk_2",
+      "absorb": 40,
+      "duration": 5,
+      "desc": "增益技能（天赋·奶术 2 解锁）。展开奶盾，5 秒内吸收 40 点伤害。"
+    },
+    {
+      "id": "skill_slam",
+      "name": "挤奶冲击",
+      "mana_cost": 12,
+      "cooldown": 1.2,
+      "damage_mult": 1.5,
+      "unlock": "chest_cave",
+      "shape": "sector",
+      "knockback": 200,
+      "desc": "近战法术（洞窟宝箱解锁后获得）。前方扇形 1.5 倍法术伤害并击退敌人。"
+    },
+    {
+      "id": "skill_heal",
+      "name": "治愈之乳",
+      "mana_cost": 25,
+      "cooldown": 12.0,
+      "damage_mult": null,
+      "unlock": "merchant",
+      "heal_pct": 30,
+      "desc": "治疗技能（商人处习得）。回复自身 30% 最大生命值。"
+    },
+    {
+      "id": "skill_starfall",
+      "name": "星乳坠落",
+      "mana_cost": 30,
+      "cooldown": 15.0,
+      "damage_mult": 0.8,
+      "unlock": "talent_milk_4",
+      "shape": "area_rain",
+      "hits": 3,
+      "desc": "爆发技能（天赋·奶术 4 解锁）。天降星乳，3 段范围伤害，每段 0.8 倍法术伤害。"
+    }
+  ]
+}

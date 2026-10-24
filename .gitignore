@@ -1,0 +1,31 @@
+# Godot 编辑器缓存与导入产物
+.godot/
+*.translation
+
+# 临时文件（参考书 §2.6）
+*.tmp
+
+# Python 虚拟环境（素材后处理工具链）
+.venv/
+__pycache__/
+*.py[cod]
+
+# 本机环境变量与凭据
+.env
+.env.*
+!.env.example
+
+# 导出产物
+/build/
+export.cfg
+*.exe
+
+# 并行会话的工作区与素材中间产物（原始及正式素材随工程入库）
+work/
+plan/
+.v2c/
+.zcode/
+
+# 系统
+.DS_Store
+Thumbs.db

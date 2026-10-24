@@ -1,0 +1,45 @@
+{
+  "review": {
+    "date": "2026-10-24",
+    "status": "passed",
+    "reviewedBy": "Codex primary agent and independent visual-review subagent",
+    "scope": "FX-01 five effects, FX-02 three effects, ABL-01 double jump, WPN-01 three combo effects",
+    "effectCount": 12,
+    "frameCount": 72,
+    "referenceCharacter": {
+      "path": "assets/PROCESSED/characters/CHR-01/v001/CHR-01_canonical_right_v001.png",
+      "anchor": [
+        32,
+        58
+      ]
+    },
+    "checks": [
+      "Transparent RGBA and original source traceability",
+      "Fixed per-effect scale and semantic root alignment",
+      "Dark-background frame contact sheet and interactive playback",
+      "One-shot synchronized end fade and afterimage opacity envelope",
+      "Integer translation and no output boundary pixels",
+      "Godot 4.7.2 import, playback, replay, completion/hide, marker attachment, root mirror, pause and playback-speed checks"
+    ],
+    "knownLimits": [
+      "Landing dust has an accepted 1px baseline variation during breakup.",
+      "Low-alpha source edge pixels are preserved and reported, not removed.",
+      "Afterimage PNGs must be played through EffectPlayer or an equivalent opacityByFrame envelope.",
+      "Main-game action-event and weapon-marker integration remains a separate step; these are presentation assets and components."
+    ]
+  },
+  "runtime": {
+    "engine": "Godot 4.7.2",
+    "status": "pass",
+    "runs": [
+      {
+        "step": "import",
+        "exitCode": 0
+      },
+      {
+        "step": "smoke",
+        "exitCode": 0
+      }
+    ]
+  }
+}

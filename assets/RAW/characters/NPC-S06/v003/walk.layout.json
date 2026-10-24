@@ -1,0 +1,186 @@
+{
+  "sheet": "NPC-S06_walk_right_sheet_v003.png",
+  "source_size": [
+    1774,
+    887
+  ],
+  "frames": [
+    {
+      "action": "walk",
+      "frame": 1,
+      "rect_xywh": [
+        0,
+        0,
+        444,
+        444
+      ],
+      "alpha160_bbox_xyxy": [
+        58,
+        25,
+        390,
+        430
+      ],
+      "suggested_source_root_xy": [
+        250,
+        434
+      ]
+    },
+    {
+      "action": "walk",
+      "frame": 2,
+      "rect_xywh": [
+        444,
+        0,
+        443,
+        444
+      ],
+      "alpha160_bbox_xyxy": [
+        490,
+        20,
+        820,
+        431
+      ],
+      "suggested_source_root_xy": [
+        686,
+        434
+      ]
+    },
+    {
+      "action": "walk",
+      "frame": 3,
+      "rect_xywh": [
+        887,
+        0,
+        443,
+        444
+      ],
+      "alpha160_bbox_xyxy": [
+        927,
+        20,
+        1263,
+        431
+      ],
+      "suggested_source_root_xy": [
+        1121,
+        434
+      ]
+    },
+    {
+      "action": "walk",
+      "frame": 4,
+      "rect_xywh": [
+        1330,
+        0,
+        444,
+        444
+      ],
+      "alpha160_bbox_xyxy": [
+        1386,
+        20,
+        1718,
+        434
+      ],
+      "suggested_source_root_xy": [
+        1578,
+        434
+      ]
+    },
+    {
+      "action": "walk",
+      "frame": 5,
+      "rect_xywh": [
+        0,
+        444,
+        444,
+        443
+      ],
+      "alpha160_bbox_xyxy": [
+        50,
+        457,
+        387,
+        866
+      ],
+      "suggested_source_root_xy": [
+        245,
+        866
+      ]
+    },
+    {
+      "action": "walk",
+      "frame": 6,
+      "rect_xywh": [
+        444,
+        444,
+        443,
+        443
+      ],
+      "alpha160_bbox_xyxy": [
+        494,
+        460,
+        826,
+        866
+      ],
+      "suggested_source_root_xy": [
+        689,
+        866
+      ]
+    },
+    {
+      "action": "walk",
+      "frame": 7,
+      "rect_xywh": [
+        887,
+        444,
+        443,
+        443
+      ],
+      "alpha160_bbox_xyxy": [
+        927,
+        454,
+        1260,
+        866
+      ],
+      "suggested_source_root_xy": [
+        1122,
+        866
+      ]
+    },
+    {
+      "action": "walk",
+      "frame": 8,
+      "rect_xywh": [
+        1330,
+        444,
+        444,
+        443
+      ],
+      "alpha160_bbox_xyxy": [
+        1385,
+        458,
+        1718,
+        866
+      ],
+      "suggested_source_root_xy": [
+        1578,
+        866
+      ]
+    }
+  ],
+  "target_canvas": [
+    64,
+    64
+  ],
+  "target_root": [
+    32,
+    58
+  ],
+  "target_standing_height": 44,
+  "source_scale_reference_height": 411,
+  "fps": {
+    "walk": 10
+  },
+  "loop": {
+    "walk": true
+  },
+  "notes": "Actual alpha160 bbox verified inside all crops; torso/waist X manually registered, fixed ground Y per row preserves foot lift/body bob. Apply one fixed scale to whole walk sheet, never per frame. Two rows source floor spacing slightly differs so row ground provided."
+}

@@ -1,0 +1,315 @@
+{
+  "id": "BOSS-01_death",
+  "enemyId": "BOSS-01",
+  "gameEnemyId": "honey_queen",
+  "label": "蜂蜜女王",
+  "name": "death",
+  "kind": "body",
+  "generationMode": "built-in image_gen",
+  "sourcePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/BOSS-01/BOSS-01_actions_B.png",
+  "sourceRects": [
+    [
+      0,
+      524,
+      390,
+      250
+    ],
+    [
+      390,
+      524,
+      380,
+      250
+    ],
+    [
+      770,
+      524,
+      386,
+      250
+    ],
+    [
+      1156,
+      524,
+      380,
+      250
+    ],
+    [
+      0,
+      774,
+      386,
+      250
+    ],
+    [
+      386,
+      774,
+      386,
+      250
+    ],
+    [
+      772,
+      774,
+      380,
+      250
+    ],
+    [
+      1152,
+      774,
+      384,
+      250
+    ]
+  ],
+  "sourceAnchors": [
+    [
+      230,
+      124
+    ],
+    [
+      224,
+      124
+    ],
+    [
+      228,
+      124
+    ],
+    [
+      226,
+      124
+    ],
+    [
+      230,
+      130
+    ],
+    [
+      228,
+      130
+    ],
+    [
+      226,
+      130
+    ],
+    [
+      230,
+      130
+    ]
+  ],
+  "sourceSize": [
+    1536,
+    1024
+  ],
+  "sourceSha256": "8cbc2b63d1c4088d83f83c3506e7e75f5939f4451ff4eee45061d3b81df48c51",
+  "sourceBatch": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/BOSS-01/batch.json",
+  "promptPath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/BOSS-01/BOSS-01_B_retry.prompt.txt",
+  "provenancePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/BOSS-01/provenance.json",
+  "target": [
+    176,
+    136
+  ],
+  "anchor": [
+    88,
+    68
+  ],
+  "rootType": "flying",
+  "scale": 0.36,
+  "fps": 10,
+  "loop": false,
+  "frameCount": 8,
+  "frames": [
+    "frames/BOSS-01_death/BOSS-01_death_00.png",
+    "frames/BOSS-01_death/BOSS-01_death_01.png",
+    "frames/BOSS-01_death/BOSS-01_death_02.png",
+    "frames/BOSS-01_death/BOSS-01_death_03.png",
+    "frames/BOSS-01_death/BOSS-01_death_04.png",
+    "frames/BOSS-01_death/BOSS-01_death_05.png",
+    "frames/BOSS-01_death/BOSS-01_death_06.png",
+    "frames/BOSS-01_death/BOSS-01_death_07.png"
+  ],
+  "sheet": "sheets/BOSS-01_death.png",
+  "frameDetails": [
+    {
+      "sourceRect": [
+        0,
+        524,
+        390,
+        250
+      ],
+      "sourceAnchor": [
+        230,
+        124
+      ],
+      "offset": [
+        5,
+        23
+      ],
+      "alphaBBox": [
+        13,
+        23,
+        145,
+        113
+      ]
+    },
+    {
+      "sourceRect": [
+        390,
+        524,
+        380,
+        250
+      ],
+      "sourceAnchor": [
+        224,
+        124
+      ],
+      "offset": [
+        7,
+        23
+      ],
+      "alphaBBox": [
+        7,
+        24,
+        143,
+        113
+      ]
+    },
+    {
+      "sourceRect": [
+        770,
+        524,
+        386,
+        250
+      ],
+      "sourceAnchor": [
+        228,
+        124
+      ],
+      "offset": [
+        6,
+        23
+      ],
+      "alphaBBox": [
+        9,
+        23,
+        144,
+        111
+      ]
+    },
+    {
+      "sourceRect": [
+        1156,
+        524,
+        380,
+        250
+      ],
+      "sourceAnchor": [
+        226,
+        124
+      ],
+      "offset": [
+        6,
+        23
+      ],
+      "alphaBBox": [
+        6,
+        23,
+        138,
+        112
+      ]
+    },
+    {
+      "sourceRect": [
+        0,
+        774,
+        386,
+        250
+      ],
+      "sourceAnchor": [
+        230,
+        130
+      ],
+      "offset": [
+        5,
+        21
+      ],
+      "alphaBBox": [
+        14,
+        21,
+        143,
+        107
+      ]
+    },
+    {
+      "sourceRect": [
+        386,
+        774,
+        386,
+        250
+      ],
+      "sourceAnchor": [
+        228,
+        130
+      ],
+      "offset": [
+        6,
+        21
+      ],
+      "alphaBBox": [
+        9,
+        21,
+        145,
+        107
+      ]
+    },
+    {
+      "sourceRect": [
+        772,
+        774,
+        380,
+        250
+      ],
+      "sourceAnchor": [
+        226,
+        130
+      ],
+      "offset": [
+        6,
+        21
+      ],
+      "alphaBBox": [
+        6,
+        24,
+        142,
+        105
+      ]
+    },
+    {
+      "sourceRect": [
+        1152,
+        774,
+        384,
+        250
+      ],
+      "sourceAnchor": [
+        230,
+        130
+      ],
+      "offset": [
+        5,
+        21
+      ],
+      "alphaBBox": [
+        5,
+        26,
+        137,
+        106
+      ]
+    }
+  ],
+  "fadeStartNormalized": 0.65,
+  "phases": [
+    "death1",
+    "death2",
+    "death3",
+    "death4",
+    "death5",
+    "death6",
+    "death7",
+    "death8"
+  ]
+}

@@ -1,0 +1,1211 @@
+{
+  "format": "nailong-raw-enemies-v1",
+  "version": 1,
+  "canvas": [
+    64,
+    64
+  ],
+  "direction": "right",
+  "pixel_filter": "nearest",
+  "generation": "deterministic native-pixel drawing; no auto-interpolation",
+  "enemies": {
+    "ENM-01": {
+      "name": "苔甲虫",
+      "slug": "moss_beetle",
+      "root": [
+        32,
+        58
+      ],
+      "root_kind": "ground",
+      "palette": [
+        "#211a2b",
+        "#33452d",
+        "#56713b",
+        "#86a94f",
+        "#b5c86a",
+        "#8b6845",
+        "#c49a62",
+        "#fff2c7"
+      ],
+      "animations": {
+        "idle": {
+          "frames": [
+            "ENM-01/v001/frames/ENM-01_idle_right_v001_f01.png",
+            "ENM-01/v001/frames/ENM-01_idle_right_v001_f02.png",
+            "ENM-01/v001/frames/ENM-01_idle_right_v001_f03.png",
+            "ENM-01/v001/frames/ENM-01_idle_right_v001_f04.png"
+          ],
+          "fps": 6,
+          "loop": true,
+          "layer": "body",
+          "frame_count": 4,
+          "sheet": "ENM-01/v001/sheets/ENM-01_idle_right_v001_sheet.png"
+        },
+        "move": {
+          "frames": [
+            "ENM-01/v001/frames/ENM-01_move_right_v001_f01.png",
+            "ENM-01/v001/frames/ENM-01_move_right_v001_f02.png",
+            "ENM-01/v001/frames/ENM-01_move_right_v001_f03.png",
+            "ENM-01/v001/frames/ENM-01_move_right_v001_f04.png",
+            "ENM-01/v001/frames/ENM-01_move_right_v001_f05.png",
+            "ENM-01/v001/frames/ENM-01_move_right_v001_f06.png"
+          ],
+          "fps": 10,
+          "loop": true,
+          "layer": "body",
+          "frame_count": 6,
+          "sheet": "ENM-01/v001/sheets/ENM-01_move_right_v001_sheet.png"
+        },
+        "telegraph": {
+          "frames": [
+            "ENM-01/v001/frames/ENM-01_telegraph_right_v001_f01.png",
+            "ENM-01/v001/frames/ENM-01_telegraph_right_v001_f02.png",
+            "ENM-01/v001/frames/ENM-01_telegraph_right_v001_f03.png"
+          ],
+          "fps": 8,
+          "loop": false,
+          "layer": "body",
+          "frame_count": 3,
+          "sheet": "ENM-01/v001/sheets/ENM-01_telegraph_right_v001_sheet.png"
+        },
+        "attack": {
+          "frames": [
+            "ENM-01/v001/frames/ENM-01_attack_right_v001_f01.png",
+            "ENM-01/v001/frames/ENM-01_attack_right_v001_f02.png",
+            "ENM-01/v001/frames/ENM-01_attack_right_v001_f03.png",
+            "ENM-01/v001/frames/ENM-01_attack_right_v001_f04.png"
+          ],
+          "fps": 12,
+          "loop": false,
+          "layer": "body",
+          "frame_count": 4,
+          "sheet": "ENM-01/v001/sheets/ENM-01_attack_right_v001_sheet.png"
+        },
+        "recover": {
+          "frames": [
+            "ENM-01/v001/frames/ENM-01_recover_right_v001_f01.png",
+            "ENM-01/v001/frames/ENM-01_recover_right_v001_f02.png"
+          ],
+          "fps": 8,
+          "loop": false,
+          "layer": "body",
+          "frame_count": 2,
+          "sheet": "ENM-01/v001/sheets/ENM-01_recover_right_v001_sheet.png"
+        },
+        "hurt": {
+          "frames": [
+            "ENM-01/v001/frames/ENM-01_hurt_right_v001_f01.png",
+            "ENM-01/v001/frames/ENM-01_hurt_right_v001_f02.png"
+          ],
+          "fps": 10,
+          "loop": false,
+          "layer": "body",
+          "frame_count": 2,
+          "sheet": "ENM-01/v001/sheets/ENM-01_hurt_right_v001_sheet.png"
+        },
+        "death": {
+          "frames": [
+            "ENM-01/v001/frames/ENM-01_death_right_v001_f01.png",
+            "ENM-01/v001/frames/ENM-01_death_right_v001_f02.png",
+            "ENM-01/v001/frames/ENM-01_death_right_v001_f03.png",
+            "ENM-01/v001/frames/ENM-01_death_right_v001_f04.png",
+            "ENM-01/v001/frames/ENM-01_death_right_v001_f05.png",
+            "ENM-01/v001/frames/ENM-01_death_right_v001_f06.png"
+          ],
+          "fps": 8,
+          "loop": false,
+          "layer": "body",
+          "frame_count": 6,
+          "sheet": "ENM-01/v001/sheets/ENM-01_death_right_v001_sheet.png"
+        }
+      },
+      "master": "ENM-01/v001/ENM-01_master_right_v001.png",
+      "source_hashes": {
+        "idle": "9a0e2805b5e752f0d0c4403a4b1e6ae0496e1837578979f3570080bdff3935b0",
+        "move": "5fb2ab9918811af22b01f7d3c252ee0e9494305cac5f7ff548b7d213554761ab",
+        "telegraph": "c6fa1a762ff09bf1e150eabca03baabe664969ac3ac68d9789fd68f300771091",
+        "attack": "66fb5da0e9ca07033ec3fd20d58c1f199af9c3f3037518fc2e155b1f4466d817",
+        "recover": "e9c3981b1494c11c12d0c5519bc05fb57328bd9e94b912e1659133d1a88a24d0",
+        "hurt": "bcf982081e288cca8c96ab4189a25f886ef45ca41fd6f0d8fb77fb3dd6858745",
+        "death": "d97e702a87bd929fa6048cb14fbc74464023e83ee0fb2227d58aa1015bd220f6"
+      }
+    },
+    "ENM-02": {
+      "name": "飞奶蛾",
+      "slug": "milk_moth",
+      "root": [
+        32,
+        32
+      ],
+      "root_kind": "body",
+      "palette": [
+        "#211a2b",
+        "#6f5b82",
+        "#a893b7",
+        "#d9c9dc",
+        "#f4e8da",
+        "#fff9e8",
+        "#d3a65f"
+      ],
+      "animations": {
+        "idle": {
+          "frames": [
+            "ENM-02/v001/frames/ENM-02_idle_right_v001_f01.png",
+            "ENM-02/v001/frames/ENM-02_idle_right_v001_f02.png",
+            "ENM-02/v001/frames/ENM-02_idle_right_v001_f03.png",
+            "ENM-02/v001/frames/ENM-02_idle_right_v001_f04.png"
+          ],
+          "fps": 6,
+          "loop": true,
+          "layer": "body",
+          "frame_count": 4,
+          "sheet": "ENM-02/v001/sheets/ENM-02_idle_right_v001_sheet.png"
+        },
+        "move": {
+          "frames": [
+            "ENM-02/v001/frames/ENM-02_move_right_v001_f01.png",
+            "ENM-02/v001/frames/ENM-02_move_right_v001_f02.png",
+            "ENM-02/v001/frames/ENM-02_move_right_v001_f03.png",
+            "ENM-02/v001/frames/ENM-02_move_right_v001_f04.png",
+            "ENM-02/v001/frames/ENM-02_move_right_v001_f05.png",
+            "ENM-02/v001/frames/ENM-02_move_right_v001_f06.png"
+          ],
+          "fps": 10,
+          "loop": true,
+          "layer": "body",
+          "frame_count": 6,
+          "sheet": "ENM-02/v001/sheets/ENM-02_move_right_v001_sheet.png"
+        },
+        "telegraph": {
+          "frames": [
+            "ENM-02/v001/frames/ENM-02_telegraph_right_v001_f01.png",
+            "ENM-02/v001/frames/ENM-02_telegraph_right_v001_f02.png",
+            "ENM-02/v001/frames/ENM-02_telegraph_right_v001_f03.png"
+          ],
+          "fps": 8,
+          "loop": false,
+          "layer": "body",
+          "frame_count": 3,
+          "sheet": "ENM-02/v001/sheets/ENM-02_telegraph_right_v001_sheet.png"
+        },
+        "attack": {
+          "frames": [
+            "ENM-02/v001/frames/ENM-02_attack_right_v001_f01.png",
+            "ENM-02/v001/frames/ENM-02_attack_right_v001_f02.png",
+            "ENM-02/v001/frames/ENM-02_attack_right_v001_f03.png",
+            "ENM-02/v001/frames/ENM-02_attack_right_v001_f04.png"
+          ],
+          "fps": 12,
+          "loop": false,
+          "layer": "body",
+          "frame_count": 4,
+          "sheet": "ENM-02/v001/sheets/ENM-02_attack_right_v001_sheet.png"
+        },
+        "recover": {
+          "frames": [
+            "ENM-02/v001/frames/ENM-02_recover_right_v001_f01.png",
+            "ENM-02/v001/frames/ENM-02_recover_right_v001_f02.png"
+          ],
+          "fps": 8,
+          "loop": false,
+          "layer": "body",
+          "frame_count": 2,
+          "sheet": "ENM-02/v001/sheets/ENM-02_recover_right_v001_sheet.png"
+        },
+        "hurt": {
+          "frames": [
+            "ENM-02/v001/frames/ENM-02_hurt_right_v001_f01.png",
+            "ENM-02/v001/frames/ENM-02_hurt_right_v001_f02.png"
+          ],
+          "fps": 10,
+          "loop": false,
+          "layer": "body",
+          "frame_count": 2,
+          "sheet": "ENM-02/v001/sheets/ENM-02_hurt_right_v001_sheet.png"
+        },
+        "death": {
+          "frames": [
+            "ENM-02/v001/frames/ENM-02_death_right_v001_f01.png",
+            "ENM-02/v001/frames/ENM-02_death_right_v001_f02.png",
+            "ENM-02/v001/frames/ENM-02_death_right_v001_f03.png",
+            "ENM-02/v001/frames/ENM-02_death_right_v001_f04.png",
+            "ENM-02/v001/frames/ENM-02_death_right_v001_f05.png",
+            "ENM-02/v001/frames/ENM-02_death_right_v001_f06.png"
+          ],
+          "fps": 8,
+          "loop": false,
+          "layer": "body",
+          "frame_count": 6,
+          "sheet": "ENM-02/v001/sheets/ENM-02_death_right_v001_sheet.png"
+        }
+      },
+      "master": "ENM-02/v001/ENM-02_master_right_v001.png",
+      "source_hashes": {
+        "idle": "2759dd31f7969408cfcdb385fbf3befb801d433a2300bde9c734148c6d899266",
+        "move": "f6fd7860c3e5079ec176806d30e1c3c19d9767ea514f4e129207a8b59bf87ba7",
+        "telegraph": "1e8c5c3db6333d305f5e3ecbb7913e4f2763458fb0fd351b0d7fc807c58b8adf",
+        "attack": "d08a78b466dd0972c7e8c56c258e8fd09fb1567443d5e80d1c70d8bb573ed2a9",
+        "recover": "4b983d8a27a222f979a3037b9ffed9c89318415ec51058b86bdb1703d0178715",
+        "hurt": "67c838cf0df3a8d39112379025a271e6d414554e566d9571ae1718a46cb528c2",
+        "death": "5621cdcad024c2710870e73ac28d298ecafc97b2ce9a1c4a3aeedcef2f34ff96"
+      }
+    },
+    "ENM-03": {
+      "name": "奶滴史莱姆",
+      "slug": "milk_slime",
+      "root": [
+        32,
+        58
+      ],
+      "root_kind": "ground",
+      "palette": [
+        "#211a2b",
+        "#6d8fa3",
+        "#9fc5cf",
+        "#d5ece7",
+        "#fff9e8",
+        "#f4cf77"
+      ],
+      "animations": {
+        "idle": {
+          "frames": [
+            "ENM-03/v001/frames/ENM-03_idle_right_v001_f01.png",
+            "ENM-03/v001/frames/ENM-03_idle_right_v001_f02.png",
+            "ENM-03/v001/frames/ENM-03_idle_right_v001_f03.png",
+            "ENM-03/v001/frames/ENM-03_idle_right_v001_f04.png"
+          ],
+          "fps": 6,
+          "loop": true,
+          "layer": "body",
+          "frame_count": 4,
+          "sheet": "ENM-03/v001/sheets/ENM-03_idle_right_v001_sheet.png"
+        },
+        "move": {
+          "frames": [
+            "ENM-03/v001/frames/ENM-03_move_right_v001_f01.png",
+            "ENM-03/v001/frames/ENM-03_move_right_v001_f02.png",
+            "ENM-03/v001/frames/ENM-03_move_right_v001_f03.png",
+            "ENM-03/v001/frames/ENM-03_move_right_v001_f04.png",
+            "ENM-03/v001/frames/ENM-03_move_right_v001_f05.png",
+            "ENM-03/v001/frames/ENM-03_move_right_v001_f06.png"
+          ],
+          "fps": 10,
+          "loop": true,
+          "layer": "body",
+          "frame_count": 6,
+          "sheet": "ENM-03/v001/sheets/ENM-03_move_right_v001_sheet.png"
+        },
+        "telegraph": {
+          "frames": [
+            "ENM-03/v001/frames/ENM-03_telegraph_right_v001_f01.png",
+            "ENM-03/v001/frames/ENM-03_telegraph_right_v001_f02.png",
+            "ENM-03/v001/frames/ENM-03_telegraph_right_v001_f03.png"
+          ],
+          "fps": 8,
+          "loop": false,
+          "layer": "body",
+          "frame_count": 3,
+          "sheet": "ENM-03/v001/sheets/ENM-03_telegraph_right_v001_sheet.png"
+        },
+        "attack": {
+          "frames": [
+            "ENM-03/v001/frames/ENM-03_attack_right_v001_f01.png",
+            "ENM-03/v001/frames/ENM-03_attack_right_v001_f02.png",
+            "ENM-03/v001/frames/ENM-03_attack_right_v001_f03.png",
+            "ENM-03/v001/frames/ENM-03_attack_right_v001_f04.png"
+          ],
+          "fps": 12,
+          "loop": false,
+          "layer": "body",
+          "frame_count": 4,
+          "sheet": "ENM-03/v001/sheets/ENM-03_attack_right_v001_sheet.png"
+        },
+        "recover": {
+          "frames": [
+            "ENM-03/v001/frames/ENM-03_recover_right_v001_f01.png",
+            "ENM-03/v001/frames/ENM-03_recover_right_v001_f02.png"
+          ],
+          "fps": 8,
+          "loop": false,
+          "layer": "body",
+          "frame_count": 2,
+          "sheet": "ENM-03/v001/sheets/ENM-03_recover_right_v001_sheet.png"
+        },
+        "hurt": {
+          "frames": [
+            "ENM-03/v001/frames/ENM-03_hurt_right_v001_f01.png",
+            "ENM-03/v001/frames/ENM-03_hurt_right_v001_f02.png"
+          ],
+          "fps": 10,
+          "loop": false,
+          "layer": "body",
+          "frame_count": 2,
+          "sheet": "ENM-03/v001/sheets/ENM-03_hurt_right_v001_sheet.png"
+        },
+        "death": {
+          "frames": [
+            "ENM-03/v001/frames/ENM-03_death_right_v001_f01.png",
+            "ENM-03/v001/frames/ENM-03_death_right_v001_f02.png",
+            "ENM-03/v001/frames/ENM-03_death_right_v001_f03.png",
+            "ENM-03/v001/frames/ENM-03_death_right_v001_f04.png",
+            "ENM-03/v001/frames/ENM-03_death_right_v001_f05.png",
+            "ENM-03/v001/frames/ENM-03_death_right_v001_f06.png"
+          ],
+          "fps": 8,
+          "loop": false,
+          "layer": "body",
+          "frame_count": 6,
+          "sheet": "ENM-03/v001/sheets/ENM-03_death_right_v001_sheet.png"
+        },
+        "split": {
+          "frames": [
+            "ENM-03/v001/frames/ENM-03_split_right_v001_f01.png",
+            "ENM-03/v001/frames/ENM-03_split_right_v001_f02.png",
+            "ENM-03/v001/frames/ENM-03_split_right_v001_f03.png",
+            "ENM-03/v001/frames/ENM-03_split_right_v001_f04.png",
+            "ENM-03/v001/frames/ENM-03_split_right_v001_f05.png",
+            "ENM-03/v001/frames/ENM-03_split_right_v001_f06.png"
+          ],
+          "fps": 8,
+          "loop": false,
+          "layer": "body",
+          "frame_count": 6,
+          "sheet": "ENM-03/v001/sheets/ENM-03_split_right_v001_sheet.png"
+        },
+        "child_idle": {
+          "frames": [
+            "ENM-03/v001/frames/ENM-03_child_idle_right_v001_f01.png",
+            "ENM-03/v001/frames/ENM-03_child_idle_right_v001_f02.png",
+            "ENM-03/v001/frames/ENM-03_child_idle_right_v001_f03.png",
+            "ENM-03/v001/frames/ENM-03_child_idle_right_v001_f04.png"
+          ],
+          "fps": 6,
+          "loop": true,
+          "layer": "child",
+          "frame_count": 4,
+          "sheet": "ENM-03/v001/sheets/ENM-03_child_idle_right_v001_sheet.png"
+        },
+        "child_move": {
+          "frames": [
+            "ENM-03/v001/frames/ENM-03_child_move_right_v001_f01.png",
+            "ENM-03/v001/frames/ENM-03_child_move_right_v001_f02.png",
+            "ENM-03/v001/frames/ENM-03_child_move_right_v001_f03.png",
+            "ENM-03/v001/frames/ENM-03_child_move_right_v001_f04.png",
+            "ENM-03/v001/frames/ENM-03_child_move_right_v001_f05.png",
+            "ENM-03/v001/frames/ENM-03_child_move_right_v001_f06.png"
+          ],
+          "fps": 10,
+          "loop": true,
+          "layer": "child",
+          "frame_count": 6,
+          "sheet": "ENM-03/v001/sheets/ENM-03_child_move_right_v001_sheet.png"
+        },
+        "child_telegraph": {
+          "frames": [
+            "ENM-03/v001/frames/ENM-03_child_telegraph_right_v001_f01.png",
+            "ENM-03/v001/frames/ENM-03_child_telegraph_right_v001_f02.png",
+            "ENM-03/v001/frames/ENM-03_child_telegraph_right_v001_f03.png"
+          ],
+          "fps": 8,
+          "loop": false,
+          "layer": "child",
+          "frame_count": 3,
+          "sheet": "ENM-03/v001/sheets/ENM-03_child_telegraph_right_v001_sheet.png"
+        },
+        "child_attack": {
+          "frames": [
+            "ENM-03/v001/frames/ENM-03_child_attack_right_v001_f01.png",
+            "ENM-03/v001/frames/ENM-03_child_attack_right_v001_f02.png",
+            "ENM-03/v001/frames/ENM-03_child_attack_right_v001_f03.png",
+            "ENM-03/v001/frames/ENM-03_child_attack_right_v001_f04.png"
+          ],
+          "fps": 12,
+          "loop": false,
+          "layer": "child",
+          "frame_count": 4,
+          "sheet": "ENM-03/v001/sheets/ENM-03_child_attack_right_v001_sheet.png"
+        },
+        "child_recover": {
+          "frames": [
+            "ENM-03/v001/frames/ENM-03_child_recover_right_v001_f01.png",
+            "ENM-03/v001/frames/ENM-03_child_recover_right_v001_f02.png"
+          ],
+          "fps": 8,
+          "loop": false,
+          "layer": "child",
+          "frame_count": 2,
+          "sheet": "ENM-03/v001/sheets/ENM-03_child_recover_right_v001_sheet.png"
+        },
+        "child_hurt": {
+          "frames": [
+            "ENM-03/v001/frames/ENM-03_child_hurt_right_v001_f01.png",
+            "ENM-03/v001/frames/ENM-03_child_hurt_right_v001_f02.png"
+          ],
+          "fps": 10,
+          "loop": false,
+          "layer": "child",
+          "frame_count": 2,
+          "sheet": "ENM-03/v001/sheets/ENM-03_child_hurt_right_v001_sheet.png"
+        },
+        "child_death": {
+          "frames": [
+            "ENM-03/v001/frames/ENM-03_child_death_right_v001_f01.png",
+            "ENM-03/v001/frames/ENM-03_child_death_right_v001_f02.png",
+            "ENM-03/v001/frames/ENM-03_child_death_right_v001_f03.png",
+            "ENM-03/v001/frames/ENM-03_child_death_right_v001_f04.png",
+            "ENM-03/v001/frames/ENM-03_child_death_right_v001_f05.png",
+            "ENM-03/v001/frames/ENM-03_child_death_right_v001_f06.png"
+          ],
+          "fps": 8,
+          "loop": false,
+          "layer": "child",
+          "frame_count": 6,
+          "sheet": "ENM-03/v001/sheets/ENM-03_child_death_right_v001_sheet.png"
+        }
+      },
+      "master": "ENM-03/v001/ENM-03_master_right_v001.png",
+      "source_hashes": {
+        "idle": "bd87afd6be6864d559cf5a6146666351462700cac702ddd7113b90bd7258acf1",
+        "move": "b327d27e08ce6615b1be270118ce811cea26f1abb330aa2b5cd86424a811f14c",
+        "telegraph": "1690ca4eb6c3cf07106611db95bbbdb68f5cd6004bccd8cb84b9c92d9fb60bf3",
+        "attack": "3ca29ab0aa57aa2972d4cb021115303e09f4fe5cb390a65a8b2519847af6044c",
+        "recover": "d0601b4ccb585c0d09ccb7a3b192b33e2ea558d8ee3145c976e127ef21c3ff3b",
+        "hurt": "df11e9cfa00bacdd14071e0672ad49a9d203e80609315c09720b1df7c6f0ed21",
+        "death": "7dea0e179d84d555468686a7f6a7ce89e4c9ab8b4a93949cedfee0d0366133e1",
+        "split": "6dd981462e72fd9f06a679a4bf2c3cbb5b6177369592e4d3e60bcccd6a596d4b",
+        "child_idle": "6cb3c09f9afe04186562585e9c7f491e960b417a6a6fd62524f530a29b31ea43",
+        "child_move": "dc8238bcbbd2866390a793ea25732acac528be036772a57457e003e5736833a7",
+        "child_telegraph": "5251d63fd8a8528aa444b492f8320fbab6d207d9c426fcbac68ae361c765a6cb",
+        "child_attack": "e9dc8d23136228c9fef9aefcc34ba1c355638bf5263524d979475ad1f636b5c9",
+        "child_recover": "786f867f4eb2f4bd1936b772b4af0bc70f98d88dd7dc44c7638da8119056eef6",
+        "child_hurt": "6eef694fa543d2f2e68a79f8df17ddad0a53d9ac21d3e14f03d4ddbe365a0ed0",
+        "child_death": "a7dbc7cf0367c478fd15c824f40246511d14e0af53bd66d159911b15dcf16116"
+      }
+    },
+    "ENM-04": {
+      "name": "藤鞭花",
+      "slug": "vine_flower",
+      "root": [
+        32,
+        58
+      ],
+      "root_kind": "root",
+      "palette": [
+        "#211a2b",
+        "#304b35",
+        "#527847",
+        "#87a94f",
+        "#bb5b78",
+        "#e992a4",
+        "#ffd0c2",
+        "#fff2c7"
+      ],
+      "animations": {
+        "idle": {
+          "frames": [
+            "ENM-04/v001/frames/ENM-04_idle_right_v001_f01.png",
+            "ENM-04/v001/frames/ENM-04_idle_right_v001_f02.png",
+            "ENM-04/v001/frames/ENM-04_idle_right_v001_f03.png",
+            "ENM-04/v001/frames/ENM-04_idle_right_v001_f04.png"
+          ],
+          "fps": 6,
+          "loop": true,
+          "layer": "body",
+          "frame_count": 4,
+          "sheet": "ENM-04/v001/sheets/ENM-04_idle_right_v001_sheet.png"
+        },
+        "move": {
+          "frames": [
+            "ENM-04/v001/frames/ENM-04_move_right_v001_f01.png",
+            "ENM-04/v001/frames/ENM-04_move_right_v001_f02.png",
+            "ENM-04/v001/frames/ENM-04_move_right_v001_f03.png",
+            "ENM-04/v001/frames/ENM-04_move_right_v001_f04.png",
+            "ENM-04/v001/frames/ENM-04_move_right_v001_f05.png",
+            "ENM-04/v001/frames/ENM-04_move_right_v001_f06.png"
+          ],
+          "fps": 10,
+          "loop": true,
+          "layer": "body",
+          "frame_count": 6,
+          "sheet": "ENM-04/v001/sheets/ENM-04_move_right_v001_sheet.png"
+        },
+        "telegraph": {
+          "frames": [
+            "ENM-04/v001/frames/ENM-04_telegraph_right_v001_f01.png",
+            "ENM-04/v001/frames/ENM-04_telegraph_right_v001_f02.png",
+            "ENM-04/v001/frames/ENM-04_telegraph_right_v001_f03.png"
+          ],
+          "fps": 8,
+          "loop": false,
+          "layer": "body",
+          "frame_count": 3,
+          "sheet": "ENM-04/v001/sheets/ENM-04_telegraph_right_v001_sheet.png"
+        },
+        "attack": {
+          "frames": [
+            "ENM-04/v001/frames/ENM-04_attack_right_v001_f01.png",
+            "ENM-04/v001/frames/ENM-04_attack_right_v001_f02.png",
+            "ENM-04/v001/frames/ENM-04_attack_right_v001_f03.png",
+            "ENM-04/v001/frames/ENM-04_attack_right_v001_f04.png"
+          ],
+          "fps": 12,
+          "loop": false,
+          "layer": "body",
+          "frame_count": 4,
+          "sheet": "ENM-04/v001/sheets/ENM-04_attack_right_v001_sheet.png"
+        },
+        "recover": {
+          "frames": [
+            "ENM-04/v001/frames/ENM-04_recover_right_v001_f01.png",
+            "ENM-04/v001/frames/ENM-04_recover_right_v001_f02.png"
+          ],
+          "fps": 8,
+          "loop": false,
+          "layer": "body",
+          "frame_count": 2,
+          "sheet": "ENM-04/v001/sheets/ENM-04_recover_right_v001_sheet.png"
+        },
+        "hurt": {
+          "frames": [
+            "ENM-04/v001/frames/ENM-04_hurt_right_v001_f01.png",
+            "ENM-04/v001/frames/ENM-04_hurt_right_v001_f02.png"
+          ],
+          "fps": 10,
+          "loop": false,
+          "layer": "body",
+          "frame_count": 2,
+          "sheet": "ENM-04/v001/sheets/ENM-04_hurt_right_v001_sheet.png"
+        },
+        "death": {
+          "frames": [
+            "ENM-04/v001/frames/ENM-04_death_right_v001_f01.png",
+            "ENM-04/v001/frames/ENM-04_death_right_v001_f02.png",
+            "ENM-04/v001/frames/ENM-04_death_right_v001_f03.png",
+            "ENM-04/v001/frames/ENM-04_death_right_v001_f04.png",
+            "ENM-04/v001/frames/ENM-04_death_right_v001_f05.png",
+            "ENM-04/v001/frames/ENM-04_death_right_v001_f06.png"
+          ],
+          "fps": 8,
+          "loop": false,
+          "layer": "body",
+          "frame_count": 6,
+          "sheet": "ENM-04/v001/sheets/ENM-04_death_right_v001_sheet.png"
+        }
+      },
+      "master": "ENM-04/v001/ENM-04_master_right_v001.png",
+      "source_hashes": {
+        "idle": "64524fe137da41bd58ea6d7ecaca9dc08dae5b9c3115a5237b2b11b6f4cd66c1",
+        "move": "2bc8d932d9609f35866fd3799a2a7048561e5138b3734ad57b2da68c008f6a51",
+        "telegraph": "bd4bb2712e9cb1b16906509ca1e0b91afd01d934966d55cbfddc0b54effa42fc",
+        "attack": "520862e6599e904e520cde1f19d7368dea2ff539336042d46f97c779294c3d6c",
+        "recover": "62717d4c8eb0eb886829c419fe598cded7d55b469aea643b17e9a7d76a96a0c9",
+        "hurt": "3ffec45ab4b639742f402f1ad9f663a05cae53b32445448d2618dd51d6349d30",
+        "death": "b2cdae34bcf0d65d076e618e5b191eb02f5d0db9c7bd6e19c011317dd9e69d35"
+      }
+    },
+    "ENM-05": {
+      "name": "矿灯虫",
+      "slug": "lamp_beetle",
+      "root": [
+        32,
+        58
+      ],
+      "root_kind": "ground",
+      "palette": [
+        "#171827",
+        "#29314b",
+        "#405374",
+        "#6683a1",
+        "#e3973f",
+        "#ffd36a",
+        "#fff2c7"
+      ],
+      "animations": {
+        "idle": {
+          "frames": [
+            "ENM-05/v001/frames/ENM-05_idle_right_v001_f01.png",
+            "ENM-05/v001/frames/ENM-05_idle_right_v001_f02.png",
+            "ENM-05/v001/frames/ENM-05_idle_right_v001_f03.png",
+            "ENM-05/v001/frames/ENM-05_idle_right_v001_f04.png"
+          ],
+          "fps": 6,
+          "loop": true,
+          "layer": "body",
+          "frame_count": 4,
+          "sheet": "ENM-05/v001/sheets/ENM-05_idle_right_v001_sheet.png"
+        },
+        "move": {
+          "frames": [
+            "ENM-05/v001/frames/ENM-05_move_right_v001_f01.png",
+            "ENM-05/v001/frames/ENM-05_move_right_v001_f02.png",
+            "ENM-05/v001/frames/ENM-05_move_right_v001_f03.png",
+            "ENM-05/v001/frames/ENM-05_move_right_v001_f04.png",
+            "ENM-05/v001/frames/ENM-05_move_right_v001_f05.png",
+            "ENM-05/v001/frames/ENM-05_move_right_v001_f06.png"
+          ],
+          "fps": 10,
+          "loop": true,
+          "layer": "body",
+          "frame_count": 6,
+          "sheet": "ENM-05/v001/sheets/ENM-05_move_right_v001_sheet.png"
+        },
+        "telegraph": {
+          "frames": [
+            "ENM-05/v001/frames/ENM-05_telegraph_right_v001_f01.png",
+            "ENM-05/v001/frames/ENM-05_telegraph_right_v001_f02.png",
+            "ENM-05/v001/frames/ENM-05_telegraph_right_v001_f03.png"
+          ],
+          "fps": 8,
+          "loop": false,
+          "layer": "body",
+          "frame_count": 3,
+          "sheet": "ENM-05/v001/sheets/ENM-05_telegraph_right_v001_sheet.png"
+        },
+        "attack": {
+          "frames": [
+            "ENM-05/v001/frames/ENM-05_attack_right_v001_f01.png",
+            "ENM-05/v001/frames/ENM-05_attack_right_v001_f02.png",
+            "ENM-05/v001/frames/ENM-05_attack_right_v001_f03.png",
+            "ENM-05/v001/frames/ENM-05_attack_right_v001_f04.png"
+          ],
+          "fps": 12,
+          "loop": false,
+          "layer": "body",
+          "frame_count": 4,
+          "sheet": "ENM-05/v001/sheets/ENM-05_attack_right_v001_sheet.png"
+        },
+        "recover": {
+          "frames": [
+            "ENM-05/v001/frames/ENM-05_recover_right_v001_f01.png",
+            "ENM-05/v001/frames/ENM-05_recover_right_v001_f02.png"
+          ],
+          "fps": 8,
+          "loop": false,
+          "layer": "body",
+          "frame_count": 2,
+          "sheet": "ENM-05/v001/sheets/ENM-05_recover_right_v001_sheet.png"
+        },
+        "hurt": {
+          "frames": [
+            "ENM-05/v001/frames/ENM-05_hurt_right_v001_f01.png",
+            "ENM-05/v001/frames/ENM-05_hurt_right_v001_f02.png"
+          ],
+          "fps": 10,
+          "loop": false,
+          "layer": "body",
+          "frame_count": 2,
+          "sheet": "ENM-05/v001/sheets/ENM-05_hurt_right_v001_sheet.png"
+        },
+        "death": {
+          "frames": [
+            "ENM-05/v001/frames/ENM-05_death_right_v001_f01.png",
+            "ENM-05/v001/frames/ENM-05_death_right_v001_f02.png",
+            "ENM-05/v001/frames/ENM-05_death_right_v001_f03.png",
+            "ENM-05/v001/frames/ENM-05_death_right_v001_f04.png",
+            "ENM-05/v001/frames/ENM-05_death_right_v001_f05.png",
+            "ENM-05/v001/frames/ENM-05_death_right_v001_f06.png"
+          ],
+          "fps": 8,
+          "loop": false,
+          "layer": "body",
+          "frame_count": 6,
+          "sheet": "ENM-05/v001/sheets/ENM-05_death_right_v001_sheet.png"
+        },
+        "glow_idle": {
+          "frames": [
+            "ENM-05/v001/frames/ENM-05_glow_idle_right_v001_f01.png",
+            "ENM-05/v001/frames/ENM-05_glow_idle_right_v001_f02.png",
+            "ENM-05/v001/frames/ENM-05_glow_idle_right_v001_f03.png",
+            "ENM-05/v001/frames/ENM-05_glow_idle_right_v001_f04.png"
+          ],
+          "fps": 6,
+          "loop": true,
+          "layer": "glow",
+          "frame_count": 4,
+          "sheet": "ENM-05/v001/sheets/ENM-05_glow_idle_right_v001_sheet.png"
+        },
+        "glow_move": {
+          "frames": [
+            "ENM-05/v001/frames/ENM-05_glow_move_right_v001_f01.png",
+            "ENM-05/v001/frames/ENM-05_glow_move_right_v001_f02.png",
+            "ENM-05/v001/frames/ENM-05_glow_move_right_v001_f03.png",
+            "ENM-05/v001/frames/ENM-05_glow_move_right_v001_f04.png",
+            "ENM-05/v001/frames/ENM-05_glow_move_right_v001_f05.png",
+            "ENM-05/v001/frames/ENM-05_glow_move_right_v001_f06.png"
+          ],
+          "fps": 10,
+          "loop": true,
+          "layer": "glow",
+          "frame_count": 6,
+          "sheet": "ENM-05/v001/sheets/ENM-05_glow_move_right_v001_sheet.png"
+        },
+        "glow_telegraph": {
+          "frames": [
+            "ENM-05/v001/frames/ENM-05_glow_telegraph_right_v001_f01.png",
+            "ENM-05/v001/frames/ENM-05_glow_telegraph_right_v001_f02.png",
+            "ENM-05/v001/frames/ENM-05_glow_telegraph_right_v001_f03.png"
+          ],
+          "fps": 8,
+          "loop": false,
+          "layer": "glow",
+          "frame_count": 3,
+          "sheet": "ENM-05/v001/sheets/ENM-05_glow_telegraph_right_v001_sheet.png"
+        },
+        "glow_attack": {
+          "frames": [
+            "ENM-05/v001/frames/ENM-05_glow_attack_right_v001_f01.png",
+            "ENM-05/v001/frames/ENM-05_glow_attack_right_v001_f02.png",
+            "ENM-05/v001/frames/ENM-05_glow_attack_right_v001_f03.png",
+            "ENM-05/v001/frames/ENM-05_glow_attack_right_v001_f04.png"
+          ],
+          "fps": 12,
+          "loop": false,
+          "layer": "glow",
+          "frame_count": 4,
+          "sheet": "ENM-05/v001/sheets/ENM-05_glow_attack_right_v001_sheet.png"
+        },
+        "glow_recover": {
+          "frames": [
+            "ENM-05/v001/frames/ENM-05_glow_recover_right_v001_f01.png",
+            "ENM-05/v001/frames/ENM-05_glow_recover_right_v001_f02.png"
+          ],
+          "fps": 8,
+          "loop": false,
+          "layer": "glow",
+          "frame_count": 2,
+          "sheet": "ENM-05/v001/sheets/ENM-05_glow_recover_right_v001_sheet.png"
+        },
+        "glow_hurt": {
+          "frames": [
+            "ENM-05/v001/frames/ENM-05_glow_hurt_right_v001_f01.png",
+            "ENM-05/v001/frames/ENM-05_glow_hurt_right_v001_f02.png"
+          ],
+          "fps": 10,
+          "loop": false,
+          "layer": "glow",
+          "frame_count": 2,
+          "sheet": "ENM-05/v001/sheets/ENM-05_glow_hurt_right_v001_sheet.png"
+        },
+        "glow_death": {
+          "frames": [
+            "ENM-05/v001/frames/ENM-05_glow_death_right_v001_f01.png",
+            "ENM-05/v001/frames/ENM-05_glow_death_right_v001_f02.png",
+            "ENM-05/v001/frames/ENM-05_glow_death_right_v001_f03.png",
+            "ENM-05/v001/frames/ENM-05_glow_death_right_v001_f04.png",
+            "ENM-05/v001/frames/ENM-05_glow_death_right_v001_f05.png",
+            "ENM-05/v001/frames/ENM-05_glow_death_right_v001_f06.png"
+          ],
+          "fps": 8,
+          "loop": false,
+          "layer": "glow",
+          "frame_count": 6,
+          "sheet": "ENM-05/v001/sheets/ENM-05_glow_death_right_v001_sheet.png"
+        }
+      },
+      "master": "ENM-05/v001/ENM-05_master_right_v001.png",
+      "source_hashes": {
+        "idle": "18e9de9089e39da1c4b2d4cf1267d973b57ea07d55aae15b0b8628f9f56b0bb3",
+        "move": "f351f02da3903ef2b3c59ec36700a8bf9ef72a7f2654ef6dbadce1afbe44dc26",
+        "telegraph": "abe9ce9314c5d04c69fcc5d8de74a98d4491c9f096fc7c05d0e2384c48d8f60c",
+        "attack": "ce5502170b9cafee660b5f58301c43a5dfebd0d552253a1d8d22519cb9f92433",
+        "recover": "d1a396d4caf38c08a32d52bcf942c44bd6de17520be040e47756da7beaf92ee4",
+        "hurt": "3263b7a46d980d4737587ad18e03ed7ab7596c5dfaba24bbbfb8bfd941b2fedc",
+        "death": "f978816faa820cd95a4c504b012818e542755ffa740b77a5f2f6e52e06e7e029",
+        "glow_idle": "56d90a4d3ce0b9bdc149fadfc53c66216871ef5c624eeaa1d08d7227885538ca",
+        "glow_move": "5767b96ccb74e7dc1a6c373d1bd65bff7c77b534719412307167f3ec0937df41",
+        "glow_telegraph": "cbf2b7e069a22a92b3cdf892b10269ac43bc5277b9ff27b6de512000f0b53a7d",
+        "glow_attack": "f68d9ca6d6435c9c6fe892f6c415b283e6a8a49479a8768e185a8970fbb876c7",
+        "glow_recover": "498c392b040b214f371a0067cae1ce80f49f3497feebd348efef0e0cbffd7215",
+        "glow_hurt": "6256d4289adf26d818cb01e0afb4647a4835d789dc1b1364a3cde7356aaf5a0d",
+        "glow_death": "bdb7110b53b392d6169223027a88e4d1278082d49f9b3546fc89b246896d33dc"
+      }
+    },
+    "ENM-06": {
+      "name": "暗影奶灵",
+      "slug": "shadow_wraith",
+      "root": [
+        32,
+        32
+      ],
+      "root_kind": "body",
+      "palette": [
+        "#171522",
+        "#3c3157",
+        "#66548a",
+        "#9a87bc",
+        "#c7e6df",
+        "#fff9e8"
+      ],
+      "animations": {
+        "idle": {
+          "frames": [
+            "ENM-06/v001/frames/ENM-06_idle_right_v001_f01.png",
+            "ENM-06/v001/frames/ENM-06_idle_right_v001_f02.png",
+            "ENM-06/v001/frames/ENM-06_idle_right_v001_f03.png",
+            "ENM-06/v001/frames/ENM-06_idle_right_v001_f04.png"
+          ],
+          "fps": 6,
+          "loop": true,
+          "layer": "body",
+          "frame_count": 4,
+          "sheet": "ENM-06/v001/sheets/ENM-06_idle_right_v001_sheet.png"
+        },
+        "move": {
+          "frames": [
+            "ENM-06/v001/frames/ENM-06_move_right_v001_f01.png",
+            "ENM-06/v001/frames/ENM-06_move_right_v001_f02.png",
+            "ENM-06/v001/frames/ENM-06_move_right_v001_f03.png",
+            "ENM-06/v001/frames/ENM-06_move_right_v001_f04.png",
+            "ENM-06/v001/frames/ENM-06_move_right_v001_f05.png",
+            "ENM-06/v001/frames/ENM-06_move_right_v001_f06.png"
+          ],
+          "fps": 10,
+          "loop": true,
+          "layer": "body",
+          "frame_count": 6,
+          "sheet": "ENM-06/v001/sheets/ENM-06_move_right_v001_sheet.png"
+        },
+        "telegraph": {
+          "frames": [
+            "ENM-06/v001/frames/ENM-06_telegraph_right_v001_f01.png",
+            "ENM-06/v001/frames/ENM-06_telegraph_right_v001_f02.png",
+            "ENM-06/v001/frames/ENM-06_telegraph_right_v001_f03.png"
+          ],
+          "fps": 8,
+          "loop": false,
+          "layer": "body",
+          "frame_count": 3,
+          "sheet": "ENM-06/v001/sheets/ENM-06_telegraph_right_v001_sheet.png"
+        },
+        "attack": {
+          "frames": [
+            "ENM-06/v001/frames/ENM-06_attack_right_v001_f01.png",
+            "ENM-06/v001/frames/ENM-06_attack_right_v001_f02.png",
+            "ENM-06/v001/frames/ENM-06_attack_right_v001_f03.png",
+            "ENM-06/v001/frames/ENM-06_attack_right_v001_f04.png"
+          ],
+          "fps": 12,
+          "loop": false,
+          "layer": "body",
+          "frame_count": 4,
+          "sheet": "ENM-06/v001/sheets/ENM-06_attack_right_v001_sheet.png"
+        },
+        "recover": {
+          "frames": [
+            "ENM-06/v001/frames/ENM-06_recover_right_v001_f01.png",
+            "ENM-06/v001/frames/ENM-06_recover_right_v001_f02.png"
+          ],
+          "fps": 8,
+          "loop": false,
+          "layer": "body",
+          "frame_count": 2,
+          "sheet": "ENM-06/v001/sheets/ENM-06_recover_right_v001_sheet.png"
+        },
+        "hurt": {
+          "frames": [
+            "ENM-06/v001/frames/ENM-06_hurt_right_v001_f01.png",
+            "ENM-06/v001/frames/ENM-06_hurt_right_v001_f02.png"
+          ],
+          "fps": 10,
+          "loop": false,
+          "layer": "body",
+          "frame_count": 2,
+          "sheet": "ENM-06/v001/sheets/ENM-06_hurt_right_v001_sheet.png"
+        },
+        "death": {
+          "frames": [
+            "ENM-06/v001/frames/ENM-06_death_right_v001_f01.png",
+            "ENM-06/v001/frames/ENM-06_death_right_v001_f02.png",
+            "ENM-06/v001/frames/ENM-06_death_right_v001_f03.png",
+            "ENM-06/v001/frames/ENM-06_death_right_v001_f04.png",
+            "ENM-06/v001/frames/ENM-06_death_right_v001_f05.png",
+            "ENM-06/v001/frames/ENM-06_death_right_v001_f06.png"
+          ],
+          "fps": 8,
+          "loop": false,
+          "layer": "body",
+          "frame_count": 6,
+          "sheet": "ENM-06/v001/sheets/ENM-06_death_right_v001_sheet.png"
+        },
+        "immune": {
+          "frames": [
+            "ENM-06/v001/frames/ENM-06_immune_right_v001_f01.png",
+            "ENM-06/v001/frames/ENM-06_immune_right_v001_f02.png",
+            "ENM-06/v001/frames/ENM-06_immune_right_v001_f03.png",
+            "ENM-06/v001/frames/ENM-06_immune_right_v001_f04.png"
+          ],
+          "fps": 8,
+          "loop": true,
+          "layer": "body",
+          "frame_count": 4,
+          "sheet": "ENM-06/v001/sheets/ENM-06_immune_right_v001_sheet.png"
+        }
+      },
+      "master": "ENM-06/v001/ENM-06_master_right_v001.png",
+      "source_hashes": {
+        "idle": "2b40ec1c903726d5b434385d3304aa76c4bf985d38fab9360f5014121fa2e877",
+        "move": "d3362f1e6743e7b76895b3ae2210486947a6f6d5fd4894d0a068d1904d844a38",
+        "telegraph": "6b6c4c137b715957b562fd712f5e02fb20560273b9e75bcf8bdf813ae4d6645f",
+        "attack": "200bb6402430a70bbb05a14d892a0eab584e8954f5b6249447098a32e6db755f",
+        "recover": "98d11555f12e51f3031d2dc1588b655af9df3c420327014a9f2ac4bed548790e",
+        "hurt": "8ee3be76b2136a2e38f5f66a38c47959867d0f66a12ac50f030d4b1780c33062",
+        "death": "cee985b5be96553286d523e6cebb530a5b1984d44ded3280b5841a7726347fc8",
+        "immune": "5ed000d2914b35baabaf19b1aad51c801c7e12d8efad4e63f5bf5c4cdd6960fb"
+      }
+    },
+    "ENM-07": {
+      "name": "酸液蛞",
+      "slug": "acid_slug",
+      "root": [
+        32,
+        58
+      ],
+      "root_kind": "ground",
+      "palette": [
+        "#211a2b",
+        "#45512a",
+        "#708536",
+        "#aaba47",
+        "#d4db68",
+        "#eff39a",
+        "#fff2c7"
+      ],
+      "animations": {
+        "idle": {
+          "frames": [
+            "ENM-07/v001/frames/ENM-07_idle_right_v001_f01.png",
+            "ENM-07/v001/frames/ENM-07_idle_right_v001_f02.png",
+            "ENM-07/v001/frames/ENM-07_idle_right_v001_f03.png",
+            "ENM-07/v001/frames/ENM-07_idle_right_v001_f04.png"
+          ],
+          "fps": 6,
+          "loop": true,
+          "layer": "body",
+          "frame_count": 4,
+          "sheet": "ENM-07/v001/sheets/ENM-07_idle_right_v001_sheet.png"
+        },
+        "move": {
+          "frames": [
+            "ENM-07/v001/frames/ENM-07_move_right_v001_f01.png",
+            "ENM-07/v001/frames/ENM-07_move_right_v001_f02.png",
+            "ENM-07/v001/frames/ENM-07_move_right_v001_f03.png",
+            "ENM-07/v001/frames/ENM-07_move_right_v001_f04.png",
+            "ENM-07/v001/frames/ENM-07_move_right_v001_f05.png",
+            "ENM-07/v001/frames/ENM-07_move_right_v001_f06.png"
+          ],
+          "fps": 10,
+          "loop": true,
+          "layer": "body",
+          "frame_count": 6,
+          "sheet": "ENM-07/v001/sheets/ENM-07_move_right_v001_sheet.png"
+        },
+        "telegraph": {
+          "frames": [
+            "ENM-07/v001/frames/ENM-07_telegraph_right_v001_f01.png",
+            "ENM-07/v001/frames/ENM-07_telegraph_right_v001_f02.png",
+            "ENM-07/v001/frames/ENM-07_telegraph_right_v001_f03.png"
+          ],
+          "fps": 8,
+          "loop": false,
+          "layer": "body",
+          "frame_count": 3,
+          "sheet": "ENM-07/v001/sheets/ENM-07_telegraph_right_v001_sheet.png"
+        },
+        "attack": {
+          "frames": [
+            "ENM-07/v001/frames/ENM-07_attack_right_v001_f01.png",
+            "ENM-07/v001/frames/ENM-07_attack_right_v001_f02.png",
+            "ENM-07/v001/frames/ENM-07_attack_right_v001_f03.png",
+            "ENM-07/v001/frames/ENM-07_attack_right_v001_f04.png"
+          ],
+          "fps": 12,
+          "loop": false,
+          "layer": "body",
+          "frame_count": 4,
+          "sheet": "ENM-07/v001/sheets/ENM-07_attack_right_v001_sheet.png"
+        },
+        "recover": {
+          "frames": [
+            "ENM-07/v001/frames/ENM-07_recover_right_v001_f01.png",
+            "ENM-07/v001/frames/ENM-07_recover_right_v001_f02.png"
+          ],
+          "fps": 8,
+          "loop": false,
+          "layer": "body",
+          "frame_count": 2,
+          "sheet": "ENM-07/v001/sheets/ENM-07_recover_right_v001_sheet.png"
+        },
+        "hurt": {
+          "frames": [
+            "ENM-07/v001/frames/ENM-07_hurt_right_v001_f01.png",
+            "ENM-07/v001/frames/ENM-07_hurt_right_v001_f02.png"
+          ],
+          "fps": 10,
+          "loop": false,
+          "layer": "body",
+          "frame_count": 2,
+          "sheet": "ENM-07/v001/sheets/ENM-07_hurt_right_v001_sheet.png"
+        },
+        "death": {
+          "frames": [
+            "ENM-07/v001/frames/ENM-07_death_right_v001_f01.png",
+            "ENM-07/v001/frames/ENM-07_death_right_v001_f02.png",
+            "ENM-07/v001/frames/ENM-07_death_right_v001_f03.png",
+            "ENM-07/v001/frames/ENM-07_death_right_v001_f04.png",
+            "ENM-07/v001/frames/ENM-07_death_right_v001_f05.png",
+            "ENM-07/v001/frames/ENM-07_death_right_v001_f06.png"
+          ],
+          "fps": 8,
+          "loop": false,
+          "layer": "body",
+          "frame_count": 6,
+          "sheet": "ENM-07/v001/sheets/ENM-07_death_right_v001_sheet.png"
+        },
+        "acid_loop": {
+          "frames": [
+            "ENM-07/v001/frames/ENM-07_acid_loop_right_v001_f01.png",
+            "ENM-07/v001/frames/ENM-07_acid_loop_right_v001_f02.png",
+            "ENM-07/v001/frames/ENM-07_acid_loop_right_v001_f03.png",
+            "ENM-07/v001/frames/ENM-07_acid_loop_right_v001_f04.png"
+          ],
+          "fps": 6,
+          "loop": true,
+          "layer": "acid",
+          "frame_count": 4,
+          "sheet": "ENM-07/v001/sheets/ENM-07_acid_loop_right_v001_sheet.png"
+        }
+      },
+      "master": "ENM-07/v001/ENM-07_master_right_v001.png",
+      "source_hashes": {
+        "idle": "9f271d0666b1fd19ad6b5e0c9e32ec7ad4489329bd2530ee6cdedf11a4873c5d",
+        "move": "bb9658fc4ffcbbd1d07632c82d1d5c787ac08a925ddbd3054e392ff809610ccf",
+        "telegraph": "ceb0e4023ace7083aafce1c419992a323a1261975521abe11dc0c7833ce42ac0",
+        "attack": "e5207a787579210afcb0a4a412599c3869d4fbbf4413bfe2481e453a0a3b1ce5",
+        "recover": "5fecd7b3971e1838d340d9ec24ec26eb330fc5e1e6d1c8ff956203bbf17f6761",
+        "hurt": "5eb348e52f25b9f9ac29263c48ff5b7cd70b8a404a282e8981410c696c7369c6",
+        "death": "fb6115bc42c521259b0b65710390786a6d7192f57c09a835b3a697a3b1909d8a",
+        "acid_loop": "4728410a2cc3743ee24cb2b77b20a5a85297ec87ae7313d9da35ac0c285cf713"
+      }
+    },
+    "ENM-08": {
+      "name": "蜜蜡蜂",
+      "slug": "wax_bee",
+      "root": [
+        32,
+        32
+      ],
+      "root_kind": "body",
+      "palette": [
+        "#211a2b",
+        "#6b422d",
+        "#a86632",
+        "#e5a43c",
+        "#ffd66b",
+        "#fff2c7",
+        "#bfdde0"
+      ],
+      "animations": {
+        "idle": {
+          "frames": [
+            "ENM-08/v001/frames/ENM-08_idle_right_v001_f01.png",
+            "ENM-08/v001/frames/ENM-08_idle_right_v001_f02.png",
+            "ENM-08/v001/frames/ENM-08_idle_right_v001_f03.png",
+            "ENM-08/v001/frames/ENM-08_idle_right_v001_f04.png"
+          ],
+          "fps": 6,
+          "loop": true,
+          "layer": "body",
+          "frame_count": 4,
+          "sheet": "ENM-08/v001/sheets/ENM-08_idle_right_v001_sheet.png"
+        },
+        "move": {
+          "frames": [
+            "ENM-08/v001/frames/ENM-08_move_right_v001_f01.png",
+            "ENM-08/v001/frames/ENM-08_move_right_v001_f02.png",
+            "ENM-08/v001/frames/ENM-08_move_right_v001_f03.png",
+            "ENM-08/v001/frames/ENM-08_move_right_v001_f04.png",
+            "ENM-08/v001/frames/ENM-08_move_right_v001_f05.png",
+            "ENM-08/v001/frames/ENM-08_move_right_v001_f06.png"
+          ],
+          "fps": 10,
+          "loop": true,
+          "layer": "body",
+          "frame_count": 6,
+          "sheet": "ENM-08/v001/sheets/ENM-08_move_right_v001_sheet.png"
+        },
+        "telegraph": {
+          "frames": [
+            "ENM-08/v001/frames/ENM-08_telegraph_right_v001_f01.png",
+            "ENM-08/v001/frames/ENM-08_telegraph_right_v001_f02.png",
+            "ENM-08/v001/frames/ENM-08_telegraph_right_v001_f03.png"
+          ],
+          "fps": 8,
+          "loop": false,
+          "layer": "body",
+          "frame_count": 3,
+          "sheet": "ENM-08/v001/sheets/ENM-08_telegraph_right_v001_sheet.png"
+        },
+        "attack": {
+          "frames": [
+            "ENM-08/v001/frames/ENM-08_attack_right_v001_f01.png",
+            "ENM-08/v001/frames/ENM-08_attack_right_v001_f02.png",
+            "ENM-08/v001/frames/ENM-08_attack_right_v001_f03.png",
+            "ENM-08/v001/frames/ENM-08_attack_right_v001_f04.png"
+          ],
+          "fps": 12,
+          "loop": false,
+          "layer": "body",
+          "frame_count": 4,
+          "sheet": "ENM-08/v001/sheets/ENM-08_attack_right_v001_sheet.png"
+        },
+        "recover": {
+          "frames": [
+            "ENM-08/v001/frames/ENM-08_recover_right_v001_f01.png",
+            "ENM-08/v001/frames/ENM-08_recover_right_v001_f02.png"
+          ],
+          "fps": 8,
+          "loop": false,
+          "layer": "body",
+          "frame_count": 2,
+          "sheet": "ENM-08/v001/sheets/ENM-08_recover_right_v001_sheet.png"
+        },
+        "hurt": {
+          "frames": [
+            "ENM-08/v001/frames/ENM-08_hurt_right_v001_f01.png",
+            "ENM-08/v001/frames/ENM-08_hurt_right_v001_f02.png"
+          ],
+          "fps": 10,
+          "loop": false,
+          "layer": "body",
+          "frame_count": 2,
+          "sheet": "ENM-08/v001/sheets/ENM-08_hurt_right_v001_sheet.png"
+        },
+        "death": {
+          "frames": [
+            "ENM-08/v001/frames/ENM-08_death_right_v001_f01.png",
+            "ENM-08/v001/frames/ENM-08_death_right_v001_f02.png",
+            "ENM-08/v001/frames/ENM-08_death_right_v001_f03.png",
+            "ENM-08/v001/frames/ENM-08_death_right_v001_f04.png",
+            "ENM-08/v001/frames/ENM-08_death_right_v001_f05.png",
+            "ENM-08/v001/frames/ENM-08_death_right_v001_f06.png"
+          ],
+          "fps": 8,
+          "loop": false,
+          "layer": "body",
+          "frame_count": 6,
+          "sheet": "ENM-08/v001/sheets/ENM-08_death_right_v001_sheet.png"
+        }
+      },
+      "master": "ENM-08/v001/ENM-08_master_right_v001.png",
+      "source_hashes": {
+        "idle": "14f7253aa16a034d15d4725a0c15d637d85295d7fda064b63e4705a6e8618ed7",
+        "move": "22ab9f8fdc4ee871bd4e15faf359c7c1885a627c37fcf7b67ff920622d5e25ce",
+        "telegraph": "2f4d3b8b046614f157f2c51da0ea0c423447b364672ad9cdcfcfe3d8b5a9ffb5",
+        "attack": "d801c6621d6273edb9feae56f2819c4093dbb5036eda8559ceca28846cff703f",
+        "recover": "352a966f219e7b47c4e7fe383ab6443ae24f37e4219a801b406fb0b957af529d",
+        "hurt": "e90ed0b53ea32e317f2da20de9ffee1ce534c30c6c5fdb43e6544b04816b2a72",
+        "death": "e3dabd09aa22e99cebabcb27bb33b02282fa507c2e2206e32dc24e822e37bd8f"
+      }
+    }
+  }
+}

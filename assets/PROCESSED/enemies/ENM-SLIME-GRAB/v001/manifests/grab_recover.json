@@ -1,0 +1,203 @@
+{
+  "id": "ENM-03_grab_recover",
+  "enemyId": "ENM-03",
+  "gameEnemyId": "milk_slime",
+  "kind": "body",
+  "name": "grab_recover",
+  "label": "史莱姆触手抓取",
+  "frames": [
+    "frames/tentacle_grab/12.png",
+    "frames/tentacle_grab/13.png",
+    "frames/tentacle_grab/14.png",
+    "frames/tentacle_grab/15.png"
+  ],
+  "frameCount": 4,
+  "fps": 10,
+  "loop": false,
+  "anchor": [
+    96,
+    136
+  ],
+  "target": [
+    288,
+    176
+  ],
+  "fadeStartNormalized": 1.0,
+  "sourcePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-SLIME-GRAB/v001/tentacle_grab.png",
+  "sourceSha256": "25b1893d39758494eecea4308df9b4438497535408c8fd3016a2a1a9ed47eb03",
+  "promptPath": "/home/lululu/zgame/assets/RAW/enemies/ENM-SLIME-GRAB/v001/tentacle_grab_retry.prompt.txt",
+  "generationMode": "built-in-image_gen",
+  "scale": 0.33,
+  "sourceRects": [
+    [
+      0,
+      960,
+      332,
+      294
+    ],
+    [
+      332,
+      960,
+      295,
+      294
+    ],
+    [
+      627,
+      960,
+      313,
+      294
+    ],
+    [
+      940,
+      960,
+      314,
+      294
+    ]
+  ],
+  "sourceAnchors": [
+    [
+      126.5,
+      245
+    ],
+    [
+      122.5,
+      244
+    ],
+    [
+      130,
+      245
+    ],
+    [
+      122.5,
+      245
+    ]
+  ],
+  "frameDetails": [
+    {
+      "sourceRect": [
+        0,
+        960,
+        332,
+        294
+      ],
+      "sourceAnchor": [
+        126.5,
+        245
+      ],
+      "sourceRegions": [
+        [
+          0,
+          960,
+          332,
+          294
+        ]
+      ],
+      "offset": [
+        54,
+        55
+      ],
+      "alphaBBox": [
+        60,
+        57,
+        164,
+        138
+      ]
+    },
+    {
+      "sourceRect": [
+        332,
+        960,
+        295,
+        294
+      ],
+      "sourceAnchor": [
+        122.5,
+        244
+      ],
+      "sourceRegions": [
+        [
+          332,
+          960,
+          295,
+          294
+        ]
+      ],
+      "offset": [
+        56,
+        55
+      ],
+      "alphaBBox": [
+        56,
+        56,
+        153,
+        149
+      ]
+    },
+    {
+      "sourceRect": [
+        627,
+        960,
+        313,
+        294
+      ],
+      "sourceAnchor": [
+        130,
+        245
+      ],
+      "sourceRegions": [
+        [
+          627,
+          960,
+          313,
+          294
+        ]
+      ],
+      "offset": [
+        53,
+        55
+      ],
+      "alphaBBox": [
+        53,
+        56,
+        156,
+        138
+      ]
+    },
+    {
+      "sourceRect": [
+        940,
+        960,
+        314,
+        294
+      ],
+      "sourceAnchor": [
+        122.5,
+        245
+      ],
+      "sourceRegions": [
+        [
+          940,
+          960,
+          314,
+          294
+        ]
+      ],
+      "offset": [
+        56,
+        55
+      ],
+      "alphaBBox": [
+        56,
+        55,
+        155,
+        143
+      ]
+    }
+  ],
+  "sourceFrameIndices": [
+    12,
+    13,
+    14,
+    15
+  ]
+}

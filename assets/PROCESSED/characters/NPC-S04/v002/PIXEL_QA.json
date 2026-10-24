@@ -1,0 +1,267 @@
+{
+  "id": "NPC-S04",
+  "version": "v002",
+  "frameCount": 18,
+  "animationCount": 3,
+  "root": [
+    32,
+    58
+  ],
+  "passed": true,
+  "errors": [],
+  "walkGround": "World ground anchor fixed; foot lift preserved. Opaque bottom varies according to actual source pose.",
+  "frames": [
+    {
+      "action": "idle",
+      "index": 0,
+      "opaqueBounds": [
+        12,
+        14,
+        37,
+        44
+      ],
+      "opaqueBottom": 58,
+      "transparentPixels": 2913,
+      "semiTransparentPixels": 1183,
+      "sha256": "56a5691d50662c680fc6763e45f47c2eae059137ec8846234e13d7ddaa7face8"
+    },
+    {
+      "action": "idle",
+      "index": 1,
+      "opaqueBounds": [
+        12,
+        14,
+        37,
+        44
+      ],
+      "opaqueBottom": 58,
+      "transparentPixels": 2885,
+      "semiTransparentPixels": 1211,
+      "sha256": "c38f431d3b508a095466eefb37a6d19330347b5a38c62e7f0ad54da8a31ce058"
+    },
+    {
+      "action": "idle",
+      "index": 2,
+      "opaqueBounds": [
+        12,
+        14,
+        37,
+        44
+      ],
+      "opaqueBottom": 58,
+      "transparentPixels": 2883,
+      "semiTransparentPixels": 1211,
+      "sha256": "33f9622693e2257631611fc12cdb9a71adae6448e0ad132f110a56714c76684d"
+    },
+    {
+      "action": "idle",
+      "index": 3,
+      "opaqueBounds": [
+        11,
+        14,
+        38,
+        44
+      ],
+      "opaqueBottom": 58,
+      "transparentPixels": 2896,
+      "semiTransparentPixels": 1198,
+      "sha256": "4518c12d03246136ba9102a42e7a4da89283e45c776135b83077a4a5344292ae"
+    },
+    {
+      "action": "idle",
+      "index": 4,
+      "opaqueBounds": [
+        12,
+        14,
+        37,
+        44
+      ],
+      "opaqueBottom": 58,
+      "transparentPixels": 2900,
+      "semiTransparentPixels": 1193,
+      "sha256": "e949d17ab2a0067f2cd3b2a970505d55fc465330a037d6a906566fb8533a84b2"
+    },
+    {
+      "action": "idle",
+      "index": 5,
+      "opaqueBounds": [
+        12,
+        14,
+        37,
+        44
+      ],
+      "opaqueBottom": 58,
+      "transparentPixels": 2923,
+      "semiTransparentPixels": 1171,
+      "sha256": "2552f872060f40ddd37db1d36a258369d13085eb741559c7fc05b1655039344e"
+    },
+    {
+      "action": "walk",
+      "index": 0,
+      "opaqueBounds": [
+        9,
+        14,
+        38,
+        43
+      ],
+      "opaqueBottom": 57,
+      "transparentPixels": 2958,
+      "semiTransparentPixels": 1138,
+      "sha256": "deab3d9d066828985fafe6ff5aa4396bebc21f28ed15bbbf8c24900ca73f8e54"
+    },
+    {
+      "action": "walk",
+      "index": 1,
+      "opaqueBounds": [
+        9,
+        14,
+        38,
+        44
+      ],
+      "opaqueBottom": 58,
+      "transparentPixels": 2992,
+      "semiTransparentPixels": 1104,
+      "sha256": "1909a624f2a764c198644c6835b94ee6fd106f36dfc8f7fd81470d1730f13d3b"
+    },
+    {
+      "action": "walk",
+      "index": 2,
+      "opaqueBounds": [
+        8,
+        14,
+        38,
+        43
+      ],
+      "opaqueBottom": 57,
+      "transparentPixels": 2939,
+      "semiTransparentPixels": 1155,
+      "sha256": "5a0d25ed2cd49c3d64328ded0f84fa8553439c5475fbab0ec7ae7bfc60d2adcb"
+    },
+    {
+      "action": "walk",
+      "index": 3,
+      "opaqueBounds": [
+        8,
+        14,
+        38,
+        43
+      ],
+      "opaqueBottom": 57,
+      "transparentPixels": 2995,
+      "semiTransparentPixels": 1099,
+      "sha256": "2618ad2b8cd20269b60464e752464fb881bc639618efa863393467be66596315"
+    },
+    {
+      "action": "walk",
+      "index": 4,
+      "opaqueBounds": [
+        9,
+        14,
+        38,
+        44
+      ],
+      "opaqueBottom": 58,
+      "transparentPixels": 2970,
+      "semiTransparentPixels": 1126,
+      "sha256": "93865d2ab0aa0608a2f3257dfb9b01362debfcf3ce18ca8641b3c2fc6c13faf0"
+    },
+    {
+      "action": "walk",
+      "index": 5,
+      "opaqueBounds": [
+        9,
+        14,
+        38,
+        44
+      ],
+      "opaqueBottom": 58,
+      "transparentPixels": 2995,
+      "semiTransparentPixels": 1101,
+      "sha256": "66749a607ef5fe208c095ee47dcfa760939bec95527908b31aa583c2891b4757"
+    },
+    {
+      "action": "walk",
+      "index": 6,
+      "opaqueBounds": [
+        9,
+        14,
+        38,
+        43
+      ],
+      "opaqueBottom": 57,
+      "transparentPixels": 2957,
+      "semiTransparentPixels": 1139,
+      "sha256": "d1957fec316adfa8501da06256486c9dcd2b234fa22e21d065028843e54acd19"
+    },
+    {
+      "action": "walk",
+      "index": 7,
+      "opaqueBounds": [
+        8,
+        14,
+        38,
+        44
+      ],
+      "opaqueBottom": 58,
+      "transparentPixels": 2994,
+      "semiTransparentPixels": 1102,
+      "sha256": "f8f2c649bfcd415acb2ac4eae394592c12cb5cc315435cb3a6fefe7b70478d09"
+    },
+    {
+      "action": "talk",
+      "index": 0,
+      "opaqueBounds": [
+        12,
+        14,
+        37,
+        44
+      ],
+      "opaqueBottom": 58,
+      "transparentPixels": 2875,
+      "semiTransparentPixels": 1219,
+      "sha256": "3dbc663cc421330eb042d75a34258ee53afe27ad477e65ae7d46b5414c01f8eb"
+    },
+    {
+      "action": "talk",
+      "index": 1,
+      "opaqueBounds": [
+        12,
+        14,
+        40,
+        44
+      ],
+      "opaqueBottom": 58,
+      "transparentPixels": 2845,
+      "semiTransparentPixels": 1249,
+      "sha256": "a520b292dd4546d410b975dac9a8e5912e60f01e745af8ad221ac029f22a8d35"
+    },
+    {
+      "action": "talk",
+      "index": 2,
+      "opaqueBounds": [
+        11,
+        14,
+        38,
+        44
+      ],
+      "opaqueBottom": 58,
+      "transparentPixels": 2892,
+      "semiTransparentPixels": 1202,
+      "sha256": "9ee18e8b18122b3c32b6bd5bec3ca51b5d11b4d3873f615ffae5abdba44cddb4"
+    },
+    {
+      "action": "talk",
+      "index": 3,
+      "opaqueBounds": [
+        12,
+        14,
+        37,
+        44
+      ],
+      "opaqueBottom": 58,
+      "transparentPixels": 2903,
+      "semiTransparentPixels": 1191,
+      "sha256": "a8f5fce8d951f2fc132540162cd6766e9a9852df0f3009b57ac22f3458866085"
+    }
+  ]
+}

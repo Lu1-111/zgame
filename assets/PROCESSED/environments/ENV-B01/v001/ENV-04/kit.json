@@ -1,0 +1,111 @@
+{
+  "id": "ENV-04",
+  "name": "蜂巢分区",
+  "region": "cave",
+  "tile_size": 16,
+  "terrain": "terrain.png",
+  "background": "background.png",
+  "props": [
+    {
+      "id": "extractor",
+      "path": "props/extractor.png",
+      "width": 80,
+      "height": 96,
+      "anchor": [
+        40,
+        96
+      ],
+      "placement": "floor",
+      "raw_crop": [
+        100,
+        575,
+        470,
+        1000
+      ]
+    },
+    {
+      "id": "honey_cells",
+      "path": "props/honey_cells.png",
+      "width": 64,
+      "height": 80,
+      "anchor": [
+        32,
+        0
+      ],
+      "placement": "ceiling",
+      "raw_crop": [
+        600,
+        585,
+        960,
+        1000
+      ]
+    },
+    {
+      "id": "wax_pillar",
+      "path": "props/wax_pillar.png",
+      "width": 64,
+      "height": 112,
+      "anchor": [
+        32,
+        112
+      ],
+      "placement": "floor",
+      "raw_crop": [
+        100,
+        1000,
+        470,
+        1536
+      ]
+    },
+    {
+      "id": "pipeline",
+      "path": "props/pipeline.png",
+      "width": 96,
+      "height": 80,
+      "anchor": [
+        48,
+        80
+      ],
+      "placement": "floor",
+      "raw_crop": [
+        540,
+        1050,
+        1000,
+        1470
+      ]
+    }
+  ],
+  "terrain_layout": {
+    "top_left": 0,
+    "top": 1,
+    "top_right": 2,
+    "left": 3,
+    "center": 4,
+    "right": 5,
+    "bottom_left": 6,
+    "bottom": 7,
+    "bottom_right": 8,
+    "single": 9,
+    "thin_left": 10,
+    "thin_mid": 11,
+    "thin_right": 12,
+    "inner_left": 13,
+    "inner_right": 14,
+    "transition": 15
+  },
+  "raw_sources": [
+    "assets/RAW/environments/ENV-B01/v001/ENV-04/terrain.png",
+    "assets/RAW/environments/ENV-B01/v001/ENV-04/scenery.png",
+    "assets/RAW/environments/ENV-B01/v001/ENV-04/wide_background.png"
+  ],
+  "processing": [
+    "Fixed raw crop coordinates recorded in work/env_b01/cave/process.py",
+    "Nearest-neighbor normalization to native logical pixels",
+    "9-slice border strips copied from generated terrain source; shared edges copied for deterministic joins",
+    "Reduced fixed palette; no procedural substitute art",
+    "Prop alpha threshold 128 and fitted aspect-preserving canvas",
+    "Background exact 16:9 extraction, nearest scale, contrast reduction and boundary-column calibration",
+    "Wide hall separately generated; crop [62,74,2110,650] from 2172x724, uniform nearest x0.625 to 1280x360. No tiling or stretch of the 640px image."
+  ],
+  "background_wide": "background_wide.png"
+}

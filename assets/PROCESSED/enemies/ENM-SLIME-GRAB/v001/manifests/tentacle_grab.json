@@ -1,0 +1,719 @@
+{
+  "id": "ENM-03_tentacle_grab",
+  "enemyId": "ENM-03",
+  "gameEnemyId": "milk_slime",
+  "kind": "body",
+  "name": "tentacle_grab",
+  "label": "史莱姆触手抓取",
+  "frames": [
+    "frames/tentacle_grab/00.png",
+    "frames/tentacle_grab/01.png",
+    "frames/tentacle_grab/02.png",
+    "frames/tentacle_grab/03.png",
+    "frames/tentacle_grab/04.png",
+    "frames/tentacle_grab/05.png",
+    "frames/tentacle_grab/06.png",
+    "frames/tentacle_grab/07.png",
+    "frames/tentacle_grab/08.png",
+    "frames/tentacle_grab/09.png",
+    "frames/tentacle_grab/10.png",
+    "frames/tentacle_grab/11.png",
+    "frames/tentacle_grab/12.png",
+    "frames/tentacle_grab/13.png",
+    "frames/tentacle_grab/14.png",
+    "frames/tentacle_grab/15.png"
+  ],
+  "frameCount": 16,
+  "fps": 10,
+  "loop": false,
+  "anchor": [
+    96,
+    136
+  ],
+  "target": [
+    288,
+    176
+  ],
+  "fadeStartNormalized": 1.0,
+  "sourcePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-SLIME-GRAB/v001/tentacle_grab.png",
+  "sourceSha256": "25b1893d39758494eecea4308df9b4438497535408c8fd3016a2a1a9ed47eb03",
+  "promptPath": "/home/lululu/zgame/assets/RAW/enemies/ENM-SLIME-GRAB/v001/tentacle_grab_retry.prompt.txt",
+  "generationMode": "built-in-image_gen",
+  "scale": 0.33,
+  "sourceRects": [
+    [
+      0,
+      0,
+      280,
+      400
+    ],
+    [
+      280,
+      0,
+      302,
+      400
+    ],
+    [
+      582,
+      0,
+      320,
+      400
+    ],
+    [
+      902,
+      0,
+      352,
+      400
+    ],
+    [
+      0,
+      400,
+      300,
+      260
+    ],
+    [
+      300,
+      400,
+      322,
+      260
+    ],
+    [
+      622,
+      400,
+      318,
+      260
+    ],
+    [
+      920,
+      400,
+      334,
+      260
+    ],
+    [
+      0,
+      660,
+      332,
+      300
+    ],
+    [
+      332,
+      660,
+      295,
+      300
+    ],
+    [
+      627,
+      660,
+      313,
+      300
+    ],
+    [
+      940,
+      660,
+      314,
+      300
+    ],
+    [
+      0,
+      960,
+      332,
+      294
+    ],
+    [
+      332,
+      960,
+      295,
+      294
+    ],
+    [
+      627,
+      960,
+      313,
+      294
+    ],
+    [
+      940,
+      960,
+      314,
+      294
+    ]
+  ],
+  "sourceAnchors": [
+    [
+      125.5,
+      312
+    ],
+    [
+      153.5,
+      312
+    ],
+    [
+      147,
+      312
+    ],
+    [
+      136,
+      312
+    ],
+    [
+      125,
+      219
+    ],
+    [
+      125,
+      221
+    ],
+    [
+      110,
+      222
+    ],
+    [
+      96,
+      222
+    ],
+    [
+      118.5,
+      257
+    ],
+    [
+      105.5,
+      257
+    ],
+    [
+      121,
+      257
+    ],
+    [
+      113,
+      257
+    ],
+    [
+      126.5,
+      245
+    ],
+    [
+      122.5,
+      244
+    ],
+    [
+      130,
+      245
+    ],
+    [
+      122.5,
+      245
+    ]
+  ],
+  "frameDetails": [
+    {
+      "sourceRect": [
+        0,
+        0,
+        280,
+        400
+      ],
+      "sourceAnchor": [
+        125.5,
+        312
+      ],
+      "sourceRegions": [
+        [
+          0,
+          0,
+          280,
+          400
+        ]
+      ],
+      "offset": [
+        55,
+        33
+      ],
+      "alphaBBox": [
+        60,
+        33,
+        147,
+        164
+      ]
+    },
+    {
+      "sourceRect": [
+        280,
+        0,
+        302,
+        400
+      ],
+      "sourceAnchor": [
+        153.5,
+        312
+      ],
+      "sourceRegions": [
+        [
+          280,
+          0,
+          302,
+          400
+        ]
+      ],
+      "offset": [
+        45,
+        33
+      ],
+      "alphaBBox": [
+        45,
+        37,
+        145,
+        164
+      ]
+    },
+    {
+      "sourceRect": [
+        582,
+        0,
+        320,
+        400
+      ],
+      "sourceAnchor": [
+        147,
+        312
+      ],
+      "sourceRegions": [
+        [
+          582,
+          0,
+          320,
+          400
+        ]
+      ],
+      "offset": [
+        47,
+        33
+      ],
+      "alphaBBox": [
+        47,
+        50,
+        152,
+        165
+      ]
+    },
+    {
+      "sourceRect": [
+        902,
+        0,
+        352,
+        400
+      ],
+      "sourceAnchor": [
+        136,
+        312
+      ],
+      "sourceRegions": [
+        [
+          902,
+          0,
+          352,
+          400
+        ]
+      ],
+      "offset": [
+        51,
+        33
+      ],
+      "alphaBBox": [
+        51,
+        42,
+        160,
+        164
+      ]
+    },
+    {
+      "sourceRect": [
+        0,
+        400,
+        300,
+        260
+      ],
+      "sourceAnchor": [
+        125,
+        219
+      ],
+      "sourceRegions": [
+        [
+          0,
+          400,
+          300,
+          260
+        ]
+      ],
+      "offset": [
+        55,
+        64
+      ],
+      "alphaBBox": [
+        60,
+        64,
+        154,
+        150
+      ]
+    },
+    {
+      "sourceRect": [
+        300,
+        400,
+        322,
+        260
+      ],
+      "sourceAnchor": [
+        125,
+        221
+      ],
+      "sourceRegions": [
+        [
+          300,
+          400,
+          322,
+          260
+        ]
+      ],
+      "offset": [
+        55,
+        63
+      ],
+      "alphaBBox": [
+        55,
+        63,
+        161,
+        147
+      ]
+    },
+    {
+      "sourceRect": [
+        622,
+        400,
+        318,
+        260
+      ],
+      "sourceAnchor": [
+        110,
+        222
+      ],
+      "sourceRegions": [
+        [
+          622,
+          400,
+          278,
+          260
+        ],
+        [
+          900,
+          400,
+          40,
+          178
+        ]
+      ],
+      "offset": [
+        60,
+        63
+      ],
+      "alphaBBox": [
+        60,
+        63,
+        165,
+        139
+      ]
+    },
+    {
+      "sourceRect": [
+        920,
+        400,
+        334,
+        260
+      ],
+      "sourceAnchor": [
+        96,
+        222
+      ],
+      "sourceRegions": [
+        [
+          940,
+          400,
+          314,
+          260
+        ],
+        [
+          920,
+          580,
+          20,
+          80
+        ]
+      ],
+      "offset": [
+        64,
+        63
+      ],
+      "alphaBBox": [
+        64,
+        63,
+        174,
+        149
+      ]
+    },
+    {
+      "sourceRect": [
+        0,
+        660,
+        332,
+        300
+      ],
+      "sourceAnchor": [
+        118.5,
+        257
+      ],
+      "sourceRegions": [
+        [
+          0,
+          660,
+          332,
+          300
+        ]
+      ],
+      "offset": [
+        57,
+        51
+      ],
+      "alphaBBox": [
+        61,
+        51,
+        167,
+        138
+      ]
+    },
+    {
+      "sourceRect": [
+        332,
+        660,
+        295,
+        300
+      ],
+      "sourceAnchor": [
+        105.5,
+        257
+      ],
+      "sourceRegions": [
+        [
+          332,
+          660,
+          295,
+          300
+        ]
+      ],
+      "offset": [
+        61,
+        51
+      ],
+      "alphaBBox": [
+        61,
+        56,
+        158,
+        149
+      ]
+    },
+    {
+      "sourceRect": [
+        627,
+        660,
+        313,
+        300
+      ],
+      "sourceAnchor": [
+        121,
+        257
+      ],
+      "sourceRegions": [
+        [
+          627,
+          660,
+          313,
+          300
+        ]
+      ],
+      "offset": [
+        56,
+        51
+      ],
+      "alphaBBox": [
+        56,
+        51,
+        159,
+        148
+      ]
+    },
+    {
+      "sourceRect": [
+        940,
+        660,
+        314,
+        300
+      ],
+      "sourceAnchor": [
+        113,
+        257
+      ],
+      "sourceRegions": [
+        [
+          940,
+          660,
+          314,
+          300
+        ]
+      ],
+      "offset": [
+        59,
+        51
+      ],
+      "alphaBBox": [
+        59,
+        51,
+        158,
+        150
+      ]
+    },
+    {
+      "sourceRect": [
+        0,
+        960,
+        332,
+        294
+      ],
+      "sourceAnchor": [
+        126.5,
+        245
+      ],
+      "sourceRegions": [
+        [
+          0,
+          960,
+          332,
+          294
+        ]
+      ],
+      "offset": [
+        54,
+        55
+      ],
+      "alphaBBox": [
+        60,
+        57,
+        164,
+        138
+      ]
+    },
+    {
+      "sourceRect": [
+        332,
+        960,
+        295,
+        294
+      ],
+      "sourceAnchor": [
+        122.5,
+        244
+      ],
+      "sourceRegions": [
+        [
+          332,
+          960,
+          295,
+          294
+        ]
+      ],
+      "offset": [
+        56,
+        55
+      ],
+      "alphaBBox": [
+        56,
+        56,
+        153,
+        149
+      ]
+    },
+    {
+      "sourceRect": [
+        627,
+        960,
+        313,
+        294
+      ],
+      "sourceAnchor": [
+        130,
+        245
+      ],
+      "sourceRegions": [
+        [
+          627,
+          960,
+          313,
+          294
+        ]
+      ],
+      "offset": [
+        53,
+        55
+      ],
+      "alphaBBox": [
+        53,
+        56,
+        156,
+        138
+      ]
+    },
+    {
+      "sourceRect": [
+        940,
+        960,
+        314,
+        294
+      ],
+      "sourceAnchor": [
+        122.5,
+        245
+      ],
+      "sourceRegions": [
+        [
+          940,
+          960,
+          314,
+          294
+        ]
+      ],
+      "offset": [
+        56,
+        55
+      ],
+      "alphaBBox": [
+        56,
+        55,
+        155,
+        143
+      ]
+    }
+  ],
+  "sourceFrameIndices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ]
+}

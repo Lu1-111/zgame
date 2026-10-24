@@ -1,0 +1,260 @@
+{
+  "id": "ENV-01",
+  "name": "奶泉营地",
+  "region": "camp",
+  "version": "ENV-B01-v001",
+  "tile_size": 16,
+  "terrain": "terrain.png",
+  "background": "background.png",
+  "props": [
+    {
+      "id": "cottage",
+      "path": "props/cottage.png",
+      "width": 144,
+      "height": 112,
+      "anchor": [
+        72,
+        112
+      ],
+      "raw_crop": [
+        80,
+        0,
+        590,
+        344
+      ],
+      "recommended_z_index": 1
+    },
+    {
+      "id": "tent",
+      "path": "props/tent.png",
+      "width": 128,
+      "height": 80,
+      "anchor": [
+        64,
+        80
+      ],
+      "raw_crop": [
+        679,
+        20,
+        1215,
+        345
+      ],
+      "recommended_z_index": 1
+    },
+    {
+      "id": "milk_spring",
+      "path": "props/milk_spring.png",
+      "width": 128,
+      "height": 80,
+      "anchor": [
+        64,
+        80
+      ],
+      "raw_crop": [
+        88,
+        354,
+        607,
+        648
+      ],
+      "recommended_z_index": 1
+    },
+    {
+      "id": "shelf",
+      "path": "props/shelf.png",
+      "width": 96,
+      "height": 80,
+      "anchor": [
+        48,
+        80
+      ],
+      "raw_crop": [
+        744,
+        347,
+        1136,
+        650
+      ],
+      "recommended_z_index": 1
+    },
+    {
+      "id": "campfire",
+      "path": "props/campfire.png",
+      "width": 48,
+      "height": 48,
+      "anchor": [
+        24,
+        48
+      ],
+      "raw_crop": [
+        197,
+        643,
+        507,
+        893
+      ],
+      "recommended_z_index": 1
+    },
+    {
+      "id": "chest",
+      "path": "props/chest.png",
+      "width": 64,
+      "height": 48,
+      "anchor": [
+        32,
+        48
+      ],
+      "raw_crop": [
+        780,
+        666,
+        1122,
+        893
+      ],
+      "recommended_z_index": 1
+    },
+    {
+      "id": "return_arch",
+      "path": "props/return_arch.png",
+      "width": 96,
+      "height": 96,
+      "anchor": [
+        48,
+        96
+      ],
+      "raw_crop": [
+        167,
+        897,
+        533,
+        1244
+      ],
+      "recommended_z_index": 1
+    },
+    {
+      "id": "crates_sign",
+      "path": "props/crates_sign.png",
+      "width": 96,
+      "height": 80,
+      "anchor": [
+        48,
+        80
+      ],
+      "raw_crop": [
+        744,
+        958,
+        1154,
+        1243
+      ],
+      "recommended_z_index": 1
+    },
+    {
+      "id": "return_glyph",
+      "path": "props/return_glyph.png",
+      "width": 32,
+      "height": 32,
+      "anchor": [
+        16,
+        32
+      ],
+      "recommended_z_index": 1,
+      "source_processed": "props/return_arch.png",
+      "source_processed_sha256": "3e63c288161876ef6c93ce2e7b1f2d87c570a220e513c0b1e5df5d1583462f55",
+      "source_processed_crop": [
+        33,
+        34,
+        63,
+        90
+      ],
+      "alpha_component_bbox_within_crop": [
+        0,
+        0,
+        29,
+        54
+      ],
+      "alpha_extraction": "保留门内奶蓝像素及8邻接相连的现有浅色高光；移除既有门内暗底。",
+      "scaled_content_size": [
+        15,
+        28
+      ],
+      "resize": "Nearest，保持等比，内容高28px，32×32透明画布底部居中。",
+      "raw_source": "assets/RAW/environments/ENV-B01/v001/ENV-01/scenery_source.png",
+      "raw_source_crop": [
+        167,
+        897,
+        533,
+        1244
+      ]
+    }
+  ],
+  "terrain_layout": {
+    "0": "TL",
+    "1": "T",
+    "2": "TR",
+    "3": "L",
+    "4": "C",
+    "5": "R",
+    "6": "BL",
+    "7": "B",
+    "8": "BR",
+    "9": "single",
+    "10": "thin_left",
+    "11": "thin_mid",
+    "12": "thin_right",
+    "13": "inner_left",
+    "14": "inner_right",
+    "15": "transition"
+  },
+  "terrain_grid": {
+    "columns": 4,
+    "rows": 4,
+    "cell": [
+      16,
+      16
+    ]
+  },
+  "raw_sources": [
+    {
+      "path": "assets/RAW/environments/ENV-B01/v001/ENV-01/background_source.png",
+      "sha256": "9596e047435a79d5b6ce89f7494914f1985d99c30a87671ad31caf322e91b7d4",
+      "width": 1672,
+      "height": 941,
+      "unchanged_generated_pixels": true
+    },
+    {
+      "path": "assets/RAW/environments/ENV-B01/v001/ENV-01/interior_source.png",
+      "sha256": "085d38bc89ae9e20b711719fa790bc5a0edd187db5e3e8e11d19a7cda7639cc9",
+      "width": 1672,
+      "height": 941,
+      "unchanged_generated_pixels": true
+    },
+    {
+      "path": "assets/RAW/environments/ENV-B01/v001/ENV-01/scenery_source.png",
+      "sha256": "50f3bf7f6f09babc8f49deea76ca2d6437f534330028bc21ca5b53da0b668867",
+      "width": 1254,
+      "height": 1254,
+      "unchanged_generated_pixels": true
+    },
+    {
+      "path": "assets/RAW/environments/ENV-B01/v001/ENV-01/terrain_source.png",
+      "sha256": "f7ccc4c0cce3d7c219739791b23513001aaa2c04ec70714dd0a119def22756cd",
+      "width": 1254,
+      "height": 1254,
+      "unchanged_generated_pixels": true
+    }
+  ],
+  "processing_steps": [
+    "保留RAW原图及完整prompt，记录SHA-256。",
+    "裁出原画连续土纹、草皮和木梁，Nearest缩至16px；对相邻边缘复用对应像素，校准可拼接边。",
+    "背景等比缩放并中心裁切至640×360，压低对比，32色色板；宽房间需重复或拼接，禁止拉伸至房宽。",
+    "构件按alpha包围盒机械裁切、等比Nearest缩小、32色量化，放入16倍数画布，alpha阈值160清理边缘。",
+    "return_glyph从既有return_arch门内裁片提取奶蓝连通分量与高光，保持源色，Nearest等比缩至内容高28px并放入32×32透明画布；未新增RAW。"
+  ],
+  "composition_notes": [
+    "camp_01以milk_spring为主地标，cottage给camp_02入口明确轮廓。",
+    "campfire与chest形成安全停驻簇，两簇之间留出空白，不均匀铺满装饰。",
+    "return_glyph置于camp_01顶部y=40平台上方，作为cave_07单向返回落点提示；96px高return_arch留作宽裕场景备用，禁止因顶边clamp导致梁穿门框。",
+    "所有props推荐z_index=1，角色保持20。"
+  ],
+  "limitations": [
+    "静态环境套件，不含交互动画、碰撞、NPC。",
+    "terrain为手工接缝校准的16格基础集，不是Godot47格自动地形图。",
+    "木梁为单向薄平台视觉，请由房间数据明确碰撞。"
+  ],
+  "interior_background": "interior_background.png"
+}

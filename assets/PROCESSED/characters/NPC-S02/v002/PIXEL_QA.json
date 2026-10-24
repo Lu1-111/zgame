@@ -1,0 +1,277 @@
+{
+  "id": "NPC-S02",
+  "version": "v002",
+  "frameCount": 18,
+  "animationCount": 3,
+  "root": [
+    32,
+    58
+  ],
+  "passed": true,
+  "errors": [],
+  "walkGround": "World ground anchor fixed; foot lift preserved. Opaque bottom varies according to actual source pose.",
+  "frames": [
+    {
+      "action": "idle",
+      "index": 0,
+      "opaqueBounds": [
+        16,
+        16,
+        30,
+        42
+      ],
+      "opaqueBottom": 58,
+      "transparentPixels": 3089,
+      "semiTransparentPixels": 1007,
+      "sha256": "56c1798de324b99027d0f1bf8acf8d42802a717d578b035710284fcaac2676bb",
+      "approvedSourceByteIdentical": true
+    },
+    {
+      "action": "idle",
+      "index": 1,
+      "opaqueBounds": [
+        16,
+        16,
+        30,
+        42
+      ],
+      "opaqueBottom": 58,
+      "transparentPixels": 3130,
+      "semiTransparentPixels": 966,
+      "sha256": "bbe6d9bbf0881d77c65e69eb6733b8d69149d178c2f334120c269071de65ada3",
+      "approvedSourceByteIdentical": true
+    },
+    {
+      "action": "idle",
+      "index": 2,
+      "opaqueBounds": [
+        16,
+        16,
+        30,
+        42
+      ],
+      "opaqueBottom": 58,
+      "transparentPixels": 3060,
+      "semiTransparentPixels": 1036,
+      "sha256": "7cd1041e7f859d762edde741486baa9c2cfb9d4619d3309a6f433fed7c9d3717",
+      "approvedSourceByteIdentical": true
+    },
+    {
+      "action": "idle",
+      "index": 3,
+      "opaqueBounds": [
+        16,
+        16,
+        30,
+        42
+      ],
+      "opaqueBottom": 58,
+      "transparentPixels": 3126,
+      "semiTransparentPixels": 970,
+      "sha256": "671b8629b53bf87bc4d2d925aed92563aa8dfeaf02e6c7e8a44417b41511f5cb",
+      "approvedSourceByteIdentical": true
+    },
+    {
+      "action": "idle",
+      "index": 4,
+      "opaqueBounds": [
+        17,
+        16,
+        29,
+        42
+      ],
+      "opaqueBottom": 58,
+      "transparentPixels": 3073,
+      "semiTransparentPixels": 1023,
+      "sha256": "92bfb5c7f507969b91adc80e572df9dcf67cc4b52bbd0d10ae26093406fbfc8a",
+      "approvedSourceByteIdentical": true
+    },
+    {
+      "action": "idle",
+      "index": 5,
+      "opaqueBounds": [
+        17,
+        16,
+        30,
+        42
+      ],
+      "opaqueBottom": 58,
+      "transparentPixels": 3092,
+      "semiTransparentPixels": 1004,
+      "sha256": "562696aabe4c1e946423ded8a228de7066ee72189e8df9b2c754374506200d85",
+      "approvedSourceByteIdentical": true
+    },
+    {
+      "action": "walk",
+      "index": 0,
+      "opaqueBounds": [
+        16,
+        17,
+        31,
+        41
+      ],
+      "opaqueBottom": 58,
+      "transparentPixels": 3183,
+      "semiTransparentPixels": 913,
+      "sha256": "61b9843faa42e75b014c668072a18837947172b7650e7bb57fcb0f92f2482530"
+    },
+    {
+      "action": "walk",
+      "index": 1,
+      "opaqueBounds": [
+        16,
+        16,
+        32,
+        41
+      ],
+      "opaqueBottom": 57,
+      "transparentPixels": 3170,
+      "semiTransparentPixels": 926,
+      "sha256": "68ae3f03e7b04c05a0b90b2c2e35881a126669cbb97781e583dc293a286983e5"
+    },
+    {
+      "action": "walk",
+      "index": 2,
+      "opaqueBounds": [
+        16,
+        16,
+        33,
+        41
+      ],
+      "opaqueBottom": 57,
+      "transparentPixels": 3165,
+      "semiTransparentPixels": 931,
+      "sha256": "69a9d4b07c9e748801c59f33fa3c765235978147b08851888ba044702b78db6e"
+    },
+    {
+      "action": "walk",
+      "index": 3,
+      "opaqueBounds": [
+        16,
+        15,
+        33,
+        42
+      ],
+      "opaqueBottom": 57,
+      "transparentPixels": 3131,
+      "semiTransparentPixels": 965,
+      "sha256": "3cecebcab6ec5406f055ee20d6ed640b4dc4f26c31c4458df62a1e5ba284cb71"
+    },
+    {
+      "action": "walk",
+      "index": 4,
+      "opaqueBounds": [
+        15,
+        16,
+        34,
+        42
+      ],
+      "opaqueBottom": 58,
+      "transparentPixels": 3071,
+      "semiTransparentPixels": 1025,
+      "sha256": "90e6db9c7791f5d8890d22d46c1a7e70a2ed30a47e5e39d33c82c5319a2b28d4"
+    },
+    {
+      "action": "walk",
+      "index": 5,
+      "opaqueBounds": [
+        16,
+        16,
+        32,
+        42
+      ],
+      "opaqueBottom": 58,
+      "transparentPixels": 3162,
+      "semiTransparentPixels": 931,
+      "sha256": "fd98f4558ea3ce485090f94db3fe882b7df794003b36e35c15d415c9cd937bfe"
+    },
+    {
+      "action": "walk",
+      "index": 6,
+      "opaqueBounds": [
+        16,
+        16,
+        33,
+        42
+      ],
+      "opaqueBottom": 58,
+      "transparentPixels": 3148,
+      "semiTransparentPixels": 944,
+      "sha256": "764f67a79b696f26c65895e6ed2d842835225b9ddb3576d9c835080d4d8b9e9a"
+    },
+    {
+      "action": "walk",
+      "index": 7,
+      "opaqueBounds": [
+        16,
+        16,
+        33,
+        42
+      ],
+      "opaqueBottom": 58,
+      "transparentPixels": 3098,
+      "semiTransparentPixels": 998,
+      "sha256": "89f167c4a7909ed7b3e9b8db49c1730de9b90f6d441d32da1852c18344e4492c"
+    },
+    {
+      "action": "talk",
+      "index": 0,
+      "opaqueBounds": [
+        16,
+        17,
+        30,
+        41
+      ],
+      "opaqueBottom": 58,
+      "transparentPixels": 3123,
+      "semiTransparentPixels": 973,
+      "sha256": "cac8a590ea1d2cbf9faa6d0c8a50607a88ba0024e39b1f736544ca9ae294ad6e",
+      "approvedSourceByteIdentical": true
+    },
+    {
+      "action": "talk",
+      "index": 1,
+      "opaqueBounds": [
+        16,
+        16,
+        33,
+        42
+      ],
+      "opaqueBottom": 58,
+      "transparentPixels": 3096,
+      "semiTransparentPixels": 1000,
+      "sha256": "b4ebd664ce598076bd1cc2ad251d4f16591300fc09feaeaa58f891179f6c3b1e",
+      "approvedSourceByteIdentical": true
+    },
+    {
+      "action": "talk",
+      "index": 2,
+      "opaqueBounds": [
+        17,
+        17,
+        33,
+        41
+      ],
+      "opaqueBottom": 58,
+      "transparentPixels": 3067,
+      "semiTransparentPixels": 1029,
+      "sha256": "a98496e0eb973b24c9c07a11474aa78848f2892a2e0c219f7d12811ec4199ec8",
+      "approvedSourceByteIdentical": true
+    },
+    {
+      "action": "talk",
+      "index": 3,
+      "opaqueBounds": [
+        17,
+        17,
+        29,
+        41
+      ],
+      "opaqueBottom": 58,
+      "transparentPixels": 3121,
+      "semiTransparentPixels": 975,
+      "sha256": "56fddea5dcfc6416cdbe9585c904673e19fbbbc80df4fe4bb6546305efdcdfbd",
+      "approvedSourceByteIdentical": true
+    }
+  ]
+}

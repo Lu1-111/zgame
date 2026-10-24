@@ -1,0 +1,384 @@
+{
+  "batch": "ENM-B04",
+  "projectiles": [
+    {
+      "id": "milk_bolt",
+      "kind": "projectile",
+      "name": "milk_bolt",
+      "frames": [
+        "projectile_frames/milk_bolt/00.png",
+        "projectile_frames/milk_bolt/01.png",
+        "projectile_frames/milk_bolt/02.png",
+        "projectile_frames/milk_bolt/03.png",
+        "projectile_frames/milk_bolt/04.png",
+        "projectile_frames/milk_bolt/05.png"
+      ],
+      "frameCount": 6,
+      "fps": 12,
+      "loop": true,
+      "target": [
+        80,
+        80
+      ],
+      "anchor": [
+        52,
+        48
+      ],
+      "scale": 0.09,
+      "sourcePath": "/home/lululu/zgame/assets/RAW/effects/ENM-B04/v001/milk_bolt.png",
+      "sourceSha256": "3e758a60ca1384201479239febdbeb022b78892ab630dfd935589dfb67fdf3fc",
+      "promptPath": "/home/lululu/zgame/assets/RAW/effects/ENM-B04/v001/milk_bolt.prompt.txt",
+      "frameDetails": [
+        {
+          "rect": [
+            0,
+            0,
+            418,
+            627
+          ],
+          "root": [
+            330,
+            444
+          ],
+          "offset": [
+            22,
+            8
+          ]
+        },
+        {
+          "rect": [
+            418,
+            0,
+            418,
+            627
+          ],
+          "root": [
+            309,
+            444
+          ],
+          "offset": [
+            24,
+            8
+          ]
+        },
+        {
+          "rect": [
+            836,
+            0,
+            418,
+            627
+          ],
+          "root": [
+            309,
+            444
+          ],
+          "offset": [
+            24,
+            8
+          ]
+        },
+        {
+          "rect": [
+            0,
+            627,
+            418,
+            627
+          ],
+          "root": [
+            330,
+            207
+          ],
+          "offset": [
+            22,
+            29
+          ]
+        },
+        {
+          "rect": [
+            418,
+            627,
+            418,
+            627
+          ],
+          "root": [
+            309,
+            207
+          ],
+          "offset": [
+            24,
+            29
+          ]
+        },
+        {
+          "rect": [
+            836,
+            627,
+            418,
+            627
+          ],
+          "root": [
+            309,
+            207
+          ],
+          "offset": [
+            24,
+            29
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shadow_bolt",
+      "kind": "projectile",
+      "name": "shadow_bolt",
+      "frames": [
+        "projectile_frames/shadow_bolt/00.png",
+        "projectile_frames/shadow_bolt/01.png",
+        "projectile_frames/shadow_bolt/02.png",
+        "projectile_frames/shadow_bolt/03.png",
+        "projectile_frames/shadow_bolt/04.png",
+        "projectile_frames/shadow_bolt/05.png"
+      ],
+      "frameCount": 6,
+      "fps": 12,
+      "loop": true,
+      "target": [
+        80,
+        80
+      ],
+      "anchor": [
+        52,
+        48
+      ],
+      "scale": 0.09,
+      "sourcePath": "/home/lululu/zgame/assets/RAW/effects/ENM-B04/v001/shadow_bolt.png",
+      "sourceSha256": "b9756ed51d02d4f2d5d0240a6db9f8f38e604d31f2635bea353f345e3a0c1128",
+      "promptPath": "/home/lululu/zgame/assets/RAW/effects/ENM-B04/v001/shadow_bolt.prompt.txt",
+      "frameDetails": [
+        {
+          "rect": [
+            0,
+            0,
+            418,
+            627
+          ],
+          "root": [
+            366,
+            488
+          ],
+          "offset": [
+            19,
+            4
+          ]
+        },
+        {
+          "rect": [
+            418,
+            0,
+            418,
+            627
+          ],
+          "root": [
+            358,
+            488
+          ],
+          "offset": [
+            20,
+            4
+          ]
+        },
+        {
+          "rect": [
+            836,
+            0,
+            418,
+            627
+          ],
+          "root": [
+            362,
+            488
+          ],
+          "offset": [
+            19,
+            4
+          ]
+        },
+        {
+          "rect": [
+            0,
+            627,
+            418,
+            627
+          ],
+          "root": [
+            366,
+            256
+          ],
+          "offset": [
+            19,
+            25
+          ]
+        },
+        {
+          "rect": [
+            418,
+            627,
+            418,
+            627
+          ],
+          "root": [
+            358,
+            256
+          ],
+          "offset": [
+            20,
+            25
+          ]
+        },
+        {
+          "rect": [
+            836,
+            627,
+            418,
+            627
+          ],
+          "root": [
+            362,
+            256
+          ],
+          "offset": [
+            19,
+            25
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vine_bolt",
+      "kind": "projectile",
+      "name": "vine_bolt",
+      "frames": [
+        "projectile_frames/vine_bolt/00.png",
+        "projectile_frames/vine_bolt/01.png",
+        "projectile_frames/vine_bolt/02.png",
+        "projectile_frames/vine_bolt/03.png",
+        "projectile_frames/vine_bolt/04.png",
+        "projectile_frames/vine_bolt/05.png"
+      ],
+      "frameCount": 6,
+      "fps": 12,
+      "loop": true,
+      "target": [
+        80,
+        80
+      ],
+      "anchor": [
+        52,
+        48
+      ],
+      "scale": 0.09,
+      "sourcePath": "/home/lululu/zgame/assets/RAW/effects/ENM-B04/v001/vine_bolt.png",
+      "sourceSha256": "8d1b8284f32614a29fbfd1d0bae74e9db96d2f870af4eeb23a91e185308c7e43",
+      "promptPath": "/home/lululu/zgame/assets/RAW/effects/ENM-B04/v001/vine_bolt.prompt.txt",
+      "frameDetails": [
+        {
+          "rect": [
+            0,
+            0,
+            418,
+            627
+          ],
+          "root": [
+            342,
+            392
+          ],
+          "offset": [
+            21,
+            13
+          ]
+        },
+        {
+          "rect": [
+            418,
+            0,
+            418,
+            627
+          ],
+          "root": [
+            336,
+            392
+          ],
+          "offset": [
+            22,
+            13
+          ]
+        },
+        {
+          "rect": [
+            836,
+            0,
+            418,
+            627
+          ],
+          "root": [
+            342,
+            392
+          ],
+          "offset": [
+            21,
+            13
+          ]
+        },
+        {
+          "rect": [
+            0,
+            627,
+            418,
+            627
+          ],
+          "root": [
+            342,
+            323
+          ],
+          "offset": [
+            21,
+            19
+          ]
+        },
+        {
+          "rect": [
+            418,
+            627,
+            418,
+            627
+          ],
+          "root": [
+            336,
+            323
+          ],
+          "offset": [
+            22,
+            19
+          ]
+        },
+        {
+          "rect": [
+            836,
+            627,
+            418,
+            627
+          ],
+          "root": [
+            342,
+            323
+          ],
+          "offset": [
+            21,
+            19
+          ]
+        }
+      ]
+    }
+  ],
+  "blockingIssues": []
+}

@@ -1,0 +1,175 @@
+{
+  "assetId": "milk_bomb",
+  "action": "idle",
+  "version": "v001",
+  "kind": "RAW_GENERATED_SHEET",
+  "file": "ITEM_milk_bomb_idle_v001.png",
+  "actualSize": [
+    1254,
+    1254
+  ],
+  "mode": "RGBA",
+  "grid": [
+    2,
+    2
+  ],
+  "frameSize": [
+    627,
+    627
+  ],
+  "frameOrder": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "sourceAnchors": [
+    [
+      313.5,
+      470.25
+    ],
+    [
+      313.5,
+      470.25
+    ],
+    [
+      313.5,
+      470.25
+    ],
+    [
+      313.5,
+      470.25
+    ]
+  ],
+  "anchorMeaning": "Nominal local pickup root derived from requested layout, scaled to actual size; generated body is not guaranteed aligned to it. PROCESSED must align measured silhouette to common root.",
+  "requestedSize": [
+    1024,
+    1024
+  ],
+  "generator": "built-in image_gen.imagegen",
+  "generatorPath": "/home/lululu/.codex/generated_images/01a16cb2-503f-7982-b27f-6818b5b85469/exec-bdef275b-edca-4bc0-a2db-2e9a9dca464a.png",
+  "sha256": "002b449f813ce570635cc80db9469a2c728646c777327ff828ce8e02da072a71",
+  "alpha": {
+    "range": [
+      0,
+      255
+    ],
+    "transparentPixelCount": 1166231,
+    "partialAlphaPixelCount": 404308,
+    "opaquePixelCount": 1977
+  },
+  "frames": [
+    {
+      "index": 0,
+      "cellRect": [
+        0,
+        0,
+        627,
+        627
+      ],
+      "alphaBBoxLocal": [
+        91,
+        53,
+        619,
+        601
+      ],
+      "mainBodyBBoxLocalAtAlpha128": [
+        173,
+        104,
+        506,
+        559
+      ],
+      "mainBodyCenterBottomLocal": [
+        339.5,
+        559
+      ],
+      "mainBodyAreaAtAlpha128": 94319
+    },
+    {
+      "index": 1,
+      "cellRect": [
+        627,
+        0,
+        627,
+        627
+      ],
+      "alphaBBoxLocal": [
+        13,
+        41,
+        545,
+        564
+      ],
+      "mainBodyBBoxLocalAtAlpha128": [
+        135,
+        104,
+        467,
+        559
+      ],
+      "mainBodyCenterBottomLocal": [
+        301.0,
+        559
+      ],
+      "mainBodyAreaAtAlpha128": 93909
+    },
+    {
+      "index": 2,
+      "cellRect": [
+        0,
+        627,
+        627,
+        627
+      ],
+      "alphaBBoxLocal": [
+        0,
+        45,
+        607,
+        583
+      ],
+      "mainBodyBBoxLocalAtAlpha128": [
+        173,
+        86,
+        506,
+        538
+      ],
+      "mainBodyCenterBottomLocal": [
+        339.5,
+        538
+      ],
+      "mainBodyAreaAtAlpha128": 94343
+    },
+    {
+      "index": 3,
+      "cellRect": [
+        627,
+        627,
+        627,
+        627
+      ],
+      "alphaBBoxLocal": [
+        3,
+        17,
+        525,
+        587
+      ],
+      "mainBodyBBoxLocalAtAlpha128": [
+        134,
+        86,
+        467,
+        538
+      ],
+      "mainBodyCenterBottomLocal": [
+        300.5,
+        538
+      ],
+      "mainBodyAreaAtAlpha128": 94329
+    }
+  ],
+  "rawQA": {
+    "subject": "Pass visual review: correct distinct identity, no text or drawn background.",
+    "transparency": "Actual RGBA alpha transparency confirmed.",
+    "grid": "2x2 distinct cells; actual dimensions differ from prompt.",
+    "continuity": "Minimal glint cycle with slight generated silhouette/detail variation. Needs PROCESSED center-bottom registration and temporal QA.",
+    "readyForProcessed": true,
+    "directGameImportApproved": false
+  }
+}

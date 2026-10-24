@@ -1,0 +1,227 @@
+{
+  "id": "NPC-S05",
+  "sheet": "NPC-S05_idle_talk_right_v003.png",
+  "sheet_size": [
+    1536,
+    1024
+  ],
+  "frames": [
+    {
+      "action": "idle",
+      "frame": 0,
+      "rect_xywh": [
+        0,
+        0,
+        322,
+        510
+      ],
+      "alpha128_bbox_xyxy": [
+        26,
+        53,
+        318,
+        478
+      ],
+      "source_root_xy": [
+        153.5,
+        478
+      ]
+    },
+    {
+      "action": "idle",
+      "frame": 1,
+      "rect_xywh": [
+        322,
+        0,
+        301,
+        510
+      ],
+      "alpha128_bbox_xyxy": [
+        326,
+        53,
+        618,
+        478
+      ],
+      "source_root_xy": [
+        454.5,
+        478
+      ]
+    },
+    {
+      "action": "idle",
+      "frame": 2,
+      "rect_xywh": [
+        623,
+        0,
+        305,
+        510
+      ],
+      "alpha128_bbox_xyxy": [
+        624,
+        53,
+        924,
+        478
+      ],
+      "source_root_xy": [
+        754.0,
+        478
+      ]
+    },
+    {
+      "action": "idle",
+      "frame": 3,
+      "rect_xywh": [
+        928,
+        0,
+        298,
+        510
+      ],
+      "alpha128_bbox_xyxy": [
+        928,
+        52,
+        1221,
+        478
+      ],
+      "source_root_xy": [
+        1056.0,
+        478
+      ]
+    },
+    {
+      "action": "idle",
+      "frame": 4,
+      "rect_xywh": [
+        1226,
+        0,
+        310,
+        510
+      ],
+      "alpha128_bbox_xyxy": [
+        1227,
+        52,
+        1521,
+        478
+      ],
+      "source_root_xy": [
+        1355.5,
+        478
+      ]
+    },
+    {
+      "action": "idle",
+      "frame": 5,
+      "rect_xywh": [
+        0,
+        510,
+        322,
+        514
+      ],
+      "alpha128_bbox_xyxy": [
+        29,
+        539,
+        320,
+        969
+      ],
+      "source_root_xy": [
+        157.5,
+        969
+      ]
+    },
+    {
+      "action": "talk",
+      "frame": 0,
+      "rect_xywh": [
+        322,
+        510,
+        301,
+        514
+      ],
+      "alpha128_bbox_xyxy": [
+        326,
+        540,
+        618,
+        970
+      ],
+      "source_root_xy": [
+        454.5,
+        970
+      ]
+    },
+    {
+      "action": "talk",
+      "frame": 1,
+      "rect_xywh": [
+        623,
+        510,
+        305,
+        514
+      ],
+      "alpha128_bbox_xyxy": [
+        624,
+        539,
+        928,
+        970
+      ],
+      "source_root_xy": [
+        756.5,
+        970
+      ]
+    },
+    {
+      "action": "talk",
+      "frame": 2,
+      "rect_xywh": [
+        928,
+        510,
+        298,
+        514
+      ],
+      "alpha128_bbox_xyxy": [
+        928,
+        539,
+        1226,
+        970
+      ],
+      "source_root_xy": [
+        1056.0,
+        970
+      ]
+    },
+    {
+      "action": "talk",
+      "frame": 3,
+      "rect_xywh": [
+        1226,
+        510,
+        310,
+        514
+      ],
+      "alpha128_bbox_xyxy": [
+        1226,
+        539,
+        1522,
+        969
+      ],
+      "source_root_xy": [
+        1355.5,
+        969
+      ]
+    }
+  ],
+  "fps": {
+    "idle": 6,
+    "talk": 8
+  },
+  "target_canvas": [
+    64,
+    64
+  ],
+  "target_root": [
+    32,
+    58
+  ],
+  "suggested_height": 44,
+  "notes": [
+    "slots0-5 idle,6-9 talk, row-major",
+    "Use one fixed scale entire sheet; rows appear same proportions."
+  ]
+}

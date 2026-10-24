@@ -1,0 +1,443 @@
+{
+  "regions": [
+    { "id": "camp", "name": "奶泉营地", "bg": "#1a1614", "tier": 0 },
+    { "id": "forest", "name": "奶源林地", "bg": "#16241a", "tier": 1 },
+    { "id": "cave", "name": "蜜乳洞窟", "bg": "#120f1c", "tier": 2 }
+  ],
+  "rooms": [
+    {
+      "id": "camp_01",
+      "name": "奶泉营地",
+      "region": "camp",
+      "size": [2, 1],
+      "bg": "#1a1614",
+      "platforms": [
+        [0, 340, 1280, 20],
+        [180, 292, 120, 16],
+        [900, 40, 160, 16]
+      ],
+      "spawn": [100, 323],
+      "doors": [
+        { "id": "w", "pos": [0, 323], "target": "camp_02", "target_door": "e", "one_way": false, "requires": "" },
+        { "id": "e", "pos": [1270, 323], "target": "forest_01", "target_door": "w", "one_way": false, "requires": "" },
+        { "id": "n", "pos": [980, 23], "target": "cave_07", "target_door": "s", "one_way": true, "requires": "" }
+      ],
+      "enemies": [],
+      "chests": [],
+      "hazards": [],
+      "checkpoints": [
+        { "id": "cp_camp_01", "pos": [140, 323] }
+      ],
+      "features": ["campfire", "storage"],
+      "map_rect": [1, 1, 2, 1]
+    },
+    {
+      "id": "camp_02",
+      "name": "商人之家",
+      "region": "camp",
+      "size": [1, 1],
+      "bg": "#1a1614",
+      "platforms": [
+        [0, 340, 640, 20],
+        [430, 296, 140, 16]
+      ],
+      "spawn": [300, 323],
+      "doors": [
+        { "id": "e", "pos": [630, 323], "target": "camp_01", "target_door": "w", "one_way": false, "requires": "" }
+      ],
+      "enemies": [],
+      "chests": [],
+      "hazards": [],
+      "checkpoints": [],
+      "features": ["merchant"],
+      "map_rect": [0, 1, 1, 1]
+    },
+    {
+      "id": "forest_01",
+      "name": "林地入口",
+      "region": "forest",
+      "size": [2, 1],
+      "bg": "#16241a",
+      "platforms": [
+        [0, 340, 1280, 20],
+        [320, 292, 160, 16],
+        [760, 248, 160, 16],
+        [990, 300, 110, 16],
+        [1120, 268, 140, 16]
+      ],
+      "spawn": [80, 323],
+      "doors": [
+        { "id": "w", "pos": [0, 323], "target": "camp_01", "target_door": "e", "one_way": false, "requires": "" },
+        { "id": "e", "pos": [1270, 323], "target": "forest_02", "target_door": "w", "one_way": false, "requires": "" },
+        { "id": "e2", "pos": [1270, 251], "target": "forest_04", "target_door": "w", "one_way": false, "requires": "" }
+      ],
+      "enemies": [
+        { "id": "moss_beetle", "pos": [520, 323] },
+        { "id": "moss_beetle", "pos": [980, 323] }
+      ],
+      "chests": [
+        { "id": "chest_f01", "pos": [1060, 330], "item": "potion_small", "count": 2, "coins": 0, "hidden": false }
+      ],
+      "hazards": [
+        [600, 332, 80, 8]
+      ],
+      "checkpoints": [],
+      "features": ["tutorial"],
+      "map_rect": [3, 1, 2, 1]
+    },
+    {
+      "id": "forest_02",
+      "name": "苔甲小径",
+      "region": "forest",
+      "size": [2, 1],
+      "bg": "#16241a",
+      "platforms": [
+        [0, 340, 1280, 20],
+        [240, 292, 120, 16],
+        [520, 264, 140, 16],
+        [860, 300, 120, 16]
+      ],
+      "spawn": [90, 323],
+      "doors": [
+        { "id": "w", "pos": [0, 323], "target": "forest_01", "target_door": "e", "one_way": false, "requires": "" },
+        { "id": "e", "pos": [1270, 323], "target": "forest_03", "target_door": "w", "one_way": false, "requires": "" },
+        { "id": "s", "pos": [700, 323], "target": "forest_04", "target_door": "n", "one_way": false, "requires": "" }
+      ],
+      "enemies": [
+        { "id": "milk_moth", "pos": [640, 200] },
+        { "id": "milk_slime", "pos": [980, 323] }
+      ],
+      "chests": [],
+      "hazards": [
+        [400, 332, 60, 8]
+      ],
+      "checkpoints": [],
+      "features": [],
+      "map_rect": [5, 1, 2, 1]
+    },
+    {
+      "id": "forest_03",
+      "name": "断桥",
+      "region": "forest",
+      "size": [1, 2],
+      "bg": "#16241a",
+      "platforms": [
+        [0, 340, 220, 20],
+        [380, 340, 260, 20],
+        [240, 364, 140, 16],
+        [240, 520, 160, 16],
+        [40, 652, 120, 16],
+        [200, 604, 120, 16],
+        [40, 556, 120, 16],
+        [120, 508, 120, 16],
+        [40, 460, 120, 16],
+        [200, 412, 120, 16],
+        [0, 700, 640, 20],
+        [480, 260, 120, 16],
+        [300, 180, 120, 16],
+        [460, 100, 120, 16],
+        [200, 48, 160, 16]
+      ],
+      "spawn": [80, 323],
+      "doors": [
+        { "id": "w", "pos": [0, 323], "target": "forest_02", "target_door": "e", "one_way": false, "requires": "" },
+        { "id": "n", "pos": [280, 31], "target": "forest_06", "target_door": "s", "one_way": false, "requires": "double_jump" }
+      ],
+      "enemies": [
+        { "id": "vine_flower", "pos": [320, 503] }
+      ],
+      "chests": [],
+      "hazards": [
+        [560, 692, 80, 8]
+      ],
+      "checkpoints": [],
+      "features": [],
+      "map_rect": [7, 1, 1, 2]
+    },
+    {
+      "id": "forest_04",
+      "name": "深林",
+      "region": "forest",
+      "size": [2, 1],
+      "bg": "#16241a",
+      "platforms": [
+        [0, 340, 1280, 20],
+        [200, 292, 140, 16],
+        [420, 244, 140, 16],
+        [640, 196, 140, 16],
+        [860, 148, 140, 16],
+        [620, 100, 160, 16],
+        [760, 52, 160, 16]
+      ],
+      "spawn": [90, 323],
+      "doors": [
+        { "id": "w", "pos": [0, 323], "target": "forest_01", "target_door": "e2", "one_way": false, "requires": "" },
+        { "id": "n", "pos": [840, 35], "target": "forest_02", "target_door": "s", "one_way": false, "requires": "" },
+        { "id": "e", "pos": [1270, 323], "target": "forest_05", "target_door": "w", "one_way": false, "requires": "" }
+      ],
+      "enemies": [
+        { "id": "moss_guard", "pos": [700, 323] }
+      ],
+      "chests": [
+        { "id": "chest_f04", "pos": [1160, 330], "item": "hp_fragment", "count": 1, "coins": 0, "hidden": false }
+      ],
+      "hazards": [],
+      "checkpoints": [],
+      "features": [],
+      "map_rect": [5, 2, 2, 1]
+    },
+    {
+      "id": "forest_05",
+      "name": "洞窟入口",
+      "region": "forest",
+      "size": [1, 1],
+      "bg": "#16241a",
+      "platforms": [
+        [0, 340, 640, 20],
+        [240, 292, 160, 16]
+      ],
+      "spawn": [80, 323],
+      "doors": [
+        { "id": "w", "pos": [0, 323], "target": "forest_04", "target_door": "e", "one_way": false, "requires": "" },
+        { "id": "e", "pos": [630, 323], "target": "cave_01", "target_door": "w", "one_way": false, "requires": "" }
+      ],
+      "enemies": [],
+      "chests": [],
+      "hazards": [],
+      "checkpoints": [
+        { "id": "cp_forest_05", "pos": [320, 323] }
+      ],
+      "features": ["campfire"],
+      "map_rect": [6, 3, 1, 1]
+    },
+    {
+      "id": "forest_06",
+      "name": "树冠",
+      "region": "forest",
+      "size": [1, 1],
+      "bg": "#16241a",
+      "platforms": [
+        [0, 340, 640, 20],
+        [80, 220, 120, 16],
+        [300, 160, 140, 16],
+        [520, 100, 120, 16],
+        [300, 40, 160, 16]
+      ],
+      "spawn": [200, 323],
+      "doors": [
+        { "id": "s", "pos": [320, 323], "target": "forest_03", "target_door": "n", "one_way": false, "requires": "double_jump" }
+      ],
+      "enemies": [],
+      "chests": [
+        { "id": "chest_f06", "pos": [380, 30], "item": "hp_fragment", "count": 1, "coins": 0, "hidden": true }
+      ],
+      "hazards": [],
+      "checkpoints": [],
+      "features": [],
+      "map_rect": [7, 0, 1, 1]
+    },
+    {
+      "id": "cave_01",
+      "name": "洞窟前厅",
+      "region": "cave",
+      "size": [2, 1],
+      "bg": "#120f1c",
+      "platforms": [
+        [0, 340, 1280, 20],
+        [300, 292, 140, 16],
+        [560, 244, 140, 16],
+        [860, 292, 140, 16]
+      ],
+      "spawn": [80, 323],
+      "doors": [
+        { "id": "w", "pos": [0, 323], "target": "forest_05", "target_door": "e", "one_way": false, "requires": "" },
+        { "id": "e", "pos": [1270, 323], "target": "cave_02", "target_door": "w", "one_way": false, "requires": "" }
+      ],
+      "enemies": [],
+      "chests": [],
+      "hazards": [],
+      "checkpoints": [],
+      "features": ["tutorial"],
+      "map_rect": [7, 3, 2, 1]
+    },
+    {
+      "id": "cave_02",
+      "name": "荧光回廊",
+      "region": "cave",
+      "size": [2, 1],
+      "bg": "#120f1c",
+      "platforms": [
+        [0, 340, 1280, 20],
+        [260, 292, 140, 16],
+        [520, 244, 140, 16],
+        [780, 196, 140, 16],
+        [1040, 120, 180, 16]
+      ],
+      "spawn": [80, 323],
+      "doors": [
+        { "id": "w", "pos": [0, 323], "target": "cave_01", "target_door": "e", "one_way": false, "requires": "" },
+        { "id": "e", "pos": [1270, 323], "target": "cave_03", "target_door": "w", "one_way": false, "requires": "" }
+      ],
+      "enemies": [
+        { "id": "lamp_bug", "pos": [400, 220] },
+        { "id": "lamp_bug", "pos": [900, 240] },
+        { "id": "shadow_wisp", "pos": [650, 290] }
+      ],
+      "chests": [
+        { "id": "chest_c02", "pos": [1130, 110], "item": "sta_fragment", "count": 1, "coins": 0, "hidden": false }
+      ],
+      "hazards": [],
+      "checkpoints": [],
+      "features": [],
+      "map_rect": [9, 3, 2, 1]
+    },
+    {
+      "id": "cave_03",
+      "name": "酸池深渊",
+      "region": "cave",
+      "size": [2, 1],
+      "bg": "#120f1c",
+      "platforms": [
+        [0, 340, 320, 20],
+        [400, 340, 240, 20],
+        [720, 340, 560, 20],
+        [560, 260, 120, 16]
+      ],
+      "spawn": [80, 323],
+      "doors": [
+        { "id": "w", "pos": [0, 323], "target": "cave_02", "target_door": "e", "one_way": false, "requires": "" },
+        { "id": "e", "pos": [1270, 323], "target": "cave_04", "target_door": "w", "one_way": false, "requires": "" }
+      ],
+      "enemies": [
+        { "id": "acid_slug", "pos": [520, 323] },
+        { "id": "acid_slug", "pos": [900, 323] }
+      ],
+      "chests": [
+        { "id": "chest_c03", "pos": [1200, 330], "item": "", "count": 0, "coins": 30, "hidden": false }
+      ],
+      "hazards": [
+        [320, 346, 80, 10],
+        [640, 346, 80, 10]
+      ],
+      "checkpoints": [],
+      "features": [],
+      "map_rect": [11, 3, 2, 1]
+    },
+    {
+      "id": "cave_04",
+      "name": "蜂巢外围",
+      "region": "cave",
+      "size": [2, 1],
+      "bg": "#120f1c",
+      "platforms": [
+        [0, 340, 1280, 20],
+        [240, 292, 140, 16],
+        [480, 244, 140, 16],
+        [720, 292, 140, 16],
+        [960, 244, 140, 16],
+        [1120, 292, 140, 16]
+      ],
+      "spawn": [80, 323],
+      "doors": [
+        { "id": "w", "pos": [0, 323], "target": "cave_03", "target_door": "e", "one_way": false, "requires": "" },
+        { "id": "e", "pos": [1270, 323], "target": "cave_05", "target_door": "w", "one_way": false, "requires": "" },
+        { "id": "e2", "pos": [1270, 275], "target": "cave_06", "target_door": "w", "one_way": false, "requires": "" }
+      ],
+      "enemies": [
+        { "id": "hive_guard", "pos": [760, 323] }
+      ],
+      "chests": [],
+      "hazards": [],
+      "checkpoints": [
+        { "id": "cp_cave_04", "pos": [140, 323] }
+      ],
+      "features": ["campfire"],
+      "map_rect": [13, 3, 2, 1]
+    },
+    {
+      "id": "cave_05",
+      "name": "隐秘裂隙",
+      "region": "cave",
+      "size": [1, 1],
+      "bg": "#120f1c",
+      "platforms": [
+        [0, 340, 640, 20],
+        [120, 292, 120, 16],
+        [300, 220, 120, 16],
+        [420, 140, 160, 16]
+      ],
+      "spawn": [320, 323],
+      "doors": [
+        { "id": "w", "pos": [0, 323], "target": "cave_04", "target_door": "e", "one_way": false, "requires": "" }
+      ],
+      "enemies": [
+        { "id": "acid_mother", "pos": [380, 323] }
+      ],
+      "chests": [
+        { "id": "chest_c05", "pos": [560, 330], "item": "bag_expand", "count": 1, "coins": 0, "hidden": false },
+        { "id": "chest_c05_h", "pos": [480, 130], "item": "mana_fragment", "count": 1, "coins": 0, "hidden": true }
+      ],
+      "hazards": [],
+      "checkpoints": [],
+      "features": [],
+      "map_rect": [15, 3, 1, 1]
+    },
+    {
+      "id": "cave_06",
+      "name": "蜂巢大厅",
+      "region": "cave",
+      "size": [2, 1],
+      "bg": "#120f1c",
+      "platforms": [
+        [0, 340, 1280, 20],
+        [280, 292, 160, 16],
+        [560, 244, 160, 16],
+        [840, 292, 160, 16]
+      ],
+      "spawn": [120, 323],
+      "doors": [
+        { "id": "w", "pos": [0, 323], "target": "cave_04", "target_door": "e2", "one_way": false, "requires": "" },
+        { "id": "s", "pos": [640, 323], "target": "cave_07", "target_door": "n", "one_way": false, "requires": "" }
+      ],
+      "enemies": [
+        { "id": "honey_queen", "pos": [640, 220] }
+      ],
+      "chests": [],
+      "hazards": [],
+      "checkpoints": [],
+      "features": [],
+      "map_rect": [13, 4, 2, 1]
+    },
+    {
+      "id": "cave_07",
+      "name": "女王之后",
+      "region": "cave",
+      "size": [1, 1],
+      "bg": "#120f1c",
+      "platforms": [
+        [0, 340, 640, 20],
+        [520, 292, 100, 16],
+        [380, 244, 120, 16],
+        [520, 196, 100, 16],
+        [380, 148, 120, 16],
+        [520, 100, 100, 16],
+        [340, 48, 200, 16]
+      ],
+      "spawn": [320, 323],
+      "doors": [
+        { "id": "n", "pos": [440, 31], "target": "cave_06", "target_door": "s", "one_way": false, "requires": "" },
+        { "id": "s", "pos": [200, 323], "target": "camp_01", "target_door": "n", "one_way": false, "requires": "" }
+      ],
+      "enemies": [],
+      "chests": [
+        { "id": "chest_c07", "pos": [100, 330], "item": "ability_double_jump", "count": 1, "coins": 0, "hidden": false }
+      ],
+      "hazards": [],
+      "checkpoints": [
+        { "id": "cp_cave_07", "pos": [300, 323] }
+      ],
+      "features": ["campfire"],
+      "map_rect": [13, 5, 1, 1]
+    }
+  ]
+}

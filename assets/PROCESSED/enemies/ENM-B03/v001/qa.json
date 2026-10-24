@@ -1,0 +1,26 @@
+{
+  "actions": 48,
+  "frames": 228,
+  "complete": true,
+  "blockingIssues": [],
+  "manualReviewRequired": [],
+  "status": "passed-visual-and-component-review",
+  "releaseReview": {
+    "date": "2026-10-24",
+    "status": "passed",
+    "method": "Codex visual review of contact sheets and engine/component verification",
+    "enemyCount": 6,
+    "newEnemyTypes": 5,
+    "bodyAnimations": 42,
+    "bodyFrames": 192,
+    "effectAnimations": 6,
+    "effectFrames": 36,
+    "notes": [
+      "Per-source uniform scales preserve articulated poses; roots are semantically registered.",
+      "Transparent canvas expansion preserves all source alpha.",
+      "Small enemy death cels were manually reordered by collapse stage to avoid a row-transition revival.",
+      "Recover preserves attack FX until the FX completes its own fade.",
+      "Main-game state and hit-window integration uses the existing gameplay events."
+    ]
+  }
+}

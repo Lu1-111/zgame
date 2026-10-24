@@ -1,0 +1,654 @@
+[gd_scene format=4]
+
+[ext_resource type="Texture2D" path="res://assets/PROCESSED/environments/ENV-B01/v001/maps/cave_07/background.png" id="1_yc4d2"]
+[ext_resource type="Texture2D" path="res://assets/PROCESSED/environments/ENV-B01/v001/maps/cave_07/midground.png" id="2_s2pn2"]
+[ext_resource type="Texture2D" path="res://assets/PROCESSED/environments/ENV-B01/v001/maps/cave_07/props.png" id="3_ml73e"]
+[ext_resource type="Texture2D" path="res://assets/PROCESSED/environments/ENV-B01/v001/maps/cave_07/hazards.png" id="4_3ee0p"]
+[ext_resource type="Texture2D" path="res://assets/PROCESSED/environments/ENV-B01/v001/ENV-04/terrain.png" id="5_yayq3"]
+[ext_resource type="Texture2D" path="res://assets/PROCESSED/environments/ENV-B01/v001/maps/cave_07/guides.png" id="6_xg3dm"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_xtne2"]
+texture = ExtResource("5_yayq3")
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:0/0 = 0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:0/0 = 0
+2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:0/0 = 0
+3:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:1/0 = 0
+0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:1/0 = 0
+1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:1/0 = 0
+2:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:1/0 = 0
+3:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:2/0 = 0
+0:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:2/0 = 0
+1:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:2/0 = 0
+2:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:2/0 = 0
+3:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:3/0 = 0
+0:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:3/0 = 0
+1:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:3/0 = 0
+2:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:3/0 = 0
+3:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+
+[sub_resource type="TileSet" id="TileSet_6nso8"]
+physics_layer_0/collision_layer = 1
+physics_layer_0/collision_mask = 0
+sources/0 = SubResource("TileSetAtlasSource_xtne2")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3iohj"]
+atlas = ExtResource("5_yayq3")
+region = Rect2(48, 0, 16, 4)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fascr"]
+atlas = ExtResource("5_yayq3")
+region = Rect2(0, 16, 16, 4)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5lnpl"]
+atlas = ExtResource("5_yayq3")
+region = Rect2(0, 16, 16, 4)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_op1wx"]
+atlas = ExtResource("5_yayq3")
+region = Rect2(0, 16, 16, 4)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ecj01"]
+atlas = ExtResource("5_yayq3")
+region = Rect2(0, 16, 16, 4)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oc4wh"]
+atlas = ExtResource("5_yayq3")
+region = Rect2(0, 16, 16, 4)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ncg5c"]
+atlas = ExtResource("5_yayq3")
+region = Rect2(0, 16, 16, 4)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6ycjm"]
+atlas = ExtResource("5_yayq3")
+region = Rect2(0, 16, 16, 4)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jm5n7"]
+atlas = ExtResource("5_yayq3")
+region = Rect2(0, 16, 16, 4)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yrwf6"]
+atlas = ExtResource("5_yayq3")
+region = Rect2(0, 16, 16, 4)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_85wao"]
+atlas = ExtResource("5_yayq3")
+region = Rect2(0, 16, 16, 4)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pkyqf"]
+atlas = ExtResource("5_yayq3")
+region = Rect2(0, 16, 16, 4)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s5sc4"]
+atlas = ExtResource("5_yayq3")
+region = Rect2(0, 16, 16, 4)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6hh8q"]
+atlas = ExtResource("5_yayq3")
+region = Rect2(0, 16, 16, 4)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gt7gw"]
+atlas = ExtResource("5_yayq3")
+region = Rect2(0, 16, 16, 4)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hh5bb"]
+atlas = ExtResource("5_yayq3")
+region = Rect2(0, 16, 16, 4)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m5iff"]
+atlas = ExtResource("5_yayq3")
+region = Rect2(0, 16, 16, 4)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xg1t6"]
+atlas = ExtResource("5_yayq3")
+region = Rect2(0, 16, 16, 4)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kcv4l"]
+atlas = ExtResource("5_yayq3")
+region = Rect2(0, 16, 16, 4)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lcoq8"]
+atlas = ExtResource("5_yayq3")
+region = Rect2(0, 16, 16, 4)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6hyfd"]
+atlas = ExtResource("5_yayq3")
+region = Rect2(0, 16, 16, 4)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_out6c"]
+atlas = ExtResource("5_yayq3")
+region = Rect2(0, 16, 16, 4)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2s1va"]
+atlas = ExtResource("5_yayq3")
+region = Rect2(0, 16, 16, 4)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fi8ot"]
+atlas = ExtResource("5_yayq3")
+region = Rect2(0, 16, 16, 4)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hipm6"]
+atlas = ExtResource("5_yayq3")
+region = Rect2(0, 16, 16, 4)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mj8xf"]
+atlas = ExtResource("5_yayq3")
+region = Rect2(0, 16, 16, 4)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2qeac"]
+atlas = ExtResource("5_yayq3")
+region = Rect2(0, 16, 16, 4)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1o8ud"]
+atlas = ExtResource("5_yayq3")
+region = Rect2(0, 16, 16, 4)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i22p4"]
+atlas = ExtResource("5_yayq3")
+region = Rect2(0, 16, 16, 4)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i407i"]
+atlas = ExtResource("5_yayq3")
+region = Rect2(0, 16, 16, 4)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7wd7f"]
+atlas = ExtResource("5_yayq3")
+region = Rect2(0, 16, 16, 4)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_msj33"]
+atlas = ExtResource("5_yayq3")
+region = Rect2(0, 16, 16, 4)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vgl5k"]
+atlas = ExtResource("5_yayq3")
+region = Rect2(0, 16, 16, 4)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yn25w"]
+atlas = ExtResource("5_yayq3")
+region = Rect2(0, 16, 16, 4)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hfose"]
+atlas = ExtResource("5_yayq3")
+region = Rect2(0, 16, 16, 4)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2b8eu"]
+atlas = ExtResource("5_yayq3")
+region = Rect2(0, 16, 16, 4)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kn0jh"]
+atlas = ExtResource("5_yayq3")
+region = Rect2(0, 16, 16, 4)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ho5aq"]
+atlas = ExtResource("5_yayq3")
+region = Rect2(0, 16, 16, 4)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1o3bu"]
+atlas = ExtResource("5_yayq3")
+region = Rect2(0, 16, 16, 4)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_amaoi"]
+atlas = ExtResource("5_yayq3")
+region = Rect2(16, 16, 16, 4)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fipau"]
+size = Vector2(640, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sf3w1"]
+atlas = ExtResource("5_yayq3")
+region = Rect2(0, 48, 16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5xi3a"]
+size = Vector2(100, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j2ykf"]
+atlas = ExtResource("5_yayq3")
+region = Rect2(0, 48, 16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7noc7"]
+size = Vector2(120, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nb86c"]
+atlas = ExtResource("5_yayq3")
+region = Rect2(0, 48, 16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cyt48"]
+size = Vector2(100, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hhdho"]
+atlas = ExtResource("5_yayq3")
+region = Rect2(0, 48, 16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_f2xct"]
+size = Vector2(120, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5gf5c"]
+atlas = ExtResource("5_yayq3")
+region = Rect2(0, 48, 16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0ekli"]
+size = Vector2(100, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kjcgf"]
+atlas = ExtResource("5_yayq3")
+region = Rect2(0, 48, 16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kav7l"]
+size = Vector2(200, 16)
+
+[node name="cave_07" type="Node2D" unique_id=1312811876]
+texture_filter = 1
+metadata/room_id = "cave_07"
+metadata/art_preview_only = true
+metadata/display_name = "女王之后"
+metadata/source_sha256 = "c17448d54a40227ebf9896c6fd951130fd670aafcd5546cb3fce8be39b03df29"
+metadata/size_px = Vector2(640, 360)
+
+[node name="Background" type="Sprite2D" parent="." unique_id=849661624]
+z_index = -30
+texture_filter = 1
+texture = ExtResource("1_yc4d2")
+centered = false
+
+[node name="Midground" type="Sprite2D" parent="." unique_id=1686213030]
+z_index = -12
+texture_filter = 1
+texture = ExtResource("2_s2pn2")
+centered = false
+
+[node name="Props" type="Sprite2D" parent="." unique_id=1518787897]
+z_index = 1
+texture_filter = 1
+texture = ExtResource("3_ml73e")
+centered = false
+
+[node name="HazardDesign" type="Sprite2D" parent="." unique_id=1968199121]
+z_index = 2
+texture_filter = 1
+texture = ExtResource("4_3ee0p")
+centered = false
+
+[node name="Platform_00" type="Node2D" parent="." unique_id=1877257860]
+position = Vector2(0, 340)
+
+[node name="Terrain" type="TileMapLayer" parent="Platform_00" unique_id=548270832]
+tile_map_data = PackedByteArray("AAAAAAAAAAAAAAAAAAABAAAAAAABAAAAAAACAAAAAAABAAAAAAADAAAAAAABAAAAAAAEAAAAAAABAAAAAAAFAAAAAAABAAAAAAAGAAAAAAABAAAAAAAHAAAAAAABAAAAAAAIAAAAAAABAAAAAAAJAAAAAAABAAAAAAAKAAAAAAABAAAAAAALAAAAAAABAAAAAAAMAAAAAAABAAAAAAANAAAAAAABAAAAAAAOAAAAAAABAAAAAAAPAAAAAAABAAAAAAAQAAAAAAABAAAAAAARAAAAAAABAAAAAAASAAAAAAABAAAAAAATAAAAAAABAAAAAAAUAAAAAAABAAAAAAAVAAAAAAABAAAAAAAWAAAAAAABAAAAAAAXAAAAAAABAAAAAAAYAAAAAAABAAAAAAAZAAAAAAABAAAAAAAaAAAAAAABAAAAAAAbAAAAAAABAAAAAAAcAAAAAAABAAAAAAAdAAAAAAABAAAAAAAeAAAAAAABAAAAAAAfAAAAAAABAAAAAAAgAAAAAAABAAAAAAAhAAAAAAABAAAAAAAiAAAAAAABAAAAAAAjAAAAAAABAAAAAAAkAAAAAAABAAAAAAAlAAAAAAABAAAAAAAmAAAAAAABAAAAAAAnAAAAAAACAAAAAAA=")
+tile_set = SubResource("TileSet_6nso8")
+collision_enabled = false
+
+[node name="Edge_0_16" type="Sprite2D" parent="Platform_00" unique_id=1060610355]
+position = Vector2(0, 16)
+texture = SubResource("AtlasTexture_3iohj")
+centered = false
+
+[node name="Edge_16_16" type="Sprite2D" parent="Platform_00" unique_id=2134778399]
+position = Vector2(16, 16)
+texture = SubResource("AtlasTexture_fascr")
+centered = false
+
+[node name="Edge_32_16" type="Sprite2D" parent="Platform_00" unique_id=313785761]
+position = Vector2(32, 16)
+texture = SubResource("AtlasTexture_5lnpl")
+centered = false
+
+[node name="Edge_48_16" type="Sprite2D" parent="Platform_00" unique_id=732671430]
+position = Vector2(48, 16)
+texture = SubResource("AtlasTexture_op1wx")
+centered = false
+
+[node name="Edge_64_16" type="Sprite2D" parent="Platform_00" unique_id=906125100]
+position = Vector2(64, 16)
+texture = SubResource("AtlasTexture_ecj01")
+centered = false
+
+[node name="Edge_80_16" type="Sprite2D" parent="Platform_00" unique_id=834034854]
+position = Vector2(80, 16)
+texture = SubResource("AtlasTexture_oc4wh")
+centered = false
+
+[node name="Edge_96_16" type="Sprite2D" parent="Platform_00" unique_id=1929890024]
+position = Vector2(96, 16)
+texture = SubResource("AtlasTexture_ncg5c")
+centered = false
+
+[node name="Edge_112_16" type="Sprite2D" parent="Platform_00" unique_id=197176855]
+position = Vector2(112, 16)
+texture = SubResource("AtlasTexture_6ycjm")
+centered = false
+
+[node name="Edge_128_16" type="Sprite2D" parent="Platform_00" unique_id=94500156]
+position = Vector2(128, 16)
+texture = SubResource("AtlasTexture_jm5n7")
+centered = false
+
+[node name="Edge_144_16" type="Sprite2D" parent="Platform_00" unique_id=1934640245]
+position = Vector2(144, 16)
+texture = SubResource("AtlasTexture_yrwf6")
+centered = false
+
+[node name="Edge_160_16" type="Sprite2D" parent="Platform_00" unique_id=1713992973]
+position = Vector2(160, 16)
+texture = SubResource("AtlasTexture_85wao")
+centered = false
+
+[node name="Edge_176_16" type="Sprite2D" parent="Platform_00" unique_id=1656425653]
+position = Vector2(176, 16)
+texture = SubResource("AtlasTexture_pkyqf")
+centered = false
+
+[node name="Edge_192_16" type="Sprite2D" parent="Platform_00" unique_id=830242241]
+position = Vector2(192, 16)
+texture = SubResource("AtlasTexture_s5sc4")
+centered = false
+
+[node name="Edge_208_16" type="Sprite2D" parent="Platform_00" unique_id=78448106]
+position = Vector2(208, 16)
+texture = SubResource("AtlasTexture_6hh8q")
+centered = false
+
+[node name="Edge_224_16" type="Sprite2D" parent="Platform_00" unique_id=167277306]
+position = Vector2(224, 16)
+texture = SubResource("AtlasTexture_gt7gw")
+centered = false
+
+[node name="Edge_240_16" type="Sprite2D" parent="Platform_00" unique_id=1624429300]
+position = Vector2(240, 16)
+texture = SubResource("AtlasTexture_hh5bb")
+centered = false
+
+[node name="Edge_256_16" type="Sprite2D" parent="Platform_00" unique_id=1924237966]
+position = Vector2(256, 16)
+texture = SubResource("AtlasTexture_m5iff")
+centered = false
+
+[node name="Edge_272_16" type="Sprite2D" parent="Platform_00" unique_id=852625023]
+position = Vector2(272, 16)
+texture = SubResource("AtlasTexture_xg1t6")
+centered = false
+
+[node name="Edge_288_16" type="Sprite2D" parent="Platform_00" unique_id=1254393329]
+position = Vector2(288, 16)
+texture = SubResource("AtlasTexture_kcv4l")
+centered = false
+
+[node name="Edge_304_16" type="Sprite2D" parent="Platform_00" unique_id=2086503058]
+position = Vector2(304, 16)
+texture = SubResource("AtlasTexture_lcoq8")
+centered = false
+
+[node name="Edge_320_16" type="Sprite2D" parent="Platform_00" unique_id=817593183]
+position = Vector2(320, 16)
+texture = SubResource("AtlasTexture_6hyfd")
+centered = false
+
+[node name="Edge_336_16" type="Sprite2D" parent="Platform_00" unique_id=763942726]
+position = Vector2(336, 16)
+texture = SubResource("AtlasTexture_out6c")
+centered = false
+
+[node name="Edge_352_16" type="Sprite2D" parent="Platform_00" unique_id=1063342253]
+position = Vector2(352, 16)
+texture = SubResource("AtlasTexture_2s1va")
+centered = false
+
+[node name="Edge_368_16" type="Sprite2D" parent="Platform_00" unique_id=1050902200]
+position = Vector2(368, 16)
+texture = SubResource("AtlasTexture_fi8ot")
+centered = false
+
+[node name="Edge_384_16" type="Sprite2D" parent="Platform_00" unique_id=1751010138]
+position = Vector2(384, 16)
+texture = SubResource("AtlasTexture_hipm6")
+centered = false
+
+[node name="Edge_400_16" type="Sprite2D" parent="Platform_00" unique_id=313716996]
+position = Vector2(400, 16)
+texture = SubResource("AtlasTexture_mj8xf")
+centered = false
+
+[node name="Edge_416_16" type="Sprite2D" parent="Platform_00" unique_id=1335015982]
+position = Vector2(416, 16)
+texture = SubResource("AtlasTexture_2qeac")
+centered = false
+
+[node name="Edge_432_16" type="Sprite2D" parent="Platform_00" unique_id=653875617]
+position = Vector2(432, 16)
+texture = SubResource("AtlasTexture_1o8ud")
+centered = false
+
+[node name="Edge_448_16" type="Sprite2D" parent="Platform_00" unique_id=1922046857]
+position = Vector2(448, 16)
+texture = SubResource("AtlasTexture_i22p4")
+centered = false
+
+[node name="Edge_464_16" type="Sprite2D" parent="Platform_00" unique_id=124346457]
+position = Vector2(464, 16)
+texture = SubResource("AtlasTexture_i407i")
+centered = false
+
+[node name="Edge_480_16" type="Sprite2D" parent="Platform_00" unique_id=1169068093]
+position = Vector2(480, 16)
+texture = SubResource("AtlasTexture_7wd7f")
+centered = false
+
+[node name="Edge_496_16" type="Sprite2D" parent="Platform_00" unique_id=314344822]
+position = Vector2(496, 16)
+texture = SubResource("AtlasTexture_msj33")
+centered = false
+
+[node name="Edge_512_16" type="Sprite2D" parent="Platform_00" unique_id=859976514]
+position = Vector2(512, 16)
+texture = SubResource("AtlasTexture_vgl5k")
+centered = false
+
+[node name="Edge_528_16" type="Sprite2D" parent="Platform_00" unique_id=736957343]
+position = Vector2(528, 16)
+texture = SubResource("AtlasTexture_yn25w")
+centered = false
+
+[node name="Edge_544_16" type="Sprite2D" parent="Platform_00" unique_id=2049272020]
+position = Vector2(544, 16)
+texture = SubResource("AtlasTexture_hfose")
+centered = false
+
+[node name="Edge_560_16" type="Sprite2D" parent="Platform_00" unique_id=1935429072]
+position = Vector2(560, 16)
+texture = SubResource("AtlasTexture_2b8eu")
+centered = false
+
+[node name="Edge_576_16" type="Sprite2D" parent="Platform_00" unique_id=623412118]
+position = Vector2(576, 16)
+texture = SubResource("AtlasTexture_kn0jh")
+centered = false
+
+[node name="Edge_592_16" type="Sprite2D" parent="Platform_00" unique_id=1656164554]
+position = Vector2(592, 16)
+texture = SubResource("AtlasTexture_ho5aq")
+centered = false
+
+[node name="Edge_608_16" type="Sprite2D" parent="Platform_00" unique_id=606952965]
+position = Vector2(608, 16)
+texture = SubResource("AtlasTexture_1o3bu")
+centered = false
+
+[node name="Edge_624_16" type="Sprite2D" parent="Platform_00" unique_id=547859154]
+position = Vector2(624, 16)
+texture = SubResource("AtlasTexture_amaoi")
+centered = false
+
+[node name="ExactSourceCollider" type="StaticBody2D" parent="Platform_00" unique_id=1044293151]
+position = Vector2(320, 10)
+collision_mask = 0
+
+[node name="Shape" type="CollisionShape2D" parent="Platform_00/ExactSourceCollider" unique_id=353184567]
+shape = SubResource("RectangleShape2D_fipau")
+
+[node name="Platform_01" type="Node2D" parent="." unique_id=980856129]
+position = Vector2(520, 292)
+
+[node name="Terrain" type="TileMapLayer" parent="Platform_01" unique_id=106612886]
+tile_map_data = PackedByteArray("AAAAAAAAAAACAAIAAAABAAAAAAADAAIAAAACAAAAAAADAAIAAAADAAAAAAADAAIAAAAEAAAAAAADAAIAAAAFAAAAAAADAAIAAAA=")
+tile_set = SubResource("TileSet_6nso8")
+collision_enabled = false
+
+[node name="Edge_84_0" type="Sprite2D" parent="Platform_01" unique_id=1596845998]
+position = Vector2(84, 0)
+texture = SubResource("AtlasTexture_sf3w1")
+centered = false
+
+[node name="ExactSourceCollider" type="StaticBody2D" parent="Platform_01" unique_id=1421585707]
+position = Vector2(50, 8)
+collision_mask = 0
+
+[node name="Shape" type="CollisionShape2D" parent="Platform_01/ExactSourceCollider" unique_id=1738159240]
+shape = SubResource("RectangleShape2D_5xi3a")
+
+[node name="Platform_02" type="Node2D" parent="." unique_id=1649092300]
+position = Vector2(380, 244)
+
+[node name="Terrain" type="TileMapLayer" parent="Platform_02" unique_id=729756179]
+tile_map_data = PackedByteArray("AAAAAAAAAAACAAIAAAABAAAAAAADAAIAAAACAAAAAAADAAIAAAADAAAAAAADAAIAAAAEAAAAAAADAAIAAAAFAAAAAAADAAIAAAAGAAAAAAADAAIAAAA=")
+tile_set = SubResource("TileSet_6nso8")
+collision_enabled = false
+
+[node name="Edge_104_0" type="Sprite2D" parent="Platform_02" unique_id=1898961307]
+position = Vector2(104, 0)
+texture = SubResource("AtlasTexture_j2ykf")
+centered = false
+
+[node name="ExactSourceCollider" type="StaticBody2D" parent="Platform_02" unique_id=1196245358]
+position = Vector2(60, 8)
+collision_mask = 0
+
+[node name="Shape" type="CollisionShape2D" parent="Platform_02/ExactSourceCollider" unique_id=1224003892]
+shape = SubResource("RectangleShape2D_7noc7")
+
+[node name="Platform_03" type="Node2D" parent="." unique_id=2099063377]
+position = Vector2(520, 196)
+
+[node name="Terrain" type="TileMapLayer" parent="Platform_03" unique_id=318436480]
+tile_map_data = PackedByteArray("AAAAAAAAAAACAAIAAAABAAAAAAADAAIAAAACAAAAAAADAAIAAAADAAAAAAADAAIAAAAEAAAAAAADAAIAAAAFAAAAAAADAAIAAAA=")
+tile_set = SubResource("TileSet_6nso8")
+collision_enabled = false
+
+[node name="Edge_84_0" type="Sprite2D" parent="Platform_03" unique_id=1934063321]
+position = Vector2(84, 0)
+texture = SubResource("AtlasTexture_nb86c")
+centered = false
+
+[node name="ExactSourceCollider" type="StaticBody2D" parent="Platform_03" unique_id=1007798225]
+position = Vector2(50, 8)
+collision_mask = 0
+
+[node name="Shape" type="CollisionShape2D" parent="Platform_03/ExactSourceCollider" unique_id=1904687128]
+shape = SubResource("RectangleShape2D_cyt48")
+
+[node name="Platform_04" type="Node2D" parent="." unique_id=894926038]
+position = Vector2(380, 148)
+
+[node name="Terrain" type="TileMapLayer" parent="Platform_04" unique_id=635623290]
+tile_map_data = PackedByteArray("AAAAAAAAAAACAAIAAAABAAAAAAADAAIAAAACAAAAAAADAAIAAAADAAAAAAADAAIAAAAEAAAAAAADAAIAAAAFAAAAAAADAAIAAAAGAAAAAAADAAIAAAA=")
+tile_set = SubResource("TileSet_6nso8")
+collision_enabled = false
+
+[node name="Edge_104_0" type="Sprite2D" parent="Platform_04" unique_id=348011527]
+position = Vector2(104, 0)
+texture = SubResource("AtlasTexture_hhdho")
+centered = false
+
+[node name="ExactSourceCollider" type="StaticBody2D" parent="Platform_04" unique_id=845573325]
+position = Vector2(60, 8)
+collision_mask = 0
+
+[node name="Shape" type="CollisionShape2D" parent="Platform_04/ExactSourceCollider" unique_id=1938788210]
+shape = SubResource("RectangleShape2D_f2xct")
+
+[node name="Platform_05" type="Node2D" parent="." unique_id=1157355596]
+position = Vector2(520, 100)
+
+[node name="Terrain" type="TileMapLayer" parent="Platform_05" unique_id=457150893]
+tile_map_data = PackedByteArray("AAAAAAAAAAACAAIAAAABAAAAAAADAAIAAAACAAAAAAADAAIAAAADAAAAAAADAAIAAAAEAAAAAAADAAIAAAAFAAAAAAADAAIAAAA=")
+tile_set = SubResource("TileSet_6nso8")
+collision_enabled = false
+
+[node name="Edge_84_0" type="Sprite2D" parent="Platform_05" unique_id=172456429]
+position = Vector2(84, 0)
+texture = SubResource("AtlasTexture_5gf5c")
+centered = false
+
+[node name="ExactSourceCollider" type="StaticBody2D" parent="Platform_05" unique_id=1940475251]
+position = Vector2(50, 8)
+collision_mask = 0
+
+[node name="Shape" type="CollisionShape2D" parent="Platform_05/ExactSourceCollider" unique_id=94666858]
+shape = SubResource("RectangleShape2D_0ekli")
+
+[node name="Platform_06" type="Node2D" parent="." unique_id=1258828980]
+position = Vector2(340, 48)
+
+[node name="Terrain" type="TileMapLayer" parent="Platform_06" unique_id=1625045118]
+tile_map_data = PackedByteArray("AAAAAAAAAAACAAIAAAABAAAAAAADAAIAAAACAAAAAAADAAIAAAADAAAAAAADAAIAAAAEAAAAAAADAAIAAAAFAAAAAAADAAIAAAAGAAAAAAADAAIAAAAHAAAAAAADAAIAAAAIAAAAAAADAAIAAAAJAAAAAAADAAIAAAAKAAAAAAADAAIAAAALAAAAAAADAAIAAAA=")
+tile_set = SubResource("TileSet_6nso8")
+collision_enabled = false
+
+[node name="Edge_184_0" type="Sprite2D" parent="Platform_06" unique_id=990845137]
+position = Vector2(184, 0)
+texture = SubResource("AtlasTexture_kjcgf")
+centered = false
+
+[node name="ExactSourceCollider" type="StaticBody2D" parent="Platform_06" unique_id=1397922521]
+position = Vector2(100, 8)
+collision_mask = 0
+
+[node name="Shape" type="CollisionShape2D" parent="Platform_06/ExactSourceCollider" unique_id=1018821486]
+shape = SubResource("RectangleShape2D_kav7l")
+
+[node name="DesignGuides" type="Sprite2D" parent="." unique_id=493506247]
+visible = false
+z_index = 30
+texture_filter = 1
+texture = ExtResource("6_xg3dm")
+centered = false
+
+[node name="SemanticMarkers" type="Node2D" parent="." unique_id=210453761]
+
+[node name="Door_n" type="Marker2D" parent="SemanticMarkers" unique_id=1520524545]
+position = Vector2(440, 31)
+metadata/definition = {
+"id": "n",
+"one_way": false,
+"pos": [440.0, 31.0],
+"requires": "",
+"target": "cave_06",
+"target_door": "s"
+}
+
+[node name="Door_s" type="Marker2D" parent="SemanticMarkers" unique_id=1716594874]
+position = Vector2(200, 323)
+metadata/definition = {
+"id": "s",
+"one_way": false,
+"pos": [200.0, 323.0],
+"requires": "",
+"target": "camp_01",
+"target_door": "n"
+}
+
+[node name="Spawn" type="Marker2D" parent="SemanticMarkers" unique_id=929542644]
+position = Vector2(320, 323)

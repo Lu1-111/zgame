@@ -1,0 +1,417 @@
+{
+  "id": "ENM-04_death",
+  "name": "death",
+  "enemyId": "ENM-04",
+  "gameEnemyId": "moss_fox",
+  "label": "death",
+  "kind": "body",
+  "sourcePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-04/ENM-04_actions_B.png",
+  "sourceRects": [
+    [
+      0,
+      676,
+      319,
+      298
+    ],
+    [
+      319,
+      676,
+      306,
+      298
+    ],
+    [
+      625,
+      676,
+      310,
+      298
+    ],
+    [
+      935,
+      676,
+      319,
+      298
+    ],
+    [
+      0,
+      974,
+      310,
+      280
+    ],
+    [
+      310,
+      974,
+      318,
+      280
+    ],
+    [
+      628,
+      974,
+      330,
+      280
+    ],
+    [
+      958,
+      974,
+      296,
+      280
+    ]
+  ],
+  "sourceAnchors": [
+    [
+      156.75,
+      248.5
+    ],
+    [
+      151.25,
+      248.5
+    ],
+    [
+      158.75,
+      248.5
+    ],
+    [
+      162.25,
+      248.5
+    ],
+    [
+      156.75,
+      237.0
+    ],
+    [
+      160.25,
+      237.0
+    ],
+    [
+      155.75,
+      237.0
+    ],
+    [
+      139.25,
+      237.0
+    ]
+  ],
+  "scale": 0.20765027322404372,
+  "target": [
+    128,
+    128
+  ],
+  "anchor": [
+    64,
+    104
+  ],
+  "fps": 10,
+  "loop": false,
+  "promptPath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-04/ENM-04_B.prompt.txt",
+  "generationMode": "built-in-imagegen",
+  "processing": "rect crop, fixed per-sheet nearest scale, integer semantic root translation; original alpha retained",
+  "provenancePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-04/provenance.json",
+  "frames": [
+    "frames/ENM-04_death/ENM-04_death_00.png",
+    "frames/ENM-04_death/ENM-04_death_01.png",
+    "frames/ENM-04_death/ENM-04_death_02.png",
+    "frames/ENM-04_death/ENM-04_death_03.png",
+    "frames/ENM-04_death/ENM-04_death_04.png",
+    "frames/ENM-04_death/ENM-04_death_05.png",
+    "frames/ENM-04_death/ENM-04_death_06.png",
+    "frames/ENM-04_death/ENM-04_death_07.png"
+  ],
+  "sheet": "sheets/ENM-04_death.png",
+  "sheetRects": [
+    [
+      0,
+      0,
+      128,
+      128
+    ],
+    [
+      128,
+      0,
+      128,
+      128
+    ],
+    [
+      256,
+      0,
+      128,
+      128
+    ],
+    [
+      384,
+      0,
+      128,
+      128
+    ],
+    [
+      512,
+      0,
+      128,
+      128
+    ],
+    [
+      640,
+      0,
+      128,
+      128
+    ],
+    [
+      768,
+      0,
+      128,
+      128
+    ],
+    [
+      896,
+      0,
+      128,
+      128
+    ]
+  ],
+  "atlas": "atlas/ENM-04_death.png",
+  "atlasColumns": 3,
+  "atlasRows": 3,
+  "atlasRects": [
+    [
+      0,
+      0,
+      128,
+      128
+    ],
+    [
+      128,
+      0,
+      128,
+      128
+    ],
+    [
+      256,
+      0,
+      128,
+      128
+    ],
+    [
+      0,
+      128,
+      128,
+      128
+    ],
+    [
+      128,
+      128,
+      128,
+      128
+    ],
+    [
+      256,
+      128,
+      128,
+      128
+    ],
+    [
+      0,
+      256,
+      128,
+      128
+    ],
+    [
+      128,
+      256,
+      128,
+      128
+    ]
+  ],
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "sourceSha256": "24bdd7b460b11024baf978726cb330efaf125daf97bba80d142fde4f09aa86c3",
+  "sourceBatch": "assets/RAW/enemies/ENM-B04/v001/ENM-04/batch.json",
+  "frameCount": 8,
+  "frameDetails": [
+    {
+      "sourceRect": [
+        0,
+        676,
+        319,
+        298
+      ],
+      "sourceAnchor": [
+        156.75,
+        248.5
+      ],
+      "offset": [
+        31,
+        52
+      ],
+      "alphaBBox": [
+        33,
+        52,
+        97,
+        114
+      ],
+      "sourceEdgeAlpha": 1
+    },
+    {
+      "sourceRect": [
+        319,
+        676,
+        306,
+        298
+      ],
+      "sourceAnchor": [
+        151.25,
+        248.5
+      ],
+      "offset": [
+        33,
+        52
+      ],
+      "alphaBBox": [
+        33,
+        52,
+        97,
+        114
+      ],
+      "sourceEdgeAlpha": 2
+    },
+    {
+      "sourceRect": [
+        625,
+        676,
+        310,
+        298
+      ],
+      "sourceAnchor": [
+        158.75,
+        248.5
+      ],
+      "offset": [
+        31,
+        52
+      ],
+      "alphaBBox": [
+        31,
+        52,
+        95,
+        109
+      ],
+      "sourceEdgeAlpha": 2
+    },
+    {
+      "sourceRect": [
+        935,
+        676,
+        319,
+        298
+      ],
+      "sourceAnchor": [
+        162.25,
+        248.5
+      ],
+      "offset": [
+        30,
+        52
+      ],
+      "alphaBBox": [
+        30,
+        52,
+        93,
+        108
+      ],
+      "sourceEdgeAlpha": 1
+    },
+    {
+      "sourceRect": [
+        0,
+        974,
+        310,
+        280
+      ],
+      "sourceAnchor": [
+        156.75,
+        237.0
+      ],
+      "offset": [
+        31,
+        55
+      ],
+      "alphaBBox": [
+        34,
+        55,
+        95,
+        107
+      ],
+      "sourceEdgeAlpha": 1
+    },
+    {
+      "sourceRect": [
+        310,
+        974,
+        318,
+        280
+      ],
+      "sourceAnchor": [
+        160.25,
+        237.0
+      ],
+      "offset": [
+        31,
+        55
+      ],
+      "alphaBBox": [
+        31,
+        55,
+        97,
+        109
+      ],
+      "sourceEdgeAlpha": 1
+    },
+    {
+      "sourceRect": [
+        628,
+        974,
+        330,
+        280
+      ],
+      "sourceAnchor": [
+        155.75,
+        237.0
+      ],
+      "offset": [
+        32,
+        55
+      ],
+      "alphaBBox": [
+        32,
+        55,
+        101,
+        108
+      ],
+      "sourceEdgeAlpha": 1
+    },
+    {
+      "sourceRect": [
+        958,
+        974,
+        296,
+        280
+      ],
+      "sourceAnchor": [
+        139.25,
+        237.0
+      ],
+      "offset": [
+        35,
+        55
+      ],
+      "alphaBBox": [
+        35,
+        55,
+        93,
+        108
+      ],
+      "sourceEdgeAlpha": 1
+    }
+  ],
+  "fadeStartNormalized": 0.65,
+  "loopBoundaryMeanDifference": 14.666666666666666
+}

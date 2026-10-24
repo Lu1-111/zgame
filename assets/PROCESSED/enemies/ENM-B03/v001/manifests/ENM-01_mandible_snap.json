@@ -1,0 +1,348 @@
+{
+  "id": "ENM-01_mandible_snap",
+  "name": "mandible_snap",
+  "enemyId": "ENM-01",
+  "gameEnemyId": "moss_beetle",
+  "label": "苔甲虫·钳击碎叶",
+  "sourcePath": "/home/lululu/zgame/assets/RAW/effects/ENM-B03/v001/ENM-01_mandible_snap_sheet_v001.png",
+  "promptPath": "/home/lululu/zgame/assets/RAW/effects/ENM-B03/v001/ENM-01_mandible_snap_sheet_v001.prompt.txt",
+  "generatedPath": "/home/lululu/.codex/generated_images/01a16cdb-4368-7a73-a021-7de070b80e42/exec-74493bc3-d9e0-410b-ad4d-a0c4ac7acccb.png",
+  "sourceColumns": 3,
+  "sourceRows": 2,
+  "sourceIndices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "sourceRects": [
+    [
+      0,
+      0,
+      512,
+      512
+    ],
+    [
+      512,
+      0,
+      512,
+      512
+    ],
+    [
+      1024,
+      0,
+      512,
+      512
+    ],
+    [
+      0,
+      512,
+      512,
+      512
+    ],
+    [
+      512,
+      512,
+      512,
+      512
+    ],
+    [
+      1024,
+      512,
+      512,
+      512
+    ]
+  ],
+  "sourceAnchors": [
+    [
+      256,
+      256
+    ],
+    [
+      256,
+      256
+    ],
+    [
+      256,
+      256
+    ],
+    [
+      256,
+      256
+    ],
+    [
+      256,
+      256
+    ],
+    [
+      256,
+      256
+    ]
+  ],
+  "target": [
+    96,
+    96
+  ],
+  "anchor": [
+    48,
+    48
+  ],
+  "scale": 0.15625,
+  "fps": 14,
+  "loop": false,
+  "kind": "effect",
+  "triggerAction": "attack",
+  "attachPoint": "attack_contact",
+  "triggerOffset": [
+    28,
+    -20
+  ],
+  "phases": [
+    "建立",
+    "峰值",
+    "扩张",
+    "碎裂",
+    "衰减",
+    "尾屑"
+  ],
+  "notes": [],
+  "frames": [
+    "frames/ENM-01_mandible_snap/ENM-01_mandible_snap_00.png",
+    "frames/ENM-01_mandible_snap/ENM-01_mandible_snap_01.png",
+    "frames/ENM-01_mandible_snap/ENM-01_mandible_snap_02.png",
+    "frames/ENM-01_mandible_snap/ENM-01_mandible_snap_03.png",
+    "frames/ENM-01_mandible_snap/ENM-01_mandible_snap_04.png",
+    "frames/ENM-01_mandible_snap/ENM-01_mandible_snap_05.png"
+  ],
+  "sheet": "sheets/ENM-01_mandible_snap.png",
+  "sheetRects": [
+    [
+      0,
+      0,
+      96,
+      96
+    ],
+    [
+      96,
+      0,
+      96,
+      96
+    ],
+    [
+      192,
+      0,
+      96,
+      96
+    ],
+    [
+      288,
+      0,
+      96,
+      96
+    ],
+    [
+      384,
+      0,
+      96,
+      96
+    ],
+    [
+      480,
+      0,
+      96,
+      96
+    ]
+  ],
+  "atlas": "atlas/ENM-01_mandible_snap.png",
+  "atlasColumns": 3,
+  "atlasRows": 2,
+  "atlasRects": [
+    [
+      0,
+      0,
+      96,
+      96
+    ],
+    [
+      96,
+      0,
+      96,
+      96
+    ],
+    [
+      192,
+      0,
+      96,
+      96
+    ],
+    [
+      0,
+      96,
+      96,
+      96
+    ],
+    [
+      96,
+      96,
+      96,
+      96
+    ],
+    [
+      192,
+      96,
+      96,
+      96
+    ]
+  ],
+  "sourceSize": [
+    1536,
+    1024
+  ],
+  "sourceSha256": "366887ec000c4f912f54c15a9b0f50aed84a1d389492ee7d02a3b2cbdf702160",
+  "sourceBatch": "/home/lululu/zgame/assets/RAW/effects/ENM-B03/v001/batch.json",
+  "frameCount": 6,
+  "frameDetails": [
+    {
+      "sourceRect": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "sourceAnchor": [
+        256,
+        256
+      ],
+      "offset": [
+        8,
+        8
+      ],
+      "alphaBBox": [
+        14,
+        15,
+        87,
+        88
+      ],
+      "sourceEdgeAlpha": 1
+    },
+    {
+      "sourceRect": [
+        512,
+        0,
+        512,
+        512
+      ],
+      "sourceAnchor": [
+        256,
+        256
+      ],
+      "offset": [
+        8,
+        8
+      ],
+      "alphaBBox": [
+        8,
+        15,
+        86,
+        85
+      ],
+      "sourceEdgeAlpha": 1
+    },
+    {
+      "sourceRect": [
+        1024,
+        0,
+        512,
+        512
+      ],
+      "sourceAnchor": [
+        256,
+        256
+      ],
+      "offset": [
+        8,
+        8
+      ],
+      "alphaBBox": [
+        12,
+        14,
+        86,
+        81
+      ],
+      "sourceEdgeAlpha": 1
+    },
+    {
+      "sourceRect": [
+        0,
+        512,
+        512,
+        512
+      ],
+      "sourceAnchor": [
+        256,
+        256
+      ],
+      "offset": [
+        8,
+        8
+      ],
+      "alphaBBox": [
+        14,
+        8,
+        88,
+        85
+      ],
+      "sourceEdgeAlpha": 1
+    },
+    {
+      "sourceRect": [
+        512,
+        512,
+        512,
+        512
+      ],
+      "sourceAnchor": [
+        256,
+        256
+      ],
+      "offset": [
+        8,
+        8
+      ],
+      "alphaBBox": [
+        8,
+        8,
+        88,
+        86
+      ],
+      "sourceEdgeAlpha": 1
+    },
+    {
+      "sourceRect": [
+        1024,
+        512,
+        512,
+        512
+      ],
+      "sourceAnchor": [
+        256,
+        256
+      ],
+      "offset": [
+        8,
+        8
+      ],
+      "alphaBBox": [
+        8,
+        8,
+        85,
+        76
+      ],
+      "sourceEdgeAlpha": 1
+    }
+  ],
+  "fadeStartNormalized": 0.65,
+  "loopBoundaryMeanDifference": 13.333333333333334
+}

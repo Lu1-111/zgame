@@ -1,0 +1,345 @@
+{
+  "format": "nailong-enemy-library-v4",
+  "version": "v004",
+  "direction": "right",
+  "pixel_filter": "nearest",
+  "enemies": {
+    "ENM-01": {
+      "name": "苔甲虫精修",
+      "slug": "moss_beetle",
+      "gameEnemyId": "moss_beetle",
+      "path": "assets/PROCESSED/enemies/ENM-B03/v001",
+      "sprite_frames": "godot/ENM-01.tres",
+      "canvas": [
+        64,
+        64
+      ],
+      "root": [
+        32,
+        56
+      ],
+      "animation_count": 7,
+      "frame_count": 32,
+      "layers": [
+        "body"
+      ],
+      "sourceBatch": "ENM-B03"
+    },
+    "ENM-02": {
+      "name": "奶罐哥布林",
+      "slug": "milk_goblin",
+      "gameEnemyId": "milk_goblin",
+      "path": "assets/PROCESSED/enemies/ENM-B04/v001",
+      "sprite_frames": "godot/ENM-02.tres",
+      "canvas": [
+        128,
+        128
+      ],
+      "root": [
+        64,
+        104
+      ],
+      "animation_count": 7,
+      "frame_count": 32,
+      "layers": [
+        "body"
+      ],
+      "sourceBatch": "ENM-B04"
+    },
+    "ENM-03": {
+      "name": "奶滴史莱姆",
+      "slug": "milk_slime",
+      "gameEnemyId": "milk_slime",
+      "path": "assets/PROCESSED/enemies/ENM-B04/v001",
+      "sprite_frames": "godot/ENM-03.tres",
+      "canvas": [
+        192,
+        160
+      ],
+      "root": [
+        96,
+        136
+      ],
+      "animation_count": 7,
+      "frame_count": 32,
+      "layers": [
+        "body"
+      ],
+      "sourceBatch": "ENM-B04",
+      "animationSupplements": [
+        {
+          "batch": "ENM-SLIME-GRAB",
+          "catalog": "ENM-SLIME-GRAB/v001/catalog.json",
+          "actions": [
+            "grab_ready",
+            "grab_attack",
+            "grab_recover",
+            "tentacle_grab"
+          ],
+          "uniqueNewFrames": 16,
+          "allActionsResource": "ENM-SLIME-GRAB/v001/godot/ENM-03_all_actions.tres"
+        }
+      ]
+    },
+    "ENM-04": {
+      "name": "苔原奶狐",
+      "slug": "moss_fox",
+      "gameEnemyId": "moss_fox",
+      "path": "assets/PROCESSED/enemies/ENM-B04/v001",
+      "sprite_frames": "godot/ENM-04.tres",
+      "canvas": [
+        128,
+        128
+      ],
+      "root": [
+        64,
+        104
+      ],
+      "animation_count": 7,
+      "frame_count": 32,
+      "layers": [
+        "body"
+      ],
+      "sourceBatch": "ENM-B04"
+    },
+    "ENM-05": {
+      "name": "霜晶冰灵",
+      "slug": "frost_sprite",
+      "gameEnemyId": "frost_sprite",
+      "path": "assets/PROCESSED/enemies/ENM-B04/v001",
+      "sprite_frames": "godot/ENM-05.tres",
+      "canvas": [
+        128,
+        128
+      ],
+      "root": [
+        64,
+        64
+      ],
+      "animation_count": 7,
+      "frame_count": 32,
+      "layers": [
+        "body"
+      ],
+      "sourceBatch": "ENM-B04"
+    },
+    "ENM-06": {
+      "name": "暗影奶灵",
+      "slug": "shadow_wisp",
+      "gameEnemyId": "shadow_wisp",
+      "path": "assets/PROCESSED/enemies/ENM-B04/v001",
+      "sprite_frames": "godot/ENM-06.tres",
+      "canvas": [
+        104,
+        88
+      ],
+      "root": [
+        52,
+        44
+      ],
+      "animation_count": 7,
+      "frame_count": 32,
+      "layers": [
+        "body"
+      ],
+      "sourceBatch": "ENM-B04"
+    },
+    "ENM-07": {
+      "name": "藤鞭花",
+      "slug": "vine_flower",
+      "gameEnemyId": "vine_flower",
+      "path": "assets/PROCESSED/enemies/ENM-B04/v001",
+      "sprite_frames": "godot/ENM-07.tres",
+      "canvas": [
+        128,
+        88
+      ],
+      "root": [
+        58,
+        72
+      ],
+      "animation_count": 7,
+      "frame_count": 32,
+      "layers": [
+        "body"
+      ],
+      "sourceBatch": "ENM-B04"
+    },
+    "ENM-08": {
+      "name": "蜜蜡蜂",
+      "slug": "wax_bee",
+      "gameEnemyId": "wax_bee",
+      "path": "assets/PROCESSED/enemies/ENM-B04/v001",
+      "sprite_frames": "godot/ENM-08.tres",
+      "canvas": [
+        80,
+        64
+      ],
+      "root": [
+        40,
+        32
+      ],
+      "animation_count": 7,
+      "frame_count": 32,
+      "layers": [
+        "body"
+      ],
+      "sourceBatch": "ENM-B04"
+    },
+    "ENM-09": {
+      "name": "矿灯虫",
+      "slug": "lamp_bug",
+      "gameEnemyId": "lamp_bug",
+      "path": "assets/PROCESSED/enemies/ENM-B03/v001",
+      "sprite_frames": "godot/ENM-09.tres",
+      "canvas": [
+        72,
+        72
+      ],
+      "root": [
+        36,
+        35
+      ],
+      "animation_count": 7,
+      "frame_count": 32,
+      "layers": [
+        "body"
+      ],
+      "sourceBatch": "ENM-B03"
+    },
+    "ENM-10": {
+      "name": "酸液蛞",
+      "slug": "acid_slug",
+      "gameEnemyId": "acid_slug",
+      "path": "assets/PROCESSED/enemies/ENM-B03/v001",
+      "sprite_frames": "godot/ENM-10.tres",
+      "canvas": [
+        64,
+        64
+      ],
+      "root": [
+        32,
+        56
+      ],
+      "animation_count": 7,
+      "frame_count": 32,
+      "layers": [
+        "body"
+      ],
+      "sourceBatch": "ENM-B03"
+    },
+    "ELT-01": {
+      "name": "苔甲卫",
+      "slug": "moss_guard",
+      "gameEnemyId": "moss_guard",
+      "path": "assets/PROCESSED/enemies/ENM-B03/v001",
+      "sprite_frames": "godot/ELT-01.tres",
+      "canvas": [
+        128,
+        144
+      ],
+      "root": [
+        64,
+        100
+      ],
+      "animation_count": 7,
+      "frame_count": 32,
+      "layers": [
+        "body"
+      ],
+      "sourceBatch": "ENM-B03"
+    },
+    "ELT-02": {
+      "name": "蜂巢守卫",
+      "slug": "hive_guard",
+      "gameEnemyId": "hive_guard",
+      "path": "assets/PROCESSED/enemies/ENM-B03/v001",
+      "sprite_frames": "godot/ELT-02.tres",
+      "canvas": [
+        120,
+        112
+      ],
+      "root": [
+        66,
+        56
+      ],
+      "animation_count": 7,
+      "frame_count": 32,
+      "layers": [
+        "body"
+      ],
+      "sourceBatch": "ENM-B03"
+    },
+    "ELT-03": {
+      "name": "酸液母体",
+      "slug": "acid_mother",
+      "gameEnemyId": "acid_mother",
+      "path": "assets/PROCESSED/enemies/ENM-B03/v001",
+      "sprite_frames": "godot/ELT-03.tres",
+      "canvas": [
+        104,
+        120
+      ],
+      "root": [
+        50,
+        97
+      ],
+      "animation_count": 7,
+      "frame_count": 32,
+      "layers": [
+        "body"
+      ],
+      "sourceBatch": "ENM-B03"
+    },
+    "ENM-11": {
+      "name": "飞奶蛾",
+      "slug": "milk_moth",
+      "gameEnemyId": "milk_moth",
+      "path": "assets/PROCESSED/enemies/ENM-B04/v001",
+      "sprite_frames": "godot/ENM-11.tres",
+      "canvas": [
+        88,
+        64
+      ],
+      "root": [
+        44,
+        32
+      ],
+      "animation_count": 7,
+      "frame_count": 32,
+      "layers": [
+        "body"
+      ],
+      "sourceBatch": "ENM-B04"
+    },
+    "BOSS-01": {
+      "name": "蜂蜜女王",
+      "slug": "honey_queen",
+      "gameEnemyId": "honey_queen",
+      "path": "assets/PROCESSED/enemies/ENM-B04/v001",
+      "sprite_frames": "godot/BOSS-01.tres",
+      "canvas": [
+        176,
+        136
+      ],
+      "root": [
+        88,
+        68
+      ],
+      "animation_count": 7,
+      "frame_count": 32,
+      "layers": [
+        "body"
+      ],
+      "sourceBatch": "ENM-B04"
+    }
+  },
+  "sourceBaseIndex": "manifest.json",
+  "supplement": "ENM-B03/v001/catalog.json",
+  "enemyTypeCount": 13,
+  "enemyCount": 15,
+  "gameEnemyCount": 12,
+  "bodyFrameCount": 480,
+  "effectFrameCount": 36,
+  "projectileFrameCount": 18
+}

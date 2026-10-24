@@ -1,0 +1,142 @@
+{
+  "id": "NPC-01",
+  "sheet": "NPC-01_talk_right_v002.png",
+  "sheet_size": [
+    1536,
+    1024
+  ],
+  "frames": [
+    {
+      "action": "talk",
+      "frame": 0,
+      "rect_xywh": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "alpha128_bbox_xyxy": [
+        191,
+        24,
+        441,
+        491
+      ],
+      "suggested_source_root_xy": [
+        332.5,
+        491
+      ]
+    },
+    {
+      "action": "talk",
+      "frame": 1,
+      "rect_xywh": [
+        512,
+        0,
+        512,
+        512
+      ],
+      "alpha128_bbox_xyxy": [
+        629,
+        24,
+        880,
+        491
+      ],
+      "suggested_source_root_xy": [
+        771.0,
+        491
+      ]
+    },
+    {
+      "action": "talk",
+      "frame": 2,
+      "rect_xywh": [
+        1024,
+        0,
+        512,
+        512
+      ],
+      "alpha128_bbox_xyxy": [
+        1069,
+        24,
+        1320,
+        491
+      ],
+      "suggested_source_root_xy": [
+        1210.0,
+        491
+      ]
+    },
+    {
+      "action": "talk",
+      "frame": 3,
+      "rect_xywh": [
+        0,
+        512,
+        512,
+        512
+      ],
+      "alpha128_bbox_xyxy": [
+        190,
+        533,
+        442,
+        1001
+      ],
+      "suggested_source_root_xy": [
+        332.5,
+        1001
+      ]
+    },
+    {
+      "action": "talk",
+      "frame": 4,
+      "rect_xywh": [
+        512,
+        512,
+        512,
+        512
+      ],
+      "alpha128_bbox_xyxy": [
+        629,
+        533,
+        880,
+        1001
+      ],
+      "suggested_source_root_xy": [
+        771.5,
+        1001
+      ]
+    },
+    {
+      "action": "talk",
+      "frame": 5,
+      "rect_xywh": [
+        1024,
+        512,
+        512,
+        512
+      ],
+      "alpha128_bbox_xyxy": [
+        1069,
+        533,
+        1320,
+        1001
+      ],
+      "suggested_source_root_xy": [
+        1210.0,
+        1001
+      ]
+    }
+  ],
+  "fps": 8,
+  "loop": true,
+  "target_canvas": [
+    64,
+    64
+  ],
+  "target_root": [
+    32,
+    58
+  ],
+  "target_height": 47,
+  "reference": "work/npc01_source/idle_neutral_reference.png"
+}

@@ -1,0 +1,295 @@
+{
+  "status": "passed",
+  "visual_review": {
+    "reviewed": true,
+    "method": "all 15 PNG outputs individually viewed; nine-module contact sheet plus enlarged bridge deck alignment review",
+    "result": "轮廓完整，地形边缘清楚；背景低对比，通路留白；桥面锚点已补充"
+  },
+  "tile_size": 16,
+  "terrain_size": [
+    64,
+    64
+  ],
+  "seam_checks": [
+    {
+      "orientation": "h",
+      "a": 0,
+      "b": 1,
+      "mismatched_pixels": 0
+    },
+    {
+      "orientation": "h",
+      "a": 1,
+      "b": 2,
+      "mismatched_pixels": 0
+    },
+    {
+      "orientation": "h",
+      "a": 3,
+      "b": 4,
+      "mismatched_pixels": 0
+    },
+    {
+      "orientation": "h",
+      "a": 4,
+      "b": 5,
+      "mismatched_pixels": 0
+    },
+    {
+      "orientation": "h",
+      "a": 6,
+      "b": 7,
+      "mismatched_pixels": 0
+    },
+    {
+      "orientation": "h",
+      "a": 7,
+      "b": 8,
+      "mismatched_pixels": 0
+    },
+    {
+      "orientation": "h",
+      "a": 1,
+      "b": 1,
+      "mismatched_pixels": 0
+    },
+    {
+      "orientation": "h",
+      "a": 4,
+      "b": 4,
+      "mismatched_pixels": 0
+    },
+    {
+      "orientation": "h",
+      "a": 7,
+      "b": 7,
+      "mismatched_pixels": 0
+    },
+    {
+      "orientation": "h",
+      "a": 10,
+      "b": 11,
+      "mismatched_pixels": 0
+    },
+    {
+      "orientation": "h",
+      "a": 11,
+      "b": 11,
+      "mismatched_pixels": 0
+    },
+    {
+      "orientation": "h",
+      "a": 11,
+      "b": 12,
+      "mismatched_pixels": 0
+    },
+    {
+      "orientation": "v",
+      "a": 0,
+      "b": 3,
+      "mismatched_pixels": 0
+    },
+    {
+      "orientation": "v",
+      "a": 3,
+      "b": 6,
+      "mismatched_pixels": 0
+    },
+    {
+      "orientation": "v",
+      "a": 1,
+      "b": 4,
+      "mismatched_pixels": 0
+    },
+    {
+      "orientation": "v",
+      "a": 4,
+      "b": 7,
+      "mismatched_pixels": 0
+    },
+    {
+      "orientation": "v",
+      "a": 2,
+      "b": 5,
+      "mismatched_pixels": 0
+    },
+    {
+      "orientation": "v",
+      "a": 5,
+      "b": 8,
+      "mismatched_pixels": 0
+    },
+    {
+      "orientation": "v",
+      "a": 3,
+      "b": 3,
+      "mismatched_pixels": 0
+    },
+    {
+      "orientation": "v",
+      "a": 4,
+      "b": 4,
+      "mismatched_pixels": 0
+    },
+    {
+      "orientation": "v",
+      "a": 5,
+      "b": 5,
+      "mismatched_pixels": 0
+    }
+  ],
+  "all_seams_exact": true,
+  "images": [
+    {
+      "path": "atlas_preview.png",
+      "width": 320,
+      "height": 192,
+      "alpha_values": [
+        255
+      ],
+      "rgba": true
+    },
+    {
+      "path": "background.png",
+      "width": 640,
+      "height": 360,
+      "alpha_values": [
+        255
+      ],
+      "rgba": true
+    },
+    {
+      "path": "background_vertical.png",
+      "width": 640,
+      "height": 720,
+      "alpha_values": [
+        255
+      ],
+      "rgba": true
+    },
+    {
+      "path": "midground.png",
+      "width": 640,
+      "height": 360,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "rgba": true
+    },
+    {
+      "path": "props/bridge_left.png",
+      "width": 192,
+      "height": 144,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "rgba": true
+    },
+    {
+      "path": "props/bridge_right.png",
+      "width": 176,
+      "height": 144,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "rgba": true
+    },
+    {
+      "path": "props/canopy.png",
+      "width": 256,
+      "height": 176,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "rgba": true
+    },
+    {
+      "path": "props/cave_entrance.png",
+      "width": 256,
+      "height": 144,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "rgba": true
+    },
+    {
+      "path": "props/fern_mushrooms.png",
+      "width": 128,
+      "height": 80,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "rgba": true
+    },
+    {
+      "path": "props/giant_tree.png",
+      "width": 224,
+      "height": 176,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "rgba": true
+    },
+    {
+      "path": "props/moss_rocks.png",
+      "width": 160,
+      "height": 96,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "rgba": true
+    },
+    {
+      "path": "props/root_arch.png",
+      "width": 224,
+      "height": 128,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "rgba": true
+    },
+    {
+      "path": "props/vine.png",
+      "width": 144,
+      "height": 144,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "rgba": true
+    },
+    {
+      "path": "props_preview.png",
+      "width": 768,
+      "height": 528,
+      "alpha_values": [
+        255
+      ],
+      "rgba": true
+    },
+    {
+      "path": "terrain.png",
+      "width": 64,
+      "height": 64,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "rgba": true
+    }
+  ],
+  "known_limits": [
+    "桥梁是装饰，不新增可站碰撞；若覆于可站平台应按世界数据对齐桥面",
+    "内角13/14是局部候选，房间构建器是否使用由统一合成决定",
+    "竖房背景仅视觉延展，未改变forest_03门槛与碰撞"
+  ]
+}

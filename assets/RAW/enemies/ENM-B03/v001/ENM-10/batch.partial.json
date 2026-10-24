@@ -1,0 +1,316 @@
+{
+  "effects": [
+    {
+      "id": "ENM-10_idle",
+      "name": "idle",
+      "enemyId": "ENM-10",
+      "gameEnemyId": "acid_slug",
+      "label": "idle",
+      "sourcePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B03/v001/ENM-10/ENM-10_actions_A.png",
+      "sourceRects": [
+        [
+          0,
+          0,
+          314,
+          314
+        ],
+        [
+          314,
+          0,
+          313,
+          314
+        ],
+        [
+          627,
+          0,
+          313,
+          314
+        ],
+        [
+          940,
+          0,
+          314,
+          314
+        ]
+      ],
+      "sourceAnchors": [
+        [
+          156.75,
+          291.555
+        ],
+        [
+          156.75,
+          291.555
+        ],
+        [
+          156.75,
+          291.555
+        ],
+        [
+          156.75,
+          291.555
+        ]
+      ],
+      "sourceColumns": 4,
+      "sourceRows": 4,
+      "sourceIndices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "target": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        56
+      ],
+      "scale": 0.16,
+      "fps": 8,
+      "loop": true,
+      "kind": "body",
+      "phases": [
+        "idle",
+        "idle",
+        "idle",
+        "idle"
+      ]
+    },
+    {
+      "id": "ENM-10_move",
+      "name": "move",
+      "enemyId": "ENM-10",
+      "gameEnemyId": "acid_slug",
+      "label": "move",
+      "sourcePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B03/v001/ENM-10/ENM-10_actions_A.png",
+      "sourceRects": [
+        [
+          0,
+          314,
+          314,
+          313
+        ],
+        [
+          314,
+          314,
+          313,
+          313
+        ],
+        [
+          627,
+          314,
+          313,
+          313
+        ],
+        [
+          940,
+          314,
+          314,
+          313
+        ]
+      ],
+      "sourceAnchors": [
+        [
+          156.75,
+          291.555
+        ],
+        [
+          156.75,
+          291.555
+        ],
+        [
+          156.75,
+          291.555
+        ],
+        [
+          156.75,
+          291.555
+        ]
+      ],
+      "sourceColumns": 4,
+      "sourceRows": 4,
+      "sourceIndices": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "target": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        56
+      ],
+      "scale": 0.16,
+      "fps": 10,
+      "loop": true,
+      "kind": "body",
+      "phases": [
+        "move",
+        "move",
+        "move",
+        "move"
+      ]
+    },
+    {
+      "id": "ENM-10_telegraph",
+      "name": "telegraph",
+      "enemyId": "ENM-10",
+      "gameEnemyId": "acid_slug",
+      "label": "telegraph",
+      "sourcePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B03/v001/ENM-10/ENM-10_actions_A.png",
+      "sourceRects": [
+        [
+          0,
+          627,
+          314,
+          313
+        ],
+        [
+          314,
+          627,
+          313,
+          313
+        ],
+        [
+          627,
+          627,
+          313,
+          313
+        ],
+        [
+          940,
+          627,
+          314,
+          313
+        ]
+      ],
+      "sourceAnchors": [
+        [
+          156.75,
+          291.555
+        ],
+        [
+          156.75,
+          291.555
+        ],
+        [
+          156.75,
+          291.555
+        ],
+        [
+          156.75,
+          291.555
+        ]
+      ],
+      "sourceColumns": 4,
+      "sourceRows": 4,
+      "sourceIndices": [
+        8,
+        9,
+        10,
+        11
+      ],
+      "target": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        56
+      ],
+      "scale": 0.16,
+      "fps": 10,
+      "loop": false,
+      "kind": "body",
+      "phases": [
+        "telegraph",
+        "telegraph",
+        "telegraph",
+        "telegraph"
+      ]
+    },
+    {
+      "id": "ENM-10_attack",
+      "name": "attack",
+      "enemyId": "ENM-10",
+      "gameEnemyId": "acid_slug",
+      "label": "attack",
+      "sourcePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B03/v001/ENM-10/ENM-10_actions_A.png",
+      "sourceRects": [
+        [
+          0,
+          940,
+          314,
+          314
+        ],
+        [
+          314,
+          940,
+          313,
+          314
+        ],
+        [
+          627,
+          940,
+          313,
+          314
+        ],
+        [
+          940,
+          940,
+          314,
+          314
+        ]
+      ],
+      "sourceAnchors": [
+        [
+          156.75,
+          291.555
+        ],
+        [
+          156.75,
+          291.555
+        ],
+        [
+          156.75,
+          291.555
+        ],
+        [
+          156.75,
+          291.555
+        ]
+      ],
+      "sourceColumns": 4,
+      "sourceRows": 4,
+      "sourceIndices": [
+        12,
+        13,
+        14,
+        15
+      ],
+      "target": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        56
+      ],
+      "scale": 0.16,
+      "fps": 14,
+      "loop": false,
+      "kind": "body",
+      "phases": [
+        "attack",
+        "attack",
+        "attack",
+        "attack"
+      ]
+    }
+  ]
+}

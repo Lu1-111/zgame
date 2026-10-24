@@ -1,0 +1,436 @@
+{
+  "id": "ENM-01_death",
+  "name": "death",
+  "enemyId": "ENM-01",
+  "gameEnemyId": "moss_beetle",
+  "label": "death",
+  "sourcePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B03/v001/ENM-01/ENM-01_actions_B.png",
+  "sourceRects": [
+    [
+      0,
+      627,
+      314,
+      313
+    ],
+    [
+      0,
+      940,
+      314,
+      314
+    ],
+    [
+      314,
+      627,
+      311,
+      313
+    ],
+    [
+      625,
+      627,
+      315,
+      313
+    ],
+    [
+      314,
+      940,
+      313,
+      314
+    ],
+    [
+      940,
+      627,
+      314,
+      313
+    ],
+    [
+      627,
+      940,
+      313,
+      314
+    ],
+    [
+      940,
+      940,
+      314,
+      314
+    ]
+  ],
+  "sourceAnchors": [
+    [
+      156,
+      280
+    ],
+    [
+      156,
+      264
+    ],
+    [
+      156,
+      280
+    ],
+    [
+      158,
+      280
+    ],
+    [
+      156,
+      264
+    ],
+    [
+      156,
+      280
+    ],
+    [
+      156,
+      264
+    ],
+    [
+      156,
+      264
+    ]
+  ],
+  "target": [
+    64,
+    64
+  ],
+  "anchor": [
+    32,
+    56
+  ],
+  "scale": 0.16,
+  "fps": 10,
+  "loop": false,
+  "kind": "body",
+  "phases": [
+    "失衡",
+    "翻侧",
+    "甲壳松解",
+    "塌陷",
+    "碎片剥落",
+    "伏倒",
+    "残骸崩解",
+    "尾屑"
+  ],
+  "sourceFrameOrder": [
+    8,
+    12,
+    9,
+    10,
+    13,
+    11,
+    14,
+    15
+  ],
+  "promptPath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B03/v001/ENM-01/ENM-01_B.prompt.txt",
+  "provenancePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B03/v001/ENM-01/provenance.json",
+  "generationMode": "built-in image_gen",
+  "frames": [
+    "frames/ENM-01_death/ENM-01_death_00.png",
+    "frames/ENM-01_death/ENM-01_death_01.png",
+    "frames/ENM-01_death/ENM-01_death_02.png",
+    "frames/ENM-01_death/ENM-01_death_03.png",
+    "frames/ENM-01_death/ENM-01_death_04.png",
+    "frames/ENM-01_death/ENM-01_death_05.png",
+    "frames/ENM-01_death/ENM-01_death_06.png",
+    "frames/ENM-01_death/ENM-01_death_07.png"
+  ],
+  "sheet": "sheets/ENM-01_death.png",
+  "sheetRects": [
+    [
+      0,
+      0,
+      64,
+      64
+    ],
+    [
+      64,
+      0,
+      64,
+      64
+    ],
+    [
+      128,
+      0,
+      64,
+      64
+    ],
+    [
+      192,
+      0,
+      64,
+      64
+    ],
+    [
+      256,
+      0,
+      64,
+      64
+    ],
+    [
+      320,
+      0,
+      64,
+      64
+    ],
+    [
+      384,
+      0,
+      64,
+      64
+    ],
+    [
+      448,
+      0,
+      64,
+      64
+    ]
+  ],
+  "atlas": "atlas/ENM-01_death.png",
+  "atlasColumns": 3,
+  "atlasRows": 3,
+  "atlasRects": [
+    [
+      0,
+      0,
+      64,
+      64
+    ],
+    [
+      64,
+      0,
+      64,
+      64
+    ],
+    [
+      128,
+      0,
+      64,
+      64
+    ],
+    [
+      0,
+      64,
+      64,
+      64
+    ],
+    [
+      64,
+      64,
+      64,
+      64
+    ],
+    [
+      128,
+      64,
+      64,
+      64
+    ],
+    [
+      0,
+      128,
+      64,
+      64
+    ],
+    [
+      64,
+      128,
+      64,
+      64
+    ]
+  ],
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "sourceSha256": "da84f36eac339412a1c2880e24c77b7c597c642baff0f51e142006ac1f4bd4d9",
+  "sourceBatch": "/home/lululu/zgame/assets/RAW/enemies/ENM-B03/v001/ENM-01/batch.json",
+  "frameCount": 8,
+  "frameDetails": [
+    {
+      "sourceRect": [
+        0,
+        627,
+        314,
+        313
+      ],
+      "sourceAnchor": [
+        156,
+        280
+      ],
+      "offset": [
+        7,
+        11
+      ],
+      "alphaBBox": [
+        11,
+        24,
+        57,
+        55
+      ],
+      "sourceEdgeAlpha": 1
+    },
+    {
+      "sourceRect": [
+        0,
+        940,
+        314,
+        314
+      ],
+      "sourceAnchor": [
+        156,
+        264
+      ],
+      "offset": [
+        7,
+        14
+      ],
+      "alphaBBox": [
+        12,
+        14,
+        57,
+        57
+      ],
+      "sourceEdgeAlpha": 1
+    },
+    {
+      "sourceRect": [
+        314,
+        627,
+        311,
+        313
+      ],
+      "sourceAnchor": [
+        156,
+        280
+      ],
+      "offset": [
+        7,
+        11
+      ],
+      "alphaBBox": [
+        7,
+        27,
+        57,
+        57
+      ],
+      "sourceEdgeAlpha": 1
+    },
+    {
+      "sourceRect": [
+        625,
+        627,
+        315,
+        313
+      ],
+      "sourceAnchor": [
+        158,
+        280
+      ],
+      "offset": [
+        7,
+        11
+      ],
+      "alphaBBox": [
+        7,
+        26,
+        56,
+        57
+      ],
+      "sourceEdgeAlpha": 3
+    },
+    {
+      "sourceRect": [
+        314,
+        940,
+        313,
+        314
+      ],
+      "sourceAnchor": [
+        156,
+        264
+      ],
+      "offset": [
+        7,
+        14
+      ],
+      "alphaBBox": [
+        10,
+        30,
+        57,
+        57
+      ],
+      "sourceEdgeAlpha": 3
+    },
+    {
+      "sourceRect": [
+        940,
+        627,
+        314,
+        313
+      ],
+      "sourceAnchor": [
+        156,
+        280
+      ],
+      "offset": [
+        7,
+        11
+      ],
+      "alphaBBox": [
+        7,
+        31,
+        54,
+        58
+      ],
+      "sourceEdgeAlpha": 2
+    },
+    {
+      "sourceRect": [
+        627,
+        940,
+        313,
+        314
+      ],
+      "sourceAnchor": [
+        156,
+        264
+      ],
+      "offset": [
+        7,
+        14
+      ],
+      "alphaBBox": [
+        7,
+        15,
+        57,
+        57
+      ],
+      "sourceEdgeAlpha": 1
+    },
+    {
+      "sourceRect": [
+        940,
+        940,
+        314,
+        314
+      ],
+      "sourceAnchor": [
+        156,
+        264
+      ],
+      "offset": [
+        7,
+        14
+      ],
+      "alphaBBox": [
+        7,
+        18,
+        54,
+        57
+      ],
+      "sourceEdgeAlpha": 1
+    }
+  ],
+  "fadeStartNormalized": 0.65,
+  "loopBoundaryMeanDifference": 20.666666666666668
+}

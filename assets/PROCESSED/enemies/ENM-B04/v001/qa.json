@@ -1,0 +1,24 @@
+{
+  "status": "passed-art-and-runtime-review",
+  "complete": true,
+  "batch": "ENM-B04",
+  "enemyTypes": 9,
+  "bodyActions": 63,
+  "bodyFrames": 288,
+  "projectileActions": 3,
+  "projectileFrames": 18,
+  "totalFrames": 306,
+  "libraryTypes": 15,
+  "gameEnemyTypes": 12,
+  "mainImportExitCode": 0,
+  "mainImportErrors": 0,
+  "mainImportWarnings": 0,
+  "unitTests": "413/413",
+  "mainSmokeExitCode": 0,
+  "campSmokeExitCode": 0,
+  "blockingIssues": [],
+  "notes": [
+    "ENM-07 attack2 has one retained antialias source-edge pixel alpha131; no body truncation or target clipping.",
+    "Source transparent alpha preserved. All runtime body frame paths are B03/B04; no old fallback used."
+  ]
+}

@@ -1,0 +1,180 @@
+{
+  "sourceId": "combat_a",
+  "file": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_combat_A_right_v002.png",
+  "columns": 4,
+  "rows": 4,
+  "measuredSize": [
+    1254,
+    1254
+  ],
+  "calibration": {
+    "referenceCell": 3,
+    "referenceHeightPx": 234,
+    "targetStandingHeight": 40
+  },
+  "animations": [
+    {
+      "name": "hammer_1",
+      "label": "奶瓶锤一段",
+      "fps": 8,
+      "loop": false,
+      "anchorMode": "ground",
+      "cells": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "phases": [
+        "windup",
+        "hit",
+        "follow_through",
+        "recover"
+      ]
+    },
+    {
+      "name": "hammer_2",
+      "label": "奶瓶锤二段",
+      "fps": 8,
+      "loop": false,
+      "anchorMode": "ground",
+      "cells": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "phases": [
+        "windup",
+        "hit",
+        "follow_through",
+        "recover"
+      ]
+    },
+    {
+      "name": "hammer_3",
+      "label": "奶瓶锤三段",
+      "fps": 8,
+      "loop": false,
+      "anchorMode": "ground",
+      "cells": [
+        8,
+        9,
+        10,
+        11
+      ],
+      "phases": [
+        "windup",
+        "hit",
+        "follow_through",
+        "recover"
+      ]
+    },
+    {
+      "name": "blaster_fire",
+      "label": "奶弹枪单发",
+      "fps": 10,
+      "loop": false,
+      "anchorMode": "ground",
+      "cells": [
+        12,
+        13,
+        14,
+        15
+      ],
+      "phases": [
+        "aim",
+        "fire",
+        "recoil",
+        "recover"
+      ]
+    }
+  ],
+  "anchorsAbsolute": {
+    "0": [
+      194,
+      301
+    ],
+    "1": [
+      461,
+      301
+    ],
+    "2": [
+      770,
+      301
+    ],
+    "3": [
+      1069,
+      301
+    ],
+    "4": [
+      198,
+      612
+    ],
+    "5": [
+      463,
+      612
+    ],
+    "6": [
+      776,
+      612
+    ],
+    "7": [
+      1068,
+      612
+    ],
+    "8": [
+      185,
+      939
+    ],
+    "9": [
+      452,
+      939
+    ],
+    "10": [
+      765,
+      940
+    ],
+    "11": [
+      1069,
+      935
+    ],
+    "12": [
+      158,
+      1213
+    ],
+    "13": [
+      462,
+      1213
+    ],
+    "14": [
+      791,
+      1213
+    ],
+    "15": [
+      1074,
+      1213
+    ]
+  },
+  "expectedOutput": {
+    "size": [
+      64,
+      64
+    ],
+    "anchor": [
+      32,
+      58
+    ],
+    "standingHeight": 40
+  },
+  "notes": [
+    "Built-in image_gen source v001 retained. v002 is one localized edit to reconstruct row2 col1 clipped milk-bottle hammer and add transparent left margin.",
+    "No further art edits planned. Exactly 16 cels retained; v002 dimension 1254x1254 and RGBA alpha.",
+    "Adaptive sourceRects required: source grid spacing is irregular and some weapons span equal-grid column boundaries.",
+    "anchorsAbsolute manually checked against grounded soles; crouching hammer strike frames do not rescale body.",
+    "Reference cell3 standing body height234 excludes forward hammer.",
+    "Hammer row final recovery frames use closely matched low-forward ready posture for combo chaining; verify in playback.",
+    "Small variation in hammer grip and shoulder/face persists as RAW animation candidate; processed pixel QA required.",
+    "Output canvas may grow to fit weapon at unchanged body scale; never scale body down to fit hammer."
+  ]
+}

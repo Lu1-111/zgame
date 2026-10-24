@@ -1,0 +1,39 @@
+{
+  "id": "NPC-S03",
+  "version": "v003",
+  "tool": "built-in image_gen",
+  "style_reference": "assets/RAW/characters/CHR-01/v001/CHR-01_master_right_v001.png",
+  "identity_reference": "assets/RAW/characters/NPC-S03/v002/NPC-S03_milk_mouse_engineer_master_front_v002.png",
+  "animation_reference": "NPC-S03_master_right_v003.png",
+  "target_canvas": [
+    64,
+    64
+  ],
+  "target_root": [
+    32,
+    58
+  ],
+  "target_height": 44,
+  "animations": {
+    "idle": {
+      "frames": 6,
+      "fps": 6,
+      "loop": true
+    },
+    "talk": {
+      "frames": 4,
+      "fps": 8,
+      "loop": true
+    },
+    "walk": {
+      "frames": 8,
+      "fps": 8,
+      "loop": true,
+      "status": "candidate: leg identity needs review"
+    }
+  },
+  "animation_review": {
+    "walk": "8 source frames include clear knee bending, lifted feet and changing step silhouettes. Not mere whole-sprite translation. Near/far leg identity across the second half is not unambiguously verified; do not claim a fully validated eight-phase anatomical cycle.",
+    "follow_up": "Optional manual animation refinement of near/far leg separation after style acceptance."
+  }
+}

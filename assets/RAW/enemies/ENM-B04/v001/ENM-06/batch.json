@@ -1,0 +1,1395 @@
+{
+  "effects": [
+    {
+      "id": "ENM-06_idle",
+      "enemyId": "ENM-06",
+      "gameEnemyId": "shadow_wisp",
+      "label": "暗影幽灵",
+      "name": "idle",
+      "kind": "body",
+      "generationMode": "built-in image_gen",
+      "sourcePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-06/ENM-06_actions_A.png",
+      "sourceRects": [
+        [
+          0,
+          0,
+          367,
+          287
+        ],
+        [
+          367,
+          0,
+          332,
+          287
+        ],
+        [
+          699,
+          0,
+          353,
+          287
+        ],
+        [
+          1052,
+          0,
+          350,
+          287
+        ]
+      ],
+      "sourceAnchors": [
+        [
+          221,
+          157
+        ],
+        [
+          204,
+          157
+        ],
+        [
+          223,
+          157
+        ],
+        [
+          220,
+          157
+        ]
+      ],
+      "sourceSize": [
+        1402,
+        1122
+      ],
+      "sourceSha256": "0cf0785c6596412f0be3198abe32cdfab2b7c4ecb195145b84f8ee1cf1f7ce68",
+      "sourceBatch": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-06/batch.json",
+      "promptPath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-06/ENM-06_A.prompt.txt",
+      "provenancePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-06/provenance.json",
+      "target": [
+        104,
+        88
+      ],
+      "anchor": [
+        52,
+        44
+      ],
+      "rootType": "flying",
+      "scale": 0.19,
+      "fps": 8,
+      "loop": true,
+      "frameCount": 4,
+      "frames": [
+        "frames/ENM-06_idle/ENM-06_idle_00.png",
+        "frames/ENM-06_idle/ENM-06_idle_01.png",
+        "frames/ENM-06_idle/ENM-06_idle_02.png",
+        "frames/ENM-06_idle/ENM-06_idle_03.png"
+      ],
+      "sheet": "sheets/ENM-06_idle.png",
+      "frameDetails": [
+        {
+          "sourceRect": [
+            0,
+            0,
+            367,
+            287
+          ],
+          "sourceAnchor": [
+            221,
+            157
+          ],
+          "offset": [
+            10,
+            14
+          ],
+          "alphaBBox": [
+            12,
+            19,
+            80,
+            69
+          ]
+        },
+        {
+          "sourceRect": [
+            367,
+            0,
+            332,
+            287
+          ],
+          "sourceAnchor": [
+            204,
+            157
+          ],
+          "offset": [
+            13,
+            14
+          ],
+          "alphaBBox": [
+            14,
+            20,
+            76,
+            69
+          ]
+        },
+        {
+          "sourceRect": [
+            699,
+            0,
+            353,
+            287
+          ],
+          "sourceAnchor": [
+            223,
+            157
+          ],
+          "offset": [
+            10,
+            14
+          ],
+          "alphaBBox": [
+            10,
+            18,
+            77,
+            69
+          ]
+        },
+        {
+          "sourceRect": [
+            1052,
+            0,
+            350,
+            287
+          ],
+          "sourceAnchor": [
+            220,
+            157
+          ],
+          "offset": [
+            10,
+            14
+          ],
+          "alphaBBox": [
+            10,
+            20,
+            74,
+            69
+          ]
+        }
+      ],
+      "fadeStartNormalized": 1.0,
+      "phases": [
+        "idle1",
+        "idle2",
+        "idle3",
+        "idle4"
+      ]
+    },
+    {
+      "id": "ENM-06_move",
+      "enemyId": "ENM-06",
+      "gameEnemyId": "shadow_wisp",
+      "label": "暗影幽灵",
+      "name": "move",
+      "kind": "body",
+      "generationMode": "built-in image_gen",
+      "sourcePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-06/ENM-06_actions_A.png",
+      "sourceRects": [
+        [
+          0,
+          287,
+          361,
+          256
+        ],
+        [
+          361,
+          287,
+          342,
+          256
+        ],
+        [
+          703,
+          287,
+          359,
+          256
+        ],
+        [
+          1062,
+          287,
+          340,
+          256
+        ]
+      ],
+      "sourceAnchors": [
+        [
+          224,
+          145
+        ],
+        [
+          214,
+          145
+        ],
+        [
+          222,
+          145
+        ],
+        [
+          214,
+          145
+        ]
+      ],
+      "sourceSize": [
+        1402,
+        1122
+      ],
+      "sourceSha256": "0cf0785c6596412f0be3198abe32cdfab2b7c4ecb195145b84f8ee1cf1f7ce68",
+      "sourceBatch": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-06/batch.json",
+      "promptPath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-06/ENM-06_A.prompt.txt",
+      "provenancePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-06/provenance.json",
+      "target": [
+        104,
+        88
+      ],
+      "anchor": [
+        52,
+        44
+      ],
+      "rootType": "flying",
+      "scale": 0.19,
+      "fps": 10,
+      "loop": true,
+      "frameCount": 4,
+      "frames": [
+        "frames/ENM-06_move/ENM-06_move_00.png",
+        "frames/ENM-06_move/ENM-06_move_01.png",
+        "frames/ENM-06_move/ENM-06_move_02.png",
+        "frames/ENM-06_move/ENM-06_move_03.png"
+      ],
+      "sheet": "sheets/ENM-06_move.png",
+      "frameDetails": [
+        {
+          "sourceRect": [
+            0,
+            287,
+            361,
+            256
+          ],
+          "sourceAnchor": [
+            224,
+            145
+          ],
+          "offset": [
+            9,
+            16
+          ],
+          "alphaBBox": [
+            11,
+            16,
+            78,
+            65
+          ]
+        },
+        {
+          "sourceRect": [
+            361,
+            287,
+            342,
+            256
+          ],
+          "sourceAnchor": [
+            214,
+            145
+          ],
+          "offset": [
+            11,
+            16
+          ],
+          "alphaBBox": [
+            11,
+            16,
+            76,
+            65
+          ]
+        },
+        {
+          "sourceRect": [
+            703,
+            287,
+            359,
+            256
+          ],
+          "sourceAnchor": [
+            222,
+            145
+          ],
+          "offset": [
+            10,
+            16
+          ],
+          "alphaBBox": [
+            10,
+            16,
+            78,
+            65
+          ]
+        },
+        {
+          "sourceRect": [
+            1062,
+            287,
+            340,
+            256
+          ],
+          "sourceAnchor": [
+            214,
+            145
+          ],
+          "offset": [
+            11,
+            16
+          ],
+          "alphaBBox": [
+            11,
+            16,
+            74,
+            62
+          ]
+        }
+      ],
+      "fadeStartNormalized": 1.0,
+      "phases": [
+        "move1",
+        "move2",
+        "move3",
+        "move4"
+      ]
+    },
+    {
+      "id": "ENM-06_telegraph",
+      "enemyId": "ENM-06",
+      "gameEnemyId": "shadow_wisp",
+      "label": "暗影幽灵",
+      "name": "telegraph",
+      "kind": "body",
+      "generationMode": "built-in image_gen",
+      "sourcePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-06/ENM-06_actions_A.png",
+      "sourceRects": [
+        [
+          0,
+          543,
+          365,
+          288
+        ],
+        [
+          365,
+          543,
+          336,
+          288
+        ],
+        [
+          701,
+          543,
+          369,
+          288
+        ],
+        [
+          1070,
+          543,
+          332,
+          288
+        ]
+      ],
+      "sourceAnchors": [
+        [
+          224,
+          178
+        ],
+        [
+          210,
+          178
+        ],
+        [
+          224,
+          178
+        ],
+        [
+          206,
+          178
+        ]
+      ],
+      "sourceSize": [
+        1402,
+        1122
+      ],
+      "sourceSha256": "0cf0785c6596412f0be3198abe32cdfab2b7c4ecb195145b84f8ee1cf1f7ce68",
+      "sourceBatch": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-06/batch.json",
+      "promptPath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-06/ENM-06_A.prompt.txt",
+      "provenancePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-06/provenance.json",
+      "target": [
+        104,
+        88
+      ],
+      "anchor": [
+        52,
+        44
+      ],
+      "rootType": "flying",
+      "scale": 0.19,
+      "fps": 10,
+      "loop": false,
+      "frameCount": 4,
+      "frames": [
+        "frames/ENM-06_telegraph/ENM-06_telegraph_00.png",
+        "frames/ENM-06_telegraph/ENM-06_telegraph_01.png",
+        "frames/ENM-06_telegraph/ENM-06_telegraph_02.png",
+        "frames/ENM-06_telegraph/ENM-06_telegraph_03.png"
+      ],
+      "sheet": "sheets/ENM-06_telegraph.png",
+      "frameDetails": [
+        {
+          "sourceRect": [
+            0,
+            543,
+            365,
+            288
+          ],
+          "sourceAnchor": [
+            224,
+            178
+          ],
+          "offset": [
+            9,
+            10
+          ],
+          "alphaBBox": [
+            13,
+            11,
+            78,
+            65
+          ]
+        },
+        {
+          "sourceRect": [
+            365,
+            543,
+            336,
+            288
+          ],
+          "sourceAnchor": [
+            210,
+            178
+          ],
+          "offset": [
+            12,
+            10
+          ],
+          "alphaBBox": [
+            13,
+            14,
+            76,
+            65
+          ]
+        },
+        {
+          "sourceRect": [
+            701,
+            543,
+            369,
+            288
+          ],
+          "sourceAnchor": [
+            224,
+            178
+          ],
+          "offset": [
+            9,
+            10
+          ],
+          "alphaBBox": [
+            10,
+            11,
+            79,
+            65
+          ]
+        },
+        {
+          "sourceRect": [
+            1070,
+            543,
+            332,
+            288
+          ],
+          "sourceAnchor": [
+            206,
+            178
+          ],
+          "offset": [
+            13,
+            10
+          ],
+          "alphaBBox": [
+            13,
+            16,
+            71,
+            65
+          ]
+        }
+      ],
+      "fadeStartNormalized": 1.0,
+      "phases": [
+        "telegraph1",
+        "telegraph2",
+        "telegraph3",
+        "telegraph4"
+      ]
+    },
+    {
+      "id": "ENM-06_attack",
+      "enemyId": "ENM-06",
+      "gameEnemyId": "shadow_wisp",
+      "label": "暗影幽灵",
+      "name": "attack",
+      "kind": "body",
+      "generationMode": "built-in image_gen",
+      "sourcePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-06/ENM-06_actions_A.png",
+      "sourceRects": [
+        [
+          0,
+          831,
+          367,
+          291
+        ],
+        [
+          367,
+          831,
+          332,
+          291
+        ],
+        [
+          699,
+          831,
+          353,
+          291
+        ],
+        [
+          1052,
+          831,
+          350,
+          291
+        ]
+      ],
+      "sourceAnchors": [
+        [
+          217,
+          168
+        ],
+        [
+          201,
+          168
+        ],
+        [
+          219,
+          168
+        ],
+        [
+          217,
+          168
+        ]
+      ],
+      "sourceSize": [
+        1402,
+        1122
+      ],
+      "sourceSha256": "0cf0785c6596412f0be3198abe32cdfab2b7c4ecb195145b84f8ee1cf1f7ce68",
+      "sourceBatch": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-06/batch.json",
+      "promptPath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-06/ENM-06_A.prompt.txt",
+      "provenancePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-06/provenance.json",
+      "target": [
+        104,
+        88
+      ],
+      "anchor": [
+        52,
+        44
+      ],
+      "rootType": "flying",
+      "scale": 0.19,
+      "fps": 14,
+      "loop": false,
+      "frameCount": 4,
+      "frames": [
+        "frames/ENM-06_attack/ENM-06_attack_00.png",
+        "frames/ENM-06_attack/ENM-06_attack_01.png",
+        "frames/ENM-06_attack/ENM-06_attack_02.png",
+        "frames/ENM-06_attack/ENM-06_attack_03.png"
+      ],
+      "sheet": "sheets/ENM-06_attack.png",
+      "frameDetails": [
+        {
+          "sourceRect": [
+            0,
+            831,
+            367,
+            291
+          ],
+          "sourceAnchor": [
+            217,
+            168
+          ],
+          "offset": [
+            11,
+            12
+          ],
+          "alphaBBox": [
+            13,
+            12,
+            81,
+            61
+          ]
+        },
+        {
+          "sourceRect": [
+            367,
+            831,
+            332,
+            291
+          ],
+          "sourceAnchor": [
+            201,
+            168
+          ],
+          "offset": [
+            14,
+            12
+          ],
+          "alphaBBox": [
+            14,
+            12,
+            77,
+            64
+          ]
+        },
+        {
+          "sourceRect": [
+            699,
+            831,
+            353,
+            291
+          ],
+          "sourceAnchor": [
+            219,
+            168
+          ],
+          "offset": [
+            10,
+            12
+          ],
+          "alphaBBox": [
+            10,
+            12,
+            77,
+            64
+          ]
+        },
+        {
+          "sourceRect": [
+            1052,
+            831,
+            350,
+            291
+          ],
+          "sourceAnchor": [
+            217,
+            168
+          ],
+          "offset": [
+            11,
+            12
+          ],
+          "alphaBBox": [
+            11,
+            12,
+            77,
+            64
+          ]
+        }
+      ],
+      "fadeStartNormalized": 1.0,
+      "phases": [
+        "attack1",
+        "attack2",
+        "attack3",
+        "attack4"
+      ]
+    },
+    {
+      "id": "ENM-06_recover",
+      "enemyId": "ENM-06",
+      "gameEnemyId": "shadow_wisp",
+      "label": "暗影幽灵",
+      "name": "recover",
+      "kind": "body",
+      "generationMode": "built-in image_gen",
+      "sourcePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-06/ENM-06_actions_B.png",
+      "sourceRects": [
+        [
+          0,
+          0,
+          382,
+          270
+        ],
+        [
+          382,
+          0,
+          376,
+          270
+        ],
+        [
+          758,
+          0,
+          386,
+          270
+        ],
+        [
+          1144,
+          0,
+          392,
+          270
+        ]
+      ],
+      "sourceAnchors": [
+        [
+          242,
+          143
+        ],
+        [
+          244,
+          143
+        ],
+        [
+          252,
+          143
+        ],
+        [
+          250,
+          143
+        ]
+      ],
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "sourceSha256": "0d1286958bb013e5d59557b65213a0ffe3b48a6a42cf4ae9b911f8b47520e449",
+      "sourceBatch": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-06/batch.json",
+      "promptPath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-06/ENM-06_B_retry.prompt.txt",
+      "provenancePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-06/provenance.json",
+      "target": [
+        104,
+        88
+      ],
+      "anchor": [
+        52,
+        44
+      ],
+      "rootType": "flying",
+      "scale": 0.19,
+      "fps": 10,
+      "loop": false,
+      "frameCount": 4,
+      "frames": [
+        "frames/ENM-06_recover/ENM-06_recover_00.png",
+        "frames/ENM-06_recover/ENM-06_recover_01.png",
+        "frames/ENM-06_recover/ENM-06_recover_02.png",
+        "frames/ENM-06_recover/ENM-06_recover_03.png"
+      ],
+      "sheet": "sheets/ENM-06_recover.png",
+      "frameDetails": [
+        {
+          "sourceRect": [
+            0,
+            0,
+            382,
+            270
+          ],
+          "sourceAnchor": [
+            242,
+            143
+          ],
+          "offset": [
+            6,
+            17
+          ],
+          "alphaBBox": [
+            6,
+            17,
+            79,
+            68
+          ]
+        },
+        {
+          "sourceRect": [
+            382,
+            0,
+            376,
+            270
+          ],
+          "sourceAnchor": [
+            244,
+            143
+          ],
+          "offset": [
+            6,
+            17
+          ],
+          "alphaBBox": [
+            6,
+            19,
+            77,
+            68
+          ]
+        },
+        {
+          "sourceRect": [
+            758,
+            0,
+            386,
+            270
+          ],
+          "sourceAnchor": [
+            252,
+            143
+          ],
+          "offset": [
+            4,
+            17
+          ],
+          "alphaBBox": [
+            4,
+            18,
+            77,
+            68
+          ]
+        },
+        {
+          "sourceRect": [
+            1144,
+            0,
+            392,
+            270
+          ],
+          "sourceAnchor": [
+            250,
+            143
+          ],
+          "offset": [
+            5,
+            17
+          ],
+          "alphaBBox": [
+            5,
+            20,
+            76,
+            68
+          ]
+        }
+      ],
+      "fadeStartNormalized": 1.0,
+      "phases": [
+        "recover1",
+        "recover2",
+        "recover3",
+        "recover4"
+      ]
+    },
+    {
+      "id": "ENM-06_hurt",
+      "enemyId": "ENM-06",
+      "gameEnemyId": "shadow_wisp",
+      "label": "暗影幽灵",
+      "name": "hurt",
+      "kind": "body",
+      "generationMode": "built-in image_gen",
+      "sourcePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-06/ENM-06_actions_B.png",
+      "sourceRects": [
+        [
+          0,
+          270,
+          388,
+          256
+        ],
+        [
+          388,
+          270,
+          358,
+          256
+        ],
+        [
+          746,
+          270,
+          414,
+          256
+        ],
+        [
+          1160,
+          270,
+          376,
+          256
+        ]
+      ],
+      "sourceAnchors": [
+        [
+          242,
+          129
+        ],
+        [
+          238,
+          129
+        ],
+        [
+          264,
+          129
+        ],
+        [
+          234,
+          129
+        ]
+      ],
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "sourceSha256": "0d1286958bb013e5d59557b65213a0ffe3b48a6a42cf4ae9b911f8b47520e449",
+      "sourceBatch": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-06/batch.json",
+      "promptPath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-06/ENM-06_B_retry.prompt.txt",
+      "provenancePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-06/provenance.json",
+      "target": [
+        104,
+        88
+      ],
+      "anchor": [
+        52,
+        44
+      ],
+      "rootType": "flying",
+      "scale": 0.19,
+      "fps": 12,
+      "loop": false,
+      "frameCount": 4,
+      "frames": [
+        "frames/ENM-06_hurt/ENM-06_hurt_00.png",
+        "frames/ENM-06_hurt/ENM-06_hurt_01.png",
+        "frames/ENM-06_hurt/ENM-06_hurt_02.png",
+        "frames/ENM-06_hurt/ENM-06_hurt_03.png"
+      ],
+      "sheet": "sheets/ENM-06_hurt.png",
+      "frameDetails": [
+        {
+          "sourceRect": [
+            0,
+            270,
+            388,
+            256
+          ],
+          "sourceAnchor": [
+            242,
+            129
+          ],
+          "offset": [
+            6,
+            19
+          ],
+          "alphaBBox": [
+            6,
+            19,
+            80,
+            68
+          ]
+        },
+        {
+          "sourceRect": [
+            388,
+            270,
+            358,
+            256
+          ],
+          "sourceAnchor": [
+            238,
+            129
+          ],
+          "offset": [
+            7,
+            19
+          ],
+          "alphaBBox": [
+            8,
+            19,
+            75,
+            68
+          ]
+        },
+        {
+          "sourceRect": [
+            746,
+            270,
+            414,
+            256
+          ],
+          "sourceAnchor": [
+            264,
+            129
+          ],
+          "offset": [
+            2,
+            19
+          ],
+          "alphaBBox": [
+            2,
+            19,
+            81,
+            68
+          ]
+        },
+        {
+          "sourceRect": [
+            1160,
+            270,
+            376,
+            256
+          ],
+          "sourceAnchor": [
+            234,
+            129
+          ],
+          "offset": [
+            8,
+            19
+          ],
+          "alphaBBox": [
+            8,
+            19,
+            77,
+            68
+          ]
+        }
+      ],
+      "fadeStartNormalized": 1.0,
+      "phases": [
+        "hurt1",
+        "hurt2",
+        "hurt3",
+        "hurt4"
+      ]
+    },
+    {
+      "id": "ENM-06_death",
+      "enemyId": "ENM-06",
+      "gameEnemyId": "shadow_wisp",
+      "label": "暗影幽灵",
+      "name": "death",
+      "kind": "body",
+      "generationMode": "built-in image_gen",
+      "sourcePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-06/ENM-06_actions_B.png",
+      "sourceRects": [
+        [
+          0,
+          526,
+          390,
+          256
+        ],
+        [
+          390,
+          526,
+          368,
+          256
+        ],
+        [
+          758,
+          526,
+          396,
+          256
+        ],
+        [
+          1154,
+          526,
+          382,
+          256
+        ],
+        [
+          0,
+          782,
+          382,
+          242
+        ],
+        [
+          382,
+          782,
+          392,
+          242
+        ],
+        [
+          774,
+          782,
+          380,
+          242
+        ],
+        [
+          1154,
+          782,
+          382,
+          242
+        ]
+      ],
+      "sourceAnchors": [
+        [
+          242,
+          129
+        ],
+        [
+          236,
+          129
+        ],
+        [
+          252,
+          129
+        ],
+        [
+          240,
+          129
+        ],
+        [
+          242,
+          129
+        ],
+        [
+          244,
+          129
+        ],
+        [
+          236,
+          129
+        ],
+        [
+          240,
+          129
+        ]
+      ],
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "sourceSha256": "0d1286958bb013e5d59557b65213a0ffe3b48a6a42cf4ae9b911f8b47520e449",
+      "sourceBatch": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-06/batch.json",
+      "promptPath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-06/ENM-06_B_retry.prompt.txt",
+      "provenancePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-06/provenance.json",
+      "target": [
+        104,
+        88
+      ],
+      "anchor": [
+        52,
+        44
+      ],
+      "rootType": "flying",
+      "scale": 0.19,
+      "fps": 10,
+      "loop": false,
+      "frameCount": 8,
+      "frames": [
+        "frames/ENM-06_death/ENM-06_death_00.png",
+        "frames/ENM-06_death/ENM-06_death_01.png",
+        "frames/ENM-06_death/ENM-06_death_02.png",
+        "frames/ENM-06_death/ENM-06_death_03.png",
+        "frames/ENM-06_death/ENM-06_death_04.png",
+        "frames/ENM-06_death/ENM-06_death_05.png",
+        "frames/ENM-06_death/ENM-06_death_06.png",
+        "frames/ENM-06_death/ENM-06_death_07.png"
+      ],
+      "sheet": "sheets/ENM-06_death.png",
+      "frameDetails": [
+        {
+          "sourceRect": [
+            0,
+            526,
+            390,
+            256
+          ],
+          "sourceAnchor": [
+            242,
+            129
+          ],
+          "offset": [
+            6,
+            19
+          ],
+          "alphaBBox": [
+            6,
+            19,
+            80,
+            68
+          ]
+        },
+        {
+          "sourceRect": [
+            390,
+            526,
+            368,
+            256
+          ],
+          "sourceAnchor": [
+            236,
+            129
+          ],
+          "offset": [
+            7,
+            19
+          ],
+          "alphaBBox": [
+            7,
+            19,
+            77,
+            68
+          ]
+        },
+        {
+          "sourceRect": [
+            758,
+            526,
+            396,
+            256
+          ],
+          "sourceAnchor": [
+            252,
+            129
+          ],
+          "offset": [
+            4,
+            19
+          ],
+          "alphaBBox": [
+            4,
+            19,
+            79,
+            68
+          ]
+        },
+        {
+          "sourceRect": [
+            1154,
+            526,
+            382,
+            256
+          ],
+          "sourceAnchor": [
+            240,
+            129
+          ],
+          "offset": [
+            6,
+            19
+          ],
+          "alphaBBox": [
+            6,
+            19,
+            79,
+            68
+          ]
+        },
+        {
+          "sourceRect": [
+            0,
+            782,
+            382,
+            242
+          ],
+          "sourceAnchor": [
+            242,
+            129
+          ],
+          "offset": [
+            6,
+            19
+          ],
+          "alphaBBox": [
+            8,
+            19,
+            79,
+            63
+          ]
+        },
+        {
+          "sourceRect": [
+            382,
+            782,
+            392,
+            242
+          ],
+          "sourceAnchor": [
+            244,
+            129
+          ],
+          "offset": [
+            6,
+            19
+          ],
+          "alphaBBox": [
+            6,
+            19,
+            80,
+            63
+          ]
+        },
+        {
+          "sourceRect": [
+            774,
+            782,
+            380,
+            242
+          ],
+          "sourceAnchor": [
+            236,
+            129
+          ],
+          "offset": [
+            7,
+            19
+          ],
+          "alphaBBox": [
+            8,
+            19,
+            79,
+            62
+          ]
+        },
+        {
+          "sourceRect": [
+            1154,
+            782,
+            382,
+            242
+          ],
+          "sourceAnchor": [
+            240,
+            129
+          ],
+          "offset": [
+            6,
+            19
+          ],
+          "alphaBBox": [
+            7,
+            19,
+            76,
+            63
+          ]
+        }
+      ],
+      "fadeStartNormalized": 0.65,
+      "phases": [
+        "death1",
+        "death2",
+        "death3",
+        "death4",
+        "death5",
+        "death6",
+        "death7",
+        "death8"
+      ]
+    }
+  ],
+  "anchorPolicy": "fixed semantic joint, fixed enemy scale, nearest sampling only; source grid separators located in transparent gutters",
+  "generator": "built-in image_gen"
+}

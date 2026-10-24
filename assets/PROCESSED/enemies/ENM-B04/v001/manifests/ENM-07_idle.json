@@ -1,0 +1,179 @@
+{
+  "id": "ENM-07_idle",
+  "enemyId": "ENM-07",
+  "gameEnemyId": "vine_flower",
+  "label": "藤蔓花",
+  "name": "idle",
+  "kind": "body",
+  "generationMode": "built-in image_gen",
+  "sourcePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-07/ENM-07_actions_A.png",
+  "sourceRects": [
+    [
+      0,
+      0,
+      384,
+      254
+    ],
+    [
+      384,
+      0,
+      384,
+      254
+    ],
+    [
+      768,
+      0,
+      384,
+      254
+    ],
+    [
+      1152,
+      0,
+      384,
+      254
+    ]
+  ],
+  "sourceAnchors": [
+    [
+      170,
+      220
+    ],
+    [
+      181,
+      220
+    ],
+    [
+      192,
+      220
+    ],
+    [
+      193,
+      220
+    ]
+  ],
+  "sourceSize": [
+    1536,
+    1024
+  ],
+  "sourceSha256": "89b228b5f3ab4eb890f392efd76b7c472bc28a1387aa391acbe145f6e245d048",
+  "sourceBatch": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-07/batch.json",
+  "promptPath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-07/ENM-07_A.prompt.txt",
+  "provenancePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-07/provenance.json",
+  "target": [
+    128,
+    88
+  ],
+  "anchor": [
+    58,
+    72
+  ],
+  "rootType": "ground",
+  "scale": 0.22,
+  "fps": 8,
+  "loop": true,
+  "frameCount": 4,
+  "frames": [
+    "frames/ENM-07_idle/ENM-07_idle_00.png",
+    "frames/ENM-07_idle/ENM-07_idle_01.png",
+    "frames/ENM-07_idle/ENM-07_idle_02.png",
+    "frames/ENM-07_idle/ENM-07_idle_03.png"
+  ],
+  "sheet": "sheets/ENM-07_idle.png",
+  "frameDetails": [
+    {
+      "sourceRect": [
+        0,
+        0,
+        384,
+        254
+      ],
+      "sourceAnchor": [
+        170,
+        220
+      ],
+      "offset": [
+        21,
+        24
+      ],
+      "alphaBBox": [
+        33,
+        27,
+        95,
+        74
+      ]
+    },
+    {
+      "sourceRect": [
+        384,
+        0,
+        384,
+        254
+      ],
+      "sourceAnchor": [
+        181,
+        220
+      ],
+      "offset": [
+        18,
+        24
+      ],
+      "alphaBBox": [
+        27,
+        27,
+        98,
+        75
+      ]
+    },
+    {
+      "sourceRect": [
+        768,
+        0,
+        384,
+        254
+      ],
+      "sourceAnchor": [
+        192,
+        220
+      ],
+      "offset": [
+        16,
+        24
+      ],
+      "alphaBBox": [
+        18,
+        27,
+        96,
+        75
+      ]
+    },
+    {
+      "sourceRect": [
+        1152,
+        0,
+        384,
+        254
+      ],
+      "sourceAnchor": [
+        193,
+        220
+      ],
+      "offset": [
+        16,
+        24
+      ],
+      "alphaBBox": [
+        25,
+        28,
+        95,
+        80
+      ]
+    }
+  ],
+  "fadeStartNormalized": 1.0,
+  "phases": [
+    "idle1",
+    "idle2",
+    "idle3",
+    "idle4"
+  ]
+}

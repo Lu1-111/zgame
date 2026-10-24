@@ -1,0 +1,15 @@
+# NPC-S06 v003
+
+内置 image_gen 生成，CHR-01 作为首要画风参考，旧 v002 只作身份参考。全新右向3/4造型；真正Alpha；64×64，root(32,58)，含角冠高度44px。未修改灰盒游戏。
+
+## Idle6 + Talk4
+
+Use case: stylized-concept. Professional pixel-art game character sprite sheet: EXACT10 full-body poses,5 columns2 rows,transparent alpha PNG. Image1 PRIMARY style reference CHR01: warm golden yellow round body,cream volume,large green eyes,warm brown outline,crisp chunky pixel edges,three-step shadows,unblurred blocky pixels. Image2 old identity reference ONLY,replace thin stick-like proportions with rounded weight matching CHR01. Right-facing3/4 side view EVERY frame. Same body proportions and scale EVERY frame,feet baseline fixed,complete silhouette with ample margins. Slots1-6 idle6: neutral,inhaling,blink,exhale,settle,neutral; slots7-10 talk4: neutral,small mouth open,small hand gesture,neutral. Sequence row-major. No text/labels/grid/background/shadows/effects. Target64x64 root32,58,body40 pixels plus horns/crest to44. Courier BIRD identity: bright blue three-feather crown,round gold bird head with green eyes,clear upper AND lower orange-brown beak,cream oval chest,compact rounded body,feathered wing-hands with THREE feather tips (NO human fingers or gloves),two short jointed bird legs with brown THREE-TOED claws,small blue tail,small brown leather crossbody mailbag with fixed strap and cream envelope visible. Bird anatomy clearly distinct from dragon. Maintain crown/beak/mailbag identity across all poses. Talk gently opening beak,one tiny wing gesture,mailbag remains attached.
+
+## Master 来源
+
+NPC-S06_master_right_v003.png 是 idle_talk sheet 第一格的机械截取，非独立生图。source尺寸1983×793，第一格rect(0,0,396,396)。保留原始alpha与所有原图。
+
+## Walk8
+
+Use case: identity-preserve. EXACTLY8 fullbody frames game pixel sprite WALK cycle,4columns2rows,transparent PNG. Reference image is LOCKED identity and proportions. Same bird courier with bright blue three-feather crown,upper/lower orange beak,green eyes,cream chest,blue feather wing hands and blue tail,brown mailbag with white envelope and fixed crossbody strap. Wings counter-swing slightly,mailbag attached to same hip; no human hands or gloves. Keep same warm golden palette,round body volumes,warm brown outline,3-step shadows,crisp chunky pixel edges. All frames facing RIGHT side3/4 like reference,orthographic horizontal platformer. IN-PLACE walk,8 sequential poses row-major:1 left foot forward heel contact/right rear toe;2 lower passing weight;3 left support/right knee bent stepping through;4 high right knee/left toe push;5 right foot forward heel contact/left rear toe;6 lower passing weight;7 right support/left knee bends stepping through;8 high left knee/right toe push and back to1. Clear alternating feet articulated hip knee ankle; feet and legs change pose visibly. Neither all identical nor sliding whole body. Body scale identical each frame,small natural2px bob only; SAME local ground baseline each cell with empty margins all sides,entire horns/crest feet/tail visible. Target64x64 root32,58,body40px plus horns/crest44. NO text/grid/numbers/shadows/background/motionlines. Do not compress body between rows.

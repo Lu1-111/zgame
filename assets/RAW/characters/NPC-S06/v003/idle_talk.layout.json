@@ -1,0 +1,244 @@
+{
+  "sheet": "NPC-S06_idle_talk_right_sheet_v003.png",
+  "source_size": [
+    1983,
+    793
+  ],
+  "frames": [
+    {
+      "action": "idle",
+      "frame": 1,
+      "rect_xywh": [
+        0,
+        0,
+        397,
+        396
+      ],
+      "alpha160_bbox_xyxy": [
+        57,
+        15,
+        323,
+        387
+      ],
+      "suggested_source_root_xy": [
+        204,
+        387
+      ]
+    },
+    {
+      "action": "idle",
+      "frame": 2,
+      "rect_xywh": [
+        397,
+        0,
+        396,
+        396
+      ],
+      "alpha160_bbox_xyxy": [
+        450,
+        13,
+        718,
+        387
+      ],
+      "suggested_source_root_xy": [
+        598,
+        387
+      ]
+    },
+    {
+      "action": "idle",
+      "frame": 3,
+      "rect_xywh": [
+        793,
+        0,
+        397,
+        396
+      ],
+      "alpha160_bbox_xyxy": [
+        844,
+        13,
+        1112,
+        387
+      ],
+      "suggested_source_root_xy": [
+        991,
+        387
+      ]
+    },
+    {
+      "action": "idle",
+      "frame": 4,
+      "rect_xywh": [
+        1190,
+        0,
+        396,
+        396
+      ],
+      "alpha160_bbox_xyxy": [
+        1237,
+        13,
+        1503,
+        387
+      ],
+      "suggested_source_root_xy": [
+        1383,
+        387
+      ]
+    },
+    {
+      "action": "idle",
+      "frame": 5,
+      "rect_xywh": [
+        1586,
+        0,
+        397,
+        396
+      ],
+      "alpha160_bbox_xyxy": [
+        1629,
+        13,
+        1894,
+        387
+      ],
+      "suggested_source_root_xy": [
+        1775,
+        387
+      ]
+    },
+    {
+      "action": "idle",
+      "frame": 6,
+      "rect_xywh": [
+        0,
+        396,
+        397,
+        397
+      ],
+      "alpha160_bbox_xyxy": [
+        56,
+        406,
+        323,
+        780
+      ],
+      "suggested_source_root_xy": [
+        204,
+        780
+      ]
+    },
+    {
+      "action": "talk",
+      "frame": 1,
+      "rect_xywh": [
+        397,
+        396,
+        396,
+        397
+      ],
+      "alpha160_bbox_xyxy": [
+        450,
+        406,
+        720,
+        780
+      ],
+      "suggested_source_root_xy": [
+        598,
+        780
+      ]
+    },
+    {
+      "action": "talk",
+      "frame": 2,
+      "rect_xywh": [
+        793,
+        396,
+        397,
+        397
+      ],
+      "alpha160_bbox_xyxy": [
+        844,
+        406,
+        1154,
+        780
+      ],
+      "suggested_source_root_xy": [
+        991,
+        780
+      ]
+    },
+    {
+      "action": "talk",
+      "frame": 3,
+      "rect_xywh": [
+        1190,
+        396,
+        396,
+        397
+      ],
+      "alpha160_bbox_xyxy": [
+        1236,
+        406,
+        1505,
+        780
+      ],
+      "suggested_source_root_xy": [
+        1383,
+        780
+      ]
+    },
+    {
+      "action": "talk",
+      "frame": 4,
+      "rect_xywh": [
+        1586,
+        396,
+        397,
+        397
+      ],
+      "alpha160_bbox_xyxy": [
+        1629,
+        406,
+        1894,
+        780
+      ],
+      "suggested_source_root_xy": [
+        1775,
+        780
+      ]
+    }
+  ],
+  "target_canvas": [
+    64,
+    64
+  ],
+  "target_root": [
+    32,
+    58
+  ],
+  "target_standing_height": 44,
+  "source_scale_reference_height": 373,
+  "fps": {
+    "idle": 6,
+    "talk": 8
+  },
+  "loop": {
+    "idle": true,
+    "talk": true
+  },
+  "master": "NPC-S06_master_right_v003.png",
+  "master_source": {
+    "sheet": "NPC-S06_idle_talk_right_sheet_v003.png",
+    "rect_xywh": [
+      0,
+      0,
+      396,
+      396
+    ],
+    "derived": true,
+    "source_root_xy": [
+      204,
+      387
+    ],
+    "source_scale_reference_height": 373
+  },
+  "notes": "Verified alpha160 boxes separated from every crop boundary. Torso X registration manually follows belly/waist, not tail or raised wing. Fixed scale across all10 frames. RAW may contain low-alpha edge colors; reject isolated fringe during processed threshold. Master mechanically extracted idle first cell, not separately generated."
+}

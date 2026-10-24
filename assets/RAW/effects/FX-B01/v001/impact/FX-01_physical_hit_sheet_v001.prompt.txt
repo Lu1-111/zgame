@@ -1,0 +1,14 @@
+Use case: stylized-concept.
+Asset type: exact-grid 6-frame combat VFX animation sprite sheet for a 2D side-scrolling milk-fantasy pixel-art game.
+Primary request: physical_hit, a compact yellow-white short star impact, with a few honey-gold block sparks. Only the effect, no character, no weapon.
+Canvas: landscape 1536 x 1024 PNG with TRUE transparent alpha, exactly 3 equal columns and 2 equal rows, six invisible 512 x 512 cells; read left-to-right then top-to-bottom. No visible cell boundaries, background, checkerboard, labels, typography or numbers.
+Alignment is critical: each frame has an immutable origin at its cell center (256,256). Global frame origins are precisely (256,256),(768,256),(1280,256),(256,768),(768,768),(1280,768). The impact expands around the SAME origin; do not auto-center individual particle bounds or shift the effect. All content stays within 190 pixels of each origin.
+Pixel style: each cell is conceptually 64 x 64 logical pixels enlarged 8x nearest-neighbor. Use chunky square blocks aligned to that 8px grid, hard stair-step edges, flat colors, NO anti-aliasing, NO blurred glow, no gradients or painterly texture. Tight palette: milk white #fff7df, butter cream #ffe8a6, honey gold #e9b85a, pale cyan #9ae5db only as sparse accent.
+Six consecutive frames of ONE animation, not six icon variants:
+1 tiny compact white ignition at origin with two short emerging yellow spokes;
+2 strongest burst: compact milk-white angular star core, honey-gold short spokes extending mainly diagonally;
+3 same spokes travel radially outward and core opens, becoming smaller while burst expands;
+4 same outward rays fracture into short chunky gold shards, center mostly clears;
+5 shards continue along the same trajectories and get smaller and paler;
+6 only 3-5 tiny very faint tail pixels at the outer trajectories, no central star, naturally disappearing immediately after this frame.
+Maintain coherent ray directions and continuous radius growth from frame 2 to frame 6. Early frames visibly small, peak at frame 2, frame 6 nearly empty. Transparent center where no actual pixels exist. This must be an asset sheet ready for fixed-grid slicing, no decorative presentation.

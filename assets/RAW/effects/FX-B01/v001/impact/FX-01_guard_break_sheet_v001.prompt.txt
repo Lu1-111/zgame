@@ -1,0 +1,14 @@
+Use case: stylized-concept.
+Asset type: exact-grid 6-frame combat VFX animation sprite sheet for a 2D side-scrolling milk-fantasy pixel-art game.
+Canvas: landscape 1536 x 1024 PNG, TRUE transparent alpha, exactly 3 equal columns and 2 equal rows, six invisible 512 x 512 cells; read left-to-right then top-to-bottom. No visible boundaries, background, checkerboard, labels, text or numbers.
+Critical immutable anchors: each effect originates at its cell center (256,256). Global frame centers: (256,256),(768,256),(1280,256),(256,768),(768,768),(1280,768). Do not auto-center moving particles; all motion evolves around the fixed anchor. All particles remain inside radius 190 pixels from their origin, with ample transparent margins.
+Pixel style: each cell is conceptually 64 x 64 logical pixels enlarged exactly 8x nearest-neighbor. Chunky square blocks aligned to an 8px grid, hard stair-step edges, flat colors, no antialiasing, no blurred glow, no gradients or painterly texture. Tight palette milk-white #fff7df, pale cyan #9ae5db, muted teal #57bcb5, honey gold #e9b85a. Only the independent effect, no characters, weapon bodies, scene, shield prop, letters or numbers.
+Six consecutive frames of ONE short animation, not six icons. Frame 1 small seed, frame 2 peak, frame 3 expansion, frame 4 fragmentation, frame 5 decay, frame 6 nearly empty faint residue. Track the SAME components along coherent trajectories across all frames; motion continuous, no random replacement shapes. Alpha must genuinely vanish outside pixels; no hidden cloudy wash.
+Primary request: GUARD BREAK / SHIELD SHATTER — an abstract pale-cyan shield-energy ring cracks, then its same angular shards fly outward and downward. Reusable for heavy hammer shield-break.
+Only energy ring and fragments, NOT a physical shield, character or weapon.
+Frame 1 small compact pale cyan energy oval seed at fixed anchor.
+Frame 2 a bright cyan defensive circular ring radius 88 source pixels with 5 angular cracks and milk-white fracture highlights, peak energy.
+Frame 3 the SAME ring expands to radius 122 and splits at those cracks into 5 recognizable chunky curved shards, central area transparent.
+Frame 4 same five shards move outward and begin falling slightly, rotating modestly along physically coherent trajectories.
+Frame 5 same fragments farther outward/downward, smaller and paler, breaking into small square chips.
+Frame 6 only 3-5 tiny faint cyan terminal chips, with a little downward sag, center fully transparent. Every trajectory retains fixed central origin; all pixels remain inside radius 190. Visually fragmented arcs, distinctly different from a symmetrical bubble pop.

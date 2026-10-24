@@ -1,0 +1,179 @@
+{
+  "id": "ENM-07_hurt",
+  "enemyId": "ENM-07",
+  "gameEnemyId": "vine_flower",
+  "label": "藤蔓花",
+  "name": "hurt",
+  "kind": "body",
+  "generationMode": "built-in image_gen",
+  "sourcePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-07/ENM-07_actions_B.png",
+  "sourceRects": [
+    [
+      0,
+      256,
+      440,
+      256
+    ],
+    [
+      440,
+      256,
+      370,
+      256
+    ],
+    [
+      810,
+      256,
+      380,
+      256
+    ],
+    [
+      1190,
+      256,
+      346,
+      256
+    ]
+  ],
+  "sourceAnchors": [
+    [
+      170,
+      226
+    ],
+    [
+      125,
+      226
+    ],
+    [
+      150,
+      226
+    ],
+    [
+      155,
+      226
+    ]
+  ],
+  "sourceSize": [
+    1536,
+    1024
+  ],
+  "sourceSha256": "c8e728bd75dc96c425a8ec2425145a96cf3de6e39b4a172bc345ecef81d863c4",
+  "sourceBatch": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-07/batch.json",
+  "promptPath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-07/ENM-07_B.prompt.txt",
+  "provenancePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-07/provenance.json",
+  "target": [
+    128,
+    88
+  ],
+  "anchor": [
+    58,
+    72
+  ],
+  "rootType": "ground",
+  "scale": 0.22,
+  "fps": 12,
+  "loop": false,
+  "frameCount": 4,
+  "frames": [
+    "frames/ENM-07_hurt/ENM-07_hurt_00.png",
+    "frames/ENM-07_hurt/ENM-07_hurt_01.png",
+    "frames/ENM-07_hurt/ENM-07_hurt_02.png",
+    "frames/ENM-07_hurt/ENM-07_hurt_03.png"
+  ],
+  "sheet": "sheets/ENM-07_hurt.png",
+  "frameDetails": [
+    {
+      "sourceRect": [
+        0,
+        256,
+        440,
+        256
+      ],
+      "sourceAnchor": [
+        170,
+        226
+      ],
+      "offset": [
+        21,
+        22
+      ],
+      "alphaBBox": [
+        30,
+        24,
+        116,
+        78
+      ]
+    },
+    {
+      "sourceRect": [
+        440,
+        256,
+        370,
+        256
+      ],
+      "sourceAnchor": [
+        125,
+        226
+      ],
+      "offset": [
+        30,
+        22
+      ],
+      "alphaBBox": [
+        32,
+        25,
+        109,
+        77
+      ]
+    },
+    {
+      "sourceRect": [
+        810,
+        256,
+        380,
+        256
+      ],
+      "sourceAnchor": [
+        150,
+        226
+      ],
+      "offset": [
+        25,
+        22
+      ],
+      "alphaBBox": [
+        27,
+        25,
+        109,
+        77
+      ]
+    },
+    {
+      "sourceRect": [
+        1190,
+        256,
+        346,
+        256
+      ],
+      "sourceAnchor": [
+        155,
+        226
+      ],
+      "offset": [
+        24,
+        22
+      ],
+      "alphaBBox": [
+        26,
+        25,
+        97,
+        75
+      ]
+    }
+  ],
+  "fadeStartNormalized": 1.0,
+  "phases": [
+    "hurt1",
+    "hurt2",
+    "hurt3",
+    "hurt4"
+  ]
+}

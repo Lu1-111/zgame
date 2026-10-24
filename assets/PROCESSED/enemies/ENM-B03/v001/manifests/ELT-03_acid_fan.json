@@ -1,0 +1,350 @@
+{
+  "id": "ELT-03_acid_fan",
+  "name": "acid_fan",
+  "enemyId": "ELT-03",
+  "gameEnemyId": "acid_mother",
+  "label": "酸液母体·扇形喷流",
+  "sourcePath": "/home/lululu/zgame/assets/RAW/effects/ENM-B03/v001/ELT-03_acid_fan_sheet_v001.png",
+  "promptPath": "/home/lululu/zgame/assets/RAW/effects/ENM-B03/v001/ELT-03_acid_fan_sheet_v001.prompt.txt",
+  "generatedPath": "/home/lululu/.codex/generated_images/01a16cdb-4368-7a73-a021-7de070b80e42/exec-42d44feb-72fd-45c1-82d7-69ec6a83fcf9.png",
+  "sourceColumns": 3,
+  "sourceRows": 2,
+  "sourceIndices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "sourceRects": [
+    [
+      0,
+      0,
+      512,
+      512
+    ],
+    [
+      512,
+      0,
+      512,
+      512
+    ],
+    [
+      1024,
+      0,
+      512,
+      512
+    ],
+    [
+      0,
+      512,
+      512,
+      512
+    ],
+    [
+      512,
+      512,
+      512,
+      512
+    ],
+    [
+      1024,
+      512,
+      512,
+      512
+    ]
+  ],
+  "sourceAnchors": [
+    [
+      128,
+      256
+    ],
+    [
+      64,
+      256
+    ],
+    [
+      48,
+      256
+    ],
+    [
+      56,
+      256
+    ],
+    [
+      64,
+      256
+    ],
+    [
+      64,
+      256
+    ]
+  ],
+  "target": [
+    112,
+    96
+  ],
+  "anchor": [
+    24,
+    48
+  ],
+  "scale": 0.15625,
+  "fps": 14,
+  "loop": false,
+  "kind": "effect",
+  "triggerAction": "attack",
+  "attachPoint": "mouth",
+  "triggerOffset": [
+    28,
+    -26
+  ],
+  "phases": [
+    "建立",
+    "峰值",
+    "扩张",
+    "碎裂",
+    "衰减",
+    "尾屑"
+  ],
+  "notes": [
+    "按每帧实际喷口尖端校准root，尾段延续喷流起点；增宽透明画布保留全部alpha。"
+  ],
+  "frames": [
+    "frames/ELT-03_acid_fan/ELT-03_acid_fan_00.png",
+    "frames/ELT-03_acid_fan/ELT-03_acid_fan_01.png",
+    "frames/ELT-03_acid_fan/ELT-03_acid_fan_02.png",
+    "frames/ELT-03_acid_fan/ELT-03_acid_fan_03.png",
+    "frames/ELT-03_acid_fan/ELT-03_acid_fan_04.png",
+    "frames/ELT-03_acid_fan/ELT-03_acid_fan_05.png"
+  ],
+  "sheet": "sheets/ELT-03_acid_fan.png",
+  "sheetRects": [
+    [
+      0,
+      0,
+      112,
+      96
+    ],
+    [
+      112,
+      0,
+      112,
+      96
+    ],
+    [
+      224,
+      0,
+      112,
+      96
+    ],
+    [
+      336,
+      0,
+      112,
+      96
+    ],
+    [
+      448,
+      0,
+      112,
+      96
+    ],
+    [
+      560,
+      0,
+      112,
+      96
+    ]
+  ],
+  "atlas": "atlas/ELT-03_acid_fan.png",
+  "atlasColumns": 3,
+  "atlasRows": 2,
+  "atlasRects": [
+    [
+      0,
+      0,
+      112,
+      96
+    ],
+    [
+      112,
+      0,
+      112,
+      96
+    ],
+    [
+      224,
+      0,
+      112,
+      96
+    ],
+    [
+      0,
+      96,
+      112,
+      96
+    ],
+    [
+      112,
+      96,
+      112,
+      96
+    ],
+    [
+      224,
+      96,
+      112,
+      96
+    ]
+  ],
+  "sourceSize": [
+    1536,
+    1024
+  ],
+  "sourceSha256": "aecba57483c2dc172678c74b6bdc336ce009a5b8de3b431ebb185818c8b7ce87",
+  "sourceBatch": "/home/lululu/zgame/assets/RAW/effects/ENM-B03/v001/batch.json",
+  "frameCount": 6,
+  "frameDetails": [
+    {
+      "sourceRect": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "sourceAnchor": [
+        128,
+        256
+      ],
+      "offset": [
+        4,
+        8
+      ],
+      "alphaBBox": [
+        8,
+        11,
+        84,
+        88
+      ],
+      "sourceEdgeAlpha": 1
+    },
+    {
+      "sourceRect": [
+        512,
+        0,
+        512,
+        512
+      ],
+      "sourceAnchor": [
+        64,
+        256
+      ],
+      "offset": [
+        14,
+        8
+      ],
+      "alphaBBox": [
+        14,
+        9,
+        94,
+        88
+      ],
+      "sourceEdgeAlpha": 1
+    },
+    {
+      "sourceRect": [
+        1024,
+        0,
+        512,
+        512
+      ],
+      "sourceAnchor": [
+        48,
+        256
+      ],
+      "offset": [
+        16,
+        8
+      ],
+      "alphaBBox": [
+        16,
+        12,
+        94,
+        88
+      ],
+      "sourceEdgeAlpha": 1
+    },
+    {
+      "sourceRect": [
+        0,
+        512,
+        512,
+        512
+      ],
+      "sourceAnchor": [
+        56,
+        256
+      ],
+      "offset": [
+        15,
+        8
+      ],
+      "alphaBBox": [
+        19,
+        8,
+        93,
+        83
+      ],
+      "sourceEdgeAlpha": 1
+    },
+    {
+      "sourceRect": [
+        512,
+        512,
+        512,
+        512
+      ],
+      "sourceAnchor": [
+        64,
+        256
+      ],
+      "offset": [
+        14,
+        8
+      ],
+      "alphaBBox": [
+        14,
+        8,
+        94,
+        85
+      ],
+      "sourceEdgeAlpha": 1
+    },
+    {
+      "sourceRect": [
+        1024,
+        512,
+        512,
+        512
+      ],
+      "sourceAnchor": [
+        64,
+        256
+      ],
+      "offset": [
+        14,
+        8
+      ],
+      "alphaBBox": [
+        14,
+        9,
+        91,
+        85
+      ],
+      "sourceEdgeAlpha": 1
+    }
+  ],
+  "fadeStartNormalized": 0.65,
+  "loopBoundaryMeanDifference": 12.0
+}

@@ -1,0 +1,50 @@
+{
+  "columns": 4,
+  "calibration": {
+    "referenceCell": 0,
+    "targetStandingHeight": 40
+  },
+  "anchors": {},
+  "notes": [
+    "All frame pixel measurements require review before final packaging.",
+    "Target pivot (32,58) in a64x64 canvas.",
+    "Original rest row preserved in RAW; final rest now comes from rest_cycle v002 to keep transitions continuous."
+  ],
+  "sourceId": "life",
+  "file": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_life_right_v001.png",
+  "rows": 3,
+  "animations": [
+    {
+      "name": "death",
+      "label": "死亡",
+      "fps": 5.333333,
+      "loop": false,
+      "anchorMode": "root",
+      "cells": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  ],
+  "unusedAnimations": [
+    {
+      "name": "rest",
+      "label": "休息",
+      "fps": 4,
+      "loop": true,
+      "anchorMode": "ground",
+      "cells": [
+        8,
+        9,
+        10,
+        11
+      ]
+    }
+  ]
+}

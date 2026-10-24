@@ -1,0 +1,737 @@
+{
+  "alphaThreshold": 127,
+  "sources": [
+    {
+      "id": "idle",
+      "path": "/home/lululu/zgame/assets/RAW/characters/NPC-01/v001/NPC-01_actions_right_v001.png",
+      "sha256": "e484ed520cd1f7ef7ea06cff6ad0d8337047968f87afeb5008fba53a21be3ded",
+      "width": 1774,
+      "height": 887,
+      "hasAlpha": true,
+      "frames": [
+        {
+          "index": 0,
+          "rect": [
+            0,
+            0,
+            295,
+            332
+          ],
+          "empty": false,
+          "bbox": [
+            104,
+            15,
+            174,
+            311
+          ],
+          "count": 35710,
+          "fullyTransparent": 55314,
+          "partial": 42564,
+          "centroid": [
+            196.43976477177262,
+            185.28207784934193
+          ],
+          "footCandidate": [
+            211,
+            326
+          ],
+          "touchesCellBoundary": false,
+          "components": [
+            {
+              "area": 35710,
+              "bbox": [
+                104,
+                15,
+                174,
+                311
+              ]
+            }
+          ]
+        },
+        {
+          "index": 1,
+          "rect": [
+            295,
+            0,
+            296,
+            332
+          ],
+          "empty": false,
+          "bbox": [
+            104,
+            15,
+            173,
+            311
+          ],
+          "count": 35669,
+          "fullyTransparent": 56042,
+          "partial": 42094,
+          "centroid": [
+            194.4743614903698,
+            185.38703075499734
+          ],
+          "footCandidate": [
+            209,
+            326
+          ],
+          "touchesCellBoundary": false,
+          "components": [
+            {
+              "area": 35669,
+              "bbox": [
+                104,
+                15,
+                173,
+                311
+              ]
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "rect": [
+            591,
+            0,
+            296,
+            332
+          ],
+          "empty": false,
+          "bbox": [
+            88,
+            11,
+            173,
+            314
+          ],
+          "count": 36035,
+          "fullyTransparent": 54959,
+          "partial": 43227,
+          "centroid": [
+            179.54383238518108,
+            183.28314139031497
+          ],
+          "footCandidate": [
+            195,
+            325
+          ],
+          "touchesCellBoundary": false,
+          "components": [
+            {
+              "area": 36035,
+              "bbox": [
+                88,
+                11,
+                173,
+                314
+              ]
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "rect": [
+            887,
+            0,
+            296,
+            332
+          ],
+          "empty": false,
+          "bbox": [
+            68,
+            15,
+            172,
+            312
+          ],
+          "count": 35649,
+          "fullyTransparent": 55499,
+          "partial": 42693,
+          "centroid": [
+            159.05455973519594,
+            185.45516003253948
+          ],
+          "footCandidate": [
+            174,
+            327
+          ],
+          "touchesCellBoundary": false,
+          "components": [
+            {
+              "area": 35649,
+              "bbox": [
+                68,
+                15,
+                172,
+                312
+              ]
+            }
+          ]
+        },
+        {
+          "index": 4,
+          "rect": [
+            1183,
+            0,
+            296,
+            332
+          ],
+          "empty": false,
+          "bbox": [
+            54,
+            16,
+            171,
+            311
+          ],
+          "count": 35668,
+          "fullyTransparent": 54688,
+          "partial": 43504,
+          "centroid": [
+            145.201553212964,
+            186.2938768644163
+          ],
+          "footCandidate": [
+            160,
+            327
+          ],
+          "touchesCellBoundary": false,
+          "components": [
+            {
+              "area": 35668,
+              "bbox": [
+                54,
+                16,
+                171,
+                311
+              ]
+            }
+          ]
+        },
+        {
+          "index": 5,
+          "rect": [
+            1479,
+            0,
+            295,
+            332
+          ],
+          "empty": false,
+          "bbox": [
+            40,
+            15,
+            173,
+            312
+          ],
+          "count": 35667,
+          "fullyTransparent": 54593,
+          "partial": 43270,
+          "centroid": [
+            131.89617854038747,
+            185.68020859618133
+          ],
+          "footCandidate": [
+            147,
+            327
+          ],
+          "touchesCellBoundary": false,
+          "components": [
+            {
+              "area": 35667,
+              "bbox": [
+                40,
+                15,
+                173,
+                312
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "talk",
+      "path": "/home/lululu/zgame/assets/RAW/characters/NPC-01/v001/NPC-01_talk_right_v002.png",
+      "sha256": "79e2374a4e7e83401833655e811b993a7f2078927122b38dfa81c2f7f1172ad7",
+      "width": 1536,
+      "height": 1024,
+      "hasAlpha": true,
+      "frames": [
+        {
+          "index": 0,
+          "rect": [
+            0,
+            0,
+            512,
+            512
+          ],
+          "empty": false,
+          "bbox": [
+            191,
+            24,
+            250,
+            467
+          ],
+          "count": 78844,
+          "fullyTransparent": 174334,
+          "partial": 87810,
+          "centroid": [
+            321.4695728273553,
+            277.680812744153
+          ],
+          "footCandidate": [
+            345,
+            491
+          ],
+          "touchesCellBoundary": false,
+          "components": [
+            {
+              "area": 78844,
+              "bbox": [
+                191,
+                24,
+                250,
+                467
+              ]
+            }
+          ]
+        },
+        {
+          "index": 1,
+          "rect": [
+            512,
+            0,
+            512,
+            512
+          ],
+          "empty": false,
+          "bbox": [
+            117,
+            24,
+            251,
+            467
+          ],
+          "count": 78818,
+          "fullyTransparent": 173204,
+          "partial": 88940,
+          "centroid": [
+            248.43977264076733,
+            277.60182953132534
+          ],
+          "footCandidate": [
+            272,
+            491
+          ],
+          "touchesCellBoundary": false,
+          "components": [
+            {
+              "area": 78818,
+              "bbox": [
+                117,
+                24,
+                251,
+                467
+              ]
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "rect": [
+            1024,
+            0,
+            512,
+            512
+          ],
+          "empty": false,
+          "bbox": [
+            45,
+            24,
+            251,
+            467
+          ],
+          "count": 79011,
+          "fullyTransparent": 173600,
+          "partial": 88544,
+          "centroid": [
+            175.5176620976826,
+            277.3707964713774
+          ],
+          "footCandidate": [
+            198,
+            491
+          ],
+          "touchesCellBoundary": false,
+          "components": [
+            {
+              "area": 79011,
+              "bbox": [
+                45,
+                24,
+                251,
+                467
+              ]
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "rect": [
+            0,
+            512,
+            512,
+            512
+          ],
+          "empty": false,
+          "bbox": [
+            190,
+            21,
+            252,
+            468
+          ],
+          "count": 78998,
+          "fullyTransparent": 174173,
+          "partial": 87971,
+          "centroid": [
+            321.53183624901897,
+            275.31529912149676
+          ],
+          "footCandidate": [
+            344,
+            489
+          ],
+          "touchesCellBoundary": false,
+          "components": [
+            {
+              "area": 78998,
+              "bbox": [
+                190,
+                21,
+                252,
+                468
+              ]
+            }
+          ]
+        },
+        {
+          "index": 4,
+          "rect": [
+            512,
+            512,
+            512,
+            512
+          ],
+          "empty": false,
+          "bbox": [
+            117,
+            21,
+            251,
+            468
+          ],
+          "count": 79099,
+          "fullyTransparent": 172878,
+          "partial": 89266,
+          "centroid": [
+            248.57515265679717,
+            275.2077017408564
+          ],
+          "footCandidate": [
+            272,
+            489
+          ],
+          "touchesCellBoundary": false,
+          "components": [
+            {
+              "area": 79099,
+              "bbox": [
+                117,
+                21,
+                251,
+                468
+              ]
+            }
+          ]
+        },
+        {
+          "index": 5,
+          "rect": [
+            1024,
+            512,
+            512,
+            512
+          ],
+          "empty": false,
+          "bbox": [
+            45,
+            21,
+            251,
+            468
+          ],
+          "count": 79066,
+          "fullyTransparent": 173409,
+          "partial": 88735,
+          "centroid": [
+            175.446740697645,
+            274.9364202059039
+          ],
+          "footCandidate": [
+            198,
+            489
+          ],
+          "touchesCellBoundary": false,
+          "components": [
+            {
+              "area": 79066,
+              "bbox": [
+                45,
+                21,
+                251,
+                468
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "greet",
+      "path": "/home/lululu/zgame/assets/RAW/characters/NPC-01/v001/NPC-01_greet_right_v002.png",
+      "sha256": "f6fe9ba8b749c5502a1997462972f60a72c157000c5e212a394615fac8468952",
+      "width": 1536,
+      "height": 1024,
+      "hasAlpha": true,
+      "frames": [
+        {
+          "index": 0,
+          "rect": [
+            0,
+            0,
+            512,
+            512
+          ],
+          "empty": false,
+          "bbox": [
+            155,
+            24,
+            251,
+            475
+          ],
+          "count": 77903,
+          "fullyTransparent": 174115,
+          "partial": 88029,
+          "centroid": [
+            286.16415285675777,
+            283.698291465027
+          ],
+          "footCandidate": [
+            309,
+            499
+          ],
+          "touchesCellBoundary": false,
+          "components": [
+            {
+              "area": 77903,
+              "bbox": [
+                155,
+                24,
+                251,
+                475
+              ]
+            }
+          ]
+        },
+        {
+          "index": 1,
+          "rect": [
+            512,
+            0,
+            512,
+            512
+          ],
+          "empty": false,
+          "bbox": [
+            118,
+            24,
+            276,
+            475
+          ],
+          "count": 79410,
+          "fullyTransparent": 172764,
+          "partial": 89380,
+          "centroid": [
+            251.3203626747261,
+            283.7208412038786
+          ],
+          "footCandidate": [
+            270,
+            499
+          ],
+          "touchesCellBoundary": false,
+          "components": [
+            {
+              "area": 79410,
+              "bbox": [
+                118,
+                24,
+                276,
+                475
+              ]
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "rect": [
+            1024,
+            0,
+            512,
+            512
+          ],
+          "empty": false,
+          "bbox": [
+            85,
+            24,
+            254,
+            475
+          ],
+          "count": 78684,
+          "fullyTransparent": 174283,
+          "partial": 87861,
+          "centroid": [
+            216.30584362767524,
+            282.4766280311118
+          ],
+          "footCandidate": [
+            235,
+            499
+          ],
+          "touchesCellBoundary": false,
+          "components": [
+            {
+              "area": 78684,
+              "bbox": [
+                85,
+                24,
+                254,
+                475
+              ]
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "rect": [
+            0,
+            512,
+            512,
+            512
+          ],
+          "empty": false,
+          "bbox": [
+            153,
+            15,
+            283,
+            478
+          ],
+          "count": 81900,
+          "fullyTransparent": 169976,
+          "partial": 92168,
+          "centroid": [
+            289.2053601953602,
+            274.8608547008547
+          ],
+          "footCandidate": [
+            310,
+            493
+          ],
+          "touchesCellBoundary": false,
+          "components": [
+            {
+              "area": 81900,
+              "bbox": [
+                153,
+                15,
+                283,
+                478
+              ]
+            }
+          ]
+        },
+        {
+          "index": 4,
+          "rect": [
+            512,
+            512,
+            512,
+            512
+          ],
+          "empty": false,
+          "bbox": [
+            117,
+            15,
+            267,
+            478
+          ],
+          "count": 79802,
+          "fullyTransparent": 172422,
+          "partial": 89722,
+          "centroid": [
+            251.2121751334553,
+            277.1035437708328
+          ],
+          "footCandidate": [
+            274,
+            493
+          ],
+          "touchesCellBoundary": false,
+          "components": [
+            {
+              "area": 79802,
+              "bbox": [
+                117,
+                15,
+                267,
+                478
+              ]
+            }
+          ]
+        },
+        {
+          "index": 5,
+          "rect": [
+            1024,
+            512,
+            512,
+            512
+          ],
+          "empty": false,
+          "bbox": [
+            84,
+            15,
+            252,
+            478
+          ],
+          "count": 78489,
+          "fullyTransparent": 174143,
+          "partial": 88001,
+          "centroid": [
+            216.1848794098536,
+            276.1907655849864
+          ],
+          "footCandidate": [
+            243,
+            493
+          ],
+          "touchesCellBoundary": false,
+          "components": [
+            {
+              "area": 78489,
+              "bbox": [
+                84,
+                15,
+                252,
+                478
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

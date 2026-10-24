@@ -1,0 +1,44 @@
+{
+  "format": "nailong-raw-npc-single-v1",
+  "version": "v001",
+  "npc": {
+    "id": "NPC-S01",
+    "slug": "milk_rabbit_guide",
+    "name": "奶兔向导",
+    "role": "营地引导",
+    "outfit": "#5d8a4e",
+    "notes": "圆长耳、围巾、地图卷轴",
+    "animations": {
+      "idle": {
+        "frames": 6,
+        "sheet": "NPC-S01/v001/NPC-S01_milk_rabbit_guide_idle_front_v001_sheet.png",
+        "loop": true,
+        "files": [
+          "NPC-S01/v001/frames/NPC-S01_milk_rabbit_guide_idle_front_v001_f01.png",
+          "NPC-S01/v001/frames/NPC-S01_milk_rabbit_guide_idle_front_v001_f02.png",
+          "NPC-S01/v001/frames/NPC-S01_milk_rabbit_guide_idle_front_v001_f03.png",
+          "NPC-S01/v001/frames/NPC-S01_milk_rabbit_guide_idle_front_v001_f04.png",
+          "NPC-S01/v001/frames/NPC-S01_milk_rabbit_guide_idle_front_v001_f05.png",
+          "NPC-S01/v001/frames/NPC-S01_milk_rabbit_guide_idle_front_v001_f06.png"
+        ]
+      },
+      "talk": {
+        "frames": 4,
+        "sheet": "NPC-S01/v001/NPC-S01_milk_rabbit_guide_talk_front_v001_sheet.png",
+        "loop": false,
+        "files": [
+          "NPC-S01/v001/frames/NPC-S01_milk_rabbit_guide_talk_front_v001_f01.png",
+          "NPC-S01/v001/frames/NPC-S01_milk_rabbit_guide_talk_front_v001_f02.png",
+          "NPC-S01/v001/frames/NPC-S01_milk_rabbit_guide_talk_front_v001_f03.png",
+          "NPC-S01/v001/frames/NPC-S01_milk_rabbit_guide_talk_front_v001_f04.png"
+        ]
+      }
+    },
+    "master": "NPC-S01/v001/NPC-S01_milk_rabbit_guide_master_front_v001.png",
+    "root": [
+      32,
+      58
+    ],
+    "reference": "assets/RAW/characters/CHR-01/v001/CHR-01_master_right_v001.png"
+  }
+}

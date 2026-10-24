@@ -1,0 +1,357 @@
+{
+  "batchId": "FX-B01",
+  "group": "motion",
+  "pending": [
+    "FX-02_dodge_afterimage"
+  ],
+  "assets": [
+    {
+      "id": "FX-02_landing_dust",
+      "name": "landing_dust",
+      "label": "落地尘",
+      "sourcePath": "/home/lululu/zgame/assets/RAW/effects/FX-B01/v001/motion/FX-02_landing_dust_sheet_v001.png",
+      "columns": 3,
+      "rows": 2,
+      "target": [
+        64,
+        64
+      ],
+      "sourceAnchorNormalized": [
+        0.5,
+        0.75
+      ],
+      "anchor": [
+        32,
+        48
+      ],
+      "fps": 12,
+      "loop": false,
+      "attachPoint": "feet",
+      "phases": [
+        "建立接地点",
+        "尘浪峰值",
+        "两侧扩散",
+        "云片变薄",
+        "尘粒衰减",
+        "少量尾屑"
+      ],
+      "source": "/home/lululu/.codex/generated_images/01a16c78-f688-7d62-b0c5-7530c7f7999e/exec-ec250ce2-cc11-4c44-b96f-0c7c0590efb8.png",
+      "sourceDimensions": [
+        1536,
+        1024
+      ],
+      "sourceCellDimensions": [
+        512,
+        512
+      ],
+      "sourceAnchors": [
+        [
+          256,
+          388
+        ],
+        [
+          256,
+          388
+        ],
+        [
+          256,
+          388
+        ],
+        [
+          256,
+          388
+        ],
+        [
+          256,
+          388
+        ],
+        [
+          256,
+          388
+        ]
+      ],
+      "scale": 0.109375,
+      "visibleBboxesAlpha16": [
+        [
+          134,
+          315,
+          373,
+          389
+        ],
+        [
+          44,
+          253,
+          472,
+          389
+        ],
+        [
+          14,
+          253,
+          494,
+          389
+        ],
+        [
+          9,
+          238,
+          500,
+          380
+        ],
+        [
+          42,
+          244,
+          474,
+          381
+        ],
+        [
+          71,
+          300,
+          427,
+          381
+        ]
+      ],
+      "knownIssues": [
+        "RAW生成基线约y388，与提示y384存在整组偏移；用相同sourceAnchor在全6帧校准，不逐帧居中。",
+        "RAW查看器可能显示alpha=0的RGB柔光；已在#16241a实际合成确认无柔光。"
+      ],
+      "qa": {
+        "alpha": "RGBA真实透明",
+        "visualCheck": "已查看RAW和森林底实际合成",
+        "continuity": "通过：建立、扩张/峰值、破碎、衰减到尾屑",
+        "status": "ready_for_processing"
+      },
+      "checklistId": "FX-02"
+    },
+    {
+      "id": "FX-02_takeoff_dust",
+      "name": "takeoff_dust",
+      "label": "起跳尘",
+      "sourcePath": "/home/lululu/zgame/assets/RAW/effects/FX-B01/v001/motion/FX-02_takeoff_dust_sheet_v001.png",
+      "columns": 3,
+      "rows": 2,
+      "target": [
+        64,
+        64
+      ],
+      "sourceAnchorNormalized": [
+        0.5,
+        0.75
+      ],
+      "anchor": [
+        32,
+        48
+      ],
+      "fps": 12,
+      "loop": false,
+      "attachPoint": "feet",
+      "phases": [
+        "压缩小尘",
+        "窄尘上冲",
+        "浮尘抬升",
+        "分离变薄",
+        "粒子衰减",
+        "尾屑结束"
+      ],
+      "source": "/home/lululu/.codex/generated_images/01a16c78-f688-7d62-b0c5-7530c7f7999e/exec-31040712-9c54-4afa-b44a-abbb32152bc4.png",
+      "sourceDimensions": [
+        1536,
+        1024
+      ],
+      "sourceCellDimensions": [
+        512,
+        512
+      ],
+      "sourceAnchors": [
+        [
+          256,
+          400
+        ],
+        [
+          256,
+          400
+        ],
+        [
+          256,
+          400
+        ],
+        [
+          256,
+          400
+        ],
+        [
+          256,
+          400
+        ],
+        [
+          256,
+          400
+        ]
+      ],
+      "scale": 0.125,
+      "visibleBboxesAlpha16": [
+        [
+          200,
+          311,
+          313,
+          401
+        ],
+        [
+          170,
+          238,
+          343,
+          400
+        ],
+        [
+          160,
+          156,
+          357,
+          401
+        ],
+        [
+          136,
+          113,
+          365,
+          401
+        ],
+        [
+          160,
+          134,
+          363,
+          397
+        ],
+        [
+          161,
+          139,
+          362,
+          208
+        ]
+      ],
+      "knownIssues": [
+        "RAW生成基线约y400，与提示y384存在整组偏移；用相同sourceAnchor在全6帧校准，不逐帧居中。",
+        "RAW查看器可能显示alpha=0的RGB柔光；已在#16241a实际合成确认无柔光。"
+      ],
+      "qa": {
+        "alpha": "RGBA真实透明",
+        "visualCheck": "已查看RAW和森林底实际合成",
+        "continuity": "通过：建立、扩张/峰值、破碎、衰减到尾屑",
+        "status": "ready_for_processing"
+      },
+      "checklistId": "FX-02"
+    },
+    {
+      "id": "ABL-01_double_jump_bubble",
+      "name": "double_jump_bubble",
+      "label": "二段跳奶泡",
+      "sourcePath": "/home/lululu/zgame/assets/RAW/effects/FX-B01/v001/motion/ABL-01_double_jump_bubble_sheet_v001.png",
+      "columns": 3,
+      "rows": 2,
+      "target": [
+        64,
+        64
+      ],
+      "sourceAnchorNormalized": [
+        0.5,
+        0.75
+      ],
+      "anchor": [
+        32,
+        48
+      ],
+      "fps": 12,
+      "loop": false,
+      "attachPoint": "feet",
+      "phases": [
+        "压缩奶泡",
+        "扩为泡环",
+        "泡环破裂",
+        "泡粒扩散",
+        "粒子衰减",
+        "尾泡结束"
+      ],
+      "source": "/home/lululu/.codex/generated_images/01a16c78-f688-7d62-b0c5-7530c7f7999e/exec-f386f3b5-dc89-4d26-9eb4-1a9cebebe142.png",
+      "sourceDimensions": [
+        1536,
+        1024
+      ],
+      "sourceCellDimensions": [
+        512,
+        512
+      ],
+      "sourceAnchors": [
+        [
+          256,
+          440
+        ],
+        [
+          256,
+          440
+        ],
+        [
+          256,
+          440
+        ],
+        [
+          256,
+          440
+        ],
+        [
+          256,
+          440
+        ],
+        [
+          256,
+          440
+        ]
+      ],
+      "scale": 0.109375,
+      "visibleBboxesAlpha16": [
+        [
+          176,
+          367,
+          328,
+          442
+        ],
+        [
+          68,
+          303,
+          440,
+          441
+        ],
+        [
+          29,
+          227,
+          480,
+          440
+        ],
+        [
+          31,
+          162,
+          484,
+          406
+        ],
+        [
+          72,
+          167,
+          451,
+          386
+        ],
+        [
+          102,
+          203,
+          415,
+          265
+        ]
+      ],
+      "knownIssues": [
+        "RAW生成基线约y440，与提示y384存在整组偏移；用相同sourceAnchor在全6帧校准，不逐帧居中。",
+        "RAW查看器可能显示alpha=0的RGB柔光；已在#16241a实际合成确认无柔光。"
+      ],
+      "qa": {
+        "alpha": "RGBA真实透明",
+        "visualCheck": "已查看RAW和森林底实际合成",
+        "continuity": "通过：建立、扩张/峰值、破碎、衰减到尾屑",
+        "status": "ready_for_processing"
+      },
+      "checklistId": "ABL-01"
+    }
+  ]
+}

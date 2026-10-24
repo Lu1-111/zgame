@@ -1,0 +1,51 @@
+{
+  "weapons": [
+    {
+      "id": "hammer_01",
+      "name": "奶瓶锤",
+      "damage_type": "physical",
+      "range_type": "melee",
+      "attack": 12,
+      "attack_interval": 0.55,
+      "combo": 3,
+      "hitbox": { "w": 44, "h": 36 },
+      "knockback": 260,
+      "shield_break": true,
+      "desc": "三段连击的近战物理锤：高伤、攻速慢、强击退，可击碎举盾敌人（破盾）。初始武器。"
+    },
+    {
+      "id": "milk_gun",
+      "name": "奶弹枪",
+      "damage_type": "physical",
+      "range_type": "ranged",
+      "attack": 8,
+      "attack_interval": 0.35,
+      "combo": 1,
+      "projectile": { "speed": 420, "charge": true, "pierce_when_full": true },
+      "desc": "远程物理单发：中攻速、低单发伤害，可蓄力，蓄满后穿透。"
+    },
+    {
+      "id": "milk_staff",
+      "name": "奶杖",
+      "damage_type": "magic",
+      "range_type": "melee",
+      "attack": 10,
+      "attack_interval": 0.45,
+      "combo": 1,
+      "hitbox": { "w": 52, "h": 30 },
+      "mana_regen": 3,
+      "desc": "近战法术横扫：判定宽、命中回复 3 点奶力，法术循环的核心。"
+    },
+    {
+      "id": "star_orb",
+      "name": "星乳法球",
+      "damage_type": "magic",
+      "range_type": "ranged",
+      "attack": 14,
+      "attack_interval": 0.9,
+      "combo": 1,
+      "projectile": { "speed": 260, "split": 6 },
+      "desc": "远程法术慢速弹：单发高伤、弹速慢，命中分裂 6 枚小奶泡。"
+    }
+  ]
+}

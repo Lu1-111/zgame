@@ -1,0 +1,86 @@
+{
+  "batchId": "NPC-B01",
+  "version": "v001",
+  "characters": [
+    "NPC-01",
+    "NPC-02"
+  ],
+  "animations": 7,
+  "frames": 42,
+  "canvas": [
+    64,
+    64
+  ],
+  "root": [
+    32,
+    58
+  ],
+  "pixelChecks": [
+    {
+      "id": "NPC-01",
+      "frames": 18,
+      "animations": 3,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "id": "NPC-02",
+      "frames": 24,
+      "animations": 4,
+      "passed": true,
+      "errors": []
+    }
+  ],
+  "godot": {
+    "version": "4.7.2.stable.official.ed1daf0bf",
+    "isolatedProject": "work/npc_role_pipeline/godot_validation",
+    "godot_import_final": {
+      "exitCode": 0,
+      "hasError": false,
+      "hasWarning": false
+    },
+    "godot_resource_final": {
+      "exitCode": 0,
+      "hasError": false,
+      "hasWarning": false
+    }
+  },
+  "visualQA": {
+    "neutralProportions": "passed after NPC-01 talk/greet v002 regeneration",
+    "sourceTransparency": "greet v002 and NPC-02 checked by actual dark/light compositing; hidden RGB under alpha0 is not visible background",
+    "contactGround": "All opaque foot bottoms at y58; root x manually follows boot / hoof midpoint",
+    "actionContinuity": "six-frame hand gestures preserve stance and complete hands/props; neutral starts/ends align to fixed root. Playback remains hand-drawn with natural 1px pose changes.",
+    "scope": "Visual asset QA only; no game dialogue, economy, collision or AI integration"
+  },
+  "browserQA": {
+    "browser": "Codex in-app browser",
+    "requestedChrome": "unavailable on current host",
+    "url": "http://127.0.0.1:8766/preview.html",
+    "localExposure": "127.0.0.1 only; NPC-B01/v001 directory only",
+    "passed": [
+      "independent playback",
+      "action select",
+      "pause",
+      "step",
+      "thumbnail frame select",
+      "background color",
+      "anchor toggle",
+      "CHR-01 same-scale reference"
+    ],
+    "consoleWarnings": 0,
+    "consoleErrors": 0,
+    "finalRefreshAfterRebuild": true,
+    "screenshot": "browser_preview.png",
+    "localServerStoppedAfterValidation": true
+  },
+  "provenance": {
+    "npc01": "Master v001 + original idle row + independently regenerated talk/greet v002; rejected original talk/greet remains RAW",
+    "npc02": "One 24-frame source sheet; master is mechanically extracted idle f01, not independent generation"
+  },
+  "limitations": [
+    "Not connected to main game.",
+    "Only right-facing drawings; mirrored props need semantic review.",
+    "Statistics do not prove smooth animation.",
+    "No main project scripts/scenes/data/project.godot modified."
+  ]
+}

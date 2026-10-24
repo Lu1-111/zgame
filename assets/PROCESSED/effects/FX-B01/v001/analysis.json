@@ -1,0 +1,4975 @@
+{
+  "sources": [
+    {
+      "id": "FX-01_physical_hit",
+      "path": "assets/RAW/effects/FX-B01/v001/impact/FX-01_physical_hit_sheet_v001.png",
+      "sha256": "566b11b0d2ac8e07ef5d8fc4606da9b02265698b874fc400374f9ac5005dd896",
+      "size": [
+        1536,
+        1024
+      ],
+      "hasAlpha": true,
+      "scale": 0.109375,
+      "frames": [
+        {
+          "index": 0,
+          "rect": [
+            0,
+            0,
+            512,
+            512
+          ],
+          "anchor": [
+            256,
+            256
+          ],
+          "empty": false,
+          "area": 6261,
+          "alphaMass": 1945.4196078431373,
+          "transparent": 255883,
+          "partial": 6261,
+          "opaque": 0,
+          "bounds": [
+            0,
+            21,
+            512,
+            491
+          ],
+          "centroid": [
+            245.67178611600022,
+            254.96508036977775
+          ],
+          "boundaryPixels": 32,
+          "boundarySides": [
+            "right",
+            "left",
+            "bottom"
+          ],
+          "cutoff": 0,
+          "visibleThresholdDiagnostics": {
+            "empty": false,
+            "area": 2264,
+            "alphaMass": 1906.2470588235565,
+            "transparent": 255883,
+            "partial": 6261,
+            "opaque": 0,
+            "bounds": [
+              200,
+              206,
+              91,
+              96
+            ],
+            "centroid": [
+              245.62730794312571,
+              254.8243072827599
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          },
+          "scaledBounds": [
+            15,
+            8,
+            28,
+            36
+          ],
+          "translation": [
+            4,
+            4
+          ]
+        },
+        {
+          "index": 1,
+          "rect": [
+            512,
+            0,
+            512,
+            512
+          ],
+          "anchor": [
+            256,
+            256
+          ],
+          "empty": false,
+          "area": 27189,
+          "alphaMass": 9990.572549022707,
+          "transparent": 234955,
+          "partial": 27189,
+          "opaque": 0,
+          "bounds": [
+            1,
+            23,
+            493,
+            489
+          ],
+          "centroid": [
+            256.1796882236361,
+            253.91118254220203
+          ],
+          "boundaryPixels": 8,
+          "boundarySides": [
+            "bottom"
+          ],
+          "cutoff": 0,
+          "visibleThresholdDiagnostics": {
+            "empty": false,
+            "area": 11749,
+            "alphaMass": 9825.764705881953,
+            "transparent": 234955,
+            "partial": 27189,
+            "opaque": 0,
+            "bounds": [
+              160,
+              161,
+              198,
+              187
+            ],
+            "centroid": [
+              256.20899076857916,
+              253.80074194695663
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          },
+          "scaledBounds": [
+            16,
+            13,
+            35,
+            39
+          ],
+          "translation": [
+            4,
+            4
+          ]
+        },
+        {
+          "index": 2,
+          "rect": [
+            1024,
+            0,
+            512,
+            512
+          ],
+          "anchor": [
+            256,
+            256
+          ],
+          "empty": false,
+          "area": 30657,
+          "alphaMass": 8214.501960784648,
+          "transparent": 231487,
+          "partial": 30657,
+          "opaque": 0,
+          "bounds": [
+            17,
+            21,
+            479,
+            491
+          ],
+          "centroid": [
+            243.80634439903508,
+            250.1098167849968
+          ],
+          "boundaryPixels": 3,
+          "boundarySides": [
+            "bottom"
+          ],
+          "cutoff": 0,
+          "visibleThresholdDiagnostics": {
+            "empty": false,
+            "area": 9894,
+            "alphaMass": 8034.5921568628855,
+            "transparent": 231487,
+            "partial": 30657,
+            "opaque": 0,
+            "bounds": [
+              117,
+              118,
+              262,
+              257
+            ],
+            "centroid": [
+              243.8006248471631,
+              250.00820667105202
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          },
+          "scaledBounds": [
+            12,
+            13,
+            30,
+            29
+          ],
+          "translation": [
+            4,
+            4
+          ]
+        },
+        {
+          "index": 3,
+          "rect": [
+            0,
+            512,
+            512,
+            512
+          ],
+          "anchor": [
+            256,
+            256
+          ],
+          "empty": false,
+          "area": 30276,
+          "alphaMass": 10322.18431372698,
+          "transparent": 231868,
+          "partial": 30276,
+          "opaque": 0,
+          "bounds": [
+            0,
+            0,
+            512,
+            492
+          ],
+          "centroid": [
+            246.48810842206368,
+            237.85311324509843
+          ],
+          "boundaryPixels": 17,
+          "boundarySides": [
+            "top",
+            "left",
+            "right"
+          ],
+          "cutoff": 0,
+          "visibleThresholdDiagnostics": {
+            "empty": false,
+            "area": 12097,
+            "alphaMass": 10167.266666665893,
+            "transparent": 231868,
+            "partial": 30276,
+            "opaque": 0,
+            "bounds": [
+              90,
+              78,
+              334,
+              317
+            ],
+            "centroid": [
+              246.6436025183649,
+              237.91162450202572
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          },
+          "scaledBounds": [
+            9,
+            8,
+            38,
+            36
+          ],
+          "translation": [
+            4,
+            4
+          ]
+        },
+        {
+          "index": 4,
+          "rect": [
+            512,
+            512,
+            512,
+            512
+          ],
+          "anchor": [
+            256,
+            256
+          ],
+          "empty": false,
+          "area": 17882,
+          "alphaMass": 4752.368627450986,
+          "transparent": 244262,
+          "partial": 17882,
+          "opaque": 0,
+          "bounds": [
+            0,
+            0,
+            506,
+            512
+          ],
+          "centroid": [
+            255.38358993740016,
+            241.1455835439098
+          ],
+          "boundaryPixels": 5,
+          "boundarySides": [
+            "top",
+            "left",
+            "bottom"
+          ],
+          "cutoff": 0,
+          "visibleThresholdDiagnostics": {
+            "empty": false,
+            "area": 5712,
+            "alphaMass": 4656.870588235384,
+            "transparent": 244262,
+            "partial": 17882,
+            "opaque": 0,
+            "bounds": [
+              96,
+              82,
+              331,
+              315
+            ],
+            "centroid": [
+              255.32625966103174,
+              241.1961293538818
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          },
+          "scaledBounds": [
+            1,
+            6,
+            46,
+            38
+          ],
+          "translation": [
+            4,
+            4
+          ]
+        },
+        {
+          "index": 5,
+          "rect": [
+            1024,
+            512,
+            512,
+            512
+          ],
+          "anchor": [
+            256,
+            256
+          ],
+          "empty": false,
+          "area": 6179,
+          "alphaMass": 1205.929411764693,
+          "transparent": 255965,
+          "partial": 6179,
+          "opaque": 0,
+          "bounds": [
+            3,
+            23,
+            493,
+            467
+          ],
+          "centroid": [
+            250.6252731600774,
+            242.41854301620765
+          ],
+          "boundaryPixels": 0,
+          "boundarySides": [],
+          "cutoff": 0,
+          "visibleThresholdDiagnostics": {
+            "empty": false,
+            "area": 1542,
+            "alphaMass": 1173.7176470588342,
+            "transparent": 255965,
+            "partial": 6179,
+            "opaque": 0,
+            "bounds": [
+              92,
+              86,
+              338,
+              314
+            ],
+            "centroid": [
+              250.79938055048618,
+              242.0934854225536
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          },
+          "scaledBounds": [
+            10,
+            4,
+            37,
+            41
+          ],
+          "translation": [
+            4,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "id": "FX-01_magic_hit",
+      "path": "assets/RAW/effects/FX-B01/v001/impact/FX-01_magic_hit_sheet_v001.png",
+      "sha256": "c65bb60c14fa9cd02dbe2800bcf69aa75e8f4aab2cba9f89717b8801703b467b",
+      "size": [
+        1536,
+        1024
+      ],
+      "hasAlpha": true,
+      "scale": 0.109375,
+      "frames": [
+        {
+          "index": 0,
+          "rect": [
+            0,
+            0,
+            512,
+            512
+          ],
+          "anchor": [
+            256,
+            256
+          ],
+          "empty": false,
+          "area": 24490,
+          "alphaMass": 3154.764705882337,
+          "transparent": 237654,
+          "partial": 24490,
+          "opaque": 0,
+          "bounds": [
+            0,
+            31,
+            512,
+            481
+          ],
+          "centroid": [
+            256.8872604774634,
+            264.00717122555324
+          ],
+          "boundaryPixels": 175,
+          "boundarySides": [
+            "right",
+            "left",
+            "bottom"
+          ],
+          "cutoff": 0,
+          "visibleThresholdDiagnostics": {
+            "empty": false,
+            "area": 3791,
+            "alphaMass": 3044.4039215686757,
+            "transparent": 237654,
+            "partial": 24490,
+            "opaque": 0,
+            "bounds": [
+              216,
+              219,
+              83,
+              97
+            ],
+            "centroid": [
+              256.3761965058319,
+              263.0581845443132
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          },
+          "scaledBounds": [
+            4,
+            10,
+            52,
+            42
+          ],
+          "translation": [
+            4,
+            4
+          ]
+        },
+        {
+          "index": 1,
+          "rect": [
+            512,
+            0,
+            512,
+            512
+          ],
+          "anchor": [
+            256,
+            256
+          ],
+          "empty": false,
+          "area": 59497,
+          "alphaMass": 23802.3137254848,
+          "transparent": 202647,
+          "partial": 59497,
+          "opaque": 0,
+          "bounds": [
+            0,
+            9,
+            512,
+            503
+          ],
+          "centroid": [
+            248.61984944623404,
+            246.96858865265588
+          ],
+          "boundaryPixels": 125,
+          "boundarySides": [
+            "right",
+            "left",
+            "bottom"
+          ],
+          "cutoff": 0,
+          "visibleThresholdDiagnostics": {
+            "empty": false,
+            "area": 27189,
+            "alphaMass": 23511.392156857954,
+            "transparent": 202647,
+            "partial": 59497,
+            "opaque": 0,
+            "bounds": [
+              113,
+              116,
+              285,
+              285
+            ],
+            "centroid": [
+              248.59991576888353,
+              246.82925974145925
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          },
+          "scaledBounds": [
+            0,
+            3,
+            56,
+            52
+          ],
+          "translation": [
+            4,
+            4
+          ]
+        },
+        {
+          "index": 2,
+          "rect": [
+            1024,
+            0,
+            512,
+            512
+          ],
+          "anchor": [
+            256,
+            256
+          ],
+          "empty": false,
+          "area": 78957,
+          "alphaMass": 31188.99215686525,
+          "transparent": 183187,
+          "partial": 78957,
+          "opaque": 0,
+          "bounds": [
+            0,
+            21,
+            511,
+            491
+          ],
+          "centroid": [
+            244.3120901252908,
+            250.6759737881146
+          ],
+          "boundaryPixels": 15,
+          "boundarySides": [
+            "left",
+            "bottom"
+          ],
+          "cutoff": 0,
+          "visibleThresholdDiagnostics": {
+            "empty": false,
+            "area": 36177,
+            "alphaMass": 30744.29411764041,
+            "transparent": 183187,
+            "partial": 78957,
+            "opaque": 0,
+            "bounds": [
+              45,
+              61,
+              396,
+              386
+            ],
+            "centroid": [
+              244.39105869481998,
+              250.70768087690755
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          },
+          "scaledBounds": [
+            1,
+            5,
+            48,
+            50
+          ],
+          "translation": [
+            4,
+            4
+          ]
+        },
+        {
+          "index": 3,
+          "rect": [
+            0,
+            512,
+            512,
+            512
+          ],
+          "anchor": [
+            256,
+            256
+          ],
+          "empty": false,
+          "area": 68891,
+          "alphaMass": 30258.66666666559,
+          "transparent": 193253,
+          "partial": 68891,
+          "opaque": 0,
+          "bounds": [
+            0,
+            21,
+            512,
+            491
+          ],
+          "centroid": [
+            268.61515974682317,
+            244.76094614280484
+          ],
+          "boundaryPixels": 21,
+          "boundarySides": [
+            "right",
+            "left",
+            "bottom"
+          ],
+          "cutoff": 0,
+          "visibleThresholdDiagnostics": {
+            "empty": false,
+            "area": 34318,
+            "alphaMass": 29917.521568619453,
+            "transparent": 193253,
+            "partial": 68891,
+            "opaque": 0,
+            "bounds": [
+              55,
+              34,
+              421,
+              417
+            ],
+            "centroid": [
+              268.7106931108495,
+              244.86241664671104
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          },
+          "scaledBounds": [
+            5,
+            4,
+            48,
+            47
+          ],
+          "translation": [
+            4,
+            4
+          ]
+        },
+        {
+          "index": 4,
+          "rect": [
+            512,
+            512,
+            512,
+            512
+          ],
+          "anchor": [
+            256,
+            256
+          ],
+          "empty": false,
+          "area": 47347,
+          "alphaMass": 15279.023529417442,
+          "transparent": 214797,
+          "partial": 47347,
+          "opaque": 0,
+          "bounds": [
+            1,
+            0,
+            511,
+            512
+          ],
+          "centroid": [
+            271.52769181676894,
+            236.3023494211686
+          ],
+          "boundaryPixels": 61,
+          "boundarySides": [
+            "top",
+            "right",
+            "bottom"
+          ],
+          "cutoff": 0,
+          "visibleThresholdDiagnostics": {
+            "empty": false,
+            "area": 17899,
+            "alphaMass": 15029.713725487758,
+            "transparent": 214797,
+            "partial": 47347,
+            "opaque": 0,
+            "bounds": [
+              41,
+              43,
+              444,
+              408
+            ],
+            "centroid": [
+              271.68245778236246,
+              236.32654660302
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          },
+          "scaledBounds": [
+            0,
+            1,
+            56,
+            49
+          ],
+          "translation": [
+            4,
+            4
+          ]
+        },
+        {
+          "index": 5,
+          "rect": [
+            1024,
+            512,
+            512,
+            512
+          ],
+          "anchor": [
+            256,
+            256
+          ],
+          "empty": false,
+          "area": 25455,
+          "alphaMass": 1467.3999999998932,
+          "transparent": 236689,
+          "partial": 25455,
+          "opaque": 0,
+          "bounds": [
+            0,
+            0,
+            500,
+            512
+          ],
+          "centroid": [
+            244.61547033972698,
+            172.76076667550123
+          ],
+          "boundaryPixels": 29,
+          "boundarySides": [
+            "top",
+            "left",
+            "bottom"
+          ],
+          "cutoff": 0,
+          "visibleThresholdDiagnostics": {
+            "empty": false,
+            "area": 2059,
+            "alphaMass": 1346.564705882342,
+            "transparent": 236689,
+            "partial": 25455,
+            "opaque": 0,
+            "bounds": [
+              137,
+              64,
+              283,
+              354
+            ],
+            "centroid": [
+              243.91946973271334,
+              170.49971459691335
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          },
+          "scaledBounds": [
+            0,
+            0,
+            52,
+            50
+          ],
+          "translation": [
+            4,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "id": "FX-01_guard_spark",
+      "path": "assets/RAW/effects/FX-B01/v001/impact/FX-01_guard_spark_sheet_v001.png",
+      "sha256": "545489a5507e885b743dc2173d3cffb89cc74955ac17e6558e76d7b0c3410766",
+      "size": [
+        1536,
+        1024
+      ],
+      "hasAlpha": true,
+      "scale": 0.109375,
+      "frames": [
+        {
+          "index": 0,
+          "rect": [
+            0,
+            0,
+            512,
+            512
+          ],
+          "anchor": [
+            256,
+            256
+          ],
+          "empty": false,
+          "area": 8103,
+          "alphaMass": 2406.2941176470704,
+          "transparent": 254041,
+          "partial": 8103,
+          "opaque": 0,
+          "bounds": [
+            31,
+            19,
+            481,
+            493
+          ],
+          "centroid": [
+            255.35749219777114,
+            257.8856495628297
+          ],
+          "boundaryPixels": 10,
+          "boundarySides": [
+            "right",
+            "bottom"
+          ],
+          "cutoff": 0,
+          "visibleThresholdDiagnostics": {
+            "empty": false,
+            "area": 2727,
+            "alphaMass": 2372.098039215722,
+            "transparent": 254041,
+            "partial": 8103,
+            "opaque": 0,
+            "bounds": [
+              217,
+              217,
+              78,
+              79
+            ],
+            "centroid": [
+              255.19437248402227,
+              257.10361308347575
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          },
+          "scaledBounds": [
+            18,
+            16,
+            35,
+            38
+          ],
+          "translation": [
+            4,
+            4
+          ]
+        },
+        {
+          "index": 1,
+          "rect": [
+            512,
+            0,
+            512,
+            512
+          ],
+          "anchor": [
+            256,
+            256
+          ],
+          "empty": false,
+          "area": 20411,
+          "alphaMass": 7242.141176470681,
+          "transparent": 241733,
+          "partial": 20411,
+          "opaque": 0,
+          "bounds": [
+            1,
+            19,
+            511,
+            493
+          ],
+          "centroid": [
+            243.34201454883427,
+            256.371207518499
+          ],
+          "boundaryPixels": 31,
+          "boundarySides": [
+            "right",
+            "bottom"
+          ],
+          "cutoff": 0,
+          "visibleThresholdDiagnostics": {
+            "empty": false,
+            "area": 8288,
+            "alphaMass": 7140.376470588407,
+            "transparent": 241733,
+            "partial": 20411,
+            "opaque": 0,
+            "bounds": [
+              135,
+              139,
+              223,
+              226
+            ],
+            "centroid": [
+              243.09084598164057,
+              256.5763896669313
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          },
+          "scaledBounds": [
+            14,
+            8,
+            34,
+            33
+          ],
+          "translation": [
+            4,
+            4
+          ]
+        },
+        {
+          "index": 2,
+          "rect": [
+            1024,
+            0,
+            512,
+            512
+          ],
+          "anchor": [
+            256,
+            256
+          ],
+          "empty": false,
+          "area": 21410,
+          "alphaMass": 6044.1764705883215,
+          "transparent": 240734,
+          "partial": 21410,
+          "opaque": 0,
+          "bounds": [
+            0,
+            9,
+            498,
+            503
+          ],
+          "centroid": [
+            247.2165091661648,
+            251.68905217465388
+          ],
+          "boundaryPixels": 20,
+          "boundarySides": [
+            "left",
+            "bottom"
+          ],
+          "cutoff": 0,
+          "visibleThresholdDiagnostics": {
+            "empty": false,
+            "area": 7008,
+            "alphaMass": 5937.196078431549,
+            "transparent": 240734,
+            "partial": 21410,
+            "opaque": 0,
+            "bounds": [
+              106,
+              107,
+              278,
+              289
+            ],
+            "centroid": [
+              247.1878420195646,
+              251.63317404068496
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          },
+          "scaledBounds": [
+            5,
+            9,
+            45,
+            36
+          ],
+          "translation": [
+            4,
+            4
+          ]
+        },
+        {
+          "index": 3,
+          "rect": [
+            0,
+            512,
+            512,
+            512
+          ],
+          "anchor": [
+            256,
+            256
+          ],
+          "empty": false,
+          "area": 15260,
+          "alphaMass": 4645.89803921575,
+          "transparent": 246884,
+          "partial": 15260,
+          "opaque": 0,
+          "bounds": [
+            0,
+            0,
+            508,
+            490
+          ],
+          "centroid": [
+            262.7908034412015,
+            236.10102692316778
+          ],
+          "boundaryPixels": 7,
+          "boundarySides": [
+            "top",
+            "left"
+          ],
+          "cutoff": 0,
+          "visibleThresholdDiagnostics": {
+            "empty": false,
+            "area": 5555,
+            "alphaMass": 4575.427450980509,
+            "transparent": 246884,
+            "partial": 15260,
+            "opaque": 0,
+            "bounds": [
+              125,
+              102,
+              265,
+              274
+            ],
+            "centroid": [
+              262.6874360393991,
+              236.19574641691466
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          },
+          "scaledBounds": [
+            13,
+            3,
+            37,
+            39
+          ],
+          "translation": [
+            4,
+            4
+          ]
+        },
+        {
+          "index": 4,
+          "rect": [
+            512,
+            512,
+            512,
+            512
+          ],
+          "anchor": [
+            256,
+            256
+          ],
+          "empty": false,
+          "area": 12841,
+          "alphaMass": 2425.7960784313946,
+          "transparent": 249303,
+          "partial": 12841,
+          "opaque": 0,
+          "bounds": [
+            7,
+            0,
+            505,
+            488
+          ],
+          "centroid": [
+            251.8262676655186,
+            242.05433591236653
+          ],
+          "boundaryPixels": 18,
+          "boundarySides": [
+            "top",
+            "right"
+          ],
+          "cutoff": 0,
+          "visibleThresholdDiagnostics": {
+            "empty": false,
+            "area": 2854,
+            "alphaMass": 2371.2352941177073,
+            "transparent": 249303,
+            "partial": 12841,
+            "opaque": 0,
+            "bounds": [
+              126,
+              124,
+              261,
+              239
+            ],
+            "centroid": [
+              251.49434314867975,
+              242.4128269372239
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          },
+          "scaledBounds": [
+            9,
+            8,
+            45,
+            44
+          ],
+          "translation": [
+            4,
+            4
+          ]
+        },
+        {
+          "index": 5,
+          "rect": [
+            1024,
+            512,
+            512,
+            512
+          ],
+          "anchor": [
+            256,
+            256
+          ],
+          "empty": false,
+          "area": 7241,
+          "alphaMass": 342.9686274509693,
+          "transparent": 254903,
+          "partial": 7241,
+          "opaque": 0,
+          "bounds": [
+            0,
+            0,
+            498,
+            512
+          ],
+          "centroid": [
+            258.1728049212836,
+            238.86569399820146
+          ],
+          "boundaryPixels": 18,
+          "boundarySides": [
+            "top",
+            "left",
+            "bottom"
+          ],
+          "cutoff": 0,
+          "visibleThresholdDiagnostics": {
+            "empty": false,
+            "area": 405,
+            "alphaMass": 313.33725490196076,
+            "transparent": 254903,
+            "partial": 7241,
+            "opaque": 0,
+            "bounds": [
+              181,
+              157,
+              165,
+              169
+            ],
+            "centroid": [
+              258.6371509743309,
+              243.68712531758038
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          },
+          "scaledBounds": [
+            0,
+            3,
+            49,
+            41
+          ],
+          "translation": [
+            4,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "id": "FX-01_perfect_parry",
+      "path": "assets/RAW/effects/FX-B01/v001/impact/FX-01_perfect_parry_sheet_v001.png",
+      "sha256": "d09b2cee63a4ac94dc191d0314ff3b8823b8e6d2f316427f0a064a9b1dadb921",
+      "size": [
+        1536,
+        1024
+      ],
+      "hasAlpha": true,
+      "scale": 0.109375,
+      "frames": [
+        {
+          "index": 0,
+          "rect": [
+            0,
+            0,
+            512,
+            512
+          ],
+          "anchor": [
+            256,
+            256
+          ],
+          "empty": false,
+          "area": 22766,
+          "alphaMass": 3546.9176470588104,
+          "transparent": 239378,
+          "partial": 22766,
+          "opaque": 0,
+          "bounds": [
+            0,
+            9,
+            512,
+            503
+          ],
+          "centroid": [
+            255.20928748961236,
+            253.93568013762462
+          ],
+          "boundaryPixels": 99,
+          "boundarySides": [
+            "right",
+            "left",
+            "bottom"
+          ],
+          "cutoff": 0,
+          "visibleThresholdDiagnostics": {
+            "empty": false,
+            "area": 4525,
+            "alphaMass": 3401.7882352942006,
+            "transparent": 239378,
+            "partial": 22766,
+            "opaque": 0,
+            "bounds": [
+              188,
+              189,
+              132,
+              130
+            ],
+            "centroid": [
+              254.58713064408366,
+              254.22921393130537
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          },
+          "scaledBounds": [
+            5,
+            2,
+            51,
+            53
+          ],
+          "translation": [
+            4,
+            4
+          ]
+        },
+        {
+          "index": 1,
+          "rect": [
+            512,
+            0,
+            512,
+            512
+          ],
+          "anchor": [
+            256,
+            256
+          ],
+          "empty": false,
+          "area": 79174,
+          "alphaMass": 30381.49803921144,
+          "transparent": 182970,
+          "partial": 79174,
+          "opaque": 0,
+          "bounds": [
+            0,
+            9,
+            512,
+            503
+          ],
+          "centroid": [
+            255.5436504054241,
+            254.61957677550006
+          ],
+          "boundaryPixels": 98,
+          "boundarySides": [
+            "right",
+            "left",
+            "bottom"
+          ],
+          "cutoff": 0,
+          "visibleThresholdDiagnostics": {
+            "empty": false,
+            "area": 35823,
+            "alphaMass": 29935.007843129966,
+            "transparent": 182970,
+            "partial": 79174,
+            "opaque": 0,
+            "bounds": [
+              90,
+              92,
+              332,
+              323
+            ],
+            "centroid": [
+              255.53935840356831,
+              254.59803977958083
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          },
+          "scaledBounds": [
+            0,
+            4,
+            56,
+            52
+          ],
+          "translation": [
+            4,
+            4
+          ]
+        },
+        {
+          "index": 2,
+          "rect": [
+            1024,
+            0,
+            512,
+            512
+          ],
+          "anchor": [
+            256,
+            256
+          ],
+          "empty": false,
+          "area": 90292,
+          "alphaMass": 32717.498039215534,
+          "transparent": 171852,
+          "partial": 90292,
+          "opaque": 0,
+          "bounds": [
+            0,
+            9,
+            512,
+            503
+          ],
+          "centroid": [
+            255.8861630917237,
+            253.87939487200182
+          ],
+          "boundaryPixels": 44,
+          "boundarySides": [
+            "left",
+            "right",
+            "bottom"
+          ],
+          "cutoff": 0,
+          "visibleThresholdDiagnostics": {
+            "empty": false,
+            "area": 38067,
+            "alphaMass": 32182.717647050544,
+            "transparent": 171852,
+            "partial": 90292,
+            "opaque": 0,
+            "bounds": [
+              40,
+              40,
+              432,
+              425
+            ],
+            "centroid": [
+              255.97255426223197,
+              253.90271553622188
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          },
+          "scaledBounds": [
+            0,
+            3,
+            52,
+            52
+          ],
+          "translation": [
+            4,
+            4
+          ]
+        },
+        {
+          "index": 3,
+          "rect": [
+            0,
+            512,
+            512,
+            512
+          ],
+          "anchor": [
+            256,
+            256
+          ],
+          "empty": false,
+          "area": 75542,
+          "alphaMass": 22858.929411767225,
+          "transparent": 186602,
+          "partial": 75542,
+          "opaque": 0,
+          "bounds": [
+            0,
+            0,
+            512,
+            512
+          ],
+          "centroid": [
+            255.04971292803862,
+            243.09569727498538
+          ],
+          "boundaryPixels": 159,
+          "boundarySides": [
+            "top",
+            "right",
+            "left",
+            "bottom"
+          ],
+          "cutoff": 0,
+          "visibleThresholdDiagnostics": {
+            "empty": false,
+            "area": 27273,
+            "alphaMass": 22399.376470583873,
+            "transparent": 186602,
+            "partial": 75542,
+            "opaque": 0,
+            "bounds": [
+              32,
+              32,
+              448,
+              423
+            ],
+            "centroid": [
+              255.10692086846865,
+              242.97611015436908
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          },
+          "scaledBounds": [
+            3,
+            4,
+            53,
+            48
+          ],
+          "translation": [
+            4,
+            4
+          ]
+        },
+        {
+          "index": 4,
+          "rect": [
+            512,
+            512,
+            512,
+            512
+          ],
+          "anchor": [
+            256,
+            256
+          ],
+          "empty": false,
+          "area": 63645,
+          "alphaMass": 12326.470588241826,
+          "transparent": 198499,
+          "partial": 63645,
+          "opaque": 0,
+          "bounds": [
+            0,
+            0,
+            512,
+            512
+          ],
+          "centroid": [
+            255.10012184827653,
+            244.35599554585684
+          ],
+          "boundaryPixels": 147,
+          "boundarySides": [
+            "top",
+            "right",
+            "left",
+            "bottom"
+          ],
+          "cutoff": 0,
+          "visibleThresholdDiagnostics": {
+            "empty": false,
+            "area": 16300,
+            "alphaMass": 11864.007843136358,
+            "transparent": 198499,
+            "partial": 63645,
+            "opaque": 0,
+            "bounds": [
+              55,
+              44,
+              403,
+              402
+            ],
+            "centroid": [
+              255.35101751154315,
+              244.35136491257927
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          },
+          "scaledBounds": [
+            0,
+            0,
+            51,
+            49
+          ],
+          "translation": [
+            4,
+            4
+          ]
+        },
+        {
+          "index": 5,
+          "rect": [
+            1024,
+            512,
+            512,
+            512
+          ],
+          "anchor": [
+            256,
+            256
+          ],
+          "empty": false,
+          "area": 8127,
+          "alphaMass": 878.0470588235135,
+          "transparent": 254017,
+          "partial": 8127,
+          "opaque": 0,
+          "bounds": [
+            0,
+            0,
+            500,
+            512
+          ],
+          "centroid": [
+            255.6560325499604,
+            242.67254870434758
+          ],
+          "boundaryPixels": 57,
+          "boundarySides": [
+            "top",
+            "left",
+            "bottom"
+          ],
+          "cutoff": 0,
+          "visibleThresholdDiagnostics": {
+            "empty": false,
+            "area": 1070,
+            "alphaMass": 841.1882352941225,
+            "transparent": 254017,
+            "partial": 8127,
+            "opaque": 0,
+            "bounds": [
+              95,
+              88,
+              322,
+              310
+            ],
+            "centroid": [
+              256.82904201805843,
+              244.49645925697942
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          },
+          "scaledBounds": [
+            1,
+            0,
+            52,
+            44
+          ],
+          "translation": [
+            4,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "id": "FX-01_guard_break",
+      "path": "assets/RAW/effects/FX-B01/v001/impact/FX-01_guard_break_sheet_v001.png",
+      "sha256": "3c1726d3c7eae7346e1d36368623cd0e5e651e680fa2c477329971195355ef68",
+      "size": [
+        1536,
+        1024
+      ],
+      "hasAlpha": true,
+      "scale": 0.109375,
+      "frames": [
+        {
+          "index": 0,
+          "rect": [
+            0,
+            0,
+            512,
+            512
+          ],
+          "anchor": [
+            256,
+            256
+          ],
+          "empty": false,
+          "area": 27899,
+          "alphaMass": 6657.086274509824,
+          "transparent": 234245,
+          "partial": 27899,
+          "opaque": 0,
+          "bounds": [
+            0,
+            0,
+            512,
+            512
+          ],
+          "centroid": [
+            256.50723421953535,
+            262.8580047680256
+          ],
+          "boundaryPixels": 155,
+          "boundarySides": [
+            "top",
+            "right",
+            "left",
+            "bottom"
+          ],
+          "cutoff": 0,
+          "visibleThresholdDiagnostics": {
+            "empty": false,
+            "area": 8646,
+            "alphaMass": 6465.674509804049,
+            "transparent": 234245,
+            "partial": 27899,
+            "opaque": 0,
+            "bounds": [
+              178,
+              180,
+              154,
+              167
+            ],
+            "centroid": [
+              256.129443753342,
+              263.31710019790836
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          },
+          "scaledBounds": [
+            1,
+            0,
+            54,
+            54
+          ],
+          "translation": [
+            4,
+            4
+          ]
+        },
+        {
+          "index": 1,
+          "rect": [
+            512,
+            0,
+            512,
+            512
+          ],
+          "anchor": [
+            256,
+            256
+          ],
+          "empty": false,
+          "area": 121884,
+          "alphaMass": 63984.53333329908,
+          "transparent": 140260,
+          "partial": 121884,
+          "opaque": 0,
+          "bounds": [
+            0,
+            9,
+            512,
+            503
+          ],
+          "centroid": [
+            250.66483425910462,
+            254.8456387991228
+          ],
+          "boundaryPixels": 61,
+          "boundarySides": [
+            "right",
+            "left",
+            "bottom"
+          ],
+          "cutoff": 0,
+          "visibleThresholdDiagnostics": {
+            "empty": false,
+            "area": 73654,
+            "alphaMass": 63291.16470585501,
+            "transparent": 140260,
+            "partial": 121884,
+            "opaque": 0,
+            "bounds": [
+              56,
+              55,
+              390,
+              381
+            ],
+            "centroid": [
+              250.76424662202615,
+              254.81021084823786
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          },
+          "scaledBounds": [
+            4,
+            2,
+            52,
+            54
+          ],
+          "translation": [
+            4,
+            4
+          ]
+        },
+        {
+          "index": 2,
+          "rect": [
+            1024,
+            0,
+            512,
+            512
+          ],
+          "anchor": [
+            256,
+            256
+          ],
+          "empty": false,
+          "area": 136013,
+          "alphaMass": 53866.603921548085,
+          "transparent": 126131,
+          "partial": 136013,
+          "opaque": 0,
+          "bounds": [
+            0,
+            9,
+            496,
+            503
+          ],
+          "centroid": [
+            257.1335220688294,
+            255.44367582267344
+          ],
+          "boundaryPixels": 25,
+          "boundarySides": [
+            "left",
+            "bottom"
+          ],
+          "cutoff": 0,
+          "visibleThresholdDiagnostics": {
+            "empty": false,
+            "area": 64393,
+            "alphaMass": 52981.843137240794,
+            "transparent": 126131,
+            "partial": 136013,
+            "opaque": 0,
+            "bounds": [
+              39,
+              35,
+              435,
+              432
+            ],
+            "centroid": [
+              257.2353444058711,
+              255.37570244197317
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          },
+          "scaledBounds": [
+            0,
+            3,
+            53,
+            50
+          ],
+          "translation": [
+            4,
+            4
+          ]
+        },
+        {
+          "index": 3,
+          "rect": [
+            0,
+            512,
+            512,
+            512
+          ],
+          "anchor": [
+            256,
+            256
+          ],
+          "empty": false,
+          "area": 106849,
+          "alphaMass": 42927.89019606203,
+          "transparent": 155295,
+          "partial": 106849,
+          "opaque": 0,
+          "bounds": [
+            0,
+            0,
+            512,
+            512
+          ],
+          "centroid": [
+            264.56518290780946,
+            249.62395433410342
+          ],
+          "boundaryPixels": 194,
+          "boundarySides": [
+            "top",
+            "right",
+            "left",
+            "bottom"
+          ],
+          "cutoff": 0,
+          "visibleThresholdDiagnostics": {
+            "empty": false,
+            "area": 51223,
+            "alphaMass": 42271.039215669734,
+            "transparent": 155295,
+            "partial": 106849,
+            "opaque": 0,
+            "bounds": [
+              44,
+              17,
+              461,
+              452
+            ],
+            "centroid": [
+              264.6279280813762,
+              249.52946619468233
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          },
+          "scaledBounds": [
+            4,
+            0,
+            52,
+            54
+          ],
+          "translation": [
+            4,
+            4
+          ]
+        },
+        {
+          "index": 4,
+          "rect": [
+            512,
+            512,
+            512,
+            512
+          ],
+          "anchor": [
+            256,
+            256
+          ],
+          "empty": false,
+          "area": 82117,
+          "alphaMass": 24102.97254903008,
+          "transparent": 180027,
+          "partial": 82117,
+          "opaque": 0,
+          "bounds": [
+            0,
+            0,
+            512,
+            512
+          ],
+          "centroid": [
+            259.9305816643683,
+            251.18637144737525
+          ],
+          "boundaryPixels": 202,
+          "boundarySides": [
+            "top",
+            "left",
+            "right",
+            "bottom"
+          ],
+          "cutoff": 0,
+          "visibleThresholdDiagnostics": {
+            "empty": false,
+            "area": 30730,
+            "alphaMass": 23543.101960780372,
+            "transparent": 180027,
+            "partial": 82117,
+            "opaque": 0,
+            "bounds": [
+              57,
+              43,
+              428,
+              418
+            ],
+            "centroid": [
+              260.0843232712836,
+              250.8362033024169
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          },
+          "scaledBounds": [
+            0,
+            0,
+            56,
+            52
+          ],
+          "translation": [
+            4,
+            4
+          ]
+        },
+        {
+          "index": 5,
+          "rect": [
+            1024,
+            512,
+            512,
+            512
+          ],
+          "anchor": [
+            256,
+            256
+          ],
+          "empty": false,
+          "area": 20943,
+          "alphaMass": 3809.847058823497,
+          "transparent": 241201,
+          "partial": 20943,
+          "opaque": 0,
+          "bounds": [
+            0,
+            0,
+            496,
+            512
+          ],
+          "centroid": [
+            239.83940995005648,
+            247.75664300249915
+          ],
+          "boundaryPixels": 129,
+          "boundarySides": [
+            "top",
+            "left",
+            "bottom"
+          ],
+          "cutoff": 0,
+          "visibleThresholdDiagnostics": {
+            "empty": false,
+            "area": 5206,
+            "alphaMass": 3675.7607843138035,
+            "transparent": 241201,
+            "partial": 20943,
+            "opaque": 0,
+            "bounds": [
+              86,
+              76,
+              337,
+              323
+            ],
+            "centroid": [
+              239.9970244921899,
+              247.46583927136257
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          },
+          "scaledBounds": [
+            0,
+            3,
+            52,
+            48
+          ],
+          "translation": [
+            4,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "id": "FX-02_landing_dust",
+      "path": "assets/RAW/effects/FX-B01/v001/motion/FX-02_landing_dust_sheet_v001.png",
+      "sha256": "f529a02bba6e06c33d626286ec5360760d8acb4f250db0d1e47a1d057b9fd046",
+      "size": [
+        1536,
+        1024
+      ],
+      "hasAlpha": true,
+      "scale": 0.109375,
+      "frames": [
+        {
+          "index": 0,
+          "rect": [
+            0,
+            0,
+            512,
+            512
+          ],
+          "anchor": [
+            256,
+            388
+          ],
+          "empty": false,
+          "area": 17641,
+          "alphaMass": 8372.635294119122,
+          "transparent": 244503,
+          "partial": 17641,
+          "opaque": 0,
+          "bounds": [
+            0,
+            157,
+            512,
+            355
+          ],
+          "centroid": [
+            252.74780915601536,
+            361.7705157135957
+          ],
+          "boundaryPixels": 15,
+          "boundarySides": [
+            "right",
+            "left",
+            "bottom"
+          ],
+          "cutoff": 0,
+          "visibleThresholdDiagnostics": {
+            "empty": false,
+            "area": 9277,
+            "alphaMass": 8284.639215686448,
+            "transparent": 244503,
+            "partial": 17641,
+            "opaque": 0,
+            "bounds": [
+              134,
+              315,
+              239,
+              74
+            ],
+            "centroid": [
+              252.71283021778711,
+              361.79103164229775
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          },
+          "scaledBounds": [
+            14,
+            33,
+            28,
+            12
+          ],
+          "translation": [
+            4,
+            6
+          ]
+        },
+        {
+          "index": 1,
+          "rect": [
+            512,
+            0,
+            512,
+            512
+          ],
+          "anchor": [
+            256,
+            388
+          ],
+          "empty": false,
+          "area": 51116,
+          "alphaMass": 24858.619607838653,
+          "transparent": 211028,
+          "partial": 51116,
+          "opaque": 0,
+          "bounds": [
+            1,
+            69,
+            511,
+            443
+          ],
+          "centroid": [
+            257.64479326858753,
+            336.40049689639363
+          ],
+          "boundaryPixels": 39,
+          "boundarySides": [
+            "right",
+            "bottom"
+          ],
+          "cutoff": 0,
+          "visibleThresholdDiagnostics": {
+            "empty": false,
+            "area": 27260,
+            "alphaMass": 24594.98823528664,
+            "transparent": 211028,
+            "partial": 51116,
+            "opaque": 0,
+            "bounds": [
+              44,
+              253,
+              428,
+              136
+            ],
+            "centroid": [
+              257.54202753255163,
+              336.42527538700585
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          },
+          "scaledBounds": [
+            4,
+            27,
+            50,
+            25
+          ],
+          "translation": [
+            4,
+            6
+          ]
+        },
+        {
+          "index": 2,
+          "rect": [
+            1024,
+            0,
+            512,
+            512
+          ],
+          "anchor": [
+            256,
+            388
+          ],
+          "empty": false,
+          "area": 54071,
+          "alphaMass": 23824.105882350075,
+          "transparent": 208073,
+          "partial": 54071,
+          "opaque": 0,
+          "bounds": [
+            0,
+            45,
+            512,
+            467
+          ],
+          "centroid": [
+            253.80353265528416,
+            341.43619998006415
+          ],
+          "boundaryPixels": 27,
+          "boundarySides": [
+            "left",
+            "right",
+            "bottom"
+          ],
+          "cutoff": 0,
+          "visibleThresholdDiagnostics": {
+            "empty": false,
+            "area": 26648,
+            "alphaMass": 23492.937254895387,
+            "transparent": 208073,
+            "partial": 54071,
+            "opaque": 0,
+            "bounds": [
+              14,
+              253,
+              480,
+              136
+            ],
+            "centroid": [
+              253.83204113583426,
+              341.61776380363324
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          },
+          "scaledBounds": [
+            0,
+            14,
+            56,
+            31
+          ],
+          "translation": [
+            4,
+            6
+          ]
+        },
+        {
+          "index": 3,
+          "rect": [
+            0,
+            512,
+            512,
+            512
+          ],
+          "anchor": [
+            256,
+            388
+          ],
+          "empty": false,
+          "area": 51695,
+          "alphaMass": 22130.694117645548,
+          "transparent": 210449,
+          "partial": 51695,
+          "opaque": 0,
+          "bounds": [
+            0,
+            3,
+            512,
+            509
+          ],
+          "centroid": [
+            254.22898619911084,
+            329.64176770194075
+          ],
+          "boundaryPixels": 166,
+          "boundarySides": [
+            "right",
+            "left",
+            "bottom"
+          ],
+          "cutoff": 0,
+          "visibleThresholdDiagnostics": {
+            "empty": false,
+            "area": 24651,
+            "alphaMass": 21867.20392156389,
+            "transparent": 210449,
+            "partial": 51695,
+            "opaque": 0,
+            "bounds": [
+              9,
+              238,
+              491,
+              142
+            ],
+            "centroid": [
+              254.2842760140721,
+              329.7732654345595
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          },
+          "scaledBounds": [
+            0,
+            4,
+            56,
+            41
+          ],
+          "translation": [
+            4,
+            6
+          ]
+        },
+        {
+          "index": 4,
+          "rect": [
+            512,
+            512,
+            512,
+            512
+          ],
+          "anchor": [
+            256,
+            388
+          ],
+          "empty": false,
+          "area": 37991,
+          "alphaMass": 11066.898039218695,
+          "transparent": 224153,
+          "partial": 37991,
+          "opaque": 0,
+          "bounds": [
+            0,
+            0,
+            512,
+            512
+          ],
+          "centroid": [
+            256.7395830490472,
+            341.4453166994945
+          ],
+          "boundaryPixels": 66,
+          "boundarySides": [
+            "top",
+            "right",
+            "left",
+            "bottom"
+          ],
+          "cutoff": 0,
+          "visibleThresholdDiagnostics": {
+            "empty": false,
+            "area": 12651,
+            "alphaMass": 10854.992156861903,
+            "transparent": 224153,
+            "partial": 37991,
+            "opaque": 0,
+            "bounds": [
+              42,
+              244,
+              432,
+              137
+            ],
+            "centroid": [
+              256.9485968866783,
+              341.88657283558223
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          },
+          "scaledBounds": [
+            1,
+            2,
+            52,
+            52
+          ],
+          "translation": [
+            4,
+            6
+          ]
+        },
+        {
+          "index": 5,
+          "rect": [
+            1024,
+            512,
+            512,
+            512
+          ],
+          "anchor": [
+            256,
+            388
+          ],
+          "empty": false,
+          "area": 12438,
+          "alphaMass": 2207.407843137241,
+          "transparent": 249706,
+          "partial": 12438,
+          "opaque": 0,
+          "bounds": [
+            0,
+            0,
+            496,
+            502
+          ],
+          "centroid": [
+            243.496938117454,
+            340.3104839497753
+          ],
+          "boundaryPixels": 3,
+          "boundarySides": [
+            "top",
+            "left"
+          ],
+          "cutoff": 0,
+          "visibleThresholdDiagnostics": {
+            "empty": false,
+            "area": 2708,
+            "alphaMass": 2127.800000000043,
+            "transparent": 249706,
+            "partial": 12438,
+            "opaque": 0,
+            "bounds": [
+              71,
+              300,
+              356,
+              81
+            ],
+            "centroid": [
+              242.98524297395835,
+              341.04071774399625
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          },
+          "scaledBounds": [
+            2,
+            8,
+            46,
+            43
+          ],
+          "translation": [
+            4,
+            6
+          ]
+        }
+      ]
+    },
+    {
+      "id": "FX-02_takeoff_dust",
+      "path": "assets/RAW/effects/FX-B01/v001/motion/FX-02_takeoff_dust_sheet_v001.png",
+      "sha256": "58a1c43b74a44593f52f661c294a57fd3f541b8e948708a49e490cee1e3c7187",
+      "size": [
+        1536,
+        1024
+      ],
+      "hasAlpha": true,
+      "scale": 0.125,
+      "frames": [
+        {
+          "index": 0,
+          "rect": [
+            0,
+            0,
+            512,
+            512
+          ],
+          "anchor": [
+            256,
+            400
+          ],
+          "empty": false,
+          "area": 7922,
+          "alphaMass": 4579.400000000061,
+          "transparent": 254222,
+          "partial": 7922,
+          "opaque": 0,
+          "bounds": [
+            0,
+            53,
+            512,
+            427
+          ],
+          "centroid": [
+            258.5651695101729,
+            371.8498878609739
+          ],
+          "boundaryPixels": 7,
+          "boundarySides": [
+            "right",
+            "left"
+          ],
+          "cutoff": 0,
+          "visibleThresholdDiagnostics": {
+            "empty": false,
+            "area": 5157,
+            "alphaMass": 4547.627450980469,
+            "transparent": 254222,
+            "partial": 7922,
+            "opaque": 0,
+            "bounds": [
+              200,
+              311,
+              113,
+              90
+            ],
+            "centroid": [
+              258.5869667010124,
+              371.96483320324535
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          },
+          "scaledBounds": [
+            24,
+            32,
+            25,
+            27
+          ],
+          "translation": [
+            0,
+            -2
+          ]
+        },
+        {
+          "index": 1,
+          "rect": [
+            512,
+            0,
+            512,
+            512
+          ],
+          "anchor": [
+            256,
+            400
+          ],
+          "empty": false,
+          "area": 19600,
+          "alphaMass": 11230.35686274509,
+          "transparent": 242544,
+          "partial": 19600,
+          "opaque": 0,
+          "bounds": [
+            1,
+            127,
+            511,
+            351
+          ],
+          "centroid": [
+            256.01651161889447,
+            340.74389094543517
+          ],
+          "boundaryPixels": 1,
+          "boundarySides": [
+            "right"
+          ],
+          "cutoff": 0,
+          "visibleThresholdDiagnostics": {
+            "empty": false,
+            "area": 12553,
+            "alphaMass": 11152.611764704845,
+            "transparent": 242544,
+            "partial": 19600,
+            "opaque": 0,
+            "bounds": [
+              170,
+              238,
+              173,
+              162
+            ],
+            "centroid": [
+              256.01142016855425,
+              340.796581896257
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          },
+          "scaledBounds": [
+            20,
+            24,
+            24,
+            26
+          ],
+          "translation": [
+            0,
+            -2
+          ]
+        },
+        {
+          "index": 2,
+          "rect": [
+            1024,
+            0,
+            512,
+            512
+          ],
+          "anchor": [
+            256,
+            400
+          ],
+          "empty": false,
+          "area": 33161,
+          "alphaMass": 17195.26274510019,
+          "transparent": 228983,
+          "partial": 33161,
+          "opaque": 0,
+          "bounds": [
+            17,
+            23,
+            475,
+            455
+          ],
+          "centroid": [
+            250.41791446433228,
+            283.8615309460143
+          ],
+          "boundaryPixels": 0,
+          "boundarySides": [],
+          "cutoff": 0,
+          "visibleThresholdDiagnostics": {
+            "empty": false,
+            "area": 19321,
+            "alphaMass": 17057.847058820367,
+            "transparent": 228983,
+            "partial": 33161,
+            "opaque": 0,
+            "bounds": [
+              160,
+              156,
+              197,
+              245
+            ],
+            "centroid": [
+              250.33179623390456,
+              283.8077450870695
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          },
+          "scaledBounds": [
+            19,
+            19,
+            27,
+            32
+          ],
+          "translation": [
+            0,
+            -2
+          ]
+        },
+        {
+          "index": 3,
+          "rect": [
+            0,
+            512,
+            512,
+            512
+          ],
+          "anchor": [
+            256,
+            400
+          ],
+          "empty": false,
+          "area": 35343,
+          "alphaMass": 17084.611764708687,
+          "transparent": 226801,
+          "partial": 35343,
+          "opaque": 0,
+          "bounds": [
+            41,
+            15,
+            471,
+            471
+          ],
+          "centroid": [
+            258.4436800826712,
+            238.80196672797388
+          ],
+          "boundaryPixels": 3,
+          "boundarySides": [
+            "right"
+          ],
+          "cutoff": 0,
+          "visibleThresholdDiagnostics": {
+            "empty": false,
+            "area": 19559,
+            "alphaMass": 16924.556862742076,
+            "transparent": 226801,
+            "partial": 35343,
+            "opaque": 0,
+            "bounds": [
+              136,
+              113,
+              229,
+              288
+            ],
+            "centroid": [
+              258.49908011614673,
+              238.57437504667996
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          },
+          "scaledBounds": [
+            16,
+            14,
+            30,
+            37
+          ],
+          "translation": [
+            0,
+            -2
+          ]
+        },
+        {
+          "index": 4,
+          "rect": [
+            512,
+            512,
+            512,
+            512
+          ],
+          "anchor": [
+            256,
+            400
+          ],
+          "empty": false,
+          "area": 19556,
+          "alphaMass": 5680.172549019675,
+          "transparent": 242588,
+          "partial": 19556,
+          "opaque": 0,
+          "bounds": [
+            0,
+            7,
+            442,
+            417
+          ],
+          "centroid": [
+            250.3285719019864,
+            235.3141170801028
+          ],
+          "boundaryPixels": 1,
+          "boundarySides": [
+            "left"
+          ],
+          "cutoff": 0,
+          "visibleThresholdDiagnostics": {
+            "empty": false,
+            "area": 7061,
+            "alphaMass": 5572.415686274667,
+            "transparent": 242588,
+            "partial": 19556,
+            "opaque": 0,
+            "bounds": [
+              160,
+              134,
+              203,
+              263
+            ],
+            "centroid": [
+              250.29052489643695,
+              234.7626537158448
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          },
+          "scaledBounds": [
+            20,
+            13,
+            34,
+            37
+          ],
+          "translation": [
+            0,
+            -2
+          ]
+        },
+        {
+          "index": 5,
+          "rect": [
+            1024,
+            512,
+            512,
+            512
+          ],
+          "anchor": [
+            256,
+            400
+          ],
+          "empty": false,
+          "area": 3412,
+          "alphaMass": 1111.7372549019585,
+          "transparent": 258732,
+          "partial": 3412,
+          "opaque": 0,
+          "bounds": [
+            9,
+            43,
+            403,
+            261
+          ],
+          "centroid": [
+            256.69761158123845,
+            173.5036032635714
+          ],
+          "boundaryPixels": 0,
+          "boundarySides": [],
+          "cutoff": 0,
+          "visibleThresholdDiagnostics": {
+            "empty": false,
+            "area": 1431,
+            "alphaMass": 1092.192156862754,
+            "transparent": 258732,
+            "partial": 3412,
+            "opaque": 0,
+            "bounds": [
+              161,
+              139,
+              201,
+              69
+            ],
+            "centroid": [
+              256.6538388346495,
+              173.5188378113442
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          },
+          "scaledBounds": [
+            20,
+            16,
+            26,
+            22
+          ],
+          "translation": [
+            0,
+            -2
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ABL-01_double_jump_bubble",
+      "path": "assets/RAW/effects/FX-B01/v001/motion/ABL-01_double_jump_bubble_sheet_v001.png",
+      "sha256": "c2f7b883e7412b28c6313594080962a1f067ae4fed9484d93fc16ba0fa86708c",
+      "size": [
+        1536,
+        1024
+      ],
+      "hasAlpha": true,
+      "scale": 0.109375,
+      "frames": [
+        {
+          "index": 0,
+          "rect": [
+            0,
+            0,
+            512,
+            512
+          ],
+          "anchor": [
+            256,
+            440
+          ],
+          "empty": false,
+          "area": 12076,
+          "alphaMass": 7763.764705882394,
+          "transparent": 250068,
+          "partial": 12076,
+          "opaque": 0,
+          "bounds": [
+            0,
+            159,
+            506,
+            353
+          ],
+          "centroid": [
+            251.09666070634532,
+            408.0344066957625
+          ],
+          "boundaryPixels": 4,
+          "boundarySides": [
+            "left",
+            "bottom"
+          ],
+          "cutoff": 0,
+          "visibleThresholdDiagnostics": {
+            "empty": false,
+            "area": 8159,
+            "alphaMass": 7725.886274509875,
+            "transparent": 250068,
+            "partial": 12076,
+            "opaque": 0,
+            "bounds": [
+              176,
+              367,
+              152,
+              74
+            ],
+            "centroid": [
+              251.059899974667,
+              408.0008837110394
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          },
+          "scaledBounds": [
+            13,
+            25,
+            39,
+            25
+          ],
+          "translation": [
+            4,
+            0
+          ]
+        },
+        {
+          "index": 1,
+          "rect": [
+            512,
+            0,
+            512,
+            512
+          ],
+          "anchor": [
+            256,
+            440
+          ],
+          "empty": false,
+          "area": 34879,
+          "alphaMass": 18169.88627450949,
+          "transparent": 227265,
+          "partial": 34879,
+          "opaque": 0,
+          "bounds": [
+            23,
+            104,
+            489,
+            390
+          ],
+          "centroid": [
+            256.0189134316467,
+            378.14983939164483
+          ],
+          "boundaryPixels": 2,
+          "boundarySides": [
+            "right"
+          ],
+          "cutoff": 0,
+          "visibleThresholdDiagnostics": {
+            "empty": false,
+            "area": 20392,
+            "alphaMass": 17994.88235293729,
+            "transparent": 227265,
+            "partial": 34879,
+            "opaque": 0,
+            "bounds": [
+              68,
+              303,
+              372,
+              138
+            ],
+            "centroid": [
+              256.03610242133493,
+              378.093683062466
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          },
+          "scaledBounds": [
+            7,
+            33,
+            42,
+            16
+          ],
+          "translation": [
+            4,
+            0
+          ]
+        },
+        {
+          "index": 2,
+          "rect": [
+            1024,
+            0,
+            512,
+            512
+          ],
+          "anchor": [
+            256,
+            440
+          ],
+          "empty": false,
+          "area": 54468,
+          "alphaMass": 30187.529411756655,
+          "transparent": 207676,
+          "partial": 54468,
+          "opaque": 0,
+          "bounds": [
+            0,
+            71,
+            511,
+            431
+          ],
+          "centroid": [
+            249.84690159039542,
+            349.494725779586
+          ],
+          "boundaryPixels": 1,
+          "boundarySides": [
+            "left"
+          ],
+          "cutoff": 0,
+          "visibleThresholdDiagnostics": {
+            "empty": false,
+            "area": 33734,
+            "alphaMass": 29957.83137253751,
+            "transparent": 207676,
+            "partial": 54468,
+            "opaque": 0,
+            "bounds": [
+              29,
+              227,
+              451,
+              213
+            ],
+            "centroid": [
+              249.86606232273806,
+              349.5155597143322
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          },
+          "scaledBounds": [
+            3,
+            25,
+            50,
+            24
+          ],
+          "translation": [
+            4,
+            0
+          ]
+        },
+        {
+          "index": 3,
+          "rect": [
+            0,
+            512,
+            512,
+            512
+          ],
+          "anchor": [
+            256,
+            440
+          ],
+          "empty": false,
+          "area": 46176,
+          "alphaMass": 24727.901960778363,
+          "transparent": 215968,
+          "partial": 46176,
+          "opaque": 0,
+          "bounds": [
+            0,
+            2,
+            510,
+            482
+          ],
+          "centroid": [
+            256.13908540251686,
+            287.5042862592403
+          ],
+          "boundaryPixels": 6,
+          "boundarySides": [
+            "left"
+          ],
+          "cutoff": 0,
+          "visibleThresholdDiagnostics": {
+            "empty": false,
+            "area": 27579,
+            "alphaMass": 24539.003921560605,
+            "transparent": 215968,
+            "partial": 46176,
+            "opaque": 0,
+            "bounds": [
+              31,
+              162,
+              453,
+              244
+            ],
+            "centroid": [
+              256.2060807237516,
+              287.5514981672499
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          },
+          "scaledBounds": [
+            3,
+            17,
+            51,
+            28
+          ],
+          "translation": [
+            4,
+            0
+          ]
+        },
+        {
+          "index": 4,
+          "rect": [
+            512,
+            512,
+            512,
+            512
+          ],
+          "anchor": [
+            256,
+            440
+          ],
+          "empty": false,
+          "area": 23498,
+          "alphaMass": 13655.882352942635,
+          "transparent": 238646,
+          "partial": 23498,
+          "opaque": 0,
+          "bounds": [
+            7,
+            15,
+            505,
+            497
+          ],
+          "centroid": [
+            243.55487687556194,
+            272.529310359662
+          ],
+          "boundaryPixels": 3,
+          "boundarySides": [
+            "right",
+            "bottom"
+          ],
+          "cutoff": 0,
+          "visibleThresholdDiagnostics": {
+            "empty": false,
+            "area": 15007,
+            "alphaMass": 13578.419607841233,
+            "transparent": 238646,
+            "partial": 23498,
+            "opaque": 0,
+            "bounds": [
+              72,
+              167,
+              379,
+              219
+            ],
+            "centroid": [
+              243.59058477166488,
+              272.4608393884985
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          },
+          "scaledBounds": [
+            7,
+            18,
+            43,
+            24
+          ],
+          "translation": [
+            4,
+            0
+          ]
+        },
+        {
+          "index": 5,
+          "rect": [
+            1024,
+            512,
+            512,
+            512
+          ],
+          "anchor": [
+            256,
+            440
+          ],
+          "empty": false,
+          "area": 8232,
+          "alphaMass": 2452.333333333353,
+          "transparent": 253912,
+          "partial": 8232,
+          "opaque": 0,
+          "bounds": [
+            9,
+            9,
+            463,
+            431
+          ],
+          "centroid": [
+            257.5740015511289,
+            228.11388433585034
+          ],
+          "boundaryPixels": 0,
+          "boundarySides": [],
+          "cutoff": 0,
+          "visibleThresholdDiagnostics": {
+            "empty": false,
+            "area": 2837,
+            "alphaMass": 2415.976470588281,
+            "transparent": 253912,
+            "partial": 8232,
+            "opaque": 0,
+            "bounds": [
+              102,
+              203,
+              313,
+              62
+            ],
+            "centroid": [
+              257.55280696798906,
+              227.81013806782659
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          },
+          "scaledBounds": [
+            2,
+            6,
+            43,
+            35
+          ],
+          "translation": [
+            4,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "FX-02_dodge_afterimage",
+      "path": "assets/RAW/effects/FX-B01/v001/motion/FX-02_dodge_afterimage_sheet_v002.png",
+      "sha256": "a1f7b34b558ce54bddef3ca124f521d08c426abd7e6a0f1f04d41812e521f675",
+      "size": [
+        1536,
+        1024
+      ],
+      "hasAlpha": true,
+      "scale": 0.11428571428571428,
+      "frames": [
+        {
+          "index": 0,
+          "rect": [
+            0,
+            0,
+            512,
+            512
+          ],
+          "anchor": [
+            306,
+            448
+          ],
+          "empty": false,
+          "area": 61893,
+          "alphaMass": 52400.823529414054,
+          "transparent": 200251,
+          "partial": 61893,
+          "opaque": 0,
+          "bounds": [
+            0,
+            17,
+            512,
+            495
+          ],
+          "centroid": [
+            305.2570110782336,
+            288.53635064853347
+          ],
+          "boundaryPixels": 10,
+          "boundarySides": [
+            "right",
+            "left",
+            "bottom"
+          ],
+          "cutoff": 0,
+          "visibleThresholdDiagnostics": {
+            "empty": false,
+            "area": 53968,
+            "alphaMass": 52324.039215690274,
+            "transparent": 200251,
+            "partial": 61893,
+            "opaque": 0,
+            "bounds": [
+              195,
+              99,
+              230,
+              350
+            ],
+            "centroid": [
+              305.26267122745486,
+              288.52205142458655
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          },
+          "scaledBounds": [
+            22,
+            11,
+            28,
+            42
+          ],
+          "translation": [
+            13,
+            13
+          ]
+        },
+        {
+          "index": 1,
+          "rect": [
+            512,
+            0,
+            512,
+            512
+          ],
+          "anchor": [
+            296,
+            448
+          ],
+          "empty": false,
+          "area": 83280,
+          "alphaMass": 64946.68627452022,
+          "transparent": 178864,
+          "partial": 83280,
+          "opaque": 0,
+          "bounds": [
+            1,
+            15,
+            511,
+            497
+          ],
+          "centroid": [
+            274.89590913325674,
+            290.7415219903488
+          ],
+          "boundaryPixels": 6,
+          "boundarySides": [
+            "right",
+            "bottom"
+          ],
+          "cutoff": 0,
+          "visibleThresholdDiagnostics": {
+            "empty": false,
+            "area": 74288,
+            "alphaMass": 64857.49411765903,
+            "transparent": 178864,
+            "partial": 83280,
+            "opaque": 0,
+            "bounds": [
+              118,
+              99,
+              298,
+              350
+            ],
+            "centroid": [
+              274.9087112916202,
+              290.71535144220246
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          },
+          "scaledBounds": [
+            0,
+            3,
+            49,
+            50
+          ],
+          "translation": [
+            14,
+            13
+          ]
+        },
+        {
+          "index": 2,
+          "rect": [
+            1024,
+            0,
+            512,
+            512
+          ],
+          "anchor": [
+            306,
+            448
+          ],
+          "empty": false,
+          "area": 97700,
+          "alphaMass": 71208.79607845897,
+          "transparent": 164444,
+          "partial": 97700,
+          "opaque": 0,
+          "bounds": [
+            0,
+            17,
+            500,
+            440
+          ],
+          "centroid": [
+            270.6440662787641,
+            293.02246456319244
+          ],
+          "boundaryPixels": 1,
+          "boundarySides": [
+            "left"
+          ],
+          "cutoff": 0,
+          "visibleThresholdDiagnostics": {
+            "empty": false,
+            "area": 89067,
+            "alphaMass": 71107.80784316969,
+            "transparent": 164444,
+            "partial": 97700,
+            "opaque": 0,
+            "bounds": [
+              76,
+              99,
+              349,
+              350
+            ],
+            "centroid": [
+              270.67209872033374,
+              292.9774342089599
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          },
+          "scaledBounds": [
+            8,
+            11,
+            42,
+            42
+          ],
+          "translation": [
+            13,
+            13
+          ]
+        },
+        {
+          "index": 3,
+          "rect": [
+            0,
+            512,
+            512,
+            512
+          ],
+          "anchor": [
+            317,
+            406
+          ],
+          "empty": false,
+          "area": 67084,
+          "alphaMass": 13787.011764715522,
+          "transparent": 195060,
+          "partial": 67084,
+          "opaque": 0,
+          "bounds": [
+            25,
+            2,
+            487,
+            510
+          ],
+          "centroid": [
+            278.8263870398421,
+            271.1177487875133
+          ],
+          "boundaryPixels": 14,
+          "boundarySides": [
+            "right",
+            "bottom"
+          ],
+          "cutoff": 0,
+          "visibleThresholdDiagnostics": {
+            "empty": false,
+            "area": 20617,
+            "alphaMass": 13298.584313724443,
+            "transparent": 195060,
+            "partial": 67084,
+            "opaque": 0,
+            "bounds": [
+              92,
+              67,
+              351,
+              340
+            ],
+            "centroid": [
+              279.7265526420702,
+              271.2520766621689
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          },
+          "scaledBounds": [
+            10,
+            7,
+            46,
+            41
+          ],
+          "translation": [
+            12,
+            18
+          ]
+        },
+        {
+          "index": 4,
+          "rect": [
+            512,
+            512,
+            512,
+            512
+          ],
+          "anchor": [
+            314,
+            406
+          ],
+          "empty": false,
+          "area": 44420,
+          "alphaMass": 9218.035294119314,
+          "transparent": 217724,
+          "partial": 44420,
+          "opaque": 0,
+          "bounds": [
+            0,
+            1,
+            512,
+            511
+          ],
+          "centroid": [
+            275.78602347737404,
+            258.8774248605499
+          ],
+          "boundaryPixels": 20,
+          "boundarySides": [
+            "left",
+            "right",
+            "bottom"
+          ],
+          "cutoff": 0,
+          "visibleThresholdDiagnostics": {
+            "empty": false,
+            "area": 12820,
+            "alphaMass": 8919.39607843137,
+            "transparent": 217724,
+            "partial": 44420,
+            "opaque": 0,
+            "bounds": [
+              114,
+              67,
+              324,
+              340
+            ],
+            "centroid": [
+              275.33290260573284,
+              258.9154791980113
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          },
+          "scaledBounds": [
+            0,
+            7,
+            51,
+            41
+          ],
+          "translation": [
+            12,
+            18
+          ]
+        },
+        {
+          "index": 5,
+          "rect": [
+            1024,
+            512,
+            512,
+            512
+          ],
+          "anchor": [
+            314,
+            406
+          ],
+          "empty": false,
+          "area": 3288,
+          "alphaMass": 666.2078431372448,
+          "transparent": 258856,
+          "partial": 3288,
+          "opaque": 0,
+          "bounds": [
+            0,
+            5,
+            448,
+            507
+          ],
+          "centroid": [
+            168.25771854747296,
+            273.0461611815227
+          ],
+          "boundaryPixels": 13,
+          "boundarySides": [
+            "left",
+            "bottom"
+          ],
+          "cutoff": 0,
+          "visibleThresholdDiagnostics": {
+            "empty": false,
+            "area": 869,
+            "alphaMass": 650.8235294117634,
+            "transparent": 258856,
+            "partial": 3288,
+            "opaque": 0,
+            "bounds": [
+              117,
+              199,
+              95,
+              170
+            ],
+            "centroid": [
+              168.69147384912048,
+              272.8393829838516
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          },
+          "scaledBounds": [
+            0,
+            15,
+            45,
+            34
+          ],
+          "translation": [
+            12,
+            18
+          ]
+        }
+      ]
+    },
+    {
+      "id": "WPN-01_hammer_swing_1",
+      "path": "assets/RAW/effects/FX-B01/v001/hammer/WPN-01_hammer_swing_1_sheet_v002.png",
+      "sha256": "291f6b1124ad6921f214ea5dc9e37cbbed1a90e3f63f88fd92b6c99e5af8f6f0",
+      "size": [
+        1536,
+        1024
+      ],
+      "hasAlpha": true,
+      "scale": 0.109375,
+      "frames": [
+        {
+          "index": 0,
+          "rect": [
+            0,
+            0,
+            512,
+            512
+          ],
+          "anchor": [
+            256,
+            256
+          ],
+          "empty": false,
+          "area": 24961,
+          "alphaMass": 8929.019607846234,
+          "transparent": 237183,
+          "partial": 24961,
+          "opaque": 0,
+          "bounds": [
+            33,
+            9,
+            479,
+            503
+          ],
+          "centroid": [
+            364.3884312001865,
+            171.63677983215493
+          ],
+          "boundaryPixels": 53,
+          "boundarySides": [
+            "right",
+            "bottom"
+          ],
+          "cutoff": 0,
+          "visibleThresholdDiagnostics": {
+            "empty": false,
+            "area": 10597,
+            "alphaMass": 8806.34509803918,
+            "transparent": 237183,
+            "partial": 24961,
+            "opaque": 0,
+            "bounds": [
+              230,
+              98,
+              214,
+              206
+            ],
+            "centroid": [
+              364.65307723754046,
+              171.42485097643143
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          },
+          "scaledBounds": [
+            15,
+            4,
+            39,
+            46
+          ],
+          "translation": [
+            4,
+            4
+          ]
+        },
+        {
+          "index": 1,
+          "rect": [
+            512,
+            0,
+            512,
+            512
+          ],
+          "anchor": [
+            256,
+            256
+          ],
+          "empty": false,
+          "area": 90166,
+          "alphaMass": 42993.211764681066,
+          "transparent": 171978,
+          "partial": 90166,
+          "opaque": 0,
+          "bounds": [
+            0,
+            10,
+            512,
+            502
+          ],
+          "centroid": [
+            339.88747963788,
+            290.56583633965585
+          ],
+          "boundaryPixels": 192,
+          "boundarySides": [
+            "right",
+            "left",
+            "bottom"
+          ],
+          "cutoff": 0,
+          "visibleThresholdDiagnostics": {
+            "empty": false,
+            "area": 48483,
+            "alphaMass": 42592.16470586408,
+            "transparent": 171978,
+            "partial": 90166,
+            "opaque": 0,
+            "bounds": [
+              104,
+              91,
+              358,
+              394
+            ],
+            "centroid": [
+              340.46885895073945,
+              290.75490097518525
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          },
+          "scaledBounds": [
+            0,
+            3,
+            56,
+            53
+          ],
+          "translation": [
+            4,
+            4
+          ]
+        },
+        {
+          "index": 2,
+          "rect": [
+            1024,
+            0,
+            512,
+            512
+          ],
+          "anchor": [
+            256,
+            256
+          ],
+          "empty": false,
+          "area": 77404,
+          "alphaMass": 27941.694117643066,
+          "transparent": 184740,
+          "partial": 77404,
+          "opaque": 0,
+          "bounds": [
+            0,
+            0,
+            512,
+            512
+          ],
+          "centroid": [
+            323.275201077029,
+            319.46795062888026
+          ],
+          "boundaryPixels": 143,
+          "boundarySides": [
+            "top",
+            "left",
+            "right",
+            "bottom"
+          ],
+          "cutoff": 0,
+          "visibleThresholdDiagnostics": {
+            "empty": false,
+            "area": 32494,
+            "alphaMass": 27533.349019598187,
+            "transparent": 184740,
+            "partial": 77404,
+            "opaque": 0,
+            "bounds": [
+              103,
+              102,
+              337,
+              380
+            ],
+            "centroid": [
+              324.07281565441065,
+              320.27060830627465
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          },
+          "scaledBounds": [
+            0,
+            3,
+            56,
+            53
+          ],
+          "translation": [
+            4,
+            4
+          ]
+        },
+        {
+          "index": 3,
+          "rect": [
+            0,
+            512,
+            512,
+            512
+          ],
+          "anchor": [
+            256,
+            256
+          ],
+          "empty": false,
+          "area": 32865,
+          "alphaMass": 10638.247058825908,
+          "transparent": 229279,
+          "partial": 32865,
+          "opaque": 0,
+          "bounds": [
+            0,
+            0,
+            512,
+            512
+          ],
+          "centroid": [
+            314.09017076004346,
+            286.10957650761395
+          ],
+          "boundaryPixels": 105,
+          "boundarySides": [
+            "top",
+            "right",
+            "left",
+            "bottom"
+          ],
+          "cutoff": 0,
+          "visibleThresholdDiagnostics": {
+            "empty": false,
+            "area": 12969,
+            "alphaMass": 10436.458823528794,
+            "transparent": 229279,
+            "partial": 32865,
+            "opaque": 0,
+            "bounds": [
+              159,
+              119,
+              333,
+              255
+            ],
+            "centroid": [
+              314.31078192327243,
+              286.3697854843129
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          },
+          "scaledBounds": [
+            3,
+            0,
+            52,
+            50
+          ],
+          "translation": [
+            4,
+            4
+          ]
+        },
+        {
+          "index": 4,
+          "rect": [
+            512,
+            512,
+            512,
+            512
+          ],
+          "anchor": [
+            256,
+            256
+          ],
+          "empty": false,
+          "area": 34716,
+          "alphaMass": 5917.894117647012,
+          "transparent": 227428,
+          "partial": 34716,
+          "opaque": 0,
+          "bounds": [
+            0,
+            0,
+            512,
+            512
+          ],
+          "centroid": [
+            286.6542112555981,
+            288.7284447369113
+          ],
+          "boundaryPixels": 188,
+          "boundarySides": [
+            "top",
+            "right",
+            "left",
+            "bottom"
+          ],
+          "cutoff": 0,
+          "visibleThresholdDiagnostics": {
+            "empty": false,
+            "area": 7632,
+            "alphaMass": 5717.223529411868,
+            "transparent": 227428,
+            "partial": 34716,
+            "opaque": 0,
+            "bounds": [
+              151,
+              161,
+              306,
+              217
+            ],
+            "centroid": [
+              286.5160341095169,
+              289.2286877217186
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          },
+          "scaledBounds": [
+            3,
+            0,
+            53,
+            52
+          ],
+          "translation": [
+            4,
+            4
+          ]
+        },
+        {
+          "index": 5,
+          "rect": [
+            1024,
+            512,
+            512,
+            512
+          ],
+          "anchor": [
+            256,
+            256
+          ],
+          "empty": false,
+          "area": 14157,
+          "alphaMass": 1661.6941176470466,
+          "transparent": 247987,
+          "partial": 14157,
+          "opaque": 0,
+          "bounds": [
+            0,
+            0,
+            488,
+            512
+          ],
+          "centroid": [
+            293.303564517193,
+            292.3435850962521
+          ],
+          "boundaryPixels": 67,
+          "boundarySides": [
+            "top",
+            "left",
+            "bottom"
+          ],
+          "cutoff": 0,
+          "visibleThresholdDiagnostics": {
+            "empty": false,
+            "area": 1899,
+            "alphaMass": 1600.9254901960983,
+            "transparent": 247987,
+            "partial": 14157,
+            "opaque": 0,
+            "bounds": [
+              236,
+              263,
+              109,
+              61
+            ],
+            "centroid": [
+              292.69647458822436,
+              293.50792678744324
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          },
+          "scaledBounds": [
+            0,
+            0,
+            52,
+            51
+          ],
+          "translation": [
+            4,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "id": "WPN-01_hammer_swing_2",
+      "path": "assets/RAW/effects/FX-B01/v001/hammer/WPN-01_hammer_swing_2_sheet_v001.png",
+      "sha256": "6de0ca5335a8b4147bdb791dfa68bef5474db52f0c9c79f8f26677b4a6fb22b9",
+      "size": [
+        1536,
+        1024
+      ],
+      "hasAlpha": true,
+      "scale": 0.109375,
+      "frames": [
+        {
+          "index": 0,
+          "rect": [
+            0,
+            0,
+            512,
+            512
+          ],
+          "anchor": [
+            256,
+            256
+          ],
+          "empty": false,
+          "area": 17866,
+          "alphaMass": 7515.46274509811,
+          "transparent": 244278,
+          "partial": 17866,
+          "opaque": 0,
+          "bounds": [
+            91,
+            224,
+            417,
+            232
+          ],
+          "centroid": [
+            289.37466911355114,
+            380.608743385539
+          ],
+          "boundaryPixels": 0,
+          "boundarySides": [],
+          "cutoff": 0,
+          "visibleThresholdDiagnostics": {
+            "empty": false,
+            "area": 9066,
+            "alphaMass": 7409.60392156878,
+            "transparent": 244278,
+            "partial": 17866,
+            "opaque": 0,
+            "bounds": [
+              97,
+              303,
+              309,
+              138
+            ],
+            "centroid": [
+              289.72849227472693,
+              380.5272923481889
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          },
+          "scaledBounds": [
+            11,
+            33,
+            34,
+            16
+          ],
+          "translation": [
+            4,
+            4
+          ]
+        },
+        {
+          "index": 1,
+          "rect": [
+            512,
+            0,
+            512,
+            512
+          ],
+          "anchor": [
+            256,
+            256
+          ],
+          "empty": false,
+          "area": 40330,
+          "alphaMass": 21267.647058820265,
+          "transparent": 221814,
+          "partial": 40330,
+          "opaque": 0,
+          "bounds": [
+            9,
+            57,
+            471,
+            451
+          ],
+          "centroid": [
+            333.58395021439895,
+            304.3122103905001
+          ],
+          "boundaryPixels": 0,
+          "boundarySides": [],
+          "cutoff": 0,
+          "visibleThresholdDiagnostics": {
+            "empty": false,
+            "area": 23714,
+            "alphaMass": 21086.003921562602,
+            "transparent": 221814,
+            "partial": 40330,
+            "opaque": 0,
+            "bounds": [
+              74,
+              141,
+              381,
+              307
+            ],
+            "centroid": [
+              333.93264801064464,
+              304.1895585047533
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          },
+          "scaledBounds": [
+            7,
+            15,
+            44,
+            34
+          ],
+          "translation": [
+            4,
+            4
+          ]
+        },
+        {
+          "index": 2,
+          "rect": [
+            1024,
+            0,
+            512,
+            512
+          ],
+          "anchor": [
+            256,
+            256
+          ],
+          "empty": false,
+          "area": 53509,
+          "alphaMass": 27523.23529411407,
+          "transparent": 208635,
+          "partial": 53509,
+          "opaque": 0,
+          "bounds": [
+            7,
+            48,
+            477,
+            422
+          ],
+          "centroid": [
+            350.92211030257533,
+            266.17737697564274
+          ],
+          "boundaryPixels": 0,
+          "boundarySides": [],
+          "cutoff": 0,
+          "visibleThresholdDiagnostics": {
+            "empty": false,
+            "area": 30691,
+            "alphaMass": 27260.92156861905,
+            "transparent": 208635,
+            "partial": 53509,
+            "opaque": 0,
+            "bounds": [
+              64,
+              56,
+              404,
+              406
+            ],
+            "centroid": [
+              351.3997351665233,
+              265.8643942669625
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          },
+          "scaledBounds": [
+            7,
+            6,
+            45,
+            45
+          ],
+          "translation": [
+            4,
+            4
+          ]
+        },
+        {
+          "index": 3,
+          "rect": [
+            0,
+            512,
+            512,
+            512
+          ],
+          "anchor": [
+            256,
+            256
+          ],
+          "empty": false,
+          "area": 14363,
+          "alphaMass": 5801.2784313726115,
+          "transparent": 247781,
+          "partial": 14363,
+          "opaque": 0,
+          "bounds": [
+            25,
+            20,
+            429,
+            394
+          ],
+          "centroid": [
+            395.58562818474803,
+            139.489053798829
+          ],
+          "boundaryPixels": 0,
+          "boundarySides": [],
+          "cutoff": 0,
+          "visibleThresholdDiagnostics": {
+            "empty": false,
+            "area": 6665,
+            "alphaMass": 5730.650980392271,
+            "transparent": 247781,
+            "partial": 14363,
+            "opaque": 0,
+            "bounds": [
+              257,
+              53,
+              192,
+              254
+            ],
+            "centroid": [
+              395.7435694948866,
+              139.3242303512685
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          },
+          "scaledBounds": [
+            28,
+            5,
+            22,
+            30
+          ],
+          "translation": [
+            4,
+            4
+          ]
+        },
+        {
+          "index": 4,
+          "rect": [
+            512,
+            512,
+            512,
+            512
+          ],
+          "anchor": [
+            256,
+            256
+          ],
+          "empty": false,
+          "area": 8271,
+          "alphaMass": 3123.760784313757,
+          "transparent": 253873,
+          "partial": 8271,
+          "opaque": 0,
+          "bounds": [
+            39,
+            7,
+            459,
+            240
+          ],
+          "centroid": [
+            399.1744453329749,
+            110.43679752535505
+          ],
+          "boundaryPixels": 0,
+          "boundarySides": [],
+          "cutoff": 0,
+          "visibleThresholdDiagnostics": {
+            "empty": false,
+            "area": 3687,
+            "alphaMass": 3080.9215686275174,
+            "transparent": 253873,
+            "partial": 8271,
+            "opaque": 0,
+            "bounds": [
+              320,
+              59,
+              118,
+              155
+            ],
+            "centroid": [
+              399.36044473578056,
+              110.24428646890462
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          },
+          "scaledBounds": [
+            35,
+            5,
+            14,
+            20
+          ],
+          "translation": [
+            4,
+            4
+          ]
+        },
+        {
+          "index": 5,
+          "rect": [
+            1024,
+            512,
+            512,
+            512
+          ],
+          "anchor": [
+            256,
+            256
+          ],
+          "empty": false,
+          "area": 1776,
+          "alphaMass": 481.9803921568593,
+          "transparent": 260368,
+          "partial": 1776,
+          "opaque": 0,
+          "bounds": [
+            65,
+            19,
+            369,
+            133
+          ],
+          "centroid": [
+            396.0964484764697,
+            112.65949310443095
+          ],
+          "boundaryPixels": 0,
+          "boundarySides": [],
+          "cutoff": 0,
+          "visibleThresholdDiagnostics": {
+            "empty": false,
+            "area": 615,
+            "alphaMass": 472.7058823529409,
+            "transparent": 260368,
+            "partial": 1776,
+            "opaque": 0,
+            "bounds": [
+              371,
+              73,
+              57,
+              71
+            ],
+            "centroid": [
+              396.02299651567995,
+              112.77985730877715
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          },
+          "scaledBounds": [
+            40,
+            7,
+            8,
+            9
+          ],
+          "translation": [
+            4,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "id": "WPN-01_hammer_slam_3",
+      "path": "assets/RAW/effects/FX-B01/v001/hammer/WPN-01_hammer_slam_3_sheet_v001.png",
+      "sha256": "f632ecded5d51293ee78b1da21d5cffcaf375e0d0252b1fae2bae7789dcca8f5",
+      "size": [
+        1536,
+        1024
+      ],
+      "hasAlpha": true,
+      "scale": 0.109375,
+      "frames": [
+        {
+          "index": 0,
+          "rect": [
+            0,
+            0,
+            512,
+            512
+          ],
+          "anchor": [
+            256,
+            422
+          ],
+          "empty": false,
+          "area": 14308,
+          "alphaMass": 5250.172549019645,
+          "transparent": 247836,
+          "partial": 14308,
+          "opaque": 0,
+          "bounds": [
+            0,
+            0,
+            512,
+            512
+          ],
+          "centroid": [
+            256.11382557735067,
+            265.0000425756183
+          ],
+          "boundaryPixels": 7,
+          "boundarySides": [
+            "left",
+            "top",
+            "right",
+            "bottom"
+          ],
+          "cutoff": 0,
+          "visibleThresholdDiagnostics": {
+            "empty": false,
+            "area": 6739,
+            "alphaMass": 5160.705882353039,
+            "transparent": 247836,
+            "partial": 14308,
+            "opaque": 0,
+            "bounds": [
+              234,
+              98,
+              43,
+              273
+            ],
+            "centroid": [
+              256.0968479764093,
+              265.6947567592155
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          },
+          "scaledBounds": [
+            16,
+            11,
+            38,
+            45
+          ],
+          "translation": [
+            4,
+            2
+          ]
+        },
+        {
+          "index": 1,
+          "rect": [
+            512,
+            0,
+            512,
+            512
+          ],
+          "anchor": [
+            256,
+            422
+          ],
+          "empty": false,
+          "area": 30544,
+          "alphaMass": 11710.533333333695,
+          "transparent": 231600,
+          "partial": 30544,
+          "opaque": 0,
+          "bounds": [
+            1,
+            23,
+            511,
+            489
+          ],
+          "centroid": [
+            255.71492432151967,
+            333.18181184962646
+          ],
+          "boundaryPixels": 3,
+          "boundarySides": [
+            "right",
+            "bottom"
+          ],
+          "cutoff": 0,
+          "visibleThresholdDiagnostics": {
+            "empty": false,
+            "area": 14697,
+            "alphaMass": 11478.64313725362,
+            "transparent": 231600,
+            "partial": 30544,
+            "opaque": 0,
+            "bounds": [
+              169,
+              96,
+              172,
+              327
+            ],
+            "centroid": [
+              255.70489099281758,
+              334.0529262528595
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          },
+          "scaledBounds": [
+            18,
+            11,
+            20,
+            38
+          ],
+          "translation": [
+            4,
+            2
+          ]
+        },
+        {
+          "index": 2,
+          "rect": [
+            1024,
+            0,
+            512,
+            512
+          ],
+          "anchor": [
+            256,
+            424
+          ],
+          "empty": false,
+          "area": 76770,
+          "alphaMass": 34738.41568626098,
+          "transparent": 185374,
+          "partial": 76770,
+          "opaque": 0,
+          "bounds": [
+            1,
+            9,
+            499,
+            495
+          ],
+          "centroid": [
+            253.16914686535824,
+            353.19745230924167
+          ],
+          "boundaryPixels": 0,
+          "boundarySides": [],
+          "cutoff": 0,
+          "visibleThresholdDiagnostics": {
+            "empty": false,
+            "area": 39396,
+            "alphaMass": 34254.611764691756,
+            "transparent": 185374,
+            "partial": 76770,
+            "opaque": 0,
+            "bounds": [
+              32,
+              186,
+              446,
+              239
+            ],
+            "centroid": [
+              252.97105264553264,
+              353.58724263965246
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          },
+          "scaledBounds": [
+            3,
+            19,
+            50,
+            29
+          ],
+          "translation": [
+            4,
+            2
+          ]
+        },
+        {
+          "index": 3,
+          "rect": [
+            0,
+            512,
+            512,
+            512
+          ],
+          "anchor": [
+            256,
+            404
+          ],
+          "empty": false,
+          "area": 65841,
+          "alphaMass": 25261.0039215718,
+          "transparent": 196303,
+          "partial": 65841,
+          "opaque": 0,
+          "bounds": [
+            0,
+            1,
+            512,
+            511
+          ],
+          "centroid": [
+            253.35935975713068,
+            329.8057241138106
+          ],
+          "boundaryPixels": 21,
+          "boundarySides": [
+            "left",
+            "right",
+            "bottom"
+          ],
+          "cutoff": 0,
+          "visibleThresholdDiagnostics": {
+            "empty": false,
+            "area": 28736,
+            "alphaMass": 24903.596078426403,
+            "transparent": 196303,
+            "partial": 65841,
+            "opaque": 0,
+            "bounds": [
+              29,
+              195,
+              449,
+              209
+            ],
+            "centroid": [
+              253.41193468086684,
+              330.0045732430538
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          },
+          "scaledBounds": [
+            3,
+            1,
+            53,
+            49
+          ],
+          "translation": [
+            4,
+            4
+          ]
+        },
+        {
+          "index": 4,
+          "rect": [
+            512,
+            512,
+            512,
+            512
+          ],
+          "anchor": [
+            256,
+            404
+          ],
+          "empty": false,
+          "area": 32565,
+          "alphaMass": 9111.972549021886,
+          "transparent": 229579,
+          "partial": 32565,
+          "opaque": 0,
+          "bounds": [
+            1,
+            9,
+            511,
+            481
+          ],
+          "centroid": [
+            262.835291899882,
+            366.828019416722
+          ],
+          "boundaryPixels": 1,
+          "boundarySides": [
+            "right"
+          ],
+          "cutoff": 0,
+          "visibleThresholdDiagnostics": {
+            "empty": false,
+            "area": 11223,
+            "alphaMass": 8900.137254901912,
+            "transparent": 229579,
+            "partial": 32565,
+            "opaque": 0,
+            "bounds": [
+              40,
+              284,
+              430,
+              120
+            ],
+            "centroid": [
+              262.84885538227076,
+              367.0684642448793
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          },
+          "scaledBounds": [
+            4,
+            11,
+            48,
+            35
+          ],
+          "translation": [
+            4,
+            4
+          ]
+        },
+        {
+          "index": 5,
+          "rect": [
+            1024,
+            512,
+            512,
+            512
+          ],
+          "anchor": [
+            256,
+            404
+          ],
+          "empty": false,
+          "area": 11712,
+          "alphaMass": 1793.6745098039037,
+          "transparent": 250432,
+          "partial": 11712,
+          "opaque": 0,
+          "bounds": [
+            13,
+            9,
+            495,
+            503
+          ],
+          "centroid": [
+            243.31967677262435,
+            364.02401686098796
+          ],
+          "boundaryPixels": 1,
+          "boundarySides": [
+            "bottom"
+          ],
+          "cutoff": 0,
+          "visibleThresholdDiagnostics": {
+            "empty": false,
+            "area": 2430,
+            "alphaMass": 1718.5882352941426,
+            "transparent": 250432,
+            "partial": 11712,
+            "opaque": 0,
+            "bounds": [
+              97,
+              330,
+              315,
+              59
+            ],
+            "centroid": [
+              242.9814873128838,
+              365.456952811239
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          },
+          "scaledBounds": [
+            7,
+            11,
+            39,
+            33
+          ],
+          "translation": [
+            4,
+            4
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "warnings": [
+    "FX-01_physical_hit/0: 32 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "FX-01_physical_hit/1: 8 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "FX-01_physical_hit/2: 3 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "FX-01_physical_hit/3: 17 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "FX-01_physical_hit/4: 5 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "FX-01_magic_hit/0: 175 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "FX-01_magic_hit/1: 125 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "FX-01_magic_hit/2: 15 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "FX-01_magic_hit/3: 21 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "FX-01_magic_hit/4: 61 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "FX-01_magic_hit/5: 29 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "FX-01_guard_spark/0: 10 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "FX-01_guard_spark/1: 31 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "FX-01_guard_spark/2: 20 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "FX-01_guard_spark/3: 7 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "FX-01_guard_spark/4: 18 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "FX-01_guard_spark/5: 18 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "FX-01_perfect_parry/0: 99 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "FX-01_perfect_parry/1: 98 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "FX-01_perfect_parry/2: 44 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "FX-01_perfect_parry/3: 159 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "FX-01_perfect_parry/4: 147 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "FX-01_perfect_parry/5: 57 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "FX-01_guard_break/0: 155 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "FX-01_guard_break/1: 61 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "FX-01_guard_break/2: 25 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "FX-01_guard_break/3: 194 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "FX-01_guard_break/4: 202 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "FX-01_guard_break/5: 129 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "FX-02_landing_dust/0: 15 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "FX-02_landing_dust/1: 39 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "FX-02_landing_dust/2: 27 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "FX-02_landing_dust/3: 166 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "FX-02_landing_dust/4: 66 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "FX-02_landing_dust/5: 3 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "FX-02_takeoff_dust/0: 7 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "FX-02_takeoff_dust/1: 1 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "FX-02_takeoff_dust/3: 3 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "FX-02_takeoff_dust/4: 1 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "ABL-01_double_jump_bubble/0: 4 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "ABL-01_double_jump_bubble/1: 2 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "ABL-01_double_jump_bubble/2: 1 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "ABL-01_double_jump_bubble/3: 6 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "ABL-01_double_jump_bubble/4: 3 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "FX-02_dodge_afterimage/0: 10 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "FX-02_dodge_afterimage/1: 6 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "FX-02_dodge_afterimage/2: 1 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "FX-02_dodge_afterimage/3: 14 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "FX-02_dodge_afterimage/4: 20 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "FX-02_dodge_afterimage/5: 13 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "WPN-01_hammer_swing_1/0: 53 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "WPN-01_hammer_swing_1/1: 192 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "WPN-01_hammer_swing_1/2: 143 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "WPN-01_hammer_swing_1/3: 105 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "WPN-01_hammer_swing_1/4: 188 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "WPN-01_hammer_swing_1/5: 67 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "WPN-01_hammer_slam_3/0: 7 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "WPN-01_hammer_slam_3/1: 3 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "WPN-01_hammer_slam_3/3: 21 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "WPN-01_hammer_slam_3/4: 1 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "WPN-01_hammer_slam_3/5: 1 low-alpha source boundary pixels retained; no alpha > 16 on boundary"
+  ]
+}

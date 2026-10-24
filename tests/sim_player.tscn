@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3]
+
+; sim_player.tscn —— 手感自动化模拟宿主（headless 运行，见 sim_player.gd）
+
+[ext_resource type="Script" path="res://tests/sim_player.gd" id="1_sim"]
+
+[node name="SimPlayer" type="Node"]
+script = ExtResource("1_sim")

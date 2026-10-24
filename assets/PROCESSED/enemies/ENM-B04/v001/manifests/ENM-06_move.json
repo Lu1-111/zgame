@@ -1,0 +1,179 @@
+{
+  "id": "ENM-06_move",
+  "enemyId": "ENM-06",
+  "gameEnemyId": "shadow_wisp",
+  "label": "暗影幽灵",
+  "name": "move",
+  "kind": "body",
+  "generationMode": "built-in image_gen",
+  "sourcePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-06/ENM-06_actions_A.png",
+  "sourceRects": [
+    [
+      0,
+      287,
+      361,
+      256
+    ],
+    [
+      361,
+      287,
+      342,
+      256
+    ],
+    [
+      703,
+      287,
+      359,
+      256
+    ],
+    [
+      1062,
+      287,
+      340,
+      256
+    ]
+  ],
+  "sourceAnchors": [
+    [
+      224,
+      145
+    ],
+    [
+      214,
+      145
+    ],
+    [
+      222,
+      145
+    ],
+    [
+      214,
+      145
+    ]
+  ],
+  "sourceSize": [
+    1402,
+    1122
+  ],
+  "sourceSha256": "0cf0785c6596412f0be3198abe32cdfab2b7c4ecb195145b84f8ee1cf1f7ce68",
+  "sourceBatch": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-06/batch.json",
+  "promptPath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-06/ENM-06_A.prompt.txt",
+  "provenancePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-06/provenance.json",
+  "target": [
+    104,
+    88
+  ],
+  "anchor": [
+    52,
+    44
+  ],
+  "rootType": "flying",
+  "scale": 0.19,
+  "fps": 10,
+  "loop": true,
+  "frameCount": 4,
+  "frames": [
+    "frames/ENM-06_move/ENM-06_move_00.png",
+    "frames/ENM-06_move/ENM-06_move_01.png",
+    "frames/ENM-06_move/ENM-06_move_02.png",
+    "frames/ENM-06_move/ENM-06_move_03.png"
+  ],
+  "sheet": "sheets/ENM-06_move.png",
+  "frameDetails": [
+    {
+      "sourceRect": [
+        0,
+        287,
+        361,
+        256
+      ],
+      "sourceAnchor": [
+        224,
+        145
+      ],
+      "offset": [
+        9,
+        16
+      ],
+      "alphaBBox": [
+        11,
+        16,
+        78,
+        65
+      ]
+    },
+    {
+      "sourceRect": [
+        361,
+        287,
+        342,
+        256
+      ],
+      "sourceAnchor": [
+        214,
+        145
+      ],
+      "offset": [
+        11,
+        16
+      ],
+      "alphaBBox": [
+        11,
+        16,
+        76,
+        65
+      ]
+    },
+    {
+      "sourceRect": [
+        703,
+        287,
+        359,
+        256
+      ],
+      "sourceAnchor": [
+        222,
+        145
+      ],
+      "offset": [
+        10,
+        16
+      ],
+      "alphaBBox": [
+        10,
+        16,
+        78,
+        65
+      ]
+    },
+    {
+      "sourceRect": [
+        1062,
+        287,
+        340,
+        256
+      ],
+      "sourceAnchor": [
+        214,
+        145
+      ],
+      "offset": [
+        11,
+        16
+      ],
+      "alphaBBox": [
+        11,
+        16,
+        74,
+        62
+      ]
+    }
+  ],
+  "fadeStartNormalized": 1.0,
+  "phases": [
+    "move1",
+    "move2",
+    "move3",
+    "move4"
+  ]
+}

@@ -1,0 +1,238 @@
+{
+  "id": "ENM-10_telegraph",
+  "name": "telegraph",
+  "enemyId": "ENM-10",
+  "gameEnemyId": "acid_slug",
+  "label": "telegraph",
+  "sourcePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B03/v001/ENM-10/ENM-10_actions_A.png",
+  "sourceRects": [
+    [
+      0,
+      627,
+      314,
+      313
+    ],
+    [
+      314,
+      627,
+      313,
+      313
+    ],
+    [
+      627,
+      627,
+      313,
+      313
+    ],
+    [
+      940,
+      627,
+      314,
+      313
+    ]
+  ],
+  "sourceAnchors": [
+    [
+      156,
+      277
+    ],
+    [
+      156,
+      277
+    ],
+    [
+      156,
+      277
+    ],
+    [
+      156,
+      277
+    ]
+  ],
+  "target": [
+    64,
+    64
+  ],
+  "anchor": [
+    32,
+    56
+  ],
+  "scale": 0.16,
+  "fps": 10,
+  "loop": false,
+  "kind": "body",
+  "phases": [
+    "telegraph1",
+    "telegraph2",
+    "telegraph3",
+    "telegraph4"
+  ],
+  "promptPath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B03/v001/ENM-10/ENM-10_A_repair.prompt.txt",
+  "provenancePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B03/v001/ENM-10/provenance.json",
+  "generationMode": "built-in image_gen",
+  "frames": [
+    "frames/ENM-10_telegraph/ENM-10_telegraph_00.png",
+    "frames/ENM-10_telegraph/ENM-10_telegraph_01.png",
+    "frames/ENM-10_telegraph/ENM-10_telegraph_02.png",
+    "frames/ENM-10_telegraph/ENM-10_telegraph_03.png"
+  ],
+  "sheet": "sheets/ENM-10_telegraph.png",
+  "sheetRects": [
+    [
+      0,
+      0,
+      64,
+      64
+    ],
+    [
+      64,
+      0,
+      64,
+      64
+    ],
+    [
+      128,
+      0,
+      64,
+      64
+    ],
+    [
+      192,
+      0,
+      64,
+      64
+    ]
+  ],
+  "atlas": "atlas/ENM-10_telegraph.png",
+  "atlasColumns": 2,
+  "atlasRows": 2,
+  "atlasRects": [
+    [
+      0,
+      0,
+      64,
+      64
+    ],
+    [
+      64,
+      0,
+      64,
+      64
+    ],
+    [
+      0,
+      64,
+      64,
+      64
+    ],
+    [
+      64,
+      64,
+      64,
+      64
+    ]
+  ],
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "sourceSha256": "00236e9fdde075a18480bc96d1ce01b48ad57900988f53268d83812ce5c82f6d",
+  "sourceBatch": "/home/lululu/zgame/assets/RAW/enemies/ENM-B03/v001/ENM-10/batch.json",
+  "frameCount": 4,
+  "frameDetails": [
+    {
+      "sourceRect": [
+        0,
+        627,
+        314,
+        313
+      ],
+      "sourceAnchor": [
+        156,
+        277
+      ],
+      "offset": [
+        7,
+        12
+      ],
+      "alphaBBox": [
+        14,
+        13,
+        55,
+        58
+      ],
+      "sourceEdgeAlpha": 1
+    },
+    {
+      "sourceRect": [
+        314,
+        627,
+        313,
+        313
+      ],
+      "sourceAnchor": [
+        156,
+        277
+      ],
+      "offset": [
+        7,
+        12
+      ],
+      "alphaBBox": [
+        10,
+        15,
+        52,
+        58
+      ],
+      "sourceEdgeAlpha": 1
+    },
+    {
+      "sourceRect": [
+        627,
+        627,
+        313,
+        313
+      ],
+      "sourceAnchor": [
+        156,
+        277
+      ],
+      "offset": [
+        7,
+        12
+      ],
+      "alphaBBox": [
+        9,
+        27,
+        50,
+        58
+      ],
+      "sourceEdgeAlpha": 0
+    },
+    {
+      "sourceRect": [
+        940,
+        627,
+        314,
+        313
+      ],
+      "sourceAnchor": [
+        156,
+        277
+      ],
+      "offset": [
+        7,
+        12
+      ],
+      "alphaBBox": [
+        12,
+        27,
+        52,
+        58
+      ],
+      "sourceEdgeAlpha": 0
+    }
+  ],
+  "fadeStartNormalized": 1.0,
+  "loopBoundaryMeanDifference": 13.0
+}

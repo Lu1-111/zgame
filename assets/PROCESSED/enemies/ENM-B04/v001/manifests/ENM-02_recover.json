@@ -1,0 +1,233 @@
+{
+  "id": "ENM-02_recover",
+  "name": "recover",
+  "enemyId": "ENM-02",
+  "gameEnemyId": "milk_goblin",
+  "label": "recover",
+  "kind": "body",
+  "sourcePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-02/ENM-02_actions_B.png",
+  "sourceRects": [
+    [
+      0,
+      0,
+      287,
+      344
+    ],
+    [
+      287,
+      0,
+      361,
+      344
+    ],
+    [
+      648,
+      0,
+      339,
+      344
+    ],
+    [
+      987,
+      0,
+      267,
+      344
+    ]
+  ],
+  "sourceAnchors": [
+    [
+      156.75,
+      310.0
+    ],
+    [
+      183.25,
+      310.0
+    ],
+    [
+      135.75,
+      310.0
+    ],
+    [
+      110.25,
+      310.0
+    ]
+  ],
+  "scale": 0.2009132420091324,
+  "target": [
+    128,
+    128
+  ],
+  "anchor": [
+    64,
+    104
+  ],
+  "fps": 8,
+  "loop": false,
+  "promptPath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-02/ENM-02_B.prompt.txt",
+  "generationMode": "built-in-imagegen",
+  "processing": "rect crop, fixed per-sheet nearest scale, integer semantic root translation; original alpha retained",
+  "provenancePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-02/provenance.json",
+  "frames": [
+    "frames/ENM-02_recover/ENM-02_recover_00.png",
+    "frames/ENM-02_recover/ENM-02_recover_01.png",
+    "frames/ENM-02_recover/ENM-02_recover_02.png",
+    "frames/ENM-02_recover/ENM-02_recover_03.png"
+  ],
+  "sheet": "sheets/ENM-02_recover.png",
+  "sheetRects": [
+    [
+      0,
+      0,
+      128,
+      128
+    ],
+    [
+      128,
+      0,
+      128,
+      128
+    ],
+    [
+      256,
+      0,
+      128,
+      128
+    ],
+    [
+      384,
+      0,
+      128,
+      128
+    ]
+  ],
+  "atlas": "atlas/ENM-02_recover.png",
+  "atlasColumns": 2,
+  "atlasRows": 2,
+  "atlasRects": [
+    [
+      0,
+      0,
+      128,
+      128
+    ],
+    [
+      128,
+      0,
+      128,
+      128
+    ],
+    [
+      0,
+      128,
+      128,
+      128
+    ],
+    [
+      128,
+      128,
+      128,
+      128
+    ]
+  ],
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "sourceSha256": "f420c69d13dfd2cb4a3ab344e0325716e07131f3634db085c7d63c84e3e66843",
+  "sourceBatch": "assets/RAW/enemies/ENM-B04/v001/ENM-02/batch.json",
+  "frameCount": 4,
+  "frameDetails": [
+    {
+      "sourceRect": [
+        0,
+        0,
+        287,
+        344
+      ],
+      "sourceAnchor": [
+        156.75,
+        310.0
+      ],
+      "offset": [
+        33,
+        42
+      ],
+      "alphaBBox": [
+        38,
+        42,
+        91,
+        111
+      ],
+      "sourceEdgeAlpha": 2
+    },
+    {
+      "sourceRect": [
+        287,
+        0,
+        361,
+        344
+      ],
+      "sourceAnchor": [
+        183.25,
+        310.0
+      ],
+      "offset": [
+        27,
+        42
+      ],
+      "alphaBBox": [
+        27,
+        45,
+        100,
+        111
+      ],
+      "sourceEdgeAlpha": 2
+    },
+    {
+      "sourceRect": [
+        648,
+        0,
+        339,
+        344
+      ],
+      "sourceAnchor": [
+        135.75,
+        310.0
+      ],
+      "offset": [
+        37,
+        42
+      ],
+      "alphaBBox": [
+        37,
+        44,
+        105,
+        111
+      ],
+      "sourceEdgeAlpha": 1
+    },
+    {
+      "sourceRect": [
+        987,
+        0,
+        267,
+        344
+      ],
+      "sourceAnchor": [
+        110.25,
+        310.0
+      ],
+      "offset": [
+        42,
+        42
+      ],
+      "alphaBBox": [
+        42,
+        47,
+        94,
+        111
+      ],
+      "sourceEdgeAlpha": 1
+    }
+  ],
+  "fadeStartNormalized": 1.0,
+  "loopBoundaryMeanDifference": 8.666666666666666
+}

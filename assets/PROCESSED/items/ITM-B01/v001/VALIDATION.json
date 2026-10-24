@@ -1,0 +1,91 @@
+{
+  "batch": "ITM-B01",
+  "version": "v001",
+  "completedDate": "2026-10-24",
+  "engine": "Godot 4.7.2",
+  "mode": "built-in image_gen",
+  "counts": {
+    "formalItems": 12,
+    "extraAbilityRewards": 1,
+    "rawSheets": 13,
+    "worldFrames": 52,
+    "icons": 13
+  },
+  "assetValidation": {
+    "assertions": 407,
+    "failures": 0,
+    "items": 13,
+    "formalItems": 12,
+    "worldFrames": 52,
+    "icons": 13,
+    "sourceHashesVerified": true,
+    "allAlphaEdgesClear": true
+  },
+  "commands": [
+    {
+      "command": "~/.local/bin/godot --headless --path . --import",
+      "exitCode": 0,
+      "errors": 0,
+      "log": "validation/import.log",
+      "existingWarning": "旧work/chr01_pipeline/final_validation含独立project.godot，编辑器按默认规则忽略该目录。"
+    },
+    {
+      "command": "~/.local/bin/godot --headless --path . --script res://work/items_pipeline/validate_component.gd",
+      "exitCode": 0,
+      "output": "ITEM COMPONENT: assertions=150 failures=0",
+      "log": "validation/component.log"
+    },
+    {
+      "command": "~/.local/bin/godot --headless --path . --script res://tests/run_tests.gd",
+      "exitCode": 0,
+      "output": "=== 汇总：passed=309 / total=309 ===\nRESULT: ALL PASS",
+      "log": "validation/unit_tests.log"
+    },
+    {
+      "command": "~/.local/bin/godot --headless --path . --quit-after 120",
+      "exitCode": 0,
+      "errors": 0,
+      "log": "validation/smoke.log"
+    }
+  ],
+  "visualReview": {
+    "reviewers": [
+      "items_consumables",
+      "items_materials",
+      "items_fragments"
+    ],
+    "allItemsReviewed": true,
+    "checks": [
+      "32px世界比例",
+      "24px图标辨识",
+      "4帧主体/循环接缝",
+      "明暗底透明度",
+      "无裁切",
+      "能力双环完整"
+    ],
+    "resolvedIssue": "能力第3帧曾下跳1px；源x改以奶滴中心注册，四帧最终平移统一[-9,-1]，复验通过。",
+    "remainingVariation": "体力药剂右缘少量1px变化，奶力药剂第4帧边缘多1px；原生尺寸可接受。"
+  },
+  "runtimeCoverage": [
+    "13项切换/首帧/锚点/图标尺寸",
+    "真实精灵帧推进/暂停/恢复/零速",
+    "拾取首刻位置连续",
+    "重复拾取拒绝/单次完成通知",
+    "隐藏后复用/暂停时切换"
+  ],
+  "limits": [
+    "未接入主场景的拾取、碰撞、背包或奖励结算",
+    "未包含奶币/死亡奶滴、其他OBJ交互物、投掷爆炸FX"
+  ],
+  "browserPreview": {
+    "verified": true,
+    "checks": [
+      "13项目录可选择",
+      "能力奖励显示正确",
+      "拾取结束进入COLLECTED",
+      "恢复循环",
+      "暂停与逐帧2/4切换"
+    ],
+    "delivery": "preview.html可离线直接打开，图像数据已嵌入页面"
+  }
+}

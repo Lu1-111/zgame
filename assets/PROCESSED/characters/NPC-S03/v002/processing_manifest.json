@@ -1,0 +1,5457 @@
+{
+  "id": "NPC-S03",
+  "version": "v002",
+  "frames": [
+    {
+      "animation": "idle",
+      "index": 0,
+      "file": "frames/NPC-S03_idle_right_v002_f01.png",
+      "source": {
+        "id": "NPC-S03_idle_talk_right_v003_idle_component_0",
+        "path": "/home/lululu/zgame/work/npc_series_refine/components/NPC-S03/idle_0.png",
+        "sha256": "31c489672ed71b49ebaac1be068778404cf0979eccb64c926b8be162db7850bf",
+        "cellIndex": 0,
+        "rect": [
+          0,
+          0,
+          345,
+          395
+        ],
+        "anchor": [
+          192,
+          391
+        ],
+        "originalSource": {
+          "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S03/v003/NPC-S03_idle_talk_right_v003.png",
+          "sha256": "95a679c1f2d67c5f2edff653684fcd40bdc408e2cb3cd335736466ce53db410a",
+          "componentId": 5,
+          "ownedComponentIds": [
+            5,
+            8,
+            13,
+            16,
+            18,
+            25,
+            30,
+            36,
+            41,
+            42,
+            45,
+            49,
+            51,
+            59,
+            67,
+            72,
+            73,
+            86,
+            90,
+            93,
+            97,
+            102,
+            103,
+            105,
+            107,
+            109,
+            113,
+            116,
+            118,
+            121,
+            122,
+            123,
+            124,
+            125,
+            127,
+            133,
+            144,
+            155,
+            159,
+            161,
+            168,
+            174,
+            175,
+            183,
+            187,
+            194,
+            195
+          ],
+          "rect": [
+            27,
+            47,
+            345,
+            395
+          ],
+          "alphaConnectivityThreshold": 8,
+          "edgeFringeRadius": 2,
+          "method": "Separate alpha-disconnected complete sprite components plus nearest-owned minor fragments; preserve selected RGBA bytes; zero neighbors only."
+        }
+      },
+      "transform": {
+        "uniformScale": 0.1134020618556701,
+        "scaledCellSize": [
+          39,
+          45
+        ],
+        "scaledVisibleCrop": [
+          1,
+          1,
+          38,
+          44
+        ],
+        "translation": [
+          11,
+          14
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          -1
+        ],
+        "contactAlphaThreshold": 128,
+        "filter": "nearest",
+        "cropAlphaThreshold": 1,
+        "cropNotes": "Transparent padding geometry excludes alpha=1/255 scattered speckles outside retained crop; retained RGBA is not thresholded."
+      }
+    },
+    {
+      "animation": "idle",
+      "index": 1,
+      "file": "frames/NPC-S03_idle_right_v002_f02.png",
+      "source": {
+        "id": "NPC-S03_idle_talk_right_v003_idle_component_1",
+        "path": "/home/lululu/zgame/work/npc_series_refine/components/NPC-S03/idle_1.png",
+        "sha256": "50769435baaf0439c63d2aef090fb56e5fd0738e30a9c42fd2514643198ffbd9",
+        "cellIndex": 0,
+        "rect": [
+          0,
+          0,
+          338,
+          395
+        ],
+        "anchor": [
+          183.5,
+          392
+        ],
+        "originalSource": {
+          "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S03/v003/NPC-S03_idle_talk_right_v003.png",
+          "sha256": "95a679c1f2d67c5f2edff653684fcd40bdc408e2cb3cd335736466ce53db410a",
+          "componentId": 1,
+          "ownedComponentIds": [
+            1,
+            9,
+            19,
+            21,
+            31,
+            43,
+            44,
+            46,
+            48,
+            58,
+            78,
+            81,
+            82,
+            88,
+            95,
+            98,
+            100,
+            101,
+            110,
+            114,
+            115,
+            119,
+            129,
+            130,
+            132,
+            135,
+            141,
+            146,
+            152,
+            156,
+            157,
+            162,
+            163,
+            166,
+            171,
+            172,
+            176,
+            177,
+            180,
+            181,
+            185,
+            188,
+            191
+          ],
+          "rect": [
+            379,
+            46,
+            338,
+            395
+          ],
+          "alphaConnectivityThreshold": 8,
+          "edgeFringeRadius": 2,
+          "method": "Separate alpha-disconnected complete sprite components plus nearest-owned minor fragments; preserve selected RGBA bytes; zero neighbors only."
+        }
+      },
+      "transform": {
+        "uniformScale": 0.1134020618556701,
+        "scaledCellSize": [
+          38,
+          45
+        ],
+        "scaledVisibleCrop": [
+          1,
+          1,
+          37,
+          44
+        ],
+        "translation": [
+          12,
+          14
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          -1
+        ],
+        "contactAlphaThreshold": 128,
+        "filter": "nearest",
+        "cropAlphaThreshold": 1,
+        "cropNotes": "Transparent padding geometry excludes alpha=1/255 scattered speckles outside retained crop; retained RGBA is not thresholded."
+      }
+    },
+    {
+      "animation": "idle",
+      "index": 2,
+      "file": "frames/NPC-S03_idle_right_v002_f03.png",
+      "source": {
+        "id": "NPC-S03_idle_talk_right_v003_idle_component_2",
+        "path": "/home/lululu/zgame/work/npc_series_refine/components/NPC-S03/idle_2.png",
+        "sha256": "8d76045938881cd54b64faf55b48fb60c02c6cc3bbdafdbebb9faa11250a5be7",
+        "cellIndex": 0,
+        "rect": [
+          0,
+          0,
+          340,
+          395
+        ],
+        "anchor": [
+          180.5,
+          392
+        ],
+        "originalSource": {
+          "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S03/v003/NPC-S03_idle_talk_right_v003.png",
+          "sha256": "95a679c1f2d67c5f2edff653684fcd40bdc408e2cb3cd335736466ce53db410a",
+          "componentId": 2,
+          "ownedComponentIds": [
+            2,
+            11,
+            12,
+            14,
+            15,
+            22,
+            23,
+            24,
+            27,
+            28,
+            29,
+            33,
+            37,
+            38,
+            52,
+            55,
+            66,
+            69,
+            74,
+            75,
+            83,
+            99,
+            104,
+            108,
+            117,
+            128,
+            134,
+            139,
+            140,
+            147,
+            164,
+            167,
+            169,
+            170,
+            189,
+            192,
+            196
+          ],
+          "rect": [
+            728,
+            46,
+            340,
+            395
+          ],
+          "alphaConnectivityThreshold": 8,
+          "edgeFringeRadius": 2,
+          "method": "Separate alpha-disconnected complete sprite components plus nearest-owned minor fragments; preserve selected RGBA bytes; zero neighbors only."
+        }
+      },
+      "transform": {
+        "uniformScale": 0.1134020618556701,
+        "scaledCellSize": [
+          39,
+          45
+        ],
+        "scaledVisibleCrop": [
+          1,
+          1,
+          38,
+          44
+        ],
+        "translation": [
+          13,
+          14
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          -1
+        ],
+        "contactAlphaThreshold": 128,
+        "filter": "nearest",
+        "cropAlphaThreshold": 1,
+        "cropNotes": "Transparent padding geometry excludes alpha=1/255 scattered speckles outside retained crop; retained RGBA is not thresholded."
+      }
+    },
+    {
+      "animation": "idle",
+      "index": 3,
+      "file": "frames/NPC-S03_idle_right_v002_f04.png",
+      "source": {
+        "id": "NPC-S03_idle_talk_right_v003_idle_component_3",
+        "path": "/home/lululu/zgame/work/npc_series_refine/components/NPC-S03/idle_3.png",
+        "sha256": "1d1f33db16ee289469e38cefb537bd266ee76f8f64f16b7371fcb9a82689ee76",
+        "cellIndex": 0,
+        "rect": [
+          0,
+          0,
+          338,
+          395
+        ],
+        "anchor": [
+          181,
+          391
+        ],
+        "originalSource": {
+          "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S03/v003/NPC-S03_idle_talk_right_v003.png",
+          "sha256": "95a679c1f2d67c5f2edff653684fcd40bdc408e2cb3cd335736466ce53db410a",
+          "componentId": 3,
+          "ownedComponentIds": [
+            3,
+            6,
+            7,
+            17,
+            20,
+            26,
+            32,
+            34,
+            35,
+            40,
+            47,
+            50,
+            53,
+            54,
+            56,
+            60,
+            61,
+            65,
+            68,
+            70,
+            76,
+            79,
+            89,
+            136,
+            142,
+            145,
+            151,
+            153,
+            154,
+            160,
+            165,
+            179,
+            182,
+            184,
+            186,
+            193,
+            197,
+            198
+          ],
+          "rect": [
+            1073,
+            46,
+            338,
+            395
+          ],
+          "alphaConnectivityThreshold": 8,
+          "edgeFringeRadius": 2,
+          "method": "Separate alpha-disconnected complete sprite components plus nearest-owned minor fragments; preserve selected RGBA bytes; zero neighbors only."
+        }
+      },
+      "transform": {
+        "uniformScale": 0.1134020618556701,
+        "scaledCellSize": [
+          38,
+          45
+        ],
+        "scaledVisibleCrop": [
+          1,
+          1,
+          37,
+          44
+        ],
+        "translation": [
+          12,
+          14
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          -1
+        ],
+        "contactAlphaThreshold": 128,
+        "filter": "nearest",
+        "cropAlphaThreshold": 1,
+        "cropNotes": "Transparent padding geometry excludes alpha=1/255 scattered speckles outside retained crop; retained RGBA is not thresholded."
+      }
+    },
+    {
+      "animation": "idle",
+      "index": 4,
+      "file": "frames/NPC-S03_idle_right_v002_f05.png",
+      "source": {
+        "id": "NPC-S03_idle_talk_right_v003_idle_component_4",
+        "path": "/home/lululu/zgame/work/npc_series_refine/components/NPC-S03/idle_4.png",
+        "sha256": "8f2f37171c463b20407eb88b26342d7ce7d68a21c207816bd2bfa7063c7951f4",
+        "cellIndex": 0,
+        "rect": [
+          0,
+          0,
+          334,
+          395
+        ],
+        "anchor": [
+          181,
+          391
+        ],
+        "originalSource": {
+          "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S03/v003/NPC-S03_idle_talk_right_v003.png",
+          "sha256": "95a679c1f2d67c5f2edff653684fcd40bdc408e2cb3cd335736466ce53db410a",
+          "componentId": 4,
+          "ownedComponentIds": [
+            4,
+            10,
+            39,
+            57,
+            62,
+            63,
+            64,
+            71,
+            77,
+            80,
+            84,
+            85,
+            87,
+            91,
+            92,
+            94,
+            96,
+            106,
+            111,
+            112,
+            120,
+            126,
+            131,
+            137,
+            138,
+            143,
+            148,
+            149,
+            150,
+            158,
+            173,
+            178,
+            190
+          ],
+          "rect": [
+            1414,
+            46,
+            334,
+            395
+          ],
+          "alphaConnectivityThreshold": 8,
+          "edgeFringeRadius": 2,
+          "method": "Separate alpha-disconnected complete sprite components plus nearest-owned minor fragments; preserve selected RGBA bytes; zero neighbors only."
+        }
+      },
+      "transform": {
+        "uniformScale": 0.1134020618556701,
+        "scaledCellSize": [
+          38,
+          45
+        ],
+        "scaledVisibleCrop": [
+          1,
+          1,
+          37,
+          44
+        ],
+        "translation": [
+          12,
+          14
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          -1
+        ],
+        "contactAlphaThreshold": 128,
+        "filter": "nearest",
+        "cropAlphaThreshold": 1,
+        "cropNotes": "Transparent padding geometry excludes alpha=1/255 scattered speckles outside retained crop; retained RGBA is not thresholded."
+      }
+    },
+    {
+      "animation": "idle",
+      "index": 5,
+      "file": "frames/NPC-S03_idle_right_v002_f06.png",
+      "source": {
+        "id": "NPC-S03_idle_talk_right_v003_idle_component_5",
+        "path": "/home/lululu/zgame/work/npc_series_refine/components/NPC-S03/idle_5.png",
+        "sha256": "c0be4a7eb968a3044688f4fe0a2d1e2f5a055c99f7abe4a56d1ba081701c6188",
+        "cellIndex": 0,
+        "rect": [
+          0,
+          0,
+          347,
+          393
+        ],
+        "anchor": [
+          190,
+          389
+        ],
+        "originalSource": {
+          "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S03/v003/NPC-S03_idle_talk_right_v003.png",
+          "sha256": "95a679c1f2d67c5f2edff653684fcd40bdc408e2cb3cd335736466ce53db410a",
+          "componentId": 199,
+          "ownedComponentIds": [
+            199,
+            204,
+            217,
+            219,
+            222,
+            223,
+            224,
+            226,
+            233,
+            243,
+            246,
+            247,
+            269,
+            270,
+            280,
+            283,
+            285,
+            286,
+            295,
+            303,
+            304,
+            307,
+            311,
+            313,
+            319,
+            326,
+            329,
+            331,
+            332,
+            336,
+            343,
+            352,
+            358,
+            359,
+            362,
+            363,
+            372,
+            375,
+            377,
+            381,
+            385,
+            387,
+            393,
+            400,
+            416
+          ],
+          "rect": [
+            30,
+            468,
+            347,
+            393
+          ],
+          "alphaConnectivityThreshold": 8,
+          "edgeFringeRadius": 2,
+          "method": "Separate alpha-disconnected complete sprite components plus nearest-owned minor fragments; preserve selected RGBA bytes; zero neighbors only."
+        }
+      },
+      "transform": {
+        "uniformScale": 0.1134020618556701,
+        "scaledCellSize": [
+          39,
+          45
+        ],
+        "scaledVisibleCrop": [
+          1,
+          1,
+          38,
+          44
+        ],
+        "translation": [
+          11,
+          14
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          -1
+        ],
+        "contactAlphaThreshold": 128,
+        "filter": "nearest",
+        "cropAlphaThreshold": 1,
+        "cropNotes": "Transparent padding geometry excludes alpha=1/255 scattered speckles outside retained crop; retained RGBA is not thresholded."
+      }
+    },
+    {
+      "animation": "walk",
+      "index": 0,
+      "file": "frames/NPC-S03_walk_right_v002_f01.png",
+      "source": {
+        "id": "NPC-S03_walk_right_v003_walk_component_0",
+        "path": "/home/lululu/zgame/work/npc_series_refine/components/NPC-S03/walk_0.png",
+        "sha256": "cc0016a90c0757448452ba05ab30e6debfa54a64ba7a6bcff1572330515d9295",
+        "cellIndex": 0,
+        "rect": [
+          0,
+          0,
+          408,
+          438
+        ],
+        "anchor": [
+          213,
+          433
+        ],
+        "originalSource": {
+          "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S03/v003/NPC-S03_walk_right_v003.png",
+          "sha256": "cac241175ec1235329662011d4c4e95fb096a875698f66ef03108f7de47da8ae",
+          "componentId": 2,
+          "ownedComponentIds": [
+            2,
+            3,
+            4,
+            9,
+            12,
+            13,
+            14,
+            23,
+            24,
+            25,
+            30,
+            33,
+            37,
+            47,
+            61,
+            65,
+            67,
+            70,
+            73,
+            75,
+            77,
+            86,
+            89,
+            91,
+            92,
+            94,
+            95,
+            97,
+            98,
+            99,
+            100,
+            103,
+            104,
+            106,
+            107,
+            109,
+            115,
+            122,
+            126,
+            137,
+            141,
+            144,
+            148,
+            150,
+            151,
+            152,
+            155,
+            159,
+            164,
+            167,
+            168,
+            169,
+            171,
+            172,
+            173,
+            175,
+            176,
+            177,
+            178,
+            179,
+            180,
+            182,
+            183,
+            188,
+            189,
+            193,
+            198,
+            204,
+            207,
+            208,
+            211,
+            218,
+            220,
+            221,
+            227,
+            228,
+            229,
+            231,
+            248,
+            249
+          ],
+          "rect": [
+            37,
+            16,
+            408,
+            438
+          ],
+          "alphaConnectivityThreshold": 8,
+          "edgeFringeRadius": 2,
+          "method": "Separate alpha-disconnected complete sprite components plus nearest-owned minor fragments; preserve selected RGBA bytes; zero neighbors only."
+        }
+      },
+      "transform": {
+        "uniformScale": 0.102803738317757,
+        "scaledCellSize": [
+          42,
+          45
+        ],
+        "scaledVisibleCrop": [
+          0,
+          1,
+          42,
+          44
+        ],
+        "translation": [
+          10,
+          14
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": null,
+        "filter": "nearest",
+        "cropAlphaThreshold": 1,
+        "cropNotes": "Transparent padding geometry excludes alpha=1/255 scattered speckles outside retained crop; retained RGBA is not thresholded."
+      }
+    },
+    {
+      "animation": "walk",
+      "index": 1,
+      "file": "frames/NPC-S03_walk_right_v002_f02.png",
+      "source": {
+        "id": "NPC-S03_walk_right_v003_walk_component_1",
+        "path": "/home/lululu/zgame/work/npc_series_refine/components/NPC-S03/walk_1.png",
+        "sha256": "430011df0422e43d316749f3a652dc2f166772eab852085350dcd5f58d9fb334",
+        "cellIndex": 0,
+        "rect": [
+          0,
+          0,
+          395,
+          429
+        ],
+        "anchor": [
+          216,
+          432
+        ],
+        "originalSource": {
+          "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S03/v003/NPC-S03_walk_right_v003.png",
+          "sha256": "cac241175ec1235329662011d4c4e95fb096a875698f66ef03108f7de47da8ae",
+          "componentId": 5,
+          "ownedComponentIds": [
+            5,
+            15,
+            31,
+            35,
+            42,
+            43,
+            44,
+            48,
+            52,
+            53,
+            55,
+            57,
+            58,
+            62,
+            63,
+            66,
+            69,
+            72,
+            79,
+            102,
+            112,
+            117,
+            120,
+            121,
+            125,
+            127,
+            130,
+            131,
+            133,
+            138,
+            143,
+            145,
+            153,
+            154,
+            157,
+            170,
+            181,
+            187,
+            192,
+            194,
+            196,
+            199,
+            200,
+            201,
+            209,
+            210,
+            214,
+            216,
+            222,
+            223,
+            233,
+            240,
+            242
+          ],
+          "rect": [
+            464,
+            17,
+            395,
+            429
+          ],
+          "alphaConnectivityThreshold": 8,
+          "edgeFringeRadius": 2,
+          "method": "Separate alpha-disconnected complete sprite components plus nearest-owned minor fragments; preserve selected RGBA bytes; zero neighbors only."
+        }
+      },
+      "transform": {
+        "uniformScale": 0.102803738317757,
+        "scaledCellSize": [
+          41,
+          44
+        ],
+        "scaledVisibleCrop": [
+          1,
+          0,
+          40,
+          44
+        ],
+        "translation": [
+          11,
+          14
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": null,
+        "filter": "nearest",
+        "cropAlphaThreshold": 1,
+        "cropNotes": "Transparent padding geometry excludes alpha=1/255 scattered speckles outside retained crop; retained RGBA is not thresholded."
+      }
+    },
+    {
+      "animation": "walk",
+      "index": 2,
+      "file": "frames/NPC-S03_walk_right_v002_f03.png",
+      "source": {
+        "id": "NPC-S03_walk_right_v003_walk_component_2",
+        "path": "/home/lululu/zgame/work/npc_series_refine/components/NPC-S03/walk_2.png",
+        "sha256": "eea4a75aea0763288e186e2d259167a76905ce3cbb603aad12c2027937d93ff8",
+        "cellIndex": 0,
+        "rect": [
+          0,
+          0,
+          389,
+          430
+        ],
+        "anchor": [
+          209,
+          432
+        ],
+        "originalSource": {
+          "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S03/v003/NPC-S03_walk_right_v003.png",
+          "sha256": "cac241175ec1235329662011d4c4e95fb096a875698f66ef03108f7de47da8ae",
+          "componentId": 6,
+          "ownedComponentIds": [
+            6,
+            10,
+            18,
+            19,
+            26,
+            28,
+            38,
+            39,
+            45,
+            49,
+            60,
+            64,
+            74,
+            78,
+            80,
+            82,
+            83,
+            84,
+            85,
+            88,
+            105,
+            113,
+            116,
+            118,
+            128,
+            129,
+            134,
+            135,
+            136,
+            142,
+            146,
+            147,
+            156,
+            158,
+            161,
+            184,
+            202,
+            213,
+            224,
+            226,
+            232,
+            237,
+            238,
+            244,
+            247,
+            250
+          ],
+          "rect": [
+            896,
+            17,
+            389,
+            430
+          ],
+          "alphaConnectivityThreshold": 8,
+          "edgeFringeRadius": 2,
+          "method": "Separate alpha-disconnected complete sprite components plus nearest-owned minor fragments; preserve selected RGBA bytes; zero neighbors only."
+        }
+      },
+      "transform": {
+        "uniformScale": 0.102803738317757,
+        "scaledCellSize": [
+          40,
+          44
+        ],
+        "scaledVisibleCrop": [
+          0,
+          1,
+          40,
+          43
+        ],
+        "translation": [
+          11,
+          15
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": null,
+        "filter": "nearest",
+        "cropAlphaThreshold": 1,
+        "cropNotes": "Transparent padding geometry excludes alpha=1/255 scattered speckles outside retained crop; retained RGBA is not thresholded."
+      }
+    },
+    {
+      "animation": "walk",
+      "index": 3,
+      "file": "frames/NPC-S03_walk_right_v002_f04.png",
+      "source": {
+        "id": "NPC-S03_walk_right_v003_walk_component_3",
+        "path": "/home/lululu/zgame/work/npc_series_refine/components/NPC-S03/walk_3.png",
+        "sha256": "6c1ae1a700e710e17a373c8da548a8c3aa2e831a3cac821c4b00be7d44605ab2",
+        "cellIndex": 0,
+        "rect": [
+          0,
+          0,
+          407,
+          437
+        ],
+        "anchor": [
+          222,
+          434
+        ],
+        "originalSource": {
+          "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S03/v003/NPC-S03_walk_right_v003.png",
+          "sha256": "cac241175ec1235329662011d4c4e95fb096a875698f66ef03108f7de47da8ae",
+          "componentId": 1,
+          "ownedComponentIds": [
+            1,
+            7,
+            8,
+            11,
+            16,
+            17,
+            20,
+            21,
+            22,
+            27,
+            29,
+            32,
+            34,
+            36,
+            40,
+            41,
+            46,
+            50,
+            51,
+            54,
+            56,
+            59,
+            68,
+            71,
+            76,
+            81,
+            87,
+            90,
+            93,
+            96,
+            101,
+            108,
+            110,
+            111,
+            114,
+            119,
+            123,
+            124,
+            132,
+            139,
+            140,
+            149,
+            160,
+            162,
+            163,
+            165,
+            166,
+            174,
+            185,
+            186,
+            190,
+            191,
+            195,
+            197,
+            203,
+            205,
+            206,
+            212,
+            215,
+            217,
+            219,
+            225,
+            230,
+            234,
+            235,
+            236,
+            239,
+            241,
+            243,
+            245,
+            246,
+            251,
+            252,
+            253
+          ],
+          "rect": [
+            1308,
+            15,
+            407,
+            437
+          ],
+          "alphaConnectivityThreshold": 8,
+          "edgeFringeRadius": 2,
+          "method": "Separate alpha-disconnected complete sprite components plus nearest-owned minor fragments; preserve selected RGBA bytes; zero neighbors only."
+        }
+      },
+      "transform": {
+        "uniformScale": 0.102803738317757,
+        "scaledCellSize": [
+          42,
+          45
+        ],
+        "scaledVisibleCrop": [
+          1,
+          0,
+          41,
+          45
+        ],
+        "translation": [
+          10,
+          13
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": null,
+        "filter": "nearest",
+        "cropAlphaThreshold": 1,
+        "cropNotes": "Transparent padding geometry excludes alpha=1/255 scattered speckles outside retained crop; retained RGBA is not thresholded."
+      }
+    },
+    {
+      "animation": "walk",
+      "index": 4,
+      "file": "frames/NPC-S03_walk_right_v002_f05.png",
+      "source": {
+        "id": "NPC-S03_walk_right_v003_walk_component_4",
+        "path": "/home/lululu/zgame/work/npc_series_refine/components/NPC-S03/walk_4.png",
+        "sha256": "896ae56de8db1e1cfc4224a63d4a954fae618a366aaf6adfe231fd8cbc055057",
+        "cellIndex": 0,
+        "rect": [
+          0,
+          0,
+          418,
+          436
+        ],
+        "anchor": [
+          227,
+          432
+        ],
+        "originalSource": {
+          "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S03/v003/NPC-S03_walk_right_v003.png",
+          "sha256": "cac241175ec1235329662011d4c4e95fb096a875698f66ef03108f7de47da8ae",
+          "componentId": 255,
+          "ownedComponentIds": [
+            255,
+            258,
+            264,
+            265,
+            268,
+            274,
+            282,
+            283,
+            287,
+            290,
+            300,
+            310,
+            314,
+            322,
+            328,
+            329,
+            334,
+            339,
+            340,
+            344,
+            348,
+            350,
+            355,
+            362,
+            364,
+            365,
+            368,
+            374,
+            377,
+            378,
+            385,
+            387,
+            391,
+            392,
+            394,
+            396,
+            399,
+            400,
+            404,
+            405,
+            407,
+            410,
+            413,
+            414,
+            421,
+            425,
+            429,
+            430,
+            431,
+            432,
+            434,
+            437,
+            439,
+            443,
+            451,
+            454,
+            459,
+            460,
+            462,
+            464,
+            466,
+            469,
+            475
+          ],
+          "rect": [
+            23,
+            454,
+            418,
+            436
+          ],
+          "alphaConnectivityThreshold": 8,
+          "edgeFringeRadius": 2,
+          "method": "Separate alpha-disconnected complete sprite components plus nearest-owned minor fragments; preserve selected RGBA bytes; zero neighbors only."
+        }
+      },
+      "transform": {
+        "uniformScale": 0.102803738317757,
+        "scaledCellSize": [
+          43,
+          45
+        ],
+        "scaledVisibleCrop": [
+          1,
+          0,
+          42,
+          45
+        ],
+        "translation": [
+          10,
+          13
+        ],
+        "pixelOffset": [
+          0,
+          -1
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": null,
+        "filter": "nearest",
+        "cropAlphaThreshold": 1,
+        "cropNotes": "Transparent padding geometry excludes alpha=1/255 scattered speckles outside retained crop; retained RGBA is not thresholded."
+      }
+    },
+    {
+      "animation": "walk",
+      "index": 5,
+      "file": "frames/NPC-S03_walk_right_v002_f06.png",
+      "source": {
+        "id": "NPC-S03_walk_right_v003_walk_component_5",
+        "path": "/home/lululu/zgame/work/npc_series_refine/components/NPC-S03/walk_5.png",
+        "sha256": "6b85618665c136fa2cb1fea37f461876264a367738e5bea8b20773cc71a633b0",
+        "cellIndex": 0,
+        "rect": [
+          0,
+          0,
+          390,
+          431
+        ],
+        "anchor": [
+          214,
+          432
+        ],
+        "originalSource": {
+          "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S03/v003/NPC-S03_walk_right_v003.png",
+          "sha256": "cac241175ec1235329662011d4c4e95fb096a875698f66ef03108f7de47da8ae",
+          "componentId": 256,
+          "ownedComponentIds": [
+            256,
+            266,
+            273,
+            279,
+            280,
+            284,
+            285,
+            288,
+            291,
+            292,
+            296,
+            302,
+            305,
+            307,
+            316,
+            317,
+            318,
+            320,
+            323,
+            330,
+            338,
+            345,
+            349,
+            351,
+            357,
+            358,
+            359,
+            363,
+            366,
+            369,
+            370,
+            371,
+            375,
+            379,
+            386,
+            401,
+            408,
+            411,
+            415,
+            418,
+            427,
+            435,
+            438,
+            445,
+            446,
+            448,
+            449,
+            452,
+            455,
+            476
+          ],
+          "rect": [
+            466,
+            454,
+            390,
+            431
+          ],
+          "alphaConnectivityThreshold": 8,
+          "edgeFringeRadius": 2,
+          "method": "Separate alpha-disconnected complete sprite components plus nearest-owned minor fragments; preserve selected RGBA bytes; zero neighbors only."
+        }
+      },
+      "transform": {
+        "uniformScale": 0.102803738317757,
+        "scaledCellSize": [
+          40,
+          44
+        ],
+        "scaledVisibleCrop": [
+          1,
+          1,
+          39,
+          43
+        ],
+        "translation": [
+          11,
+          15
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": null,
+        "filter": "nearest",
+        "cropAlphaThreshold": 1,
+        "cropNotes": "Transparent padding geometry excludes alpha=1/255 scattered speckles outside retained crop; retained RGBA is not thresholded."
+      }
+    },
+    {
+      "animation": "walk",
+      "index": 6,
+      "file": "frames/NPC-S03_walk_right_v002_f07.png",
+      "source": {
+        "id": "NPC-S03_walk_right_v003_walk_component_6",
+        "path": "/home/lululu/zgame/work/npc_series_refine/components/NPC-S03/walk_6.png",
+        "sha256": "653c5077d9bfd022bb669f9191f4c704e40c906720bacb1043be93291978266d",
+        "cellIndex": 0,
+        "rect": [
+          0,
+          0,
+          393,
+          427
+        ],
+        "anchor": [
+          210,
+          430
+        ],
+        "originalSource": {
+          "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S03/v003/NPC-S03_walk_right_v003.png",
+          "sha256": "cac241175ec1235329662011d4c4e95fb096a875698f66ef03108f7de47da8ae",
+          "componentId": 259,
+          "ownedComponentIds": [
+            259,
+            267,
+            270,
+            271,
+            277,
+            294,
+            295,
+            297,
+            301,
+            308,
+            311,
+            312,
+            313,
+            315,
+            324,
+            333,
+            335,
+            336,
+            341,
+            346,
+            352,
+            360,
+            376,
+            380,
+            381,
+            383,
+            395,
+            398,
+            403,
+            406,
+            420,
+            423,
+            424,
+            426,
+            444,
+            457,
+            461,
+            463,
+            465,
+            470,
+            471,
+            472,
+            473,
+            474
+          ],
+          "rect": [
+            895,
+            456,
+            393,
+            427
+          ],
+          "alphaConnectivityThreshold": 8,
+          "edgeFringeRadius": 2,
+          "method": "Separate alpha-disconnected complete sprite components plus nearest-owned minor fragments; preserve selected RGBA bytes; zero neighbors only."
+        }
+      },
+      "transform": {
+        "uniformScale": 0.102803738317757,
+        "scaledCellSize": [
+          40,
+          44
+        ],
+        "scaledVisibleCrop": [
+          0,
+          1,
+          40,
+          43
+        ],
+        "translation": [
+          10,
+          15
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": null,
+        "filter": "nearest",
+        "cropAlphaThreshold": 1,
+        "cropNotes": "Transparent padding geometry excludes alpha=1/255 scattered speckles outside retained crop; retained RGBA is not thresholded."
+      }
+    },
+    {
+      "animation": "walk",
+      "index": 7,
+      "file": "frames/NPC-S03_walk_right_v002_f08.png",
+      "source": {
+        "id": "NPC-S03_walk_right_v003_walk_component_7",
+        "path": "/home/lululu/zgame/work/npc_series_refine/components/NPC-S03/walk_7.png",
+        "sha256": "83e4b0e821e766313f1302466da7997ac1d4959aa18b5d49e66674cb6cc2e2b8",
+        "cellIndex": 0,
+        "rect": [
+          0,
+          0,
+          408,
+          436
+        ],
+        "anchor": [
+          225,
+          433
+        ],
+        "originalSource": {
+          "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S03/v003/NPC-S03_walk_right_v003.png",
+          "sha256": "cac241175ec1235329662011d4c4e95fb096a875698f66ef03108f7de47da8ae",
+          "componentId": 254,
+          "ownedComponentIds": [
+            254,
+            257,
+            260,
+            261,
+            262,
+            263,
+            269,
+            272,
+            275,
+            276,
+            278,
+            281,
+            286,
+            289,
+            293,
+            298,
+            299,
+            303,
+            304,
+            306,
+            309,
+            319,
+            321,
+            325,
+            326,
+            327,
+            331,
+            332,
+            337,
+            342,
+            343,
+            347,
+            353,
+            354,
+            356,
+            361,
+            367,
+            372,
+            373,
+            382,
+            384,
+            388,
+            389,
+            390,
+            393,
+            397,
+            402,
+            409,
+            412,
+            416,
+            417,
+            419,
+            422,
+            428,
+            433,
+            436,
+            440,
+            441,
+            442,
+            447,
+            450,
+            453,
+            456,
+            458,
+            467,
+            468,
+            477
+          ],
+          "rect": [
+            1305,
+            453,
+            408,
+            436
+          ],
+          "alphaConnectivityThreshold": 8,
+          "edgeFringeRadius": 2,
+          "method": "Separate alpha-disconnected complete sprite components plus nearest-owned minor fragments; preserve selected RGBA bytes; zero neighbors only."
+        }
+      },
+      "transform": {
+        "uniformScale": 0.102803738317757,
+        "scaledCellSize": [
+          42,
+          45
+        ],
+        "scaledVisibleCrop": [
+          0,
+          0,
+          42,
+          45
+        ],
+        "translation": [
+          9,
+          13
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": null,
+        "filter": "nearest",
+        "cropAlphaThreshold": 1,
+        "cropNotes": "Transparent padding geometry excludes alpha=1/255 scattered speckles outside retained crop; retained RGBA is not thresholded."
+      }
+    },
+    {
+      "animation": "talk",
+      "index": 0,
+      "file": "frames/NPC-S03_talk_right_v002_f01.png",
+      "source": {
+        "id": "NPC-S03_idle_talk_right_v003_talk_component_6",
+        "path": "/home/lululu/zgame/work/npc_series_refine/components/NPC-S03/talk_0.png",
+        "sha256": "39483c99dcb99740129f741db451ad33afe1aa8284e1c02012165d815503922d",
+        "cellIndex": 0,
+        "rect": [
+          0,
+          0,
+          342,
+          393
+        ],
+        "anchor": [
+          185,
+          389
+        ],
+        "originalSource": {
+          "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S03/v003/NPC-S03_idle_talk_right_v003.png",
+          "sha256": "95a679c1f2d67c5f2edff653684fcd40bdc408e2cb3cd335736466ce53db410a",
+          "componentId": 200,
+          "ownedComponentIds": [
+            200,
+            205,
+            221,
+            225,
+            228,
+            231,
+            240,
+            252,
+            265,
+            276,
+            287,
+            291,
+            296,
+            297,
+            305,
+            310,
+            312,
+            324,
+            337,
+            338,
+            341,
+            344,
+            345,
+            347,
+            353,
+            354,
+            361,
+            373,
+            376,
+            380,
+            382,
+            386,
+            388,
+            395,
+            401,
+            405,
+            406,
+            409,
+            417
+          ],
+          "rect": [
+            379,
+            468,
+            342,
+            393
+          ],
+          "alphaConnectivityThreshold": 8,
+          "edgeFringeRadius": 2,
+          "method": "Separate alpha-disconnected complete sprite components plus nearest-owned minor fragments; preserve selected RGBA bytes; zero neighbors only."
+        }
+      },
+      "transform": {
+        "uniformScale": 0.1134020618556701,
+        "scaledCellSize": [
+          39,
+          45
+        ],
+        "scaledVisibleCrop": [
+          1,
+          1,
+          38,
+          44
+        ],
+        "translation": [
+          12,
+          14
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          -1
+        ],
+        "contactAlphaThreshold": 128,
+        "filter": "nearest",
+        "cropAlphaThreshold": 1,
+        "cropNotes": "Transparent padding geometry excludes alpha=1/255 scattered speckles outside retained crop; retained RGBA is not thresholded."
+      }
+    },
+    {
+      "animation": "talk",
+      "index": 1,
+      "file": "frames/NPC-S03_talk_right_v002_f02.png",
+      "source": {
+        "id": "NPC-S03_idle_talk_right_v003_talk_component_7",
+        "path": "/home/lululu/zgame/work/npc_series_refine/components/NPC-S03/talk_1.png",
+        "sha256": "a890bbfa787a7d8b3dc72ea14742bba3ac2b47a4905c6de733343ab624893bc7",
+        "cellIndex": 0,
+        "rect": [
+          0,
+          0,
+          347,
+          393
+        ],
+        "anchor": [
+          185.5,
+          389
+        ],
+        "originalSource": {
+          "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S03/v003/NPC-S03_idle_talk_right_v003.png",
+          "sha256": "95a679c1f2d67c5f2edff653684fcd40bdc408e2cb3cd335736466ce53db410a",
+          "componentId": 201,
+          "ownedComponentIds": [
+            201,
+            206,
+            207,
+            210,
+            213,
+            214,
+            220,
+            230,
+            234,
+            235,
+            237,
+            238,
+            239,
+            241,
+            244,
+            248,
+            251,
+            255,
+            257,
+            258,
+            262,
+            268,
+            273,
+            274,
+            299,
+            302,
+            308,
+            314,
+            315,
+            317,
+            320,
+            323,
+            330,
+            335,
+            360,
+            366,
+            367,
+            368,
+            370,
+            378,
+            379,
+            389,
+            394,
+            396,
+            397,
+            402,
+            403,
+            410,
+            414,
+            418,
+            419
+          ],
+          "rect": [
+            723,
+            468,
+            347,
+            393
+          ],
+          "alphaConnectivityThreshold": 8,
+          "edgeFringeRadius": 2,
+          "method": "Separate alpha-disconnected complete sprite components plus nearest-owned minor fragments; preserve selected RGBA bytes; zero neighbors only."
+        }
+      },
+      "transform": {
+        "uniformScale": 0.1134020618556701,
+        "scaledCellSize": [
+          39,
+          45
+        ],
+        "scaledVisibleCrop": [
+          1,
+          1,
+          38,
+          44
+        ],
+        "translation": [
+          12,
+          14
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          -1
+        ],
+        "contactAlphaThreshold": 128,
+        "filter": "nearest",
+        "cropAlphaThreshold": 1,
+        "cropNotes": "Transparent padding geometry excludes alpha=1/255 scattered speckles outside retained crop; retained RGBA is not thresholded."
+      }
+    },
+    {
+      "animation": "talk",
+      "index": 2,
+      "file": "frames/NPC-S03_talk_right_v002_f03.png",
+      "source": {
+        "id": "NPC-S03_idle_talk_right_v003_talk_component_8",
+        "path": "/home/lululu/zgame/work/npc_series_refine/components/NPC-S03/talk_2.png",
+        "sha256": "d058e63e598e96a35f1ec7c8b62d7d876fa5b5f75d46f58e6e6da5e46750d293",
+        "cellIndex": 0,
+        "rect": [
+          0,
+          0,
+          341,
+          393
+        ],
+        "anchor": [
+          186,
+          389
+        ],
+        "originalSource": {
+          "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S03/v003/NPC-S03_idle_talk_right_v003.png",
+          "sha256": "95a679c1f2d67c5f2edff653684fcd40bdc408e2cb3cd335736466ce53db410a",
+          "componentId": 202,
+          "ownedComponentIds": [
+            202,
+            208,
+            209,
+            211,
+            212,
+            216,
+            218,
+            227,
+            229,
+            245,
+            249,
+            254,
+            256,
+            260,
+            261,
+            263,
+            264,
+            266,
+            271,
+            277,
+            279,
+            281,
+            284,
+            289,
+            321,
+            333,
+            340,
+            348,
+            355,
+            356,
+            364,
+            371,
+            383,
+            390,
+            391,
+            398,
+            407,
+            412,
+            415,
+            420,
+            421
+          ],
+          "rect": [
+            1068,
+            468,
+            341,
+            393
+          ],
+          "alphaConnectivityThreshold": 8,
+          "edgeFringeRadius": 2,
+          "method": "Separate alpha-disconnected complete sprite components plus nearest-owned minor fragments; preserve selected RGBA bytes; zero neighbors only."
+        }
+      },
+      "transform": {
+        "uniformScale": 0.1134020618556701,
+        "scaledCellSize": [
+          39,
+          45
+        ],
+        "scaledVisibleCrop": [
+          1,
+          1,
+          38,
+          44
+        ],
+        "translation": [
+          12,
+          14
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          -1
+        ],
+        "contactAlphaThreshold": 128,
+        "filter": "nearest",
+        "cropAlphaThreshold": 1,
+        "cropNotes": "Transparent padding geometry excludes alpha=1/255 scattered speckles outside retained crop; retained RGBA is not thresholded."
+      }
+    },
+    {
+      "animation": "talk",
+      "index": 3,
+      "file": "frames/NPC-S03_talk_right_v002_f04.png",
+      "source": {
+        "id": "NPC-S03_idle_talk_right_v003_talk_component_9",
+        "path": "/home/lululu/zgame/work/npc_series_refine/components/NPC-S03/talk_3.png",
+        "sha256": "758bfad9ecff9e33057b9f9aaee21ff1abfcb4b41a745f5cad55a1bd89926301",
+        "cellIndex": 0,
+        "rect": [
+          0,
+          0,
+          341,
+          393
+        ],
+        "anchor": [
+          185,
+          389
+        ],
+        "originalSource": {
+          "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S03/v003/NPC-S03_idle_talk_right_v003.png",
+          "sha256": "95a679c1f2d67c5f2edff653684fcd40bdc408e2cb3cd335736466ce53db410a",
+          "componentId": 203,
+          "ownedComponentIds": [
+            203,
+            215,
+            232,
+            236,
+            242,
+            250,
+            253,
+            259,
+            267,
+            272,
+            275,
+            278,
+            282,
+            288,
+            290,
+            292,
+            293,
+            294,
+            298,
+            300,
+            301,
+            306,
+            309,
+            316,
+            318,
+            322,
+            325,
+            327,
+            328,
+            334,
+            339,
+            342,
+            346,
+            349,
+            350,
+            351,
+            357,
+            365,
+            369,
+            374,
+            384,
+            392,
+            399,
+            404,
+            408,
+            411,
+            413,
+            422
+          ],
+          "rect": [
+            1410,
+            468,
+            341,
+            393
+          ],
+          "alphaConnectivityThreshold": 8,
+          "edgeFringeRadius": 2,
+          "method": "Separate alpha-disconnected complete sprite components plus nearest-owned minor fragments; preserve selected RGBA bytes; zero neighbors only."
+        }
+      },
+      "transform": {
+        "uniformScale": 0.1134020618556701,
+        "scaledCellSize": [
+          39,
+          45
+        ],
+        "scaledVisibleCrop": [
+          1,
+          1,
+          37,
+          44
+        ],
+        "translation": [
+          12,
+          14
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          -1
+        ],
+        "contactAlphaThreshold": 128,
+        "filter": "nearest",
+        "cropAlphaThreshold": 1,
+        "cropNotes": "Transparent padding geometry excludes alpha=1/255 scattered speckles outside retained crop; retained RGBA is not thresholded."
+      }
+    }
+  ],
+  "processingConfig": {
+    "assetId": "NPC-S03",
+    "version": "v002",
+    "title": "NPC-S03",
+    "outputDir": "/home/lululu/zgame/work/npc_series_refine/generated/NPC-S03",
+    "target": {
+      "width": 64,
+      "height": 64,
+      "anchor": [
+        32,
+        58
+      ]
+    },
+    "alphaThreshold": 127,
+    "direction": "right",
+    "sources": [
+      {
+        "id": "NPC-S03_idle_talk_right_v003_idle_component_0",
+        "path": "/home/lululu/zgame/work/npc_series_refine/components/NPC-S03/idle_0.png",
+        "columns": 1,
+        "rows": 1,
+        "scale": 0.1134020618556701,
+        "calibration": {
+          "sourceHeightReference": 388,
+          "targetHeight": 44,
+          "method": "fixed uniform scale per source action; no per-frame bbox fitting"
+        },
+        "originalSource": {
+          "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S03/v003/NPC-S03_idle_talk_right_v003.png",
+          "sha256": "95a679c1f2d67c5f2edff653684fcd40bdc408e2cb3cd335736466ce53db410a",
+          "componentId": 5,
+          "ownedComponentIds": [
+            5,
+            8,
+            13,
+            16,
+            18,
+            25,
+            30,
+            36,
+            41,
+            42,
+            45,
+            49,
+            51,
+            59,
+            67,
+            72,
+            73,
+            86,
+            90,
+            93,
+            97,
+            102,
+            103,
+            105,
+            107,
+            109,
+            113,
+            116,
+            118,
+            121,
+            122,
+            123,
+            124,
+            125,
+            127,
+            133,
+            144,
+            155,
+            159,
+            161,
+            168,
+            174,
+            175,
+            183,
+            187,
+            194,
+            195
+          ],
+          "rect": [
+            27,
+            47,
+            345,
+            395
+          ],
+          "alphaConnectivityThreshold": 8,
+          "edgeFringeRadius": 2,
+          "method": "Separate alpha-disconnected complete sprite components plus nearest-owned minor fragments; preserve selected RGBA bytes; zero neighbors only."
+        },
+        "notes": [
+          "Mechanical separation required because neighboring complete sprites have overlapping bounding rectangles. Character pixels retained without repainting or stretching."
+        ]
+      },
+      {
+        "id": "NPC-S03_idle_talk_right_v003_idle_component_1",
+        "path": "/home/lululu/zgame/work/npc_series_refine/components/NPC-S03/idle_1.png",
+        "columns": 1,
+        "rows": 1,
+        "scale": 0.1134020618556701,
+        "calibration": {
+          "sourceHeightReference": 388,
+          "targetHeight": 44,
+          "method": "fixed uniform scale per source action; no per-frame bbox fitting"
+        },
+        "originalSource": {
+          "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S03/v003/NPC-S03_idle_talk_right_v003.png",
+          "sha256": "95a679c1f2d67c5f2edff653684fcd40bdc408e2cb3cd335736466ce53db410a",
+          "componentId": 1,
+          "ownedComponentIds": [
+            1,
+            9,
+            19,
+            21,
+            31,
+            43,
+            44,
+            46,
+            48,
+            58,
+            78,
+            81,
+            82,
+            88,
+            95,
+            98,
+            100,
+            101,
+            110,
+            114,
+            115,
+            119,
+            129,
+            130,
+            132,
+            135,
+            141,
+            146,
+            152,
+            156,
+            157,
+            162,
+            163,
+            166,
+            171,
+            172,
+            176,
+            177,
+            180,
+            181,
+            185,
+            188,
+            191
+          ],
+          "rect": [
+            379,
+            46,
+            338,
+            395
+          ],
+          "alphaConnectivityThreshold": 8,
+          "edgeFringeRadius": 2,
+          "method": "Separate alpha-disconnected complete sprite components plus nearest-owned minor fragments; preserve selected RGBA bytes; zero neighbors only."
+        },
+        "notes": [
+          "Mechanical separation required because neighboring complete sprites have overlapping bounding rectangles. Character pixels retained without repainting or stretching."
+        ]
+      },
+      {
+        "id": "NPC-S03_idle_talk_right_v003_idle_component_2",
+        "path": "/home/lululu/zgame/work/npc_series_refine/components/NPC-S03/idle_2.png",
+        "columns": 1,
+        "rows": 1,
+        "scale": 0.1134020618556701,
+        "calibration": {
+          "sourceHeightReference": 388,
+          "targetHeight": 44,
+          "method": "fixed uniform scale per source action; no per-frame bbox fitting"
+        },
+        "originalSource": {
+          "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S03/v003/NPC-S03_idle_talk_right_v003.png",
+          "sha256": "95a679c1f2d67c5f2edff653684fcd40bdc408e2cb3cd335736466ce53db410a",
+          "componentId": 2,
+          "ownedComponentIds": [
+            2,
+            11,
+            12,
+            14,
+            15,
+            22,
+            23,
+            24,
+            27,
+            28,
+            29,
+            33,
+            37,
+            38,
+            52,
+            55,
+            66,
+            69,
+            74,
+            75,
+            83,
+            99,
+            104,
+            108,
+            117,
+            128,
+            134,
+            139,
+            140,
+            147,
+            164,
+            167,
+            169,
+            170,
+            189,
+            192,
+            196
+          ],
+          "rect": [
+            728,
+            46,
+            340,
+            395
+          ],
+          "alphaConnectivityThreshold": 8,
+          "edgeFringeRadius": 2,
+          "method": "Separate alpha-disconnected complete sprite components plus nearest-owned minor fragments; preserve selected RGBA bytes; zero neighbors only."
+        },
+        "notes": [
+          "Mechanical separation required because neighboring complete sprites have overlapping bounding rectangles. Character pixels retained without repainting or stretching."
+        ]
+      },
+      {
+        "id": "NPC-S03_idle_talk_right_v003_idle_component_3",
+        "path": "/home/lululu/zgame/work/npc_series_refine/components/NPC-S03/idle_3.png",
+        "columns": 1,
+        "rows": 1,
+        "scale": 0.1134020618556701,
+        "calibration": {
+          "sourceHeightReference": 388,
+          "targetHeight": 44,
+          "method": "fixed uniform scale per source action; no per-frame bbox fitting"
+        },
+        "originalSource": {
+          "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S03/v003/NPC-S03_idle_talk_right_v003.png",
+          "sha256": "95a679c1f2d67c5f2edff653684fcd40bdc408e2cb3cd335736466ce53db410a",
+          "componentId": 3,
+          "ownedComponentIds": [
+            3,
+            6,
+            7,
+            17,
+            20,
+            26,
+            32,
+            34,
+            35,
+            40,
+            47,
+            50,
+            53,
+            54,
+            56,
+            60,
+            61,
+            65,
+            68,
+            70,
+            76,
+            79,
+            89,
+            136,
+            142,
+            145,
+            151,
+            153,
+            154,
+            160,
+            165,
+            179,
+            182,
+            184,
+            186,
+            193,
+            197,
+            198
+          ],
+          "rect": [
+            1073,
+            46,
+            338,
+            395
+          ],
+          "alphaConnectivityThreshold": 8,
+          "edgeFringeRadius": 2,
+          "method": "Separate alpha-disconnected complete sprite components plus nearest-owned minor fragments; preserve selected RGBA bytes; zero neighbors only."
+        },
+        "notes": [
+          "Mechanical separation required because neighboring complete sprites have overlapping bounding rectangles. Character pixels retained without repainting or stretching."
+        ]
+      },
+      {
+        "id": "NPC-S03_idle_talk_right_v003_idle_component_4",
+        "path": "/home/lululu/zgame/work/npc_series_refine/components/NPC-S03/idle_4.png",
+        "columns": 1,
+        "rows": 1,
+        "scale": 0.1134020618556701,
+        "calibration": {
+          "sourceHeightReference": 388,
+          "targetHeight": 44,
+          "method": "fixed uniform scale per source action; no per-frame bbox fitting"
+        },
+        "originalSource": {
+          "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S03/v003/NPC-S03_idle_talk_right_v003.png",
+          "sha256": "95a679c1f2d67c5f2edff653684fcd40bdc408e2cb3cd335736466ce53db410a",
+          "componentId": 4,
+          "ownedComponentIds": [
+            4,
+            10,
+            39,
+            57,
+            62,
+            63,
+            64,
+            71,
+            77,
+            80,
+            84,
+            85,
+            87,
+            91,
+            92,
+            94,
+            96,
+            106,
+            111,
+            112,
+            120,
+            126,
+            131,
+            137,
+            138,
+            143,
+            148,
+            149,
+            150,
+            158,
+            173,
+            178,
+            190
+          ],
+          "rect": [
+            1414,
+            46,
+            334,
+            395
+          ],
+          "alphaConnectivityThreshold": 8,
+          "edgeFringeRadius": 2,
+          "method": "Separate alpha-disconnected complete sprite components plus nearest-owned minor fragments; preserve selected RGBA bytes; zero neighbors only."
+        },
+        "notes": [
+          "Mechanical separation required because neighboring complete sprites have overlapping bounding rectangles. Character pixels retained without repainting or stretching."
+        ]
+      },
+      {
+        "id": "NPC-S03_idle_talk_right_v003_idle_component_5",
+        "path": "/home/lululu/zgame/work/npc_series_refine/components/NPC-S03/idle_5.png",
+        "columns": 1,
+        "rows": 1,
+        "scale": 0.1134020618556701,
+        "calibration": {
+          "sourceHeightReference": 388,
+          "targetHeight": 44,
+          "method": "fixed uniform scale per source action; no per-frame bbox fitting"
+        },
+        "originalSource": {
+          "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S03/v003/NPC-S03_idle_talk_right_v003.png",
+          "sha256": "95a679c1f2d67c5f2edff653684fcd40bdc408e2cb3cd335736466ce53db410a",
+          "componentId": 199,
+          "ownedComponentIds": [
+            199,
+            204,
+            217,
+            219,
+            222,
+            223,
+            224,
+            226,
+            233,
+            243,
+            246,
+            247,
+            269,
+            270,
+            280,
+            283,
+            285,
+            286,
+            295,
+            303,
+            304,
+            307,
+            311,
+            313,
+            319,
+            326,
+            329,
+            331,
+            332,
+            336,
+            343,
+            352,
+            358,
+            359,
+            362,
+            363,
+            372,
+            375,
+            377,
+            381,
+            385,
+            387,
+            393,
+            400,
+            416
+          ],
+          "rect": [
+            30,
+            468,
+            347,
+            393
+          ],
+          "alphaConnectivityThreshold": 8,
+          "edgeFringeRadius": 2,
+          "method": "Separate alpha-disconnected complete sprite components plus nearest-owned minor fragments; preserve selected RGBA bytes; zero neighbors only."
+        },
+        "notes": [
+          "Mechanical separation required because neighboring complete sprites have overlapping bounding rectangles. Character pixels retained without repainting or stretching."
+        ]
+      },
+      {
+        "id": "NPC-S03_idle_talk_right_v003_talk_component_6",
+        "path": "/home/lululu/zgame/work/npc_series_refine/components/NPC-S03/talk_0.png",
+        "columns": 1,
+        "rows": 1,
+        "scale": 0.1134020618556701,
+        "calibration": {
+          "sourceHeightReference": 388,
+          "targetHeight": 44,
+          "method": "fixed uniform scale per source action; no per-frame bbox fitting"
+        },
+        "originalSource": {
+          "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S03/v003/NPC-S03_idle_talk_right_v003.png",
+          "sha256": "95a679c1f2d67c5f2edff653684fcd40bdc408e2cb3cd335736466ce53db410a",
+          "componentId": 200,
+          "ownedComponentIds": [
+            200,
+            205,
+            221,
+            225,
+            228,
+            231,
+            240,
+            252,
+            265,
+            276,
+            287,
+            291,
+            296,
+            297,
+            305,
+            310,
+            312,
+            324,
+            337,
+            338,
+            341,
+            344,
+            345,
+            347,
+            353,
+            354,
+            361,
+            373,
+            376,
+            380,
+            382,
+            386,
+            388,
+            395,
+            401,
+            405,
+            406,
+            409,
+            417
+          ],
+          "rect": [
+            379,
+            468,
+            342,
+            393
+          ],
+          "alphaConnectivityThreshold": 8,
+          "edgeFringeRadius": 2,
+          "method": "Separate alpha-disconnected complete sprite components plus nearest-owned minor fragments; preserve selected RGBA bytes; zero neighbors only."
+        },
+        "notes": [
+          "Mechanical separation required because neighboring complete sprites have overlapping bounding rectangles. Character pixels retained without repainting or stretching."
+        ]
+      },
+      {
+        "id": "NPC-S03_idle_talk_right_v003_talk_component_7",
+        "path": "/home/lululu/zgame/work/npc_series_refine/components/NPC-S03/talk_1.png",
+        "columns": 1,
+        "rows": 1,
+        "scale": 0.1134020618556701,
+        "calibration": {
+          "sourceHeightReference": 388,
+          "targetHeight": 44,
+          "method": "fixed uniform scale per source action; no per-frame bbox fitting"
+        },
+        "originalSource": {
+          "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S03/v003/NPC-S03_idle_talk_right_v003.png",
+          "sha256": "95a679c1f2d67c5f2edff653684fcd40bdc408e2cb3cd335736466ce53db410a",
+          "componentId": 201,
+          "ownedComponentIds": [
+            201,
+            206,
+            207,
+            210,
+            213,
+            214,
+            220,
+            230,
+            234,
+            235,
+            237,
+            238,
+            239,
+            241,
+            244,
+            248,
+            251,
+            255,
+            257,
+            258,
+            262,
+            268,
+            273,
+            274,
+            299,
+            302,
+            308,
+            314,
+            315,
+            317,
+            320,
+            323,
+            330,
+            335,
+            360,
+            366,
+            367,
+            368,
+            370,
+            378,
+            379,
+            389,
+            394,
+            396,
+            397,
+            402,
+            403,
+            410,
+            414,
+            418,
+            419
+          ],
+          "rect": [
+            723,
+            468,
+            347,
+            393
+          ],
+          "alphaConnectivityThreshold": 8,
+          "edgeFringeRadius": 2,
+          "method": "Separate alpha-disconnected complete sprite components plus nearest-owned minor fragments; preserve selected RGBA bytes; zero neighbors only."
+        },
+        "notes": [
+          "Mechanical separation required because neighboring complete sprites have overlapping bounding rectangles. Character pixels retained without repainting or stretching."
+        ]
+      },
+      {
+        "id": "NPC-S03_idle_talk_right_v003_talk_component_8",
+        "path": "/home/lululu/zgame/work/npc_series_refine/components/NPC-S03/talk_2.png",
+        "columns": 1,
+        "rows": 1,
+        "scale": 0.1134020618556701,
+        "calibration": {
+          "sourceHeightReference": 388,
+          "targetHeight": 44,
+          "method": "fixed uniform scale per source action; no per-frame bbox fitting"
+        },
+        "originalSource": {
+          "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S03/v003/NPC-S03_idle_talk_right_v003.png",
+          "sha256": "95a679c1f2d67c5f2edff653684fcd40bdc408e2cb3cd335736466ce53db410a",
+          "componentId": 202,
+          "ownedComponentIds": [
+            202,
+            208,
+            209,
+            211,
+            212,
+            216,
+            218,
+            227,
+            229,
+            245,
+            249,
+            254,
+            256,
+            260,
+            261,
+            263,
+            264,
+            266,
+            271,
+            277,
+            279,
+            281,
+            284,
+            289,
+            321,
+            333,
+            340,
+            348,
+            355,
+            356,
+            364,
+            371,
+            383,
+            390,
+            391,
+            398,
+            407,
+            412,
+            415,
+            420,
+            421
+          ],
+          "rect": [
+            1068,
+            468,
+            341,
+            393
+          ],
+          "alphaConnectivityThreshold": 8,
+          "edgeFringeRadius": 2,
+          "method": "Separate alpha-disconnected complete sprite components plus nearest-owned minor fragments; preserve selected RGBA bytes; zero neighbors only."
+        },
+        "notes": [
+          "Mechanical separation required because neighboring complete sprites have overlapping bounding rectangles. Character pixels retained without repainting or stretching."
+        ]
+      },
+      {
+        "id": "NPC-S03_idle_talk_right_v003_talk_component_9",
+        "path": "/home/lululu/zgame/work/npc_series_refine/components/NPC-S03/talk_3.png",
+        "columns": 1,
+        "rows": 1,
+        "scale": 0.1134020618556701,
+        "calibration": {
+          "sourceHeightReference": 388,
+          "targetHeight": 44,
+          "method": "fixed uniform scale per source action; no per-frame bbox fitting"
+        },
+        "originalSource": {
+          "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S03/v003/NPC-S03_idle_talk_right_v003.png",
+          "sha256": "95a679c1f2d67c5f2edff653684fcd40bdc408e2cb3cd335736466ce53db410a",
+          "componentId": 203,
+          "ownedComponentIds": [
+            203,
+            215,
+            232,
+            236,
+            242,
+            250,
+            253,
+            259,
+            267,
+            272,
+            275,
+            278,
+            282,
+            288,
+            290,
+            292,
+            293,
+            294,
+            298,
+            300,
+            301,
+            306,
+            309,
+            316,
+            318,
+            322,
+            325,
+            327,
+            328,
+            334,
+            339,
+            342,
+            346,
+            349,
+            350,
+            351,
+            357,
+            365,
+            369,
+            374,
+            384,
+            392,
+            399,
+            404,
+            408,
+            411,
+            413,
+            422
+          ],
+          "rect": [
+            1410,
+            468,
+            341,
+            393
+          ],
+          "alphaConnectivityThreshold": 8,
+          "edgeFringeRadius": 2,
+          "method": "Separate alpha-disconnected complete sprite components plus nearest-owned minor fragments; preserve selected RGBA bytes; zero neighbors only."
+        },
+        "notes": [
+          "Mechanical separation required because neighboring complete sprites have overlapping bounding rectangles. Character pixels retained without repainting or stretching."
+        ]
+      },
+      {
+        "id": "NPC-S03_walk_right_v003_walk_component_0",
+        "path": "/home/lululu/zgame/work/npc_series_refine/components/NPC-S03/walk_0.png",
+        "columns": 1,
+        "rows": 1,
+        "scale": 0.102803738317757,
+        "calibration": {
+          "sourceHeightReference": 428,
+          "targetHeight": 44,
+          "method": "fixed uniform scale per source action; no per-frame bbox fitting"
+        },
+        "originalSource": {
+          "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S03/v003/NPC-S03_walk_right_v003.png",
+          "sha256": "cac241175ec1235329662011d4c4e95fb096a875698f66ef03108f7de47da8ae",
+          "componentId": 2,
+          "ownedComponentIds": [
+            2,
+            3,
+            4,
+            9,
+            12,
+            13,
+            14,
+            23,
+            24,
+            25,
+            30,
+            33,
+            37,
+            47,
+            61,
+            65,
+            67,
+            70,
+            73,
+            75,
+            77,
+            86,
+            89,
+            91,
+            92,
+            94,
+            95,
+            97,
+            98,
+            99,
+            100,
+            103,
+            104,
+            106,
+            107,
+            109,
+            115,
+            122,
+            126,
+            137,
+            141,
+            144,
+            148,
+            150,
+            151,
+            152,
+            155,
+            159,
+            164,
+            167,
+            168,
+            169,
+            171,
+            172,
+            173,
+            175,
+            176,
+            177,
+            178,
+            179,
+            180,
+            182,
+            183,
+            188,
+            189,
+            193,
+            198,
+            204,
+            207,
+            208,
+            211,
+            218,
+            220,
+            221,
+            227,
+            228,
+            229,
+            231,
+            248,
+            249
+          ],
+          "rect": [
+            37,
+            16,
+            408,
+            438
+          ],
+          "alphaConnectivityThreshold": 8,
+          "edgeFringeRadius": 2,
+          "method": "Separate alpha-disconnected complete sprite components plus nearest-owned minor fragments; preserve selected RGBA bytes; zero neighbors only."
+        },
+        "notes": [
+          "Mechanical separation required because neighboring complete sprites have overlapping bounding rectangles. Character pixels retained without repainting or stretching."
+        ]
+      },
+      {
+        "id": "NPC-S03_walk_right_v003_walk_component_1",
+        "path": "/home/lululu/zgame/work/npc_series_refine/components/NPC-S03/walk_1.png",
+        "columns": 1,
+        "rows": 1,
+        "scale": 0.102803738317757,
+        "calibration": {
+          "sourceHeightReference": 428,
+          "targetHeight": 44,
+          "method": "fixed uniform scale per source action; no per-frame bbox fitting"
+        },
+        "originalSource": {
+          "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S03/v003/NPC-S03_walk_right_v003.png",
+          "sha256": "cac241175ec1235329662011d4c4e95fb096a875698f66ef03108f7de47da8ae",
+          "componentId": 5,
+          "ownedComponentIds": [
+            5,
+            15,
+            31,
+            35,
+            42,
+            43,
+            44,
+            48,
+            52,
+            53,
+            55,
+            57,
+            58,
+            62,
+            63,
+            66,
+            69,
+            72,
+            79,
+            102,
+            112,
+            117,
+            120,
+            121,
+            125,
+            127,
+            130,
+            131,
+            133,
+            138,
+            143,
+            145,
+            153,
+            154,
+            157,
+            170,
+            181,
+            187,
+            192,
+            194,
+            196,
+            199,
+            200,
+            201,
+            209,
+            210,
+            214,
+            216,
+            222,
+            223,
+            233,
+            240,
+            242
+          ],
+          "rect": [
+            464,
+            17,
+            395,
+            429
+          ],
+          "alphaConnectivityThreshold": 8,
+          "edgeFringeRadius": 2,
+          "method": "Separate alpha-disconnected complete sprite components plus nearest-owned minor fragments; preserve selected RGBA bytes; zero neighbors only."
+        },
+        "notes": [
+          "Mechanical separation required because neighboring complete sprites have overlapping bounding rectangles. Character pixels retained without repainting or stretching."
+        ]
+      },
+      {
+        "id": "NPC-S03_walk_right_v003_walk_component_2",
+        "path": "/home/lululu/zgame/work/npc_series_refine/components/NPC-S03/walk_2.png",
+        "columns": 1,
+        "rows": 1,
+        "scale": 0.102803738317757,
+        "calibration": {
+          "sourceHeightReference": 428,
+          "targetHeight": 44,
+          "method": "fixed uniform scale per source action; no per-frame bbox fitting"
+        },
+        "originalSource": {
+          "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S03/v003/NPC-S03_walk_right_v003.png",
+          "sha256": "cac241175ec1235329662011d4c4e95fb096a875698f66ef03108f7de47da8ae",
+          "componentId": 6,
+          "ownedComponentIds": [
+            6,
+            10,
+            18,
+            19,
+            26,
+            28,
+            38,
+            39,
+            45,
+            49,
+            60,
+            64,
+            74,
+            78,
+            80,
+            82,
+            83,
+            84,
+            85,
+            88,
+            105,
+            113,
+            116,
+            118,
+            128,
+            129,
+            134,
+            135,
+            136,
+            142,
+            146,
+            147,
+            156,
+            158,
+            161,
+            184,
+            202,
+            213,
+            224,
+            226,
+            232,
+            237,
+            238,
+            244,
+            247,
+            250
+          ],
+          "rect": [
+            896,
+            17,
+            389,
+            430
+          ],
+          "alphaConnectivityThreshold": 8,
+          "edgeFringeRadius": 2,
+          "method": "Separate alpha-disconnected complete sprite components plus nearest-owned minor fragments; preserve selected RGBA bytes; zero neighbors only."
+        },
+        "notes": [
+          "Mechanical separation required because neighboring complete sprites have overlapping bounding rectangles. Character pixels retained without repainting or stretching."
+        ]
+      },
+      {
+        "id": "NPC-S03_walk_right_v003_walk_component_3",
+        "path": "/home/lululu/zgame/work/npc_series_refine/components/NPC-S03/walk_3.png",
+        "columns": 1,
+        "rows": 1,
+        "scale": 0.102803738317757,
+        "calibration": {
+          "sourceHeightReference": 428,
+          "targetHeight": 44,
+          "method": "fixed uniform scale per source action; no per-frame bbox fitting"
+        },
+        "originalSource": {
+          "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S03/v003/NPC-S03_walk_right_v003.png",
+          "sha256": "cac241175ec1235329662011d4c4e95fb096a875698f66ef03108f7de47da8ae",
+          "componentId": 1,
+          "ownedComponentIds": [
+            1,
+            7,
+            8,
+            11,
+            16,
+            17,
+            20,
+            21,
+            22,
+            27,
+            29,
+            32,
+            34,
+            36,
+            40,
+            41,
+            46,
+            50,
+            51,
+            54,
+            56,
+            59,
+            68,
+            71,
+            76,
+            81,
+            87,
+            90,
+            93,
+            96,
+            101,
+            108,
+            110,
+            111,
+            114,
+            119,
+            123,
+            124,
+            132,
+            139,
+            140,
+            149,
+            160,
+            162,
+            163,
+            165,
+            166,
+            174,
+            185,
+            186,
+            190,
+            191,
+            195,
+            197,
+            203,
+            205,
+            206,
+            212,
+            215,
+            217,
+            219,
+            225,
+            230,
+            234,
+            235,
+            236,
+            239,
+            241,
+            243,
+            245,
+            246,
+            251,
+            252,
+            253
+          ],
+          "rect": [
+            1308,
+            15,
+            407,
+            437
+          ],
+          "alphaConnectivityThreshold": 8,
+          "edgeFringeRadius": 2,
+          "method": "Separate alpha-disconnected complete sprite components plus nearest-owned minor fragments; preserve selected RGBA bytes; zero neighbors only."
+        },
+        "notes": [
+          "Mechanical separation required because neighboring complete sprites have overlapping bounding rectangles. Character pixels retained without repainting or stretching."
+        ]
+      },
+      {
+        "id": "NPC-S03_walk_right_v003_walk_component_4",
+        "path": "/home/lululu/zgame/work/npc_series_refine/components/NPC-S03/walk_4.png",
+        "columns": 1,
+        "rows": 1,
+        "scale": 0.102803738317757,
+        "calibration": {
+          "sourceHeightReference": 428,
+          "targetHeight": 44,
+          "method": "fixed uniform scale per source action; no per-frame bbox fitting"
+        },
+        "originalSource": {
+          "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S03/v003/NPC-S03_walk_right_v003.png",
+          "sha256": "cac241175ec1235329662011d4c4e95fb096a875698f66ef03108f7de47da8ae",
+          "componentId": 255,
+          "ownedComponentIds": [
+            255,
+            258,
+            264,
+            265,
+            268,
+            274,
+            282,
+            283,
+            287,
+            290,
+            300,
+            310,
+            314,
+            322,
+            328,
+            329,
+            334,
+            339,
+            340,
+            344,
+            348,
+            350,
+            355,
+            362,
+            364,
+            365,
+            368,
+            374,
+            377,
+            378,
+            385,
+            387,
+            391,
+            392,
+            394,
+            396,
+            399,
+            400,
+            404,
+            405,
+            407,
+            410,
+            413,
+            414,
+            421,
+            425,
+            429,
+            430,
+            431,
+            432,
+            434,
+            437,
+            439,
+            443,
+            451,
+            454,
+            459,
+            460,
+            462,
+            464,
+            466,
+            469,
+            475
+          ],
+          "rect": [
+            23,
+            454,
+            418,
+            436
+          ],
+          "alphaConnectivityThreshold": 8,
+          "edgeFringeRadius": 2,
+          "method": "Separate alpha-disconnected complete sprite components plus nearest-owned minor fragments; preserve selected RGBA bytes; zero neighbors only."
+        },
+        "notes": [
+          "Mechanical separation required because neighboring complete sprites have overlapping bounding rectangles. Character pixels retained without repainting or stretching."
+        ]
+      },
+      {
+        "id": "NPC-S03_walk_right_v003_walk_component_5",
+        "path": "/home/lululu/zgame/work/npc_series_refine/components/NPC-S03/walk_5.png",
+        "columns": 1,
+        "rows": 1,
+        "scale": 0.102803738317757,
+        "calibration": {
+          "sourceHeightReference": 428,
+          "targetHeight": 44,
+          "method": "fixed uniform scale per source action; no per-frame bbox fitting"
+        },
+        "originalSource": {
+          "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S03/v003/NPC-S03_walk_right_v003.png",
+          "sha256": "cac241175ec1235329662011d4c4e95fb096a875698f66ef03108f7de47da8ae",
+          "componentId": 256,
+          "ownedComponentIds": [
+            256,
+            266,
+            273,
+            279,
+            280,
+            284,
+            285,
+            288,
+            291,
+            292,
+            296,
+            302,
+            305,
+            307,
+            316,
+            317,
+            318,
+            320,
+            323,
+            330,
+            338,
+            345,
+            349,
+            351,
+            357,
+            358,
+            359,
+            363,
+            366,
+            369,
+            370,
+            371,
+            375,
+            379,
+            386,
+            401,
+            408,
+            411,
+            415,
+            418,
+            427,
+            435,
+            438,
+            445,
+            446,
+            448,
+            449,
+            452,
+            455,
+            476
+          ],
+          "rect": [
+            466,
+            454,
+            390,
+            431
+          ],
+          "alphaConnectivityThreshold": 8,
+          "edgeFringeRadius": 2,
+          "method": "Separate alpha-disconnected complete sprite components plus nearest-owned minor fragments; preserve selected RGBA bytes; zero neighbors only."
+        },
+        "notes": [
+          "Mechanical separation required because neighboring complete sprites have overlapping bounding rectangles. Character pixels retained without repainting or stretching."
+        ]
+      },
+      {
+        "id": "NPC-S03_walk_right_v003_walk_component_6",
+        "path": "/home/lululu/zgame/work/npc_series_refine/components/NPC-S03/walk_6.png",
+        "columns": 1,
+        "rows": 1,
+        "scale": 0.102803738317757,
+        "calibration": {
+          "sourceHeightReference": 428,
+          "targetHeight": 44,
+          "method": "fixed uniform scale per source action; no per-frame bbox fitting"
+        },
+        "originalSource": {
+          "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S03/v003/NPC-S03_walk_right_v003.png",
+          "sha256": "cac241175ec1235329662011d4c4e95fb096a875698f66ef03108f7de47da8ae",
+          "componentId": 259,
+          "ownedComponentIds": [
+            259,
+            267,
+            270,
+            271,
+            277,
+            294,
+            295,
+            297,
+            301,
+            308,
+            311,
+            312,
+            313,
+            315,
+            324,
+            333,
+            335,
+            336,
+            341,
+            346,
+            352,
+            360,
+            376,
+            380,
+            381,
+            383,
+            395,
+            398,
+            403,
+            406,
+            420,
+            423,
+            424,
+            426,
+            444,
+            457,
+            461,
+            463,
+            465,
+            470,
+            471,
+            472,
+            473,
+            474
+          ],
+          "rect": [
+            895,
+            456,
+            393,
+            427
+          ],
+          "alphaConnectivityThreshold": 8,
+          "edgeFringeRadius": 2,
+          "method": "Separate alpha-disconnected complete sprite components plus nearest-owned minor fragments; preserve selected RGBA bytes; zero neighbors only."
+        },
+        "notes": [
+          "Mechanical separation required because neighboring complete sprites have overlapping bounding rectangles. Character pixels retained without repainting or stretching."
+        ]
+      },
+      {
+        "id": "NPC-S03_walk_right_v003_walk_component_7",
+        "path": "/home/lululu/zgame/work/npc_series_refine/components/NPC-S03/walk_7.png",
+        "columns": 1,
+        "rows": 1,
+        "scale": 0.102803738317757,
+        "calibration": {
+          "sourceHeightReference": 428,
+          "targetHeight": 44,
+          "method": "fixed uniform scale per source action; no per-frame bbox fitting"
+        },
+        "originalSource": {
+          "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S03/v003/NPC-S03_walk_right_v003.png",
+          "sha256": "cac241175ec1235329662011d4c4e95fb096a875698f66ef03108f7de47da8ae",
+          "componentId": 254,
+          "ownedComponentIds": [
+            254,
+            257,
+            260,
+            261,
+            262,
+            263,
+            269,
+            272,
+            275,
+            276,
+            278,
+            281,
+            286,
+            289,
+            293,
+            298,
+            299,
+            303,
+            304,
+            306,
+            309,
+            319,
+            321,
+            325,
+            326,
+            327,
+            331,
+            332,
+            337,
+            342,
+            343,
+            347,
+            353,
+            354,
+            356,
+            361,
+            367,
+            372,
+            373,
+            382,
+            384,
+            388,
+            389,
+            390,
+            393,
+            397,
+            402,
+            409,
+            412,
+            416,
+            417,
+            419,
+            422,
+            428,
+            433,
+            436,
+            440,
+            441,
+            442,
+            447,
+            450,
+            453,
+            456,
+            458,
+            467,
+            468,
+            477
+          ],
+          "rect": [
+            1305,
+            453,
+            408,
+            436
+          ],
+          "alphaConnectivityThreshold": 8,
+          "edgeFringeRadius": 2,
+          "method": "Separate alpha-disconnected complete sprite components plus nearest-owned minor fragments; preserve selected RGBA bytes; zero neighbors only."
+        },
+        "notes": [
+          "Mechanical separation required because neighboring complete sprites have overlapping bounding rectangles. Character pixels retained without repainting or stretching."
+        ]
+      }
+    ],
+    "animations": [
+      {
+        "name": "idle",
+        "label": "待机",
+        "fps": 6,
+        "loop": true,
+        "snapContact": true,
+        "anchorMode": "ground",
+        "frames": [
+          {
+            "source": "NPC-S03_idle_talk_right_v003_idle_component_0",
+            "index": 0,
+            "anchor": [
+              192,
+              391
+            ]
+          },
+          {
+            "source": "NPC-S03_idle_talk_right_v003_idle_component_1",
+            "index": 0,
+            "anchor": [
+              183.5,
+              392
+            ]
+          },
+          {
+            "source": "NPC-S03_idle_talk_right_v003_idle_component_2",
+            "index": 0,
+            "anchor": [
+              180.5,
+              392
+            ]
+          },
+          {
+            "source": "NPC-S03_idle_talk_right_v003_idle_component_3",
+            "index": 0,
+            "anchor": [
+              181,
+              391
+            ]
+          },
+          {
+            "source": "NPC-S03_idle_talk_right_v003_idle_component_4",
+            "index": 0,
+            "anchor": [
+              181,
+              391
+            ]
+          },
+          {
+            "source": "NPC-S03_idle_talk_right_v003_idle_component_5",
+            "index": 0,
+            "anchor": [
+              190,
+              389
+            ]
+          }
+        ]
+      },
+      {
+        "name": "talk",
+        "label": "交谈",
+        "fps": 8,
+        "loop": false,
+        "snapContact": true,
+        "anchorMode": "ground",
+        "frames": [
+          {
+            "source": "NPC-S03_idle_talk_right_v003_talk_component_6",
+            "index": 0,
+            "anchor": [
+              185,
+              389
+            ]
+          },
+          {
+            "source": "NPC-S03_idle_talk_right_v003_talk_component_7",
+            "index": 0,
+            "anchor": [
+              185.5,
+              389
+            ]
+          },
+          {
+            "source": "NPC-S03_idle_talk_right_v003_talk_component_8",
+            "index": 0,
+            "anchor": [
+              186,
+              389
+            ]
+          },
+          {
+            "source": "NPC-S03_idle_talk_right_v003_talk_component_9",
+            "index": 0,
+            "anchor": [
+              185,
+              389
+            ]
+          }
+        ]
+      },
+      {
+        "name": "walk",
+        "label": "行走",
+        "fps": 8,
+        "loop": true,
+        "snapContact": false,
+        "anchorMode": "world-ground/pelvis",
+        "frames": [
+          {
+            "source": "NPC-S03_walk_right_v003_walk_component_0",
+            "index": 0,
+            "anchor": [
+              213,
+              433
+            ]
+          },
+          {
+            "source": "NPC-S03_walk_right_v003_walk_component_1",
+            "index": 0,
+            "anchor": [
+              216,
+              432
+            ]
+          },
+          {
+            "source": "NPC-S03_walk_right_v003_walk_component_2",
+            "index": 0,
+            "anchor": [
+              209,
+              432
+            ]
+          },
+          {
+            "source": "NPC-S03_walk_right_v003_walk_component_3",
+            "index": 0,
+            "anchor": [
+              222,
+              434
+            ]
+          },
+          {
+            "source": "NPC-S03_walk_right_v003_walk_component_4",
+            "index": 0,
+            "anchor": [
+              227,
+              432
+            ],
+            "pixelOffset": [
+              0,
+              -1
+            ],
+            "contactCalibration": "Manual integer correction of source ground row after opaque-bottom check; preserves pose/stride and avoids 1px ground penetration."
+          },
+          {
+            "source": "NPC-S03_walk_right_v003_walk_component_5",
+            "index": 0,
+            "anchor": [
+              214,
+              432
+            ]
+          },
+          {
+            "source": "NPC-S03_walk_right_v003_walk_component_6",
+            "index": 0,
+            "anchor": [
+              210,
+              430
+            ]
+          },
+          {
+            "source": "NPC-S03_walk_right_v003_walk_component_7",
+            "index": 0,
+            "anchor": [
+              225,
+              433
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "generatedSourceManifest": {
+    "assetId": "NPC-S03",
+    "version": "v002",
+    "direction": "right",
+    "title": "NPC-S03",
+    "coordinateSystem": "top-left origin, pixels; root is animation.anchor; no per-frame scale normalization",
+    "sourceCalibrations": [
+      {
+        "id": "NPC-S03_idle_talk_right_v003_idle_component_0",
+        "path": "/home/lululu/zgame/work/npc_series_refine/components/NPC-S03/idle_0.png",
+        "calibration": {
+          "sourceHeightReference": 388,
+          "targetHeight": 44,
+          "method": "fixed uniform scale per source action; no per-frame bbox fitting"
+        },
+        "notes": [
+          "Mechanical separation required because neighboring complete sprites have overlapping bounding rectangles. Character pixels retained without repainting or stretching."
+        ]
+      },
+      {
+        "id": "NPC-S03_idle_talk_right_v003_idle_component_1",
+        "path": "/home/lululu/zgame/work/npc_series_refine/components/NPC-S03/idle_1.png",
+        "calibration": {
+          "sourceHeightReference": 388,
+          "targetHeight": 44,
+          "method": "fixed uniform scale per source action; no per-frame bbox fitting"
+        },
+        "notes": [
+          "Mechanical separation required because neighboring complete sprites have overlapping bounding rectangles. Character pixels retained without repainting or stretching."
+        ]
+      },
+      {
+        "id": "NPC-S03_idle_talk_right_v003_idle_component_2",
+        "path": "/home/lululu/zgame/work/npc_series_refine/components/NPC-S03/idle_2.png",
+        "calibration": {
+          "sourceHeightReference": 388,
+          "targetHeight": 44,
+          "method": "fixed uniform scale per source action; no per-frame bbox fitting"
+        },
+        "notes": [
+          "Mechanical separation required because neighboring complete sprites have overlapping bounding rectangles. Character pixels retained without repainting or stretching."
+        ]
+      },
+      {
+        "id": "NPC-S03_idle_talk_right_v003_idle_component_3",
+        "path": "/home/lululu/zgame/work/npc_series_refine/components/NPC-S03/idle_3.png",
+        "calibration": {
+          "sourceHeightReference": 388,
+          "targetHeight": 44,
+          "method": "fixed uniform scale per source action; no per-frame bbox fitting"
+        },
+        "notes": [
+          "Mechanical separation required because neighboring complete sprites have overlapping bounding rectangles. Character pixels retained without repainting or stretching."
+        ]
+      },
+      {
+        "id": "NPC-S03_idle_talk_right_v003_idle_component_4",
+        "path": "/home/lululu/zgame/work/npc_series_refine/components/NPC-S03/idle_4.png",
+        "calibration": {
+          "sourceHeightReference": 388,
+          "targetHeight": 44,
+          "method": "fixed uniform scale per source action; no per-frame bbox fitting"
+        },
+        "notes": [
+          "Mechanical separation required because neighboring complete sprites have overlapping bounding rectangles. Character pixels retained without repainting or stretching."
+        ]
+      },
+      {
+        "id": "NPC-S03_idle_talk_right_v003_idle_component_5",
+        "path": "/home/lululu/zgame/work/npc_series_refine/components/NPC-S03/idle_5.png",
+        "calibration": {
+          "sourceHeightReference": 388,
+          "targetHeight": 44,
+          "method": "fixed uniform scale per source action; no per-frame bbox fitting"
+        },
+        "notes": [
+          "Mechanical separation required because neighboring complete sprites have overlapping bounding rectangles. Character pixels retained without repainting or stretching."
+        ]
+      },
+      {
+        "id": "NPC-S03_idle_talk_right_v003_talk_component_6",
+        "path": "/home/lululu/zgame/work/npc_series_refine/components/NPC-S03/talk_0.png",
+        "calibration": {
+          "sourceHeightReference": 388,
+          "targetHeight": 44,
+          "method": "fixed uniform scale per source action; no per-frame bbox fitting"
+        },
+        "notes": [
+          "Mechanical separation required because neighboring complete sprites have overlapping bounding rectangles. Character pixels retained without repainting or stretching."
+        ]
+      },
+      {
+        "id": "NPC-S03_idle_talk_right_v003_talk_component_7",
+        "path": "/home/lululu/zgame/work/npc_series_refine/components/NPC-S03/talk_1.png",
+        "calibration": {
+          "sourceHeightReference": 388,
+          "targetHeight": 44,
+          "method": "fixed uniform scale per source action; no per-frame bbox fitting"
+        },
+        "notes": [
+          "Mechanical separation required because neighboring complete sprites have overlapping bounding rectangles. Character pixels retained without repainting or stretching."
+        ]
+      },
+      {
+        "id": "NPC-S03_idle_talk_right_v003_talk_component_8",
+        "path": "/home/lululu/zgame/work/npc_series_refine/components/NPC-S03/talk_2.png",
+        "calibration": {
+          "sourceHeightReference": 388,
+          "targetHeight": 44,
+          "method": "fixed uniform scale per source action; no per-frame bbox fitting"
+        },
+        "notes": [
+          "Mechanical separation required because neighboring complete sprites have overlapping bounding rectangles. Character pixels retained without repainting or stretching."
+        ]
+      },
+      {
+        "id": "NPC-S03_idle_talk_right_v003_talk_component_9",
+        "path": "/home/lululu/zgame/work/npc_series_refine/components/NPC-S03/talk_3.png",
+        "calibration": {
+          "sourceHeightReference": 388,
+          "targetHeight": 44,
+          "method": "fixed uniform scale per source action; no per-frame bbox fitting"
+        },
+        "notes": [
+          "Mechanical separation required because neighboring complete sprites have overlapping bounding rectangles. Character pixels retained without repainting or stretching."
+        ]
+      },
+      {
+        "id": "NPC-S03_walk_right_v003_walk_component_0",
+        "path": "/home/lululu/zgame/work/npc_series_refine/components/NPC-S03/walk_0.png",
+        "calibration": {
+          "sourceHeightReference": 428,
+          "targetHeight": 44,
+          "method": "fixed uniform scale per source action; no per-frame bbox fitting"
+        },
+        "notes": [
+          "Mechanical separation required because neighboring complete sprites have overlapping bounding rectangles. Character pixels retained without repainting or stretching."
+        ]
+      },
+      {
+        "id": "NPC-S03_walk_right_v003_walk_component_1",
+        "path": "/home/lululu/zgame/work/npc_series_refine/components/NPC-S03/walk_1.png",
+        "calibration": {
+          "sourceHeightReference": 428,
+          "targetHeight": 44,
+          "method": "fixed uniform scale per source action; no per-frame bbox fitting"
+        },
+        "notes": [
+          "Mechanical separation required because neighboring complete sprites have overlapping bounding rectangles. Character pixels retained without repainting or stretching."
+        ]
+      },
+      {
+        "id": "NPC-S03_walk_right_v003_walk_component_2",
+        "path": "/home/lululu/zgame/work/npc_series_refine/components/NPC-S03/walk_2.png",
+        "calibration": {
+          "sourceHeightReference": 428,
+          "targetHeight": 44,
+          "method": "fixed uniform scale per source action; no per-frame bbox fitting"
+        },
+        "notes": [
+          "Mechanical separation required because neighboring complete sprites have overlapping bounding rectangles. Character pixels retained without repainting or stretching."
+        ]
+      },
+      {
+        "id": "NPC-S03_walk_right_v003_walk_component_3",
+        "path": "/home/lululu/zgame/work/npc_series_refine/components/NPC-S03/walk_3.png",
+        "calibration": {
+          "sourceHeightReference": 428,
+          "targetHeight": 44,
+          "method": "fixed uniform scale per source action; no per-frame bbox fitting"
+        },
+        "notes": [
+          "Mechanical separation required because neighboring complete sprites have overlapping bounding rectangles. Character pixels retained without repainting or stretching."
+        ]
+      },
+      {
+        "id": "NPC-S03_walk_right_v003_walk_component_4",
+        "path": "/home/lululu/zgame/work/npc_series_refine/components/NPC-S03/walk_4.png",
+        "calibration": {
+          "sourceHeightReference": 428,
+          "targetHeight": 44,
+          "method": "fixed uniform scale per source action; no per-frame bbox fitting"
+        },
+        "notes": [
+          "Mechanical separation required because neighboring complete sprites have overlapping bounding rectangles. Character pixels retained without repainting or stretching."
+        ]
+      },
+      {
+        "id": "NPC-S03_walk_right_v003_walk_component_5",
+        "path": "/home/lululu/zgame/work/npc_series_refine/components/NPC-S03/walk_5.png",
+        "calibration": {
+          "sourceHeightReference": 428,
+          "targetHeight": 44,
+          "method": "fixed uniform scale per source action; no per-frame bbox fitting"
+        },
+        "notes": [
+          "Mechanical separation required because neighboring complete sprites have overlapping bounding rectangles. Character pixels retained without repainting or stretching."
+        ]
+      },
+      {
+        "id": "NPC-S03_walk_right_v003_walk_component_6",
+        "path": "/home/lululu/zgame/work/npc_series_refine/components/NPC-S03/walk_6.png",
+        "calibration": {
+          "sourceHeightReference": 428,
+          "targetHeight": 44,
+          "method": "fixed uniform scale per source action; no per-frame bbox fitting"
+        },
+        "notes": [
+          "Mechanical separation required because neighboring complete sprites have overlapping bounding rectangles. Character pixels retained without repainting or stretching."
+        ]
+      },
+      {
+        "id": "NPC-S03_walk_right_v003_walk_component_7",
+        "path": "/home/lululu/zgame/work/npc_series_refine/components/NPC-S03/walk_7.png",
+        "calibration": {
+          "sourceHeightReference": 428,
+          "targetHeight": 44,
+          "method": "fixed uniform scale per source action; no per-frame bbox fitting"
+        },
+        "notes": [
+          "Mechanical separation required because neighboring complete sprites have overlapping bounding rectangles. Character pixels retained without repainting or stretching."
+        ]
+      }
+    ],
+    "sourceScales": {
+      "NPC-S03_idle_talk_right_v003_idle_component_0": 0.1134020618556701,
+      "NPC-S03_idle_talk_right_v003_idle_component_1": 0.1134020618556701,
+      "NPC-S03_idle_talk_right_v003_idle_component_2": 0.1134020618556701,
+      "NPC-S03_idle_talk_right_v003_idle_component_3": 0.1134020618556701,
+      "NPC-S03_idle_talk_right_v003_idle_component_4": 0.1134020618556701,
+      "NPC-S03_idle_talk_right_v003_idle_component_5": 0.1134020618556701,
+      "NPC-S03_idle_talk_right_v003_talk_component_6": 0.1134020618556701,
+      "NPC-S03_idle_talk_right_v003_talk_component_7": 0.1134020618556701,
+      "NPC-S03_idle_talk_right_v003_talk_component_8": 0.1134020618556701,
+      "NPC-S03_idle_talk_right_v003_talk_component_9": 0.1134020618556701,
+      "NPC-S03_walk_right_v003_walk_component_0": 0.102803738317757,
+      "NPC-S03_walk_right_v003_walk_component_1": 0.102803738317757,
+      "NPC-S03_walk_right_v003_walk_component_2": 0.102803738317757,
+      "NPC-S03_walk_right_v003_walk_component_3": 0.102803738317757,
+      "NPC-S03_walk_right_v003_walk_component_4": 0.102803738317757,
+      "NPC-S03_walk_right_v003_walk_component_5": 0.102803738317757,
+      "NPC-S03_walk_right_v003_walk_component_6": 0.102803738317757,
+      "NPC-S03_walk_right_v003_walk_component_7": 0.102803738317757
+    },
+    "frameCount": 18,
+    "uniqueFrameCount": 18,
+    "playbackFrameCount": 18,
+    "atlas": {
+      "file": "NPC-S03_atlas_right_v002.png",
+      "size": [
+        512,
+        192
+      ],
+      "cellSize": [
+        64,
+        64
+      ],
+      "columns": 8,
+      "rows": 3
+    },
+    "animations": [
+      {
+        "name": "idle",
+        "label": "待机",
+        "fps": 6,
+        "loop": true,
+        "anchorMode": "ground",
+        "size": [
+          64,
+          64
+        ],
+        "anchor": [
+          32,
+          58
+        ],
+        "sheet": "sheets/NPC-S03_npc_idle_right_v002_sheet.png",
+        "sourceFrameIds": [
+          "idle_0",
+          "idle_1",
+          "idle_2",
+          "idle_3",
+          "idle_4",
+          "idle_5"
+        ],
+        "playbackOrder": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "appendPlaybackFrameIds": [],
+        "frameIds": [
+          "idle_0",
+          "idle_1",
+          "idle_2",
+          "idle_3",
+          "idle_4",
+          "idle_5"
+        ]
+      },
+      {
+        "name": "talk",
+        "label": "交谈",
+        "fps": 8,
+        "loop": false,
+        "anchorMode": "ground",
+        "size": [
+          64,
+          64
+        ],
+        "anchor": [
+          32,
+          58
+        ],
+        "sheet": "sheets/NPC-S03_npc_talk_right_v002_sheet.png",
+        "sourceFrameIds": [
+          "talk_0",
+          "talk_1",
+          "talk_2",
+          "talk_3"
+        ],
+        "playbackOrder": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "appendPlaybackFrameIds": [],
+        "frameIds": [
+          "talk_0",
+          "talk_1",
+          "talk_2",
+          "talk_3"
+        ]
+      },
+      {
+        "name": "walk",
+        "label": "行走",
+        "fps": 8,
+        "loop": true,
+        "anchorMode": "world-ground/pelvis",
+        "size": [
+          64,
+          64
+        ],
+        "anchor": [
+          32,
+          58
+        ],
+        "sheet": "sheets/NPC-S03_npc_walk_right_v002_sheet.png",
+        "sourceFrameIds": [
+          "walk_0",
+          "walk_1",
+          "walk_2",
+          "walk_3",
+          "walk_4",
+          "walk_5",
+          "walk_6",
+          "walk_7"
+        ],
+        "playbackOrder": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "appendPlaybackFrameIds": [],
+        "frameIds": [
+          "walk_0",
+          "walk_1",
+          "walk_2",
+          "walk_3",
+          "walk_4",
+          "walk_5",
+          "walk_6",
+          "walk_7"
+        ]
+      }
+    ],
+    "frames": [
+      {
+        "id": "idle_0",
+        "animation": "idle",
+        "index": 0,
+        "file": "frames/NPC-S03_npc_idle_right_v002_f01.png",
+        "size": [
+          64,
+          64
+        ],
+        "anchor": [
+          32,
+          58
+        ],
+        "source": {
+          "id": "NPC-S03_idle_talk_right_v003_idle_component_0",
+          "path": "/home/lululu/zgame/work/npc_series_refine/components/NPC-S03/idle_0.png",
+          "sha256": "31c489672ed71b49ebaac1be068778404cf0979eccb64c926b8be162db7850bf",
+          "cellIndex": 0,
+          "rect": [
+            0,
+            0,
+            345,
+            395
+          ],
+          "anchor": [
+            192,
+            391
+          ]
+        },
+        "transform": {
+          "uniformScale": 0.1134020618556701,
+          "scaledCellSize": [
+            39,
+            45
+          ],
+          "scaledVisibleCrop": [
+            1,
+            1,
+            38,
+            44
+          ],
+          "translation": [
+            11,
+            14
+          ],
+          "pixelOffset": [
+            0,
+            0
+          ],
+          "contactCorrectionPx": [
+            0,
+            -1
+          ],
+          "contactAlphaThreshold": 128,
+          "filter": "nearest",
+          "cropAlphaThreshold": 1,
+          "cropNotes": "Transparent padding geometry excludes alpha=1/255 scattered speckles outside retained crop; retained RGBA is not thresholded."
+        },
+        "duration": 1,
+        "sha256": "46f8516f3a80185f9463712e3f9faf8caf45c25a358ce5177b8cd04e4469117e",
+        "atlasRect": [
+          0,
+          0,
+          64,
+          64
+        ],
+        "visibleBounds": [
+          11,
+          14,
+          38,
+          44
+        ]
+      },
+      {
+        "id": "idle_1",
+        "animation": "idle",
+        "index": 1,
+        "file": "frames/NPC-S03_npc_idle_right_v002_f02.png",
+        "size": [
+          64,
+          64
+        ],
+        "anchor": [
+          32,
+          58
+        ],
+        "source": {
+          "id": "NPC-S03_idle_talk_right_v003_idle_component_1",
+          "path": "/home/lululu/zgame/work/npc_series_refine/components/NPC-S03/idle_1.png",
+          "sha256": "50769435baaf0439c63d2aef090fb56e5fd0738e30a9c42fd2514643198ffbd9",
+          "cellIndex": 0,
+          "rect": [
+            0,
+            0,
+            338,
+            395
+          ],
+          "anchor": [
+            183.5,
+            392
+          ]
+        },
+        "transform": {
+          "uniformScale": 0.1134020618556701,
+          "scaledCellSize": [
+            38,
+            45
+          ],
+          "scaledVisibleCrop": [
+            1,
+            1,
+            37,
+            44
+          ],
+          "translation": [
+            12,
+            14
+          ],
+          "pixelOffset": [
+            0,
+            0
+          ],
+          "contactCorrectionPx": [
+            0,
+            -1
+          ],
+          "contactAlphaThreshold": 128,
+          "filter": "nearest",
+          "cropAlphaThreshold": 1,
+          "cropNotes": "Transparent padding geometry excludes alpha=1/255 scattered speckles outside retained crop; retained RGBA is not thresholded."
+        },
+        "duration": 1,
+        "sha256": "96bc6b8be8731a7104d9ae92484831d3a5bd28963235ea2a193387947b0b0e57",
+        "atlasRect": [
+          64,
+          0,
+          64,
+          64
+        ],
+        "visibleBounds": [
+          12,
+          14,
+          37,
+          44
+        ]
+      },
+      {
+        "id": "idle_2",
+        "animation": "idle",
+        "index": 2,
+        "file": "frames/NPC-S03_npc_idle_right_v002_f03.png",
+        "size": [
+          64,
+          64
+        ],
+        "anchor": [
+          32,
+          58
+        ],
+        "source": {
+          "id": "NPC-S03_idle_talk_right_v003_idle_component_2",
+          "path": "/home/lululu/zgame/work/npc_series_refine/components/NPC-S03/idle_2.png",
+          "sha256": "8d76045938881cd54b64faf55b48fb60c02c6cc3bbdafdbebb9faa11250a5be7",
+          "cellIndex": 0,
+          "rect": [
+            0,
+            0,
+            340,
+            395
+          ],
+          "anchor": [
+            180.5,
+            392
+          ]
+        },
+        "transform": {
+          "uniformScale": 0.1134020618556701,
+          "scaledCellSize": [
+            39,
+            45
+          ],
+          "scaledVisibleCrop": [
+            1,
+            1,
+            38,
+            44
+          ],
+          "translation": [
+            13,
+            14
+          ],
+          "pixelOffset": [
+            0,
+            0
+          ],
+          "contactCorrectionPx": [
+            0,
+            -1
+          ],
+          "contactAlphaThreshold": 128,
+          "filter": "nearest",
+          "cropAlphaThreshold": 1,
+          "cropNotes": "Transparent padding geometry excludes alpha=1/255 scattered speckles outside retained crop; retained RGBA is not thresholded."
+        },
+        "duration": 1,
+        "sha256": "6b8d6e76e7a0d6e2fd2e61c794549a15f9637c46ee24fd679660f301ebacb8a1",
+        "atlasRect": [
+          128,
+          0,
+          64,
+          64
+        ],
+        "visibleBounds": [
+          13,
+          14,
+          38,
+          44
+        ]
+      },
+      {
+        "id": "idle_3",
+        "animation": "idle",
+        "index": 3,
+        "file": "frames/NPC-S03_npc_idle_right_v002_f04.png",
+        "size": [
+          64,
+          64
+        ],
+        "anchor": [
+          32,
+          58
+        ],
+        "source": {
+          "id": "NPC-S03_idle_talk_right_v003_idle_component_3",
+          "path": "/home/lululu/zgame/work/npc_series_refine/components/NPC-S03/idle_3.png",
+          "sha256": "1d1f33db16ee289469e38cefb537bd266ee76f8f64f16b7371fcb9a82689ee76",
+          "cellIndex": 0,
+          "rect": [
+            0,
+            0,
+            338,
+            395
+          ],
+          "anchor": [
+            181,
+            391
+          ]
+        },
+        "transform": {
+          "uniformScale": 0.1134020618556701,
+          "scaledCellSize": [
+            38,
+            45
+          ],
+          "scaledVisibleCrop": [
+            1,
+            1,
+            37,
+            44
+          ],
+          "translation": [
+            12,
+            14
+          ],
+          "pixelOffset": [
+            0,
+            0
+          ],
+          "contactCorrectionPx": [
+            0,
+            -1
+          ],
+          "contactAlphaThreshold": 128,
+          "filter": "nearest",
+          "cropAlphaThreshold": 1,
+          "cropNotes": "Transparent padding geometry excludes alpha=1/255 scattered speckles outside retained crop; retained RGBA is not thresholded."
+        },
+        "duration": 1,
+        "sha256": "6a6dbea11501328b7c91cf3da385eb454554bff346e428c34ee8a178e159541b",
+        "atlasRect": [
+          192,
+          0,
+          64,
+          64
+        ],
+        "visibleBounds": [
+          12,
+          14,
+          37,
+          44
+        ]
+      },
+      {
+        "id": "idle_4",
+        "animation": "idle",
+        "index": 4,
+        "file": "frames/NPC-S03_npc_idle_right_v002_f05.png",
+        "size": [
+          64,
+          64
+        ],
+        "anchor": [
+          32,
+          58
+        ],
+        "source": {
+          "id": "NPC-S03_idle_talk_right_v003_idle_component_4",
+          "path": "/home/lululu/zgame/work/npc_series_refine/components/NPC-S03/idle_4.png",
+          "sha256": "8f2f37171c463b20407eb88b26342d7ce7d68a21c207816bd2bfa7063c7951f4",
+          "cellIndex": 0,
+          "rect": [
+            0,
+            0,
+            334,
+            395
+          ],
+          "anchor": [
+            181,
+            391
+          ]
+        },
+        "transform": {
+          "uniformScale": 0.1134020618556701,
+          "scaledCellSize": [
+            38,
+            45
+          ],
+          "scaledVisibleCrop": [
+            1,
+            1,
+            37,
+            44
+          ],
+          "translation": [
+            12,
+            14
+          ],
+          "pixelOffset": [
+            0,
+            0
+          ],
+          "contactCorrectionPx": [
+            0,
+            -1
+          ],
+          "contactAlphaThreshold": 128,
+          "filter": "nearest",
+          "cropAlphaThreshold": 1,
+          "cropNotes": "Transparent padding geometry excludes alpha=1/255 scattered speckles outside retained crop; retained RGBA is not thresholded."
+        },
+        "duration": 1,
+        "sha256": "130bbef51694d71f5e6c3f0d8c1da4c5d5748fd26ffb590e4a6a9e08a7941a01",
+        "atlasRect": [
+          256,
+          0,
+          64,
+          64
+        ],
+        "visibleBounds": [
+          12,
+          14,
+          37,
+          44
+        ]
+      },
+      {
+        "id": "idle_5",
+        "animation": "idle",
+        "index": 5,
+        "file": "frames/NPC-S03_npc_idle_right_v002_f06.png",
+        "size": [
+          64,
+          64
+        ],
+        "anchor": [
+          32,
+          58
+        ],
+        "source": {
+          "id": "NPC-S03_idle_talk_right_v003_idle_component_5",
+          "path": "/home/lululu/zgame/work/npc_series_refine/components/NPC-S03/idle_5.png",
+          "sha256": "c0be4a7eb968a3044688f4fe0a2d1e2f5a055c99f7abe4a56d1ba081701c6188",
+          "cellIndex": 0,
+          "rect": [
+            0,
+            0,
+            347,
+            393
+          ],
+          "anchor": [
+            190,
+            389
+          ]
+        },
+        "transform": {
+          "uniformScale": 0.1134020618556701,
+          "scaledCellSize": [
+            39,
+            45
+          ],
+          "scaledVisibleCrop": [
+            1,
+            1,
+            38,
+            44
+          ],
+          "translation": [
+            11,
+            14
+          ],
+          "pixelOffset": [
+            0,
+            0
+          ],
+          "contactCorrectionPx": [
+            0,
+            -1
+          ],
+          "contactAlphaThreshold": 128,
+          "filter": "nearest",
+          "cropAlphaThreshold": 1,
+          "cropNotes": "Transparent padding geometry excludes alpha=1/255 scattered speckles outside retained crop; retained RGBA is not thresholded."
+        },
+        "duration": 1,
+        "sha256": "a64060a4fe49f6ce0857fe0ec46a3d100a03fca57c3a1416fea61f43753c9f46",
+        "atlasRect": [
+          320,
+          0,
+          64,
+          64
+        ],
+        "visibleBounds": [
+          11,
+          14,
+          38,
+          44
+        ]
+      },
+      {
+        "id": "talk_0",
+        "animation": "talk",
+        "index": 0,
+        "file": "frames/NPC-S03_npc_talk_right_v002_f01.png",
+        "size": [
+          64,
+          64
+        ],
+        "anchor": [
+          32,
+          58
+        ],
+        "source": {
+          "id": "NPC-S03_idle_talk_right_v003_talk_component_6",
+          "path": "/home/lululu/zgame/work/npc_series_refine/components/NPC-S03/talk_0.png",
+          "sha256": "39483c99dcb99740129f741db451ad33afe1aa8284e1c02012165d815503922d",
+          "cellIndex": 0,
+          "rect": [
+            0,
+            0,
+            342,
+            393
+          ],
+          "anchor": [
+            185,
+            389
+          ]
+        },
+        "transform": {
+          "uniformScale": 0.1134020618556701,
+          "scaledCellSize": [
+            39,
+            45
+          ],
+          "scaledVisibleCrop": [
+            1,
+            1,
+            38,
+            44
+          ],
+          "translation": [
+            12,
+            14
+          ],
+          "pixelOffset": [
+            0,
+            0
+          ],
+          "contactCorrectionPx": [
+            0,
+            -1
+          ],
+          "contactAlphaThreshold": 128,
+          "filter": "nearest",
+          "cropAlphaThreshold": 1,
+          "cropNotes": "Transparent padding geometry excludes alpha=1/255 scattered speckles outside retained crop; retained RGBA is not thresholded."
+        },
+        "duration": 1,
+        "sha256": "636488c1ca30e5e7be2d49b7f074419241b2e731245a2375517067c10bf166c0",
+        "atlasRect": [
+          384,
+          0,
+          64,
+          64
+        ],
+        "visibleBounds": [
+          12,
+          14,
+          38,
+          44
+        ]
+      },
+      {
+        "id": "talk_1",
+        "animation": "talk",
+        "index": 1,
+        "file": "frames/NPC-S03_npc_talk_right_v002_f02.png",
+        "size": [
+          64,
+          64
+        ],
+        "anchor": [
+          32,
+          58
+        ],
+        "source": {
+          "id": "NPC-S03_idle_talk_right_v003_talk_component_7",
+          "path": "/home/lululu/zgame/work/npc_series_refine/components/NPC-S03/talk_1.png",
+          "sha256": "a890bbfa787a7d8b3dc72ea14742bba3ac2b47a4905c6de733343ab624893bc7",
+          "cellIndex": 0,
+          "rect": [
+            0,
+            0,
+            347,
+            393
+          ],
+          "anchor": [
+            185.5,
+            389
+          ]
+        },
+        "transform": {
+          "uniformScale": 0.1134020618556701,
+          "scaledCellSize": [
+            39,
+            45
+          ],
+          "scaledVisibleCrop": [
+            1,
+            1,
+            38,
+            44
+          ],
+          "translation": [
+            12,
+            14
+          ],
+          "pixelOffset": [
+            0,
+            0
+          ],
+          "contactCorrectionPx": [
+            0,
+            -1
+          ],
+          "contactAlphaThreshold": 128,
+          "filter": "nearest",
+          "cropAlphaThreshold": 1,
+          "cropNotes": "Transparent padding geometry excludes alpha=1/255 scattered speckles outside retained crop; retained RGBA is not thresholded."
+        },
+        "duration": 1,
+        "sha256": "5370949bc11f19758ac9d090620e2e3a483efad7838b73af9a5ff5b9a42ca748",
+        "atlasRect": [
+          448,
+          0,
+          64,
+          64
+        ],
+        "visibleBounds": [
+          12,
+          14,
+          38,
+          44
+        ]
+      },
+      {
+        "id": "talk_2",
+        "animation": "talk",
+        "index": 2,
+        "file": "frames/NPC-S03_npc_talk_right_v002_f03.png",
+        "size": [
+          64,
+          64
+        ],
+        "anchor": [
+          32,
+          58
+        ],
+        "source": {
+          "id": "NPC-S03_idle_talk_right_v003_talk_component_8",
+          "path": "/home/lululu/zgame/work/npc_series_refine/components/NPC-S03/talk_2.png",
+          "sha256": "d058e63e598e96a35f1ec7c8b62d7d876fa5b5f75d46f58e6e6da5e46750d293",
+          "cellIndex": 0,
+          "rect": [
+            0,
+            0,
+            341,
+            393
+          ],
+          "anchor": [
+            186,
+            389
+          ]
+        },
+        "transform": {
+          "uniformScale": 0.1134020618556701,
+          "scaledCellSize": [
+            39,
+            45
+          ],
+          "scaledVisibleCrop": [
+            1,
+            1,
+            38,
+            44
+          ],
+          "translation": [
+            12,
+            14
+          ],
+          "pixelOffset": [
+            0,
+            0
+          ],
+          "contactCorrectionPx": [
+            0,
+            -1
+          ],
+          "contactAlphaThreshold": 128,
+          "filter": "nearest",
+          "cropAlphaThreshold": 1,
+          "cropNotes": "Transparent padding geometry excludes alpha=1/255 scattered speckles outside retained crop; retained RGBA is not thresholded."
+        },
+        "duration": 1,
+        "sha256": "5d22d0825a1d5230e53e8e6f8a1a734734c980e7f03e3f2d90382a992e6c45c7",
+        "atlasRect": [
+          0,
+          64,
+          64,
+          64
+        ],
+        "visibleBounds": [
+          12,
+          14,
+          38,
+          44
+        ]
+      },
+      {
+        "id": "talk_3",
+        "animation": "talk",
+        "index": 3,
+        "file": "frames/NPC-S03_npc_talk_right_v002_f04.png",
+        "size": [
+          64,
+          64
+        ],
+        "anchor": [
+          32,
+          58
+        ],
+        "source": {
+          "id": "NPC-S03_idle_talk_right_v003_talk_component_9",
+          "path": "/home/lululu/zgame/work/npc_series_refine/components/NPC-S03/talk_3.png",
+          "sha256": "758bfad9ecff9e33057b9f9aaee21ff1abfcb4b41a745f5cad55a1bd89926301",
+          "cellIndex": 0,
+          "rect": [
+            0,
+            0,
+            341,
+            393
+          ],
+          "anchor": [
+            185,
+            389
+          ]
+        },
+        "transform": {
+          "uniformScale": 0.1134020618556701,
+          "scaledCellSize": [
+            39,
+            45
+          ],
+          "scaledVisibleCrop": [
+            1,
+            1,
+            37,
+            44
+          ],
+          "translation": [
+            12,
+            14
+          ],
+          "pixelOffset": [
+            0,
+            0
+          ],
+          "contactCorrectionPx": [
+            0,
+            -1
+          ],
+          "contactAlphaThreshold": 128,
+          "filter": "nearest",
+          "cropAlphaThreshold": 1,
+          "cropNotes": "Transparent padding geometry excludes alpha=1/255 scattered speckles outside retained crop; retained RGBA is not thresholded."
+        },
+        "duration": 1,
+        "sha256": "a2d989ae3421e8798de12adc3d75514146e71474c884792942dc4e2ba2c49259",
+        "atlasRect": [
+          64,
+          64,
+          64,
+          64
+        ],
+        "visibleBounds": [
+          12,
+          14,
+          37,
+          44
+        ]
+      },
+      {
+        "id": "walk_0",
+        "animation": "walk",
+        "index": 0,
+        "file": "frames/NPC-S03_npc_walk_right_v002_f01.png",
+        "size": [
+          64,
+          64
+        ],
+        "anchor": [
+          32,
+          58
+        ],
+        "source": {
+          "id": "NPC-S03_walk_right_v003_walk_component_0",
+          "path": "/home/lululu/zgame/work/npc_series_refine/components/NPC-S03/walk_0.png",
+          "sha256": "cc0016a90c0757448452ba05ab30e6debfa54a64ba7a6bcff1572330515d9295",
+          "cellIndex": 0,
+          "rect": [
+            0,
+            0,
+            408,
+            438
+          ],
+          "anchor": [
+            213,
+            433
+          ]
+        },
+        "transform": {
+          "uniformScale": 0.102803738317757,
+          "scaledCellSize": [
+            42,
+            45
+          ],
+          "scaledVisibleCrop": [
+            0,
+            1,
+            42,
+            44
+          ],
+          "translation": [
+            10,
+            14
+          ],
+          "pixelOffset": [
+            0,
+            0
+          ],
+          "contactCorrectionPx": [
+            0,
+            0
+          ],
+          "contactAlphaThreshold": null,
+          "filter": "nearest",
+          "cropAlphaThreshold": 1,
+          "cropNotes": "Transparent padding geometry excludes alpha=1/255 scattered speckles outside retained crop; retained RGBA is not thresholded."
+        },
+        "duration": 1,
+        "sha256": "4a1efafd57ca28f9d984f40348f954c884ad17f1a45ff776aff6cd2870ddff8d",
+        "atlasRect": [
+          128,
+          64,
+          64,
+          64
+        ],
+        "visibleBounds": [
+          10,
+          14,
+          42,
+          44
+        ]
+      },
+      {
+        "id": "walk_1",
+        "animation": "walk",
+        "index": 1,
+        "file": "frames/NPC-S03_npc_walk_right_v002_f02.png",
+        "size": [
+          64,
+          64
+        ],
+        "anchor": [
+          32,
+          58
+        ],
+        "source": {
+          "id": "NPC-S03_walk_right_v003_walk_component_1",
+          "path": "/home/lululu/zgame/work/npc_series_refine/components/NPC-S03/walk_1.png",
+          "sha256": "430011df0422e43d316749f3a652dc2f166772eab852085350dcd5f58d9fb334",
+          "cellIndex": 0,
+          "rect": [
+            0,
+            0,
+            395,
+            429
+          ],
+          "anchor": [
+            216,
+            432
+          ]
+        },
+        "transform": {
+          "uniformScale": 0.102803738317757,
+          "scaledCellSize": [
+            41,
+            44
+          ],
+          "scaledVisibleCrop": [
+            1,
+            0,
+            40,
+            44
+          ],
+          "translation": [
+            11,
+            14
+          ],
+          "pixelOffset": [
+            0,
+            0
+          ],
+          "contactCorrectionPx": [
+            0,
+            0
+          ],
+          "contactAlphaThreshold": null,
+          "filter": "nearest",
+          "cropAlphaThreshold": 1,
+          "cropNotes": "Transparent padding geometry excludes alpha=1/255 scattered speckles outside retained crop; retained RGBA is not thresholded."
+        },
+        "duration": 1,
+        "sha256": "f63a270e620e9e43b4742da36a89c3cdc8cb6cd20236ce019b49819fcf3f9d10",
+        "atlasRect": [
+          192,
+          64,
+          64,
+          64
+        ],
+        "visibleBounds": [
+          11,
+          14,
+          40,
+          44
+        ]
+      },
+      {
+        "id": "walk_2",
+        "animation": "walk",
+        "index": 2,
+        "file": "frames/NPC-S03_npc_walk_right_v002_f03.png",
+        "size": [
+          64,
+          64
+        ],
+        "anchor": [
+          32,
+          58
+        ],
+        "source": {
+          "id": "NPC-S03_walk_right_v003_walk_component_2",
+          "path": "/home/lululu/zgame/work/npc_series_refine/components/NPC-S03/walk_2.png",
+          "sha256": "eea4a75aea0763288e186e2d259167a76905ce3cbb603aad12c2027937d93ff8",
+          "cellIndex": 0,
+          "rect": [
+            0,
+            0,
+            389,
+            430
+          ],
+          "anchor": [
+            209,
+            432
+          ]
+        },
+        "transform": {
+          "uniformScale": 0.102803738317757,
+          "scaledCellSize": [
+            40,
+            44
+          ],
+          "scaledVisibleCrop": [
+            0,
+            1,
+            40,
+            43
+          ],
+          "translation": [
+            11,
+            15
+          ],
+          "pixelOffset": [
+            0,
+            0
+          ],
+          "contactCorrectionPx": [
+            0,
+            0
+          ],
+          "contactAlphaThreshold": null,
+          "filter": "nearest",
+          "cropAlphaThreshold": 1,
+          "cropNotes": "Transparent padding geometry excludes alpha=1/255 scattered speckles outside retained crop; retained RGBA is not thresholded."
+        },
+        "duration": 1,
+        "sha256": "bae39390888080b94d706e081aa0e8becfa2dabef529d6fa9c17e2234c1ac51f",
+        "atlasRect": [
+          256,
+          64,
+          64,
+          64
+        ],
+        "visibleBounds": [
+          11,
+          15,
+          40,
+          43
+        ]
+      },
+      {
+        "id": "walk_3",
+        "animation": "walk",
+        "index": 3,
+        "file": "frames/NPC-S03_npc_walk_right_v002_f04.png",
+        "size": [
+          64,
+          64
+        ],
+        "anchor": [
+          32,
+          58
+        ],
+        "source": {
+          "id": "NPC-S03_walk_right_v003_walk_component_3",
+          "path": "/home/lululu/zgame/work/npc_series_refine/components/NPC-S03/walk_3.png",
+          "sha256": "6c1ae1a700e710e17a373c8da548a8c3aa2e831a3cac821c4b00be7d44605ab2",
+          "cellIndex": 0,
+          "rect": [
+            0,
+            0,
+            407,
+            437
+          ],
+          "anchor": [
+            222,
+            434
+          ]
+        },
+        "transform": {
+          "uniformScale": 0.102803738317757,
+          "scaledCellSize": [
+            42,
+            45
+          ],
+          "scaledVisibleCrop": [
+            1,
+            0,
+            41,
+            45
+          ],
+          "translation": [
+            10,
+            13
+          ],
+          "pixelOffset": [
+            0,
+            0
+          ],
+          "contactCorrectionPx": [
+            0,
+            0
+          ],
+          "contactAlphaThreshold": null,
+          "filter": "nearest",
+          "cropAlphaThreshold": 1,
+          "cropNotes": "Transparent padding geometry excludes alpha=1/255 scattered speckles outside retained crop; retained RGBA is not thresholded."
+        },
+        "duration": 1,
+        "sha256": "6a23f51f2d193eed8b3fc89902579c878fbc4d7f73993fef6991abe0cd016726",
+        "atlasRect": [
+          320,
+          64,
+          64,
+          64
+        ],
+        "visibleBounds": [
+          10,
+          13,
+          41,
+          45
+        ]
+      },
+      {
+        "id": "walk_4",
+        "animation": "walk",
+        "index": 4,
+        "file": "frames/NPC-S03_npc_walk_right_v002_f05.png",
+        "size": [
+          64,
+          64
+        ],
+        "anchor": [
+          32,
+          58
+        ],
+        "source": {
+          "id": "NPC-S03_walk_right_v003_walk_component_4",
+          "path": "/home/lululu/zgame/work/npc_series_refine/components/NPC-S03/walk_4.png",
+          "sha256": "896ae56de8db1e1cfc4224a63d4a954fae618a366aaf6adfe231fd8cbc055057",
+          "cellIndex": 0,
+          "rect": [
+            0,
+            0,
+            418,
+            436
+          ],
+          "anchor": [
+            227,
+            432
+          ]
+        },
+        "transform": {
+          "uniformScale": 0.102803738317757,
+          "scaledCellSize": [
+            43,
+            45
+          ],
+          "scaledVisibleCrop": [
+            1,
+            0,
+            42,
+            45
+          ],
+          "translation": [
+            10,
+            13
+          ],
+          "pixelOffset": [
+            0,
+            -1
+          ],
+          "contactCorrectionPx": [
+            0,
+            0
+          ],
+          "contactAlphaThreshold": null,
+          "filter": "nearest",
+          "cropAlphaThreshold": 1,
+          "cropNotes": "Transparent padding geometry excludes alpha=1/255 scattered speckles outside retained crop; retained RGBA is not thresholded."
+        },
+        "duration": 1,
+        "sha256": "b66af88dc73e6fe0509b431ab8197e788c8902ce33cc6bbcf603f1b10937d987",
+        "atlasRect": [
+          384,
+          64,
+          64,
+          64
+        ],
+        "visibleBounds": [
+          10,
+          13,
+          42,
+          45
+        ]
+      },
+      {
+        "id": "walk_5",
+        "animation": "walk",
+        "index": 5,
+        "file": "frames/NPC-S03_npc_walk_right_v002_f06.png",
+        "size": [
+          64,
+          64
+        ],
+        "anchor": [
+          32,
+          58
+        ],
+        "source": {
+          "id": "NPC-S03_walk_right_v003_walk_component_5",
+          "path": "/home/lululu/zgame/work/npc_series_refine/components/NPC-S03/walk_5.png",
+          "sha256": "6b85618665c136fa2cb1fea37f461876264a367738e5bea8b20773cc71a633b0",
+          "cellIndex": 0,
+          "rect": [
+            0,
+            0,
+            390,
+            431
+          ],
+          "anchor": [
+            214,
+            432
+          ]
+        },
+        "transform": {
+          "uniformScale": 0.102803738317757,
+          "scaledCellSize": [
+            40,
+            44
+          ],
+          "scaledVisibleCrop": [
+            1,
+            1,
+            39,
+            43
+          ],
+          "translation": [
+            11,
+            15
+          ],
+          "pixelOffset": [
+            0,
+            0
+          ],
+          "contactCorrectionPx": [
+            0,
+            0
+          ],
+          "contactAlphaThreshold": null,
+          "filter": "nearest",
+          "cropAlphaThreshold": 1,
+          "cropNotes": "Transparent padding geometry excludes alpha=1/255 scattered speckles outside retained crop; retained RGBA is not thresholded."
+        },
+        "duration": 1,
+        "sha256": "2a8708810b929db968c86ded216706ef6258602aca9a64fbae010b3f4e2cddd1",
+        "atlasRect": [
+          448,
+          64,
+          64,
+          64
+        ],
+        "visibleBounds": [
+          11,
+          15,
+          39,
+          43
+        ]
+      },
+      {
+        "id": "walk_6",
+        "animation": "walk",
+        "index": 6,
+        "file": "frames/NPC-S03_npc_walk_right_v002_f07.png",
+        "size": [
+          64,
+          64
+        ],
+        "anchor": [
+          32,
+          58
+        ],
+        "source": {
+          "id": "NPC-S03_walk_right_v003_walk_component_6",
+          "path": "/home/lululu/zgame/work/npc_series_refine/components/NPC-S03/walk_6.png",
+          "sha256": "653c5077d9bfd022bb669f9191f4c704e40c906720bacb1043be93291978266d",
+          "cellIndex": 0,
+          "rect": [
+            0,
+            0,
+            393,
+            427
+          ],
+          "anchor": [
+            210,
+            430
+          ]
+        },
+        "transform": {
+          "uniformScale": 0.102803738317757,
+          "scaledCellSize": [
+            40,
+            44
+          ],
+          "scaledVisibleCrop": [
+            0,
+            1,
+            40,
+            43
+          ],
+          "translation": [
+            10,
+            15
+          ],
+          "pixelOffset": [
+            0,
+            0
+          ],
+          "contactCorrectionPx": [
+            0,
+            0
+          ],
+          "contactAlphaThreshold": null,
+          "filter": "nearest",
+          "cropAlphaThreshold": 1,
+          "cropNotes": "Transparent padding geometry excludes alpha=1/255 scattered speckles outside retained crop; retained RGBA is not thresholded."
+        },
+        "duration": 1,
+        "sha256": "eac5514393a512ce2f110a7d3e6e2a04791157fc548e40f98a914d3fd8948c48",
+        "atlasRect": [
+          0,
+          128,
+          64,
+          64
+        ],
+        "visibleBounds": [
+          10,
+          15,
+          40,
+          43
+        ]
+      },
+      {
+        "id": "walk_7",
+        "animation": "walk",
+        "index": 7,
+        "file": "frames/NPC-S03_npc_walk_right_v002_f08.png",
+        "size": [
+          64,
+          64
+        ],
+        "anchor": [
+          32,
+          58
+        ],
+        "source": {
+          "id": "NPC-S03_walk_right_v003_walk_component_7",
+          "path": "/home/lululu/zgame/work/npc_series_refine/components/NPC-S03/walk_7.png",
+          "sha256": "83e4b0e821e766313f1302466da7997ac1d4959aa18b5d49e66674cb6cc2e2b8",
+          "cellIndex": 0,
+          "rect": [
+            0,
+            0,
+            408,
+            436
+          ],
+          "anchor": [
+            225,
+            433
+          ]
+        },
+        "transform": {
+          "uniformScale": 0.102803738317757,
+          "scaledCellSize": [
+            42,
+            45
+          ],
+          "scaledVisibleCrop": [
+            0,
+            0,
+            42,
+            45
+          ],
+          "translation": [
+            9,
+            13
+          ],
+          "pixelOffset": [
+            0,
+            0
+          ],
+          "contactCorrectionPx": [
+            0,
+            0
+          ],
+          "contactAlphaThreshold": null,
+          "filter": "nearest",
+          "cropAlphaThreshold": 1,
+          "cropNotes": "Transparent padding geometry excludes alpha=1/255 scattered speckles outside retained crop; retained RGBA is not thresholded."
+        },
+        "duration": 1,
+        "sha256": "44ca04ddd369fded61339fa7876f39ab43de1814726c84dc1b3966d197c517bd",
+        "atlasRect": [
+          64,
+          128,
+          64,
+          64
+        ],
+        "visibleBounds": [
+          9,
+          13,
+          42,
+          45
+        ]
+      }
+    ]
+  },
+  "staticProvenance": null,
+  "notes": [
+    "All image processing is mechanical extraction, fixed scale per source action, and integer translation.",
+    "No per-frame bbox stretch; RAW untouched.",
+    "walk uses a world-ground/pelvis reference and can preserve upward body motion."
+  ]
+}

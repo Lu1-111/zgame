@@ -1,0 +1,180 @@
+{
+  "assetId": "mana_fragment",
+  "action": "idle",
+  "version": "v001",
+  "kind": "RAW_GENERATED_SHEET",
+  "file": "ITEM_mana_fragment_idle_v001.png",
+  "actualSize": [
+    1254,
+    1254
+  ],
+  "mode": "RGBA",
+  "grid": [
+    2,
+    2
+  ],
+  "frameSize": [
+    627,
+    627
+  ],
+  "frameOrder": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "sourceAnchors": [
+    [
+      313.5,
+      470.25
+    ],
+    [
+      313.5,
+      470.25
+    ],
+    [
+      313.5,
+      470.25
+    ],
+    [
+      313.5,
+      470.25
+    ]
+  ],
+  "anchorMeaning": "Nominal local pickup root scaled from requested grid. Body is not registered to this root; use measured center-bottom in PROCESSED.",
+  "requestedSize": [
+    1024,
+    1024
+  ],
+  "generator": "built-in image_gen.imagegen",
+  "generatorPath": "/home/lululu/.codex/generated_images/01a16cb2-503f-7982-b27f-6818b5b85469/exec-2b06e24d-6d0a-44fb-8459-a6b48ed8fa43.png",
+  "sha256": "461d63d3f86f927531c0eda25c0fdf7701d3f8341e50c1975719c409db36daf3",
+  "alpha": {
+    "range": [
+      0,
+      255
+    ],
+    "transparentPixelCount": 1143574,
+    "partialAlphaPixelCount": 426423,
+    "opaquePixelCount": 2519
+  },
+  "frames": [
+    {
+      "index": 0,
+      "cellRect": [
+        0,
+        0,
+        627,
+        627
+      ],
+      "alphaBBoxLocal": [
+        0,
+        17,
+        627,
+        627
+      ],
+      "mainBodyBBoxLocalAtAlpha128": [
+        157,
+        89,
+        470,
+        564
+      ],
+      "mainBodyCenterBottomLocal": [
+        313.5,
+        564
+      ],
+      "mainBodyAreaAtAlpha128": 100333
+    },
+    {
+      "index": 1,
+      "cellRect": [
+        627,
+        0,
+        627,
+        627
+      ],
+      "alphaBBoxLocal": [
+        0,
+        17,
+        611,
+        627
+      ],
+      "mainBodyBBoxLocalAtAlpha128": [
+        157,
+        89,
+        470,
+        564
+      ],
+      "mainBodyCenterBottomLocal": [
+        313.5,
+        564
+      ],
+      "mainBodyAreaAtAlpha128": 100368
+    },
+    {
+      "index": 2,
+      "cellRect": [
+        0,
+        627,
+        627,
+        627
+      ],
+      "alphaBBoxLocal": [
+        0,
+        0,
+        627,
+        627
+      ],
+      "mainBodyBBoxLocalAtAlpha128": [
+        157,
+        90,
+        469,
+        563
+      ],
+      "mainBodyCenterBottomLocal": [
+        313.0,
+        563
+      ],
+      "mainBodyAreaAtAlpha128": 100083
+    },
+    {
+      "index": 3,
+      "cellRect": [
+        627,
+        627,
+        627,
+        627
+      ],
+      "alphaBBoxLocal": [
+        0,
+        0,
+        607,
+        627
+      ],
+      "mainBodyBBoxLocalAtAlpha128": [
+        158,
+        90,
+        470,
+        563
+      ],
+      "mainBodyCenterBottomLocal": [
+        314.0,
+        563
+      ],
+      "mainBodyAreaAtAlpha128": 100099
+    }
+  ],
+  "rawQA": {
+    "subject": "Cyan-blue upright drop-shaped crystal with cream inner core; no text or background.",
+    "transparency": "Genuine RGBA alpha confirmed.",
+    "continuity": "Stationary upright gem with tiny surface glint; slight generated core/facet detail variation. Body proportions stable; per-cell offsets require registration.",
+    "frameOrderSuggestion": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "directGameImportApproved": false,
+    "readyForProcessed": true
+  }
+}

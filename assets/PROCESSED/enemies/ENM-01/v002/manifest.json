@@ -1,0 +1,1220 @@
+{
+  "format": "nailong-processed-enemy-v1",
+  "id": "ENM-01",
+  "name": "苔甲虫",
+  "slug": "moss_beetle",
+  "version": "v002",
+  "canvas": [
+    64,
+    64
+  ],
+  "direction": "right",
+  "root": [
+    32,
+    58
+  ],
+  "root_kind": "ground",
+  "pixel_filter": "nearest",
+  "source_manifest": "assets/RAW/enemies/manifest.json",
+  "source_version": "v002",
+  "palette": [
+    "#211a2b",
+    "#33452d",
+    "#56713b",
+    "#86a94f",
+    "#b5c86a",
+    "#8b6845",
+    "#c49a62",
+    "#fff2c7"
+  ],
+  "atlas": {
+    "path": "ENM-01_atlas_right_v002.png",
+    "cell": [
+      64,
+      64
+    ],
+    "columns": 8,
+    "rows": 7,
+    "trim": false,
+    "rotate": false
+  },
+  "animations": {
+    "idle": {
+      "layer": "body",
+      "frame_count": 6,
+      "fps": 8,
+      "duration_seconds": 0.75,
+      "loop": true,
+      "root": [
+        32,
+        58
+      ],
+      "sheet": "assets/PROCESSED/enemies/ENM-01/v002/sheets/ENM-01_idle_right_v002_sheet.png",
+      "source_sheet": "assets/RAW/enemies/ENM-01/v002/sheets/ENM-01_idle_right_v002_sheet.png",
+      "source_sha256": "6fbbf2a20f4668bd92b1a3999855ec5da2709aacfb27a99d8b465ac89b73d5bd",
+      "frames": [
+        {
+          "path": "assets/PROCESSED/enemies/ENM-01/v002/frames/idle/ENM-01_idle_right_v002_f01.png",
+          "source": "assets/RAW/enemies/ENM-01/v002/frames/ENM-01_idle_right_v002_f01.png",
+          "atlas_cell": [
+            0,
+            0,
+            64,
+            64
+          ],
+          "bbox": [
+            13,
+            22,
+            55,
+            57
+          ],
+          "centroid": [
+            32.6565,
+            40.2421
+          ]
+        },
+        {
+          "path": "assets/PROCESSED/enemies/ENM-01/v002/frames/idle/ENM-01_idle_right_v002_f02.png",
+          "source": "assets/RAW/enemies/ENM-01/v002/frames/ENM-01_idle_right_v002_f02.png",
+          "atlas_cell": [
+            64,
+            0,
+            64,
+            64
+          ],
+          "bbox": [
+            13,
+            22,
+            55,
+            58
+          ],
+          "centroid": [
+            32.7394,
+            40.567
+          ]
+        },
+        {
+          "path": "assets/PROCESSED/enemies/ENM-01/v002/frames/idle/ENM-01_idle_right_v002_f03.png",
+          "source": "assets/RAW/enemies/ENM-01/v002/frames/ENM-01_idle_right_v002_f03.png",
+          "atlas_cell": [
+            128,
+            0,
+            64,
+            64
+          ],
+          "bbox": [
+            13,
+            22,
+            55,
+            58
+          ],
+          "centroid": [
+            32.7394,
+            40.567
+          ]
+        },
+        {
+          "path": "assets/PROCESSED/enemies/ENM-01/v002/frames/idle/ENM-01_idle_right_v002_f04.png",
+          "source": "assets/RAW/enemies/ENM-01/v002/frames/ENM-01_idle_right_v002_f04.png",
+          "atlas_cell": [
+            192,
+            0,
+            64,
+            64
+          ],
+          "bbox": [
+            13,
+            22,
+            55,
+            57
+          ],
+          "centroid": [
+            32.6565,
+            40.2421
+          ]
+        },
+        {
+          "path": "assets/PROCESSED/enemies/ENM-01/v002/frames/idle/ENM-01_idle_right_v002_f05.png",
+          "source": "assets/RAW/enemies/ENM-01/v002/frames/ENM-01_idle_right_v002_f05.png",
+          "atlas_cell": [
+            256,
+            0,
+            64,
+            64
+          ],
+          "bbox": [
+            12,
+            22,
+            55,
+            56
+          ],
+          "centroid": [
+            32.4579,
+            39.9202
+          ]
+        },
+        {
+          "path": "assets/PROCESSED/enemies/ENM-01/v002/frames/idle/ENM-01_idle_right_v002_f06.png",
+          "source": "assets/RAW/enemies/ENM-01/v002/frames/ENM-01_idle_right_v002_f06.png",
+          "atlas_cell": [
+            320,
+            0,
+            64,
+            64
+          ],
+          "bbox": [
+            12,
+            22,
+            55,
+            56
+          ],
+          "centroid": [
+            32.4579,
+            39.9202
+          ]
+        }
+      ],
+      "atlas": {
+        "row": 0,
+        "region": [
+          0,
+          0,
+          384,
+          64
+        ],
+        "cells": [
+          [
+            0,
+            0,
+            64,
+            64
+          ],
+          [
+            64,
+            0,
+            64,
+            64
+          ],
+          [
+            128,
+            0,
+            64,
+            64
+          ],
+          [
+            192,
+            0,
+            64,
+            64
+          ],
+          [
+            256,
+            0,
+            64,
+            64
+          ],
+          [
+            320,
+            0,
+            64,
+            64
+          ]
+        ]
+      }
+    },
+    "move": {
+      "layer": "body",
+      "frame_count": 8,
+      "fps": 12,
+      "duration_seconds": 0.666667,
+      "loop": true,
+      "root": [
+        32,
+        58
+      ],
+      "sheet": "assets/PROCESSED/enemies/ENM-01/v002/sheets/ENM-01_move_right_v002_sheet.png",
+      "source_sheet": "assets/RAW/enemies/ENM-01/v002/sheets/ENM-01_move_right_v002_sheet.png",
+      "source_sha256": "55ad8153664d4e9082e18b1aa2563b21fff394229d47b5b6f532257003a5be34",
+      "frames": [
+        {
+          "path": "assets/PROCESSED/enemies/ENM-01/v002/frames/move/ENM-01_move_right_v002_f01.png",
+          "source": "assets/RAW/enemies/ENM-01/v002/frames/ENM-01_move_right_v002_f01.png",
+          "atlas_cell": [
+            0,
+            64,
+            64,
+            64
+          ],
+          "bbox": [
+            13,
+            22,
+            55,
+            57
+          ],
+          "centroid": [
+            32.6565,
+            40.2421
+          ]
+        },
+        {
+          "path": "assets/PROCESSED/enemies/ENM-01/v002/frames/move/ENM-01_move_right_v002_f02.png",
+          "source": "assets/RAW/enemies/ENM-01/v002/frames/ENM-01_move_right_v002_f02.png",
+          "atlas_cell": [
+            64,
+            64,
+            64,
+            64
+          ],
+          "bbox": [
+            13,
+            21,
+            55,
+            56
+          ],
+          "centroid": [
+            32.7495,
+            39.3067
+          ]
+        },
+        {
+          "path": "assets/PROCESSED/enemies/ENM-01/v002/frames/move/ENM-01_move_right_v002_f03.png",
+          "source": "assets/RAW/enemies/ENM-01/v002/frames/ENM-01_move_right_v002_f03.png",
+          "atlas_cell": [
+            128,
+            64,
+            64,
+            64
+          ],
+          "bbox": [
+            13,
+            21,
+            56,
+            56
+          ],
+          "centroid": [
+            32.7405,
+            39.2703
+          ]
+        },
+        {
+          "path": "assets/PROCESSED/enemies/ENM-01/v002/frames/move/ENM-01_move_right_v002_f04.png",
+          "source": "assets/RAW/enemies/ENM-01/v002/frames/ENM-01_move_right_v002_f04.png",
+          "atlas_cell": [
+            192,
+            64,
+            64,
+            64
+          ],
+          "bbox": [
+            13,
+            21,
+            55,
+            56
+          ],
+          "centroid": [
+            32.7495,
+            39.3067
+          ]
+        },
+        {
+          "path": "assets/PROCESSED/enemies/ENM-01/v002/frames/move/ENM-01_move_right_v002_f05.png",
+          "source": "assets/RAW/enemies/ENM-01/v002/frames/ENM-01_move_right_v002_f05.png",
+          "atlas_cell": [
+            256,
+            64,
+            64,
+            64
+          ],
+          "bbox": [
+            13,
+            22,
+            55,
+            57
+          ],
+          "centroid": [
+            32.6565,
+            40.2421
+          ]
+        },
+        {
+          "path": "assets/PROCESSED/enemies/ENM-01/v002/frames/move/ENM-01_move_right_v002_f06.png",
+          "source": "assets/RAW/enemies/ENM-01/v002/frames/ENM-01_move_right_v002_f06.png",
+          "atlas_cell": [
+            320,
+            64,
+            64,
+            64
+          ],
+          "bbox": [
+            12,
+            21,
+            55,
+            56
+          ],
+          "centroid": [
+            32.4881,
+            39.3513
+          ]
+        },
+        {
+          "path": "assets/PROCESSED/enemies/ENM-01/v002/frames/move/ENM-01_move_right_v002_f07.png",
+          "source": "assets/RAW/enemies/ENM-01/v002/frames/ENM-01_move_right_v002_f07.png",
+          "atlas_cell": [
+            384,
+            64,
+            64,
+            64
+          ],
+          "bbox": [
+            11,
+            21,
+            55,
+            56
+          ],
+          "centroid": [
+            32.4399,
+            39.3863
+          ]
+        },
+        {
+          "path": "assets/PROCESSED/enemies/ENM-01/v002/frames/move/ENM-01_move_right_v002_f08.png",
+          "source": "assets/RAW/enemies/ENM-01/v002/frames/ENM-01_move_right_v002_f08.png",
+          "atlas_cell": [
+            448,
+            64,
+            64,
+            64
+          ],
+          "bbox": [
+            12,
+            21,
+            55,
+            56
+          ],
+          "centroid": [
+            32.4881,
+            39.3513
+          ]
+        }
+      ],
+      "atlas": {
+        "row": 1,
+        "region": [
+          0,
+          64,
+          512,
+          64
+        ],
+        "cells": [
+          [
+            0,
+            64,
+            64,
+            64
+          ],
+          [
+            64,
+            64,
+            64,
+            64
+          ],
+          [
+            128,
+            64,
+            64,
+            64
+          ],
+          [
+            192,
+            64,
+            64,
+            64
+          ],
+          [
+            256,
+            64,
+            64,
+            64
+          ],
+          [
+            320,
+            64,
+            64,
+            64
+          ],
+          [
+            384,
+            64,
+            64,
+            64
+          ],
+          [
+            448,
+            64,
+            64,
+            64
+          ]
+        ]
+      }
+    },
+    "telegraph": {
+      "layer": "body",
+      "frame_count": 4,
+      "fps": 10,
+      "duration_seconds": 0.4,
+      "loop": false,
+      "root": [
+        32,
+        58
+      ],
+      "sheet": "assets/PROCESSED/enemies/ENM-01/v002/sheets/ENM-01_telegraph_right_v002_sheet.png",
+      "source_sheet": "assets/RAW/enemies/ENM-01/v002/sheets/ENM-01_telegraph_right_v002_sheet.png",
+      "source_sha256": "d319046bef24f648ef4683ced163ce35b73d85a37e0188edc10673c9d02010e1",
+      "frames": [
+        {
+          "path": "assets/PROCESSED/enemies/ENM-01/v002/frames/telegraph/ENM-01_telegraph_right_v002_f01.png",
+          "source": "assets/RAW/enemies/ENM-01/v002/frames/ENM-01_telegraph_right_v002_f01.png",
+          "atlas_cell": [
+            0,
+            128,
+            64,
+            64
+          ],
+          "bbox": [
+            13,
+            22,
+            55,
+            57
+          ],
+          "centroid": [
+            32.6565,
+            40.2421
+          ]
+        },
+        {
+          "path": "assets/PROCESSED/enemies/ENM-01/v002/frames/telegraph/ENM-01_telegraph_right_v002_f02.png",
+          "source": "assets/RAW/enemies/ENM-01/v002/frames/ENM-01_telegraph_right_v002_f02.png",
+          "atlas_cell": [
+            64,
+            128,
+            64,
+            64
+          ],
+          "bbox": [
+            12,
+            24,
+            55,
+            58
+          ],
+          "centroid": [
+            32.0695,
+            41.6648
+          ]
+        },
+        {
+          "path": "assets/PROCESSED/enemies/ENM-01/v002/frames/telegraph/ENM-01_telegraph_right_v002_f03.png",
+          "source": "assets/RAW/enemies/ENM-01/v002/frames/ENM-01_telegraph_right_v002_f03.png",
+          "atlas_cell": [
+            128,
+            128,
+            64,
+            64
+          ],
+          "bbox": [
+            6,
+            25,
+            54,
+            58
+          ],
+          "centroid": [
+            30.6992,
+            42.3838
+          ]
+        },
+        {
+          "path": "assets/PROCESSED/enemies/ENM-01/v002/frames/telegraph/ENM-01_telegraph_right_v002_f04.png",
+          "source": "assets/RAW/enemies/ENM-01/v002/frames/ENM-01_telegraph_right_v002_f04.png",
+          "atlas_cell": [
+            192,
+            128,
+            64,
+            64
+          ],
+          "bbox": [
+            4,
+            27,
+            54,
+            59
+          ],
+          "centroid": [
+            30.0935,
+            43.8609
+          ]
+        }
+      ],
+      "atlas": {
+        "row": 2,
+        "region": [
+          0,
+          128,
+          256,
+          64
+        ],
+        "cells": [
+          [
+            0,
+            128,
+            64,
+            64
+          ],
+          [
+            64,
+            128,
+            64,
+            64
+          ],
+          [
+            128,
+            128,
+            64,
+            64
+          ],
+          [
+            192,
+            128,
+            64,
+            64
+          ]
+        ]
+      }
+    },
+    "attack": {
+      "layer": "body",
+      "frame_count": 6,
+      "fps": 14,
+      "duration_seconds": 0.428571,
+      "loop": false,
+      "root": [
+        32,
+        58
+      ],
+      "sheet": "assets/PROCESSED/enemies/ENM-01/v002/sheets/ENM-01_attack_right_v002_sheet.png",
+      "source_sheet": "assets/RAW/enemies/ENM-01/v002/sheets/ENM-01_attack_right_v002_sheet.png",
+      "source_sha256": "16e2cef6b24de333af8540d74d4406e08bc42f550796950b596f8f1e6bdc414d",
+      "frames": [
+        {
+          "path": "assets/PROCESSED/enemies/ENM-01/v002/frames/attack/ENM-01_attack_right_v002_f01.png",
+          "source": "assets/RAW/enemies/ENM-01/v002/frames/ENM-01_attack_right_v002_f01.png",
+          "atlas_cell": [
+            0,
+            192,
+            64,
+            64
+          ],
+          "bbox": [
+            6,
+            22,
+            53,
+            57
+          ],
+          "centroid": [
+            30.3588,
+            40.417
+          ]
+        },
+        {
+          "path": "assets/PROCESSED/enemies/ENM-01/v002/frames/attack/ENM-01_attack_right_v002_f02.png",
+          "source": "assets/RAW/enemies/ENM-01/v002/frames/ENM-01_attack_right_v002_f02.png",
+          "atlas_cell": [
+            64,
+            192,
+            64,
+            64
+          ],
+          "bbox": [
+            7,
+            22,
+            55,
+            57
+          ],
+          "centroid": [
+            31.3875,
+            40.4144
+          ]
+        },
+        {
+          "path": "assets/PROCESSED/enemies/ENM-01/v002/frames/attack/ENM-01_attack_right_v002_f03.png",
+          "source": "assets/RAW/enemies/ENM-01/v002/frames/ENM-01_attack_right_v002_f03.png",
+          "atlas_cell": [
+            128,
+            192,
+            64,
+            64
+          ],
+          "bbox": [
+            15,
+            22,
+            59,
+            57
+          ],
+          "centroid": [
+            34.7315,
+            40.2326
+          ]
+        },
+        {
+          "path": "assets/PROCESSED/enemies/ENM-01/v002/frames/attack/ENM-01_attack_right_v002_f04.png",
+          "source": "assets/RAW/enemies/ENM-01/v002/frames/ENM-01_attack_right_v002_f04.png",
+          "atlas_cell": [
+            192,
+            192,
+            64,
+            64
+          ],
+          "bbox": [
+            17,
+            22,
+            61,
+            57
+          ],
+          "centroid": [
+            36.7315,
+            40.2326
+          ]
+        },
+        {
+          "path": "assets/PROCESSED/enemies/ENM-01/v002/frames/attack/ENM-01_attack_right_v002_f05.png",
+          "source": "assets/RAW/enemies/ENM-01/v002/frames/ENM-01_attack_right_v002_f05.png",
+          "atlas_cell": [
+            256,
+            192,
+            64,
+            64
+          ],
+          "bbox": [
+            10,
+            22,
+            58,
+            57
+          ],
+          "centroid": [
+            34.3875,
+            40.4144
+          ]
+        },
+        {
+          "path": "assets/PROCESSED/enemies/ENM-01/v002/frames/attack/ENM-01_attack_right_v002_f06.png",
+          "source": "assets/RAW/enemies/ENM-01/v002/frames/ENM-01_attack_right_v002_f06.png",
+          "atlas_cell": [
+            320,
+            192,
+            64,
+            64
+          ],
+          "bbox": [
+            9,
+            22,
+            56,
+            57
+          ],
+          "centroid": [
+            33.3588,
+            40.417
+          ]
+        }
+      ],
+      "atlas": {
+        "row": 3,
+        "region": [
+          0,
+          192,
+          384,
+          64
+        ],
+        "cells": [
+          [
+            0,
+            192,
+            64,
+            64
+          ],
+          [
+            64,
+            192,
+            64,
+            64
+          ],
+          [
+            128,
+            192,
+            64,
+            64
+          ],
+          [
+            192,
+            192,
+            64,
+            64
+          ],
+          [
+            256,
+            192,
+            64,
+            64
+          ],
+          [
+            320,
+            192,
+            64,
+            64
+          ]
+        ]
+      }
+    },
+    "recover": {
+      "layer": "body",
+      "frame_count": 3,
+      "fps": 10,
+      "duration_seconds": 0.3,
+      "loop": false,
+      "root": [
+        32,
+        58
+      ],
+      "sheet": "assets/PROCESSED/enemies/ENM-01/v002/sheets/ENM-01_recover_right_v002_sheet.png",
+      "source_sheet": "assets/RAW/enemies/ENM-01/v002/sheets/ENM-01_recover_right_v002_sheet.png",
+      "source_sha256": "4b7d80fdc25f594a59d0b30ef940578fbb65dada86612e6dd92e35925d7b0313",
+      "frames": [
+        {
+          "path": "assets/PROCESSED/enemies/ENM-01/v002/frames/recover/ENM-01_recover_right_v002_f01.png",
+          "source": "assets/RAW/enemies/ENM-01/v002/frames/ENM-01_recover_right_v002_f01.png",
+          "atlas_cell": [
+            0,
+            256,
+            64,
+            64
+          ],
+          "bbox": [
+            14,
+            23,
+            56,
+            57
+          ],
+          "centroid": [
+            33.6906,
+            40.667
+          ]
+        },
+        {
+          "path": "assets/PROCESSED/enemies/ENM-01/v002/frames/recover/ENM-01_recover_right_v002_f02.png",
+          "source": "assets/RAW/enemies/ENM-01/v002/frames/ENM-01_recover_right_v002_f02.png",
+          "atlas_cell": [
+            64,
+            256,
+            64,
+            64
+          ],
+          "bbox": [
+            14,
+            22,
+            55,
+            57
+          ],
+          "centroid": [
+            33.1952,
+            40.2484
+          ]
+        },
+        {
+          "path": "assets/PROCESSED/enemies/ENM-01/v002/frames/recover/ENM-01_recover_right_v002_f03.png",
+          "source": "assets/RAW/enemies/ENM-01/v002/frames/ENM-01_recover_right_v002_f03.png",
+          "atlas_cell": [
+            128,
+            256,
+            64,
+            64
+          ],
+          "bbox": [
+            13,
+            22,
+            55,
+            57
+          ],
+          "centroid": [
+            32.6565,
+            40.2421
+          ]
+        }
+      ],
+      "atlas": {
+        "row": 4,
+        "region": [
+          0,
+          256,
+          192,
+          64
+        ],
+        "cells": [
+          [
+            0,
+            256,
+            64,
+            64
+          ],
+          [
+            64,
+            256,
+            64,
+            64
+          ],
+          [
+            128,
+            256,
+            64,
+            64
+          ]
+        ]
+      }
+    },
+    "hurt": {
+      "layer": "body",
+      "frame_count": 3,
+      "fps": 12,
+      "duration_seconds": 0.25,
+      "loop": false,
+      "root": [
+        32,
+        58
+      ],
+      "sheet": "assets/PROCESSED/enemies/ENM-01/v002/sheets/ENM-01_hurt_right_v002_sheet.png",
+      "source_sheet": "assets/RAW/enemies/ENM-01/v002/sheets/ENM-01_hurt_right_v002_sheet.png",
+      "source_sha256": "9abe18a0cf62779df15888e22c98dc9d932f6bedc5302013500e167b628850ee",
+      "frames": [
+        {
+          "path": "assets/PROCESSED/enemies/ENM-01/v002/frames/hurt/ENM-01_hurt_right_v002_f01.png",
+          "source": "assets/RAW/enemies/ENM-01/v002/frames/ENM-01_hurt_right_v002_f01.png",
+          "atlas_cell": [
+            0,
+            320,
+            64,
+            64
+          ],
+          "bbox": [
+            10,
+            21,
+            52,
+            56
+          ],
+          "centroid": [
+            29.6565,
+            39.2421
+          ]
+        },
+        {
+          "path": "assets/PROCESSED/enemies/ENM-01/v002/frames/hurt/ENM-01_hurt_right_v002_f02.png",
+          "source": "assets/RAW/enemies/ENM-01/v002/frames/ENM-01_hurt_right_v002_f02.png",
+          "atlas_cell": [
+            64,
+            320,
+            64,
+            64
+          ],
+          "bbox": [
+            11,
+            21,
+            53,
+            56
+          ],
+          "centroid": [
+            30.6565,
+            39.2421
+          ]
+        },
+        {
+          "path": "assets/PROCESSED/enemies/ENM-01/v002/frames/hurt/ENM-01_hurt_right_v002_f03.png",
+          "source": "assets/RAW/enemies/ENM-01/v002/frames/ENM-01_hurt_right_v002_f03.png",
+          "atlas_cell": [
+            128,
+            320,
+            64,
+            64
+          ],
+          "bbox": [
+            12,
+            22,
+            54,
+            57
+          ],
+          "centroid": [
+            31.6565,
+            40.2421
+          ]
+        }
+      ],
+      "atlas": {
+        "row": 5,
+        "region": [
+          0,
+          320,
+          192,
+          64
+        ],
+        "cells": [
+          [
+            0,
+            320,
+            64,
+            64
+          ],
+          [
+            64,
+            320,
+            64,
+            64
+          ],
+          [
+            128,
+            320,
+            64,
+            64
+          ]
+        ]
+      }
+    },
+    "death": {
+      "layer": "body",
+      "frame_count": 8,
+      "fps": 10,
+      "duration_seconds": 0.8,
+      "loop": false,
+      "root": [
+        32,
+        58
+      ],
+      "sheet": "assets/PROCESSED/enemies/ENM-01/v002/sheets/ENM-01_death_right_v002_sheet.png",
+      "source_sheet": "assets/RAW/enemies/ENM-01/v002/sheets/ENM-01_death_right_v002_sheet.png",
+      "source_sha256": "74fb18a13a8ba1d025ca465495ada06e6d3aca512af63a94d1beb27e9e8cb0c3",
+      "frames": [
+        {
+          "path": "assets/PROCESSED/enemies/ENM-01/v002/frames/death/ENM-01_death_right_v002_f01.png",
+          "source": "assets/RAW/enemies/ENM-01/v002/frames/ENM-01_death_right_v002_f01.png",
+          "atlas_cell": [
+            0,
+            384,
+            64,
+            64
+          ],
+          "bbox": [
+            13,
+            22,
+            55,
+            57
+          ],
+          "centroid": [
+            32.6565,
+            40.2421
+          ]
+        },
+        {
+          "path": "assets/PROCESSED/enemies/ENM-01/v002/frames/death/ENM-01_death_right_v002_f02.png",
+          "source": "assets/RAW/enemies/ENM-01/v002/frames/ENM-01_death_right_v002_f02.png",
+          "atlas_cell": [
+            64,
+            384,
+            64,
+            64
+          ],
+          "bbox": [
+            12,
+            25,
+            55,
+            57
+          ],
+          "centroid": [
+            32.1991,
+            41.6019
+          ]
+        },
+        {
+          "path": "assets/PROCESSED/enemies/ENM-01/v002/frames/death/ENM-01_death_right_v002_f03.png",
+          "source": "assets/RAW/enemies/ENM-01/v002/frames/ENM-01_death_right_v002_f03.png",
+          "atlas_cell": [
+            128,
+            384,
+            64,
+            64
+          ],
+          "bbox": [
+            12,
+            28,
+            55,
+            59
+          ],
+          "centroid": [
+            32.1366,
+            43.828
+          ]
+        },
+        {
+          "path": "assets/PROCESSED/enemies/ENM-01/v002/frames/death/ENM-01_death_right_v002_f04.png",
+          "source": "assets/RAW/enemies/ENM-01/v002/frames/ENM-01_death_right_v002_f04.png",
+          "atlas_cell": [
+            192,
+            384,
+            64,
+            64
+          ],
+          "bbox": [
+            11,
+            31,
+            55,
+            59
+          ],
+          "centroid": [
+            31.7027,
+            45.228
+          ]
+        },
+        {
+          "path": "assets/PROCESSED/enemies/ENM-01/v002/frames/death/ENM-01_death_right_v002_f05.png",
+          "source": "assets/RAW/enemies/ENM-01/v002/frames/ENM-01_death_right_v002_f05.png",
+          "atlas_cell": [
+            256,
+            384,
+            64,
+            64
+          ],
+          "bbox": [
+            11,
+            35,
+            55,
+            59
+          ],
+          "centroid": [
+            31.4845,
+            47.1773
+          ]
+        },
+        {
+          "path": "assets/PROCESSED/enemies/ENM-01/v002/frames/death/ENM-01_death_right_v002_f06.png",
+          "source": "assets/RAW/enemies/ENM-01/v002/frames/ENM-01_death_right_v002_f06.png",
+          "atlas_cell": [
+            320,
+            384,
+            64,
+            64
+          ],
+          "bbox": [
+            10,
+            38,
+            55,
+            60
+          ],
+          "centroid": [
+            31.1498,
+            48.6433
+          ]
+        },
+        {
+          "path": "assets/PROCESSED/enemies/ENM-01/v002/frames/death/ENM-01_death_right_v002_f07.png",
+          "source": "assets/RAW/enemies/ENM-01/v002/frames/ENM-01_death_right_v002_f07.png",
+          "atlas_cell": [
+            384,
+            384,
+            64,
+            64
+          ],
+          "bbox": [
+            10,
+            41,
+            55,
+            60
+          ],
+          "centroid": [
+            30.9625,
+            50.2097
+          ]
+        },
+        {
+          "path": "assets/PROCESSED/enemies/ENM-01/v002/frames/death/ENM-01_death_right_v002_f08.png",
+          "source": "assets/RAW/enemies/ENM-01/v002/frames/ENM-01_death_right_v002_f08.png",
+          "atlas_cell": [
+            448,
+            384,
+            64,
+            64
+          ],
+          "bbox": [
+            9,
+            44,
+            55,
+            60
+          ],
+          "centroid": [
+            30.6443,
+            51.6377
+          ]
+        }
+      ],
+      "atlas": {
+        "row": 6,
+        "region": [
+          0,
+          384,
+          512,
+          64
+        ],
+        "cells": [
+          [
+            0,
+            384,
+            64,
+            64
+          ],
+          [
+            64,
+            384,
+            64,
+            64
+          ],
+          [
+            128,
+            384,
+            64,
+            64
+          ],
+          [
+            192,
+            384,
+            64,
+            64
+          ],
+          [
+            256,
+            384,
+            64,
+            64
+          ],
+          [
+            320,
+            384,
+            64,
+            64
+          ],
+          [
+            384,
+            384,
+            64,
+            64
+          ],
+          [
+            448,
+            384,
+            64,
+            64
+          ]
+        ]
+      }
+    }
+  }
+}

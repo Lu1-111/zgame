@@ -1,0 +1,193 @@
+{
+  "batch": "ITM-B01",
+  "version": "v001",
+  "generator": "built-in image_gen",
+  "formalItemCount": 12,
+  "extraAbilityCount": 1,
+  "rawSheetCount": 13,
+  "candidateFrameCount": 52,
+  "items": [
+    {
+      "id": "potion_small",
+      "name": "小型奶瓶",
+      "trackingId": "ITM-06",
+      "countsInTwelve": true,
+      "file": "consumables/ITEM_potion_small_idle_v001.png",
+      "prompt": "consumables/ITEM_potion_small_idle_v001.prompt.txt",
+      "layout": "consumables/ITEM_potion_small_idle_v001.layout.json",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "4d11a6cd0aa367e85a4685a3c49890a302ce6230b5b539b1f2dbfd52f22dcbff"
+    },
+    {
+      "id": "potion_mana",
+      "name": "奶力药剂",
+      "trackingId": "ITM-08",
+      "countsInTwelve": true,
+      "file": "consumables/ITEM_potion_mana_idle_v001.png",
+      "prompt": "consumables/ITEM_potion_mana_idle_v001.prompt.txt",
+      "layout": "consumables/ITEM_potion_mana_idle_v001.layout.json",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "cd0ffed88e11db8c48a1c880471c55ac980242f3c4287506ae75cfa746bbd703"
+    },
+    {
+      "id": "potion_sta",
+      "name": "体力药剂",
+      "trackingId": "ITM-09",
+      "countsInTwelve": true,
+      "file": "consumables/ITEM_potion_sta_idle_v001.png",
+      "prompt": "consumables/ITEM_potion_sta_idle_v001.prompt.txt",
+      "layout": "consumables/ITEM_potion_sta_idle_v001.layout.json",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "6b85b6fc52d3df90ec4a0b531089bb73a0018c085bde21f942c4a9809be17c7c"
+    },
+    {
+      "id": "milk_bomb",
+      "name": "奶弹",
+      "trackingId": "ITM-10",
+      "countsInTwelve": true,
+      "file": "consumables/ITEM_milk_bomb_idle_v001.png",
+      "prompt": "consumables/ITEM_milk_bomb_idle_v001.prompt.txt",
+      "layout": "consumables/ITEM_milk_bomb_idle_v001.layout.json",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "002b449f813ce570635cc80db9469a2c728646c777327ff828ce8e02da072a71"
+    },
+    {
+      "id": "mushroom",
+      "name": "奶菇",
+      "trackingId": "ITM-07",
+      "countsInTwelve": true,
+      "file": "materials_special/ITEM_mushroom_idle_v001.png",
+      "prompt": "materials_special/ITEM_mushroom_idle_v001.prompt.txt",
+      "layout": "materials_special/ITEM_mushroom_idle_v001.layout.json",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "a11d4eb26c34785854f3d9d92fdd3a41add1133c018c6627a2a90ec1c9fa8700"
+    },
+    {
+      "id": "honey_wax",
+      "name": "蜜蜡",
+      "trackingId": "ITM-11",
+      "countsInTwelve": true,
+      "file": "materials_special/ITEM_honey_wax_idle_v001.png",
+      "prompt": "materials_special/ITEM_honey_wax_idle_v001.prompt.txt",
+      "layout": "materials_special/ITEM_honey_wax_idle_v001.layout.json",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "6e6721a2024c5398c613ced068de539e1faa31ad0af1bc593b217c8926adefc0"
+    },
+    {
+      "id": "milk_crystal",
+      "name": "奶晶",
+      "trackingId": "ITM-12",
+      "countsInTwelve": true,
+      "file": "materials_special/ITEM_milk_crystal_idle_v001.png",
+      "prompt": "materials_special/ITEM_milk_crystal_idle_v001.prompt.txt",
+      "layout": "materials_special/ITEM_milk_crystal_idle_v001.layout.json",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "4b17fe9cdc609dc31f6e59bd0942457988dc30748728f30ffe910c3dba38dcab"
+    },
+    {
+      "id": "hp_fragment",
+      "name": "生命碎片",
+      "trackingId": "ITM-01",
+      "countsInTwelve": true,
+      "file": "fragments_ability/ITEM_hp_fragment_idle_v001.png",
+      "prompt": "fragments_ability/ITEM_hp_fragment_idle_v001.prompt.txt",
+      "layout": "fragments_ability/ITEM_hp_fragment_idle_v001.layout.json",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "fae5a7f027508bdea6ddb95065fda58b5f1884d58e3033460e09441779ccb3d4"
+    },
+    {
+      "id": "sta_fragment",
+      "name": "体力碎片",
+      "trackingId": "ITM-02",
+      "countsInTwelve": true,
+      "file": "fragments_ability/ITEM_sta_fragment_idle_v001.png",
+      "prompt": "fragments_ability/ITEM_sta_fragment_idle_v001.prompt.txt",
+      "layout": "fragments_ability/ITEM_sta_fragment_idle_v001.layout.json",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "1b765926558c2570e311a4909eba4656cd9f97ebf719054c99100e30422952df"
+    },
+    {
+      "id": "mana_fragment",
+      "name": "奶力碎片",
+      "trackingId": "ITM-03",
+      "countsInTwelve": true,
+      "file": "fragments_ability/ITEM_mana_fragment_idle_v001.png",
+      "prompt": "fragments_ability/ITEM_mana_fragment_idle_v001.prompt.txt",
+      "layout": "fragments_ability/ITEM_mana_fragment_idle_v001.layout.json",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "461d63d3f86f927531c0eda25c0fdf7701d3f8341e50c1975719c409db36daf3"
+    },
+    {
+      "id": "bag_expand",
+      "name": "背包扩容卷",
+      "trackingId": "ITM-04",
+      "countsInTwelve": true,
+      "file": "materials_special/ITEM_bag_expand_idle_v001.png",
+      "prompt": "materials_special/ITEM_bag_expand_idle_v001.prompt.txt",
+      "layout": "materials_special/ITEM_bag_expand_idle_v001.layout.json",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "5fd6b3c9d2f32ac29665e7478c10e536efc73917644f12c26370f4d1df80bf52"
+    },
+    {
+      "id": "map_fragment",
+      "name": "地图碎片",
+      "trackingId": "ITM-05",
+      "countsInTwelve": true,
+      "file": "materials_special/ITEM_map_fragment_idle_v001.png",
+      "prompt": "materials_special/ITEM_map_fragment_idle_v001.prompt.txt",
+      "layout": "materials_special/ITEM_map_fragment_idle_v001.layout.json",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "ea8ce6a9e0af92e549d200214914092570d0e68e6e07f3da0f80216a9f814f22"
+    },
+    {
+      "id": "ability_double_jump",
+      "name": "奶泡跃·二段跳",
+      "trackingId": "OBJ-06 / ABL-01",
+      "countsInTwelve": false,
+      "file": "fragments_ability/ITEM_ability_double_jump_idle_v001.png",
+      "prompt": "fragments_ability/ITEM_ability_double_jump_idle_v001.prompt.txt",
+      "layout": "fragments_ability/ITEM_ability_double_jump_idle_v001.layout.json",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "120786df19908398c86da9cb7a8b9403da99b026861d399ce89192f2e0a68c1f"
+    }
+  ]
+}

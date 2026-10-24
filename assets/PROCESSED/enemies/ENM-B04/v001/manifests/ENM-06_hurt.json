@@ -1,0 +1,179 @@
+{
+  "id": "ENM-06_hurt",
+  "enemyId": "ENM-06",
+  "gameEnemyId": "shadow_wisp",
+  "label": "暗影幽灵",
+  "name": "hurt",
+  "kind": "body",
+  "generationMode": "built-in image_gen",
+  "sourcePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-06/ENM-06_actions_B.png",
+  "sourceRects": [
+    [
+      0,
+      270,
+      388,
+      256
+    ],
+    [
+      388,
+      270,
+      358,
+      256
+    ],
+    [
+      746,
+      270,
+      414,
+      256
+    ],
+    [
+      1160,
+      270,
+      376,
+      256
+    ]
+  ],
+  "sourceAnchors": [
+    [
+      242,
+      129
+    ],
+    [
+      238,
+      129
+    ],
+    [
+      264,
+      129
+    ],
+    [
+      234,
+      129
+    ]
+  ],
+  "sourceSize": [
+    1536,
+    1024
+  ],
+  "sourceSha256": "0d1286958bb013e5d59557b65213a0ffe3b48a6a42cf4ae9b911f8b47520e449",
+  "sourceBatch": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-06/batch.json",
+  "promptPath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-06/ENM-06_B_retry.prompt.txt",
+  "provenancePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-06/provenance.json",
+  "target": [
+    104,
+    88
+  ],
+  "anchor": [
+    52,
+    44
+  ],
+  "rootType": "flying",
+  "scale": 0.19,
+  "fps": 12,
+  "loop": false,
+  "frameCount": 4,
+  "frames": [
+    "frames/ENM-06_hurt/ENM-06_hurt_00.png",
+    "frames/ENM-06_hurt/ENM-06_hurt_01.png",
+    "frames/ENM-06_hurt/ENM-06_hurt_02.png",
+    "frames/ENM-06_hurt/ENM-06_hurt_03.png"
+  ],
+  "sheet": "sheets/ENM-06_hurt.png",
+  "frameDetails": [
+    {
+      "sourceRect": [
+        0,
+        270,
+        388,
+        256
+      ],
+      "sourceAnchor": [
+        242,
+        129
+      ],
+      "offset": [
+        6,
+        19
+      ],
+      "alphaBBox": [
+        6,
+        19,
+        80,
+        68
+      ]
+    },
+    {
+      "sourceRect": [
+        388,
+        270,
+        358,
+        256
+      ],
+      "sourceAnchor": [
+        238,
+        129
+      ],
+      "offset": [
+        7,
+        19
+      ],
+      "alphaBBox": [
+        8,
+        19,
+        75,
+        68
+      ]
+    },
+    {
+      "sourceRect": [
+        746,
+        270,
+        414,
+        256
+      ],
+      "sourceAnchor": [
+        264,
+        129
+      ],
+      "offset": [
+        2,
+        19
+      ],
+      "alphaBBox": [
+        2,
+        19,
+        81,
+        68
+      ]
+    },
+    {
+      "sourceRect": [
+        1160,
+        270,
+        376,
+        256
+      ],
+      "sourceAnchor": [
+        234,
+        129
+      ],
+      "offset": [
+        8,
+        19
+      ],
+      "alphaBBox": [
+        8,
+        19,
+        77,
+        68
+      ]
+    }
+  ],
+  "fadeStartNormalized": 1.0,
+  "phases": [
+    "hurt1",
+    "hurt2",
+    "hurt3",
+    "hurt4"
+  ]
+}

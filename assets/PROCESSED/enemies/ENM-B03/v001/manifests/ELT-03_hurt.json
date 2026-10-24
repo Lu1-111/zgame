@@ -1,0 +1,240 @@
+{
+  "id": "ELT-03_hurt",
+  "name": "hurt",
+  "enemyId": "ELT-03",
+  "gameEnemyId": "acid_mother",
+  "label": "酸液母体 hurt",
+  "sourcePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B03/v001/acid_mother/acid_mother_B_v002.png",
+  "sourceRects": [
+    [
+      0,
+      365,
+      314,
+      315
+    ],
+    [
+      314,
+      365,
+      313,
+      315
+    ],
+    [
+      627,
+      365,
+      313,
+      315
+    ],
+    [
+      940,
+      365,
+      314,
+      315
+    ]
+  ],
+  "sourceAnchors": [
+    [
+      157.0,
+      262
+    ],
+    [
+      156.5,
+      261
+    ],
+    [
+      156.5,
+      260
+    ],
+    [
+      157.0,
+      260
+    ]
+  ],
+  "target": [
+    104,
+    120
+  ],
+  "anchor": [
+    50,
+    97
+  ],
+  "scale": 0.3,
+  "fps": 12,
+  "loop": false,
+  "kind": "body",
+  "phases": [
+    "hurt"
+  ],
+  "notes": [
+    "v002 generated transparent-gutter revision preserves identity and action order; fixed scale across whole enemy. Death final fade is component-driven.",
+    "Explicit nonuniform source row boundaries [0,365,680,990,1254] match generated layout; ground anchored to actual belly foot baseline."
+  ],
+  "promptPath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B03/v001/acid_mother/acid_mother_B_v002.prompt.txt",
+  "provenancePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B03/v001/acid_mother/acid_mother_B_v002.provenance.json",
+  "generationMode": "built-in image_gen",
+  "canvasExpansionReason": "统一透明扩展：原画布所有非零alpha并集[0, -11, 96, 103]；全动作统一画布+2px边；保留源倍率、全部alpha与语义root。",
+  "frames": [
+    "frames/ELT-03_hurt/ELT-03_hurt_00.png",
+    "frames/ELT-03_hurt/ELT-03_hurt_01.png",
+    "frames/ELT-03_hurt/ELT-03_hurt_02.png",
+    "frames/ELT-03_hurt/ELT-03_hurt_03.png"
+  ],
+  "sheet": "sheets/ELT-03_hurt.png",
+  "sheetRects": [
+    [
+      0,
+      0,
+      104,
+      120
+    ],
+    [
+      104,
+      0,
+      104,
+      120
+    ],
+    [
+      208,
+      0,
+      104,
+      120
+    ],
+    [
+      312,
+      0,
+      104,
+      120
+    ]
+  ],
+  "atlas": "atlas/ELT-03_hurt.png",
+  "atlasColumns": 2,
+  "atlasRows": 2,
+  "atlasRects": [
+    [
+      0,
+      0,
+      104,
+      120
+    ],
+    [
+      104,
+      0,
+      104,
+      120
+    ],
+    [
+      0,
+      120,
+      104,
+      120
+    ],
+    [
+      104,
+      120,
+      104,
+      120
+    ]
+  ],
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "sourceSha256": "62b5e1486ad09055042caa42a553b195c4aa31b56e022f0715751febce1d04cb",
+  "sourceBatch": "/home/lululu/zgame/assets/RAW/enemies/ENM-B03/v001/acid_mother/batch.json",
+  "frameCount": 4,
+  "frameDetails": [
+    {
+      "sourceRect": [
+        0,
+        365,
+        314,
+        315
+      ],
+      "sourceAnchor": [
+        157.0,
+        262
+      ],
+      "offset": [
+        3,
+        18
+      ],
+      "alphaBBox": [
+        12,
+        32,
+        97,
+        112
+      ],
+      "sourceEdgeAlpha": 1
+    },
+    {
+      "sourceRect": [
+        314,
+        365,
+        313,
+        315
+      ],
+      "sourceAnchor": [
+        156.5,
+        261
+      ],
+      "offset": [
+        3,
+        19
+      ],
+      "alphaBBox": [
+        3,
+        21,
+        92,
+        110
+      ],
+      "sourceEdgeAlpha": 1
+    },
+    {
+      "sourceRect": [
+        627,
+        365,
+        313,
+        315
+      ],
+      "sourceAnchor": [
+        156.5,
+        260
+      ],
+      "offset": [
+        3,
+        19
+      ],
+      "alphaBBox": [
+        9,
+        22,
+        90,
+        106
+      ],
+      "sourceEdgeAlpha": 0
+    },
+    {
+      "sourceRect": [
+        940,
+        365,
+        314,
+        315
+      ],
+      "sourceAnchor": [
+        157.0,
+        260
+      ],
+      "offset": [
+        3,
+        19
+      ],
+      "alphaBBox": [
+        5,
+        45,
+        89,
+        100
+      ],
+      "sourceEdgeAlpha": 0
+    }
+  ],
+  "fadeStartNormalized": 1.0,
+  "loopBoundaryMeanDifference": 17.666666666666668
+}

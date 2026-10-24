@@ -1,0 +1,179 @@
+{
+  "id": "ENM-08_hurt",
+  "enemyId": "ENM-08",
+  "gameEnemyId": "wax_bee",
+  "label": "蜡蜂",
+  "name": "hurt",
+  "kind": "body",
+  "generationMode": "built-in image_gen",
+  "sourcePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-08/ENM-08_actions_B.png",
+  "sourceRects": [
+    [
+      0,
+      252,
+      384,
+      290
+    ],
+    [
+      384,
+      252,
+      384,
+      290
+    ],
+    [
+      768,
+      252,
+      406,
+      290
+    ],
+    [
+      1174,
+      252,
+      362,
+      290
+    ]
+  ],
+  "sourceAnchors": [
+    [
+      223,
+      145
+    ],
+    [
+      223,
+      145
+    ],
+    [
+      223,
+      145
+    ],
+    [
+      201,
+      145
+    ]
+  ],
+  "sourceSize": [
+    1536,
+    1024
+  ],
+  "sourceSha256": "c214ecc194f02a4afd63fea75a0a1f302bc49d1cdd076cf5ccd85b317e053ad8",
+  "sourceBatch": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-08/batch.json",
+  "promptPath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-08/ENM-08_B.prompt.txt",
+  "provenancePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-08/provenance.json",
+  "target": [
+    80,
+    64
+  ],
+  "anchor": [
+    40,
+    32
+  ],
+  "rootType": "flying",
+  "scale": 0.16,
+  "fps": 12,
+  "loop": false,
+  "frameCount": 4,
+  "frames": [
+    "frames/ENM-08_hurt/ENM-08_hurt_00.png",
+    "frames/ENM-08_hurt/ENM-08_hurt_01.png",
+    "frames/ENM-08_hurt/ENM-08_hurt_02.png",
+    "frames/ENM-08_hurt/ENM-08_hurt_03.png"
+  ],
+  "sheet": "sheets/ENM-08_hurt.png",
+  "frameDetails": [
+    {
+      "sourceRect": [
+        0,
+        252,
+        384,
+        290
+      ],
+      "sourceAnchor": [
+        223,
+        145
+      ],
+      "offset": [
+        4,
+        9
+      ],
+      "alphaBBox": [
+        8,
+        9,
+        65,
+        54
+      ]
+    },
+    {
+      "sourceRect": [
+        384,
+        252,
+        384,
+        290
+      ],
+      "sourceAnchor": [
+        223,
+        145
+      ],
+      "offset": [
+        4,
+        9
+      ],
+      "alphaBBox": [
+        5,
+        9,
+        62,
+        55
+      ]
+    },
+    {
+      "sourceRect": [
+        768,
+        252,
+        406,
+        290
+      ],
+      "sourceAnchor": [
+        223,
+        145
+      ],
+      "offset": [
+        4,
+        9
+      ],
+      "alphaBBox": [
+        5,
+        9,
+        66,
+        55
+      ]
+    },
+    {
+      "sourceRect": [
+        1174,
+        252,
+        362,
+        290
+      ],
+      "sourceAnchor": [
+        201,
+        145
+      ],
+      "offset": [
+        8,
+        9
+      ],
+      "alphaBBox": [
+        9,
+        9,
+        61,
+        55
+      ]
+    }
+  ],
+  "fadeStartNormalized": 1.0,
+  "phases": [
+    "hurt1",
+    "hurt2",
+    "hurt3",
+    "hurt4"
+  ]
+}

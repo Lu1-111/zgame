@@ -1,0 +1,125 @@
+{
+  "batch": "ENV-B01",
+  "date": "2026-10-24",
+  "tool": "built-in image_gen",
+  "raw_image_count": 12,
+  "images": [
+    {
+      "path": "assets/RAW/environments/ENV-B01/v001/ENV-01/background_source.png",
+      "sha256": "9596e047435a79d5b6ce89f7494914f1985d99c30a87671ad31caf322e91b7d4",
+      "size": [
+        1672,
+        941
+      ],
+      "mode": "RGB"
+    },
+    {
+      "path": "assets/RAW/environments/ENV-B01/v001/ENV-01/interior_source.png",
+      "sha256": "085d38bc89ae9e20b711719fa790bc5a0edd187db5e3e8e11d19a7cda7639cc9",
+      "size": [
+        1672,
+        941
+      ],
+      "mode": "RGB"
+    },
+    {
+      "path": "assets/RAW/environments/ENV-B01/v001/ENV-01/scenery_source.png",
+      "sha256": "50f3bf7f6f09babc8f49deea76ca2d6437f534330028bc21ca5b53da0b668867",
+      "size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "path": "assets/RAW/environments/ENV-B01/v001/ENV-01/terrain_source.png",
+      "sha256": "f7ccc4c0cce3d7c219739791b23513001aaa2c04ec70714dd0a119def22756cd",
+      "size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "path": "assets/RAW/environments/ENV-B01/v001/ENV-02/ENV-02_background_source_v001.png",
+      "sha256": "fb90448f9eff03da1ff4223ce36203c20046b5fe2e6f9845ab2afa31144d359f",
+      "size": [
+        1672,
+        941
+      ],
+      "mode": "RGB"
+    },
+    {
+      "path": "assets/RAW/environments/ENV-B01/v001/ENV-02/ENV-02_scenery_source_v001.png",
+      "sha256": "7f28b6cb61dc64ceaa13d2840c9d65f790e99f3589f1857585c4e786fde3ff94",
+      "size": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "path": "assets/RAW/environments/ENV-B01/v001/ENV-02/ENV-02_terrain_source_v001.png",
+      "sha256": "abb765902fc86a7a07a8b03220af4f30c8ca4de1b61abbd23fc2ee50d8740c3c",
+      "size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "path": "assets/RAW/environments/ENV-B01/v001/ENV-03/scenery.png",
+      "sha256": "9899f4d724c190cadf37a44cbe3c0cc3f2a634a387ab9af9d1bb03eca219693e",
+      "size": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "path": "assets/RAW/environments/ENV-B01/v001/ENV-03/terrain.png",
+      "sha256": "6cc16b0f5e6a3dcb1576e92f2f67a5bd6ffce562ba8fe9c804692696822e8ba5",
+      "size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "path": "assets/RAW/environments/ENV-B01/v001/ENV-04/scenery.png",
+      "sha256": "da0ae1d17c12e72fe08feda11e78548f78243ee71fe02ee3c64977df19ca6aa7",
+      "size": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "path": "assets/RAW/environments/ENV-B01/v001/ENV-04/terrain.png",
+      "sha256": "b5a88a22a3ff7edeb308793db724813b6b9f07f0c63b1b3e111fa0dc0c130f8f",
+      "size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "path": "assets/RAW/environments/ENV-B01/v001/ENV-04/wide_background.png",
+      "sha256": "68429c03121b4e1886b559f1a42c8de84ec42676067a58741f0cc84354ee8277",
+      "size": [
+        2172,
+        724
+      ],
+      "mode": "RGB"
+    }
+  ],
+  "prompt_files": [
+    "assets/RAW/environments/ENV-B01/v001/ENV-01/prompts.json",
+    "assets/RAW/environments/ENV-B01/v001/ENV-02/prompts.json",
+    "assets/RAW/environments/ENV-B01/v001/ENV-03/scenery.prompt.txt",
+    "assets/RAW/environments/ENV-B01/v001/ENV-03/terrain.prompt.txt",
+    "assets/RAW/environments/ENV-B01/v001/ENV-04/scenery.prompt.txt",
+    "assets/RAW/environments/ENV-B01/v001/ENV-04/terrain.prompt.txt",
+    "assets/RAW/environments/ENV-B01/v001/ENV-04/wide_background.prompt.txt"
+  ]
+}

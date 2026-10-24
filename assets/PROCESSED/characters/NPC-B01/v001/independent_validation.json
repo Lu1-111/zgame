@@ -1,0 +1,68 @@
+[
+  {
+    "id": "NPC-01",
+    "animations": 3,
+    "frames": 18,
+    "uniquePNG": 18,
+    "dimensions": [
+      64,
+      64
+    ],
+    "anchor": [
+      32,
+      58
+    ],
+    "pixelErrors": 0,
+    "sourceMaster": {
+      "file": "/home/lululu/zgame/assets/RAW/characters/NPC-01/v001/NPC-01_master_right_v001.png",
+      "version": "v001",
+      "sha256": "d0afe4f8b24bd8d1491de8c08fad0c9d416a97090eaff0ed0cd639b1e7254387",
+      "processedFile": "NPC-01_master_right_v001.png",
+      "sourceAnchor": [
+        677.5,
+        1209
+      ],
+      "uniformScale": 0.04181494661921708,
+      "notes": "Independent role master source; master calibration separate from generated animation rows."
+    }
+  },
+  {
+    "id": "NPC-02",
+    "animations": 4,
+    "frames": 24,
+    "uniquePNG": 24,
+    "dimensions": [
+      64,
+      64
+    ],
+    "anchor": [
+      32,
+      58
+    ],
+    "pixelErrors": 0,
+    "sourceMaster": {
+      "file": "/home/lululu/zgame/assets/RAW/characters/NPC-02/v001/NPC-02_master_right_v001.png",
+      "version": "v001",
+      "sha256": "a4f2bfff266ee1bc47caebb0e48b88f75434ad27e17a279b1f783cb2550fca68",
+      "processedFile": "NPC-02_master_right_v001.png",
+      "sourceAnchor": [
+        165.5,
+        243
+      ],
+      "uniformScale": 0.18502202643171806,
+      "notes": "Derived master from the same animation identity. This file is not an independent image generation.",
+      "derivedFrom": {
+        "file": "assets/RAW/characters/NPC-02/v001/NPC-02_actions_right_sheet_v001.png",
+        "animation": "idle",
+        "frame": 0,
+        "rect": [
+          0,
+          0,
+          256,
+          256
+        ],
+        "method": "mechanical RGBA extraction, no new generation"
+      }
+    }
+  }
+]

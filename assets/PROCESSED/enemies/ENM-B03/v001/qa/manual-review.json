@@ -1,0 +1,50 @@
+{
+  "scope": "6 enemy contact sheets: all 42 body actions / 192 frames; 6 FX strips / 36 frames",
+  "method": "Static frame-sequence visual inspection, source/target pixel QA, headless Godot playback verification. Browser UI inventory unavailable.",
+  "result": "Pixel QA and root/resource checks pass; revised small-enemy death ordering awaiting main agent visual approval.",
+  "anchors": "Ground semantic plant roots calibrated per action row; flying roots use thorax joints. Mirror occurs around VisualRoot.",
+  "loopReview": "idle/move contact sequences contain pose changes, not translated reuse. First/last boundary inspected statically; final combat integration still needs in-game visual review.",
+  "fxReview": "Six separate FX retain authored phases and complete tails. attack→recover preserves FX lifetime; death and FX smoothstep fade verified by smoke/preview behavior checks.",
+  "knownLimitations": [
+    "No browser UI interaction/screenshot test was possible; actual embedded JS tested with mock DOM/canvas.",
+    "No main-game AI, collision, hit timing or damage logic was connected in this asset task."
+  ],
+  "deathSequenceCorrection": {
+    "reason": "Main agent rejected ENM-01/09 death frames 4→5 for intact-body rebound. Original technical review was insufficient to approve death ordering.",
+    "change": "Small-art agent reordered all three small-enemy death sequences by semantic collapse phases; source PNGs unchanged, all eight unique source cells used exactly once, anchors reordered with rectangles.",
+    "sequences": {
+      "ENM-01": [
+        8,
+        12,
+        9,
+        10,
+        13,
+        11,
+        14,
+        15
+      ],
+      "ENM-09": [
+        8,
+        9,
+        12,
+        10,
+        13,
+        11,
+        14,
+        15
+      ],
+      "ENM-10": [
+        8,
+        9,
+        12,
+        10,
+        11,
+        13,
+        14,
+        15
+      ]
+    },
+    "finalVisualApproval": "pending main agent re-review"
+  },
+  "finalPrimaryVisualApproval": "passed: all six type overview plus reordered three small-enemy death strips reviewed"
+}

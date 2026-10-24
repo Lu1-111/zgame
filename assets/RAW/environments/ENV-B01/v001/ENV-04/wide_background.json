@@ -1,0 +1,36 @@
+{
+  "generator": "built-in image_gen",
+  "sha256": "68429c03121b4e1886b559f1a42c8de84ec42676067a58741f0cc84354ee8277",
+  "dimensions": [
+    2172,
+    724
+  ],
+  "mode": "RGB",
+  "prompt": "wide_background.prompt.txt",
+  "source_path": "/home/lululu/.codex/generated_images/01a16da5-d551-7d32-b513-b0d46715aa67/exec-4bbc090f-2886-4d7c-9460-85782547a9c7.png",
+  "raw_unchanged": true,
+  "reference": "assets/PROCESSED/environments/ENV-B01/v001/ENV-04/background.png",
+  "reference_role": "palette and material only, newly composed hall",
+  "processed": "background_wide.png",
+  "processing": {
+    "crop": [
+      62,
+      74,
+      2110,
+      650
+    ],
+    "crop_size": [
+      2048,
+      576
+    ],
+    "scale_uniform": 0.625,
+    "resample": "nearest",
+    "saturation": 0.8,
+    "blend_with_base": {
+      "base": "#120f1c",
+      "source_weight": 0.9
+    },
+    "palette": 64
+  },
+  "composition": "newly generated continuous wide hall, no mirroring, no old-image stretching; structures at outer wings only"
+}

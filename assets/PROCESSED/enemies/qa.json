@@ -1,0 +1,99 @@
+{
+  "format": "nailong-processed-enemies-qa-v1",
+  "passed": true,
+  "errors": [],
+  "enemy_count": 8,
+  "animation_count": 65,
+  "frame_count": 356,
+  "enemies": {
+    "ENM-01": {
+      "animations": 7,
+      "frames": 38,
+      "root": [
+        32,
+        58
+      ],
+      "layers": [
+        "body"
+      ]
+    },
+    "ENM-02": {
+      "animations": 7,
+      "frames": 38,
+      "root": [
+        32,
+        58
+      ],
+      "layers": [
+        "body"
+      ]
+    },
+    "ENM-03": {
+      "animations": 15,
+      "frames": 84,
+      "root": [
+        32,
+        58
+      ],
+      "layers": [
+        "body",
+        "child"
+      ]
+    },
+    "ENM-04": {
+      "animations": 7,
+      "frames": 38,
+      "root": [
+        32,
+        58
+      ],
+      "layers": [
+        "body"
+      ]
+    },
+    "ENM-05": {
+      "animations": 7,
+      "frames": 38,
+      "root": [
+        32,
+        32
+      ],
+      "layers": [
+        "body"
+      ]
+    },
+    "ENM-06": {
+      "animations": 8,
+      "frames": 44,
+      "root": [
+        32,
+        32
+      ],
+      "layers": [
+        "body"
+      ]
+    },
+    "ENM-07": {
+      "animations": 7,
+      "frames": 38,
+      "root": [
+        32,
+        58
+      ],
+      "layers": [
+        "body"
+      ]
+    },
+    "ENM-08": {
+      "animations": 7,
+      "frames": 38,
+      "root": [
+        32,
+        32
+      ],
+      "layers": [
+        "body"
+      ]
+    }
+  }
+}

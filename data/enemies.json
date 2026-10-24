@@ -1,0 +1,256 @@
+{
+  "enemies": [
+    {
+      "id": "moss_beetle",
+      "name": "苔甲虫",
+      "rank": "small",
+      "tier": 1,
+      "hp": 30,
+      "damage": 6,
+      "defense": 8,
+      "resist": { "physical": 0.8, "magic": 1.0 },
+      "ai": {
+        "type": "ground",
+        "patrol_speed": 40,
+        "chase_speed": 90,
+        "attack_range": 26,
+        "telegraph_time": 0.35,
+        "features": []
+      },
+      "exp": 8,
+      "coin_drop": [3, 6],
+      "desc": "林地最常见的厚壳甲虫，物理抗性 0.8，贴地巡逻、近身啃咬，教学『看抗性换武器』的第一课。"
+    },
+    {
+      "id": "milk_moth",
+      "name": "飞奶蛾",
+      "rank": "small",
+      "tier": 1,
+      "hp": 30,
+      "damage": 6,
+      "defense": 8,
+      "resist": { "physical": 1.0, "magic": 1.0 },
+      "ai": {
+        "type": "fly",
+        "patrol_speed": 50,
+        "chase_speed": 110,
+        "attack_range": 22,
+        "telegraph_time": 0.3,
+        "features": ["sine"]
+      },
+      "exp": 8,
+      "coin_drop": [3, 6],
+      "desc": "空中正弦飞行的奶蛾，俯冲吐奶沫，逼玩家用对空手段。"
+    },
+    {
+      "id": "milk_slime",
+      "name": "奶滴史莱姆",
+      "rank": "small",
+      "tier": 1,
+      "hp": 30,
+      "damage": 6,
+      "defense": 8,
+      "resist": { "physical": 1.0, "magic": 1.0 },
+      "ai": {
+        "type": "ground",
+        "patrol_speed": 30,
+        "chase_speed": 70,
+        "attack_range": 24,
+        "telegraph_time": 0.4,
+        "features": ["split"]
+      },
+      "exp": 8,
+      "coin_drop": [3, 6],
+      "desc": "跳跃接近的奶滴，死亡时分裂成两只小奶滴继续作战。"
+    },
+    {
+      "id": "vine_flower",
+      "name": "藤鞭花",
+      "rank": "small",
+      "tier": 1,
+      "hp": 30,
+      "damage": 6,
+      "defense": 8,
+      "resist": { "physical": 1.0, "magic": 1.0 },
+      "ai": {
+        "type": "turret",
+        "patrol_speed": 0,
+        "chase_speed": 0,
+        "attack_range": 180,
+        "telegraph_time": 0.5,
+        "features": []
+      },
+      "exp": 8,
+      "coin_drop": [3, 6],
+      "desc": "扎根不动的固定炮台，远距离甩出藤鞭，考验走位与远程拆炮。"
+    },
+    {
+      "id": "lamp_bug",
+      "name": "矿灯虫",
+      "rank": "small",
+      "tier": 2,
+      "hp": 40,
+      "damage": 8,
+      "defense": 11,
+      "resist": { "physical": 1.0, "magic": 1.0 },
+      "ai": {
+        "type": "fly",
+        "patrol_speed": 45,
+        "chase_speed": 160,
+        "attack_range": 140,
+        "telegraph_time": 0.35,
+        "features": ["glow", "charge"]
+      },
+      "exp": 14,
+      "coin_drop": [3, 6],
+      "desc": "自体发光的冲撞甲虫，黑暗洞窟里的威胁兼光源，受击后发光冲撞。"
+    },
+    {
+      "id": "shadow_wisp",
+      "name": "暗影奶灵",
+      "rank": "small",
+      "tier": 2,
+      "hp": 40,
+      "damage": 8,
+      "defense": 11,
+      "resist": { "physical": 1.0, "magic": 0.0 },
+      "ai": {
+        "type": "float",
+        "patrol_speed": 25,
+        "chase_speed": 55,
+        "attack_range": 200,
+        "telegraph_time": 0.6,
+        "features": []
+      },
+      "exp": 14,
+      "coin_drop": [3, 6],
+      "desc": "法术完全免疫（法术 0）的暗影，缓慢追击、远程噬咬，法系玩家的克星。"
+    },
+    {
+      "id": "acid_slug",
+      "name": "酸液蛞",
+      "rank": "small",
+      "tier": 2,
+      "hp": 40,
+      "damage": 8,
+      "defense": 11,
+      "resist": { "physical": 1.2, "magic": 0.6 },
+      "ai": {
+        "type": "ground",
+        "patrol_speed": 25,
+        "chase_speed": 60,
+        "attack_range": 150,
+        "telegraph_time": 0.45,
+        "features": ["acid_trail"]
+      },
+      "exp": 14,
+      "coin_drop": [3, 6],
+      "desc": "爬行所过之处留下酸地（持续伤害），远程吐酸球；物理 1.2 / 法术 0.6，法术更划算。"
+    },
+    {
+      "id": "wax_bee",
+      "name": "蜜蜡蜂",
+      "rank": "small",
+      "tier": 2,
+      "hp": 40,
+      "damage": 8,
+      "defense": 11,
+      "resist": { "physical": 1.0, "magic": 1.0 },
+      "ai": {
+        "type": "fly",
+        "patrol_speed": 60,
+        "chase_speed": 150,
+        "attack_range": 120,
+        "telegraph_time": 0.3,
+        "features": ["charge"]
+      },
+      "exp": 14,
+      "coin_drop": [3, 6],
+      "desc": "蜂巢兵蜂，直线冲撞；不出现在房间刷怪表，仅由蜂巢守卫与蜂蜜女王召唤。"
+    },
+    {
+      "id": "moss_guard",
+      "name": "苔甲卫",
+      "rank": "elite",
+      "tier": 1,
+      "hp": 240,
+      "damage": 10,
+      "defense": 8,
+      "resist": { "physical": 1.0, "magic": 1.0 },
+      "ai": {
+        "type": "ground",
+        "patrol_speed": 35,
+        "chase_speed": 80,
+        "attack_range": 30,
+        "telegraph_time": 0.5,
+        "features": ["shield"]
+      },
+      "exp": 60,
+      "coin_drop": [30, 50],
+      "desc": "林地精英。正面举盾格挡（伤害大幅减免），需绕后输出或用奶瓶锤强击退破盾。"
+    },
+    {
+      "id": "hive_guard",
+      "name": "蜂巢守卫",
+      "rank": "elite",
+      "tier": 2,
+      "hp": 320,
+      "damage": 13,
+      "defense": 11,
+      "resist": { "physical": 1.0, "magic": 1.0 },
+      "ai": {
+        "type": "fly",
+        "patrol_speed": 50,
+        "chase_speed": 120,
+        "attack_range": 170,
+        "telegraph_time": 0.5,
+        "features": ["summon", "dive"]
+      },
+      "exp": 90,
+      "coin_drop": [30, 50],
+      "desc": "洞窟精英、蜂巢门神。召唤蜜蜡蜂缠住玩家，自身高空俯冲砸地，BOSS 战预演。"
+    },
+    {
+      "id": "acid_mother",
+      "name": "酸液母体",
+      "rank": "elite",
+      "tier": 2,
+      "hp": 320,
+      "damage": 13,
+      "defense": 11,
+      "resist": { "physical": 1.0, "magic": 1.0 },
+      "ai": {
+        "type": "ground",
+        "patrol_speed": 20,
+        "chase_speed": 40,
+        "attack_range": 200,
+        "telegraph_time": 0.6,
+        "features": ["split", "spray"]
+      },
+      "exp": 90,
+      "coin_drop": [30, 50],
+      "desc": "洞窟精英、隐秘裂隙看门人。远距离扇形喷酸，死亡分裂成两只酸液蛞；看守背包扩容卷与隐藏奶力碎片。"
+    },
+    {
+      "id": "honey_queen",
+      "name": "蜂蜜女王",
+      "rank": "boss",
+      "tier": 2,
+      "hp": 1800,
+      "damage": 18,
+      "defense": 11,
+      "resist": { "physical": 1.0, "magic": 0.5 },
+      "ai": {
+        "type": "fly",
+        "patrol_speed": 60,
+        "chase_speed": 140,
+        "attack_range": 240,
+        "telegraph_time": 0.6,
+        "features": ["summon", "dive", "spray"]
+      },
+      "exp": 400,
+      "coin_drop": [250, 250],
+      "desc": "本期唯一 BOSS（蜂巢大厅，地面 3 段浮台场地）。法术抗性 0.5、物理 1.0，逼玩家『看抗性换物理武器』。P1（100%–50%）：酸池喷涌（预警 0.6s，地面 3 处）+ 蜂群直线冲击；P2（50%–0%）：俯冲三连 + 黏网（减速）+ 召唤 2 只蜜蜡蜂。击杀奖励二段跳『奶泡跃』。"
+    }
+  ]
+}

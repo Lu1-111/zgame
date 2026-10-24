@@ -1,0 +1,13 @@
+Use case: stylized-concept.
+Asset type: six-frame sprite sheet for the foot-mounted DOUBLE JUMP milk bubble trigger effect of a 2D side-view game.
+Make ONLY the effect: a small compressed milky bubble opens into a broad ring under invisible feet, then breaks into floating milk-bubble particles and fades. No character, feet, weapon, shadow or environment.
+Exact image dimensions 1536x1024; exact 3 columns by 2 rows, six equally sized 512x512 cells, transparent PNG RGBA. Each cell is a 64x64 virtual-pixel canvas enlarged 8x, chunky hard pixel clusters, no smoothing, no gradients or external glow. Row-major animation order.
+Mandatory fixed effect root in EVERY cell at local (256,384), virtual (32,48). The origin NEVER slides and never changes size. Absolute roots: (256,384), (768,384), (1280,384), (256,896), (768,896), (1280,896). Center the bubble/ring horizontally at x256. The BASE of the bubble/ring sits on y384; leave bottom y384..512 TRANSPARENT. Keep all effect art within x112..400, y240..384, broad empty margins elsewhere. Do not render anchor markers, grid or floor.
+Six temporal phases of the SAME effect:
+1. Small compressed oval milk bubble, x224..288 y352..384, thin white highlight and transparent pale cyan center.
+2. Peak: milk bubble expands to a thin flat oval ring, x176..336 y304..384; creamy white rim with pale icy cyan shadow, transparent interior.
+3. Ring widens x128..384 y280..384; upper and side arcs start to crack into distinct foam beads; same stable root.
+4. Broken ring shards and round bubbles continue expanding toward x112..400, y264..376, thinner, no complete solid ring.
+5. Only 5 or 6 small bubbles occupying the expanded ring trajectory, reduced visual mass, y248..360.
+6. Only two tiny pale bubble flecks at upper-left and upper-right, natural ending and nearly transparent.
+Maintain continuity of arcs, bubble locations, pixel scale, and fixed root. This is a gentle magical impulse upward, not an explosion or horizontal projectile. Palette milk white #fff8df, light mint #c5eee8, pale cyan #8bc9ce, muted outline #679697; tiny pale yellow highlight if needed. Actual alpha transparency; center holes are transparent too. Pixel-art edges only. No text, numbers, cell lines, labels, floor, characters, weapons, blur, bloom, black background, white background or checkerboard.

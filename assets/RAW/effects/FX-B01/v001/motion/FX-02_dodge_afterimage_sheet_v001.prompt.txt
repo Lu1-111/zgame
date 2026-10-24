@@ -1,0 +1,13 @@
+Use case: stylized-concept.
+Asset type: six-frame DODGE AFTERIMAGE sprite sheet for the same milky-fantasy 2D pixel platformer.
+The image reference is identity/shape reference only: a round yellow milk dragon, cream oval belly, broad rounded head, short thick arms/legs, forward-facing long neck, facing RIGHT. Reproduce the same recognizable silhouette and proportions as a simplified abstract PALE GOLD and PALE CYAN translucent ghost trail. There must be NO fully opaque character and NO real yellow body, facial detail, brown contour or physical shadow. This entire animation is an additive-looking ethereal afterimage overlay in front of actual alpha transparency.
+EXACT canvas 1536x1024 RGBA PNG, exactly 3 columns x 2 rows of 512x512 cells, six frames in row-major order. Each frame is a 64x64 virtual canvas enlarged 8x in crisp hard pixel clusters, never blur or soft glow. No labels, grid, dividers or text.
+FIXED root for every silhouette is local (256,384) = virtual (32,48), centered between the planted feet. This same reference silhouette spans approx x184..328 and y112..384 in every frame; never resize, change posture, flip, or move the primary ghost. Absolute root locations are (256,384),(768,384),(1280,384),(256,896),(768,896),(1280,896). Keep y384..512 fully transparent. Trail extends LEFT from the same fixed silhouette; all art stays inside x64..352, y96..384. Wide transparent margins.
+Sequence:
+1. One pale golden simplified ghost silhouette established at fixed root, face RIGHT, translucent 35% opacity, no detailed face.
+2. Same fixed ghost at 45% opacity plus one fainter cyan echo only 40px to left; peak trail mass.
+3. Same proportions, fixed primary ghost now 30% alpha, two fainter contour fragments stretched LEFT, original silhouette still recognisable, no rightward shift.
+4. Primary ghost breaks into thin pale-gold and cyan contour fragments following exactly the original silhouette, 20% opacity; leftward echoes thinner.
+5. Only sparse ghost contour slivers and a few streaks remaining, about 10% opacity, trajectories follow the same silhouette and left trail.
+6. Only 2-4 tiny pale pixel flecks from the left trail, near disappearance, no full figure.
+Continuity must be literal: same body outline and anchor in frames1-3, thinning from this outline in4-6. No body reshaping, no size changes, no duplicates at full opacity. Main effect faces right throughout. Palette pale golden cream #f9e3a5 and icy cyan #b8e4e5; true varying alpha, sharp stepped edges. Empty transparent background. No floor, weapons, solid character, black shape, blur, bloom or motion-smear gradients.

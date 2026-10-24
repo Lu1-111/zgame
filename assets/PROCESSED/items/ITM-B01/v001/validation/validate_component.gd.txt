@@ -1,0 +1,98 @@
+extends SceneTree
+## 独立运行的道具展示组件回归；不改动主工程测试宿主。
+
+const SCENE = preload("res://assets/PROCESSED/items/ITM-B01/v001/godot/ItemVisual.tscn")
+const CATALOG = preload("res://assets/PROCESSED/items/ITM-B01/v001/godot/ItemCatalog.gd")
+var assertions: int = 0
+var failures: Array[String] = []
+var completion_count: int = 0
+
+
+func _initialize() -> void:
+	call_deferred("_run")
+
+
+func check(condition: bool, message: String) -> void:
+	assertions += 1
+	if not condition:
+		failures.append(message)
+
+
+func _run() -> void:
+	var node = SCENE.instantiate()
+	root.add_child(node)
+	await process_frame
+	node.set_process(false)
+	var sprite: AnimatedSprite2D = node.get_node("VisualRoot/AnimatedSprite2D")
+	var visual: Node2D = node.get_node("VisualRoot")
+	check(CATALOG.ITEMS.size() == 13, "13项素材")
+	for key: StringName in CATALOG.ITEMS:
+		check(node.set_item(key), "切换 " + str(key))
+		check(sprite.animation == key and sprite.frame == 0, "首帧 " + str(key))
+		check(sprite.offset == Vector2(-16, -24), "锚点 " + str(key))
+		check(sprite.sprite_frames.get_frame_count(key) == 4, "四帧 " + str(key))
+		check(sprite.sprite_frames.get_animation_loop(key), "循环 " + str(key))
+		check(node.get_icon().get_size() == Vector2(24,24), "图标 " + str(key))
+		for index: int in range(4):
+			check(sprite.sprite_frames.get_frame_texture(key,index).get_size() == Vector2(32,32), "画布")
+	var old_id: StringName = node.item_id
+	check(not node.set_item(&"missing_item"), "拒绝未知ID")
+	check(node.item_id == old_id, "未知ID不改变显示")
+	node._process(0.27)
+	var start_y: float = visual.position.y
+	node.pickup_visual_finished.connect(func(_id: StringName) -> void: completion_count += 1)
+	check(node.play_pickup(), "触发拾取")
+	check(not node.play_pickup(), "拒绝重复拾取")
+	node._process(0.0)
+	check(is_equal_approx(visual.position.y,start_y), "拾取首刻位置连续")
+	node._process(0.1)
+	check(visual.position.y < start_y and visual.modulate.a < 1.0, "上升与淡出")
+	node.set_visual_paused(true)
+	var paused_y: float = visual.position.y
+	var paused_alpha: float = visual.modulate.a
+	node._process(1.0)
+	check(is_equal_approx(paused_y,visual.position.y) and is_equal_approx(paused_alpha,visual.modulate.a), "暂停冻结")
+	check(not sprite.is_playing(), "暂停精灵帧")
+	node.set_visual_paused(false)
+	node.playback_rate = 0.0
+	node._process(1.0)
+	check(is_equal_approx(paused_alpha,visual.modulate.a) and sprite.speed_scale == 0.0, "零速冻结")
+	node.playback_rate = 2.0
+	node._process(0.5)
+	check(not node.visible and completion_count == 1, "完成隐藏并仅通知一次")
+	check(not node.play_pickup(), "领取态不能再次触发")
+	node._process(1.0)
+	check(completion_count == 1, "完成后不重复通知")
+	node.reset_visual()
+	check(node.visible and is_equal_approx(visual.modulate.a,1.0) and sprite.frame == 0, "复用恢复")
+	node.set_visual_paused(true)
+	node.set_item(&"potion_small")
+	check(not sprite.is_playing(), "暂停时切换保持暂停")
+	node.set_visual_paused(false)
+	node.bob_enabled = false
+	node._process(0.3)
+	check(is_equal_approx(visual.position.y,-float(CATALOG.DEFAULTS["baseLift"])), "可关闭浮动")
+	# 等待真实引擎时钟，补充覆盖AnimatedSprite2D自己的播放进度。
+	node.playback_rate = 1.0
+	node.reset_visual()
+	node.set_process(true)
+	await create_timer(0.32).timeout
+	check(sprite.frame > 0, "真实引擎帧推进")
+	node.set_visual_paused(true)
+	var frozen_frame: int = sprite.frame
+	var frozen_progress: float = sprite.frame_progress
+	await create_timer(0.16).timeout
+	check(sprite.frame == frozen_frame and is_equal_approx(sprite.frame_progress,frozen_progress), "真实暂停保相位")
+	node.set_visual_paused(false)
+	await create_timer(0.16).timeout
+	check(sprite.frame != frozen_frame or not is_equal_approx(sprite.frame_progress,frozen_progress), "真实恢复推进")
+	node.playback_rate = 0.0
+	await process_frame
+	frozen_frame = sprite.frame
+	frozen_progress = sprite.frame_progress
+	await create_timer(0.16).timeout
+	check(sprite.frame == frozen_frame and is_equal_approx(sprite.frame_progress,frozen_progress), "真实零速冻结")
+	print("ITEM COMPONENT: assertions=%d failures=%d" % [assertions,failures.size()])
+	for failure: String in failures:
+		printerr(failure)
+	quit(0 if failures.is_empty() else 1)

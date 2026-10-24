@@ -1,0 +1,62 @@
+{
+  "physicalFrames": 16,
+  "actions": [
+    {
+      "name": "grab_ready",
+      "frames": 4
+    },
+    {
+      "name": "grab_attack",
+      "frames": 8
+    },
+    {
+      "name": "grab_recover",
+      "frames": 4
+    },
+    {
+      "name": "tentacle_grab",
+      "frames": 16
+    }
+  ],
+  "sourceAlphaPreserved": true,
+  "target": [
+    288,
+    176
+  ],
+  "anchor": [
+    96,
+    136
+  ],
+  "blockingIssues": [],
+  "status": "passed-art-and-gameplay-review",
+  "complete": true,
+  "visiblePlantedFootRows": [
+    134,
+    134,
+    134,
+    134,
+    134,
+    134,
+    134,
+    134,
+    134,
+    134,
+    134,
+    134,
+    134,
+    134,
+    134,
+    134
+  ],
+  "warningVisibleFrames": [
+    2,
+    3,
+    4
+  ],
+  "warningAbsentFromFrame": 5,
+  "unitTests": "423/423",
+  "importErrors": 0,
+  "importWarnings": 0,
+  "gameplayChecks": "Both GameEnemy and CombatEnemy: 4/8/4 mapped actions, full natural sequence, one hit at attack_elapsed0.5167/frame5 (sixth frame).",
+  "runtimeReport": "qa/runtime-report.json"
+}

@@ -1,0 +1,179 @@
+{
+  "id": "ENM-07_move",
+  "enemyId": "ENM-07",
+  "gameEnemyId": "vine_flower",
+  "label": "藤蔓花",
+  "name": "move",
+  "kind": "body",
+  "generationMode": "built-in image_gen",
+  "sourcePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-07/ENM-07_actions_A.png",
+  "sourceRects": [
+    [
+      0,
+      254,
+      384,
+      258
+    ],
+    [
+      384,
+      254,
+      384,
+      258
+    ],
+    [
+      768,
+      254,
+      384,
+      258
+    ],
+    [
+      1152,
+      254,
+      384,
+      258
+    ]
+  ],
+  "sourceAnchors": [
+    [
+      170,
+      224
+    ],
+    [
+      181,
+      224
+    ],
+    [
+      192,
+      224
+    ],
+    [
+      193,
+      224
+    ]
+  ],
+  "sourceSize": [
+    1536,
+    1024
+  ],
+  "sourceSha256": "89b228b5f3ab4eb890f392efd76b7c472bc28a1387aa391acbe145f6e245d048",
+  "sourceBatch": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-07/batch.json",
+  "promptPath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-07/ENM-07_A.prompt.txt",
+  "provenancePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-07/provenance.json",
+  "target": [
+    128,
+    88
+  ],
+  "anchor": [
+    58,
+    72
+  ],
+  "rootType": "ground",
+  "scale": 0.22,
+  "fps": 10,
+  "loop": true,
+  "frameCount": 4,
+  "frames": [
+    "frames/ENM-07_move/ENM-07_move_00.png",
+    "frames/ENM-07_move/ENM-07_move_01.png",
+    "frames/ENM-07_move/ENM-07_move_02.png",
+    "frames/ENM-07_move/ENM-07_move_03.png"
+  ],
+  "sheet": "sheets/ENM-07_move.png",
+  "frameDetails": [
+    {
+      "sourceRect": [
+        0,
+        254,
+        384,
+        258
+      ],
+      "sourceAnchor": [
+        170,
+        224
+      ],
+      "offset": [
+        21,
+        23
+      ],
+      "alphaBBox": [
+        26,
+        26,
+        98,
+        74
+      ]
+    },
+    {
+      "sourceRect": [
+        384,
+        254,
+        384,
+        258
+      ],
+      "sourceAnchor": [
+        181,
+        224
+      ],
+      "offset": [
+        18,
+        23
+      ],
+      "alphaBBox": [
+        20,
+        23,
+        99,
+        78
+      ]
+    },
+    {
+      "sourceRect": [
+        768,
+        254,
+        384,
+        258
+      ],
+      "sourceAnchor": [
+        192,
+        224
+      ],
+      "offset": [
+        16,
+        23
+      ],
+      "alphaBBox": [
+        20,
+        26,
+        100,
+        79
+      ]
+    },
+    {
+      "sourceRect": [
+        1152,
+        254,
+        384,
+        258
+      ],
+      "sourceAnchor": [
+        193,
+        224
+      ],
+      "offset": [
+        16,
+        23
+      ],
+      "alphaBBox": [
+        21,
+        27,
+        95,
+        80
+      ]
+    }
+  ],
+  "fadeStartNormalized": 1.0,
+  "phases": [
+    "move1",
+    "move2",
+    "move3",
+    "move4"
+  ]
+}

@@ -1,0 +1,1395 @@
+{
+  "effects": [
+    {
+      "id": "ENM-08_idle",
+      "enemyId": "ENM-08",
+      "gameEnemyId": "wax_bee",
+      "label": "蜡蜂",
+      "name": "idle",
+      "kind": "body",
+      "generationMode": "built-in image_gen",
+      "sourcePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-08/ENM-08_actions_A.png",
+      "sourceRects": [
+        [
+          0,
+          0,
+          384,
+          246
+        ],
+        [
+          384,
+          0,
+          384,
+          246
+        ],
+        [
+          768,
+          0,
+          384,
+          246
+        ],
+        [
+          1152,
+          0,
+          384,
+          246
+        ]
+      ],
+      "sourceAnchors": [
+        [
+          223,
+          138
+        ],
+        [
+          223,
+          138
+        ],
+        [
+          223,
+          138
+        ],
+        [
+          223,
+          138
+        ]
+      ],
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "sourceSha256": "26eac1827505209c3eb3df0e4bf4611562a024770395571910353a4b00e56a71",
+      "sourceBatch": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-08/batch.json",
+      "promptPath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-08/ENM-08_A.prompt.txt",
+      "provenancePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-08/provenance.json",
+      "target": [
+        80,
+        64
+      ],
+      "anchor": [
+        40,
+        32
+      ],
+      "rootType": "flying",
+      "scale": 0.16,
+      "fps": 8,
+      "loop": true,
+      "frameCount": 4,
+      "frames": [
+        "frames/ENM-08_idle/ENM-08_idle_00.png",
+        "frames/ENM-08_idle/ENM-08_idle_01.png",
+        "frames/ENM-08_idle/ENM-08_idle_02.png",
+        "frames/ENM-08_idle/ENM-08_idle_03.png"
+      ],
+      "sheet": "sheets/ENM-08_idle.png",
+      "frameDetails": [
+        {
+          "sourceRect": [
+            0,
+            0,
+            384,
+            246
+          ],
+          "sourceAnchor": [
+            223,
+            138
+          ],
+          "offset": [
+            4,
+            10
+          ],
+          "alphaBBox": [
+            4,
+            12,
+            60,
+            49
+          ]
+        },
+        {
+          "sourceRect": [
+            384,
+            0,
+            384,
+            246
+          ],
+          "sourceAnchor": [
+            223,
+            138
+          ],
+          "offset": [
+            4,
+            10
+          ],
+          "alphaBBox": [
+            4,
+            12,
+            62,
+            49
+          ]
+        },
+        {
+          "sourceRect": [
+            768,
+            0,
+            384,
+            246
+          ],
+          "sourceAnchor": [
+            223,
+            138
+          ],
+          "offset": [
+            4,
+            10
+          ],
+          "alphaBBox": [
+            4,
+            10,
+            62,
+            49
+          ]
+        },
+        {
+          "sourceRect": [
+            1152,
+            0,
+            384,
+            246
+          ],
+          "sourceAnchor": [
+            223,
+            138
+          ],
+          "offset": [
+            4,
+            10
+          ],
+          "alphaBBox": [
+            6,
+            11,
+            60,
+            49
+          ]
+        }
+      ],
+      "fadeStartNormalized": 1.0,
+      "phases": [
+        "idle1",
+        "idle2",
+        "idle3",
+        "idle4"
+      ]
+    },
+    {
+      "id": "ENM-08_move",
+      "enemyId": "ENM-08",
+      "gameEnemyId": "wax_bee",
+      "label": "蜡蜂",
+      "name": "move",
+      "kind": "body",
+      "generationMode": "built-in image_gen",
+      "sourcePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-08/ENM-08_actions_A.png",
+      "sourceRects": [
+        [
+          0,
+          246,
+          384,
+          252
+        ],
+        [
+          384,
+          246,
+          390,
+          252
+        ],
+        [
+          774,
+          246,
+          378,
+          252
+        ],
+        [
+          1152,
+          246,
+          384,
+          252
+        ]
+      ],
+      "sourceAnchors": [
+        [
+          223,
+          148
+        ],
+        [
+          223,
+          148
+        ],
+        [
+          217,
+          148
+        ],
+        [
+          223,
+          148
+        ]
+      ],
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "sourceSha256": "26eac1827505209c3eb3df0e4bf4611562a024770395571910353a4b00e56a71",
+      "sourceBatch": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-08/batch.json",
+      "promptPath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-08/ENM-08_A.prompt.txt",
+      "provenancePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-08/provenance.json",
+      "target": [
+        80,
+        64
+      ],
+      "anchor": [
+        40,
+        32
+      ],
+      "rootType": "flying",
+      "scale": 0.16,
+      "fps": 10,
+      "loop": true,
+      "frameCount": 4,
+      "frames": [
+        "frames/ENM-08_move/ENM-08_move_00.png",
+        "frames/ENM-08_move/ENM-08_move_01.png",
+        "frames/ENM-08_move/ENM-08_move_02.png",
+        "frames/ENM-08_move/ENM-08_move_03.png"
+      ],
+      "sheet": "sheets/ENM-08_move.png",
+      "frameDetails": [
+        {
+          "sourceRect": [
+            0,
+            246,
+            384,
+            252
+          ],
+          "sourceAnchor": [
+            223,
+            148
+          ],
+          "offset": [
+            4,
+            8
+          ],
+          "alphaBBox": [
+            10,
+            8,
+            63,
+            48
+          ]
+        },
+        {
+          "sourceRect": [
+            384,
+            246,
+            390,
+            252
+          ],
+          "sourceAnchor": [
+            223,
+            148
+          ],
+          "offset": [
+            4,
+            8
+          ],
+          "alphaBBox": [
+            4,
+            8,
+            65,
+            48
+          ]
+        },
+        {
+          "sourceRect": [
+            774,
+            246,
+            378,
+            252
+          ],
+          "sourceAnchor": [
+            217,
+            148
+          ],
+          "offset": [
+            5,
+            8
+          ],
+          "alphaBBox": [
+            5,
+            8,
+            60,
+            48
+          ]
+        },
+        {
+          "sourceRect": [
+            1152,
+            246,
+            384,
+            252
+          ],
+          "sourceAnchor": [
+            223,
+            148
+          ],
+          "offset": [
+            4,
+            8
+          ],
+          "alphaBBox": [
+            4,
+            8,
+            62,
+            48
+          ]
+        }
+      ],
+      "fadeStartNormalized": 1.0,
+      "phases": [
+        "move1",
+        "move2",
+        "move3",
+        "move4"
+      ]
+    },
+    {
+      "id": "ENM-08_telegraph",
+      "enemyId": "ENM-08",
+      "gameEnemyId": "wax_bee",
+      "label": "蜡蜂",
+      "name": "telegraph",
+      "kind": "body",
+      "generationMode": "built-in image_gen",
+      "sourcePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-08/ENM-08_actions_A.png",
+      "sourceRects": [
+        [
+          0,
+          498,
+          378,
+          246
+        ],
+        [
+          378,
+          498,
+          390,
+          246
+        ],
+        [
+          768,
+          498,
+          376,
+          246
+        ],
+        [
+          1144,
+          498,
+          392,
+          246
+        ]
+      ],
+      "sourceAnchors": [
+        [
+          223,
+          152
+        ],
+        [
+          229,
+          152
+        ],
+        [
+          223,
+          152
+        ],
+        [
+          231,
+          152
+        ]
+      ],
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "sourceSha256": "26eac1827505209c3eb3df0e4bf4611562a024770395571910353a4b00e56a71",
+      "sourceBatch": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-08/batch.json",
+      "promptPath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-08/ENM-08_A.prompt.txt",
+      "provenancePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-08/provenance.json",
+      "target": [
+        80,
+        64
+      ],
+      "anchor": [
+        40,
+        32
+      ],
+      "rootType": "flying",
+      "scale": 0.16,
+      "fps": 10,
+      "loop": false,
+      "frameCount": 4,
+      "frames": [
+        "frames/ENM-08_telegraph/ENM-08_telegraph_00.png",
+        "frames/ENM-08_telegraph/ENM-08_telegraph_01.png",
+        "frames/ENM-08_telegraph/ENM-08_telegraph_02.png",
+        "frames/ENM-08_telegraph/ENM-08_telegraph_03.png"
+      ],
+      "sheet": "sheets/ENM-08_telegraph.png",
+      "frameDetails": [
+        {
+          "sourceRect": [
+            0,
+            498,
+            378,
+            246
+          ],
+          "sourceAnchor": [
+            223,
+            152
+          ],
+          "offset": [
+            4,
+            8
+          ],
+          "alphaBBox": [
+            6,
+            8,
+            62,
+            47
+          ]
+        },
+        {
+          "sourceRect": [
+            378,
+            498,
+            390,
+            246
+          ],
+          "sourceAnchor": [
+            229,
+            152
+          ],
+          "offset": [
+            3,
+            8
+          ],
+          "alphaBBox": [
+            3,
+            8,
+            65,
+            47
+          ]
+        },
+        {
+          "sourceRect": [
+            768,
+            498,
+            376,
+            246
+          ],
+          "sourceAnchor": [
+            223,
+            152
+          ],
+          "offset": [
+            4,
+            8
+          ],
+          "alphaBBox": [
+            4,
+            8,
+            61,
+            47
+          ]
+        },
+        {
+          "sourceRect": [
+            1144,
+            498,
+            392,
+            246
+          ],
+          "sourceAnchor": [
+            231,
+            152
+          ],
+          "offset": [
+            3,
+            8
+          ],
+          "alphaBBox": [
+            3,
+            8,
+            61,
+            47
+          ]
+        }
+      ],
+      "fadeStartNormalized": 1.0,
+      "phases": [
+        "telegraph1",
+        "telegraph2",
+        "telegraph3",
+        "telegraph4"
+      ]
+    },
+    {
+      "id": "ENM-08_attack",
+      "enemyId": "ENM-08",
+      "gameEnemyId": "wax_bee",
+      "label": "蜡蜂",
+      "name": "attack",
+      "kind": "body",
+      "generationMode": "built-in image_gen",
+      "sourcePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-08/ENM-08_actions_A.png",
+      "sourceRects": [
+        [
+          0,
+          744,
+          382,
+          280
+        ],
+        [
+          382,
+          744,
+          376,
+          280
+        ],
+        [
+          758,
+          744,
+          416,
+          280
+        ],
+        [
+          1174,
+          744,
+          362,
+          280
+        ]
+      ],
+      "sourceAnchors": [
+        [
+          223,
+          162
+        ],
+        [
+          225,
+          162
+        ],
+        [
+          233,
+          162
+        ],
+        [
+          201,
+          162
+        ]
+      ],
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "sourceSha256": "26eac1827505209c3eb3df0e4bf4611562a024770395571910353a4b00e56a71",
+      "sourceBatch": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-08/batch.json",
+      "promptPath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-08/ENM-08_A.prompt.txt",
+      "provenancePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-08/provenance.json",
+      "target": [
+        80,
+        64
+      ],
+      "anchor": [
+        40,
+        32
+      ],
+      "rootType": "flying",
+      "scale": 0.16,
+      "fps": 14,
+      "loop": false,
+      "frameCount": 4,
+      "frames": [
+        "frames/ENM-08_attack/ENM-08_attack_00.png",
+        "frames/ENM-08_attack/ENM-08_attack_01.png",
+        "frames/ENM-08_attack/ENM-08_attack_02.png",
+        "frames/ENM-08_attack/ENM-08_attack_03.png"
+      ],
+      "sheet": "sheets/ENM-08_attack.png",
+      "frameDetails": [
+        {
+          "sourceRect": [
+            0,
+            744,
+            382,
+            280
+          ],
+          "sourceAnchor": [
+            223,
+            162
+          ],
+          "offset": [
+            4,
+            6
+          ],
+          "alphaBBox": [
+            4,
+            6,
+            65,
+            47
+          ]
+        },
+        {
+          "sourceRect": [
+            382,
+            744,
+            376,
+            280
+          ],
+          "sourceAnchor": [
+            225,
+            162
+          ],
+          "offset": [
+            4,
+            6
+          ],
+          "alphaBBox": [
+            4,
+            6,
+            64,
+            48
+          ]
+        },
+        {
+          "sourceRect": [
+            758,
+            744,
+            416,
+            280
+          ],
+          "sourceAnchor": [
+            233,
+            162
+          ],
+          "offset": [
+            3,
+            6
+          ],
+          "alphaBBox": [
+            3,
+            6,
+            70,
+            49
+          ]
+        },
+        {
+          "sourceRect": [
+            1174,
+            744,
+            362,
+            280
+          ],
+          "sourceAnchor": [
+            201,
+            162
+          ],
+          "offset": [
+            8,
+            6
+          ],
+          "alphaBBox": [
+            8,
+            6,
+            61,
+            45
+          ]
+        }
+      ],
+      "fadeStartNormalized": 1.0,
+      "phases": [
+        "attack1",
+        "attack2",
+        "attack3",
+        "attack4"
+      ]
+    },
+    {
+      "id": "ENM-08_recover",
+      "enemyId": "ENM-08",
+      "gameEnemyId": "wax_bee",
+      "label": "蜡蜂",
+      "name": "recover",
+      "kind": "body",
+      "generationMode": "built-in image_gen",
+      "sourcePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-08/ENM-08_actions_B.png",
+      "sourceRects": [
+        [
+          0,
+          0,
+          410,
+          252
+        ],
+        [
+          410,
+          0,
+          362,
+          252
+        ],
+        [
+          772,
+          0,
+          386,
+          252
+        ],
+        [
+          1158,
+          0,
+          378,
+          252
+        ]
+      ],
+      "sourceAnchors": [
+        [
+          223,
+          141
+        ],
+        [
+          197,
+          141
+        ],
+        [
+          219,
+          141
+        ],
+        [
+          217,
+          141
+        ]
+      ],
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "sourceSha256": "c214ecc194f02a4afd63fea75a0a1f302bc49d1cdd076cf5ccd85b317e053ad8",
+      "sourceBatch": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-08/batch.json",
+      "promptPath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-08/ENM-08_B.prompt.txt",
+      "provenancePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-08/provenance.json",
+      "target": [
+        80,
+        64
+      ],
+      "anchor": [
+        40,
+        32
+      ],
+      "rootType": "flying",
+      "scale": 0.16,
+      "fps": 10,
+      "loop": false,
+      "frameCount": 4,
+      "frames": [
+        "frames/ENM-08_recover/ENM-08_recover_00.png",
+        "frames/ENM-08_recover/ENM-08_recover_01.png",
+        "frames/ENM-08_recover/ENM-08_recover_02.png",
+        "frames/ENM-08_recover/ENM-08_recover_03.png"
+      ],
+      "sheet": "sheets/ENM-08_recover.png",
+      "frameDetails": [
+        {
+          "sourceRect": [
+            0,
+            0,
+            410,
+            252
+          ],
+          "sourceAnchor": [
+            223,
+            141
+          ],
+          "offset": [
+            4,
+            9
+          ],
+          "alphaBBox": [
+            8,
+            11,
+            67,
+            48
+          ]
+        },
+        {
+          "sourceRect": [
+            410,
+            0,
+            362,
+            252
+          ],
+          "sourceAnchor": [
+            197,
+            141
+          ],
+          "offset": [
+            9,
+            9
+          ],
+          "alphaBBox": [
+            9,
+            12,
+            67,
+            49
+          ]
+        },
+        {
+          "sourceRect": [
+            772,
+            0,
+            386,
+            252
+          ],
+          "sourceAnchor": [
+            219,
+            141
+          ],
+          "offset": [
+            5,
+            9
+          ],
+          "alphaBBox": [
+            7,
+            12,
+            66,
+            49
+          ]
+        },
+        {
+          "sourceRect": [
+            1158,
+            0,
+            378,
+            252
+          ],
+          "sourceAnchor": [
+            217,
+            141
+          ],
+          "offset": [
+            5,
+            9
+          ],
+          "alphaBBox": [
+            5,
+            14,
+            62,
+            49
+          ]
+        }
+      ],
+      "fadeStartNormalized": 1.0,
+      "phases": [
+        "recover1",
+        "recover2",
+        "recover3",
+        "recover4"
+      ]
+    },
+    {
+      "id": "ENM-08_hurt",
+      "enemyId": "ENM-08",
+      "gameEnemyId": "wax_bee",
+      "label": "蜡蜂",
+      "name": "hurt",
+      "kind": "body",
+      "generationMode": "built-in image_gen",
+      "sourcePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-08/ENM-08_actions_B.png",
+      "sourceRects": [
+        [
+          0,
+          252,
+          384,
+          290
+        ],
+        [
+          384,
+          252,
+          384,
+          290
+        ],
+        [
+          768,
+          252,
+          406,
+          290
+        ],
+        [
+          1174,
+          252,
+          362,
+          290
+        ]
+      ],
+      "sourceAnchors": [
+        [
+          223,
+          145
+        ],
+        [
+          223,
+          145
+        ],
+        [
+          223,
+          145
+        ],
+        [
+          201,
+          145
+        ]
+      ],
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "sourceSha256": "c214ecc194f02a4afd63fea75a0a1f302bc49d1cdd076cf5ccd85b317e053ad8",
+      "sourceBatch": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-08/batch.json",
+      "promptPath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-08/ENM-08_B.prompt.txt",
+      "provenancePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-08/provenance.json",
+      "target": [
+        80,
+        64
+      ],
+      "anchor": [
+        40,
+        32
+      ],
+      "rootType": "flying",
+      "scale": 0.16,
+      "fps": 12,
+      "loop": false,
+      "frameCount": 4,
+      "frames": [
+        "frames/ENM-08_hurt/ENM-08_hurt_00.png",
+        "frames/ENM-08_hurt/ENM-08_hurt_01.png",
+        "frames/ENM-08_hurt/ENM-08_hurt_02.png",
+        "frames/ENM-08_hurt/ENM-08_hurt_03.png"
+      ],
+      "sheet": "sheets/ENM-08_hurt.png",
+      "frameDetails": [
+        {
+          "sourceRect": [
+            0,
+            252,
+            384,
+            290
+          ],
+          "sourceAnchor": [
+            223,
+            145
+          ],
+          "offset": [
+            4,
+            9
+          ],
+          "alphaBBox": [
+            8,
+            9,
+            65,
+            54
+          ]
+        },
+        {
+          "sourceRect": [
+            384,
+            252,
+            384,
+            290
+          ],
+          "sourceAnchor": [
+            223,
+            145
+          ],
+          "offset": [
+            4,
+            9
+          ],
+          "alphaBBox": [
+            5,
+            9,
+            62,
+            55
+          ]
+        },
+        {
+          "sourceRect": [
+            768,
+            252,
+            406,
+            290
+          ],
+          "sourceAnchor": [
+            223,
+            145
+          ],
+          "offset": [
+            4,
+            9
+          ],
+          "alphaBBox": [
+            5,
+            9,
+            66,
+            55
+          ]
+        },
+        {
+          "sourceRect": [
+            1174,
+            252,
+            362,
+            290
+          ],
+          "sourceAnchor": [
+            201,
+            145
+          ],
+          "offset": [
+            8,
+            9
+          ],
+          "alphaBBox": [
+            9,
+            9,
+            61,
+            55
+          ]
+        }
+      ],
+      "fadeStartNormalized": 1.0,
+      "phases": [
+        "hurt1",
+        "hurt2",
+        "hurt3",
+        "hurt4"
+      ]
+    },
+    {
+      "id": "ENM-08_death",
+      "enemyId": "ENM-08",
+      "gameEnemyId": "wax_bee",
+      "label": "蜡蜂",
+      "name": "death",
+      "kind": "body",
+      "generationMode": "built-in image_gen",
+      "sourcePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-08/ENM-08_actions_B.png",
+      "sourceRects": [
+        [
+          0,
+          542,
+          384,
+          210
+        ],
+        [
+          384,
+          542,
+          384,
+          210
+        ],
+        [
+          768,
+          542,
+          384,
+          210
+        ],
+        [
+          1152,
+          542,
+          384,
+          210
+        ],
+        [
+          0,
+          752,
+          384,
+          272
+        ],
+        [
+          384,
+          752,
+          374,
+          272
+        ],
+        [
+          758,
+          752,
+          394,
+          272
+        ],
+        [
+          1152,
+          752,
+          384,
+          272
+        ]
+      ],
+      "sourceAnchors": [
+        [
+          223,
+          111
+        ],
+        [
+          223,
+          111
+        ],
+        [
+          223,
+          111
+        ],
+        [
+          223,
+          111
+        ],
+        [
+          223,
+          157
+        ],
+        [
+          223,
+          157
+        ],
+        [
+          233,
+          157
+        ],
+        [
+          223,
+          157
+        ]
+      ],
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "sourceSha256": "c214ecc194f02a4afd63fea75a0a1f302bc49d1cdd076cf5ccd85b317e053ad8",
+      "sourceBatch": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-08/batch.json",
+      "promptPath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-08/ENM-08_B.prompt.txt",
+      "provenancePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-08/provenance.json",
+      "target": [
+        80,
+        64
+      ],
+      "anchor": [
+        40,
+        32
+      ],
+      "rootType": "flying",
+      "scale": 0.16,
+      "fps": 10,
+      "loop": false,
+      "frameCount": 8,
+      "frames": [
+        "frames/ENM-08_death/ENM-08_death_00.png",
+        "frames/ENM-08_death/ENM-08_death_01.png",
+        "frames/ENM-08_death/ENM-08_death_02.png",
+        "frames/ENM-08_death/ENM-08_death_03.png",
+        "frames/ENM-08_death/ENM-08_death_04.png",
+        "frames/ENM-08_death/ENM-08_death_05.png",
+        "frames/ENM-08_death/ENM-08_death_06.png",
+        "frames/ENM-08_death/ENM-08_death_07.png"
+      ],
+      "sheet": "sheets/ENM-08_death.png",
+      "frameDetails": [
+        {
+          "sourceRect": [
+            0,
+            542,
+            384,
+            210
+          ],
+          "sourceAnchor": [
+            223,
+            111
+          ],
+          "offset": [
+            4,
+            14
+          ],
+          "alphaBBox": [
+            14,
+            14,
+            63,
+            48
+          ]
+        },
+        {
+          "sourceRect": [
+            384,
+            542,
+            384,
+            210
+          ],
+          "sourceAnchor": [
+            223,
+            111
+          ],
+          "offset": [
+            4,
+            14
+          ],
+          "alphaBBox": [
+            5,
+            14,
+            63,
+            48
+          ]
+        },
+        {
+          "sourceRect": [
+            768,
+            542,
+            384,
+            210
+          ],
+          "sourceAnchor": [
+            223,
+            111
+          ],
+          "offset": [
+            4,
+            14
+          ],
+          "alphaBBox": [
+            7,
+            14,
+            62,
+            48
+          ]
+        },
+        {
+          "sourceRect": [
+            1152,
+            542,
+            384,
+            210
+          ],
+          "sourceAnchor": [
+            223,
+            111
+          ],
+          "offset": [
+            4,
+            14
+          ],
+          "alphaBBox": [
+            11,
+            14,
+            59,
+            48
+          ]
+        },
+        {
+          "sourceRect": [
+            0,
+            752,
+            384,
+            272
+          ],
+          "sourceAnchor": [
+            223,
+            157
+          ],
+          "offset": [
+            4,
+            7
+          ],
+          "alphaBBox": [
+            8,
+            7,
+            60,
+            44
+          ]
+        },
+        {
+          "sourceRect": [
+            384,
+            752,
+            374,
+            272
+          ],
+          "sourceAnchor": [
+            223,
+            157
+          ],
+          "offset": [
+            4,
+            7
+          ],
+          "alphaBBox": [
+            4,
+            7,
+            60,
+            45
+          ]
+        },
+        {
+          "sourceRect": [
+            758,
+            752,
+            394,
+            272
+          ],
+          "sourceAnchor": [
+            233,
+            157
+          ],
+          "offset": [
+            3,
+            7
+          ],
+          "alphaBBox": [
+            3,
+            11,
+            54,
+            44
+          ]
+        },
+        {
+          "sourceRect": [
+            1152,
+            752,
+            384,
+            272
+          ],
+          "sourceAnchor": [
+            223,
+            157
+          ],
+          "offset": [
+            4,
+            7
+          ],
+          "alphaBBox": [
+            18,
+            21,
+            62,
+            51
+          ]
+        }
+      ],
+      "fadeStartNormalized": 0.65,
+      "phases": [
+        "death1",
+        "death2",
+        "death3",
+        "death4",
+        "death5",
+        "death6",
+        "death7",
+        "death8"
+      ]
+    }
+  ],
+  "anchorPolicy": "fixed semantic joint, fixed enemy scale, nearest sampling only; source grid separators located in transparent gutters",
+  "generator": "built-in image_gen"
+}

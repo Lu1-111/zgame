@@ -1,0 +1,9108 @@
+{
+  "assetId": "CHR-01",
+  "version": "v001",
+  "direction": "right",
+  "title": "奶龙 · 第一批角色动作",
+  "coordinateSystem": "top-left origin, pixels; root is animation.anchor; no per-frame scale normalization",
+  "sourceCalibrations": [
+    {
+      "id": "cast",
+      "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_cast_interact_right_v001.png",
+      "calibration": {
+        "referenceHeightPx": 327,
+        "targetStandingHeight": 40,
+        "method": "one scale per sheet, no per-frame normalization"
+      },
+      "notes": [
+        "Transparent generated raw. Need precise per-row source rects and foot-root identification."
+      ]
+    },
+    {
+      "id": "combat_a",
+      "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_combat_A_right_v002.png",
+      "calibration": {
+        "referenceHeightPx": 234,
+        "targetStandingHeight": 40,
+        "method": "one scale per sheet, no per-frame normalization"
+      },
+      "notes": [
+        "Built-in image_gen source v001 retained. v002 is one localized edit to reconstruct row2 col1 clipped milk-bottle hammer and add transparent left margin.",
+        "No further art edits planned. Exactly 16 cels retained; v002 dimension 1254x1254 and RGBA alpha.",
+        "Adaptive sourceRects required: source grid spacing is irregular and some weapons span equal-grid column boundaries.",
+        "anchorsAbsolute manually checked against grounded soles; crouching hammer strike frames do not rescale body.",
+        "Reference cell3 standing body height234 excludes forward hammer.",
+        "Hammer row final recovery frames use closely matched low-forward ready posture for combo chaining; verify in playback.",
+        "Small variation in hammer grip and shoulder/face persists as RAW animation candidate; processed pixel QA required.",
+        "Output canvas may grow to fit weapon at unchanged body scale; never scale body down to fit hammer."
+      ]
+    },
+    {
+      "id": "combat_b",
+      "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_combat_B_right_v001.png",
+      "calibration": {
+        "referenceHeightPx": 260,
+        "targetStandingHeight": 40,
+        "method": "one scale per sheet, no per-frame normalization"
+      },
+      "notes": [
+        "Built-in image_gen generation with real RGBA alpha; prompt saved alongside PNG.",
+        "Source rows/cells are not perfectly centered; adaptive segmentation/sourceRects recommended over strict equal-grid crops.",
+        "anchorsAbsolute use manually checked foot-root positions; row2 col3 avoids using low staff/FX as foot extrema.",
+        "All character bodies and weapons are complete. Row1 col4 release streak touches right canvas border; beam is a visual cue, not a standalone complete FX asset.",
+        "B frame0 standing body height calibration 260px excludes gun/FX.",
+        "No root displacement is intended; animation playback should use fixed output anchor (32,58).",
+        "Color/alpha edge cleanup and final anchor QA remain PROCESSED pipeline responsibilities."
+      ]
+    },
+    {
+      "id": "defense",
+      "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_defense_right_v001.png",
+      "calibration": {
+        "referenceHeightPx": 292,
+        "targetStandingHeight": 40,
+        "method": "one scale per sheet, no per-frame normalization"
+      },
+      "notes": [
+        "All frame pixel measurements require review before final packaging.",
+        "Target pivot (32,58) in a64x64 canvas."
+      ]
+    },
+    {
+      "id": "life",
+      "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_life_right_v001.png",
+      "calibration": {
+        "referenceHeightPx": 343,
+        "targetStandingHeight": 40,
+        "method": "one scale per sheet, no per-frame normalization"
+      },
+      "notes": [
+        "All frame pixel measurements require review before final packaging.",
+        "Target pivot (32,58) in a64x64 canvas.",
+        "Original rest row preserved in RAW; final rest now comes from rest_cycle v002 to keep transitions continuous."
+      ]
+    },
+    {
+      "id": "motion_a",
+      "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_motion_a_idle_run_right_v001.png",
+      "calibration": {
+        "referenceHeightPx": 327,
+        "targetStandingHeight": 40,
+        "method": "one scale per sheet, no per-frame normalization"
+      },
+      "notes": [
+        "Generated with built-in image_gen using CHR-01_master_right_v001.png as the sole reference.",
+        "RAW is preserved unchanged. Transparent alpha checked; alpha>=128 used only for measurement.",
+        "Explicit source rectangles follow empty horizontal bands; equal-row slicing can clip sprites.",
+        "Root anchors are hand estimated from pose and contact plane, not automatic bbox centers. They require visual playback validation.",
+        "Airborne poses use a virtual contact plane; do not bottom-align every frame. Run frames 4 and 8 of the sequence are airborne.",
+        "All final frames use64x64 canvas, anchor(32,58), standing height40 logical pixels."
+      ]
+    },
+    {
+      "id": "motion_b",
+      "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_motion_b_jump_fall_land_doublejump_right_v001.png",
+      "calibration": {
+        "referenceHeightPx": 278,
+        "targetStandingHeight": 40,
+        "method": "one scale per sheet, no per-frame normalization"
+      },
+      "notes": [
+        "Generated with built-in image_gen using CHR-01_master_right_v001.png as the sole reference.",
+        "RAW is preserved unchanged. Transparent alpha checked; alpha>=128 used only for measurement.",
+        "Explicit source rectangles follow empty horizontal bands; equal-row slicing can clip sprites.",
+        "Root anchors are hand estimated from pose and contact plane, not automatic bbox centers. They require visual playback validation.",
+        "Airborne poses use a virtual contact plane; do not bottom-align every frame. Run frames 4 and 8 of the sequence are airborne.",
+        "All final frames use64x64 canvas, anchor(32,58), standing height40 logical pixels."
+      ]
+    },
+    {
+      "id": "motion_c",
+      "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_motion_c_dodge_airdodge_right_v001.png",
+      "calibration": {
+        "referenceHeightPx": 388,
+        "targetStandingHeight": 40,
+        "method": "one scale per sheet, no per-frame normalization"
+      },
+      "notes": [
+        "Generated with built-in image_gen using CHR-01_master_right_v001.png as the sole reference.",
+        "RAW is preserved unchanged. Transparent alpha checked; alpha>=128 used only for measurement.",
+        "Explicit source rectangles follow empty horizontal bands; equal-row slicing can clip sprites.",
+        "Root anchors are hand estimated from pose and contact plane, not automatic bbox centers. They require visual playback validation.",
+        "Airborne poses use a virtual contact plane; do not bottom-align every frame. Run frames 4 and 8 of the sequence are airborne.",
+        "All final frames use64x64 canvas, anchor(32,58), standing height40 logical pixels."
+      ]
+    },
+    {
+      "id": "rest_cycle",
+      "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_rest_cycle_right_v002.png",
+      "calibration": {
+        "referenceHeightPx": 398,
+        "targetStandingHeight": 40,
+        "method": "one scale per sheet, no per-frame normalization"
+      },
+      "notes": [
+        "Use seated shape from this SAME sheet for rest_enter/rest/rest_exit; replaces life row3 and rest_transition v001.",
+        "Last row last pose is still slightly crouched; finish rest_exit by reusing rest_enter_0 fully standing pose in playback metadata, not generating a fake new frame."
+      ]
+    }
+  ],
+  "sourceScales": {
+    "cast": 0.12232415902140673,
+    "combat_a": 0.17094017094017094,
+    "combat_b": 0.15384615384615385,
+    "defense": 0.136986301369863,
+    "life": 0.11661807580174927,
+    "motion_a": 0.12232415902140673,
+    "motion_b": 0.14388489208633093,
+    "motion_c": 0.10309278350515463,
+    "rest_cycle": 0.10050251256281408
+  },
+  "frameCount": 112,
+  "uniqueFrameCount": 112,
+  "playbackFrameCount": 118,
+  "atlas": {
+    "file": "CHR-01_atlas_right_v001.png",
+    "size": [
+      768,
+      1344
+    ],
+    "cellSize": [
+      96,
+      96
+    ],
+    "columns": 8,
+    "rows": 14
+  },
+  "animations": [
+    {
+      "name": "idle",
+      "label": "待机",
+      "fps": 8,
+      "loop": true,
+      "anchorMode": "ground",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "sheet": "sheets/CHR-01_player_idle_right_v001_sheet.png",
+      "sourceFrameIds": [
+        "idle_0",
+        "idle_1",
+        "idle_2",
+        "idle_3"
+      ],
+      "playbackOrder": [
+        0,
+        1,
+        3,
+        2,
+        3,
+        1
+      ],
+      "appendPlaybackFrameIds": [],
+      "frameIds": [
+        "idle_0",
+        "idle_1",
+        "idle_3",
+        "idle_2",
+        "idle_3",
+        "idle_1"
+      ]
+    },
+    {
+      "name": "run",
+      "label": "跑步",
+      "fps": 12,
+      "loop": true,
+      "anchorMode": "air",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "sheet": "sheets/CHR-01_player_run_right_v001_sheet.png",
+      "sourceFrameIds": [
+        "run_0",
+        "run_1",
+        "run_2",
+        "run_3",
+        "run_4",
+        "run_5",
+        "run_6",
+        "run_7"
+      ],
+      "playbackOrder": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "appendPlaybackFrameIds": [],
+      "frameIds": [
+        "run_0",
+        "run_1",
+        "run_2",
+        "run_3",
+        "run_4",
+        "run_5",
+        "run_6",
+        "run_7"
+      ]
+    },
+    {
+      "name": "jump",
+      "label": "跳跃",
+      "fps": 12,
+      "loop": false,
+      "anchorMode": "air",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "sheet": "sheets/CHR-01_player_jump_right_v001_sheet.png",
+      "sourceFrameIds": [
+        "jump_0",
+        "jump_1",
+        "jump_2",
+        "jump_3"
+      ],
+      "playbackOrder": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "appendPlaybackFrameIds": [],
+      "frameIds": [
+        "jump_0",
+        "jump_1",
+        "jump_2",
+        "jump_3"
+      ]
+    },
+    {
+      "name": "fall",
+      "label": "下落",
+      "fps": 8,
+      "loop": false,
+      "anchorMode": "air",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "sheet": "sheets/CHR-01_player_fall_right_v001_sheet.png",
+      "sourceFrameIds": [
+        "fall_0",
+        "fall_1",
+        "fall_2",
+        "fall_3"
+      ],
+      "playbackOrder": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "appendPlaybackFrameIds": [],
+      "frameIds": [
+        "fall_0",
+        "fall_1",
+        "fall_2",
+        "fall_3"
+      ]
+    },
+    {
+      "name": "land",
+      "label": "落地",
+      "fps": 16,
+      "loop": false,
+      "anchorMode": "ground",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "sheet": "sheets/CHR-01_player_land_right_v001_sheet.png",
+      "sourceFrameIds": [
+        "land_0",
+        "land_1",
+        "land_2",
+        "land_3"
+      ],
+      "playbackOrder": [
+        0,
+        1,
+        0,
+        2,
+        3
+      ],
+      "appendPlaybackFrameIds": [],
+      "frameIds": [
+        "land_0",
+        "land_1",
+        "land_0",
+        "land_2",
+        "land_3"
+      ]
+    },
+    {
+      "name": "double_jump",
+      "label": "二段跳",
+      "fps": 12,
+      "loop": false,
+      "anchorMode": "air",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "sheet": "sheets/CHR-01_player_double_jump_right_v001_sheet.png",
+      "sourceFrameIds": [
+        "double_jump_0",
+        "double_jump_1",
+        "double_jump_2",
+        "double_jump_3"
+      ],
+      "playbackOrder": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "appendPlaybackFrameIds": [],
+      "frameIds": [
+        "double_jump_0",
+        "double_jump_1",
+        "double_jump_2",
+        "double_jump_3"
+      ]
+    },
+    {
+      "name": "dodge",
+      "label": "地面闪避",
+      "fps": 27.7778,
+      "loop": false,
+      "anchorMode": "ground",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "sheet": "sheets/CHR-01_player_dodge_right_v001_sheet.png",
+      "sourceFrameIds": [
+        "dodge_0",
+        "dodge_1",
+        "dodge_2",
+        "dodge_3"
+      ],
+      "playbackOrder": [
+        0,
+        1,
+        2,
+        0,
+        3
+      ],
+      "appendPlaybackFrameIds": [],
+      "frameIds": [
+        "dodge_0",
+        "dodge_1",
+        "dodge_2",
+        "dodge_0",
+        "dodge_3"
+      ]
+    },
+    {
+      "name": "air_dodge",
+      "label": "空中闪避",
+      "fps": 22.2222,
+      "loop": false,
+      "anchorMode": "air",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "sheet": "sheets/CHR-01_player_air_dodge_right_v001_sheet.png",
+      "sourceFrameIds": [
+        "air_dodge_0",
+        "air_dodge_1",
+        "air_dodge_2",
+        "air_dodge_3"
+      ],
+      "playbackOrder": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "appendPlaybackFrameIds": [],
+      "frameIds": [
+        "air_dodge_0",
+        "air_dodge_1",
+        "air_dodge_2",
+        "air_dodge_3"
+      ]
+    },
+    {
+      "name": "guard",
+      "label": "防御",
+      "fps": 10,
+      "loop": false,
+      "anchorMode": "ground",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "sheet": "sheets/CHR-01_player_guard_right_v001_sheet.png",
+      "sourceFrameIds": [
+        "guard_0",
+        "guard_1",
+        "guard_2",
+        "guard_3"
+      ],
+      "playbackOrder": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "appendPlaybackFrameIds": [],
+      "frameIds": [
+        "guard_0",
+        "guard_1",
+        "guard_2",
+        "guard_3"
+      ]
+    },
+    {
+      "name": "parry",
+      "label": "完美格挡",
+      "fps": 14,
+      "loop": false,
+      "anchorMode": "ground",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "sheet": "sheets/CHR-01_player_parry_right_v001_sheet.png",
+      "sourceFrameIds": [
+        "parry_0",
+        "parry_1",
+        "parry_2",
+        "parry_3"
+      ],
+      "playbackOrder": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "appendPlaybackFrameIds": [],
+      "frameIds": [
+        "parry_0",
+        "parry_1",
+        "parry_2",
+        "parry_3"
+      ]
+    },
+    {
+      "name": "guard_break",
+      "label": "破防",
+      "fps": 8,
+      "loop": false,
+      "anchorMode": "ground",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "sheet": "sheets/CHR-01_player_guard_break_right_v001_sheet.png",
+      "sourceFrameIds": [
+        "guard_break_0",
+        "guard_break_1",
+        "guard_break_2",
+        "guard_break_3"
+      ],
+      "playbackOrder": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "appendPlaybackFrameIds": [],
+      "frameIds": [
+        "guard_break_0",
+        "guard_break_1",
+        "guard_break_2",
+        "guard_break_3"
+      ]
+    },
+    {
+      "name": "hurt",
+      "label": "受击",
+      "fps": 16,
+      "loop": false,
+      "anchorMode": "ground",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "sheet": "sheets/CHR-01_player_hurt_right_v001_sheet.png",
+      "sourceFrameIds": [
+        "hurt_0",
+        "hurt_1",
+        "hurt_2",
+        "hurt_3"
+      ],
+      "playbackOrder": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "appendPlaybackFrameIds": [],
+      "frameIds": [
+        "hurt_0",
+        "hurt_1",
+        "hurt_2",
+        "hurt_3"
+      ]
+    },
+    {
+      "name": "hammer_1",
+      "label": "奶瓶锤一段",
+      "fps": 8,
+      "loop": false,
+      "anchorMode": "ground",
+      "size": [
+        96,
+        96
+      ],
+      "anchor": [
+        48,
+        90
+      ],
+      "sheet": "sheets/CHR-01_player_hammer_1_right_v001_sheet.png",
+      "sourceFrameIds": [
+        "hammer_1_0",
+        "hammer_1_1",
+        "hammer_1_2",
+        "hammer_1_3"
+      ],
+      "playbackOrder": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "appendPlaybackFrameIds": [],
+      "frameIds": [
+        "hammer_1_0",
+        "hammer_1_1",
+        "hammer_1_2",
+        "hammer_1_3"
+      ]
+    },
+    {
+      "name": "hammer_2",
+      "label": "奶瓶锤二段",
+      "fps": 8,
+      "loop": false,
+      "anchorMode": "ground",
+      "size": [
+        96,
+        96
+      ],
+      "anchor": [
+        48,
+        90
+      ],
+      "sheet": "sheets/CHR-01_player_hammer_2_right_v001_sheet.png",
+      "sourceFrameIds": [
+        "hammer_2_0",
+        "hammer_2_1",
+        "hammer_2_2",
+        "hammer_2_3"
+      ],
+      "playbackOrder": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "appendPlaybackFrameIds": [],
+      "frameIds": [
+        "hammer_2_0",
+        "hammer_2_1",
+        "hammer_2_2",
+        "hammer_2_3"
+      ]
+    },
+    {
+      "name": "hammer_3",
+      "label": "奶瓶锤三段",
+      "fps": 8,
+      "loop": false,
+      "anchorMode": "ground",
+      "size": [
+        96,
+        96
+      ],
+      "anchor": [
+        48,
+        90
+      ],
+      "sheet": "sheets/CHR-01_player_hammer_3_right_v001_sheet.png",
+      "sourceFrameIds": [
+        "hammer_3_0",
+        "hammer_3_1",
+        "hammer_3_2",
+        "hammer_3_3"
+      ],
+      "playbackOrder": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "appendPlaybackFrameIds": [],
+      "frameIds": [
+        "hammer_3_0",
+        "hammer_3_1",
+        "hammer_3_2",
+        "hammer_3_3"
+      ]
+    },
+    {
+      "name": "blaster_fire",
+      "label": "奶弹枪单发",
+      "fps": 10,
+      "loop": false,
+      "anchorMode": "ground",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "sheet": "sheets/CHR-01_player_blaster_fire_right_v001_sheet.png",
+      "sourceFrameIds": [
+        "blaster_fire_0",
+        "blaster_fire_1",
+        "blaster_fire_2",
+        "blaster_fire_3"
+      ],
+      "playbackOrder": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "appendPlaybackFrameIds": [],
+      "frameIds": [
+        "blaster_fire_0",
+        "blaster_fire_1",
+        "blaster_fire_2",
+        "blaster_fire_3"
+      ]
+    },
+    {
+      "name": "blaster_charge",
+      "label": "奶弹枪蓄力",
+      "fps": 10,
+      "loop": false,
+      "anchorMode": "ground",
+      "size": [
+        96,
+        96
+      ],
+      "anchor": [
+        48,
+        90
+      ],
+      "sheet": "sheets/CHR-01_player_blaster_charge_right_v001_sheet.png",
+      "sourceFrameIds": [
+        "blaster_charge_0",
+        "blaster_charge_1",
+        "blaster_charge_2",
+        "blaster_charge_3"
+      ],
+      "playbackOrder": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "appendPlaybackFrameIds": [],
+      "frameIds": [
+        "blaster_charge_0",
+        "blaster_charge_1",
+        "blaster_charge_2",
+        "blaster_charge_3"
+      ]
+    },
+    {
+      "name": "staff_sweep",
+      "label": "奶杖横扫",
+      "fps": 10,
+      "loop": false,
+      "anchorMode": "ground",
+      "size": [
+        96,
+        96
+      ],
+      "anchor": [
+        48,
+        90
+      ],
+      "sheet": "sheets/CHR-01_player_staff_sweep_right_v001_sheet.png",
+      "sourceFrameIds": [
+        "staff_sweep_0",
+        "staff_sweep_1",
+        "staff_sweep_2",
+        "staff_sweep_3"
+      ],
+      "playbackOrder": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "appendPlaybackFrameIds": [],
+      "frameIds": [
+        "staff_sweep_0",
+        "staff_sweep_1",
+        "staff_sweep_2",
+        "staff_sweep_3"
+      ]
+    },
+    {
+      "name": "orb_cast",
+      "label": "星乳法球发射",
+      "fps": 10,
+      "loop": false,
+      "anchorMode": "ground",
+      "size": [
+        96,
+        96
+      ],
+      "anchor": [
+        48,
+        90
+      ],
+      "sheet": "sheets/CHR-01_player_orb_cast_right_v001_sheet.png",
+      "sourceFrameIds": [
+        "orb_cast_0",
+        "orb_cast_1",
+        "orb_cast_2",
+        "orb_cast_3"
+      ],
+      "playbackOrder": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "appendPlaybackFrameIds": [],
+      "frameIds": [
+        "orb_cast_0",
+        "orb_cast_1",
+        "orb_cast_2",
+        "orb_cast_3"
+      ]
+    },
+    {
+      "name": "cast",
+      "label": "通用施法",
+      "fps": 10,
+      "loop": false,
+      "anchorMode": "ground",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "sheet": "sheets/CHR-01_player_cast_right_v001_sheet.png",
+      "sourceFrameIds": [
+        "cast_0",
+        "cast_1",
+        "cast_2",
+        "cast_3"
+      ],
+      "playbackOrder": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "appendPlaybackFrameIds": [],
+      "frameIds": [
+        "cast_0",
+        "cast_1",
+        "cast_2",
+        "cast_3"
+      ]
+    },
+    {
+      "name": "heal",
+      "label": "治疗施法",
+      "fps": 8,
+      "loop": false,
+      "anchorMode": "ground",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "sheet": "sheets/CHR-01_player_heal_right_v001_sheet.png",
+      "sourceFrameIds": [
+        "heal_0",
+        "heal_1",
+        "heal_2",
+        "heal_3"
+      ],
+      "playbackOrder": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "appendPlaybackFrameIds": [],
+      "frameIds": [
+        "heal_0",
+        "heal_1",
+        "heal_2",
+        "heal_3"
+      ]
+    },
+    {
+      "name": "interact",
+      "label": "交互",
+      "fps": 8,
+      "loop": false,
+      "anchorMode": "ground",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "sheet": "sheets/CHR-01_player_interact_right_v001_sheet.png",
+      "sourceFrameIds": [
+        "interact_0",
+        "interact_1",
+        "interact_2",
+        "interact_3"
+      ],
+      "playbackOrder": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "appendPlaybackFrameIds": [],
+      "frameIds": [
+        "interact_0",
+        "interact_1",
+        "interact_2",
+        "interact_3"
+      ]
+    },
+    {
+      "name": "rest_enter",
+      "label": "坐下",
+      "fps": 8,
+      "loop": false,
+      "anchorMode": "ground",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "sheet": "sheets/CHR-01_player_rest_enter_right_v001_sheet.png",
+      "sourceFrameIds": [
+        "rest_enter_0",
+        "rest_enter_1",
+        "rest_enter_2",
+        "rest_enter_3"
+      ],
+      "playbackOrder": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "appendPlaybackFrameIds": [],
+      "frameIds": [
+        "rest_enter_0",
+        "rest_enter_1",
+        "rest_enter_2",
+        "rest_enter_3"
+      ]
+    },
+    {
+      "name": "rest",
+      "label": "休息",
+      "fps": 5,
+      "loop": true,
+      "anchorMode": "ground",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "sheet": "sheets/CHR-01_player_rest_right_v001_sheet.png",
+      "sourceFrameIds": [
+        "rest_0",
+        "rest_1",
+        "rest_2",
+        "rest_3"
+      ],
+      "playbackOrder": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "appendPlaybackFrameIds": [],
+      "frameIds": [
+        "rest_0",
+        "rest_1",
+        "rest_2",
+        "rest_3"
+      ]
+    },
+    {
+      "name": "rest_exit",
+      "label": "起身",
+      "fps": 12,
+      "loop": false,
+      "anchorMode": "ground",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "sheet": "sheets/CHR-01_player_rest_exit_right_v001_sheet.png",
+      "sourceFrameIds": [
+        "rest_exit_0",
+        "rest_exit_1",
+        "rest_exit_2",
+        "rest_exit_3"
+      ],
+      "playbackOrder": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "appendPlaybackFrameIds": [
+        "rest_enter_1",
+        "rest_enter_0"
+      ],
+      "frameIds": [
+        "rest_exit_0",
+        "rest_exit_1",
+        "rest_exit_2",
+        "rest_exit_3",
+        "rest_enter_1",
+        "rest_enter_0"
+      ]
+    },
+    {
+      "name": "death",
+      "label": "死亡",
+      "fps": 5.333333,
+      "loop": false,
+      "anchorMode": "root",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "sheet": "sheets/CHR-01_player_death_right_v001_sheet.png",
+      "sourceFrameIds": [
+        "death_0",
+        "death_1",
+        "death_2",
+        "death_3",
+        "death_4",
+        "death_5",
+        "death_6",
+        "death_7"
+      ],
+      "playbackOrder": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "appendPlaybackFrameIds": [],
+      "frameIds": [
+        "death_0",
+        "death_1",
+        "death_2",
+        "death_3",
+        "death_4",
+        "death_5",
+        "death_6",
+        "death_7"
+      ]
+    }
+  ],
+  "frames": [
+    {
+      "id": "idle_0",
+      "animation": "idle",
+      "index": 0,
+      "file": "frames/CHR-01_player_idle_right_v001_f01.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "source": {
+        "id": "motion_a",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_motion_a_idle_run_right_v001.png",
+        "sha256": "27e254fde9df54b9e2da29e0d676f758d9c1a3da7b7c2e318c6a41842a628349",
+        "cellIndex": 0,
+        "rect": [
+          0,
+          0,
+          362,
+          376
+        ],
+        "anchor": [
+          198,
+          362
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.12232415902140673,
+        "scaledCellSize": [
+          44,
+          46
+        ],
+        "scaledVisibleCrop": [
+          0,
+          4,
+          44,
+          42
+        ],
+        "translation": [
+          8,
+          17
+        ],
+        "pixelOffset": [
+          0,
+          -1
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": null,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "323e57dcaf468ac37bbe86e29e211b7fd844ba6d17b1f1e59e80440f84476613",
+      "atlasRect": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "visibleBounds": [
+        18,
+        17,
+        29,
+        41
+      ]
+    },
+    {
+      "id": "idle_1",
+      "animation": "idle",
+      "index": 1,
+      "file": "frames/CHR-01_player_idle_right_v001_f02.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "source": {
+        "id": "motion_a",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_motion_a_idle_run_right_v001.png",
+        "sha256": "27e254fde9df54b9e2da29e0d676f758d9c1a3da7b7c2e318c6a41842a628349",
+        "cellIndex": 1,
+        "rect": [
+          362,
+          0,
+          362,
+          376
+        ],
+        "anchor": [
+          198,
+          362
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.12232415902140673,
+        "scaledCellSize": [
+          44,
+          46
+        ],
+        "scaledVisibleCrop": [
+          0,
+          4,
+          43,
+          42
+        ],
+        "translation": [
+          8,
+          17
+        ],
+        "pixelOffset": [
+          0,
+          -1
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": null,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "1d40ae24b4e33d2f892ee36a844d67f15ce82bf6923d44a34fdff7fe23d2357c",
+      "atlasRect": [
+        96,
+        0,
+        64,
+        64
+      ],
+      "visibleBounds": [
+        18,
+        17,
+        29,
+        41
+      ]
+    },
+    {
+      "id": "idle_2",
+      "animation": "idle",
+      "index": 2,
+      "file": "frames/CHR-01_player_idle_right_v001_f03.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "source": {
+        "id": "motion_a",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_motion_a_idle_run_right_v001.png",
+        "sha256": "27e254fde9df54b9e2da29e0d676f758d9c1a3da7b7c2e318c6a41842a628349",
+        "cellIndex": 2,
+        "rect": [
+          724,
+          0,
+          362,
+          376
+        ],
+        "anchor": [
+          196,
+          365
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.12232415902140673,
+        "scaledCellSize": [
+          44,
+          46
+        ],
+        "scaledVisibleCrop": [
+          4,
+          2,
+          36,
+          44
+        ],
+        "translation": [
+          12,
+          15
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": null,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "fa1e6e38f9b4e280a0ad1098e0ef5548dd8f626d045525ad5e23e66fde9cb094",
+      "atlasRect": [
+        192,
+        0,
+        64,
+        64
+      ],
+      "visibleBounds": [
+        18,
+        16,
+        29,
+        42
+      ]
+    },
+    {
+      "id": "idle_3",
+      "animation": "idle",
+      "index": 3,
+      "file": "frames/CHR-01_player_idle_right_v001_f04.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "source": {
+        "id": "motion_a",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_motion_a_idle_run_right_v001.png",
+        "sha256": "27e254fde9df54b9e2da29e0d676f758d9c1a3da7b7c2e318c6a41842a628349",
+        "cellIndex": 3,
+        "rect": [
+          1086,
+          0,
+          362,
+          376
+        ],
+        "anchor": [
+          198,
+          365
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.12232415902140673,
+        "scaledCellSize": [
+          44,
+          46
+        ],
+        "scaledVisibleCrop": [
+          7,
+          4,
+          32,
+          42
+        ],
+        "translation": [
+          15,
+          17
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": null,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "df3bba0ce54a564bfb8868c41c2810f20b408c365e8813f22729b453a9ec181c",
+      "atlasRect": [
+        288,
+        0,
+        64,
+        64
+      ],
+      "visibleBounds": [
+        18,
+        17,
+        29,
+        41
+      ]
+    },
+    {
+      "id": "run_0",
+      "animation": "run",
+      "index": 0,
+      "file": "frames/CHR-01_player_run_right_v001_f01.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "source": {
+        "id": "motion_a",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_motion_a_idle_run_right_v001.png",
+        "sha256": "27e254fde9df54b9e2da29e0d676f758d9c1a3da7b7c2e318c6a41842a628349",
+        "cellIndex": 4,
+        "rect": [
+          0,
+          376,
+          362,
+          344
+        ],
+        "anchor": [
+          198,
+          335
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.12232415902140673,
+        "scaledCellSize": [
+          44,
+          42
+        ],
+        "scaledVisibleCrop": [
+          0,
+          2,
+          40,
+          40
+        ],
+        "translation": [
+          8,
+          19
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": null,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "e003e7afe9b48720659944e99b5990a45ce2c9afc450556aa59af5020200700f",
+      "atlasRect": [
+        384,
+        0,
+        64,
+        64
+      ],
+      "visibleBounds": [
+        17,
+        19,
+        31,
+        39
+      ]
+    },
+    {
+      "id": "run_1",
+      "animation": "run",
+      "index": 1,
+      "file": "frames/CHR-01_player_run_right_v001_f02.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "source": {
+        "id": "motion_a",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_motion_a_idle_run_right_v001.png",
+        "sha256": "27e254fde9df54b9e2da29e0d676f758d9c1a3da7b7c2e318c6a41842a628349",
+        "cellIndex": 5,
+        "rect": [
+          362,
+          376,
+          362,
+          344
+        ],
+        "anchor": [
+          198,
+          332
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.12232415902140673,
+        "scaledCellSize": [
+          44,
+          42
+        ],
+        "scaledVisibleCrop": [
+          8,
+          1,
+          31,
+          41
+        ],
+        "translation": [
+          16,
+          18
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": null,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "9585e283fe90a5b11b2ea96b737eff24b9845d67145ca8e089b3dce32a1aad7c",
+      "atlasRect": [
+        480,
+        0,
+        64,
+        64
+      ],
+      "visibleBounds": [
+        20,
+        18,
+        27,
+        40
+      ]
+    },
+    {
+      "id": "run_2",
+      "animation": "run",
+      "index": 2,
+      "file": "frames/CHR-01_player_run_right_v001_f03.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "source": {
+        "id": "motion_a",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_motion_a_idle_run_right_v001.png",
+        "sha256": "27e254fde9df54b9e2da29e0d676f758d9c1a3da7b7c2e318c6a41842a628349",
+        "cellIndex": 6,
+        "rect": [
+          724,
+          376,
+          362,
+          344
+        ],
+        "anchor": [
+          198,
+          335
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.12232415902140673,
+        "scaledCellSize": [
+          44,
+          42
+        ],
+        "scaledVisibleCrop": [
+          3,
+          1,
+          35,
+          41
+        ],
+        "translation": [
+          11,
+          18
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": null,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "b7055d9a2b9dbf01e3a79eeb59c68b93d65e61ef24ad904ef6c26d64dcece9c4",
+      "atlasRect": [
+        576,
+        0,
+        64,
+        64
+      ],
+      "visibleBounds": [
+        18,
+        19,
+        27,
+        39
+      ]
+    },
+    {
+      "id": "run_3",
+      "animation": "run",
+      "index": 3,
+      "file": "frames/CHR-01_player_run_right_v001_f04.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "source": {
+        "id": "motion_a",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_motion_a_idle_run_right_v001.png",
+        "sha256": "27e254fde9df54b9e2da29e0d676f758d9c1a3da7b7c2e318c6a41842a628349",
+        "cellIndex": 7,
+        "rect": [
+          1086,
+          376,
+          362,
+          344
+        ],
+        "anchor": [
+          198,
+          335
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.12232415902140673,
+        "scaledCellSize": [
+          44,
+          42
+        ],
+        "scaledVisibleCrop": [
+          8,
+          1,
+          31,
+          39
+        ],
+        "translation": [
+          16,
+          18
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": null,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "b5796e66369265b982e5254e035fcdcc48b7119fadb41dc642a43ef4ac0c2e35",
+      "atlasRect": [
+        672,
+        0,
+        64,
+        64
+      ],
+      "visibleBounds": [
+        17,
+        18,
+        30,
+        38
+      ]
+    },
+    {
+      "id": "run_4",
+      "animation": "run",
+      "index": 4,
+      "file": "frames/CHR-01_player_run_right_v001_f05.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "source": {
+        "id": "motion_a",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_motion_a_idle_run_right_v001.png",
+        "sha256": "27e254fde9df54b9e2da29e0d676f758d9c1a3da7b7c2e318c6a41842a628349",
+        "cellIndex": 8,
+        "rect": [
+          0,
+          720,
+          362,
+          366
+        ],
+        "anchor": [
+          198,
+          324
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.12232415902140673,
+        "scaledCellSize": [
+          44,
+          45
+        ],
+        "scaledVisibleCrop": [
+          0,
+          1,
+          44,
+          41
+        ],
+        "translation": [
+          8,
+          19
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": null,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "6c34b50a6e11c0e9ce023c2df89657f612a673b100fe6a02240476a532b768be",
+      "atlasRect": [
+        0,
+        96,
+        64,
+        64
+      ],
+      "visibleBounds": [
+        16,
+        20,
+        33,
+        38
+      ]
+    },
+    {
+      "id": "run_5",
+      "animation": "run",
+      "index": 5,
+      "file": "frames/CHR-01_player_run_right_v001_f06.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "source": {
+        "id": "motion_a",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_motion_a_idle_run_right_v001.png",
+        "sha256": "27e254fde9df54b9e2da29e0d676f758d9c1a3da7b7c2e318c6a41842a628349",
+        "cellIndex": 9,
+        "rect": [
+          362,
+          720,
+          362,
+          366
+        ],
+        "anchor": [
+          198,
+          329
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.12232415902140673,
+        "scaledCellSize": [
+          44,
+          45
+        ],
+        "scaledVisibleCrop": [
+          11,
+          1,
+          28,
+          40
+        ],
+        "translation": [
+          19,
+          18
+        ],
+        "pixelOffset": [
+          0,
+          -1
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": null,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "57787cfd3d16367c9037a875ec594f4db388565834cd65a768dd2212cdf906f1",
+      "atlasRect": [
+        96,
+        96,
+        64,
+        64
+      ],
+      "visibleBounds": [
+        19,
+        19,
+        27,
+        39
+      ]
+    },
+    {
+      "id": "run_6",
+      "animation": "run",
+      "index": 6,
+      "file": "frames/CHR-01_player_run_right_v001_f07.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "source": {
+        "id": "motion_a",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_motion_a_idle_run_right_v001.png",
+        "sha256": "27e254fde9df54b9e2da29e0d676f758d9c1a3da7b7c2e318c6a41842a628349",
+        "cellIndex": 10,
+        "rect": [
+          724,
+          720,
+          362,
+          366
+        ],
+        "anchor": [
+          198,
+          334
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.12232415902140673,
+        "scaledCellSize": [
+          44,
+          45
+        ],
+        "scaledVisibleCrop": [
+          1,
+          2,
+          37,
+          40
+        ],
+        "translation": [
+          9,
+          19
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": null,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "38190704d4364d72c67737ddc78ea2e76e3b35c2ed1670136864b22e8870f4e5",
+      "atlasRect": [
+        192,
+        96,
+        64,
+        64
+      ],
+      "visibleBounds": [
+        18,
+        19,
+        27,
+        39
+      ]
+    },
+    {
+      "id": "run_7",
+      "animation": "run",
+      "index": 7,
+      "file": "frames/CHR-01_player_run_right_v001_f08.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "source": {
+        "id": "motion_a",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_motion_a_idle_run_right_v001.png",
+        "sha256": "27e254fde9df54b9e2da29e0d676f758d9c1a3da7b7c2e318c6a41842a628349",
+        "cellIndex": 11,
+        "rect": [
+          1086,
+          720,
+          362,
+          366
+        ],
+        "anchor": [
+          198,
+          334
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.12232415902140673,
+        "scaledCellSize": [
+          44,
+          45
+        ],
+        "scaledVisibleCrop": [
+          6,
+          0,
+          35,
+          40
+        ],
+        "translation": [
+          14,
+          17
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": null,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "a83bdaa91d93e23db0174ed8004741f8a5797510ee0d17ecddf603a86edf5137",
+      "atlasRect": [
+        288,
+        96,
+        64,
+        64
+      ],
+      "visibleBounds": [
+        17,
+        19,
+        30,
+        37
+      ]
+    },
+    {
+      "id": "jump_0",
+      "animation": "jump",
+      "index": 0,
+      "file": "frames/CHR-01_player_jump_right_v001_f01.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "source": {
+        "id": "motion_b",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_motion_b_jump_fall_land_doublejump_right_v001.png",
+        "sha256": "0ba21ed67eac55be2199c84ca874414d3bffda9fce75aad9ea8f09b6d8e32bd9",
+        "cellIndex": 0,
+        "rect": [
+          0,
+          0,
+          314,
+          322
+        ],
+        "anchor": [
+          173,
+          306
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.14388489208633093,
+        "scaledCellSize": [
+          45,
+          46
+        ],
+        "scaledVisibleCrop": [
+          10,
+          7,
+          35,
+          37
+        ],
+        "translation": [
+          17,
+          21
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": null,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "553012dbf47fa7164b1b2fd5f06c788d0838927c6432140be7425a8397c6b281",
+      "atlasRect": [
+        384,
+        96,
+        64,
+        64
+      ],
+      "visibleBounds": [
+        18,
+        26,
+        30,
+        32
+      ]
+    },
+    {
+      "id": "jump_1",
+      "animation": "jump",
+      "index": 1,
+      "file": "frames/CHR-01_player_jump_right_v001_f02.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "source": {
+        "id": "motion_b",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_motion_b_jump_fall_land_doublejump_right_v001.png",
+        "sha256": "0ba21ed67eac55be2199c84ca874414d3bffda9fce75aad9ea8f09b6d8e32bd9",
+        "cellIndex": 1,
+        "rect": [
+          314,
+          0,
+          313,
+          322
+        ],
+        "anchor": [
+          171,
+          309
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.14388489208633093,
+        "scaledCellSize": [
+          45,
+          46
+        ],
+        "scaledVisibleCrop": [
+          0,
+          5,
+          43,
+          41
+        ],
+        "translation": [
+          7,
+          19
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": null,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "f9149496b7c7ad6de5d0747f04041922dd09994140ba6e1685e24402d0942f69",
+      "atlasRect": [
+        480,
+        96,
+        64,
+        64
+      ],
+      "visibleBounds": [
+        17,
+        19,
+        33,
+        40
+      ]
+    },
+    {
+      "id": "jump_2",
+      "animation": "jump",
+      "index": 2,
+      "file": "frames/CHR-01_player_jump_right_v001_f03.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "source": {
+        "id": "motion_b",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_motion_b_jump_fall_land_doublejump_right_v001.png",
+        "sha256": "0ba21ed67eac55be2199c84ca874414d3bffda9fce75aad9ea8f09b6d8e32bd9",
+        "cellIndex": 2,
+        "rect": [
+          627,
+          0,
+          313,
+          322
+        ],
+        "anchor": [
+          159,
+          309
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.14388489208633093,
+        "scaledCellSize": [
+          45,
+          46
+        ],
+        "scaledVisibleCrop": [
+          2,
+          2,
+          41,
+          42
+        ],
+        "translation": [
+          11,
+          16
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": null,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "161775d9620e7237dd1dfdd4915b28e8cee4e1dba9ad74404f604b93889d9ec0",
+      "atlasRect": [
+        576,
+        96,
+        64,
+        64
+      ],
+      "visibleBounds": [
+        17,
+        16,
+        30,
+        41
+      ]
+    },
+    {
+      "id": "jump_3",
+      "animation": "jump",
+      "index": 3,
+      "file": "frames/CHR-01_player_jump_right_v001_f04.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "source": {
+        "id": "motion_b",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_motion_b_jump_fall_land_doublejump_right_v001.png",
+        "sha256": "0ba21ed67eac55be2199c84ca874414d3bffda9fce75aad9ea8f09b6d8e32bd9",
+        "cellIndex": 3,
+        "rect": [
+          940,
+          0,
+          314,
+          322
+        ],
+        "anchor": [
+          153,
+          309
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.14388489208633093,
+        "scaledCellSize": [
+          45,
+          46
+        ],
+        "scaledVisibleCrop": [
+          6,
+          4,
+          35,
+          40
+        ],
+        "translation": [
+          16,
+          18
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": null,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "276c7518ba331b41e0bb4bbc936bc3fe57d048fbb83e2863c5d53c5a9e5f2a8a",
+      "atlasRect": [
+        672,
+        96,
+        64,
+        64
+      ],
+      "visibleBounds": [
+        17,
+        19,
+        32,
+        38
+      ]
+    },
+    {
+      "id": "fall_0",
+      "animation": "fall",
+      "index": 0,
+      "file": "frames/CHR-01_player_fall_right_v001_f01.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "source": {
+        "id": "motion_b",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_motion_b_jump_fall_land_doublejump_right_v001.png",
+        "sha256": "0ba21ed67eac55be2199c84ca874414d3bffda9fce75aad9ea8f09b6d8e32bd9",
+        "cellIndex": 4,
+        "rect": [
+          0,
+          322,
+          314,
+          311
+        ],
+        "anchor": [
+          170,
+          301
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.14388489208633093,
+        "scaledCellSize": [
+          45,
+          45
+        ],
+        "scaledVisibleCrop": [
+          7,
+          1,
+          36,
+          40
+        ],
+        "translation": [
+          15,
+          16
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": null,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "c1dcbc990e2afd39fae328c203b198415e45008cbf45b27a6db360f434b6988a",
+      "atlasRect": [
+        0,
+        192,
+        64,
+        64
+      ],
+      "visibleBounds": [
+        16,
+        17,
+        34,
+        38
+      ]
+    },
+    {
+      "id": "fall_1",
+      "animation": "fall",
+      "index": 1,
+      "file": "frames/CHR-01_player_fall_right_v001_f02.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "source": {
+        "id": "motion_b",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_motion_b_jump_fall_land_doublejump_right_v001.png",
+        "sha256": "0ba21ed67eac55be2199c84ca874414d3bffda9fce75aad9ea8f09b6d8e32bd9",
+        "cellIndex": 5,
+        "rect": [
+          314,
+          322,
+          313,
+          311
+        ],
+        "anchor": [
+          181,
+          301
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.14388489208633093,
+        "scaledCellSize": [
+          45,
+          45
+        ],
+        "scaledVisibleCrop": [
+          0,
+          2,
+          43,
+          41
+        ],
+        "translation": [
+          6,
+          17
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": null,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "60179703aa7197c7d11bf357f3c82bf1fd50ed0961cb41862ed0bdd900031fde",
+      "atlasRect": [
+        96,
+        192,
+        64,
+        64
+      ],
+      "visibleBounds": [
+        18,
+        17,
+        31,
+        40
+      ]
+    },
+    {
+      "id": "fall_2",
+      "animation": "fall",
+      "index": 2,
+      "file": "frames/CHR-01_player_fall_right_v001_f03.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "source": {
+        "id": "motion_b",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_motion_b_jump_fall_land_doublejump_right_v001.png",
+        "sha256": "0ba21ed67eac55be2199c84ca874414d3bffda9fce75aad9ea8f09b6d8e32bd9",
+        "cellIndex": 6,
+        "rect": [
+          627,
+          322,
+          313,
+          311
+        ],
+        "anchor": [
+          169,
+          301
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.14388489208633093,
+        "scaledCellSize": [
+          45,
+          45
+        ],
+        "scaledVisibleCrop": [
+          1,
+          1,
+          41,
+          44
+        ],
+        "translation": [
+          9,
+          16
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": null,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "9f973dad7ade973f3d534b36eaeab13a96e21652333a0f57c5030a8407ad5ddd",
+      "atlasRect": [
+        192,
+        192,
+        64,
+        64
+      ],
+      "visibleBounds": [
+        17,
+        18,
+        32,
+        41
+      ]
+    },
+    {
+      "id": "fall_3",
+      "animation": "fall",
+      "index": 3,
+      "file": "frames/CHR-01_player_fall_right_v001_f04.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "source": {
+        "id": "motion_b",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_motion_b_jump_fall_land_doublejump_right_v001.png",
+        "sha256": "0ba21ed67eac55be2199c84ca874414d3bffda9fce75aad9ea8f09b6d8e32bd9",
+        "cellIndex": 7,
+        "rect": [
+          940,
+          322,
+          314,
+          311
+        ],
+        "anchor": [
+          153,
+          301
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.14388489208633093,
+        "scaledCellSize": [
+          45,
+          45
+        ],
+        "scaledVisibleCrop": [
+          6,
+          1,
+          33,
+          44
+        ],
+        "translation": [
+          16,
+          16
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": null,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "42a790f998fa460a961128aced81443bfeaa4f9b0294d86f5c3a20ab3ca7e5a4",
+      "atlasRect": [
+        288,
+        192,
+        64,
+        64
+      ],
+      "visibleBounds": [
+        18,
+        23,
+        29,
+        36
+      ]
+    },
+    {
+      "id": "land_0",
+      "animation": "land",
+      "index": 0,
+      "file": "frames/CHR-01_player_land_right_v001_f01.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "source": {
+        "id": "motion_b",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_motion_b_jump_fall_land_doublejump_right_v001.png",
+        "sha256": "0ba21ed67eac55be2199c84ca874414d3bffda9fce75aad9ea8f09b6d8e32bd9",
+        "cellIndex": 8,
+        "rect": [
+          0,
+          633,
+          314,
+          297
+        ],
+        "anchor": [
+          172,
+          284
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.14388489208633093,
+        "scaledCellSize": [
+          45,
+          43
+        ],
+        "scaledVisibleCrop": [
+          0,
+          2,
+          42,
+          40
+        ],
+        "translation": [
+          7,
+          19
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": null,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "bc2963eba2c7fcfd0567a82c641df4c75a64bdcc44a2f4a55ef8dcbaa2021581",
+      "atlasRect": [
+        384,
+        192,
+        64,
+        64
+      ],
+      "visibleBounds": [
+        17,
+        23,
+        31,
+        35
+      ]
+    },
+    {
+      "id": "land_1",
+      "animation": "land",
+      "index": 1,
+      "file": "frames/CHR-01_player_land_right_v001_f02.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "source": {
+        "id": "motion_b",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_motion_b_jump_fall_land_doublejump_right_v001.png",
+        "sha256": "0ba21ed67eac55be2199c84ca874414d3bffda9fce75aad9ea8f09b6d8e32bd9",
+        "cellIndex": 9,
+        "rect": [
+          314,
+          633,
+          313,
+          297
+        ],
+        "anchor": [
+          176,
+          284
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.14388489208633093,
+        "scaledCellSize": [
+          45,
+          43
+        ],
+        "scaledVisibleCrop": [
+          0,
+          0,
+          44,
+          42
+        ],
+        "translation": [
+          7,
+          17
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": null,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "124888c319760425fc1ff38d26b83b3d1df73436e36be516b1dfe71a750c5bba",
+      "atlasRect": [
+        480,
+        192,
+        64,
+        64
+      ],
+      "visibleBounds": [
+        17,
+        27,
+        31,
+        31
+      ]
+    },
+    {
+      "id": "land_2",
+      "animation": "land",
+      "index": 2,
+      "file": "frames/CHR-01_player_land_right_v001_f03.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "source": {
+        "id": "motion_b",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_motion_b_jump_fall_land_doublejump_right_v001.png",
+        "sha256": "0ba21ed67eac55be2199c84ca874414d3bffda9fce75aad9ea8f09b6d8e32bd9",
+        "cellIndex": 10,
+        "rect": [
+          627,
+          633,
+          313,
+          297
+        ],
+        "anchor": [
+          166,
+          287
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.14388489208633093,
+        "scaledCellSize": [
+          45,
+          43
+        ],
+        "scaledVisibleCrop": [
+          1,
+          4,
+          39,
+          39
+        ],
+        "translation": [
+          9,
+          20
+        ],
+        "pixelOffset": [
+          0,
+          -1
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": null,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "0faa26c405521f9757c8a47308c87a2a51c139a057affb104eb700242e892be8",
+      "atlasRect": [
+        576,
+        192,
+        64,
+        64
+      ],
+      "visibleBounds": [
+        18,
+        20,
+        29,
+        38
+      ]
+    },
+    {
+      "id": "land_3",
+      "animation": "land",
+      "index": 3,
+      "file": "frames/CHR-01_player_land_right_v001_f04.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "source": {
+        "id": "motion_b",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_motion_b_jump_fall_land_doublejump_right_v001.png",
+        "sha256": "0ba21ed67eac55be2199c84ca874414d3bffda9fce75aad9ea8f09b6d8e32bd9",
+        "cellIndex": 11,
+        "rect": [
+          940,
+          633,
+          314,
+          297
+        ],
+        "anchor": [
+          158,
+          287
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.14388489208633093,
+        "scaledCellSize": [
+          45,
+          43
+        ],
+        "scaledVisibleCrop": [
+          8,
+          0,
+          33,
+          43
+        ],
+        "translation": [
+          17,
+          16
+        ],
+        "pixelOffset": [
+          0,
+          -1
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": null,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "db82be0a3f2a32a533fa00fa1522e3a1375647f7f5aacfb259d817d7a91b947d",
+      "atlasRect": [
+        672,
+        192,
+        64,
+        64
+      ],
+      "visibleBounds": [
+        17,
+        17,
+        31,
+        41
+      ]
+    },
+    {
+      "id": "double_jump_0",
+      "animation": "double_jump",
+      "index": 0,
+      "file": "frames/CHR-01_player_double_jump_right_v001_f01.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "source": {
+        "id": "motion_b",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_motion_b_jump_fall_land_doublejump_right_v001.png",
+        "sha256": "0ba21ed67eac55be2199c84ca874414d3bffda9fce75aad9ea8f09b6d8e32bd9",
+        "cellIndex": 12,
+        "rect": [
+          0,
+          930,
+          314,
+          324
+        ],
+        "anchor": [
+          179,
+          300
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.14388489208633093,
+        "scaledCellSize": [
+          45,
+          47
+        ],
+        "scaledVisibleCrop": [
+          0,
+          5,
+          42,
+          35
+        ],
+        "translation": [
+          6,
+          20
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": null,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "8955f5af44f49ac4275a0fd17db4708d7b19e947ca5f7f6209235ab7cbfa102b",
+      "atlasRect": [
+        0,
+        288,
+        64,
+        64
+      ],
+      "visibleBounds": [
+        19,
+        20,
+        28,
+        34
+      ]
+    },
+    {
+      "id": "double_jump_1",
+      "animation": "double_jump",
+      "index": 1,
+      "file": "frames/CHR-01_player_double_jump_right_v001_f02.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "source": {
+        "id": "motion_b",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_motion_b_jump_fall_land_doublejump_right_v001.png",
+        "sha256": "0ba21ed67eac55be2199c84ca874414d3bffda9fce75aad9ea8f09b6d8e32bd9",
+        "cellIndex": 13,
+        "rect": [
+          314,
+          930,
+          313,
+          324
+        ],
+        "anchor": [
+          180,
+          300
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.14388489208633093,
+        "scaledCellSize": [
+          45,
+          47
+        ],
+        "scaledVisibleCrop": [
+          0,
+          0,
+          44,
+          45
+        ],
+        "translation": [
+          6,
+          15
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": null,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "53115a2970b4c8a0964c3ea7347167a69ebdaad5599485f9ae11f4a60a0376b8",
+      "atlasRect": [
+        96,
+        288,
+        64,
+        64
+      ],
+      "visibleBounds": [
+        17,
+        16,
+        31,
+        42
+      ]
+    },
+    {
+      "id": "double_jump_2",
+      "animation": "double_jump",
+      "index": 2,
+      "file": "frames/CHR-01_player_double_jump_right_v001_f03.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "source": {
+        "id": "motion_b",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_motion_b_jump_fall_land_doublejump_right_v001.png",
+        "sha256": "0ba21ed67eac55be2199c84ca874414d3bffda9fce75aad9ea8f09b6d8e32bd9",
+        "cellIndex": 14,
+        "rect": [
+          627,
+          930,
+          313,
+          324
+        ],
+        "anchor": [
+          168,
+          300
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.14388489208633093,
+        "scaledCellSize": [
+          45,
+          47
+        ],
+        "scaledVisibleCrop": [
+          1,
+          1,
+          44,
+          39
+        ],
+        "translation": [
+          9,
+          16
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": null,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "48f3dda8aa4229545e9fa74f8a5f5ac648eee98ea8523c863094d845798d5b1d",
+      "atlasRect": [
+        192,
+        288,
+        64,
+        64
+      ],
+      "visibleBounds": [
+        18,
+        17,
+        29,
+        38
+      ]
+    },
+    {
+      "id": "double_jump_3",
+      "animation": "double_jump",
+      "index": 3,
+      "file": "frames/CHR-01_player_double_jump_right_v001_f04.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "source": {
+        "id": "motion_b",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_motion_b_jump_fall_land_doublejump_right_v001.png",
+        "sha256": "0ba21ed67eac55be2199c84ca874414d3bffda9fce75aad9ea8f09b6d8e32bd9",
+        "cellIndex": 15,
+        "rect": [
+          940,
+          930,
+          314,
+          324
+        ],
+        "anchor": [
+          160,
+          300
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.14388489208633093,
+        "scaledCellSize": [
+          45,
+          47
+        ],
+        "scaledVisibleCrop": [
+          0,
+          3,
+          41,
+          40
+        ],
+        "translation": [
+          9,
+          18
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": null,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "aa2731f84925847cf3b8f738927484fa4a268b9fd12392ddbb022bff6bf8e6c7",
+      "atlasRect": [
+        288,
+        288,
+        64,
+        64
+      ],
+      "visibleBounds": [
+        16,
+        18,
+        34,
+        38
+      ]
+    },
+    {
+      "id": "dodge_0",
+      "animation": "dodge",
+      "index": 0,
+      "file": "frames/CHR-01_player_dodge_right_v001_f01.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "source": {
+        "id": "motion_c",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_motion_c_dodge_airdodge_right_v001.png",
+        "sha256": "eb262d468c4ea0cb24d4df149fb7fd9c952bbdb6d5d0b54d8f06f11816a2ae78",
+        "cellIndex": 0,
+        "rect": [
+          0,
+          0,
+          444,
+          451
+        ],
+        "anchor": [
+          226,
+          433
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.10309278350515463,
+        "scaledCellSize": [
+          46,
+          46
+        ],
+        "scaledVisibleCrop": [
+          8,
+          8,
+          37,
+          37
+        ],
+        "translation": [
+          17,
+          21
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": null,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "ca68cb241d29a9552656e68fda35aa4ee38b2237ed1c269bd8715ee4d218ff1e",
+      "atlasRect": [
+        384,
+        288,
+        64,
+        64
+      ],
+      "visibleBounds": [
+        18,
+        23,
+        31,
+        35
+      ]
+    },
+    {
+      "id": "dodge_1",
+      "animation": "dodge",
+      "index": 1,
+      "file": "frames/CHR-01_player_dodge_right_v001_f02.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "source": {
+        "id": "motion_c",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_motion_c_dodge_airdodge_right_v001.png",
+        "sha256": "eb262d468c4ea0cb24d4df149fb7fd9c952bbdb6d5d0b54d8f06f11816a2ae78",
+        "cellIndex": 1,
+        "rect": [
+          444,
+          0,
+          443,
+          451
+        ],
+        "anchor": [
+          201,
+          433
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.10309278350515463,
+        "scaledCellSize": [
+          46,
+          46
+        ],
+        "scaledVisibleCrop": [
+          3,
+          12,
+          42,
+          33
+        ],
+        "translation": [
+          14,
+          25
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": null,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "29a4f061fd6e767e0b56f749c83298dffa6c20ecc30b0cc38fa60b89bb1ff969",
+      "atlasRect": [
+        480,
+        288,
+        64,
+        64
+      ],
+      "visibleBounds": [
+        14,
+        31,
+        41,
+        27
+      ]
+    },
+    {
+      "id": "dodge_2",
+      "animation": "dodge",
+      "index": 2,
+      "file": "frames/CHR-01_player_dodge_right_v001_f03.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "source": {
+        "id": "motion_c",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_motion_c_dodge_airdodge_right_v001.png",
+        "sha256": "eb262d468c4ea0cb24d4df149fb7fd9c952bbdb6d5d0b54d8f06f11816a2ae78",
+        "cellIndex": 2,
+        "rect": [
+          887,
+          0,
+          443,
+          451
+        ],
+        "anchor": [
+          201,
+          433
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.10309278350515463,
+        "scaledCellSize": [
+          46,
+          46
+        ],
+        "scaledVisibleCrop": [
+          4,
+          11,
+          39,
+          34
+        ],
+        "translation": [
+          15,
+          24
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": null,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "05cc72f025a9a425e9c42ded8b82d802c2c2e5cb1cf650385c0fb43ceaa7dd51",
+      "atlasRect": [
+        576,
+        288,
+        64,
+        64
+      ],
+      "visibleBounds": [
+        16,
+        28,
+        36,
+        30
+      ]
+    },
+    {
+      "id": "dodge_3",
+      "animation": "dodge",
+      "index": 3,
+      "file": "frames/CHR-01_player_dodge_right_v001_f04.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "source": {
+        "id": "motion_c",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_motion_c_dodge_airdodge_right_v001.png",
+        "sha256": "eb262d468c4ea0cb24d4df149fb7fd9c952bbdb6d5d0b54d8f06f11816a2ae78",
+        "cellIndex": 3,
+        "rect": [
+          1330,
+          0,
+          444,
+          451
+        ],
+        "anchor": [
+          209,
+          436
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.10309278350515463,
+        "scaledCellSize": [
+          46,
+          46
+        ],
+        "scaledVisibleCrop": [
+          0,
+          5,
+          38,
+          40
+        ],
+        "translation": [
+          10,
+          18
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": null,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "4099471f7b833dda679e4d5802c0c2bf0f7502a5e74300aba9f556c838eb4c64",
+      "atlasRect": [
+        672,
+        288,
+        64,
+        64
+      ],
+      "visibleBounds": [
+        18,
+        18,
+        29,
+        40
+      ]
+    },
+    {
+      "id": "air_dodge_0",
+      "animation": "air_dodge",
+      "index": 0,
+      "file": "frames/CHR-01_player_air_dodge_right_v001_f01.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "source": {
+        "id": "motion_c",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_motion_c_dodge_airdodge_right_v001.png",
+        "sha256": "eb262d468c4ea0cb24d4df149fb7fd9c952bbdb6d5d0b54d8f06f11816a2ae78",
+        "cellIndex": 4,
+        "rect": [
+          0,
+          451,
+          444,
+          436
+        ],
+        "anchor": [
+          234,
+          382
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.10309278350515463,
+        "scaledCellSize": [
+          46,
+          45
+        ],
+        "scaledVisibleCrop": [
+          11,
+          2,
+          31,
+          37
+        ],
+        "translation": [
+          19,
+          21
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": null,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "79e89a1c8c7c3980695f18267780728176d4aa0834f6666563280b188f2c5306",
+      "atlasRect": [
+        0,
+        384,
+        64,
+        64
+      ],
+      "visibleBounds": [
+        19,
+        21,
+        28,
+        35
+      ]
+    },
+    {
+      "id": "air_dodge_1",
+      "animation": "air_dodge",
+      "index": 1,
+      "file": "frames/CHR-01_player_air_dodge_right_v001_f02.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "source": {
+        "id": "motion_c",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_motion_c_dodge_airdodge_right_v001.png",
+        "sha256": "eb262d468c4ea0cb24d4df149fb7fd9c952bbdb6d5d0b54d8f06f11816a2ae78",
+        "cellIndex": 5,
+        "rect": [
+          444,
+          451,
+          443,
+          436
+        ],
+        "anchor": [
+          205,
+          382
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.10309278350515463,
+        "scaledCellSize": [
+          46,
+          45
+        ],
+        "scaledVisibleCrop": [
+          4,
+          4,
+          41,
+          33
+        ],
+        "translation": [
+          15,
+          23
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": null,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "a4c2cb1cc4a1e8d2adf77378391e3b7cb57b2feb2df027a6e4109daaf44f80e5",
+      "atlasRect": [
+        96,
+        384,
+        64,
+        64
+      ],
+      "visibleBounds": [
+        15,
+        26,
+        40,
+        30
+      ]
+    },
+    {
+      "id": "air_dodge_2",
+      "animation": "air_dodge",
+      "index": 2,
+      "file": "frames/CHR-01_player_air_dodge_right_v001_f03.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "source": {
+        "id": "motion_c",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_motion_c_dodge_airdodge_right_v001.png",
+        "sha256": "eb262d468c4ea0cb24d4df149fb7fd9c952bbdb6d5d0b54d8f06f11816a2ae78",
+        "cellIndex": 6,
+        "rect": [
+          887,
+          451,
+          443,
+          436
+        ],
+        "anchor": [
+          227,
+          382
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.10309278350515463,
+        "scaledCellSize": [
+          46,
+          45
+        ],
+        "scaledVisibleCrop": [
+          1,
+          5,
+          43,
+          36
+        ],
+        "translation": [
+          10,
+          24
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": null,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "df620e426675e42113f126a6de1552f1d03f60a479b251d17b198fc0bdbbb4c1",
+      "atlasRect": [
+        192,
+        384,
+        64,
+        64
+      ],
+      "visibleBounds": [
+        17,
+        24,
+        33,
+        33
+      ]
+    },
+    {
+      "id": "air_dodge_3",
+      "animation": "air_dodge",
+      "index": 3,
+      "file": "frames/CHR-01_player_air_dodge_right_v001_f04.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "source": {
+        "id": "motion_c",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_motion_c_dodge_airdodge_right_v001.png",
+        "sha256": "eb262d468c4ea0cb24d4df149fb7fd9c952bbdb6d5d0b54d8f06f11816a2ae78",
+        "cellIndex": 7,
+        "rect": [
+          1330,
+          451,
+          444,
+          436
+        ],
+        "anchor": [
+          225,
+          382
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.10309278350515463,
+        "scaledCellSize": [
+          46,
+          45
+        ],
+        "scaledVisibleCrop": [
+          7,
+          2,
+          32,
+          37
+        ],
+        "translation": [
+          16,
+          21
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": null,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "5542269e27e2ffee16d7f58e3fa87560479893e467ec1397598ba64043bb96f6",
+      "atlasRect": [
+        288,
+        384,
+        64,
+        64
+      ],
+      "visibleBounds": [
+        18,
+        21,
+        30,
+        37
+      ]
+    },
+    {
+      "id": "guard_0",
+      "animation": "guard",
+      "index": 0,
+      "file": "frames/CHR-01_player_guard_right_v001_f01.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "source": {
+        "id": "defense",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_defense_right_v001.png",
+        "sha256": "fe78c05c7013d61f358a0ca906376b5c04b2b1e568932e37a17db6572215a021",
+        "cellIndex": 0,
+        "rect": [
+          59,
+          10,
+          206,
+          299
+        ],
+        "anchor": [
+          103,
+          295
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.136986301369863,
+        "scaledCellSize": [
+          28,
+          41
+        ],
+        "scaledVisibleCrop": [
+          0,
+          0,
+          28,
+          41
+        ],
+        "translation": [
+          18,
+          17
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          -1
+        ],
+        "contactAlphaThreshold": 128,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "b0b02b28428191a7d3d231a39fb16fdf257228bd758a543f9563a0d33e789f7e",
+      "atlasRect": [
+        384,
+        384,
+        64,
+        64
+      ],
+      "visibleBounds": [
+        19,
+        18,
+        27,
+        40
+      ]
+    },
+    {
+      "id": "guard_1",
+      "animation": "guard",
+      "index": 1,
+      "file": "frames/CHR-01_player_guard_right_v001_f02.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "source": {
+        "id": "defense",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_defense_right_v001.png",
+        "sha256": "fe78c05c7013d61f358a0ca906376b5c04b2b1e568932e37a17db6572215a021",
+        "cellIndex": 1,
+        "rect": [
+          376,
+          16,
+          207,
+          292
+        ],
+        "anchor": [
+          100,
+          289
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.136986301369863,
+        "scaledCellSize": [
+          28,
+          40
+        ],
+        "scaledVisibleCrop": [
+          0,
+          0,
+          28,
+          40
+        ],
+        "translation": [
+          18,
+          18
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": 128,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "53d04df46be88d87a04e64d503985089eb5b91af3e37a2db8a1baf67370ea68d",
+      "atlasRect": [
+        480,
+        384,
+        64,
+        64
+      ],
+      "visibleBounds": [
+        18,
+        19,
+        28,
+        39
+      ]
+    },
+    {
+      "id": "guard_2",
+      "animation": "guard",
+      "index": 2,
+      "file": "frames/CHR-01_player_guard_right_v001_f03.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "source": {
+        "id": "defense",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_defense_right_v001.png",
+        "sha256": "fe78c05c7013d61f358a0ca906376b5c04b2b1e568932e37a17db6572215a021",
+        "cellIndex": 2,
+        "rect": [
+          690,
+          23,
+          213,
+          285
+        ],
+        "anchor": [
+          100,
+          282
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.136986301369863,
+        "scaledCellSize": [
+          29,
+          39
+        ],
+        "scaledVisibleCrop": [
+          0,
+          0,
+          29,
+          39
+        ],
+        "translation": [
+          18,
+          19
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": 128,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "a31e59faa1838ad8606871351c9274d67986cc3c919a6eef018b7636eeb62401",
+      "atlasRect": [
+        576,
+        384,
+        64,
+        64
+      ],
+      "visibleBounds": [
+        19,
+        20,
+        28,
+        38
+      ]
+    },
+    {
+      "id": "guard_3",
+      "animation": "guard",
+      "index": 3,
+      "file": "frames/CHR-01_player_guard_right_v001_f04.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "source": {
+        "id": "defense",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_defense_right_v001.png",
+        "sha256": "fe78c05c7013d61f358a0ca906376b5c04b2b1e568932e37a17db6572215a021",
+        "cellIndex": 3,
+        "rect": [
+          1004,
+          10,
+          203,
+          298
+        ],
+        "anchor": [
+          100,
+          295
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.136986301369863,
+        "scaledCellSize": [
+          28,
+          41
+        ],
+        "scaledVisibleCrop": [
+          0,
+          0,
+          28,
+          41
+        ],
+        "translation": [
+          18,
+          17
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          -1
+        ],
+        "contactAlphaThreshold": 128,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "4594e2516e3997884d80eac15981055b4b7a7d9d3b09788db68b80772ecce754",
+      "atlasRect": [
+        672,
+        384,
+        64,
+        64
+      ],
+      "visibleBounds": [
+        19,
+        17,
+        27,
+        41
+      ]
+    },
+    {
+      "id": "parry_0",
+      "animation": "parry",
+      "index": 0,
+      "file": "frames/CHR-01_player_parry_right_v001_f01.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "source": {
+        "id": "defense",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_defense_right_v001.png",
+        "sha256": "fe78c05c7013d61f358a0ca906376b5c04b2b1e568932e37a17db6572215a021",
+        "cellIndex": 4,
+        "rect": [
+          59,
+          322,
+          222,
+          302
+        ],
+        "anchor": [
+          103,
+          298
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.136986301369863,
+        "scaledCellSize": [
+          30,
+          41
+        ],
+        "scaledVisibleCrop": [
+          0,
+          0,
+          30,
+          41
+        ],
+        "translation": [
+          18,
+          18
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          1
+        ],
+        "contactAlphaThreshold": 128,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "d92939a82e7cc0f5d006dfe62f8429954de2b5ac7a2045f8ae49ca8d665aa807",
+      "atlasRect": [
+        0,
+        480,
+        64,
+        64
+      ],
+      "visibleBounds": [
+        18,
+        19,
+        30,
+        39
+      ]
+    },
+    {
+      "id": "parry_1",
+      "animation": "parry",
+      "index": 1,
+      "file": "frames/CHR-01_player_parry_right_v001_f02.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "source": {
+        "id": "defense",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_defense_right_v001.png",
+        "sha256": "fe78c05c7013d61f358a0ca906376b5c04b2b1e568932e37a17db6572215a021",
+        "cellIndex": 5,
+        "rect": [
+          376,
+          332,
+          239,
+          292
+        ],
+        "anchor": [
+          100,
+          288
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.136986301369863,
+        "scaledCellSize": [
+          33,
+          40
+        ],
+        "scaledVisibleCrop": [
+          0,
+          0,
+          33,
+          40
+        ],
+        "translation": [
+          18,
+          18
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          -1
+        ],
+        "contactAlphaThreshold": 128,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "1be966be09c7e7332e285e2f010e404f35d6287a43a83f565a3e145e01d0fcab",
+      "atlasRect": [
+        96,
+        480,
+        64,
+        64
+      ],
+      "visibleBounds": [
+        19,
+        19,
+        32,
+        39
+      ]
+    },
+    {
+      "id": "parry_2",
+      "animation": "parry",
+      "index": 2,
+      "file": "frames/CHR-01_player_parry_right_v001_f03.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "source": {
+        "id": "defense",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_defense_right_v001.png",
+        "sha256": "fe78c05c7013d61f358a0ca906376b5c04b2b1e568932e37a17db6572215a021",
+        "cellIndex": 6,
+        "rect": [
+          688,
+          326,
+          222,
+          297
+        ],
+        "anchor": [
+          102,
+          294
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.136986301369863,
+        "scaledCellSize": [
+          30,
+          41
+        ],
+        "scaledVisibleCrop": [
+          0,
+          0,
+          30,
+          41
+        ],
+        "translation": [
+          18,
+          17
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          -1
+        ],
+        "contactAlphaThreshold": 128,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "2eaa40aedb9c1caa0c034ad5909de85311ef11d34ac5c92da009f64d4f35f5f7",
+      "atlasRect": [
+        192,
+        480,
+        64,
+        64
+      ],
+      "visibleBounds": [
+        18,
+        17,
+        30,
+        41
+      ]
+    },
+    {
+      "id": "parry_3",
+      "animation": "parry",
+      "index": 3,
+      "file": "frames/CHR-01_player_parry_right_v001_f04.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "source": {
+        "id": "defense",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_defense_right_v001.png",
+        "sha256": "fe78c05c7013d61f358a0ca906376b5c04b2b1e568932e37a17db6572215a021",
+        "cellIndex": 7,
+        "rect": [
+          1003,
+          322,
+          205,
+          301
+        ],
+        "anchor": [
+          101,
+          298
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.136986301369863,
+        "scaledCellSize": [
+          28,
+          41
+        ],
+        "scaledVisibleCrop": [
+          0,
+          0,
+          28,
+          41
+        ],
+        "translation": [
+          18,
+          17
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": 128,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "21f64b09473b0a95173c8ca7e97957f1af6f16c621e6aee5d6ec4d0dd5c0d3a6",
+      "atlasRect": [
+        288,
+        480,
+        64,
+        64
+      ],
+      "visibleBounds": [
+        18,
+        17,
+        28,
+        41
+      ]
+    },
+    {
+      "id": "guard_break_0",
+      "animation": "guard_break",
+      "index": 0,
+      "file": "frames/CHR-01_player_guard_break_right_v001_f01.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "source": {
+        "id": "defense",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_defense_right_v001.png",
+        "sha256": "fe78c05c7013d61f358a0ca906376b5c04b2b1e568932e37a17db6572215a021",
+        "cellIndex": 8,
+        "rect": [
+          59,
+          635,
+          205,
+          300
+        ],
+        "anchor": [
+          103,
+          297
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.136986301369863,
+        "scaledCellSize": [
+          28,
+          41
+        ],
+        "scaledVisibleCrop": [
+          0,
+          0,
+          28,
+          41
+        ],
+        "translation": [
+          18,
+          17
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": 128,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "9e979d773f3d82e813714ee165cd8cb6a603734d4c26745ff837a211e51983b3",
+      "atlasRect": [
+        384,
+        480,
+        64,
+        64
+      ],
+      "visibleBounds": [
+        19,
+        17,
+        27,
+        41
+      ]
+    },
+    {
+      "id": "guard_break_1",
+      "animation": "guard_break",
+      "index": 1,
+      "file": "frames/CHR-01_player_guard_break_right_v001_f02.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "source": {
+        "id": "defense",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_defense_right_v001.png",
+        "sha256": "fe78c05c7013d61f358a0ca906376b5c04b2b1e568932e37a17db6572215a021",
+        "cellIndex": 9,
+        "rect": [
+          351,
+          636,
+          261,
+          299
+        ],
+        "anchor": [
+          125,
+          296
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.136986301369863,
+        "scaledCellSize": [
+          36,
+          41
+        ],
+        "scaledVisibleCrop": [
+          0,
+          0,
+          36,
+          41
+        ],
+        "translation": [
+          15,
+          17
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": 128,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "219eadf4ba6a6ec5ef35a8cd488a3d526d38ad5e9ad56a7d1d4b9fb61d7d8016",
+      "atlasRect": [
+        480,
+        480,
+        64,
+        64
+      ],
+      "visibleBounds": [
+        16,
+        18,
+        35,
+        40
+      ]
+    },
+    {
+      "id": "guard_break_2",
+      "animation": "guard_break",
+      "index": 2,
+      "file": "frames/CHR-01_player_guard_break_right_v001_f03.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "source": {
+        "id": "defense",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_defense_right_v001.png",
+        "sha256": "fe78c05c7013d61f358a0ca906376b5c04b2b1e568932e37a17db6572215a021",
+        "cellIndex": 10,
+        "rect": [
+          674,
+          685,
+          259,
+          250
+        ],
+        "anchor": [
+          116,
+          247
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.136986301369863,
+        "scaledCellSize": [
+          35,
+          34
+        ],
+        "scaledVisibleCrop": [
+          0,
+          0,
+          35,
+          34
+        ],
+        "translation": [
+          16,
+          24
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": 128,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "23c4aa73e24755fea7c7328e4d8564d119eff808619007fd7e749ab13e77e7fd",
+      "atlasRect": [
+        576,
+        480,
+        64,
+        64
+      ],
+      "visibleBounds": [
+        17,
+        24,
+        34,
+        34
+      ]
+    },
+    {
+      "id": "guard_break_3",
+      "animation": "guard_break",
+      "index": 3,
+      "file": "frames/CHR-01_player_guard_break_right_v001_f04.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "source": {
+        "id": "defense",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_defense_right_v001.png",
+        "sha256": "fe78c05c7013d61f358a0ca906376b5c04b2b1e568932e37a17db6572215a021",
+        "cellIndex": 11,
+        "rect": [
+          1003,
+          635,
+          207,
+          301
+        ],
+        "anchor": [
+          101,
+          297
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.136986301369863,
+        "scaledCellSize": [
+          28,
+          41
+        ],
+        "scaledVisibleCrop": [
+          0,
+          0,
+          28,
+          41
+        ],
+        "translation": [
+          18,
+          17
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": 128,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "d2931449d99f2fb0c964e50f10da878467bb175386237faa01c326424fa6d184",
+      "atlasRect": [
+        672,
+        480,
+        64,
+        64
+      ],
+      "visibleBounds": [
+        18,
+        18,
+        28,
+        40
+      ]
+    },
+    {
+      "id": "hurt_0",
+      "animation": "hurt",
+      "index": 0,
+      "file": "frames/CHR-01_player_hurt_right_v001_f01.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "source": {
+        "id": "defense",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_defense_right_v001.png",
+        "sha256": "fe78c05c7013d61f358a0ca906376b5c04b2b1e568932e37a17db6572215a021",
+        "cellIndex": 12,
+        "rect": [
+          38,
+          944,
+          267,
+          302
+        ],
+        "anchor": [
+          124,
+          300
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.136986301369863,
+        "scaledCellSize": [
+          37,
+          41
+        ],
+        "scaledVisibleCrop": [
+          0,
+          0,
+          37,
+          41
+        ],
+        "translation": [
+          15,
+          17
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": 128,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "e677b364b24775533e9fb534a2d5f13ee07fda816a059ae77aafedcd4af00c9c",
+      "atlasRect": [
+        0,
+        576,
+        64,
+        64
+      ],
+      "visibleBounds": [
+        15,
+        18,
+        37,
+        40
+      ]
+    },
+    {
+      "id": "hurt_1",
+      "animation": "hurt",
+      "index": 1,
+      "file": "frames/CHR-01_player_hurt_right_v001_f02.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "source": {
+        "id": "defense",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_defense_right_v001.png",
+        "sha256": "fe78c05c7013d61f358a0ca906376b5c04b2b1e568932e37a17db6572215a021",
+        "cellIndex": 13,
+        "rect": [
+          383,
+          972,
+          249,
+          274
+        ],
+        "anchor": [
+          93,
+          272
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.136986301369863,
+        "scaledCellSize": [
+          34,
+          38
+        ],
+        "scaledVisibleCrop": [
+          0,
+          0,
+          34,
+          38
+        ],
+        "translation": [
+          19,
+          20
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          -1
+        ],
+        "contactAlphaThreshold": 128,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "9ac9bf6d0a2320d067c41b1f31fc01e4f3a74cb9a0aeaf824f316741584e7fc4",
+      "atlasRect": [
+        96,
+        576,
+        64,
+        64
+      ],
+      "visibleBounds": [
+        19,
+        20,
+        34,
+        38
+      ]
+    },
+    {
+      "id": "hurt_2",
+      "animation": "hurt",
+      "index": 2,
+      "file": "frames/CHR-01_player_hurt_right_v001_f03.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "source": {
+        "id": "defense",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_defense_right_v001.png",
+        "sha256": "fe78c05c7013d61f358a0ca906376b5c04b2b1e568932e37a17db6572215a021",
+        "cellIndex": 14,
+        "rect": [
+          694,
+          950,
+          227,
+          296
+        ],
+        "anchor": [
+          96,
+          294
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.136986301369863,
+        "scaledCellSize": [
+          31,
+          41
+        ],
+        "scaledVisibleCrop": [
+          0,
+          0,
+          31,
+          41
+        ],
+        "translation": [
+          19,
+          17
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          -1
+        ],
+        "contactAlphaThreshold": 128,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "c20caeaea98f7574f3395b91208cd578d9c15652c59c39c385f7f596ca3b4408",
+      "atlasRect": [
+        192,
+        576,
+        64,
+        64
+      ],
+      "visibleBounds": [
+        20,
+        18,
+        30,
+        40
+      ]
+    },
+    {
+      "id": "hurt_3",
+      "animation": "hurt",
+      "index": 3,
+      "file": "frames/CHR-01_player_hurt_right_v001_f04.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "source": {
+        "id": "defense",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_defense_right_v001.png",
+        "sha256": "fe78c05c7013d61f358a0ca906376b5c04b2b1e568932e37a17db6572215a021",
+        "cellIndex": 15,
+        "rect": [
+          1003,
+          950,
+          204,
+          299
+        ],
+        "anchor": [
+          101,
+          294
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.136986301369863,
+        "scaledCellSize": [
+          28,
+          41
+        ],
+        "scaledVisibleCrop": [
+          0,
+          0,
+          28,
+          41
+        ],
+        "translation": [
+          18,
+          18
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": 128,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "d5310ca8c56f3ccebc274fe8a197c472e79b82c05499b03e5e88b8cfd07df098",
+      "atlasRect": [
+        288,
+        576,
+        64,
+        64
+      ],
+      "visibleBounds": [
+        18,
+        19,
+        28,
+        40
+      ]
+    },
+    {
+      "id": "hammer_1_0",
+      "animation": "hammer_1",
+      "index": 0,
+      "file": "frames/CHR-01_player_hammer_1_right_v001_f01.png",
+      "size": [
+        96,
+        96
+      ],
+      "anchor": [
+        48,
+        90
+      ],
+      "source": {
+        "id": "combat_a",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_combat_A_right_v002.png",
+        "sha256": "cabca5776893726835c55d4399e70c005a3503a2c19a4efd34d00921cfc4d2fd",
+        "cellIndex": 0,
+        "rect": [
+          27,
+          65,
+          271,
+          237
+        ],
+        "anchor": [
+          167,
+          236
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.17094017094017094,
+        "scaledCellSize": [
+          46,
+          41
+        ],
+        "scaledVisibleCrop": [
+          0,
+          0,
+          46,
+          41
+        ],
+        "translation": [
+          19,
+          50
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": null,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "58b95df53f79ef4ceb6922620b7a7772db37cfe45ee6e1a35f31a365c801cc35",
+      "atlasRect": [
+        384,
+        576,
+        96,
+        96
+      ],
+      "visibleBounds": [
+        20,
+        51,
+        45,
+        40
+      ]
+    },
+    {
+      "id": "hammer_1_1",
+      "animation": "hammer_1",
+      "index": 1,
+      "file": "frames/CHR-01_player_hammer_1_right_v001_f02.png",
+      "size": [
+        96,
+        96
+      ],
+      "anchor": [
+        48,
+        90
+      ],
+      "source": {
+        "id": "combat_a",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_combat_A_right_v002.png",
+        "sha256": "cabca5776893726835c55d4399e70c005a3503a2c19a4efd34d00921cfc4d2fd",
+        "cellIndex": 1,
+        "rect": [
+          361,
+          81,
+          314,
+          221
+        ],
+        "anchor": [
+          100,
+          220
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.17094017094017094,
+        "scaledCellSize": [
+          54,
+          38
+        ],
+        "scaledVisibleCrop": [
+          0,
+          0,
+          54,
+          38
+        ],
+        "translation": [
+          31,
+          52
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": null,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "bf60277981b6521ab87946afd7e83788cfbbbbe0f608e9c32f0cb54d3adb180e",
+      "atlasRect": [
+        480,
+        576,
+        96,
+        96
+      ],
+      "visibleBounds": [
+        32,
+        53,
+        53,
+        37
+      ]
+    },
+    {
+      "id": "hammer_1_2",
+      "animation": "hammer_1",
+      "index": 2,
+      "file": "frames/CHR-01_player_hammer_1_right_v001_f03.png",
+      "size": [
+        96,
+        96
+      ],
+      "anchor": [
+        48,
+        90
+      ],
+      "source": {
+        "id": "combat_a",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_combat_A_right_v002.png",
+        "sha256": "cabca5776893726835c55d4399e70c005a3503a2c19a4efd34d00921cfc4d2fd",
+        "cellIndex": 2,
+        "rect": [
+          674,
+          89,
+          297,
+          215
+        ],
+        "anchor": [
+          96,
+          212
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.17094017094017094,
+        "scaledCellSize": [
+          51,
+          37
+        ],
+        "scaledVisibleCrop": [
+          0,
+          0,
+          51,
+          37
+        ],
+        "translation": [
+          32,
+          54
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": null,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "eab5b368a597842b0d46323ab2e6abdfe92c94a7924545baa464a5cc6b9eb25b",
+      "atlasRect": [
+        576,
+        576,
+        96,
+        96
+      ],
+      "visibleBounds": [
+        32,
+        55,
+        51,
+        35
+      ]
+    },
+    {
+      "id": "hammer_1_3",
+      "animation": "hammer_1",
+      "index": 3,
+      "file": "frames/CHR-01_player_hammer_1_right_v001_f04.png",
+      "size": [
+        96,
+        96
+      ],
+      "anchor": [
+        48,
+        90
+      ],
+      "source": {
+        "id": "combat_a",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_combat_A_right_v002.png",
+        "sha256": "cabca5776893726835c55d4399e70c005a3503a2c19a4efd34d00921cfc4d2fd",
+        "cellIndex": 3,
+        "rect": [
+          978,
+          65,
+          263,
+          237
+        ],
+        "anchor": [
+          91,
+          236
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.17094017094017094,
+        "scaledCellSize": [
+          45,
+          41
+        ],
+        "scaledVisibleCrop": [
+          0,
+          0,
+          45,
+          41
+        ],
+        "translation": [
+          32,
+          50
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": null,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "e84428d9a767bced20550f81ce3d6397e62c5043d178af2e194a23ebc33a556c",
+      "atlasRect": [
+        672,
+        576,
+        96,
+        96
+      ],
+      "visibleBounds": [
+        33,
+        51,
+        44,
+        40
+      ]
+    },
+    {
+      "id": "hammer_2_0",
+      "animation": "hammer_2",
+      "index": 0,
+      "file": "frames/CHR-01_player_hammer_2_right_v001_f01.png",
+      "size": [
+        96,
+        96
+      ],
+      "anchor": [
+        48,
+        90
+      ],
+      "source": {
+        "id": "combat_a",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_combat_A_right_v002.png",
+        "sha256": "cabca5776893726835c55d4399e70c005a3503a2c19a4efd34d00921cfc4d2fd",
+        "cellIndex": 4,
+        "rect": [
+          21,
+          384,
+          277,
+          229
+        ],
+        "anchor": [
+          177,
+          228
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.17094017094017094,
+        "scaledCellSize": [
+          47,
+          39
+        ],
+        "scaledVisibleCrop": [
+          0,
+          0,
+          47,
+          39
+        ],
+        "translation": [
+          18,
+          51
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": null,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "87be13ee6e93458d3a55729716ef97eb0a28cf66f803762f424a31292fd41c26",
+      "atlasRect": [
+        0,
+        672,
+        96,
+        96
+      ],
+      "visibleBounds": [
+        19,
+        52,
+        46,
+        38
+      ]
+    },
+    {
+      "id": "hammer_2_1",
+      "animation": "hammer_2",
+      "index": 1,
+      "file": "frames/CHR-01_player_hammer_2_right_v001_f02.png",
+      "size": [
+        96,
+        96
+      ],
+      "anchor": [
+        48,
+        90
+      ],
+      "source": {
+        "id": "combat_a",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_combat_A_right_v002.png",
+        "sha256": "cabca5776893726835c55d4399e70c005a3503a2c19a4efd34d00921cfc4d2fd",
+        "cellIndex": 5,
+        "rect": [
+          356,
+          340,
+          300,
+          273
+        ],
+        "anchor": [
+          107,
+          272
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.17094017094017094,
+        "scaledCellSize": [
+          51,
+          47
+        ],
+        "scaledVisibleCrop": [
+          0,
+          0,
+          51,
+          47
+        ],
+        "translation": [
+          30,
+          44
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": null,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "7f6e35c6354ad6df0bd4ec1135ed1d2e322f0a20cb89ceda90826f98aac7e44f",
+      "atlasRect": [
+        96,
+        672,
+        96,
+        96
+      ],
+      "visibleBounds": [
+        31,
+        45,
+        49,
+        46
+      ]
+    },
+    {
+      "id": "hammer_2_2",
+      "animation": "hammer_2",
+      "index": 2,
+      "file": "frames/CHR-01_player_hammer_2_right_v001_f03.png",
+      "size": [
+        96,
+        96
+      ],
+      "anchor": [
+        48,
+        90
+      ],
+      "source": {
+        "id": "combat_a",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_combat_A_right_v002.png",
+        "sha256": "cabca5776893726835c55d4399e70c005a3503a2c19a4efd34d00921cfc4d2fd",
+        "cellIndex": 6,
+        "rect": [
+          672,
+          344,
+          280,
+          269
+        ],
+        "anchor": [
+          104,
+          268
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.17094017094017094,
+        "scaledCellSize": [
+          48,
+          46
+        ],
+        "scaledVisibleCrop": [
+          0,
+          0,
+          48,
+          46
+        ],
+        "translation": [
+          30,
+          44
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": null,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "56a30487574b1dcd345a4a88909202c49ace17b1d2eec4b71462a00ccd604235",
+      "atlasRect": [
+        192,
+        672,
+        96,
+        96
+      ],
+      "visibleBounds": [
+        31,
+        45,
+        47,
+        45
+      ]
+    },
+    {
+      "id": "hammer_2_3",
+      "animation": "hammer_2",
+      "index": 3,
+      "file": "frames/CHR-01_player_hammer_2_right_v001_f04.png",
+      "size": [
+        96,
+        96
+      ],
+      "anchor": [
+        48,
+        90
+      ],
+      "source": {
+        "id": "combat_a",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_combat_A_right_v002.png",
+        "sha256": "cabca5776893726835c55d4399e70c005a3503a2c19a4efd34d00921cfc4d2fd",
+        "cellIndex": 7,
+        "rect": [
+          978,
+          375,
+          263,
+          238
+        ],
+        "anchor": [
+          90,
+          237
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.17094017094017094,
+        "scaledCellSize": [
+          45,
+          41
+        ],
+        "scaledVisibleCrop": [
+          0,
+          0,
+          45,
+          41
+        ],
+        "translation": [
+          33,
+          49
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": null,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "c1de151a7085e2122e21f502b78c5630773fe84ac70ae1b4a542d6bce7091cb7",
+      "atlasRect": [
+        288,
+        672,
+        96,
+        96
+      ],
+      "visibleBounds": [
+        34,
+        50,
+        44,
+        40
+      ]
+    },
+    {
+      "id": "hammer_3_0",
+      "animation": "hammer_3",
+      "index": 0,
+      "file": "frames/CHR-01_player_hammer_3_right_v001_f01.png",
+      "size": [
+        96,
+        96
+      ],
+      "anchor": [
+        48,
+        90
+      ],
+      "source": {
+        "id": "combat_a",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_combat_A_right_v002.png",
+        "sha256": "cabca5776893726835c55d4399e70c005a3503a2c19a4efd34d00921cfc4d2fd",
+        "cellIndex": 8,
+        "rect": [
+          54,
+          616,
+          235,
+          323
+        ],
+        "anchor": [
+          131,
+          323
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.17094017094017094,
+        "scaledCellSize": [
+          40,
+          55
+        ],
+        "scaledVisibleCrop": [
+          0,
+          0,
+          40,
+          55
+        ],
+        "translation": [
+          26,
+          35
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": null,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "60967cc7cce78a9cfd3c88c19f89a4904104db530c3da581fc94d1c3d5ec1167",
+      "atlasRect": [
+        384,
+        672,
+        96,
+        96
+      ],
+      "visibleBounds": [
+        27,
+        36,
+        39,
+        54
+      ]
+    },
+    {
+      "id": "hammer_3_1",
+      "animation": "hammer_3",
+      "index": 1,
+      "file": "frames/CHR-01_player_hammer_3_right_v001_f02.png",
+      "size": [
+        96,
+        96
+      ],
+      "anchor": [
+        48,
+        90
+      ],
+      "source": {
+        "id": "combat_a",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_combat_A_right_v002.png",
+        "sha256": "cabca5776893726835c55d4399e70c005a3503a2c19a4efd34d00921cfc4d2fd",
+        "cellIndex": 9,
+        "rect": [
+          356,
+          744,
+          299,
+          198
+        ],
+        "anchor": [
+          96,
+          195
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.17094017094017094,
+        "scaledCellSize": [
+          51,
+          34
+        ],
+        "scaledVisibleCrop": [
+          0,
+          0,
+          51,
+          34
+        ],
+        "translation": [
+          32,
+          57
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": null,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "17ff726ac7f066c4dbe28ab152262725b7dfa4c426a03211cf6b48dd01cafc2e",
+      "atlasRect": [
+        480,
+        672,
+        96,
+        96
+      ],
+      "visibleBounds": [
+        33,
+        58,
+        50,
+        33
+      ]
+    },
+    {
+      "id": "hammer_3_2",
+      "animation": "hammer_3",
+      "index": 2,
+      "file": "frames/CHR-01_player_hammer_3_right_v001_f03.png",
+      "size": [
+        96,
+        96
+      ],
+      "anchor": [
+        48,
+        90
+      ],
+      "source": {
+        "id": "combat_a",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_combat_A_right_v002.png",
+        "sha256": "cabca5776893726835c55d4399e70c005a3503a2c19a4efd34d00921cfc4d2fd",
+        "cellIndex": 10,
+        "rect": [
+          657,
+          756,
+          319,
+          189
+        ],
+        "anchor": [
+          108,
+          184
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.17094017094017094,
+        "scaledCellSize": [
+          55,
+          32
+        ],
+        "scaledVisibleCrop": [
+          0,
+          0,
+          55,
+          32
+        ],
+        "translation": [
+          30,
+          59
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": null,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "1629365381c0b6ac95f14ef4b2c1568c99764301900d0ce5169e562b2d2bd277",
+      "atlasRect": [
+        576,
+        672,
+        96,
+        96
+      ],
+      "visibleBounds": [
+        31,
+        60,
+        54,
+        30
+      ]
+    },
+    {
+      "id": "hammer_3_3",
+      "animation": "hammer_3",
+      "index": 3,
+      "file": "frames/CHR-01_player_hammer_3_right_v001_f04.png",
+      "size": [
+        96,
+        96
+      ],
+      "anchor": [
+        48,
+        90
+      ],
+      "source": {
+        "id": "combat_a",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_combat_A_right_v002.png",
+        "sha256": "cabca5776893726835c55d4399e70c005a3503a2c19a4efd34d00921cfc4d2fd",
+        "cellIndex": 11,
+        "rect": [
+          978,
+          696,
+          263,
+          239
+        ],
+        "anchor": [
+          91,
+          239
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.17094017094017094,
+        "scaledCellSize": [
+          45,
+          41
+        ],
+        "scaledVisibleCrop": [
+          0,
+          0,
+          45,
+          41
+        ],
+        "translation": [
+          32,
+          49
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": null,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "1101f309458fea8b9315c36854fff30ea7a8d01b462199aa7aa6db50b910ddd5",
+      "atlasRect": [
+        672,
+        672,
+        96,
+        96
+      ],
+      "visibleBounds": [
+        33,
+        50,
+        44,
+        40
+      ]
+    },
+    {
+      "id": "blaster_fire_0",
+      "animation": "blaster_fire",
+      "index": 0,
+      "file": "frames/CHR-01_player_blaster_fire_right_v001_f01.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "source": {
+        "id": "combat_a",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_combat_A_right_v002.png",
+        "sha256": "cabca5776893726835c55d4399e70c005a3503a2c19a4efd34d00921cfc4d2fd",
+        "cellIndex": 12,
+        "rect": [
+          59,
+          981,
+          238,
+          233
+        ],
+        "anchor": [
+          99,
+          232
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.17094017094017094,
+        "scaledCellSize": [
+          41,
+          40
+        ],
+        "scaledVisibleCrop": [
+          0,
+          0,
+          41,
+          40
+        ],
+        "translation": [
+          15,
+          18
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": null,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "910a66796a532c460ddba563473e603ecf0fabca415d9f53f9076fcdcd5ddb29",
+      "atlasRect": [
+        0,
+        768,
+        64,
+        64
+      ],
+      "visibleBounds": [
+        16,
+        19,
+        40,
+        39
+      ]
+    },
+    {
+      "id": "blaster_fire_1",
+      "animation": "blaster_fire",
+      "index": 1,
+      "file": "frames/CHR-01_player_blaster_fire_right_v001_f02.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "source": {
+        "id": "combat_a",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_combat_A_right_v002.png",
+        "sha256": "cabca5776893726835c55d4399e70c005a3503a2c19a4efd34d00921cfc4d2fd",
+        "cellIndex": 13,
+        "rect": [
+          363,
+          984,
+          268,
+          229
+        ],
+        "anchor": [
+          99,
+          229
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.17094017094017094,
+        "scaledCellSize": [
+          46,
+          39
+        ],
+        "scaledVisibleCrop": [
+          0,
+          0,
+          46,
+          39
+        ],
+        "translation": [
+          15,
+          19
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": null,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "1e2dec7dfa6e34d10a3180b8105382abf9daf16b09df1b477e94eb88dcabe31d",
+      "atlasRect": [
+        96,
+        768,
+        64,
+        64
+      ],
+      "visibleBounds": [
+        16,
+        20,
+        45,
+        38
+      ]
+    },
+    {
+      "id": "blaster_fire_2",
+      "animation": "blaster_fire",
+      "index": 2,
+      "file": "frames/CHR-01_player_blaster_fire_right_v001_f03.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "source": {
+        "id": "combat_a",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_combat_A_right_v002.png",
+        "sha256": "cabca5776893726835c55d4399e70c005a3503a2c19a4efd34d00921cfc4d2fd",
+        "cellIndex": 14,
+        "rect": [
+          688,
+          983,
+          210,
+          232
+        ],
+        "anchor": [
+          103,
+          230
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.17094017094017094,
+        "scaledCellSize": [
+          36,
+          40
+        ],
+        "scaledVisibleCrop": [
+          0,
+          0,
+          36,
+          40
+        ],
+        "translation": [
+          14,
+          19
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": null,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "c5d83c4d43f6d8503df84c01a508cb75fc15223c99175f177d9f8c35736892fc",
+      "atlasRect": [
+        192,
+        768,
+        64,
+        64
+      ],
+      "visibleBounds": [
+        15,
+        20,
+        35,
+        38
+      ]
+    },
+    {
+      "id": "blaster_fire_3",
+      "animation": "blaster_fire",
+      "index": 3,
+      "file": "frames/CHR-01_player_blaster_fire_right_v001_f04.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "source": {
+        "id": "combat_a",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_combat_A_right_v002.png",
+        "sha256": "cabca5776893726835c55d4399e70c005a3503a2c19a4efd34d00921cfc4d2fd",
+        "cellIndex": 15,
+        "rect": [
+          978,
+          983,
+          232,
+          232
+        ],
+        "anchor": [
+          96,
+          230
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.17094017094017094,
+        "scaledCellSize": [
+          40,
+          40
+        ],
+        "scaledVisibleCrop": [
+          0,
+          0,
+          40,
+          40
+        ],
+        "translation": [
+          16,
+          19
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": null,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "40803fa4a4cfd8b9a0c5eb0eb3571035e449229eafba06ccb28efacfec530d1e",
+      "atlasRect": [
+        288,
+        768,
+        64,
+        64
+      ],
+      "visibleBounds": [
+        17,
+        20,
+        39,
+        39
+      ]
+    },
+    {
+      "id": "blaster_charge_0",
+      "animation": "blaster_charge",
+      "index": 0,
+      "file": "frames/CHR-01_player_blaster_charge_right_v001_f01.png",
+      "size": [
+        96,
+        96
+      ],
+      "anchor": [
+        48,
+        90
+      ],
+      "source": {
+        "id": "combat_b",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_combat_B_right_v001.png",
+        "sha256": "57cf76e099bd8fd1ab049d534008adc5085d5aed51fad8129a85d57188be5935",
+        "cellIndex": 0,
+        "rect": [
+          61,
+          70,
+          263,
+          264
+        ],
+        "anchor": [
+          111,
+          261
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.15384615384615385,
+        "scaledCellSize": [
+          40,
+          41
+        ],
+        "scaledVisibleCrop": [
+          0,
+          0,
+          40,
+          41
+        ],
+        "translation": [
+          31,
+          50
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": null,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "81649a1ff311e24d012666d61b2337040478a447b3857efc50275554630dfc06",
+      "atlasRect": [
+        384,
+        768,
+        96,
+        96
+      ],
+      "visibleBounds": [
+        32,
+        50,
+        39,
+        41
+      ]
+    },
+    {
+      "id": "blaster_charge_1",
+      "animation": "blaster_charge",
+      "index": 1,
+      "file": "frames/CHR-01_player_blaster_charge_right_v001_f02.png",
+      "size": [
+        96,
+        96
+      ],
+      "anchor": [
+        48,
+        90
+      ],
+      "source": {
+        "id": "combat_b",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_combat_B_right_v001.png",
+        "sha256": "57cf76e099bd8fd1ab049d534008adc5085d5aed51fad8129a85d57188be5935",
+        "cellIndex": 1,
+        "rect": [
+          414,
+          70,
+          283,
+          264
+        ],
+        "anchor": [
+          111,
+          261
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.15384615384615385,
+        "scaledCellSize": [
+          44,
+          41
+        ],
+        "scaledVisibleCrop": [
+          0,
+          0,
+          44,
+          41
+        ],
+        "translation": [
+          31,
+          50
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": null,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "cd62369a38638d57da3538991af6af40c75e761bfcc0a6b31123eceb8bc18b9a",
+      "atlasRect": [
+        480,
+        768,
+        96,
+        96
+      ],
+      "visibleBounds": [
+        32,
+        50,
+        42,
+        41
+      ]
+    },
+    {
+      "id": "blaster_charge_2",
+      "animation": "blaster_charge",
+      "index": 2,
+      "file": "frames/CHR-01_player_blaster_charge_right_v001_f03.png",
+      "size": [
+        96,
+        96
+      ],
+      "anchor": [
+        48,
+        90
+      ],
+      "source": {
+        "id": "combat_b",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_combat_B_right_v001.png",
+        "sha256": "57cf76e099bd8fd1ab049d534008adc5085d5aed51fad8129a85d57188be5935",
+        "cellIndex": 2,
+        "rect": [
+          767,
+          69,
+          297,
+          265
+        ],
+        "anchor": [
+          112,
+          262
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.15384615384615385,
+        "scaledCellSize": [
+          46,
+          41
+        ],
+        "scaledVisibleCrop": [
+          0,
+          0,
+          46,
+          41
+        ],
+        "translation": [
+          31,
+          50
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": null,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "8c304a88668b9071f360e84e40d40e99d5690276b452f1df093e69a2f44b57b3",
+      "atlasRect": [
+        576,
+        768,
+        96,
+        96
+      ],
+      "visibleBounds": [
+        31,
+        51,
+        46,
+        40
+      ]
+    },
+    {
+      "id": "blaster_charge_3",
+      "animation": "blaster_charge",
+      "index": 3,
+      "file": "frames/CHR-01_player_blaster_charge_right_v001_f04.png",
+      "size": [
+        96,
+        96
+      ],
+      "anchor": [
+        48,
+        90
+      ],
+      "source": {
+        "id": "combat_b",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_combat_B_right_v001.png",
+        "sha256": "57cf76e099bd8fd1ab049d534008adc5085d5aed51fad8129a85d57188be5935",
+        "cellIndex": 3,
+        "rect": [
+          1132,
+          70,
+          316,
+          264
+        ],
+        "anchor": [
+          111,
+          261
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.15384615384615385,
+        "scaledCellSize": [
+          49,
+          41
+        ],
+        "scaledVisibleCrop": [
+          0,
+          0,
+          49,
+          41
+        ],
+        "translation": [
+          31,
+          50
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": null,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "56f2ffcf8f8081528084b5c009f6839f72a6a791451d177ba003b0e0a63c782c",
+      "atlasRect": [
+        672,
+        768,
+        96,
+        96
+      ],
+      "visibleBounds": [
+        32,
+        51,
+        47,
+        40
+      ]
+    },
+    {
+      "id": "staff_sweep_0",
+      "animation": "staff_sweep",
+      "index": 0,
+      "file": "frames/CHR-01_player_staff_sweep_right_v001_f01.png",
+      "size": [
+        96,
+        96
+      ],
+      "anchor": [
+        48,
+        90
+      ],
+      "source": {
+        "id": "combat_b",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_combat_B_right_v001.png",
+        "sha256": "57cf76e099bd8fd1ab049d534008adc5085d5aed51fad8129a85d57188be5935",
+        "cellIndex": 4,
+        "rect": [
+          62,
+          381,
+          283,
+          300
+        ],
+        "anchor": [
+          162,
+          297
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.15384615384615385,
+        "scaledCellSize": [
+          44,
+          46
+        ],
+        "scaledVisibleCrop": [
+          0,
+          0,
+          44,
+          46
+        ],
+        "translation": [
+          23,
+          44
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": null,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "832cf0fbee6b6ef67625b96a848bad96691ded0b7f4b19c10504da5cce06e945",
+      "atlasRect": [
+        0,
+        864,
+        96,
+        96
+      ],
+      "visibleBounds": [
+        24,
+        45,
+        43,
+        45
+      ]
+    },
+    {
+      "id": "staff_sweep_1",
+      "animation": "staff_sweep",
+      "index": 1,
+      "file": "frames/CHR-01_player_staff_sweep_right_v001_f02.png",
+      "size": [
+        96,
+        96
+      ],
+      "anchor": [
+        48,
+        90
+      ],
+      "source": {
+        "id": "combat_b",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_combat_B_right_v001.png",
+        "sha256": "57cf76e099bd8fd1ab049d534008adc5085d5aed51fad8129a85d57188be5935",
+        "cellIndex": 5,
+        "rect": [
+          417,
+          421,
+          321,
+          260
+        ],
+        "anchor": [
+          119,
+          257
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.15384615384615385,
+        "scaledCellSize": [
+          49,
+          40
+        ],
+        "scaledVisibleCrop": [
+          0,
+          0,
+          49,
+          40
+        ],
+        "translation": [
+          30,
+          50
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": null,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "5339e5b314ab6c1a188cbc051b1a628938f87bbca9aee1d234a80eb91e4d14cb",
+      "atlasRect": [
+        96,
+        864,
+        96,
+        96
+      ],
+      "visibleBounds": [
+        30,
+        51,
+        49,
+        38
+      ]
+    },
+    {
+      "id": "staff_sweep_2",
+      "animation": "staff_sweep",
+      "index": 2,
+      "file": "frames/CHR-01_player_staff_sweep_right_v001_f03.png",
+      "size": [
+        96,
+        96
+      ],
+      "anchor": [
+        48,
+        90
+      ],
+      "source": {
+        "id": "combat_b",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_combat_B_right_v001.png",
+        "sha256": "57cf76e099bd8fd1ab049d534008adc5085d5aed51fad8129a85d57188be5935",
+        "cellIndex": 6,
+        "rect": [
+          767,
+          423,
+          337,
+          259
+        ],
+        "anchor": [
+          117,
+          255
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.15384615384615385,
+        "scaledCellSize": [
+          52,
+          40
+        ],
+        "scaledVisibleCrop": [
+          0,
+          0,
+          52,
+          40
+        ],
+        "translation": [
+          30,
+          51
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": null,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "2e75f01888f88c55229d59982cd591507b0c0d21619843efdefc1f9a7ecf33c2",
+      "atlasRect": [
+        192,
+        864,
+        96,
+        96
+      ],
+      "visibleBounds": [
+        31,
+        52,
+        51,
+        38
+      ]
+    },
+    {
+      "id": "staff_sweep_3",
+      "animation": "staff_sweep",
+      "index": 3,
+      "file": "frames/CHR-01_player_staff_sweep_right_v001_f04.png",
+      "size": [
+        96,
+        96
+      ],
+      "anchor": [
+        48,
+        90
+      ],
+      "source": {
+        "id": "combat_b",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_combat_B_right_v001.png",
+        "sha256": "57cf76e099bd8fd1ab049d534008adc5085d5aed51fad8129a85d57188be5935",
+        "cellIndex": 7,
+        "rect": [
+          1130,
+          422,
+          289,
+          260
+        ],
+        "anchor": [
+          113,
+          256
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.15384615384615385,
+        "scaledCellSize": [
+          44,
+          40
+        ],
+        "scaledVisibleCrop": [
+          0,
+          0,
+          44,
+          40
+        ],
+        "translation": [
+          31,
+          51
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": null,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "0c3c47559c26d3d6b7b5016f0ceb9da64f93066dc988497356c2112d715ea4fa",
+      "atlasRect": [
+        288,
+        864,
+        96,
+        96
+      ],
+      "visibleBounds": [
+        32,
+        52,
+        43,
+        39
+      ]
+    },
+    {
+      "id": "orb_cast_0",
+      "animation": "orb_cast",
+      "index": 0,
+      "file": "frames/CHR-01_player_orb_cast_right_v001_f01.png",
+      "size": [
+        96,
+        96
+      ],
+      "anchor": [
+        48,
+        90
+      ],
+      "source": {
+        "id": "combat_b",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_combat_B_right_v001.png",
+        "sha256": "57cf76e099bd8fd1ab049d534008adc5085d5aed51fad8129a85d57188be5935",
+        "cellIndex": 8,
+        "rect": [
+          67,
+          761,
+          233,
+          264
+        ],
+        "anchor": [
+          116,
+          263
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.15384615384615385,
+        "scaledCellSize": [
+          36,
+          41
+        ],
+        "scaledVisibleCrop": [
+          0,
+          0,
+          36,
+          41
+        ],
+        "translation": [
+          30,
+          50
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": null,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "84bf6530ccce443f306711f9b1042e1152718acc6ee87ae62c77ffe94d4ce318",
+      "atlasRect": [
+        384,
+        864,
+        96,
+        96
+      ],
+      "visibleBounds": [
+        31,
+        50,
+        35,
+        41
+      ]
+    },
+    {
+      "id": "orb_cast_1",
+      "animation": "orb_cast",
+      "index": 1,
+      "file": "frames/CHR-01_player_orb_cast_right_v001_f02.png",
+      "size": [
+        96,
+        96
+      ],
+      "anchor": [
+        48,
+        90
+      ],
+      "source": {
+        "id": "combat_b",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_combat_B_right_v001.png",
+        "sha256": "57cf76e099bd8fd1ab049d534008adc5085d5aed51fad8129a85d57188be5935",
+        "cellIndex": 9,
+        "rect": [
+          420,
+          760,
+          231,
+          266
+        ],
+        "anchor": [
+          115,
+          264
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.15384615384615385,
+        "scaledCellSize": [
+          36,
+          41
+        ],
+        "scaledVisibleCrop": [
+          0,
+          0,
+          36,
+          41
+        ],
+        "translation": [
+          30,
+          49
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": null,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "3f5d394b4e55518589ed0cb7a18fa4df13480abee9b3ecf393be8395673296cb",
+      "atlasRect": [
+        480,
+        864,
+        96,
+        96
+      ],
+      "visibleBounds": [
+        30,
+        50,
+        36,
+        40
+      ]
+    },
+    {
+      "id": "orb_cast_2",
+      "animation": "orb_cast",
+      "index": 2,
+      "file": "frames/CHR-01_player_orb_cast_right_v001_f03.png",
+      "size": [
+        96,
+        96
+      ],
+      "anchor": [
+        48,
+        90
+      ],
+      "source": {
+        "id": "combat_b",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_combat_B_right_v001.png",
+        "sha256": "57cf76e099bd8fd1ab049d534008adc5085d5aed51fad8129a85d57188be5935",
+        "cellIndex": 10,
+        "rect": [
+          758,
+          767,
+          332,
+          259
+        ],
+        "anchor": [
+          119,
+          257
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.15384615384615385,
+        "scaledCellSize": [
+          51,
+          40
+        ],
+        "scaledVisibleCrop": [
+          0,
+          0,
+          51,
+          40
+        ],
+        "translation": [
+          30,
+          50
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": null,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "5aa5cf01ab0576072b379793be51d3a43e24fd1faa1a1e04fcd531e5ae392738",
+      "atlasRect": [
+        576,
+        864,
+        96,
+        96
+      ],
+      "visibleBounds": [
+        31,
+        51,
+        49,
+        39
+      ]
+    },
+    {
+      "id": "orb_cast_3",
+      "animation": "orb_cast",
+      "index": 3,
+      "file": "frames/CHR-01_player_orb_cast_right_v001_f04.png",
+      "size": [
+        96,
+        96
+      ],
+      "anchor": [
+        48,
+        90
+      ],
+      "source": {
+        "id": "combat_b",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_combat_B_right_v001.png",
+        "sha256": "57cf76e099bd8fd1ab049d534008adc5085d5aed51fad8129a85d57188be5935",
+        "cellIndex": 11,
+        "rect": [
+          1132,
+          761,
+          227,
+          265
+        ],
+        "anchor": [
+          113,
+          263
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.15384615384615385,
+        "scaledCellSize": [
+          35,
+          41
+        ],
+        "scaledVisibleCrop": [
+          0,
+          0,
+          35,
+          41
+        ],
+        "translation": [
+          31,
+          50
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": null,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "17b281aadae84292856f0c8d104359f7de9a971f2e549927f364896959edfedc",
+      "atlasRect": [
+        672,
+        864,
+        96,
+        96
+      ],
+      "visibleBounds": [
+        32,
+        51,
+        34,
+        40
+      ]
+    },
+    {
+      "id": "cast_0",
+      "animation": "cast",
+      "index": 0,
+      "file": "frames/CHR-01_player_cast_right_v001_f01.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "source": {
+        "id": "cast",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_cast_interact_right_v001.png",
+        "sha256": "5b032239f37f8b30cab91cafa7c47d1e4673cc7e2ad9e5cfb9f4e9e85376cd60",
+        "cellIndex": 0,
+        "rect": [
+          110,
+          27,
+          242,
+          332
+        ],
+        "anchor": [
+          115,
+          329
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.12232415902140673,
+        "scaledCellSize": [
+          30,
+          41
+        ],
+        "scaledVisibleCrop": [
+          0,
+          0,
+          30,
+          41
+        ],
+        "translation": [
+          18,
+          17
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          -1
+        ],
+        "contactAlphaThreshold": 128,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "a13f7055b4dc6feb28fcda63047e31ea950dac5359419c424c24501ba66177e1",
+      "atlasRect": [
+        0,
+        960,
+        64,
+        64
+      ],
+      "visibleBounds": [
+        19,
+        17,
+        29,
+        41
+      ]
+    },
+    {
+      "id": "cast_1",
+      "animation": "cast",
+      "index": 1,
+      "file": "frames/CHR-01_player_cast_right_v001_f02.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "source": {
+        "id": "cast",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_cast_interact_right_v001.png",
+        "sha256": "5b032239f37f8b30cab91cafa7c47d1e4673cc7e2ad9e5cfb9f4e9e85376cd60",
+        "cellIndex": 1,
+        "rect": [
+          438,
+          27,
+          221,
+          333
+        ],
+        "anchor": [
+          116,
+          329
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.12232415902140673,
+        "scaledCellSize": [
+          27,
+          41
+        ],
+        "scaledVisibleCrop": [
+          0,
+          0,
+          27,
+          41
+        ],
+        "translation": [
+          18,
+          17
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          -1
+        ],
+        "contactAlphaThreshold": 128,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "ad9d1e6b75efa5cedfb9770853790372abe1a02d69796813cbdef0d89fa1425d",
+      "atlasRect": [
+        96,
+        960,
+        64,
+        64
+      ],
+      "visibleBounds": [
+        19,
+        18,
+        26,
+        40
+      ]
+    },
+    {
+      "id": "cast_2",
+      "animation": "cast",
+      "index": 2,
+      "file": "frames/CHR-01_player_cast_right_v001_f03.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "source": {
+        "id": "cast",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_cast_interact_right_v001.png",
+        "sha256": "5b032239f37f8b30cab91cafa7c47d1e4673cc7e2ad9e5cfb9f4e9e85376cd60",
+        "cellIndex": 2,
+        "rect": [
+          770,
+          27,
+          282,
+          333
+        ],
+        "anchor": [
+          114,
+          329
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.12232415902140673,
+        "scaledCellSize": [
+          34,
+          41
+        ],
+        "scaledVisibleCrop": [
+          0,
+          1,
+          34,
+          40
+        ],
+        "translation": [
+          18,
+          18
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          -1
+        ],
+        "contactAlphaThreshold": 128,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "df7ff1b63c40e5ebf3834c4b5cde7266a8eee012156534e644db4e3d003807de",
+      "atlasRect": [
+        192,
+        960,
+        64,
+        64
+      ],
+      "visibleBounds": [
+        19,
+        18,
+        33,
+        40
+      ]
+    },
+    {
+      "id": "cast_3",
+      "animation": "cast",
+      "index": 3,
+      "file": "frames/CHR-01_player_cast_right_v001_f04.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "source": {
+        "id": "cast",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_cast_interact_right_v001.png",
+        "sha256": "5b032239f37f8b30cab91cafa7c47d1e4673cc7e2ad9e5cfb9f4e9e85376cd60",
+        "cellIndex": 3,
+        "rect": [
+          1103,
+          27,
+          233,
+          333
+        ],
+        "anchor": [
+          115,
+          329
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.12232415902140673,
+        "scaledCellSize": [
+          29,
+          41
+        ],
+        "scaledVisibleCrop": [
+          0,
+          0,
+          29,
+          41
+        ],
+        "translation": [
+          18,
+          17
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          -1
+        ],
+        "contactAlphaThreshold": 128,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "ab2abd7e5e56993ebf60e9abf1fde8cfc9d5be648e26d93967bbb15427a2abf1",
+      "atlasRect": [
+        288,
+        960,
+        64,
+        64
+      ],
+      "visibleBounds": [
+        19,
+        18,
+        28,
+        40
+      ]
+    },
+    {
+      "id": "heal_0",
+      "animation": "heal",
+      "index": 0,
+      "file": "frames/CHR-01_player_heal_right_v001_f01.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "source": {
+        "id": "cast",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_cast_interact_right_v001.png",
+        "sha256": "5b032239f37f8b30cab91cafa7c47d1e4673cc7e2ad9e5cfb9f4e9e85376cd60",
+        "cellIndex": 4,
+        "rect": [
+          110,
+          375,
+          240,
+          335
+        ],
+        "anchor": [
+          115,
+          332
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.12232415902140673,
+        "scaledCellSize": [
+          29,
+          41
+        ],
+        "scaledVisibleCrop": [
+          0,
+          0,
+          29,
+          41
+        ],
+        "translation": [
+          18,
+          17
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": 128,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "30e69bdbd4d34d8b3f5d8aa3ada3353e20269296ebe1be73ac7e42a069534f58",
+      "atlasRect": [
+        384,
+        960,
+        64,
+        64
+      ],
+      "visibleBounds": [
+        18,
+        18,
+        29,
+        40
+      ]
+    },
+    {
+      "id": "heal_1",
+      "animation": "heal",
+      "index": 1,
+      "file": "frames/CHR-01_player_heal_right_v001_f02.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "source": {
+        "id": "cast",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_cast_interact_right_v001.png",
+        "sha256": "5b032239f37f8b30cab91cafa7c47d1e4673cc7e2ad9e5cfb9f4e9e85376cd60",
+        "cellIndex": 5,
+        "rect": [
+          439,
+          379,
+          220,
+          331
+        ],
+        "anchor": [
+          115,
+          328
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.12232415902140673,
+        "scaledCellSize": [
+          27,
+          40
+        ],
+        "scaledVisibleCrop": [
+          0,
+          0,
+          27,
+          40
+        ],
+        "translation": [
+          18,
+          18
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": 128,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "f227a9d217ee0e78785bc6883fae311db63fcc9c7d78d286e8393edfb4f68050",
+      "atlasRect": [
+        480,
+        960,
+        64,
+        64
+      ],
+      "visibleBounds": [
+        18,
+        19,
+        27,
+        39
+      ]
+    },
+    {
+      "id": "heal_2",
+      "animation": "heal",
+      "index": 2,
+      "file": "frames/CHR-01_player_heal_right_v001_f03.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "source": {
+        "id": "cast",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_cast_interact_right_v001.png",
+        "sha256": "5b032239f37f8b30cab91cafa7c47d1e4673cc7e2ad9e5cfb9f4e9e85376cd60",
+        "cellIndex": 6,
+        "rect": [
+          772,
+          379,
+          235,
+          331
+        ],
+        "anchor": [
+          112,
+          328
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.12232415902140673,
+        "scaledCellSize": [
+          29,
+          40
+        ],
+        "scaledVisibleCrop": [
+          0,
+          0,
+          29,
+          40
+        ],
+        "translation": [
+          18,
+          18
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": 128,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "044535dca87dcaf729d1640f25c7a229b0de570d39bc335031407eb9906c495e",
+      "atlasRect": [
+        576,
+        960,
+        64,
+        64
+      ],
+      "visibleBounds": [
+        19,
+        19,
+        28,
+        39
+      ]
+    },
+    {
+      "id": "heal_3",
+      "animation": "heal",
+      "index": 3,
+      "file": "frames/CHR-01_player_heal_right_v001_f04.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "source": {
+        "id": "cast",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_cast_interact_right_v001.png",
+        "sha256": "5b032239f37f8b30cab91cafa7c47d1e4673cc7e2ad9e5cfb9f4e9e85376cd60",
+        "cellIndex": 7,
+        "rect": [
+          1106,
+          375,
+          239,
+          335
+        ],
+        "anchor": [
+          112,
+          332
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.12232415902140673,
+        "scaledCellSize": [
+          29,
+          41
+        ],
+        "scaledVisibleCrop": [
+          0,
+          0,
+          29,
+          41
+        ],
+        "translation": [
+          18,
+          17
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": 128,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "6e0130d7d62b2a976035dd22c6e0bf5bcf14feebd180dc8679516d38b5351a80",
+      "atlasRect": [
+        672,
+        960,
+        64,
+        64
+      ],
+      "visibleBounds": [
+        19,
+        18,
+        28,
+        40
+      ]
+    },
+    {
+      "id": "interact_0",
+      "animation": "interact",
+      "index": 0,
+      "file": "frames/CHR-01_player_interact_right_v001_f01.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "source": {
+        "id": "cast",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_cast_interact_right_v001.png",
+        "sha256": "5b032239f37f8b30cab91cafa7c47d1e4673cc7e2ad9e5cfb9f4e9e85376cd60",
+        "cellIndex": 8,
+        "rect": [
+          110,
+          724,
+          242,
+          333
+        ],
+        "anchor": [
+          115,
+          330
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.12232415902140673,
+        "scaledCellSize": [
+          30,
+          41
+        ],
+        "scaledVisibleCrop": [
+          0,
+          0,
+          30,
+          41
+        ],
+        "translation": [
+          18,
+          17
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          -1
+        ],
+        "contactAlphaThreshold": 128,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "7310242bdfd2ea04eb0a62bdecdd86c20aa492c15b49f6b2578d777fd782d628",
+      "atlasRect": [
+        0,
+        1056,
+        64,
+        64
+      ],
+      "visibleBounds": [
+        19,
+        18,
+        29,
+        40
+      ]
+    },
+    {
+      "id": "interact_1",
+      "animation": "interact",
+      "index": 1,
+      "file": "frames/CHR-01_player_interact_right_v001_f02.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "source": {
+        "id": "cast",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_cast_interact_right_v001.png",
+        "sha256": "5b032239f37f8b30cab91cafa7c47d1e4673cc7e2ad9e5cfb9f4e9e85376cd60",
+        "cellIndex": 9,
+        "rect": [
+          438,
+          728,
+          293,
+          329
+        ],
+        "anchor": [
+          116,
+          326
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.12232415902140673,
+        "scaledCellSize": [
+          36,
+          40
+        ],
+        "scaledVisibleCrop": [
+          0,
+          0,
+          36,
+          40
+        ],
+        "translation": [
+          18,
+          18
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": 128,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "f59175b99f0b64c740a57b2cffe13edf61618347e773d9d919087c031c02da66",
+      "atlasRect": [
+        96,
+        1056,
+        64,
+        64
+      ],
+      "visibleBounds": [
+        19,
+        19,
+        35,
+        39
+      ]
+    },
+    {
+      "id": "interact_2",
+      "animation": "interact",
+      "index": 2,
+      "file": "frames/CHR-01_player_interact_right_v001_f03.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "source": {
+        "id": "cast",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_cast_interact_right_v001.png",
+        "sha256": "5b032239f37f8b30cab91cafa7c47d1e4673cc7e2ad9e5cfb9f4e9e85376cd60",
+        "cellIndex": 10,
+        "rect": [
+          771,
+          729,
+          283,
+          328
+        ],
+        "anchor": [
+          113,
+          325
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.12232415902140673,
+        "scaledCellSize": [
+          35,
+          40
+        ],
+        "scaledVisibleCrop": [
+          0,
+          0,
+          35,
+          40
+        ],
+        "translation": [
+          18,
+          18
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": 128,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "d04ca6adda9cd92e76dd607247b9164905f0bbb3a7644343753cf73ae392c1e5",
+      "atlasRect": [
+        192,
+        1056,
+        64,
+        64
+      ],
+      "visibleBounds": [
+        19,
+        19,
+        34,
+        39
+      ]
+    },
+    {
+      "id": "interact_3",
+      "animation": "interact",
+      "index": 3,
+      "file": "frames/CHR-01_player_interact_right_v001_f04.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "source": {
+        "id": "cast",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_cast_interact_right_v001.png",
+        "sha256": "5b032239f37f8b30cab91cafa7c47d1e4673cc7e2ad9e5cfb9f4e9e85376cd60",
+        "cellIndex": 11,
+        "rect": [
+          1106,
+          724,
+          241,
+          333
+        ],
+        "anchor": [
+          112,
+          330
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.12232415902140673,
+        "scaledCellSize": [
+          29,
+          41
+        ],
+        "scaledVisibleCrop": [
+          0,
+          0,
+          29,
+          41
+        ],
+        "translation": [
+          18,
+          17
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          -1
+        ],
+        "contactAlphaThreshold": 128,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "3e8f6c2112356ad5cdaf52c7a9a4e308d3c9faf77e421e636d75d17e4c8d58cb",
+      "atlasRect": [
+        288,
+        1056,
+        64,
+        64
+      ],
+      "visibleBounds": [
+        19,
+        18,
+        28,
+        40
+      ]
+    },
+    {
+      "id": "rest_enter_0",
+      "animation": "rest_enter",
+      "index": 0,
+      "file": "frames/CHR-01_player_rest_enter_right_v001_f01.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "source": {
+        "id": "rest_cycle",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_rest_cycle_right_v002.png",
+        "sha256": "a4f0af2a5648b713427f8761a2b5de3153c8147e012d1281bd0a9b0c428c5814",
+        "cellIndex": 0,
+        "rect": [
+          41,
+          22,
+          286,
+          404
+        ],
+        "anchor": [
+          139,
+          407
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.10050251256281408,
+        "scaledCellSize": [
+          29,
+          41
+        ],
+        "scaledVisibleCrop": [
+          0,
+          0,
+          29,
+          41
+        ],
+        "translation": [
+          18,
+          17
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": 128,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "012388c6f7a8fbefbadbb586c41c8d6197a6fb1caf141556e9e46be128699db7",
+      "atlasRect": [
+        384,
+        1056,
+        64,
+        64
+      ],
+      "visibleBounds": [
+        19,
+        17,
+        28,
+        41
+      ]
+    },
+    {
+      "id": "rest_enter_1",
+      "animation": "rest_enter",
+      "index": 1,
+      "file": "frames/CHR-01_player_rest_enter_right_v001_f02.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "source": {
+        "id": "rest_cycle",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_rest_cycle_right_v002.png",
+        "sha256": "a4f0af2a5648b713427f8761a2b5de3153c8147e012d1281bd0a9b0c428c5814",
+        "cellIndex": 1,
+        "rect": [
+          415,
+          66,
+          277,
+          360
+        ],
+        "anchor": [
+          135,
+          363
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.10050251256281408,
+        "scaledCellSize": [
+          28,
+          36
+        ],
+        "scaledVisibleCrop": [
+          0,
+          0,
+          28,
+          36
+        ],
+        "translation": [
+          18,
+          22
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": 128,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "4a18f1d838c8f357ad60d3231dd362380f3b461f936ca5838c958c1df37c3870",
+      "atlasRect": [
+        480,
+        1056,
+        64,
+        64
+      ],
+      "visibleBounds": [
+        18,
+        22,
+        28,
+        36
+      ]
+    },
+    {
+      "id": "rest_enter_2",
+      "animation": "rest_enter",
+      "index": 2,
+      "file": "frames/CHR-01_player_rest_enter_right_v001_f03.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "source": {
+        "id": "rest_cycle",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_rest_cycle_right_v002.png",
+        "sha256": "a4f0af2a5648b713427f8761a2b5de3153c8147e012d1281bd0a9b0c428c5814",
+        "cellIndex": 2,
+        "rect": [
+          776,
+          112,
+          275,
+          314
+        ],
+        "anchor": [
+          144,
+          317
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.10050251256281408,
+        "scaledCellSize": [
+          28,
+          32
+        ],
+        "scaledVisibleCrop": [
+          0,
+          0,
+          28,
+          32
+        ],
+        "translation": [
+          18,
+          26
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": 128,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "864839cbfa8fe01ec54bcfb15a482fc635eec15d6bdfb6298e07e173d9c51e32",
+      "atlasRect": [
+        576,
+        1056,
+        64,
+        64
+      ],
+      "visibleBounds": [
+        19,
+        27,
+        27,
+        31
+      ]
+    },
+    {
+      "id": "rest_enter_3",
+      "animation": "rest_enter",
+      "index": 3,
+      "file": "frames/CHR-01_player_rest_enter_right_v001_f04.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "source": {
+        "id": "rest_cycle",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_rest_cycle_right_v002.png",
+        "sha256": "a4f0af2a5648b713427f8761a2b5de3153c8147e012d1281bd0a9b0c428c5814",
+        "cellIndex": 3,
+        "rect": [
+          1131,
+          152,
+          290,
+          280
+        ],
+        "anchor": [
+          144,
+          277
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.10050251256281408,
+        "scaledCellSize": [
+          29,
+          28
+        ],
+        "scaledVisibleCrop": [
+          0,
+          0,
+          29,
+          28
+        ],
+        "translation": [
+          18,
+          30
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": 128,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "d641ca65d1be09f30c73c78c96a71545a825a96d560a04f8c11bbb4735545f06",
+      "atlasRect": [
+        672,
+        1056,
+        64,
+        64
+      ],
+      "visibleBounds": [
+        18,
+        30,
+        29,
+        28
+      ]
+    },
+    {
+      "id": "rest_0",
+      "animation": "rest",
+      "index": 0,
+      "file": "frames/CHR-01_player_rest_right_v001_f01.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "source": {
+        "id": "rest_cycle",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_rest_cycle_right_v002.png",
+        "sha256": "a4f0af2a5648b713427f8761a2b5de3153c8147e012d1281bd0a9b0c428c5814",
+        "cellIndex": 4,
+        "rect": [
+          45,
+          459,
+          292,
+          281
+        ],
+        "anchor": [
+          135,
+          278
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.10050251256281408,
+        "scaledCellSize": [
+          29,
+          28
+        ],
+        "scaledVisibleCrop": [
+          1,
+          1,
+          28,
+          27
+        ],
+        "translation": [
+          19,
+          31
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": 128,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "daf151c9071b8d8644423fa7ca259aa98df8800495167fb87ab7f0365feb4030",
+      "atlasRect": [
+        0,
+        1152,
+        64,
+        64
+      ],
+      "visibleBounds": [
+        19,
+        31,
+        28,
+        27
+      ]
+    },
+    {
+      "id": "rest_1",
+      "animation": "rest",
+      "index": 1,
+      "file": "frames/CHR-01_player_rest_right_v001_f02.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "source": {
+        "id": "rest_cycle",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_rest_cycle_right_v002.png",
+        "sha256": "a4f0af2a5648b713427f8761a2b5de3153c8147e012d1281bd0a9b0c428c5814",
+        "cellIndex": 5,
+        "rect": [
+          415,
+          459,
+          303,
+          281
+        ],
+        "anchor": [
+          135,
+          278
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.10050251256281408,
+        "scaledCellSize": [
+          30,
+          28
+        ],
+        "scaledVisibleCrop": [
+          1,
+          0,
+          29,
+          28
+        ],
+        "translation": [
+          19,
+          30
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": 128,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "63f320729bbbe0c1beffba39b6b83ca8f6d6d01d98fa6acde788c13ab185b010",
+      "atlasRect": [
+        96,
+        1152,
+        64,
+        64
+      ],
+      "visibleBounds": [
+        19,
+        31,
+        29,
+        27
+      ]
+    },
+    {
+      "id": "rest_2",
+      "animation": "rest",
+      "index": 2,
+      "file": "frames/CHR-01_player_rest_right_v001_f03.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "source": {
+        "id": "rest_cycle",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_rest_cycle_right_v002.png",
+        "sha256": "a4f0af2a5648b713427f8761a2b5de3153c8147e012d1281bd0a9b0c428c5814",
+        "cellIndex": 6,
+        "rect": [
+          782,
+          459,
+          297,
+          281
+        ],
+        "anchor": [
+          138,
+          278
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.10050251256281408,
+        "scaledCellSize": [
+          30,
+          28
+        ],
+        "scaledVisibleCrop": [
+          0,
+          1,
+          30,
+          27
+        ],
+        "translation": [
+          18,
+          31
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": 128,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "815a0f6e33518f3a3250a18e9348f5f00fd93a9955ee4aa888d941b0c3f23366",
+      "atlasRect": [
+        192,
+        1152,
+        64,
+        64
+      ],
+      "visibleBounds": [
+        18,
+        31,
+        30,
+        27
+      ]
+    },
+    {
+      "id": "rest_3",
+      "animation": "rest",
+      "index": 3,
+      "file": "frames/CHR-01_player_rest_right_v001_f04.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "source": {
+        "id": "rest_cycle",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_rest_cycle_right_v002.png",
+        "sha256": "a4f0af2a5648b713427f8761a2b5de3153c8147e012d1281bd0a9b0c428c5814",
+        "cellIndex": 7,
+        "rect": [
+          1138,
+          459,
+          295,
+          281
+        ],
+        "anchor": [
+          137,
+          278
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.10050251256281408,
+        "scaledCellSize": [
+          30,
+          28
+        ],
+        "scaledVisibleCrop": [
+          0,
+          1,
+          30,
+          27
+        ],
+        "translation": [
+          18,
+          31
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": 128,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "ca249eadb2f2a6c44b92d4b3c8ff657922a30c8bf60af73359a39103e222e47b",
+      "atlasRect": [
+        288,
+        1152,
+        64,
+        64
+      ],
+      "visibleBounds": [
+        19,
+        31,
+        29,
+        27
+      ]
+    },
+    {
+      "id": "rest_exit_0",
+      "animation": "rest_exit",
+      "index": 0,
+      "file": "frames/CHR-01_player_rest_exit_right_v001_f01.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "source": {
+        "id": "rest_cycle",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_rest_cycle_right_v002.png",
+        "sha256": "a4f0af2a5648b713427f8761a2b5de3153c8147e012d1281bd0a9b0c428c5814",
+        "cellIndex": 8,
+        "rect": [
+          55,
+          799,
+          259,
+          269
+        ],
+        "anchor": [
+          125,
+          269
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.10050251256281408,
+        "scaledCellSize": [
+          26,
+          27
+        ],
+        "scaledVisibleCrop": [
+          1,
+          0,
+          25,
+          27
+        ],
+        "translation": [
+          20,
+          31
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": 128,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "571fc3170332e94109e839e88a4a417886e1ee6c02b5a329f54c209a900bfe4f",
+      "atlasRect": [
+        384,
+        1152,
+        64,
+        64
+      ],
+      "visibleBounds": [
+        20,
+        31,
+        25,
+        27
+      ]
+    },
+    {
+      "id": "rest_exit_1",
+      "animation": "rest_exit",
+      "index": 1,
+      "file": "frames/CHR-01_player_rest_exit_right_v001_f02.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "source": {
+        "id": "rest_cycle",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_rest_cycle_right_v002.png",
+        "sha256": "a4f0af2a5648b713427f8761a2b5de3153c8147e012d1281bd0a9b0c428c5814",
+        "cellIndex": 9,
+        "rect": [
+          420,
+          775,
+          264,
+          295
+        ],
+        "anchor": [
+          130,
+          293
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.10050251256281408,
+        "scaledCellSize": [
+          27,
+          30
+        ],
+        "scaledVisibleCrop": [
+          0,
+          1,
+          27,
+          29
+        ],
+        "translation": [
+          19,
+          29
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          -1
+        ],
+        "contactAlphaThreshold": 128,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "3183c7a6cd906d9d74c0d9f67287231a3e7610b2e8e8d7ff8c37860f61e09233",
+      "atlasRect": [
+        480,
+        1152,
+        64,
+        64
+      ],
+      "visibleBounds": [
+        19,
+        29,
+        27,
+        29
+      ]
+    },
+    {
+      "id": "rest_exit_2",
+      "animation": "rest_exit",
+      "index": 2,
+      "file": "frames/CHR-01_player_rest_exit_right_v001_f03.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "source": {
+        "id": "rest_cycle",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_rest_cycle_right_v002.png",
+        "sha256": "a4f0af2a5648b713427f8761a2b5de3153c8147e012d1281bd0a9b0c428c5814",
+        "cellIndex": 10,
+        "rect": [
+          802,
+          739,
+          264,
+          332
+        ],
+        "anchor": [
+          118,
+          329
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.10050251256281408,
+        "scaledCellSize": [
+          27,
+          33
+        ],
+        "scaledVisibleCrop": [
+          0,
+          0,
+          27,
+          33
+        ],
+        "translation": [
+          20,
+          25
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": 128,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "d8674a0f5b98a2f2a94dee47d99b7b17993b04934e0827d0abaa87807458da8e",
+      "atlasRect": [
+        576,
+        1152,
+        64,
+        64
+      ],
+      "visibleBounds": [
+        20,
+        26,
+        27,
+        32
+      ]
+    },
+    {
+      "id": "rest_exit_3",
+      "animation": "rest_exit",
+      "index": 3,
+      "file": "frames/CHR-01_player_rest_exit_right_v001_f04.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "source": {
+        "id": "rest_cycle",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_rest_cycle_right_v002.png",
+        "sha256": "a4f0af2a5648b713427f8761a2b5de3153c8147e012d1281bd0a9b0c428c5814",
+        "cellIndex": 11,
+        "rect": [
+          1161,
+          737,
+          259,
+          334
+        ],
+        "anchor": [
+          114,
+          331
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.10050251256281408,
+        "scaledCellSize": [
+          26,
+          34
+        ],
+        "scaledVisibleCrop": [
+          0,
+          0,
+          26,
+          34
+        ],
+        "translation": [
+          21,
+          24
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          -1
+        ],
+        "contactAlphaThreshold": 128,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "d2af54d0437af86b2fe529c5a769dadf22db72a498123dc7b700af10d8c51298",
+      "atlasRect": [
+        672,
+        1152,
+        64,
+        64
+      ],
+      "visibleBounds": [
+        22,
+        25,
+        25,
+        33
+      ]
+    },
+    {
+      "id": "death_0",
+      "animation": "death",
+      "index": 0,
+      "file": "frames/CHR-01_player_death_right_v001_f01.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "source": {
+        "id": "life",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_life_right_v001.png",
+        "sha256": "ebb0c1875b6ffa73caa876344588ddc3358e604118469556f63461eed724397a",
+        "cellIndex": 0,
+        "rect": [
+          68,
+          61,
+          258,
+          349
+        ],
+        "anchor": [
+          128,
+          345
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.11661807580174927,
+        "scaledCellSize": [
+          30,
+          41
+        ],
+        "scaledVisibleCrop": [
+          0,
+          0,
+          30,
+          41
+        ],
+        "translation": [
+          17,
+          17
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          -1
+        ],
+        "contactAlphaThreshold": 128,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "429332316b1aeda53027b716e26a2441c398d04ba661f21a46d10539abbba8ad",
+      "atlasRect": [
+        0,
+        1248,
+        64,
+        64
+      ],
+      "visibleBounds": [
+        18,
+        18,
+        29,
+        40
+      ]
+    },
+    {
+      "id": "death_1",
+      "animation": "death",
+      "index": 1,
+      "file": "frames/CHR-01_player_death_right_v001_f02.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "source": {
+        "id": "life",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_life_right_v001.png",
+        "sha256": "ebb0c1875b6ffa73caa876344588ddc3358e604118469556f63461eed724397a",
+        "cellIndex": 1,
+        "rect": [
+          427,
+          83,
+          237,
+          326
+        ],
+        "anchor": [
+          127,
+          323
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.11661807580174927,
+        "scaledCellSize": [
+          28,
+          38
+        ],
+        "scaledVisibleCrop": [
+          0,
+          0,
+          28,
+          38
+        ],
+        "translation": [
+          17,
+          20
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": 128,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "e7366d2cfe492804bb573079a3e18c7c8e7816b7141af43839ec4e95e3b77ab7",
+      "atlasRect": [
+        96,
+        1248,
+        64,
+        64
+      ],
+      "visibleBounds": [
+        18,
+        21,
+        27,
+        37
+      ]
+    },
+    {
+      "id": "death_2",
+      "animation": "death",
+      "index": 2,
+      "file": "frames/CHR-01_player_death_right_v001_f03.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "source": {
+        "id": "life",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_life_right_v001.png",
+        "sha256": "ebb0c1875b6ffa73caa876344588ddc3358e604118469556f63461eed724397a",
+        "cellIndex": 2,
+        "rect": [
+          785,
+          112,
+          240,
+          298
+        ],
+        "anchor": [
+          127,
+          294
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.11661807580174927,
+        "scaledCellSize": [
+          28,
+          35
+        ],
+        "scaledVisibleCrop": [
+          0,
+          0,
+          28,
+          35
+        ],
+        "translation": [
+          17,
+          23
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          -1
+        ],
+        "contactAlphaThreshold": 128,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "f6a382da0afdde30b677052ff96bf515d0fbd528d02421c3368780e0e6e43d6d",
+      "atlasRect": [
+        192,
+        1248,
+        64,
+        64
+      ],
+      "visibleBounds": [
+        17,
+        24,
+        28,
+        34
+      ]
+    },
+    {
+      "id": "death_3",
+      "animation": "death",
+      "index": 3,
+      "file": "frames/CHR-01_player_death_right_v001_f04.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "source": {
+        "id": "life",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_life_right_v001.png",
+        "sha256": "ebb0c1875b6ffa73caa876344588ddc3358e604118469556f63461eed724397a",
+        "cellIndex": 3,
+        "rect": [
+          1101,
+          136,
+          313,
+          273
+        ],
+        "anchor": [
+          169,
+          270
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.11661807580174927,
+        "scaledCellSize": [
+          37,
+          32
+        ],
+        "scaledVisibleCrop": [
+          0,
+          0,
+          37,
+          32
+        ],
+        "translation": [
+          12,
+          26
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          -1
+        ],
+        "contactAlphaThreshold": 128,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "996f07373ceb8c8bb164cd49f2772655e0a41323225f8505b531f087cf4028a6",
+      "atlasRect": [
+        288,
+        1248,
+        64,
+        64
+      ],
+      "visibleBounds": [
+        13,
+        27,
+        36,
+        31
+      ]
+    },
+    {
+      "id": "death_4",
+      "animation": "death",
+      "index": 4,
+      "file": "frames/CHR-01_player_death_right_v001_f05.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "source": {
+        "id": "life",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_life_right_v001.png",
+        "sha256": "ebb0c1875b6ffa73caa876344588ddc3358e604118469556f63461eed724397a",
+        "cellIndex": 4,
+        "rect": [
+          24,
+          460,
+          332,
+          252
+        ],
+        "anchor": [
+          172,
+          250
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.11661807580174927,
+        "scaledCellSize": [
+          39,
+          29
+        ],
+        "scaledVisibleCrop": [
+          0,
+          0,
+          39,
+          29
+        ],
+        "translation": [
+          12,
+          29
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": 128,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "58eb844b834f746b1f1388f5d4f5bb0a436af0090e15198395e7333119a0daa9",
+      "atlasRect": [
+        384,
+        1248,
+        64,
+        64
+      ],
+      "visibleBounds": [
+        12,
+        29,
+        39,
+        29
+      ]
+    },
+    {
+      "id": "death_5",
+      "animation": "death",
+      "index": 5,
+      "file": "frames/CHR-01_player_death_right_v001_f06.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "source": {
+        "id": "life",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_life_right_v001.png",
+        "sha256": "ebb0c1875b6ffa73caa876344588ddc3358e604118469556f63461eed724397a",
+        "cellIndex": 5,
+        "rect": [
+          371,
+          523,
+          338,
+          190
+        ],
+        "anchor": [
+          183,
+          187
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.11661807580174927,
+        "scaledCellSize": [
+          39,
+          22
+        ],
+        "scaledVisibleCrop": [
+          0,
+          0,
+          39,
+          22
+        ],
+        "translation": [
+          11,
+          37
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          1
+        ],
+        "contactAlphaThreshold": 128,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "46112dbce49b54e3055ab59979fe9a96d2a474436c941f2c6e4cc27c4fbb8620",
+      "atlasRect": [
+        480,
+        1248,
+        64,
+        64
+      ],
+      "visibleBounds": [
+        12,
+        38,
+        38,
+        21
+      ]
+    },
+    {
+      "id": "death_6",
+      "animation": "death",
+      "index": 6,
+      "file": "frames/CHR-01_player_death_right_v001_f07.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "source": {
+        "id": "life",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_life_right_v001.png",
+        "sha256": "ebb0c1875b6ffa73caa876344588ddc3358e604118469556f63461eed724397a",
+        "cellIndex": 6,
+        "rect": [
+          720,
+          551,
+          356,
+          162
+        ],
+        "anchor": [
+          192,
+          159
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.11661807580174927,
+        "scaledCellSize": [
+          42,
+          19
+        ],
+        "scaledVisibleCrop": [
+          0,
+          0,
+          42,
+          19
+        ],
+        "translation": [
+          10,
+          40
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          1
+        ],
+        "contactAlphaThreshold": 128,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "b8b0eaa3c27fbc8b310db5562d18d28e0866fa95bcb6df2a19173fcc41d271f5",
+      "atlasRect": [
+        576,
+        1248,
+        64,
+        64
+      ],
+      "visibleBounds": [
+        10,
+        41,
+        42,
+        18
+      ]
+    },
+    {
+      "id": "death_7",
+      "animation": "death",
+      "index": 7,
+      "file": "frames/CHR-01_player_death_right_v001_f08.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "source": {
+        "id": "life",
+        "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_life_right_v001.png",
+        "sha256": "ebb0c1875b6ffa73caa876344588ddc3358e604118469556f63461eed724397a",
+        "cellIndex": 7,
+        "rect": [
+          1083,
+          552,
+          354,
+          161
+        ],
+        "anchor": [
+          187,
+          158
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.11661807580174927,
+        "scaledCellSize": [
+          41,
+          19
+        ],
+        "scaledVisibleCrop": [
+          0,
+          0,
+          41,
+          19
+        ],
+        "translation": [
+          10,
+          40
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": 128,
+        "filter": "nearest"
+      },
+      "duration": 1,
+      "sha256": "6e8148ea9dff839587cfb0928e0e5d97b5a276e13791fd21a2fe236eedfe71af",
+      "atlasRect": [
+        672,
+        1248,
+        64,
+        64
+      ],
+      "visibleBounds": [
+        11,
+        41,
+        40,
+        18
+      ]
+    }
+  ],
+  "canonical": {
+    "file": "CHR-01_canonical_right_v001.png",
+    "size": [
+      64,
+      64
+    ],
+    "anchor": [
+      32,
+      58
+    ],
+    "source": {
+      "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_master_right_v001.png",
+      "sha256": "93384a652cc6ca45afdd893bfa2122f7fbffbe78905c0a3255802072dd38dfe5",
+      "anchor": [
+        650,
+        1207
+      ]
+    },
+    "transform": {
+      "uniformScale": 0.03633060853769301,
+      "filter": "nearest",
+      "translation": [
+        8,
+        14
+      ]
+    },
+    "visibleStandingHeight": 40,
+    "notIncludedInAnimationFrameCount": true
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "images": {
+    "terrain.png": {
+      "width": 64,
+      "height": 64,
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "08b8482d6825fb0ef8b28feadb71091089b73ed9c34673405e388f321820f5d8"
+    },
+    "background.png": {
+      "width": 640,
+      "height": 360,
+      "mode": "RGB",
+      "alpha_extrema": null,
+      "sha256": "f742de59629d8b858d31d6ed03ad2a45be939ccef59d324c7168879f3b560e40"
+    },
+    "props/crystal_cluster.png": {
+      "width": 64,
+      "height": 64,
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "1d7d1706c65bbd469e3c706a4e4336ab5b8d2088104806c402a0ad7f2218ddfb"
+    },
+    "props/glow_roots.png": {
+      "width": 64,
+      "height": 80,
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "37eb92253153a9e05279b5b6dabba515cf7dd779751fdf54f1e95335b6b16541"
+    },
+    "props/hidden_crevice.png": {
+      "width": 64,
+      "height": 112,
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "921d9482eab10c0df3bce3bef271388168ccc8a63e4787de0db7eaaab1952ca6"
+    },
+    "props/acid_rim.png": {
+      "width": 112,
+      "height": 64,
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "6dcad9f721c79db7e91339422fb34cd43527467ff2ae094919f12ae343931082"
+    }
+  },
+  "join_checks": [
+    {
+      "join": "0->1",
+      "axis": "h",
+      "different_pixels": 0
+    },
+    {
+      "join": "1->1",
+      "axis": "h",
+      "different_pixels": 0
+    },
+    {
+      "join": "1->2",
+      "axis": "h",
+      "different_pixels": 0
+    },
+    {
+      "join": "3->4",
+      "axis": "h",
+      "different_pixels": 0
+    },
+    {
+      "join": "4->4",
+      "axis": "h",
+      "different_pixels": 0
+    },
+    {
+      "join": "4->5",
+      "axis": "h",
+      "different_pixels": 0
+    },
+    {
+      "join": "6->7",
+      "axis": "h",
+      "different_pixels": 0
+    },
+    {
+      "join": "7->7",
+      "axis": "h",
+      "different_pixels": 0
+    },
+    {
+      "join": "7->8",
+      "axis": "h",
+      "different_pixels": 0
+    },
+    {
+      "join": "0->3",
+      "axis": "v",
+      "different_pixels": 0
+    },
+    {
+      "join": "3->6",
+      "axis": "v",
+      "different_pixels": 0
+    },
+    {
+      "join": "1->4",
+      "axis": "v",
+      "different_pixels": 0
+    },
+    {
+      "join": "4->7",
+      "axis": "v",
+      "different_pixels": 0
+    },
+    {
+      "join": "2->5",
+      "axis": "v",
+      "different_pixels": 0
+    },
+    {
+      "join": "5->8",
+      "axis": "v",
+      "different_pixels": 0
+    },
+    {
+      "join": "10->11",
+      "axis": "h",
+      "different_pixels": 0
+    },
+    {
+      "join": "11->11",
+      "axis": "h",
+      "different_pixels": 0
+    },
+    {
+      "join": "11->12",
+      "axis": "h",
+      "different_pixels": 0
+    }
+  ],
+  "seam_check_passed": true,
+  "visual_inspection": "terrain/background/props/contact_sheet reviewed via view_image",
+  "notes": [
+    "Raw images remain unchanged.",
+    "Processed tiles use deterministic source-pixel cropping, nearest resize, copied edge strips and palette reduction.",
+    "Props use binary true alpha and 16px-multiple canvases.",
+    "Background is a visual layer only; no hazard or collision is baked."
+  ]
+}

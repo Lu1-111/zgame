@@ -1,0 +1,13 @@
+{
+  "scope": "NPC-S01–06 style refinement",
+  "raw": "v003",
+  "processed": "v002",
+  "characters": 6,
+  "animations": 18,
+  "frames": 108,
+  "import": "PASS: exit 0, no ERROR on final run",
+  "npc_runtime": "PASS: resources, 64x64, offset (-32,-58), patrol and dialogue",
+  "smoke": "PASS: exit 0, 120 frames",
+  "unit_tests": "BLOCKED: enemy_visual.gd fade_start undeclared; test host misleadingly reports ALL PASS",
+  "limitation": "Some walking poses have similar near/far leg silhouettes; full anatomical eight-phase gait not certified."
+}

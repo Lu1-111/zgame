@@ -1,0 +1,400 @@
+{
+  "id": "NPC-01",
+  "version": "v001",
+  "generated_with": "built-in image_gen",
+  "identity_reference": "assets/RAW/characters/NPC-S01/v002/NPC-S01_milk_rabbit_guide_master_front_v002.png",
+  "style_reference": "assets/RAW/characters/CHR-01/v001/CHR-01_master_right_v001.png",
+  "animation_reference": "NPC-01_master_right_v001.png",
+  "sheet": "NPC-01_actions_right_v001.png",
+  "sheet_size": [
+    1774,
+    887
+  ],
+  "frames": [
+    {
+      "action": "idle",
+      "frame": 0,
+      "rect_xywh": [
+        0,
+        0,
+        295,
+        332
+      ],
+      "alpha160_bbox_xyxy": [
+        105,
+        15,
+        277,
+        326
+      ],
+      "suggested_source_root_xy": [
+        201.0,
+        326
+      ]
+    },
+    {
+      "action": "idle",
+      "frame": 1,
+      "rect_xywh": [
+        295,
+        0,
+        296,
+        332
+      ],
+      "alpha160_bbox_xyxy": [
+        399,
+        15,
+        571,
+        326
+      ],
+      "suggested_source_root_xy": [
+        494.0,
+        326
+      ]
+    },
+    {
+      "action": "idle",
+      "frame": 2,
+      "rect_xywh": [
+        591,
+        0,
+        296,
+        332
+      ],
+      "alpha160_bbox_xyxy": [
+        679,
+        11,
+        852,
+        325
+      ],
+      "suggested_source_root_xy": [
+        776.0,
+        325
+      ]
+    },
+    {
+      "action": "idle",
+      "frame": 3,
+      "rect_xywh": [
+        887,
+        0,
+        296,
+        332
+      ],
+      "alpha160_bbox_xyxy": [
+        956,
+        15,
+        1127,
+        326
+      ],
+      "suggested_source_root_xy": [
+        1051.0,
+        326
+      ]
+    },
+    {
+      "action": "idle",
+      "frame": 4,
+      "rect_xywh": [
+        1183,
+        0,
+        296,
+        332
+      ],
+      "alpha160_bbox_xyxy": [
+        1238,
+        16,
+        1408,
+        327
+      ],
+      "suggested_source_root_xy": [
+        1332.5,
+        327
+      ]
+    },
+    {
+      "action": "idle",
+      "frame": 5,
+      "rect_xywh": [
+        1479,
+        0,
+        295,
+        332
+      ],
+      "alpha160_bbox_xyxy": [
+        1520,
+        15,
+        1692,
+        326
+      ],
+      "suggested_source_root_xy": [
+        1616.0,
+        326
+      ]
+    },
+    {
+      "action": "talk",
+      "frame": 0,
+      "rect_xywh": [
+        0,
+        332,
+        295,
+        298
+      ],
+      "alpha160_bbox_xyxy": [
+        105,
+        342,
+        278,
+        624
+      ],
+      "suggested_source_root_xy": [
+        201.5,
+        624
+      ]
+    },
+    {
+      "action": "talk",
+      "frame": 1,
+      "rect_xywh": [
+        295,
+        332,
+        296,
+        298
+      ],
+      "alpha160_bbox_xyxy": [
+        395,
+        338,
+        565,
+        624
+      ],
+      "suggested_source_root_xy": [
+        492.0,
+        624
+      ]
+    },
+    {
+      "action": "talk",
+      "frame": 2,
+      "rect_xywh": [
+        591,
+        332,
+        296,
+        298
+      ],
+      "alpha160_bbox_xyxy": [
+        679,
+        335,
+        869,
+        624
+      ],
+      "suggested_source_root_xy": [
+        773.5,
+        624
+      ]
+    },
+    {
+      "action": "talk",
+      "frame": 3,
+      "rect_xywh": [
+        887,
+        332,
+        296,
+        298
+      ],
+      "alpha160_bbox_xyxy": [
+        956,
+        338,
+        1129,
+        624
+      ],
+      "suggested_source_root_xy": [
+        1052.0,
+        624
+      ]
+    },
+    {
+      "action": "talk",
+      "frame": 4,
+      "rect_xywh": [
+        1183,
+        332,
+        296,
+        298
+      ],
+      "alpha160_bbox_xyxy": [
+        1240,
+        339,
+        1410,
+        624
+      ],
+      "suggested_source_root_xy": [
+        1335.0,
+        624
+      ]
+    },
+    {
+      "action": "talk",
+      "frame": 5,
+      "rect_xywh": [
+        1479,
+        332,
+        295,
+        298
+      ],
+      "alpha160_bbox_xyxy": [
+        1519,
+        340,
+        1691,
+        624
+      ],
+      "suggested_source_root_xy": [
+        1615.5,
+        624
+      ]
+    },
+    {
+      "action": "greet",
+      "frame": 0,
+      "rect_xywh": [
+        0,
+        630,
+        295,
+        257
+      ],
+      "alpha160_bbox_xyxy": [
+        105,
+        632,
+        276,
+        880
+      ],
+      "suggested_source_root_xy": [
+        201.0,
+        880
+      ]
+    },
+    {
+      "action": "greet",
+      "frame": 1,
+      "rect_xywh": [
+        295,
+        630,
+        296,
+        257
+      ],
+      "alpha160_bbox_xyxy": [
+        396,
+        632,
+        578,
+        880
+      ],
+      "suggested_source_root_xy": [
+        491.0,
+        880
+      ]
+    },
+    {
+      "action": "greet",
+      "frame": 2,
+      "rect_xywh": [
+        591,
+        630,
+        296,
+        257
+      ],
+      "alpha160_bbox_xyxy": [
+        678,
+        631,
+        865,
+        880
+      ],
+      "suggested_source_root_xy": [
+        772.0,
+        880
+      ]
+    },
+    {
+      "action": "greet",
+      "frame": 3,
+      "rect_xywh": [
+        887,
+        630,
+        296,
+        257
+      ],
+      "alpha160_bbox_xyxy": [
+        958,
+        632,
+        1140,
+        880
+      ],
+      "suggested_source_root_xy": [
+        1052.0,
+        880
+      ]
+    },
+    {
+      "action": "greet",
+      "frame": 4,
+      "rect_xywh": [
+        1183,
+        630,
+        296,
+        257
+      ],
+      "alpha160_bbox_xyxy": [
+        1241,
+        632,
+        1421,
+        880
+      ],
+      "suggested_source_root_xy": [
+        1334.5,
+        880
+      ]
+    },
+    {
+      "action": "greet",
+      "frame": 5,
+      "rect_xywh": [
+        1479,
+        630,
+        295,
+        257
+      ],
+      "alpha160_bbox_xyxy": [
+        1521,
+        632,
+        1690,
+        881
+      ],
+      "suggested_source_root_xy": [
+        1615.5,
+        881
+      ]
+    }
+  ],
+  "fps": {
+    "idle": 6,
+    "talk": 8,
+    "greet": 8
+  },
+  "loop": {
+    "idle": true,
+    "talk": true,
+    "greet": false
+  },
+  "target_canvas": [
+    64,
+    64
+  ],
+  "target_root": [
+    32,
+    58
+  ],
+  "target_ear_to_sole_height": 47,
+  "notes": [
+    "Do not equally divide sheet height: generated rows differ in height.",
+    "Use one constant scale per animation, never independently stretch each frame.",
+    "Keep boots grounded and preserve designed ear, breathing and gesture motion.",
+    "Alpha threshold used only for geometric analysis; preserve source alpha in RAW."
+  ]
+}

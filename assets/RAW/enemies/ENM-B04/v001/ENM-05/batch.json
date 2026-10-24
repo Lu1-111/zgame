@@ -1,0 +1,520 @@
+{
+  "effects": [
+    {
+      "id": "ENM-05_idle",
+      "name": "idle",
+      "enemyId": "ENM-05",
+      "gameEnemyId": "frost_sprite",
+      "label": "idle",
+      "kind": "body",
+      "sourcePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-05/ENM-05_actions_A.png",
+      "sourceRects": [
+        [
+          0,
+          0,
+          315,
+          331
+        ],
+        [
+          315,
+          0,
+          320,
+          331
+        ],
+        [
+          635,
+          0,
+          299,
+          331
+        ],
+        [
+          934,
+          0,
+          320,
+          331
+        ]
+      ],
+      "sourceAnchors": [
+        [
+          156.75,
+          176.25
+        ],
+        [
+          155.25,
+          176.25
+        ],
+        [
+          148.75,
+          176.25
+        ],
+        [
+          163.25,
+          176.25
+        ]
+      ],
+      "scale": 0.21836228287841192,
+      "target": [
+        128,
+        128
+      ],
+      "anchor": [
+        64,
+        64
+      ],
+      "fps": 8,
+      "loop": true,
+      "promptPath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-05/ENM-05_A.prompt.txt",
+      "generationMode": "built-in-imagegen",
+      "processing": "rect crop, fixed per-sheet nearest scale, integer semantic root translation; original alpha retained",
+      "provenancePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-05/provenance.json"
+    },
+    {
+      "id": "ENM-05_move",
+      "name": "move",
+      "enemyId": "ENM-05",
+      "gameEnemyId": "frost_sprite",
+      "label": "move",
+      "kind": "body",
+      "sourcePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-05/ENM-05_actions_A.png",
+      "sourceRects": [
+        [
+          0,
+          331,
+          312,
+          295
+        ],
+        [
+          312,
+          331,
+          313,
+          295
+        ],
+        [
+          625,
+          331,
+          311,
+          295
+        ],
+        [
+          936,
+          331,
+          318,
+          295
+        ]
+      ],
+      "sourceAnchors": [
+        [
+          156.75,
+          150.0
+        ],
+        [
+          158.25,
+          150.0
+        ],
+        [
+          158.75,
+          150.0
+        ],
+        [
+          161.25,
+          150.0
+        ]
+      ],
+      "scale": 0.21836228287841192,
+      "target": [
+        128,
+        128
+      ],
+      "anchor": [
+        64,
+        64
+      ],
+      "fps": 8,
+      "loop": true,
+      "promptPath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-05/ENM-05_A.prompt.txt",
+      "generationMode": "built-in-imagegen",
+      "processing": "rect crop, fixed per-sheet nearest scale, integer semantic root translation; original alpha retained",
+      "provenancePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-05/provenance.json"
+    },
+    {
+      "id": "ENM-05_telegraph",
+      "name": "telegraph",
+      "enemyId": "ENM-05",
+      "gameEnemyId": "frost_sprite",
+      "label": "telegraph",
+      "kind": "body",
+      "sourcePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-05/ENM-05_actions_A.png",
+      "sourceRects": [
+        [
+          0,
+          626,
+          304,
+          321
+        ],
+        [
+          304,
+          626,
+          334,
+          321
+        ],
+        [
+          638,
+          626,
+          312,
+          321
+        ],
+        [
+          950,
+          626,
+          304,
+          321
+        ]
+      ],
+      "sourceAnchors": [
+        [
+          156.75,
+          167.75
+        ],
+        [
+          166.25,
+          167.75
+        ],
+        [
+          145.75,
+          167.75
+        ],
+        [
+          147.25,
+          167.75
+        ]
+      ],
+      "scale": 0.21836228287841192,
+      "target": [
+        128,
+        128
+      ],
+      "anchor": [
+        64,
+        64
+      ],
+      "fps": 8,
+      "loop": false,
+      "promptPath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-05/ENM-05_A.prompt.txt",
+      "generationMode": "built-in-imagegen",
+      "processing": "rect crop, fixed per-sheet nearest scale, integer semantic root translation; original alpha retained",
+      "provenancePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-05/provenance.json"
+    },
+    {
+      "id": "ENM-05_attack",
+      "name": "attack",
+      "enemyId": "ENM-05",
+      "gameEnemyId": "frost_sprite",
+      "label": "attack",
+      "kind": "body",
+      "sourcePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-05/ENM-05_actions_A.png",
+      "sourceRects": [
+        [
+          0,
+          947,
+          306,
+          307
+        ],
+        [
+          306,
+          947,
+          314,
+          307
+        ],
+        [
+          620,
+          947,
+          326,
+          307
+        ],
+        [
+          946,
+          947,
+          308,
+          307
+        ]
+      ],
+      "sourceAnchors": [
+        [
+          156.75,
+          147.25
+        ],
+        [
+          164.25,
+          147.25
+        ],
+        [
+          163.75,
+          147.25
+        ],
+        [
+          151.25,
+          147.25
+        ]
+      ],
+      "scale": 0.21836228287841192,
+      "target": [
+        128,
+        128
+      ],
+      "anchor": [
+        64,
+        64
+      ],
+      "fps": 8,
+      "loop": false,
+      "promptPath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-05/ENM-05_A.prompt.txt",
+      "generationMode": "built-in-imagegen",
+      "processing": "rect crop, fixed per-sheet nearest scale, integer semantic root translation; original alpha retained",
+      "provenancePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-05/provenance.json"
+    },
+    {
+      "id": "ENM-05_recover",
+      "name": "recover",
+      "enemyId": "ENM-05",
+      "gameEnemyId": "frost_sprite",
+      "label": "recover",
+      "kind": "body",
+      "sourcePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-05/ENM-05_actions_B.png",
+      "sourceRects": [
+        [
+          0,
+          0,
+          304,
+          316
+        ],
+        [
+          304,
+          0,
+          306,
+          316
+        ],
+        [
+          610,
+          0,
+          328,
+          316
+        ],
+        [
+          938,
+          0,
+          316,
+          316
+        ]
+      ],
+      "sourceAnchors": [
+        [
+          156.75,
+          164.75
+        ],
+        [
+          166.25,
+          164.75
+        ],
+        [
+          173.75,
+          164.75
+        ],
+        [
+          159.25,
+          164.75
+        ]
+      ],
+      "scale": 0.20902612826603326,
+      "target": [
+        128,
+        128
+      ],
+      "anchor": [
+        64,
+        64
+      ],
+      "fps": 8,
+      "loop": false,
+      "promptPath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-05/ENM-05_B.prompt.txt",
+      "generationMode": "built-in-imagegen",
+      "processing": "rect crop, fixed per-sheet nearest scale, integer semantic root translation; original alpha retained",
+      "provenancePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-05/provenance.json"
+    },
+    {
+      "id": "ENM-05_hurt",
+      "name": "hurt",
+      "enemyId": "ENM-05",
+      "gameEnemyId": "frost_sprite",
+      "label": "hurt",
+      "kind": "body",
+      "sourcePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-05/ENM-05_actions_B.png",
+      "sourceRects": [
+        [
+          0,
+          316,
+          316,
+          306
+        ],
+        [
+          316,
+          316,
+          307,
+          306
+        ],
+        [
+          623,
+          316,
+          309,
+          306
+        ],
+        [
+          932,
+          316,
+          322,
+          306
+        ]
+      ],
+      "sourceAnchors": [
+        [
+          156.75,
+          154.0
+        ],
+        [
+          154.25,
+          154.0
+        ],
+        [
+          160.75,
+          154.0
+        ],
+        [
+          165.25,
+          154.0
+        ]
+      ],
+      "scale": 0.20902612826603326,
+      "target": [
+        128,
+        128
+      ],
+      "anchor": [
+        64,
+        64
+      ],
+      "fps": 8,
+      "loop": false,
+      "promptPath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-05/ENM-05_B.prompt.txt",
+      "generationMode": "built-in-imagegen",
+      "processing": "rect crop, fixed per-sheet nearest scale, integer semantic root translation; original alpha retained",
+      "provenancePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-05/provenance.json"
+    },
+    {
+      "id": "ENM-05_death",
+      "name": "death",
+      "enemyId": "ENM-05",
+      "gameEnemyId": "frost_sprite",
+      "label": "death",
+      "kind": "body",
+      "sourcePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-05/ENM-05_actions_B.png",
+      "sourceRects": [
+        [
+          0,
+          622,
+          305,
+          318
+        ],
+        [
+          305,
+          622,
+          322,
+          318
+        ],
+        [
+          627,
+          622,
+          307,
+          318
+        ],
+        [
+          934,
+          622,
+          320,
+          318
+        ],
+        [
+          0,
+          940,
+          241,
+          314
+        ],
+        [
+          241,
+          940,
+          388,
+          314
+        ],
+        [
+          629,
+          940,
+          219,
+          314
+        ],
+        [
+          848,
+          940,
+          406,
+          314
+        ]
+      ],
+      "sourceAnchors": [
+        [
+          156.75,
+          158.0
+        ],
+        [
+          165.25,
+          158.0
+        ],
+        [
+          156.75,
+          158.0
+        ],
+        [
+          163.25,
+          158.0
+        ],
+        [
+          156.75,
+          150.0
+        ],
+        [
+          229.25,
+          150.0
+        ],
+        [
+          154.75,
+          150.0
+        ],
+        [
+          249.25,
+          150.0
+        ]
+      ],
+      "scale": 0.20902612826603326,
+      "target": [
+        128,
+        128
+      ],
+      "anchor": [
+        64,
+        64
+      ],
+      "fps": 10,
+      "loop": false,
+      "promptPath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-05/ENM-05_B.prompt.txt",
+      "generationMode": "built-in-imagegen",
+      "processing": "rect crop, fixed per-sheet nearest scale, integer semantic root translation; original alpha retained",
+      "provenancePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-05/provenance.json"
+    }
+  ]
+}

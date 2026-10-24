@@ -1,0 +1,14 @@
+Use case: stylized-concept.
+Asset type: exact-grid 6-frame combat VFX animation sprite sheet for a 2D side-scrolling milk-fantasy pixel-art game.
+Canvas: landscape 1536 x 1024 PNG, TRUE transparent alpha, exactly 3 equal columns and 2 equal rows, six invisible 512 x 512 cells; read left-to-right then top-to-bottom. No visible boundaries, background, checkerboard, labels, text or numbers.
+Critical immutable anchors: each effect originates at its cell center (256,256). Global frame centers: (256,256),(768,256),(1280,256),(256,768),(768,768),(1280,768). Do not auto-center moving particles; all motion evolves around the fixed anchor. All particles remain inside radius 190 pixels from their origin, with ample transparent margins.
+Pixel style: each cell is conceptually 64 x 64 logical pixels enlarged exactly 8x nearest-neighbor. Chunky square blocks aligned to an 8px grid, hard stair-step edges, flat colors, no antialiasing, no blurred glow, no gradients or painterly texture. Tight palette milk-white #fff7df, pale cyan #9ae5db, muted teal #57bcb5, honey gold #e9b85a. Only the independent effect, no characters, weapon bodies, scene, shield prop, letters or numbers.
+Six consecutive frames of ONE short animation, not six icons. Frame 1 small seed, frame 2 peak, frame 3 expansion, frame 4 fragmentation, frame 5 decay, frame 6 nearly empty faint residue. Track the SAME components along coherent trajectories across all frames; motion continuous, no random replacement shapes. Alpha must genuinely vanish outside pixels; no hidden cloudy wash.
+Primary request: ORDINARY GUARD SPARK — short diagonal honey-gold and milk-white contact sparks, sharp compact deflection.
+Anchor marks contact point, never moved. Main motion is diagonally upper-right and lower-left along the same slash direction.
+Frame 1 tiny central diagonal white contact dash with gold border.
+Frame 2 bright brief crossing contact spark: slim short diagonal white core and 3 gold splinters beginning upper-right / lower-left; NO circular ring.
+Frame 3 core diminishes, same 3 splinters advance outward along their fixed diagonal paths.
+Frame 4 the diagonal streaks break into smaller gold rectangular segments along same paths.
+Frame 5 a few small pale-gold segments farther out.
+Frame 6 only 3 tiny faint gold terminal specks, almost empty. All art stays inside 190 px of contact. Modest scale, distinctly less spectacular than perfect parry. Do not draw a sword or shield.

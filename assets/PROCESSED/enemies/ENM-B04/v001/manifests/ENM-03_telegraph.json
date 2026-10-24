@@ -1,0 +1,233 @@
+{
+  "id": "ENM-03_telegraph",
+  "name": "telegraph",
+  "enemyId": "ENM-03",
+  "gameEnemyId": "milk_slime",
+  "label": "telegraph",
+  "kind": "body",
+  "sourcePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-03/ENM-03_actions_A.png",
+  "sourceRects": [
+    [
+      0,
+      552,
+      378,
+      277
+    ],
+    [
+      378,
+      552,
+      320,
+      277
+    ],
+    [
+      698,
+      552,
+      330,
+      277
+    ],
+    [
+      1028,
+      552,
+      374,
+      277
+    ]
+  ],
+  "sourceAnchors": [
+    [
+      175.25,
+      267.0
+    ],
+    [
+      147.75,
+      267.0
+    ],
+    [
+      178.25,
+      267.0
+    ],
+    [
+      198.75,
+      267.0
+    ]
+  ],
+  "scale": 0.24444444444444444,
+  "target": [
+    192,
+    160
+  ],
+  "anchor": [
+    96,
+    136
+  ],
+  "fps": 8,
+  "loop": false,
+  "promptPath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-03/ENM-03_A.prompt.txt",
+  "generationMode": "built-in-imagegen",
+  "processing": "rect crop, fixed per-sheet nearest scale, integer semantic root translation; original alpha retained",
+  "provenancePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-03/provenance.json",
+  "frames": [
+    "frames/ENM-03_telegraph/ENM-03_telegraph_00.png",
+    "frames/ENM-03_telegraph/ENM-03_telegraph_01.png",
+    "frames/ENM-03_telegraph/ENM-03_telegraph_02.png",
+    "frames/ENM-03_telegraph/ENM-03_telegraph_03.png"
+  ],
+  "sheet": "sheets/ENM-03_telegraph.png",
+  "sheetRects": [
+    [
+      0,
+      0,
+      192,
+      160
+    ],
+    [
+      192,
+      0,
+      192,
+      160
+    ],
+    [
+      384,
+      0,
+      192,
+      160
+    ],
+    [
+      576,
+      0,
+      192,
+      160
+    ]
+  ],
+  "atlas": "atlas/ENM-03_telegraph.png",
+  "atlasColumns": 2,
+  "atlasRows": 2,
+  "atlasRects": [
+    [
+      0,
+      0,
+      192,
+      160
+    ],
+    [
+      192,
+      0,
+      192,
+      160
+    ],
+    [
+      0,
+      160,
+      192,
+      160
+    ],
+    [
+      192,
+      160,
+      192,
+      160
+    ]
+  ],
+  "sourceSize": [
+    1402,
+    1122
+  ],
+  "sourceSha256": "71136ea8634baf8f75fedbb1eb273c31dfa2e4d4ad96789573b089cfe95b02ab",
+  "sourceBatch": "assets/RAW/enemies/ENM-B04/v001/ENM-03/batch.json",
+  "frameCount": 4,
+  "frameDetails": [
+    {
+      "sourceRect": [
+        0,
+        552,
+        378,
+        277
+      ],
+      "sourceAnchor": [
+        175.25,
+        267.0
+      ],
+      "offset": [
+        53,
+        71
+      ],
+      "alphaBBox": [
+        60,
+        72,
+        145,
+        139
+      ],
+      "sourceEdgeAlpha": 1
+    },
+    {
+      "sourceRect": [
+        378,
+        552,
+        320,
+        277
+      ],
+      "sourceAnchor": [
+        147.75,
+        267.0
+      ],
+      "offset": [
+        60,
+        71
+      ],
+      "alphaBBox": [
+        60,
+        71,
+        136,
+        138
+      ],
+      "sourceEdgeAlpha": 1
+    },
+    {
+      "sourceRect": [
+        698,
+        552,
+        330,
+        277
+      ],
+      "sourceAnchor": [
+        178.25,
+        267.0
+      ],
+      "offset": [
+        52,
+        71
+      ],
+      "alphaBBox": [
+        52,
+        71,
+        125,
+        139
+      ],
+      "sourceEdgeAlpha": 1
+    },
+    {
+      "sourceRect": [
+        1028,
+        552,
+        374,
+        277
+      ],
+      "sourceAnchor": [
+        198.75,
+        267.0
+      ],
+      "offset": [
+        47,
+        71
+      ],
+      "alphaBBox": [
+        47,
+        71,
+        133,
+        139
+      ],
+      "sourceEdgeAlpha": 1
+    }
+  ],
+  "fadeStartNormalized": 1.0,
+  "loopBoundaryMeanDifference": 15.666666666666666
+}

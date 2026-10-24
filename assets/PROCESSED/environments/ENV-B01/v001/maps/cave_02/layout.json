@@ -1,0 +1,2499 @@
+{
+  "id": "cave_02",
+  "name": "荧光回廊",
+  "size_px": [
+    1280,
+    360
+  ],
+  "kit": "ENV-03",
+  "source": "data/world/regions.json",
+  "source_sha256": "c17448d54a40227ebf9896c6fd951130fd670aafcd5546cb3fce8be39b03df29",
+  "design": {
+    "role": "暗区探索与资源支路",
+    "landmark": "集中成簇的荧光矿脉",
+    "composition": "矿簇在两侧和高台处点亮；怪物高度留空，奖励不与矿光混淆。",
+    "pacing": "可选攀爬与主路并存。",
+    "exploration": "沿高台观察体力碎片，地面继续主线。",
+    "background_brightness": 0.86
+  },
+  "source_room": {
+    "id": "cave_02",
+    "name": "荧光回廊",
+    "region": "cave",
+    "size": [
+      2,
+      1
+    ],
+    "bg": "#120f1c",
+    "platforms": [
+      [
+        0,
+        340,
+        1280,
+        20
+      ],
+      [
+        260,
+        292,
+        140,
+        16
+      ],
+      [
+        520,
+        244,
+        140,
+        16
+      ],
+      [
+        780,
+        196,
+        140,
+        16
+      ],
+      [
+        1040,
+        120,
+        180,
+        16
+      ]
+    ],
+    "spawn": [
+      80,
+      323
+    ],
+    "doors": [
+      {
+        "id": "w",
+        "pos": [
+          0,
+          323
+        ],
+        "target": "cave_01",
+        "target_door": "e",
+        "one_way": false,
+        "requires": ""
+      },
+      {
+        "id": "e",
+        "pos": [
+          1270,
+          323
+        ],
+        "target": "cave_03",
+        "target_door": "w",
+        "one_way": false,
+        "requires": ""
+      }
+    ],
+    "enemies": [
+      {
+        "id": "lamp_bug",
+        "pos": [
+          400,
+          220
+        ]
+      },
+      {
+        "id": "lamp_bug",
+        "pos": [
+          900,
+          240
+        ]
+      },
+      {
+        "id": "shadow_wisp",
+        "pos": [
+          650,
+          290
+        ]
+      }
+    ],
+    "chests": [
+      {
+        "id": "chest_c02",
+        "pos": [
+          1130,
+          110
+        ],
+        "item": "sta_fragment",
+        "count": 1,
+        "coins": 0,
+        "hidden": false
+      }
+    ],
+    "hazards": [],
+    "checkpoints": [],
+    "features": [],
+    "map_rect": [
+      9,
+      3,
+      2,
+      1
+    ]
+  },
+  "platforms": [
+    {
+      "index": 0,
+      "rect": [
+        0,
+        340,
+        1280,
+        20
+      ],
+      "kit": "ENV-03",
+      "cells": [
+        {
+          "position": [
+            0,
+            0
+          ],
+          "atlas_index": 0,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            16,
+            0
+          ],
+          "atlas_index": 1,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            32,
+            0
+          ],
+          "atlas_index": 1,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            48,
+            0
+          ],
+          "atlas_index": 1,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            64,
+            0
+          ],
+          "atlas_index": 1,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            80,
+            0
+          ],
+          "atlas_index": 1,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            96,
+            0
+          ],
+          "atlas_index": 1,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            112,
+            0
+          ],
+          "atlas_index": 1,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            128,
+            0
+          ],
+          "atlas_index": 1,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            144,
+            0
+          ],
+          "atlas_index": 1,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            160,
+            0
+          ],
+          "atlas_index": 1,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            176,
+            0
+          ],
+          "atlas_index": 1,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            192,
+            0
+          ],
+          "atlas_index": 1,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            208,
+            0
+          ],
+          "atlas_index": 1,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            224,
+            0
+          ],
+          "atlas_index": 1,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            240,
+            0
+          ],
+          "atlas_index": 1,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            256,
+            0
+          ],
+          "atlas_index": 1,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            272,
+            0
+          ],
+          "atlas_index": 1,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            288,
+            0
+          ],
+          "atlas_index": 1,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            304,
+            0
+          ],
+          "atlas_index": 1,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            320,
+            0
+          ],
+          "atlas_index": 1,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            336,
+            0
+          ],
+          "atlas_index": 1,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            352,
+            0
+          ],
+          "atlas_index": 1,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            368,
+            0
+          ],
+          "atlas_index": 1,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            384,
+            0
+          ],
+          "atlas_index": 1,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            400,
+            0
+          ],
+          "atlas_index": 1,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            416,
+            0
+          ],
+          "atlas_index": 1,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            432,
+            0
+          ],
+          "atlas_index": 1,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            448,
+            0
+          ],
+          "atlas_index": 1,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            464,
+            0
+          ],
+          "atlas_index": 1,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            480,
+            0
+          ],
+          "atlas_index": 1,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            496,
+            0
+          ],
+          "atlas_index": 1,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            512,
+            0
+          ],
+          "atlas_index": 1,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            528,
+            0
+          ],
+          "atlas_index": 1,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            544,
+            0
+          ],
+          "atlas_index": 1,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            560,
+            0
+          ],
+          "atlas_index": 1,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            576,
+            0
+          ],
+          "atlas_index": 1,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            592,
+            0
+          ],
+          "atlas_index": 1,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            608,
+            0
+          ],
+          "atlas_index": 1,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            624,
+            0
+          ],
+          "atlas_index": 1,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            640,
+            0
+          ],
+          "atlas_index": 1,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            656,
+            0
+          ],
+          "atlas_index": 1,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            672,
+            0
+          ],
+          "atlas_index": 1,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            688,
+            0
+          ],
+          "atlas_index": 1,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            704,
+            0
+          ],
+          "atlas_index": 1,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            720,
+            0
+          ],
+          "atlas_index": 1,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            736,
+            0
+          ],
+          "atlas_index": 1,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            752,
+            0
+          ],
+          "atlas_index": 1,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            768,
+            0
+          ],
+          "atlas_index": 1,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            784,
+            0
+          ],
+          "atlas_index": 1,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            800,
+            0
+          ],
+          "atlas_index": 1,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            816,
+            0
+          ],
+          "atlas_index": 1,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            832,
+            0
+          ],
+          "atlas_index": 1,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            848,
+            0
+          ],
+          "atlas_index": 1,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            864,
+            0
+          ],
+          "atlas_index": 1,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            880,
+            0
+          ],
+          "atlas_index": 1,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            896,
+            0
+          ],
+          "atlas_index": 1,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            912,
+            0
+          ],
+          "atlas_index": 1,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            928,
+            0
+          ],
+          "atlas_index": 1,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            944,
+            0
+          ],
+          "atlas_index": 1,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            960,
+            0
+          ],
+          "atlas_index": 1,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            976,
+            0
+          ],
+          "atlas_index": 1,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            992,
+            0
+          ],
+          "atlas_index": 1,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            1008,
+            0
+          ],
+          "atlas_index": 1,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            1024,
+            0
+          ],
+          "atlas_index": 1,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            1040,
+            0
+          ],
+          "atlas_index": 1,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            1056,
+            0
+          ],
+          "atlas_index": 1,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            1072,
+            0
+          ],
+          "atlas_index": 1,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            1088,
+            0
+          ],
+          "atlas_index": 1,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            1104,
+            0
+          ],
+          "atlas_index": 1,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            1120,
+            0
+          ],
+          "atlas_index": 1,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            1136,
+            0
+          ],
+          "atlas_index": 1,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            1152,
+            0
+          ],
+          "atlas_index": 1,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            1168,
+            0
+          ],
+          "atlas_index": 1,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            1184,
+            0
+          ],
+          "atlas_index": 1,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            1200,
+            0
+          ],
+          "atlas_index": 1,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            1216,
+            0
+          ],
+          "atlas_index": 1,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            1232,
+            0
+          ],
+          "atlas_index": 1,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            1248,
+            0
+          ],
+          "atlas_index": 1,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            1264,
+            0
+          ],
+          "atlas_index": 2,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            0,
+            16
+          ],
+          "atlas_index": 3,
+          "visible_size": [
+            16,
+            4
+          ]
+        },
+        {
+          "position": [
+            16,
+            16
+          ],
+          "atlas_index": 4,
+          "visible_size": [
+            16,
+            4
+          ]
+        },
+        {
+          "position": [
+            32,
+            16
+          ],
+          "atlas_index": 4,
+          "visible_size": [
+            16,
+            4
+          ]
+        },
+        {
+          "position": [
+            48,
+            16
+          ],
+          "atlas_index": 4,
+          "visible_size": [
+            16,
+            4
+          ]
+        },
+        {
+          "position": [
+            64,
+            16
+          ],
+          "atlas_index": 4,
+          "visible_size": [
+            16,
+            4
+          ]
+        },
+        {
+          "position": [
+            80,
+            16
+          ],
+          "atlas_index": 4,
+          "visible_size": [
+            16,
+            4
+          ]
+        },
+        {
+          "position": [
+            96,
+            16
+          ],
+          "atlas_index": 4,
+          "visible_size": [
+            16,
+            4
+          ]
+        },
+        {
+          "position": [
+            112,
+            16
+          ],
+          "atlas_index": 4,
+          "visible_size": [
+            16,
+            4
+          ]
+        },
+        {
+          "position": [
+            128,
+            16
+          ],
+          "atlas_index": 4,
+          "visible_size": [
+            16,
+            4
+          ]
+        },
+        {
+          "position": [
+            144,
+            16
+          ],
+          "atlas_index": 4,
+          "visible_size": [
+            16,
+            4
+          ]
+        },
+        {
+          "position": [
+            160,
+            16
+          ],
+          "atlas_index": 4,
+          "visible_size": [
+            16,
+            4
+          ]
+        },
+        {
+          "position": [
+            176,
+            16
+          ],
+          "atlas_index": 4,
+          "visible_size": [
+            16,
+            4
+          ]
+        },
+        {
+          "position": [
+            192,
+            16
+          ],
+          "atlas_index": 4,
+          "visible_size": [
+            16,
+            4
+          ]
+        },
+        {
+          "position": [
+            208,
+            16
+          ],
+          "atlas_index": 4,
+          "visible_size": [
+            16,
+            4
+          ]
+        },
+        {
+          "position": [
+            224,
+            16
+          ],
+          "atlas_index": 4,
+          "visible_size": [
+            16,
+            4
+          ]
+        },
+        {
+          "position": [
+            240,
+            16
+          ],
+          "atlas_index": 4,
+          "visible_size": [
+            16,
+            4
+          ]
+        },
+        {
+          "position": [
+            256,
+            16
+          ],
+          "atlas_index": 4,
+          "visible_size": [
+            16,
+            4
+          ]
+        },
+        {
+          "position": [
+            272,
+            16
+          ],
+          "atlas_index": 4,
+          "visible_size": [
+            16,
+            4
+          ]
+        },
+        {
+          "position": [
+            288,
+            16
+          ],
+          "atlas_index": 4,
+          "visible_size": [
+            16,
+            4
+          ]
+        },
+        {
+          "position": [
+            304,
+            16
+          ],
+          "atlas_index": 4,
+          "visible_size": [
+            16,
+            4
+          ]
+        },
+        {
+          "position": [
+            320,
+            16
+          ],
+          "atlas_index": 4,
+          "visible_size": [
+            16,
+            4
+          ]
+        },
+        {
+          "position": [
+            336,
+            16
+          ],
+          "atlas_index": 4,
+          "visible_size": [
+            16,
+            4
+          ]
+        },
+        {
+          "position": [
+            352,
+            16
+          ],
+          "atlas_index": 4,
+          "visible_size": [
+            16,
+            4
+          ]
+        },
+        {
+          "position": [
+            368,
+            16
+          ],
+          "atlas_index": 4,
+          "visible_size": [
+            16,
+            4
+          ]
+        },
+        {
+          "position": [
+            384,
+            16
+          ],
+          "atlas_index": 4,
+          "visible_size": [
+            16,
+            4
+          ]
+        },
+        {
+          "position": [
+            400,
+            16
+          ],
+          "atlas_index": 4,
+          "visible_size": [
+            16,
+            4
+          ]
+        },
+        {
+          "position": [
+            416,
+            16
+          ],
+          "atlas_index": 4,
+          "visible_size": [
+            16,
+            4
+          ]
+        },
+        {
+          "position": [
+            432,
+            16
+          ],
+          "atlas_index": 4,
+          "visible_size": [
+            16,
+            4
+          ]
+        },
+        {
+          "position": [
+            448,
+            16
+          ],
+          "atlas_index": 4,
+          "visible_size": [
+            16,
+            4
+          ]
+        },
+        {
+          "position": [
+            464,
+            16
+          ],
+          "atlas_index": 4,
+          "visible_size": [
+            16,
+            4
+          ]
+        },
+        {
+          "position": [
+            480,
+            16
+          ],
+          "atlas_index": 4,
+          "visible_size": [
+            16,
+            4
+          ]
+        },
+        {
+          "position": [
+            496,
+            16
+          ],
+          "atlas_index": 4,
+          "visible_size": [
+            16,
+            4
+          ]
+        },
+        {
+          "position": [
+            512,
+            16
+          ],
+          "atlas_index": 4,
+          "visible_size": [
+            16,
+            4
+          ]
+        },
+        {
+          "position": [
+            528,
+            16
+          ],
+          "atlas_index": 4,
+          "visible_size": [
+            16,
+            4
+          ]
+        },
+        {
+          "position": [
+            544,
+            16
+          ],
+          "atlas_index": 4,
+          "visible_size": [
+            16,
+            4
+          ]
+        },
+        {
+          "position": [
+            560,
+            16
+          ],
+          "atlas_index": 4,
+          "visible_size": [
+            16,
+            4
+          ]
+        },
+        {
+          "position": [
+            576,
+            16
+          ],
+          "atlas_index": 4,
+          "visible_size": [
+            16,
+            4
+          ]
+        },
+        {
+          "position": [
+            592,
+            16
+          ],
+          "atlas_index": 4,
+          "visible_size": [
+            16,
+            4
+          ]
+        },
+        {
+          "position": [
+            608,
+            16
+          ],
+          "atlas_index": 4,
+          "visible_size": [
+            16,
+            4
+          ]
+        },
+        {
+          "position": [
+            624,
+            16
+          ],
+          "atlas_index": 4,
+          "visible_size": [
+            16,
+            4
+          ]
+        },
+        {
+          "position": [
+            640,
+            16
+          ],
+          "atlas_index": 4,
+          "visible_size": [
+            16,
+            4
+          ]
+        },
+        {
+          "position": [
+            656,
+            16
+          ],
+          "atlas_index": 4,
+          "visible_size": [
+            16,
+            4
+          ]
+        },
+        {
+          "position": [
+            672,
+            16
+          ],
+          "atlas_index": 4,
+          "visible_size": [
+            16,
+            4
+          ]
+        },
+        {
+          "position": [
+            688,
+            16
+          ],
+          "atlas_index": 4,
+          "visible_size": [
+            16,
+            4
+          ]
+        },
+        {
+          "position": [
+            704,
+            16
+          ],
+          "atlas_index": 4,
+          "visible_size": [
+            16,
+            4
+          ]
+        },
+        {
+          "position": [
+            720,
+            16
+          ],
+          "atlas_index": 4,
+          "visible_size": [
+            16,
+            4
+          ]
+        },
+        {
+          "position": [
+            736,
+            16
+          ],
+          "atlas_index": 4,
+          "visible_size": [
+            16,
+            4
+          ]
+        },
+        {
+          "position": [
+            752,
+            16
+          ],
+          "atlas_index": 4,
+          "visible_size": [
+            16,
+            4
+          ]
+        },
+        {
+          "position": [
+            768,
+            16
+          ],
+          "atlas_index": 4,
+          "visible_size": [
+            16,
+            4
+          ]
+        },
+        {
+          "position": [
+            784,
+            16
+          ],
+          "atlas_index": 4,
+          "visible_size": [
+            16,
+            4
+          ]
+        },
+        {
+          "position": [
+            800,
+            16
+          ],
+          "atlas_index": 4,
+          "visible_size": [
+            16,
+            4
+          ]
+        },
+        {
+          "position": [
+            816,
+            16
+          ],
+          "atlas_index": 4,
+          "visible_size": [
+            16,
+            4
+          ]
+        },
+        {
+          "position": [
+            832,
+            16
+          ],
+          "atlas_index": 4,
+          "visible_size": [
+            16,
+            4
+          ]
+        },
+        {
+          "position": [
+            848,
+            16
+          ],
+          "atlas_index": 4,
+          "visible_size": [
+            16,
+            4
+          ]
+        },
+        {
+          "position": [
+            864,
+            16
+          ],
+          "atlas_index": 4,
+          "visible_size": [
+            16,
+            4
+          ]
+        },
+        {
+          "position": [
+            880,
+            16
+          ],
+          "atlas_index": 4,
+          "visible_size": [
+            16,
+            4
+          ]
+        },
+        {
+          "position": [
+            896,
+            16
+          ],
+          "atlas_index": 4,
+          "visible_size": [
+            16,
+            4
+          ]
+        },
+        {
+          "position": [
+            912,
+            16
+          ],
+          "atlas_index": 4,
+          "visible_size": [
+            16,
+            4
+          ]
+        },
+        {
+          "position": [
+            928,
+            16
+          ],
+          "atlas_index": 4,
+          "visible_size": [
+            16,
+            4
+          ]
+        },
+        {
+          "position": [
+            944,
+            16
+          ],
+          "atlas_index": 4,
+          "visible_size": [
+            16,
+            4
+          ]
+        },
+        {
+          "position": [
+            960,
+            16
+          ],
+          "atlas_index": 4,
+          "visible_size": [
+            16,
+            4
+          ]
+        },
+        {
+          "position": [
+            976,
+            16
+          ],
+          "atlas_index": 4,
+          "visible_size": [
+            16,
+            4
+          ]
+        },
+        {
+          "position": [
+            992,
+            16
+          ],
+          "atlas_index": 4,
+          "visible_size": [
+            16,
+            4
+          ]
+        },
+        {
+          "position": [
+            1008,
+            16
+          ],
+          "atlas_index": 4,
+          "visible_size": [
+            16,
+            4
+          ]
+        },
+        {
+          "position": [
+            1024,
+            16
+          ],
+          "atlas_index": 4,
+          "visible_size": [
+            16,
+            4
+          ]
+        },
+        {
+          "position": [
+            1040,
+            16
+          ],
+          "atlas_index": 4,
+          "visible_size": [
+            16,
+            4
+          ]
+        },
+        {
+          "position": [
+            1056,
+            16
+          ],
+          "atlas_index": 4,
+          "visible_size": [
+            16,
+            4
+          ]
+        },
+        {
+          "position": [
+            1072,
+            16
+          ],
+          "atlas_index": 4,
+          "visible_size": [
+            16,
+            4
+          ]
+        },
+        {
+          "position": [
+            1088,
+            16
+          ],
+          "atlas_index": 4,
+          "visible_size": [
+            16,
+            4
+          ]
+        },
+        {
+          "position": [
+            1104,
+            16
+          ],
+          "atlas_index": 4,
+          "visible_size": [
+            16,
+            4
+          ]
+        },
+        {
+          "position": [
+            1120,
+            16
+          ],
+          "atlas_index": 4,
+          "visible_size": [
+            16,
+            4
+          ]
+        },
+        {
+          "position": [
+            1136,
+            16
+          ],
+          "atlas_index": 4,
+          "visible_size": [
+            16,
+            4
+          ]
+        },
+        {
+          "position": [
+            1152,
+            16
+          ],
+          "atlas_index": 4,
+          "visible_size": [
+            16,
+            4
+          ]
+        },
+        {
+          "position": [
+            1168,
+            16
+          ],
+          "atlas_index": 4,
+          "visible_size": [
+            16,
+            4
+          ]
+        },
+        {
+          "position": [
+            1184,
+            16
+          ],
+          "atlas_index": 4,
+          "visible_size": [
+            16,
+            4
+          ]
+        },
+        {
+          "position": [
+            1200,
+            16
+          ],
+          "atlas_index": 4,
+          "visible_size": [
+            16,
+            4
+          ]
+        },
+        {
+          "position": [
+            1216,
+            16
+          ],
+          "atlas_index": 4,
+          "visible_size": [
+            16,
+            4
+          ]
+        },
+        {
+          "position": [
+            1232,
+            16
+          ],
+          "atlas_index": 4,
+          "visible_size": [
+            16,
+            4
+          ]
+        },
+        {
+          "position": [
+            1248,
+            16
+          ],
+          "atlas_index": 4,
+          "visible_size": [
+            16,
+            4
+          ]
+        },
+        {
+          "position": [
+            1264,
+            16
+          ],
+          "atlas_index": 5,
+          "visible_size": [
+            16,
+            4
+          ]
+        }
+      ],
+      "global_grid_aligned": false
+    },
+    {
+      "index": 1,
+      "rect": [
+        260,
+        292,
+        140,
+        16
+      ],
+      "kit": "ENV-03",
+      "cells": [
+        {
+          "position": [
+            0,
+            0
+          ],
+          "atlas_index": 10,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            16,
+            0
+          ],
+          "atlas_index": 11,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            32,
+            0
+          ],
+          "atlas_index": 11,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            48,
+            0
+          ],
+          "atlas_index": 11,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            64,
+            0
+          ],
+          "atlas_index": 11,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            80,
+            0
+          ],
+          "atlas_index": 11,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            96,
+            0
+          ],
+          "atlas_index": 11,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            112,
+            0
+          ],
+          "atlas_index": 11,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            124,
+            0
+          ],
+          "atlas_index": 12,
+          "visible_size": [
+            16,
+            16
+          ]
+        }
+      ],
+      "global_grid_aligned": false
+    },
+    {
+      "index": 2,
+      "rect": [
+        520,
+        244,
+        140,
+        16
+      ],
+      "kit": "ENV-03",
+      "cells": [
+        {
+          "position": [
+            0,
+            0
+          ],
+          "atlas_index": 10,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            16,
+            0
+          ],
+          "atlas_index": 11,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            32,
+            0
+          ],
+          "atlas_index": 11,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            48,
+            0
+          ],
+          "atlas_index": 11,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            64,
+            0
+          ],
+          "atlas_index": 11,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            80,
+            0
+          ],
+          "atlas_index": 11,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            96,
+            0
+          ],
+          "atlas_index": 11,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            112,
+            0
+          ],
+          "atlas_index": 11,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            124,
+            0
+          ],
+          "atlas_index": 12,
+          "visible_size": [
+            16,
+            16
+          ]
+        }
+      ],
+      "global_grid_aligned": false
+    },
+    {
+      "index": 3,
+      "rect": [
+        780,
+        196,
+        140,
+        16
+      ],
+      "kit": "ENV-03",
+      "cells": [
+        {
+          "position": [
+            0,
+            0
+          ],
+          "atlas_index": 10,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            16,
+            0
+          ],
+          "atlas_index": 11,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            32,
+            0
+          ],
+          "atlas_index": 11,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            48,
+            0
+          ],
+          "atlas_index": 11,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            64,
+            0
+          ],
+          "atlas_index": 11,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            80,
+            0
+          ],
+          "atlas_index": 11,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            96,
+            0
+          ],
+          "atlas_index": 11,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            112,
+            0
+          ],
+          "atlas_index": 11,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            124,
+            0
+          ],
+          "atlas_index": 12,
+          "visible_size": [
+            16,
+            16
+          ]
+        }
+      ],
+      "global_grid_aligned": false
+    },
+    {
+      "index": 4,
+      "rect": [
+        1040,
+        120,
+        180,
+        16
+      ],
+      "kit": "ENV-03",
+      "cells": [
+        {
+          "position": [
+            0,
+            0
+          ],
+          "atlas_index": 10,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            16,
+            0
+          ],
+          "atlas_index": 11,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            32,
+            0
+          ],
+          "atlas_index": 11,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            48,
+            0
+          ],
+          "atlas_index": 11,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            64,
+            0
+          ],
+          "atlas_index": 11,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            80,
+            0
+          ],
+          "atlas_index": 11,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            96,
+            0
+          ],
+          "atlas_index": 11,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            112,
+            0
+          ],
+          "atlas_index": 11,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            128,
+            0
+          ],
+          "atlas_index": 11,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            144,
+            0
+          ],
+          "atlas_index": 11,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            160,
+            0
+          ],
+          "atlas_index": 11,
+          "visible_size": [
+            16,
+            16
+          ]
+        },
+        {
+          "position": [
+            164,
+            0
+          ],
+          "atlas_index": 12,
+          "visible_size": [
+            16,
+            16
+          ]
+        }
+      ],
+      "global_grid_aligned": false
+    }
+  ],
+  "placements": [
+    {
+      "kit": "ENV-03",
+      "prop_id": "hidden_crevice",
+      "path": "assets/PROCESSED/environments/ENV-B01/v001/ENV-03/props/hidden_crevice.png",
+      "position": [
+        88,
+        228
+      ],
+      "anchor": [
+        120,
+        340
+      ],
+      "opacity": 0.42,
+      "flip_h": false,
+      "z_index": -12
+    },
+    {
+      "kit": "ENV-03",
+      "prop_id": "glow_roots",
+      "path": "assets/PROCESSED/environments/ENV-B01/v001/ENV-03/props/glow_roots.png",
+      "position": [
+        1128,
+        0
+      ],
+      "anchor": [
+        1160,
+        0
+      ],
+      "opacity": 0.55,
+      "flip_h": false,
+      "z_index": -12
+    },
+    {
+      "kit": "ENV-03",
+      "prop_id": "crystal_cluster",
+      "path": "assets/PROCESSED/environments/ENV-B01/v001/ENV-03/props/crystal_cluster.png",
+      "position": [
+        1158,
+        276
+      ],
+      "anchor": [
+        1190,
+        340
+      ],
+      "opacity": 0.75,
+      "flip_h": false,
+      "z_index": 1
+    },
+    {
+      "kit": "ENV-03",
+      "prop_id": "crystal_cluster",
+      "path": "assets/PROCESSED/environments/ENV-B01/v001/ENV-03/props/crystal_cluster.png",
+      "position": [
+        248,
+        228
+      ],
+      "anchor": [
+        280,
+        292
+      ],
+      "opacity": 0.75,
+      "flip_h": false,
+      "z_index": 1
+    },
+    {
+      "kit": "ENV-01",
+      "prop_id": "chest",
+      "path": "assets/PROCESSED/environments/ENV-B01/v001/ENV-01/props/chest.png",
+      "position": [
+        1098,
+        72
+      ],
+      "anchor": [
+        1130,
+        120
+      ],
+      "opacity": 1,
+      "flip_h": false,
+      "z_index": 1
+    }
+  ],
+  "layers": [
+    {
+      "path": "background.png",
+      "z_index": -30
+    },
+    {
+      "path": "midground.png",
+      "z_index": -12
+    },
+    {
+      "path": "terrain.png",
+      "z_index": 0
+    },
+    {
+      "path": "props.png",
+      "z_index": 1
+    },
+    {
+      "path": "hazards.png",
+      "z_index": 2
+    }
+  ],
+  "limitations": [
+    "独立美术场景，不含敌人AI、开门、拾取、存档逻辑。",
+    "平台碰撞忠实保留源表，非整格矩形不吸附。",
+    "危险图层为静态设计覆盖，不是酸池动画。"
+  ]
+}

@@ -1,0 +1,392 @@
+{
+  "assetId": "ability_double_jump",
+  "action": "idle",
+  "version": "v001",
+  "kind": "RAW_GENERATED_SHEET",
+  "file": "ITEM_ability_double_jump_idle_v001.png",
+  "actualSize": [
+    1254,
+    1254
+  ],
+  "mode": "RGBA",
+  "grid": [
+    2,
+    2
+  ],
+  "frameSize": [
+    627,
+    627
+  ],
+  "frameOrder": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "sourceAnchors": [
+    [
+      313.5,
+      470.25
+    ],
+    [
+      313.5,
+      470.25
+    ],
+    [
+      313.5,
+      470.25
+    ],
+    [
+      313.5,
+      470.25
+    ]
+  ],
+  "anchorMeaning": "Nominal local pickup root scaled from requested grid. Generated body is not registered to this root; measure and register in PROCESSED.",
+  "requestedSize": [
+    1024,
+    1024
+  ],
+  "generator": "built-in image_gen.imagegen",
+  "generatorPath": "/home/lululu/.codex/generated_images/01a16cb2-c4aa-7542-8083-cd55e29051e9/exec-444143ea-e58d-483e-817e-583f373bf909.png",
+  "sha256": "120786df19908398c86da9cb7a8b9403da99b026861d399ce89192f2e0a68c1f",
+  "alpha": {
+    "range": [
+      0,
+      255
+    ],
+    "transparentPixelCount": 1132863,
+    "partialAlphaPixelCount": 438945,
+    "opaquePixelCount": 708
+  },
+  "frames": [
+    {
+      "index": 0,
+      "cellRect": [
+        0,
+        0,
+        627,
+        627
+      ],
+      "alphaBBoxLocal": [
+        0,
+        24,
+        627,
+        627
+      ],
+      "contentBBoxAtAlpha128": [
+        171,
+        88,
+        497,
+        562
+      ],
+      "mainBodyBBoxLocalAtAlpha128": [
+        206,
+        88,
+        442,
+        401
+      ],
+      "mainBodyCenterBottomLocal": [
+        324.0,
+        401
+      ],
+      "mainBodyAreaAtAlpha128": 47499,
+      "componentsAtAlpha128": [
+        {
+          "area": 47499,
+          "bbox": [
+            206,
+            88,
+            442,
+            401
+          ]
+        },
+        {
+          "area": 13220,
+          "bbox": [
+            171,
+            447,
+            475,
+            562
+          ]
+        },
+        {
+          "area": 11892,
+          "bbox": [
+            183,
+            360,
+            465,
+            480
+          ]
+        },
+        {
+          "area": 1530,
+          "bbox": [
+            174,
+            142,
+            232,
+            207
+          ]
+        },
+        {
+          "area": 958,
+          "bbox": [
+            454,
+            273,
+            497,
+            328
+          ]
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "cellRect": [
+        627,
+        0,
+        627,
+        627
+      ],
+      "alphaBBoxLocal": [
+        1,
+        21,
+        626,
+        627
+      ],
+      "contentBBoxAtAlpha128": [
+        171,
+        88,
+        497,
+        562
+      ],
+      "mainBodyBBoxLocalAtAlpha128": [
+        206,
+        88,
+        442,
+        401
+      ],
+      "mainBodyCenterBottomLocal": [
+        324.0,
+        401
+      ],
+      "mainBodyAreaAtAlpha128": 47482,
+      "componentsAtAlpha128": [
+        {
+          "area": 47482,
+          "bbox": [
+            206,
+            88,
+            442,
+            401
+          ]
+        },
+        {
+          "area": 13191,
+          "bbox": [
+            171,
+            447,
+            475,
+            562
+          ]
+        },
+        {
+          "area": 11859,
+          "bbox": [
+            184,
+            360,
+            465,
+            480
+          ]
+        },
+        {
+          "area": 1589,
+          "bbox": [
+            173,
+            142,
+            232,
+            207
+          ]
+        },
+        {
+          "area": 923,
+          "bbox": [
+            454,
+            276,
+            497,
+            329
+          ]
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "cellRect": [
+        0,
+        627,
+        627,
+        627
+      ],
+      "alphaBBoxLocal": [
+        0,
+        0,
+        627,
+        627
+      ],
+      "contentBBoxAtAlpha128": [
+        171,
+        88,
+        502,
+        562
+      ],
+      "mainBodyBBoxLocalAtAlpha128": [
+        206,
+        88,
+        442,
+        402
+      ],
+      "mainBodyCenterBottomLocal": [
+        324.0,
+        402
+      ],
+      "mainBodyAreaAtAlpha128": 47617,
+      "componentsAtAlpha128": [
+        {
+          "area": 47617,
+          "bbox": [
+            206,
+            88,
+            442,
+            402
+          ]
+        },
+        {
+          "area": 13276,
+          "bbox": [
+            171,
+            447,
+            475,
+            562
+          ]
+        },
+        {
+          "area": 11908,
+          "bbox": [
+            183,
+            359,
+            465,
+            481
+          ]
+        },
+        {
+          "area": 1597,
+          "bbox": [
+            172,
+            141,
+            232,
+            206
+          ]
+        },
+        {
+          "area": 1166,
+          "bbox": [
+            449,
+            276,
+            502,
+            328
+          ]
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "cellRect": [
+        627,
+        627,
+        627,
+        627
+      ],
+      "alphaBBoxLocal": [
+        1,
+        0,
+        611,
+        627
+      ],
+      "contentBBoxAtAlpha128": [
+        171,
+        88,
+        497,
+        562
+      ],
+      "mainBodyBBoxLocalAtAlpha128": [
+        206,
+        88,
+        442,
+        402
+      ],
+      "mainBodyCenterBottomLocal": [
+        324.0,
+        402
+      ],
+      "mainBodyAreaAtAlpha128": 47625,
+      "componentsAtAlpha128": [
+        {
+          "area": 47625,
+          "bbox": [
+            206,
+            88,
+            442,
+            402
+          ]
+        },
+        {
+          "area": 13253,
+          "bbox": [
+            171,
+            447,
+            475,
+            562
+          ]
+        },
+        {
+          "area": 11889,
+          "bbox": [
+            183,
+            359,
+            465,
+            481
+          ]
+        },
+        {
+          "area": 1545,
+          "bbox": [
+            174,
+            142,
+            232,
+            206
+          ]
+        },
+        {
+          "area": 948,
+          "bbox": [
+            454,
+            272,
+            497,
+            328
+          ]
+        }
+      ]
+    }
+  ],
+  "rawQA": {
+    "subject": "Cream-white primal milk droplet with exactly two cyan bubble arc tiers; extra ability reward, not part of formal 12 items.",
+    "transparency": "Genuine RGBA alpha confirmed. Preserve RAW bytes; low-alpha background flecks need processed QA.",
+    "continuity": "Four stationary repeated silhouettes; shimmer and tiny sparkle variation. Generated differences require processed registration and loop review.",
+    "frameOrderSuggestion": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "directGameImportApproved": false,
+    "readyForProcessed": true
+  }
+}

@@ -1,0 +1,179 @@
+{
+  "id": "ENM-11_move",
+  "enemyId": "ENM-11",
+  "gameEnemyId": "milk_moth",
+  "label": "飞奶蛾",
+  "name": "move",
+  "kind": "body",
+  "generationMode": "built-in image_gen",
+  "sourcePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-11/ENM-11_actions_A.png",
+  "sourceRects": [
+    [
+      0,
+      246,
+      366,
+      280
+    ],
+    [
+      366,
+      246,
+      400,
+      280
+    ],
+    [
+      766,
+      246,
+      376,
+      280
+    ],
+    [
+      1142,
+      246,
+      394,
+      280
+    ]
+  ],
+  "sourceAnchors": [
+    [
+      230,
+      156
+    ],
+    [
+      248,
+      156
+    ],
+    [
+      232,
+      156
+    ],
+    [
+      240,
+      156
+    ]
+  ],
+  "sourceSize": [
+    1536,
+    1024
+  ],
+  "sourceSha256": "8c634cdacd79254a4de015f223619ff1c231b815fef27a472e83eb0b5ac60f9f",
+  "sourceBatch": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-11/batch.json",
+  "promptPath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-11/ENM-11_A.prompt.txt",
+  "provenancePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-11/provenance.json",
+  "target": [
+    88,
+    64
+  ],
+  "anchor": [
+    44,
+    32
+  ],
+  "rootType": "flying",
+  "scale": 0.16,
+  "fps": 10,
+  "loop": true,
+  "frameCount": 4,
+  "frames": [
+    "frames/ENM-11_move/ENM-11_move_00.png",
+    "frames/ENM-11_move/ENM-11_move_01.png",
+    "frames/ENM-11_move/ENM-11_move_02.png",
+    "frames/ENM-11_move/ENM-11_move_03.png"
+  ],
+  "sheet": "sheets/ENM-11_move.png",
+  "frameDetails": [
+    {
+      "sourceRect": [
+        0,
+        246,
+        366,
+        280
+      ],
+      "sourceAnchor": [
+        230,
+        156
+      ],
+      "offset": [
+        7,
+        7
+      ],
+      "alphaBBox": [
+        10,
+        7,
+        66,
+        52
+      ]
+    },
+    {
+      "sourceRect": [
+        366,
+        246,
+        400,
+        280
+      ],
+      "sourceAnchor": [
+        248,
+        156
+      ],
+      "offset": [
+        4,
+        7
+      ],
+      "alphaBBox": [
+        4,
+        7,
+        67,
+        52
+      ]
+    },
+    {
+      "sourceRect": [
+        766,
+        246,
+        376,
+        280
+      ],
+      "sourceAnchor": [
+        232,
+        156
+      ],
+      "offset": [
+        7,
+        7
+      ],
+      "alphaBBox": [
+        7,
+        7,
+        67,
+        52
+      ]
+    },
+    {
+      "sourceRect": [
+        1142,
+        246,
+        394,
+        280
+      ],
+      "sourceAnchor": [
+        240,
+        156
+      ],
+      "offset": [
+        6,
+        7
+      ],
+      "alphaBBox": [
+        6,
+        7,
+        67,
+        52
+      ]
+    }
+  ],
+  "fadeStartNormalized": 1.0,
+  "phases": [
+    "move1",
+    "move2",
+    "move3",
+    "move4"
+  ]
+}

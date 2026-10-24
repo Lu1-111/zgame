@@ -1,0 +1,247 @@
+{
+  "id": "ELT-02_telegraph",
+  "name": "telegraph",
+  "enemyId": "ELT-02",
+  "gameEnemyId": "hive_guard",
+  "label": "蜂巢守卫 telegraph",
+  "sourcePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B03/v001/hive_guard/hive_guard_A_v002.png",
+  "sourceRects": [
+    [
+      0,
+      627,
+      314,
+      313
+    ],
+    [
+      314,
+      627,
+      313,
+      313
+    ],
+    [
+      627,
+      627,
+      313,
+      313
+    ],
+    [
+      940,
+      627,
+      314,
+      313
+    ]
+  ],
+  "sourceAnchors": [
+    [
+      200,
+      166
+    ],
+    [
+      200,
+      166
+    ],
+    [
+      200,
+      166
+    ],
+    [
+      200,
+      166
+    ]
+  ],
+  "sourceColumns": 4,
+  "sourceRows": 4,
+  "sourceIndices": [
+    8,
+    9,
+    10,
+    11
+  ],
+  "target": [
+    120,
+    112
+  ],
+  "anchor": [
+    66,
+    56
+  ],
+  "scale": 0.32,
+  "fps": 8,
+  "loop": false,
+  "kind": "body",
+  "phases": [
+    "telegraph"
+  ],
+  "notes": [
+    "v002 generated transparent-gutter revision preserves identity and action order; fixed scale across whole enemy. Death final fade is component-driven."
+  ],
+  "promptPath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B03/v001/hive_guard/hive_guard_A_v002.prompt.txt",
+  "provenancePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B03/v001/hive_guard/hive_guard_A_v002.provenance.json",
+  "generationMode": "built-in image_gen",
+  "canvasExpansionReason": "统一透明扩展：原画布所有非零alpha并集[-16, -6, 96, 96]；全动作统一画布+2px边；保留源倍率、全部alpha与语义root。",
+  "frames": [
+    "frames/ELT-02_telegraph/ELT-02_telegraph_00.png",
+    "frames/ELT-02_telegraph/ELT-02_telegraph_01.png",
+    "frames/ELT-02_telegraph/ELT-02_telegraph_02.png",
+    "frames/ELT-02_telegraph/ELT-02_telegraph_03.png"
+  ],
+  "sheet": "sheets/ELT-02_telegraph.png",
+  "sheetRects": [
+    [
+      0,
+      0,
+      120,
+      112
+    ],
+    [
+      120,
+      0,
+      120,
+      112
+    ],
+    [
+      240,
+      0,
+      120,
+      112
+    ],
+    [
+      360,
+      0,
+      120,
+      112
+    ]
+  ],
+  "atlas": "atlas/ELT-02_telegraph.png",
+  "atlasColumns": 2,
+  "atlasRows": 2,
+  "atlasRects": [
+    [
+      0,
+      0,
+      120,
+      112
+    ],
+    [
+      120,
+      0,
+      120,
+      112
+    ],
+    [
+      0,
+      112,
+      120,
+      112
+    ],
+    [
+      120,
+      112,
+      120,
+      112
+    ]
+  ],
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "sourceSha256": "45464f30bfb26d82ac7eafe6b3a1742795eaaecd08eb00e3fcb47057db11cb6a",
+  "sourceBatch": "/home/lululu/zgame/assets/RAW/enemies/ENM-B03/v001/hive_guard/batch.json",
+  "frameCount": 4,
+  "frameDetails": [
+    {
+      "sourceRect": [
+        0,
+        627,
+        314,
+        313
+      ],
+      "sourceAnchor": [
+        200,
+        166
+      ],
+      "offset": [
+        2,
+        3
+      ],
+      "alphaBBox": [
+        11,
+        3,
+        101,
+        103
+      ],
+      "sourceEdgeAlpha": 1
+    },
+    {
+      "sourceRect": [
+        314,
+        627,
+        313,
+        313
+      ],
+      "sourceAnchor": [
+        200,
+        166
+      ],
+      "offset": [
+        2,
+        3
+      ],
+      "alphaBBox": [
+        2,
+        3,
+        101,
+        103
+      ],
+      "sourceEdgeAlpha": 1
+    },
+    {
+      "sourceRect": [
+        627,
+        627,
+        313,
+        313
+      ],
+      "sourceAnchor": [
+        200,
+        166
+      ],
+      "offset": [
+        2,
+        3
+      ],
+      "alphaBBox": [
+        2,
+        3,
+        102,
+        103
+      ],
+      "sourceEdgeAlpha": 1
+    },
+    {
+      "sourceRect": [
+        940,
+        627,
+        314,
+        313
+      ],
+      "sourceAnchor": [
+        200,
+        166
+      ],
+      "offset": [
+        2,
+        3
+      ],
+      "alphaBBox": [
+        2,
+        3,
+        98,
+        103
+      ],
+      "sourceEdgeAlpha": 1
+    }
+  ],
+  "fadeStartNormalized": 1.0,
+  "loopBoundaryMeanDifference": 14.0
+}

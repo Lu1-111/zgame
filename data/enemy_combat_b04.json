@@ -1,0 +1,177 @@
+{
+  "catalog_paths": [
+    "res://assets/PROCESSED/enemies/ENM-B03/v001/catalog.json",
+    "res://assets/PROCESSED/enemies/ENM-B04/v001/catalog.json",
+    "res://assets/PROCESSED/enemies/ENM-SLIME-GRAB/v001/catalog.json"
+  ],
+  "sprite_scale": 1.0,
+  "gravity": 1200.0,
+  "detect_range": 360.0,
+  "lose_range": 500.0,
+  "patrol_distance": 90.0,
+  "body_size": [
+    24,
+    28
+  ],
+  "fly_body_size": [
+    24,
+    24
+  ],
+  "hurt_duration": 0.2,
+  "death_duration": 1.2,
+  "attack_duration": 0.4,
+  "recover_duration": 0.45,
+  "attack_hit_start": 0.12,
+  "attack_hit_end": 0.3,
+  "hitbox_size": [
+    40,
+    28
+  ],
+  "hitbox_offset": [
+    24,
+    -14
+  ],
+  "knockback_decay": 600.0,
+  "aliases": {
+    "shadow_wraith": "shadow_wisp"
+  },
+  "arena": {
+    "room_size": [
+      1280,
+      720
+    ],
+    "player_spawn": [
+      620,
+      663
+    ],
+    "enemy_ground_spawn": [
+      800,
+      680
+    ],
+    "enemy_fly_spawn": [
+      800,
+      580
+    ],
+    "floor_rect": [
+      0,
+      680,
+      1280,
+      40
+    ],
+    "wall_rects": [
+      [
+        0,
+        0,
+        20,
+        720
+      ],
+      [
+        1260,
+        0,
+        20,
+        720
+      ]
+    ]
+  },
+  "defense_constant": 120,
+  "minimum_telegraph": 0.25,
+  "spawn_position": [
+    800,
+    680
+  ],
+  "default_enemy": "moss_beetle",
+  "enemy_order": [
+    "moss_beetle",
+    "milk_moth",
+    "milk_slime",
+    "vine_flower",
+    "lamp_bug",
+    "shadow_wisp",
+    "acid_slug",
+    "wax_bee",
+    "moss_guard",
+    "hive_guard",
+    "acid_mother",
+    "honey_queen"
+  ],
+  "ranged_threshold": 80,
+  "attack_knockback": 160,
+  "flying_vertical_speed": 90,
+  "sine_amplitude": 12,
+  "sine_frequency": 3,
+  "slow_multiplier": 0.7,
+  "slow_duration": 1.5,
+  "projectile_speed": 260,
+  "projectile_lifetime": 2.5,
+  "projectile_radius": 6,
+  "projectile_color": [
+    0.65,
+    0.9,
+    0.28,
+    1
+  ],
+  "per_enemy": {
+    "moss_guard": {
+      "body_size": [
+        44,
+        70
+      ]
+    },
+    "hive_guard": {
+      "fly_body_size": [
+        48,
+        52
+      ],
+      "charge_speed": 450
+    },
+    "acid_mother": {
+      "body_size": [
+        64,
+        48
+      ]
+    },
+    "honey_queen": {
+      "fly_body_size": [
+        72,
+        78
+      ],
+      "projectile_visual_id": "milk_bolt",
+      "charge_speed": 600,
+      "attack_hit_end": 0.38
+    },
+    "milk_moth": {
+      "projectile_visual_id": "milk_bolt"
+    },
+    "milk_slime": {
+      "projectile_visual_id": "milk_bolt",
+      "animation_map": {
+        "telegraph": "grab_ready",
+        "attack": "grab_attack",
+        "recover": "grab_recover"
+      },
+      "telegraph_duration": 0.6,
+      "attack_duration": 0.8,
+      "recover_duration": 0.4,
+      "attack_range": 64,
+      "hitbox_size": [
+        52,
+        30
+      ],
+      "hitbox_offset": [
+        50,
+        -18
+      ],
+      "attack_hit_start": 0.5,
+      "attack_hit_end": 0.65
+    },
+    "shadow_wisp": {
+      "projectile_visual_id": "shadow_bolt"
+    },
+    "vine_flower": {
+      "projectile_visual_id": "vine_bolt"
+    }
+  },
+  "projectile_catalog_path": "res://assets/PROCESSED/enemies/ENM-B04/v001/projectiles.json",
+  "charge_speed": 400,
+  "idle_duration": 0.6
+}

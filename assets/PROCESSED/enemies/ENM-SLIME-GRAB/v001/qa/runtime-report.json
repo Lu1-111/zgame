@@ -1,0 +1,85 @@
+{
+  "issues": [],
+  "passed": true,
+  "results": [
+    {
+      "entity": "GameEnemy",
+      "hitLog": [
+        {
+          "animation": "grab_attack",
+          "elapsed": 0.516666666666667,
+          "frame": 5,
+          "state": "attack"
+        }
+      ],
+      "observed": [
+        "telegraph:0",
+        "telegraph:1",
+        "telegraph:2",
+        "telegraph:3",
+        "attack:0",
+        "attack:1",
+        "attack:2",
+        "attack:3",
+        "attack:4",
+        "attack:5",
+        "attack:6",
+        "attack:7",
+        "recover:0",
+        "recover:1",
+        "recover:2",
+        "recover:3"
+      ],
+      "states": [
+        "telegraph",
+        "attack",
+        "recover"
+      ]
+    },
+    {
+      "entity": "CombatEnemy",
+      "hitLog": [
+        {
+          "animation": "grab_attack",
+          "elapsed": 0.516666666666667,
+          "frame": 5,
+          "state": "attack"
+        }
+      ],
+      "observed": [
+        "telegraph:0",
+        "telegraph:1",
+        "telegraph:2",
+        "telegraph:3",
+        "attack:0",
+        "attack:1",
+        "attack:2",
+        "attack:3",
+        "attack:4",
+        "attack:5",
+        "attack:6",
+        "attack:7",
+        "recover:0",
+        "recover:1",
+        "recover:2",
+        "recover:3"
+      ],
+      "states": [
+        "telegraph",
+        "attack",
+        "recover"
+      ]
+    }
+  ],
+  "visualReview": {
+    "readyRedExclamation": true,
+    "attackExclamationAbsent": true,
+    "openTentacleVisible": true,
+    "closedTentacleVisible": true,
+    "reviewedScreenshots": [
+      "01_ready_exclamation.png",
+      "02_attack_open.png",
+      "03_attack_closed.png"
+    ]
+  }
+}

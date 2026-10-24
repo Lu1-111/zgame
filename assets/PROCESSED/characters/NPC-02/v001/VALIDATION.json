@@ -1,0 +1,476 @@
+{
+  "id": "NPC-02",
+  "frameCount": 24,
+  "animationCount": 4,
+  "dimensions": [
+    64,
+    64
+  ],
+  "root": [
+    32,
+    58
+  ],
+  "errors": [],
+  "frames": [
+    {
+      "id": "idle_0",
+      "size": [
+        64,
+        64
+      ],
+      "root": [
+        32,
+        58
+      ],
+      "opaqueBounds": [
+        16,
+        16,
+        30,
+        42
+      ],
+      "groundBottom": 58,
+      "transparentPixels": 3089
+    },
+    {
+      "id": "idle_1",
+      "size": [
+        64,
+        64
+      ],
+      "root": [
+        32,
+        58
+      ],
+      "opaqueBounds": [
+        16,
+        16,
+        30,
+        42
+      ],
+      "groundBottom": 58,
+      "transparentPixels": 3130
+    },
+    {
+      "id": "idle_2",
+      "size": [
+        64,
+        64
+      ],
+      "root": [
+        32,
+        58
+      ],
+      "opaqueBounds": [
+        16,
+        16,
+        30,
+        42
+      ],
+      "groundBottom": 58,
+      "transparentPixels": 3060
+    },
+    {
+      "id": "idle_3",
+      "size": [
+        64,
+        64
+      ],
+      "root": [
+        32,
+        58
+      ],
+      "opaqueBounds": [
+        16,
+        16,
+        30,
+        42
+      ],
+      "groundBottom": 58,
+      "transparentPixels": 3126
+    },
+    {
+      "id": "idle_4",
+      "size": [
+        64,
+        64
+      ],
+      "root": [
+        32,
+        58
+      ],
+      "opaqueBounds": [
+        17,
+        16,
+        29,
+        42
+      ],
+      "groundBottom": 58,
+      "transparentPixels": 3073
+    },
+    {
+      "id": "idle_5",
+      "size": [
+        64,
+        64
+      ],
+      "root": [
+        32,
+        58
+      ],
+      "opaqueBounds": [
+        17,
+        16,
+        30,
+        42
+      ],
+      "groundBottom": 58,
+      "transparentPixels": 3092
+    },
+    {
+      "id": "talk_0",
+      "size": [
+        64,
+        64
+      ],
+      "root": [
+        32,
+        58
+      ],
+      "opaqueBounds": [
+        16,
+        17,
+        30,
+        41
+      ],
+      "groundBottom": 58,
+      "transparentPixels": 3123
+    },
+    {
+      "id": "talk_1",
+      "size": [
+        64,
+        64
+      ],
+      "root": [
+        32,
+        58
+      ],
+      "opaqueBounds": [
+        16,
+        16,
+        33,
+        42
+      ],
+      "groundBottom": 58,
+      "transparentPixels": 3096
+    },
+    {
+      "id": "talk_2",
+      "size": [
+        64,
+        64
+      ],
+      "root": [
+        32,
+        58
+      ],
+      "opaqueBounds": [
+        16,
+        17,
+        32,
+        41
+      ],
+      "groundBottom": 58,
+      "transparentPixels": 3059
+    },
+    {
+      "id": "talk_3",
+      "size": [
+        64,
+        64
+      ],
+      "root": [
+        32,
+        58
+      ],
+      "opaqueBounds": [
+        17,
+        17,
+        33,
+        41
+      ],
+      "groundBottom": 58,
+      "transparentPixels": 3067
+    },
+    {
+      "id": "talk_4",
+      "size": [
+        64,
+        64
+      ],
+      "root": [
+        32,
+        58
+      ],
+      "opaqueBounds": [
+        17,
+        16,
+        34,
+        42
+      ],
+      "groundBottom": 58,
+      "transparentPixels": 3047
+    },
+    {
+      "id": "talk_5",
+      "size": [
+        64,
+        64
+      ],
+      "root": [
+        32,
+        58
+      ],
+      "opaqueBounds": [
+        17,
+        17,
+        29,
+        41
+      ],
+      "groundBottom": 58,
+      "transparentPixels": 3121
+    },
+    {
+      "id": "trade_offer_0",
+      "size": [
+        64,
+        64
+      ],
+      "root": [
+        32,
+        58
+      ],
+      "opaqueBounds": [
+        16,
+        16,
+        30,
+        42
+      ],
+      "groundBottom": 58,
+      "transparentPixels": 3101
+    },
+    {
+      "id": "trade_offer_1",
+      "size": [
+        64,
+        64
+      ],
+      "root": [
+        32,
+        58
+      ],
+      "opaqueBounds": [
+        16,
+        16,
+        30,
+        42
+      ],
+      "groundBottom": 58,
+      "transparentPixels": 3121
+    },
+    {
+      "id": "trade_offer_2",
+      "size": [
+        64,
+        64
+      ],
+      "root": [
+        32,
+        58
+      ],
+      "opaqueBounds": [
+        17,
+        16,
+        29,
+        42
+      ],
+      "groundBottom": 58,
+      "transparentPixels": 3095
+    },
+    {
+      "id": "trade_offer_3",
+      "size": [
+        64,
+        64
+      ],
+      "root": [
+        32,
+        58
+      ],
+      "opaqueBounds": [
+        16,
+        16,
+        36,
+        42
+      ],
+      "groundBottom": 58,
+      "transparentPixels": 3028
+    },
+    {
+      "id": "trade_offer_4",
+      "size": [
+        64,
+        64
+      ],
+      "root": [
+        32,
+        58
+      ],
+      "opaqueBounds": [
+        17,
+        16,
+        28,
+        42
+      ],
+      "groundBottom": 58,
+      "transparentPixels": 3102
+    },
+    {
+      "id": "trade_offer_5",
+      "size": [
+        64,
+        64
+      ],
+      "root": [
+        32,
+        58
+      ],
+      "opaqueBounds": [
+        17,
+        16,
+        29,
+        42
+      ],
+      "groundBottom": 58,
+      "transparentPixels": 3115
+    },
+    {
+      "id": "trade_confirm_0",
+      "size": [
+        64,
+        64
+      ],
+      "root": [
+        32,
+        58
+      ],
+      "opaqueBounds": [
+        16,
+        17,
+        30,
+        41
+      ],
+      "groundBottom": 58,
+      "transparentPixels": 3073
+    },
+    {
+      "id": "trade_confirm_1",
+      "size": [
+        64,
+        64
+      ],
+      "root": [
+        32,
+        58
+      ],
+      "opaqueBounds": [
+        16,
+        17,
+        34,
+        41
+      ],
+      "groundBottom": 58,
+      "transparentPixels": 3060
+    },
+    {
+      "id": "trade_confirm_2",
+      "size": [
+        64,
+        64
+      ],
+      "root": [
+        32,
+        58
+      ],
+      "opaqueBounds": [
+        17,
+        17,
+        32,
+        41
+      ],
+      "groundBottom": 58,
+      "transparentPixels": 3094
+    },
+    {
+      "id": "trade_confirm_3",
+      "size": [
+        64,
+        64
+      ],
+      "root": [
+        32,
+        58
+      ],
+      "opaqueBounds": [
+        17,
+        16,
+        29,
+        42
+      ],
+      "groundBottom": 58,
+      "transparentPixels": 3100
+    },
+    {
+      "id": "trade_confirm_4",
+      "size": [
+        64,
+        64
+      ],
+      "root": [
+        32,
+        58
+      ],
+      "opaqueBounds": [
+        16,
+        17,
+        30,
+        41
+      ],
+      "groundBottom": 58,
+      "transparentPixels": 3085
+    },
+    {
+      "id": "trade_confirm_5",
+      "size": [
+        64,
+        64
+      ],
+      "root": [
+        32,
+        58
+      ],
+      "opaqueBounds": [
+        17,
+        17,
+        29,
+        41
+      ],
+      "groundBottom": 58,
+      "transparentPixels": 3123
+    }
+  ],
+  "checks": {
+    "dimensionsRootGroundAndTransparency": true
+  },
+  "scope": "Pixel geometry and resource import validation; not game integration or trading logic."
+}

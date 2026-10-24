@@ -1,0 +1,44 @@
+{
+  "format": "nailong-raw-npc-single-v1",
+  "version": "v001",
+  "npc": {
+    "id": "NPC-S02",
+    "slug": "milk_cow_merchant",
+    "name": "奶牛商人",
+    "role": "交易",
+    "outfit": "#7a4f34",
+    "notes": "牛角、斑纹围裙、钱袋",
+    "animations": {
+      "idle": {
+        "frames": 6,
+        "sheet": "NPC-S02/v001/NPC-S02_milk_cow_merchant_idle_front_v001_sheet.png",
+        "loop": true,
+        "files": [
+          "NPC-S02/v001/frames/NPC-S02_milk_cow_merchant_idle_front_v001_f01.png",
+          "NPC-S02/v001/frames/NPC-S02_milk_cow_merchant_idle_front_v001_f02.png",
+          "NPC-S02/v001/frames/NPC-S02_milk_cow_merchant_idle_front_v001_f03.png",
+          "NPC-S02/v001/frames/NPC-S02_milk_cow_merchant_idle_front_v001_f04.png",
+          "NPC-S02/v001/frames/NPC-S02_milk_cow_merchant_idle_front_v001_f05.png",
+          "NPC-S02/v001/frames/NPC-S02_milk_cow_merchant_idle_front_v001_f06.png"
+        ]
+      },
+      "talk": {
+        "frames": 4,
+        "sheet": "NPC-S02/v001/NPC-S02_milk_cow_merchant_talk_front_v001_sheet.png",
+        "loop": false,
+        "files": [
+          "NPC-S02/v001/frames/NPC-S02_milk_cow_merchant_talk_front_v001_f01.png",
+          "NPC-S02/v001/frames/NPC-S02_milk_cow_merchant_talk_front_v001_f02.png",
+          "NPC-S02/v001/frames/NPC-S02_milk_cow_merchant_talk_front_v001_f03.png",
+          "NPC-S02/v001/frames/NPC-S02_milk_cow_merchant_talk_front_v001_f04.png"
+        ]
+      }
+    },
+    "master": "NPC-S02/v001/NPC-S02_milk_cow_merchant_master_front_v001.png",
+    "root": [
+      32,
+      58
+    ],
+    "reference": "assets/RAW/characters/CHR-01/v001/CHR-01_master_right_v001.png"
+  }
+}

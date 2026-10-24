@@ -1,0 +1,186 @@
+{
+  "id": "NPC-S05",
+  "sheet": "NPC-S05_walk_right_v003.png",
+  "sheet_size": [
+    1536,
+    1024
+  ],
+  "frames": [
+    {
+      "action": "walk",
+      "frame": 0,
+      "rect_xywh": [
+        0,
+        0,
+        384,
+        512
+      ],
+      "alpha128_bbox_xyxy": [
+        18,
+        18,
+        371,
+        499
+      ],
+      "source_root_xy": [
+        185,
+        500
+      ]
+    },
+    {
+      "action": "walk",
+      "frame": 1,
+      "rect_xywh": [
+        384,
+        0,
+        384,
+        512
+      ],
+      "alpha128_bbox_xyxy": [
+        418,
+        18,
+        759,
+        500
+      ],
+      "source_root_xy": [
+        569,
+        500
+      ]
+    },
+    {
+      "action": "walk",
+      "frame": 2,
+      "rect_xywh": [
+        768,
+        0,
+        384,
+        512
+      ],
+      "alpha128_bbox_xyxy": [
+        795,
+        19,
+        1146,
+        499
+      ],
+      "source_root_xy": [
+        953,
+        500
+      ]
+    },
+    {
+      "action": "walk",
+      "frame": 3,
+      "rect_xywh": [
+        1152,
+        0,
+        384,
+        512
+      ],
+      "alpha128_bbox_xyxy": [
+        1184,
+        17,
+        1528,
+        499
+      ],
+      "source_root_xy": [
+        1337,
+        500
+      ]
+    },
+    {
+      "action": "walk",
+      "frame": 4,
+      "rect_xywh": [
+        0,
+        512,
+        384,
+        512
+      ],
+      "alpha128_bbox_xyxy": [
+        17,
+        523,
+        368,
+        999
+      ],
+      "source_root_xy": [
+        185,
+        1000
+      ]
+    },
+    {
+      "action": "walk",
+      "frame": 5,
+      "rect_xywh": [
+        384,
+        512,
+        384,
+        512
+      ],
+      "alpha128_bbox_xyxy": [
+        419,
+        523,
+        758,
+        999
+      ],
+      "source_root_xy": [
+        569,
+        1000
+      ]
+    },
+    {
+      "action": "walk",
+      "frame": 6,
+      "rect_xywh": [
+        768,
+        512,
+        384,
+        512
+      ],
+      "alpha128_bbox_xyxy": [
+        796,
+        523,
+        1138,
+        998
+      ],
+      "source_root_xy": [
+        953,
+        1000
+      ]
+    },
+    {
+      "action": "walk",
+      "frame": 7,
+      "rect_xywh": [
+        1152,
+        512,
+        384,
+        512
+      ],
+      "alpha128_bbox_xyxy": [
+        1184,
+        523,
+        1526,
+        999
+      ],
+      "source_root_xy": [
+        1337,
+        1000
+      ]
+    }
+  ],
+  "fps": 8,
+  "loop": true,
+  "target_canvas": [
+    64,
+    64
+  ],
+  "target_root": [
+    32,
+    58
+  ],
+  "suggested_height": 44,
+  "notes": [
+    "Walk Y ground fixed500 for top row and1000 for bottom row, calibrated actual placement; do not align individual raised feet.",
+    "Torso X uses fixed185 in cell, not foot bbox center.",
+    "Actual poses include clear bent knees and lifted feet; inspect leg-side alternation visually."
+  ]
+}

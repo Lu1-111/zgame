@@ -1,0 +1,179 @@
+{
+  "id": "BOSS-01_telegraph",
+  "enemyId": "BOSS-01",
+  "gameEnemyId": "honey_queen",
+  "label": "蜂蜜女王",
+  "name": "telegraph",
+  "kind": "body",
+  "generationMode": "built-in image_gen",
+  "sourcePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/BOSS-01/BOSS-01_actions_A.png",
+  "sourceRects": [
+    [
+      0,
+      506,
+      384,
+      232
+    ],
+    [
+      384,
+      506,
+      384,
+      232
+    ],
+    [
+      768,
+      506,
+      384,
+      232
+    ],
+    [
+      1152,
+      506,
+      384,
+      232
+    ]
+  ],
+  "sourceAnchors": [
+    [
+      230,
+      142
+    ],
+    [
+      230,
+      142
+    ],
+    [
+      230,
+      142
+    ],
+    [
+      230,
+      142
+    ]
+  ],
+  "sourceSize": [
+    1536,
+    1024
+  ],
+  "sourceSha256": "2d624a1b06611fe66a4c9cbb2c45ac12757da716359c57cbc3b7f33380c35c06",
+  "sourceBatch": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/BOSS-01/batch.json",
+  "promptPath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/BOSS-01/BOSS-01_A.prompt.txt",
+  "provenancePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/BOSS-01/provenance.json",
+  "target": [
+    176,
+    136
+  ],
+  "anchor": [
+    88,
+    68
+  ],
+  "rootType": "flying",
+  "scale": 0.36,
+  "fps": 10,
+  "loop": false,
+  "frameCount": 4,
+  "frames": [
+    "frames/BOSS-01_telegraph/BOSS-01_telegraph_00.png",
+    "frames/BOSS-01_telegraph/BOSS-01_telegraph_01.png",
+    "frames/BOSS-01_telegraph/BOSS-01_telegraph_02.png",
+    "frames/BOSS-01_telegraph/BOSS-01_telegraph_03.png"
+  ],
+  "sheet": "sheets/BOSS-01_telegraph.png",
+  "frameDetails": [
+    {
+      "sourceRect": [
+        0,
+        506,
+        384,
+        232
+      ],
+      "sourceAnchor": [
+        230,
+        142
+      ],
+      "offset": [
+        5,
+        17
+      ],
+      "alphaBBox": [
+        20,
+        17,
+        142,
+        101
+      ]
+    },
+    {
+      "sourceRect": [
+        384,
+        506,
+        384,
+        232
+      ],
+      "sourceAnchor": [
+        230,
+        142
+      ],
+      "offset": [
+        5,
+        17
+      ],
+      "alphaBBox": [
+        8,
+        18,
+        142,
+        101
+      ]
+    },
+    {
+      "sourceRect": [
+        768,
+        506,
+        384,
+        232
+      ],
+      "sourceAnchor": [
+        230,
+        142
+      ],
+      "offset": [
+        5,
+        17
+      ],
+      "alphaBBox": [
+        5,
+        17,
+        141,
+        101
+      ]
+    },
+    {
+      "sourceRect": [
+        1152,
+        506,
+        384,
+        232
+      ],
+      "sourceAnchor": [
+        230,
+        142
+      ],
+      "offset": [
+        5,
+        17
+      ],
+      "alphaBBox": [
+        8,
+        17,
+        126,
+        101
+      ]
+    }
+  ],
+  "fadeStartNormalized": 1.0,
+  "phases": [
+    "telegraph1",
+    "telegraph2",
+    "telegraph3",
+    "telegraph4"
+  ]
+}

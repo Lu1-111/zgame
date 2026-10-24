@@ -1,0 +1,179 @@
+{
+  "id": "ENM-07_recover",
+  "enemyId": "ENM-07",
+  "gameEnemyId": "vine_flower",
+  "label": "藤蔓花",
+  "name": "recover",
+  "kind": "body",
+  "generationMode": "built-in image_gen",
+  "sourcePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-07/ENM-07_actions_B.png",
+  "sourceRects": [
+    [
+      0,
+      0,
+      406,
+      256
+    ],
+    [
+      406,
+      0,
+      366,
+      256
+    ],
+    [
+      772,
+      0,
+      384,
+      256
+    ],
+    [
+      1156,
+      0,
+      380,
+      256
+    ]
+  ],
+  "sourceAnchors": [
+    [
+      170,
+      225
+    ],
+    [
+      159,
+      225
+    ],
+    [
+      188,
+      225
+    ],
+    [
+      189,
+      225
+    ]
+  ],
+  "sourceSize": [
+    1536,
+    1024
+  ],
+  "sourceSha256": "c8e728bd75dc96c425a8ec2425145a96cf3de6e39b4a172bc345ecef81d863c4",
+  "sourceBatch": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-07/batch.json",
+  "promptPath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-07/ENM-07_B.prompt.txt",
+  "provenancePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-07/provenance.json",
+  "target": [
+    128,
+    88
+  ],
+  "anchor": [
+    58,
+    72
+  ],
+  "rootType": "ground",
+  "scale": 0.22,
+  "fps": 10,
+  "loop": false,
+  "frameCount": 4,
+  "frames": [
+    "frames/ENM-07_recover/ENM-07_recover_00.png",
+    "frames/ENM-07_recover/ENM-07_recover_01.png",
+    "frames/ENM-07_recover/ENM-07_recover_02.png",
+    "frames/ENM-07_recover/ENM-07_recover_03.png"
+  ],
+  "sheet": "sheets/ENM-07_recover.png",
+  "frameDetails": [
+    {
+      "sourceRect": [
+        0,
+        0,
+        406,
+        256
+      ],
+      "sourceAnchor": [
+        170,
+        225
+      ],
+      "offset": [
+        21,
+        22
+      ],
+      "alphaBBox": [
+        29,
+        26,
+        110,
+        76
+      ]
+    },
+    {
+      "sourceRect": [
+        406,
+        0,
+        366,
+        256
+      ],
+      "sourceAnchor": [
+        159,
+        225
+      ],
+      "offset": [
+        23,
+        22
+      ],
+      "alphaBBox": [
+        23,
+        25,
+        104,
+        75
+      ]
+    },
+    {
+      "sourceRect": [
+        772,
+        0,
+        384,
+        256
+      ],
+      "sourceAnchor": [
+        188,
+        225
+      ],
+      "offset": [
+        17,
+        22
+      ],
+      "alphaBBox": [
+        20,
+        25,
+        101,
+        75
+      ]
+    },
+    {
+      "sourceRect": [
+        1156,
+        0,
+        380,
+        256
+      ],
+      "sourceAnchor": [
+        189,
+        225
+      ],
+      "offset": [
+        16,
+        22
+      ],
+      "alphaBBox": [
+        18,
+        25,
+        96,
+        78
+      ]
+    }
+  ],
+  "fadeStartNormalized": 1.0,
+  "phases": [
+    "recover1",
+    "recover2",
+    "recover3",
+    "recover4"
+  ]
+}

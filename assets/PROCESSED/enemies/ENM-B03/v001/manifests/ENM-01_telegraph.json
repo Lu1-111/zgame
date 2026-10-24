@@ -1,0 +1,238 @@
+{
+  "id": "ENM-01_telegraph",
+  "name": "telegraph",
+  "enemyId": "ENM-01",
+  "gameEnemyId": "moss_beetle",
+  "label": "telegraph",
+  "sourcePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B03/v001/ENM-01/ENM-01_actions_A.png",
+  "sourceRects": [
+    [
+      0,
+      627,
+      314,
+      313
+    ],
+    [
+      314,
+      627,
+      313,
+      313
+    ],
+    [
+      627,
+      627,
+      313,
+      313
+    ],
+    [
+      940,
+      627,
+      314,
+      313
+    ]
+  ],
+  "sourceAnchors": [
+    [
+      156,
+      270
+    ],
+    [
+      156,
+      270
+    ],
+    [
+      156,
+      270
+    ],
+    [
+      156,
+      270
+    ]
+  ],
+  "target": [
+    64,
+    64
+  ],
+  "anchor": [
+    32,
+    56
+  ],
+  "scale": 0.16,
+  "fps": 10,
+  "loop": false,
+  "kind": "body",
+  "phases": [
+    "telegraph1",
+    "telegraph2",
+    "telegraph3",
+    "telegraph4"
+  ],
+  "promptPath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B03/v001/ENM-01/ENM-01_A_repair.prompt.txt",
+  "provenancePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B03/v001/ENM-01/provenance.json",
+  "generationMode": "built-in image_gen",
+  "frames": [
+    "frames/ENM-01_telegraph/ENM-01_telegraph_00.png",
+    "frames/ENM-01_telegraph/ENM-01_telegraph_01.png",
+    "frames/ENM-01_telegraph/ENM-01_telegraph_02.png",
+    "frames/ENM-01_telegraph/ENM-01_telegraph_03.png"
+  ],
+  "sheet": "sheets/ENM-01_telegraph.png",
+  "sheetRects": [
+    [
+      0,
+      0,
+      64,
+      64
+    ],
+    [
+      64,
+      0,
+      64,
+      64
+    ],
+    [
+      128,
+      0,
+      64,
+      64
+    ],
+    [
+      192,
+      0,
+      64,
+      64
+    ]
+  ],
+  "atlas": "atlas/ENM-01_telegraph.png",
+  "atlasColumns": 2,
+  "atlasRows": 2,
+  "atlasRects": [
+    [
+      0,
+      0,
+      64,
+      64
+    ],
+    [
+      64,
+      0,
+      64,
+      64
+    ],
+    [
+      0,
+      64,
+      64,
+      64
+    ],
+    [
+      64,
+      64,
+      64,
+      64
+    ]
+  ],
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "sourceSha256": "81709255a50cb20462dea2eb4f6f91212a024c2ffbce3e5b0f198a4abbdeec0b",
+  "sourceBatch": "/home/lululu/zgame/assets/RAW/enemies/ENM-B03/v001/ENM-01/batch.json",
+  "frameCount": 4,
+  "frameDetails": [
+    {
+      "sourceRect": [
+        0,
+        627,
+        314,
+        313
+      ],
+      "sourceAnchor": [
+        156,
+        270
+      ],
+      "offset": [
+        7,
+        13
+      ],
+      "alphaBBox": [
+        12,
+        14,
+        56,
+        63
+      ],
+      "sourceEdgeAlpha": 1
+    },
+    {
+      "sourceRect": [
+        314,
+        627,
+        313,
+        313
+      ],
+      "sourceAnchor": [
+        156,
+        270
+      ],
+      "offset": [
+        7,
+        13
+      ],
+      "alphaBBox": [
+        7,
+        13,
+        55,
+        63
+      ],
+      "sourceEdgeAlpha": 1
+    },
+    {
+      "sourceRect": [
+        627,
+        627,
+        313,
+        313
+      ],
+      "sourceAnchor": [
+        156,
+        270
+      ],
+      "offset": [
+        7,
+        13
+      ],
+      "alphaBBox": [
+        14,
+        16,
+        57,
+        63
+      ],
+      "sourceEdgeAlpha": 1
+    },
+    {
+      "sourceRect": [
+        940,
+        627,
+        314,
+        313
+      ],
+      "sourceAnchor": [
+        156,
+        270
+      ],
+      "offset": [
+        7,
+        13
+      ],
+      "alphaBBox": [
+        9,
+        13,
+        52,
+        57
+      ],
+      "sourceEdgeAlpha": 1
+    }
+  ],
+  "fadeStartNormalized": 1.0,
+  "loopBoundaryMeanDifference": 14.333333333333334
+}

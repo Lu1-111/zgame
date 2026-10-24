@@ -1,0 +1,460 @@
+{
+  "assetId": "NPC-02",
+  "version": "v001",
+  "title": "营地商人 · 奶牛",
+  "outputDir": "/home/lululu/zgame/assets/PROCESSED/characters/NPC-02/v001",
+  "target": {
+    "width": 64,
+    "height": 64,
+    "anchor": [
+      32,
+      58
+    ]
+  },
+  "alphaThreshold": 127,
+  "direction": "right",
+  "sources": [
+    {
+      "id": "idle",
+      "path": "/home/lululu/zgame/assets/RAW/characters/NPC-02/v001/NPC-02_actions_right_sheet_v001.png",
+      "rects": [
+        [
+          0,
+          0,
+          256,
+          256
+        ],
+        [
+          256,
+          0,
+          256,
+          256
+        ],
+        [
+          512,
+          0,
+          256,
+          256
+        ],
+        [
+          768,
+          0,
+          256,
+          256
+        ],
+        [
+          1024,
+          0,
+          256,
+          256
+        ],
+        [
+          1280,
+          0,
+          256,
+          256
+        ]
+      ],
+      "scale": 0.18340611353711792,
+      "calibration": {
+        "method": "one fixed scale per generated animation row, median standing height",
+        "sourceMedianHeight": 229,
+        "targetHeight": 42
+      },
+      "notes": [
+        "Generated animation rows differ in original size; row scale is constant across all six frames.",
+        "Source anchor is manual boot contact midpoint."
+      ]
+    },
+    {
+      "id": "talk",
+      "path": "/home/lululu/zgame/assets/RAW/characters/NPC-02/v001/NPC-02_actions_right_sheet_v001.png",
+      "rects": [
+        [
+          0,
+          256,
+          256,
+          256
+        ],
+        [
+          256,
+          256,
+          256,
+          256
+        ],
+        [
+          512,
+          256,
+          256,
+          256
+        ],
+        [
+          768,
+          256,
+          256,
+          256
+        ],
+        [
+          1024,
+          256,
+          256,
+          256
+        ],
+        [
+          1280,
+          256,
+          256,
+          256
+        ]
+      ],
+      "scale": 0.1810344827586207,
+      "calibration": {
+        "method": "one fixed scale per generated animation row, median standing height",
+        "sourceMedianHeight": 232,
+        "targetHeight": 42
+      },
+      "notes": [
+        "Generated animation rows differ in original size; row scale is constant across all six frames.",
+        "Source anchor is manual boot contact midpoint."
+      ]
+    },
+    {
+      "id": "trade_offer",
+      "path": "/home/lululu/zgame/assets/RAW/characters/NPC-02/v001/NPC-02_actions_right_sheet_v001.png",
+      "rects": [
+        [
+          0,
+          512,
+          256,
+          256
+        ],
+        [
+          256,
+          512,
+          256,
+          256
+        ],
+        [
+          512,
+          512,
+          256,
+          256
+        ],
+        [
+          768,
+          512,
+          256,
+          256
+        ],
+        [
+          1024,
+          512,
+          256,
+          256
+        ],
+        [
+          1280,
+          512,
+          256,
+          256
+        ]
+      ],
+      "scale": 0.17872340425531916,
+      "calibration": {
+        "method": "one fixed scale per generated animation row, median standing height",
+        "sourceMedianHeight": 235,
+        "targetHeight": 42
+      },
+      "notes": [
+        "Generated animation rows differ in original size; row scale is constant across all six frames.",
+        "Source anchor is manual boot contact midpoint."
+      ]
+    },
+    {
+      "id": "trade_confirm",
+      "path": "/home/lululu/zgame/assets/RAW/characters/NPC-02/v001/NPC-02_actions_right_sheet_v001.png",
+      "rects": [
+        [
+          0,
+          768,
+          256,
+          256
+        ],
+        [
+          256,
+          768,
+          284,
+          256
+        ],
+        [
+          540,
+          768,
+          228,
+          256
+        ],
+        [
+          768,
+          768,
+          256,
+          256
+        ],
+        [
+          1024,
+          768,
+          256,
+          256
+        ],
+        [
+          1280,
+          768,
+          256,
+          256
+        ]
+      ],
+      "scale": 0.1794871794871795,
+      "calibration": {
+        "method": "one fixed scale per generated animation row, median standing height",
+        "sourceMedianHeight": 234,
+        "targetHeight": 42
+      },
+      "notes": [
+        "Generated animation rows differ in original size; row scale is constant across all six frames.",
+        "Source anchor is manual boot contact midpoint."
+      ]
+    }
+  ],
+  "animations": [
+    {
+      "name": "idle",
+      "label": "待机",
+      "fps": 8,
+      "loop": true,
+      "snapContact": true,
+      "anchorMode": "ground",
+      "frames": [
+        {
+          "source": "idle",
+          "index": 0,
+          "anchor": [
+            165.5,
+            243
+          ]
+        },
+        {
+          "source": "idle",
+          "index": 1,
+          "anchor": [
+            162,
+            243
+          ]
+        },
+        {
+          "source": "idle",
+          "index": 2,
+          "anchor": [
+            148,
+            243
+          ]
+        },
+        {
+          "source": "idle",
+          "index": 3,
+          "anchor": [
+            130,
+            243
+          ]
+        },
+        {
+          "source": "idle",
+          "index": 4,
+          "anchor": [
+            121.5,
+            243
+          ]
+        },
+        {
+          "source": "idle",
+          "index": 5,
+          "anchor": [
+            111.5,
+            243
+          ]
+        }
+      ]
+    },
+    {
+      "name": "talk",
+      "label": "交谈",
+      "fps": 8,
+      "loop": true,
+      "snapContact": true,
+      "anchorMode": "ground",
+      "frames": [
+        {
+          "source": "talk",
+          "index": 0,
+          "anchor": [
+            165,
+            240
+          ]
+        },
+        {
+          "source": "talk",
+          "index": 1,
+          "anchor": [
+            158.5,
+            240
+          ]
+        },
+        {
+          "source": "talk",
+          "index": 2,
+          "anchor": [
+            146.5,
+            240
+          ]
+        },
+        {
+          "source": "talk",
+          "index": 3,
+          "anchor": [
+            129,
+            240
+          ]
+        },
+        {
+          "source": "talk",
+          "index": 4,
+          "anchor": [
+            123,
+            240
+          ]
+        },
+        {
+          "source": "talk",
+          "index": 5,
+          "anchor": [
+            111.5,
+            240
+          ]
+        }
+      ]
+    },
+    {
+      "name": "trade_offer",
+      "label": "展示商品",
+      "fps": 8,
+      "loop": false,
+      "snapContact": true,
+      "anchorMode": "ground",
+      "frames": [
+        {
+          "source": "trade_offer",
+          "index": 0,
+          "anchor": [
+            165.5,
+            239
+          ]
+        },
+        {
+          "source": "trade_offer",
+          "index": 1,
+          "anchor": [
+            160.5,
+            239
+          ]
+        },
+        {
+          "source": "trade_offer",
+          "index": 2,
+          "anchor": [
+            150.5,
+            239
+          ]
+        },
+        {
+          "source": "trade_offer",
+          "index": 3,
+          "anchor": [
+            133,
+            238
+          ]
+        },
+        {
+          "source": "trade_offer",
+          "index": 4,
+          "anchor": [
+            125.5,
+            239
+          ]
+        },
+        {
+          "source": "trade_offer",
+          "index": 5,
+          "anchor": [
+            112.5,
+            239
+          ]
+        }
+      ]
+    },
+    {
+      "name": "trade_confirm",
+      "label": "成交反馈",
+      "fps": 8,
+      "loop": false,
+      "snapContact": true,
+      "anchorMode": "ground",
+      "frames": [
+        {
+          "source": "trade_confirm",
+          "index": 0,
+          "anchor": [
+            165,
+            235
+          ]
+        },
+        {
+          "source": "trade_confirm",
+          "index": 1,
+          "anchor": [
+            159.5,
+            235
+          ]
+        },
+        {
+          "source": "trade_confirm",
+          "index": 2,
+          "anchor": [
+            118.5,
+            235
+          ]
+        },
+        {
+          "source": "trade_confirm",
+          "index": 3,
+          "anchor": [
+            139,
+            235
+          ]
+        },
+        {
+          "source": "trade_confirm",
+          "index": 4,
+          "anchor": [
+            125.5,
+            235
+          ]
+        },
+        {
+          "source": "trade_confirm",
+          "index": 5,
+          "anchor": [
+            113,
+            235
+          ]
+        }
+      ]
+    }
+  ]
+}

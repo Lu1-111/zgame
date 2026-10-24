@@ -1,0 +1,95 @@
+[gd_scene load_steps=13 format=3]
+
+; test_arena.tscn —— M1 手感试玩场（灰盒；正式房间 M2 由 RoomBuilder 数据驱动生成）
+; NPC 使用独立场景与 processed SpriteFrames，沿地面短距离巡逻；靠近按 E 交谈。
+
+[ext_resource type="Script" path="res://scripts/world/test_arena.gd" id="1_ta"]
+[ext_resource type="PackedScene" path="res://scenes/player/player.tscn" id="2_pl"]
+[ext_resource type="PackedScene" path="res://scenes/enemies/dummy_target.tscn" id="3_dt"]
+[ext_resource type="Script" path="res://scripts/ui/debug_stats.gd" id="4_ds"]
+[ext_resource type="PackedScene" path="res://scenes/npcs/npc.tscn" id="5_npc"]
+[ext_resource type="PackedScene" path="res://scenes/ui/npc_dialogue.tscn" id="6_dialogue"]
+[ext_resource type="SpriteFrames" path="res://assets/PROCESSED/characters/NPC-S01/v002/godot/NPC-S01_sprite_frames.tres" id="7_s01"]
+[ext_resource type="SpriteFrames" path="res://assets/PROCESSED/characters/NPC-S02/v002/godot/NPC-S02_sprite_frames.tres" id="8_s02"]
+[ext_resource type="SpriteFrames" path="res://assets/PROCESSED/characters/NPC-S03/v002/godot/NPC-S03_sprite_frames.tres" id="9_s03"]
+[ext_resource type="SpriteFrames" path="res://assets/PROCESSED/characters/NPC-S04/v002/godot/NPC-S04_sprite_frames.tres" id="10_s04"]
+[ext_resource type="SpriteFrames" path="res://assets/PROCESSED/characters/NPC-S05/v002/godot/NPC-S05_sprite_frames.tres" id="11_s05"]
+[ext_resource type="SpriteFrames" path="res://assets/PROCESSED/characters/NPC-S06/v002/godot/NPC-S06_sprite_frames.tres" id="12_s06"]
+
+[node name="TestArena" type="Node2D"]
+script = ExtResource("1_ta")
+
+[node name="Player" parent="." instance=ExtResource("2_pl")]
+position = Vector2(120, 663)
+
+[node name="NPCs" type="Node2D" parent="."]
+
+[node name="RabbitGuide" parent="NPCs" instance=ExtResource("5_npc")]
+position = Vector2(250, 680)
+npc_id = &"NPC-S01"
+display_name = "奶兔向导"
+dialogue = PackedStringArray("前面的断桥还没修好，先在附近熟悉一下跳跃吧。", "营地里的人都在等你回来，别逞强。")
+frames = ExtResource("7_s01")
+patrol_radius = 28.0
+walk_speed = 14.0
+
+[node name="CowMerchant" parent="NPCs" instance=ExtResource("5_npc")]
+position = Vector2(350, 680)
+npc_id = &"NPC-S02"
+display_name = "奶牛商人"
+dialogue = PackedStringArray("奶币带够了吗？我只收亮晶晶的那种。", "新货还在路上，先看看你的装备吧。")
+frames = ExtResource("8_s02")
+patrol_radius = 20.0
+walk_speed = 10.0
+
+[node name="MouseEngineer" parent="NPCs" instance=ExtResource("5_npc")]
+position = Vector2(455, 680)
+npc_id = &"NPC-S03"
+display_name = "奶鼠工匠"
+dialogue = PackedStringArray("护目镜别碰，我刚校准过。", "桥上的单向板有点松，踩之前先看脚下。")
+frames = ExtResource("9_s03")
+patrol_radius = 24.0
+walk_speed = 16.0
+
+[node name="DragonScholar" parent="NPCs" instance=ExtResource("5_npc")]
+position = Vector2(565, 680)
+npc_id = &"NPC-S04"
+display_name = "奶龙学者"
+dialogue = PackedStringArray("银河的旧记录里，也有像你这样的奶龙。", "先把这片林地走完，再谈更远的地方。")
+frames = ExtResource("10_s04")
+patrol_radius = 26.0
+walk_speed = 11.0
+
+[node name="BearGuard" parent="NPCs" instance=ExtResource("5_npc")]
+position = Vector2(1050, 680)
+npc_id = &"NPC-S05"
+display_name = "奶熊守卫"
+dialogue = PackedStringArray("营地安全交给我。你只管往前。", "受伤就回篝火，别硬撑。")
+frames = ExtResource("11_s05")
+patrol_radius = 18.0
+walk_speed = 8.0
+
+[node name="BirdCourier" parent="NPCs" instance=ExtResource("5_npc")]
+position = Vector2(1150, 680)
+npc_id = &"NPC-S06"
+display_name = "奶鸟信使"
+dialogue = PackedStringArray("有你的信！不过我先替你保管一下。", "洞窟方向风很大，记得早点回来。")
+frames = ExtResource("12_s06")
+patrol_radius = 28.0
+walk_speed = 18.0
+
+[node name="Dummy" parent="." instance=ExtResource("3_dt")]
+position = Vector2(950, 666)
+
+[node name="NPCDialogue" parent="." instance=ExtResource("6_dialogue")]
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="DebugPanel" type="Label" parent="UI"]
+offset_left = 8.0
+offset_top = 48.0
+offset_right = 420.0
+offset_bottom = 86.0
+theme_override_font_sizes/font_size = 9
+text = "..."
+script = ExtResource("4_ds")

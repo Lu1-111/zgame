@@ -1,0 +1,236 @@
+{
+  "id": "ENV-02",
+  "name": "奶源林地",
+  "region": "forest",
+  "tile_size": 16,
+  "terrain": "terrain.png",
+  "terrain_layout": {
+    "TL": 0,
+    "T": 1,
+    "TR": 2,
+    "L": 3,
+    "C": 4,
+    "R": 5,
+    "BL": 6,
+    "B": 7,
+    "BR": 8,
+    "single": 9,
+    "thin_left": 10,
+    "thin_mid": 11,
+    "thin_right": 12,
+    "inner_left": 13,
+    "inner_right": 14,
+    "transition": 15
+  },
+  "background": "background.png",
+  "background_vertical": "background_vertical.png",
+  "midground": "midground.png",
+  "props": [
+    {
+      "id": "giant_tree",
+      "path": "props/giant_tree.png",
+      "width": 224,
+      "height": 176,
+      "anchor": [
+        112,
+        176
+      ],
+      "raw_crop": [
+        10,
+        3,
+        545,
+        399
+      ],
+      "collision": false,
+      "layer": 1
+    },
+    {
+      "id": "canopy",
+      "path": "props/canopy.png",
+      "width": 256,
+      "height": 176,
+      "anchor": [
+        128,
+        176
+      ],
+      "raw_crop": [
+        523,
+        62,
+        1013,
+        389
+      ],
+      "collision": false,
+      "layer": 1
+    },
+    {
+      "id": "root_arch",
+      "path": "props/root_arch.png",
+      "width": 224,
+      "height": 128,
+      "anchor": [
+        112,
+        128
+      ],
+      "raw_crop": [
+        997,
+        134,
+        1532,
+        395
+      ],
+      "collision": false,
+      "layer": 1
+    },
+    {
+      "id": "vine",
+      "path": "props/vine.png",
+      "width": 144,
+      "height": 144,
+      "anchor": [
+        72,
+        0
+      ],
+      "raw_crop": [
+        91,
+        414,
+        436,
+        735
+      ],
+      "collision": false,
+      "layer": 1
+    },
+    {
+      "id": "bridge_left",
+      "path": "props/bridge_left.png",
+      "width": 192,
+      "height": 144,
+      "anchor": [
+        96,
+        144
+      ],
+      "raw_crop": [
+        503,
+        422,
+        949,
+        732
+      ],
+      "collision": false,
+      "layer": 1,
+      "surface_anchor": [
+        96,
+        65
+      ]
+    },
+    {
+      "id": "bridge_right",
+      "path": "props/bridge_right.png",
+      "width": 176,
+      "height": 144,
+      "anchor": [
+        88,
+        144
+      ],
+      "raw_crop": [
+        1093,
+        427,
+        1462,
+        735
+      ],
+      "collision": false,
+      "layer": 1,
+      "surface_anchor": [
+        88,
+        57
+      ]
+    },
+    {
+      "id": "moss_rocks",
+      "path": "props/moss_rocks.png",
+      "width": 160,
+      "height": 96,
+      "anchor": [
+        80,
+        96
+      ],
+      "raw_crop": [
+        22,
+        753,
+        476,
+        995
+      ],
+      "collision": false,
+      "layer": 1
+    },
+    {
+      "id": "cave_entrance",
+      "path": "props/cave_entrance.png",
+      "width": 256,
+      "height": 144,
+      "anchor": [
+        128,
+        144
+      ],
+      "raw_crop": [
+        498,
+        697,
+        1089,
+        992
+      ],
+      "collision": false,
+      "layer": 1
+    },
+    {
+      "id": "fern_mushrooms",
+      "path": "props/fern_mushrooms.png",
+      "width": 128,
+      "height": 80,
+      "anchor": [
+        64,
+        80
+      ],
+      "raw_crop": [
+        1118,
+        778,
+        1507,
+        996
+      ],
+      "collision": false,
+      "layer": 1
+    }
+  ],
+  "raw_sources": [
+    {
+      "path": "assets/RAW/environments/ENV-B01/v001/ENV-02/ENV-02_background_source_v001.png",
+      "sha256": "fb90448f9eff03da1ff4223ce36203c20046b5fe2e6f9845ab2afa31144d359f",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "path": "assets/RAW/environments/ENV-B01/v001/ENV-02/ENV-02_scenery_source_v001.png",
+      "sha256": "7f28b6cb61dc64ceaa13d2840c9d65f790e99f3589f1857585c4e786fde3ff94",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "path": "assets/RAW/environments/ENV-B01/v001/ENV-02/ENV-02_terrain_source_v001.png",
+      "sha256": "abb765902fc86a7a07a8b03220af4f30c8ca4de1b61abbd23fc2ee50d8740c3c",
+      "width": 1254,
+      "height": 1254
+    }
+  ],
+  "processing_steps": [
+    "原图保留不改写；内置 image_gen 生成",
+    "透明模块采用 alpha>=128 连通域机械提取，透明区归零",
+    "按原比例最近邻缩放到16倍数画布，32/48色中值色板约束，alpha二值化",
+    "地形由原画固定矩形裁切，缺失BR用BL机械镜像，缺失内部alpha用原画土壤修复",
+    "16×16地形仅边界像素做原画颜色medoid校准，以精确匹配可重复接缝",
+    "背景固定640×360缩放压低对比；竖房背景取原画等比窄裁切640×720，叠加原画巨木根部；无纵向拉伸",
+    "RAW不包含角色或文字；地图通行和碰撞仍由既有世界数据负责"
+  ],
+  "render_layers": {
+    "background": -30,
+    "midground": -10,
+    "terrain": 0,
+    "props": 1,
+    "characters": 20
+  }
+}

@@ -1,0 +1,462 @@
+{
+  "format": "nailong-processed-enemy-qa-v1",
+  "id": "ENM-02",
+  "passed": true,
+  "errors": [],
+  "root": [
+    32,
+    32
+  ],
+  "anchor_consistent": true,
+  "source_pixels_preserved": true,
+  "animations": {
+    "idle": {
+      "frames": [
+        {
+          "bbox": [
+            13,
+            16,
+            54,
+            52
+          ],
+          "area": 738,
+          "centroid": [
+            33.0976,
+            30.2493
+          ],
+          "edge_pixels": 0
+        },
+        {
+          "bbox": [
+            13,
+            14,
+            54,
+            53
+          ],
+          "area": 723,
+          "centroid": [
+            35.3029,
+            31.0733
+          ],
+          "edge_pixels": 0
+        },
+        {
+          "bbox": [
+            13,
+            16,
+            54,
+            52
+          ],
+          "area": 738,
+          "centroid": [
+            33.0976,
+            30.2493
+          ],
+          "edge_pixels": 0
+        },
+        {
+          "bbox": [
+            13,
+            12,
+            54,
+            51
+          ],
+          "area": 752,
+          "centroid": [
+            30.9614,
+            28.6822
+          ],
+          "edge_pixels": 0
+        }
+      ],
+      "loop_seam_centroid_px": 2.6494,
+      "root": [
+        32,
+        32
+      ],
+      "source_sha256": "2759dd31f7969408cfcdb385fbf3befb801d433a2300bde9c734148c6d899266"
+    },
+    "move": {
+      "frames": [
+        {
+          "bbox": [
+            13,
+            16,
+            54,
+            52
+          ],
+          "area": 738,
+          "centroid": [
+            33.0976,
+            30.2493
+          ],
+          "edge_pixels": 0
+        },
+        {
+          "bbox": [
+            13,
+            13,
+            54,
+            51
+          ],
+          "area": 726,
+          "centroid": [
+            34.8788,
+            29.1556
+          ],
+          "edge_pixels": 0
+        },
+        {
+          "bbox": [
+            13,
+            13,
+            54,
+            51
+          ],
+          "area": 726,
+          "centroid": [
+            34.8788,
+            29.1556
+          ],
+          "edge_pixels": 0
+        },
+        {
+          "bbox": [
+            13,
+            16,
+            54,
+            52
+          ],
+          "area": 738,
+          "centroid": [
+            33.0976,
+            30.2493
+          ],
+          "edge_pixels": 0
+        },
+        {
+          "bbox": [
+            13,
+            13,
+            54,
+            51
+          ],
+          "area": 745,
+          "centroid": [
+            31.4121,
+            28.8966
+          ],
+          "edge_pixels": 0
+        },
+        {
+          "bbox": [
+            13,
+            13,
+            54,
+            51
+          ],
+          "area": 745,
+          "centroid": [
+            31.4121,
+            28.8966
+          ],
+          "edge_pixels": 0
+        }
+      ],
+      "loop_seam_centroid_px": 2.1612,
+      "root": [
+        32,
+        32
+      ],
+      "source_sha256": "f6fd7860c3e5079ec176806d30e1c3c19d9767ea514f4e129207a8b59bf87ba7"
+    },
+    "telegraph": {
+      "frames": [
+        {
+          "bbox": [
+            13,
+            16,
+            54,
+            52
+          ],
+          "area": 738,
+          "centroid": [
+            33.0976,
+            30.2493
+          ],
+          "edge_pixels": 0
+        },
+        {
+          "bbox": [
+            12,
+            18,
+            54,
+            52
+          ],
+          "area": 731,
+          "centroid": [
+            33.0903,
+            31.2832
+          ],
+          "edge_pixels": 0
+        },
+        {
+          "bbox": [
+            10,
+            17,
+            53,
+            52
+          ],
+          "area": 685,
+          "centroid": [
+            33.5912,
+            32.1723
+          ],
+          "edge_pixels": 0
+        }
+      ],
+      "loop_seam_centroid_px": null,
+      "root": [
+        32,
+        32
+      ],
+      "source_sha256": "1e8c5c3db6333d305f5e3ecbb7913e4f2763458fb0fd351b0d7fc807c58b8adf"
+    },
+    "attack": {
+      "frames": [
+        {
+          "bbox": [
+            12,
+            14,
+            53,
+            52
+          ],
+          "area": 726,
+          "centroid": [
+            33.8788,
+            30.1556
+          ],
+          "edge_pixels": 0
+        },
+        {
+          "bbox": [
+            16,
+            16,
+            57,
+            54
+          ],
+          "area": 745,
+          "centroid": [
+            34.4121,
+            31.8966
+          ],
+          "edge_pixels": 0
+        },
+        {
+          "bbox": [
+            17,
+            17,
+            58,
+            53
+          ],
+          "area": 744,
+          "centroid": [
+            36.6855,
+            31.1747
+          ],
+          "edge_pixels": 0
+        },
+        {
+          "bbox": [
+            14,
+            15,
+            55,
+            52
+          ],
+          "area": 731,
+          "centroid": [
+            35.4145,
+            30.212
+          ],
+          "edge_pixels": 0
+        }
+      ],
+      "loop_seam_centroid_px": null,
+      "root": [
+        32,
+        32
+      ],
+      "source_sha256": "d08a78b466dd0972c7e8c56c258e8fd09fb1567443d5e80d1c70d8bb573ed2a9"
+    },
+    "recover": {
+      "frames": [
+        {
+          "bbox": [
+            14,
+            16,
+            55,
+            52
+          ],
+          "area": 738,
+          "centroid": [
+            34.0976,
+            30.2493
+          ],
+          "edge_pixels": 0
+        },
+        {
+          "bbox": [
+            13,
+            16,
+            54,
+            52
+          ],
+          "area": 738,
+          "centroid": [
+            33.0976,
+            30.2493
+          ],
+          "edge_pixels": 0
+        }
+      ],
+      "loop_seam_centroid_px": null,
+      "root": [
+        32,
+        32
+      ],
+      "source_sha256": "4b983d8a27a222f979a3037b9ffed9c89318415ec51058b86bdb1703d0178715"
+    },
+    "hurt": {
+      "frames": [
+        {
+          "bbox": [
+            11,
+            15,
+            52,
+            51
+          ],
+          "area": 738,
+          "centroid": [
+            31.0976,
+            29.2493
+          ],
+          "edge_pixels": 0
+        },
+        {
+          "bbox": [
+            12,
+            16,
+            53,
+            52
+          ],
+          "area": 738,
+          "centroid": [
+            32.0976,
+            30.2493
+          ],
+          "edge_pixels": 0
+        }
+      ],
+      "loop_seam_centroid_px": null,
+      "root": [
+        32,
+        32
+      ],
+      "source_sha256": "67c838cf0df3a8d39112379025a271e6d414554e566d9571ae1718a46cb528c2"
+    },
+    "death": {
+      "frames": [
+        {
+          "bbox": [
+            13,
+            16,
+            54,
+            52
+          ],
+          "area": 738,
+          "centroid": [
+            33.0976,
+            30.2493
+          ],
+          "edge_pixels": 0
+        },
+        {
+          "bbox": [
+            12,
+            20,
+            54,
+            52
+          ],
+          "area": 662,
+          "centroid": [
+            32.5604,
+            33.0076
+          ],
+          "edge_pixels": 0
+        },
+        {
+          "bbox": [
+            11,
+            24,
+            54,
+            53
+          ],
+          "area": 612,
+          "centroid": [
+            32.0327,
+            35.4575
+          ],
+          "edge_pixels": 0
+        },
+        {
+          "bbox": [
+            10,
+            28,
+            54,
+            53
+          ],
+          "area": 535,
+          "centroid": [
+            32.0729,
+            38.0318
+          ],
+          "edge_pixels": 0
+        },
+        {
+          "bbox": [
+            10,
+            33,
+            54,
+            53
+          ],
+          "area": 456,
+          "centroid": [
+            31.6645,
+            40.6711
+          ],
+          "edge_pixels": 0
+        },
+        {
+          "bbox": [
+            9,
+            37,
+            55,
+            54
+          ],
+          "area": 368,
+          "centroid": [
+            31.2826,
+            43.3832
+          ],
+          "edge_pixels": 0
+        }
+      ],
+      "loop_seam_centroid_px": null,
+      "root": [
+        32,
+        32
+      ],
+      "source_sha256": "5621cdcad024c2710870e73ac28d298ecafc97b2ce9a1c4a3aeedcef2f34ff96"
+    }
+  }
+}

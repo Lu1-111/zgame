@@ -1,0 +1,315 @@
+{
+  "id": "ENM-07_death",
+  "enemyId": "ENM-07",
+  "gameEnemyId": "vine_flower",
+  "label": "藤蔓花",
+  "name": "death",
+  "kind": "body",
+  "generationMode": "built-in image_gen",
+  "sourcePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-07/ENM-07_actions_B.png",
+  "sourceRects": [
+    [
+      0,
+      512,
+      384,
+      264
+    ],
+    [
+      384,
+      512,
+      402,
+      264
+    ],
+    [
+      786,
+      512,
+      374,
+      264
+    ],
+    [
+      1160,
+      512,
+      376,
+      264
+    ],
+    [
+      0,
+      776,
+      384,
+      248
+    ],
+    [
+      384,
+      776,
+      400,
+      248
+    ],
+    [
+      784,
+      776,
+      374,
+      248
+    ],
+    [
+      1158,
+      776,
+      378,
+      248
+    ]
+  ],
+  "sourceAnchors": [
+    [
+      170,
+      229
+    ],
+    [
+      181,
+      229
+    ],
+    [
+      174,
+      229
+    ],
+    [
+      185,
+      229
+    ],
+    [
+      170,
+      209
+    ],
+    [
+      181,
+      209
+    ],
+    [
+      176,
+      209
+    ],
+    [
+      187,
+      209
+    ]
+  ],
+  "sourceSize": [
+    1536,
+    1024
+  ],
+  "sourceSha256": "c8e728bd75dc96c425a8ec2425145a96cf3de6e39b4a172bc345ecef81d863c4",
+  "sourceBatch": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-07/batch.json",
+  "promptPath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-07/ENM-07_B.prompt.txt",
+  "provenancePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-07/provenance.json",
+  "target": [
+    128,
+    88
+  ],
+  "anchor": [
+    58,
+    72
+  ],
+  "rootType": "ground",
+  "scale": 0.22,
+  "fps": 10,
+  "loop": false,
+  "frameCount": 8,
+  "frames": [
+    "frames/ENM-07_death/ENM-07_death_00.png",
+    "frames/ENM-07_death/ENM-07_death_01.png",
+    "frames/ENM-07_death/ENM-07_death_02.png",
+    "frames/ENM-07_death/ENM-07_death_03.png",
+    "frames/ENM-07_death/ENM-07_death_04.png",
+    "frames/ENM-07_death/ENM-07_death_05.png",
+    "frames/ENM-07_death/ENM-07_death_06.png",
+    "frames/ENM-07_death/ENM-07_death_07.png"
+  ],
+  "sheet": "sheets/ENM-07_death.png",
+  "frameDetails": [
+    {
+      "sourceRect": [
+        0,
+        512,
+        384,
+        264
+      ],
+      "sourceAnchor": [
+        170,
+        229
+      ],
+      "offset": [
+        21,
+        22
+      ],
+      "alphaBBox": [
+        27,
+        24,
+        103,
+        76
+      ]
+    },
+    {
+      "sourceRect": [
+        384,
+        512,
+        402,
+        264
+      ],
+      "sourceAnchor": [
+        181,
+        229
+      ],
+      "offset": [
+        18,
+        22
+      ],
+      "alphaBBox": [
+        28,
+        24,
+        106,
+        80
+      ]
+    },
+    {
+      "sourceRect": [
+        786,
+        512,
+        374,
+        264
+      ],
+      "sourceAnchor": [
+        174,
+        229
+      ],
+      "offset": [
+        20,
+        22
+      ],
+      "alphaBBox": [
+        22,
+        28,
+        102,
+        79
+      ]
+    },
+    {
+      "sourceRect": [
+        1160,
+        512,
+        376,
+        264
+      ],
+      "sourceAnchor": [
+        185,
+        229
+      ],
+      "offset": [
+        17,
+        22
+      ],
+      "alphaBBox": [
+        17,
+        32,
+        97,
+        79
+      ]
+    },
+    {
+      "sourceRect": [
+        0,
+        776,
+        384,
+        248
+      ],
+      "sourceAnchor": [
+        170,
+        209
+      ],
+      "offset": [
+        21,
+        26
+      ],
+      "alphaBBox": [
+        26,
+        29,
+        105,
+        75
+      ]
+    },
+    {
+      "sourceRect": [
+        384,
+        776,
+        400,
+        248
+      ],
+      "sourceAnchor": [
+        181,
+        209
+      ],
+      "offset": [
+        18,
+        26
+      ],
+      "alphaBBox": [
+        21,
+        26,
+        106,
+        77
+      ]
+    },
+    {
+      "sourceRect": [
+        784,
+        776,
+        374,
+        248
+      ],
+      "sourceAnchor": [
+        176,
+        209
+      ],
+      "offset": [
+        19,
+        26
+      ],
+      "alphaBBox": [
+        23,
+        40,
+        101,
+        75
+      ]
+    },
+    {
+      "sourceRect": [
+        1158,
+        776,
+        378,
+        248
+      ],
+      "sourceAnchor": [
+        187,
+        209
+      ],
+      "offset": [
+        17,
+        26
+      ],
+      "alphaBBox": [
+        22,
+        36,
+        93,
+        74
+      ]
+    }
+  ],
+  "fadeStartNormalized": 0.65,
+  "phases": [
+    "death1",
+    "death2",
+    "death3",
+    "death4",
+    "death5",
+    "death6",
+    "death7",
+    "death8"
+  ]
+}

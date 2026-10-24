@@ -1,0 +1,19 @@
+{
+  "id": "BOSS-01",
+  "gameEnemyId": "honey_queen",
+  "name": "蜂蜜女王",
+  "source": "assets/RAW/enemies/ENM-B04/v001/BOSS-01/BOSS-01_actions_A.png",
+  "canvas": [192, 128],
+  "anchor": [96, 64],
+  "scale": 0.5,
+  "filter": "nearest",
+  "actions": {
+    "idle": { "row": 0, "fps": 8, "loop": true },
+    "move": { "row": 1, "fps": 10, "loop": true },
+    "telegraph": { "row": 2, "fps": 10, "loop": false },
+    "attack": { "row": 3, "fps": 10, "loop": false }
+  },
+  "sourceCell": [384, 256],
+  "frameCountPerAction": 4,
+  "note": "仅处理现有 actions_A 四行；recover/hurt/death 源帧尚不存在，未虚构。"
+}

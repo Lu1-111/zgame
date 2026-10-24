@@ -1,0 +1,34 @@
+{
+  "batch": "ENV-B01",
+  "screen": [640, 360],
+  "tile_size": 16,
+  "overview": {"cell": [136, 104], "padding": 40},
+  "colors": {
+    "exit": "#80d8c3",
+    "gate": "#f1c66e",
+    "shortcut": "#c6a8ec",
+    "save": "#ffb675",
+    "treasure": "#e9cf83",
+    "enemy": "#dc8495",
+    "route": "#a9dfb880",
+    "hazard_fill": "#8b9f538f",
+    "hazard_edge": "#f2d58f"
+  },
+  "rooms": {
+    "camp_01": {"role":"安全枢纽 / 大回环归宿","landmark":"奶泉与暖色营地","composition":"奶泉居中偏右，木屋与仓储成簇；顶部回营入口单独留白，东侧用根系引向林地。","pacing":"出发前停驻；取得能力后的熟悉落点。","exploration":"左侧商店、右侧林地、上方单向捷径落点。","background_brightness":0.78},
+    "camp_02": {"role":"补给支路","landmark":"靠墙货架","composition":"货架靠左，中央商人活动区留空，右方出口保持清楚。","pacing":"短、安静、可迅速返回。","exploration":"购买地图后回到营地主路线。","background_brightness":0.63,"background_offset_y":54},
+    "forest_01": {"role":"教学与第一次分岔","landmark":"巨木露根","composition":"树干偏置、树冠压暗；地面路线明晰，右侧两个出口的高度差保持可见。","pacing":"安全观察 → 初次战斗 → 选择路线。","exploration":"中路通向小径，上侧支线连深林，构成森林回环。","background_brightness":0.74},
+    "forest_02": {"role":"遭遇与回环接点","landmark":"苔石小径 / 下垂藤根","composition":"苔石集中两端，飞行敌人活动高度留空；下行口由垂根提示。","pacing":"飞行与地面威胁组合。","exploration":"东侧去断桥，下侧可回深林。","background_brightness":0.71},
+    "forest_03": {"role":"断桥远望 / 能力门","landmark":"破桥与贯穿竖井的巨木","composition":"两端桥头对视，中间保留真正裂口；竖向树干联系上下层，顶部树冠亮口建立目标。","pacing":"先看见高处 → 下层缓冲 → 日后回访。","exploration":"北门数据要求二段跳；取得能力后通树冠。","background_brightness":0.8},
+    "forest_04": {"role":"精英与环路另一侧","landmark":"深林巨根","composition":"大树偏离中央交战区，平台高处有明晰的回环口；右侧奖励不被蕨叶挡住。","pacing":"开阔战斗，之后通往安全洞口。","exploration":"西回林地、北回小径、东进洞窟入口。","background_brightness":0.6},
+    "forest_05": {"role":"换区 / 存档呼吸点","landmark":"裸根包裹的紫岩洞口","composition":"从左到右由绿叶转裸根、苔石与紫矿；暖色安全点居中，右口清楚。","pacing":"危险后暂停，进入暗区前建立预期。","exploration":"林地到洞窟的唯一主线过渡。","background_brightness":0.62},
+    "forest_06": {"role":"能力回访的奖励房","landmark":"树冠天光","composition":"稀疏树冠与侧根框景，宝箱高台附近降低装饰密度。","pacing":"爬升后的视野释放。","exploration":"断桥二段跳门后的可选生命奖励。","background_brightness":0.94},
+    "cave_01": {"role":"洞窟前厅 / 暗区教学","landmark":"由树根过渡的石拱","composition":"左端残根、右端少量荧矿；平台亮边先于背景纹理被读到。","pacing":"由安全入口适应暗区。","exploration":"主线穿过洞窟前厅进入荧光回廊。","background_brightness":0.8},
+    "cave_02": {"role":"暗区探索与资源支路","landmark":"集中成簇的荧光矿脉","composition":"矿簇在两侧和高台处点亮；怪物高度留空，奖励不与矿光混淆。","pacing":"可选攀爬与主路并存。","exploration":"沿高台观察体力碎片，地面继续主线。","background_brightness":0.86},
+    "cave_03": {"role":"环境危险节拍","landmark":"两处酸池缺口","composition":"池边岩面边缘清晰，危险图层独立；池面不放可能误认落脚的装饰。","pacing":"观察 → 跨越 → 安全落地。","exploration":"主路继续向蜂巢外围，远端奖励可选。","background_brightness":0.75},
+    "cave_04": {"role":"BOSS前准备 / 分岔","landmark":"岩蜡交界与采集管线","composition":"左侧冷岩与安全点，右侧逐渐出现蜜蜡、管线与蜂巢；中央精英区留白。","pacing":"存档准备 → 精英 → 选择深入或支路。","exploration":"东侧裂隙为资源支路，高侧通向女王大厅。","background_brightness":0.77},
+    "cave_05": {"role":"风险换资源的裂隙支路","landmark":"两侧狭长岩簇","composition":"岩簇只做两翼，中央母体活动区保持空净；高处微光带出隐藏奖励。","pacing":"一次独立精英挑战，回头路清楚。","exploration":"背包扩容与隐藏奶力奖励；原路返回外围。","background_brightness":0.66},
+    "cave_06": {"role":"女王战高潮","landmark":"蜂巢大厅后方的采集装置","composition":"蜂巢两翼包围、中心留白；后景装置降对比，三段浮台有一致亮边。","pacing":"正面交战，识别预警优先。","exploration":"击败女王后通向奖励房；本场景不实现封门和BOSS逻辑。","background_brightness":0.65},
+    "cave_07": {"role":"能力奖励 / 大回环闭合","landmark":"与奶泉呼应的奶白奖励空间","composition":"装置退到远侧，画面优先留给奖励和篝火；返回口易辨认，降低危险感。","pacing":"释放压力 → 取得能力 → 返回熟悉世界。","exploration":"回营地后重新探索断桥与树冠。","background_brightness":0.75}
+  }
+}

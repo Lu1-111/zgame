@@ -1,0 +1,185 @@
+{
+  "id": "NPC-S03",
+  "sheet": "NPC-S03_walk_right_v003.png",
+  "sheet_size": [
+    1735,
+    906
+  ],
+  "frames": [
+    {
+      "action": "walk",
+      "frame": 0,
+      "rect_xywh": [
+        0,
+        0,
+        448,
+        451
+      ],
+      "alpha128_bbox_xyxy": [
+        40,
+        20,
+        440,
+        449
+      ],
+      "source_root_xy": [
+        250,
+        449
+      ]
+    },
+    {
+      "action": "walk",
+      "frame": 1,
+      "rect_xywh": [
+        448,
+        0,
+        439,
+        451
+      ],
+      "alpha128_bbox_xyxy": [
+        468,
+        21,
+        855,
+        443
+      ],
+      "source_root_xy": [
+        680,
+        449
+      ]
+    },
+    {
+      "action": "walk",
+      "frame": 2,
+      "rect_xywh": [
+        887,
+        0,
+        433,
+        451
+      ],
+      "alpha128_bbox_xyxy": [
+        900,
+        20,
+        1320,
+        443
+      ],
+      "source_root_xy": [
+        1105,
+        449
+      ]
+    },
+    {
+      "action": "walk",
+      "frame": 3,
+      "rect_xywh": [
+        1320,
+        0,
+        415,
+        451
+      ],
+      "alpha128_bbox_xyxy": [
+        1320,
+        19,
+        1709,
+        446
+      ],
+      "source_root_xy": [
+        1530,
+        449
+      ]
+    },
+    {
+      "action": "walk",
+      "frame": 4,
+      "rect_xywh": [
+        0,
+        451,
+        448,
+        455
+      ],
+      "alpha128_bbox_xyxy": [
+        26,
+        458,
+        436,
+        886
+      ],
+      "source_root_xy": [
+        250,
+        886
+      ]
+    },
+    {
+      "action": "walk",
+      "frame": 5,
+      "rect_xywh": [
+        448,
+        451,
+        439,
+        455
+      ],
+      "alpha128_bbox_xyxy": [
+        470,
+        458,
+        852,
+        880
+      ],
+      "source_root_xy": [
+        680,
+        886
+      ]
+    },
+    {
+      "action": "walk",
+      "frame": 6,
+      "rect_xywh": [
+        887,
+        451,
+        433,
+        455
+      ],
+      "alpha128_bbox_xyxy": [
+        899,
+        460,
+        1320,
+        878
+      ],
+      "source_root_xy": [
+        1105,
+        886
+      ]
+    },
+    {
+      "action": "walk",
+      "frame": 7,
+      "rect_xywh": [
+        1320,
+        451,
+        415,
+        455
+      ],
+      "alpha128_bbox_xyxy": [
+        1320,
+        457,
+        1709,
+        884
+      ],
+      "source_root_xy": [
+        1530,
+        886
+      ]
+    }
+  ],
+  "fps": 8,
+  "loop": true,
+  "target_canvas": [
+    64,
+    64
+  ],
+  "target_root": [
+    32,
+    58
+  ],
+  "suggested_height": 44,
+  "notes": [
+    "Fixed per-row ground449/886, rootX at torso estimated from belt/head, not feet. QA may refine torso X from transparent sprite preview.",
+    "Front/back leg identity alternation needs visual review; candidate rather than certified final cycle."
+  ]
+}

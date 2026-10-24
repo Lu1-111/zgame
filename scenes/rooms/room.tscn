@@ -1,0 +1,8 @@
+[gd_scene format=3]
+
+; room.tscn —— 房间空壳占位场景（M0）
+; M2（Architect）：RoomBuilder 按 DataDB.get_room(id) 的 platforms/doors/spawn/enemies/chests
+;                 运行时生成 StaticBody2D 色块灰盒（参考书 §2.4），本场景是生成产物的外壳
+; M3（Level）：15 个房间（⓪①② 区域）全部由 data/world/regions.json 数据驱动填充
+
+[node name="Room" type="Node2D"]

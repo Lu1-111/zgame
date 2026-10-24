@@ -1,0 +1,235 @@
+{
+  "id": "ENM-04_attack",
+  "name": "attack",
+  "enemyId": "ENM-04",
+  "gameEnemyId": "moss_fox",
+  "label": "attack",
+  "kind": "body",
+  "sourcePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-04/ENM-04_attack_strip.png",
+  "sourceRects": [
+    [
+      0,
+      0,
+      505,
+      724
+    ],
+    [
+      505,
+      0,
+      641,
+      724
+    ],
+    [
+      1146,
+      0,
+      539,
+      724
+    ],
+    [
+      1685,
+      0,
+      487,
+      724
+    ]
+  ],
+  "sourceAnchors": [
+    [
+      271.5,
+      545
+    ],
+    [
+      309.5,
+      545
+    ],
+    [
+      211.5,
+      545
+    ],
+    [
+      215.5,
+      545
+    ]
+  ],
+  "scale": 0.095,
+  "target": [
+    128,
+    128
+  ],
+  "anchor": [
+    64,
+    104
+  ],
+  "fps": 8,
+  "loop": false,
+  "promptPath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-04/ENM-04_attack.prompt.txt",
+  "generationMode": "built-in-imagegen",
+  "processing": "rect crop, fixed per-sheet nearest scale, integer semantic root translation; original alpha retained",
+  "allowSourceEdge": true,
+  "sourceEdgeReview": "Original generated strip has peripheral tail pixels at outer canvas edge; no cell slicing through opaque anatomy.",
+  "provenancePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-04/provenance.json",
+  "frames": [
+    "frames/ENM-04_attack/ENM-04_attack_00.png",
+    "frames/ENM-04_attack/ENM-04_attack_01.png",
+    "frames/ENM-04_attack/ENM-04_attack_02.png",
+    "frames/ENM-04_attack/ENM-04_attack_03.png"
+  ],
+  "sheet": "sheets/ENM-04_attack.png",
+  "sheetRects": [
+    [
+      0,
+      0,
+      128,
+      128
+    ],
+    [
+      128,
+      0,
+      128,
+      128
+    ],
+    [
+      256,
+      0,
+      128,
+      128
+    ],
+    [
+      384,
+      0,
+      128,
+      128
+    ]
+  ],
+  "atlas": "atlas/ENM-04_attack.png",
+  "atlasColumns": 2,
+  "atlasRows": 2,
+  "atlasRects": [
+    [
+      0,
+      0,
+      128,
+      128
+    ],
+    [
+      128,
+      0,
+      128,
+      128
+    ],
+    [
+      0,
+      128,
+      128,
+      128
+    ],
+    [
+      128,
+      128,
+      128,
+      128
+    ]
+  ],
+  "sourceSize": [
+    2172,
+    724
+  ],
+  "sourceSha256": "cdeb1435603c931dcd56412a482e39e7ee40f1b51eaa8f1caa1cb31606ad8700",
+  "sourceBatch": "assets/RAW/enemies/ENM-B04/v001/ENM-04/batch.json",
+  "frameCount": 4,
+  "frameDetails": [
+    {
+      "sourceRect": [
+        0,
+        0,
+        505,
+        724
+      ],
+      "sourceAnchor": [
+        271.5,
+        545
+      ],
+      "offset": [
+        38,
+        52
+      ],
+      "alphaBBox": [
+        38,
+        70,
+        84,
+        104
+      ],
+      "sourceEdgeAlpha": 4
+    },
+    {
+      "sourceRect": [
+        505,
+        0,
+        641,
+        724
+      ],
+      "sourceAnchor": [
+        309.5,
+        545
+      ],
+      "offset": [
+        35,
+        52
+      ],
+      "alphaBBox": [
+        35,
+        66,
+        96,
+        112
+      ],
+      "sourceEdgeAlpha": 3
+    },
+    {
+      "sourceRect": [
+        1146,
+        0,
+        539,
+        724
+      ],
+      "sourceAnchor": [
+        211.5,
+        545
+      ],
+      "offset": [
+        44,
+        52
+      ],
+      "alphaBBox": [
+        44,
+        72,
+        95,
+        120
+      ],
+      "sourceEdgeAlpha": 55
+    },
+    {
+      "sourceRect": [
+        1685,
+        0,
+        487,
+        724
+      ],
+      "sourceAnchor": [
+        215.5,
+        545
+      ],
+      "offset": [
+        44,
+        52
+      ],
+      "alphaBBox": [
+        44,
+        70,
+        89,
+        120
+      ],
+      "sourceEdgeAlpha": 5
+    }
+  ],
+  "fadeStartNormalized": 1.0,
+  "loopBoundaryMeanDifference": 9.666666666666666
+}

@@ -1,0 +1,467 @@
+{
+  "id": "NPC-S05",
+  "rawVersion": "v003",
+  "processedVersion": "v002",
+  "master": {
+    "path": "NPC-S05_master_right_v002.png",
+    "source": "assets/RAW/characters/NPC-S05/v003/NPC-S05_master_right_v003.png",
+    "sourceAnchor": [
+      629,
+      1205
+    ],
+    "uniformScale": 0.03826086956521739
+  },
+  "animations": {
+    "idle": {
+      "frameCount": 6,
+      "sources": [
+        {
+          "id": "NPC-S05_idle_talk_right_v003_idle_component_0",
+          "path": "/home/lululu/zgame/work/npc_series_refine/components/NPC-S05/idle_0.png",
+          "sha256": "83f7906d3aecfc1593a6fafd9929107bd09a643bf96603236814615f1f6640b6",
+          "cellIndex": 0,
+          "rect": [
+            0,
+            0,
+            299,
+            434
+          ],
+          "anchor": [
+            131.5,
+            430
+          ],
+          "originalSource": {
+            "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S05/v003/NPC-S05_idle_talk_right_v003.png",
+            "sha256": "b6cd2bb687cdc25ad12b9a7d0ea1e4c29f2f802a4ad04485143c8bf70fef2b1e",
+            "componentId": 1,
+            "rect": [
+              22,
+              48,
+              299,
+              434
+            ],
+            "alphaConnectivityThreshold": 8,
+            "edgeFringeRadius": 2,
+            "method": "Separate alpha-disconnected complete sprite components; preserve selected RGBA bytes; zero neighbors only."
+          }
+        },
+        {
+          "id": "NPC-S05_idle_talk_right_v003_idle_component_1",
+          "path": "/home/lululu/zgame/work/npc_series_refine/components/NPC-S05/idle_1.png",
+          "sha256": "83cf8fa3eb2d3944e6f13b4163e55506e50602ffb8b9de190b9cbeabf402f5b8",
+          "cellIndex": 0,
+          "rect": [
+            0,
+            0,
+            300,
+            434
+          ],
+          "anchor": [
+            132.5,
+            430
+          ],
+          "originalSource": {
+            "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S05/v003/NPC-S05_idle_talk_right_v003.png",
+            "sha256": "b6cd2bb687cdc25ad12b9a7d0ea1e4c29f2f802a4ad04485143c8bf70fef2b1e",
+            "componentId": 2,
+            "rect": [
+              322,
+              48,
+              300,
+              434
+            ],
+            "alphaConnectivityThreshold": 8,
+            "edgeFringeRadius": 2,
+            "method": "Separate alpha-disconnected complete sprite components; preserve selected RGBA bytes; zero neighbors only."
+          }
+        },
+        {
+          "id": "NPC-S05_idle_talk_right_v003_idle_component_2",
+          "path": "/home/lululu/zgame/work/npc_series_refine/components/NPC-S05/idle_2.png",
+          "sha256": "0ce8afec83d1ec8ae35c8860d16eb54a6c3c7ef456b86364b1c8df1723b55335",
+          "cellIndex": 0,
+          "rect": [
+            0,
+            0,
+            311,
+            434
+          ],
+          "anchor": [
+            134,
+            430
+          ],
+          "originalSource": {
+            "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S05/v003/NPC-S05_idle_talk_right_v003.png",
+            "sha256": "b6cd2bb687cdc25ad12b9a7d0ea1e4c29f2f802a4ad04485143c8bf70fef2b1e",
+            "componentId": 3,
+            "rect": [
+              620,
+              48,
+              311,
+              434
+            ],
+            "alphaConnectivityThreshold": 8,
+            "edgeFringeRadius": 2,
+            "method": "Separate alpha-disconnected complete sprite components; preserve selected RGBA bytes; zero neighbors only."
+          }
+        },
+        {
+          "id": "NPC-S05_idle_talk_right_v003_idle_component_3",
+          "path": "/home/lululu/zgame/work/npc_series_refine/components/NPC-S05/idle_3.png",
+          "sha256": "d2abc75c31bbe2cdfe08eddae7880a66a9956d7769f7d71bc3f6768ca1c2ef84",
+          "cellIndex": 0,
+          "rect": [
+            0,
+            0,
+            300,
+            434
+          ],
+          "anchor": [
+            132,
+            430
+          ],
+          "originalSource": {
+            "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S05/v003/NPC-S05_idle_talk_right_v003.png",
+            "sha256": "b6cd2bb687cdc25ad12b9a7d0ea1e4c29f2f802a4ad04485143c8bf70fef2b1e",
+            "componentId": 4,
+            "rect": [
+              924,
+              48,
+              300,
+              434
+            ],
+            "alphaConnectivityThreshold": 8,
+            "edgeFringeRadius": 2,
+            "method": "Separate alpha-disconnected complete sprite components; preserve selected RGBA bytes; zero neighbors only."
+          }
+        },
+        {
+          "id": "NPC-S05_idle_talk_right_v003_idle_component_4",
+          "path": "/home/lululu/zgame/work/npc_series_refine/components/NPC-S05/idle_4.png",
+          "sha256": "b30587cc7311cba51481704e288a9f54d29f8dfbba8f172acf66d74f0bd437af",
+          "cellIndex": 0,
+          "rect": [
+            0,
+            0,
+            301,
+            434
+          ],
+          "anchor": [
+            131.5,
+            430
+          ],
+          "originalSource": {
+            "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S05/v003/NPC-S05_idle_talk_right_v003.png",
+            "sha256": "b6cd2bb687cdc25ad12b9a7d0ea1e4c29f2f802a4ad04485143c8bf70fef2b1e",
+            "componentId": 5,
+            "rect": [
+              1224,
+              48,
+              301,
+              434
+            ],
+            "alphaConnectivityThreshold": 8,
+            "edgeFringeRadius": 2,
+            "method": "Separate alpha-disconnected complete sprite components; preserve selected RGBA bytes; zero neighbors only."
+          }
+        },
+        {
+          "id": "NPC-S05_idle_talk_right_v003_idle_component_5",
+          "path": "/home/lululu/zgame/work/npc_series_refine/components/NPC-S05/idle_5.png",
+          "sha256": "4b6e6a08db3b776e3bf3f071af3cb4d8e473cee7be7bfcda66b2b8a31975a25c",
+          "cellIndex": 0,
+          "rect": [
+            0,
+            0,
+            299,
+            438
+          ],
+          "anchor": [
+            132.5,
+            434
+          ],
+          "originalSource": {
+            "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S05/v003/NPC-S05_idle_talk_right_v003.png",
+            "sha256": "b6cd2bb687cdc25ad12b9a7d0ea1e4c29f2f802a4ad04485143c8bf70fef2b1e",
+            "componentId": 79,
+            "rect": [
+              25,
+              535,
+              299,
+              438
+            ],
+            "alphaConnectivityThreshold": 8,
+            "edgeFringeRadius": 2,
+            "method": "Separate alpha-disconnected complete sprite components; preserve selected RGBA bytes; zero neighbors only."
+          }
+        }
+      ]
+    },
+    "walk": {
+      "frameCount": 8,
+      "sources": [
+        {
+          "id": "NPC-S05_walk_right_v003_walk",
+          "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S05/v003/NPC-S05_walk_right_v003.png",
+          "sha256": "94b2633b1af0e565eda7f5d7e90d4e568ca4a5443625317470ec0389522fee08",
+          "cellIndex": 0,
+          "rect": [
+            0,
+            0,
+            384,
+            512
+          ],
+          "anchor": [
+            185,
+            500
+          ],
+          "originalSource": null
+        },
+        {
+          "id": "NPC-S05_walk_right_v003_walk",
+          "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S05/v003/NPC-S05_walk_right_v003.png",
+          "sha256": "94b2633b1af0e565eda7f5d7e90d4e568ca4a5443625317470ec0389522fee08",
+          "cellIndex": 1,
+          "rect": [
+            384,
+            0,
+            384,
+            512
+          ],
+          "anchor": [
+            185,
+            500
+          ],
+          "originalSource": null
+        },
+        {
+          "id": "NPC-S05_walk_right_v003_walk",
+          "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S05/v003/NPC-S05_walk_right_v003.png",
+          "sha256": "94b2633b1af0e565eda7f5d7e90d4e568ca4a5443625317470ec0389522fee08",
+          "cellIndex": 2,
+          "rect": [
+            768,
+            0,
+            384,
+            512
+          ],
+          "anchor": [
+            185,
+            500
+          ],
+          "originalSource": null
+        },
+        {
+          "id": "NPC-S05_walk_right_v003_walk",
+          "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S05/v003/NPC-S05_walk_right_v003.png",
+          "sha256": "94b2633b1af0e565eda7f5d7e90d4e568ca4a5443625317470ec0389522fee08",
+          "cellIndex": 3,
+          "rect": [
+            1152,
+            0,
+            384,
+            512
+          ],
+          "anchor": [
+            185,
+            500
+          ],
+          "originalSource": null
+        },
+        {
+          "id": "NPC-S05_walk_right_v003_walk",
+          "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S05/v003/NPC-S05_walk_right_v003.png",
+          "sha256": "94b2633b1af0e565eda7f5d7e90d4e568ca4a5443625317470ec0389522fee08",
+          "cellIndex": 4,
+          "rect": [
+            0,
+            512,
+            384,
+            512
+          ],
+          "anchor": [
+            185,
+            488
+          ],
+          "originalSource": null
+        },
+        {
+          "id": "NPC-S05_walk_right_v003_walk",
+          "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S05/v003/NPC-S05_walk_right_v003.png",
+          "sha256": "94b2633b1af0e565eda7f5d7e90d4e568ca4a5443625317470ec0389522fee08",
+          "cellIndex": 5,
+          "rect": [
+            384,
+            512,
+            384,
+            512
+          ],
+          "anchor": [
+            185,
+            488
+          ],
+          "originalSource": null
+        },
+        {
+          "id": "NPC-S05_walk_right_v003_walk",
+          "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S05/v003/NPC-S05_walk_right_v003.png",
+          "sha256": "94b2633b1af0e565eda7f5d7e90d4e568ca4a5443625317470ec0389522fee08",
+          "cellIndex": 6,
+          "rect": [
+            768,
+            512,
+            384,
+            512
+          ],
+          "anchor": [
+            185,
+            488
+          ],
+          "originalSource": null
+        },
+        {
+          "id": "NPC-S05_walk_right_v003_walk",
+          "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S05/v003/NPC-S05_walk_right_v003.png",
+          "sha256": "94b2633b1af0e565eda7f5d7e90d4e568ca4a5443625317470ec0389522fee08",
+          "cellIndex": 7,
+          "rect": [
+            1152,
+            512,
+            384,
+            512
+          ],
+          "anchor": [
+            185,
+            488
+          ],
+          "originalSource": null
+        }
+      ]
+    },
+    "talk": {
+      "frameCount": 4,
+      "sources": [
+        {
+          "id": "NPC-S05_idle_talk_right_v003_talk_component_6",
+          "path": "/home/lululu/zgame/work/npc_series_refine/components/NPC-S05/talk_0.png",
+          "sha256": "45a73b33a0a73993e755accf12bd634fa341811e07beb2a0cebebfc40e4dcd73",
+          "cellIndex": 0,
+          "rect": [
+            0,
+            0,
+            300,
+            438
+          ],
+          "anchor": [
+            132.5,
+            434
+          ],
+          "originalSource": {
+            "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S05/v003/NPC-S05_idle_talk_right_v003.png",
+            "sha256": "b6cd2bb687cdc25ad12b9a7d0ea1e4c29f2f802a4ad04485143c8bf70fef2b1e",
+            "componentId": 83,
+            "rect": [
+              322,
+              536,
+              300,
+              438
+            ],
+            "alphaConnectivityThreshold": 8,
+            "edgeFringeRadius": 2,
+            "method": "Separate alpha-disconnected complete sprite components; preserve selected RGBA bytes; zero neighbors only."
+          }
+        },
+        {
+          "id": "NPC-S05_idle_talk_right_v003_talk_component_7",
+          "path": "/home/lululu/zgame/work/npc_series_refine/components/NPC-S05/talk_1.png",
+          "sha256": "9827c65a707998b823e2ff4683969d8990fc22f9bc04ba0070dcfd273b2b69d1",
+          "cellIndex": 0,
+          "rect": [
+            0,
+            0,
+            299,
+            439
+          ],
+          "anchor": [
+            136.5,
+            435
+          ],
+          "originalSource": {
+            "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S05/v003/NPC-S05_idle_talk_right_v003.png",
+            "sha256": "b6cd2bb687cdc25ad12b9a7d0ea1e4c29f2f802a4ad04485143c8bf70fef2b1e",
+            "componentId": 80,
+            "rect": [
+              620,
+              535,
+              299,
+              439
+            ],
+            "alphaConnectivityThreshold": 8,
+            "edgeFringeRadius": 2,
+            "method": "Separate alpha-disconnected complete sprite components; preserve selected RGBA bytes; zero neighbors only."
+          }
+        },
+        {
+          "id": "NPC-S05_idle_talk_right_v003_talk_component_8",
+          "path": "/home/lululu/zgame/work/npc_series_refine/components/NPC-S05/talk_2.png",
+          "sha256": "b57d3ca4d8f814e604980fbebcb76c358b6fae2f761601ef7d46430916e30ca1",
+          "cellIndex": 0,
+          "rect": [
+            0,
+            0,
+            299,
+            439
+          ],
+          "anchor": [
+            135,
+            435
+          ],
+          "originalSource": {
+            "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S05/v003/NPC-S05_idle_talk_right_v003.png",
+            "sha256": "b6cd2bb687cdc25ad12b9a7d0ea1e4c29f2f802a4ad04485143c8bf70fef2b1e",
+            "componentId": 81,
+            "rect": [
+              921,
+              535,
+              299,
+              439
+            ],
+            "alphaConnectivityThreshold": 8,
+            "edgeFringeRadius": 2,
+            "method": "Separate alpha-disconnected complete sprite components; preserve selected RGBA bytes; zero neighbors only."
+          }
+        },
+        {
+          "id": "NPC-S05_idle_talk_right_v003_talk_component_9",
+          "path": "/home/lululu/zgame/work/npc_series_refine/components/NPC-S05/talk_3.png",
+          "sha256": "c5f8a4a6c1405897e97c126e0d52000d2241069111b80ca513b766f6d7dbbd58",
+          "cellIndex": 0,
+          "rect": [
+            0,
+            0,
+            305,
+            438
+          ],
+          "anchor": [
+            135.5,
+            434
+          ],
+          "originalSource": {
+            "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S05/v003/NPC-S05_idle_talk_right_v003.png",
+            "sha256": "b6cd2bb687cdc25ad12b9a7d0ea1e4c29f2f802a4ad04485143c8bf70fef2b1e",
+            "componentId": 82,
+            "rect": [
+              1220,
+              535,
+              305,
+              438
+            ],
+            "alphaConnectivityThreshold": 8,
+            "edgeFringeRadius": 2,
+            "method": "Separate alpha-disconnected complete sprite components; preserve selected RGBA bytes; zero neighbors only."
+          }
+        }
+      ]
+    }
+  }
+}

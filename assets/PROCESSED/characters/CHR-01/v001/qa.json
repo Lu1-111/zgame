@@ -1,0 +1,1358 @@
+{
+  "warnings": [],
+  "duplicates": [],
+  "animations": [
+    {
+      "name": "idle",
+      "frameCount": 6,
+      "allFramesTransparent": true,
+      "allFramesInBounds": true,
+      "anchor": [
+        32,
+        58
+      ],
+      "transitions": [
+        {
+          "from": 0,
+          "to": 1,
+          "silhouetteIoU": 0.9484412470023981,
+          "meanChannelDelta": 4.4442138671875,
+          "centroidDelta": [
+            -0.305125773683109,
+            0.01999230482584835
+          ],
+          "areaRatio": 0.9963144963144963
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "silhouetteIoU": 0.9508393285371702,
+          "meanChannelDelta": 3.825927734375,
+          "centroidDelta": [
+            0.124126592683929,
+            -0.05080419960832927
+          ],
+          "areaRatio": 1.0061652281134401
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "silhouetteIoU": 0.8839590443686007,
+          "meanChannelDelta": 7.810546875,
+          "centroidDelta": [
+            -0.7392857142857139,
+            -0.6094887955182031
+          ],
+          "areaRatio": 1.0294117647058822
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "silhouetteIoU": 0.8839590443686007,
+          "meanChannelDelta": 7.810546875,
+          "centroidDelta": [
+            0.7392857142857139,
+            0.6094887955182031
+          ],
+          "areaRatio": 0.9714285714285714
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "silhouetteIoU": 0.9508393285371702,
+          "meanChannelDelta": 3.825927734375,
+          "centroidDelta": [
+            -0.124126592683929,
+            0.05080419960832927
+          ],
+          "areaRatio": 0.9938725490196079
+        },
+        {
+          "from": 5,
+          "to": 0,
+          "seam": true,
+          "silhouetteIoU": 0.9484412470023981,
+          "meanChannelDelta": 4.4442138671875
+        }
+      ]
+    },
+    {
+      "name": "run",
+      "frameCount": 8,
+      "allFramesTransparent": true,
+      "allFramesInBounds": true,
+      "anchor": [
+        32,
+        58
+      ],
+      "transitions": [
+        {
+          "from": 0,
+          "to": 1,
+          "silhouetteIoU": 0.777509068923821,
+          "meanChannelDelta": 10.06591796875,
+          "centroidDelta": [
+            0.17226077672494,
+            -0.533431202455624
+          ],
+          "areaRatio": 0.9291338582677166
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "silhouetteIoU": 0.8431635388739946,
+          "meanChannelDelta": 7.1126708984375,
+          "centroidDelta": [
+            -1.363824443710346,
+            -0.16018262055413146
+          ],
+          "areaRatio": 0.942090395480226
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "silhouetteIoU": 0.7403245942571786,
+          "meanChannelDelta": 11.3369140625,
+          "centroidDelta": [
+            0.4401403149869374,
+            -0.580583160964224
+          ],
+          "areaRatio": 1.0899550224887555
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "silhouetteIoU": 0.7132784958871915,
+          "meanChannelDelta": 13.90435791015625,
+          "centroidDelta": [
+            0.41810976653864884,
+            2.6304378505824815
+          ],
+          "areaRatio": 1.0055020632737277
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "silhouetteIoU": 0.7048984468339307,
+          "meanChannelDelta": 12.63525390625,
+          "centroidDelta": [
+            0.1782316775948516,
+            -1.6894723807726777
+          ],
+          "areaRatio": 0.9521203830369357
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "silhouetteIoU": 0.8587105624142661,
+          "meanChannelDelta": 7.3692626953125,
+          "centroidDelta": [
+            -1.1909545985732457,
+            -0.1282965307937829
+          ],
+          "areaRatio": 0.9468390804597702
+        },
+        {
+          "from": 6,
+          "to": 7,
+          "silhouetteIoU": 0.7432950191570882,
+          "meanChannelDelta": 10.770751953125,
+          "centroidDelta": [
+            1.0232948024090085,
+            -0.34661066858103595
+          ],
+          "areaRatio": 1.0713201820940819
+        },
+        {
+          "from": 7,
+          "to": 0,
+          "seam": true,
+          "silhouetteIoU": 0.83270911360799,
+          "meanChannelDelta": 8.84661865234375
+        }
+      ]
+    },
+    {
+      "name": "jump",
+      "frameCount": 4,
+      "allFramesTransparent": true,
+      "allFramesInBounds": true,
+      "anchor": [
+        32,
+        58
+      ],
+      "transitions": [
+        {
+          "from": 0,
+          "to": 1,
+          "silhouetteIoU": 0.6389473684210526,
+          "meanChannelDelta": 18.1119384765625,
+          "centroidDelta": [
+            -0.5164032115374972,
+            -3.525234939658482
+          ],
+          "areaRatio": 1.2402877697841728
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "silhouetteIoU": 0.717948717948718,
+          "meanChannelDelta": 15.86016845703125,
+          "centroidDelta": [
+            -0.8781174818708735,
+            -3.3180437952871387
+          ],
+          "areaRatio": 0.9431554524361949
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "silhouetteIoU": 0.7742663656884876,
+          "meanChannelDelta": 12.5526123046875,
+          "centroidDelta": [
+            1.0416065030215513,
+            1.5987388727642227
+          ],
+          "areaRatio": 0.933579335793358
+        }
+      ]
+    },
+    {
+      "name": "fall",
+      "frameCount": 4,
+      "allFramesTransparent": true,
+      "allFramesInBounds": true,
+      "anchor": [
+        32,
+        58
+      ],
+      "transitions": [
+        {
+          "from": 0,
+          "to": 1,
+          "silhouetteIoU": 0.8539192399049881,
+          "meanChannelDelta": 8.24310302734375,
+          "centroidDelta": [
+            -0.4108424557232979,
+            0.6897002909095704
+          ],
+          "areaRatio": 1.019404915912031
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "silhouetteIoU": 0.8484848484848485,
+          "meanChannelDelta": 8.57318115234375,
+          "centroidDelta": [
+            0.07428469651285496,
+            1.1964397033192142
+          ],
+          "areaRatio": 1.0126903553299493
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "silhouetteIoU": 0.6695371367061357,
+          "meanChannelDelta": 16.8134765625,
+          "centroidDelta": [
+            -0.26017733576970414,
+            4.219687665378586
+          ],
+          "areaRatio": 0.943609022556391
+        }
+      ]
+    },
+    {
+      "name": "land",
+      "frameCount": 5,
+      "allFramesTransparent": true,
+      "allFramesInBounds": true,
+      "anchor": [
+        32,
+        58
+      ],
+      "transitions": [
+        {
+          "from": 0,
+          "to": 1,
+          "silhouetteIoU": 0.7951807228915663,
+          "meanChannelDelta": 11.34124755859375,
+          "centroidDelta": [
+            0.3603344298245652,
+            2.311114958448755
+          ],
+          "areaRatio": 0.9401041666666666
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "silhouetteIoU": 0.7951807228915663,
+          "meanChannelDelta": 11.34124755859375,
+          "centroidDelta": [
+            -0.3603344298245652,
+            -2.311114958448755
+          ],
+          "areaRatio": 1.0637119113573408
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "silhouetteIoU": 0.845422116527943,
+          "meanChannelDelta": 9.7108154296875,
+          "centroidDelta": [
+            -0.48177083333333215,
+            -1.6045918367346914
+          ],
+          "areaRatio": 1.0208333333333333
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "silhouetteIoU": 0.8698630136986302,
+          "meanChannelDelta": 9.62811279296875,
+          "centroidDelta": [
+            0.0644028103044505,
+            -1.4681540649046525
+          ],
+          "areaRatio": 1.0892857142857142
+        }
+      ]
+    },
+    {
+      "name": "double_jump",
+      "frameCount": 4,
+      "allFramesTransparent": true,
+      "allFramesInBounds": true,
+      "anchor": [
+        32,
+        58
+      ],
+      "transitions": [
+        {
+          "from": 0,
+          "to": 1,
+          "silhouetteIoU": 0.6820744081172492,
+          "meanChannelDelta": 15.2855224609375,
+          "centroidDelta": [
+            -1.6978528164968836,
+            -0.9967425052170782
+          ],
+          "areaRatio": 1.2402402402402402
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "silhouetteIoU": 0.8248847926267281,
+          "meanChannelDelta": 9.53466796875,
+          "centroidDelta": [
+            0.9944290761338301,
+            -0.5149367201824617
+          ],
+          "areaRatio": 0.9176755447941889
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "silhouetteIoU": 0.798358733880422,
+          "meanChannelDelta": 10.4951171875,
+          "centroidDelta": [
+            0.35526888447624216,
+            1.6416403721132653
+          ],
+          "areaRatio": 1.0237467018469657
+        }
+      ]
+    },
+    {
+      "name": "dodge",
+      "frameCount": 5,
+      "allFramesTransparent": true,
+      "allFramesInBounds": true,
+      "anchor": [
+        32,
+        58
+      ],
+      "transitions": [
+        {
+          "from": 0,
+          "to": 1,
+          "silhouetteIoU": 0.5547290116896918,
+          "meanChannelDelta": 20.344970703125,
+          "centroidDelta": [
+            1.4742380084775917,
+            3.705089545928999
+          ],
+          "areaRatio": 0.9403183023872679
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "silhouetteIoU": 0.7766497461928934,
+          "meanChannelDelta": 10.5697021484375,
+          "centroidDelta": [
+            -0.2757884466615934,
+            -1.364609251733448
+          ],
+          "areaRatio": 0.9746121297602257
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "silhouetteIoU": 0.6514285714285715,
+          "meanChannelDelta": 15.37939453125,
+          "centroidDelta": [
+            -1.1984495618159983,
+            -2.340480294195551
+          ],
+          "areaRatio": 1.0911722141823443
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "silhouetteIoU": 0.7388888888888889,
+          "meanChannelDelta": 13.81134033203125,
+          "centroidDelta": [
+            -1.6405639303083888,
+            -1.649178896276986
+          ],
+          "areaRatio": 1.0755968169761274
+        }
+      ]
+    },
+    {
+      "name": "air_dodge",
+      "frameCount": 4,
+      "allFramesTransparent": true,
+      "allFramesInBounds": true,
+      "anchor": [
+        32,
+        58
+      ],
+      "transitions": [
+        {
+          "from": 0,
+          "to": 1,
+          "silhouetteIoU": 0.5665887850467289,
+          "meanChannelDelta": 18.26873779296875,
+          "centroidDelta": [
+            0.9830638165357968,
+            1.4678225860266494
+          ],
+          "areaRatio": 1.001492537313433
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "silhouetteIoU": 0.6814720812182741,
+          "meanChannelDelta": 12.73016357421875,
+          "centroidDelta": [
+            -1.4007597405852792,
+            -0.1643719493020157
+          ],
+          "areaRatio": 0.9746646795827124
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "silhouetteIoU": 0.6156626506024097,
+          "meanChannelDelta": 15.544677734375,
+          "centroidDelta": [
+            -1.6131498470947996,
+            -0.7904197214321016
+          ],
+          "areaRatio": 1.0504587155963303
+        }
+      ]
+    },
+    {
+      "name": "guard",
+      "frameCount": 4,
+      "allFramesTransparent": true,
+      "allFramesInBounds": true,
+      "anchor": [
+        32,
+        58
+      ],
+      "transitions": [
+        {
+          "from": 0,
+          "to": 1,
+          "silhouetteIoU": 0.9343863912515188,
+          "meanChannelDelta": 6.32720947265625,
+          "centroidDelta": [
+            -0.09563265847238256,
+            0.36228480521202044
+          ],
+          "areaRatio": 1.0050377833753148
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "silhouetteIoU": 0.9366626065773447,
+          "meanChannelDelta": 6.8748779296875,
+          "centroidDelta": [
+            0.39065466697046247,
+            0.1698469658995947
+          ],
+          "areaRatio": 0.9924812030075187
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "silhouetteIoU": 0.8489461358313818,
+          "meanChannelDelta": 9.56475830078125,
+          "centroidDelta": [
+            -0.8054400420982404,
+            -0.47486459255836166
+          ],
+          "areaRatio": 0.9936868686868687
+        }
+      ]
+    },
+    {
+      "name": "parry",
+      "frameCount": 4,
+      "allFramesTransparent": true,
+      "allFramesInBounds": true,
+      "anchor": [
+        32,
+        58
+      ],
+      "transitions": [
+        {
+          "from": 0,
+          "to": 1,
+          "silhouetteIoU": 0.750788643533123,
+          "meanChannelDelta": 14.27337646484375,
+          "centroidDelta": [
+            -0.4362983583526301,
+            -0.7254338267814902
+          ],
+          "areaRatio": 1.086466165413534
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "silhouetteIoU": 0.7906482465462275,
+          "meanChannelDelta": 12.25762939453125,
+          "centroidDelta": [
+            0.114987746860578,
+            -0.14857883323039545
+          ],
+          "areaRatio": 0.9434832756632064
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "silhouetteIoU": 0.9033412887828163,
+          "meanChannelDelta": 6.8975830078125,
+          "centroidDelta": [
+            -0.39107846931808155,
+            0.18197852060932718
+          ],
+          "areaRatio": 0.9498777506112469
+        }
+      ]
+    },
+    {
+      "name": "guard_break",
+      "frameCount": 4,
+      "allFramesTransparent": true,
+      "allFramesInBounds": true,
+      "anchor": [
+        32,
+        58
+      ],
+      "transitions": [
+        {
+          "from": 0,
+          "to": 1,
+          "silhouetteIoU": 0.6397338403041825,
+          "meanChannelDelta": 20.32562255859375,
+          "centroidDelta": [
+            0.1212445482108464,
+            -0.473053164064396
+          ],
+          "areaRatio": 1.1535580524344569
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "silhouetteIoU": 0.6312741312741312,
+          "meanChannelDelta": 19.3985595703125,
+          "centroidDelta": [
+            0.9678037367332379,
+            2.845981259819382
+          ],
+          "areaRatio": 0.829004329004329
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "silhouetteIoU": 0.670995670995671,
+          "meanChannelDelta": 16.30621337890625,
+          "centroidDelta": [
+            -1.7231704779611654,
+            -2.1442374166873677
+          ],
+          "areaRatio": 1.0156657963446476
+        }
+      ]
+    },
+    {
+      "name": "hurt",
+      "frameCount": 4,
+      "allFramesTransparent": true,
+      "allFramesInBounds": true,
+      "anchor": [
+        32,
+        58
+      ],
+      "transitions": [
+        {
+          "from": 0,
+          "to": 1,
+          "silhouetteIoU": 0.7523809523809524,
+          "meanChannelDelta": 13.79449462890625,
+          "centroidDelta": [
+            1.2980804724990733,
+            1.5725359911406471
+          ],
+          "areaRatio": 0.8775510204081632
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "silhouetteIoU": 0.6200204290091931,
+          "meanChannelDelta": 17.49102783203125,
+          "centroidDelta": [
+            -1.2245993559145134,
+            -0.8722075839156886
+          ],
+          "areaRatio": 1.049095607235142
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "silhouetteIoU": 0.7095391211146839,
+          "meanChannelDelta": 15.57965087890625,
+          "centroidDelta": [
+            -0.7745393176427626,
+            1.242474001094692
+          ],
+          "areaRatio": 0.9642857142857143
+        }
+      ]
+    },
+    {
+      "name": "hammer_1",
+      "frameCount": 4,
+      "allFramesTransparent": true,
+      "allFramesInBounds": true,
+      "anchor": [
+        48,
+        90
+      ],
+      "transitions": [
+        {
+          "from": 0,
+          "to": 1,
+          "silhouetteIoU": 0.5017618040873855,
+          "meanChannelDelta": 16.387044270833332,
+          "centroidDelta": [
+            10.72112440317835,
+            2.0576789584030735
+          ],
+          "areaRatio": 0.9804832713754646
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "silhouetteIoU": 0.6389105058365758,
+          "meanChannelDelta": 12.112440321180555,
+          "centroidDelta": [
+            0.8064754397752552,
+            2.504564824292814
+          ],
+          "areaRatio": 0.9962085308056872
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "silhouetteIoU": 0.6933115823817292,
+          "meanChannelDelta": 10.302815755208334,
+          "centroidDelta": [
+            -3.8171655334060475,
+            -1.4477528950360892
+          ],
+          "areaRatio": 0.9752616555661275
+        }
+      ]
+    },
+    {
+      "name": "hammer_2",
+      "frameCount": 4,
+      "allFramesTransparent": true,
+      "allFramesInBounds": true,
+      "anchor": [
+        48,
+        90
+      ],
+      "transitions": [
+        {
+          "from": 0,
+          "to": 1,
+          "silhouetteIoU": 0.599712023038157,
+          "meanChannelDelta": 14.62546115451389,
+          "centroidDelta": [
+            8.486545071082645,
+            -4.520294680518674
+          ],
+          "areaRatio": 1.140655105973025
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "silhouetteIoU": 0.821875,
+          "meanChannelDelta": 7.500705295138889,
+          "centroidDelta": [
+            -1.3740347490347489,
+            -1.0012507062811835
+          ],
+          "areaRatio": 0.9695945945945946
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "silhouetteIoU": 0.583941605839416,
+          "meanChannelDelta": 15.04220920138889,
+          "centroidDelta": [
+            0.49461839530332696,
+            5.034067586272727
+          ],
+          "areaRatio": 0.8902439024390244
+        }
+      ]
+    },
+    {
+      "name": "hammer_3",
+      "frameCount": 4,
+      "allFramesTransparent": true,
+      "allFramesInBounds": true,
+      "anchor": [
+        48,
+        90
+      ],
+      "transitions": [
+        {
+          "from": 0,
+          "to": 1,
+          "silhouetteIoU": 0.45139813581890814,
+          "meanChannelDelta": 19.17995876736111,
+          "centroidDelta": [
+            9.790276250390491,
+            10.971225293364185
+          ],
+          "areaRatio": 0.8584825234441603
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "silhouetteIoU": 0.8612933458294283,
+          "meanChannelDelta": 5.885389539930555,
+          "centroidDelta": [
+            -0.3842509988811713,
+            1.0235359632724226
+          ],
+          "areaRatio": 0.9721946375372393
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "silhouetteIoU": 0.5887480190174327,
+          "meanChannelDelta": 13.32590060763889,
+          "centroidDelta": [
+            -3.2294898521983058,
+            -5.175123002148439
+          ],
+          "areaRatio": 1.0480081716036773
+        }
+      ]
+    },
+    {
+      "name": "blaster_fire",
+      "frameCount": 4,
+      "allFramesTransparent": true,
+      "allFramesInBounds": true,
+      "anchor": [
+        32,
+        58
+      ],
+      "transitions": [
+        {
+          "from": 0,
+          "to": 1,
+          "silhouetteIoU": 0.9221153846153847,
+          "meanChannelDelta": 10.8126220703125,
+          "centroidDelta": [
+            0.6834397123362308,
+            0.3359607745779556
+          ],
+          "areaRatio": 0.9851042701092354
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "silhouetteIoU": 0.7785977859778598,
+          "meanChannelDelta": 18.49896240234375,
+          "centroidDelta": [
+            -2.8307313206506777,
+            0.34882478632478353
+          ],
+          "areaRatio": 0.9435483870967742
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "silhouetteIoU": 0.7673130193905817,
+          "meanChannelDelta": 16.70367431640625,
+          "centroidDelta": [
+            2.6156074668344615,
+            0.2632662157202077
+          ],
+          "areaRatio": 1.044871794871795
+        }
+      ]
+    },
+    {
+      "name": "blaster_charge",
+      "frameCount": 4,
+      "allFramesTransparent": true,
+      "allFramesInBounds": true,
+      "anchor": [
+        48,
+        90
+      ],
+      "transitions": [
+        {
+          "from": 0,
+          "to": 1,
+          "silhouetteIoU": 0.9369708372530574,
+          "meanChannelDelta": 3.5752495659722223,
+          "centroidDelta": [
+            0.9714948674524564,
+            -0.08462709025997128
+          ],
+          "areaRatio": 1.0467196819085487
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "silhouetteIoU": 0.9328426862925483,
+          "meanChannelDelta": 3.6204155815972223,
+          "centroidDelta": [
+            0.4173172977244235,
+            -0.170341191651616
+          ],
+          "areaRatio": 0.9952516619183286
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "silhouetteIoU": 0.9100719424460432,
+          "meanChannelDelta": 4.385199652777778,
+          "centroidDelta": [
+            -0.004866766934362943,
+            0.328687675586707
+          ],
+          "areaRatio": 1.0267175572519085
+        }
+      ]
+    },
+    {
+      "name": "staff_sweep",
+      "frameCount": 4,
+      "allFramesTransparent": true,
+      "allFramesInBounds": true,
+      "anchor": [
+        48,
+        90
+      ],
+      "transitions": [
+        {
+          "from": 0,
+          "to": 1,
+          "silhouetteIoU": 0.6697388632872504,
+          "meanChannelDelta": 12.087537977430555,
+          "centroidDelta": [
+            6.417998481798527,
+            2.708745924916812
+          ],
+          "areaRatio": 0.9376114081996435
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "silhouetteIoU": 0.6999201915403033,
+          "meanChannelDelta": 11.522081163194445,
+          "centroidDelta": [
+            0.39692748858962545,
+            2.7249730172054996
+          ],
+          "areaRatio": 1.0247148288973384
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "silhouetteIoU": 0.6764940239043825,
+          "meanChannelDelta": 11.870307074652779,
+          "centroidDelta": [
+            -1.6726466237744404,
+            -3.1211922302147883
+          ],
+          "areaRatio": 0.9517625231910947
+        }
+      ]
+    },
+    {
+      "name": "orb_cast",
+      "frameCount": 4,
+      "allFramesTransparent": true,
+      "allFramesInBounds": true,
+      "anchor": [
+        48,
+        90
+      ],
+      "transitions": [
+        {
+          "from": 0,
+          "to": 1,
+          "silhouetteIoU": 0.8708452041785375,
+          "meanChannelDelta": 4.860622829861111,
+          "centroidDelta": [
+            -0.3264421198881493,
+            -1.1329903187005783
+          ],
+          "areaRatio": 1.0040691759918616
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "silhouetteIoU": 0.7443983402489627,
+          "meanChannelDelta": 9.848334418402779,
+          "centroidDelta": [
+            4.635369216859537,
+            -0.10703449779873608
+          ],
+          "areaRatio": 1.1296859169199596
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "silhouetteIoU": 0.7521440823327615,
+          "meanChannelDelta": 8.659261067708334,
+          "centroidDelta": [
+            -3.8639081104066832,
+            1.1369481598886608
+          ],
+          "areaRatio": 0.8322869955156951
+        }
+      ]
+    },
+    {
+      "name": "cast",
+      "frameCount": 4,
+      "allFramesTransparent": true,
+      "allFramesInBounds": true,
+      "anchor": [
+        32,
+        58
+      ],
+      "transitions": [
+        {
+          "from": 0,
+          "to": 1,
+          "silhouetteIoU": 0.9039615846338536,
+          "meanChannelDelta": 7.27911376953125,
+          "centroidDelta": [
+            -0.6075791489882931,
+            -0.3175695561356804
+          ],
+          "areaRatio": 0.9604449938195303
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "silhouetteIoU": 0.9090909090909091,
+          "meanChannelDelta": 6.5816650390625,
+          "centroidDelta": [
+            1.0538890538890513,
+            -0.37811437811438253
+          ],
+          "areaRatio": 1.054054054054054
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "silhouetteIoU": 0.8937426210153483,
+          "meanChannelDelta": 7.3455810546875,
+          "centroidDelta": [
+            -0.6769681839745516,
+            0.5956028401888318
+          ],
+          "areaRatio": 0.9584859584859585
+        }
+      ]
+    },
+    {
+      "name": "heal",
+      "frameCount": 4,
+      "allFramesTransparent": true,
+      "allFramesInBounds": true,
+      "anchor": [
+        32,
+        58
+      ],
+      "transitions": [
+        {
+          "from": 0,
+          "to": 1,
+          "silhouetteIoU": 0.9285714285714286,
+          "meanChannelDelta": 7.41009521484375,
+          "centroidDelta": [
+            -0.07087239738396534,
+            0.40728463316633423
+          ],
+          "areaRatio": 0.9747793190416141
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "silhouetteIoU": 0.917283950617284,
+          "meanChannelDelta": 6.3787841796875,
+          "centroidDelta": [
+            0.87547517165887,
+            -0.06037416658374184
+          ],
+          "areaRatio": 1.0090556274256144
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "silhouetteIoU": 0.9010989010989011,
+          "meanChannelDelta": 7.6697998046875,
+          "centroidDelta": [
+            -0.48726363726363786,
+            -0.41349371349370756
+          ],
+          "areaRatio": 0.9961538461538462
+        }
+      ]
+    },
+    {
+      "name": "interact",
+      "frameCount": 4,
+      "allFramesTransparent": true,
+      "allFramesInBounds": true,
+      "anchor": [
+        32,
+        58
+      ],
+      "transitions": [
+        {
+          "from": 0,
+          "to": 1,
+          "silhouetteIoU": 0.8160535117056856,
+          "meanChannelDelta": 10.19500732421875,
+          "centroidDelta": [
+            1.578450740758612,
+            -0.3420368448991411
+          ],
+          "areaRatio": 1.0439146800501882
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "silhouetteIoU": 0.9153132250580046,
+          "meanChannelDelta": 6.4957275390625,
+          "centroidDelta": [
+            -0.022722069597072903,
+            0.38617979242979317
+          ],
+          "areaRatio": 0.984375
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "silhouetteIoU": 0.7648351648351648,
+          "meanChannelDelta": 12.3863525390625,
+          "centroidDelta": [
+            -1.955718148856647,
+            -0.11146019024036491
+          ],
+          "areaRatio": 0.960927960927961
+        }
+      ]
+    },
+    {
+      "name": "rest_enter",
+      "frameCount": 4,
+      "allFramesTransparent": true,
+      "allFramesInBounds": true,
+      "anchor": [
+        32,
+        58
+      ],
+      "transitions": [
+        {
+          "from": 0,
+          "to": 1,
+          "silhouetteIoU": 0.7699642431466031,
+          "meanChannelDelta": 11.353271484375,
+          "centroidDelta": [
+            0.05151455417570361,
+            2.2521026348643147
+          ],
+          "areaRatio": 0.8539325842696629
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "silhouetteIoU": 0.7403462050599201,
+          "meanChannelDelta": 11.31719970703125,
+          "centroidDelta": [
+            0.7210911173063757,
+            2.3933405611406755
+          ],
+          "areaRatio": 0.9108187134502924
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "silhouetteIoU": 0.7481031866464339,
+          "meanChannelDelta": 9.9119873046875,
+          "centroidDelta": [
+            -0.9598291091037652,
+            1.854697223933222
+          ],
+          "areaRatio": 0.8491171749598716
+        }
+      ]
+    },
+    {
+      "name": "rest",
+      "frameCount": 4,
+      "allFramesTransparent": true,
+      "allFramesInBounds": true,
+      "anchor": [
+        32,
+        58
+      ],
+      "transitions": [
+        {
+          "from": 0,
+          "to": 1,
+          "silhouetteIoU": 0.9509433962264151,
+          "meanChannelDelta": 2.63299560546875,
+          "centroidDelta": [
+            0.47284433547324767,
+            0.0518145576372433
+          ],
+          "areaRatio": 1.0475247524752476
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "silhouetteIoU": 0.9595588235294118,
+          "meanChannelDelta": 2.3809814453125,
+          "centroidDelta": [
+            -0.19255965896090288,
+            -0.04521021005164272
+          ],
+          "areaRatio": 1.0151228733459357
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "silhouetteIoU": 0.974169741697417,
+          "meanChannelDelta": 1.5657958984375,
+          "centroidDelta": [
+            0.12276178197966203,
+            -0.05730187512446605
+          ],
+          "areaRatio": 0.9925512104283054
+        },
+        {
+          "from": 3,
+          "to": 0,
+          "seam": true,
+          "silhouetteIoU": 0.9474671669793621,
+          "meanChannelDelta": 2.64898681640625
+        }
+      ]
+    },
+    {
+      "name": "rest_exit",
+      "frameCount": 6,
+      "allFramesTransparent": true,
+      "allFramesInBounds": true,
+      "anchor": [
+        32,
+        58
+      ],
+      "transitions": [
+        {
+          "from": 0,
+          "to": 1,
+          "silhouetteIoU": 0.7474916387959866,
+          "meanChannelDelta": 9.38653564453125,
+          "centroidDelta": [
+            -0.09409306295435016,
+            -1.9691445683844933
+          ],
+          "areaRatio": 1.1413934426229508
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "silhouetteIoU": 0.7981510015408321,
+          "meanChannelDelta": 8.0347900390625,
+          "centroidDelta": [
+            0.8596668334461555,
+            -1.1951996939105882
+          ],
+          "areaRatio": 1.095152603231598
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "silhouetteIoU": 0.9031746031746032,
+          "meanChannelDelta": 4.41552734375,
+          "centroidDelta": [
+            0.38035291825544704,
+            -0.37312199059255846
+          ],
+          "areaRatio": 0.9655737704918033
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "silhouetteIoU": 0.7510316368638239,
+          "meanChannelDelta": 10.27166748046875,
+          "centroidDelta": [
+            -1.9288813431428018,
+            -0.8899735898886973
+          ],
+          "areaRatio": 1.1612903225806452
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "silhouetteIoU": 0.7699642431466031,
+          "meanChannelDelta": 11.353271484375,
+          "centroidDelta": [
+            -0.05151455417570361,
+            -2.2521026348643147
+          ],
+          "areaRatio": 1.1710526315789473
+        }
+      ]
+    },
+    {
+      "name": "death",
+      "frameCount": 8,
+      "allFramesTransparent": true,
+      "allFramesInBounds": true,
+      "anchor": [
+        32,
+        58
+      ],
+      "transitions": [
+        {
+          "from": 0,
+          "to": 1,
+          "silhouetteIoU": 0.8231132075471698,
+          "meanChannelDelta": 11.00537109375,
+          "centroidDelta": [
+            -0.2491767840534891,
+            1.2925102011747072
+          ],
+          "areaRatio": 0.9300873907615481
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "silhouetteIoU": 0.8211586901763224,
+          "meanChannelDelta": 9.063232421875,
+          "centroidDelta": [
+            -0.15391243573418478,
+            1.529580943809897
+          ],
+          "areaRatio": 0.9409395973154362
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "silhouetteIoU": 0.6714116251482799,
+          "meanChannelDelta": 15.4552001953125,
+          "centroidDelta": [
+            1.809535610951265,
+            2.1882137704812337
+          ],
+          "areaRatio": 1.0099857346647647
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "silhouetteIoU": 0.7813712807244502,
+          "meanChannelDelta": 11.09808349609375,
+          "centroidDelta": [
+            -1.5795204073877045,
+            1.9868511058751963
+          ],
+          "areaRatio": 0.9449152542372882
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "silhouetteIoU": 0.5655430711610487,
+          "meanChannelDelta": 19.5843505859375,
+          "centroidDelta": [
+            -3.0008432026369256,
+            3.6592158215476616
+          ],
+          "areaRatio": 0.874439461883408
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "silhouetteIoU": 0.8377125193199382,
+          "meanChannelDelta": 7.8218994140625,
+          "centroidDelta": [
+            0.7455991396388768,
+            0.6456698930208873
+          ],
+          "areaRatio": 1.0324786324786326
+        },
+        {
+          "from": 6,
+          "to": 7,
+          "silhouetteIoU": 0.9392446633825944,
+          "meanChannelDelta": 3.01324462890625,
+          "centroidDelta": [
+            -0.13068853512688605,
+            -0.2887308182308601
+          ],
+          "areaRatio": 0.9552980132450332
+        }
+      ]
+    }
+  ],
+  "sourceAnalysisFile": "analysis.json",
+  "requiresHumanVisualReview": true,
+  "notes": [
+    "Each source sheet has one scale calibrated to the common standing height; every frame in that sheet shares that scale.",
+    "Alpha bounds and contact candidates do not establish semantic body/hand anchors.",
+    "Statistical change and seam measurements are diagnostics; intentional pose change is expected."
+  ]
+}

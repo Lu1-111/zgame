@@ -1,0 +1,400 @@
+{
+  "sourceId": "motion_a",
+  "file": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_motion_a_idle_run_right_v001.png",
+  "columns": 4,
+  "rows": 3,
+  "sourceSize": [
+    1448,
+    1086
+  ],
+  "columnBoundsPx": [
+    0,
+    362,
+    724,
+    1086,
+    1448
+  ],
+  "rowBoundsPx": [
+    0,
+    376,
+    720,
+    1086
+  ],
+  "cellRects": {
+    "0": [
+      0,
+      0,
+      362,
+      376
+    ],
+    "1": [
+      362,
+      0,
+      362,
+      376
+    ],
+    "2": [
+      724,
+      0,
+      362,
+      376
+    ],
+    "3": [
+      1086,
+      0,
+      362,
+      376
+    ],
+    "4": [
+      0,
+      376,
+      362,
+      344
+    ],
+    "5": [
+      362,
+      376,
+      362,
+      344
+    ],
+    "6": [
+      724,
+      376,
+      362,
+      344
+    ],
+    "7": [
+      1086,
+      376,
+      362,
+      344
+    ],
+    "8": [
+      0,
+      720,
+      362,
+      366
+    ],
+    "9": [
+      362,
+      720,
+      362,
+      366
+    ],
+    "10": [
+      724,
+      720,
+      362,
+      366
+    ],
+    "11": [
+      1086,
+      720,
+      362,
+      366
+    ]
+  },
+  "calibration": {
+    "referenceCell": 0,
+    "referenceHeightPx": 327,
+    "targetStandingHeight": 40
+  },
+  "animations": [
+    {
+      "name": "idle",
+      "label": "待机",
+      "fps": 6,
+      "loop": true,
+      "anchorMode": "ground",
+      "cells": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "name": "run",
+      "label": "跑步",
+      "fps": 12,
+      "loop": true,
+      "anchorMode": "air",
+      "cells": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    }
+  ],
+  "anchors": {
+    "0": [
+      198,
+      362
+    ],
+    "1": [
+      198,
+      362
+    ],
+    "2": [
+      196,
+      365
+    ],
+    "3": [
+      198,
+      365
+    ],
+    "4": [
+      198,
+      335
+    ],
+    "5": [
+      198,
+      332
+    ],
+    "6": [
+      198,
+      335
+    ],
+    "7": [
+      198,
+      335
+    ],
+    "8": [
+      198,
+      324
+    ],
+    "9": [
+      198,
+      329
+    ],
+    "10": [
+      198,
+      334
+    ],
+    "11": [
+      198,
+      334
+    ]
+  },
+  "anchorsAbsolute": {
+    "0": [
+      198,
+      362
+    ],
+    "1": [
+      560,
+      362
+    ],
+    "2": [
+      920,
+      365
+    ],
+    "3": [
+      1284,
+      365
+    ],
+    "4": [
+      198,
+      711
+    ],
+    "5": [
+      560,
+      708
+    ],
+    "6": [
+      922,
+      711
+    ],
+    "7": [
+      1284,
+      711
+    ],
+    "8": [
+      198,
+      1044
+    ],
+    "9": [
+      560,
+      1049
+    ],
+    "10": [
+      922,
+      1054
+    ],
+    "11": [
+      1284,
+      1054
+    ]
+  },
+  "measurements": {
+    "0": {
+      "alpha128BBox": [
+        81,
+        35,
+        317,
+        362
+      ],
+      "lowestSilhouetteY": 361,
+      "lowest4RowXSpan": [
+        97,
+        300
+      ]
+    },
+    "1": {
+      "alpha128BBox": [
+        84,
+        35,
+        319,
+        362
+      ],
+      "lowestSilhouetteY": 361,
+      "lowest4RowXSpan": [
+        95,
+        299
+      ]
+    },
+    "2": {
+      "alpha128BBox": [
+        79,
+        24,
+        318,
+        365
+      ],
+      "lowestSilhouetteY": 364,
+      "lowest4RowXSpan": [
+        97,
+        287
+      ]
+    },
+    "3": {
+      "alpha128BBox": [
+        81,
+        35,
+        315,
+        365
+      ],
+      "lowestSilhouetteY": 364,
+      "lowest4RowXSpan": [
+        97,
+        289
+      ]
+    },
+    "4": {
+      "alpha128BBox": [
+        75,
+        14,
+        325,
+        335
+      ],
+      "lowestSilhouetteY": 334,
+      "lowest4RowXSpan": [
+        204,
+        230
+      ]
+    },
+    "5": {
+      "alpha128BBox": [
+        93,
+        13,
+        313,
+        332
+      ],
+      "lowestSilhouetteY": 331,
+      "lowest4RowXSpan": [
+        132,
+        192
+      ]
+    },
+    "6": {
+      "alpha128BBox": [
+        84,
+        14,
+        300,
+        335
+      ],
+      "lowestSilhouetteY": 334,
+      "lowest4RowXSpan": [
+        122,
+        195
+      ]
+    },
+    "7": {
+      "alpha128BBox": [
+        76,
+        12,
+        313,
+        316
+      ],
+      "lowestSilhouetteY": 315,
+      "lowest4RowXSpan": [
+        201,
+        221
+      ]
+    },
+    "8": {
+      "alpha128BBox": [
+        63,
+        11,
+        332,
+        324
+      ],
+      "lowestSilhouetteY": 323,
+      "lowest4RowXSpan": [
+        72,
+        268
+      ]
+    },
+    "9": {
+      "alpha128BBox": [
+        93,
+        11,
+        305,
+        329
+      ],
+      "lowestSilhouetteY": 328,
+      "lowest4RowXSpan": [
+        136,
+        190
+      ]
+    },
+    "10": {
+      "alpha128BBox": [
+        84,
+        16,
+        297,
+        334
+      ],
+      "lowestSilhouetteY": 333,
+      "lowest4RowXSpan": [
+        127,
+        198
+      ]
+    },
+    "11": {
+      "alpha128BBox": [
+        69,
+        10,
+        313,
+        317
+      ],
+      "lowestSilhouetteY": 316,
+      "lowest4RowXSpan": [
+        201,
+        224
+      ]
+    }
+  },
+  "notes": [
+    "Generated with built-in image_gen using CHR-01_master_right_v001.png as the sole reference.",
+    "RAW is preserved unchanged. Transparent alpha checked; alpha>=128 used only for measurement.",
+    "Explicit source rectangles follow empty horizontal bands; equal-row slicing can clip sprites.",
+    "Root anchors are hand estimated from pose and contact plane, not automatic bbox centers. They require visual playback validation.",
+    "Airborne poses use a virtual contact plane; do not bottom-align every frame. Run frames 4 and 8 of the sequence are airborne.",
+    "All final frames use64x64 canvas, anchor(32,58), standing height40 logical pixels."
+  ]
+}

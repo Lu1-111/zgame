@@ -1,0 +1,112 @@
+{
+  "type": "map",
+  "version": "1.10",
+  "tiledversion": "1.11.2",
+  "orientation": "orthogonal",
+  "renderorder": "right-down",
+  "infinite": false,
+  "tilewidth": 16,
+  "tileheight": 16,
+  "width": 80,
+  "height": 23,
+  "layers": [
+    {
+      "id": 1,
+      "name": "background",
+      "type": "imagelayer",
+      "image": "background.png",
+      "opacity": 1,
+      "visible": true,
+      "x": 0,
+      "y": 0
+    },
+    {
+      "id": 2,
+      "name": "midground",
+      "type": "imagelayer",
+      "image": "midground.png",
+      "opacity": 1,
+      "visible": true,
+      "x": 0,
+      "y": 0
+    },
+    {
+      "id": 3,
+      "name": "terrain",
+      "type": "imagelayer",
+      "image": "terrain.png",
+      "opacity": 1,
+      "visible": true,
+      "x": 0,
+      "y": 0
+    },
+    {
+      "id": 4,
+      "name": "props",
+      "type": "imagelayer",
+      "image": "props.png",
+      "opacity": 1,
+      "visible": true,
+      "x": 0,
+      "y": 0
+    },
+    {
+      "id": 5,
+      "name": "hazards",
+      "type": "imagelayer",
+      "image": "hazards.png",
+      "opacity": 1,
+      "visible": true,
+      "x": 0,
+      "y": 0
+    },
+    {
+      "id": 6,
+      "name": "Collision (source rectangles)",
+      "type": "objectgroup",
+      "objects": [
+        {
+          "id": 1,
+          "name": "platform_0",
+          "type": "collision",
+          "x": 0,
+          "y": 340,
+          "width": 1280,
+          "height": 20,
+          "rotation": 0,
+          "visible": true
+        },
+        {
+          "id": 2,
+          "name": "platform_1",
+          "type": "collision",
+          "x": 180,
+          "y": 292,
+          "width": 120,
+          "height": 16,
+          "rotation": 0,
+          "visible": true
+        },
+        {
+          "id": 3,
+          "name": "platform_2",
+          "type": "collision",
+          "x": 900,
+          "y": 40,
+          "width": 160,
+          "height": 16,
+          "rotation": 0,
+          "visible": true
+        }
+      ],
+      "visible": false,
+      "opacity": 1,
+      "x": 0,
+      "y": 0,
+      "draworder": "topdown"
+    }
+  ],
+  "tilesets": [],
+  "nextlayerid": 7,
+  "nextobjectid": 4
+}

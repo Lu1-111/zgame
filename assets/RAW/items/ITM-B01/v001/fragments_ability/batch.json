@@ -1,0 +1,77 @@
+{
+  "batchId": "ITM-B01",
+  "version": "v001",
+  "group": "fragments_ability",
+  "status": "RAW_COMPLETE_AWAITING_PROCESSED",
+  "generator": "built-in image_gen.imagegen",
+  "formalItemCount": 3,
+  "extraAbilityRewardCount": 1,
+  "frameCount": 16,
+  "items": [
+    {
+      "assetId": "hp_fragment",
+      "category": "formal_item",
+      "sheet": "ITEM_hp_fragment_idle_v001.png",
+      "prompt": "ITEM_hp_fragment_idle_v001.prompt.txt",
+      "layout": "ITEM_hp_fragment_idle_v001.layout.json",
+      "sha256": "fae5a7f027508bdea6ddb95065fda58b5f1884d58e3033460e09441779ccb3d4",
+      "actualSize": [
+        1254,
+        1254
+      ],
+      "frames": 4
+    },
+    {
+      "assetId": "sta_fragment",
+      "category": "formal_item",
+      "sheet": "ITEM_sta_fragment_idle_v001.png",
+      "prompt": "ITEM_sta_fragment_idle_v001.prompt.txt",
+      "layout": "ITEM_sta_fragment_idle_v001.layout.json",
+      "sha256": "1b765926558c2570e311a4909eba4656cd9f97ebf719054c99100e30422952df",
+      "actualSize": [
+        1254,
+        1254
+      ],
+      "frames": 4
+    },
+    {
+      "assetId": "mana_fragment",
+      "category": "formal_item",
+      "sheet": "ITEM_mana_fragment_idle_v001.png",
+      "prompt": "ITEM_mana_fragment_idle_v001.prompt.txt",
+      "layout": "ITEM_mana_fragment_idle_v001.layout.json",
+      "sha256": "461d63d3f86f927531c0eda25c0fdf7701d3f8341e50c1975719c409db36daf3",
+      "actualSize": [
+        1254,
+        1254
+      ],
+      "frames": 4
+    },
+    {
+      "assetId": "ability_double_jump",
+      "category": "extra_ability_reward",
+      "sheet": "ITEM_ability_double_jump_idle_v001.png",
+      "prompt": "ITEM_ability_double_jump_idle_v001.prompt.txt",
+      "layout": "ITEM_ability_double_jump_idle_v001.layout.json",
+      "sha256": "120786df19908398c86da9cb7a8b9403da99b026861d399ce89192f2e0a68c1f",
+      "actualSize": [
+        1254,
+        1254
+      ],
+      "frames": 4
+    }
+  ],
+  "invariants": [
+    "No engine, scenes or data edits.",
+    "RAW is copied original generator output; no cropping, background extraction, painting or resampling.",
+    "Each sheet has 2 by 2 row-major frames.",
+    "Nominal source root is cell width/2, cell height*3/4; actual sprites need processed registration."
+  ],
+  "processedNotes": [
+    "Original output is 1254x1254 despite requested 1024x1024. Each cell is 627x627.",
+    "All four sheets are genuine RGBA, but contain partially transparent edge pixels and low-alpha background flecks.",
+    "Use main-body shape/center-bottom registration, never alpha>0 extents as the anchor.",
+    "The ability reward has multiple disconnected bubble tiers, which must remain included in the registered group.",
+    "Keep heart, leaf and waterdrop silhouettes distinct; do not recolor one silhouette to substitute another."
+  ]
+}

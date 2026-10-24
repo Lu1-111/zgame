@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "batchId": "ITM-B01",
+  "group": "materials_special",
+  "version": "v001",
+  "status": "raw_complete_pending_parent_processing",
+  "generationMode": "built_in_image_gen",
+  "reference": "assets/PROCESSED/characters/CHR-01/v001/CHR-01_canonical_right_v001.png",
+  "items": [
+    {
+      "dataId": "mushroom",
+      "name": "奶菇",
+      "image": "ITEM_mushroom_idle_v001.png",
+      "prompt": "ITEM_mushroom_idle_v001.prompt.txt",
+      "layout": "ITEM_mushroom_idle_v001.layout.json",
+      "sha256": "a11d4eb26c34785854f3d9d92fdd3a41add1133c018c6627a2a90ec1c9fa8700",
+      "size": [
+        1254,
+        1254
+      ],
+      "frameCount": 4,
+      "trueTransparency": true,
+      "byteIdenticalToGenerationSource": true,
+      "needsProcessedRegistration": true
+    },
+    {
+      "dataId": "honey_wax",
+      "name": "蜜蜡",
+      "image": "ITEM_honey_wax_idle_v001.png",
+      "prompt": "ITEM_honey_wax_idle_v001.prompt.txt",
+      "layout": "ITEM_honey_wax_idle_v001.layout.json",
+      "sha256": "6e6721a2024c5398c613ced068de539e1faa31ad0af1bc593b217c8926adefc0",
+      "size": [
+        1254,
+        1254
+      ],
+      "frameCount": 4,
+      "trueTransparency": true,
+      "byteIdenticalToGenerationSource": true,
+      "needsProcessedRegistration": true
+    },
+    {
+      "dataId": "milk_crystal",
+      "name": "奶晶",
+      "image": "ITEM_milk_crystal_idle_v001.png",
+      "prompt": "ITEM_milk_crystal_idle_v001.prompt.txt",
+      "layout": "ITEM_milk_crystal_idle_v001.layout.json",
+      "sha256": "4b17fe9cdc609dc31f6e59bd0942457988dc30748728f30ffe910c3dba38dcab",
+      "size": [
+        1254,
+        1254
+      ],
+      "frameCount": 4,
+      "trueTransparency": true,
+      "byteIdenticalToGenerationSource": true,
+      "needsProcessedRegistration": true
+    },
+    {
+      "dataId": "bag_expand",
+      "name": "背包扩容卷",
+      "image": "ITEM_bag_expand_idle_v001.png",
+      "prompt": "ITEM_bag_expand_idle_v001.prompt.txt",
+      "layout": "ITEM_bag_expand_idle_v001.layout.json",
+      "sha256": "5fd6b3c9d2f32ac29665e7478c10e536efc73917644f12c26370f4d1df80bf52",
+      "size": [
+        1254,
+        1254
+      ],
+      "frameCount": 4,
+      "trueTransparency": true,
+      "byteIdenticalToGenerationSource": true,
+      "needsProcessedRegistration": true
+    },
+    {
+      "dataId": "map_fragment",
+      "name": "地图碎片",
+      "image": "ITEM_map_fragment_idle_v001.png",
+      "prompt": "ITEM_map_fragment_idle_v001.prompt.txt",
+      "layout": "ITEM_map_fragment_idle_v001.layout.json",
+      "sha256": "ea8ce6a9e0af92e549d200214914092570d0e68e6e07f3da0f80216a9f814f22",
+      "size": [
+        1254,
+        1254
+      ],
+      "frameCount": 4,
+      "trueTransparency": true,
+      "byteIdenticalToGenerationSource": true,
+      "needsProcessedRegistration": true
+    }
+  ],
+  "rawImageCount": 5,
+  "rawFrameCount": 20,
+  "processedOwnedBy": "parent_agent",
+  "rawPreservation": "Exact byte copies of generated images; alpha unmodified. Only measurement and metadata were created.",
+  "notes": [
+    "Prompt requested 1024 square, image service returned 1254 square for all five. Real dimensions are authoritative.",
+    "Frame source anchor is nominal cellCenterX/cellHeight*0.75. Re-register visible silhouettes to output root (16,24) during processing.",
+    "Honey wax raw frames have x/y placement variance; unify registration from alpha>=128 visible bounds.",
+    "All sheets were visually inspected after generation. No text, ground, fake checkerboard, UI frame, or unwanted background was observed."
+  ]
+}

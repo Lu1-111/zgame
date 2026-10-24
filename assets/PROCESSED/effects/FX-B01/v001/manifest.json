@@ -1,0 +1,4994 @@
+{
+  "schemaVersion": 1,
+  "assetId": "FX-B01",
+  "version": "v001",
+  "title": "奶龙银河征途 · 第一批特效组件",
+  "status": "ready",
+  "coordinateSystem": "top-left pixels; integer destination anchor; one scale per complete source; mirror the visual node about root",
+  "frameCount": 72,
+  "effectCount": 12,
+  "atlas": {
+    "file": "FX-B01_v001_atlas.png",
+    "size": [
+      576,
+      960
+    ],
+    "cellSize": [
+      96,
+      80
+    ],
+    "columns": 6,
+    "rows": 12,
+    "sha256": "49b83db41c22eeb546f3c2d7ff78036d0820dd26106b1290235c8d681ed3d2cc"
+  },
+  "effects": [
+    {
+      "id": "FX-01_physical_hit",
+      "name": "physical_hit",
+      "label": "物理命中",
+      "checklistId": "FX-01",
+      "attachPoint": "hit",
+      "anchor": [
+        32,
+        32
+      ],
+      "target": [
+        64,
+        64
+      ],
+      "fps": 12,
+      "loop": false,
+      "fadeStartNormalized": 0.7,
+      "opacityByFrame": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "direction": "right",
+      "scale": 0.109375,
+      "sheet": "sheets/FX-01_physical_hit_v001_sheet.png",
+      "frameIds": [
+        "FX-01_physical_hit_f01",
+        "FX-01_physical_hit_f02",
+        "FX-01_physical_hit_f03",
+        "FX-01_physical_hit_f04",
+        "FX-01_physical_hit_f05",
+        "FX-01_physical_hit_f06"
+      ],
+      "durationSeconds": 0.49999999999999994,
+      "suggestedTrigger": null,
+      "notes": [
+        "源图含极低Alpha背景噪声，所有格边Alpha≤2；仅诊断，保留全部源像素和透明度。",
+        "源图不是完全严格8px逻辑网格；整组固定512×512切片、scale=0.109375最近邻缩放至56×56并加四边4px透明边距，禁止逐帧裁切、重居中或自适应缩放。",
+        "末两帧仍有可见残屑；组件必须随时间淡出并在播放完成隐藏，PNG像素不改。",
+        "物理命中第4帧碎片面积略高于第2帧，建议播放预览时核对视觉峰值；第6帧约14粒尾屑，多于提示词目标。"
+      ]
+    },
+    {
+      "id": "FX-01_magic_hit",
+      "name": "magic_hit",
+      "label": "法术命中",
+      "checklistId": "FX-01",
+      "attachPoint": "hit",
+      "anchor": [
+        32,
+        32
+      ],
+      "target": [
+        64,
+        64
+      ],
+      "fps": 12,
+      "loop": false,
+      "fadeStartNormalized": 0.7,
+      "opacityByFrame": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "direction": "right",
+      "scale": 0.109375,
+      "sheet": "sheets/FX-01_magic_hit_v001_sheet.png",
+      "frameIds": [
+        "FX-01_magic_hit_f01",
+        "FX-01_magic_hit_f02",
+        "FX-01_magic_hit_f03",
+        "FX-01_magic_hit_f04",
+        "FX-01_magic_hit_f05",
+        "FX-01_magic_hit_f06"
+      ],
+      "durationSeconds": 0.49999999999999994,
+      "suggestedTrigger": null,
+      "notes": [
+        "源图含极低Alpha背景噪声，所有格边Alpha≤2；仅诊断，保留全部源像素和透明度。",
+        "源图不是完全严格8px逻辑网格；整组固定512×512切片、scale=0.109375最近邻缩放至56×56并加四边4px透明边距，禁止逐帧裁切、重居中或自适应缩放。",
+        "末两帧仍有可见残屑；组件必须随时间淡出并在播放完成隐藏，PNG像素不改。",
+        "法术泡环第3帧扩张后可见像素面积高于第2帧；保留环形扩张，并由组件控制末段消隐。",
+        "末帧尾屑分布不对称，质心偏上属碎片消失过程，不应按可见内容重新居中。"
+      ]
+    },
+    {
+      "id": "FX-01_guard_spark",
+      "name": "guard_spark",
+      "label": "格挡火花",
+      "checklistId": "FX-01",
+      "attachPoint": "contact",
+      "anchor": [
+        32,
+        32
+      ],
+      "target": [
+        64,
+        64
+      ],
+      "fps": 12,
+      "loop": false,
+      "fadeStartNormalized": 0.7,
+      "opacityByFrame": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "direction": "right",
+      "scale": 0.109375,
+      "sheet": "sheets/FX-01_guard_spark_v001_sheet.png",
+      "frameIds": [
+        "FX-01_guard_spark_f01",
+        "FX-01_guard_spark_f02",
+        "FX-01_guard_spark_f03",
+        "FX-01_guard_spark_f04",
+        "FX-01_guard_spark_f05",
+        "FX-01_guard_spark_f06"
+      ],
+      "durationSeconds": 0.49999999999999994,
+      "suggestedTrigger": null,
+      "notes": [
+        "源图含极低Alpha背景噪声，所有格边Alpha≤2；仅诊断，保留全部源像素和透明度。",
+        "源图不是完全严格8px逻辑网格；整组固定512×512切片、scale=0.109375最近邻缩放至56×56并加四边4px透明边距，禁止逐帧裁切、重居中或自适应缩放。",
+        "末两帧仍有可见残屑；组件必须随时间淡出并在播放完成隐藏，PNG像素不改。",
+        "后半段火花长度收缩且末三粒分布略内收，保持固定接触锚点播放。"
+      ]
+    },
+    {
+      "id": "FX-01_perfect_parry",
+      "name": "perfect_parry",
+      "label": "完美格挡",
+      "checklistId": "FX-01",
+      "attachPoint": "contact",
+      "anchor": [
+        32,
+        32
+      ],
+      "target": [
+        64,
+        64
+      ],
+      "fps": 12,
+      "loop": false,
+      "fadeStartNormalized": 0.7,
+      "opacityByFrame": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "direction": "right",
+      "scale": 0.109375,
+      "sheet": "sheets/FX-01_perfect_parry_v001_sheet.png",
+      "frameIds": [
+        "FX-01_perfect_parry_f01",
+        "FX-01_perfect_parry_f02",
+        "FX-01_perfect_parry_f03",
+        "FX-01_perfect_parry_f04",
+        "FX-01_perfect_parry_f05",
+        "FX-01_perfect_parry_f06"
+      ],
+      "durationSeconds": 0.49999999999999994,
+      "suggestedTrigger": null,
+      "notes": [
+        "源图含极低Alpha背景噪声，所有格边Alpha≤2；仅诊断，保留全部源像素和透明度。",
+        "源图不是完全严格8px逻辑网格；整组固定512×512切片、scale=0.109375最近邻缩放至56×56并加四边4px透明边距，禁止逐帧裁切、重居中或自适应缩放。",
+        "末两帧仍有可见残屑；组件必须随时间淡出并在播放完成隐藏，PNG像素不改。",
+        "第3帧环扩大后可见面积略高于第2帧，但第2帧中心四芒亮峰明确。",
+        "圆环碎裂为多段短弧而非严格四段；整体圆心稳定，不影响固定锚点。"
+      ]
+    },
+    {
+      "id": "FX-01_guard_break",
+      "name": "guard_break",
+      "label": "破防",
+      "checklistId": "FX-01",
+      "attachPoint": "shield_center",
+      "anchor": [
+        32,
+        32
+      ],
+      "target": [
+        64,
+        64
+      ],
+      "fps": 12,
+      "loop": false,
+      "fadeStartNormalized": 0.7,
+      "opacityByFrame": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "direction": "right",
+      "scale": 0.109375,
+      "sheet": "sheets/FX-01_guard_break_v001_sheet.png",
+      "frameIds": [
+        "FX-01_guard_break_f01",
+        "FX-01_guard_break_f02",
+        "FX-01_guard_break_f03",
+        "FX-01_guard_break_f04",
+        "FX-01_guard_break_f05",
+        "FX-01_guard_break_f06"
+      ],
+      "durationSeconds": 0.49999999999999994,
+      "suggestedTrigger": null,
+      "notes": [
+        "源图含极低Alpha背景噪声，所有格边Alpha≤2；仅诊断，保留全部源像素和透明度。",
+        "源图不是完全严格8px逻辑网格；整组固定512×512切片、scale=0.109375最近邻缩放至56×56并加四边4px透明边距，禁止逐帧裁切、重居中或自适应缩放。",
+        "末两帧仍有可见残屑；组件必须随时间淡出并在播放完成隐藏，PNG像素不改。",
+        "第4帧最右可见像素接近原始格边（x=504，余量7px），统一56px内容画布+4px外边距避免成品贴边。",
+        "破防有五块可追踪主碎片，末段碎片缩小；下坠趋势较轻，主要为径向外崩。"
+      ]
+    },
+    {
+      "id": "FX-02_landing_dust",
+      "name": "landing_dust",
+      "label": "落地尘",
+      "checklistId": "FX-02",
+      "attachPoint": "feet",
+      "anchor": [
+        32,
+        48
+      ],
+      "target": [
+        64,
+        64
+      ],
+      "fps": 12,
+      "loop": false,
+      "fadeStartNormalized": 0.7,
+      "opacityByFrame": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "direction": "right",
+      "scale": 0.109375,
+      "sheet": "sheets/FX-02_landing_dust_v001_sheet.png",
+      "frameIds": [
+        "FX-02_landing_dust_f01",
+        "FX-02_landing_dust_f02",
+        "FX-02_landing_dust_f03",
+        "FX-02_landing_dust_f04",
+        "FX-02_landing_dust_f05",
+        "FX-02_landing_dust_f06"
+      ],
+      "durationSeconds": 0.49999999999999994,
+      "suggestedTrigger": null,
+      "notes": [
+        "RAW生成基线约y388，与提示y384存在整组偏移；用相同sourceAnchor在全6帧校准，不逐帧居中。",
+        "RAW查看器可能显示alpha=0的RGB柔光；已在#16241a实际合成确认无柔光。"
+      ]
+    },
+    {
+      "id": "FX-02_takeoff_dust",
+      "name": "takeoff_dust",
+      "label": "起跳尘",
+      "checklistId": "FX-02",
+      "attachPoint": "feet",
+      "anchor": [
+        32,
+        48
+      ],
+      "target": [
+        64,
+        64
+      ],
+      "fps": 12,
+      "loop": false,
+      "fadeStartNormalized": 0.7,
+      "opacityByFrame": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "direction": "right",
+      "scale": 0.125,
+      "sheet": "sheets/FX-02_takeoff_dust_v001_sheet.png",
+      "frameIds": [
+        "FX-02_takeoff_dust_f01",
+        "FX-02_takeoff_dust_f02",
+        "FX-02_takeoff_dust_f03",
+        "FX-02_takeoff_dust_f04",
+        "FX-02_takeoff_dust_f05",
+        "FX-02_takeoff_dust_f06"
+      ],
+      "durationSeconds": 0.49999999999999994,
+      "suggestedTrigger": null,
+      "notes": [
+        "RAW生成基线约y400，与提示y384存在整组偏移；用相同sourceAnchor在全6帧校准，不逐帧居中。",
+        "RAW查看器可能显示alpha=0的RGB柔光；已在#16241a实际合成确认无柔光。"
+      ]
+    },
+    {
+      "id": "ABL-01_double_jump_bubble",
+      "name": "double_jump_bubble",
+      "label": "二段跳奶泡",
+      "checklistId": "ABL-01",
+      "attachPoint": "feet",
+      "anchor": [
+        32,
+        48
+      ],
+      "target": [
+        64,
+        64
+      ],
+      "fps": 12,
+      "loop": false,
+      "fadeStartNormalized": 0.7,
+      "opacityByFrame": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "direction": "right",
+      "scale": 0.109375,
+      "sheet": "sheets/ABL-01_double_jump_bubble_v001_sheet.png",
+      "frameIds": [
+        "ABL-01_double_jump_bubble_f01",
+        "ABL-01_double_jump_bubble_f02",
+        "ABL-01_double_jump_bubble_f03",
+        "ABL-01_double_jump_bubble_f04",
+        "ABL-01_double_jump_bubble_f05",
+        "ABL-01_double_jump_bubble_f06"
+      ],
+      "durationSeconds": 0.49999999999999994,
+      "suggestedTrigger": null,
+      "notes": [
+        "RAW生成基线约y440，与提示y384存在整组偏移；用相同sourceAnchor在全6帧校准，不逐帧居中。",
+        "RAW查看器可能显示alpha=0的RGB柔光；已在#16241a实际合成确认无柔光。"
+      ]
+    },
+    {
+      "id": "FX-02_dodge_afterimage",
+      "name": "dodge_afterimage",
+      "label": "闪避残影",
+      "checklistId": "FX-02",
+      "attachPoint": "actor_root",
+      "anchor": [
+        48,
+        64
+      ],
+      "target": [
+        96,
+        80
+      ],
+      "fps": 12,
+      "loop": false,
+      "fadeStartNormalized": 0.7,
+      "opacityByFrame": [
+        0.35,
+        0.45,
+        0.3,
+        0.2,
+        0.12,
+        0.08
+      ],
+      "direction": "right",
+      "scale": 0.11428571428571428,
+      "sheet": "sheets/FX-02_dodge_afterimage_v001_sheet.png",
+      "frameIds": [
+        "FX-02_dodge_afterimage_f01",
+        "FX-02_dodge_afterimage_f02",
+        "FX-02_dodge_afterimage_f03",
+        "FX-02_dodge_afterimage_f04",
+        "FX-02_dodge_afterimage_f05",
+        "FX-02_dodge_afterimage_f06"
+      ],
+      "durationSeconds": 0.49999999999999994,
+      "suggestedTrigger": null,
+      "notes": [
+        "RAW主影不透明度偏高；组件必须使用opacityByFrame包络，避免出现实色替身。",
+        "RAW前3帧足底y448，后2帧轮廓足底y406；各帧手动语义根点已记录sourceAnchors，禁止按bbox自动重心对齐。",
+        "帧4-5线状轮廓略短约1成品像素，保持统一0.125缩放不逐帧拉伸。",
+        "RAW查看器可能显示alpha=0的RGB柔光；森林底合成已确认没有外光。",
+        "源透明边缘存在alpha1-16噪点。整组使用96×80与anchor[48,64]保留全部非零alpha，主体仍约44px高；挂载时以anchor对齐actor_root。"
+      ]
+    },
+    {
+      "id": "WPN-01_hammer_swing_1",
+      "name": "hammer_swing_1",
+      "label": "奶瓶锤·第一击横扫",
+      "checklistId": "WPN-01",
+      "attachPoint": "weapon_swing_pivot",
+      "anchor": [
+        32,
+        32
+      ],
+      "target": [
+        64,
+        64
+      ],
+      "fps": 12,
+      "loop": false,
+      "fadeStartNormalized": 0.7,
+      "opacityByFrame": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "direction": "right",
+      "scale": 0.109375,
+      "sheet": "sheets/WPN-01_hammer_swing_1_v001_sheet.png",
+      "frameIds": [
+        "WPN-01_hammer_swing_1_f01",
+        "WPN-01_hammer_swing_1_f02",
+        "WPN-01_hammer_swing_1_f03",
+        "WPN-01_hammer_swing_1_f04",
+        "WPN-01_hammer_swing_1_f05",
+        "WPN-01_hammer_swing_1_f06"
+      ],
+      "durationSeconds": 0.49999999999999994,
+      "suggestedTrigger": null,
+      "notes": [
+        "v001第4帧少量可见像素触格边，已由生图修订v002。",
+        "整组源锚点固定；挥击轨迹为独立效果，跟随武器轴心，不跟随效果包围盒。"
+      ]
+    },
+    {
+      "id": "WPN-01_hammer_swing_2",
+      "name": "hammer_swing_2",
+      "label": "奶瓶锤·第二击上挑",
+      "checklistId": "WPN-01",
+      "attachPoint": "weapon_swing_pivot",
+      "anchor": [
+        32,
+        32
+      ],
+      "target": [
+        64,
+        64
+      ],
+      "fps": 12,
+      "loop": false,
+      "fadeStartNormalized": 0.7,
+      "opacityByFrame": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "direction": "right",
+      "scale": 0.109375,
+      "sheet": "sheets/WPN-01_hammer_swing_2_v001_sheet.png",
+      "frameIds": [
+        "WPN-01_hammer_swing_2_f01",
+        "WPN-01_hammer_swing_2_f02",
+        "WPN-01_hammer_swing_2_f03",
+        "WPN-01_hammer_swing_2_f04",
+        "WPN-01_hammer_swing_2_f05",
+        "WPN-01_hammer_swing_2_f06"
+      ],
+      "durationSeconds": 0.49999999999999994,
+      "suggestedTrigger": null,
+      "notes": [
+        "上挑从低位向右上连贯移动，末帧保持路径，不重新按碎屑居中。"
+      ]
+    },
+    {
+      "id": "WPN-01_hammer_slam_3",
+      "name": "hammer_slam_3",
+      "label": "奶瓶锤·第三击重砸",
+      "checklistId": "WPN-01",
+      "attachPoint": "ground_contact",
+      "anchor": [
+        32,
+        48
+      ],
+      "target": [
+        64,
+        64
+      ],
+      "fps": 12,
+      "loop": false,
+      "fadeStartNormalized": 0.7,
+      "opacityByFrame": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "direction": "right",
+      "scale": 0.109375,
+      "sheet": "sheets/WPN-01_hammer_slam_3_v001_sheet.png",
+      "frameIds": [
+        "WPN-01_hammer_slam_3_f01",
+        "WPN-01_hammer_slam_3_f02",
+        "WPN-01_hammer_slam_3_f03",
+        "WPN-01_hammer_slam_3_f04",
+        "WPN-01_hammer_slam_3_f05",
+        "WPN-01_hammer_slam_3_f06"
+      ],
+      "durationSeconds": 0.49999999999999994,
+      "suggestedTrigger": null,
+      "notes": [
+        "生图实际接地基线在上排约y422、下排约y404，按可见接地点校准源锚点，保持同一地面。",
+        "第1帧与第6帧无完整接地线，分别继承同段轨迹root，不以粒子最低点作新root。"
+      ]
+    }
+  ],
+  "frames": [
+    {
+      "id": "FX-01_physical_hit_f01",
+      "effectId": "FX-01_physical_hit",
+      "animation": "physical_hit",
+      "index": 0,
+      "phase": null,
+      "file": "frames/FX-01_physical_hit/FX-01_physical_hit_v001_f01.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        32
+      ],
+      "duration": 1,
+      "source": {
+        "path": "assets/RAW/effects/FX-B01/v001/impact/FX-01_physical_hit_sheet_v001.png",
+        "sha256": "566b11b0d2ac8e07ef5d8fc4606da9b02265698b874fc400374f9ac5005dd896",
+        "cellIndex": 0,
+        "rect": [
+          0,
+          0,
+          512,
+          512
+        ],
+        "anchor": [
+          256,
+          256
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.109375,
+        "scaledCellSize": [
+          56,
+          56
+        ],
+        "translation": [
+          4,
+          4
+        ],
+        "filter": "nearest",
+        "anchorRoundingError": [
+          0,
+          0
+        ]
+      },
+      "visibleBounds": [
+        19,
+        12,
+        28,
+        36
+      ],
+      "sha256": "cd8c93f83ce7fb20703fe6429a5b45fe3ec816f06e691682715087413e144020",
+      "atlasRect": [
+        0,
+        0,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "FX-01_physical_hit_f02",
+      "effectId": "FX-01_physical_hit",
+      "animation": "physical_hit",
+      "index": 1,
+      "phase": null,
+      "file": "frames/FX-01_physical_hit/FX-01_physical_hit_v001_f02.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        32
+      ],
+      "duration": 1,
+      "source": {
+        "path": "assets/RAW/effects/FX-B01/v001/impact/FX-01_physical_hit_sheet_v001.png",
+        "sha256": "566b11b0d2ac8e07ef5d8fc4606da9b02265698b874fc400374f9ac5005dd896",
+        "cellIndex": 1,
+        "rect": [
+          512,
+          0,
+          512,
+          512
+        ],
+        "anchor": [
+          256,
+          256
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.109375,
+        "scaledCellSize": [
+          56,
+          56
+        ],
+        "translation": [
+          4,
+          4
+        ],
+        "filter": "nearest",
+        "anchorRoundingError": [
+          0,
+          0
+        ]
+      },
+      "visibleBounds": [
+        20,
+        17,
+        35,
+        39
+      ],
+      "sha256": "8746f369108fa0c36717b7768dcc2ec65ef9563c8925d3f16c331d12fc1cd66e",
+      "atlasRect": [
+        96,
+        0,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "FX-01_physical_hit_f03",
+      "effectId": "FX-01_physical_hit",
+      "animation": "physical_hit",
+      "index": 2,
+      "phase": null,
+      "file": "frames/FX-01_physical_hit/FX-01_physical_hit_v001_f03.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        32
+      ],
+      "duration": 1,
+      "source": {
+        "path": "assets/RAW/effects/FX-B01/v001/impact/FX-01_physical_hit_sheet_v001.png",
+        "sha256": "566b11b0d2ac8e07ef5d8fc4606da9b02265698b874fc400374f9ac5005dd896",
+        "cellIndex": 2,
+        "rect": [
+          1024,
+          0,
+          512,
+          512
+        ],
+        "anchor": [
+          256,
+          256
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.109375,
+        "scaledCellSize": [
+          56,
+          56
+        ],
+        "translation": [
+          4,
+          4
+        ],
+        "filter": "nearest",
+        "anchorRoundingError": [
+          0,
+          0
+        ]
+      },
+      "visibleBounds": [
+        16,
+        17,
+        30,
+        29
+      ],
+      "sha256": "3d57a5e111916fb95a0872e489904a1659b8883e17adff42d73c46e18f8593c1",
+      "atlasRect": [
+        192,
+        0,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "FX-01_physical_hit_f04",
+      "effectId": "FX-01_physical_hit",
+      "animation": "physical_hit",
+      "index": 3,
+      "phase": null,
+      "file": "frames/FX-01_physical_hit/FX-01_physical_hit_v001_f04.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        32
+      ],
+      "duration": 1,
+      "source": {
+        "path": "assets/RAW/effects/FX-B01/v001/impact/FX-01_physical_hit_sheet_v001.png",
+        "sha256": "566b11b0d2ac8e07ef5d8fc4606da9b02265698b874fc400374f9ac5005dd896",
+        "cellIndex": 3,
+        "rect": [
+          0,
+          512,
+          512,
+          512
+        ],
+        "anchor": [
+          256,
+          256
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.109375,
+        "scaledCellSize": [
+          56,
+          56
+        ],
+        "translation": [
+          4,
+          4
+        ],
+        "filter": "nearest",
+        "anchorRoundingError": [
+          0,
+          0
+        ]
+      },
+      "visibleBounds": [
+        13,
+        12,
+        38,
+        36
+      ],
+      "sha256": "7d9de04bc4b191cc989ebf5f1998f972688e0101534c922291053482264b9652",
+      "atlasRect": [
+        288,
+        0,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "FX-01_physical_hit_f05",
+      "effectId": "FX-01_physical_hit",
+      "animation": "physical_hit",
+      "index": 4,
+      "phase": null,
+      "file": "frames/FX-01_physical_hit/FX-01_physical_hit_v001_f05.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        32
+      ],
+      "duration": 1,
+      "source": {
+        "path": "assets/RAW/effects/FX-B01/v001/impact/FX-01_physical_hit_sheet_v001.png",
+        "sha256": "566b11b0d2ac8e07ef5d8fc4606da9b02265698b874fc400374f9ac5005dd896",
+        "cellIndex": 4,
+        "rect": [
+          512,
+          512,
+          512,
+          512
+        ],
+        "anchor": [
+          256,
+          256
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.109375,
+        "scaledCellSize": [
+          56,
+          56
+        ],
+        "translation": [
+          4,
+          4
+        ],
+        "filter": "nearest",
+        "anchorRoundingError": [
+          0,
+          0
+        ]
+      },
+      "visibleBounds": [
+        5,
+        10,
+        46,
+        38
+      ],
+      "sha256": "d66c3e9ec5da81c92ce928be26af97f6bd923770521a1739aefe9d89945281fb",
+      "atlasRect": [
+        384,
+        0,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "FX-01_physical_hit_f06",
+      "effectId": "FX-01_physical_hit",
+      "animation": "physical_hit",
+      "index": 5,
+      "phase": null,
+      "file": "frames/FX-01_physical_hit/FX-01_physical_hit_v001_f06.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        32
+      ],
+      "duration": 1,
+      "source": {
+        "path": "assets/RAW/effects/FX-B01/v001/impact/FX-01_physical_hit_sheet_v001.png",
+        "sha256": "566b11b0d2ac8e07ef5d8fc4606da9b02265698b874fc400374f9ac5005dd896",
+        "cellIndex": 5,
+        "rect": [
+          1024,
+          512,
+          512,
+          512
+        ],
+        "anchor": [
+          256,
+          256
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.109375,
+        "scaledCellSize": [
+          56,
+          56
+        ],
+        "translation": [
+          4,
+          4
+        ],
+        "filter": "nearest",
+        "anchorRoundingError": [
+          0,
+          0
+        ]
+      },
+      "visibleBounds": [
+        14,
+        8,
+        37,
+        41
+      ],
+      "sha256": "c0dd1bc1c79e389d3d00769cac7244245c35d6b04950978d24bc7550a70cff88",
+      "atlasRect": [
+        480,
+        0,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "FX-01_magic_hit_f01",
+      "effectId": "FX-01_magic_hit",
+      "animation": "magic_hit",
+      "index": 0,
+      "phase": null,
+      "file": "frames/FX-01_magic_hit/FX-01_magic_hit_v001_f01.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        32
+      ],
+      "duration": 1,
+      "source": {
+        "path": "assets/RAW/effects/FX-B01/v001/impact/FX-01_magic_hit_sheet_v001.png",
+        "sha256": "c65bb60c14fa9cd02dbe2800bcf69aa75e8f4aab2cba9f89717b8801703b467b",
+        "cellIndex": 0,
+        "rect": [
+          0,
+          0,
+          512,
+          512
+        ],
+        "anchor": [
+          256,
+          256
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.109375,
+        "scaledCellSize": [
+          56,
+          56
+        ],
+        "translation": [
+          4,
+          4
+        ],
+        "filter": "nearest",
+        "anchorRoundingError": [
+          0,
+          0
+        ]
+      },
+      "visibleBounds": [
+        8,
+        14,
+        52,
+        42
+      ],
+      "sha256": "3b2585d56829480898e4433ce65796a420f5280b2519c6b48725a61064537f94",
+      "atlasRect": [
+        0,
+        80,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "FX-01_magic_hit_f02",
+      "effectId": "FX-01_magic_hit",
+      "animation": "magic_hit",
+      "index": 1,
+      "phase": null,
+      "file": "frames/FX-01_magic_hit/FX-01_magic_hit_v001_f02.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        32
+      ],
+      "duration": 1,
+      "source": {
+        "path": "assets/RAW/effects/FX-B01/v001/impact/FX-01_magic_hit_sheet_v001.png",
+        "sha256": "c65bb60c14fa9cd02dbe2800bcf69aa75e8f4aab2cba9f89717b8801703b467b",
+        "cellIndex": 1,
+        "rect": [
+          512,
+          0,
+          512,
+          512
+        ],
+        "anchor": [
+          256,
+          256
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.109375,
+        "scaledCellSize": [
+          56,
+          56
+        ],
+        "translation": [
+          4,
+          4
+        ],
+        "filter": "nearest",
+        "anchorRoundingError": [
+          0,
+          0
+        ]
+      },
+      "visibleBounds": [
+        4,
+        7,
+        56,
+        52
+      ],
+      "sha256": "d0de8584d735a0eb43c98cf8fd9227d548dd58d58e8cc426be2ba0bf2954703c",
+      "atlasRect": [
+        96,
+        80,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "FX-01_magic_hit_f03",
+      "effectId": "FX-01_magic_hit",
+      "animation": "magic_hit",
+      "index": 2,
+      "phase": null,
+      "file": "frames/FX-01_magic_hit/FX-01_magic_hit_v001_f03.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        32
+      ],
+      "duration": 1,
+      "source": {
+        "path": "assets/RAW/effects/FX-B01/v001/impact/FX-01_magic_hit_sheet_v001.png",
+        "sha256": "c65bb60c14fa9cd02dbe2800bcf69aa75e8f4aab2cba9f89717b8801703b467b",
+        "cellIndex": 2,
+        "rect": [
+          1024,
+          0,
+          512,
+          512
+        ],
+        "anchor": [
+          256,
+          256
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.109375,
+        "scaledCellSize": [
+          56,
+          56
+        ],
+        "translation": [
+          4,
+          4
+        ],
+        "filter": "nearest",
+        "anchorRoundingError": [
+          0,
+          0
+        ]
+      },
+      "visibleBounds": [
+        5,
+        9,
+        48,
+        50
+      ],
+      "sha256": "998f3df7ee472649936b1daf78a2903be766fe14f11185c3a60802e78eb9b444",
+      "atlasRect": [
+        192,
+        80,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "FX-01_magic_hit_f04",
+      "effectId": "FX-01_magic_hit",
+      "animation": "magic_hit",
+      "index": 3,
+      "phase": null,
+      "file": "frames/FX-01_magic_hit/FX-01_magic_hit_v001_f04.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        32
+      ],
+      "duration": 1,
+      "source": {
+        "path": "assets/RAW/effects/FX-B01/v001/impact/FX-01_magic_hit_sheet_v001.png",
+        "sha256": "c65bb60c14fa9cd02dbe2800bcf69aa75e8f4aab2cba9f89717b8801703b467b",
+        "cellIndex": 3,
+        "rect": [
+          0,
+          512,
+          512,
+          512
+        ],
+        "anchor": [
+          256,
+          256
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.109375,
+        "scaledCellSize": [
+          56,
+          56
+        ],
+        "translation": [
+          4,
+          4
+        ],
+        "filter": "nearest",
+        "anchorRoundingError": [
+          0,
+          0
+        ]
+      },
+      "visibleBounds": [
+        9,
+        8,
+        48,
+        47
+      ],
+      "sha256": "f5b71e3deed89b07da0ceeec8d1786c99b714fccaea60da99fe8816062505725",
+      "atlasRect": [
+        288,
+        80,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "FX-01_magic_hit_f05",
+      "effectId": "FX-01_magic_hit",
+      "animation": "magic_hit",
+      "index": 4,
+      "phase": null,
+      "file": "frames/FX-01_magic_hit/FX-01_magic_hit_v001_f05.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        32
+      ],
+      "duration": 1,
+      "source": {
+        "path": "assets/RAW/effects/FX-B01/v001/impact/FX-01_magic_hit_sheet_v001.png",
+        "sha256": "c65bb60c14fa9cd02dbe2800bcf69aa75e8f4aab2cba9f89717b8801703b467b",
+        "cellIndex": 4,
+        "rect": [
+          512,
+          512,
+          512,
+          512
+        ],
+        "anchor": [
+          256,
+          256
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.109375,
+        "scaledCellSize": [
+          56,
+          56
+        ],
+        "translation": [
+          4,
+          4
+        ],
+        "filter": "nearest",
+        "anchorRoundingError": [
+          0,
+          0
+        ]
+      },
+      "visibleBounds": [
+        4,
+        5,
+        56,
+        49
+      ],
+      "sha256": "875be2e8018747368ce9e08f07285e506f48039861df449d29a372ba9c2006ec",
+      "atlasRect": [
+        384,
+        80,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "FX-01_magic_hit_f06",
+      "effectId": "FX-01_magic_hit",
+      "animation": "magic_hit",
+      "index": 5,
+      "phase": null,
+      "file": "frames/FX-01_magic_hit/FX-01_magic_hit_v001_f06.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        32
+      ],
+      "duration": 1,
+      "source": {
+        "path": "assets/RAW/effects/FX-B01/v001/impact/FX-01_magic_hit_sheet_v001.png",
+        "sha256": "c65bb60c14fa9cd02dbe2800bcf69aa75e8f4aab2cba9f89717b8801703b467b",
+        "cellIndex": 5,
+        "rect": [
+          1024,
+          512,
+          512,
+          512
+        ],
+        "anchor": [
+          256,
+          256
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.109375,
+        "scaledCellSize": [
+          56,
+          56
+        ],
+        "translation": [
+          4,
+          4
+        ],
+        "filter": "nearest",
+        "anchorRoundingError": [
+          0,
+          0
+        ]
+      },
+      "visibleBounds": [
+        4,
+        4,
+        52,
+        50
+      ],
+      "sha256": "31b3359125e80bd453ac77f28e49e34696b4b6da00e035c2f835755941e764d3",
+      "atlasRect": [
+        480,
+        80,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "FX-01_guard_spark_f01",
+      "effectId": "FX-01_guard_spark",
+      "animation": "guard_spark",
+      "index": 0,
+      "phase": null,
+      "file": "frames/FX-01_guard_spark/FX-01_guard_spark_v001_f01.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        32
+      ],
+      "duration": 1,
+      "source": {
+        "path": "assets/RAW/effects/FX-B01/v001/impact/FX-01_guard_spark_sheet_v001.png",
+        "sha256": "545489a5507e885b743dc2173d3cffb89cc74955ac17e6558e76d7b0c3410766",
+        "cellIndex": 0,
+        "rect": [
+          0,
+          0,
+          512,
+          512
+        ],
+        "anchor": [
+          256,
+          256
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.109375,
+        "scaledCellSize": [
+          56,
+          56
+        ],
+        "translation": [
+          4,
+          4
+        ],
+        "filter": "nearest",
+        "anchorRoundingError": [
+          0,
+          0
+        ]
+      },
+      "visibleBounds": [
+        22,
+        20,
+        35,
+        38
+      ],
+      "sha256": "ff00fb180814b454388a4110b05d8b93cc94056bc238d18fc4f1814021dc10c9",
+      "atlasRect": [
+        0,
+        160,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "FX-01_guard_spark_f02",
+      "effectId": "FX-01_guard_spark",
+      "animation": "guard_spark",
+      "index": 1,
+      "phase": null,
+      "file": "frames/FX-01_guard_spark/FX-01_guard_spark_v001_f02.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        32
+      ],
+      "duration": 1,
+      "source": {
+        "path": "assets/RAW/effects/FX-B01/v001/impact/FX-01_guard_spark_sheet_v001.png",
+        "sha256": "545489a5507e885b743dc2173d3cffb89cc74955ac17e6558e76d7b0c3410766",
+        "cellIndex": 1,
+        "rect": [
+          512,
+          0,
+          512,
+          512
+        ],
+        "anchor": [
+          256,
+          256
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.109375,
+        "scaledCellSize": [
+          56,
+          56
+        ],
+        "translation": [
+          4,
+          4
+        ],
+        "filter": "nearest",
+        "anchorRoundingError": [
+          0,
+          0
+        ]
+      },
+      "visibleBounds": [
+        18,
+        12,
+        34,
+        33
+      ],
+      "sha256": "39b5181273524e6b9058316d08041d64eb2d70532369f0b27a15ef19a46cedb7",
+      "atlasRect": [
+        96,
+        160,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "FX-01_guard_spark_f03",
+      "effectId": "FX-01_guard_spark",
+      "animation": "guard_spark",
+      "index": 2,
+      "phase": null,
+      "file": "frames/FX-01_guard_spark/FX-01_guard_spark_v001_f03.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        32
+      ],
+      "duration": 1,
+      "source": {
+        "path": "assets/RAW/effects/FX-B01/v001/impact/FX-01_guard_spark_sheet_v001.png",
+        "sha256": "545489a5507e885b743dc2173d3cffb89cc74955ac17e6558e76d7b0c3410766",
+        "cellIndex": 2,
+        "rect": [
+          1024,
+          0,
+          512,
+          512
+        ],
+        "anchor": [
+          256,
+          256
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.109375,
+        "scaledCellSize": [
+          56,
+          56
+        ],
+        "translation": [
+          4,
+          4
+        ],
+        "filter": "nearest",
+        "anchorRoundingError": [
+          0,
+          0
+        ]
+      },
+      "visibleBounds": [
+        9,
+        13,
+        45,
+        36
+      ],
+      "sha256": "44c4671892cd9f69d5f820eca4e7562134aafe51b3995992f0de04ab9bd6a09b",
+      "atlasRect": [
+        192,
+        160,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "FX-01_guard_spark_f04",
+      "effectId": "FX-01_guard_spark",
+      "animation": "guard_spark",
+      "index": 3,
+      "phase": null,
+      "file": "frames/FX-01_guard_spark/FX-01_guard_spark_v001_f04.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        32
+      ],
+      "duration": 1,
+      "source": {
+        "path": "assets/RAW/effects/FX-B01/v001/impact/FX-01_guard_spark_sheet_v001.png",
+        "sha256": "545489a5507e885b743dc2173d3cffb89cc74955ac17e6558e76d7b0c3410766",
+        "cellIndex": 3,
+        "rect": [
+          0,
+          512,
+          512,
+          512
+        ],
+        "anchor": [
+          256,
+          256
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.109375,
+        "scaledCellSize": [
+          56,
+          56
+        ],
+        "translation": [
+          4,
+          4
+        ],
+        "filter": "nearest",
+        "anchorRoundingError": [
+          0,
+          0
+        ]
+      },
+      "visibleBounds": [
+        17,
+        7,
+        37,
+        39
+      ],
+      "sha256": "d485407f88b2aad52e8d07571255dc06ee1654c39470b405a87193fb17311c9c",
+      "atlasRect": [
+        288,
+        160,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "FX-01_guard_spark_f05",
+      "effectId": "FX-01_guard_spark",
+      "animation": "guard_spark",
+      "index": 4,
+      "phase": null,
+      "file": "frames/FX-01_guard_spark/FX-01_guard_spark_v001_f05.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        32
+      ],
+      "duration": 1,
+      "source": {
+        "path": "assets/RAW/effects/FX-B01/v001/impact/FX-01_guard_spark_sheet_v001.png",
+        "sha256": "545489a5507e885b743dc2173d3cffb89cc74955ac17e6558e76d7b0c3410766",
+        "cellIndex": 4,
+        "rect": [
+          512,
+          512,
+          512,
+          512
+        ],
+        "anchor": [
+          256,
+          256
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.109375,
+        "scaledCellSize": [
+          56,
+          56
+        ],
+        "translation": [
+          4,
+          4
+        ],
+        "filter": "nearest",
+        "anchorRoundingError": [
+          0,
+          0
+        ]
+      },
+      "visibleBounds": [
+        13,
+        12,
+        45,
+        44
+      ],
+      "sha256": "5b505aa94c452b6be6db11be27d249837e2b7c4d65a535eaff4081b9f55bf2e1",
+      "atlasRect": [
+        384,
+        160,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "FX-01_guard_spark_f06",
+      "effectId": "FX-01_guard_spark",
+      "animation": "guard_spark",
+      "index": 5,
+      "phase": null,
+      "file": "frames/FX-01_guard_spark/FX-01_guard_spark_v001_f06.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        32
+      ],
+      "duration": 1,
+      "source": {
+        "path": "assets/RAW/effects/FX-B01/v001/impact/FX-01_guard_spark_sheet_v001.png",
+        "sha256": "545489a5507e885b743dc2173d3cffb89cc74955ac17e6558e76d7b0c3410766",
+        "cellIndex": 5,
+        "rect": [
+          1024,
+          512,
+          512,
+          512
+        ],
+        "anchor": [
+          256,
+          256
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.109375,
+        "scaledCellSize": [
+          56,
+          56
+        ],
+        "translation": [
+          4,
+          4
+        ],
+        "filter": "nearest",
+        "anchorRoundingError": [
+          0,
+          0
+        ]
+      },
+      "visibleBounds": [
+        4,
+        7,
+        49,
+        41
+      ],
+      "sha256": "f2705319f85bc5bb1de3ede2d8fc3a950288e2465d7dde58b324ca6cd32cb843",
+      "atlasRect": [
+        480,
+        160,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "FX-01_perfect_parry_f01",
+      "effectId": "FX-01_perfect_parry",
+      "animation": "perfect_parry",
+      "index": 0,
+      "phase": null,
+      "file": "frames/FX-01_perfect_parry/FX-01_perfect_parry_v001_f01.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        32
+      ],
+      "duration": 1,
+      "source": {
+        "path": "assets/RAW/effects/FX-B01/v001/impact/FX-01_perfect_parry_sheet_v001.png",
+        "sha256": "d09b2cee63a4ac94dc191d0314ff3b8823b8e6d2f316427f0a064a9b1dadb921",
+        "cellIndex": 0,
+        "rect": [
+          0,
+          0,
+          512,
+          512
+        ],
+        "anchor": [
+          256,
+          256
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.109375,
+        "scaledCellSize": [
+          56,
+          56
+        ],
+        "translation": [
+          4,
+          4
+        ],
+        "filter": "nearest",
+        "anchorRoundingError": [
+          0,
+          0
+        ]
+      },
+      "visibleBounds": [
+        9,
+        6,
+        51,
+        53
+      ],
+      "sha256": "e21ac4c5aaf607dd60969793c3bdd9aedf08f6ddd256964b56d922dadaa5fa4d",
+      "atlasRect": [
+        0,
+        240,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "FX-01_perfect_parry_f02",
+      "effectId": "FX-01_perfect_parry",
+      "animation": "perfect_parry",
+      "index": 1,
+      "phase": null,
+      "file": "frames/FX-01_perfect_parry/FX-01_perfect_parry_v001_f02.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        32
+      ],
+      "duration": 1,
+      "source": {
+        "path": "assets/RAW/effects/FX-B01/v001/impact/FX-01_perfect_parry_sheet_v001.png",
+        "sha256": "d09b2cee63a4ac94dc191d0314ff3b8823b8e6d2f316427f0a064a9b1dadb921",
+        "cellIndex": 1,
+        "rect": [
+          512,
+          0,
+          512,
+          512
+        ],
+        "anchor": [
+          256,
+          256
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.109375,
+        "scaledCellSize": [
+          56,
+          56
+        ],
+        "translation": [
+          4,
+          4
+        ],
+        "filter": "nearest",
+        "anchorRoundingError": [
+          0,
+          0
+        ]
+      },
+      "visibleBounds": [
+        4,
+        8,
+        56,
+        52
+      ],
+      "sha256": "41495faf24932ba9b5dbe279f0803b8f27dcefba8a0adda222d91862583747e1",
+      "atlasRect": [
+        96,
+        240,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "FX-01_perfect_parry_f03",
+      "effectId": "FX-01_perfect_parry",
+      "animation": "perfect_parry",
+      "index": 2,
+      "phase": null,
+      "file": "frames/FX-01_perfect_parry/FX-01_perfect_parry_v001_f03.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        32
+      ],
+      "duration": 1,
+      "source": {
+        "path": "assets/RAW/effects/FX-B01/v001/impact/FX-01_perfect_parry_sheet_v001.png",
+        "sha256": "d09b2cee63a4ac94dc191d0314ff3b8823b8e6d2f316427f0a064a9b1dadb921",
+        "cellIndex": 2,
+        "rect": [
+          1024,
+          0,
+          512,
+          512
+        ],
+        "anchor": [
+          256,
+          256
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.109375,
+        "scaledCellSize": [
+          56,
+          56
+        ],
+        "translation": [
+          4,
+          4
+        ],
+        "filter": "nearest",
+        "anchorRoundingError": [
+          0,
+          0
+        ]
+      },
+      "visibleBounds": [
+        4,
+        7,
+        52,
+        52
+      ],
+      "sha256": "524a07be154b18d71eac949f5aef4ed6ec61e3f7164a4cd81895ab584d4ff76b",
+      "atlasRect": [
+        192,
+        240,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "FX-01_perfect_parry_f04",
+      "effectId": "FX-01_perfect_parry",
+      "animation": "perfect_parry",
+      "index": 3,
+      "phase": null,
+      "file": "frames/FX-01_perfect_parry/FX-01_perfect_parry_v001_f04.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        32
+      ],
+      "duration": 1,
+      "source": {
+        "path": "assets/RAW/effects/FX-B01/v001/impact/FX-01_perfect_parry_sheet_v001.png",
+        "sha256": "d09b2cee63a4ac94dc191d0314ff3b8823b8e6d2f316427f0a064a9b1dadb921",
+        "cellIndex": 3,
+        "rect": [
+          0,
+          512,
+          512,
+          512
+        ],
+        "anchor": [
+          256,
+          256
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.109375,
+        "scaledCellSize": [
+          56,
+          56
+        ],
+        "translation": [
+          4,
+          4
+        ],
+        "filter": "nearest",
+        "anchorRoundingError": [
+          0,
+          0
+        ]
+      },
+      "visibleBounds": [
+        7,
+        8,
+        53,
+        48
+      ],
+      "sha256": "56a80eb8cb8d476a625ab588150a7b80bb7757d8933a662df50920bc36dadc7d",
+      "atlasRect": [
+        288,
+        240,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "FX-01_perfect_parry_f05",
+      "effectId": "FX-01_perfect_parry",
+      "animation": "perfect_parry",
+      "index": 4,
+      "phase": null,
+      "file": "frames/FX-01_perfect_parry/FX-01_perfect_parry_v001_f05.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        32
+      ],
+      "duration": 1,
+      "source": {
+        "path": "assets/RAW/effects/FX-B01/v001/impact/FX-01_perfect_parry_sheet_v001.png",
+        "sha256": "d09b2cee63a4ac94dc191d0314ff3b8823b8e6d2f316427f0a064a9b1dadb921",
+        "cellIndex": 4,
+        "rect": [
+          512,
+          512,
+          512,
+          512
+        ],
+        "anchor": [
+          256,
+          256
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.109375,
+        "scaledCellSize": [
+          56,
+          56
+        ],
+        "translation": [
+          4,
+          4
+        ],
+        "filter": "nearest",
+        "anchorRoundingError": [
+          0,
+          0
+        ]
+      },
+      "visibleBounds": [
+        4,
+        4,
+        51,
+        49
+      ],
+      "sha256": "3641c3c08660efe37f38e47bafa562a66ccf6c24932fcc3f4b2819a59e722491",
+      "atlasRect": [
+        384,
+        240,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "FX-01_perfect_parry_f06",
+      "effectId": "FX-01_perfect_parry",
+      "animation": "perfect_parry",
+      "index": 5,
+      "phase": null,
+      "file": "frames/FX-01_perfect_parry/FX-01_perfect_parry_v001_f06.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        32
+      ],
+      "duration": 1,
+      "source": {
+        "path": "assets/RAW/effects/FX-B01/v001/impact/FX-01_perfect_parry_sheet_v001.png",
+        "sha256": "d09b2cee63a4ac94dc191d0314ff3b8823b8e6d2f316427f0a064a9b1dadb921",
+        "cellIndex": 5,
+        "rect": [
+          1024,
+          512,
+          512,
+          512
+        ],
+        "anchor": [
+          256,
+          256
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.109375,
+        "scaledCellSize": [
+          56,
+          56
+        ],
+        "translation": [
+          4,
+          4
+        ],
+        "filter": "nearest",
+        "anchorRoundingError": [
+          0,
+          0
+        ]
+      },
+      "visibleBounds": [
+        5,
+        4,
+        52,
+        44
+      ],
+      "sha256": "f0ff182d48ddb32dd812ff26ae389151e7b737e578e16409bacd032d45f1ee37",
+      "atlasRect": [
+        480,
+        240,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "FX-01_guard_break_f01",
+      "effectId": "FX-01_guard_break",
+      "animation": "guard_break",
+      "index": 0,
+      "phase": null,
+      "file": "frames/FX-01_guard_break/FX-01_guard_break_v001_f01.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        32
+      ],
+      "duration": 1,
+      "source": {
+        "path": "assets/RAW/effects/FX-B01/v001/impact/FX-01_guard_break_sheet_v001.png",
+        "sha256": "3c1726d3c7eae7346e1d36368623cd0e5e651e680fa2c477329971195355ef68",
+        "cellIndex": 0,
+        "rect": [
+          0,
+          0,
+          512,
+          512
+        ],
+        "anchor": [
+          256,
+          256
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.109375,
+        "scaledCellSize": [
+          56,
+          56
+        ],
+        "translation": [
+          4,
+          4
+        ],
+        "filter": "nearest",
+        "anchorRoundingError": [
+          0,
+          0
+        ]
+      },
+      "visibleBounds": [
+        5,
+        4,
+        54,
+        54
+      ],
+      "sha256": "351ed02dd0df2cfac9470098308d8f380580f51ded3d808a6b151f0dfa427abc",
+      "atlasRect": [
+        0,
+        320,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "FX-01_guard_break_f02",
+      "effectId": "FX-01_guard_break",
+      "animation": "guard_break",
+      "index": 1,
+      "phase": null,
+      "file": "frames/FX-01_guard_break/FX-01_guard_break_v001_f02.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        32
+      ],
+      "duration": 1,
+      "source": {
+        "path": "assets/RAW/effects/FX-B01/v001/impact/FX-01_guard_break_sheet_v001.png",
+        "sha256": "3c1726d3c7eae7346e1d36368623cd0e5e651e680fa2c477329971195355ef68",
+        "cellIndex": 1,
+        "rect": [
+          512,
+          0,
+          512,
+          512
+        ],
+        "anchor": [
+          256,
+          256
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.109375,
+        "scaledCellSize": [
+          56,
+          56
+        ],
+        "translation": [
+          4,
+          4
+        ],
+        "filter": "nearest",
+        "anchorRoundingError": [
+          0,
+          0
+        ]
+      },
+      "visibleBounds": [
+        8,
+        6,
+        52,
+        54
+      ],
+      "sha256": "e731269a2b60037de95e1b44935e9c717e32a1c26f17e755aec1964e727e2356",
+      "atlasRect": [
+        96,
+        320,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "FX-01_guard_break_f03",
+      "effectId": "FX-01_guard_break",
+      "animation": "guard_break",
+      "index": 2,
+      "phase": null,
+      "file": "frames/FX-01_guard_break/FX-01_guard_break_v001_f03.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        32
+      ],
+      "duration": 1,
+      "source": {
+        "path": "assets/RAW/effects/FX-B01/v001/impact/FX-01_guard_break_sheet_v001.png",
+        "sha256": "3c1726d3c7eae7346e1d36368623cd0e5e651e680fa2c477329971195355ef68",
+        "cellIndex": 2,
+        "rect": [
+          1024,
+          0,
+          512,
+          512
+        ],
+        "anchor": [
+          256,
+          256
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.109375,
+        "scaledCellSize": [
+          56,
+          56
+        ],
+        "translation": [
+          4,
+          4
+        ],
+        "filter": "nearest",
+        "anchorRoundingError": [
+          0,
+          0
+        ]
+      },
+      "visibleBounds": [
+        4,
+        7,
+        53,
+        50
+      ],
+      "sha256": "946decbf64fa66e5611362efc2efc217cd02fa67612db2080e5f9d78eec0b07b",
+      "atlasRect": [
+        192,
+        320,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "FX-01_guard_break_f04",
+      "effectId": "FX-01_guard_break",
+      "animation": "guard_break",
+      "index": 3,
+      "phase": null,
+      "file": "frames/FX-01_guard_break/FX-01_guard_break_v001_f04.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        32
+      ],
+      "duration": 1,
+      "source": {
+        "path": "assets/RAW/effects/FX-B01/v001/impact/FX-01_guard_break_sheet_v001.png",
+        "sha256": "3c1726d3c7eae7346e1d36368623cd0e5e651e680fa2c477329971195355ef68",
+        "cellIndex": 3,
+        "rect": [
+          0,
+          512,
+          512,
+          512
+        ],
+        "anchor": [
+          256,
+          256
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.109375,
+        "scaledCellSize": [
+          56,
+          56
+        ],
+        "translation": [
+          4,
+          4
+        ],
+        "filter": "nearest",
+        "anchorRoundingError": [
+          0,
+          0
+        ]
+      },
+      "visibleBounds": [
+        8,
+        4,
+        52,
+        54
+      ],
+      "sha256": "cda5422147378c8588a59c3656decb9a2ca12b1254dbe16a8cd4f176ade2f59c",
+      "atlasRect": [
+        288,
+        320,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "FX-01_guard_break_f05",
+      "effectId": "FX-01_guard_break",
+      "animation": "guard_break",
+      "index": 4,
+      "phase": null,
+      "file": "frames/FX-01_guard_break/FX-01_guard_break_v001_f05.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        32
+      ],
+      "duration": 1,
+      "source": {
+        "path": "assets/RAW/effects/FX-B01/v001/impact/FX-01_guard_break_sheet_v001.png",
+        "sha256": "3c1726d3c7eae7346e1d36368623cd0e5e651e680fa2c477329971195355ef68",
+        "cellIndex": 4,
+        "rect": [
+          512,
+          512,
+          512,
+          512
+        ],
+        "anchor": [
+          256,
+          256
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.109375,
+        "scaledCellSize": [
+          56,
+          56
+        ],
+        "translation": [
+          4,
+          4
+        ],
+        "filter": "nearest",
+        "anchorRoundingError": [
+          0,
+          0
+        ]
+      },
+      "visibleBounds": [
+        4,
+        4,
+        56,
+        52
+      ],
+      "sha256": "3a00e47b31ee92f7495a59a4acc4c24059f958c0751ee47167054ce8468ce12e",
+      "atlasRect": [
+        384,
+        320,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "FX-01_guard_break_f06",
+      "effectId": "FX-01_guard_break",
+      "animation": "guard_break",
+      "index": 5,
+      "phase": null,
+      "file": "frames/FX-01_guard_break/FX-01_guard_break_v001_f06.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        32
+      ],
+      "duration": 1,
+      "source": {
+        "path": "assets/RAW/effects/FX-B01/v001/impact/FX-01_guard_break_sheet_v001.png",
+        "sha256": "3c1726d3c7eae7346e1d36368623cd0e5e651e680fa2c477329971195355ef68",
+        "cellIndex": 5,
+        "rect": [
+          1024,
+          512,
+          512,
+          512
+        ],
+        "anchor": [
+          256,
+          256
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.109375,
+        "scaledCellSize": [
+          56,
+          56
+        ],
+        "translation": [
+          4,
+          4
+        ],
+        "filter": "nearest",
+        "anchorRoundingError": [
+          0,
+          0
+        ]
+      },
+      "visibleBounds": [
+        4,
+        7,
+        52,
+        48
+      ],
+      "sha256": "0197a43583917ffb69bab2665721691ce8746d90c92bf652ece82e21e61fe1e4",
+      "atlasRect": [
+        480,
+        320,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "FX-02_landing_dust_f01",
+      "effectId": "FX-02_landing_dust",
+      "animation": "landing_dust",
+      "index": 0,
+      "phase": "建立接地点",
+      "file": "frames/FX-02_landing_dust/FX-02_landing_dust_v001_f01.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        48
+      ],
+      "duration": 1,
+      "source": {
+        "path": "assets/RAW/effects/FX-B01/v001/motion/FX-02_landing_dust_sheet_v001.png",
+        "sha256": "f529a02bba6e06c33d626286ec5360760d8acb4f250db0d1e47a1d057b9fd046",
+        "cellIndex": 0,
+        "rect": [
+          0,
+          0,
+          512,
+          512
+        ],
+        "anchor": [
+          256,
+          388
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.109375,
+        "scaledCellSize": [
+          56,
+          56
+        ],
+        "translation": [
+          4,
+          6
+        ],
+        "filter": "nearest",
+        "anchorRoundingError": [
+          0,
+          0.4375
+        ]
+      },
+      "visibleBounds": [
+        18,
+        39,
+        28,
+        12
+      ],
+      "sha256": "8a2fde8b7a94e35568b4c943c6221848fbd7cc6c4411353f7128937c22e8a2b4",
+      "atlasRect": [
+        0,
+        400,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "FX-02_landing_dust_f02",
+      "effectId": "FX-02_landing_dust",
+      "animation": "landing_dust",
+      "index": 1,
+      "phase": "尘浪峰值",
+      "file": "frames/FX-02_landing_dust/FX-02_landing_dust_v001_f02.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        48
+      ],
+      "duration": 1,
+      "source": {
+        "path": "assets/RAW/effects/FX-B01/v001/motion/FX-02_landing_dust_sheet_v001.png",
+        "sha256": "f529a02bba6e06c33d626286ec5360760d8acb4f250db0d1e47a1d057b9fd046",
+        "cellIndex": 1,
+        "rect": [
+          512,
+          0,
+          512,
+          512
+        ],
+        "anchor": [
+          256,
+          388
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.109375,
+        "scaledCellSize": [
+          56,
+          56
+        ],
+        "translation": [
+          4,
+          6
+        ],
+        "filter": "nearest",
+        "anchorRoundingError": [
+          0,
+          0.4375
+        ]
+      },
+      "visibleBounds": [
+        8,
+        33,
+        50,
+        25
+      ],
+      "sha256": "b2ccbebad1fc33a0eebf3b5c1c6e1c74bcd0656f3d67050a33e746dce1ecb96b",
+      "atlasRect": [
+        96,
+        400,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "FX-02_landing_dust_f03",
+      "effectId": "FX-02_landing_dust",
+      "animation": "landing_dust",
+      "index": 2,
+      "phase": "两侧扩散",
+      "file": "frames/FX-02_landing_dust/FX-02_landing_dust_v001_f03.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        48
+      ],
+      "duration": 1,
+      "source": {
+        "path": "assets/RAW/effects/FX-B01/v001/motion/FX-02_landing_dust_sheet_v001.png",
+        "sha256": "f529a02bba6e06c33d626286ec5360760d8acb4f250db0d1e47a1d057b9fd046",
+        "cellIndex": 2,
+        "rect": [
+          1024,
+          0,
+          512,
+          512
+        ],
+        "anchor": [
+          256,
+          388
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.109375,
+        "scaledCellSize": [
+          56,
+          56
+        ],
+        "translation": [
+          4,
+          6
+        ],
+        "filter": "nearest",
+        "anchorRoundingError": [
+          0,
+          0.4375
+        ]
+      },
+      "visibleBounds": [
+        4,
+        20,
+        56,
+        31
+      ],
+      "sha256": "97ee51cc81962283c60db54eab3ac112b51c56781a28a1534dc294cf78537dbd",
+      "atlasRect": [
+        192,
+        400,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "FX-02_landing_dust_f04",
+      "effectId": "FX-02_landing_dust",
+      "animation": "landing_dust",
+      "index": 3,
+      "phase": "云片变薄",
+      "file": "frames/FX-02_landing_dust/FX-02_landing_dust_v001_f04.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        48
+      ],
+      "duration": 1,
+      "source": {
+        "path": "assets/RAW/effects/FX-B01/v001/motion/FX-02_landing_dust_sheet_v001.png",
+        "sha256": "f529a02bba6e06c33d626286ec5360760d8acb4f250db0d1e47a1d057b9fd046",
+        "cellIndex": 3,
+        "rect": [
+          0,
+          512,
+          512,
+          512
+        ],
+        "anchor": [
+          256,
+          388
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.109375,
+        "scaledCellSize": [
+          56,
+          56
+        ],
+        "translation": [
+          4,
+          6
+        ],
+        "filter": "nearest",
+        "anchorRoundingError": [
+          0,
+          0.4375
+        ]
+      },
+      "visibleBounds": [
+        4,
+        10,
+        56,
+        41
+      ],
+      "sha256": "aede3f3a3310a9bd7b3be878b7fe14cb21160141d91e998bb9d2a91bd16f2acb",
+      "atlasRect": [
+        288,
+        400,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "FX-02_landing_dust_f05",
+      "effectId": "FX-02_landing_dust",
+      "animation": "landing_dust",
+      "index": 4,
+      "phase": "尘粒衰减",
+      "file": "frames/FX-02_landing_dust/FX-02_landing_dust_v001_f05.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        48
+      ],
+      "duration": 1,
+      "source": {
+        "path": "assets/RAW/effects/FX-B01/v001/motion/FX-02_landing_dust_sheet_v001.png",
+        "sha256": "f529a02bba6e06c33d626286ec5360760d8acb4f250db0d1e47a1d057b9fd046",
+        "cellIndex": 4,
+        "rect": [
+          512,
+          512,
+          512,
+          512
+        ],
+        "anchor": [
+          256,
+          388
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.109375,
+        "scaledCellSize": [
+          56,
+          56
+        ],
+        "translation": [
+          4,
+          6
+        ],
+        "filter": "nearest",
+        "anchorRoundingError": [
+          0,
+          0.4375
+        ]
+      },
+      "visibleBounds": [
+        5,
+        8,
+        52,
+        52
+      ],
+      "sha256": "8304347a8baea0185bb0c70315555dd13d1ff2fe4422ec61078ca150ce2a1b85",
+      "atlasRect": [
+        384,
+        400,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "FX-02_landing_dust_f06",
+      "effectId": "FX-02_landing_dust",
+      "animation": "landing_dust",
+      "index": 5,
+      "phase": "少量尾屑",
+      "file": "frames/FX-02_landing_dust/FX-02_landing_dust_v001_f06.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        48
+      ],
+      "duration": 1,
+      "source": {
+        "path": "assets/RAW/effects/FX-B01/v001/motion/FX-02_landing_dust_sheet_v001.png",
+        "sha256": "f529a02bba6e06c33d626286ec5360760d8acb4f250db0d1e47a1d057b9fd046",
+        "cellIndex": 5,
+        "rect": [
+          1024,
+          512,
+          512,
+          512
+        ],
+        "anchor": [
+          256,
+          388
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.109375,
+        "scaledCellSize": [
+          56,
+          56
+        ],
+        "translation": [
+          4,
+          6
+        ],
+        "filter": "nearest",
+        "anchorRoundingError": [
+          0,
+          0.4375
+        ]
+      },
+      "visibleBounds": [
+        6,
+        14,
+        46,
+        43
+      ],
+      "sha256": "2918f919a473f15500dcddc5dff04f8341b526857457991e6511f97d1bb07230",
+      "atlasRect": [
+        480,
+        400,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "FX-02_takeoff_dust_f01",
+      "effectId": "FX-02_takeoff_dust",
+      "animation": "takeoff_dust",
+      "index": 0,
+      "phase": "压缩小尘",
+      "file": "frames/FX-02_takeoff_dust/FX-02_takeoff_dust_v001_f01.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        48
+      ],
+      "duration": 1,
+      "source": {
+        "path": "assets/RAW/effects/FX-B01/v001/motion/FX-02_takeoff_dust_sheet_v001.png",
+        "sha256": "58a1c43b74a44593f52f661c294a57fd3f541b8e948708a49e490cee1e3c7187",
+        "cellIndex": 0,
+        "rect": [
+          0,
+          0,
+          512,
+          512
+        ],
+        "anchor": [
+          256,
+          400
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.125,
+        "scaledCellSize": [
+          64,
+          64
+        ],
+        "translation": [
+          0,
+          -2
+        ],
+        "filter": "nearest",
+        "anchorRoundingError": [
+          0,
+          0
+        ]
+      },
+      "visibleBounds": [
+        24,
+        30,
+        25,
+        27
+      ],
+      "sha256": "0e7b6d3795f9f6c47c2eab7e9aedb524e1bbe9b7b6a9a9b65fbee52e2cf5b937",
+      "atlasRect": [
+        0,
+        480,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "FX-02_takeoff_dust_f02",
+      "effectId": "FX-02_takeoff_dust",
+      "animation": "takeoff_dust",
+      "index": 1,
+      "phase": "窄尘上冲",
+      "file": "frames/FX-02_takeoff_dust/FX-02_takeoff_dust_v001_f02.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        48
+      ],
+      "duration": 1,
+      "source": {
+        "path": "assets/RAW/effects/FX-B01/v001/motion/FX-02_takeoff_dust_sheet_v001.png",
+        "sha256": "58a1c43b74a44593f52f661c294a57fd3f541b8e948708a49e490cee1e3c7187",
+        "cellIndex": 1,
+        "rect": [
+          512,
+          0,
+          512,
+          512
+        ],
+        "anchor": [
+          256,
+          400
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.125,
+        "scaledCellSize": [
+          64,
+          64
+        ],
+        "translation": [
+          0,
+          -2
+        ],
+        "filter": "nearest",
+        "anchorRoundingError": [
+          0,
+          0
+        ]
+      },
+      "visibleBounds": [
+        20,
+        22,
+        24,
+        26
+      ],
+      "sha256": "74ed219532071a4c03a444ecf896ebddd4f67dc679a29d85b84360dc9f58b6c7",
+      "atlasRect": [
+        96,
+        480,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "FX-02_takeoff_dust_f03",
+      "effectId": "FX-02_takeoff_dust",
+      "animation": "takeoff_dust",
+      "index": 2,
+      "phase": "浮尘抬升",
+      "file": "frames/FX-02_takeoff_dust/FX-02_takeoff_dust_v001_f03.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        48
+      ],
+      "duration": 1,
+      "source": {
+        "path": "assets/RAW/effects/FX-B01/v001/motion/FX-02_takeoff_dust_sheet_v001.png",
+        "sha256": "58a1c43b74a44593f52f661c294a57fd3f541b8e948708a49e490cee1e3c7187",
+        "cellIndex": 2,
+        "rect": [
+          1024,
+          0,
+          512,
+          512
+        ],
+        "anchor": [
+          256,
+          400
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.125,
+        "scaledCellSize": [
+          64,
+          64
+        ],
+        "translation": [
+          0,
+          -2
+        ],
+        "filter": "nearest",
+        "anchorRoundingError": [
+          0,
+          0
+        ]
+      },
+      "visibleBounds": [
+        19,
+        17,
+        27,
+        32
+      ],
+      "sha256": "082366698bcf3f0aa54973d76b323ff63c1eef38017147f7de164ece68941a5d",
+      "atlasRect": [
+        192,
+        480,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "FX-02_takeoff_dust_f04",
+      "effectId": "FX-02_takeoff_dust",
+      "animation": "takeoff_dust",
+      "index": 3,
+      "phase": "分离变薄",
+      "file": "frames/FX-02_takeoff_dust/FX-02_takeoff_dust_v001_f04.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        48
+      ],
+      "duration": 1,
+      "source": {
+        "path": "assets/RAW/effects/FX-B01/v001/motion/FX-02_takeoff_dust_sheet_v001.png",
+        "sha256": "58a1c43b74a44593f52f661c294a57fd3f541b8e948708a49e490cee1e3c7187",
+        "cellIndex": 3,
+        "rect": [
+          0,
+          512,
+          512,
+          512
+        ],
+        "anchor": [
+          256,
+          400
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.125,
+        "scaledCellSize": [
+          64,
+          64
+        ],
+        "translation": [
+          0,
+          -2
+        ],
+        "filter": "nearest",
+        "anchorRoundingError": [
+          0,
+          0
+        ]
+      },
+      "visibleBounds": [
+        16,
+        12,
+        30,
+        37
+      ],
+      "sha256": "f04f55be73eefb4c45c24460038bee092a2057ee378b0ceab9d0c651355a8312",
+      "atlasRect": [
+        288,
+        480,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "FX-02_takeoff_dust_f05",
+      "effectId": "FX-02_takeoff_dust",
+      "animation": "takeoff_dust",
+      "index": 4,
+      "phase": "粒子衰减",
+      "file": "frames/FX-02_takeoff_dust/FX-02_takeoff_dust_v001_f05.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        48
+      ],
+      "duration": 1,
+      "source": {
+        "path": "assets/RAW/effects/FX-B01/v001/motion/FX-02_takeoff_dust_sheet_v001.png",
+        "sha256": "58a1c43b74a44593f52f661c294a57fd3f541b8e948708a49e490cee1e3c7187",
+        "cellIndex": 4,
+        "rect": [
+          512,
+          512,
+          512,
+          512
+        ],
+        "anchor": [
+          256,
+          400
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.125,
+        "scaledCellSize": [
+          64,
+          64
+        ],
+        "translation": [
+          0,
+          -2
+        ],
+        "filter": "nearest",
+        "anchorRoundingError": [
+          0,
+          0
+        ]
+      },
+      "visibleBounds": [
+        20,
+        11,
+        34,
+        37
+      ],
+      "sha256": "00d9a28a51f46ac701073ae745b61f3ba15a6d91459ef8e9b8de7ab0862f1c91",
+      "atlasRect": [
+        384,
+        480,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "FX-02_takeoff_dust_f06",
+      "effectId": "FX-02_takeoff_dust",
+      "animation": "takeoff_dust",
+      "index": 5,
+      "phase": "尾屑结束",
+      "file": "frames/FX-02_takeoff_dust/FX-02_takeoff_dust_v001_f06.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        48
+      ],
+      "duration": 1,
+      "source": {
+        "path": "assets/RAW/effects/FX-B01/v001/motion/FX-02_takeoff_dust_sheet_v001.png",
+        "sha256": "58a1c43b74a44593f52f661c294a57fd3f541b8e948708a49e490cee1e3c7187",
+        "cellIndex": 5,
+        "rect": [
+          1024,
+          512,
+          512,
+          512
+        ],
+        "anchor": [
+          256,
+          400
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.125,
+        "scaledCellSize": [
+          64,
+          64
+        ],
+        "translation": [
+          0,
+          -2
+        ],
+        "filter": "nearest",
+        "anchorRoundingError": [
+          0,
+          0
+        ]
+      },
+      "visibleBounds": [
+        20,
+        14,
+        26,
+        22
+      ],
+      "sha256": "f69315665b5c4cab126191d259bc8cead8b5f5665a97f30ba427945b915c749f",
+      "atlasRect": [
+        480,
+        480,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "ABL-01_double_jump_bubble_f01",
+      "effectId": "ABL-01_double_jump_bubble",
+      "animation": "double_jump_bubble",
+      "index": 0,
+      "phase": "压缩奶泡",
+      "file": "frames/ABL-01_double_jump_bubble/ABL-01_double_jump_bubble_v001_f01.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        48
+      ],
+      "duration": 1,
+      "source": {
+        "path": "assets/RAW/effects/FX-B01/v001/motion/ABL-01_double_jump_bubble_sheet_v001.png",
+        "sha256": "c2f7b883e7412b28c6313594080962a1f067ae4fed9484d93fc16ba0fa86708c",
+        "cellIndex": 0,
+        "rect": [
+          0,
+          0,
+          512,
+          512
+        ],
+        "anchor": [
+          256,
+          440
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.109375,
+        "scaledCellSize": [
+          56,
+          56
+        ],
+        "translation": [
+          4,
+          0
+        ],
+        "filter": "nearest",
+        "anchorRoundingError": [
+          0,
+          0.125
+        ]
+      },
+      "visibleBounds": [
+        17,
+        25,
+        39,
+        25
+      ],
+      "sha256": "50bc361b020a44cb766b04a30e9dbf736808b578f13f4bc63f70c7faf39818ca",
+      "atlasRect": [
+        0,
+        560,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "ABL-01_double_jump_bubble_f02",
+      "effectId": "ABL-01_double_jump_bubble",
+      "animation": "double_jump_bubble",
+      "index": 1,
+      "phase": "扩为泡环",
+      "file": "frames/ABL-01_double_jump_bubble/ABL-01_double_jump_bubble_v001_f02.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        48
+      ],
+      "duration": 1,
+      "source": {
+        "path": "assets/RAW/effects/FX-B01/v001/motion/ABL-01_double_jump_bubble_sheet_v001.png",
+        "sha256": "c2f7b883e7412b28c6313594080962a1f067ae4fed9484d93fc16ba0fa86708c",
+        "cellIndex": 1,
+        "rect": [
+          512,
+          0,
+          512,
+          512
+        ],
+        "anchor": [
+          256,
+          440
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.109375,
+        "scaledCellSize": [
+          56,
+          56
+        ],
+        "translation": [
+          4,
+          0
+        ],
+        "filter": "nearest",
+        "anchorRoundingError": [
+          0,
+          0.125
+        ]
+      },
+      "visibleBounds": [
+        11,
+        33,
+        42,
+        16
+      ],
+      "sha256": "3c63010e5bfbb81449ede1e5184713f98adcc0f7a7cae72cd6e0e1f8de698b7b",
+      "atlasRect": [
+        96,
+        560,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "ABL-01_double_jump_bubble_f03",
+      "effectId": "ABL-01_double_jump_bubble",
+      "animation": "double_jump_bubble",
+      "index": 2,
+      "phase": "泡环破裂",
+      "file": "frames/ABL-01_double_jump_bubble/ABL-01_double_jump_bubble_v001_f03.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        48
+      ],
+      "duration": 1,
+      "source": {
+        "path": "assets/RAW/effects/FX-B01/v001/motion/ABL-01_double_jump_bubble_sheet_v001.png",
+        "sha256": "c2f7b883e7412b28c6313594080962a1f067ae4fed9484d93fc16ba0fa86708c",
+        "cellIndex": 2,
+        "rect": [
+          1024,
+          0,
+          512,
+          512
+        ],
+        "anchor": [
+          256,
+          440
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.109375,
+        "scaledCellSize": [
+          56,
+          56
+        ],
+        "translation": [
+          4,
+          0
+        ],
+        "filter": "nearest",
+        "anchorRoundingError": [
+          0,
+          0.125
+        ]
+      },
+      "visibleBounds": [
+        7,
+        25,
+        50,
+        24
+      ],
+      "sha256": "6b53f62d065a52e7cdbf29397dfb23e39aae2eba77c0e36270d9a582d4e3ba0e",
+      "atlasRect": [
+        192,
+        560,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "ABL-01_double_jump_bubble_f04",
+      "effectId": "ABL-01_double_jump_bubble",
+      "animation": "double_jump_bubble",
+      "index": 3,
+      "phase": "泡粒扩散",
+      "file": "frames/ABL-01_double_jump_bubble/ABL-01_double_jump_bubble_v001_f04.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        48
+      ],
+      "duration": 1,
+      "source": {
+        "path": "assets/RAW/effects/FX-B01/v001/motion/ABL-01_double_jump_bubble_sheet_v001.png",
+        "sha256": "c2f7b883e7412b28c6313594080962a1f067ae4fed9484d93fc16ba0fa86708c",
+        "cellIndex": 3,
+        "rect": [
+          0,
+          512,
+          512,
+          512
+        ],
+        "anchor": [
+          256,
+          440
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.109375,
+        "scaledCellSize": [
+          56,
+          56
+        ],
+        "translation": [
+          4,
+          0
+        ],
+        "filter": "nearest",
+        "anchorRoundingError": [
+          0,
+          0.125
+        ]
+      },
+      "visibleBounds": [
+        7,
+        17,
+        51,
+        28
+      ],
+      "sha256": "f5caca466dd28c8c80ed19f36135db440d2b3cba777704ce255af6df72d25352",
+      "atlasRect": [
+        288,
+        560,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "ABL-01_double_jump_bubble_f05",
+      "effectId": "ABL-01_double_jump_bubble",
+      "animation": "double_jump_bubble",
+      "index": 4,
+      "phase": "粒子衰减",
+      "file": "frames/ABL-01_double_jump_bubble/ABL-01_double_jump_bubble_v001_f05.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        48
+      ],
+      "duration": 1,
+      "source": {
+        "path": "assets/RAW/effects/FX-B01/v001/motion/ABL-01_double_jump_bubble_sheet_v001.png",
+        "sha256": "c2f7b883e7412b28c6313594080962a1f067ae4fed9484d93fc16ba0fa86708c",
+        "cellIndex": 4,
+        "rect": [
+          512,
+          512,
+          512,
+          512
+        ],
+        "anchor": [
+          256,
+          440
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.109375,
+        "scaledCellSize": [
+          56,
+          56
+        ],
+        "translation": [
+          4,
+          0
+        ],
+        "filter": "nearest",
+        "anchorRoundingError": [
+          0,
+          0.125
+        ]
+      },
+      "visibleBounds": [
+        11,
+        18,
+        43,
+        24
+      ],
+      "sha256": "142e7fc97eedd5f22f65eaf8a28a4fd0ea0dbebe99661fb9f1370017e03f126c",
+      "atlasRect": [
+        384,
+        560,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "ABL-01_double_jump_bubble_f06",
+      "effectId": "ABL-01_double_jump_bubble",
+      "animation": "double_jump_bubble",
+      "index": 5,
+      "phase": "尾泡结束",
+      "file": "frames/ABL-01_double_jump_bubble/ABL-01_double_jump_bubble_v001_f06.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        48
+      ],
+      "duration": 1,
+      "source": {
+        "path": "assets/RAW/effects/FX-B01/v001/motion/ABL-01_double_jump_bubble_sheet_v001.png",
+        "sha256": "c2f7b883e7412b28c6313594080962a1f067ae4fed9484d93fc16ba0fa86708c",
+        "cellIndex": 5,
+        "rect": [
+          1024,
+          512,
+          512,
+          512
+        ],
+        "anchor": [
+          256,
+          440
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.109375,
+        "scaledCellSize": [
+          56,
+          56
+        ],
+        "translation": [
+          4,
+          0
+        ],
+        "filter": "nearest",
+        "anchorRoundingError": [
+          0,
+          0.125
+        ]
+      },
+      "visibleBounds": [
+        6,
+        6,
+        43,
+        35
+      ],
+      "sha256": "b1234f6fc8661c8e855e61653b8124cbd3a75a73f8e2e89e0f66a60a6216650d",
+      "atlasRect": [
+        480,
+        560,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "FX-02_dodge_afterimage_f01",
+      "effectId": "FX-02_dodge_afterimage",
+      "animation": "dodge_afterimage",
+      "index": 0,
+      "phase": "建立主残影",
+      "file": "frames/FX-02_dodge_afterimage/FX-02_dodge_afterimage_v001_f01.png",
+      "size": [
+        96,
+        80
+      ],
+      "anchor": [
+        48,
+        64
+      ],
+      "duration": 1,
+      "source": {
+        "path": "assets/RAW/effects/FX-B01/v001/motion/FX-02_dodge_afterimage_sheet_v002.png",
+        "sha256": "a1f7b34b558ce54bddef3ca124f521d08c426abd7e6a0f1f04d41812e521f675",
+        "cellIndex": 0,
+        "rect": [
+          0,
+          0,
+          512,
+          512
+        ],
+        "anchor": [
+          306,
+          448
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.11428571428571428,
+        "scaledCellSize": [
+          59,
+          59
+        ],
+        "translation": [
+          13,
+          13
+        ],
+        "filter": "nearest",
+        "anchorRoundingError": [
+          -0.028571428571432023,
+          0.19999999999998863
+        ]
+      },
+      "visibleBounds": [
+        35,
+        24,
+        28,
+        42
+      ],
+      "sha256": "b368e49b8b840a678820ec84a005b46dc5e876b0ce429342a87a27bd7700a1a8",
+      "atlasRect": [
+        0,
+        640,
+        96,
+        80
+      ]
+    },
+    {
+      "id": "FX-02_dodge_afterimage_f02",
+      "effectId": "FX-02_dodge_afterimage",
+      "animation": "dodge_afterimage",
+      "index": 1,
+      "phase": "双色拖尾峰值",
+      "file": "frames/FX-02_dodge_afterimage/FX-02_dodge_afterimage_v001_f02.png",
+      "size": [
+        96,
+        80
+      ],
+      "anchor": [
+        48,
+        64
+      ],
+      "duration": 1,
+      "source": {
+        "path": "assets/RAW/effects/FX-B01/v001/motion/FX-02_dodge_afterimage_sheet_v002.png",
+        "sha256": "a1f7b34b558ce54bddef3ca124f521d08c426abd7e6a0f1f04d41812e521f675",
+        "cellIndex": 1,
+        "rect": [
+          512,
+          0,
+          512,
+          512
+        ],
+        "anchor": [
+          296,
+          448
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.11428571428571428,
+        "scaledCellSize": [
+          59,
+          59
+        ],
+        "translation": [
+          14,
+          13
+        ],
+        "filter": "nearest",
+        "anchorRoundingError": [
+          -0.17142857142857082,
+          0.19999999999998863
+        ]
+      },
+      "visibleBounds": [
+        14,
+        16,
+        49,
+        50
+      ],
+      "sha256": "063304b0c774d0ae47c5bfa2f5e5e2e429613d1c8418379f5fced7675e2ec373",
+      "atlasRect": [
+        96,
+        640,
+        96,
+        80
+      ]
+    },
+    {
+      "id": "FX-02_dodge_afterimage_f03",
+      "effectId": "FX-02_dodge_afterimage",
+      "animation": "dodge_afterimage",
+      "index": 2,
+      "phase": "双重拖尾扩散",
+      "file": "frames/FX-02_dodge_afterimage/FX-02_dodge_afterimage_v001_f03.png",
+      "size": [
+        96,
+        80
+      ],
+      "anchor": [
+        48,
+        64
+      ],
+      "duration": 1,
+      "source": {
+        "path": "assets/RAW/effects/FX-B01/v001/motion/FX-02_dodge_afterimage_sheet_v002.png",
+        "sha256": "a1f7b34b558ce54bddef3ca124f521d08c426abd7e6a0f1f04d41812e521f675",
+        "cellIndex": 2,
+        "rect": [
+          1024,
+          0,
+          512,
+          512
+        ],
+        "anchor": [
+          306,
+          448
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.11428571428571428,
+        "scaledCellSize": [
+          59,
+          59
+        ],
+        "translation": [
+          13,
+          13
+        ],
+        "filter": "nearest",
+        "anchorRoundingError": [
+          -0.028571428571432023,
+          0.19999999999998863
+        ]
+      },
+      "visibleBounds": [
+        21,
+        24,
+        42,
+        42
+      ],
+      "sha256": "6a41074518bea64a0299b6166659fe6bc3179c0240337705d63a9e139025c62d",
+      "atlasRect": [
+        192,
+        640,
+        96,
+        80
+      ]
+    },
+    {
+      "id": "FX-02_dodge_afterimage_f04",
+      "effectId": "FX-02_dodge_afterimage",
+      "animation": "dodge_afterimage",
+      "index": 3,
+      "phase": "轮廓变薄",
+      "file": "frames/FX-02_dodge_afterimage/FX-02_dodge_afterimage_v001_f04.png",
+      "size": [
+        96,
+        80
+      ],
+      "anchor": [
+        48,
+        64
+      ],
+      "duration": 1,
+      "source": {
+        "path": "assets/RAW/effects/FX-B01/v001/motion/FX-02_dodge_afterimage_sheet_v002.png",
+        "sha256": "a1f7b34b558ce54bddef3ca124f521d08c426abd7e6a0f1f04d41812e521f675",
+        "cellIndex": 3,
+        "rect": [
+          0,
+          512,
+          512,
+          512
+        ],
+        "anchor": [
+          317,
+          406
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.11428571428571428,
+        "scaledCellSize": [
+          59,
+          59
+        ],
+        "translation": [
+          12,
+          18
+        ],
+        "filter": "nearest",
+        "anchorRoundingError": [
+          0.22857142857142776,
+          0.4000000000000057
+        ]
+      },
+      "visibleBounds": [
+        22,
+        25,
+        46,
+        41
+      ],
+      "sha256": "65bf755f34217b877880755a43b93a234913346d753c4995ffbe26908ed26872",
+      "atlasRect": [
+        288,
+        640,
+        96,
+        80
+      ]
+    },
+    {
+      "id": "FX-02_dodge_afterimage_f05",
+      "effectId": "FX-02_dodge_afterimage",
+      "animation": "dodge_afterimage",
+      "index": 4,
+      "phase": "轮廓断裂衰减",
+      "file": "frames/FX-02_dodge_afterimage/FX-02_dodge_afterimage_v001_f05.png",
+      "size": [
+        96,
+        80
+      ],
+      "anchor": [
+        48,
+        64
+      ],
+      "duration": 1,
+      "source": {
+        "path": "assets/RAW/effects/FX-B01/v001/motion/FX-02_dodge_afterimage_sheet_v002.png",
+        "sha256": "a1f7b34b558ce54bddef3ca124f521d08c426abd7e6a0f1f04d41812e521f675",
+        "cellIndex": 4,
+        "rect": [
+          512,
+          512,
+          512,
+          512
+        ],
+        "anchor": [
+          314,
+          406
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.11428571428571428,
+        "scaledCellSize": [
+          59,
+          59
+        ],
+        "translation": [
+          12,
+          18
+        ],
+        "filter": "nearest",
+        "anchorRoundingError": [
+          -0.11428571428571388,
+          0.4000000000000057
+        ]
+      },
+      "visibleBounds": [
+        12,
+        25,
+        51,
+        41
+      ],
+      "sha256": "12ac67ecd81546550c0c0d358f6470c135d65d4327e4b44f427424007eca59f3",
+      "atlasRect": [
+        384,
+        640,
+        96,
+        80
+      ]
+    },
+    {
+      "id": "FX-02_dodge_afterimage_f06",
+      "effectId": "FX-02_dodge_afterimage",
+      "animation": "dodge_afterimage",
+      "index": 5,
+      "phase": "尾屑消失",
+      "file": "frames/FX-02_dodge_afterimage/FX-02_dodge_afterimage_v001_f06.png",
+      "size": [
+        96,
+        80
+      ],
+      "anchor": [
+        48,
+        64
+      ],
+      "duration": 1,
+      "source": {
+        "path": "assets/RAW/effects/FX-B01/v001/motion/FX-02_dodge_afterimage_sheet_v002.png",
+        "sha256": "a1f7b34b558ce54bddef3ca124f521d08c426abd7e6a0f1f04d41812e521f675",
+        "cellIndex": 5,
+        "rect": [
+          1024,
+          512,
+          512,
+          512
+        ],
+        "anchor": [
+          314,
+          406
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.11428571428571428,
+        "scaledCellSize": [
+          59,
+          59
+        ],
+        "translation": [
+          12,
+          18
+        ],
+        "filter": "nearest",
+        "anchorRoundingError": [
+          -0.11428571428571388,
+          0.4000000000000057
+        ]
+      },
+      "visibleBounds": [
+        12,
+        33,
+        45,
+        34
+      ],
+      "sha256": "acb07db832e46e2b984e7a0b2c87b9f6ffeb8537764e41e8094582fc9a6873fe",
+      "atlasRect": [
+        480,
+        640,
+        96,
+        80
+      ]
+    },
+    {
+      "id": "WPN-01_hammer_swing_1_f01",
+      "effectId": "WPN-01_hammer_swing_1",
+      "animation": "hammer_swing_1",
+      "index": 0,
+      "phase": "上方起弧",
+      "file": "frames/WPN-01_hammer_swing_1/WPN-01_hammer_swing_1_v001_f01.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        32
+      ],
+      "duration": 1,
+      "source": {
+        "path": "assets/RAW/effects/FX-B01/v001/hammer/WPN-01_hammer_swing_1_sheet_v002.png",
+        "sha256": "291f6b1124ad6921f214ea5dc9e37cbbed1a90e3f63f88fd92b6c99e5af8f6f0",
+        "cellIndex": 0,
+        "rect": [
+          0,
+          0,
+          512,
+          512
+        ],
+        "anchor": [
+          256,
+          256
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.109375,
+        "scaledCellSize": [
+          56,
+          56
+        ],
+        "translation": [
+          4,
+          4
+        ],
+        "filter": "nearest",
+        "anchorRoundingError": [
+          0,
+          0
+        ]
+      },
+      "visibleBounds": [
+        19,
+        8,
+        39,
+        46
+      ],
+      "sha256": "d784fcd7762e54b6667ae5b0286246a7e54d5c21fcde1091c044993fb285d596",
+      "atlasRect": [
+        0,
+        720,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "WPN-01_hammer_swing_1_f02",
+      "effectId": "WPN-01_hammer_swing_1",
+      "animation": "hammer_swing_1",
+      "index": 1,
+      "phase": "右侧挥击峰值",
+      "file": "frames/WPN-01_hammer_swing_1/WPN-01_hammer_swing_1_v001_f02.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        32
+      ],
+      "duration": 1,
+      "source": {
+        "path": "assets/RAW/effects/FX-B01/v001/hammer/WPN-01_hammer_swing_1_sheet_v002.png",
+        "sha256": "291f6b1124ad6921f214ea5dc9e37cbbed1a90e3f63f88fd92b6c99e5af8f6f0",
+        "cellIndex": 1,
+        "rect": [
+          512,
+          0,
+          512,
+          512
+        ],
+        "anchor": [
+          256,
+          256
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.109375,
+        "scaledCellSize": [
+          56,
+          56
+        ],
+        "translation": [
+          4,
+          4
+        ],
+        "filter": "nearest",
+        "anchorRoundingError": [
+          0,
+          0
+        ]
+      },
+      "visibleBounds": [
+        4,
+        7,
+        56,
+        53
+      ],
+      "sha256": "1f8c8e45538677dcb31efb9f267e919cd365507ad5204df8f4eb03d7485d231b",
+      "atlasRect": [
+        96,
+        720,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "WPN-01_hammer_swing_1_f03",
+      "effectId": "WPN-01_hammer_swing_1",
+      "animation": "hammer_swing_1",
+      "index": 2,
+      "phase": "向下续弧并断裂",
+      "file": "frames/WPN-01_hammer_swing_1/WPN-01_hammer_swing_1_v001_f03.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        32
+      ],
+      "duration": 1,
+      "source": {
+        "path": "assets/RAW/effects/FX-B01/v001/hammer/WPN-01_hammer_swing_1_sheet_v002.png",
+        "sha256": "291f6b1124ad6921f214ea5dc9e37cbbed1a90e3f63f88fd92b6c99e5af8f6f0",
+        "cellIndex": 2,
+        "rect": [
+          1024,
+          0,
+          512,
+          512
+        ],
+        "anchor": [
+          256,
+          256
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.109375,
+        "scaledCellSize": [
+          56,
+          56
+        ],
+        "translation": [
+          4,
+          4
+        ],
+        "filter": "nearest",
+        "anchorRoundingError": [
+          0,
+          0
+        ]
+      },
+      "visibleBounds": [
+        4,
+        7,
+        56,
+        53
+      ],
+      "sha256": "3e321087f1183d66b06259234ad409b7ce51b97d532061a0c21bb500534937b2",
+      "atlasRect": [
+        192,
+        720,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "WPN-01_hammer_swing_1_f04",
+      "effectId": "WPN-01_hammer_swing_1",
+      "animation": "hammer_swing_1",
+      "index": 3,
+      "phase": "收招拖尾",
+      "file": "frames/WPN-01_hammer_swing_1/WPN-01_hammer_swing_1_v001_f04.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        32
+      ],
+      "duration": 1,
+      "source": {
+        "path": "assets/RAW/effects/FX-B01/v001/hammer/WPN-01_hammer_swing_1_sheet_v002.png",
+        "sha256": "291f6b1124ad6921f214ea5dc9e37cbbed1a90e3f63f88fd92b6c99e5af8f6f0",
+        "cellIndex": 3,
+        "rect": [
+          0,
+          512,
+          512,
+          512
+        ],
+        "anchor": [
+          256,
+          256
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.109375,
+        "scaledCellSize": [
+          56,
+          56
+        ],
+        "translation": [
+          4,
+          4
+        ],
+        "filter": "nearest",
+        "anchorRoundingError": [
+          0,
+          0
+        ]
+      },
+      "visibleBounds": [
+        7,
+        4,
+        52,
+        50
+      ],
+      "sha256": "693b85a31a3b91f2de2cf98343b9d58a4fb82b4da90a096b2bbdbd2f59340a9e",
+      "atlasRect": [
+        288,
+        720,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "WPN-01_hammer_swing_1_f05",
+      "effectId": "WPN-01_hammer_swing_1",
+      "animation": "hammer_swing_1",
+      "index": 4,
+      "phase": "碎片衰减",
+      "file": "frames/WPN-01_hammer_swing_1/WPN-01_hammer_swing_1_v001_f05.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        32
+      ],
+      "duration": 1,
+      "source": {
+        "path": "assets/RAW/effects/FX-B01/v001/hammer/WPN-01_hammer_swing_1_sheet_v002.png",
+        "sha256": "291f6b1124ad6921f214ea5dc9e37cbbed1a90e3f63f88fd92b6c99e5af8f6f0",
+        "cellIndex": 4,
+        "rect": [
+          512,
+          512,
+          512,
+          512
+        ],
+        "anchor": [
+          256,
+          256
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.109375,
+        "scaledCellSize": [
+          56,
+          56
+        ],
+        "translation": [
+          4,
+          4
+        ],
+        "filter": "nearest",
+        "anchorRoundingError": [
+          0,
+          0
+        ]
+      },
+      "visibleBounds": [
+        7,
+        4,
+        53,
+        52
+      ],
+      "sha256": "a6c1cfcbbbf0901cdd7881593f69c1e9e86df88361bb4f58aec11842cca7f21a",
+      "atlasRect": [
+        384,
+        720,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "WPN-01_hammer_swing_1_f06",
+      "effectId": "WPN-01_hammer_swing_1",
+      "animation": "hammer_swing_1",
+      "index": 5,
+      "phase": "尾屑结束",
+      "file": "frames/WPN-01_hammer_swing_1/WPN-01_hammer_swing_1_v001_f06.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        32
+      ],
+      "duration": 1,
+      "source": {
+        "path": "assets/RAW/effects/FX-B01/v001/hammer/WPN-01_hammer_swing_1_sheet_v002.png",
+        "sha256": "291f6b1124ad6921f214ea5dc9e37cbbed1a90e3f63f88fd92b6c99e5af8f6f0",
+        "cellIndex": 5,
+        "rect": [
+          1024,
+          512,
+          512,
+          512
+        ],
+        "anchor": [
+          256,
+          256
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.109375,
+        "scaledCellSize": [
+          56,
+          56
+        ],
+        "translation": [
+          4,
+          4
+        ],
+        "filter": "nearest",
+        "anchorRoundingError": [
+          0,
+          0
+        ]
+      },
+      "visibleBounds": [
+        4,
+        4,
+        52,
+        51
+      ],
+      "sha256": "6cba11be5eebdeb12cfc715759c18eaeee7ff76bec16302dec9c5b0263463f7a",
+      "atlasRect": [
+        480,
+        720,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "WPN-01_hammer_swing_2_f01",
+      "effectId": "WPN-01_hammer_swing_2",
+      "animation": "hammer_swing_2",
+      "index": 0,
+      "phase": "低位起弧",
+      "file": "frames/WPN-01_hammer_swing_2/WPN-01_hammer_swing_2_v001_f01.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        32
+      ],
+      "duration": 1,
+      "source": {
+        "path": "assets/RAW/effects/FX-B01/v001/hammer/WPN-01_hammer_swing_2_sheet_v001.png",
+        "sha256": "6de0ca5335a8b4147bdb791dfa68bef5474db52f0c9c79f8f26677b4a6fb22b9",
+        "cellIndex": 0,
+        "rect": [
+          0,
+          0,
+          512,
+          512
+        ],
+        "anchor": [
+          256,
+          256
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.109375,
+        "scaledCellSize": [
+          56,
+          56
+        ],
+        "translation": [
+          4,
+          4
+        ],
+        "filter": "nearest",
+        "anchorRoundingError": [
+          0,
+          0
+        ]
+      },
+      "visibleBounds": [
+        15,
+        37,
+        34,
+        16
+      ],
+      "sha256": "0f06c8e520c6447f89e772577ec4cbc5e0e6783c07b0f51bc657860b4d48dae8",
+      "atlasRect": [
+        0,
+        800,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "WPN-01_hammer_swing_2_f02",
+      "effectId": "WPN-01_hammer_swing_2",
+      "animation": "hammer_swing_2",
+      "index": 1,
+      "phase": "右侧上扫",
+      "file": "frames/WPN-01_hammer_swing_2/WPN-01_hammer_swing_2_v001_f02.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        32
+      ],
+      "duration": 1,
+      "source": {
+        "path": "assets/RAW/effects/FX-B01/v001/hammer/WPN-01_hammer_swing_2_sheet_v001.png",
+        "sha256": "6de0ca5335a8b4147bdb791dfa68bef5474db52f0c9c79f8f26677b4a6fb22b9",
+        "cellIndex": 1,
+        "rect": [
+          512,
+          0,
+          512,
+          512
+        ],
+        "anchor": [
+          256,
+          256
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.109375,
+        "scaledCellSize": [
+          56,
+          56
+        ],
+        "translation": [
+          4,
+          4
+        ],
+        "filter": "nearest",
+        "anchorRoundingError": [
+          0,
+          0
+        ]
+      },
+      "visibleBounds": [
+        11,
+        19,
+        44,
+        34
+      ],
+      "sha256": "ecccbdd7c0bd033e072e602bd91f31a222a2c68ffda2faaefbb9b6bd337adabb",
+      "atlasRect": [
+        96,
+        800,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "WPN-01_hammer_swing_2_f03",
+      "effectId": "WPN-01_hammer_swing_2",
+      "animation": "hammer_swing_2",
+      "index": 2,
+      "phase": "上挑峰值",
+      "file": "frames/WPN-01_hammer_swing_2/WPN-01_hammer_swing_2_v001_f03.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        32
+      ],
+      "duration": 1,
+      "source": {
+        "path": "assets/RAW/effects/FX-B01/v001/hammer/WPN-01_hammer_swing_2_sheet_v001.png",
+        "sha256": "6de0ca5335a8b4147bdb791dfa68bef5474db52f0c9c79f8f26677b4a6fb22b9",
+        "cellIndex": 2,
+        "rect": [
+          1024,
+          0,
+          512,
+          512
+        ],
+        "anchor": [
+          256,
+          256
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.109375,
+        "scaledCellSize": [
+          56,
+          56
+        ],
+        "translation": [
+          4,
+          4
+        ],
+        "filter": "nearest",
+        "anchorRoundingError": [
+          0,
+          0
+        ]
+      },
+      "visibleBounds": [
+        11,
+        10,
+        45,
+        45
+      ],
+      "sha256": "527aef6ea4f16ab88022d5ed431e2df51626f0962c0d8c9d476d4bc0da1860dd",
+      "atlasRect": [
+        192,
+        800,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "WPN-01_hammer_swing_2_f04",
+      "effectId": "WPN-01_hammer_swing_2",
+      "animation": "hammer_swing_2",
+      "index": 3,
+      "phase": "上方残弧",
+      "file": "frames/WPN-01_hammer_swing_2/WPN-01_hammer_swing_2_v001_f04.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        32
+      ],
+      "duration": 1,
+      "source": {
+        "path": "assets/RAW/effects/FX-B01/v001/hammer/WPN-01_hammer_swing_2_sheet_v001.png",
+        "sha256": "6de0ca5335a8b4147bdb791dfa68bef5474db52f0c9c79f8f26677b4a6fb22b9",
+        "cellIndex": 3,
+        "rect": [
+          0,
+          512,
+          512,
+          512
+        ],
+        "anchor": [
+          256,
+          256
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.109375,
+        "scaledCellSize": [
+          56,
+          56
+        ],
+        "translation": [
+          4,
+          4
+        ],
+        "filter": "nearest",
+        "anchorRoundingError": [
+          0,
+          0
+        ]
+      },
+      "visibleBounds": [
+        32,
+        9,
+        22,
+        30
+      ],
+      "sha256": "1f3ae3917c005e4afdfbf5c21651f3d3bf3c1faf36fe691d2a143ea9da77cde4",
+      "atlasRect": [
+        288,
+        800,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "WPN-01_hammer_swing_2_f05",
+      "effectId": "WPN-01_hammer_swing_2",
+      "animation": "hammer_swing_2",
+      "index": 4,
+      "phase": "残弧衰减",
+      "file": "frames/WPN-01_hammer_swing_2/WPN-01_hammer_swing_2_v001_f05.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        32
+      ],
+      "duration": 1,
+      "source": {
+        "path": "assets/RAW/effects/FX-B01/v001/hammer/WPN-01_hammer_swing_2_sheet_v001.png",
+        "sha256": "6de0ca5335a8b4147bdb791dfa68bef5474db52f0c9c79f8f26677b4a6fb22b9",
+        "cellIndex": 4,
+        "rect": [
+          512,
+          512,
+          512,
+          512
+        ],
+        "anchor": [
+          256,
+          256
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.109375,
+        "scaledCellSize": [
+          56,
+          56
+        ],
+        "translation": [
+          4,
+          4
+        ],
+        "filter": "nearest",
+        "anchorRoundingError": [
+          0,
+          0
+        ]
+      },
+      "visibleBounds": [
+        39,
+        9,
+        14,
+        20
+      ],
+      "sha256": "c656825423d2549a10de3b1e66a1bd60c715ae338c7325b7f9ac4c5e355c0db7",
+      "atlasRect": [
+        384,
+        800,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "WPN-01_hammer_swing_2_f06",
+      "effectId": "WPN-01_hammer_swing_2",
+      "animation": "hammer_swing_2",
+      "index": 5,
+      "phase": "尾屑结束",
+      "file": "frames/WPN-01_hammer_swing_2/WPN-01_hammer_swing_2_v001_f06.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        32
+      ],
+      "duration": 1,
+      "source": {
+        "path": "assets/RAW/effects/FX-B01/v001/hammer/WPN-01_hammer_swing_2_sheet_v001.png",
+        "sha256": "6de0ca5335a8b4147bdb791dfa68bef5474db52f0c9c79f8f26677b4a6fb22b9",
+        "cellIndex": 5,
+        "rect": [
+          1024,
+          512,
+          512,
+          512
+        ],
+        "anchor": [
+          256,
+          256
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.109375,
+        "scaledCellSize": [
+          56,
+          56
+        ],
+        "translation": [
+          4,
+          4
+        ],
+        "filter": "nearest",
+        "anchorRoundingError": [
+          0,
+          0
+        ]
+      },
+      "visibleBounds": [
+        44,
+        11,
+        8,
+        9
+      ],
+      "sha256": "f85eefc5c536dfe8fb7cb6171ab04069f67759817614bd9fad2af3ef921d76e2",
+      "atlasRect": [
+        480,
+        800,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "WPN-01_hammer_slam_3_f01",
+      "effectId": "WPN-01_hammer_slam_3",
+      "animation": "hammer_slam_3",
+      "index": 0,
+      "phase": "向下落势",
+      "file": "frames/WPN-01_hammer_slam_3/WPN-01_hammer_slam_3_v001_f01.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        48
+      ],
+      "duration": 1,
+      "source": {
+        "path": "assets/RAW/effects/FX-B01/v001/hammer/WPN-01_hammer_slam_3_sheet_v001.png",
+        "sha256": "f632ecded5d51293ee78b1da21d5cffcaf375e0d0252b1fae2bae7789dcca8f5",
+        "cellIndex": 0,
+        "rect": [
+          0,
+          0,
+          512,
+          512
+        ],
+        "anchor": [
+          256,
+          422
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.109375,
+        "scaledCellSize": [
+          56,
+          56
+        ],
+        "translation": [
+          4,
+          2
+        ],
+        "filter": "nearest",
+        "anchorRoundingError": [
+          0,
+          0.15625
+        ]
+      },
+      "visibleBounds": [
+        20,
+        13,
+        38,
+        45
+      ],
+      "sha256": "561687a78c2b212f9f106807b040c9cf69954c604f8268c27a8de5a7db77b045",
+      "atlasRect": [
+        0,
+        880,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "WPN-01_hammer_slam_3_f02",
+      "effectId": "WPN-01_hammer_slam_3",
+      "animation": "hammer_slam_3",
+      "index": 1,
+      "phase": "地面命中",
+      "file": "frames/WPN-01_hammer_slam_3/WPN-01_hammer_slam_3_v001_f02.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        48
+      ],
+      "duration": 1,
+      "source": {
+        "path": "assets/RAW/effects/FX-B01/v001/hammer/WPN-01_hammer_slam_3_sheet_v001.png",
+        "sha256": "f632ecded5d51293ee78b1da21d5cffcaf375e0d0252b1fae2bae7789dcca8f5",
+        "cellIndex": 1,
+        "rect": [
+          512,
+          0,
+          512,
+          512
+        ],
+        "anchor": [
+          256,
+          422
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.109375,
+        "scaledCellSize": [
+          56,
+          56
+        ],
+        "translation": [
+          4,
+          2
+        ],
+        "filter": "nearest",
+        "anchorRoundingError": [
+          0,
+          0.15625
+        ]
+      },
+      "visibleBounds": [
+        22,
+        13,
+        20,
+        38
+      ],
+      "sha256": "7cab0e2c7a89f63128de2b67049e0095414f51a04dbd1332eb6e354a1bdf323b",
+      "atlasRect": [
+        96,
+        880,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "WPN-01_hammer_slam_3_f03",
+      "effectId": "WPN-01_hammer_slam_3",
+      "animation": "hammer_slam_3",
+      "index": 2,
+      "phase": "奶浪扩散",
+      "file": "frames/WPN-01_hammer_slam_3/WPN-01_hammer_slam_3_v001_f03.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        48
+      ],
+      "duration": 1,
+      "source": {
+        "path": "assets/RAW/effects/FX-B01/v001/hammer/WPN-01_hammer_slam_3_sheet_v001.png",
+        "sha256": "f632ecded5d51293ee78b1da21d5cffcaf375e0d0252b1fae2bae7789dcca8f5",
+        "cellIndex": 2,
+        "rect": [
+          1024,
+          0,
+          512,
+          512
+        ],
+        "anchor": [
+          256,
+          424
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.109375,
+        "scaledCellSize": [
+          56,
+          56
+        ],
+        "translation": [
+          4,
+          2
+        ],
+        "filter": "nearest",
+        "anchorRoundingError": [
+          0,
+          0.375
+        ]
+      },
+      "visibleBounds": [
+        7,
+        21,
+        50,
+        29
+      ],
+      "sha256": "0e7b39d57d161816598b59a3f1fe1ad63e0d6206f91b33fd5ca3af523365b301",
+      "atlasRect": [
+        192,
+        880,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "WPN-01_hammer_slam_3_f04",
+      "effectId": "WPN-01_hammer_slam_3",
+      "animation": "hammer_slam_3",
+      "index": 3,
+      "phase": "向两侧回落",
+      "file": "frames/WPN-01_hammer_slam_3/WPN-01_hammer_slam_3_v001_f04.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        48
+      ],
+      "duration": 1,
+      "source": {
+        "path": "assets/RAW/effects/FX-B01/v001/hammer/WPN-01_hammer_slam_3_sheet_v001.png",
+        "sha256": "f632ecded5d51293ee78b1da21d5cffcaf375e0d0252b1fae2bae7789dcca8f5",
+        "cellIndex": 3,
+        "rect": [
+          0,
+          512,
+          512,
+          512
+        ],
+        "anchor": [
+          256,
+          404
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.109375,
+        "scaledCellSize": [
+          56,
+          56
+        ],
+        "translation": [
+          4,
+          4
+        ],
+        "filter": "nearest",
+        "anchorRoundingError": [
+          0,
+          0.1875
+        ]
+      },
+      "visibleBounds": [
+        7,
+        5,
+        53,
+        49
+      ],
+      "sha256": "ff7e2944b63c64f3e47e22b4e4bb23aea7a7ebf1452c0d63fc70ece523d2be39",
+      "atlasRect": [
+        288,
+        880,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "WPN-01_hammer_slam_3_f05",
+      "effectId": "WPN-01_hammer_slam_3",
+      "animation": "hammer_slam_3",
+      "index": 4,
+      "phase": "奶浪碎裂",
+      "file": "frames/WPN-01_hammer_slam_3/WPN-01_hammer_slam_3_v001_f05.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        48
+      ],
+      "duration": 1,
+      "source": {
+        "path": "assets/RAW/effects/FX-B01/v001/hammer/WPN-01_hammer_slam_3_sheet_v001.png",
+        "sha256": "f632ecded5d51293ee78b1da21d5cffcaf375e0d0252b1fae2bae7789dcca8f5",
+        "cellIndex": 4,
+        "rect": [
+          512,
+          512,
+          512,
+          512
+        ],
+        "anchor": [
+          256,
+          404
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.109375,
+        "scaledCellSize": [
+          56,
+          56
+        ],
+        "translation": [
+          4,
+          4
+        ],
+        "filter": "nearest",
+        "anchorRoundingError": [
+          0,
+          0.1875
+        ]
+      },
+      "visibleBounds": [
+        8,
+        15,
+        48,
+        35
+      ],
+      "sha256": "9deedf1905f7ec4f71cff8d239449e1282e95c2f2ca5344d7cc9164cc0832141",
+      "atlasRect": [
+        384,
+        880,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "WPN-01_hammer_slam_3_f06",
+      "effectId": "WPN-01_hammer_slam_3",
+      "animation": "hammer_slam_3",
+      "index": 5,
+      "phase": "尾屑结束",
+      "file": "frames/WPN-01_hammer_slam_3/WPN-01_hammer_slam_3_v001_f06.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        48
+      ],
+      "duration": 1,
+      "source": {
+        "path": "assets/RAW/effects/FX-B01/v001/hammer/WPN-01_hammer_slam_3_sheet_v001.png",
+        "sha256": "f632ecded5d51293ee78b1da21d5cffcaf375e0d0252b1fae2bae7789dcca8f5",
+        "cellIndex": 5,
+        "rect": [
+          1024,
+          512,
+          512,
+          512
+        ],
+        "anchor": [
+          256,
+          404
+        ]
+      },
+      "transform": {
+        "uniformScale": 0.109375,
+        "scaledCellSize": [
+          56,
+          56
+        ],
+        "translation": [
+          4,
+          4
+        ],
+        "filter": "nearest",
+        "anchorRoundingError": [
+          0,
+          0.1875
+        ]
+      },
+      "visibleBounds": [
+        11,
+        15,
+        39,
+        33
+      ],
+      "sha256": "9df319c410465901efba38088fbdfbb475b8c096b0b9c3e43f7bbfed07160327",
+      "atlasRect": [
+        480,
+        880,
+        64,
+        64
+      ]
+    }
+  ],
+  "sourceScales": {
+    "FX-01_physical_hit": 0.109375,
+    "FX-01_magic_hit": 0.109375,
+    "FX-01_guard_spark": 0.109375,
+    "FX-01_perfect_parry": 0.109375,
+    "FX-01_guard_break": 0.109375,
+    "FX-02_landing_dust": 0.109375,
+    "FX-02_takeoff_dust": 0.125,
+    "ABL-01_double_jump_bubble": 0.109375,
+    "FX-02_dodge_afterimage": 0.11428571428571428,
+    "WPN-01_hammer_swing_1": 0.109375,
+    "WPN-01_hammer_swing_2": 0.109375,
+    "WPN-01_hammer_slam_3": 0.109375
+  },
+  "visualReview": {
+    "date": "2026-10-24",
+    "status": "passed",
+    "reviewedBy": "Codex primary agent and independent visual-review subagent",
+    "scope": "FX-01 five effects, FX-02 three effects, ABL-01 double jump, WPN-01 three combo effects",
+    "effectCount": 12,
+    "frameCount": 72,
+    "referenceCharacter": {
+      "path": "assets/PROCESSED/characters/CHR-01/v001/CHR-01_canonical_right_v001.png",
+      "anchor": [
+        32,
+        58
+      ]
+    },
+    "checks": [
+      "Transparent RGBA and original source traceability",
+      "Fixed per-effect scale and semantic root alignment",
+      "Dark-background frame contact sheet and interactive playback",
+      "One-shot synchronized end fade and afterimage opacity envelope",
+      "Integer translation and no output boundary pixels",
+      "Godot 4.7.2 import, playback, replay, completion/hide, marker attachment, root mirror, pause and playback-speed checks"
+    ],
+    "knownLimits": [
+      "Landing dust has an accepted 1px baseline variation during breakup.",
+      "Low-alpha source edge pixels are preserved and reported, not removed.",
+      "Afterimage PNGs must be played through EffectPlayer or an equivalent opacityByFrame envelope.",
+      "Main-game action-event and weapon-marker integration remains a separate step; these are presentation assets and components."
+    ]
+  }
+}

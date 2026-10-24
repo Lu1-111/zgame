@@ -1,0 +1,593 @@
+{
+  "effects": [
+    {
+      "id": "ENM-01_idle",
+      "name": "idle",
+      "enemyId": "ENM-01",
+      "gameEnemyId": "moss_beetle",
+      "label": "idle",
+      "sourcePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B03/v001/ENM-01/ENM-01_actions_A.png",
+      "sourceRects": [
+        [
+          0,
+          0,
+          314,
+          314
+        ],
+        [
+          314,
+          0,
+          313,
+          314
+        ],
+        [
+          627,
+          0,
+          313,
+          314
+        ],
+        [
+          940,
+          0,
+          314,
+          314
+        ]
+      ],
+      "sourceAnchors": [
+        [
+          156,
+          285
+        ],
+        [
+          156,
+          285
+        ],
+        [
+          156,
+          285
+        ],
+        [
+          156,
+          285
+        ]
+      ],
+      "target": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        56
+      ],
+      "scale": 0.16,
+      "fps": 8,
+      "loop": true,
+      "kind": "body",
+      "phases": [
+        "idle1",
+        "idle2",
+        "idle3",
+        "idle4"
+      ],
+      "promptPath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B03/v001/ENM-01/ENM-01_A_repair.prompt.txt",
+      "provenancePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B03/v001/ENM-01/provenance.json",
+      "generationMode": "built-in image_gen"
+    },
+    {
+      "id": "ENM-01_move",
+      "name": "move",
+      "enemyId": "ENM-01",
+      "gameEnemyId": "moss_beetle",
+      "label": "move",
+      "sourcePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B03/v001/ENM-01/ENM-01_actions_A.png",
+      "sourceRects": [
+        [
+          0,
+          314,
+          314,
+          313
+        ],
+        [
+          314,
+          314,
+          313,
+          313
+        ],
+        [
+          627,
+          314,
+          313,
+          313
+        ],
+        [
+          940,
+          314,
+          314,
+          313
+        ]
+      ],
+      "sourceAnchors": [
+        [
+          156,
+          280
+        ],
+        [
+          156,
+          280
+        ],
+        [
+          156,
+          280
+        ],
+        [
+          156,
+          280
+        ]
+      ],
+      "target": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        56
+      ],
+      "scale": 0.16,
+      "fps": 10,
+      "loop": true,
+      "kind": "body",
+      "phases": [
+        "move1",
+        "move2",
+        "move3",
+        "move4"
+      ],
+      "promptPath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B03/v001/ENM-01/ENM-01_A_repair.prompt.txt",
+      "provenancePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B03/v001/ENM-01/provenance.json",
+      "generationMode": "built-in image_gen"
+    },
+    {
+      "id": "ENM-01_telegraph",
+      "name": "telegraph",
+      "enemyId": "ENM-01",
+      "gameEnemyId": "moss_beetle",
+      "label": "telegraph",
+      "sourcePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B03/v001/ENM-01/ENM-01_actions_A.png",
+      "sourceRects": [
+        [
+          0,
+          627,
+          314,
+          313
+        ],
+        [
+          314,
+          627,
+          313,
+          313
+        ],
+        [
+          627,
+          627,
+          313,
+          313
+        ],
+        [
+          940,
+          627,
+          314,
+          313
+        ]
+      ],
+      "sourceAnchors": [
+        [
+          156,
+          270
+        ],
+        [
+          156,
+          270
+        ],
+        [
+          156,
+          270
+        ],
+        [
+          156,
+          270
+        ]
+      ],
+      "target": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        56
+      ],
+      "scale": 0.16,
+      "fps": 10,
+      "loop": false,
+      "kind": "body",
+      "phases": [
+        "telegraph1",
+        "telegraph2",
+        "telegraph3",
+        "telegraph4"
+      ],
+      "promptPath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B03/v001/ENM-01/ENM-01_A_repair.prompt.txt",
+      "provenancePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B03/v001/ENM-01/provenance.json",
+      "generationMode": "built-in image_gen"
+    },
+    {
+      "id": "ENM-01_attack",
+      "name": "attack",
+      "enemyId": "ENM-01",
+      "gameEnemyId": "moss_beetle",
+      "label": "attack",
+      "sourcePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B03/v001/ENM-01/ENM-01_actions_A.png",
+      "sourceRects": [
+        [
+          0,
+          940,
+          328,
+          314
+        ],
+        [
+          328,
+          940,
+          323,
+          314
+        ],
+        [
+          651,
+          940,
+          319,
+          314
+        ],
+        [
+          970,
+          940,
+          284,
+          314
+        ]
+      ],
+      "sourceAnchors": [
+        [
+          156,
+          251
+        ],
+        [
+          142,
+          251
+        ],
+        [
+          132,
+          251
+        ],
+        [
+          126,
+          251
+        ]
+      ],
+      "target": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        56
+      ],
+      "scale": 0.16,
+      "fps": 14,
+      "loop": false,
+      "kind": "body",
+      "phases": [
+        "attack1",
+        "attack2",
+        "attack3",
+        "attack4"
+      ],
+      "promptPath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B03/v001/ENM-01/ENM-01_A_repair.prompt.txt",
+      "provenancePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B03/v001/ENM-01/provenance.json",
+      "generationMode": "built-in image_gen"
+    },
+    {
+      "id": "ENM-01_recover",
+      "name": "recover",
+      "enemyId": "ENM-01",
+      "gameEnemyId": "moss_beetle",
+      "label": "recover",
+      "sourcePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B03/v001/ENM-01/ENM-01_actions_B.png",
+      "sourceRects": [
+        [
+          0,
+          0,
+          329,
+          314
+        ],
+        [
+          329,
+          0,
+          302,
+          314
+        ],
+        [
+          631,
+          0,
+          309,
+          314
+        ],
+        [
+          940,
+          0,
+          314,
+          314
+        ]
+      ],
+      "sourceAnchors": [
+        [
+          156,
+          290
+        ],
+        [
+          141,
+          290
+        ],
+        [
+          152,
+          290
+        ],
+        [
+          156,
+          290
+        ]
+      ],
+      "target": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        56
+      ],
+      "scale": 0.16,
+      "fps": 10,
+      "loop": false,
+      "kind": "body",
+      "phases": [
+        "recover1",
+        "recover2",
+        "recover3",
+        "recover4"
+      ],
+      "promptPath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B03/v001/ENM-01/ENM-01_B.prompt.txt",
+      "provenancePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B03/v001/ENM-01/provenance.json",
+      "generationMode": "built-in image_gen"
+    },
+    {
+      "id": "ENM-01_hurt",
+      "name": "hurt",
+      "enemyId": "ENM-01",
+      "gameEnemyId": "moss_beetle",
+      "label": "hurt",
+      "sourcePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B03/v001/ENM-01/ENM-01_actions_B.png",
+      "sourceRects": [
+        [
+          0,
+          314,
+          315,
+          313
+        ],
+        [
+          315,
+          314,
+          312,
+          313
+        ],
+        [
+          627,
+          314,
+          313,
+          313
+        ],
+        [
+          940,
+          314,
+          314,
+          313
+        ]
+      ],
+      "sourceAnchors": [
+        [
+          156,
+          284
+        ],
+        [
+          155,
+          284
+        ],
+        [
+          156,
+          284
+        ],
+        [
+          156,
+          284
+        ]
+      ],
+      "target": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        56
+      ],
+      "scale": 0.16,
+      "fps": 12,
+      "loop": false,
+      "kind": "body",
+      "phases": [
+        "hurt1",
+        "hurt2",
+        "hurt3",
+        "hurt4"
+      ],
+      "promptPath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B03/v001/ENM-01/ENM-01_B.prompt.txt",
+      "provenancePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B03/v001/ENM-01/provenance.json",
+      "generationMode": "built-in image_gen"
+    },
+    {
+      "id": "ENM-01_death",
+      "name": "death",
+      "enemyId": "ENM-01",
+      "gameEnemyId": "moss_beetle",
+      "label": "death",
+      "sourcePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B03/v001/ENM-01/ENM-01_actions_B.png",
+      "sourceRects": [
+        [
+          0,
+          627,
+          314,
+          313
+        ],
+        [
+          0,
+          940,
+          314,
+          314
+        ],
+        [
+          314,
+          627,
+          311,
+          313
+        ],
+        [
+          625,
+          627,
+          315,
+          313
+        ],
+        [
+          314,
+          940,
+          313,
+          314
+        ],
+        [
+          940,
+          627,
+          314,
+          313
+        ],
+        [
+          627,
+          940,
+          313,
+          314
+        ],
+        [
+          940,
+          940,
+          314,
+          314
+        ]
+      ],
+      "sourceAnchors": [
+        [
+          156,
+          280
+        ],
+        [
+          156,
+          264
+        ],
+        [
+          156,
+          280
+        ],
+        [
+          158,
+          280
+        ],
+        [
+          156,
+          264
+        ],
+        [
+          156,
+          280
+        ],
+        [
+          156,
+          264
+        ],
+        [
+          156,
+          264
+        ]
+      ],
+      "target": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        56
+      ],
+      "scale": 0.16,
+      "fps": 10,
+      "loop": false,
+      "kind": "body",
+      "phases": [
+        "失衡",
+        "翻侧",
+        "甲壳松解",
+        "塌陷",
+        "碎片剥落",
+        "伏倒",
+        "残骸崩解",
+        "尾屑"
+      ],
+      "sourceFrameOrder": [
+        8,
+        12,
+        9,
+        10,
+        13,
+        11,
+        14,
+        15
+      ],
+      "promptPath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B03/v001/ENM-01/ENM-01_B.prompt.txt",
+      "provenancePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B03/v001/ENM-01/provenance.json",
+      "generationMode": "built-in image_gen"
+    }
+  ],
+  "anchorPolicy": "semantic torso joint for flying; planted feet or belly baseline for ground; row calibration keeps all frames same scale .16; no bbox recenter",
+  "deathReview": {
+    "originalFrameOrder": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "revisedFrameOrder": [
+      8,
+      12,
+      9,
+      10,
+      13,
+      11,
+      14,
+      15
+    ],
+    "reason": "人工按实际死亡阶段重排，避免第四到第五帧从塌陷主体回到完整主体；原始PNG保留。"
+  }
+}

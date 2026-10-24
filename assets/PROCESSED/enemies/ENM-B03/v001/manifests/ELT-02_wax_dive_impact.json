@@ -1,0 +1,350 @@
+{
+  "id": "ELT-02_wax_dive_impact",
+  "name": "wax_dive_impact",
+  "enemyId": "ELT-02",
+  "gameEnemyId": "hive_guard",
+  "label": "蜂巢守卫·俯冲落蜡",
+  "sourcePath": "/home/lululu/zgame/assets/RAW/effects/ENM-B03/v001/ELT-02_wax_dive_impact_sheet_v001.png",
+  "promptPath": "/home/lululu/zgame/assets/RAW/effects/ENM-B03/v001/ELT-02_wax_dive_impact_sheet_v001.prompt.txt",
+  "generatedPath": "/home/lululu/.codex/generated_images/01a16cdb-4368-7a73-a021-7de070b80e42/exec-50830def-9352-4f9c-879f-1bb999076205.png",
+  "sourceColumns": 3,
+  "sourceRows": 2,
+  "sourceIndices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "sourceRects": [
+    [
+      0,
+      0,
+      512,
+      512
+    ],
+    [
+      512,
+      0,
+      512,
+      512
+    ],
+    [
+      1024,
+      0,
+      512,
+      512
+    ],
+    [
+      0,
+      512,
+      512,
+      512
+    ],
+    [
+      512,
+      512,
+      512,
+      512
+    ],
+    [
+      1024,
+      512,
+      512,
+      512
+    ]
+  ],
+  "sourceAnchors": [
+    [
+      256,
+      476
+    ],
+    [
+      256,
+      476
+    ],
+    [
+      256,
+      476
+    ],
+    [
+      256,
+      430
+    ],
+    [
+      256,
+      430
+    ],
+    [
+      256,
+      430
+    ]
+  ],
+  "target": [
+    96,
+    112
+  ],
+  "anchor": [
+    48,
+    88
+  ],
+  "scale": 0.15625,
+  "fps": 14,
+  "loop": false,
+  "kind": "effect",
+  "triggerAction": "attack",
+  "attachPoint": "ground_contact",
+  "triggerOffset": [
+    24,
+    40
+  ],
+  "phases": [
+    "建立",
+    "峰值",
+    "扩张",
+    "碎裂",
+    "衰减",
+    "尾屑"
+  ],
+  "notes": [
+    "源上下排接地476/430已校准，增加竖向透明画布避免低alpha裁切。"
+  ],
+  "frames": [
+    "frames/ELT-02_wax_dive_impact/ELT-02_wax_dive_impact_00.png",
+    "frames/ELT-02_wax_dive_impact/ELT-02_wax_dive_impact_01.png",
+    "frames/ELT-02_wax_dive_impact/ELT-02_wax_dive_impact_02.png",
+    "frames/ELT-02_wax_dive_impact/ELT-02_wax_dive_impact_03.png",
+    "frames/ELT-02_wax_dive_impact/ELT-02_wax_dive_impact_04.png",
+    "frames/ELT-02_wax_dive_impact/ELT-02_wax_dive_impact_05.png"
+  ],
+  "sheet": "sheets/ELT-02_wax_dive_impact.png",
+  "sheetRects": [
+    [
+      0,
+      0,
+      96,
+      112
+    ],
+    [
+      96,
+      0,
+      96,
+      112
+    ],
+    [
+      192,
+      0,
+      96,
+      112
+    ],
+    [
+      288,
+      0,
+      96,
+      112
+    ],
+    [
+      384,
+      0,
+      96,
+      112
+    ],
+    [
+      480,
+      0,
+      96,
+      112
+    ]
+  ],
+  "atlas": "atlas/ELT-02_wax_dive_impact.png",
+  "atlasColumns": 3,
+  "atlasRows": 2,
+  "atlasRects": [
+    [
+      0,
+      0,
+      96,
+      112
+    ],
+    [
+      96,
+      0,
+      96,
+      112
+    ],
+    [
+      192,
+      0,
+      96,
+      112
+    ],
+    [
+      0,
+      112,
+      96,
+      112
+    ],
+    [
+      96,
+      112,
+      96,
+      112
+    ],
+    [
+      192,
+      112,
+      96,
+      112
+    ]
+  ],
+  "sourceSize": [
+    1536,
+    1024
+  ],
+  "sourceSha256": "ffbbb8b504ecac242934baa82110c228349552ad90410ea51b5fca27c018ac28",
+  "sourceBatch": "/home/lululu/zgame/assets/RAW/effects/ENM-B03/v001/batch.json",
+  "frameCount": 6,
+  "frameDetails": [
+    {
+      "sourceRect": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "sourceAnchor": [
+        256,
+        476
+      ],
+      "offset": [
+        8,
+        14
+      ],
+      "alphaBBox": [
+        19,
+        17,
+        81,
+        94
+      ],
+      "sourceEdgeAlpha": 1
+    },
+    {
+      "sourceRect": [
+        512,
+        0,
+        512,
+        512
+      ],
+      "sourceAnchor": [
+        256,
+        476
+      ],
+      "offset": [
+        8,
+        14
+      ],
+      "alphaBBox": [
+        9,
+        18,
+        86,
+        94
+      ],
+      "sourceEdgeAlpha": 1
+    },
+    {
+      "sourceRect": [
+        1024,
+        0,
+        512,
+        512
+      ],
+      "sourceAnchor": [
+        256,
+        476
+      ],
+      "offset": [
+        8,
+        14
+      ],
+      "alphaBBox": [
+        8,
+        28,
+        85,
+        90
+      ],
+      "sourceEdgeAlpha": 1
+    },
+    {
+      "sourceRect": [
+        0,
+        512,
+        512,
+        512
+      ],
+      "sourceAnchor": [
+        256,
+        430
+      ],
+      "offset": [
+        8,
+        21
+      ],
+      "alphaBBox": [
+        12,
+        21,
+        87,
+        91
+      ],
+      "sourceEdgeAlpha": 1
+    },
+    {
+      "sourceRect": [
+        512,
+        512,
+        512,
+        512
+      ],
+      "sourceAnchor": [
+        256,
+        430
+      ],
+      "offset": [
+        8,
+        21
+      ],
+      "alphaBBox": [
+        8,
+        21,
+        88,
+        97
+      ],
+      "sourceEdgeAlpha": 1
+    },
+    {
+      "sourceRect": [
+        1024,
+        512,
+        512,
+        512
+      ],
+      "sourceAnchor": [
+        256,
+        430
+      ],
+      "offset": [
+        8,
+        21
+      ],
+      "alphaBBox": [
+        8,
+        26,
+        83,
+        98
+      ],
+      "sourceEdgeAlpha": 1
+    }
+  ],
+  "fadeStartNormalized": 0.65,
+  "loopBoundaryMeanDifference": 18.666666666666668
+}

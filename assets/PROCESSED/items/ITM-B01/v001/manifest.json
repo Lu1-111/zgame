@@ -1,0 +1,4511 @@
+{
+  "batch": "ITM-B01",
+  "version": "v001",
+  "generator": "built-in image_gen",
+  "formalItemCount": 12,
+  "extraAbilityCount": 1,
+  "scope": "素材展示组件；未接入游戏拾取/背包/碰撞/数值。",
+  "processing": "保留RAW；切2x2格、每项固定尺度Nearest、主体底边整数对齐；不抠底、不阈值修改alpha、不重绘、不补间。",
+  "defaults": {
+    "anchor": [
+      16,
+      24
+    ],
+    "worldCanvas": [
+      32,
+      32
+    ],
+    "iconCanvas": [
+      24,
+      24
+    ],
+    "fps": 4,
+    "bobAmplitude": 1.0,
+    "bobPeriod": 2.0,
+    "baseLift": 2.0,
+    "pickupDuration": 0.35,
+    "pickupRise": 8.0,
+    "pickupEasePower": 3.0
+  },
+  "items": [
+    {
+      "id": "potion_small",
+      "trackingId": "ITM-06",
+      "name": "小型奶瓶",
+      "type": "consumable",
+      "countsInTwelve": true,
+      "size": [
+        32,
+        32
+      ],
+      "anchor": [
+        16,
+        24
+      ],
+      "fps": 4,
+      "loop": true,
+      "frameOrder": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "icon": "icons/ITEM_potion_small_icon_v001.png",
+      "iconSourceRect": [
+        189,
+        157,
+        496,
+        555
+      ],
+      "iconScale": 0.05025125628140704,
+      "sheet": "sheets/ITEM_potion_small_idle_v001_sheet.png",
+      "source": "assets/RAW/items/ITM-B01/v001/consumables/ITEM_potion_small_idle_v001.png",
+      "sourceSHA256": "4d11a6cd0aa367e85a4685a3c49890a302ce6230b5b539b1f2dbfd52f22dcbff",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "prompt": "assets/RAW/items/ITM-B01/v001/consumables/ITEM_potion_small_idle_v001.prompt.txt",
+      "frames": [
+        {
+          "path": "frames/potion_small/ITEM_potion_small_idle_v001_f01.png",
+          "sourceRect": [
+            0,
+            0,
+            627,
+            627
+          ],
+          "sourceSemanticAnchor": [
+            342.5,
+            537
+          ],
+          "sourceBodyBBox": [
+            207,
+            175,
+            478,
+            537
+          ],
+          "sourceAlphaBBox": [
+            150,
+            87,
+            587,
+            627
+          ],
+          "scaleNominal": 0.040268456375838924,
+          "scaleActual": [
+            0.03987240829346093,
+            0.03987240829346093
+          ],
+          "preResizeTranslation": [
+            285,
+            90
+          ],
+          "registeredCanvas": [
+            1254,
+            1254
+          ],
+          "translation": [
+            -9,
+            -1
+          ],
+          "anchor": [
+            16,
+            24
+          ],
+          "outputBodyBBox": [
+            11,
+            10,
+            21,
+            24
+          ],
+          "alphaBBox": [
+            10,
+            10,
+            26,
+            24
+          ],
+          "sha256": "bebb88884447fb9ad41d5c90a8920c6ca0ff97b80761bc30fc78a60c35ab2885",
+          "visiblePixels": 113,
+          "edgeAlphaNonzero": false
+        },
+        {
+          "path": "frames/potion_small/ITEM_potion_small_idle_v001_f02.png",
+          "sourceRect": [
+            627,
+            0,
+            627,
+            627
+          ],
+          "sourceSemanticAnchor": [
+            284.5,
+            537
+          ],
+          "sourceBodyBBox": [
+            149,
+            175,
+            420,
+            537
+          ],
+          "sourceAlphaBBox": [
+            1,
+            46,
+            519,
+            621
+          ],
+          "scaleNominal": 0.040268456375838924,
+          "scaleActual": [
+            0.03987240829346093,
+            0.03987240829346093
+          ],
+          "preResizeTranslation": [
+            343,
+            90
+          ],
+          "registeredCanvas": [
+            1254,
+            1254
+          ],
+          "translation": [
+            -9,
+            -1
+          ],
+          "anchor": [
+            16,
+            24
+          ],
+          "outputBodyBBox": [
+            11,
+            10,
+            21,
+            24
+          ],
+          "alphaBBox": [
+            10,
+            7,
+            24,
+            24
+          ],
+          "sha256": "e8d82c52ed1deec58b42a2618ee0abc383942ddcad88594c750fdeb81e386783",
+          "visiblePixels": 114,
+          "edgeAlphaNonzero": false
+        },
+        {
+          "path": "frames/potion_small/ITEM_potion_small_idle_v001_f03.png",
+          "sourceRect": [
+            0,
+            627,
+            627,
+            627
+          ],
+          "sourceSemanticAnchor": [
+            342.5,
+            478
+          ],
+          "sourceBodyBBox": [
+            207,
+            117,
+            478,
+            478
+          ],
+          "sourceAlphaBBox": [
+            105,
+            0,
+            627,
+            603
+          ],
+          "scaleNominal": 0.040268456375838924,
+          "scaleActual": [
+            0.03987240829346093,
+            0.03987240829346093
+          ],
+          "preResizeTranslation": [
+            285,
+            149
+          ],
+          "registeredCanvas": [
+            1254,
+            1254
+          ],
+          "translation": [
+            -9,
+            -1
+          ],
+          "anchor": [
+            16,
+            24
+          ],
+          "outputBodyBBox": [
+            11,
+            10,
+            21,
+            24
+          ],
+          "alphaBBox": [
+            10,
+            9,
+            24,
+            25
+          ],
+          "sha256": "bae5c92cf51d1d7b93324e784208d1f4566cddff2bb27a6d29d99c25c244ad56",
+          "visiblePixels": 112,
+          "edgeAlphaNonzero": false
+        },
+        {
+          "path": "frames/potion_small/ITEM_potion_small_idle_v001_f04.png",
+          "sourceRect": [
+            627,
+            627,
+            627,
+            627
+          ],
+          "sourceSemanticAnchor": [
+            284.5,
+            478
+          ],
+          "sourceBodyBBox": [
+            149,
+            116,
+            420,
+            478
+          ],
+          "sourceAlphaBBox": [
+            0,
+            85,
+            513,
+            627
+          ],
+          "scaleNominal": 0.040268456375838924,
+          "scaleActual": [
+            0.03987240829346093,
+            0.03987240829346093
+          ],
+          "preResizeTranslation": [
+            343,
+            149
+          ],
+          "registeredCanvas": [
+            1254,
+            1254
+          ],
+          "translation": [
+            -9,
+            -1
+          ],
+          "anchor": [
+            16,
+            24
+          ],
+          "outputBodyBBox": [
+            11,
+            10,
+            21,
+            24
+          ],
+          "alphaBBox": [
+            8,
+            9,
+            24,
+            27
+          ],
+          "sha256": "2c1733b7d589dc2d0d1a81ec45c17423c57a2c9185403061837136509caf364f",
+          "visiblePixels": 113,
+          "edgeAlphaNonzero": false
+        }
+      ],
+      "continuity": [
+        {
+          "from": 0,
+          "to": 1,
+          "alphaSilhouetteIoU": 0.9739130434782609,
+          "meanPremultipliedDifference": 2.627721609477124
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "alphaSilhouetteIoU": 0.9824561403508771,
+          "meanPremultipliedDifference": 2.836246425653595
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "alphaSilhouetteIoU": 0.9911504424778761,
+          "meanPremultipliedDifference": 2.6547040951797385
+        },
+        {
+          "from": 3,
+          "to": 0,
+          "alphaSilhouetteIoU": 0.9824561403508771,
+          "meanPremultipliedDifference": 2.790853502859477
+        }
+      ],
+      "atlasRects": [
+        [
+          0,
+          0,
+          32,
+          32
+        ],
+        [
+          32,
+          0,
+          32,
+          32
+        ],
+        [
+          64,
+          0,
+          32,
+          32
+        ],
+        [
+          96,
+          0,
+          32,
+          32
+        ]
+      ],
+      "iconAtlasRect": [
+        0,
+        0,
+        24,
+        24
+      ]
+    },
+    {
+      "id": "potion_mana",
+      "trackingId": "ITM-08",
+      "name": "奶力药剂",
+      "type": "consumable",
+      "countsInTwelve": true,
+      "size": [
+        32,
+        32
+      ],
+      "anchor": [
+        16,
+        24
+      ],
+      "fps": 4,
+      "loop": true,
+      "frameOrder": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "icon": "icons/ITEM_potion_mana_icon_v001.png",
+      "iconSourceRect": [
+        133,
+        106,
+        564,
+        606
+      ],
+      "iconScale": 0.04,
+      "sheet": "sheets/ITEM_potion_mana_idle_v001_sheet.png",
+      "source": "assets/RAW/items/ITM-B01/v001/consumables/ITEM_potion_mana_idle_v001.png",
+      "sourceSHA256": "cd0ffed88e11db8c48a1c880471c55ac980242f3c4287506ae75cfa746bbd703",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "prompt": "assets/RAW/items/ITM-B01/v001/consumables/ITEM_potion_mana_idle_v001.prompt.txt",
+      "frames": [
+        {
+          "path": "frames/potion_mana/ITEM_potion_mana_idle_v001_f01.png",
+          "sourceRect": [
+            0,
+            0,
+            627,
+            627
+          ],
+          "sourceSemanticAnchor": [
+            348.5,
+            583
+          ],
+          "sourceBodyBBox": [
+            156,
+            129,
+            541,
+            583
+          ],
+          "sourceAlphaBBox": [
+            0,
+            19,
+            627,
+            627
+          ],
+          "scaleNominal": 0.03900709219858156,
+          "scaleActual": [
+            0.03907496012759171,
+            0.03907496012759171
+          ],
+          "preResizeTranslation": [
+            279,
+            44
+          ],
+          "registeredCanvas": [
+            1254,
+            1254
+          ],
+          "translation": [
+            -8,
+            -1
+          ],
+          "anchor": [
+            16,
+            24
+          ],
+          "outputBodyBBox": [
+            9,
+            6,
+            24,
+            24
+          ],
+          "alphaBBox": [
+            7,
+            2,
+            26,
+            25
+          ],
+          "sha256": "d0b0e0654528064509ae94a29131a3c3959c324badf13639459ebc98a9db3c21",
+          "visiblePixels": 182,
+          "edgeAlphaNonzero": false
+        },
+        {
+          "path": "frames/potion_mana/ITEM_potion_mana_idle_v001_f02.png",
+          "sourceRect": [
+            627,
+            0,
+            627,
+            627
+          ],
+          "sourceSemanticAnchor": [
+            278.5,
+            583
+          ],
+          "sourceBodyBBox": [
+            86,
+            129,
+            471,
+            583
+          ],
+          "sourceAlphaBBox": [
+            1,
+            23,
+            581,
+            627
+          ],
+          "scaleNominal": 0.03900709219858156,
+          "scaleActual": [
+            0.03907496012759171,
+            0.03907496012759171
+          ],
+          "preResizeTranslation": [
+            349,
+            44
+          ],
+          "registeredCanvas": [
+            1254,
+            1254
+          ],
+          "translation": [
+            -8,
+            -1
+          ],
+          "anchor": [
+            16,
+            24
+          ],
+          "outputBodyBBox": [
+            9,
+            6,
+            24,
+            24
+          ],
+          "alphaBBox": [
+            7,
+            5,
+            28,
+            25
+          ],
+          "sha256": "71dac5ae5d55a39a954bc2a08830a2ce055fa0eb216cabc03510d058fc3d49d2",
+          "visiblePixels": 183,
+          "edgeAlphaNonzero": false
+        },
+        {
+          "path": "frames/potion_mana/ITEM_potion_mana_idle_v001_f03.png",
+          "sourceRect": [
+            0,
+            627,
+            627,
+            627
+          ],
+          "sourceSemanticAnchor": [
+            348.5,
+            518
+          ],
+          "sourceBodyBBox": [
+            156,
+            64,
+            541,
+            518
+          ],
+          "sourceAlphaBBox": [
+            0,
+            0,
+            627,
+            627
+          ],
+          "scaleNominal": 0.03900709219858156,
+          "scaleActual": [
+            0.03907496012759171,
+            0.03907496012759171
+          ],
+          "preResizeTranslation": [
+            279,
+            109
+          ],
+          "registeredCanvas": [
+            1254,
+            1254
+          ],
+          "translation": [
+            -8,
+            -1
+          ],
+          "anchor": [
+            16,
+            24
+          ],
+          "outputBodyBBox": [
+            9,
+            6,
+            24,
+            24
+          ],
+          "alphaBBox": [
+            7,
+            3,
+            26,
+            27
+          ],
+          "sha256": "883e1fe7bf58b62c7a9d3b39c1b2ef7c82bc318f42b48fe0931a59628fdd822f",
+          "visiblePixels": 183,
+          "edgeAlphaNonzero": false
+        },
+        {
+          "path": "frames/potion_mana/ITEM_potion_mana_idle_v001_f04.png",
+          "sourceRect": [
+            627,
+            627,
+            627,
+            627
+          ],
+          "sourceSemanticAnchor": [
+            278.5,
+            516
+          ],
+          "sourceBodyBBox": [
+            86,
+            63,
+            471,
+            516
+          ],
+          "sourceAlphaBBox": [
+            0,
+            0,
+            607,
+            601
+          ],
+          "scaleNominal": 0.03900709219858156,
+          "scaleActual": [
+            0.03907496012759171,
+            0.03907496012759171
+          ],
+          "preResizeTranslation": [
+            349,
+            111
+          ],
+          "registeredCanvas": [
+            1254,
+            1254
+          ],
+          "translation": [
+            -8,
+            -1
+          ],
+          "anchor": [
+            16,
+            24
+          ],
+          "outputBodyBBox": [
+            8,
+            6,
+            24,
+            24
+          ],
+          "alphaBBox": [
+            7,
+            3,
+            28,
+            26
+          ],
+          "sha256": "dac35679564e20974c219748da5648394223567b299032b5d8b7802188c2d594",
+          "visiblePixels": 184,
+          "edgeAlphaNonzero": false
+        }
+      ],
+      "continuity": [
+        {
+          "from": 0,
+          "to": 1,
+          "alphaSilhouetteIoU": 0.9210526315789473,
+          "meanPremultipliedDifference": 4.349568525326798
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "alphaSilhouetteIoU": 0.9365079365079365,
+          "meanPremultipliedDifference": 3.889405892565359
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "alphaSilhouetteIoU": 0.9625668449197861,
+          "meanPremultipliedDifference": 3.822199244281046
+        },
+        {
+          "from": 3,
+          "to": 0,
+          "alphaSilhouetteIoU": 0.9263157894736842,
+          "meanPremultipliedDifference": 4.322721354166666
+        }
+      ],
+      "atlasRects": [
+        [
+          0,
+          32,
+          32,
+          32
+        ],
+        [
+          32,
+          32,
+          32,
+          32
+        ],
+        [
+          64,
+          32,
+          32,
+          32
+        ],
+        [
+          96,
+          32,
+          32,
+          32
+        ]
+      ],
+      "iconAtlasRect": [
+        24,
+        0,
+        24,
+        24
+      ]
+    },
+    {
+      "id": "potion_sta",
+      "trackingId": "ITM-09",
+      "name": "体力药剂",
+      "type": "consumable",
+      "countsInTwelve": true,
+      "size": [
+        32,
+        32
+      ],
+      "anchor": [
+        16,
+        24
+      ],
+      "fps": 4,
+      "loop": true,
+      "frameOrder": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "icon": "icons/ITEM_potion_sta_icon_v001.png",
+      "iconSourceRect": [
+        74,
+        137,
+        582,
+        562
+      ],
+      "iconScale": 0.03937007874015748,
+      "sheet": "sheets/ITEM_potion_sta_idle_v001_sheet.png",
+      "source": "assets/RAW/items/ITM-B01/v001/consumables/ITEM_potion_sta_idle_v001.png",
+      "sourceSHA256": "6b85b6fc52d3df90ec4a0b531089bb73a0018c085bde21f942c4a9809be17c7c",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "prompt": "assets/RAW/items/ITM-B01/v001/consumables/ITEM_potion_sta_idle_v001.prompt.txt",
+      "frames": [
+        {
+          "path": "frames/potion_sta/ITEM_potion_sta_idle_v001_f01.png",
+          "sourceRect": [
+            0,
+            0,
+            627,
+            627
+          ],
+          "sourceSemanticAnchor": [
+            328.0,
+            539
+          ],
+          "sourceBodyBBox": [
+            97,
+            160,
+            559,
+            539
+          ],
+          "sourceAlphaBBox": [
+            37,
+            15,
+            619,
+            627
+          ],
+          "scaleNominal": 0.03896103896103896,
+          "scaleActual": [
+            0.03907496012759171,
+            0.03907496012759171
+          ],
+          "preResizeTranslation": [
+            299,
+            88
+          ],
+          "registeredCanvas": [
+            1254,
+            1254
+          ],
+          "translation": [
+            -8,
+            -1
+          ],
+          "anchor": [
+            16,
+            24
+          ],
+          "outputBodyBBox": [
+            7,
+            9,
+            26,
+            24
+          ],
+          "alphaBBox": [
+            7,
+            4,
+            26,
+            27
+          ],
+          "sha256": "eb2d6f37635c41e40a734eb4f8b8857ed035dc0f5931ad454579e112fc90c850",
+          "visiblePixels": 191,
+          "edgeAlphaNonzero": false
+        },
+        {
+          "path": "frames/potion_sta/ITEM_potion_sta_idle_v001_f02.png",
+          "sourceRect": [
+            627,
+            0,
+            627,
+            627
+          ],
+          "sourceSemanticAnchor": [
+            299.5,
+            539
+          ],
+          "sourceBodyBBox": [
+            69,
+            160,
+            530,
+            539
+          ],
+          "sourceAlphaBBox": [
+            7,
+            20,
+            609,
+            627
+          ],
+          "scaleNominal": 0.03896103896103896,
+          "scaleActual": [
+            0.03907496012759171,
+            0.03907496012759171
+          ],
+          "preResizeTranslation": [
+            328,
+            88
+          ],
+          "registeredCanvas": [
+            1254,
+            1254
+          ],
+          "translation": [
+            -9,
+            -1
+          ],
+          "anchor": [
+            16,
+            24
+          ],
+          "outputBodyBBox": [
+            7,
+            9,
+            25,
+            24
+          ],
+          "alphaBBox": [
+            4,
+            9,
+            26,
+            25
+          ],
+          "sha256": "1f9234f17a1e85f77ef3e6ad0aad73a187e8e3e65eba4426ee0996aca1a43fb9",
+          "visiblePixels": 191,
+          "edgeAlphaNonzero": false
+        },
+        {
+          "path": "frames/potion_sta/ITEM_potion_sta_idle_v001_f03.png",
+          "sourceRect": [
+            0,
+            627,
+            627,
+            627
+          ],
+          "sourceSemanticAnchor": [
+            328.0,
+            484
+          ],
+          "sourceBodyBBox": [
+            97,
+            107,
+            559,
+            484
+          ],
+          "sourceAlphaBBox": [
+            0,
+            0,
+            627,
+            627
+          ],
+          "scaleNominal": 0.03896103896103896,
+          "scaleActual": [
+            0.03907496012759171,
+            0.03907496012759171
+          ],
+          "preResizeTranslation": [
+            299,
+            143
+          ],
+          "registeredCanvas": [
+            1254,
+            1254
+          ],
+          "translation": [
+            -8,
+            -1
+          ],
+          "anchor": [
+            16,
+            24
+          ],
+          "outputBodyBBox": [
+            7,
+            9,
+            26,
+            24
+          ],
+          "alphaBBox": [
+            7,
+            9,
+            26,
+            29
+          ],
+          "sha256": "27310687f3ee6c5aeab687721adc07159dfa389665c3c08cd60651806e6c045c",
+          "visiblePixels": 189,
+          "edgeAlphaNonzero": false
+        },
+        {
+          "path": "frames/potion_sta/ITEM_potion_sta_idle_v001_f04.png",
+          "sourceRect": [
+            627,
+            627,
+            627,
+            627
+          ],
+          "sourceSemanticAnchor": [
+            299.5,
+            484
+          ],
+          "sourceBodyBBox": [
+            69,
+            107,
+            530,
+            484
+          ],
+          "sourceAlphaBBox": [
+            0,
+            0,
+            607,
+            611
+          ],
+          "scaleNominal": 0.03896103896103896,
+          "scaleActual": [
+            0.03907496012759171,
+            0.03907496012759171
+          ],
+          "preResizeTranslation": [
+            328,
+            143
+          ],
+          "registeredCanvas": [
+            1254,
+            1254
+          ],
+          "translation": [
+            -9,
+            -1
+          ],
+          "anchor": [
+            16,
+            24
+          ],
+          "outputBodyBBox": [
+            7,
+            9,
+            25,
+            24
+          ],
+          "alphaBBox": [
+            6,
+            9,
+            27,
+            24
+          ],
+          "sha256": "be138164b8fecc34efcbda4b4d78866663ae7a2dd2a15c916bcdffd68a012c26",
+          "visiblePixels": 185,
+          "edgeAlphaNonzero": false
+        }
+      ],
+      "continuity": [
+        {
+          "from": 0,
+          "to": 1,
+          "alphaSilhouetteIoU": 0.8454106280193237,
+          "meanPremultipliedDifference": 10.236014093137255
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "alphaSilhouetteIoU": 0.8536585365853658,
+          "meanPremultipliedDifference": 9.8107728247549
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "alphaSilhouetteIoU": 0.87,
+          "meanPremultipliedDifference": 8.600219566993465
+        },
+        {
+          "from": 3,
+          "to": 0,
+          "alphaSilhouetteIoU": 0.8613861386138614,
+          "meanPremultipliedDifference": 9.05541641135621
+        }
+      ],
+      "atlasRects": [
+        [
+          0,
+          64,
+          32,
+          32
+        ],
+        [
+          32,
+          64,
+          32,
+          32
+        ],
+        [
+          64,
+          64,
+          32,
+          32
+        ],
+        [
+          96,
+          64,
+          32,
+          32
+        ]
+      ],
+      "iconAtlasRect": [
+        48,
+        0,
+        24,
+        24
+      ]
+    },
+    {
+      "id": "milk_bomb",
+      "trackingId": "ITM-10",
+      "name": "奶弹",
+      "type": "consumable",
+      "countsInTwelve": true,
+      "size": [
+        32,
+        32
+      ],
+      "anchor": [
+        16,
+        24
+      ],
+      "fps": 4,
+      "loop": true,
+      "frameOrder": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "icon": "icons/ITEM_milk_bomb_icon_v001.png",
+      "iconSourceRect": [
+        150,
+        81,
+        529,
+        582
+      ],
+      "iconScale": 0.03992015968063872,
+      "sheet": "sheets/ITEM_milk_bomb_idle_v001_sheet.png",
+      "source": "assets/RAW/items/ITM-B01/v001/consumables/ITEM_milk_bomb_idle_v001.png",
+      "sourceSHA256": "002b449f813ce570635cc80db9469a2c728646c777327ff828ce8e02da072a71",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "prompt": "assets/RAW/items/ITM-B01/v001/consumables/ITEM_milk_bomb_idle_v001.prompt.txt",
+      "frames": [
+        {
+          "path": "frames/milk_bomb/ITEM_milk_bomb_idle_v001_f01.png",
+          "sourceRect": [
+            0,
+            0,
+            627,
+            627
+          ],
+          "sourceSemanticAnchor": [
+            339.5,
+            559
+          ],
+          "sourceBodyBBox": [
+            173,
+            104,
+            506,
+            559
+          ],
+          "sourceAlphaBBox": [
+            91,
+            53,
+            619,
+            601
+          ],
+          "scaleNominal": 0.03956043956043956,
+          "scaleActual": [
+            0.03987240829346093,
+            0.03987240829346093
+          ],
+          "preResizeTranslation": [
+            288,
+            68
+          ],
+          "registeredCanvas": [
+            1254,
+            1254
+          ],
+          "translation": [
+            -9,
+            -1
+          ],
+          "anchor": [
+            16,
+            24
+          ],
+          "outputBodyBBox": [
+            9,
+            6,
+            23,
+            24
+          ],
+          "alphaBBox": [
+            9,
+            6,
+            23,
+            24
+          ],
+          "sha256": "ca15a0bfad1d25584650135e4fba6f84510dcdc914b27acf5481e904fc54c172",
+          "visiblePixels": 152,
+          "edgeAlphaNonzero": false
+        },
+        {
+          "path": "frames/milk_bomb/ITEM_milk_bomb_idle_v001_f02.png",
+          "sourceRect": [
+            627,
+            0,
+            627,
+            627
+          ],
+          "sourceSemanticAnchor": [
+            301.0,
+            559
+          ],
+          "sourceBodyBBox": [
+            135,
+            104,
+            467,
+            559
+          ],
+          "sourceAlphaBBox": [
+            13,
+            41,
+            545,
+            564
+          ],
+          "scaleNominal": 0.03956043956043956,
+          "scaleActual": [
+            0.03987240829346093,
+            0.03987240829346093
+          ],
+          "preResizeTranslation": [
+            326,
+            68
+          ],
+          "registeredCanvas": [
+            1254,
+            1254
+          ],
+          "translation": [
+            -9,
+            -1
+          ],
+          "anchor": [
+            16,
+            24
+          ],
+          "outputBodyBBox": [
+            9,
+            6,
+            23,
+            24
+          ],
+          "alphaBBox": [
+            9,
+            6,
+            23,
+            24
+          ],
+          "sha256": "b3dba27cac178d33dd3d171afe43576f6300316b4af6d6f523e1b0016b5f1e34",
+          "visiblePixels": 152,
+          "edgeAlphaNonzero": false
+        },
+        {
+          "path": "frames/milk_bomb/ITEM_milk_bomb_idle_v001_f03.png",
+          "sourceRect": [
+            0,
+            627,
+            627,
+            627
+          ],
+          "sourceSemanticAnchor": [
+            339.5,
+            538
+          ],
+          "sourceBodyBBox": [
+            173,
+            86,
+            506,
+            538
+          ],
+          "sourceAlphaBBox": [
+            0,
+            45,
+            607,
+            583
+          ],
+          "scaleNominal": 0.03956043956043956,
+          "scaleActual": [
+            0.03987240829346093,
+            0.03987240829346093
+          ],
+          "preResizeTranslation": [
+            288,
+            89
+          ],
+          "registeredCanvas": [
+            1254,
+            1254
+          ],
+          "translation": [
+            -9,
+            -1
+          ],
+          "anchor": [
+            16,
+            24
+          ],
+          "outputBodyBBox": [
+            9,
+            6,
+            23,
+            24
+          ],
+          "alphaBBox": [
+            9,
+            6,
+            23,
+            24
+          ],
+          "sha256": "883541de15c5a1d7e735b93c55e069e06590c09896512bc8e2394dded09ebc93",
+          "visiblePixels": 152,
+          "edgeAlphaNonzero": false
+        },
+        {
+          "path": "frames/milk_bomb/ITEM_milk_bomb_idle_v001_f04.png",
+          "sourceRect": [
+            627,
+            627,
+            627,
+            627
+          ],
+          "sourceSemanticAnchor": [
+            300.5,
+            538
+          ],
+          "sourceBodyBBox": [
+            134,
+            86,
+            467,
+            538
+          ],
+          "sourceAlphaBBox": [
+            3,
+            17,
+            525,
+            587
+          ],
+          "scaleNominal": 0.03956043956043956,
+          "scaleActual": [
+            0.03987240829346093,
+            0.03987240829346093
+          ],
+          "preResizeTranslation": [
+            327,
+            89
+          ],
+          "registeredCanvas": [
+            1254,
+            1254
+          ],
+          "translation": [
+            -9,
+            -1
+          ],
+          "anchor": [
+            16,
+            24
+          ],
+          "outputBodyBBox": [
+            9,
+            6,
+            23,
+            24
+          ],
+          "alphaBBox": [
+            9,
+            6,
+            23,
+            24
+          ],
+          "sha256": "38e3f7ec13e907a34286223365266d07c164d45bfdcd1cd89be5836afb0aa508",
+          "visiblePixels": 152,
+          "edgeAlphaNonzero": false
+        }
+      ],
+      "continuity": [
+        {
+          "from": 0,
+          "to": 1,
+          "alphaSilhouetteIoU": 1.0,
+          "meanPremultipliedDifference": 0.6182636335784313
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "alphaSilhouetteIoU": 0.9869281045751634,
+          "meanPremultipliedDifference": 0.9571525224673203
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "alphaSilhouetteIoU": 1.0,
+          "meanPremultipliedDifference": 0.6073771956699346
+        },
+        {
+          "from": 3,
+          "to": 0,
+          "alphaSilhouetteIoU": 0.9869281045751634,
+          "meanPremultipliedDifference": 0.6026207618464052
+        }
+      ],
+      "atlasRects": [
+        [
+          0,
+          96,
+          32,
+          32
+        ],
+        [
+          32,
+          96,
+          32,
+          32
+        ],
+        [
+          64,
+          96,
+          32,
+          32
+        ],
+        [
+          96,
+          96,
+          32,
+          32
+        ]
+      ],
+      "iconAtlasRect": [
+        72,
+        0,
+        24,
+        24
+      ]
+    },
+    {
+      "id": "mushroom",
+      "trackingId": "ITM-07",
+      "name": "奶菇",
+      "type": "material",
+      "countsInTwelve": true,
+      "size": [
+        32,
+        32
+      ],
+      "anchor": [
+        16,
+        24
+      ],
+      "fps": 4,
+      "loop": true,
+      "frameOrder": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "icon": "icons/ITEM_mushroom_icon_v001.png",
+      "iconSourceRect": [
+        133,
+        184,
+        496,
+        553
+      ],
+      "iconScale": 0.05420054200542006,
+      "sheet": "sheets/ITEM_mushroom_idle_v001_sheet.png",
+      "source": "assets/RAW/items/ITM-B01/v001/materials_special/ITEM_mushroom_idle_v001.png",
+      "sourceSHA256": "a11d4eb26c34785854f3d9d92fdd3a41add1133c018c6627a2a90ec1c9fa8700",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "prompt": "assets/RAW/items/ITM-B01/v001/materials_special/ITEM_mushroom_idle_v001.prompt.txt",
+      "frames": [
+        {
+          "path": "frames/mushroom/ITEM_mushroom_idle_v001_f01.png",
+          "sourceRect": [
+            0,
+            0,
+            627,
+            627
+          ],
+          "sourceSemanticAnchor": [
+            314.5,
+            536
+          ],
+          "sourceBodyBBox": [
+            150,
+            201,
+            479,
+            536
+          ],
+          "sourceAlphaBBox": [
+            107,
+            71,
+            627,
+            588
+          ],
+          "scaleNominal": 0.04247104247104247,
+          "scaleActual": [
+            0.04226475279106858,
+            0.04226475279106858
+          ],
+          "preResizeTranslation": [
+            313,
+            91
+          ],
+          "registeredCanvas": [
+            1254,
+            1254
+          ],
+          "translation": [
+            -10,
+            -2
+          ],
+          "anchor": [
+            16,
+            24
+          ],
+          "outputBodyBBox": [
+            10,
+            10,
+            23,
+            24
+          ],
+          "alphaBBox": [
+            10,
+            10,
+            24,
+            25
+          ],
+          "sha256": "fe3e12366c0f6ecda1494f0467d0f37469963bdd690310962bd8704d78b53235",
+          "visiblePixels": 132,
+          "edgeAlphaNonzero": false
+        },
+        {
+          "path": "frames/mushroom/ITEM_mushroom_idle_v001_f02.png",
+          "sourceRect": [
+            627,
+            0,
+            627,
+            627
+          ],
+          "sourceSemanticAnchor": [
+            314.0,
+            536
+          ],
+          "sourceBodyBBox": [
+            150,
+            201,
+            478,
+            536
+          ],
+          "sourceAlphaBBox": [
+            1,
+            23,
+            607,
+            601
+          ],
+          "scaleNominal": 0.04247104247104247,
+          "scaleActual": [
+            0.04226475279106858,
+            0.04226475279106858
+          ],
+          "preResizeTranslation": [
+            313,
+            91
+          ],
+          "registeredCanvas": [
+            1254,
+            1254
+          ],
+          "translation": [
+            -10,
+            -2
+          ],
+          "anchor": [
+            16,
+            24
+          ],
+          "outputBodyBBox": [
+            10,
+            10,
+            23,
+            24
+          ],
+          "alphaBBox": [
+            10,
+            10,
+            24,
+            25
+          ],
+          "sha256": "ac551e80d44f1de718c34daf173efae37e513648bf4f1d9ccfde2b974d1758d6",
+          "visiblePixels": 132,
+          "edgeAlphaNonzero": false
+        },
+        {
+          "path": "frames/mushroom/ITEM_mushroom_idle_v001_f03.png",
+          "sourceRect": [
+            0,
+            627,
+            627,
+            627
+          ],
+          "sourceSemanticAnchor": [
+            314.5,
+            537
+          ],
+          "sourceBodyBBox": [
+            150,
+            201,
+            479,
+            537
+          ],
+          "sourceAlphaBBox": [
+            43,
+            19,
+            625,
+            554
+          ],
+          "scaleNominal": 0.04247104247104247,
+          "scaleActual": [
+            0.04226475279106858,
+            0.04226475279106858
+          ],
+          "preResizeTranslation": [
+            313,
+            90
+          ],
+          "registeredCanvas": [
+            1254,
+            1254
+          ],
+          "translation": [
+            -10,
+            -2
+          ],
+          "anchor": [
+            16,
+            24
+          ],
+          "outputBodyBBox": [
+            10,
+            10,
+            23,
+            24
+          ],
+          "alphaBBox": [
+            10,
+            10,
+            24,
+            25
+          ],
+          "sha256": "fab232deac3089e82b1b839c6976b3caca3d9c0e6d7b0303043c36994886556e",
+          "visiblePixels": 133,
+          "edgeAlphaNonzero": false
+        },
+        {
+          "path": "frames/mushroom/ITEM_mushroom_idle_v001_f04.png",
+          "sourceRect": [
+            627,
+            627,
+            627,
+            627
+          ],
+          "sourceSemanticAnchor": [
+            314.5,
+            537
+          ],
+          "sourceBodyBBox": [
+            150,
+            201,
+            479,
+            537
+          ],
+          "sourceAlphaBBox": [
+            9,
+            23,
+            589,
+            555
+          ],
+          "scaleNominal": 0.04247104247104247,
+          "scaleActual": [
+            0.04226475279106858,
+            0.04226475279106858
+          ],
+          "preResizeTranslation": [
+            313,
+            90
+          ],
+          "registeredCanvas": [
+            1254,
+            1254
+          ],
+          "translation": [
+            -10,
+            -2
+          ],
+          "anchor": [
+            16,
+            24
+          ],
+          "outputBodyBBox": [
+            10,
+            10,
+            23,
+            24
+          ],
+          "alphaBBox": [
+            5,
+            10,
+            24,
+            24
+          ],
+          "sha256": "e8139c6a777d2df95978e346368afd95234871dcc57d0d3df576e4ae14ad3afc",
+          "visiblePixels": 134,
+          "edgeAlphaNonzero": false
+        }
+      ],
+      "continuity": [
+        {
+          "from": 0,
+          "to": 1,
+          "alphaSilhouetteIoU": 1.0,
+          "meanPremultipliedDifference": 0.17652803308823517
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "alphaSilhouetteIoU": 0.9924812030075187,
+          "meanPremultipliedDifference": 0.5802964154411764
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "alphaSilhouetteIoU": 0.9925373134328358,
+          "meanPremultipliedDifference": 0.25526705473856187
+        },
+        {
+          "from": 3,
+          "to": 0,
+          "alphaSilhouetteIoU": 0.9850746268656716,
+          "meanPremultipliedDifference": 0.5485038807189541
+        }
+      ],
+      "atlasRects": [
+        [
+          0,
+          128,
+          32,
+          32
+        ],
+        [
+          32,
+          128,
+          32,
+          32
+        ],
+        [
+          64,
+          128,
+          32,
+          32
+        ],
+        [
+          96,
+          128,
+          32,
+          32
+        ]
+      ],
+      "iconAtlasRect": [
+        96,
+        0,
+        24,
+        24
+      ]
+    },
+    {
+      "id": "honey_wax",
+      "trackingId": "ITM-11",
+      "name": "蜜蜡",
+      "type": "material",
+      "countsInTwelve": true,
+      "size": [
+        32,
+        32
+      ],
+      "anchor": [
+        16,
+        24
+      ],
+      "fps": 4,
+      "loop": true,
+      "frameOrder": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "icon": "icons/ITEM_honey_wax_icon_v001.png",
+      "iconSourceRect": [
+        148,
+        176,
+        520,
+        516
+      ],
+      "iconScale": 0.053763440860215055,
+      "sheet": "sheets/ITEM_honey_wax_idle_v001_sheet.png",
+      "source": "assets/RAW/items/ITM-B01/v001/materials_special/ITEM_honey_wax_idle_v001.png",
+      "sourceSHA256": "6e6721a2024c5398c613ced068de539e1faa31ad0af1bc593b217c8926adefc0",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "prompt": "assets/RAW/items/ITM-B01/v001/materials_special/ITEM_honey_wax_idle_v001.prompt.txt",
+      "frames": [
+        {
+          "path": "frames/honey_wax/ITEM_honey_wax_idle_v001_f01.png",
+          "sourceRect": [
+            0,
+            0,
+            627,
+            627
+          ],
+          "sourceSemanticAnchor": [
+            334.0,
+            499
+          ],
+          "sourceBodyBBox": [
+            165,
+            193,
+            503,
+            499
+          ],
+          "sourceAlphaBBox": [
+            55,
+            33,
+            627,
+            627
+          ],
+          "scaleNominal": 0.036585365853658534,
+          "scaleActual": [
+            0.03668261562998405,
+            0.03668261562998405
+          ],
+          "preResizeTranslation": [
+            293,
+            128
+          ],
+          "registeredCanvas": [
+            1254,
+            1254
+          ],
+          "translation": [
+            -7,
+            1
+          ],
+          "anchor": [
+            16,
+            24
+          ],
+          "outputBodyBBox": [
+            10,
+            13,
+            22,
+            24
+          ],
+          "alphaBBox": [
+            10,
+            13,
+            23,
+            29
+          ],
+          "sha256": "798606d693532be969a4b97ce5917778a81a75a12d4cea86ecf871a29f05342e",
+          "visiblePixels": 97,
+          "edgeAlphaNonzero": false
+        },
+        {
+          "path": "frames/honey_wax/ITEM_honey_wax_idle_v001_f02.png",
+          "sourceRect": [
+            627,
+            0,
+            627,
+            627
+          ],
+          "sourceSemanticAnchor": [
+            308.5,
+            499
+          ],
+          "sourceBodyBBox": [
+            140,
+            193,
+            477,
+            499
+          ],
+          "sourceAlphaBBox": [
+            9,
+            18,
+            591,
+            627
+          ],
+          "scaleNominal": 0.036585365853658534,
+          "scaleActual": [
+            0.03668261562998405,
+            0.03668261562998405
+          ],
+          "preResizeTranslation": [
+            319,
+            128
+          ],
+          "registeredCanvas": [
+            1254,
+            1254
+          ],
+          "translation": [
+            -7,
+            1
+          ],
+          "anchor": [
+            16,
+            24
+          ],
+          "outputBodyBBox": [
+            10,
+            13,
+            22,
+            24
+          ],
+          "alphaBBox": [
+            10,
+            13,
+            22,
+            24
+          ],
+          "sha256": "a6ddff5d85373b36f228b01bc0fe4272fc90ea3a67e3b6712cd0c1995f5412ed",
+          "visiblePixels": 97,
+          "edgeAlphaNonzero": false
+        },
+        {
+          "path": "frames/honey_wax/ITEM_honey_wax_idle_v001_f03.png",
+          "sourceRect": [
+            0,
+            627,
+            627,
+            627
+          ],
+          "sourceSemanticAnchor": [
+            334.0,
+            463
+          ],
+          "sourceBodyBBox": [
+            165,
+            158,
+            503,
+            463
+          ],
+          "sourceAlphaBBox": [
+            33,
+            0,
+            627,
+            627
+          ],
+          "scaleNominal": 0.036585365853658534,
+          "scaleActual": [
+            0.03668261562998405,
+            0.03668261562998405
+          ],
+          "preResizeTranslation": [
+            293,
+            164
+          ],
+          "registeredCanvas": [
+            1254,
+            1254
+          ],
+          "translation": [
+            -7,
+            1
+          ],
+          "anchor": [
+            16,
+            24
+          ],
+          "outputBodyBBox": [
+            10,
+            13,
+            22,
+            24
+          ],
+          "alphaBBox": [
+            10,
+            13,
+            22,
+            24
+          ],
+          "sha256": "532f7dede358fc7c54aefa2ac5cd6819f7f8c0d0350bb8fa0b070cdbbaf79441",
+          "visiblePixels": 98,
+          "edgeAlphaNonzero": false
+        },
+        {
+          "path": "frames/honey_wax/ITEM_honey_wax_idle_v001_f04.png",
+          "sourceRect": [
+            627,
+            627,
+            627,
+            627
+          ],
+          "sourceSemanticAnchor": [
+            308.0,
+            463
+          ],
+          "sourceBodyBBox": [
+            139,
+            156,
+            477,
+            463
+          ],
+          "sourceAlphaBBox": [
+            17,
+            0,
+            482,
+            627
+          ],
+          "scaleNominal": 0.036585365853658534,
+          "scaleActual": [
+            0.03668261562998405,
+            0.03668261562998405
+          ],
+          "preResizeTranslation": [
+            319,
+            164
+          ],
+          "registeredCanvas": [
+            1254,
+            1254
+          ],
+          "translation": [
+            -7,
+            1
+          ],
+          "anchor": [
+            16,
+            24
+          ],
+          "outputBodyBBox": [
+            10,
+            13,
+            22,
+            24
+          ],
+          "alphaBBox": [
+            10,
+            13,
+            22,
+            24
+          ],
+          "sha256": "77348df23220912cd0c13281d16bf557df05d320f75e905ab175cb7d6f494708",
+          "visiblePixels": 98,
+          "edgeAlphaNonzero": false
+        }
+      ],
+      "continuity": [
+        {
+          "from": 0,
+          "to": 1,
+          "alphaSilhouetteIoU": 1.0,
+          "meanPremultipliedDifference": 0.30562704248366007
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "alphaSilhouetteIoU": 0.9897959183673469,
+          "meanPremultipliedDifference": 0.5448937908496733
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "alphaSilhouetteIoU": 1.0,
+          "meanPremultipliedDifference": 0.4120646956699346
+        },
+        {
+          "from": 3,
+          "to": 0,
+          "alphaSilhouetteIoU": 0.9897959183673469,
+          "meanPremultipliedDifference": 0.697397109885621
+        }
+      ],
+      "atlasRects": [
+        [
+          0,
+          160,
+          32,
+          32
+        ],
+        [
+          32,
+          160,
+          32,
+          32
+        ],
+        [
+          64,
+          160,
+          32,
+          32
+        ],
+        [
+          96,
+          160,
+          32,
+          32
+        ]
+      ],
+      "iconAtlasRect": [
+        120,
+        0,
+        24,
+        24
+      ]
+    },
+    {
+      "id": "milk_crystal",
+      "trackingId": "ITM-12",
+      "name": "奶晶",
+      "type": "material",
+      "countsInTwelve": true,
+      "size": [
+        32,
+        32
+      ],
+      "anchor": [
+        16,
+        24
+      ],
+      "fps": 4,
+      "loop": true,
+      "frameOrder": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "icon": "icons/ITEM_milk_crystal_icon_v001.png",
+      "iconSourceRect": [
+        130,
+        168,
+        498,
+        537
+      ],
+      "iconScale": 0.05420054200542006,
+      "sheet": "sheets/ITEM_milk_crystal_idle_v001_sheet.png",
+      "source": "assets/RAW/items/ITM-B01/v001/materials_special/ITEM_milk_crystal_idle_v001.png",
+      "sourceSHA256": "4b17fe9cdc609dc31f6e59bd0942457988dc30748728f30ffe910c3dba38dcab",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "prompt": "assets/RAW/items/ITM-B01/v001/materials_special/ITEM_milk_crystal_idle_v001.prompt.txt",
+      "frames": [
+        {
+          "path": "frames/milk_crystal/ITEM_milk_crystal_idle_v001_f01.png",
+          "sourceRect": [
+            0,
+            0,
+            627,
+            627
+          ],
+          "sourceSemanticAnchor": [
+            314.0,
+            520
+          ],
+          "sourceBodyBBox": [
+            147,
+            185,
+            481,
+            520
+          ],
+          "sourceAlphaBBox": [
+            43,
+            23,
+            589,
+            623
+          ],
+          "scaleNominal": 0.0437375745526839,
+          "scaleActual": [
+            0.043859649122807015,
+            0.043859649122807015
+          ],
+          "preResizeTranslation": [
+            313,
+            107
+          ],
+          "registeredCanvas": [
+            1254,
+            1254
+          ],
+          "translation": [
+            -11,
+            -4
+          ],
+          "anchor": [
+            16,
+            24
+          ],
+          "outputBodyBBox": [
+            9,
+            9,
+            24,
+            24
+          ],
+          "alphaBBox": [
+            7,
+            9,
+            24,
+            24
+          ],
+          "sha256": "78654da82aca7487e949fa710c3861482925e8d65f736aed8f41947ebb94bc20",
+          "visiblePixels": 135,
+          "edgeAlphaNonzero": false
+        },
+        {
+          "path": "frames/milk_crystal/ITEM_milk_crystal_idle_v001_f02.png",
+          "sourceRect": [
+            627,
+            0,
+            627,
+            627
+          ],
+          "sourceSemanticAnchor": [
+            314.0,
+            520
+          ],
+          "sourceBodyBBox": [
+            147,
+            185,
+            481,
+            520
+          ],
+          "sourceAlphaBBox": [
+            1,
+            93,
+            607,
+            596
+          ],
+          "scaleNominal": 0.0437375745526839,
+          "scaleActual": [
+            0.043859649122807015,
+            0.043859649122807015
+          ],
+          "preResizeTranslation": [
+            313,
+            107
+          ],
+          "registeredCanvas": [
+            1254,
+            1254
+          ],
+          "translation": [
+            -11,
+            -4
+          ],
+          "anchor": [
+            16,
+            24
+          ],
+          "outputBodyBBox": [
+            9,
+            9,
+            24,
+            24
+          ],
+          "alphaBBox": [
+            9,
+            9,
+            24,
+            24
+          ],
+          "sha256": "66660ea5dc582134cae635c0b9e5990a0b804deae3f901d722f8ed096c84552e",
+          "visiblePixels": 135,
+          "edgeAlphaNonzero": false
+        },
+        {
+          "path": "frames/milk_crystal/ITEM_milk_crystal_idle_v001_f03.png",
+          "sourceRect": [
+            0,
+            627,
+            627,
+            627
+          ],
+          "sourceSemanticAnchor": [
+            314.0,
+            520
+          ],
+          "sourceBodyBBox": [
+            147,
+            185,
+            481,
+            520
+          ],
+          "sourceAlphaBBox": [
+            87,
+            81,
+            625,
+            575
+          ],
+          "scaleNominal": 0.0437375745526839,
+          "scaleActual": [
+            0.043859649122807015,
+            0.043859649122807015
+          ],
+          "preResizeTranslation": [
+            313,
+            107
+          ],
+          "registeredCanvas": [
+            1254,
+            1254
+          ],
+          "translation": [
+            -11,
+            -4
+          ],
+          "anchor": [
+            16,
+            24
+          ],
+          "outputBodyBBox": [
+            9,
+            9,
+            24,
+            24
+          ],
+          "alphaBBox": [
+            9,
+            9,
+            28,
+            24
+          ],
+          "sha256": "a43ec023c9fc8442bdb4b20a9fce6f4454b1776f102e4791227a71c40f773d0a",
+          "visiblePixels": 134,
+          "edgeAlphaNonzero": false
+        },
+        {
+          "path": "frames/milk_crystal/ITEM_milk_crystal_idle_v001_f04.png",
+          "sourceRect": [
+            627,
+            627,
+            627,
+            627
+          ],
+          "sourceSemanticAnchor": [
+            314.0,
+            520
+          ],
+          "sourceBodyBBox": [
+            147,
+            185,
+            481,
+            520
+          ],
+          "sourceAlphaBBox": [
+            7,
+            17,
+            573,
+            564
+          ],
+          "scaleNominal": 0.0437375745526839,
+          "scaleActual": [
+            0.043859649122807015,
+            0.043859649122807015
+          ],
+          "preResizeTranslation": [
+            313,
+            107
+          ],
+          "registeredCanvas": [
+            1254,
+            1254
+          ],
+          "translation": [
+            -11,
+            -4
+          ],
+          "anchor": [
+            16,
+            24
+          ],
+          "outputBodyBBox": [
+            9,
+            9,
+            24,
+            24
+          ],
+          "alphaBBox": [
+            9,
+            9,
+            26,
+            24
+          ],
+          "sha256": "4dcfd1631b762c5f48eacf4d336e811846191d481b7f6e8d9118d343517a6b6a",
+          "visiblePixels": 135,
+          "edgeAlphaNonzero": false
+        }
+      ],
+      "continuity": [
+        {
+          "from": 0,
+          "to": 1,
+          "alphaSilhouetteIoU": 1.0,
+          "meanPremultipliedDifference": 0.43250995710784307
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "alphaSilhouetteIoU": 0.9925925925925926,
+          "meanPremultipliedDifference": 0.4876531862745097
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "alphaSilhouetteIoU": 0.9925925925925926,
+          "meanPremultipliedDifference": 0.4190819035947713
+        },
+        {
+          "from": 3,
+          "to": 0,
+          "alphaSilhouetteIoU": 1.0,
+          "meanPremultipliedDifference": 0.4224354064542484
+        }
+      ],
+      "atlasRects": [
+        [
+          0,
+          192,
+          32,
+          32
+        ],
+        [
+          32,
+          192,
+          32,
+          32
+        ],
+        [
+          64,
+          192,
+          32,
+          32
+        ],
+        [
+          96,
+          192,
+          32,
+          32
+        ]
+      ],
+      "iconAtlasRect": [
+        144,
+        0,
+        24,
+        24
+      ]
+    },
+    {
+      "id": "hp_fragment",
+      "trackingId": "ITM-01",
+      "name": "生命碎片",
+      "type": "fragment",
+      "countsInTwelve": true,
+      "size": [
+        32,
+        32
+      ],
+      "anchor": [
+        16,
+        24
+      ],
+      "fps": 4,
+      "loop": true,
+      "frameOrder": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "icon": "icons/ITEM_hp_fragment_icon_v001.png",
+      "iconSourceRect": [
+        105,
+        131,
+        571,
+        578
+      ],
+      "iconScale": 0.04291845493562232,
+      "sheet": "sheets/ITEM_hp_fragment_idle_v001_sheet.png",
+      "source": "assets/RAW/items/ITM-B01/v001/fragments_ability/ITEM_hp_fragment_idle_v001.png",
+      "sourceSHA256": "fae5a7f027508bdea6ddb95065fda58b5f1884d58e3033460e09441779ccb3d4",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "prompt": "assets/RAW/items/ITM-B01/v001/fragments_ability/ITEM_hp_fragment_idle_v001.prompt.txt",
+      "frames": [
+        {
+          "path": "frames/hp_fragment/ITEM_hp_fragment_idle_v001_f01.png",
+          "sourceRect": [
+            0,
+            0,
+            627,
+            627
+          ],
+          "sourceSemanticAnchor": [
+            338.0,
+            557
+          ],
+          "sourceBodyBBox": [
+            126,
+            152,
+            550,
+            557
+          ],
+          "sourceAlphaBBox": [
+            31,
+            21,
+            627,
+            627
+          ],
+          "scaleNominal": 0.041044776119402986,
+          "scaleActual": [
+            0.04066985645933014,
+            0.04066985645933014
+          ],
+          "preResizeTranslation": [
+            289,
+            70
+          ],
+          "registeredCanvas": [
+            1254,
+            1254
+          ],
+          "translation": [
+            -9,
+            -2
+          ],
+          "anchor": [
+            16,
+            24
+          ],
+          "outputBodyBBox": [
+            8,
+            7,
+            25,
+            24
+          ],
+          "alphaBBox": [
+            7,
+            3,
+            28,
+            25
+          ],
+          "sha256": "99e71140b6c7966a9c348789042534263eaf3f2204356e0b292d5dcfab8fe607",
+          "visiblePixels": 202,
+          "edgeAlphaNonzero": false
+        },
+        {
+          "path": "frames/hp_fragment/ITEM_hp_fragment_idle_v001_f02.png",
+          "sourceRect": [
+            627,
+            0,
+            627,
+            627
+          ],
+          "sourceSemanticAnchor": [
+            289.5,
+            557
+          ],
+          "sourceBodyBBox": [
+            77,
+            152,
+            502,
+            557
+          ],
+          "sourceAlphaBBox": [
+            0,
+            25,
+            591,
+            619
+          ],
+          "scaleNominal": 0.041044776119402986,
+          "scaleActual": [
+            0.04066985645933014,
+            0.04066985645933014
+          ],
+          "preResizeTranslation": [
+            338,
+            70
+          ],
+          "registeredCanvas": [
+            1254,
+            1254
+          ],
+          "translation": [
+            -9,
+            -2
+          ],
+          "anchor": [
+            16,
+            24
+          ],
+          "outputBodyBBox": [
+            8,
+            7,
+            25,
+            24
+          ],
+          "alphaBBox": [
+            8,
+            6,
+            27,
+            24
+          ],
+          "sha256": "05882c7fb9430d98319020b5c06da0250aaed06f3323be8e784fa33b843a10a9",
+          "visiblePixels": 204,
+          "edgeAlphaNonzero": false
+        },
+        {
+          "path": "frames/hp_fragment/ITEM_hp_fragment_idle_v001_f03.png",
+          "sourceRect": [
+            0,
+            627,
+            627,
+            627
+          ],
+          "sourceSemanticAnchor": [
+            337.0,
+            509
+          ],
+          "sourceBodyBBox": [
+            124,
+            103,
+            550,
+            509
+          ],
+          "sourceAlphaBBox": [
+            0,
+            1,
+            627,
+            627
+          ],
+          "scaleNominal": 0.041044776119402986,
+          "scaleActual": [
+            0.04066985645933014,
+            0.04066985645933014
+          ],
+          "preResizeTranslation": [
+            290,
+            118
+          ],
+          "registeredCanvas": [
+            1254,
+            1254
+          ],
+          "translation": [
+            -9,
+            -2
+          ],
+          "anchor": [
+            16,
+            24
+          ],
+          "outputBodyBBox": [
+            8,
+            7,
+            25,
+            24
+          ],
+          "alphaBBox": [
+            6,
+            7,
+            26,
+            27
+          ],
+          "sha256": "16613afba17ff08aff4053133bd7b3563a466b442a9f9c21d46e5600924a5275",
+          "visiblePixels": 205,
+          "edgeAlphaNonzero": false
+        },
+        {
+          "path": "frames/hp_fragment/ITEM_hp_fragment_idle_v001_f04.png",
+          "sourceRect": [
+            627,
+            627,
+            627,
+            627
+          ],
+          "sourceSemanticAnchor": [
+            290.5,
+            509
+          ],
+          "sourceBodyBBox": [
+            77,
+            103,
+            504,
+            509
+          ],
+          "sourceAlphaBBox": [
+            0,
+            23,
+            609,
+            627
+          ],
+          "scaleNominal": 0.041044776119402986,
+          "scaleActual": [
+            0.04066985645933014,
+            0.04066985645933014
+          ],
+          "preResizeTranslation": [
+            337,
+            118
+          ],
+          "registeredCanvas": [
+            1254,
+            1254
+          ],
+          "translation": [
+            -9,
+            -2
+          ],
+          "anchor": [
+            16,
+            24
+          ],
+          "outputBodyBBox": [
+            8,
+            7,
+            25,
+            24
+          ],
+          "alphaBBox": [
+            8,
+            4,
+            26,
+            24
+          ],
+          "sha256": "a64cc292140e7ac69ced70a24bfc90b225947427e856abe9e8b0428c36349c7b",
+          "visiblePixels": 204,
+          "edgeAlphaNonzero": false
+        }
+      ],
+      "continuity": [
+        {
+          "from": 0,
+          "to": 1,
+          "alphaSilhouetteIoU": 0.961352657004831,
+          "meanPremultipliedDifference": 4.0178232230392155
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "alphaSilhouetteIoU": 0.9569377990430622,
+          "meanPremultipliedDifference": 3.6807355494281047
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "alphaSilhouetteIoU": 0.9663461538461539,
+          "meanPremultipliedDifference": 2.7761629391339873
+        },
+        {
+          "from": 3,
+          "to": 0,
+          "alphaSilhouetteIoU": 0.961352657004831,
+          "meanPremultipliedDifference": 3.591615604575164
+        }
+      ],
+      "atlasRects": [
+        [
+          0,
+          224,
+          32,
+          32
+        ],
+        [
+          32,
+          224,
+          32,
+          32
+        ],
+        [
+          64,
+          224,
+          32,
+          32
+        ],
+        [
+          96,
+          224,
+          32,
+          32
+        ]
+      ],
+      "iconAtlasRect": [
+        168,
+        0,
+        24,
+        24
+      ]
+    },
+    {
+      "id": "sta_fragment",
+      "trackingId": "ITM-02",
+      "name": "体力碎片",
+      "type": "fragment",
+      "countsInTwelve": true,
+      "size": [
+        32,
+        32
+      ],
+      "anchor": [
+        16,
+        24
+      ],
+      "fps": 4,
+      "loop": true,
+      "frameOrder": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "icon": "icons/ITEM_sta_fragment_icon_v001.png",
+      "iconSourceRect": [
+        182,
+        46,
+        553,
+        583
+      ],
+      "iconScale": 0.037243947858473,
+      "sheet": "sheets/ITEM_sta_fragment_idle_v001_sheet.png",
+      "source": "assets/RAW/items/ITM-B01/v001/fragments_ability/ITEM_sta_fragment_idle_v001.png",
+      "sourceSHA256": "1b765926558c2570e311a4909eba4656cd9f97ebf719054c99100e30422952df",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "prompt": "assets/RAW/items/ITM-B01/v001/fragments_ability/ITEM_sta_fragment_idle_v001.prompt.txt",
+      "frames": [
+        {
+          "path": "frames/sta_fragment/ITEM_sta_fragment_idle_v001_f01.png",
+          "sourceRect": [
+            0,
+            0,
+            627,
+            627
+          ],
+          "sourceSemanticAnchor": [
+            367.5,
+            559
+          ],
+          "sourceBodyBBox": [
+            206,
+            70,
+            529,
+            559
+          ],
+          "sourceAlphaBBox": [
+            0,
+            19,
+            627,
+            611
+          ],
+          "scaleNominal": 0.036734693877551024,
+          "scaleActual": [
+            0.03668261562998405,
+            0.03668261562998405
+          ],
+          "preResizeTranslation": [
+            260,
+            68
+          ],
+          "registeredCanvas": [
+            1254,
+            1254
+          ],
+          "translation": [
+            -7,
+            1
+          ],
+          "anchor": [
+            16,
+            24
+          ],
+          "outputBodyBBox": [
+            10,
+            6,
+            22,
+            24
+          ],
+          "alphaBBox": [
+            8,
+            6,
+            23,
+            25
+          ],
+          "sha256": "c5fd01f4ae29eefc1c47311277749663f4536817eb188cd39bfd884b6767b5b8",
+          "visiblePixels": 135,
+          "edgeAlphaNonzero": false
+        },
+        {
+          "path": "frames/sta_fragment/ITEM_sta_fragment_idle_v001_f02.png",
+          "sourceRect": [
+            627,
+            0,
+            627,
+            627
+          ],
+          "sourceSemanticAnchor": [
+            309.0,
+            559
+          ],
+          "sourceBodyBBox": [
+            147,
+            70,
+            471,
+            559
+          ],
+          "sourceAlphaBBox": [
+            1,
+            19,
+            621,
+            627
+          ],
+          "scaleNominal": 0.036734693877551024,
+          "scaleActual": [
+            0.03668261562998405,
+            0.03668261562998405
+          ],
+          "preResizeTranslation": [
+            318,
+            68
+          ],
+          "registeredCanvas": [
+            1254,
+            1254
+          ],
+          "translation": [
+            -7,
+            1
+          ],
+          "anchor": [
+            16,
+            24
+          ],
+          "outputBodyBBox": [
+            10,
+            6,
+            23,
+            24
+          ],
+          "alphaBBox": [
+            10,
+            6,
+            24,
+            24
+          ],
+          "sha256": "2946767656dc15885ef1ecb65106dd5c2036b71b10a53b2e7d804ece79b03ead",
+          "visiblePixels": 137,
+          "edgeAlphaNonzero": false
+        },
+        {
+          "path": "frames/sta_fragment/ITEM_sta_fragment_idle_v001_f03.png",
+          "sourceRect": [
+            0,
+            627,
+            627,
+            627
+          ],
+          "sourceSemanticAnchor": [
+            367.5,
+            539
+          ],
+          "sourceBodyBBox": [
+            206,
+            49,
+            529,
+            539
+          ],
+          "sourceAlphaBBox": [
+            0,
+            0,
+            627,
+            627
+          ],
+          "scaleNominal": 0.036734693877551024,
+          "scaleActual": [
+            0.03668261562998405,
+            0.03668261562998405
+          ],
+          "preResizeTranslation": [
+            260,
+            88
+          ],
+          "registeredCanvas": [
+            1254,
+            1254
+          ],
+          "translation": [
+            -6,
+            1
+          ],
+          "anchor": [
+            16,
+            24
+          ],
+          "outputBodyBBox": [
+            10,
+            6,
+            23,
+            24
+          ],
+          "alphaBBox": [
+            9,
+            6,
+            23,
+            24
+          ],
+          "sha256": "f3502c0b2fca8d446e66137979dc1d3209ad88caf15946806c206f7ccea7a679",
+          "visiblePixels": 136,
+          "edgeAlphaNonzero": false
+        },
+        {
+          "path": "frames/sta_fragment/ITEM_sta_fragment_idle_v001_f04.png",
+          "sourceRect": [
+            627,
+            627,
+            627,
+            627
+          ],
+          "sourceSemanticAnchor": [
+            309.0,
+            539
+          ],
+          "sourceBodyBBox": [
+            147,
+            49,
+            471,
+            539
+          ],
+          "sourceAlphaBBox": [
+            1,
+            1,
+            601,
+            627
+          ],
+          "scaleNominal": 0.036734693877551024,
+          "scaleActual": [
+            0.03668261562998405,
+            0.03668261562998405
+          ],
+          "preResizeTranslation": [
+            318,
+            88
+          ],
+          "registeredCanvas": [
+            1254,
+            1254
+          ],
+          "translation": [
+            -7,
+            1
+          ],
+          "anchor": [
+            16,
+            24
+          ],
+          "outputBodyBBox": [
+            10,
+            6,
+            22,
+            24
+          ],
+          "alphaBBox": [
+            10,
+            6,
+            22,
+            27
+          ],
+          "sha256": "3dfe46ffa035ab6c29334e584f387c2b29afb74fdeaeb3837c4f172b58afb144",
+          "visiblePixels": 139,
+          "edgeAlphaNonzero": false
+        }
+      ],
+      "continuity": [
+        {
+          "from": 0,
+          "to": 1,
+          "alphaSilhouetteIoU": 0.9710144927536232,
+          "meanPremultipliedDifference": 1.5720741421568627
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "alphaSilhouetteIoU": 0.7843137254901961,
+          "meanPremultipliedDifference": 12.18615962009804
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "alphaSilhouetteIoU": 0.7628205128205128,
+          "meanPremultipliedDifference": 12.701896956699349
+        },
+        {
+          "from": 3,
+          "to": 0,
+          "alphaSilhouetteIoU": 0.9712230215827338,
+          "meanPremultipliedDifference": 1.5766365400326798
+        }
+      ],
+      "atlasRects": [
+        [
+          0,
+          256,
+          32,
+          32
+        ],
+        [
+          32,
+          256,
+          32,
+          32
+        ],
+        [
+          64,
+          256,
+          32,
+          32
+        ],
+        [
+          96,
+          256,
+          32,
+          32
+        ]
+      ],
+      "iconAtlasRect": [
+        192,
+        0,
+        24,
+        24
+      ]
+    },
+    {
+      "id": "mana_fragment",
+      "trackingId": "ITM-03",
+      "name": "奶力碎片",
+      "type": "fragment",
+      "countsInTwelve": true,
+      "size": [
+        32,
+        32
+      ],
+      "anchor": [
+        16,
+        24
+      ],
+      "fps": 4,
+      "loop": true,
+      "frameOrder": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "icon": "icons/ITEM_mana_fragment_icon_v001.png",
+      "iconSourceRect": [
+        133,
+        65,
+        494,
+        588
+      ],
+      "iconScale": 0.03824091778202677,
+      "sheet": "sheets/ITEM_mana_fragment_idle_v001_sheet.png",
+      "source": "assets/RAW/items/ITM-B01/v001/fragments_ability/ITEM_mana_fragment_idle_v001.png",
+      "sourceSHA256": "461d63d3f86f927531c0eda25c0fdf7701d3f8341e50c1975719c409db36daf3",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "prompt": "assets/RAW/items/ITM-B01/v001/fragments_ability/ITEM_mana_fragment_idle_v001.prompt.txt",
+      "frames": [
+        {
+          "path": "frames/mana_fragment/ITEM_mana_fragment_idle_v001_f01.png",
+          "sourceRect": [
+            0,
+            0,
+            627,
+            627
+          ],
+          "sourceSemanticAnchor": [
+            313.5,
+            564
+          ],
+          "sourceBodyBBox": [
+            157,
+            89,
+            470,
+            564
+          ],
+          "sourceAlphaBBox": [
+            0,
+            17,
+            627,
+            627
+          ],
+          "scaleNominal": 0.037894736842105266,
+          "scaleActual": [
+            0.03827751196172249,
+            0.03827751196172249
+          ],
+          "preResizeTranslation": [
+            314,
+            63
+          ],
+          "registeredCanvas": [
+            1254,
+            1254
+          ],
+          "translation": [
+            -8,
+            0
+          ],
+          "anchor": [
+            16,
+            24
+          ],
+          "outputBodyBBox": [
+            10,
+            6,
+            22,
+            24
+          ],
+          "alphaBBox": [
+            10,
+            6,
+            22,
+            24
+          ],
+          "sha256": "b0bb6a460be5d41c49aa91159b1f5867048b7c970e6f1d959fc0c428ee7784b4",
+          "visiblePixels": 152,
+          "edgeAlphaNonzero": false
+        },
+        {
+          "path": "frames/mana_fragment/ITEM_mana_fragment_idle_v001_f02.png",
+          "sourceRect": [
+            627,
+            0,
+            627,
+            627
+          ],
+          "sourceSemanticAnchor": [
+            313.5,
+            564
+          ],
+          "sourceBodyBBox": [
+            157,
+            89,
+            470,
+            564
+          ],
+          "sourceAlphaBBox": [
+            0,
+            17,
+            611,
+            627
+          ],
+          "scaleNominal": 0.037894736842105266,
+          "scaleActual": [
+            0.03827751196172249,
+            0.03827751196172249
+          ],
+          "preResizeTranslation": [
+            314,
+            63
+          ],
+          "registeredCanvas": [
+            1254,
+            1254
+          ],
+          "translation": [
+            -8,
+            0
+          ],
+          "anchor": [
+            16,
+            24
+          ],
+          "outputBodyBBox": [
+            10,
+            6,
+            22,
+            24
+          ],
+          "alphaBBox": [
+            10,
+            6,
+            22,
+            24
+          ],
+          "sha256": "694877eeb7ea8591f98f0759b000ffe3c95ab0679c03c7d6f322e802bad6fa89",
+          "visiblePixels": 152,
+          "edgeAlphaNonzero": false
+        },
+        {
+          "path": "frames/mana_fragment/ITEM_mana_fragment_idle_v001_f03.png",
+          "sourceRect": [
+            0,
+            627,
+            627,
+            627
+          ],
+          "sourceSemanticAnchor": [
+            313.5,
+            563
+          ],
+          "sourceBodyBBox": [
+            157,
+            90,
+            470,
+            563
+          ],
+          "sourceAlphaBBox": [
+            0,
+            0,
+            627,
+            627
+          ],
+          "scaleNominal": 0.037894736842105266,
+          "scaleActual": [
+            0.03827751196172249,
+            0.03827751196172249
+          ],
+          "preResizeTranslation": [
+            314,
+            64
+          ],
+          "registeredCanvas": [
+            1254,
+            1254
+          ],
+          "translation": [
+            -8,
+            0
+          ],
+          "anchor": [
+            16,
+            24
+          ],
+          "outputBodyBBox": [
+            10,
+            6,
+            22,
+            24
+          ],
+          "alphaBBox": [
+            7,
+            6,
+            22,
+            24
+          ],
+          "sha256": "c419b358efff16ae6cc552fee708becf4608a39e5a573a651c4a58eef860ee47",
+          "visiblePixels": 150,
+          "edgeAlphaNonzero": false
+        },
+        {
+          "path": "frames/mana_fragment/ITEM_mana_fragment_idle_v001_f04.png",
+          "sourceRect": [
+            627,
+            627,
+            627,
+            627
+          ],
+          "sourceSemanticAnchor": [
+            314.0,
+            563
+          ],
+          "sourceBodyBBox": [
+            158,
+            90,
+            470,
+            563
+          ],
+          "sourceAlphaBBox": [
+            0,
+            0,
+            607,
+            627
+          ],
+          "scaleNominal": 0.037894736842105266,
+          "scaleActual": [
+            0.03827751196172249,
+            0.03827751196172249
+          ],
+          "preResizeTranslation": [
+            313,
+            64
+          ],
+          "registeredCanvas": [
+            1254,
+            1254
+          ],
+          "translation": [
+            -8,
+            0
+          ],
+          "anchor": [
+            16,
+            24
+          ],
+          "outputBodyBBox": [
+            10,
+            6,
+            22,
+            24
+          ],
+          "alphaBBox": [
+            6,
+            2,
+            27,
+            26
+          ],
+          "sha256": "d96ad3d91b9f4965c82daf1964987489b48db2aca9e2d30cc28447874f44ce5d",
+          "visiblePixels": 151,
+          "edgeAlphaNonzero": false
+        }
+      ],
+      "continuity": [
+        {
+          "from": 0,
+          "to": 1,
+          "alphaSilhouetteIoU": 1.0,
+          "meanPremultipliedDifference": 0.6810827716503267
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "alphaSilhouetteIoU": 0.9868421052631579,
+          "meanPremultipliedDifference": 0.8905254289215686
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "alphaSilhouetteIoU": 0.9933774834437086,
+          "meanPremultipliedDifference": 1.0758846507352942
+        },
+        {
+          "from": 3,
+          "to": 0,
+          "alphaSilhouetteIoU": 0.993421052631579,
+          "meanPremultipliedDifference": 0.7891135620915034
+        }
+      ],
+      "atlasRects": [
+        [
+          0,
+          288,
+          32,
+          32
+        ],
+        [
+          32,
+          288,
+          32,
+          32
+        ],
+        [
+          64,
+          288,
+          32,
+          32
+        ],
+        [
+          96,
+          288,
+          32,
+          32
+        ]
+      ],
+      "iconAtlasRect": [
+        216,
+        0,
+        24,
+        24
+      ]
+    },
+    {
+      "id": "bag_expand",
+      "trackingId": "ITM-04",
+      "name": "背包扩容卷",
+      "type": "special",
+      "countsInTwelve": true,
+      "size": [
+        32,
+        32
+      ],
+      "anchor": [
+        16,
+        24
+      ],
+      "fps": 4,
+      "loop": true,
+      "frameOrder": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "icon": "icons/ITEM_bag_expand_icon_v001.png",
+      "iconSourceRect": [
+        182,
+        178,
+        488,
+        515
+      ],
+      "iconScale": 0.05934718100890208,
+      "sheet": "sheets/ITEM_bag_expand_idle_v001_sheet.png",
+      "source": "assets/RAW/items/ITM-B01/v001/materials_special/ITEM_bag_expand_idle_v001.png",
+      "sourceSHA256": "5fd6b3c9d2f32ac29665e7478c10e536efc73917644f12c26370f4d1df80bf52",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "prompt": "assets/RAW/items/ITM-B01/v001/materials_special/ITEM_bag_expand_idle_v001.prompt.txt",
+      "frames": [
+        {
+          "path": "frames/bag_expand/ITEM_bag_expand_idle_v001_f01.png",
+          "sourceRect": [
+            0,
+            0,
+            627,
+            627
+          ],
+          "sourceSemanticAnchor": [
+            335.0,
+            500
+          ],
+          "sourceBodyBBox": [
+            197,
+            193,
+            473,
+            500
+          ],
+          "sourceAlphaBBox": [
+            31,
+            0,
+            627,
+            627
+          ],
+          "scaleNominal": 0.044,
+          "scaleActual": [
+            0.043859649122807015,
+            0.043859649122807015
+          ],
+          "preResizeTranslation": [
+            292,
+            127
+          ],
+          "registeredCanvas": [
+            1254,
+            1254
+          ],
+          "translation": [
+            -11,
+            -4
+          ],
+          "anchor": [
+            16,
+            24
+          ],
+          "outputBodyBBox": [
+            10,
+            10,
+            23,
+            24
+          ],
+          "alphaBBox": [
+            10,
+            4,
+            23,
+            24
+          ],
+          "sha256": "e9d343c6e2a0f04257709ee5088f56401b72e2b18d10ce74bd6333fcb9016886",
+          "visiblePixels": 139,
+          "edgeAlphaNonzero": false
+        },
+        {
+          "path": "frames/bag_expand/ITEM_bag_expand_idle_v001_f02.png",
+          "sourceRect": [
+            627,
+            0,
+            627,
+            627
+          ],
+          "sourceSemanticAnchor": [
+            296.5,
+            500
+          ],
+          "sourceBodyBBox": [
+            159,
+            193,
+            434,
+            500
+          ],
+          "sourceAlphaBBox": [
+            1,
+            10,
+            539,
+            619
+          ],
+          "scaleNominal": 0.044,
+          "scaleActual": [
+            0.043859649122807015,
+            0.043859649122807015
+          ],
+          "preResizeTranslation": [
+            331,
+            127
+          ],
+          "registeredCanvas": [
+            1254,
+            1254
+          ],
+          "translation": [
+            -11,
+            -4
+          ],
+          "anchor": [
+            16,
+            24
+          ],
+          "outputBodyBBox": [
+            10,
+            10,
+            23,
+            24
+          ],
+          "alphaBBox": [
+            5,
+            5,
+            23,
+            24
+          ],
+          "sha256": "3f2fcdd50bd4485f74ecb83e4262fd6b916bcef52b48eb9ec9f99cd68a72efe3",
+          "visiblePixels": 140,
+          "edgeAlphaNonzero": false
+        },
+        {
+          "path": "frames/bag_expand/ITEM_bag_expand_idle_v001_f03.png",
+          "sourceRect": [
+            0,
+            627,
+            627,
+            627
+          ],
+          "sourceSemanticAnchor": [
+            335.0,
+            500
+          ],
+          "sourceBodyBBox": [
+            197,
+            193,
+            473,
+            500
+          ],
+          "sourceAlphaBBox": [
+            31,
+            0,
+            627,
+            627
+          ],
+          "scaleNominal": 0.044,
+          "scaleActual": [
+            0.043859649122807015,
+            0.043859649122807015
+          ],
+          "preResizeTranslation": [
+            292,
+            127
+          ],
+          "registeredCanvas": [
+            1254,
+            1254
+          ],
+          "translation": [
+            -11,
+            -4
+          ],
+          "anchor": [
+            16,
+            24
+          ],
+          "outputBodyBBox": [
+            10,
+            10,
+            23,
+            24
+          ],
+          "alphaBBox": [
+            10,
+            6,
+            23,
+            28
+          ],
+          "sha256": "319133c17dfb38a58dc0929c552ce005332b4abd1ddb2517ef57cd2a685589ad",
+          "visiblePixels": 139,
+          "edgeAlphaNonzero": false
+        },
+        {
+          "path": "frames/bag_expand/ITEM_bag_expand_idle_v001_f04.png",
+          "sourceRect": [
+            627,
+            627,
+            627,
+            627
+          ],
+          "sourceSemanticAnchor": [
+            296.5,
+            500
+          ],
+          "sourceBodyBBox": [
+            159,
+            193,
+            434,
+            500
+          ],
+          "sourceAlphaBBox": [
+            0,
+            9,
+            587,
+            611
+          ],
+          "scaleNominal": 0.044,
+          "scaleActual": [
+            0.043859649122807015,
+            0.043859649122807015
+          ],
+          "preResizeTranslation": [
+            331,
+            127
+          ],
+          "registeredCanvas": [
+            1254,
+            1254
+          ],
+          "translation": [
+            -11,
+            -4
+          ],
+          "anchor": [
+            16,
+            24
+          ],
+          "outputBodyBBox": [
+            10,
+            10,
+            23,
+            24
+          ],
+          "alphaBBox": [
+            7,
+            2,
+            23,
+            25
+          ],
+          "sha256": "11e6c89b80b080c5bb10ceeb4c94cc4086e16a10b0d4904ee28a7fa917a6b886",
+          "visiblePixels": 140,
+          "edgeAlphaNonzero": false
+        }
+      ],
+      "continuity": [
+        {
+          "from": 0,
+          "to": 1,
+          "alphaSilhouetteIoU": 0.9928571428571429,
+          "meanPremultipliedDifference": 0.75480366625817
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "alphaSilhouetteIoU": 0.9928571428571429,
+          "meanPremultipliedDifference": 0.7700201695261439
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "alphaSilhouetteIoU": 0.9928571428571429,
+          "meanPremultipliedDifference": 0.7466796875
+        },
+        {
+          "from": 3,
+          "to": 0,
+          "alphaSilhouetteIoU": 0.9928571428571429,
+          "meanPremultipliedDifference": 0.9560112847222221
+        }
+      ],
+      "atlasRects": [
+        [
+          0,
+          320,
+          32,
+          32
+        ],
+        [
+          32,
+          320,
+          32,
+          32
+        ],
+        [
+          64,
+          320,
+          32,
+          32
+        ],
+        [
+          96,
+          320,
+          32,
+          32
+        ]
+      ],
+      "iconAtlasRect": [
+        240,
+        0,
+        24,
+        24
+      ]
+    },
+    {
+      "id": "map_fragment",
+      "trackingId": "ITM-05",
+      "name": "地图碎片",
+      "type": "special",
+      "countsInTwelve": true,
+      "size": [
+        32,
+        32
+      ],
+      "anchor": [
+        16,
+        24
+      ],
+      "fps": 4,
+      "loop": true,
+      "frameOrder": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "icon": "icons/ITEM_map_fragment_icon_v001.png",
+      "iconSourceRect": [
+        117,
+        149,
+        511,
+        547
+      ],
+      "iconScale": 0.05025125628140704,
+      "sheet": "sheets/ITEM_map_fragment_idle_v001_sheet.png",
+      "source": "assets/RAW/items/ITM-B01/v001/materials_special/ITEM_map_fragment_idle_v001.png",
+      "sourceSHA256": "ea8ce6a9e0af92e549d200214914092570d0e68e6e07f3da0f80216a9f814f22",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "prompt": "assets/RAW/items/ITM-B01/v001/materials_special/ITEM_map_fragment_idle_v001.prompt.txt",
+      "frames": [
+        {
+          "path": "frames/map_fragment/ITEM_map_fragment_idle_v001_f01.png",
+          "sourceRect": [
+            0,
+            0,
+            627,
+            627
+          ],
+          "sourceSemanticAnchor": [
+            314.0,
+            529
+          ],
+          "sourceBodyBBox": [
+            135,
+            167,
+            493,
+            529
+          ],
+          "sourceAlphaBBox": [
+            25,
+            37,
+            627,
+            627
+          ],
+          "scaleNominal": 0.04198473282442748,
+          "scaleActual": [
+            0.04226475279106858,
+            0.04226475279106858
+          ],
+          "preResizeTranslation": [
+            313,
+            98
+          ],
+          "registeredCanvas": [
+            1254,
+            1254
+          ],
+          "translation": [
+            -10,
+            -2
+          ],
+          "anchor": [
+            16,
+            24
+          ],
+          "outputBodyBBox": [
+            9,
+            9,
+            24,
+            24
+          ],
+          "alphaBBox": [
+            5,
+            6,
+            30,
+            25
+          ],
+          "sha256": "fd560843408c143d63973514392dd49a559acdb684f1d3c36549452d89f63345",
+          "visiblePixels": 190,
+          "edgeAlphaNonzero": false
+        },
+        {
+          "path": "frames/map_fragment/ITEM_map_fragment_idle_v001_f02.png",
+          "sourceRect": [
+            627,
+            0,
+            627,
+            627
+          ],
+          "sourceSemanticAnchor": [
+            314.0,
+            529
+          ],
+          "sourceBodyBBox": [
+            135,
+            167,
+            493,
+            529
+          ],
+          "sourceAlphaBBox": [
+            0,
+            41,
+            615,
+            619
+          ],
+          "scaleNominal": 0.04198473282442748,
+          "scaleActual": [
+            0.04226475279106858,
+            0.04226475279106858
+          ],
+          "preResizeTranslation": [
+            313,
+            98
+          ],
+          "registeredCanvas": [
+            1254,
+            1254
+          ],
+          "translation": [
+            -10,
+            -2
+          ],
+          "anchor": [
+            16,
+            24
+          ],
+          "outputBodyBBox": [
+            9,
+            9,
+            24,
+            24
+          ],
+          "alphaBBox": [
+            6,
+            8,
+            24,
+            25
+          ],
+          "sha256": "aabb0fcc6adc4f8fd720a5e723a75f55b4f391b695b41a1f180cd6e310324b59",
+          "visiblePixels": 190,
+          "edgeAlphaNonzero": false
+        },
+        {
+          "path": "frames/map_fragment/ITEM_map_fragment_idle_v001_f03.png",
+          "sourceRect": [
+            0,
+            627,
+            627,
+            627
+          ],
+          "sourceSemanticAnchor": [
+            314.0,
+            529
+          ],
+          "sourceBodyBBox": [
+            135,
+            167,
+            493,
+            529
+          ],
+          "sourceAlphaBBox": [
+            0,
+            5,
+            627,
+            604
+          ],
+          "scaleNominal": 0.04198473282442748,
+          "scaleActual": [
+            0.04226475279106858,
+            0.04226475279106858
+          ],
+          "preResizeTranslation": [
+            313,
+            98
+          ],
+          "registeredCanvas": [
+            1254,
+            1254
+          ],
+          "translation": [
+            -10,
+            -2
+          ],
+          "anchor": [
+            16,
+            24
+          ],
+          "outputBodyBBox": [
+            9,
+            9,
+            24,
+            24
+          ],
+          "alphaBBox": [
+            6,
+            7,
+            28,
+            26
+          ],
+          "sha256": "6d5686297b81265637f788cea63a3acdd674444e91accd0cc97958997449b722",
+          "visiblePixels": 192,
+          "edgeAlphaNonzero": false
+        },
+        {
+          "path": "frames/map_fragment/ITEM_map_fragment_idle_v001_f04.png",
+          "sourceRect": [
+            627,
+            627,
+            627,
+            627
+          ],
+          "sourceSemanticAnchor": [
+            314.0,
+            529
+          ],
+          "sourceBodyBBox": [
+            135,
+            167,
+            493,
+            529
+          ],
+          "sourceAlphaBBox": [
+            3,
+            7,
+            609,
+            600
+          ],
+          "scaleNominal": 0.04198473282442748,
+          "scaleActual": [
+            0.04226475279106858,
+            0.04226475279106858
+          ],
+          "preResizeTranslation": [
+            313,
+            98
+          ],
+          "registeredCanvas": [
+            1254,
+            1254
+          ],
+          "translation": [
+            -10,
+            -2
+          ],
+          "anchor": [
+            16,
+            24
+          ],
+          "outputBodyBBox": [
+            9,
+            9,
+            24,
+            24
+          ],
+          "alphaBBox": [
+            6,
+            3,
+            25,
+            26
+          ],
+          "sha256": "56eeedad3027d386e5ceedf4eac347e15ec2d09e37ab613698dabb9e08faed3a",
+          "visiblePixels": 192,
+          "edgeAlphaNonzero": false
+        }
+      ],
+      "continuity": [
+        {
+          "from": 0,
+          "to": 1,
+          "alphaSilhouetteIoU": 1.0,
+          "meanPremultipliedDifference": 0.36478375204248353
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "alphaSilhouetteIoU": 0.9895833333333334,
+          "meanPremultipliedDifference": 0.7343188316993464
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "alphaSilhouetteIoU": 1.0,
+          "meanPremultipliedDifference": 0.3425462111928102
+        },
+        {
+          "from": 3,
+          "to": 0,
+          "alphaSilhouetteIoU": 0.9895833333333334,
+          "meanPremultipliedDifference": 0.6799377042483657
+        }
+      ],
+      "atlasRects": [
+        [
+          0,
+          352,
+          32,
+          32
+        ],
+        [
+          32,
+          352,
+          32,
+          32
+        ],
+        [
+          64,
+          352,
+          32,
+          32
+        ],
+        [
+          96,
+          352,
+          32,
+          32
+        ]
+      ],
+      "iconAtlasRect": [
+        264,
+        0,
+        24,
+        24
+      ]
+    },
+    {
+      "id": "ability_double_jump",
+      "trackingId": "OBJ-06 / ABL-01",
+      "name": "奶泡跃·二段跳",
+      "type": "ability",
+      "countsInTwelve": false,
+      "size": [
+        32,
+        32
+      ],
+      "anchor": [
+        16,
+        24
+      ],
+      "fps": 4,
+      "loop": true,
+      "frameOrder": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "icon": "icons/ITEM_ability_double_jump_icon_v001.png",
+      "iconSourceRect": [
+        147,
+        64,
+        521,
+        586
+      ],
+      "iconScale": 0.038314176245210725,
+      "sheet": "sheets/ITEM_ability_double_jump_idle_v001_sheet.png",
+      "source": "assets/RAW/items/ITM-B01/v001/fragments_ability/ITEM_ability_double_jump_idle_v001.png",
+      "sourceSHA256": "120786df19908398c86da9cb7a8b9403da99b026861d399ce89192f2e0a68c1f",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "prompt": "assets/RAW/items/ITM-B01/v001/fragments_ability/ITEM_ability_double_jump_idle_v001.prompt.txt",
+      "frames": [
+        {
+          "path": "frames/ability_double_jump/ITEM_ability_double_jump_idle_v001_f01.png",
+          "sourceRect": [
+            0,
+            0,
+            627,
+            627
+          ],
+          "sourceSemanticAnchor": [
+            324.0,
+            562
+          ],
+          "sourceBodyBBox": [
+            171,
+            88,
+            497,
+            562
+          ],
+          "sourceAlphaBBox": [
+            0,
+            24,
+            627,
+            627
+          ],
+          "scaleNominal": 0.03914590747330961,
+          "scaleActual": [
+            0.03907496012759171,
+            0.03907496012759171
+          ],
+          "preResizeTranslation": [
+            303,
+            65
+          ],
+          "registeredCanvas": [
+            1254,
+            1254
+          ],
+          "translation": [
+            -9,
+            -1
+          ],
+          "anchor": [
+            16,
+            24
+          ],
+          "outputBodyBBox": [
+            10,
+            5,
+            22,
+            24
+          ],
+          "alphaBBox": [
+            4,
+            4,
+            25,
+            25
+          ],
+          "sha256": "a0e41ef36fc148652f191a8fc8178288f84d9223aa0489c17327a912dd790853",
+          "visiblePixels": 112,
+          "edgeAlphaNonzero": false
+        },
+        {
+          "path": "frames/ability_double_jump/ITEM_ability_double_jump_idle_v001_f02.png",
+          "sourceRect": [
+            627,
+            0,
+            627,
+            627
+          ],
+          "sourceSemanticAnchor": [
+            324.0,
+            562
+          ],
+          "sourceBodyBBox": [
+            171,
+            88,
+            497,
+            562
+          ],
+          "sourceAlphaBBox": [
+            1,
+            21,
+            626,
+            627
+          ],
+          "scaleNominal": 0.03914590747330961,
+          "scaleActual": [
+            0.03907496012759171,
+            0.03907496012759171
+          ],
+          "preResizeTranslation": [
+            303,
+            65
+          ],
+          "registeredCanvas": [
+            1254,
+            1254
+          ],
+          "translation": [
+            -9,
+            -1
+          ],
+          "anchor": [
+            16,
+            24
+          ],
+          "outputBodyBBox": [
+            10,
+            5,
+            22,
+            24
+          ],
+          "alphaBBox": [
+            4,
+            5,
+            25,
+            26
+          ],
+          "sha256": "f2df84e95124c4f00cbc0d44862a1ca20869c36887bfc62d5070ec9ea54c8ec5",
+          "visiblePixels": 113,
+          "edgeAlphaNonzero": false
+        },
+        {
+          "path": "frames/ability_double_jump/ITEM_ability_double_jump_idle_v001_f03.png",
+          "sourceRect": [
+            0,
+            627,
+            627,
+            627
+          ],
+          "sourceSemanticAnchor": [
+            324.0,
+            562
+          ],
+          "sourceBodyBBox": [
+            171,
+            88,
+            502,
+            562
+          ],
+          "sourceAlphaBBox": [
+            0,
+            0,
+            627,
+            627
+          ],
+          "scaleNominal": 0.03914590747330961,
+          "scaleActual": [
+            0.03907496012759171,
+            0.03907496012759171
+          ],
+          "preResizeTranslation": [
+            303,
+            65
+          ],
+          "registeredCanvas": [
+            1254,
+            1254
+          ],
+          "translation": [
+            -9,
+            -1
+          ],
+          "anchor": [
+            16,
+            24
+          ],
+          "outputBodyBBox": [
+            10,
+            5,
+            22,
+            24
+          ],
+          "alphaBBox": [
+            7,
+            5,
+            23,
+            25
+          ],
+          "sha256": "effb776d867e970985a5d50aa4fcda0bb7242ef51e86c8d28704adf6f65d029f",
+          "visiblePixels": 113,
+          "edgeAlphaNonzero": false
+        },
+        {
+          "path": "frames/ability_double_jump/ITEM_ability_double_jump_idle_v001_f04.png",
+          "sourceRect": [
+            627,
+            627,
+            627,
+            627
+          ],
+          "sourceSemanticAnchor": [
+            324.0,
+            562
+          ],
+          "sourceBodyBBox": [
+            171,
+            88,
+            497,
+            562
+          ],
+          "sourceAlphaBBox": [
+            1,
+            0,
+            611,
+            627
+          ],
+          "scaleNominal": 0.03914590747330961,
+          "scaleActual": [
+            0.03907496012759171,
+            0.03907496012759171
+          ],
+          "preResizeTranslation": [
+            303,
+            65
+          ],
+          "registeredCanvas": [
+            1254,
+            1254
+          ],
+          "translation": [
+            -9,
+            -1
+          ],
+          "anchor": [
+            16,
+            24
+          ],
+          "outputBodyBBox": [
+            10,
+            5,
+            22,
+            24
+          ],
+          "alphaBBox": [
+            7,
+            4,
+            25,
+            25
+          ],
+          "sha256": "2a6c408db9d94460135cfaab9338370691b41c3028f0043b9fa29c6c1ffa68c0",
+          "visiblePixels": 112,
+          "edgeAlphaNonzero": false
+        }
+      ],
+      "continuity": [
+        {
+          "from": 0,
+          "to": 1,
+          "alphaSilhouetteIoU": 0.9911504424778761,
+          "meanPremultipliedDifference": 0.7567248774509805
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "alphaSilhouetteIoU": 1.0,
+          "meanPremultipliedDifference": 0.5970486111111111
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "alphaSilhouetteIoU": 0.9911504424778761,
+          "meanPremultipliedDifference": 0.8094771241830067
+        },
+        {
+          "from": 3,
+          "to": 0,
+          "alphaSilhouetteIoU": 1.0,
+          "meanPremultipliedDifference": 0.5344056372549021
+        }
+      ],
+      "atlasRects": [
+        [
+          0,
+          384,
+          32,
+          32
+        ],
+        [
+          32,
+          384,
+          32,
+          32
+        ],
+        [
+          64,
+          384,
+          32,
+          32
+        ],
+        [
+          96,
+          384,
+          32,
+          32
+        ]
+      ],
+      "iconAtlasRect": [
+        288,
+        0,
+        24,
+        24
+      ]
+    }
+  ],
+  "atlas": {
+    "file": "ITM-B01_v001_atlas.png",
+    "size": [
+      128,
+      416
+    ],
+    "grid": [
+      4,
+      13
+    ],
+    "trim": false,
+    "rotate": false
+  },
+  "iconAtlas": {
+    "file": "ITM-B01_v001_icons.png",
+    "size": [
+      312,
+      24
+    ]
+  }
+}

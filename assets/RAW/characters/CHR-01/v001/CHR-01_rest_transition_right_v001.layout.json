@@ -1,0 +1,46 @@
+{
+  "sourceId": "rest_transition",
+  "file": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_rest_transition_right_v001.png",
+  "columns": 4,
+  "rows": 2,
+  "calibration": {
+    "referenceCell": 0,
+    "targetStandingHeight": 40
+  },
+  "animations": [
+    {
+      "name": "rest_enter",
+      "label": "坐下",
+      "fps": 8,
+      "loop": false,
+      "anchorMode": "ground",
+      "cells": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "name": "rest_exit",
+      "label": "起身",
+      "fps": 8,
+      "loop": false,
+      "anchorMode": "ground",
+      "cells": [
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  ],
+  "anchors": {},
+  "notes": [
+    "Completes requested rest->get-up requirement from checklist.",
+    "Use same body scale across8; first cell standing fullheight determinesscale; explicitsourceanchors afteranalysis."
+  ],
+  "include": false,
+  "status": "superseded",
+  "supersededBy": "CHR-01_rest_cycle_right_v002.layout.json"
+}

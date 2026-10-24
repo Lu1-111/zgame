@@ -1,0 +1,62 @@
+{
+  "format": "nailong-raw-npc-single-v1",
+  "version": "v002",
+  "npc": {
+    "id": "NPC-S03",
+    "slug": "milk_mouse_engineer",
+    "name": "奶鼠工匠",
+    "role": "修理与提示",
+    "outfit": "#586c85",
+    "notes": "圆耳、护目镜、开口扳手",
+    "animations": {
+      "idle": {
+        "frames": 6,
+        "fps": 8,
+        "sheet": "NPC-S03/v002/NPC-S03_milk_mouse_engineer_idle_front_v002_sheet.png",
+        "loop": true,
+        "files": [
+          "NPC-S03/v002/frames/NPC-S03_milk_mouse_engineer_idle_front_v002_f01.png",
+          "NPC-S03/v002/frames/NPC-S03_milk_mouse_engineer_idle_front_v002_f02.png",
+          "NPC-S03/v002/frames/NPC-S03_milk_mouse_engineer_idle_front_v002_f03.png",
+          "NPC-S03/v002/frames/NPC-S03_milk_mouse_engineer_idle_front_v002_f04.png",
+          "NPC-S03/v002/frames/NPC-S03_milk_mouse_engineer_idle_front_v002_f05.png",
+          "NPC-S03/v002/frames/NPC-S03_milk_mouse_engineer_idle_front_v002_f06.png"
+        ]
+      },
+      "walk": {
+        "frames": 8,
+        "fps": 12,
+        "sheet": "NPC-S03/v002/NPC-S03_milk_mouse_engineer_walk_front_v002_sheet.png",
+        "loop": true,
+        "files": [
+          "NPC-S03/v002/frames/NPC-S03_milk_mouse_engineer_walk_front_v002_f01.png",
+          "NPC-S03/v002/frames/NPC-S03_milk_mouse_engineer_walk_front_v002_f02.png",
+          "NPC-S03/v002/frames/NPC-S03_milk_mouse_engineer_walk_front_v002_f03.png",
+          "NPC-S03/v002/frames/NPC-S03_milk_mouse_engineer_walk_front_v002_f04.png",
+          "NPC-S03/v002/frames/NPC-S03_milk_mouse_engineer_walk_front_v002_f05.png",
+          "NPC-S03/v002/frames/NPC-S03_milk_mouse_engineer_walk_front_v002_f06.png",
+          "NPC-S03/v002/frames/NPC-S03_milk_mouse_engineer_walk_front_v002_f07.png",
+          "NPC-S03/v002/frames/NPC-S03_milk_mouse_engineer_walk_front_v002_f08.png"
+        ]
+      },
+      "talk": {
+        "frames": 4,
+        "fps": 8,
+        "sheet": "NPC-S03/v002/NPC-S03_milk_mouse_engineer_talk_front_v002_sheet.png",
+        "loop": false,
+        "files": [
+          "NPC-S03/v002/frames/NPC-S03_milk_mouse_engineer_talk_front_v002_f01.png",
+          "NPC-S03/v002/frames/NPC-S03_milk_mouse_engineer_talk_front_v002_f02.png",
+          "NPC-S03/v002/frames/NPC-S03_milk_mouse_engineer_talk_front_v002_f03.png",
+          "NPC-S03/v002/frames/NPC-S03_milk_mouse_engineer_talk_front_v002_f04.png"
+        ]
+      }
+    },
+    "master": "NPC-S03/v002/NPC-S03_milk_mouse_engineer_master_front_v002.png",
+    "root": [
+      32,
+      58
+    ],
+    "reference": "assets/RAW/characters/CHR-01/v001/CHR-01_master_right_v001.png"
+  }
+}

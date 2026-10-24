@@ -1,0 +1,348 @@
+{
+  "id": "ENM-09_lantern_charge",
+  "name": "lantern_charge",
+  "enemyId": "ENM-09",
+  "gameEnemyId": "lamp_bug",
+  "label": "矿灯虫·灯能冲撞",
+  "sourcePath": "/home/lululu/zgame/assets/RAW/effects/ENM-B03/v001/ENM-09_lantern_charge_sheet_v001.png",
+  "promptPath": "/home/lululu/zgame/assets/RAW/effects/ENM-B03/v001/ENM-09_lantern_charge_sheet_v001.prompt.txt",
+  "generatedPath": "/home/lululu/.codex/generated_images/01a16cdb-4368-7a73-a021-7de070b80e42/exec-943a595e-1036-4c90-bf2b-9eddc0b24ca7.png",
+  "sourceColumns": 3,
+  "sourceRows": 2,
+  "sourceIndices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "sourceRects": [
+    [
+      0,
+      0,
+      512,
+      512
+    ],
+    [
+      512,
+      0,
+      512,
+      512
+    ],
+    [
+      1024,
+      0,
+      512,
+      512
+    ],
+    [
+      0,
+      512,
+      512,
+      512
+    ],
+    [
+      512,
+      512,
+      512,
+      512
+    ],
+    [
+      1024,
+      512,
+      512,
+      512
+    ]
+  ],
+  "sourceAnchors": [
+    [
+      256,
+      256
+    ],
+    [
+      256,
+      256
+    ],
+    [
+      256,
+      256
+    ],
+    [
+      256,
+      256
+    ],
+    [
+      256,
+      256
+    ],
+    [
+      256,
+      256
+    ]
+  ],
+  "target": [
+    96,
+    96
+  ],
+  "anchor": [
+    48,
+    48
+  ],
+  "scale": 0.15625,
+  "fps": 14,
+  "loop": false,
+  "kind": "effect",
+  "triggerAction": "attack",
+  "attachPoint": "attack_contact",
+  "triggerOffset": [
+    28,
+    -20
+  ],
+  "phases": [
+    "建立",
+    "峰值",
+    "扩张",
+    "碎裂",
+    "衰减",
+    "尾屑"
+  ],
+  "notes": [],
+  "frames": [
+    "frames/ENM-09_lantern_charge/ENM-09_lantern_charge_00.png",
+    "frames/ENM-09_lantern_charge/ENM-09_lantern_charge_01.png",
+    "frames/ENM-09_lantern_charge/ENM-09_lantern_charge_02.png",
+    "frames/ENM-09_lantern_charge/ENM-09_lantern_charge_03.png",
+    "frames/ENM-09_lantern_charge/ENM-09_lantern_charge_04.png",
+    "frames/ENM-09_lantern_charge/ENM-09_lantern_charge_05.png"
+  ],
+  "sheet": "sheets/ENM-09_lantern_charge.png",
+  "sheetRects": [
+    [
+      0,
+      0,
+      96,
+      96
+    ],
+    [
+      96,
+      0,
+      96,
+      96
+    ],
+    [
+      192,
+      0,
+      96,
+      96
+    ],
+    [
+      288,
+      0,
+      96,
+      96
+    ],
+    [
+      384,
+      0,
+      96,
+      96
+    ],
+    [
+      480,
+      0,
+      96,
+      96
+    ]
+  ],
+  "atlas": "atlas/ENM-09_lantern_charge.png",
+  "atlasColumns": 3,
+  "atlasRows": 2,
+  "atlasRects": [
+    [
+      0,
+      0,
+      96,
+      96
+    ],
+    [
+      96,
+      0,
+      96,
+      96
+    ],
+    [
+      192,
+      0,
+      96,
+      96
+    ],
+    [
+      0,
+      96,
+      96,
+      96
+    ],
+    [
+      96,
+      96,
+      96,
+      96
+    ],
+    [
+      192,
+      96,
+      96,
+      96
+    ]
+  ],
+  "sourceSize": [
+    1536,
+    1024
+  ],
+  "sourceSha256": "38b6f9666eb023a2c0a7b2e9cc1eead6bfc9bcc5e69df34878157bcb6fad25a0",
+  "sourceBatch": "/home/lululu/zgame/assets/RAW/effects/ENM-B03/v001/batch.json",
+  "frameCount": 6,
+  "frameDetails": [
+    {
+      "sourceRect": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "sourceAnchor": [
+        256,
+        256
+      ],
+      "offset": [
+        8,
+        8
+      ],
+      "alphaBBox": [
+        18,
+        15,
+        88,
+        88
+      ],
+      "sourceEdgeAlpha": 1
+    },
+    {
+      "sourceRect": [
+        512,
+        0,
+        512,
+        512
+      ],
+      "sourceAnchor": [
+        256,
+        256
+      ],
+      "offset": [
+        8,
+        8
+      ],
+      "alphaBBox": [
+        9,
+        15,
+        88,
+        88
+      ],
+      "sourceEdgeAlpha": 1
+    },
+    {
+      "sourceRect": [
+        1024,
+        0,
+        512,
+        512
+      ],
+      "sourceAnchor": [
+        256,
+        256
+      ],
+      "offset": [
+        8,
+        8
+      ],
+      "alphaBBox": [
+        8,
+        12,
+        86,
+        88
+      ],
+      "sourceEdgeAlpha": 1
+    },
+    {
+      "sourceRect": [
+        0,
+        512,
+        512,
+        512
+      ],
+      "sourceAnchor": [
+        256,
+        256
+      ],
+      "offset": [
+        8,
+        8
+      ],
+      "alphaBBox": [
+        13,
+        8,
+        88,
+        86
+      ],
+      "sourceEdgeAlpha": 1
+    },
+    {
+      "sourceRect": [
+        512,
+        512,
+        512,
+        512
+      ],
+      "sourceAnchor": [
+        256,
+        256
+      ],
+      "offset": [
+        8,
+        8
+      ],
+      "alphaBBox": [
+        8,
+        8,
+        88,
+        86
+      ],
+      "sourceEdgeAlpha": 1
+    },
+    {
+      "sourceRect": [
+        1024,
+        512,
+        512,
+        512
+      ],
+      "sourceAnchor": [
+        256,
+        256
+      ],
+      "offset": [
+        8,
+        8
+      ],
+      "alphaBBox": [
+        8,
+        8,
+        86,
+        76
+      ],
+      "sourceEdgeAlpha": 1
+    }
+  ],
+  "fadeStartNormalized": 0.65,
+  "loopBoundaryMeanDifference": 11.0
+}

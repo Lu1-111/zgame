@@ -1,0 +1,247 @@
+{
+  "id": "ELT-02_idle",
+  "name": "idle",
+  "enemyId": "ELT-02",
+  "gameEnemyId": "hive_guard",
+  "label": "蜂巢守卫 idle",
+  "sourcePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B03/v001/hive_guard/hive_guard_A_v002.png",
+  "sourceRects": [
+    [
+      0,
+      0,
+      314,
+      314
+    ],
+    [
+      314,
+      0,
+      313,
+      314
+    ],
+    [
+      627,
+      0,
+      313,
+      314
+    ],
+    [
+      940,
+      0,
+      314,
+      314
+    ]
+  ],
+  "sourceAnchors": [
+    [
+      200,
+      162
+    ],
+    [
+      200,
+      162
+    ],
+    [
+      200,
+      162
+    ],
+    [
+      200,
+      162
+    ]
+  ],
+  "sourceColumns": 4,
+  "sourceRows": 4,
+  "sourceIndices": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "target": [
+    120,
+    112
+  ],
+  "anchor": [
+    66,
+    56
+  ],
+  "scale": 0.32,
+  "fps": 8,
+  "loop": true,
+  "kind": "body",
+  "phases": [
+    "idle"
+  ],
+  "notes": [
+    "v002 generated transparent-gutter revision preserves identity and action order; fixed scale across whole enemy. Death final fade is component-driven."
+  ],
+  "promptPath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B03/v001/hive_guard/hive_guard_A_v002.prompt.txt",
+  "provenancePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B03/v001/hive_guard/hive_guard_A_v002.provenance.json",
+  "generationMode": "built-in image_gen",
+  "canvasExpansionReason": "统一透明扩展：原画布所有非零alpha并集[-16, -6, 96, 96]；全动作统一画布+2px边；保留源倍率、全部alpha与语义root。",
+  "frames": [
+    "frames/ELT-02_idle/ELT-02_idle_00.png",
+    "frames/ELT-02_idle/ELT-02_idle_01.png",
+    "frames/ELT-02_idle/ELT-02_idle_02.png",
+    "frames/ELT-02_idle/ELT-02_idle_03.png"
+  ],
+  "sheet": "sheets/ELT-02_idle.png",
+  "sheetRects": [
+    [
+      0,
+      0,
+      120,
+      112
+    ],
+    [
+      120,
+      0,
+      120,
+      112
+    ],
+    [
+      240,
+      0,
+      120,
+      112
+    ],
+    [
+      360,
+      0,
+      120,
+      112
+    ]
+  ],
+  "atlas": "atlas/ELT-02_idle.png",
+  "atlasColumns": 2,
+  "atlasRows": 2,
+  "atlasRects": [
+    [
+      0,
+      0,
+      120,
+      112
+    ],
+    [
+      120,
+      0,
+      120,
+      112
+    ],
+    [
+      0,
+      112,
+      120,
+      112
+    ],
+    [
+      120,
+      112,
+      120,
+      112
+    ]
+  ],
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "sourceSha256": "45464f30bfb26d82ac7eafe6b3a1742795eaaecd08eb00e3fcb47057db11cb6a",
+  "sourceBatch": "/home/lululu/zgame/assets/RAW/enemies/ENM-B03/v001/hive_guard/batch.json",
+  "frameCount": 4,
+  "frameDetails": [
+    {
+      "sourceRect": [
+        0,
+        0,
+        314,
+        314
+      ],
+      "sourceAnchor": [
+        200,
+        162
+      ],
+      "offset": [
+        2,
+        4
+      ],
+      "alphaBBox": [
+        7,
+        9,
+        102,
+        104
+      ],
+      "sourceEdgeAlpha": 1
+    },
+    {
+      "sourceRect": [
+        314,
+        0,
+        313,
+        314
+      ],
+      "sourceAnchor": [
+        200,
+        162
+      ],
+      "offset": [
+        2,
+        4
+      ],
+      "alphaBBox": [
+        2,
+        11,
+        101,
+        104
+      ],
+      "sourceEdgeAlpha": 1
+    },
+    {
+      "sourceRect": [
+        627,
+        0,
+        313,
+        314
+      ],
+      "sourceAnchor": [
+        200,
+        162
+      ],
+      "offset": [
+        2,
+        4
+      ],
+      "alphaBBox": [
+        2,
+        11,
+        102,
+        104
+      ],
+      "sourceEdgeAlpha": 1
+    },
+    {
+      "sourceRect": [
+        940,
+        0,
+        314,
+        314
+      ],
+      "sourceAnchor": [
+        200,
+        162
+      ],
+      "offset": [
+        2,
+        4
+      ],
+      "alphaBBox": [
+        2,
+        10,
+        85,
+        104
+      ],
+      "sourceEdgeAlpha": 1
+    }
+  ],
+  "fadeStartNormalized": 1.0,
+  "loopBoundaryMeanDifference": 13.333333333333334
+}

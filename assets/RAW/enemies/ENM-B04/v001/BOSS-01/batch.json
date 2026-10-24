@@ -1,0 +1,1395 @@
+{
+  "effects": [
+    {
+      "id": "BOSS-01_idle",
+      "enemyId": "BOSS-01",
+      "gameEnemyId": "honey_queen",
+      "label": "蜂蜜女王",
+      "name": "idle",
+      "kind": "body",
+      "generationMode": "built-in image_gen",
+      "sourcePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/BOSS-01/BOSS-01_actions_A.png",
+      "sourceRects": [
+        [
+          0,
+          0,
+          384,
+          246
+        ],
+        [
+          384,
+          0,
+          384,
+          246
+        ],
+        [
+          768,
+          0,
+          384,
+          246
+        ],
+        [
+          1152,
+          0,
+          384,
+          246
+        ]
+      ],
+      "sourceAnchors": [
+        [
+          230,
+          136
+        ],
+        [
+          230,
+          136
+        ],
+        [
+          230,
+          136
+        ],
+        [
+          230,
+          136
+        ]
+      ],
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "sourceSha256": "2d624a1b06611fe66a4c9cbb2c45ac12757da716359c57cbc3b7f33380c35c06",
+      "sourceBatch": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/BOSS-01/batch.json",
+      "promptPath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/BOSS-01/BOSS-01_A.prompt.txt",
+      "provenancePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/BOSS-01/provenance.json",
+      "target": [
+        176,
+        136
+      ],
+      "anchor": [
+        88,
+        68
+      ],
+      "rootType": "flying",
+      "scale": 0.36,
+      "fps": 8,
+      "loop": true,
+      "frameCount": 4,
+      "frames": [
+        "frames/BOSS-01_idle/BOSS-01_idle_00.png",
+        "frames/BOSS-01_idle/BOSS-01_idle_01.png",
+        "frames/BOSS-01_idle/BOSS-01_idle_02.png",
+        "frames/BOSS-01_idle/BOSS-01_idle_03.png"
+      ],
+      "sheet": "sheets/BOSS-01_idle.png",
+      "frameDetails": [
+        {
+          "sourceRect": [
+            0,
+            0,
+            384,
+            246
+          ],
+          "sourceAnchor": [
+            230,
+            136
+          ],
+          "offset": [
+            5,
+            19
+          ],
+          "alphaBBox": [
+            20,
+            25,
+            142,
+            107
+          ]
+        },
+        {
+          "sourceRect": [
+            384,
+            0,
+            384,
+            246
+          ],
+          "sourceAnchor": [
+            230,
+            136
+          ],
+          "offset": [
+            5,
+            19
+          ],
+          "alphaBBox": [
+            5,
+            25,
+            142,
+            108
+          ]
+        },
+        {
+          "sourceRect": [
+            768,
+            0,
+            384,
+            246
+          ],
+          "sourceAnchor": [
+            230,
+            136
+          ],
+          "offset": [
+            5,
+            19
+          ],
+          "alphaBBox": [
+            10,
+            24,
+            141,
+            107
+          ]
+        },
+        {
+          "sourceRect": [
+            1152,
+            0,
+            384,
+            246
+          ],
+          "sourceAnchor": [
+            230,
+            136
+          ],
+          "offset": [
+            5,
+            19
+          ],
+          "alphaBBox": [
+            5,
+            24,
+            126,
+            108
+          ]
+        }
+      ],
+      "fadeStartNormalized": 1.0,
+      "phases": [
+        "idle1",
+        "idle2",
+        "idle3",
+        "idle4"
+      ]
+    },
+    {
+      "id": "BOSS-01_move",
+      "enemyId": "BOSS-01",
+      "gameEnemyId": "honey_queen",
+      "label": "蜂蜜女王",
+      "name": "move",
+      "kind": "body",
+      "generationMode": "built-in image_gen",
+      "sourcePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/BOSS-01/BOSS-01_actions_A.png",
+      "sourceRects": [
+        [
+          0,
+          246,
+          384,
+          260
+        ],
+        [
+          384,
+          246,
+          384,
+          260
+        ],
+        [
+          768,
+          246,
+          384,
+          260
+        ],
+        [
+          1152,
+          246,
+          384,
+          260
+        ]
+      ],
+      "sourceAnchors": [
+        [
+          230,
+          146
+        ],
+        [
+          230,
+          146
+        ],
+        [
+          230,
+          146
+        ],
+        [
+          230,
+          146
+        ]
+      ],
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "sourceSha256": "2d624a1b06611fe66a4c9cbb2c45ac12757da716359c57cbc3b7f33380c35c06",
+      "sourceBatch": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/BOSS-01/batch.json",
+      "promptPath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/BOSS-01/BOSS-01_A.prompt.txt",
+      "provenancePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/BOSS-01/provenance.json",
+      "target": [
+        176,
+        136
+      ],
+      "anchor": [
+        88,
+        68
+      ],
+      "rootType": "flying",
+      "scale": 0.36,
+      "fps": 10,
+      "loop": true,
+      "frameCount": 4,
+      "frames": [
+        "frames/BOSS-01_move/BOSS-01_move_00.png",
+        "frames/BOSS-01_move/BOSS-01_move_01.png",
+        "frames/BOSS-01_move/BOSS-01_move_02.png",
+        "frames/BOSS-01_move/BOSS-01_move_03.png"
+      ],
+      "sheet": "sheets/BOSS-01_move.png",
+      "frameDetails": [
+        {
+          "sourceRect": [
+            0,
+            246,
+            384,
+            260
+          ],
+          "sourceAnchor": [
+            230,
+            146
+          ],
+          "offset": [
+            5,
+            16
+          ],
+          "alphaBBox": [
+            21,
+            17,
+            137,
+            110
+          ]
+        },
+        {
+          "sourceRect": [
+            384,
+            246,
+            384,
+            260
+          ],
+          "sourceAnchor": [
+            230,
+            146
+          ],
+          "offset": [
+            5,
+            16
+          ],
+          "alphaBBox": [
+            13,
+            16,
+            142,
+            107
+          ]
+        },
+        {
+          "sourceRect": [
+            768,
+            246,
+            384,
+            260
+          ],
+          "sourceAnchor": [
+            230,
+            146
+          ],
+          "offset": [
+            5,
+            16
+          ],
+          "alphaBBox": [
+            5,
+            16,
+            137,
+            110
+          ]
+        },
+        {
+          "sourceRect": [
+            1152,
+            246,
+            384,
+            260
+          ],
+          "sourceAnchor": [
+            230,
+            146
+          ],
+          "offset": [
+            5,
+            16
+          ],
+          "alphaBBox": [
+            8,
+            16,
+            131,
+            109
+          ]
+        }
+      ],
+      "fadeStartNormalized": 1.0,
+      "phases": [
+        "move1",
+        "move2",
+        "move3",
+        "move4"
+      ]
+    },
+    {
+      "id": "BOSS-01_telegraph",
+      "enemyId": "BOSS-01",
+      "gameEnemyId": "honey_queen",
+      "label": "蜂蜜女王",
+      "name": "telegraph",
+      "kind": "body",
+      "generationMode": "built-in image_gen",
+      "sourcePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/BOSS-01/BOSS-01_actions_A.png",
+      "sourceRects": [
+        [
+          0,
+          506,
+          384,
+          232
+        ],
+        [
+          384,
+          506,
+          384,
+          232
+        ],
+        [
+          768,
+          506,
+          384,
+          232
+        ],
+        [
+          1152,
+          506,
+          384,
+          232
+        ]
+      ],
+      "sourceAnchors": [
+        [
+          230,
+          142
+        ],
+        [
+          230,
+          142
+        ],
+        [
+          230,
+          142
+        ],
+        [
+          230,
+          142
+        ]
+      ],
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "sourceSha256": "2d624a1b06611fe66a4c9cbb2c45ac12757da716359c57cbc3b7f33380c35c06",
+      "sourceBatch": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/BOSS-01/batch.json",
+      "promptPath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/BOSS-01/BOSS-01_A.prompt.txt",
+      "provenancePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/BOSS-01/provenance.json",
+      "target": [
+        176,
+        136
+      ],
+      "anchor": [
+        88,
+        68
+      ],
+      "rootType": "flying",
+      "scale": 0.36,
+      "fps": 10,
+      "loop": false,
+      "frameCount": 4,
+      "frames": [
+        "frames/BOSS-01_telegraph/BOSS-01_telegraph_00.png",
+        "frames/BOSS-01_telegraph/BOSS-01_telegraph_01.png",
+        "frames/BOSS-01_telegraph/BOSS-01_telegraph_02.png",
+        "frames/BOSS-01_telegraph/BOSS-01_telegraph_03.png"
+      ],
+      "sheet": "sheets/BOSS-01_telegraph.png",
+      "frameDetails": [
+        {
+          "sourceRect": [
+            0,
+            506,
+            384,
+            232
+          ],
+          "sourceAnchor": [
+            230,
+            142
+          ],
+          "offset": [
+            5,
+            17
+          ],
+          "alphaBBox": [
+            20,
+            17,
+            142,
+            101
+          ]
+        },
+        {
+          "sourceRect": [
+            384,
+            506,
+            384,
+            232
+          ],
+          "sourceAnchor": [
+            230,
+            142
+          ],
+          "offset": [
+            5,
+            17
+          ],
+          "alphaBBox": [
+            8,
+            18,
+            142,
+            101
+          ]
+        },
+        {
+          "sourceRect": [
+            768,
+            506,
+            384,
+            232
+          ],
+          "sourceAnchor": [
+            230,
+            142
+          ],
+          "offset": [
+            5,
+            17
+          ],
+          "alphaBBox": [
+            5,
+            17,
+            141,
+            101
+          ]
+        },
+        {
+          "sourceRect": [
+            1152,
+            506,
+            384,
+            232
+          ],
+          "sourceAnchor": [
+            230,
+            142
+          ],
+          "offset": [
+            5,
+            17
+          ],
+          "alphaBBox": [
+            8,
+            17,
+            126,
+            101
+          ]
+        }
+      ],
+      "fadeStartNormalized": 1.0,
+      "phases": [
+        "telegraph1",
+        "telegraph2",
+        "telegraph3",
+        "telegraph4"
+      ]
+    },
+    {
+      "id": "BOSS-01_attack",
+      "enemyId": "BOSS-01",
+      "gameEnemyId": "honey_queen",
+      "label": "蜂蜜女王",
+      "name": "attack",
+      "kind": "body",
+      "generationMode": "built-in image_gen",
+      "sourcePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/BOSS-01/BOSS-01_actions_A.png",
+      "sourceRects": [
+        [
+          0,
+          738,
+          384,
+          286
+        ],
+        [
+          384,
+          738,
+          376,
+          286
+        ],
+        [
+          760,
+          738,
+          408,
+          286
+        ],
+        [
+          1168,
+          738,
+          368,
+          286
+        ]
+      ],
+      "sourceAnchors": [
+        [
+          230,
+          166
+        ],
+        [
+          230,
+          166
+        ],
+        [
+          238,
+          166
+        ],
+        [
+          214,
+          166
+        ]
+      ],
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "sourceSha256": "2d624a1b06611fe66a4c9cbb2c45ac12757da716359c57cbc3b7f33380c35c06",
+      "sourceBatch": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/BOSS-01/batch.json",
+      "promptPath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/BOSS-01/BOSS-01_A.prompt.txt",
+      "provenancePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/BOSS-01/provenance.json",
+      "target": [
+        176,
+        136
+      ],
+      "anchor": [
+        88,
+        68
+      ],
+      "rootType": "flying",
+      "scale": 0.36,
+      "fps": 14,
+      "loop": false,
+      "frameCount": 4,
+      "frames": [
+        "frames/BOSS-01_attack/BOSS-01_attack_00.png",
+        "frames/BOSS-01_attack/BOSS-01_attack_01.png",
+        "frames/BOSS-01_attack/BOSS-01_attack_02.png",
+        "frames/BOSS-01_attack/BOSS-01_attack_03.png"
+      ],
+      "sheet": "sheets/BOSS-01_attack.png",
+      "frameDetails": [
+        {
+          "sourceRect": [
+            0,
+            738,
+            384,
+            286
+          ],
+          "sourceAnchor": [
+            230,
+            166
+          ],
+          "offset": [
+            5,
+            8
+          ],
+          "alphaBBox": [
+            5,
+            11,
+            138,
+            99
+          ]
+        },
+        {
+          "sourceRect": [
+            384,
+            738,
+            376,
+            286
+          ],
+          "sourceAnchor": [
+            230,
+            166
+          ],
+          "offset": [
+            5,
+            8
+          ],
+          "alphaBBox": [
+            8,
+            8,
+            138,
+            94
+          ]
+        },
+        {
+          "sourceRect": [
+            760,
+            738,
+            408,
+            286
+          ],
+          "sourceAnchor": [
+            238,
+            166
+          ],
+          "offset": [
+            2,
+            8
+          ],
+          "alphaBBox": [
+            2,
+            8,
+            149,
+            94
+          ]
+        },
+        {
+          "sourceRect": [
+            1168,
+            738,
+            368,
+            286
+          ],
+          "sourceAnchor": [
+            214,
+            166
+          ],
+          "offset": [
+            11,
+            8
+          ],
+          "alphaBBox": [
+            14,
+            8,
+            143,
+            104
+          ]
+        }
+      ],
+      "fadeStartNormalized": 1.0,
+      "phases": [
+        "attack1",
+        "attack2",
+        "attack3",
+        "attack4"
+      ]
+    },
+    {
+      "id": "BOSS-01_recover",
+      "enemyId": "BOSS-01",
+      "gameEnemyId": "honey_queen",
+      "label": "蜂蜜女王",
+      "name": "recover",
+      "kind": "body",
+      "generationMode": "built-in image_gen",
+      "sourcePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/BOSS-01/BOSS-01_actions_B.png",
+      "sourceRects": [
+        [
+          0,
+          0,
+          382,
+          256
+        ],
+        [
+          382,
+          0,
+          386,
+          256
+        ],
+        [
+          768,
+          0,
+          386,
+          256
+        ],
+        [
+          1154,
+          0,
+          382,
+          256
+        ]
+      ],
+      "sourceAnchors": [
+        [
+          230,
+          136
+        ],
+        [
+          232,
+          136
+        ],
+        [
+          230,
+          136
+        ],
+        [
+          228,
+          136
+        ]
+      ],
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "sourceSha256": "8cbc2b63d1c4088d83f83c3506e7e75f5939f4451ff4eee45061d3b81df48c51",
+      "sourceBatch": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/BOSS-01/batch.json",
+      "promptPath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/BOSS-01/BOSS-01_B_retry.prompt.txt",
+      "provenancePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/BOSS-01/provenance.json",
+      "target": [
+        176,
+        136
+      ],
+      "anchor": [
+        88,
+        68
+      ],
+      "rootType": "flying",
+      "scale": 0.36,
+      "fps": 10,
+      "loop": false,
+      "frameCount": 4,
+      "frames": [
+        "frames/BOSS-01_recover/BOSS-01_recover_00.png",
+        "frames/BOSS-01_recover/BOSS-01_recover_01.png",
+        "frames/BOSS-01_recover/BOSS-01_recover_02.png",
+        "frames/BOSS-01_recover/BOSS-01_recover_03.png"
+      ],
+      "sheet": "sheets/BOSS-01_recover.png",
+      "frameDetails": [
+        {
+          "sourceRect": [
+            0,
+            0,
+            382,
+            256
+          ],
+          "sourceAnchor": [
+            230,
+            136
+          ],
+          "offset": [
+            5,
+            19
+          ],
+          "alphaBBox": [
+            10,
+            19,
+            143,
+            111
+          ]
+        },
+        {
+          "sourceRect": [
+            382,
+            0,
+            386,
+            256
+          ],
+          "sourceAnchor": [
+            232,
+            136
+          ],
+          "offset": [
+            4,
+            19
+          ],
+          "alphaBBox": [
+            4,
+            24,
+            142,
+            110
+          ]
+        },
+        {
+          "sourceRect": [
+            768,
+            0,
+            386,
+            256
+          ],
+          "sourceAnchor": [
+            230,
+            136
+          ],
+          "offset": [
+            5,
+            19
+          ],
+          "alphaBBox": [
+            5,
+            22,
+            144,
+            110
+          ]
+        },
+        {
+          "sourceRect": [
+            1154,
+            0,
+            382,
+            256
+          ],
+          "sourceAnchor": [
+            228,
+            136
+          ],
+          "offset": [
+            6,
+            19
+          ],
+          "alphaBBox": [
+            9,
+            19,
+            139,
+            111
+          ]
+        }
+      ],
+      "fadeStartNormalized": 1.0,
+      "phases": [
+        "recover1",
+        "recover2",
+        "recover3",
+        "recover4"
+      ]
+    },
+    {
+      "id": "BOSS-01_hurt",
+      "enemyId": "BOSS-01",
+      "gameEnemyId": "honey_queen",
+      "label": "蜂蜜女王",
+      "name": "hurt",
+      "kind": "body",
+      "generationMode": "built-in image_gen",
+      "sourcePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/BOSS-01/BOSS-01_actions_B.png",
+      "sourceRects": [
+        [
+          0,
+          256,
+          384,
+          268
+        ],
+        [
+          384,
+          256,
+          386,
+          268
+        ],
+        [
+          770,
+          256,
+          382,
+          268
+        ],
+        [
+          1152,
+          256,
+          384,
+          268
+        ]
+      ],
+      "sourceAnchors": [
+        [
+          230,
+          136
+        ],
+        [
+          230,
+          136
+        ],
+        [
+          228,
+          136
+        ],
+        [
+          230,
+          136
+        ]
+      ],
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "sourceSha256": "8cbc2b63d1c4088d83f83c3506e7e75f5939f4451ff4eee45061d3b81df48c51",
+      "sourceBatch": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/BOSS-01/batch.json",
+      "promptPath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/BOSS-01/BOSS-01_B_retry.prompt.txt",
+      "provenancePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/BOSS-01/provenance.json",
+      "target": [
+        176,
+        136
+      ],
+      "anchor": [
+        88,
+        68
+      ],
+      "rootType": "flying",
+      "scale": 0.36,
+      "fps": 12,
+      "loop": false,
+      "frameCount": 4,
+      "frames": [
+        "frames/BOSS-01_hurt/BOSS-01_hurt_00.png",
+        "frames/BOSS-01_hurt/BOSS-01_hurt_01.png",
+        "frames/BOSS-01_hurt/BOSS-01_hurt_02.png",
+        "frames/BOSS-01_hurt/BOSS-01_hurt_03.png"
+      ],
+      "sheet": "sheets/BOSS-01_hurt.png",
+      "frameDetails": [
+        {
+          "sourceRect": [
+            0,
+            256,
+            384,
+            268
+          ],
+          "sourceAnchor": [
+            230,
+            136
+          ],
+          "offset": [
+            5,
+            19
+          ],
+          "alphaBBox": [
+            5,
+            19,
+            141,
+            114
+          ]
+        },
+        {
+          "sourceRect": [
+            384,
+            256,
+            386,
+            268
+          ],
+          "sourceAnchor": [
+            230,
+            136
+          ],
+          "offset": [
+            5,
+            19
+          ],
+          "alphaBBox": [
+            5,
+            22,
+            144,
+            114
+          ]
+        },
+        {
+          "sourceRect": [
+            770,
+            256,
+            382,
+            268
+          ],
+          "sourceAnchor": [
+            228,
+            136
+          ],
+          "offset": [
+            6,
+            19
+          ],
+          "alphaBBox": [
+            14,
+            19,
+            143,
+            115
+          ]
+        },
+        {
+          "sourceRect": [
+            1152,
+            256,
+            384,
+            268
+          ],
+          "sourceAnchor": [
+            230,
+            136
+          ],
+          "offset": [
+            5,
+            19
+          ],
+          "alphaBBox": [
+            5,
+            19,
+            137,
+            115
+          ]
+        }
+      ],
+      "fadeStartNormalized": 1.0,
+      "phases": [
+        "hurt1",
+        "hurt2",
+        "hurt3",
+        "hurt4"
+      ]
+    },
+    {
+      "id": "BOSS-01_death",
+      "enemyId": "BOSS-01",
+      "gameEnemyId": "honey_queen",
+      "label": "蜂蜜女王",
+      "name": "death",
+      "kind": "body",
+      "generationMode": "built-in image_gen",
+      "sourcePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/BOSS-01/BOSS-01_actions_B.png",
+      "sourceRects": [
+        [
+          0,
+          524,
+          390,
+          250
+        ],
+        [
+          390,
+          524,
+          380,
+          250
+        ],
+        [
+          770,
+          524,
+          386,
+          250
+        ],
+        [
+          1156,
+          524,
+          380,
+          250
+        ],
+        [
+          0,
+          774,
+          386,
+          250
+        ],
+        [
+          386,
+          774,
+          386,
+          250
+        ],
+        [
+          772,
+          774,
+          380,
+          250
+        ],
+        [
+          1152,
+          774,
+          384,
+          250
+        ]
+      ],
+      "sourceAnchors": [
+        [
+          230,
+          124
+        ],
+        [
+          224,
+          124
+        ],
+        [
+          228,
+          124
+        ],
+        [
+          226,
+          124
+        ],
+        [
+          230,
+          130
+        ],
+        [
+          228,
+          130
+        ],
+        [
+          226,
+          130
+        ],
+        [
+          230,
+          130
+        ]
+      ],
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "sourceSha256": "8cbc2b63d1c4088d83f83c3506e7e75f5939f4451ff4eee45061d3b81df48c51",
+      "sourceBatch": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/BOSS-01/batch.json",
+      "promptPath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/BOSS-01/BOSS-01_B_retry.prompt.txt",
+      "provenancePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/BOSS-01/provenance.json",
+      "target": [
+        176,
+        136
+      ],
+      "anchor": [
+        88,
+        68
+      ],
+      "rootType": "flying",
+      "scale": 0.36,
+      "fps": 10,
+      "loop": false,
+      "frameCount": 8,
+      "frames": [
+        "frames/BOSS-01_death/BOSS-01_death_00.png",
+        "frames/BOSS-01_death/BOSS-01_death_01.png",
+        "frames/BOSS-01_death/BOSS-01_death_02.png",
+        "frames/BOSS-01_death/BOSS-01_death_03.png",
+        "frames/BOSS-01_death/BOSS-01_death_04.png",
+        "frames/BOSS-01_death/BOSS-01_death_05.png",
+        "frames/BOSS-01_death/BOSS-01_death_06.png",
+        "frames/BOSS-01_death/BOSS-01_death_07.png"
+      ],
+      "sheet": "sheets/BOSS-01_death.png",
+      "frameDetails": [
+        {
+          "sourceRect": [
+            0,
+            524,
+            390,
+            250
+          ],
+          "sourceAnchor": [
+            230,
+            124
+          ],
+          "offset": [
+            5,
+            23
+          ],
+          "alphaBBox": [
+            13,
+            23,
+            145,
+            113
+          ]
+        },
+        {
+          "sourceRect": [
+            390,
+            524,
+            380,
+            250
+          ],
+          "sourceAnchor": [
+            224,
+            124
+          ],
+          "offset": [
+            7,
+            23
+          ],
+          "alphaBBox": [
+            7,
+            24,
+            143,
+            113
+          ]
+        },
+        {
+          "sourceRect": [
+            770,
+            524,
+            386,
+            250
+          ],
+          "sourceAnchor": [
+            228,
+            124
+          ],
+          "offset": [
+            6,
+            23
+          ],
+          "alphaBBox": [
+            9,
+            23,
+            144,
+            111
+          ]
+        },
+        {
+          "sourceRect": [
+            1156,
+            524,
+            380,
+            250
+          ],
+          "sourceAnchor": [
+            226,
+            124
+          ],
+          "offset": [
+            6,
+            23
+          ],
+          "alphaBBox": [
+            6,
+            23,
+            138,
+            112
+          ]
+        },
+        {
+          "sourceRect": [
+            0,
+            774,
+            386,
+            250
+          ],
+          "sourceAnchor": [
+            230,
+            130
+          ],
+          "offset": [
+            5,
+            21
+          ],
+          "alphaBBox": [
+            14,
+            21,
+            143,
+            107
+          ]
+        },
+        {
+          "sourceRect": [
+            386,
+            774,
+            386,
+            250
+          ],
+          "sourceAnchor": [
+            228,
+            130
+          ],
+          "offset": [
+            6,
+            21
+          ],
+          "alphaBBox": [
+            9,
+            21,
+            145,
+            107
+          ]
+        },
+        {
+          "sourceRect": [
+            772,
+            774,
+            380,
+            250
+          ],
+          "sourceAnchor": [
+            226,
+            130
+          ],
+          "offset": [
+            6,
+            21
+          ],
+          "alphaBBox": [
+            6,
+            24,
+            142,
+            105
+          ]
+        },
+        {
+          "sourceRect": [
+            1152,
+            774,
+            384,
+            250
+          ],
+          "sourceAnchor": [
+            230,
+            130
+          ],
+          "offset": [
+            5,
+            21
+          ],
+          "alphaBBox": [
+            5,
+            26,
+            137,
+            106
+          ]
+        }
+      ],
+      "fadeStartNormalized": 0.65,
+      "phases": [
+        "death1",
+        "death2",
+        "death3",
+        "death4",
+        "death5",
+        "death6",
+        "death7",
+        "death8"
+      ]
+    }
+  ],
+  "anchorPolicy": "fixed semantic joint, fixed enemy scale, nearest sampling only; source grid separators located in transparent gutters",
+  "generator": "built-in image_gen"
+}

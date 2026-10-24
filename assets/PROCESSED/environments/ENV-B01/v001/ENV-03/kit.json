@@ -1,0 +1,108 @@
+{
+  "id": "ENV-03",
+  "name": "蜜乳洞窟",
+  "region": "cave",
+  "tile_size": 16,
+  "terrain": "terrain.png",
+  "background": "background.png",
+  "props": [
+    {
+      "id": "crystal_cluster",
+      "path": "props/crystal_cluster.png",
+      "width": 64,
+      "height": 64,
+      "anchor": [
+        32,
+        64
+      ],
+      "placement": "floor",
+      "raw_crop": [
+        80,
+        650,
+        440,
+        985
+      ]
+    },
+    {
+      "id": "glow_roots",
+      "path": "props/glow_roots.png",
+      "width": 64,
+      "height": 80,
+      "anchor": [
+        32,
+        0
+      ],
+      "placement": "ceiling",
+      "raw_crop": [
+        540,
+        640,
+        980,
+        1040
+      ]
+    },
+    {
+      "id": "hidden_crevice",
+      "path": "props/hidden_crevice.png",
+      "width": 64,
+      "height": 112,
+      "anchor": [
+        32,
+        112
+      ],
+      "placement": "floor",
+      "raw_crop": [
+        100,
+        985,
+        450,
+        1536
+      ]
+    },
+    {
+      "id": "acid_rim",
+      "path": "props/acid_rim.png",
+      "width": 112,
+      "height": 64,
+      "anchor": [
+        56,
+        64
+      ],
+      "placement": "floor",
+      "raw_crop": [
+        525,
+        1130,
+        1024,
+        1536
+      ]
+    }
+  ],
+  "terrain_layout": {
+    "top_left": 0,
+    "top": 1,
+    "top_right": 2,
+    "left": 3,
+    "center": 4,
+    "right": 5,
+    "bottom_left": 6,
+    "bottom": 7,
+    "bottom_right": 8,
+    "single": 9,
+    "thin_left": 10,
+    "thin_mid": 11,
+    "thin_right": 12,
+    "inner_left": 13,
+    "inner_right": 14,
+    "transition": 15
+  },
+  "raw_sources": [
+    "assets/RAW/environments/ENV-B01/v001/ENV-03/terrain.png",
+    "assets/RAW/environments/ENV-B01/v001/ENV-03/scenery.png"
+  ],
+  "processing": [
+    "Fixed raw crop coordinates recorded in work/env_b01/cave/process.py",
+    "Nearest-neighbor normalization to native logical pixels",
+    "9-slice border strips copied from generated terrain source; shared edges copied for deterministic joins",
+    "Reduced fixed palette; no procedural substitute art",
+    "Prop alpha threshold 128 and fitted aspect-preserving canvas",
+    "Background exact 16:9 extraction, nearest scale, contrast reduction and boundary-column calibration"
+  ]
+}

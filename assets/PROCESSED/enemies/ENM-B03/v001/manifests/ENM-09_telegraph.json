@@ -1,0 +1,239 @@
+{
+  "id": "ENM-09_telegraph",
+  "name": "telegraph",
+  "enemyId": "ENM-09",
+  "gameEnemyId": "lamp_bug",
+  "label": "telegraph",
+  "sourcePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B03/v001/ENM-09/ENM-09_actions_A.png",
+  "sourceRects": [
+    [
+      0,
+      627,
+      314,
+      313
+    ],
+    [
+      314,
+      627,
+      313,
+      313
+    ],
+    [
+      627,
+      627,
+      313,
+      313
+    ],
+    [
+      940,
+      627,
+      314,
+      313
+    ]
+  ],
+  "sourceAnchors": [
+    [
+      210,
+      199
+    ],
+    [
+      210,
+      199
+    ],
+    [
+      210,
+      199
+    ],
+    [
+      210,
+      199
+    ]
+  ],
+  "target": [
+    72,
+    72
+  ],
+  "anchor": [
+    36,
+    35
+  ],
+  "scale": 0.16,
+  "fps": 10,
+  "loop": false,
+  "kind": "body",
+  "phases": [
+    "telegraph1",
+    "telegraph2",
+    "telegraph3",
+    "telegraph4"
+  ],
+  "promptPath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B03/v001/ENM-09/ENM-09_A_repair.prompt.txt",
+  "provenancePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B03/v001/ENM-09/provenance.json",
+  "generationMode": "built-in image_gen",
+  "canvasExpansionReason": "统一透明扩展：原画布所有非零alpha并集[-2, -1, 64, 64]；全动作统一画布+2px边；保留源倍率、全部alpha与语义root。",
+  "frames": [
+    "frames/ENM-09_telegraph/ENM-09_telegraph_00.png",
+    "frames/ENM-09_telegraph/ENM-09_telegraph_01.png",
+    "frames/ENM-09_telegraph/ENM-09_telegraph_02.png",
+    "frames/ENM-09_telegraph/ENM-09_telegraph_03.png"
+  ],
+  "sheet": "sheets/ENM-09_telegraph.png",
+  "sheetRects": [
+    [
+      0,
+      0,
+      72,
+      72
+    ],
+    [
+      72,
+      0,
+      72,
+      72
+    ],
+    [
+      144,
+      0,
+      72,
+      72
+    ],
+    [
+      216,
+      0,
+      72,
+      72
+    ]
+  ],
+  "atlas": "atlas/ENM-09_telegraph.png",
+  "atlasColumns": 2,
+  "atlasRows": 2,
+  "atlasRects": [
+    [
+      0,
+      0,
+      72,
+      72
+    ],
+    [
+      72,
+      0,
+      72,
+      72
+    ],
+    [
+      0,
+      72,
+      72,
+      72
+    ],
+    [
+      72,
+      72,
+      72,
+      72
+    ]
+  ],
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "sourceSha256": "ffb2e531fd4d6dbdcbc2e15e707742251a12b7f326fb081abaa909d0b1d154ac",
+  "sourceBatch": "/home/lululu/zgame/assets/RAW/enemies/ENM-B03/v001/ENM-09/batch.json",
+  "frameCount": 4,
+  "frameDetails": [
+    {
+      "sourceRect": [
+        0,
+        627,
+        314,
+        313
+      ],
+      "sourceAnchor": [
+        210,
+        199
+      ],
+      "offset": [
+        2,
+        3
+      ],
+      "alphaBBox": [
+        2,
+        3,
+        52,
+        53
+      ],
+      "sourceEdgeAlpha": 1
+    },
+    {
+      "sourceRect": [
+        314,
+        627,
+        313,
+        313
+      ],
+      "sourceAnchor": [
+        210,
+        199
+      ],
+      "offset": [
+        2,
+        3
+      ],
+      "alphaBBox": [
+        2,
+        3,
+        52,
+        53
+      ],
+      "sourceEdgeAlpha": 2
+    },
+    {
+      "sourceRect": [
+        627,
+        627,
+        313,
+        313
+      ],
+      "sourceAnchor": [
+        210,
+        199
+      ],
+      "offset": [
+        2,
+        3
+      ],
+      "alphaBBox": [
+        2,
+        3,
+        52,
+        53
+      ],
+      "sourceEdgeAlpha": 1
+    },
+    {
+      "sourceRect": [
+        940,
+        627,
+        314,
+        313
+      ],
+      "sourceAnchor": [
+        210,
+        199
+      ],
+      "offset": [
+        2,
+        3
+      ],
+      "alphaBBox": [
+        2,
+        3,
+        47,
+        53
+      ],
+      "sourceEdgeAlpha": 1
+    }
+  ],
+  "fadeStartNormalized": 1.0,
+  "loopBoundaryMeanDifference": 9.0
+}

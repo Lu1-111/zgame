@@ -1,0 +1,13 @@
+Use case: stylized-concept.
+Asset type: exact-grid 6-frame combat VFX animation sprite sheet for a 2D side-scrolling milk-fantasy pixel-art game.
+Canvas: landscape 1536 x 1024 PNG, TRUE transparent alpha, exactly 3 equal columns and 2 equal rows, six invisible 512 x 512 cells; read left-to-right then top-to-bottom. No visible boundaries, background, checkerboard, labels, text or numbers.
+Critical immutable anchors: each effect originates at its cell center (256,256). Global frame centers: (256,256),(768,256),(1280,256),(256,768),(768,768),(1280,768). Do not auto-center moving particles; all motion evolves around the fixed anchor. All particles remain inside radius 190 pixels from their origin, with ample transparent margins.
+Pixel style: each cell is conceptually 64 x 64 logical pixels enlarged exactly 8x nearest-neighbor. Chunky square blocks aligned to an 8px grid, hard stair-step edges, flat colors, no antialiasing, no blurred glow, no gradients or painterly texture. Tight palette milk-white #fff7df, pale cyan #9ae5db, muted teal #57bcb5, honey gold #e9b85a. Only the independent effect, no characters, weapon bodies, scene, shield prop, letters or numbers.
+Six consecutive frames of ONE short animation, not six icons. Frame 1 small seed, frame 2 peak, frame 3 expansion, frame 4 fragmentation, frame 5 decay, frame 6 nearly empty faint residue. Track the SAME components along coherent trajectories across all frames; motion continuous, no random replacement shapes. Alpha must genuinely vanish outside pixels; no hidden cloudy wash.
+Primary request: MAGIC HIT — milk-white and pale-cyan circular bubble bursting, readable and compact.
+Frame 1 a very small milk-white/cyan bubble seed centered on anchor.
+Frame 2 a clean cyan circular bubble rim at maximum brightness with small milk-white top-left reflection, radius about 88 source pixels.
+Frame 3 the same bubble expands to radius about 120 pixels, ring develops 4 aligned gaps, reflection splits.
+Frame 4 same ring cracks into 6 curved chunky cyan/cream fragments travelling out from anchor at radius about 145.
+Frame 5 the same fragments shrink into small droplets at radius about 165, center transparent.
+Frame 6 only 3 tiny very faint cyan/white terminal specks at the same outgoing paths, radius about 175. Center entirely transparent. This is a soft magical bubble pop, not a splash puddle or explosion star.

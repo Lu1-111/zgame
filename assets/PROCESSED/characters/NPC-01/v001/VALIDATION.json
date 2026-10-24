@@ -1,0 +1,362 @@
+{
+  "id": "NPC-01",
+  "frameCount": 18,
+  "animationCount": 3,
+  "dimensions": [
+    64,
+    64
+  ],
+  "root": [
+    32,
+    58
+  ],
+  "errors": [],
+  "frames": [
+    {
+      "id": "idle_0",
+      "size": [
+        64,
+        64
+      ],
+      "root": [
+        32,
+        58
+      ],
+      "opaqueBounds": [
+        18,
+        11,
+        26,
+        47
+      ],
+      "groundBottom": 58,
+      "transparentPixels": 3158
+    },
+    {
+      "id": "idle_1",
+      "size": [
+        64,
+        64
+      ],
+      "root": [
+        32,
+        58
+      ],
+      "opaqueBounds": [
+        18,
+        11,
+        27,
+        47
+      ],
+      "groundBottom": 58,
+      "transparentPixels": 3163
+    },
+    {
+      "id": "idle_2",
+      "size": [
+        64,
+        64
+      ],
+      "root": [
+        32,
+        58
+      ],
+      "opaqueBounds": [
+        18,
+        11,
+        26,
+        47
+      ],
+      "groundBottom": 58,
+      "transparentPixels": 3110
+    },
+    {
+      "id": "idle_3",
+      "size": [
+        64,
+        64
+      ],
+      "root": [
+        32,
+        58
+      ],
+      "opaqueBounds": [
+        18,
+        11,
+        26,
+        47
+      ],
+      "groundBottom": 58,
+      "transparentPixels": 3137
+    },
+    {
+      "id": "idle_4",
+      "size": [
+        64,
+        64
+      ],
+      "root": [
+        32,
+        58
+      ],
+      "opaqueBounds": [
+        17,
+        12,
+        26,
+        46
+      ],
+      "groundBottom": 58,
+      "transparentPixels": 3114
+    },
+    {
+      "id": "idle_5",
+      "size": [
+        64,
+        64
+      ],
+      "root": [
+        32,
+        58
+      ],
+      "opaqueBounds": [
+        17,
+        11,
+        26,
+        47
+      ],
+      "groundBottom": 58,
+      "transparentPixels": 3139
+    },
+    {
+      "id": "talk_0",
+      "size": [
+        64,
+        64
+      ],
+      "root": [
+        32,
+        58
+      ],
+      "opaqueBounds": [
+        19,
+        12,
+        24,
+        46
+      ],
+      "groundBottom": 58,
+      "transparentPixels": 3259
+    },
+    {
+      "id": "talk_1",
+      "size": [
+        64,
+        64
+      ],
+      "root": [
+        32,
+        58
+      ],
+      "opaqueBounds": [
+        18,
+        12,
+        25,
+        46
+      ],
+      "groundBottom": 58,
+      "transparentPixels": 3257
+    },
+    {
+      "id": "talk_2",
+      "size": [
+        64,
+        64
+      ],
+      "root": [
+        32,
+        58
+      ],
+      "opaqueBounds": [
+        18,
+        12,
+        25,
+        46
+      ],
+      "groundBottom": 58,
+      "transparentPixels": 3250
+    },
+    {
+      "id": "talk_3",
+      "size": [
+        64,
+        64
+      ],
+      "root": [
+        32,
+        58
+      ],
+      "opaqueBounds": [
+        19,
+        12,
+        24,
+        46
+      ],
+      "groundBottom": 58,
+      "transparentPixels": 3245
+    },
+    {
+      "id": "talk_4",
+      "size": [
+        64,
+        64
+      ],
+      "root": [
+        32,
+        58
+      ],
+      "opaqueBounds": [
+        18,
+        12,
+        25,
+        46
+      ],
+      "groundBottom": 58,
+      "transparentPixels": 3247
+    },
+    {
+      "id": "talk_5",
+      "size": [
+        64,
+        64
+      ],
+      "root": [
+        32,
+        58
+      ],
+      "opaqueBounds": [
+        18,
+        12,
+        25,
+        46
+      ],
+      "groundBottom": 58,
+      "transparentPixels": 3243
+    },
+    {
+      "id": "greet_0",
+      "size": [
+        64,
+        64
+      ],
+      "root": [
+        32,
+        58
+      ],
+      "opaqueBounds": [
+        18,
+        12,
+        25,
+        46
+      ],
+      "groundBottom": 58,
+      "transparentPixels": 3270
+    },
+    {
+      "id": "greet_1",
+      "size": [
+        64,
+        64
+      ],
+      "root": [
+        32,
+        58
+      ],
+      "opaqueBounds": [
+        18,
+        12,
+        27,
+        46
+      ],
+      "groundBottom": 58,
+      "transparentPixels": 3259
+    },
+    {
+      "id": "greet_2",
+      "size": [
+        64,
+        64
+      ],
+      "root": [
+        32,
+        58
+      ],
+      "opaqueBounds": [
+        18,
+        12,
+        25,
+        46
+      ],
+      "groundBottom": 58,
+      "transparentPixels": 3269
+    },
+    {
+      "id": "greet_3",
+      "size": [
+        64,
+        64
+      ],
+      "root": [
+        32,
+        58
+      ],
+      "opaqueBounds": [
+        18,
+        12,
+        28,
+        46
+      ],
+      "groundBottom": 58,
+      "transparentPixels": 3222
+    },
+    {
+      "id": "greet_4",
+      "size": [
+        64,
+        64
+      ],
+      "root": [
+        32,
+        58
+      ],
+      "opaqueBounds": [
+        18,
+        12,
+        26,
+        46
+      ],
+      "groundBottom": 58,
+      "transparentPixels": 3262
+    },
+    {
+      "id": "greet_5",
+      "size": [
+        64,
+        64
+      ],
+      "root": [
+        32,
+        58
+      ],
+      "opaqueBounds": [
+        17,
+        12,
+        25,
+        46
+      ],
+      "groundBottom": 58,
+      "transparentPixels": 3280
+    }
+  ],
+  "checks": {
+    "dimensionsRootGroundAndTransparency": true
+  },
+  "scope": "Pixel geometry and resource import validation; not game integration or trading logic."
+}

@@ -1,0 +1,228 @@
+{
+  "warnings": [],
+  "duplicates": [],
+  "animations": [
+    {
+      "name": "idle",
+      "frameCount": 6,
+      "allFramesTransparent": true,
+      "allFramesInBounds": true,
+      "anchor": [
+        32,
+        58
+      ],
+      "transitions": [
+        {
+          "from": 0,
+          "to": 1,
+          "silhouetteIoU": 0.9396135265700483,
+          "meanChannelDelta": 5.2215576171875,
+          "centroidDelta": [
+            0.31789081885856163,
+            0.3091935483870927
+          ],
+          "areaRatio": 1.0075
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "silhouetteIoU": 0.9495798319327731,
+          "meanChannelDelta": 7.50091552734375,
+          "centroidDelta": [
+            -0.28529913181699484,
+            -0.4013329126902718
+          ],
+          "areaRatio": 1.0148883374689825
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "silhouetteIoU": 0.9520958083832335,
+          "meanChannelDelta": 6.903076171875,
+          "centroidDelta": [
+            -0.1515079431992028,
+            0.23181916725884122
+          ],
+          "areaRatio": 0.9926650366748166
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "silhouetteIoU": 0.9623329283110571,
+          "meanChannelDelta": 6.0986328125,
+          "centroidDelta": [
+            -0.08206755455220005,
+            0.1674248047653819
+          ],
+          "areaRatio": 0.9889162561576355
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "silhouetteIoU": 0.9253910950661853,
+          "meanChannelDelta": 8.32049560546875,
+          "centroidDelta": [
+            -0.5074352608083572,
+            0.004557876595136179
+          ],
+          "areaRatio": 0.9925280199252802
+        },
+        {
+          "from": 5,
+          "to": 0,
+          "seam": true,
+          "silhouetteIoU": 0.9011904761904762,
+          "meanChannelDelta": 7.93994140625
+        }
+      ]
+    },
+    {
+      "name": "talk",
+      "frameCount": 6,
+      "allFramesTransparent": true,
+      "allFramesInBounds": true,
+      "anchor": [
+        32,
+        58
+      ],
+      "transitions": [
+        {
+          "from": 0,
+          "to": 1,
+          "silhouetteIoU": 0.9587628865979382,
+          "meanChannelDelta": 3.2838134765625,
+          "centroidDelta": [
+            -0.32810562985227776,
+            -0.03863121662707414
+          ],
+          "areaRatio": 1.0159151193633953
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "silhouetteIoU": 0.9641025641025641,
+          "meanChannelDelta": 3.00933837890625,
+          "centroidDelta": [
+            -0.18146214099216706,
+            -0.14360313315927442
+          ],
+          "areaRatio": 1
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "silhouetteIoU": 0.9291139240506329,
+          "meanChannelDelta": 4.13238525390625,
+          "centroidDelta": [
+            0.49051371962771384,
+            -0.11002225176876834
+          ],
+          "areaRatio": 0.9895561357702349
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "silhouetteIoU": 0.9652509652509652,
+          "meanChannelDelta": 2.98974609375,
+          "centroidDelta": [
+            -0.2669162226240438,
+            -0.04388044645583733
+          ],
+          "areaRatio": 1.0145118733509235
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "silhouetteIoU": 0.9629629629629629,
+          "meanChannelDelta": 3.0048828125,
+          "centroidDelta": [
+            -0.24013701506284946,
+            -0.054301446684007715
+          ],
+          "areaRatio": 0.9986996098829649
+        },
+        {
+          "from": 5,
+          "to": 0,
+          "seam": true,
+          "silhouetteIoU": 0.9241466498103666,
+          "meanChannelDelta": 4.3358154296875
+        }
+      ]
+    },
+    {
+      "name": "greet",
+      "frameCount": 6,
+      "allFramesTransparent": true,
+      "allFramesInBounds": true,
+      "anchor": [
+        32,
+        58
+      ],
+      "transitions": [
+        {
+          "from": 0,
+          "to": 1,
+          "silhouetteIoU": 0.8718905472636815,
+          "meanChannelDelta": 6.470947265625,
+          "centroidDelta": [
+            -0.4963772595761533,
+            -0.08234624990726758
+          ],
+          "areaRatio": 1.028301886792453
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "silhouetteIoU": 0.8804483188044832,
+          "meanChannelDelta": 7.0260009765625,
+          "centroidDelta": [
+            0.4984376123980425,
+            -0.1553123810225614
+          ],
+          "areaRatio": 0.9790301441677588
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "silhouetteIoU": 0.9326556543837357,
+          "meanChannelDelta": 4.38665771484375,
+          "centroidDelta": [
+            0.32151863267021596,
+            0.0947666635534361
+          ],
+          "areaRatio": 1.036144578313253
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "silhouetteIoU": 0.8588807785888077,
+          "meanChannelDelta": 7.0911865234375,
+          "centroidDelta": [
+            -0.8762397274827123,
+            0.26427871335650366
+          ],
+          "areaRatio": 0.9741602067183462
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "silhouetteIoU": 0.9353169469598965,
+          "meanChannelDelta": 4.50152587890625,
+          "centroidDelta": [
+            -0.48103198038135986,
+            -0.09308485918766252
+          ],
+          "areaRatio": 0.9840848806366048
+        }
+      ]
+    }
+  ],
+  "sourceAnalysisFile": "analysis.json",
+  "requiresHumanVisualReview": true,
+  "notes": [
+    "Each source sheet has one scale calibrated to the common standing height; every frame in that sheet shares that scale.",
+    "Alpha bounds and contact candidates do not establish semantic body/hand anchors.",
+    "Statistical change and seam measurements are diagnostics; intentional pose change is expected."
+  ]
+}

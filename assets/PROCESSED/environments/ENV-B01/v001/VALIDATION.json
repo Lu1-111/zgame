@@ -1,0 +1,1652 @@
+{
+  "batch": "ENV-B01",
+  "checks": [
+    {
+      "check": "15 source rooms / 15 delivered rooms",
+      "pass": true
+    },
+    {
+      "check": "world source unchanged",
+      "pass": true
+    },
+    {
+      "check": "ENV-01 atlas 64x64 RGBA",
+      "pass": true
+    },
+    {
+      "check": "ENV-01/cottage integer tile canvas + real alpha",
+      "pass": true
+    },
+    {
+      "check": "ENV-01/tent integer tile canvas + real alpha",
+      "pass": true
+    },
+    {
+      "check": "ENV-01/milk_spring integer tile canvas + real alpha",
+      "pass": true
+    },
+    {
+      "check": "ENV-01/shelf integer tile canvas + real alpha",
+      "pass": true
+    },
+    {
+      "check": "ENV-01/campfire integer tile canvas + real alpha",
+      "pass": true
+    },
+    {
+      "check": "ENV-01/chest integer tile canvas + real alpha",
+      "pass": true
+    },
+    {
+      "check": "ENV-01/return_arch integer tile canvas + real alpha",
+      "pass": true
+    },
+    {
+      "check": "ENV-01/crates_sign integer tile canvas + real alpha",
+      "pass": true
+    },
+    {
+      "check": "ENV-01/return_glyph integer tile canvas + real alpha",
+      "pass": true
+    },
+    {
+      "check": "ENV-01 Godot TileSet exists",
+      "pass": true
+    },
+    {
+      "check": "ENV-02 atlas 64x64 RGBA",
+      "pass": true
+    },
+    {
+      "check": "ENV-02/giant_tree integer tile canvas + real alpha",
+      "pass": true
+    },
+    {
+      "check": "ENV-02/canopy integer tile canvas + real alpha",
+      "pass": true
+    },
+    {
+      "check": "ENV-02/root_arch integer tile canvas + real alpha",
+      "pass": true
+    },
+    {
+      "check": "ENV-02/vine integer tile canvas + real alpha",
+      "pass": true
+    },
+    {
+      "check": "ENV-02/bridge_left integer tile canvas + real alpha",
+      "pass": true
+    },
+    {
+      "check": "ENV-02/bridge_right integer tile canvas + real alpha",
+      "pass": true
+    },
+    {
+      "check": "ENV-02/moss_rocks integer tile canvas + real alpha",
+      "pass": true
+    },
+    {
+      "check": "ENV-02/cave_entrance integer tile canvas + real alpha",
+      "pass": true
+    },
+    {
+      "check": "ENV-02/fern_mushrooms integer tile canvas + real alpha",
+      "pass": true
+    },
+    {
+      "check": "ENV-02 Godot TileSet exists",
+      "pass": true
+    },
+    {
+      "check": "ENV-03 atlas 64x64 RGBA",
+      "pass": true
+    },
+    {
+      "check": "ENV-03/crystal_cluster integer tile canvas + real alpha",
+      "pass": true
+    },
+    {
+      "check": "ENV-03/glow_roots integer tile canvas + real alpha",
+      "pass": true
+    },
+    {
+      "check": "ENV-03/hidden_crevice integer tile canvas + real alpha",
+      "pass": true
+    },
+    {
+      "check": "ENV-03/acid_rim integer tile canvas + real alpha",
+      "pass": true
+    },
+    {
+      "check": "ENV-03 Godot TileSet exists",
+      "pass": true
+    },
+    {
+      "check": "ENV-04 atlas 64x64 RGBA",
+      "pass": true
+    },
+    {
+      "check": "ENV-04/extractor integer tile canvas + real alpha",
+      "pass": true
+    },
+    {
+      "check": "ENV-04/honey_cells integer tile canvas + real alpha",
+      "pass": true
+    },
+    {
+      "check": "ENV-04/wax_pillar integer tile canvas + real alpha",
+      "pass": true
+    },
+    {
+      "check": "ENV-04/pipeline integer tile canvas + real alpha",
+      "pass": true
+    },
+    {
+      "check": "ENV-04 Godot TileSet exists",
+      "pass": true
+    },
+    {
+      "check": "camp_01 exact room definition",
+      "pass": true
+    },
+    {
+      "check": "camp_01 exact collider rectangles",
+      "pass": true
+    },
+    {
+      "check": "camp_01/background image size",
+      "pass": true
+    },
+    {
+      "check": "camp_01/midground image size",
+      "pass": true
+    },
+    {
+      "check": "camp_01/terrain image size",
+      "pass": true
+    },
+    {
+      "check": "camp_01/props image size",
+      "pass": true
+    },
+    {
+      "check": "camp_01/hazards image size",
+      "pass": true
+    },
+    {
+      "check": "camp_01/guides image size",
+      "pass": true
+    },
+    {
+      "check": "camp_01/map image size",
+      "pass": true
+    },
+    {
+      "check": "camp_01/design image size",
+      "pass": true
+    },
+    {
+      "check": "camp_01 exported scene",
+      "pass": true
+    },
+    {
+      "check": "camp_01 Tiled image/object map",
+      "pass": true
+    },
+    {
+      "check": "camp_02 exact room definition",
+      "pass": true
+    },
+    {
+      "check": "camp_02 exact collider rectangles",
+      "pass": true
+    },
+    {
+      "check": "camp_02/background image size",
+      "pass": true
+    },
+    {
+      "check": "camp_02/midground image size",
+      "pass": true
+    },
+    {
+      "check": "camp_02/terrain image size",
+      "pass": true
+    },
+    {
+      "check": "camp_02/props image size",
+      "pass": true
+    },
+    {
+      "check": "camp_02/hazards image size",
+      "pass": true
+    },
+    {
+      "check": "camp_02/guides image size",
+      "pass": true
+    },
+    {
+      "check": "camp_02/map image size",
+      "pass": true
+    },
+    {
+      "check": "camp_02/design image size",
+      "pass": true
+    },
+    {
+      "check": "camp_02 exported scene",
+      "pass": true
+    },
+    {
+      "check": "camp_02 Tiled image/object map",
+      "pass": true
+    },
+    {
+      "check": "forest_01 exact room definition",
+      "pass": true
+    },
+    {
+      "check": "forest_01 exact collider rectangles",
+      "pass": true
+    },
+    {
+      "check": "forest_01/background image size",
+      "pass": true
+    },
+    {
+      "check": "forest_01/midground image size",
+      "pass": true
+    },
+    {
+      "check": "forest_01/terrain image size",
+      "pass": true
+    },
+    {
+      "check": "forest_01/props image size",
+      "pass": true
+    },
+    {
+      "check": "forest_01/hazards image size",
+      "pass": true
+    },
+    {
+      "check": "forest_01/guides image size",
+      "pass": true
+    },
+    {
+      "check": "forest_01/map image size",
+      "pass": true
+    },
+    {
+      "check": "forest_01/design image size",
+      "pass": true
+    },
+    {
+      "check": "forest_01 exported scene",
+      "pass": true
+    },
+    {
+      "check": "forest_01 Tiled image/object map",
+      "pass": true
+    },
+    {
+      "check": "forest_02 exact room definition",
+      "pass": true
+    },
+    {
+      "check": "forest_02 exact collider rectangles",
+      "pass": true
+    },
+    {
+      "check": "forest_02/background image size",
+      "pass": true
+    },
+    {
+      "check": "forest_02/midground image size",
+      "pass": true
+    },
+    {
+      "check": "forest_02/terrain image size",
+      "pass": true
+    },
+    {
+      "check": "forest_02/props image size",
+      "pass": true
+    },
+    {
+      "check": "forest_02/hazards image size",
+      "pass": true
+    },
+    {
+      "check": "forest_02/guides image size",
+      "pass": true
+    },
+    {
+      "check": "forest_02/map image size",
+      "pass": true
+    },
+    {
+      "check": "forest_02/design image size",
+      "pass": true
+    },
+    {
+      "check": "forest_02 exported scene",
+      "pass": true
+    },
+    {
+      "check": "forest_02 Tiled image/object map",
+      "pass": true
+    },
+    {
+      "check": "forest_03 exact room definition",
+      "pass": true
+    },
+    {
+      "check": "forest_03 exact collider rectangles",
+      "pass": true
+    },
+    {
+      "check": "forest_03/background image size",
+      "pass": true
+    },
+    {
+      "check": "forest_03/midground image size",
+      "pass": true
+    },
+    {
+      "check": "forest_03/terrain image size",
+      "pass": true
+    },
+    {
+      "check": "forest_03/props image size",
+      "pass": true
+    },
+    {
+      "check": "forest_03/hazards image size",
+      "pass": true
+    },
+    {
+      "check": "forest_03/guides image size",
+      "pass": true
+    },
+    {
+      "check": "forest_03/map image size",
+      "pass": true
+    },
+    {
+      "check": "forest_03/design image size",
+      "pass": true
+    },
+    {
+      "check": "forest_03 exported scene",
+      "pass": true
+    },
+    {
+      "check": "forest_03 Tiled image/object map",
+      "pass": true
+    },
+    {
+      "check": "forest_04 exact room definition",
+      "pass": true
+    },
+    {
+      "check": "forest_04 exact collider rectangles",
+      "pass": true
+    },
+    {
+      "check": "forest_04/background image size",
+      "pass": true
+    },
+    {
+      "check": "forest_04/midground image size",
+      "pass": true
+    },
+    {
+      "check": "forest_04/terrain image size",
+      "pass": true
+    },
+    {
+      "check": "forest_04/props image size",
+      "pass": true
+    },
+    {
+      "check": "forest_04/hazards image size",
+      "pass": true
+    },
+    {
+      "check": "forest_04/guides image size",
+      "pass": true
+    },
+    {
+      "check": "forest_04/map image size",
+      "pass": true
+    },
+    {
+      "check": "forest_04/design image size",
+      "pass": true
+    },
+    {
+      "check": "forest_04 exported scene",
+      "pass": true
+    },
+    {
+      "check": "forest_04 Tiled image/object map",
+      "pass": true
+    },
+    {
+      "check": "forest_05 exact room definition",
+      "pass": true
+    },
+    {
+      "check": "forest_05 exact collider rectangles",
+      "pass": true
+    },
+    {
+      "check": "forest_05/background image size",
+      "pass": true
+    },
+    {
+      "check": "forest_05/midground image size",
+      "pass": true
+    },
+    {
+      "check": "forest_05/terrain image size",
+      "pass": true
+    },
+    {
+      "check": "forest_05/props image size",
+      "pass": true
+    },
+    {
+      "check": "forest_05/hazards image size",
+      "pass": true
+    },
+    {
+      "check": "forest_05/guides image size",
+      "pass": true
+    },
+    {
+      "check": "forest_05/map image size",
+      "pass": true
+    },
+    {
+      "check": "forest_05/design image size",
+      "pass": true
+    },
+    {
+      "check": "forest_05 exported scene",
+      "pass": true
+    },
+    {
+      "check": "forest_05 Tiled image/object map",
+      "pass": true
+    },
+    {
+      "check": "forest_06 exact room definition",
+      "pass": true
+    },
+    {
+      "check": "forest_06 exact collider rectangles",
+      "pass": true
+    },
+    {
+      "check": "forest_06/background image size",
+      "pass": true
+    },
+    {
+      "check": "forest_06/midground image size",
+      "pass": true
+    },
+    {
+      "check": "forest_06/terrain image size",
+      "pass": true
+    },
+    {
+      "check": "forest_06/props image size",
+      "pass": true
+    },
+    {
+      "check": "forest_06/hazards image size",
+      "pass": true
+    },
+    {
+      "check": "forest_06/guides image size",
+      "pass": true
+    },
+    {
+      "check": "forest_06/map image size",
+      "pass": true
+    },
+    {
+      "check": "forest_06/design image size",
+      "pass": true
+    },
+    {
+      "check": "forest_06 exported scene",
+      "pass": true
+    },
+    {
+      "check": "forest_06 Tiled image/object map",
+      "pass": true
+    },
+    {
+      "check": "cave_01 exact room definition",
+      "pass": true
+    },
+    {
+      "check": "cave_01 exact collider rectangles",
+      "pass": true
+    },
+    {
+      "check": "cave_01/background image size",
+      "pass": true
+    },
+    {
+      "check": "cave_01/midground image size",
+      "pass": true
+    },
+    {
+      "check": "cave_01/terrain image size",
+      "pass": true
+    },
+    {
+      "check": "cave_01/props image size",
+      "pass": true
+    },
+    {
+      "check": "cave_01/hazards image size",
+      "pass": true
+    },
+    {
+      "check": "cave_01/guides image size",
+      "pass": true
+    },
+    {
+      "check": "cave_01/map image size",
+      "pass": true
+    },
+    {
+      "check": "cave_01/design image size",
+      "pass": true
+    },
+    {
+      "check": "cave_01 exported scene",
+      "pass": true
+    },
+    {
+      "check": "cave_01 Tiled image/object map",
+      "pass": true
+    },
+    {
+      "check": "cave_02 exact room definition",
+      "pass": true
+    },
+    {
+      "check": "cave_02 exact collider rectangles",
+      "pass": true
+    },
+    {
+      "check": "cave_02/background image size",
+      "pass": true
+    },
+    {
+      "check": "cave_02/midground image size",
+      "pass": true
+    },
+    {
+      "check": "cave_02/terrain image size",
+      "pass": true
+    },
+    {
+      "check": "cave_02/props image size",
+      "pass": true
+    },
+    {
+      "check": "cave_02/hazards image size",
+      "pass": true
+    },
+    {
+      "check": "cave_02/guides image size",
+      "pass": true
+    },
+    {
+      "check": "cave_02/map image size",
+      "pass": true
+    },
+    {
+      "check": "cave_02/design image size",
+      "pass": true
+    },
+    {
+      "check": "cave_02 exported scene",
+      "pass": true
+    },
+    {
+      "check": "cave_02 Tiled image/object map",
+      "pass": true
+    },
+    {
+      "check": "cave_03 exact room definition",
+      "pass": true
+    },
+    {
+      "check": "cave_03 exact collider rectangles",
+      "pass": true
+    },
+    {
+      "check": "cave_03/background image size",
+      "pass": true
+    },
+    {
+      "check": "cave_03/midground image size",
+      "pass": true
+    },
+    {
+      "check": "cave_03/terrain image size",
+      "pass": true
+    },
+    {
+      "check": "cave_03/props image size",
+      "pass": true
+    },
+    {
+      "check": "cave_03/hazards image size",
+      "pass": true
+    },
+    {
+      "check": "cave_03/guides image size",
+      "pass": true
+    },
+    {
+      "check": "cave_03/map image size",
+      "pass": true
+    },
+    {
+      "check": "cave_03/design image size",
+      "pass": true
+    },
+    {
+      "check": "cave_03 exported scene",
+      "pass": true
+    },
+    {
+      "check": "cave_03 Tiled image/object map",
+      "pass": true
+    },
+    {
+      "check": "cave_04 exact room definition",
+      "pass": true
+    },
+    {
+      "check": "cave_04 exact collider rectangles",
+      "pass": true
+    },
+    {
+      "check": "cave_04/background image size",
+      "pass": true
+    },
+    {
+      "check": "cave_04/midground image size",
+      "pass": true
+    },
+    {
+      "check": "cave_04/terrain image size",
+      "pass": true
+    },
+    {
+      "check": "cave_04/props image size",
+      "pass": true
+    },
+    {
+      "check": "cave_04/hazards image size",
+      "pass": true
+    },
+    {
+      "check": "cave_04/guides image size",
+      "pass": true
+    },
+    {
+      "check": "cave_04/map image size",
+      "pass": true
+    },
+    {
+      "check": "cave_04/design image size",
+      "pass": true
+    },
+    {
+      "check": "cave_04 exported scene",
+      "pass": true
+    },
+    {
+      "check": "cave_04 Tiled image/object map",
+      "pass": true
+    },
+    {
+      "check": "cave_05 exact room definition",
+      "pass": true
+    },
+    {
+      "check": "cave_05 exact collider rectangles",
+      "pass": true
+    },
+    {
+      "check": "cave_05/background image size",
+      "pass": true
+    },
+    {
+      "check": "cave_05/midground image size",
+      "pass": true
+    },
+    {
+      "check": "cave_05/terrain image size",
+      "pass": true
+    },
+    {
+      "check": "cave_05/props image size",
+      "pass": true
+    },
+    {
+      "check": "cave_05/hazards image size",
+      "pass": true
+    },
+    {
+      "check": "cave_05/guides image size",
+      "pass": true
+    },
+    {
+      "check": "cave_05/map image size",
+      "pass": true
+    },
+    {
+      "check": "cave_05/design image size",
+      "pass": true
+    },
+    {
+      "check": "cave_05 exported scene",
+      "pass": true
+    },
+    {
+      "check": "cave_05 Tiled image/object map",
+      "pass": true
+    },
+    {
+      "check": "cave_06 exact room definition",
+      "pass": true
+    },
+    {
+      "check": "cave_06 exact collider rectangles",
+      "pass": true
+    },
+    {
+      "check": "cave_06/background image size",
+      "pass": true
+    },
+    {
+      "check": "cave_06/midground image size",
+      "pass": true
+    },
+    {
+      "check": "cave_06/terrain image size",
+      "pass": true
+    },
+    {
+      "check": "cave_06/props image size",
+      "pass": true
+    },
+    {
+      "check": "cave_06/hazards image size",
+      "pass": true
+    },
+    {
+      "check": "cave_06/guides image size",
+      "pass": true
+    },
+    {
+      "check": "cave_06/map image size",
+      "pass": true
+    },
+    {
+      "check": "cave_06/design image size",
+      "pass": true
+    },
+    {
+      "check": "cave_06 exported scene",
+      "pass": true
+    },
+    {
+      "check": "cave_06 Tiled image/object map",
+      "pass": true
+    },
+    {
+      "check": "cave_07 exact room definition",
+      "pass": true
+    },
+    {
+      "check": "cave_07 exact collider rectangles",
+      "pass": true
+    },
+    {
+      "check": "cave_07/background image size",
+      "pass": true
+    },
+    {
+      "check": "cave_07/midground image size",
+      "pass": true
+    },
+    {
+      "check": "cave_07/terrain image size",
+      "pass": true
+    },
+    {
+      "check": "cave_07/props image size",
+      "pass": true
+    },
+    {
+      "check": "cave_07/hazards image size",
+      "pass": true
+    },
+    {
+      "check": "cave_07/guides image size",
+      "pass": true
+    },
+    {
+      "check": "cave_07/map image size",
+      "pass": true
+    },
+    {
+      "check": "cave_07/design image size",
+      "pass": true
+    },
+    {
+      "check": "cave_07 exported scene",
+      "pass": true
+    },
+    {
+      "check": "cave_07 Tiled image/object map",
+      "pass": true
+    },
+    {
+      "check": "before ability: reward room reachable, canopy gated",
+      "pass": true
+    },
+    {
+      "check": "after ability: all 15 rooms reachable",
+      "pass": true
+    },
+    {
+      "check": "return shortcut authored one-way",
+      "pass": true
+    }
+  ],
+  "passed": 219,
+  "total": 219,
+  "source_sha256": "c17448d54a40227ebf9896c6fd951130fd670aafcd5546cb3fce8be39b03df29",
+  "topology_before_ability": [
+    "camp_01",
+    "camp_02",
+    "cave_01",
+    "cave_02",
+    "cave_03",
+    "cave_04",
+    "cave_05",
+    "cave_06",
+    "cave_07",
+    "forest_01",
+    "forest_02",
+    "forest_03",
+    "forest_04",
+    "forest_05"
+  ],
+  "topology_after_ability": [
+    "camp_01",
+    "camp_02",
+    "cave_01",
+    "cave_02",
+    "cave_03",
+    "cave_04",
+    "cave_05",
+    "cave_06",
+    "cave_07",
+    "forest_01",
+    "forest_02",
+    "forest_03",
+    "forest_04",
+    "forest_05",
+    "forest_06"
+  ],
+  "non_global_grid_rectangles": [
+    {
+      "room": "camp_01",
+      "rect": [
+        0,
+        340,
+        1280,
+        20
+      ]
+    },
+    {
+      "room": "camp_01",
+      "rect": [
+        180,
+        292,
+        120,
+        16
+      ]
+    },
+    {
+      "room": "camp_01",
+      "rect": [
+        900,
+        40,
+        160,
+        16
+      ]
+    },
+    {
+      "room": "camp_02",
+      "rect": [
+        0,
+        340,
+        640,
+        20
+      ]
+    },
+    {
+      "room": "camp_02",
+      "rect": [
+        430,
+        296,
+        140,
+        16
+      ]
+    },
+    {
+      "room": "forest_01",
+      "rect": [
+        0,
+        340,
+        1280,
+        20
+      ]
+    },
+    {
+      "room": "forest_01",
+      "rect": [
+        320,
+        292,
+        160,
+        16
+      ]
+    },
+    {
+      "room": "forest_01",
+      "rect": [
+        760,
+        248,
+        160,
+        16
+      ]
+    },
+    {
+      "room": "forest_01",
+      "rect": [
+        990,
+        300,
+        110,
+        16
+      ]
+    },
+    {
+      "room": "forest_01",
+      "rect": [
+        1120,
+        268,
+        140,
+        16
+      ]
+    },
+    {
+      "room": "forest_02",
+      "rect": [
+        0,
+        340,
+        1280,
+        20
+      ]
+    },
+    {
+      "room": "forest_02",
+      "rect": [
+        240,
+        292,
+        120,
+        16
+      ]
+    },
+    {
+      "room": "forest_02",
+      "rect": [
+        520,
+        264,
+        140,
+        16
+      ]
+    },
+    {
+      "room": "forest_02",
+      "rect": [
+        860,
+        300,
+        120,
+        16
+      ]
+    },
+    {
+      "room": "forest_03",
+      "rect": [
+        0,
+        340,
+        220,
+        20
+      ]
+    },
+    {
+      "room": "forest_03",
+      "rect": [
+        380,
+        340,
+        260,
+        20
+      ]
+    },
+    {
+      "room": "forest_03",
+      "rect": [
+        240,
+        364,
+        140,
+        16
+      ]
+    },
+    {
+      "room": "forest_03",
+      "rect": [
+        240,
+        520,
+        160,
+        16
+      ]
+    },
+    {
+      "room": "forest_03",
+      "rect": [
+        40,
+        652,
+        120,
+        16
+      ]
+    },
+    {
+      "room": "forest_03",
+      "rect": [
+        200,
+        604,
+        120,
+        16
+      ]
+    },
+    {
+      "room": "forest_03",
+      "rect": [
+        40,
+        556,
+        120,
+        16
+      ]
+    },
+    {
+      "room": "forest_03",
+      "rect": [
+        120,
+        508,
+        120,
+        16
+      ]
+    },
+    {
+      "room": "forest_03",
+      "rect": [
+        40,
+        460,
+        120,
+        16
+      ]
+    },
+    {
+      "room": "forest_03",
+      "rect": [
+        200,
+        412,
+        120,
+        16
+      ]
+    },
+    {
+      "room": "forest_03",
+      "rect": [
+        0,
+        700,
+        640,
+        20
+      ]
+    },
+    {
+      "room": "forest_03",
+      "rect": [
+        480,
+        260,
+        120,
+        16
+      ]
+    },
+    {
+      "room": "forest_03",
+      "rect": [
+        300,
+        180,
+        120,
+        16
+      ]
+    },
+    {
+      "room": "forest_03",
+      "rect": [
+        460,
+        100,
+        120,
+        16
+      ]
+    },
+    {
+      "room": "forest_03",
+      "rect": [
+        200,
+        48,
+        160,
+        16
+      ]
+    },
+    {
+      "room": "forest_04",
+      "rect": [
+        0,
+        340,
+        1280,
+        20
+      ]
+    },
+    {
+      "room": "forest_04",
+      "rect": [
+        200,
+        292,
+        140,
+        16
+      ]
+    },
+    {
+      "room": "forest_04",
+      "rect": [
+        420,
+        244,
+        140,
+        16
+      ]
+    },
+    {
+      "room": "forest_04",
+      "rect": [
+        640,
+        196,
+        140,
+        16
+      ]
+    },
+    {
+      "room": "forest_04",
+      "rect": [
+        860,
+        148,
+        140,
+        16
+      ]
+    },
+    {
+      "room": "forest_04",
+      "rect": [
+        620,
+        100,
+        160,
+        16
+      ]
+    },
+    {
+      "room": "forest_04",
+      "rect": [
+        760,
+        52,
+        160,
+        16
+      ]
+    },
+    {
+      "room": "forest_05",
+      "rect": [
+        0,
+        340,
+        640,
+        20
+      ]
+    },
+    {
+      "room": "forest_05",
+      "rect": [
+        240,
+        292,
+        160,
+        16
+      ]
+    },
+    {
+      "room": "forest_06",
+      "rect": [
+        0,
+        340,
+        640,
+        20
+      ]
+    },
+    {
+      "room": "forest_06",
+      "rect": [
+        80,
+        220,
+        120,
+        16
+      ]
+    },
+    {
+      "room": "forest_06",
+      "rect": [
+        300,
+        160,
+        140,
+        16
+      ]
+    },
+    {
+      "room": "forest_06",
+      "rect": [
+        520,
+        100,
+        120,
+        16
+      ]
+    },
+    {
+      "room": "forest_06",
+      "rect": [
+        300,
+        40,
+        160,
+        16
+      ]
+    },
+    {
+      "room": "cave_01",
+      "rect": [
+        0,
+        340,
+        1280,
+        20
+      ]
+    },
+    {
+      "room": "cave_01",
+      "rect": [
+        300,
+        292,
+        140,
+        16
+      ]
+    },
+    {
+      "room": "cave_01",
+      "rect": [
+        560,
+        244,
+        140,
+        16
+      ]
+    },
+    {
+      "room": "cave_01",
+      "rect": [
+        860,
+        292,
+        140,
+        16
+      ]
+    },
+    {
+      "room": "cave_02",
+      "rect": [
+        0,
+        340,
+        1280,
+        20
+      ]
+    },
+    {
+      "room": "cave_02",
+      "rect": [
+        260,
+        292,
+        140,
+        16
+      ]
+    },
+    {
+      "room": "cave_02",
+      "rect": [
+        520,
+        244,
+        140,
+        16
+      ]
+    },
+    {
+      "room": "cave_02",
+      "rect": [
+        780,
+        196,
+        140,
+        16
+      ]
+    },
+    {
+      "room": "cave_02",
+      "rect": [
+        1040,
+        120,
+        180,
+        16
+      ]
+    },
+    {
+      "room": "cave_03",
+      "rect": [
+        0,
+        340,
+        320,
+        20
+      ]
+    },
+    {
+      "room": "cave_03",
+      "rect": [
+        400,
+        340,
+        240,
+        20
+      ]
+    },
+    {
+      "room": "cave_03",
+      "rect": [
+        720,
+        340,
+        560,
+        20
+      ]
+    },
+    {
+      "room": "cave_03",
+      "rect": [
+        560,
+        260,
+        120,
+        16
+      ]
+    },
+    {
+      "room": "cave_04",
+      "rect": [
+        0,
+        340,
+        1280,
+        20
+      ]
+    },
+    {
+      "room": "cave_04",
+      "rect": [
+        240,
+        292,
+        140,
+        16
+      ]
+    },
+    {
+      "room": "cave_04",
+      "rect": [
+        480,
+        244,
+        140,
+        16
+      ]
+    },
+    {
+      "room": "cave_04",
+      "rect": [
+        720,
+        292,
+        140,
+        16
+      ]
+    },
+    {
+      "room": "cave_04",
+      "rect": [
+        960,
+        244,
+        140,
+        16
+      ]
+    },
+    {
+      "room": "cave_04",
+      "rect": [
+        1120,
+        292,
+        140,
+        16
+      ]
+    },
+    {
+      "room": "cave_05",
+      "rect": [
+        0,
+        340,
+        640,
+        20
+      ]
+    },
+    {
+      "room": "cave_05",
+      "rect": [
+        120,
+        292,
+        120,
+        16
+      ]
+    },
+    {
+      "room": "cave_05",
+      "rect": [
+        300,
+        220,
+        120,
+        16
+      ]
+    },
+    {
+      "room": "cave_05",
+      "rect": [
+        420,
+        140,
+        160,
+        16
+      ]
+    },
+    {
+      "room": "cave_06",
+      "rect": [
+        0,
+        340,
+        1280,
+        20
+      ]
+    },
+    {
+      "room": "cave_06",
+      "rect": [
+        280,
+        292,
+        160,
+        16
+      ]
+    },
+    {
+      "room": "cave_06",
+      "rect": [
+        560,
+        244,
+        160,
+        16
+      ]
+    },
+    {
+      "room": "cave_06",
+      "rect": [
+        840,
+        292,
+        160,
+        16
+      ]
+    },
+    {
+      "room": "cave_07",
+      "rect": [
+        0,
+        340,
+        640,
+        20
+      ]
+    },
+    {
+      "room": "cave_07",
+      "rect": [
+        520,
+        292,
+        100,
+        16
+      ]
+    },
+    {
+      "room": "cave_07",
+      "rect": [
+        380,
+        244,
+        120,
+        16
+      ]
+    },
+    {
+      "room": "cave_07",
+      "rect": [
+        520,
+        196,
+        100,
+        16
+      ]
+    },
+    {
+      "room": "cave_07",
+      "rect": [
+        380,
+        148,
+        120,
+        16
+      ]
+    },
+    {
+      "room": "cave_07",
+      "rect": [
+        520,
+        100,
+        100,
+        16
+      ]
+    },
+    {
+      "room": "cave_07",
+      "rect": [
+        340,
+        48,
+        200,
+        16
+      ]
+    }
+  ],
+  "scope": "Artifact validation and logical connectivity. No jump, AI, doors, damage, saves or full-run gameplay verification.",
+  "godot_engine_validation": {
+    "passed": 472,
+    "total": 472,
+    "tilesets": 4,
+    "scenes": 15
+  },
+  "project_tests": {
+    "passed": 423,
+    "total": 423
+  },
+  "import": {
+    "exit_code": 0,
+    "errors": 0,
+    "warnings": 0
+  },
+  "smoke": {
+    "exit_code": 0,
+    "frames": 120,
+    "errors": 0,
+    "warnings": 0
+  },
+  "render_comparison": {
+    "room": "forest_03",
+    "size": [
+      640,
+      720
+    ],
+    "maximum_channel_delta": 1,
+    "mean_channel_delta": 0.037324942129629626,
+    "source": "work/env_b01/integration/godot_forest_03.png"
+  },
+  "ui_validation": [
+    "世界拓扑与房间切换",
+    "设计标记开关",
+    "16px网格开关",
+    "角色比例开关",
+    "50%缩放",
+    "实际界面截图 preview_verified.png"
+  ]
+}

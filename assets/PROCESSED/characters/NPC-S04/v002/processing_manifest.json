@@ -1,0 +1,2772 @@
+{
+  "id": "NPC-S04",
+  "version": "v002",
+  "frames": [
+    {
+      "animation": "idle",
+      "index": 0,
+      "file": "frames/NPC-S04_idle_right_v002_f01.png",
+      "source": {
+        "id": "NPC-S04_idle_talk_right_sheet_v003_idle",
+        "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S04/v003/NPC-S04_idle_talk_right_sheet_v003.png",
+        "sha256": "dc07811786d6a20aac92ab697d13ebc7f8315c8303e54ae69da6897df8bb2d48",
+        "cellIndex": 0,
+        "rect": [
+          0,
+          0,
+          397,
+          396
+        ],
+        "anchor": [
+          219,
+          386
+        ],
+        "originalSource": null
+      },
+      "transform": {
+        "uniformScale": 0.11796246648793565,
+        "scaledCellSize": [
+          47,
+          47
+        ],
+        "scaledVisibleCrop": [
+          6,
+          2,
+          37,
+          45
+        ],
+        "translation": [
+          12,
+          14
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": 128,
+        "filter": "nearest",
+        "cropAlphaThreshold": 1,
+        "cropNotes": "Transparent padding geometry excludes alpha=1/255 scattered speckles outside retained crop; retained RGBA is not thresholded."
+      }
+    },
+    {
+      "animation": "idle",
+      "index": 1,
+      "file": "frames/NPC-S04_idle_right_v002_f02.png",
+      "source": {
+        "id": "NPC-S04_idle_talk_right_sheet_v003_idle",
+        "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S04/v003/NPC-S04_idle_talk_right_sheet_v003.png",
+        "sha256": "dc07811786d6a20aac92ab697d13ebc7f8315c8303e54ae69da6897df8bb2d48",
+        "cellIndex": 1,
+        "rect": [
+          397,
+          0,
+          396,
+          396
+        ],
+        "anchor": [
+          221,
+          387
+        ],
+        "originalSource": null
+      },
+      "transform": {
+        "uniformScale": 0.11796246648793565,
+        "scaledCellSize": [
+          47,
+          47
+        ],
+        "scaledVisibleCrop": [
+          5,
+          1,
+          38,
+          46
+        ],
+        "translation": [
+          11,
+          13
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": 128,
+        "filter": "nearest",
+        "cropAlphaThreshold": 1,
+        "cropNotes": "Transparent padding geometry excludes alpha=1/255 scattered speckles outside retained crop; retained RGBA is not thresholded."
+      }
+    },
+    {
+      "animation": "idle",
+      "index": 2,
+      "file": "frames/NPC-S04_idle_right_v002_f03.png",
+      "source": {
+        "id": "NPC-S04_idle_talk_right_sheet_v003_idle",
+        "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S04/v003/NPC-S04_idle_talk_right_sheet_v003.png",
+        "sha256": "dc07811786d6a20aac92ab697d13ebc7f8315c8303e54ae69da6897df8bb2d48",
+        "cellIndex": 2,
+        "rect": [
+          793,
+          0,
+          397,
+          396
+        ],
+        "anchor": [
+          224,
+          387
+        ],
+        "originalSource": null
+      },
+      "transform": {
+        "uniformScale": 0.11796246648793565,
+        "scaledCellSize": [
+          47,
+          47
+        ],
+        "scaledVisibleCrop": [
+          6,
+          1,
+          38,
+          46
+        ],
+        "translation": [
+          12,
+          13
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": 128,
+        "filter": "nearest",
+        "cropAlphaThreshold": 1,
+        "cropNotes": "Transparent padding geometry excludes alpha=1/255 scattered speckles outside retained crop; retained RGBA is not thresholded."
+      }
+    },
+    {
+      "animation": "idle",
+      "index": 3,
+      "file": "frames/NPC-S04_idle_right_v002_f04.png",
+      "source": {
+        "id": "NPC-S04_idle_talk_right_sheet_v003_idle",
+        "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S04/v003/NPC-S04_idle_talk_right_sheet_v003.png",
+        "sha256": "dc07811786d6a20aac92ab697d13ebc7f8315c8303e54ae69da6897df8bb2d48",
+        "cellIndex": 3,
+        "rect": [
+          1190,
+          0,
+          396,
+          396
+        ],
+        "anchor": [
+          227,
+          387
+        ],
+        "originalSource": null
+      },
+      "transform": {
+        "uniformScale": 0.11796246648793565,
+        "scaledCellSize": [
+          47,
+          47
+        ],
+        "scaledVisibleCrop": [
+          6,
+          1,
+          38,
+          46
+        ],
+        "translation": [
+          11,
+          13
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": 128,
+        "filter": "nearest",
+        "cropAlphaThreshold": 1,
+        "cropNotes": "Transparent padding geometry excludes alpha=1/255 scattered speckles outside retained crop; retained RGBA is not thresholded."
+      }
+    },
+    {
+      "animation": "idle",
+      "index": 4,
+      "file": "frames/NPC-S04_idle_right_v002_f05.png",
+      "source": {
+        "id": "NPC-S04_idle_talk_right_sheet_v003_idle",
+        "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S04/v003/NPC-S04_idle_talk_right_sheet_v003.png",
+        "sha256": "dc07811786d6a20aac92ab697d13ebc7f8315c8303e54ae69da6897df8bb2d48",
+        "cellIndex": 4,
+        "rect": [
+          1586,
+          0,
+          397,
+          396
+        ],
+        "anchor": [
+          230,
+          388
+        ],
+        "originalSource": null
+      },
+      "transform": {
+        "uniformScale": 0.11796246648793565,
+        "scaledCellSize": [
+          47,
+          47
+        ],
+        "scaledVisibleCrop": [
+          6,
+          2,
+          38,
+          45
+        ],
+        "translation": [
+          11,
+          14
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": 128,
+        "filter": "nearest",
+        "cropAlphaThreshold": 1,
+        "cropNotes": "Transparent padding geometry excludes alpha=1/255 scattered speckles outside retained crop; retained RGBA is not thresholded."
+      }
+    },
+    {
+      "animation": "idle",
+      "index": 5,
+      "file": "frames/NPC-S04_idle_right_v002_f06.png",
+      "source": {
+        "id": "NPC-S04_idle_talk_right_sheet_v003_idle",
+        "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S04/v003/NPC-S04_idle_talk_right_sheet_v003.png",
+        "sha256": "dc07811786d6a20aac92ab697d13ebc7f8315c8303e54ae69da6897df8bb2d48",
+        "cellIndex": 5,
+        "rect": [
+          0,
+          396,
+          397,
+          397
+        ],
+        "anchor": [
+          219,
+          380
+        ],
+        "originalSource": null
+      },
+      "transform": {
+        "uniformScale": 0.11796246648793565,
+        "scaledCellSize": [
+          47,
+          47
+        ],
+        "scaledVisibleCrop": [
+          6,
+          1,
+          37,
+          45
+        ],
+        "translation": [
+          12,
+          14
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": 128,
+        "filter": "nearest",
+        "cropAlphaThreshold": 1,
+        "cropNotes": "Transparent padding geometry excludes alpha=1/255 scattered speckles outside retained crop; retained RGBA is not thresholded."
+      }
+    },
+    {
+      "animation": "walk",
+      "index": 0,
+      "file": "frames/NPC-S04_walk_right_v002_f01.png",
+      "source": {
+        "id": "NPC-S04_walk_right_sheet_v003_walk",
+        "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S04/v003/NPC-S04_walk_right_sheet_v003.png",
+        "sha256": "b241de838b4e01a0d09c39b3b69aa88070773520e13fe9e109147a18d1a259ac",
+        "cellIndex": 0,
+        "rect": [
+          0,
+          0,
+          444,
+          444
+        ],
+        "anchor": [
+          247,
+          422
+        ],
+        "originalSource": null
+      },
+      "transform": {
+        "uniformScale": 0.10653753026634383,
+        "scaledCellSize": [
+          47,
+          47
+        ],
+        "scaledVisibleCrop": [
+          3,
+          0,
+          38,
+          45
+        ],
+        "translation": [
+          9,
+          13
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": null,
+        "filter": "nearest",
+        "cropAlphaThreshold": 1,
+        "cropNotes": "Transparent padding geometry excludes alpha=1/255 scattered speckles outside retained crop; retained RGBA is not thresholded."
+      }
+    },
+    {
+      "animation": "walk",
+      "index": 1,
+      "file": "frames/NPC-S04_walk_right_v002_f02.png",
+      "source": {
+        "id": "NPC-S04_walk_right_sheet_v003_walk",
+        "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S04/v003/NPC-S04_walk_right_sheet_v003.png",
+        "sha256": "b241de838b4e01a0d09c39b3b69aa88070773520e13fe9e109147a18d1a259ac",
+        "cellIndex": 1,
+        "rect": [
+          444,
+          0,
+          443,
+          444
+        ],
+        "anchor": [
+          247,
+          422
+        ],
+        "originalSource": null
+      },
+      "transform": {
+        "uniformScale": 0.10653753026634383,
+        "scaledCellSize": [
+          47,
+          47
+        ],
+        "scaledVisibleCrop": [
+          3,
+          1,
+          38,
+          44
+        ],
+        "translation": [
+          9,
+          14
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": null,
+        "filter": "nearest",
+        "cropAlphaThreshold": 1,
+        "cropNotes": "Transparent padding geometry excludes alpha=1/255 scattered speckles outside retained crop; retained RGBA is not thresholded."
+      }
+    },
+    {
+      "animation": "walk",
+      "index": 2,
+      "file": "frames/NPC-S04_walk_right_v002_f03.png",
+      "source": {
+        "id": "NPC-S04_walk_right_sheet_v003_walk",
+        "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S04/v003/NPC-S04_walk_right_sheet_v003.png",
+        "sha256": "b241de838b4e01a0d09c39b3b69aa88070773520e13fe9e109147a18d1a259ac",
+        "cellIndex": 2,
+        "rect": [
+          887,
+          0,
+          443,
+          444
+        ],
+        "anchor": [
+          251,
+          422
+        ],
+        "originalSource": null
+      },
+      "transform": {
+        "uniformScale": 0.10653753026634383,
+        "scaledCellSize": [
+          47,
+          47
+        ],
+        "scaledVisibleCrop": [
+          3,
+          0,
+          38,
+          45
+        ],
+        "translation": [
+          8,
+          13
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": null,
+        "filter": "nearest",
+        "cropAlphaThreshold": 1,
+        "cropNotes": "Transparent padding geometry excludes alpha=1/255 scattered speckles outside retained crop; retained RGBA is not thresholded."
+      }
+    },
+    {
+      "animation": "walk",
+      "index": 3,
+      "file": "frames/NPC-S04_walk_right_v002_f04.png",
+      "source": {
+        "id": "NPC-S04_walk_right_sheet_v003_walk",
+        "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S04/v003/NPC-S04_walk_right_sheet_v003.png",
+        "sha256": "b241de838b4e01a0d09c39b3b69aa88070773520e13fe9e109147a18d1a259ac",
+        "cellIndex": 3,
+        "rect": [
+          1330,
+          0,
+          444,
+          444
+        ],
+        "anchor": [
+          254,
+          422
+        ],
+        "originalSource": null
+      },
+      "transform": {
+        "uniformScale": 0.10653753026634383,
+        "scaledCellSize": [
+          47,
+          47
+        ],
+        "scaledVisibleCrop": [
+          3,
+          0,
+          38,
+          45
+        ],
+        "translation": [
+          8,
+          13
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": null,
+        "filter": "nearest",
+        "cropAlphaThreshold": 1,
+        "cropNotes": "Transparent padding geometry excludes alpha=1/255 scattered speckles outside retained crop; retained RGBA is not thresholded."
+      }
+    },
+    {
+      "animation": "walk",
+      "index": 4,
+      "file": "frames/NPC-S04_walk_right_v002_f05.png",
+      "source": {
+        "id": "NPC-S04_walk_right_sheet_v003_walk",
+        "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S04/v003/NPC-S04_walk_right_sheet_v003.png",
+        "sha256": "b241de838b4e01a0d09c39b3b69aa88070773520e13fe9e109147a18d1a259ac",
+        "cellIndex": 4,
+        "rect": [
+          0,
+          444,
+          444,
+          443
+        ],
+        "anchor": [
+          247,
+          422
+        ],
+        "originalSource": null
+      },
+      "transform": {
+        "uniformScale": 0.10653753026634383,
+        "scaledCellSize": [
+          47,
+          47
+        ],
+        "scaledVisibleCrop": [
+          3,
+          1,
+          38,
+          45
+        ],
+        "translation": [
+          9,
+          14
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": null,
+        "filter": "nearest",
+        "cropAlphaThreshold": 1,
+        "cropNotes": "Transparent padding geometry excludes alpha=1/255 scattered speckles outside retained crop; retained RGBA is not thresholded."
+      }
+    },
+    {
+      "animation": "walk",
+      "index": 5,
+      "file": "frames/NPC-S04_walk_right_v002_f06.png",
+      "source": {
+        "id": "NPC-S04_walk_right_sheet_v003_walk",
+        "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S04/v003/NPC-S04_walk_right_sheet_v003.png",
+        "sha256": "b241de838b4e01a0d09c39b3b69aa88070773520e13fe9e109147a18d1a259ac",
+        "cellIndex": 5,
+        "rect": [
+          444,
+          444,
+          443,
+          443
+        ],
+        "anchor": [
+          248,
+          422
+        ],
+        "originalSource": null
+      },
+      "transform": {
+        "uniformScale": 0.10653753026634383,
+        "scaledCellSize": [
+          47,
+          47
+        ],
+        "scaledVisibleCrop": [
+          3,
+          1,
+          38,
+          45
+        ],
+        "translation": [
+          9,
+          14
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": null,
+        "filter": "nearest",
+        "cropAlphaThreshold": 1,
+        "cropNotes": "Transparent padding geometry excludes alpha=1/255 scattered speckles outside retained crop; retained RGBA is not thresholded."
+      }
+    },
+    {
+      "animation": "walk",
+      "index": 6,
+      "file": "frames/NPC-S04_walk_right_v002_f07.png",
+      "source": {
+        "id": "NPC-S04_walk_right_sheet_v003_walk",
+        "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S04/v003/NPC-S04_walk_right_sheet_v003.png",
+        "sha256": "b241de838b4e01a0d09c39b3b69aa88070773520e13fe9e109147a18d1a259ac",
+        "cellIndex": 6,
+        "rect": [
+          887,
+          444,
+          443,
+          443
+        ],
+        "anchor": [
+          248,
+          422
+        ],
+        "originalSource": null
+      },
+      "transform": {
+        "uniformScale": 0.10653753026634383,
+        "scaledCellSize": [
+          47,
+          47
+        ],
+        "scaledVisibleCrop": [
+          2,
+          1,
+          39,
+          44
+        ],
+        "translation": [
+          8,
+          14
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": null,
+        "filter": "nearest",
+        "cropAlphaThreshold": 1,
+        "cropNotes": "Transparent padding geometry excludes alpha=1/255 scattered speckles outside retained crop; retained RGBA is not thresholded."
+      }
+    },
+    {
+      "animation": "walk",
+      "index": 7,
+      "file": "frames/NPC-S04_walk_right_v002_f08.png",
+      "source": {
+        "id": "NPC-S04_walk_right_sheet_v003_walk",
+        "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S04/v003/NPC-S04_walk_right_sheet_v003.png",
+        "sha256": "b241de838b4e01a0d09c39b3b69aa88070773520e13fe9e109147a18d1a259ac",
+        "cellIndex": 7,
+        "rect": [
+          1330,
+          444,
+          444,
+          443
+        ],
+        "anchor": [
+          255,
+          422
+        ],
+        "originalSource": null
+      },
+      "transform": {
+        "uniformScale": 0.10653753026634383,
+        "scaledCellSize": [
+          47,
+          47
+        ],
+        "scaledVisibleCrop": [
+          3,
+          1,
+          38,
+          45
+        ],
+        "translation": [
+          8,
+          14
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": null,
+        "filter": "nearest",
+        "cropAlphaThreshold": 1,
+        "cropNotes": "Transparent padding geometry excludes alpha=1/255 scattered speckles outside retained crop; retained RGBA is not thresholded."
+      }
+    },
+    {
+      "animation": "talk",
+      "index": 0,
+      "file": "frames/NPC-S04_talk_right_v002_f01.png",
+      "source": {
+        "id": "NPC-S04_idle_talk_right_sheet_v003_talk",
+        "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S04/v003/NPC-S04_idle_talk_right_sheet_v003.png",
+        "sha256": "dc07811786d6a20aac92ab697d13ebc7f8315c8303e54ae69da6897df8bb2d48",
+        "cellIndex": 0,
+        "rect": [
+          397,
+          396,
+          396,
+          397
+        ],
+        "anchor": [
+          221,
+          380
+        ],
+        "originalSource": null
+      },
+      "transform": {
+        "uniformScale": 0.11796246648793565,
+        "scaledCellSize": [
+          47,
+          47
+        ],
+        "scaledVisibleCrop": [
+          5,
+          1,
+          38,
+          45
+        ],
+        "translation": [
+          11,
+          14
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": 128,
+        "filter": "nearest",
+        "cropAlphaThreshold": 1,
+        "cropNotes": "Transparent padding geometry excludes alpha=1/255 scattered speckles outside retained crop; retained RGBA is not thresholded."
+      }
+    },
+    {
+      "animation": "talk",
+      "index": 1,
+      "file": "frames/NPC-S04_talk_right_v002_f02.png",
+      "source": {
+        "id": "NPC-S04_idle_talk_right_sheet_v003_talk",
+        "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S04/v003/NPC-S04_idle_talk_right_sheet_v003.png",
+        "sha256": "dc07811786d6a20aac92ab697d13ebc7f8315c8303e54ae69da6897df8bb2d48",
+        "cellIndex": 1,
+        "rect": [
+          793,
+          396,
+          397,
+          397
+        ],
+        "anchor": [
+          224,
+          380
+        ],
+        "originalSource": null
+      },
+      "transform": {
+        "uniformScale": 0.11796246648793565,
+        "scaledCellSize": [
+          47,
+          47
+        ],
+        "scaledVisibleCrop": [
+          6,
+          1,
+          40,
+          45
+        ],
+        "translation": [
+          12,
+          14
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": 128,
+        "filter": "nearest",
+        "cropAlphaThreshold": 1,
+        "cropNotes": "Transparent padding geometry excludes alpha=1/255 scattered speckles outside retained crop; retained RGBA is not thresholded."
+      }
+    },
+    {
+      "animation": "talk",
+      "index": 2,
+      "file": "frames/NPC-S04_talk_right_v002_f03.png",
+      "source": {
+        "id": "NPC-S04_idle_talk_right_sheet_v003_talk",
+        "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S04/v003/NPC-S04_idle_talk_right_sheet_v003.png",
+        "sha256": "dc07811786d6a20aac92ab697d13ebc7f8315c8303e54ae69da6897df8bb2d48",
+        "cellIndex": 2,
+        "rect": [
+          1190,
+          396,
+          396,
+          397
+        ],
+        "anchor": [
+          227,
+          380
+        ],
+        "originalSource": null
+      },
+      "transform": {
+        "uniformScale": 0.11796246648793565,
+        "scaledCellSize": [
+          47,
+          47
+        ],
+        "scaledVisibleCrop": [
+          6,
+          1,
+          38,
+          45
+        ],
+        "translation": [
+          11,
+          14
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": 128,
+        "filter": "nearest",
+        "cropAlphaThreshold": 1,
+        "cropNotes": "Transparent padding geometry excludes alpha=1/255 scattered speckles outside retained crop; retained RGBA is not thresholded."
+      }
+    },
+    {
+      "animation": "talk",
+      "index": 3,
+      "file": "frames/NPC-S04_talk_right_v002_f04.png",
+      "source": {
+        "id": "NPC-S04_idle_talk_right_sheet_v003_talk",
+        "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S04/v003/NPC-S04_idle_talk_right_sheet_v003.png",
+        "sha256": "dc07811786d6a20aac92ab697d13ebc7f8315c8303e54ae69da6897df8bb2d48",
+        "cellIndex": 3,
+        "rect": [
+          1586,
+          396,
+          397,
+          397
+        ],
+        "anchor": [
+          230,
+          380
+        ],
+        "originalSource": null
+      },
+      "transform": {
+        "uniformScale": 0.11796246648793565,
+        "scaledCellSize": [
+          47,
+          47
+        ],
+        "scaledVisibleCrop": [
+          6,
+          1,
+          38,
+          45
+        ],
+        "translation": [
+          11,
+          14
+        ],
+        "pixelOffset": [
+          0,
+          0
+        ],
+        "contactCorrectionPx": [
+          0,
+          0
+        ],
+        "contactAlphaThreshold": 128,
+        "filter": "nearest",
+        "cropAlphaThreshold": 1,
+        "cropNotes": "Transparent padding geometry excludes alpha=1/255 scattered speckles outside retained crop; retained RGBA is not thresholded."
+      }
+    }
+  ],
+  "processingConfig": {
+    "assetId": "NPC-S04",
+    "version": "v002",
+    "title": "NPC-S04",
+    "outputDir": "/home/lululu/zgame/work/npc_series_refine/generated/NPC-S04",
+    "target": {
+      "width": 64,
+      "height": 64,
+      "anchor": [
+        32,
+        58
+      ]
+    },
+    "alphaThreshold": 127,
+    "direction": "right",
+    "sources": [
+      {
+        "id": "NPC-S04_idle_talk_right_sheet_v003_idle",
+        "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S04/v003/NPC-S04_idle_talk_right_sheet_v003.png",
+        "rects": [
+          [
+            0,
+            0,
+            397,
+            396
+          ],
+          [
+            397,
+            0,
+            396,
+            396
+          ],
+          [
+            793,
+            0,
+            397,
+            396
+          ],
+          [
+            1190,
+            0,
+            396,
+            396
+          ],
+          [
+            1586,
+            0,
+            397,
+            396
+          ],
+          [
+            0,
+            396,
+            397,
+            397
+          ]
+        ],
+        "scale": 0.11796246648793565,
+        "calibration": {
+          "sourceHeightReference": 373,
+          "targetHeight": 44,
+          "method": "fixed uniform scale per source action; no per-frame bbox fitting"
+        },
+        "notes": "Verified alpha160 boxes separated from every crop boundary. Torso X registration manually follows belly/waist, not tail or raised wing. Fixed scale across all10 frames. RAW may contain low-alpha edge colors; reject isolated fringe during processed threshold. Master mechanically extracted idle first cell, not separately generated."
+      },
+      {
+        "id": "NPC-S04_idle_talk_right_sheet_v003_talk",
+        "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S04/v003/NPC-S04_idle_talk_right_sheet_v003.png",
+        "rects": [
+          [
+            397,
+            396,
+            396,
+            397
+          ],
+          [
+            793,
+            396,
+            397,
+            397
+          ],
+          [
+            1190,
+            396,
+            396,
+            397
+          ],
+          [
+            1586,
+            396,
+            397,
+            397
+          ]
+        ],
+        "scale": 0.11796246648793565,
+        "calibration": {
+          "sourceHeightReference": 373,
+          "targetHeight": 44,
+          "method": "fixed uniform scale per source action; no per-frame bbox fitting"
+        },
+        "notes": "Verified alpha160 boxes separated from every crop boundary. Torso X registration manually follows belly/waist, not tail or raised wing. Fixed scale across all10 frames. RAW may contain low-alpha edge colors; reject isolated fringe during processed threshold. Master mechanically extracted idle first cell, not separately generated."
+      },
+      {
+        "id": "NPC-S04_walk_right_sheet_v003_walk",
+        "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S04/v003/NPC-S04_walk_right_sheet_v003.png",
+        "rects": [
+          [
+            0,
+            0,
+            444,
+            444
+          ],
+          [
+            444,
+            0,
+            443,
+            444
+          ],
+          [
+            887,
+            0,
+            443,
+            444
+          ],
+          [
+            1330,
+            0,
+            444,
+            444
+          ],
+          [
+            0,
+            444,
+            444,
+            443
+          ],
+          [
+            444,
+            444,
+            443,
+            443
+          ],
+          [
+            887,
+            444,
+            443,
+            443
+          ],
+          [
+            1330,
+            444,
+            444,
+            443
+          ]
+        ],
+        "scale": 0.10653753026634383,
+        "calibration": {
+          "sourceHeightReference": 413,
+          "targetHeight": 44,
+          "method": "fixed uniform scale per source action; no per-frame bbox fitting"
+        },
+        "notes": "Actual alpha160 bbox verified inside all crops; torso/waist X manually registered, fixed ground Y per row preserves foot lift/body bob. Apply one fixed scale to whole walk sheet, never per frame. Two rows source floor spacing slightly differs so row ground provided."
+      }
+    ],
+    "animations": [
+      {
+        "name": "idle",
+        "label": "待机",
+        "fps": 6,
+        "loop": true,
+        "snapContact": true,
+        "anchorMode": "ground",
+        "frames": [
+          {
+            "source": "NPC-S04_idle_talk_right_sheet_v003_idle",
+            "index": 0,
+            "anchor": [
+              219,
+              386
+            ]
+          },
+          {
+            "source": "NPC-S04_idle_talk_right_sheet_v003_idle",
+            "index": 1,
+            "anchor": [
+              221,
+              387
+            ]
+          },
+          {
+            "source": "NPC-S04_idle_talk_right_sheet_v003_idle",
+            "index": 2,
+            "anchor": [
+              224,
+              387
+            ]
+          },
+          {
+            "source": "NPC-S04_idle_talk_right_sheet_v003_idle",
+            "index": 3,
+            "anchor": [
+              227,
+              387
+            ]
+          },
+          {
+            "source": "NPC-S04_idle_talk_right_sheet_v003_idle",
+            "index": 4,
+            "anchor": [
+              230,
+              388
+            ]
+          },
+          {
+            "source": "NPC-S04_idle_talk_right_sheet_v003_idle",
+            "index": 5,
+            "anchor": [
+              219,
+              380
+            ]
+          }
+        ]
+      },
+      {
+        "name": "talk",
+        "label": "交谈",
+        "fps": 8,
+        "loop": false,
+        "snapContact": true,
+        "anchorMode": "ground",
+        "frames": [
+          {
+            "source": "NPC-S04_idle_talk_right_sheet_v003_talk",
+            "index": 0,
+            "anchor": [
+              221,
+              380
+            ]
+          },
+          {
+            "source": "NPC-S04_idle_talk_right_sheet_v003_talk",
+            "index": 1,
+            "anchor": [
+              224,
+              380
+            ]
+          },
+          {
+            "source": "NPC-S04_idle_talk_right_sheet_v003_talk",
+            "index": 2,
+            "anchor": [
+              227,
+              380
+            ]
+          },
+          {
+            "source": "NPC-S04_idle_talk_right_sheet_v003_talk",
+            "index": 3,
+            "anchor": [
+              230,
+              380
+            ]
+          }
+        ]
+      },
+      {
+        "name": "walk",
+        "label": "行走",
+        "fps": 10,
+        "loop": true,
+        "snapContact": false,
+        "anchorMode": "world-ground/pelvis",
+        "frames": [
+          {
+            "source": "NPC-S04_walk_right_sheet_v003_walk",
+            "index": 0,
+            "anchor": [
+              247,
+              422
+            ]
+          },
+          {
+            "source": "NPC-S04_walk_right_sheet_v003_walk",
+            "index": 1,
+            "anchor": [
+              247,
+              422
+            ]
+          },
+          {
+            "source": "NPC-S04_walk_right_sheet_v003_walk",
+            "index": 2,
+            "anchor": [
+              251,
+              422
+            ]
+          },
+          {
+            "source": "NPC-S04_walk_right_sheet_v003_walk",
+            "index": 3,
+            "anchor": [
+              254,
+              422
+            ]
+          },
+          {
+            "source": "NPC-S04_walk_right_sheet_v003_walk",
+            "index": 4,
+            "anchor": [
+              247,
+              422
+            ]
+          },
+          {
+            "source": "NPC-S04_walk_right_sheet_v003_walk",
+            "index": 5,
+            "anchor": [
+              248,
+              422
+            ]
+          },
+          {
+            "source": "NPC-S04_walk_right_sheet_v003_walk",
+            "index": 6,
+            "anchor": [
+              248,
+              422
+            ]
+          },
+          {
+            "source": "NPC-S04_walk_right_sheet_v003_walk",
+            "index": 7,
+            "anchor": [
+              255,
+              422
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "generatedSourceManifest": {
+    "assetId": "NPC-S04",
+    "version": "v002",
+    "direction": "right",
+    "title": "NPC-S04",
+    "coordinateSystem": "top-left origin, pixels; root is animation.anchor; no per-frame scale normalization",
+    "sourceCalibrations": [
+      {
+        "id": "NPC-S04_idle_talk_right_sheet_v003_idle",
+        "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S04/v003/NPC-S04_idle_talk_right_sheet_v003.png",
+        "calibration": {
+          "sourceHeightReference": 373,
+          "targetHeight": 44,
+          "method": "fixed uniform scale per source action; no per-frame bbox fitting"
+        },
+        "notes": "Verified alpha160 boxes separated from every crop boundary. Torso X registration manually follows belly/waist, not tail or raised wing. Fixed scale across all10 frames. RAW may contain low-alpha edge colors; reject isolated fringe during processed threshold. Master mechanically extracted idle first cell, not separately generated."
+      },
+      {
+        "id": "NPC-S04_idle_talk_right_sheet_v003_talk",
+        "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S04/v003/NPC-S04_idle_talk_right_sheet_v003.png",
+        "calibration": {
+          "sourceHeightReference": 373,
+          "targetHeight": 44,
+          "method": "fixed uniform scale per source action; no per-frame bbox fitting"
+        },
+        "notes": "Verified alpha160 boxes separated from every crop boundary. Torso X registration manually follows belly/waist, not tail or raised wing. Fixed scale across all10 frames. RAW may contain low-alpha edge colors; reject isolated fringe during processed threshold. Master mechanically extracted idle first cell, not separately generated."
+      },
+      {
+        "id": "NPC-S04_walk_right_sheet_v003_walk",
+        "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S04/v003/NPC-S04_walk_right_sheet_v003.png",
+        "calibration": {
+          "sourceHeightReference": 413,
+          "targetHeight": 44,
+          "method": "fixed uniform scale per source action; no per-frame bbox fitting"
+        },
+        "notes": "Actual alpha160 bbox verified inside all crops; torso/waist X manually registered, fixed ground Y per row preserves foot lift/body bob. Apply one fixed scale to whole walk sheet, never per frame. Two rows source floor spacing slightly differs so row ground provided."
+      }
+    ],
+    "sourceScales": {
+      "NPC-S04_idle_talk_right_sheet_v003_idle": 0.11796246648793565,
+      "NPC-S04_idle_talk_right_sheet_v003_talk": 0.11796246648793565,
+      "NPC-S04_walk_right_sheet_v003_walk": 0.10653753026634383
+    },
+    "frameCount": 18,
+    "uniqueFrameCount": 18,
+    "playbackFrameCount": 18,
+    "atlas": {
+      "file": "NPC-S04_atlas_right_v002.png",
+      "size": [
+        512,
+        192
+      ],
+      "cellSize": [
+        64,
+        64
+      ],
+      "columns": 8,
+      "rows": 3
+    },
+    "animations": [
+      {
+        "name": "idle",
+        "label": "待机",
+        "fps": 6,
+        "loop": true,
+        "anchorMode": "ground",
+        "size": [
+          64,
+          64
+        ],
+        "anchor": [
+          32,
+          58
+        ],
+        "sheet": "sheets/NPC-S04_npc_idle_right_v002_sheet.png",
+        "sourceFrameIds": [
+          "idle_0",
+          "idle_1",
+          "idle_2",
+          "idle_3",
+          "idle_4",
+          "idle_5"
+        ],
+        "playbackOrder": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "appendPlaybackFrameIds": [],
+        "frameIds": [
+          "idle_0",
+          "idle_1",
+          "idle_2",
+          "idle_3",
+          "idle_4",
+          "idle_5"
+        ]
+      },
+      {
+        "name": "talk",
+        "label": "交谈",
+        "fps": 8,
+        "loop": false,
+        "anchorMode": "ground",
+        "size": [
+          64,
+          64
+        ],
+        "anchor": [
+          32,
+          58
+        ],
+        "sheet": "sheets/NPC-S04_npc_talk_right_v002_sheet.png",
+        "sourceFrameIds": [
+          "talk_0",
+          "talk_1",
+          "talk_2",
+          "talk_3"
+        ],
+        "playbackOrder": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "appendPlaybackFrameIds": [],
+        "frameIds": [
+          "talk_0",
+          "talk_1",
+          "talk_2",
+          "talk_3"
+        ]
+      },
+      {
+        "name": "walk",
+        "label": "行走",
+        "fps": 10,
+        "loop": true,
+        "anchorMode": "world-ground/pelvis",
+        "size": [
+          64,
+          64
+        ],
+        "anchor": [
+          32,
+          58
+        ],
+        "sheet": "sheets/NPC-S04_npc_walk_right_v002_sheet.png",
+        "sourceFrameIds": [
+          "walk_0",
+          "walk_1",
+          "walk_2",
+          "walk_3",
+          "walk_4",
+          "walk_5",
+          "walk_6",
+          "walk_7"
+        ],
+        "playbackOrder": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "appendPlaybackFrameIds": [],
+        "frameIds": [
+          "walk_0",
+          "walk_1",
+          "walk_2",
+          "walk_3",
+          "walk_4",
+          "walk_5",
+          "walk_6",
+          "walk_7"
+        ]
+      }
+    ],
+    "frames": [
+      {
+        "id": "idle_0",
+        "animation": "idle",
+        "index": 0,
+        "file": "frames/NPC-S04_npc_idle_right_v002_f01.png",
+        "size": [
+          64,
+          64
+        ],
+        "anchor": [
+          32,
+          58
+        ],
+        "source": {
+          "id": "NPC-S04_idle_talk_right_sheet_v003_idle",
+          "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S04/v003/NPC-S04_idle_talk_right_sheet_v003.png",
+          "sha256": "dc07811786d6a20aac92ab697d13ebc7f8315c8303e54ae69da6897df8bb2d48",
+          "cellIndex": 0,
+          "rect": [
+            0,
+            0,
+            397,
+            396
+          ],
+          "anchor": [
+            219,
+            386
+          ]
+        },
+        "transform": {
+          "uniformScale": 0.11796246648793565,
+          "scaledCellSize": [
+            47,
+            47
+          ],
+          "scaledVisibleCrop": [
+            6,
+            2,
+            37,
+            45
+          ],
+          "translation": [
+            12,
+            14
+          ],
+          "pixelOffset": [
+            0,
+            0
+          ],
+          "contactCorrectionPx": [
+            0,
+            0
+          ],
+          "contactAlphaThreshold": 128,
+          "filter": "nearest",
+          "cropAlphaThreshold": 1,
+          "cropNotes": "Transparent padding geometry excludes alpha=1/255 scattered speckles outside retained crop; retained RGBA is not thresholded."
+        },
+        "duration": 1,
+        "sha256": "56a5691d50662c680fc6763e45f47c2eae059137ec8846234e13d7ddaa7face8",
+        "atlasRect": [
+          0,
+          0,
+          64,
+          64
+        ],
+        "visibleBounds": [
+          12,
+          14,
+          37,
+          44
+        ]
+      },
+      {
+        "id": "idle_1",
+        "animation": "idle",
+        "index": 1,
+        "file": "frames/NPC-S04_npc_idle_right_v002_f02.png",
+        "size": [
+          64,
+          64
+        ],
+        "anchor": [
+          32,
+          58
+        ],
+        "source": {
+          "id": "NPC-S04_idle_talk_right_sheet_v003_idle",
+          "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S04/v003/NPC-S04_idle_talk_right_sheet_v003.png",
+          "sha256": "dc07811786d6a20aac92ab697d13ebc7f8315c8303e54ae69da6897df8bb2d48",
+          "cellIndex": 1,
+          "rect": [
+            397,
+            0,
+            396,
+            396
+          ],
+          "anchor": [
+            221,
+            387
+          ]
+        },
+        "transform": {
+          "uniformScale": 0.11796246648793565,
+          "scaledCellSize": [
+            47,
+            47
+          ],
+          "scaledVisibleCrop": [
+            5,
+            1,
+            38,
+            46
+          ],
+          "translation": [
+            11,
+            13
+          ],
+          "pixelOffset": [
+            0,
+            0
+          ],
+          "contactCorrectionPx": [
+            0,
+            0
+          ],
+          "contactAlphaThreshold": 128,
+          "filter": "nearest",
+          "cropAlphaThreshold": 1,
+          "cropNotes": "Transparent padding geometry excludes alpha=1/255 scattered speckles outside retained crop; retained RGBA is not thresholded."
+        },
+        "duration": 1,
+        "sha256": "c38f431d3b508a095466eefb37a6d19330347b5a38c62e7f0ad54da8a31ce058",
+        "atlasRect": [
+          64,
+          0,
+          64,
+          64
+        ],
+        "visibleBounds": [
+          12,
+          14,
+          37,
+          44
+        ]
+      },
+      {
+        "id": "idle_2",
+        "animation": "idle",
+        "index": 2,
+        "file": "frames/NPC-S04_npc_idle_right_v002_f03.png",
+        "size": [
+          64,
+          64
+        ],
+        "anchor": [
+          32,
+          58
+        ],
+        "source": {
+          "id": "NPC-S04_idle_talk_right_sheet_v003_idle",
+          "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S04/v003/NPC-S04_idle_talk_right_sheet_v003.png",
+          "sha256": "dc07811786d6a20aac92ab697d13ebc7f8315c8303e54ae69da6897df8bb2d48",
+          "cellIndex": 2,
+          "rect": [
+            793,
+            0,
+            397,
+            396
+          ],
+          "anchor": [
+            224,
+            387
+          ]
+        },
+        "transform": {
+          "uniformScale": 0.11796246648793565,
+          "scaledCellSize": [
+            47,
+            47
+          ],
+          "scaledVisibleCrop": [
+            6,
+            1,
+            38,
+            46
+          ],
+          "translation": [
+            12,
+            13
+          ],
+          "pixelOffset": [
+            0,
+            0
+          ],
+          "contactCorrectionPx": [
+            0,
+            0
+          ],
+          "contactAlphaThreshold": 128,
+          "filter": "nearest",
+          "cropAlphaThreshold": 1,
+          "cropNotes": "Transparent padding geometry excludes alpha=1/255 scattered speckles outside retained crop; retained RGBA is not thresholded."
+        },
+        "duration": 1,
+        "sha256": "33f9622693e2257631611fc12cdb9a71adae6448e0ad132f110a56714c76684d",
+        "atlasRect": [
+          128,
+          0,
+          64,
+          64
+        ],
+        "visibleBounds": [
+          12,
+          14,
+          37,
+          44
+        ]
+      },
+      {
+        "id": "idle_3",
+        "animation": "idle",
+        "index": 3,
+        "file": "frames/NPC-S04_npc_idle_right_v002_f04.png",
+        "size": [
+          64,
+          64
+        ],
+        "anchor": [
+          32,
+          58
+        ],
+        "source": {
+          "id": "NPC-S04_idle_talk_right_sheet_v003_idle",
+          "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S04/v003/NPC-S04_idle_talk_right_sheet_v003.png",
+          "sha256": "dc07811786d6a20aac92ab697d13ebc7f8315c8303e54ae69da6897df8bb2d48",
+          "cellIndex": 3,
+          "rect": [
+            1190,
+            0,
+            396,
+            396
+          ],
+          "anchor": [
+            227,
+            387
+          ]
+        },
+        "transform": {
+          "uniformScale": 0.11796246648793565,
+          "scaledCellSize": [
+            47,
+            47
+          ],
+          "scaledVisibleCrop": [
+            6,
+            1,
+            38,
+            46
+          ],
+          "translation": [
+            11,
+            13
+          ],
+          "pixelOffset": [
+            0,
+            0
+          ],
+          "contactCorrectionPx": [
+            0,
+            0
+          ],
+          "contactAlphaThreshold": 128,
+          "filter": "nearest",
+          "cropAlphaThreshold": 1,
+          "cropNotes": "Transparent padding geometry excludes alpha=1/255 scattered speckles outside retained crop; retained RGBA is not thresholded."
+        },
+        "duration": 1,
+        "sha256": "4518c12d03246136ba9102a42e7a4da89283e45c776135b83077a4a5344292ae",
+        "atlasRect": [
+          192,
+          0,
+          64,
+          64
+        ],
+        "visibleBounds": [
+          11,
+          14,
+          38,
+          44
+        ]
+      },
+      {
+        "id": "idle_4",
+        "animation": "idle",
+        "index": 4,
+        "file": "frames/NPC-S04_npc_idle_right_v002_f05.png",
+        "size": [
+          64,
+          64
+        ],
+        "anchor": [
+          32,
+          58
+        ],
+        "source": {
+          "id": "NPC-S04_idle_talk_right_sheet_v003_idle",
+          "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S04/v003/NPC-S04_idle_talk_right_sheet_v003.png",
+          "sha256": "dc07811786d6a20aac92ab697d13ebc7f8315c8303e54ae69da6897df8bb2d48",
+          "cellIndex": 4,
+          "rect": [
+            1586,
+            0,
+            397,
+            396
+          ],
+          "anchor": [
+            230,
+            388
+          ]
+        },
+        "transform": {
+          "uniformScale": 0.11796246648793565,
+          "scaledCellSize": [
+            47,
+            47
+          ],
+          "scaledVisibleCrop": [
+            6,
+            2,
+            38,
+            45
+          ],
+          "translation": [
+            11,
+            14
+          ],
+          "pixelOffset": [
+            0,
+            0
+          ],
+          "contactCorrectionPx": [
+            0,
+            0
+          ],
+          "contactAlphaThreshold": 128,
+          "filter": "nearest",
+          "cropAlphaThreshold": 1,
+          "cropNotes": "Transparent padding geometry excludes alpha=1/255 scattered speckles outside retained crop; retained RGBA is not thresholded."
+        },
+        "duration": 1,
+        "sha256": "e949d17ab2a0067f2cd3b2a970505d55fc465330a037d6a906566fb8533a84b2",
+        "atlasRect": [
+          256,
+          0,
+          64,
+          64
+        ],
+        "visibleBounds": [
+          12,
+          14,
+          37,
+          44
+        ]
+      },
+      {
+        "id": "idle_5",
+        "animation": "idle",
+        "index": 5,
+        "file": "frames/NPC-S04_npc_idle_right_v002_f06.png",
+        "size": [
+          64,
+          64
+        ],
+        "anchor": [
+          32,
+          58
+        ],
+        "source": {
+          "id": "NPC-S04_idle_talk_right_sheet_v003_idle",
+          "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S04/v003/NPC-S04_idle_talk_right_sheet_v003.png",
+          "sha256": "dc07811786d6a20aac92ab697d13ebc7f8315c8303e54ae69da6897df8bb2d48",
+          "cellIndex": 5,
+          "rect": [
+            0,
+            396,
+            397,
+            397
+          ],
+          "anchor": [
+            219,
+            380
+          ]
+        },
+        "transform": {
+          "uniformScale": 0.11796246648793565,
+          "scaledCellSize": [
+            47,
+            47
+          ],
+          "scaledVisibleCrop": [
+            6,
+            1,
+            37,
+            45
+          ],
+          "translation": [
+            12,
+            14
+          ],
+          "pixelOffset": [
+            0,
+            0
+          ],
+          "contactCorrectionPx": [
+            0,
+            0
+          ],
+          "contactAlphaThreshold": 128,
+          "filter": "nearest",
+          "cropAlphaThreshold": 1,
+          "cropNotes": "Transparent padding geometry excludes alpha=1/255 scattered speckles outside retained crop; retained RGBA is not thresholded."
+        },
+        "duration": 1,
+        "sha256": "2552f872060f40ddd37db1d36a258369d13085eb741559c7fc05b1655039344e",
+        "atlasRect": [
+          320,
+          0,
+          64,
+          64
+        ],
+        "visibleBounds": [
+          12,
+          14,
+          37,
+          44
+        ]
+      },
+      {
+        "id": "talk_0",
+        "animation": "talk",
+        "index": 0,
+        "file": "frames/NPC-S04_npc_talk_right_v002_f01.png",
+        "size": [
+          64,
+          64
+        ],
+        "anchor": [
+          32,
+          58
+        ],
+        "source": {
+          "id": "NPC-S04_idle_talk_right_sheet_v003_talk",
+          "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S04/v003/NPC-S04_idle_talk_right_sheet_v003.png",
+          "sha256": "dc07811786d6a20aac92ab697d13ebc7f8315c8303e54ae69da6897df8bb2d48",
+          "cellIndex": 0,
+          "rect": [
+            397,
+            396,
+            396,
+            397
+          ],
+          "anchor": [
+            221,
+            380
+          ]
+        },
+        "transform": {
+          "uniformScale": 0.11796246648793565,
+          "scaledCellSize": [
+            47,
+            47
+          ],
+          "scaledVisibleCrop": [
+            5,
+            1,
+            38,
+            45
+          ],
+          "translation": [
+            11,
+            14
+          ],
+          "pixelOffset": [
+            0,
+            0
+          ],
+          "contactCorrectionPx": [
+            0,
+            0
+          ],
+          "contactAlphaThreshold": 128,
+          "filter": "nearest",
+          "cropAlphaThreshold": 1,
+          "cropNotes": "Transparent padding geometry excludes alpha=1/255 scattered speckles outside retained crop; retained RGBA is not thresholded."
+        },
+        "duration": 1,
+        "sha256": "3dbc663cc421330eb042d75a34258ee53afe27ad477e65ae7d46b5414c01f8eb",
+        "atlasRect": [
+          384,
+          0,
+          64,
+          64
+        ],
+        "visibleBounds": [
+          12,
+          14,
+          37,
+          44
+        ]
+      },
+      {
+        "id": "talk_1",
+        "animation": "talk",
+        "index": 1,
+        "file": "frames/NPC-S04_npc_talk_right_v002_f02.png",
+        "size": [
+          64,
+          64
+        ],
+        "anchor": [
+          32,
+          58
+        ],
+        "source": {
+          "id": "NPC-S04_idle_talk_right_sheet_v003_talk",
+          "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S04/v003/NPC-S04_idle_talk_right_sheet_v003.png",
+          "sha256": "dc07811786d6a20aac92ab697d13ebc7f8315c8303e54ae69da6897df8bb2d48",
+          "cellIndex": 1,
+          "rect": [
+            793,
+            396,
+            397,
+            397
+          ],
+          "anchor": [
+            224,
+            380
+          ]
+        },
+        "transform": {
+          "uniformScale": 0.11796246648793565,
+          "scaledCellSize": [
+            47,
+            47
+          ],
+          "scaledVisibleCrop": [
+            6,
+            1,
+            40,
+            45
+          ],
+          "translation": [
+            12,
+            14
+          ],
+          "pixelOffset": [
+            0,
+            0
+          ],
+          "contactCorrectionPx": [
+            0,
+            0
+          ],
+          "contactAlphaThreshold": 128,
+          "filter": "nearest",
+          "cropAlphaThreshold": 1,
+          "cropNotes": "Transparent padding geometry excludes alpha=1/255 scattered speckles outside retained crop; retained RGBA is not thresholded."
+        },
+        "duration": 1,
+        "sha256": "a520b292dd4546d410b975dac9a8e5912e60f01e745af8ad221ac029f22a8d35",
+        "atlasRect": [
+          448,
+          0,
+          64,
+          64
+        ],
+        "visibleBounds": [
+          12,
+          14,
+          40,
+          44
+        ]
+      },
+      {
+        "id": "talk_2",
+        "animation": "talk",
+        "index": 2,
+        "file": "frames/NPC-S04_npc_talk_right_v002_f03.png",
+        "size": [
+          64,
+          64
+        ],
+        "anchor": [
+          32,
+          58
+        ],
+        "source": {
+          "id": "NPC-S04_idle_talk_right_sheet_v003_talk",
+          "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S04/v003/NPC-S04_idle_talk_right_sheet_v003.png",
+          "sha256": "dc07811786d6a20aac92ab697d13ebc7f8315c8303e54ae69da6897df8bb2d48",
+          "cellIndex": 2,
+          "rect": [
+            1190,
+            396,
+            396,
+            397
+          ],
+          "anchor": [
+            227,
+            380
+          ]
+        },
+        "transform": {
+          "uniformScale": 0.11796246648793565,
+          "scaledCellSize": [
+            47,
+            47
+          ],
+          "scaledVisibleCrop": [
+            6,
+            1,
+            38,
+            45
+          ],
+          "translation": [
+            11,
+            14
+          ],
+          "pixelOffset": [
+            0,
+            0
+          ],
+          "contactCorrectionPx": [
+            0,
+            0
+          ],
+          "contactAlphaThreshold": 128,
+          "filter": "nearest",
+          "cropAlphaThreshold": 1,
+          "cropNotes": "Transparent padding geometry excludes alpha=1/255 scattered speckles outside retained crop; retained RGBA is not thresholded."
+        },
+        "duration": 1,
+        "sha256": "9ee18e8b18122b3c32b6bd5bec3ca51b5d11b4d3873f615ffae5abdba44cddb4",
+        "atlasRect": [
+          0,
+          64,
+          64,
+          64
+        ],
+        "visibleBounds": [
+          11,
+          14,
+          38,
+          44
+        ]
+      },
+      {
+        "id": "talk_3",
+        "animation": "talk",
+        "index": 3,
+        "file": "frames/NPC-S04_npc_talk_right_v002_f04.png",
+        "size": [
+          64,
+          64
+        ],
+        "anchor": [
+          32,
+          58
+        ],
+        "source": {
+          "id": "NPC-S04_idle_talk_right_sheet_v003_talk",
+          "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S04/v003/NPC-S04_idle_talk_right_sheet_v003.png",
+          "sha256": "dc07811786d6a20aac92ab697d13ebc7f8315c8303e54ae69da6897df8bb2d48",
+          "cellIndex": 3,
+          "rect": [
+            1586,
+            396,
+            397,
+            397
+          ],
+          "anchor": [
+            230,
+            380
+          ]
+        },
+        "transform": {
+          "uniformScale": 0.11796246648793565,
+          "scaledCellSize": [
+            47,
+            47
+          ],
+          "scaledVisibleCrop": [
+            6,
+            1,
+            38,
+            45
+          ],
+          "translation": [
+            11,
+            14
+          ],
+          "pixelOffset": [
+            0,
+            0
+          ],
+          "contactCorrectionPx": [
+            0,
+            0
+          ],
+          "contactAlphaThreshold": 128,
+          "filter": "nearest",
+          "cropAlphaThreshold": 1,
+          "cropNotes": "Transparent padding geometry excludes alpha=1/255 scattered speckles outside retained crop; retained RGBA is not thresholded."
+        },
+        "duration": 1,
+        "sha256": "a8f5fce8d951f2fc132540162cd6766e9a9852df0f3009b57ac22f3458866085",
+        "atlasRect": [
+          64,
+          64,
+          64,
+          64
+        ],
+        "visibleBounds": [
+          12,
+          14,
+          37,
+          44
+        ]
+      },
+      {
+        "id": "walk_0",
+        "animation": "walk",
+        "index": 0,
+        "file": "frames/NPC-S04_npc_walk_right_v002_f01.png",
+        "size": [
+          64,
+          64
+        ],
+        "anchor": [
+          32,
+          58
+        ],
+        "source": {
+          "id": "NPC-S04_walk_right_sheet_v003_walk",
+          "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S04/v003/NPC-S04_walk_right_sheet_v003.png",
+          "sha256": "b241de838b4e01a0d09c39b3b69aa88070773520e13fe9e109147a18d1a259ac",
+          "cellIndex": 0,
+          "rect": [
+            0,
+            0,
+            444,
+            444
+          ],
+          "anchor": [
+            247,
+            422
+          ]
+        },
+        "transform": {
+          "uniformScale": 0.10653753026634383,
+          "scaledCellSize": [
+            47,
+            47
+          ],
+          "scaledVisibleCrop": [
+            3,
+            0,
+            38,
+            45
+          ],
+          "translation": [
+            9,
+            13
+          ],
+          "pixelOffset": [
+            0,
+            0
+          ],
+          "contactCorrectionPx": [
+            0,
+            0
+          ],
+          "contactAlphaThreshold": null,
+          "filter": "nearest",
+          "cropAlphaThreshold": 1,
+          "cropNotes": "Transparent padding geometry excludes alpha=1/255 scattered speckles outside retained crop; retained RGBA is not thresholded."
+        },
+        "duration": 1,
+        "sha256": "deab3d9d066828985fafe6ff5aa4396bebc21f28ed15bbbf8c24900ca73f8e54",
+        "atlasRect": [
+          128,
+          64,
+          64,
+          64
+        ],
+        "visibleBounds": [
+          9,
+          14,
+          38,
+          43
+        ]
+      },
+      {
+        "id": "walk_1",
+        "animation": "walk",
+        "index": 1,
+        "file": "frames/NPC-S04_npc_walk_right_v002_f02.png",
+        "size": [
+          64,
+          64
+        ],
+        "anchor": [
+          32,
+          58
+        ],
+        "source": {
+          "id": "NPC-S04_walk_right_sheet_v003_walk",
+          "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S04/v003/NPC-S04_walk_right_sheet_v003.png",
+          "sha256": "b241de838b4e01a0d09c39b3b69aa88070773520e13fe9e109147a18d1a259ac",
+          "cellIndex": 1,
+          "rect": [
+            444,
+            0,
+            443,
+            444
+          ],
+          "anchor": [
+            247,
+            422
+          ]
+        },
+        "transform": {
+          "uniformScale": 0.10653753026634383,
+          "scaledCellSize": [
+            47,
+            47
+          ],
+          "scaledVisibleCrop": [
+            3,
+            1,
+            38,
+            44
+          ],
+          "translation": [
+            9,
+            14
+          ],
+          "pixelOffset": [
+            0,
+            0
+          ],
+          "contactCorrectionPx": [
+            0,
+            0
+          ],
+          "contactAlphaThreshold": null,
+          "filter": "nearest",
+          "cropAlphaThreshold": 1,
+          "cropNotes": "Transparent padding geometry excludes alpha=1/255 scattered speckles outside retained crop; retained RGBA is not thresholded."
+        },
+        "duration": 1,
+        "sha256": "1909a624f2a764c198644c6835b94ee6fd106f36dfc8f7fd81470d1730f13d3b",
+        "atlasRect": [
+          192,
+          64,
+          64,
+          64
+        ],
+        "visibleBounds": [
+          9,
+          14,
+          38,
+          44
+        ]
+      },
+      {
+        "id": "walk_2",
+        "animation": "walk",
+        "index": 2,
+        "file": "frames/NPC-S04_npc_walk_right_v002_f03.png",
+        "size": [
+          64,
+          64
+        ],
+        "anchor": [
+          32,
+          58
+        ],
+        "source": {
+          "id": "NPC-S04_walk_right_sheet_v003_walk",
+          "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S04/v003/NPC-S04_walk_right_sheet_v003.png",
+          "sha256": "b241de838b4e01a0d09c39b3b69aa88070773520e13fe9e109147a18d1a259ac",
+          "cellIndex": 2,
+          "rect": [
+            887,
+            0,
+            443,
+            444
+          ],
+          "anchor": [
+            251,
+            422
+          ]
+        },
+        "transform": {
+          "uniformScale": 0.10653753026634383,
+          "scaledCellSize": [
+            47,
+            47
+          ],
+          "scaledVisibleCrop": [
+            3,
+            0,
+            38,
+            45
+          ],
+          "translation": [
+            8,
+            13
+          ],
+          "pixelOffset": [
+            0,
+            0
+          ],
+          "contactCorrectionPx": [
+            0,
+            0
+          ],
+          "contactAlphaThreshold": null,
+          "filter": "nearest",
+          "cropAlphaThreshold": 1,
+          "cropNotes": "Transparent padding geometry excludes alpha=1/255 scattered speckles outside retained crop; retained RGBA is not thresholded."
+        },
+        "duration": 1,
+        "sha256": "5a0d25ed2cd49c3d64328ded0f84fa8553439c5475fbab0ec7ae7bfc60d2adcb",
+        "atlasRect": [
+          256,
+          64,
+          64,
+          64
+        ],
+        "visibleBounds": [
+          8,
+          14,
+          38,
+          43
+        ]
+      },
+      {
+        "id": "walk_3",
+        "animation": "walk",
+        "index": 3,
+        "file": "frames/NPC-S04_npc_walk_right_v002_f04.png",
+        "size": [
+          64,
+          64
+        ],
+        "anchor": [
+          32,
+          58
+        ],
+        "source": {
+          "id": "NPC-S04_walk_right_sheet_v003_walk",
+          "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S04/v003/NPC-S04_walk_right_sheet_v003.png",
+          "sha256": "b241de838b4e01a0d09c39b3b69aa88070773520e13fe9e109147a18d1a259ac",
+          "cellIndex": 3,
+          "rect": [
+            1330,
+            0,
+            444,
+            444
+          ],
+          "anchor": [
+            254,
+            422
+          ]
+        },
+        "transform": {
+          "uniformScale": 0.10653753026634383,
+          "scaledCellSize": [
+            47,
+            47
+          ],
+          "scaledVisibleCrop": [
+            3,
+            0,
+            38,
+            45
+          ],
+          "translation": [
+            8,
+            13
+          ],
+          "pixelOffset": [
+            0,
+            0
+          ],
+          "contactCorrectionPx": [
+            0,
+            0
+          ],
+          "contactAlphaThreshold": null,
+          "filter": "nearest",
+          "cropAlphaThreshold": 1,
+          "cropNotes": "Transparent padding geometry excludes alpha=1/255 scattered speckles outside retained crop; retained RGBA is not thresholded."
+        },
+        "duration": 1,
+        "sha256": "2618ad2b8cd20269b60464e752464fb881bc639618efa863393467be66596315",
+        "atlasRect": [
+          320,
+          64,
+          64,
+          64
+        ],
+        "visibleBounds": [
+          8,
+          14,
+          38,
+          43
+        ]
+      },
+      {
+        "id": "walk_4",
+        "animation": "walk",
+        "index": 4,
+        "file": "frames/NPC-S04_npc_walk_right_v002_f05.png",
+        "size": [
+          64,
+          64
+        ],
+        "anchor": [
+          32,
+          58
+        ],
+        "source": {
+          "id": "NPC-S04_walk_right_sheet_v003_walk",
+          "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S04/v003/NPC-S04_walk_right_sheet_v003.png",
+          "sha256": "b241de838b4e01a0d09c39b3b69aa88070773520e13fe9e109147a18d1a259ac",
+          "cellIndex": 4,
+          "rect": [
+            0,
+            444,
+            444,
+            443
+          ],
+          "anchor": [
+            247,
+            422
+          ]
+        },
+        "transform": {
+          "uniformScale": 0.10653753026634383,
+          "scaledCellSize": [
+            47,
+            47
+          ],
+          "scaledVisibleCrop": [
+            3,
+            1,
+            38,
+            45
+          ],
+          "translation": [
+            9,
+            14
+          ],
+          "pixelOffset": [
+            0,
+            0
+          ],
+          "contactCorrectionPx": [
+            0,
+            0
+          ],
+          "contactAlphaThreshold": null,
+          "filter": "nearest",
+          "cropAlphaThreshold": 1,
+          "cropNotes": "Transparent padding geometry excludes alpha=1/255 scattered speckles outside retained crop; retained RGBA is not thresholded."
+        },
+        "duration": 1,
+        "sha256": "93865d2ab0aa0608a2f3257dfb9b01362debfcf3ce18ca8641b3c2fc6c13faf0",
+        "atlasRect": [
+          384,
+          64,
+          64,
+          64
+        ],
+        "visibleBounds": [
+          9,
+          14,
+          38,
+          44
+        ]
+      },
+      {
+        "id": "walk_5",
+        "animation": "walk",
+        "index": 5,
+        "file": "frames/NPC-S04_npc_walk_right_v002_f06.png",
+        "size": [
+          64,
+          64
+        ],
+        "anchor": [
+          32,
+          58
+        ],
+        "source": {
+          "id": "NPC-S04_walk_right_sheet_v003_walk",
+          "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S04/v003/NPC-S04_walk_right_sheet_v003.png",
+          "sha256": "b241de838b4e01a0d09c39b3b69aa88070773520e13fe9e109147a18d1a259ac",
+          "cellIndex": 5,
+          "rect": [
+            444,
+            444,
+            443,
+            443
+          ],
+          "anchor": [
+            248,
+            422
+          ]
+        },
+        "transform": {
+          "uniformScale": 0.10653753026634383,
+          "scaledCellSize": [
+            47,
+            47
+          ],
+          "scaledVisibleCrop": [
+            3,
+            1,
+            38,
+            45
+          ],
+          "translation": [
+            9,
+            14
+          ],
+          "pixelOffset": [
+            0,
+            0
+          ],
+          "contactCorrectionPx": [
+            0,
+            0
+          ],
+          "contactAlphaThreshold": null,
+          "filter": "nearest",
+          "cropAlphaThreshold": 1,
+          "cropNotes": "Transparent padding geometry excludes alpha=1/255 scattered speckles outside retained crop; retained RGBA is not thresholded."
+        },
+        "duration": 1,
+        "sha256": "66749a607ef5fe208c095ee47dcfa760939bec95527908b31aa583c2891b4757",
+        "atlasRect": [
+          448,
+          64,
+          64,
+          64
+        ],
+        "visibleBounds": [
+          9,
+          14,
+          38,
+          44
+        ]
+      },
+      {
+        "id": "walk_6",
+        "animation": "walk",
+        "index": 6,
+        "file": "frames/NPC-S04_npc_walk_right_v002_f07.png",
+        "size": [
+          64,
+          64
+        ],
+        "anchor": [
+          32,
+          58
+        ],
+        "source": {
+          "id": "NPC-S04_walk_right_sheet_v003_walk",
+          "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S04/v003/NPC-S04_walk_right_sheet_v003.png",
+          "sha256": "b241de838b4e01a0d09c39b3b69aa88070773520e13fe9e109147a18d1a259ac",
+          "cellIndex": 6,
+          "rect": [
+            887,
+            444,
+            443,
+            443
+          ],
+          "anchor": [
+            248,
+            422
+          ]
+        },
+        "transform": {
+          "uniformScale": 0.10653753026634383,
+          "scaledCellSize": [
+            47,
+            47
+          ],
+          "scaledVisibleCrop": [
+            2,
+            1,
+            39,
+            44
+          ],
+          "translation": [
+            8,
+            14
+          ],
+          "pixelOffset": [
+            0,
+            0
+          ],
+          "contactCorrectionPx": [
+            0,
+            0
+          ],
+          "contactAlphaThreshold": null,
+          "filter": "nearest",
+          "cropAlphaThreshold": 1,
+          "cropNotes": "Transparent padding geometry excludes alpha=1/255 scattered speckles outside retained crop; retained RGBA is not thresholded."
+        },
+        "duration": 1,
+        "sha256": "d1957fec316adfa8501da06256486c9dcd2b234fa22e21d065028843e54acd19",
+        "atlasRect": [
+          0,
+          128,
+          64,
+          64
+        ],
+        "visibleBounds": [
+          9,
+          14,
+          38,
+          43
+        ]
+      },
+      {
+        "id": "walk_7",
+        "animation": "walk",
+        "index": 7,
+        "file": "frames/NPC-S04_npc_walk_right_v002_f08.png",
+        "size": [
+          64,
+          64
+        ],
+        "anchor": [
+          32,
+          58
+        ],
+        "source": {
+          "id": "NPC-S04_walk_right_sheet_v003_walk",
+          "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S04/v003/NPC-S04_walk_right_sheet_v003.png",
+          "sha256": "b241de838b4e01a0d09c39b3b69aa88070773520e13fe9e109147a18d1a259ac",
+          "cellIndex": 7,
+          "rect": [
+            1330,
+            444,
+            444,
+            443
+          ],
+          "anchor": [
+            255,
+            422
+          ]
+        },
+        "transform": {
+          "uniformScale": 0.10653753026634383,
+          "scaledCellSize": [
+            47,
+            47
+          ],
+          "scaledVisibleCrop": [
+            3,
+            1,
+            38,
+            45
+          ],
+          "translation": [
+            8,
+            14
+          ],
+          "pixelOffset": [
+            0,
+            0
+          ],
+          "contactCorrectionPx": [
+            0,
+            0
+          ],
+          "contactAlphaThreshold": null,
+          "filter": "nearest",
+          "cropAlphaThreshold": 1,
+          "cropNotes": "Transparent padding geometry excludes alpha=1/255 scattered speckles outside retained crop; retained RGBA is not thresholded."
+        },
+        "duration": 1,
+        "sha256": "f8f2c649bfcd415acb2ac4eae394592c12cb5cc315435cb3a6fefe7b70478d09",
+        "atlasRect": [
+          64,
+          128,
+          64,
+          64
+        ],
+        "visibleBounds": [
+          8,
+          14,
+          38,
+          44
+        ]
+      }
+    ]
+  },
+  "staticProvenance": null,
+  "notes": [
+    "All image processing is mechanical extraction, fixed scale per source action, and integer translation.",
+    "No per-frame bbox stretch; RAW untouched.",
+    "walk uses a world-ground/pelvis reference and can preserve upward body motion."
+  ]
+}

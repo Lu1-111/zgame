@@ -1,0 +1,340 @@
+{
+  "batchId": "ENM-B03",
+  "effects": [
+    {
+      "id": "ENM-01_mandible_snap",
+      "name": "mandible_snap",
+      "enemyId": "ENM-01",
+      "gameEnemyId": "moss_beetle",
+      "label": "苔甲虫·钳击碎叶",
+      "sourcePath": "/home/lululu/zgame/assets/RAW/effects/ENM-B03/v001/ENM-01_mandible_snap_sheet_v001.png",
+      "promptPath": "/home/lululu/zgame/assets/RAW/effects/ENM-B03/v001/ENM-01_mandible_snap_sheet_v001.prompt.txt",
+      "generatedPath": "/home/lululu/.codex/generated_images/01a16cdb-4368-7a73-a021-7de070b80e42/exec-74493bc3-d9e0-410b-ad4d-a0c4ac7acccb.png",
+      "sourceColumns": 3,
+      "sourceRows": 2,
+      "sourceIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "sourceRects": [
+        [
+          0,
+          0,
+          512,
+          512
+        ],
+        [
+          512,
+          0,
+          512,
+          512
+        ],
+        [
+          1024,
+          0,
+          512,
+          512
+        ],
+        [
+          0,
+          512,
+          512,
+          512
+        ],
+        [
+          512,
+          512,
+          512,
+          512
+        ],
+        [
+          1024,
+          512,
+          512,
+          512
+        ]
+      ],
+      "sourceAnchors": [
+        [
+          256,
+          256
+        ],
+        [
+          256,
+          256
+        ],
+        [
+          256,
+          256
+        ],
+        [
+          256,
+          256
+        ],
+        [
+          256,
+          256
+        ],
+        [
+          256,
+          256
+        ]
+      ],
+      "target": [
+        96,
+        96
+      ],
+      "anchor": [
+        48,
+        48
+      ],
+      "scale": 0.15625,
+      "fps": 14,
+      "loop": false,
+      "kind": "effect",
+      "triggerAction": "attack",
+      "attachPoint": "attack_contact",
+      "triggerOffset": [
+        28,
+        -20
+      ],
+      "phases": [
+        "建立",
+        "峰值",
+        "扩张",
+        "碎裂",
+        "衰减",
+        "尾屑"
+      ],
+      "notes": []
+    },
+    {
+      "id": "ENM-09_lantern_charge",
+      "name": "lantern_charge",
+      "enemyId": "ENM-09",
+      "gameEnemyId": "lamp_bug",
+      "label": "矿灯虫·灯能冲撞",
+      "sourcePath": "/home/lululu/zgame/assets/RAW/effects/ENM-B03/v001/ENM-09_lantern_charge_sheet_v001.png",
+      "promptPath": "/home/lululu/zgame/assets/RAW/effects/ENM-B03/v001/ENM-09_lantern_charge_sheet_v001.prompt.txt",
+      "generatedPath": "/home/lululu/.codex/generated_images/01a16cdb-4368-7a73-a021-7de070b80e42/exec-943a595e-1036-4c90-bf2b-9eddc0b24ca7.png",
+      "sourceColumns": 3,
+      "sourceRows": 2,
+      "sourceIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "sourceRects": [
+        [
+          0,
+          0,
+          512,
+          512
+        ],
+        [
+          512,
+          0,
+          512,
+          512
+        ],
+        [
+          1024,
+          0,
+          512,
+          512
+        ],
+        [
+          0,
+          512,
+          512,
+          512
+        ],
+        [
+          512,
+          512,
+          512,
+          512
+        ],
+        [
+          1024,
+          512,
+          512,
+          512
+        ]
+      ],
+      "sourceAnchors": [
+        [
+          256,
+          256
+        ],
+        [
+          256,
+          256
+        ],
+        [
+          256,
+          256
+        ],
+        [
+          256,
+          256
+        ],
+        [
+          256,
+          256
+        ],
+        [
+          256,
+          256
+        ]
+      ],
+      "target": [
+        96,
+        96
+      ],
+      "anchor": [
+        48,
+        48
+      ],
+      "scale": 0.15625,
+      "fps": 14,
+      "loop": false,
+      "kind": "effect",
+      "triggerAction": "attack",
+      "attachPoint": "attack_contact",
+      "triggerOffset": [
+        28,
+        -20
+      ],
+      "phases": [
+        "建立",
+        "峰值",
+        "扩张",
+        "碎裂",
+        "衰减",
+        "尾屑"
+      ],
+      "notes": []
+    },
+    {
+      "id": "ENM-10_acid_splash",
+      "name": "acid_splash",
+      "enemyId": "ENM-10",
+      "gameEnemyId": "acid_slug",
+      "label": "酸液蛞·酸弹落点",
+      "sourcePath": "/home/lululu/zgame/assets/RAW/effects/ENM-B03/v001/ENM-10_acid_splash_sheet_v001.png",
+      "promptPath": "/home/lululu/zgame/assets/RAW/effects/ENM-B03/v001/ENM-10_acid_splash_sheet_v001.prompt.txt",
+      "generatedPath": "/home/lululu/.codex/generated_images/01a16cdb-4368-7a73-a021-7de070b80e42/exec-18951d20-d504-453c-bcfd-104b940793b4.png",
+      "sourceColumns": 3,
+      "sourceRows": 2,
+      "sourceIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "sourceRects": [
+        [
+          0,
+          0,
+          512,
+          512
+        ],
+        [
+          512,
+          0,
+          512,
+          512
+        ],
+        [
+          1024,
+          0,
+          512,
+          512
+        ],
+        [
+          0,
+          512,
+          512,
+          512
+        ],
+        [
+          512,
+          512,
+          512,
+          512
+        ],
+        [
+          1024,
+          512,
+          512,
+          512
+        ]
+      ],
+      "sourceAnchors": [
+        [
+          256,
+          446
+        ],
+        [
+          256,
+          446
+        ],
+        [
+          256,
+          446
+        ],
+        [
+          256,
+          414
+        ],
+        [
+          256,
+          414
+        ],
+        [
+          256,
+          414
+        ]
+      ],
+      "target": [
+        96,
+        96
+      ],
+      "anchor": [
+        48,
+        72
+      ],
+      "scale": 0.15625,
+      "fps": 14,
+      "loop": false,
+      "kind": "effect",
+      "triggerAction": "attack",
+      "attachPoint": "ground_contact",
+      "triggerOffset": [
+        28,
+        0
+      ],
+      "phases": [
+        "建立",
+        "峰值",
+        "扩张",
+        "碎裂",
+        "衰减",
+        "尾屑"
+      ],
+      "notes": [
+        "上下排源接地基线446/414，按同一落点校准；第1/6帧无接地线，继承相应动作段root。"
+      ]
+    }
+  ]
+}

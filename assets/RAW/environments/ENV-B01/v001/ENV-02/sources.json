@@ -1,0 +1,31 @@
+{
+  "batch": "ENV-B01",
+  "environment": "ENV-02",
+  "version": "v001",
+  "generation_mode": "built-in image_gen",
+  "transparent_requested": [
+    "terrain",
+    "scenery"
+  ],
+  "sources": [
+    {
+      "path": "assets/RAW/environments/ENV-B01/v001/ENV-02/ENV-02_background_source_v001.png",
+      "sha256": "fb90448f9eff03da1ff4223ce36203c20046b5fe2e6f9845ab2afa31144d359f",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "path": "assets/RAW/environments/ENV-B01/v001/ENV-02/ENV-02_scenery_source_v001.png",
+      "sha256": "7f28b6cb61dc64ceaa13d2840c9d65f790e99f3589f1857585c4e786fde3ff94",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "path": "assets/RAW/environments/ENV-B01/v001/ENV-02/ENV-02_terrain_source_v001.png",
+      "sha256": "abb765902fc86a7a07a8b03220af4f30c8ca4de1b61abbd23fc2ee50d8740c3c",
+      "width": 1254,
+      "height": 1254
+    }
+  ],
+  "prompts": "prompts.json"
+}

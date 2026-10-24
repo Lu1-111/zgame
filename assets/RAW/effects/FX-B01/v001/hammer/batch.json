@@ -1,0 +1,162 @@
+{
+  "batchId": "FX-B01",
+  "effects": [
+    {
+      "id": "WPN-01_hammer_swing_1",
+      "name": "hammer_swing_1",
+      "label": "奶瓶锤·第一击横扫",
+      "checklistId": "WPN-01",
+      "sourcePath": "/home/lululu/zgame/assets/RAW/effects/FX-B01/v001/hammer/WPN-01_hammer_swing_1_sheet_v002.png",
+      "promptPath": "/home/lululu/zgame/assets/RAW/effects/FX-B01/v001/hammer/WPN-01_hammer_swing_1_sheet_v002.prompt.txt",
+      "generationMode": "built-in image_gen",
+      "generatedPath": "/home/lululu/.codex/generated_images/01a16c76-900e-7f20-8155-cccdc5cc521c/exec-dcc5f5ab-1162-484e-88c1-e781125e8738.png",
+      "columns": 3,
+      "rows": 2,
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "target": [
+        64,
+        64
+      ],
+      "sourceAnchorNormalized": [
+        0.5,
+        0.5
+      ],
+      "anchor": [
+        32,
+        32
+      ],
+      "scale": 0.109375,
+      "fps": 12,
+      "loop": false,
+      "attachPoint": "weapon_swing_pivot",
+      "phases": [
+        "上方起弧",
+        "右侧挥击峰值",
+        "向下续弧并断裂",
+        "收招拖尾",
+        "碎片衰减",
+        "尾屑结束"
+      ],
+      "notes": [
+        "v001第4帧少量可见像素触格边，已由生图修订v002。",
+        "整组源锚点固定；挥击轨迹为独立效果，跟随武器轴心，不跟随效果包围盒。"
+      ]
+    },
+    {
+      "id": "WPN-01_hammer_swing_2",
+      "name": "hammer_swing_2",
+      "label": "奶瓶锤·第二击上挑",
+      "checklistId": "WPN-01",
+      "sourcePath": "/home/lululu/zgame/assets/RAW/effects/FX-B01/v001/hammer/WPN-01_hammer_swing_2_sheet_v001.png",
+      "promptPath": "/home/lululu/zgame/assets/RAW/effects/FX-B01/v001/hammer/WPN-01_hammer_swing_2_sheet_v001.prompt.txt",
+      "generationMode": "built-in image_gen",
+      "generatedPath": "/home/lululu/.codex/generated_images/01a16c76-900e-7f20-8155-cccdc5cc521c/exec-2314274a-cb21-450b-b1f2-96ef61960503.png",
+      "columns": 3,
+      "rows": 2,
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "target": [
+        64,
+        64
+      ],
+      "sourceAnchorNormalized": [
+        0.5,
+        0.5
+      ],
+      "anchor": [
+        32,
+        32
+      ],
+      "scale": 0.109375,
+      "fps": 12,
+      "loop": false,
+      "attachPoint": "weapon_swing_pivot",
+      "phases": [
+        "低位起弧",
+        "右侧上扫",
+        "上挑峰值",
+        "上方残弧",
+        "残弧衰减",
+        "尾屑结束"
+      ],
+      "notes": [
+        "上挑从低位向右上连贯移动，末帧保持路径，不重新按碎屑居中。"
+      ]
+    },
+    {
+      "id": "WPN-01_hammer_slam_3",
+      "name": "hammer_slam_3",
+      "label": "奶瓶锤·第三击重砸",
+      "checklistId": "WPN-01",
+      "sourcePath": "/home/lululu/zgame/assets/RAW/effects/FX-B01/v001/hammer/WPN-01_hammer_slam_3_sheet_v001.png",
+      "promptPath": "/home/lululu/zgame/assets/RAW/effects/FX-B01/v001/hammer/WPN-01_hammer_slam_3_sheet_v001.prompt.txt",
+      "generationMode": "built-in image_gen",
+      "generatedPath": "/home/lululu/.codex/generated_images/01a16c76-900e-7f20-8155-cccdc5cc521c/exec-b17bef88-adc0-4fa8-b06f-b0998f0e5cc5.png",
+      "columns": 3,
+      "rows": 2,
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "target": [
+        64,
+        64
+      ],
+      "sourceAnchorNormalized": [
+        0.5,
+        0.75
+      ],
+      "anchor": [
+        32,
+        48
+      ],
+      "scale": 0.109375,
+      "fps": 12,
+      "loop": false,
+      "attachPoint": "ground_contact",
+      "phases": [
+        "向下落势",
+        "地面命中",
+        "奶浪扩散",
+        "向两侧回落",
+        "奶浪碎裂",
+        "尾屑结束"
+      ],
+      "notes": [
+        "生图实际接地基线在上排约y422、下排约y404，按可见接地点校准源锚点，保持同一地面。",
+        "第1帧与第6帧无完整接地线，分别继承同段轨迹root，不以粒子最低点作新root。"
+      ],
+      "sourceAnchors": [
+        [
+          256,
+          422
+        ],
+        [
+          256,
+          422
+        ],
+        [
+          256,
+          424
+        ],
+        [
+          256,
+          404
+        ],
+        [
+          256,
+          404
+        ],
+        [
+          256,
+          404
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,179 @@
+{
+  "id": "ENM-07_telegraph",
+  "enemyId": "ENM-07",
+  "gameEnemyId": "vine_flower",
+  "label": "藤蔓花",
+  "name": "telegraph",
+  "kind": "body",
+  "generationMode": "built-in image_gen",
+  "sourcePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-07/ENM-07_actions_A.png",
+  "sourceRects": [
+    [
+      0,
+      512,
+      384,
+      254
+    ],
+    [
+      384,
+      512,
+      384,
+      254
+    ],
+    [
+      768,
+      512,
+      384,
+      254
+    ],
+    [
+      1152,
+      512,
+      384,
+      254
+    ]
+  ],
+  "sourceAnchors": [
+    [
+      170,
+      222
+    ],
+    [
+      181,
+      222
+    ],
+    [
+      192,
+      222
+    ],
+    [
+      193,
+      222
+    ]
+  ],
+  "sourceSize": [
+    1536,
+    1024
+  ],
+  "sourceSha256": "89b228b5f3ab4eb890f392efd76b7c472bc28a1387aa391acbe145f6e245d048",
+  "sourceBatch": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-07/batch.json",
+  "promptPath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-07/ENM-07_A.prompt.txt",
+  "provenancePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-07/provenance.json",
+  "target": [
+    128,
+    88
+  ],
+  "anchor": [
+    58,
+    72
+  ],
+  "rootType": "ground",
+  "scale": 0.22,
+  "fps": 10,
+  "loop": false,
+  "frameCount": 4,
+  "frames": [
+    "frames/ENM-07_telegraph/ENM-07_telegraph_00.png",
+    "frames/ENM-07_telegraph/ENM-07_telegraph_01.png",
+    "frames/ENM-07_telegraph/ENM-07_telegraph_02.png",
+    "frames/ENM-07_telegraph/ENM-07_telegraph_03.png"
+  ],
+  "sheet": "sheets/ENM-07_telegraph.png",
+  "frameDetails": [
+    {
+      "sourceRect": [
+        0,
+        512,
+        384,
+        254
+      ],
+      "sourceAnchor": [
+        170,
+        222
+      ],
+      "offset": [
+        21,
+        23
+      ],
+      "alphaBBox": [
+        30,
+        25,
+        98,
+        75
+      ]
+    },
+    {
+      "sourceRect": [
+        384,
+        512,
+        384,
+        254
+      ],
+      "sourceAnchor": [
+        181,
+        222
+      ],
+      "offset": [
+        18,
+        23
+      ],
+      "alphaBBox": [
+        20,
+        27,
+        96,
+        75
+      ]
+    },
+    {
+      "sourceRect": [
+        768,
+        512,
+        384,
+        254
+      ],
+      "sourceAnchor": [
+        192,
+        222
+      ],
+      "offset": [
+        16,
+        23
+      ],
+      "alphaBBox": [
+        23,
+        29,
+        95,
+        75
+      ]
+    },
+    {
+      "sourceRect": [
+        1152,
+        512,
+        384,
+        254
+      ],
+      "sourceAnchor": [
+        193,
+        222
+      ],
+      "offset": [
+        16,
+        23
+      ],
+      "alphaBBox": [
+        30,
+        23,
+        96,
+        76
+      ]
+    }
+  ],
+  "fadeStartNormalized": 1.0,
+  "phases": [
+    "telegraph1",
+    "telegraph2",
+    "telegraph3",
+    "telegraph4"
+  ]
+}

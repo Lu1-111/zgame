@@ -1,0 +1,179 @@
+{
+  "id": "BOSS-01_idle",
+  "enemyId": "BOSS-01",
+  "gameEnemyId": "honey_queen",
+  "label": "蜂蜜女王",
+  "name": "idle",
+  "kind": "body",
+  "generationMode": "built-in image_gen",
+  "sourcePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/BOSS-01/BOSS-01_actions_A.png",
+  "sourceRects": [
+    [
+      0,
+      0,
+      384,
+      246
+    ],
+    [
+      384,
+      0,
+      384,
+      246
+    ],
+    [
+      768,
+      0,
+      384,
+      246
+    ],
+    [
+      1152,
+      0,
+      384,
+      246
+    ]
+  ],
+  "sourceAnchors": [
+    [
+      230,
+      136
+    ],
+    [
+      230,
+      136
+    ],
+    [
+      230,
+      136
+    ],
+    [
+      230,
+      136
+    ]
+  ],
+  "sourceSize": [
+    1536,
+    1024
+  ],
+  "sourceSha256": "2d624a1b06611fe66a4c9cbb2c45ac12757da716359c57cbc3b7f33380c35c06",
+  "sourceBatch": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/BOSS-01/batch.json",
+  "promptPath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/BOSS-01/BOSS-01_A.prompt.txt",
+  "provenancePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/BOSS-01/provenance.json",
+  "target": [
+    176,
+    136
+  ],
+  "anchor": [
+    88,
+    68
+  ],
+  "rootType": "flying",
+  "scale": 0.36,
+  "fps": 8,
+  "loop": true,
+  "frameCount": 4,
+  "frames": [
+    "frames/BOSS-01_idle/BOSS-01_idle_00.png",
+    "frames/BOSS-01_idle/BOSS-01_idle_01.png",
+    "frames/BOSS-01_idle/BOSS-01_idle_02.png",
+    "frames/BOSS-01_idle/BOSS-01_idle_03.png"
+  ],
+  "sheet": "sheets/BOSS-01_idle.png",
+  "frameDetails": [
+    {
+      "sourceRect": [
+        0,
+        0,
+        384,
+        246
+      ],
+      "sourceAnchor": [
+        230,
+        136
+      ],
+      "offset": [
+        5,
+        19
+      ],
+      "alphaBBox": [
+        20,
+        25,
+        142,
+        107
+      ]
+    },
+    {
+      "sourceRect": [
+        384,
+        0,
+        384,
+        246
+      ],
+      "sourceAnchor": [
+        230,
+        136
+      ],
+      "offset": [
+        5,
+        19
+      ],
+      "alphaBBox": [
+        5,
+        25,
+        142,
+        108
+      ]
+    },
+    {
+      "sourceRect": [
+        768,
+        0,
+        384,
+        246
+      ],
+      "sourceAnchor": [
+        230,
+        136
+      ],
+      "offset": [
+        5,
+        19
+      ],
+      "alphaBBox": [
+        10,
+        24,
+        141,
+        107
+      ]
+    },
+    {
+      "sourceRect": [
+        1152,
+        0,
+        384,
+        246
+      ],
+      "sourceAnchor": [
+        230,
+        136
+      ],
+      "offset": [
+        5,
+        19
+      ],
+      "alphaBBox": [
+        5,
+        24,
+        126,
+        108
+      ]
+    }
+  ],
+  "fadeStartNormalized": 1.0,
+  "phases": [
+    "idle1",
+    "idle2",
+    "idle3",
+    "idle4"
+  ]
+}

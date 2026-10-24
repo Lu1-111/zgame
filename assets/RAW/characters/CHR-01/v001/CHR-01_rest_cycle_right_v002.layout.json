@@ -1,0 +1,59 @@
+{
+  "sourceId": "rest_cycle",
+  "file": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_rest_cycle_right_v002.png",
+  "columns": 4,
+  "rows": 3,
+  "calibration": {
+    "referenceCell": 0,
+    "targetStandingHeight": 40
+  },
+  "animations": [
+    {
+      "name": "rest_enter",
+      "label": "坐下",
+      "fps": 8,
+      "loop": false,
+      "anchorMode": "ground",
+      "cells": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "name": "rest",
+      "label": "休息",
+      "fps": 5,
+      "loop": true,
+      "anchorMode": "ground",
+      "cells": [
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "name": "rest_exit",
+      "label": "起身",
+      "fps": 10,
+      "loop": false,
+      "anchorMode": "ground",
+      "cells": [
+        8,
+        9,
+        10,
+        11
+      ],
+      "appendPlaybackFrameIds": [
+        "rest_enter_0"
+      ]
+    }
+  ],
+  "anchors": {},
+  "notes": [
+    "Use seated shape from this SAME sheet for rest_enter/rest/rest_exit; replaces life row3 and rest_transition v001.",
+    "Last row last pose is still slightly crouched; finish rest_exit by reusing rest_enter_0 fully standing pose in playback metadata, not generating a fake new frame."
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "assetId": "CHR-01",
+  "uniqueFrameCount": 112,
+  "animationCount": 26,
+  "playbackFrameCount": 118,
+  "canonicalCount": 1,
+  "checks": {
+    "allFrameDimensionsMatch": true,
+    "allFramesHaveRealAlpha": true,
+    "noFrameTouchesCanvasEdge": true,
+    "atlasPixelsExactlyMatchFrames": true,
+    "allSourceHashesMatch": true,
+    "playbackReferencesResolve": true,
+    "groundContactLinesMatchAnchors": true
+  },
+  "atlasMaxChannelDifference": 0,
+  "sourceSheetCount": 9,
+  "groundContactLines": {
+    "guard": [
+      58,
+      58,
+      58,
+      58
+    ],
+    "parry": [
+      58,
+      58,
+      58,
+      58
+    ],
+    "guard_break": [
+      58,
+      58,
+      58,
+      58
+    ],
+    "hurt": [
+      58,
+      58,
+      58,
+      58
+    ],
+    "cast": [
+      58,
+      58,
+      58,
+      58
+    ],
+    "heal": [
+      58,
+      58,
+      58,
+      58
+    ],
+    "interact": [
+      58,
+      58,
+      58,
+      58
+    ],
+    "rest_enter": [
+      58,
+      58,
+      58,
+      58
+    ],
+    "rest": [
+      58,
+      58,
+      58,
+      58
+    ],
+    "rest_exit": [
+      58,
+      58,
+      58,
+      58
+    ],
+    "death": [
+      58,
+      58,
+      58,
+      58,
+      58,
+      58,
+      58,
+      58
+    ]
+  },
+  "sourceWarnings": [],
+  "browser": {
+    "browser": "Playwright Chromium headless",
+    "previewDir": "/home/lululu/zgame/assets/PROCESSED/characters/CHR-01/v001",
+    "animationOptions": 26,
+    "tests": {
+      "javascriptNoPageErrors": true,
+      "actionSwitch": true,
+      "pause": true,
+      "step": true,
+      "speed": true,
+      "playback": true,
+      "hitboxOverlay": true
+    },
+    "screenshots": [
+      "preview_idle.png",
+      "preview_death.png"
+    ]
+  },
+  "godot": {
+    "version": "4.7.2.stable.official.ed1daf0bf",
+    "headlessImport": true,
+    "spriteFramesLoaded": true,
+    "sceneInstantiated": true,
+    "animationCount": 26,
+    "uniqueTextureCount": 112,
+    "playbackReferenceCount": 118,
+    "dynamicRootSwitchVerified": true
+  },
+  "manualReview": {
+    "motion": true,
+    "combat": true,
+    "restSequence": true,
+    "remainingNote": "Small pose differences remain during stand-up; no skeletal interpolation was applied."
+  }
+}

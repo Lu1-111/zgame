@@ -1,0 +1,2698 @@
+{
+  "assetId": "CHR-01",
+  "version": "v001",
+  "title": "奶龙 · 第一批角色动作",
+  "outputDir": "/home/lululu/zgame/assets/PROCESSED/characters/CHR-01/v001",
+  "target": {
+    "width": 64,
+    "height": 64,
+    "anchor": [
+      32,
+      58
+    ]
+  },
+  "alphaThreshold": 16,
+  "direction": "right",
+  "sources": [
+    {
+      "id": "cast",
+      "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_cast_interact_right_v001.png",
+      "rects": [
+        [
+          110,
+          27,
+          242,
+          332
+        ],
+        [
+          438,
+          27,
+          221,
+          333
+        ],
+        [
+          770,
+          27,
+          282,
+          333
+        ],
+        [
+          1103,
+          27,
+          233,
+          333
+        ],
+        [
+          110,
+          375,
+          240,
+          335
+        ],
+        [
+          439,
+          379,
+          220,
+          331
+        ],
+        [
+          772,
+          379,
+          235,
+          331
+        ],
+        [
+          1106,
+          375,
+          239,
+          335
+        ],
+        [
+          110,
+          724,
+          242,
+          333
+        ],
+        [
+          438,
+          728,
+          293,
+          329
+        ],
+        [
+          771,
+          729,
+          283,
+          328
+        ],
+        [
+          1106,
+          724,
+          241,
+          333
+        ]
+      ],
+      "scale": 0.12232415902140673,
+      "notes": [
+        "Transparent generated raw. Need precise per-row source rects and foot-root identification."
+      ],
+      "calibration": {
+        "referenceHeightPx": 327,
+        "targetStandingHeight": 40,
+        "method": "one scale per sheet, no per-frame normalization"
+      }
+    },
+    {
+      "id": "combat_a",
+      "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_combat_A_right_v002.png",
+      "rects": [
+        [
+          27,
+          65,
+          271,
+          237
+        ],
+        [
+          361,
+          81,
+          314,
+          221
+        ],
+        [
+          674,
+          89,
+          297,
+          215
+        ],
+        [
+          978,
+          65,
+          263,
+          237
+        ],
+        [
+          21,
+          384,
+          277,
+          229
+        ],
+        [
+          356,
+          340,
+          300,
+          273
+        ],
+        [
+          672,
+          344,
+          280,
+          269
+        ],
+        [
+          978,
+          375,
+          263,
+          238
+        ],
+        [
+          54,
+          616,
+          235,
+          323
+        ],
+        [
+          356,
+          744,
+          299,
+          198
+        ],
+        [
+          657,
+          756,
+          319,
+          189
+        ],
+        [
+          978,
+          696,
+          263,
+          239
+        ],
+        [
+          59,
+          981,
+          238,
+          233
+        ],
+        [
+          363,
+          984,
+          268,
+          229
+        ],
+        [
+          688,
+          983,
+          210,
+          232
+        ],
+        [
+          978,
+          983,
+          232,
+          232
+        ]
+      ],
+      "scale": 0.17094017094017094,
+      "notes": [
+        "Built-in image_gen source v001 retained. v002 is one localized edit to reconstruct row2 col1 clipped milk-bottle hammer and add transparent left margin.",
+        "No further art edits planned. Exactly 16 cels retained; v002 dimension 1254x1254 and RGBA alpha.",
+        "Adaptive sourceRects required: source grid spacing is irregular and some weapons span equal-grid column boundaries.",
+        "anchorsAbsolute manually checked against grounded soles; crouching hammer strike frames do not rescale body.",
+        "Reference cell3 standing body height234 excludes forward hammer.",
+        "Hammer row final recovery frames use closely matched low-forward ready posture for combo chaining; verify in playback.",
+        "Small variation in hammer grip and shoulder/face persists as RAW animation candidate; processed pixel QA required.",
+        "Output canvas may grow to fit weapon at unchanged body scale; never scale body down to fit hammer."
+      ],
+      "calibration": {
+        "referenceHeightPx": 234,
+        "targetStandingHeight": 40,
+        "method": "one scale per sheet, no per-frame normalization"
+      }
+    },
+    {
+      "id": "combat_b",
+      "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_combat_B_right_v001.png",
+      "rects": [
+        [
+          61,
+          70,
+          263,
+          264
+        ],
+        [
+          414,
+          70,
+          283,
+          264
+        ],
+        [
+          767,
+          69,
+          297,
+          265
+        ],
+        [
+          1132,
+          70,
+          316,
+          264
+        ],
+        [
+          62,
+          381,
+          283,
+          300
+        ],
+        [
+          417,
+          421,
+          321,
+          260
+        ],
+        [
+          767,
+          423,
+          337,
+          259
+        ],
+        [
+          1130,
+          422,
+          289,
+          260
+        ],
+        [
+          67,
+          761,
+          233,
+          264
+        ],
+        [
+          420,
+          760,
+          231,
+          266
+        ],
+        [
+          758,
+          767,
+          332,
+          259
+        ],
+        [
+          1132,
+          761,
+          227,
+          265
+        ]
+      ],
+      "scale": 0.15384615384615385,
+      "notes": [
+        "Built-in image_gen generation with real RGBA alpha; prompt saved alongside PNG.",
+        "Source rows/cells are not perfectly centered; adaptive segmentation/sourceRects recommended over strict equal-grid crops.",
+        "anchorsAbsolute use manually checked foot-root positions; row2 col3 avoids using low staff/FX as foot extrema.",
+        "All character bodies and weapons are complete. Row1 col4 release streak touches right canvas border; beam is a visual cue, not a standalone complete FX asset.",
+        "B frame0 standing body height calibration 260px excludes gun/FX.",
+        "No root displacement is intended; animation playback should use fixed output anchor (32,58).",
+        "Color/alpha edge cleanup and final anchor QA remain PROCESSED pipeline responsibilities."
+      ],
+      "calibration": {
+        "referenceHeightPx": 260,
+        "targetStandingHeight": 40,
+        "method": "one scale per sheet, no per-frame normalization"
+      }
+    },
+    {
+      "id": "defense",
+      "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_defense_right_v001.png",
+      "rects": [
+        [
+          59,
+          10,
+          206,
+          299
+        ],
+        [
+          376,
+          16,
+          207,
+          292
+        ],
+        [
+          690,
+          23,
+          213,
+          285
+        ],
+        [
+          1004,
+          10,
+          203,
+          298
+        ],
+        [
+          59,
+          322,
+          222,
+          302
+        ],
+        [
+          376,
+          332,
+          239,
+          292
+        ],
+        [
+          688,
+          326,
+          222,
+          297
+        ],
+        [
+          1003,
+          322,
+          205,
+          301
+        ],
+        [
+          59,
+          635,
+          205,
+          300
+        ],
+        [
+          351,
+          636,
+          261,
+          299
+        ],
+        [
+          674,
+          685,
+          259,
+          250
+        ],
+        [
+          1003,
+          635,
+          207,
+          301
+        ],
+        [
+          38,
+          944,
+          267,
+          302
+        ],
+        [
+          383,
+          972,
+          249,
+          274
+        ],
+        [
+          694,
+          950,
+          227,
+          296
+        ],
+        [
+          1003,
+          950,
+          204,
+          299
+        ]
+      ],
+      "scale": 0.136986301369863,
+      "notes": [
+        "All frame pixel measurements require review before final packaging.",
+        "Target pivot (32,58) in a64x64 canvas."
+      ],
+      "calibration": {
+        "referenceHeightPx": 292,
+        "targetStandingHeight": 40,
+        "method": "one scale per sheet, no per-frame normalization"
+      }
+    },
+    {
+      "id": "life",
+      "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_life_right_v001.png",
+      "rects": [
+        [
+          68,
+          61,
+          258,
+          349
+        ],
+        [
+          427,
+          83,
+          237,
+          326
+        ],
+        [
+          785,
+          112,
+          240,
+          298
+        ],
+        [
+          1101,
+          136,
+          313,
+          273
+        ],
+        [
+          24,
+          460,
+          332,
+          252
+        ],
+        [
+          371,
+          523,
+          338,
+          190
+        ],
+        [
+          720,
+          551,
+          356,
+          162
+        ],
+        [
+          1083,
+          552,
+          354,
+          161
+        ],
+        [
+          55,
+          749,
+          286,
+          295
+        ],
+        [
+          413,
+          750,
+          285,
+          294
+        ],
+        [
+          770,
+          750,
+          283,
+          294
+        ],
+        [
+          1124,
+          751,
+          287,
+          293
+        ]
+      ],
+      "scale": 0.11661807580174927,
+      "notes": [
+        "All frame pixel measurements require review before final packaging.",
+        "Target pivot (32,58) in a64x64 canvas.",
+        "Original rest row preserved in RAW; final rest now comes from rest_cycle v002 to keep transitions continuous."
+      ],
+      "calibration": {
+        "referenceHeightPx": 343,
+        "targetStandingHeight": 40,
+        "method": "one scale per sheet, no per-frame normalization"
+      }
+    },
+    {
+      "id": "motion_a",
+      "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_motion_a_idle_run_right_v001.png",
+      "rects": [
+        [
+          0,
+          0,
+          362,
+          376
+        ],
+        [
+          362,
+          0,
+          362,
+          376
+        ],
+        [
+          724,
+          0,
+          362,
+          376
+        ],
+        [
+          1086,
+          0,
+          362,
+          376
+        ],
+        [
+          0,
+          376,
+          362,
+          344
+        ],
+        [
+          362,
+          376,
+          362,
+          344
+        ],
+        [
+          724,
+          376,
+          362,
+          344
+        ],
+        [
+          1086,
+          376,
+          362,
+          344
+        ],
+        [
+          0,
+          720,
+          362,
+          366
+        ],
+        [
+          362,
+          720,
+          362,
+          366
+        ],
+        [
+          724,
+          720,
+          362,
+          366
+        ],
+        [
+          1086,
+          720,
+          362,
+          366
+        ]
+      ],
+      "scale": 0.12232415902140673,
+      "notes": [
+        "Generated with built-in image_gen using CHR-01_master_right_v001.png as the sole reference.",
+        "RAW is preserved unchanged. Transparent alpha checked; alpha>=128 used only for measurement.",
+        "Explicit source rectangles follow empty horizontal bands; equal-row slicing can clip sprites.",
+        "Root anchors are hand estimated from pose and contact plane, not automatic bbox centers. They require visual playback validation.",
+        "Airborne poses use a virtual contact plane; do not bottom-align every frame. Run frames 4 and 8 of the sequence are airborne.",
+        "All final frames use64x64 canvas, anchor(32,58), standing height40 logical pixels."
+      ],
+      "calibration": {
+        "referenceHeightPx": 327,
+        "targetStandingHeight": 40,
+        "method": "one scale per sheet, no per-frame normalization"
+      }
+    },
+    {
+      "id": "motion_b",
+      "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_motion_b_jump_fall_land_doublejump_right_v001.png",
+      "rects": [
+        [
+          0,
+          0,
+          314,
+          322
+        ],
+        [
+          314,
+          0,
+          313,
+          322
+        ],
+        [
+          627,
+          0,
+          313,
+          322
+        ],
+        [
+          940,
+          0,
+          314,
+          322
+        ],
+        [
+          0,
+          322,
+          314,
+          311
+        ],
+        [
+          314,
+          322,
+          313,
+          311
+        ],
+        [
+          627,
+          322,
+          313,
+          311
+        ],
+        [
+          940,
+          322,
+          314,
+          311
+        ],
+        [
+          0,
+          633,
+          314,
+          297
+        ],
+        [
+          314,
+          633,
+          313,
+          297
+        ],
+        [
+          627,
+          633,
+          313,
+          297
+        ],
+        [
+          940,
+          633,
+          314,
+          297
+        ],
+        [
+          0,
+          930,
+          314,
+          324
+        ],
+        [
+          314,
+          930,
+          313,
+          324
+        ],
+        [
+          627,
+          930,
+          313,
+          324
+        ],
+        [
+          940,
+          930,
+          314,
+          324
+        ]
+      ],
+      "scale": 0.14388489208633093,
+      "notes": [
+        "Generated with built-in image_gen using CHR-01_master_right_v001.png as the sole reference.",
+        "RAW is preserved unchanged. Transparent alpha checked; alpha>=128 used only for measurement.",
+        "Explicit source rectangles follow empty horizontal bands; equal-row slicing can clip sprites.",
+        "Root anchors are hand estimated from pose and contact plane, not automatic bbox centers. They require visual playback validation.",
+        "Airborne poses use a virtual contact plane; do not bottom-align every frame. Run frames 4 and 8 of the sequence are airborne.",
+        "All final frames use64x64 canvas, anchor(32,58), standing height40 logical pixels."
+      ],
+      "calibration": {
+        "referenceHeightPx": 278,
+        "targetStandingHeight": 40,
+        "method": "one scale per sheet, no per-frame normalization"
+      }
+    },
+    {
+      "id": "motion_c",
+      "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_motion_c_dodge_airdodge_right_v001.png",
+      "rects": [
+        [
+          0,
+          0,
+          444,
+          451
+        ],
+        [
+          444,
+          0,
+          443,
+          451
+        ],
+        [
+          887,
+          0,
+          443,
+          451
+        ],
+        [
+          1330,
+          0,
+          444,
+          451
+        ],
+        [
+          0,
+          451,
+          444,
+          436
+        ],
+        [
+          444,
+          451,
+          443,
+          436
+        ],
+        [
+          887,
+          451,
+          443,
+          436
+        ],
+        [
+          1330,
+          451,
+          444,
+          436
+        ]
+      ],
+      "scale": 0.10309278350515463,
+      "notes": [
+        "Generated with built-in image_gen using CHR-01_master_right_v001.png as the sole reference.",
+        "RAW is preserved unchanged. Transparent alpha checked; alpha>=128 used only for measurement.",
+        "Explicit source rectangles follow empty horizontal bands; equal-row slicing can clip sprites.",
+        "Root anchors are hand estimated from pose and contact plane, not automatic bbox centers. They require visual playback validation.",
+        "Airborne poses use a virtual contact plane; do not bottom-align every frame. Run frames 4 and 8 of the sequence are airborne.",
+        "All final frames use64x64 canvas, anchor(32,58), standing height40 logical pixels."
+      ],
+      "calibration": {
+        "referenceHeightPx": 388,
+        "targetStandingHeight": 40,
+        "method": "one scale per sheet, no per-frame normalization"
+      }
+    },
+    {
+      "id": "rest_cycle",
+      "path": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_rest_cycle_right_v002.png",
+      "rects": [
+        [
+          41,
+          22,
+          286,
+          404
+        ],
+        [
+          415,
+          66,
+          277,
+          360
+        ],
+        [
+          776,
+          112,
+          275,
+          314
+        ],
+        [
+          1131,
+          152,
+          290,
+          280
+        ],
+        [
+          45,
+          459,
+          292,
+          281
+        ],
+        [
+          415,
+          459,
+          303,
+          281
+        ],
+        [
+          782,
+          459,
+          297,
+          281
+        ],
+        [
+          1138,
+          459,
+          295,
+          281
+        ],
+        [
+          55,
+          799,
+          259,
+          269
+        ],
+        [
+          420,
+          775,
+          264,
+          295
+        ],
+        [
+          802,
+          739,
+          264,
+          332
+        ],
+        [
+          1161,
+          737,
+          259,
+          334
+        ]
+      ],
+      "scale": 0.10050251256281408,
+      "notes": [
+        "Use seated shape from this SAME sheet for rest_enter/rest/rest_exit; replaces life row3 and rest_transition v001.",
+        "Last row last pose is still slightly crouched; finish rest_exit by reusing rest_enter_0 fully standing pose in playback metadata, not generating a fake new frame."
+      ],
+      "calibration": {
+        "referenceHeightPx": 398,
+        "targetStandingHeight": 40,
+        "method": "one scale per sheet, no per-frame normalization"
+      }
+    }
+  ],
+  "animations": [
+    {
+      "name": "idle",
+      "label": "待机",
+      "fps": 8,
+      "loop": true,
+      "anchorMode": "ground",
+      "frames": [
+        {
+          "source": "motion_a",
+          "index": 0,
+          "anchor": [
+            198,
+            362
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            -1
+          ]
+        },
+        {
+          "source": "motion_a",
+          "index": 1,
+          "anchor": [
+            198,
+            362
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            -1
+          ]
+        },
+        {
+          "source": "motion_a",
+          "index": 2,
+          "anchor": [
+            196,
+            365
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "source": "motion_a",
+          "index": 3,
+          "anchor": [
+            198,
+            365
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            0
+          ]
+        }
+      ],
+      "appendPlaybackFrameIds": [],
+      "snapContact": false,
+      "playbackOrder": [
+        0,
+        1,
+        3,
+        2,
+        3,
+        1
+      ]
+    },
+    {
+      "name": "run",
+      "label": "跑步",
+      "fps": 12,
+      "loop": true,
+      "anchorMode": "air",
+      "frames": [
+        {
+          "source": "motion_a",
+          "index": 4,
+          "anchor": [
+            198,
+            335
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "source": "motion_a",
+          "index": 5,
+          "anchor": [
+            198,
+            332
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "source": "motion_a",
+          "index": 6,
+          "anchor": [
+            198,
+            335
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "source": "motion_a",
+          "index": 7,
+          "anchor": [
+            198,
+            335
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "source": "motion_a",
+          "index": 8,
+          "anchor": [
+            198,
+            324
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "source": "motion_a",
+          "index": 9,
+          "anchor": [
+            198,
+            329
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            -1
+          ]
+        },
+        {
+          "source": "motion_a",
+          "index": 10,
+          "anchor": [
+            198,
+            334
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "source": "motion_a",
+          "index": 11,
+          "anchor": [
+            198,
+            334
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            0
+          ]
+        }
+      ],
+      "appendPlaybackFrameIds": [],
+      "snapContact": false
+    },
+    {
+      "name": "jump",
+      "label": "跳跃",
+      "fps": 12,
+      "loop": false,
+      "anchorMode": "air",
+      "frames": [
+        {
+          "source": "motion_b",
+          "index": 0,
+          "anchor": [
+            173,
+            306
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "source": "motion_b",
+          "index": 1,
+          "anchor": [
+            171,
+            309
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "source": "motion_b",
+          "index": 2,
+          "anchor": [
+            159,
+            309
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "source": "motion_b",
+          "index": 3,
+          "anchor": [
+            153,
+            309
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            0
+          ]
+        }
+      ],
+      "appendPlaybackFrameIds": [],
+      "snapContact": false
+    },
+    {
+      "name": "fall",
+      "label": "下落",
+      "fps": 8,
+      "loop": false,
+      "anchorMode": "air",
+      "frames": [
+        {
+          "source": "motion_b",
+          "index": 4,
+          "anchor": [
+            170,
+            301
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "source": "motion_b",
+          "index": 5,
+          "anchor": [
+            181,
+            301
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "source": "motion_b",
+          "index": 6,
+          "anchor": [
+            169,
+            301
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "source": "motion_b",
+          "index": 7,
+          "anchor": [
+            153,
+            301
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            0
+          ]
+        }
+      ],
+      "appendPlaybackFrameIds": [],
+      "snapContact": false
+    },
+    {
+      "name": "land",
+      "label": "落地",
+      "fps": 16,
+      "loop": false,
+      "anchorMode": "ground",
+      "frames": [
+        {
+          "source": "motion_b",
+          "index": 8,
+          "anchor": [
+            172,
+            284
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "source": "motion_b",
+          "index": 9,
+          "anchor": [
+            176,
+            284
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "source": "motion_b",
+          "index": 10,
+          "anchor": [
+            166,
+            287
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            -1
+          ]
+        },
+        {
+          "source": "motion_b",
+          "index": 11,
+          "anchor": [
+            158,
+            287
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            -1
+          ]
+        }
+      ],
+      "appendPlaybackFrameIds": [],
+      "snapContact": false,
+      "playbackOrder": [
+        0,
+        1,
+        0,
+        2,
+        3
+      ]
+    },
+    {
+      "name": "double_jump",
+      "label": "二段跳",
+      "fps": 12,
+      "loop": false,
+      "anchorMode": "air",
+      "frames": [
+        {
+          "source": "motion_b",
+          "index": 12,
+          "anchor": [
+            179,
+            300
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "source": "motion_b",
+          "index": 13,
+          "anchor": [
+            180,
+            300
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "source": "motion_b",
+          "index": 14,
+          "anchor": [
+            168,
+            300
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "source": "motion_b",
+          "index": 15,
+          "anchor": [
+            160,
+            300
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            0
+          ]
+        }
+      ],
+      "appendPlaybackFrameIds": [],
+      "snapContact": false
+    },
+    {
+      "name": "dodge",
+      "label": "地面闪避",
+      "fps": 27.7778,
+      "loop": false,
+      "anchorMode": "ground",
+      "frames": [
+        {
+          "source": "motion_c",
+          "index": 0,
+          "anchor": [
+            226,
+            433
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "source": "motion_c",
+          "index": 1,
+          "anchor": [
+            201,
+            433
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "source": "motion_c",
+          "index": 2,
+          "anchor": [
+            201,
+            433
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "source": "motion_c",
+          "index": 3,
+          "anchor": [
+            209,
+            436
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            0
+          ]
+        }
+      ],
+      "appendPlaybackFrameIds": [],
+      "snapContact": false,
+      "playbackOrder": [
+        0,
+        1,
+        2,
+        0,
+        3
+      ]
+    },
+    {
+      "name": "air_dodge",
+      "label": "空中闪避",
+      "fps": 22.2222,
+      "loop": false,
+      "anchorMode": "air",
+      "frames": [
+        {
+          "source": "motion_c",
+          "index": 4,
+          "anchor": [
+            234,
+            382
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "source": "motion_c",
+          "index": 5,
+          "anchor": [
+            205,
+            382
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "source": "motion_c",
+          "index": 6,
+          "anchor": [
+            227,
+            382
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "source": "motion_c",
+          "index": 7,
+          "anchor": [
+            225,
+            382
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            0
+          ]
+        }
+      ],
+      "appendPlaybackFrameIds": [],
+      "snapContact": false
+    },
+    {
+      "name": "guard",
+      "label": "防御",
+      "fps": 10,
+      "loop": false,
+      "anchorMode": "ground",
+      "frames": [
+        {
+          "source": "defense",
+          "index": 0,
+          "anchor": [
+            103,
+            295
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "source": "defense",
+          "index": 1,
+          "anchor": [
+            100,
+            289
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "source": "defense",
+          "index": 2,
+          "anchor": [
+            100,
+            282
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "source": "defense",
+          "index": 3,
+          "anchor": [
+            100,
+            295
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            0
+          ]
+        }
+      ],
+      "appendPlaybackFrameIds": [],
+      "snapContact": true
+    },
+    {
+      "name": "parry",
+      "label": "完美格挡",
+      "fps": 14,
+      "loop": false,
+      "anchorMode": "ground",
+      "frames": [
+        {
+          "source": "defense",
+          "index": 4,
+          "anchor": [
+            103,
+            298
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "source": "defense",
+          "index": 5,
+          "anchor": [
+            100,
+            288
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "source": "defense",
+          "index": 6,
+          "anchor": [
+            102,
+            294
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "source": "defense",
+          "index": 7,
+          "anchor": [
+            101,
+            298
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            0
+          ]
+        }
+      ],
+      "appendPlaybackFrameIds": [],
+      "snapContact": true
+    },
+    {
+      "name": "guard_break",
+      "label": "破防",
+      "fps": 8,
+      "loop": false,
+      "anchorMode": "ground",
+      "frames": [
+        {
+          "source": "defense",
+          "index": 8,
+          "anchor": [
+            103,
+            297
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "source": "defense",
+          "index": 9,
+          "anchor": [
+            125,
+            296
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "source": "defense",
+          "index": 10,
+          "anchor": [
+            116,
+            247
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "source": "defense",
+          "index": 11,
+          "anchor": [
+            101,
+            297
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            0
+          ]
+        }
+      ],
+      "appendPlaybackFrameIds": [],
+      "snapContact": true
+    },
+    {
+      "name": "hurt",
+      "label": "受击",
+      "fps": 16,
+      "loop": false,
+      "anchorMode": "ground",
+      "frames": [
+        {
+          "source": "defense",
+          "index": 12,
+          "anchor": [
+            124,
+            300
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "source": "defense",
+          "index": 13,
+          "anchor": [
+            93,
+            272
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "source": "defense",
+          "index": 14,
+          "anchor": [
+            96,
+            294
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "source": "defense",
+          "index": 15,
+          "anchor": [
+            101,
+            294
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            0
+          ]
+        }
+      ],
+      "appendPlaybackFrameIds": [],
+      "snapContact": true
+    },
+    {
+      "name": "hammer_1",
+      "label": "奶瓶锤一段",
+      "fps": 8,
+      "loop": false,
+      "anchorMode": "ground",
+      "frames": [
+        {
+          "source": "combat_a",
+          "index": 0,
+          "anchor": [
+            167,
+            236
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "source": "combat_a",
+          "index": 1,
+          "anchor": [
+            100,
+            220
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "source": "combat_a",
+          "index": 2,
+          "anchor": [
+            96,
+            212
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "source": "combat_a",
+          "index": 3,
+          "anchor": [
+            91,
+            236
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            0
+          ]
+        }
+      ],
+      "appendPlaybackFrameIds": [],
+      "snapContact": false,
+      "target": {
+        "width": 96,
+        "height": 96,
+        "anchor": [
+          48,
+          90
+        ]
+      }
+    },
+    {
+      "name": "hammer_2",
+      "label": "奶瓶锤二段",
+      "fps": 8,
+      "loop": false,
+      "anchorMode": "ground",
+      "frames": [
+        {
+          "source": "combat_a",
+          "index": 4,
+          "anchor": [
+            177,
+            228
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "source": "combat_a",
+          "index": 5,
+          "anchor": [
+            107,
+            272
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "source": "combat_a",
+          "index": 6,
+          "anchor": [
+            104,
+            268
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "source": "combat_a",
+          "index": 7,
+          "anchor": [
+            90,
+            237
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            0
+          ]
+        }
+      ],
+      "appendPlaybackFrameIds": [],
+      "snapContact": false,
+      "target": {
+        "width": 96,
+        "height": 96,
+        "anchor": [
+          48,
+          90
+        ]
+      }
+    },
+    {
+      "name": "hammer_3",
+      "label": "奶瓶锤三段",
+      "fps": 8,
+      "loop": false,
+      "anchorMode": "ground",
+      "frames": [
+        {
+          "source": "combat_a",
+          "index": 8,
+          "anchor": [
+            131,
+            323
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "source": "combat_a",
+          "index": 9,
+          "anchor": [
+            96,
+            195
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "source": "combat_a",
+          "index": 10,
+          "anchor": [
+            108,
+            184
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "source": "combat_a",
+          "index": 11,
+          "anchor": [
+            91,
+            239
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            0
+          ]
+        }
+      ],
+      "appendPlaybackFrameIds": [],
+      "snapContact": false,
+      "target": {
+        "width": 96,
+        "height": 96,
+        "anchor": [
+          48,
+          90
+        ]
+      }
+    },
+    {
+      "name": "blaster_fire",
+      "label": "奶弹枪单发",
+      "fps": 10,
+      "loop": false,
+      "anchorMode": "ground",
+      "frames": [
+        {
+          "source": "combat_a",
+          "index": 12,
+          "anchor": [
+            99,
+            232
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "source": "combat_a",
+          "index": 13,
+          "anchor": [
+            99,
+            229
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "source": "combat_a",
+          "index": 14,
+          "anchor": [
+            103,
+            230
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "source": "combat_a",
+          "index": 15,
+          "anchor": [
+            96,
+            230
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            0
+          ]
+        }
+      ],
+      "appendPlaybackFrameIds": [],
+      "snapContact": false
+    },
+    {
+      "name": "blaster_charge",
+      "label": "奶弹枪蓄力",
+      "fps": 10,
+      "loop": false,
+      "anchorMode": "ground",
+      "frames": [
+        {
+          "source": "combat_b",
+          "index": 0,
+          "anchor": [
+            111,
+            261
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "source": "combat_b",
+          "index": 1,
+          "anchor": [
+            111,
+            261
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "source": "combat_b",
+          "index": 2,
+          "anchor": [
+            112,
+            262
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "source": "combat_b",
+          "index": 3,
+          "anchor": [
+            111,
+            261
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            0
+          ]
+        }
+      ],
+      "appendPlaybackFrameIds": [],
+      "snapContact": false,
+      "target": {
+        "width": 96,
+        "height": 96,
+        "anchor": [
+          48,
+          90
+        ]
+      }
+    },
+    {
+      "name": "staff_sweep",
+      "label": "奶杖横扫",
+      "fps": 10,
+      "loop": false,
+      "anchorMode": "ground",
+      "frames": [
+        {
+          "source": "combat_b",
+          "index": 4,
+          "anchor": [
+            162,
+            297
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "source": "combat_b",
+          "index": 5,
+          "anchor": [
+            119,
+            257
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "source": "combat_b",
+          "index": 6,
+          "anchor": [
+            117,
+            255
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "source": "combat_b",
+          "index": 7,
+          "anchor": [
+            113,
+            256
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            0
+          ]
+        }
+      ],
+      "appendPlaybackFrameIds": [],
+      "snapContact": false,
+      "target": {
+        "width": 96,
+        "height": 96,
+        "anchor": [
+          48,
+          90
+        ]
+      }
+    },
+    {
+      "name": "orb_cast",
+      "label": "星乳法球发射",
+      "fps": 10,
+      "loop": false,
+      "anchorMode": "ground",
+      "frames": [
+        {
+          "source": "combat_b",
+          "index": 8,
+          "anchor": [
+            116,
+            263
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "source": "combat_b",
+          "index": 9,
+          "anchor": [
+            115,
+            264
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "source": "combat_b",
+          "index": 10,
+          "anchor": [
+            119,
+            257
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "source": "combat_b",
+          "index": 11,
+          "anchor": [
+            113,
+            263
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            0
+          ]
+        }
+      ],
+      "appendPlaybackFrameIds": [],
+      "snapContact": false,
+      "target": {
+        "width": 96,
+        "height": 96,
+        "anchor": [
+          48,
+          90
+        ]
+      }
+    },
+    {
+      "name": "cast",
+      "label": "通用施法",
+      "fps": 10,
+      "loop": false,
+      "anchorMode": "ground",
+      "frames": [
+        {
+          "source": "cast",
+          "index": 0,
+          "anchor": [
+            115,
+            329
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "source": "cast",
+          "index": 1,
+          "anchor": [
+            116,
+            329
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "source": "cast",
+          "index": 2,
+          "anchor": [
+            114,
+            329
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "source": "cast",
+          "index": 3,
+          "anchor": [
+            115,
+            329
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            0
+          ]
+        }
+      ],
+      "appendPlaybackFrameIds": [],
+      "snapContact": true
+    },
+    {
+      "name": "heal",
+      "label": "治疗施法",
+      "fps": 8,
+      "loop": false,
+      "anchorMode": "ground",
+      "frames": [
+        {
+          "source": "cast",
+          "index": 4,
+          "anchor": [
+            115,
+            332
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "source": "cast",
+          "index": 5,
+          "anchor": [
+            115,
+            328
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "source": "cast",
+          "index": 6,
+          "anchor": [
+            112,
+            328
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "source": "cast",
+          "index": 7,
+          "anchor": [
+            112,
+            332
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            0
+          ]
+        }
+      ],
+      "appendPlaybackFrameIds": [],
+      "snapContact": true
+    },
+    {
+      "name": "interact",
+      "label": "交互",
+      "fps": 8,
+      "loop": false,
+      "anchorMode": "ground",
+      "frames": [
+        {
+          "source": "cast",
+          "index": 8,
+          "anchor": [
+            115,
+            330
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "source": "cast",
+          "index": 9,
+          "anchor": [
+            116,
+            326
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "source": "cast",
+          "index": 10,
+          "anchor": [
+            113,
+            325
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "source": "cast",
+          "index": 11,
+          "anchor": [
+            112,
+            330
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            0
+          ]
+        }
+      ],
+      "appendPlaybackFrameIds": [],
+      "snapContact": true
+    },
+    {
+      "name": "rest_enter",
+      "label": "坐下",
+      "fps": 8,
+      "loop": false,
+      "anchorMode": "ground",
+      "frames": [
+        {
+          "source": "rest_cycle",
+          "index": 0,
+          "anchor": [
+            139,
+            407
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "source": "rest_cycle",
+          "index": 1,
+          "anchor": [
+            135,
+            363
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "source": "rest_cycle",
+          "index": 2,
+          "anchor": [
+            144,
+            317
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "source": "rest_cycle",
+          "index": 3,
+          "anchor": [
+            144,
+            277
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            0
+          ]
+        }
+      ],
+      "appendPlaybackFrameIds": [],
+      "snapContact": true
+    },
+    {
+      "name": "rest",
+      "label": "休息",
+      "fps": 5,
+      "loop": true,
+      "anchorMode": "ground",
+      "frames": [
+        {
+          "source": "rest_cycle",
+          "index": 4,
+          "anchor": [
+            135,
+            278
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "source": "rest_cycle",
+          "index": 5,
+          "anchor": [
+            135,
+            278
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "source": "rest_cycle",
+          "index": 6,
+          "anchor": [
+            138,
+            278
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "source": "rest_cycle",
+          "index": 7,
+          "anchor": [
+            137,
+            278
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            0
+          ]
+        }
+      ],
+      "appendPlaybackFrameIds": [],
+      "snapContact": true
+    },
+    {
+      "name": "rest_exit",
+      "label": "起身",
+      "fps": 12,
+      "loop": false,
+      "anchorMode": "ground",
+      "frames": [
+        {
+          "source": "rest_cycle",
+          "index": 8,
+          "anchor": [
+            125,
+            269
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "source": "rest_cycle",
+          "index": 9,
+          "anchor": [
+            130,
+            293
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "source": "rest_cycle",
+          "index": 10,
+          "anchor": [
+            118,
+            329
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "source": "rest_cycle",
+          "index": 11,
+          "anchor": [
+            114,
+            331
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            0
+          ]
+        }
+      ],
+      "appendPlaybackFrameIds": [
+        "rest_enter_1",
+        "rest_enter_0"
+      ],
+      "snapContact": true
+    },
+    {
+      "name": "death",
+      "label": "死亡",
+      "fps": 5.333333,
+      "loop": false,
+      "anchorMode": "root",
+      "frames": [
+        {
+          "source": "life",
+          "index": 0,
+          "anchor": [
+            128,
+            345
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "source": "life",
+          "index": 1,
+          "anchor": [
+            127,
+            323
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "source": "life",
+          "index": 2,
+          "anchor": [
+            127,
+            294
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "source": "life",
+          "index": 3,
+          "anchor": [
+            169,
+            270
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "source": "life",
+          "index": 4,
+          "anchor": [
+            172,
+            250
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "source": "life",
+          "index": 5,
+          "anchor": [
+            183,
+            187
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "source": "life",
+          "index": 6,
+          "anchor": [
+            192,
+            159
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "source": "life",
+          "index": 7,
+          "anchor": [
+            187,
+            158
+          ],
+          "duration": 1,
+          "pixelOffset": [
+            0,
+            0
+          ]
+        }
+      ],
+      "appendPlaybackFrameIds": [],
+      "snapContact": true
+    }
+  ]
+}

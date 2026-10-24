@@ -1,0 +1,179 @@
+{
+  "id": "ENM-08_idle",
+  "enemyId": "ENM-08",
+  "gameEnemyId": "wax_bee",
+  "label": "蜡蜂",
+  "name": "idle",
+  "kind": "body",
+  "generationMode": "built-in image_gen",
+  "sourcePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-08/ENM-08_actions_A.png",
+  "sourceRects": [
+    [
+      0,
+      0,
+      384,
+      246
+    ],
+    [
+      384,
+      0,
+      384,
+      246
+    ],
+    [
+      768,
+      0,
+      384,
+      246
+    ],
+    [
+      1152,
+      0,
+      384,
+      246
+    ]
+  ],
+  "sourceAnchors": [
+    [
+      223,
+      138
+    ],
+    [
+      223,
+      138
+    ],
+    [
+      223,
+      138
+    ],
+    [
+      223,
+      138
+    ]
+  ],
+  "sourceSize": [
+    1536,
+    1024
+  ],
+  "sourceSha256": "26eac1827505209c3eb3df0e4bf4611562a024770395571910353a4b00e56a71",
+  "sourceBatch": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-08/batch.json",
+  "promptPath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-08/ENM-08_A.prompt.txt",
+  "provenancePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-08/provenance.json",
+  "target": [
+    80,
+    64
+  ],
+  "anchor": [
+    40,
+    32
+  ],
+  "rootType": "flying",
+  "scale": 0.16,
+  "fps": 8,
+  "loop": true,
+  "frameCount": 4,
+  "frames": [
+    "frames/ENM-08_idle/ENM-08_idle_00.png",
+    "frames/ENM-08_idle/ENM-08_idle_01.png",
+    "frames/ENM-08_idle/ENM-08_idle_02.png",
+    "frames/ENM-08_idle/ENM-08_idle_03.png"
+  ],
+  "sheet": "sheets/ENM-08_idle.png",
+  "frameDetails": [
+    {
+      "sourceRect": [
+        0,
+        0,
+        384,
+        246
+      ],
+      "sourceAnchor": [
+        223,
+        138
+      ],
+      "offset": [
+        4,
+        10
+      ],
+      "alphaBBox": [
+        4,
+        12,
+        60,
+        49
+      ]
+    },
+    {
+      "sourceRect": [
+        384,
+        0,
+        384,
+        246
+      ],
+      "sourceAnchor": [
+        223,
+        138
+      ],
+      "offset": [
+        4,
+        10
+      ],
+      "alphaBBox": [
+        4,
+        12,
+        62,
+        49
+      ]
+    },
+    {
+      "sourceRect": [
+        768,
+        0,
+        384,
+        246
+      ],
+      "sourceAnchor": [
+        223,
+        138
+      ],
+      "offset": [
+        4,
+        10
+      ],
+      "alphaBBox": [
+        4,
+        10,
+        62,
+        49
+      ]
+    },
+    {
+      "sourceRect": [
+        1152,
+        0,
+        384,
+        246
+      ],
+      "sourceAnchor": [
+        223,
+        138
+      ],
+      "offset": [
+        4,
+        10
+      ],
+      "alphaBBox": [
+        6,
+        11,
+        60,
+        49
+      ]
+    }
+  ],
+  "fadeStartNormalized": 1.0,
+  "phases": [
+    "idle1",
+    "idle2",
+    "idle3",
+    "idle4"
+  ]
+}

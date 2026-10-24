@@ -1,0 +1,28 @@
+[gd_scene load_steps=2 format=3]
+
+; npc.tscn —— 可复用 NPC 实体；SpriteFrames 由实例覆写。
+; AnimatedSprite2D 使用 64×64 正面帧与固定 root：centered=false, offset=(-32,-58)。
+
+[ext_resource type="Script" path="res://scripts/world/npc.gd" id="1_npc"]
+
+[node name="NPC" type="Node2D"]
+z_index = 2
+script = ExtResource("1_npc")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+centered = false
+offset = Vector2(-32, -58)
+
+[node name="Prompt" type="Label" parent="."]
+offset_left = -34.0
+offset_top = -84.0
+offset_right = 34.0
+offset_bottom = -66.0
+theme_override_colors/font_color = Color(1, 0.949, 0.78, 1)
+theme_override_colors/font_shadow_color = Color(0.05, 0.04, 0.08, 1)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 9
+text = "E 交谈"
+horizontal_alignment = 1
+vertical_alignment = 1

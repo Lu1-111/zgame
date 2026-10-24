@@ -1,0 +1,179 @@
+{
+  "id": "NPC-S02",
+  "sheet": "NPC-S02_walk_right_v003.png",
+  "sheet_size": [
+    1774,
+    887
+  ],
+  "frames": [
+    {
+      "action": "walk",
+      "frame": 0,
+      "rect_xywh": [
+        59,
+        20,
+        315,
+        411
+      ],
+      "alpha128_bbox_xyxy": [
+        62,
+        23,
+        370,
+        427
+      ],
+      "source_root_xy": [
+        221.75,
+        433
+      ]
+    },
+    {
+      "action": "walk",
+      "frame": 1,
+      "rect_xywh": [
+        500,
+        17,
+        317,
+        412
+      ],
+      "alpha128_bbox_xyxy": [
+        503,
+        20,
+        813,
+        425
+      ],
+      "source_root_xy": [
+        665.25,
+        433
+      ]
+    },
+    {
+      "action": "walk",
+      "frame": 2,
+      "rect_xywh": [
+        943,
+        18,
+        327,
+        418
+      ],
+      "alpha128_bbox_xyxy": [
+        946,
+        21,
+        1266,
+        432
+      ],
+      "source_root_xy": [
+        1108.75,
+        433
+      ]
+    },
+    {
+      "action": "walk",
+      "frame": 3,
+      "rect_xywh": [
+        1386,
+        17,
+        327,
+        413
+      ],
+      "alpha128_bbox_xyxy": [
+        1389,
+        20,
+        1709,
+        426
+      ],
+      "source_root_xy": [
+        1552.25,
+        433
+      ]
+    },
+    {
+      "action": "walk",
+      "frame": 4,
+      "rect_xywh": [
+        59,
+        458,
+        328,
+        414
+      ],
+      "alpha128_bbox_xyxy": [
+        62,
+        461,
+        383,
+        868
+      ],
+      "source_root_xy": [
+        221.75,
+        872
+      ]
+    },
+    {
+      "action": "walk",
+      "frame": 5,
+      "rect_xywh": [
+        507,
+        458,
+        316,
+        414
+      ],
+      "alpha128_bbox_xyxy": [
+        510,
+        461,
+        819,
+        868
+      ],
+      "source_root_xy": [
+        665.25,
+        872
+      ]
+    },
+    {
+      "action": "walk",
+      "frame": 6,
+      "rect_xywh": [
+        944,
+        458,
+        330,
+        414
+      ],
+      "alpha128_bbox_xyxy": [
+        947,
+        461,
+        1270,
+        868
+      ],
+      "source_root_xy": [
+        1108.75,
+        872
+      ]
+    },
+    {
+      "action": "walk",
+      "frame": 7,
+      "rect_xywh": [
+        1385,
+        458,
+        333,
+        417
+      ],
+      "alpha128_bbox_xyxy": [
+        1388,
+        461,
+        1714,
+        871
+      ],
+      "source_root_xy": [
+        1552.25,
+        872
+      ]
+    }
+  ],
+  "target_height": 42,
+  "source_scale_reference_height": 409,
+  "fps": 12,
+  "loop": true,
+  "notes": [
+    "Explicit component rectangles preserve all character pixels and separate irrelevant blank grid padding.",
+    "World ground reference Y433/872; X follows cell torso, not lowest foot.",
+    "Leg-side interpretation requires visual review; no synthetic pose substitution."
+  ]
+}

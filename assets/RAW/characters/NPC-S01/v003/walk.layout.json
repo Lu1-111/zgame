@@ -1,0 +1,179 @@
+{
+  "id": "NPC-S01",
+  "sheet": "NPC-S01_walk_right_v003.png",
+  "sheet_size": [
+    1774,
+    887
+  ],
+  "frames": [
+    {
+      "action": "walk",
+      "frame": 0,
+      "rect_xywh": [
+        141,
+        8,
+        251,
+        434
+      ],
+      "alpha128_bbox_xyxy": [
+        144,
+        11,
+        388,
+        438
+      ],
+      "source_root_xy": [
+        275,
+        440
+      ]
+    },
+    {
+      "action": "walk",
+      "frame": 1,
+      "rect_xywh": [
+        557,
+        8,
+        242,
+        435
+      ],
+      "alpha128_bbox_xyxy": [
+        560,
+        11,
+        795,
+        439
+      ],
+      "source_root_xy": [
+        685,
+        440
+      ]
+    },
+    {
+      "action": "walk",
+      "frame": 2,
+      "rect_xywh": [
+        970,
+        8,
+        242,
+        434
+      ],
+      "alpha128_bbox_xyxy": [
+        973,
+        11,
+        1208,
+        438
+      ],
+      "source_root_xy": [
+        1100,
+        440
+      ]
+    },
+    {
+      "action": "walk",
+      "frame": 3,
+      "rect_xywh": [
+        1384,
+        8,
+        246,
+        434
+      ],
+      "alpha128_bbox_xyxy": [
+        1387,
+        11,
+        1626,
+        438
+      ],
+      "source_root_xy": [
+        1515,
+        440
+      ]
+    },
+    {
+      "action": "walk",
+      "frame": 4,
+      "rect_xywh": [
+        143,
+        449,
+        245,
+        426
+      ],
+      "alpha128_bbox_xyxy": [
+        146,
+        452,
+        384,
+        871
+      ],
+      "source_root_xy": [
+        275,
+        875
+      ]
+    },
+    {
+      "action": "walk",
+      "frame": 5,
+      "rect_xywh": [
+        557,
+        449,
+        250,
+        429
+      ],
+      "alpha128_bbox_xyxy": [
+        560,
+        452,
+        803,
+        874
+      ],
+      "source_root_xy": [
+        685,
+        875
+      ]
+    },
+    {
+      "action": "walk",
+      "frame": 6,
+      "rect_xywh": [
+        970,
+        449,
+        242,
+        428
+      ],
+      "alpha128_bbox_xyxy": [
+        973,
+        452,
+        1208,
+        873
+      ],
+      "source_root_xy": [
+        1100,
+        875
+      ]
+    },
+    {
+      "action": "walk",
+      "frame": 7,
+      "rect_xywh": [
+        1382,
+        449,
+        251,
+        428
+      ],
+      "alpha128_bbox_xyxy": [
+        1385,
+        452,
+        1629,
+        873
+      ],
+      "source_root_xy": [
+        1515,
+        875
+      ]
+    }
+  ],
+  "target_height": 47,
+  "source_scale_reference_height": 427,
+  "fps": 12,
+  "loop": true,
+  "notes": [
+    "Manual torso-root X275/685/1100/1515; nominal uniform-grid centers would misregister rabbit.",
+    "Fixed ground line Y440/875, preserve lifted foot changes.",
+    "No claim of certified full near/far leg identity across eight anatomical phases."
+  ]
+}

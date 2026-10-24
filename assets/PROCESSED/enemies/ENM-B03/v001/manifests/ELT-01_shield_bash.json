@@ -1,0 +1,348 @@
+{
+  "id": "ELT-01_shield_bash",
+  "name": "shield_bash",
+  "enemyId": "ELT-01",
+  "gameEnemyId": "moss_guard",
+  "label": "苔甲卫·盾击破势",
+  "sourcePath": "/home/lululu/zgame/assets/RAW/effects/ENM-B03/v001/ELT-01_shield_bash_sheet_v001.png",
+  "promptPath": "/home/lululu/zgame/assets/RAW/effects/ENM-B03/v001/ELT-01_shield_bash_sheet_v001.prompt.txt",
+  "generatedPath": "/home/lululu/.codex/generated_images/01a16cdb-4368-7a73-a021-7de070b80e42/exec-a6976598-861d-4c57-867b-df55ddabc46f.png",
+  "sourceColumns": 3,
+  "sourceRows": 2,
+  "sourceIndices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "sourceRects": [
+    [
+      0,
+      0,
+      512,
+      512
+    ],
+    [
+      512,
+      0,
+      512,
+      512
+    ],
+    [
+      1024,
+      0,
+      512,
+      512
+    ],
+    [
+      0,
+      512,
+      512,
+      512
+    ],
+    [
+      512,
+      512,
+      512,
+      512
+    ],
+    [
+      1024,
+      512,
+      512,
+      512
+    ]
+  ],
+  "sourceAnchors": [
+    [
+      256,
+      256
+    ],
+    [
+      256,
+      256
+    ],
+    [
+      256,
+      256
+    ],
+    [
+      256,
+      256
+    ],
+    [
+      256,
+      256
+    ],
+    [
+      256,
+      256
+    ]
+  ],
+  "target": [
+    96,
+    96
+  ],
+  "anchor": [
+    48,
+    48
+  ],
+  "scale": 0.15625,
+  "fps": 14,
+  "loop": false,
+  "kind": "effect",
+  "triggerAction": "attack",
+  "attachPoint": "attack_contact",
+  "triggerOffset": [
+    34,
+    -25
+  ],
+  "phases": [
+    "建立",
+    "峰值",
+    "扩张",
+    "碎裂",
+    "衰减",
+    "尾屑"
+  ],
+  "notes": [],
+  "frames": [
+    "frames/ELT-01_shield_bash/ELT-01_shield_bash_00.png",
+    "frames/ELT-01_shield_bash/ELT-01_shield_bash_01.png",
+    "frames/ELT-01_shield_bash/ELT-01_shield_bash_02.png",
+    "frames/ELT-01_shield_bash/ELT-01_shield_bash_03.png",
+    "frames/ELT-01_shield_bash/ELT-01_shield_bash_04.png",
+    "frames/ELT-01_shield_bash/ELT-01_shield_bash_05.png"
+  ],
+  "sheet": "sheets/ELT-01_shield_bash.png",
+  "sheetRects": [
+    [
+      0,
+      0,
+      96,
+      96
+    ],
+    [
+      96,
+      0,
+      96,
+      96
+    ],
+    [
+      192,
+      0,
+      96,
+      96
+    ],
+    [
+      288,
+      0,
+      96,
+      96
+    ],
+    [
+      384,
+      0,
+      96,
+      96
+    ],
+    [
+      480,
+      0,
+      96,
+      96
+    ]
+  ],
+  "atlas": "atlas/ELT-01_shield_bash.png",
+  "atlasColumns": 3,
+  "atlasRows": 2,
+  "atlasRects": [
+    [
+      0,
+      0,
+      96,
+      96
+    ],
+    [
+      96,
+      0,
+      96,
+      96
+    ],
+    [
+      192,
+      0,
+      96,
+      96
+    ],
+    [
+      0,
+      96,
+      96,
+      96
+    ],
+    [
+      96,
+      96,
+      96,
+      96
+    ],
+    [
+      192,
+      96,
+      96,
+      96
+    ]
+  ],
+  "sourceSize": [
+    1536,
+    1024
+  ],
+  "sourceSha256": "756287266602707f40d2550ee348a783dbaef1c197b30bffbbe1188da245344b",
+  "sourceBatch": "/home/lululu/zgame/assets/RAW/effects/ENM-B03/v001/batch.json",
+  "frameCount": 6,
+  "frameDetails": [
+    {
+      "sourceRect": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "sourceAnchor": [
+        256,
+        256
+      ],
+      "offset": [
+        8,
+        8
+      ],
+      "alphaBBox": [
+        8,
+        9,
+        88,
+        88
+      ],
+      "sourceEdgeAlpha": 1
+    },
+    {
+      "sourceRect": [
+        512,
+        0,
+        512,
+        512
+      ],
+      "sourceAnchor": [
+        256,
+        256
+      ],
+      "offset": [
+        8,
+        8
+      ],
+      "alphaBBox": [
+        8,
+        8,
+        88,
+        88
+      ],
+      "sourceEdgeAlpha": 1
+    },
+    {
+      "sourceRect": [
+        1024,
+        0,
+        512,
+        512
+      ],
+      "sourceAnchor": [
+        256,
+        256
+      ],
+      "offset": [
+        8,
+        8
+      ],
+      "alphaBBox": [
+        8,
+        10,
+        88,
+        88
+      ],
+      "sourceEdgeAlpha": 1
+    },
+    {
+      "sourceRect": [
+        0,
+        512,
+        512,
+        512
+      ],
+      "sourceAnchor": [
+        256,
+        256
+      ],
+      "offset": [
+        8,
+        8
+      ],
+      "alphaBBox": [
+        8,
+        8,
+        88,
+        86
+      ],
+      "sourceEdgeAlpha": 1
+    },
+    {
+      "sourceRect": [
+        512,
+        512,
+        512,
+        512
+      ],
+      "sourceAnchor": [
+        256,
+        256
+      ],
+      "offset": [
+        8,
+        8
+      ],
+      "alphaBBox": [
+        8,
+        8,
+        88,
+        88
+      ],
+      "sourceEdgeAlpha": 1
+    },
+    {
+      "sourceRect": [
+        1024,
+        512,
+        512,
+        512
+      ],
+      "sourceAnchor": [
+        256,
+        256
+      ],
+      "offset": [
+        8,
+        8
+      ],
+      "alphaBBox": [
+        8,
+        8,
+        86,
+        85
+      ],
+      "sourceEdgeAlpha": 1
+    }
+  ],
+  "fadeStartNormalized": 0.65,
+  "loopBoundaryMeanDifference": 30.0
+}

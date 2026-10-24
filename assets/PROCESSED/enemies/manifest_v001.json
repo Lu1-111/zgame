@@ -1,0 +1,135 @@
+{
+  "format": "nailong-processed-enemies-v1",
+  "version": "v001",
+  "canvas": [
+    64,
+    64
+  ],
+  "direction": "right",
+  "pixel_filter": "nearest",
+  "enemies": {
+    "ENM-01": {
+      "name": "苔甲虫",
+      "slug": "moss_beetle",
+      "path": "assets/PROCESSED/enemies/ENM-01/v001",
+      "root": [
+        32,
+        58
+      ],
+      "root_kind": "ground",
+      "animation_count": 7,
+      "frame_count": 27,
+      "layers": [
+        "body"
+      ]
+    },
+    "ENM-02": {
+      "name": "飞奶蛾",
+      "slug": "milk_moth",
+      "path": "assets/PROCESSED/enemies/ENM-02/v001",
+      "root": [
+        32,
+        32
+      ],
+      "root_kind": "body",
+      "animation_count": 7,
+      "frame_count": 27,
+      "layers": [
+        "body"
+      ]
+    },
+    "ENM-03": {
+      "name": "奶滴史莱姆",
+      "slug": "milk_slime",
+      "path": "assets/PROCESSED/enemies/ENM-03/v001",
+      "root": [
+        32,
+        58
+      ],
+      "root_kind": "ground",
+      "animation_count": 15,
+      "frame_count": 60,
+      "layers": [
+        "body",
+        "child"
+      ]
+    },
+    "ENM-04": {
+      "name": "藤鞭花",
+      "slug": "vine_flower",
+      "path": "assets/PROCESSED/enemies/ENM-04/v001",
+      "root": [
+        32,
+        58
+      ],
+      "root_kind": "root",
+      "animation_count": 7,
+      "frame_count": 27,
+      "layers": [
+        "body"
+      ]
+    },
+    "ENM-05": {
+      "name": "矿灯虫",
+      "slug": "lamp_beetle",
+      "path": "assets/PROCESSED/enemies/ENM-05/v001",
+      "root": [
+        32,
+        58
+      ],
+      "root_kind": "ground",
+      "animation_count": 14,
+      "frame_count": 54,
+      "layers": [
+        "body",
+        "glow"
+      ]
+    },
+    "ENM-06": {
+      "name": "暗影奶灵",
+      "slug": "shadow_wraith",
+      "path": "assets/PROCESSED/enemies/ENM-06/v001",
+      "root": [
+        32,
+        32
+      ],
+      "root_kind": "body",
+      "animation_count": 8,
+      "frame_count": 31,
+      "layers": [
+        "body"
+      ]
+    },
+    "ENM-07": {
+      "name": "酸液蛞",
+      "slug": "acid_slug",
+      "path": "assets/PROCESSED/enemies/ENM-07/v001",
+      "root": [
+        32,
+        58
+      ],
+      "root_kind": "ground",
+      "animation_count": 8,
+      "frame_count": 31,
+      "layers": [
+        "body",
+        "acid"
+      ]
+    },
+    "ENM-08": {
+      "name": "蜜蜡蜂",
+      "slug": "wax_bee",
+      "path": "assets/PROCESSED/enemies/ENM-08/v001",
+      "root": [
+        32,
+        32
+      ],
+      "root_kind": "body",
+      "animation_count": 7,
+      "frame_count": 27,
+      "layers": [
+        "body"
+      ]
+    }
+  }
+}

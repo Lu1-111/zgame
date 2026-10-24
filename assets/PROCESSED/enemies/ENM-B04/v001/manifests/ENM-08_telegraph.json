@@ -1,0 +1,179 @@
+{
+  "id": "ENM-08_telegraph",
+  "enemyId": "ENM-08",
+  "gameEnemyId": "wax_bee",
+  "label": "蜡蜂",
+  "name": "telegraph",
+  "kind": "body",
+  "generationMode": "built-in image_gen",
+  "sourcePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-08/ENM-08_actions_A.png",
+  "sourceRects": [
+    [
+      0,
+      498,
+      378,
+      246
+    ],
+    [
+      378,
+      498,
+      390,
+      246
+    ],
+    [
+      768,
+      498,
+      376,
+      246
+    ],
+    [
+      1144,
+      498,
+      392,
+      246
+    ]
+  ],
+  "sourceAnchors": [
+    [
+      223,
+      152
+    ],
+    [
+      229,
+      152
+    ],
+    [
+      223,
+      152
+    ],
+    [
+      231,
+      152
+    ]
+  ],
+  "sourceSize": [
+    1536,
+    1024
+  ],
+  "sourceSha256": "26eac1827505209c3eb3df0e4bf4611562a024770395571910353a4b00e56a71",
+  "sourceBatch": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-08/batch.json",
+  "promptPath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-08/ENM-08_A.prompt.txt",
+  "provenancePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-08/provenance.json",
+  "target": [
+    80,
+    64
+  ],
+  "anchor": [
+    40,
+    32
+  ],
+  "rootType": "flying",
+  "scale": 0.16,
+  "fps": 10,
+  "loop": false,
+  "frameCount": 4,
+  "frames": [
+    "frames/ENM-08_telegraph/ENM-08_telegraph_00.png",
+    "frames/ENM-08_telegraph/ENM-08_telegraph_01.png",
+    "frames/ENM-08_telegraph/ENM-08_telegraph_02.png",
+    "frames/ENM-08_telegraph/ENM-08_telegraph_03.png"
+  ],
+  "sheet": "sheets/ENM-08_telegraph.png",
+  "frameDetails": [
+    {
+      "sourceRect": [
+        0,
+        498,
+        378,
+        246
+      ],
+      "sourceAnchor": [
+        223,
+        152
+      ],
+      "offset": [
+        4,
+        8
+      ],
+      "alphaBBox": [
+        6,
+        8,
+        62,
+        47
+      ]
+    },
+    {
+      "sourceRect": [
+        378,
+        498,
+        390,
+        246
+      ],
+      "sourceAnchor": [
+        229,
+        152
+      ],
+      "offset": [
+        3,
+        8
+      ],
+      "alphaBBox": [
+        3,
+        8,
+        65,
+        47
+      ]
+    },
+    {
+      "sourceRect": [
+        768,
+        498,
+        376,
+        246
+      ],
+      "sourceAnchor": [
+        223,
+        152
+      ],
+      "offset": [
+        4,
+        8
+      ],
+      "alphaBBox": [
+        4,
+        8,
+        61,
+        47
+      ]
+    },
+    {
+      "sourceRect": [
+        1144,
+        498,
+        392,
+        246
+      ],
+      "sourceAnchor": [
+        231,
+        152
+      ],
+      "offset": [
+        3,
+        8
+      ],
+      "alphaBBox": [
+        3,
+        8,
+        61,
+        47
+      ]
+    }
+  ],
+  "fadeStartNormalized": 1.0,
+  "phases": [
+    "telegraph1",
+    "telegraph2",
+    "telegraph3",
+    "telegraph4"
+  ]
+}

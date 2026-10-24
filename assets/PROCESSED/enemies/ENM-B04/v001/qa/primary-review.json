@@ -1,0 +1,12 @@
+{
+  "reviewer": "root",
+  "method": "Real RGBA compositing on opaque dark green; inspected source-derived idle/attack contacts and actual Godot OpenGL captures for all 12 gameplay IDs; reviewed final eight-frame deaths of ENM-06, ENM-11 and BOSS-01.",
+  "style": "Matches B03 detailed pixel sprites, layered organic materials and warm/cool highlights",
+  "anchor": "Common per-character canvas and semantic root; mirrored root remains fixed",
+  "pending": [],
+  "notes": [
+    "Transparent PNG viewers can expose hidden RGB. Judgments use real alpha-composited pixels.",
+    "Source alpha is preserved; no cleanup by deleting low-alpha pixels."
+  ],
+  "resolution": "ENM-11 death reordered to 1,2,3,5,4,6,7,8; eight original cells used exactly once."
+}

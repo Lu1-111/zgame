@@ -1,0 +1,2845 @@
+{
+  "reports": [
+    {
+      "id": "NPC-S01",
+      "version": "v002",
+      "frameCount": 18,
+      "animationCount": 3,
+      "root": [
+        32,
+        58
+      ],
+      "passed": true,
+      "errors": [],
+      "walkGround": "World ground anchor fixed; foot lift preserved. Opaque bottom varies according to actual source pose.",
+      "frames": [
+        {
+          "action": "idle",
+          "index": 0,
+          "opaqueBounds": [
+            18,
+            11,
+            26,
+            47
+          ],
+          "opaqueBottom": 58,
+          "transparentPixels": 3158,
+          "semiTransparentPixels": 935,
+          "sha256": "e6ec4eca752f7fd0e7ecd6ce799fbad874b6461199f4f9b11a0884657b0e1e1e",
+          "approvedSourceByteIdentical": true
+        },
+        {
+          "action": "idle",
+          "index": 1,
+          "opaqueBounds": [
+            18,
+            11,
+            27,
+            47
+          ],
+          "opaqueBottom": 58,
+          "transparentPixels": 3163,
+          "semiTransparentPixels": 931,
+          "sha256": "fd02db89deda4d009a62ce5b1ed523147c20f07666bceee5d7d1a67b94aae206",
+          "approvedSourceByteIdentical": true
+        },
+        {
+          "action": "idle",
+          "index": 2,
+          "opaqueBounds": [
+            18,
+            11,
+            26,
+            47
+          ],
+          "opaqueBottom": 58,
+          "transparentPixels": 3110,
+          "semiTransparentPixels": 984,
+          "sha256": "88ee8dbfccf3c3fdef16c22d004adee1588d6441fea185a41a58d978957b0f6a",
+          "approvedSourceByteIdentical": true
+        },
+        {
+          "action": "idle",
+          "index": 3,
+          "opaqueBounds": [
+            18,
+            11,
+            26,
+            47
+          ],
+          "opaqueBottom": 58,
+          "transparentPixels": 3137,
+          "semiTransparentPixels": 958,
+          "sha256": "b9167974b1cb50abb73baf328c43e935bcf03b98ef6914c30e358c5739c280b2",
+          "approvedSourceByteIdentical": true
+        },
+        {
+          "action": "idle",
+          "index": 4,
+          "opaqueBounds": [
+            17,
+            12,
+            26,
+            46
+          ],
+          "opaqueBottom": 58,
+          "transparentPixels": 3114,
+          "semiTransparentPixels": 980,
+          "sha256": "39def258a7cb032cadcf803ccaae84ce2a2f279345e73f9cfc3d5d370be62718",
+          "approvedSourceByteIdentical": true
+        },
+        {
+          "action": "idle",
+          "index": 5,
+          "opaqueBounds": [
+            17,
+            11,
+            26,
+            47
+          ],
+          "opaqueBottom": 58,
+          "transparentPixels": 3139,
+          "semiTransparentPixels": 957,
+          "sha256": "62e2a3a46715434d180df860ecb4e4df210ceacac49ac690c8afc148e67f15b5",
+          "approvedSourceByteIdentical": true
+        },
+        {
+          "action": "walk",
+          "index": 0,
+          "opaqueBounds": [
+            18,
+            11,
+            27,
+            47
+          ],
+          "opaqueBottom": 58,
+          "transparentPixels": 3209,
+          "semiTransparentPixels": 879,
+          "sha256": "05f537a3c820dc414e06cf514a063bc0f21b6b14506c59ab0cd1e955eb57e947"
+        },
+        {
+          "action": "walk",
+          "index": 1,
+          "opaqueBounds": [
+            19,
+            11,
+            26,
+            47
+          ],
+          "opaqueBottom": 58,
+          "transparentPixels": 3259,
+          "semiTransparentPixels": 836,
+          "sha256": "82cd4b2d8be5fe7e14978c63e4f5eaa0b12111844491aedf238c48be52b6af46"
+        },
+        {
+          "action": "walk",
+          "index": 2,
+          "opaqueBounds": [
+            19,
+            11,
+            26,
+            47
+          ],
+          "opaqueBottom": 58,
+          "transparentPixels": 3228,
+          "semiTransparentPixels": 864,
+          "sha256": "3e477fa1bd2bb88a1e896a3f9580776670288645c26e2d46716e1cce89f833e1"
+        },
+        {
+          "action": "walk",
+          "index": 3,
+          "opaqueBounds": [
+            19,
+            11,
+            26,
+            47
+          ],
+          "opaqueBottom": 58,
+          "transparentPixels": 3241,
+          "semiTransparentPixels": 846,
+          "sha256": "7612fbea9502ac6e01d7f3a2eff572b8d308a09ea4867678e72aeb342f277ab9"
+        },
+        {
+          "action": "walk",
+          "index": 4,
+          "opaqueBounds": [
+            17,
+            12,
+            27,
+            46
+          ],
+          "opaqueBottom": 58,
+          "transparentPixels": 3243,
+          "semiTransparentPixels": 846,
+          "sha256": "53b282c201c04fe06ad1c667cd7292a0a967141d653dc6ec4a72605b9c02d5b3"
+        },
+        {
+          "action": "walk",
+          "index": 5,
+          "opaqueBounds": [
+            19,
+            11,
+            27,
+            47
+          ],
+          "opaqueBottom": 58,
+          "transparentPixels": 3262,
+          "semiTransparentPixels": 834,
+          "sha256": "88d54c17c3e6ebb56cc0b052be0ac76be46b9aab87d39885334d87c134aff612"
+        },
+        {
+          "action": "walk",
+          "index": 6,
+          "opaqueBounds": [
+            19,
+            11,
+            26,
+            47
+          ],
+          "opaqueBottom": 58,
+          "transparentPixels": 3236,
+          "semiTransparentPixels": 859,
+          "sha256": "4544cfe3e53dc74ee177d2c05c30eb60c728f8000b36ac677a0f672891dc8072"
+        },
+        {
+          "action": "walk",
+          "index": 7,
+          "opaqueBounds": [
+            18,
+            11,
+            27,
+            47
+          ],
+          "opaqueBottom": 58,
+          "transparentPixels": 3204,
+          "semiTransparentPixels": 890,
+          "sha256": "d0e1628d8cb042a8ee3e64ad0cb427725f732dd23195bd066956ddae971c3969"
+        },
+        {
+          "action": "talk",
+          "index": 0,
+          "opaqueBounds": [
+            19,
+            12,
+            24,
+            46
+          ],
+          "opaqueBottom": 58,
+          "transparentPixels": 3259,
+          "semiTransparentPixels": 837,
+          "sha256": "47176672458b101381748c9723198ccfdb2f7f615b0d2d23b877fb9a2415f487",
+          "approvedSourceByteIdentical": true
+        },
+        {
+          "action": "talk",
+          "index": 1,
+          "opaqueBounds": [
+            18,
+            12,
+            25,
+            46
+          ],
+          "opaqueBottom": 58,
+          "transparentPixels": 3257,
+          "semiTransparentPixels": 839,
+          "sha256": "8df10f927958cbb0a7863f0606122d88d7e3cc16bf282f647d012c07aff40e0f",
+          "approvedSourceByteIdentical": true
+        },
+        {
+          "action": "talk",
+          "index": 2,
+          "opaqueBounds": [
+            19,
+            12,
+            24,
+            46
+          ],
+          "opaqueBottom": 58,
+          "transparentPixels": 3245,
+          "semiTransparentPixels": 851,
+          "sha256": "50e9792666ea1a25a3e640a058fbc0de7ed78cc379d5eca451e235921cb483d8",
+          "approvedSourceByteIdentical": true
+        },
+        {
+          "action": "talk",
+          "index": 3,
+          "opaqueBounds": [
+            18,
+            12,
+            25,
+            46
+          ],
+          "opaqueBottom": 58,
+          "transparentPixels": 3243,
+          "semiTransparentPixels": 853,
+          "sha256": "4e2e0bbfea89329412a9271c7619c5d314e5e1d8db74768ecb3ac87b4d6cb68a",
+          "approvedSourceByteIdentical": true
+        }
+      ]
+    },
+    {
+      "id": "NPC-S02",
+      "version": "v002",
+      "frameCount": 18,
+      "animationCount": 3,
+      "root": [
+        32,
+        58
+      ],
+      "passed": true,
+      "errors": [],
+      "walkGround": "World ground anchor fixed; foot lift preserved. Opaque bottom varies according to actual source pose.",
+      "frames": [
+        {
+          "action": "idle",
+          "index": 0,
+          "opaqueBounds": [
+            16,
+            16,
+            30,
+            42
+          ],
+          "opaqueBottom": 58,
+          "transparentPixels": 3089,
+          "semiTransparentPixels": 1007,
+          "sha256": "56c1798de324b99027d0f1bf8acf8d42802a717d578b035710284fcaac2676bb",
+          "approvedSourceByteIdentical": true
+        },
+        {
+          "action": "idle",
+          "index": 1,
+          "opaqueBounds": [
+            16,
+            16,
+            30,
+            42
+          ],
+          "opaqueBottom": 58,
+          "transparentPixels": 3130,
+          "semiTransparentPixels": 966,
+          "sha256": "bbe6d9bbf0881d77c65e69eb6733b8d69149d178c2f334120c269071de65ada3",
+          "approvedSourceByteIdentical": true
+        },
+        {
+          "action": "idle",
+          "index": 2,
+          "opaqueBounds": [
+            16,
+            16,
+            30,
+            42
+          ],
+          "opaqueBottom": 58,
+          "transparentPixels": 3060,
+          "semiTransparentPixels": 1036,
+          "sha256": "7cd1041e7f859d762edde741486baa9c2cfb9d4619d3309a6f433fed7c9d3717",
+          "approvedSourceByteIdentical": true
+        },
+        {
+          "action": "idle",
+          "index": 3,
+          "opaqueBounds": [
+            16,
+            16,
+            30,
+            42
+          ],
+          "opaqueBottom": 58,
+          "transparentPixels": 3126,
+          "semiTransparentPixels": 970,
+          "sha256": "671b8629b53bf87bc4d2d925aed92563aa8dfeaf02e6c7e8a44417b41511f5cb",
+          "approvedSourceByteIdentical": true
+        },
+        {
+          "action": "idle",
+          "index": 4,
+          "opaqueBounds": [
+            17,
+            16,
+            29,
+            42
+          ],
+          "opaqueBottom": 58,
+          "transparentPixels": 3073,
+          "semiTransparentPixels": 1023,
+          "sha256": "92bfb5c7f507969b91adc80e572df9dcf67cc4b52bbd0d10ae26093406fbfc8a",
+          "approvedSourceByteIdentical": true
+        },
+        {
+          "action": "idle",
+          "index": 5,
+          "opaqueBounds": [
+            17,
+            16,
+            30,
+            42
+          ],
+          "opaqueBottom": 58,
+          "transparentPixels": 3092,
+          "semiTransparentPixels": 1004,
+          "sha256": "562696aabe4c1e946423ded8a228de7066ee72189e8df9b2c754374506200d85",
+          "approvedSourceByteIdentical": true
+        },
+        {
+          "action": "walk",
+          "index": 0,
+          "opaqueBounds": [
+            16,
+            17,
+            31,
+            41
+          ],
+          "opaqueBottom": 58,
+          "transparentPixels": 3183,
+          "semiTransparentPixels": 913,
+          "sha256": "61b9843faa42e75b014c668072a18837947172b7650e7bb57fcb0f92f2482530"
+        },
+        {
+          "action": "walk",
+          "index": 1,
+          "opaqueBounds": [
+            16,
+            16,
+            32,
+            41
+          ],
+          "opaqueBottom": 57,
+          "transparentPixels": 3170,
+          "semiTransparentPixels": 926,
+          "sha256": "68ae3f03e7b04c05a0b90b2c2e35881a126669cbb97781e583dc293a286983e5"
+        },
+        {
+          "action": "walk",
+          "index": 2,
+          "opaqueBounds": [
+            16,
+            16,
+            33,
+            41
+          ],
+          "opaqueBottom": 57,
+          "transparentPixels": 3165,
+          "semiTransparentPixels": 931,
+          "sha256": "69a9d4b07c9e748801c59f33fa3c765235978147b08851888ba044702b78db6e"
+        },
+        {
+          "action": "walk",
+          "index": 3,
+          "opaqueBounds": [
+            16,
+            15,
+            33,
+            42
+          ],
+          "opaqueBottom": 57,
+          "transparentPixels": 3131,
+          "semiTransparentPixels": 965,
+          "sha256": "3cecebcab6ec5406f055ee20d6ed640b4dc4f26c31c4458df62a1e5ba284cb71"
+        },
+        {
+          "action": "walk",
+          "index": 4,
+          "opaqueBounds": [
+            15,
+            16,
+            34,
+            42
+          ],
+          "opaqueBottom": 58,
+          "transparentPixels": 3071,
+          "semiTransparentPixels": 1025,
+          "sha256": "90e6db9c7791f5d8890d22d46c1a7e70a2ed30a47e5e39d33c82c5319a2b28d4"
+        },
+        {
+          "action": "walk",
+          "index": 5,
+          "opaqueBounds": [
+            16,
+            16,
+            32,
+            42
+          ],
+          "opaqueBottom": 58,
+          "transparentPixels": 3162,
+          "semiTransparentPixels": 931,
+          "sha256": "fd98f4558ea3ce485090f94db3fe882b7df794003b36e35c15d415c9cd937bfe"
+        },
+        {
+          "action": "walk",
+          "index": 6,
+          "opaqueBounds": [
+            16,
+            16,
+            33,
+            42
+          ],
+          "opaqueBottom": 58,
+          "transparentPixels": 3148,
+          "semiTransparentPixels": 944,
+          "sha256": "764f67a79b696f26c65895e6ed2d842835225b9ddb3576d9c835080d4d8b9e9a"
+        },
+        {
+          "action": "walk",
+          "index": 7,
+          "opaqueBounds": [
+            16,
+            16,
+            33,
+            42
+          ],
+          "opaqueBottom": 58,
+          "transparentPixels": 3098,
+          "semiTransparentPixels": 998,
+          "sha256": "89f167c4a7909ed7b3e9b8db49c1730de9b90f6d441d32da1852c18344e4492c"
+        },
+        {
+          "action": "talk",
+          "index": 0,
+          "opaqueBounds": [
+            16,
+            17,
+            30,
+            41
+          ],
+          "opaqueBottom": 58,
+          "transparentPixels": 3123,
+          "semiTransparentPixels": 973,
+          "sha256": "cac8a590ea1d2cbf9faa6d0c8a50607a88ba0024e39b1f736544ca9ae294ad6e",
+          "approvedSourceByteIdentical": true
+        },
+        {
+          "action": "talk",
+          "index": 1,
+          "opaqueBounds": [
+            16,
+            16,
+            33,
+            42
+          ],
+          "opaqueBottom": 58,
+          "transparentPixels": 3096,
+          "semiTransparentPixels": 1000,
+          "sha256": "b4ebd664ce598076bd1cc2ad251d4f16591300fc09feaeaa58f891179f6c3b1e",
+          "approvedSourceByteIdentical": true
+        },
+        {
+          "action": "talk",
+          "index": 2,
+          "opaqueBounds": [
+            17,
+            17,
+            33,
+            41
+          ],
+          "opaqueBottom": 58,
+          "transparentPixels": 3067,
+          "semiTransparentPixels": 1029,
+          "sha256": "a98496e0eb973b24c9c07a11474aa78848f2892a2e0c219f7d12811ec4199ec8",
+          "approvedSourceByteIdentical": true
+        },
+        {
+          "action": "talk",
+          "index": 3,
+          "opaqueBounds": [
+            17,
+            17,
+            29,
+            41
+          ],
+          "opaqueBottom": 58,
+          "transparentPixels": 3121,
+          "semiTransparentPixels": 975,
+          "sha256": "56fddea5dcfc6416cdbe9585c904673e19fbbbc80df4fe4bb6546305efdcdfbd",
+          "approvedSourceByteIdentical": true
+        }
+      ]
+    },
+    {
+      "id": "NPC-S03",
+      "version": "v002",
+      "frameCount": 18,
+      "animationCount": 3,
+      "root": [
+        32,
+        58
+      ],
+      "passed": true,
+      "errors": [],
+      "walkGround": "World ground anchor fixed; foot lift preserved. Opaque bottom varies according to actual source pose.",
+      "frames": [
+        {
+          "action": "idle",
+          "index": 0,
+          "opaqueBounds": [
+            11,
+            14,
+            38,
+            44
+          ],
+          "opaqueBottom": 58,
+          "transparentPixels": 3028,
+          "semiTransparentPixels": 1064,
+          "sha256": "46f8516f3a80185f9463712e3f9faf8caf45c25a358ce5177b8cd04e4469117e"
+        },
+        {
+          "action": "idle",
+          "index": 1,
+          "opaqueBounds": [
+            12,
+            14,
+            37,
+            44
+          ],
+          "opaqueBottom": 58,
+          "transparentPixels": 3049,
+          "semiTransparentPixels": 1043,
+          "sha256": "96bc6b8be8731a7104d9ae92484831d3a5bd28963235ea2a193387947b0b0e57"
+        },
+        {
+          "action": "idle",
+          "index": 2,
+          "opaqueBounds": [
+            13,
+            14,
+            38,
+            44
+          ],
+          "opaqueBottom": 58,
+          "transparentPixels": 3010,
+          "semiTransparentPixels": 1084,
+          "sha256": "6b8d6e76e7a0d6e2fd2e61c794549a15f9637c46ee24fd679660f301ebacb8a1"
+        },
+        {
+          "action": "idle",
+          "index": 3,
+          "opaqueBounds": [
+            12,
+            14,
+            37,
+            44
+          ],
+          "opaqueBottom": 58,
+          "transparentPixels": 3046,
+          "semiTransparentPixels": 1044,
+          "sha256": "6a6dbea11501328b7c91cf3da385eb454554bff346e428c34ee8a178e159541b"
+        },
+        {
+          "action": "idle",
+          "index": 4,
+          "opaqueBounds": [
+            12,
+            14,
+            37,
+            44
+          ],
+          "opaqueBottom": 58,
+          "transparentPixels": 3043,
+          "semiTransparentPixels": 1049,
+          "sha256": "130bbef51694d71f5e6c3f0d8c1da4c5d5748fd26ffb590e4a6a9e08a7941a01"
+        },
+        {
+          "action": "idle",
+          "index": 5,
+          "opaqueBounds": [
+            11,
+            14,
+            38,
+            44
+          ],
+          "opaqueBottom": 58,
+          "transparentPixels": 3031,
+          "semiTransparentPixels": 1064,
+          "sha256": "a64060a4fe49f6ce0857fe0ec46a3d100a03fca57c3a1416fea61f43753c9f46"
+        },
+        {
+          "action": "walk",
+          "index": 0,
+          "opaqueBounds": [
+            10,
+            14,
+            42,
+            44
+          ],
+          "opaqueBottom": 58,
+          "transparentPixels": 3010,
+          "semiTransparentPixels": 1076,
+          "sha256": "4a1efafd57ca28f9d984f40348f954c884ad17f1a45ff776aff6cd2870ddff8d"
+        },
+        {
+          "action": "walk",
+          "index": 1,
+          "opaqueBounds": [
+            11,
+            14,
+            40,
+            44
+          ],
+          "opaqueBottom": 58,
+          "transparentPixels": 3084,
+          "semiTransparentPixels": 1012,
+          "sha256": "f63a270e620e9e43b4742da36a89c3cdc8cb6cd20236ce019b49819fcf3f9d10"
+        },
+        {
+          "action": "walk",
+          "index": 2,
+          "opaqueBounds": [
+            11,
+            15,
+            40,
+            43
+          ],
+          "opaqueBottom": 58,
+          "transparentPixels": 3071,
+          "semiTransparentPixels": 1018,
+          "sha256": "bae39390888080b94d706e081aa0e8becfa2dabef529d6fa9c17e2234c1ac51f"
+        },
+        {
+          "action": "walk",
+          "index": 3,
+          "opaqueBounds": [
+            10,
+            13,
+            41,
+            45
+          ],
+          "opaqueBottom": 58,
+          "transparentPixels": 3033,
+          "semiTransparentPixels": 1061,
+          "sha256": "6a23f51f2d193eed8b3fc89902579c878fbc4d7f73993fef6991abe0cd016726"
+        },
+        {
+          "action": "walk",
+          "index": 4,
+          "opaqueBounds": [
+            10,
+            13,
+            42,
+            45
+          ],
+          "opaqueBottom": 58,
+          "transparentPixels": 2986,
+          "semiTransparentPixels": 1106,
+          "sha256": "b66af88dc73e6fe0509b431ab8197e788c8902ce33cc6bbcf603f1b10937d987"
+        },
+        {
+          "action": "walk",
+          "index": 5,
+          "opaqueBounds": [
+            11,
+            15,
+            39,
+            43
+          ],
+          "opaqueBottom": 58,
+          "transparentPixels": 3086,
+          "semiTransparentPixels": 1006,
+          "sha256": "2a8708810b929db968c86ded216706ef6258602aca9a64fbae010b3f4e2cddd1"
+        },
+        {
+          "action": "walk",
+          "index": 6,
+          "opaqueBounds": [
+            10,
+            15,
+            40,
+            43
+          ],
+          "opaqueBottom": 58,
+          "transparentPixels": 3076,
+          "semiTransparentPixels": 1019,
+          "sha256": "eac5514393a512ce2f110a7d3e6e2a04791157fc548e40f98a914d3fd8948c48"
+        },
+        {
+          "action": "walk",
+          "index": 7,
+          "opaqueBounds": [
+            9,
+            13,
+            42,
+            45
+          ],
+          "opaqueBottom": 58,
+          "transparentPixels": 3013,
+          "semiTransparentPixels": 1082,
+          "sha256": "44ca04ddd369fded61339fa7876f39ab43de1814726c84dc1b3966d197c517bd"
+        },
+        {
+          "action": "talk",
+          "index": 0,
+          "opaqueBounds": [
+            12,
+            14,
+            38,
+            44
+          ],
+          "opaqueBottom": 58,
+          "transparentPixels": 3020,
+          "semiTransparentPixels": 1070,
+          "sha256": "636488c1ca30e5e7be2d49b7f074419241b2e731245a2375517067c10bf166c0"
+        },
+        {
+          "action": "talk",
+          "index": 1,
+          "opaqueBounds": [
+            12,
+            14,
+            38,
+            44
+          ],
+          "opaqueBottom": 58,
+          "transparentPixels": 2993,
+          "semiTransparentPixels": 1100,
+          "sha256": "5370949bc11f19758ac9d090620e2e3a483efad7838b73af9a5ff5b9a42ca748"
+        },
+        {
+          "action": "talk",
+          "index": 2,
+          "opaqueBounds": [
+            12,
+            14,
+            38,
+            44
+          ],
+          "opaqueBottom": 58,
+          "transparentPixels": 3020,
+          "semiTransparentPixels": 1074,
+          "sha256": "5d22d0825a1d5230e53e8e6f8a1a734734c980e7f03e3f2d90382a992e6c45c7"
+        },
+        {
+          "action": "talk",
+          "index": 3,
+          "opaqueBounds": [
+            12,
+            14,
+            37,
+            44
+          ],
+          "opaqueBottom": 58,
+          "transparentPixels": 3033,
+          "semiTransparentPixels": 1057,
+          "sha256": "a2d989ae3421e8798de12adc3d75514146e71474c884792942dc4e2ba2c49259"
+        }
+      ]
+    },
+    {
+      "id": "NPC-S04",
+      "version": "v002",
+      "frameCount": 18,
+      "animationCount": 3,
+      "root": [
+        32,
+        58
+      ],
+      "passed": true,
+      "errors": [],
+      "walkGround": "World ground anchor fixed; foot lift preserved. Opaque bottom varies according to actual source pose.",
+      "frames": [
+        {
+          "action": "idle",
+          "index": 0,
+          "opaqueBounds": [
+            12,
+            14,
+            37,
+            44
+          ],
+          "opaqueBottom": 58,
+          "transparentPixels": 2913,
+          "semiTransparentPixels": 1183,
+          "sha256": "56a5691d50662c680fc6763e45f47c2eae059137ec8846234e13d7ddaa7face8"
+        },
+        {
+          "action": "idle",
+          "index": 1,
+          "opaqueBounds": [
+            12,
+            14,
+            37,
+            44
+          ],
+          "opaqueBottom": 58,
+          "transparentPixels": 2885,
+          "semiTransparentPixels": 1211,
+          "sha256": "c38f431d3b508a095466eefb37a6d19330347b5a38c62e7f0ad54da8a31ce058"
+        },
+        {
+          "action": "idle",
+          "index": 2,
+          "opaqueBounds": [
+            12,
+            14,
+            37,
+            44
+          ],
+          "opaqueBottom": 58,
+          "transparentPixels": 2883,
+          "semiTransparentPixels": 1211,
+          "sha256": "33f9622693e2257631611fc12cdb9a71adae6448e0ad132f110a56714c76684d"
+        },
+        {
+          "action": "idle",
+          "index": 3,
+          "opaqueBounds": [
+            11,
+            14,
+            38,
+            44
+          ],
+          "opaqueBottom": 58,
+          "transparentPixels": 2896,
+          "semiTransparentPixels": 1198,
+          "sha256": "4518c12d03246136ba9102a42e7a4da89283e45c776135b83077a4a5344292ae"
+        },
+        {
+          "action": "idle",
+          "index": 4,
+          "opaqueBounds": [
+            12,
+            14,
+            37,
+            44
+          ],
+          "opaqueBottom": 58,
+          "transparentPixels": 2900,
+          "semiTransparentPixels": 1193,
+          "sha256": "e949d17ab2a0067f2cd3b2a970505d55fc465330a037d6a906566fb8533a84b2"
+        },
+        {
+          "action": "idle",
+          "index": 5,
+          "opaqueBounds": [
+            12,
+            14,
+            37,
+            44
+          ],
+          "opaqueBottom": 58,
+          "transparentPixels": 2923,
+          "semiTransparentPixels": 1171,
+          "sha256": "2552f872060f40ddd37db1d36a258369d13085eb741559c7fc05b1655039344e"
+        },
+        {
+          "action": "walk",
+          "index": 0,
+          "opaqueBounds": [
+            9,
+            14,
+            38,
+            43
+          ],
+          "opaqueBottom": 57,
+          "transparentPixels": 2958,
+          "semiTransparentPixels": 1138,
+          "sha256": "deab3d9d066828985fafe6ff5aa4396bebc21f28ed15bbbf8c24900ca73f8e54"
+        },
+        {
+          "action": "walk",
+          "index": 1,
+          "opaqueBounds": [
+            9,
+            14,
+            38,
+            44
+          ],
+          "opaqueBottom": 58,
+          "transparentPixels": 2992,
+          "semiTransparentPixels": 1104,
+          "sha256": "1909a624f2a764c198644c6835b94ee6fd106f36dfc8f7fd81470d1730f13d3b"
+        },
+        {
+          "action": "walk",
+          "index": 2,
+          "opaqueBounds": [
+            8,
+            14,
+            38,
+            43
+          ],
+          "opaqueBottom": 57,
+          "transparentPixels": 2939,
+          "semiTransparentPixels": 1155,
+          "sha256": "5a0d25ed2cd49c3d64328ded0f84fa8553439c5475fbab0ec7ae7bfc60d2adcb"
+        },
+        {
+          "action": "walk",
+          "index": 3,
+          "opaqueBounds": [
+            8,
+            14,
+            38,
+            43
+          ],
+          "opaqueBottom": 57,
+          "transparentPixels": 2995,
+          "semiTransparentPixels": 1099,
+          "sha256": "2618ad2b8cd20269b60464e752464fb881bc639618efa863393467be66596315"
+        },
+        {
+          "action": "walk",
+          "index": 4,
+          "opaqueBounds": [
+            9,
+            14,
+            38,
+            44
+          ],
+          "opaqueBottom": 58,
+          "transparentPixels": 2970,
+          "semiTransparentPixels": 1126,
+          "sha256": "93865d2ab0aa0608a2f3257dfb9b01362debfcf3ce18ca8641b3c2fc6c13faf0"
+        },
+        {
+          "action": "walk",
+          "index": 5,
+          "opaqueBounds": [
+            9,
+            14,
+            38,
+            44
+          ],
+          "opaqueBottom": 58,
+          "transparentPixels": 2995,
+          "semiTransparentPixels": 1101,
+          "sha256": "66749a607ef5fe208c095ee47dcfa760939bec95527908b31aa583c2891b4757"
+        },
+        {
+          "action": "walk",
+          "index": 6,
+          "opaqueBounds": [
+            9,
+            14,
+            38,
+            43
+          ],
+          "opaqueBottom": 57,
+          "transparentPixels": 2957,
+          "semiTransparentPixels": 1139,
+          "sha256": "d1957fec316adfa8501da06256486c9dcd2b234fa22e21d065028843e54acd19"
+        },
+        {
+          "action": "walk",
+          "index": 7,
+          "opaqueBounds": [
+            8,
+            14,
+            38,
+            44
+          ],
+          "opaqueBottom": 58,
+          "transparentPixels": 2994,
+          "semiTransparentPixels": 1102,
+          "sha256": "f8f2c649bfcd415acb2ac4eae394592c12cb5cc315435cb3a6fefe7b70478d09"
+        },
+        {
+          "action": "talk",
+          "index": 0,
+          "opaqueBounds": [
+            12,
+            14,
+            37,
+            44
+          ],
+          "opaqueBottom": 58,
+          "transparentPixels": 2875,
+          "semiTransparentPixels": 1219,
+          "sha256": "3dbc663cc421330eb042d75a34258ee53afe27ad477e65ae7d46b5414c01f8eb"
+        },
+        {
+          "action": "talk",
+          "index": 1,
+          "opaqueBounds": [
+            12,
+            14,
+            40,
+            44
+          ],
+          "opaqueBottom": 58,
+          "transparentPixels": 2845,
+          "semiTransparentPixels": 1249,
+          "sha256": "a520b292dd4546d410b975dac9a8e5912e60f01e745af8ad221ac029f22a8d35"
+        },
+        {
+          "action": "talk",
+          "index": 2,
+          "opaqueBounds": [
+            11,
+            14,
+            38,
+            44
+          ],
+          "opaqueBottom": 58,
+          "transparentPixels": 2892,
+          "semiTransparentPixels": 1202,
+          "sha256": "9ee18e8b18122b3c32b6bd5bec3ca51b5d11b4d3873f615ffae5abdba44cddb4"
+        },
+        {
+          "action": "talk",
+          "index": 3,
+          "opaqueBounds": [
+            12,
+            14,
+            37,
+            44
+          ],
+          "opaqueBottom": 58,
+          "transparentPixels": 2903,
+          "semiTransparentPixels": 1191,
+          "sha256": "a8f5fce8d951f2fc132540162cd6766e9a9852df0f3009b57ac22f3458866085"
+        }
+      ]
+    },
+    {
+      "id": "NPC-S05",
+      "version": "v002",
+      "frameCount": 18,
+      "animationCount": 3,
+      "root": [
+        32,
+        58
+      ],
+      "passed": true,
+      "errors": [],
+      "walkGround": "World ground anchor fixed; foot lift preserved. Opaque bottom varies according to actual source pose.",
+      "frames": [
+        {
+          "action": "idle",
+          "index": 0,
+          "opaqueBounds": [
+            20,
+            15,
+            30,
+            43
+          ],
+          "opaqueBottom": 58,
+          "transparentPixels": 3136,
+          "semiTransparentPixels": 960,
+          "sha256": "cf96d5d7bb17f4c3ccf72b1e641d2293df2d786149ce020b5be40a240fd10640"
+        },
+        {
+          "action": "idle",
+          "index": 1,
+          "opaqueBounds": [
+            18,
+            15,
+            31,
+            43
+          ],
+          "opaqueBottom": 58,
+          "transparentPixels": 3133,
+          "semiTransparentPixels": 963,
+          "sha256": "27eee23234dfa119f5fd9e240504b4f1a6c6a1a42962483286ecb2468eb17021"
+        },
+        {
+          "action": "idle",
+          "index": 2,
+          "opaqueBounds": [
+            19,
+            15,
+            30,
+            43
+          ],
+          "opaqueBottom": 58,
+          "transparentPixels": 3116,
+          "semiTransparentPixels": 980,
+          "sha256": "8ad5b700d25e689909d3c8da6066ddd2244a7c3d439320d7b0392a49feeb3dac"
+        },
+        {
+          "action": "idle",
+          "index": 3,
+          "opaqueBounds": [
+            19,
+            15,
+            31,
+            43
+          ],
+          "opaqueBottom": 58,
+          "transparentPixels": 3128,
+          "semiTransparentPixels": 968,
+          "sha256": "7a1dbccefa82b33b1bf38a0d0d7eb26b9a09e4e224723a5856483058b7800595"
+        },
+        {
+          "action": "idle",
+          "index": 4,
+          "opaqueBounds": [
+            19,
+            15,
+            31,
+            43
+          ],
+          "opaqueBottom": 58,
+          "transparentPixels": 3121,
+          "semiTransparentPixels": 975,
+          "sha256": "3080ce50d4bd19f28be49ab08492805cb85bebaabcb34fa57a5e5f67bf0293fa"
+        },
+        {
+          "action": "idle",
+          "index": 5,
+          "opaqueBounds": [
+            19,
+            14,
+            30,
+            44
+          ],
+          "opaqueBottom": 58,
+          "transparentPixels": 3109,
+          "semiTransparentPixels": 987,
+          "sha256": "526acd02c4934fffcae33c8a7e779af60a18e73228d1f943589428b59eb5acba"
+        },
+        {
+          "action": "walk",
+          "index": 0,
+          "opaqueBounds": [
+            17,
+            14,
+            32,
+            44
+          ],
+          "opaqueBottom": 58,
+          "transparentPixels": 3075,
+          "semiTransparentPixels": 1021,
+          "sha256": "9432d09072e146ddf8e42db525c3af9a7e32bb077e6b03ddb09a921793294051"
+        },
+        {
+          "action": "walk",
+          "index": 1,
+          "opaqueBounds": [
+            18,
+            14,
+            31,
+            44
+          ],
+          "opaqueBottom": 58,
+          "transparentPixels": 3116,
+          "semiTransparentPixels": 980,
+          "sha256": "63c70708c1791792ac2f6d2fbe98dd51b46b937d51a879bddae23f907ed8d4df"
+        },
+        {
+          "action": "walk",
+          "index": 2,
+          "opaqueBounds": [
+            18,
+            14,
+            32,
+            44
+          ],
+          "opaqueBottom": 58,
+          "transparentPixels": 3112,
+          "semiTransparentPixels": 984,
+          "sha256": "085d77d05cb2e6624dd566fa777dae651a5c4151c56dd22865bab184d6d93f76"
+        },
+        {
+          "action": "walk",
+          "index": 3,
+          "opaqueBounds": [
+            18,
+            14,
+            32,
+            44
+          ],
+          "opaqueBottom": 58,
+          "transparentPixels": 3125,
+          "semiTransparentPixels": 971,
+          "sha256": "efc2f0f41f8982c30c1ee7b0f9ace3b0bd093cb89181ad32ce37ee17861e6a84"
+        },
+        {
+          "action": "walk",
+          "index": 4,
+          "opaqueBounds": [
+            17,
+            14,
+            32,
+            44
+          ],
+          "opaqueBottom": 58,
+          "transparentPixels": 3059,
+          "semiTransparentPixels": 1037,
+          "sha256": "df263675311dadf45c81f45d1b234c225bff963534557c872d26f1e75cbe5f8b"
+        },
+        {
+          "action": "walk",
+          "index": 5,
+          "opaqueBounds": [
+            18,
+            14,
+            31,
+            44
+          ],
+          "opaqueBottom": 58,
+          "transparentPixels": 3115,
+          "semiTransparentPixels": 981,
+          "sha256": "75f1de1b0101b3050a35ad7ad60b9007d5e0aa150de22d3a0e3f913f76d8060a"
+        },
+        {
+          "action": "walk",
+          "index": 6,
+          "opaqueBounds": [
+            18,
+            14,
+            31,
+            44
+          ],
+          "opaqueBottom": 58,
+          "transparentPixels": 3128,
+          "semiTransparentPixels": 968,
+          "sha256": "8a5fdec2b104ddf1a5d7482963ab879b8f0b2f7ace25e5ec21b9f27d7fe6a8e1"
+        },
+        {
+          "action": "walk",
+          "index": 7,
+          "opaqueBounds": [
+            18,
+            14,
+            31,
+            44
+          ],
+          "opaqueBottom": 58,
+          "transparentPixels": 3136,
+          "semiTransparentPixels": 960,
+          "sha256": "6d1dadf1de627725851d508e937ed5f30ceccbfce695b3a1aec395c355446db7"
+        },
+        {
+          "action": "talk",
+          "index": 0,
+          "opaqueBounds": [
+            18,
+            14,
+            31,
+            44
+          ],
+          "opaqueBottom": 58,
+          "transparentPixels": 3107,
+          "semiTransparentPixels": 989,
+          "sha256": "4ab0b111039da9fea9113c9511c3c139e48a931ff70a81db738d7c65a7ddff77"
+        },
+        {
+          "action": "talk",
+          "index": 1,
+          "opaqueBounds": [
+            19,
+            14,
+            30,
+            44
+          ],
+          "opaqueBottom": 58,
+          "transparentPixels": 3081,
+          "semiTransparentPixels": 1015,
+          "sha256": "3a414ac0d63be7e8f30618fbf3696cd5aba3b8fbfb6f8e98a1e01ddef6dcf850"
+        },
+        {
+          "action": "talk",
+          "index": 2,
+          "opaqueBounds": [
+            19,
+            14,
+            30,
+            44
+          ],
+          "opaqueBottom": 58,
+          "transparentPixels": 3104,
+          "semiTransparentPixels": 992,
+          "sha256": "39a741fbb8e6a54a853338ddec0d56c6db67572f26736506d92248030dd96287"
+        },
+        {
+          "action": "talk",
+          "index": 3,
+          "opaqueBounds": [
+            18,
+            14,
+            31,
+            44
+          ],
+          "opaqueBottom": 58,
+          "transparentPixels": 3108,
+          "semiTransparentPixels": 988,
+          "sha256": "d990a6cf98479b10d454e9dce2bf034c6630d1f841dace62bc2ef59cf69d6db7"
+        }
+      ]
+    },
+    {
+      "id": "NPC-S06",
+      "version": "v002",
+      "frameCount": 18,
+      "animationCount": 3,
+      "root": [
+        32,
+        58
+      ],
+      "passed": true,
+      "errors": [],
+      "walkGround": "World ground anchor fixed; foot lift preserved. Opaque bottom varies according to actual source pose.",
+      "frames": [
+        {
+          "action": "idle",
+          "index": 0,
+          "opaqueBounds": [
+            15,
+            14,
+            31,
+            44
+          ],
+          "opaqueBottom": 58,
+          "transparentPixels": 3175,
+          "semiTransparentPixels": 921,
+          "sha256": "d9a737e465c780cc3da459244a964c44943323ffa1718834e37391f42650523c"
+        },
+        {
+          "action": "idle",
+          "index": 1,
+          "opaqueBounds": [
+            15,
+            14,
+            31,
+            44
+          ],
+          "opaqueBottom": 58,
+          "transparentPixels": 3149,
+          "semiTransparentPixels": 946,
+          "sha256": "29fa7d9c1904ca681abb42abae90ff60eb8f1540e1c585902beb8cc47859101c"
+        },
+        {
+          "action": "idle",
+          "index": 2,
+          "opaqueBounds": [
+            15,
+            14,
+            32,
+            44
+          ],
+          "opaqueBottom": 58,
+          "transparentPixels": 3166,
+          "semiTransparentPixels": 929,
+          "sha256": "2d2dc0be3f88ee9efb33f81d7372d6982edab64b832916b476fe4c6a4e828659"
+        },
+        {
+          "action": "idle",
+          "index": 3,
+          "opaqueBounds": [
+            15,
+            14,
+            32,
+            44
+          ],
+          "opaqueBottom": 58,
+          "transparentPixels": 3145,
+          "semiTransparentPixels": 948,
+          "sha256": "cb8522e31b883246e04889f3ed063ef774adf87ae486b2ffcfb6d2aea212f763"
+        },
+        {
+          "action": "idle",
+          "index": 4,
+          "opaqueBounds": [
+            15,
+            14,
+            32,
+            44
+          ],
+          "opaqueBottom": 58,
+          "transparentPixels": 3163,
+          "semiTransparentPixels": 933,
+          "sha256": "1721c64533ce5d87b7d7ddc1ad4f92155c95e3b502cce1c62b670d05f3bd4dbb"
+        },
+        {
+          "action": "idle",
+          "index": 5,
+          "opaqueBounds": [
+            15,
+            13,
+            31,
+            45
+          ],
+          "opaqueBottom": 58,
+          "transparentPixels": 3157,
+          "semiTransparentPixels": 937,
+          "sha256": "fa40a3ea99c2746eb5e380b34e228d4ddfa0ac82171808388d36fc5411aa722b"
+        },
+        {
+          "action": "walk",
+          "index": 0,
+          "opaqueBounds": [
+            11,
+            14,
+            36,
+            44
+          ],
+          "opaqueBottom": 58,
+          "transparentPixels": 3035,
+          "semiTransparentPixels": 1060,
+          "sha256": "cd26f70b0bd4f2bede2aff04cbfe782e8f55bba6cffe4e645af81a31e8b028e8"
+        },
+        {
+          "action": "walk",
+          "index": 1,
+          "opaqueBounds": [
+            11,
+            13,
+            35,
+            45
+          ],
+          "opaqueBottom": 58,
+          "transparentPixels": 3107,
+          "semiTransparentPixels": 988,
+          "sha256": "48ce675872df70d88a30167f2ea2f74ba1c9f41f900c74c1125785e447c9a629"
+        },
+        {
+          "action": "walk",
+          "index": 2,
+          "opaqueBounds": [
+            11,
+            13,
+            36,
+            45
+          ],
+          "opaqueBottom": 58,
+          "transparentPixels": 3080,
+          "semiTransparentPixels": 1016,
+          "sha256": "badac6de7f7391bd523654b9180572edacd733a87e095f457237640e15c1f110"
+        },
+        {
+          "action": "walk",
+          "index": 3,
+          "opaqueBounds": [
+            11,
+            13,
+            36,
+            45
+          ],
+          "opaqueBottom": 58,
+          "transparentPixels": 3077,
+          "semiTransparentPixels": 1016,
+          "sha256": "8bf2438512887243b978808e64598181c1d084908c455f67a56ccd577dee6d3b"
+        },
+        {
+          "action": "walk",
+          "index": 4,
+          "opaqueBounds": [
+            12,
+            15,
+            36,
+            43
+          ],
+          "opaqueBottom": 58,
+          "transparentPixels": 3058,
+          "semiTransparentPixels": 1037,
+          "sha256": "bba4d27dd129b8c21ff43531a8b1defb0f70ff5a6ae64b87684f21c435f8ea78"
+        },
+        {
+          "action": "walk",
+          "index": 5,
+          "opaqueBounds": [
+            12,
+            15,
+            35,
+            43
+          ],
+          "opaqueBottom": 58,
+          "transparentPixels": 3073,
+          "semiTransparentPixels": 1022,
+          "sha256": "37efa3cb14f429c4ae26fbbc0fb54788e580f400f2e1e039cba86fe3eb09d77a"
+        },
+        {
+          "action": "walk",
+          "index": 6,
+          "opaqueBounds": [
+            11,
+            14,
+            36,
+            44
+          ],
+          "opaqueBottom": 58,
+          "transparentPixels": 3107,
+          "semiTransparentPixels": 986,
+          "sha256": "832461dce077b453bf7ec6164979875ec99464c067e75aea11a484479b84f002"
+        },
+        {
+          "action": "walk",
+          "index": 7,
+          "opaqueBounds": [
+            11,
+            15,
+            36,
+            43
+          ],
+          "opaqueBottom": 58,
+          "transparentPixels": 3092,
+          "semiTransparentPixels": 1004,
+          "sha256": "2c885531c59bf7cc4ced5c6054843bad78a716b8853943d69dde7d3011406325"
+        },
+        {
+          "action": "talk",
+          "index": 0,
+          "opaqueBounds": [
+            15,
+            13,
+            31,
+            45
+          ],
+          "opaqueBottom": 58,
+          "transparentPixels": 3134,
+          "semiTransparentPixels": 962,
+          "sha256": "09dae882d742bd82913a711afbc23beef8e5a560831d7942e899774955b047b7"
+        },
+        {
+          "action": "talk",
+          "index": 1,
+          "opaqueBounds": [
+            15,
+            13,
+            37,
+            45
+          ],
+          "opaqueBottom": 58,
+          "transparentPixels": 3089,
+          "semiTransparentPixels": 1005,
+          "sha256": "4253c73fe56e5dd387ced5ba8b45da5dd56aac520f0f405f51298342adbacb5d"
+        },
+        {
+          "action": "talk",
+          "index": 2,
+          "opaqueBounds": [
+            15,
+            13,
+            32,
+            45
+          ],
+          "opaqueBottom": 58,
+          "transparentPixels": 3140,
+          "semiTransparentPixels": 953,
+          "sha256": "59b55b67c46103296e875f2148337e47c7fc51e2ad1e1a2d2322bf69287d0dee"
+        },
+        {
+          "action": "talk",
+          "index": 3,
+          "opaqueBounds": [
+            15,
+            13,
+            32,
+            45
+          ],
+          "opaqueBottom": 58,
+          "transparentPixels": 3163,
+          "semiTransparentPixels": 932,
+          "sha256": "004ebbbf050694727a8bef839dc61f330ce78da4c535cb451cb928799b7bbeb4"
+        }
+      ]
+    }
+  ],
+  "maskReports": [
+    {
+      "id": "NPC-S03",
+      "source": "NPC-S03_idle_talk_right_v003_idle_component_0",
+      "retainedPixels": 83557,
+      "rgbaMismatchCount": 0,
+      "passed": true,
+      "selectedComponentIds": [
+        5,
+        8,
+        13,
+        16,
+        18,
+        25,
+        30,
+        36,
+        41,
+        42,
+        45,
+        49,
+        51,
+        59,
+        67,
+        72,
+        73,
+        86,
+        90,
+        93,
+        97,
+        102,
+        103,
+        105,
+        107,
+        109,
+        113,
+        116,
+        118,
+        121,
+        122,
+        123,
+        124,
+        125,
+        127,
+        133,
+        144,
+        155,
+        159,
+        161,
+        168,
+        174,
+        175,
+        183,
+        187,
+        194,
+        195
+      ],
+      "threshold": 8,
+      "fringeRadius": 2
+    },
+    {
+      "id": "NPC-S03",
+      "source": "NPC-S03_idle_talk_right_v003_idle_component_1",
+      "retainedPixels": 82755,
+      "rgbaMismatchCount": 0,
+      "passed": true,
+      "selectedComponentIds": [
+        1,
+        9,
+        19,
+        21,
+        31,
+        43,
+        44,
+        46,
+        48,
+        58,
+        78,
+        81,
+        82,
+        88,
+        95,
+        98,
+        100,
+        101,
+        110,
+        114,
+        115,
+        119,
+        129,
+        130,
+        132,
+        135,
+        141,
+        146,
+        152,
+        156,
+        157,
+        162,
+        163,
+        166,
+        171,
+        172,
+        176,
+        177,
+        180,
+        181,
+        185,
+        188,
+        191
+      ],
+      "threshold": 8,
+      "fringeRadius": 2
+    },
+    {
+      "id": "NPC-S03",
+      "source": "NPC-S03_idle_talk_right_v003_idle_component_2",
+      "retainedPixels": 84319,
+      "rgbaMismatchCount": 0,
+      "passed": true,
+      "selectedComponentIds": [
+        2,
+        11,
+        12,
+        14,
+        15,
+        22,
+        23,
+        24,
+        27,
+        28,
+        29,
+        33,
+        37,
+        38,
+        52,
+        55,
+        66,
+        69,
+        74,
+        75,
+        83,
+        99,
+        104,
+        108,
+        117,
+        128,
+        134,
+        139,
+        140,
+        147,
+        164,
+        167,
+        169,
+        170,
+        189,
+        192,
+        196
+      ],
+      "threshold": 8,
+      "fringeRadius": 2
+    },
+    {
+      "id": "NPC-S03",
+      "source": "NPC-S03_idle_talk_right_v003_idle_component_3",
+      "retainedPixels": 82614,
+      "rgbaMismatchCount": 0,
+      "passed": true,
+      "selectedComponentIds": [
+        3,
+        6,
+        7,
+        17,
+        20,
+        26,
+        32,
+        34,
+        35,
+        40,
+        47,
+        50,
+        53,
+        54,
+        56,
+        60,
+        61,
+        65,
+        68,
+        70,
+        76,
+        79,
+        89,
+        136,
+        142,
+        145,
+        151,
+        153,
+        154,
+        160,
+        165,
+        179,
+        182,
+        184,
+        186,
+        193,
+        197,
+        198
+      ],
+      "threshold": 8,
+      "fringeRadius": 2
+    },
+    {
+      "id": "NPC-S03",
+      "source": "NPC-S03_idle_talk_right_v003_idle_component_4",
+      "retainedPixels": 82217,
+      "rgbaMismatchCount": 0,
+      "passed": true,
+      "selectedComponentIds": [
+        4,
+        10,
+        39,
+        57,
+        62,
+        63,
+        64,
+        71,
+        77,
+        80,
+        84,
+        85,
+        87,
+        91,
+        92,
+        94,
+        96,
+        106,
+        111,
+        112,
+        120,
+        126,
+        131,
+        137,
+        138,
+        143,
+        148,
+        149,
+        150,
+        158,
+        173,
+        178,
+        190
+      ],
+      "threshold": 8,
+      "fringeRadius": 2
+    },
+    {
+      "id": "NPC-S03",
+      "source": "NPC-S03_idle_talk_right_v003_idle_component_5",
+      "retainedPixels": 83192,
+      "rgbaMismatchCount": 0,
+      "passed": true,
+      "selectedComponentIds": [
+        199,
+        204,
+        217,
+        219,
+        222,
+        223,
+        224,
+        226,
+        233,
+        243,
+        246,
+        247,
+        269,
+        270,
+        280,
+        283,
+        285,
+        286,
+        295,
+        303,
+        304,
+        307,
+        311,
+        313,
+        319,
+        326,
+        329,
+        331,
+        332,
+        336,
+        343,
+        352,
+        358,
+        359,
+        362,
+        363,
+        372,
+        375,
+        377,
+        381,
+        385,
+        387,
+        393,
+        400,
+        416
+      ],
+      "threshold": 8,
+      "fringeRadius": 2
+    },
+    {
+      "id": "NPC-S03",
+      "source": "NPC-S03_idle_talk_right_v003_talk_component_6",
+      "retainedPixels": 82983,
+      "rgbaMismatchCount": 0,
+      "passed": true,
+      "selectedComponentIds": [
+        200,
+        205,
+        221,
+        225,
+        228,
+        231,
+        240,
+        252,
+        265,
+        276,
+        287,
+        291,
+        296,
+        297,
+        305,
+        310,
+        312,
+        324,
+        337,
+        338,
+        341,
+        344,
+        345,
+        347,
+        353,
+        354,
+        361,
+        373,
+        376,
+        380,
+        382,
+        386,
+        388,
+        395,
+        401,
+        405,
+        406,
+        409,
+        417
+      ],
+      "threshold": 8,
+      "fringeRadius": 2
+    },
+    {
+      "id": "NPC-S03",
+      "source": "NPC-S03_idle_talk_right_v003_talk_component_7",
+      "retainedPixels": 86534,
+      "rgbaMismatchCount": 0,
+      "passed": true,
+      "selectedComponentIds": [
+        201,
+        206,
+        207,
+        210,
+        213,
+        214,
+        220,
+        230,
+        234,
+        235,
+        237,
+        238,
+        239,
+        241,
+        244,
+        248,
+        251,
+        255,
+        257,
+        258,
+        262,
+        268,
+        273,
+        274,
+        299,
+        302,
+        308,
+        314,
+        315,
+        317,
+        320,
+        323,
+        330,
+        335,
+        360,
+        366,
+        367,
+        368,
+        370,
+        378,
+        379,
+        389,
+        394,
+        396,
+        397,
+        402,
+        403,
+        410,
+        414,
+        418,
+        419
+      ],
+      "threshold": 8,
+      "fringeRadius": 2
+    },
+    {
+      "id": "NPC-S03",
+      "source": "NPC-S03_idle_talk_right_v003_talk_component_8",
+      "retainedPixels": 82743,
+      "rgbaMismatchCount": 0,
+      "passed": true,
+      "selectedComponentIds": [
+        202,
+        208,
+        209,
+        211,
+        212,
+        216,
+        218,
+        227,
+        229,
+        245,
+        249,
+        254,
+        256,
+        260,
+        261,
+        263,
+        264,
+        266,
+        271,
+        277,
+        279,
+        281,
+        284,
+        289,
+        321,
+        333,
+        340,
+        348,
+        355,
+        356,
+        364,
+        371,
+        383,
+        390,
+        391,
+        398,
+        407,
+        412,
+        415,
+        420,
+        421
+      ],
+      "threshold": 8,
+      "fringeRadius": 2
+    },
+    {
+      "id": "NPC-S03",
+      "source": "NPC-S03_idle_talk_right_v003_talk_component_9",
+      "retainedPixels": 82231,
+      "rgbaMismatchCount": 0,
+      "passed": true,
+      "selectedComponentIds": [
+        203,
+        215,
+        232,
+        236,
+        242,
+        250,
+        253,
+        259,
+        267,
+        272,
+        275,
+        278,
+        282,
+        288,
+        290,
+        292,
+        293,
+        294,
+        298,
+        300,
+        301,
+        306,
+        309,
+        316,
+        318,
+        322,
+        325,
+        327,
+        328,
+        334,
+        339,
+        342,
+        346,
+        349,
+        350,
+        351,
+        357,
+        365,
+        369,
+        374,
+        384,
+        392,
+        399,
+        404,
+        408,
+        411,
+        413,
+        422
+      ],
+      "threshold": 8,
+      "fringeRadius": 2
+    },
+    {
+      "id": "NPC-S03",
+      "source": "NPC-S03_walk_right_v003_walk_component_0",
+      "retainedPixels": 103026,
+      "rgbaMismatchCount": 0,
+      "passed": true,
+      "selectedComponentIds": [
+        2,
+        3,
+        4,
+        9,
+        12,
+        13,
+        14,
+        23,
+        24,
+        25,
+        30,
+        33,
+        37,
+        47,
+        61,
+        65,
+        67,
+        70,
+        73,
+        75,
+        77,
+        86,
+        89,
+        91,
+        92,
+        94,
+        95,
+        97,
+        98,
+        99,
+        100,
+        103,
+        104,
+        106,
+        107,
+        109,
+        115,
+        122,
+        126,
+        137,
+        141,
+        144,
+        148,
+        150,
+        151,
+        152,
+        155,
+        159,
+        164,
+        167,
+        168,
+        169,
+        171,
+        172,
+        173,
+        175,
+        176,
+        177,
+        178,
+        179,
+        180,
+        182,
+        183,
+        188,
+        189,
+        193,
+        198,
+        204,
+        207,
+        208,
+        211,
+        218,
+        220,
+        221,
+        227,
+        228,
+        229,
+        231,
+        248,
+        249
+      ],
+      "threshold": 8,
+      "fringeRadius": 2
+    },
+    {
+      "id": "NPC-S03",
+      "source": "NPC-S03_walk_right_v003_walk_component_1",
+      "retainedPixels": 95730,
+      "rgbaMismatchCount": 0,
+      "passed": true,
+      "selectedComponentIds": [
+        5,
+        15,
+        31,
+        35,
+        42,
+        43,
+        44,
+        48,
+        52,
+        53,
+        55,
+        57,
+        58,
+        62,
+        63,
+        66,
+        69,
+        72,
+        79,
+        102,
+        112,
+        117,
+        120,
+        121,
+        125,
+        127,
+        130,
+        131,
+        133,
+        138,
+        143,
+        145,
+        153,
+        154,
+        157,
+        170,
+        181,
+        187,
+        192,
+        194,
+        196,
+        199,
+        200,
+        201,
+        209,
+        210,
+        214,
+        216,
+        222,
+        223,
+        233,
+        240,
+        242
+      ],
+      "threshold": 8,
+      "fringeRadius": 2
+    },
+    {
+      "id": "NPC-S03",
+      "source": "NPC-S03_walk_right_v003_walk_component_2",
+      "retainedPixels": 97498,
+      "rgbaMismatchCount": 0,
+      "passed": true,
+      "selectedComponentIds": [
+        6,
+        10,
+        18,
+        19,
+        26,
+        28,
+        38,
+        39,
+        45,
+        49,
+        60,
+        64,
+        74,
+        78,
+        80,
+        82,
+        83,
+        84,
+        85,
+        88,
+        105,
+        113,
+        116,
+        118,
+        128,
+        129,
+        134,
+        135,
+        136,
+        142,
+        146,
+        147,
+        156,
+        158,
+        161,
+        184,
+        202,
+        213,
+        224,
+        226,
+        232,
+        237,
+        238,
+        244,
+        247,
+        250
+      ],
+      "threshold": 8,
+      "fringeRadius": 2
+    },
+    {
+      "id": "NPC-S03",
+      "source": "NPC-S03_walk_right_v003_walk_component_3",
+      "retainedPixels": 101503,
+      "rgbaMismatchCount": 0,
+      "passed": true,
+      "selectedComponentIds": [
+        1,
+        7,
+        8,
+        11,
+        16,
+        17,
+        20,
+        21,
+        22,
+        27,
+        29,
+        32,
+        34,
+        36,
+        40,
+        41,
+        46,
+        50,
+        51,
+        54,
+        56,
+        59,
+        68,
+        71,
+        76,
+        81,
+        87,
+        90,
+        93,
+        96,
+        101,
+        108,
+        110,
+        111,
+        114,
+        119,
+        123,
+        124,
+        132,
+        139,
+        140,
+        149,
+        160,
+        162,
+        163,
+        165,
+        166,
+        174,
+        185,
+        186,
+        190,
+        191,
+        195,
+        197,
+        203,
+        205,
+        206,
+        212,
+        215,
+        217,
+        219,
+        225,
+        230,
+        234,
+        235,
+        236,
+        239,
+        241,
+        243,
+        245,
+        246,
+        251,
+        252,
+        253
+      ],
+      "threshold": 8,
+      "fringeRadius": 2
+    },
+    {
+      "id": "NPC-S03",
+      "source": "NPC-S03_walk_right_v003_walk_component_4",
+      "retainedPixels": 103312,
+      "rgbaMismatchCount": 0,
+      "passed": true,
+      "selectedComponentIds": [
+        255,
+        258,
+        264,
+        265,
+        268,
+        274,
+        282,
+        283,
+        287,
+        290,
+        300,
+        310,
+        314,
+        322,
+        328,
+        329,
+        334,
+        339,
+        340,
+        344,
+        348,
+        350,
+        355,
+        362,
+        364,
+        365,
+        368,
+        374,
+        377,
+        378,
+        385,
+        387,
+        391,
+        392,
+        394,
+        396,
+        399,
+        400,
+        404,
+        405,
+        407,
+        410,
+        413,
+        414,
+        421,
+        425,
+        429,
+        430,
+        431,
+        432,
+        434,
+        437,
+        439,
+        443,
+        451,
+        454,
+        459,
+        460,
+        462,
+        464,
+        466,
+        469,
+        475
+      ],
+      "threshold": 8,
+      "fringeRadius": 2
+    },
+    {
+      "id": "NPC-S03",
+      "source": "NPC-S03_walk_right_v003_walk_component_5",
+      "retainedPixels": 96135,
+      "rgbaMismatchCount": 0,
+      "passed": true,
+      "selectedComponentIds": [
+        256,
+        266,
+        273,
+        279,
+        280,
+        284,
+        285,
+        288,
+        291,
+        292,
+        296,
+        302,
+        305,
+        307,
+        316,
+        317,
+        318,
+        320,
+        323,
+        330,
+        338,
+        345,
+        349,
+        351,
+        357,
+        358,
+        359,
+        363,
+        366,
+        369,
+        370,
+        371,
+        375,
+        379,
+        386,
+        401,
+        408,
+        411,
+        415,
+        418,
+        427,
+        435,
+        438,
+        445,
+        446,
+        448,
+        449,
+        452,
+        455,
+        476
+      ],
+      "threshold": 8,
+      "fringeRadius": 2
+    },
+    {
+      "id": "NPC-S03",
+      "source": "NPC-S03_walk_right_v003_walk_component_6",
+      "retainedPixels": 97621,
+      "rgbaMismatchCount": 0,
+      "passed": true,
+      "selectedComponentIds": [
+        259,
+        267,
+        270,
+        271,
+        277,
+        294,
+        295,
+        297,
+        301,
+        308,
+        311,
+        312,
+        313,
+        315,
+        324,
+        333,
+        335,
+        336,
+        341,
+        346,
+        352,
+        360,
+        376,
+        380,
+        381,
+        383,
+        395,
+        398,
+        403,
+        406,
+        420,
+        423,
+        424,
+        426,
+        444,
+        457,
+        461,
+        463,
+        465,
+        470,
+        471,
+        472,
+        473,
+        474
+      ],
+      "threshold": 8,
+      "fringeRadius": 2
+    },
+    {
+      "id": "NPC-S03",
+      "source": "NPC-S03_walk_right_v003_walk_component_7",
+      "retainedPixels": 102057,
+      "rgbaMismatchCount": 0,
+      "passed": true,
+      "selectedComponentIds": [
+        254,
+        257,
+        260,
+        261,
+        262,
+        263,
+        269,
+        272,
+        275,
+        276,
+        278,
+        281,
+        286,
+        289,
+        293,
+        298,
+        299,
+        303,
+        304,
+        306,
+        309,
+        319,
+        321,
+        325,
+        326,
+        327,
+        331,
+        332,
+        337,
+        342,
+        343,
+        347,
+        353,
+        354,
+        356,
+        361,
+        367,
+        372,
+        373,
+        382,
+        384,
+        388,
+        389,
+        390,
+        393,
+        397,
+        402,
+        409,
+        412,
+        416,
+        417,
+        419,
+        422,
+        428,
+        433,
+        436,
+        440,
+        441,
+        442,
+        447,
+        450,
+        453,
+        456,
+        458,
+        467,
+        468,
+        477
+      ],
+      "threshold": 8,
+      "fringeRadius": 2
+    },
+    {
+      "id": "NPC-S05",
+      "source": "NPC-S05_idle_talk_right_v003_idle_component_0",
+      "retainedPixels": 91927,
+      "rgbaMismatchCount": 0,
+      "passed": true,
+      "selectedComponentIds": [
+        1
+      ],
+      "threshold": 8,
+      "fringeRadius": 2
+    },
+    {
+      "id": "NPC-S05",
+      "source": "NPC-S05_idle_talk_right_v003_idle_component_1",
+      "retainedPixels": 92669,
+      "rgbaMismatchCount": 0,
+      "passed": true,
+      "selectedComponentIds": [
+        2
+      ],
+      "threshold": 8,
+      "fringeRadius": 2
+    },
+    {
+      "id": "NPC-S05",
+      "source": "NPC-S05_idle_talk_right_v003_idle_component_2",
+      "retainedPixels": 94417,
+      "rgbaMismatchCount": 0,
+      "passed": true,
+      "selectedComponentIds": [
+        3
+      ],
+      "threshold": 8,
+      "fringeRadius": 2
+    },
+    {
+      "id": "NPC-S05",
+      "source": "NPC-S05_idle_talk_right_v003_idle_component_3",
+      "retainedPixels": 92800,
+      "rgbaMismatchCount": 0,
+      "passed": true,
+      "selectedComponentIds": [
+        4
+      ],
+      "threshold": 8,
+      "fringeRadius": 2
+    },
+    {
+      "id": "NPC-S05",
+      "source": "NPC-S05_idle_talk_right_v003_idle_component_4",
+      "retainedPixels": 93434,
+      "rgbaMismatchCount": 0,
+      "passed": true,
+      "selectedComponentIds": [
+        5
+      ],
+      "threshold": 8,
+      "fringeRadius": 2
+    },
+    {
+      "id": "NPC-S05",
+      "source": "NPC-S05_idle_talk_right_v003_idle_component_5",
+      "retainedPixels": 93317,
+      "rgbaMismatchCount": 0,
+      "passed": true,
+      "selectedComponentIds": [
+        79
+      ],
+      "threshold": 8,
+      "fringeRadius": 2
+    },
+    {
+      "id": "NPC-S05",
+      "source": "NPC-S05_idle_talk_right_v003_talk_component_6",
+      "retainedPixels": 93834,
+      "rgbaMismatchCount": 0,
+      "passed": true,
+      "selectedComponentIds": [
+        83
+      ],
+      "threshold": 8,
+      "fringeRadius": 2
+    },
+    {
+      "id": "NPC-S05",
+      "source": "NPC-S05_idle_talk_right_v003_talk_component_7",
+      "retainedPixels": 96057,
+      "rgbaMismatchCount": 0,
+      "passed": true,
+      "selectedComponentIds": [
+        80
+      ],
+      "threshold": 8,
+      "fringeRadius": 2
+    },
+    {
+      "id": "NPC-S05",
+      "source": "NPC-S05_idle_talk_right_v003_talk_component_8",
+      "retainedPixels": 93442,
+      "rgbaMismatchCount": 0,
+      "passed": true,
+      "selectedComponentIds": [
+        81
+      ],
+      "threshold": 8,
+      "fringeRadius": 2
+    },
+    {
+      "id": "NPC-S05",
+      "source": "NPC-S05_idle_talk_right_v003_talk_component_9",
+      "retainedPixels": 95055,
+      "rgbaMismatchCount": 0,
+      "passed": true,
+      "selectedComponentIds": [
+        82
+      ],
+      "threshold": 8,
+      "fringeRadius": 2
+    }
+  ]
+}

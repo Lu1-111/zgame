@@ -1,0 +1,753 @@
+{
+  "format": "nailong-processed-npc-v1",
+  "id": "NPC-S02",
+  "name": "奶牛商人",
+  "role": "交易",
+  "version": "v002",
+  "source_version": "v003",
+  "source_manifest": "assets/RAW/characters/NPC-S02/v003/PROCESSED_SOURCE_INDEX.json",
+  "canvas": [
+    64,
+    64
+  ],
+  "direction": "right",
+  "view": "three-quarter side",
+  "root": [
+    32,
+    58
+  ],
+  "sprite_offset": [
+    -32,
+    -58
+  ],
+  "pixel_filter": "nearest",
+  "atlas": {
+    "path": "NPC-S02_atlas_right_v002.png",
+    "cell": [
+      64,
+      64
+    ],
+    "columns": 8,
+    "rows": 3
+  },
+  "animations": {
+    "idle": {
+      "layer": "body",
+      "frame_count": 6,
+      "fps": 8,
+      "loop": true,
+      "duration_seconds": 0.75,
+      "root": [
+        32,
+        58
+      ],
+      "sheet": "assets/PROCESSED/characters/NPC-S02/v002/sheets/NPC-S02_idle_right_v002_sheet.png",
+      "frames": [
+        {
+          "path": "assets/PROCESSED/characters/NPC-S02/v002/frames/NPC-S02_idle_right_v002_f01.png",
+          "file": "frames/NPC-S02_idle_right_v002_f01.png",
+          "source": {
+            "path": "assets/PROCESSED/characters/NPC-02/v001/frames/NPC-02_npc_idle_right_v001_f01.png",
+            "animation": "idle",
+            "index": 0,
+            "source": {
+              "id": "idle",
+              "path": "/home/lululu/zgame/assets/RAW/characters/NPC-02/v001/NPC-02_actions_right_sheet_v001.png",
+              "sha256": "0159fc2296f4591d780514d8d05bcb0abcfd3c679ff8ca1702aa36b911907242",
+              "cellIndex": 0,
+              "rect": [
+                0,
+                0,
+                256,
+                256
+              ],
+              "anchor": [
+                165.5,
+                243
+              ]
+            }
+          },
+          "atlas_cell": [
+            0,
+            0,
+            64,
+            64
+          ]
+        },
+        {
+          "path": "assets/PROCESSED/characters/NPC-S02/v002/frames/NPC-S02_idle_right_v002_f02.png",
+          "file": "frames/NPC-S02_idle_right_v002_f02.png",
+          "source": {
+            "path": "assets/PROCESSED/characters/NPC-02/v001/frames/NPC-02_npc_idle_right_v001_f02.png",
+            "animation": "idle",
+            "index": 1,
+            "source": {
+              "id": "idle",
+              "path": "/home/lululu/zgame/assets/RAW/characters/NPC-02/v001/NPC-02_actions_right_sheet_v001.png",
+              "sha256": "0159fc2296f4591d780514d8d05bcb0abcfd3c679ff8ca1702aa36b911907242",
+              "cellIndex": 1,
+              "rect": [
+                256,
+                0,
+                256,
+                256
+              ],
+              "anchor": [
+                162,
+                243
+              ]
+            }
+          },
+          "atlas_cell": [
+            64,
+            0,
+            64,
+            64
+          ]
+        },
+        {
+          "path": "assets/PROCESSED/characters/NPC-S02/v002/frames/NPC-S02_idle_right_v002_f03.png",
+          "file": "frames/NPC-S02_idle_right_v002_f03.png",
+          "source": {
+            "path": "assets/PROCESSED/characters/NPC-02/v001/frames/NPC-02_npc_idle_right_v001_f03.png",
+            "animation": "idle",
+            "index": 2,
+            "source": {
+              "id": "idle",
+              "path": "/home/lululu/zgame/assets/RAW/characters/NPC-02/v001/NPC-02_actions_right_sheet_v001.png",
+              "sha256": "0159fc2296f4591d780514d8d05bcb0abcfd3c679ff8ca1702aa36b911907242",
+              "cellIndex": 2,
+              "rect": [
+                512,
+                0,
+                256,
+                256
+              ],
+              "anchor": [
+                148,
+                243
+              ]
+            }
+          },
+          "atlas_cell": [
+            128,
+            0,
+            64,
+            64
+          ]
+        },
+        {
+          "path": "assets/PROCESSED/characters/NPC-S02/v002/frames/NPC-S02_idle_right_v002_f04.png",
+          "file": "frames/NPC-S02_idle_right_v002_f04.png",
+          "source": {
+            "path": "assets/PROCESSED/characters/NPC-02/v001/frames/NPC-02_npc_idle_right_v001_f04.png",
+            "animation": "idle",
+            "index": 3,
+            "source": {
+              "id": "idle",
+              "path": "/home/lululu/zgame/assets/RAW/characters/NPC-02/v001/NPC-02_actions_right_sheet_v001.png",
+              "sha256": "0159fc2296f4591d780514d8d05bcb0abcfd3c679ff8ca1702aa36b911907242",
+              "cellIndex": 3,
+              "rect": [
+                768,
+                0,
+                256,
+                256
+              ],
+              "anchor": [
+                130,
+                243
+              ]
+            }
+          },
+          "atlas_cell": [
+            192,
+            0,
+            64,
+            64
+          ]
+        },
+        {
+          "path": "assets/PROCESSED/characters/NPC-S02/v002/frames/NPC-S02_idle_right_v002_f05.png",
+          "file": "frames/NPC-S02_idle_right_v002_f05.png",
+          "source": {
+            "path": "assets/PROCESSED/characters/NPC-02/v001/frames/NPC-02_npc_idle_right_v001_f05.png",
+            "animation": "idle",
+            "index": 4,
+            "source": {
+              "id": "idle",
+              "path": "/home/lululu/zgame/assets/RAW/characters/NPC-02/v001/NPC-02_actions_right_sheet_v001.png",
+              "sha256": "0159fc2296f4591d780514d8d05bcb0abcfd3c679ff8ca1702aa36b911907242",
+              "cellIndex": 4,
+              "rect": [
+                1024,
+                0,
+                256,
+                256
+              ],
+              "anchor": [
+                121.5,
+                243
+              ]
+            }
+          },
+          "atlas_cell": [
+            256,
+            0,
+            64,
+            64
+          ]
+        },
+        {
+          "path": "assets/PROCESSED/characters/NPC-S02/v002/frames/NPC-S02_idle_right_v002_f06.png",
+          "file": "frames/NPC-S02_idle_right_v002_f06.png",
+          "source": {
+            "path": "assets/PROCESSED/characters/NPC-02/v001/frames/NPC-02_npc_idle_right_v001_f06.png",
+            "animation": "idle",
+            "index": 5,
+            "source": {
+              "id": "idle",
+              "path": "/home/lululu/zgame/assets/RAW/characters/NPC-02/v001/NPC-02_actions_right_sheet_v001.png",
+              "sha256": "0159fc2296f4591d780514d8d05bcb0abcfd3c679ff8ca1702aa36b911907242",
+              "cellIndex": 5,
+              "rect": [
+                1280,
+                0,
+                256,
+                256
+              ],
+              "anchor": [
+                111.5,
+                243
+              ]
+            }
+          },
+          "atlas_cell": [
+            320,
+            0,
+            64,
+            64
+          ]
+        }
+      ],
+      "atlas": {
+        "row": 0,
+        "region": [
+          0,
+          0,
+          384,
+          64
+        ],
+        "cells": [
+          [
+            0,
+            0,
+            64,
+            64
+          ],
+          [
+            64,
+            0,
+            64,
+            64
+          ],
+          [
+            128,
+            0,
+            64,
+            64
+          ],
+          [
+            192,
+            0,
+            64,
+            64
+          ],
+          [
+            256,
+            0,
+            64,
+            64
+          ],
+          [
+            320,
+            0,
+            64,
+            64
+          ]
+        ]
+      },
+      "anchor_policy": "grounded pose; fixed root"
+    },
+    "walk": {
+      "layer": "body",
+      "frame_count": 8,
+      "fps": 12,
+      "loop": true,
+      "duration_seconds": 0.6666666666666666,
+      "root": [
+        32,
+        58
+      ],
+      "sheet": "assets/PROCESSED/characters/NPC-S02/v002/sheets/NPC-S02_walk_right_v002_sheet.png",
+      "frames": [
+        {
+          "path": "assets/PROCESSED/characters/NPC-S02/v002/frames/NPC-S02_walk_right_v002_f01.png",
+          "file": "frames/NPC-S02_walk_right_v002_f01.png",
+          "source": {
+            "id": "NPC-S02_walk_right_v003_walk",
+            "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S02/v003/NPC-S02_walk_right_v003.png",
+            "sha256": "ee66e4505fa9871803d254142145be0b07eb39870507aa410d6ee4768364c96d",
+            "cellIndex": 0,
+            "rect": [
+              59,
+              20,
+              315,
+              411
+            ],
+            "anchor": [
+              162.75,
+              413
+            ],
+            "originalSource": null
+          },
+          "atlas_cell": [
+            0,
+            64,
+            64,
+            64
+          ]
+        },
+        {
+          "path": "assets/PROCESSED/characters/NPC-S02/v002/frames/NPC-S02_walk_right_v002_f02.png",
+          "file": "frames/NPC-S02_walk_right_v002_f02.png",
+          "source": {
+            "id": "NPC-S02_walk_right_v003_walk",
+            "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S02/v003/NPC-S02_walk_right_v003.png",
+            "sha256": "ee66e4505fa9871803d254142145be0b07eb39870507aa410d6ee4768364c96d",
+            "cellIndex": 1,
+            "rect": [
+              500,
+              17,
+              317,
+              412
+            ],
+            "anchor": [
+              165.25,
+              416
+            ],
+            "originalSource": null
+          },
+          "atlas_cell": [
+            64,
+            64,
+            64,
+            64
+          ]
+        },
+        {
+          "path": "assets/PROCESSED/characters/NPC-S02/v002/frames/NPC-S02_walk_right_v002_f03.png",
+          "file": "frames/NPC-S02_walk_right_v002_f03.png",
+          "source": {
+            "id": "NPC-S02_walk_right_v003_walk",
+            "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S02/v003/NPC-S02_walk_right_v003.png",
+            "sha256": "ee66e4505fa9871803d254142145be0b07eb39870507aa410d6ee4768364c96d",
+            "cellIndex": 2,
+            "rect": [
+              943,
+              18,
+              327,
+              418
+            ],
+            "anchor": [
+              165.75,
+              415
+            ],
+            "originalSource": null
+          },
+          "atlas_cell": [
+            128,
+            64,
+            64,
+            64
+          ]
+        },
+        {
+          "path": "assets/PROCESSED/characters/NPC-S02/v002/frames/NPC-S02_walk_right_v002_f04.png",
+          "file": "frames/NPC-S02_walk_right_v002_f04.png",
+          "source": {
+            "id": "NPC-S02_walk_right_v003_walk",
+            "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S02/v003/NPC-S02_walk_right_v003.png",
+            "sha256": "ee66e4505fa9871803d254142145be0b07eb39870507aa410d6ee4768364c96d",
+            "cellIndex": 3,
+            "rect": [
+              1386,
+              17,
+              327,
+              413
+            ],
+            "anchor": [
+              166.25,
+              416
+            ],
+            "originalSource": null
+          },
+          "atlas_cell": [
+            192,
+            64,
+            64,
+            64
+          ]
+        },
+        {
+          "path": "assets/PROCESSED/characters/NPC-S02/v002/frames/NPC-S02_walk_right_v002_f05.png",
+          "file": "frames/NPC-S02_walk_right_v002_f05.png",
+          "source": {
+            "id": "NPC-S02_walk_right_v003_walk",
+            "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S02/v003/NPC-S02_walk_right_v003.png",
+            "sha256": "ee66e4505fa9871803d254142145be0b07eb39870507aa410d6ee4768364c96d",
+            "cellIndex": 4,
+            "rect": [
+              59,
+              458,
+              328,
+              414
+            ],
+            "anchor": [
+              162.75,
+              414
+            ],
+            "originalSource": null
+          },
+          "atlas_cell": [
+            256,
+            64,
+            64,
+            64
+          ]
+        },
+        {
+          "path": "assets/PROCESSED/characters/NPC-S02/v002/frames/NPC-S02_walk_right_v002_f06.png",
+          "file": "frames/NPC-S02_walk_right_v002_f06.png",
+          "source": {
+            "id": "NPC-S02_walk_right_v003_walk",
+            "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S02/v003/NPC-S02_walk_right_v003.png",
+            "sha256": "ee66e4505fa9871803d254142145be0b07eb39870507aa410d6ee4768364c96d",
+            "cellIndex": 5,
+            "rect": [
+              507,
+              458,
+              316,
+              414
+            ],
+            "anchor": [
+              158.25,
+              414
+            ],
+            "originalSource": null
+          },
+          "atlas_cell": [
+            320,
+            64,
+            64,
+            64
+          ]
+        },
+        {
+          "path": "assets/PROCESSED/characters/NPC-S02/v002/frames/NPC-S02_walk_right_v002_f07.png",
+          "file": "frames/NPC-S02_walk_right_v002_f07.png",
+          "source": {
+            "id": "NPC-S02_walk_right_v003_walk",
+            "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S02/v003/NPC-S02_walk_right_v003.png",
+            "sha256": "ee66e4505fa9871803d254142145be0b07eb39870507aa410d6ee4768364c96d",
+            "cellIndex": 6,
+            "rect": [
+              944,
+              458,
+              330,
+              414
+            ],
+            "anchor": [
+              164.75,
+              414
+            ],
+            "originalSource": null
+          },
+          "atlas_cell": [
+            384,
+            64,
+            64,
+            64
+          ]
+        },
+        {
+          "path": "assets/PROCESSED/characters/NPC-S02/v002/frames/NPC-S02_walk_right_v002_f08.png",
+          "file": "frames/NPC-S02_walk_right_v002_f08.png",
+          "source": {
+            "id": "NPC-S02_walk_right_v003_walk",
+            "path": "/home/lululu/zgame/assets/RAW/characters/NPC-S02/v003/NPC-S02_walk_right_v003.png",
+            "sha256": "ee66e4505fa9871803d254142145be0b07eb39870507aa410d6ee4768364c96d",
+            "cellIndex": 7,
+            "rect": [
+              1385,
+              458,
+              333,
+              417
+            ],
+            "anchor": [
+              167.25,
+              414
+            ],
+            "originalSource": null
+          },
+          "atlas_cell": [
+            448,
+            64,
+            64,
+            64
+          ]
+        }
+      ],
+      "atlas": {
+        "row": 1,
+        "region": [
+          0,
+          64,
+          512,
+          64
+        ],
+        "cells": [
+          [
+            0,
+            64,
+            64,
+            64
+          ],
+          [
+            64,
+            64,
+            64,
+            64
+          ],
+          [
+            128,
+            64,
+            64,
+            64
+          ],
+          [
+            192,
+            64,
+            64,
+            64
+          ],
+          [
+            256,
+            64,
+            64,
+            64
+          ],
+          [
+            320,
+            64,
+            64,
+            64
+          ],
+          [
+            384,
+            64,
+            64,
+            64
+          ],
+          [
+            448,
+            64,
+            64,
+            64
+          ]
+        ]
+      },
+      "anchor_policy": "fixed world-ground reference; designed vertical lift preserved"
+    },
+    "talk": {
+      "layer": "body",
+      "frame_count": 4,
+      "fps": 8,
+      "loop": false,
+      "duration_seconds": 0.5,
+      "root": [
+        32,
+        58
+      ],
+      "sheet": "assets/PROCESSED/characters/NPC-S02/v002/sheets/NPC-S02_talk_right_v002_sheet.png",
+      "frames": [
+        {
+          "path": "assets/PROCESSED/characters/NPC-S02/v002/frames/NPC-S02_talk_right_v002_f01.png",
+          "file": "frames/NPC-S02_talk_right_v002_f01.png",
+          "source": {
+            "path": "assets/PROCESSED/characters/NPC-02/v001/frames/NPC-02_npc_talk_right_v001_f01.png",
+            "animation": "talk",
+            "index": 0,
+            "source": {
+              "id": "talk",
+              "path": "/home/lululu/zgame/assets/RAW/characters/NPC-02/v001/NPC-02_actions_right_sheet_v001.png",
+              "sha256": "0159fc2296f4591d780514d8d05bcb0abcfd3c679ff8ca1702aa36b911907242",
+              "cellIndex": 0,
+              "rect": [
+                0,
+                256,
+                256,
+                256
+              ],
+              "anchor": [
+                165,
+                240
+              ]
+            }
+          },
+          "atlas_cell": [
+            0,
+            128,
+            64,
+            64
+          ]
+        },
+        {
+          "path": "assets/PROCESSED/characters/NPC-S02/v002/frames/NPC-S02_talk_right_v002_f02.png",
+          "file": "frames/NPC-S02_talk_right_v002_f02.png",
+          "source": {
+            "path": "assets/PROCESSED/characters/NPC-02/v001/frames/NPC-02_npc_talk_right_v001_f02.png",
+            "animation": "talk",
+            "index": 1,
+            "source": {
+              "id": "talk",
+              "path": "/home/lululu/zgame/assets/RAW/characters/NPC-02/v001/NPC-02_actions_right_sheet_v001.png",
+              "sha256": "0159fc2296f4591d780514d8d05bcb0abcfd3c679ff8ca1702aa36b911907242",
+              "cellIndex": 1,
+              "rect": [
+                256,
+                256,
+                256,
+                256
+              ],
+              "anchor": [
+                158.5,
+                240
+              ]
+            }
+          },
+          "atlas_cell": [
+            64,
+            128,
+            64,
+            64
+          ]
+        },
+        {
+          "path": "assets/PROCESSED/characters/NPC-S02/v002/frames/NPC-S02_talk_right_v002_f03.png",
+          "file": "frames/NPC-S02_talk_right_v002_f03.png",
+          "source": {
+            "path": "assets/PROCESSED/characters/NPC-02/v001/frames/NPC-02_npc_talk_right_v001_f04.png",
+            "animation": "talk",
+            "index": 3,
+            "source": {
+              "id": "talk",
+              "path": "/home/lululu/zgame/assets/RAW/characters/NPC-02/v001/NPC-02_actions_right_sheet_v001.png",
+              "sha256": "0159fc2296f4591d780514d8d05bcb0abcfd3c679ff8ca1702aa36b911907242",
+              "cellIndex": 3,
+              "rect": [
+                768,
+                256,
+                256,
+                256
+              ],
+              "anchor": [
+                129,
+                240
+              ]
+            }
+          },
+          "atlas_cell": [
+            128,
+            128,
+            64,
+            64
+          ]
+        },
+        {
+          "path": "assets/PROCESSED/characters/NPC-S02/v002/frames/NPC-S02_talk_right_v002_f04.png",
+          "file": "frames/NPC-S02_talk_right_v002_f04.png",
+          "source": {
+            "path": "assets/PROCESSED/characters/NPC-02/v001/frames/NPC-02_npc_talk_right_v001_f06.png",
+            "animation": "talk",
+            "index": 5,
+            "source": {
+              "id": "talk",
+              "path": "/home/lululu/zgame/assets/RAW/characters/NPC-02/v001/NPC-02_actions_right_sheet_v001.png",
+              "sha256": "0159fc2296f4591d780514d8d05bcb0abcfd3c679ff8ca1702aa36b911907242",
+              "cellIndex": 5,
+              "rect": [
+                1280,
+                256,
+                256,
+                256
+              ],
+              "anchor": [
+                111.5,
+                240
+              ]
+            }
+          },
+          "atlas_cell": [
+            192,
+            128,
+            64,
+            64
+          ]
+        }
+      ],
+      "atlas": {
+        "row": 2,
+        "region": [
+          0,
+          128,
+          256,
+          64
+        ],
+        "cells": [
+          [
+            0,
+            128,
+            64,
+            64
+          ],
+          [
+            64,
+            128,
+            64,
+            64
+          ],
+          [
+            128,
+            128,
+            64,
+            64
+          ],
+          [
+            192,
+            128,
+            64,
+            64
+          ]
+        ]
+      },
+      "anchor_policy": "grounded pose; fixed root"
+    }
+  },
+  "master": {
+    "path": "NPC-S02_master_right_v002.png",
+    "derivedFrom": "assets/PROCESSED/characters/NPC-02/v001/NPC-02_master_right_v001.png",
+    "method": "byte-for-byte approved master copy, no new generation"
+  },
+  "sprite_frames": "godot/NPC-S02_sprite_frames.tres"
+}

@@ -1,0 +1,226 @@
+{
+  "id": "NPC-S03",
+  "sheet": "NPC-S03_idle_talk_right_v003.png",
+  "sheet_size": [
+    1774,
+    887
+  ],
+  "frames": [
+    {
+      "action": "idle",
+      "frame": 0,
+      "rect_xywh": [
+        0,
+        0,
+        376,
+        454
+      ],
+      "alpha128_bbox_xyxy": [
+        31,
+        50,
+        368,
+        438
+      ],
+      "source_root_xy": [
+        219.0,
+        438
+      ]
+    },
+    {
+      "action": "idle",
+      "frame": 1,
+      "rect_xywh": [
+        376,
+        0,
+        347,
+        454
+      ],
+      "alpha128_bbox_xyxy": [
+        383,
+        50,
+        713,
+        438
+      ],
+      "source_root_xy": [
+        562.5,
+        438
+      ]
+    },
+    {
+      "action": "idle",
+      "frame": 2,
+      "rect_xywh": [
+        723,
+        0,
+        348,
+        454
+      ],
+      "alpha128_bbox_xyxy": [
+        732,
+        49,
+        1064,
+        438
+      ],
+      "source_root_xy": [
+        908.5,
+        438
+      ]
+    },
+    {
+      "action": "idle",
+      "frame": 3,
+      "rect_xywh": [
+        1071,
+        0,
+        345,
+        454
+      ],
+      "alpha128_bbox_xyxy": [
+        1077,
+        50,
+        1407,
+        437
+      ],
+      "source_root_xy": [
+        1254.0,
+        437
+      ]
+    },
+    {
+      "action": "idle",
+      "frame": 4,
+      "rect_xywh": [
+        1416,
+        0,
+        358,
+        454
+      ],
+      "alpha128_bbox_xyxy": [
+        1418,
+        50,
+        1744,
+        437
+      ],
+      "source_root_xy": [
+        1595.0,
+        437
+      ]
+    },
+    {
+      "action": "idle",
+      "frame": 5,
+      "rect_xywh": [
+        0,
+        454,
+        376,
+        433
+      ],
+      "alpha128_bbox_xyxy": [
+        33,
+        472,
+        374,
+        857
+      ],
+      "source_root_xy": [
+        220.0,
+        857
+      ]
+    },
+    {
+      "action": "talk",
+      "frame": 0,
+      "rect_xywh": [
+        376,
+        454,
+        347,
+        433
+      ],
+      "alpha128_bbox_xyxy": [
+        383,
+        472,
+        717,
+        857
+      ],
+      "source_root_xy": [
+        564.0,
+        857
+      ]
+    },
+    {
+      "action": "talk",
+      "frame": 1,
+      "rect_xywh": [
+        723,
+        454,
+        348,
+        433
+      ],
+      "alpha128_bbox_xyxy": [
+        727,
+        472,
+        1066,
+        857
+      ],
+      "source_root_xy": [
+        908.5,
+        857
+      ]
+    },
+    {
+      "action": "talk",
+      "frame": 2,
+      "rect_xywh": [
+        1071,
+        454,
+        345,
+        433
+      ],
+      "alpha128_bbox_xyxy": [
+        1072,
+        472,
+        1416,
+        857
+      ],
+      "source_root_xy": [
+        1254.0,
+        857
+      ]
+    },
+    {
+      "action": "talk",
+      "frame": 3,
+      "rect_xywh": [
+        1416,
+        454,
+        358,
+        433
+      ],
+      "alpha128_bbox_xyxy": [
+        1416,
+        472,
+        1746,
+        857
+      ],
+      "source_root_xy": [
+        1595.0,
+        857
+      ]
+    }
+  ],
+  "fps": {
+    "idle": 6,
+    "talk": 8
+  },
+  "target_canvas": [
+    64,
+    64
+  ],
+  "target_root": [
+    32,
+    58
+  ],
+  "suggested_height": 44,
+  "notes": [
+    "slots0-5 idle,6-9 talk. Exact rect boundaries based on visible gaps, not assumed equal division."
+  ]
+}

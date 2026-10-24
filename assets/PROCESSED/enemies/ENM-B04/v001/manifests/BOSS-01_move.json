@@ -1,0 +1,179 @@
+{
+  "id": "BOSS-01_move",
+  "enemyId": "BOSS-01",
+  "gameEnemyId": "honey_queen",
+  "label": "蜂蜜女王",
+  "name": "move",
+  "kind": "body",
+  "generationMode": "built-in image_gen",
+  "sourcePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/BOSS-01/BOSS-01_actions_A.png",
+  "sourceRects": [
+    [
+      0,
+      246,
+      384,
+      260
+    ],
+    [
+      384,
+      246,
+      384,
+      260
+    ],
+    [
+      768,
+      246,
+      384,
+      260
+    ],
+    [
+      1152,
+      246,
+      384,
+      260
+    ]
+  ],
+  "sourceAnchors": [
+    [
+      230,
+      146
+    ],
+    [
+      230,
+      146
+    ],
+    [
+      230,
+      146
+    ],
+    [
+      230,
+      146
+    ]
+  ],
+  "sourceSize": [
+    1536,
+    1024
+  ],
+  "sourceSha256": "2d624a1b06611fe66a4c9cbb2c45ac12757da716359c57cbc3b7f33380c35c06",
+  "sourceBatch": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/BOSS-01/batch.json",
+  "promptPath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/BOSS-01/BOSS-01_A.prompt.txt",
+  "provenancePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/BOSS-01/provenance.json",
+  "target": [
+    176,
+    136
+  ],
+  "anchor": [
+    88,
+    68
+  ],
+  "rootType": "flying",
+  "scale": 0.36,
+  "fps": 10,
+  "loop": true,
+  "frameCount": 4,
+  "frames": [
+    "frames/BOSS-01_move/BOSS-01_move_00.png",
+    "frames/BOSS-01_move/BOSS-01_move_01.png",
+    "frames/BOSS-01_move/BOSS-01_move_02.png",
+    "frames/BOSS-01_move/BOSS-01_move_03.png"
+  ],
+  "sheet": "sheets/BOSS-01_move.png",
+  "frameDetails": [
+    {
+      "sourceRect": [
+        0,
+        246,
+        384,
+        260
+      ],
+      "sourceAnchor": [
+        230,
+        146
+      ],
+      "offset": [
+        5,
+        16
+      ],
+      "alphaBBox": [
+        21,
+        17,
+        137,
+        110
+      ]
+    },
+    {
+      "sourceRect": [
+        384,
+        246,
+        384,
+        260
+      ],
+      "sourceAnchor": [
+        230,
+        146
+      ],
+      "offset": [
+        5,
+        16
+      ],
+      "alphaBBox": [
+        13,
+        16,
+        142,
+        107
+      ]
+    },
+    {
+      "sourceRect": [
+        768,
+        246,
+        384,
+        260
+      ],
+      "sourceAnchor": [
+        230,
+        146
+      ],
+      "offset": [
+        5,
+        16
+      ],
+      "alphaBBox": [
+        5,
+        16,
+        137,
+        110
+      ]
+    },
+    {
+      "sourceRect": [
+        1152,
+        246,
+        384,
+        260
+      ],
+      "sourceAnchor": [
+        230,
+        146
+      ],
+      "offset": [
+        5,
+        16
+      ],
+      "alphaBBox": [
+        8,
+        16,
+        131,
+        109
+      ]
+    }
+  ],
+  "fadeStartNormalized": 1.0,
+  "phases": [
+    "move1",
+    "move2",
+    "move3",
+    "move4"
+  ]
+}

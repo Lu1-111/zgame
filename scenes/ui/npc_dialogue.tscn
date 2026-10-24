@@ -1,0 +1,51 @@
+[gd_scene load_steps=2 format=3]
+
+; npc_dialogue.tscn —— 屏幕底部通用对话框，由 WorldNPC 写入内容。
+
+[ext_resource type="Script" path="res://scripts/ui/npc_dialogue.gd" id="1_dialogue"]
+
+[node name="NPCDialogue" type="CanvasLayer"]
+layer = 20
+script = ExtResource("1_dialogue")
+
+[node name="Panel" type="ColorRect" parent="."]
+visible = false
+offset_left = 20.0
+offset_top = 250.0
+offset_right = 620.0
+offset_bottom = 344.0
+color = Color(0.0471, 0.051, 0.0706, 0.96)
+
+[node name="Border" type="ColorRect" parent="Panel"]
+offset_right = 600.0
+offset_bottom = 2.0
+color = Color(0.95, 0.749, 0.247, 1)
+
+[node name="Speaker" type="Label" parent="Panel"]
+offset_left = 12.0
+offset_top = 8.0
+offset_right = 588.0
+offset_bottom = 30.0
+theme_override_colors/font_color = Color(1, 0.949, 0.78, 1)
+theme_override_font_sizes/font_size = 13
+text = "NPC"
+
+[node name="Line" type="Label" parent="Panel"]
+offset_left = 12.0
+offset_top = 34.0
+offset_right = 588.0
+offset_bottom = 68.0
+theme_override_colors/font_color = Color(0.878, 0.925, 0.906, 1)
+theme_override_font_sizes/font_size = 11
+text = "..."
+autowrap_mode = 2
+
+[node name="Hint" type="Label" parent="Panel"]
+offset_left = 430.0
+offset_top = 70.0
+offset_right = 588.0
+offset_bottom = 89.0
+theme_override_colors/font_color = Color(0.6, 0.63, 0.7, 1)
+theme_override_font_sizes/font_size = 9
+text = "E 继续"
+horizontal_alignment = 2

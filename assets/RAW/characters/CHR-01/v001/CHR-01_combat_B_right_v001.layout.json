@@ -1,0 +1,144 @@
+{
+  "sourceId": "combat_b",
+  "file": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_combat_B_right_v001.png",
+  "columns": 4,
+  "rows": 3,
+  "measuredSize": [
+    1448,
+    1086
+  ],
+  "calibration": {
+    "referenceCell": 0,
+    "referenceHeightPx": 260,
+    "targetStandingHeight": 40
+  },
+  "animations": [
+    {
+      "name": "blaster_charge",
+      "label": "奶弹枪蓄力",
+      "fps": 10,
+      "loop": false,
+      "anchorMode": "ground",
+      "cells": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "phases": [
+        "aim",
+        "charge",
+        "full_charge",
+        "release"
+      ]
+    },
+    {
+      "name": "staff_sweep",
+      "label": "奶杖横扫",
+      "fps": 10,
+      "loop": false,
+      "anchorMode": "ground",
+      "cells": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "phases": [
+        "windup",
+        "hit",
+        "follow_through",
+        "recover"
+      ]
+    },
+    {
+      "name": "orb_cast",
+      "label": "星乳法球发射",
+      "fps": 10,
+      "loop": false,
+      "anchorMode": "ground",
+      "cells": [
+        8,
+        9,
+        10,
+        11
+      ],
+      "phases": [
+        "gather",
+        "hold",
+        "release",
+        "recover"
+      ]
+    }
+  ],
+  "anchorsAbsolute": {
+    "0": [
+      172,
+      331
+    ],
+    "1": [
+      525,
+      331
+    ],
+    "2": [
+      879,
+      331
+    ],
+    "3": [
+      1243,
+      331
+    ],
+    "4": [
+      224,
+      678
+    ],
+    "5": [
+      536,
+      678
+    ],
+    "6": [
+      884,
+      678
+    ],
+    "7": [
+      1243,
+      678
+    ],
+    "8": [
+      183,
+      1024
+    ],
+    "9": [
+      535,
+      1024
+    ],
+    "10": [
+      877,
+      1024
+    ],
+    "11": [
+      1245,
+      1024
+    ]
+  },
+  "expectedOutput": {
+    "size": [
+      64,
+      64
+    ],
+    "anchor": [
+      32,
+      58
+    ],
+    "standingHeight": 40
+  },
+  "notes": [
+    "Built-in image_gen generation with real RGBA alpha; prompt saved alongside PNG.",
+    "Source rows/cells are not perfectly centered; adaptive segmentation/sourceRects recommended over strict equal-grid crops.",
+    "anchorsAbsolute use manually checked foot-root positions; row2 col3 avoids using low staff/FX as foot extrema.",
+    "All character bodies and weapons are complete. Row1 col4 release streak touches right canvas border; beam is a visual cue, not a standalone complete FX asset.",
+    "B frame0 standing body height calibration 260px excludes gun/FX.",
+    "No root displacement is intended; animation playback should use fixed output anchor (32,58).",
+    "Color/alpha edge cleanup and final anchor QA remain PROCESSED pipeline responsibilities."
+  ]
+}

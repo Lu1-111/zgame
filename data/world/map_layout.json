@@ -1,0 +1,117 @@
+{
+  "rooms": [
+    {
+      "doors": [
+        {
+          "pos": [
+            1112,
+            296
+          ],
+          "target": "forest_01"
+        }
+      ],
+      "id": "camp_01",
+      "markers": [
+        {
+          "pos": [
+            336,
+            250
+          ],
+          "type": "campfire"
+        }
+      ],
+      "name": "奶族营地",
+      "origin": [
+        0.0,
+        0.0
+      ],
+      "scene": "res://scenes/rooms/camp_01.tscn",
+      "size": [
+        1152.0,
+        352.0
+      ]
+    },
+    {
+      "doors": [
+        {
+          "pos": [
+            16,
+            1688
+          ],
+          "target": "camp_01"
+        },
+        {
+          "pos": [
+            1232,
+            680
+          ],
+          "target": "cave_01"
+        }
+      ],
+      "id": "forest_01",
+      "markers": [
+        {
+          "pos": [
+            224,
+            1642
+          ],
+          "type": "campfire"
+        },
+        {
+          "pos": [
+            256,
+            634
+          ],
+          "type": "campfire"
+        },
+        {
+          "pos": [
+            960,
+            1632
+          ],
+          "type": "chest"
+        },
+        {
+          "pos": [
+            1152,
+            1392
+          ],
+          "type": "chest"
+        },
+        {
+          "pos": [
+            928,
+            864
+          ],
+          "type": "chest"
+        },
+        {
+          "pos": [
+            1024,
+            624
+          ],
+          "type": "chest"
+        },
+        {
+          "pos": [
+            736,
+            400
+          ],
+          "type": "chest"
+        }
+      ],
+      "name": "始点森林",
+      "origin": [
+        1168.0,
+        -1408.0
+      ],
+      "scene": "res://scenes/rooms/forest_01.tscn",
+      "size": [
+        1280.0,
+        1760.0
+      ]
+    }
+  ],
+  "scale": 8,
+  "tile": 16
+}

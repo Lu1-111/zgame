@@ -1,0 +1,145 @@
+{
+  "batch": "ITM-B01",
+  "version": "v001",
+  "subset": "consumables",
+  "date": "2026-10-24",
+  "status": "RAW complete; PROCESSED pending parent batch stage",
+  "generationMode": "built-in image_gen.imagegen, one call per item",
+  "scope": [
+    "potion_small",
+    "potion_mana",
+    "potion_sta",
+    "milk_bomb"
+  ],
+  "assetCount": 4,
+  "rawFrameCount": 16,
+  "assets": [
+    {
+      "dataId": "potion_small",
+      "rawImage": "/home/lululu/zgame/assets/RAW/items/ITM-B01/v001/consumables/ITEM_potion_small_idle_v001.png",
+      "layout": "/home/lululu/zgame/assets/RAW/items/ITM-B01/v001/consumables/ITEM_potion_small_idle_v001.layout.json",
+      "prompt": "/home/lululu/zgame/assets/RAW/items/ITM-B01/v001/consumables/ITEM_potion_small_idle_v001.prompt.txt",
+      "actualSize": [
+        1254,
+        1254
+      ],
+      "frameCount": 4,
+      "sha256": "4d11a6cd0aa367e85a4685a3c49890a302ce6230b5b539b1f2dbfd52f22dcbff",
+      "observedMainBodyCenterBottom": [
+        [
+          342.5,
+          537
+        ],
+        [
+          284.5,
+          537
+        ],
+        [
+          342.5,
+          478
+        ],
+        [
+          284.5,
+          478
+        ]
+      ]
+    },
+    {
+      "dataId": "potion_mana",
+      "rawImage": "/home/lululu/zgame/assets/RAW/items/ITM-B01/v001/consumables/ITEM_potion_mana_idle_v001.png",
+      "layout": "/home/lululu/zgame/assets/RAW/items/ITM-B01/v001/consumables/ITEM_potion_mana_idle_v001.layout.json",
+      "prompt": "/home/lululu/zgame/assets/RAW/items/ITM-B01/v001/consumables/ITEM_potion_mana_idle_v001.prompt.txt",
+      "actualSize": [
+        1254,
+        1254
+      ],
+      "frameCount": 4,
+      "sha256": "cd0ffed88e11db8c48a1c880471c55ac980242f3c4287506ae75cfa746bbd703",
+      "observedMainBodyCenterBottom": [
+        [
+          348.5,
+          583
+        ],
+        [
+          278.5,
+          583
+        ],
+        [
+          348.5,
+          518
+        ],
+        [
+          278.5,
+          516
+        ]
+      ]
+    },
+    {
+      "dataId": "potion_sta",
+      "rawImage": "/home/lululu/zgame/assets/RAW/items/ITM-B01/v001/consumables/ITEM_potion_sta_idle_v001.png",
+      "layout": "/home/lululu/zgame/assets/RAW/items/ITM-B01/v001/consumables/ITEM_potion_sta_idle_v001.layout.json",
+      "prompt": "/home/lululu/zgame/assets/RAW/items/ITM-B01/v001/consumables/ITEM_potion_sta_idle_v001.prompt.txt",
+      "actualSize": [
+        1254,
+        1254
+      ],
+      "frameCount": 4,
+      "sha256": "6b85b6fc52d3df90ec4a0b531089bb73a0018c085bde21f942c4a9809be17c7c",
+      "observedMainBodyCenterBottom": [
+        [
+          328.0,
+          539
+        ],
+        [
+          299.5,
+          539
+        ],
+        [
+          328.0,
+          484
+        ],
+        [
+          299.5,
+          484
+        ]
+      ]
+    },
+    {
+      "dataId": "milk_bomb",
+      "rawImage": "/home/lululu/zgame/assets/RAW/items/ITM-B01/v001/consumables/ITEM_milk_bomb_idle_v001.png",
+      "layout": "/home/lululu/zgame/assets/RAW/items/ITM-B01/v001/consumables/ITEM_milk_bomb_idle_v001.layout.json",
+      "prompt": "/home/lululu/zgame/assets/RAW/items/ITM-B01/v001/consumables/ITEM_milk_bomb_idle_v001.prompt.txt",
+      "actualSize": [
+        1254,
+        1254
+      ],
+      "frameCount": 4,
+      "sha256": "002b449f813ce570635cc80db9469a2c728646c777327ff828ce8e02da072a71",
+      "observedMainBodyCenterBottom": [
+        [
+          339.5,
+          559
+        ],
+        [
+          301.0,
+          559
+        ],
+        [
+          339.5,
+          538
+        ],
+        [
+          300.5,
+          538
+        ]
+      ]
+    }
+  ],
+  "knownIssues": [
+    "Tool returned 1254x1254 rather than requested 1024x1024.",
+    "All crops are 627x627.",
+    "Generated placement is approximate; align individual frames to a common pivot during PROCESSED.",
+    "Fine silhouette/glass highlight variations require temporal review."
+  ],
+  "forbiddenMutations": "This sub-agent did not edit scenes, data, scripts, main asset checklist, or PROCESSED."
+}

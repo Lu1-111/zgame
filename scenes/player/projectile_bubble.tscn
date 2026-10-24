@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3]
+
+; projectile_bubble.tscn —— 奶泡弹投射物（skill_bubble，M1）
+
+[ext_resource type="Script" path="res://scripts/player/projectile_bubble.gd" id="1_pb"]
+
+[sub_resource type="CircleShape2D" id="bubble_circle"]
+radius = 5.0
+
+[node name="ProjectileBubble" type="Area2D"]
+collision_layer = 8
+collision_mask = 33
+script = ExtResource("1_pb")
+
+[node name="Shape" type="CollisionShape2D" parent="."]
+shape = SubResource("bubble_circle")

@@ -1,0 +1,179 @@
+{
+  "id": "BOSS-01_recover",
+  "enemyId": "BOSS-01",
+  "gameEnemyId": "honey_queen",
+  "label": "蜂蜜女王",
+  "name": "recover",
+  "kind": "body",
+  "generationMode": "built-in image_gen",
+  "sourcePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/BOSS-01/BOSS-01_actions_B.png",
+  "sourceRects": [
+    [
+      0,
+      0,
+      382,
+      256
+    ],
+    [
+      382,
+      0,
+      386,
+      256
+    ],
+    [
+      768,
+      0,
+      386,
+      256
+    ],
+    [
+      1154,
+      0,
+      382,
+      256
+    ]
+  ],
+  "sourceAnchors": [
+    [
+      230,
+      136
+    ],
+    [
+      232,
+      136
+    ],
+    [
+      230,
+      136
+    ],
+    [
+      228,
+      136
+    ]
+  ],
+  "sourceSize": [
+    1536,
+    1024
+  ],
+  "sourceSha256": "8cbc2b63d1c4088d83f83c3506e7e75f5939f4451ff4eee45061d3b81df48c51",
+  "sourceBatch": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/BOSS-01/batch.json",
+  "promptPath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/BOSS-01/BOSS-01_B_retry.prompt.txt",
+  "provenancePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/BOSS-01/provenance.json",
+  "target": [
+    176,
+    136
+  ],
+  "anchor": [
+    88,
+    68
+  ],
+  "rootType": "flying",
+  "scale": 0.36,
+  "fps": 10,
+  "loop": false,
+  "frameCount": 4,
+  "frames": [
+    "frames/BOSS-01_recover/BOSS-01_recover_00.png",
+    "frames/BOSS-01_recover/BOSS-01_recover_01.png",
+    "frames/BOSS-01_recover/BOSS-01_recover_02.png",
+    "frames/BOSS-01_recover/BOSS-01_recover_03.png"
+  ],
+  "sheet": "sheets/BOSS-01_recover.png",
+  "frameDetails": [
+    {
+      "sourceRect": [
+        0,
+        0,
+        382,
+        256
+      ],
+      "sourceAnchor": [
+        230,
+        136
+      ],
+      "offset": [
+        5,
+        19
+      ],
+      "alphaBBox": [
+        10,
+        19,
+        143,
+        111
+      ]
+    },
+    {
+      "sourceRect": [
+        382,
+        0,
+        386,
+        256
+      ],
+      "sourceAnchor": [
+        232,
+        136
+      ],
+      "offset": [
+        4,
+        19
+      ],
+      "alphaBBox": [
+        4,
+        24,
+        142,
+        110
+      ]
+    },
+    {
+      "sourceRect": [
+        768,
+        0,
+        386,
+        256
+      ],
+      "sourceAnchor": [
+        230,
+        136
+      ],
+      "offset": [
+        5,
+        19
+      ],
+      "alphaBBox": [
+        5,
+        22,
+        144,
+        110
+      ]
+    },
+    {
+      "sourceRect": [
+        1154,
+        0,
+        382,
+        256
+      ],
+      "sourceAnchor": [
+        228,
+        136
+      ],
+      "offset": [
+        6,
+        19
+      ],
+      "alphaBBox": [
+        9,
+        19,
+        139,
+        111
+      ]
+    }
+  ],
+  "fadeStartNormalized": 1.0,
+  "phases": [
+    "recover1",
+    "recover2",
+    "recover3",
+    "recover4"
+  ]
+}

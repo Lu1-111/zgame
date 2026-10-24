@@ -1,0 +1,520 @@
+{
+  "effects": [
+    {
+      "id": "ENM-02_idle",
+      "name": "idle",
+      "enemyId": "ENM-02",
+      "gameEnemyId": "milk_goblin",
+      "label": "idle",
+      "kind": "body",
+      "sourcePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-02/ENM-02_actions_A.png",
+      "sourceRects": [
+        [
+          0,
+          0,
+          329,
+          330
+        ],
+        [
+          329,
+          0,
+          306,
+          330
+        ],
+        [
+          635,
+          0,
+          320,
+          330
+        ],
+        [
+          955,
+          0,
+          299,
+          330
+        ]
+      ],
+      "sourceAnchors": [
+        [
+          156.75,
+          284.0
+        ],
+        [
+          141.25,
+          284.0
+        ],
+        [
+          148.75,
+          284.0
+        ],
+        [
+          142.25,
+          284.0
+        ]
+      ],
+      "scale": 0.22564102564102564,
+      "target": [
+        128,
+        128
+      ],
+      "anchor": [
+        64,
+        104
+      ],
+      "fps": 8,
+      "loop": true,
+      "promptPath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-02/ENM-02_A.prompt.txt",
+      "generationMode": "built-in-imagegen",
+      "processing": "rect crop, fixed per-sheet nearest scale, integer semantic root translation; original alpha retained",
+      "provenancePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-02/provenance.json"
+    },
+    {
+      "id": "ENM-02_move",
+      "name": "move",
+      "enemyId": "ENM-02",
+      "gameEnemyId": "milk_goblin",
+      "label": "move",
+      "kind": "body",
+      "sourcePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-02/ENM-02_actions_A.png",
+      "sourceRects": [
+        [
+          0,
+          330,
+          336,
+          297
+        ],
+        [
+          336,
+          330,
+          310,
+          297
+        ],
+        [
+          646,
+          330,
+          327,
+          297
+        ],
+        [
+          973,
+          330,
+          281,
+          297
+        ]
+      ],
+      "sourceAnchors": [
+        [
+          156.75,
+          259.5
+        ],
+        [
+          134.25,
+          259.5
+        ],
+        [
+          137.75,
+          259.5
+        ],
+        [
+          124.25,
+          259.5
+        ]
+      ],
+      "scale": 0.22564102564102564,
+      "target": [
+        128,
+        128
+      ],
+      "anchor": [
+        64,
+        104
+      ],
+      "fps": 8,
+      "loop": true,
+      "promptPath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-02/ENM-02_A.prompt.txt",
+      "generationMode": "built-in-imagegen",
+      "processing": "rect crop, fixed per-sheet nearest scale, integer semantic root translation; original alpha retained",
+      "provenancePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-02/provenance.json"
+    },
+    {
+      "id": "ENM-02_telegraph",
+      "name": "telegraph",
+      "enemyId": "ENM-02",
+      "gameEnemyId": "milk_goblin",
+      "label": "telegraph",
+      "kind": "body",
+      "sourcePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-02/ENM-02_actions_A.png",
+      "sourceRects": [
+        [
+          0,
+          627,
+          341,
+          336
+        ],
+        [
+          341,
+          627,
+          311,
+          336
+        ],
+        [
+          652,
+          627,
+          294,
+          336
+        ],
+        [
+          946,
+          627,
+          308,
+          336
+        ]
+      ],
+      "sourceAnchors": [
+        [
+          156.75,
+          283.5
+        ],
+        [
+          129.25,
+          283.5
+        ],
+        [
+          131.75,
+          283.5
+        ],
+        [
+          151.25,
+          283.5
+        ]
+      ],
+      "scale": 0.22564102564102564,
+      "target": [
+        128,
+        128
+      ],
+      "anchor": [
+        64,
+        104
+      ],
+      "fps": 8,
+      "loop": false,
+      "promptPath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-02/ENM-02_A.prompt.txt",
+      "generationMode": "built-in-imagegen",
+      "processing": "rect crop, fixed per-sheet nearest scale, integer semantic root translation; original alpha retained",
+      "provenancePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-02/provenance.json"
+    },
+    {
+      "id": "ENM-02_attack",
+      "name": "attack",
+      "enemyId": "ENM-02",
+      "gameEnemyId": "milk_goblin",
+      "label": "attack",
+      "kind": "body",
+      "sourcePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-02/ENM-02_actions_A.png",
+      "sourceRects": [
+        [
+          0,
+          963,
+          367,
+          291
+        ],
+        [
+          367,
+          963,
+          297,
+          291
+        ],
+        [
+          664,
+          963,
+          318,
+          291
+        ],
+        [
+          982,
+          963,
+          272,
+          291
+        ]
+      ],
+      "sourceAnchors": [
+        [
+          156.75,
+          236.0
+        ],
+        [
+          103.25,
+          236.0
+        ],
+        [
+          119.75,
+          236.0
+        ],
+        [
+          115.25,
+          236.0
+        ]
+      ],
+      "scale": 0.22564102564102564,
+      "target": [
+        128,
+        128
+      ],
+      "anchor": [
+        64,
+        104
+      ],
+      "fps": 8,
+      "loop": false,
+      "promptPath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-02/ENM-02_A.prompt.txt",
+      "generationMode": "built-in-imagegen",
+      "processing": "rect crop, fixed per-sheet nearest scale, integer semantic root translation; original alpha retained",
+      "provenancePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-02/provenance.json"
+    },
+    {
+      "id": "ENM-02_recover",
+      "name": "recover",
+      "enemyId": "ENM-02",
+      "gameEnemyId": "milk_goblin",
+      "label": "recover",
+      "kind": "body",
+      "sourcePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-02/ENM-02_actions_B.png",
+      "sourceRects": [
+        [
+          0,
+          0,
+          287,
+          344
+        ],
+        [
+          287,
+          0,
+          361,
+          344
+        ],
+        [
+          648,
+          0,
+          339,
+          344
+        ],
+        [
+          987,
+          0,
+          267,
+          344
+        ]
+      ],
+      "sourceAnchors": [
+        [
+          156.75,
+          310.0
+        ],
+        [
+          183.25,
+          310.0
+        ],
+        [
+          135.75,
+          310.0
+        ],
+        [
+          110.25,
+          310.0
+        ]
+      ],
+      "scale": 0.2009132420091324,
+      "target": [
+        128,
+        128
+      ],
+      "anchor": [
+        64,
+        104
+      ],
+      "fps": 8,
+      "loop": false,
+      "promptPath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-02/ENM-02_B.prompt.txt",
+      "generationMode": "built-in-imagegen",
+      "processing": "rect crop, fixed per-sheet nearest scale, integer semantic root translation; original alpha retained",
+      "provenancePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-02/provenance.json"
+    },
+    {
+      "id": "ENM-02_hurt",
+      "name": "hurt",
+      "enemyId": "ENM-02",
+      "gameEnemyId": "milk_goblin",
+      "label": "hurt",
+      "kind": "body",
+      "sourcePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-02/ENM-02_actions_B.png",
+      "sourceRects": [
+        [
+          0,
+          344,
+          302,
+          332
+        ],
+        [
+          302,
+          344,
+          312,
+          332
+        ],
+        [
+          614,
+          344,
+          327,
+          332
+        ],
+        [
+          941,
+          344,
+          313,
+          332
+        ]
+      ],
+      "sourceAnchors": [
+        [
+          156.75,
+          280.0
+        ],
+        [
+          168.25,
+          280.0
+        ],
+        [
+          169.75,
+          280.0
+        ],
+        [
+          156.25,
+          280.0
+        ]
+      ],
+      "scale": 0.2009132420091324,
+      "target": [
+        128,
+        128
+      ],
+      "anchor": [
+        64,
+        104
+      ],
+      "fps": 8,
+      "loop": false,
+      "promptPath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-02/ENM-02_B.prompt.txt",
+      "generationMode": "built-in-imagegen",
+      "processing": "rect crop, fixed per-sheet nearest scale, integer semantic root translation; original alpha retained",
+      "provenancePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-02/provenance.json"
+    },
+    {
+      "id": "ENM-02_death",
+      "name": "death",
+      "enemyId": "ENM-02",
+      "gameEnemyId": "milk_goblin",
+      "label": "death",
+      "kind": "body",
+      "sourcePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-02/ENM-02_actions_B.png",
+      "sourceRects": [
+        [
+          0,
+          676,
+          323,
+          312
+        ],
+        [
+          323,
+          676,
+          304,
+          312
+        ],
+        [
+          627,
+          676,
+          330,
+          312
+        ],
+        [
+          957,
+          676,
+          297,
+          312
+        ],
+        [
+          0,
+          988,
+          308,
+          266
+        ],
+        [
+          308,
+          988,
+          323,
+          266
+        ],
+        [
+          631,
+          988,
+          248,
+          266
+        ],
+        [
+          879,
+          988,
+          375,
+          266
+        ]
+      ],
+      "sourceAnchors": [
+        [
+          156.75,
+          259.0
+        ],
+        [
+          147.25,
+          259.0
+        ],
+        [
+          156.75,
+          259.0
+        ],
+        [
+          140.25,
+          259.0
+        ],
+        [
+          156.75,
+          233.5
+        ],
+        [
+          162.25,
+          233.5
+        ],
+        [
+          152.75,
+          233.5
+        ],
+        [
+          218.25,
+          233.5
+        ]
+      ],
+      "scale": 0.2009132420091324,
+      "target": [
+        128,
+        128
+      ],
+      "anchor": [
+        64,
+        104
+      ],
+      "fps": 10,
+      "loop": false,
+      "promptPath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-02/ENM-02_B.prompt.txt",
+      "generationMode": "built-in-imagegen",
+      "processing": "rect crop, fixed per-sheet nearest scale, integer semantic root translation; original alpha retained",
+      "provenancePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-02/provenance.json"
+    }
+  ]
+}

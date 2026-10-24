@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="SpriteFrames" path="NPC-S02_sprite_frames.tres" id="1_frames"]
+
+[node name="NPCS02Preview" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+sprite_frames = ExtResource("1_frames")
+animation = &"idle"
+autoplay = "idle"
+centered = false
+offset = Vector2(-32, -58)

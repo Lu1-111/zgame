@@ -1,0 +1,4079 @@
+{
+  "status": "passed-visual-and-runtime-review",
+  "requiresHumanVisualReview": false,
+  "alphaThreshold": 16,
+  "errors": [],
+  "warnings": [
+    "FX-01_physical_hit/0: 32 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "FX-01_physical_hit/1: 8 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "FX-01_physical_hit/2: 3 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "FX-01_physical_hit/3: 17 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "FX-01_physical_hit/4: 5 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "FX-01_magic_hit/0: 175 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "FX-01_magic_hit/1: 125 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "FX-01_magic_hit/2: 15 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "FX-01_magic_hit/3: 21 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "FX-01_magic_hit/4: 61 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "FX-01_magic_hit/5: 29 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "FX-01_guard_spark/0: 10 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "FX-01_guard_spark/1: 31 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "FX-01_guard_spark/2: 20 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "FX-01_guard_spark/3: 7 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "FX-01_guard_spark/4: 18 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "FX-01_guard_spark/5: 18 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "FX-01_perfect_parry/0: 99 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "FX-01_perfect_parry/1: 98 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "FX-01_perfect_parry/2: 44 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "FX-01_perfect_parry/3: 159 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "FX-01_perfect_parry/4: 147 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "FX-01_perfect_parry/5: 57 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "FX-01_guard_break/0: 155 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "FX-01_guard_break/1: 61 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "FX-01_guard_break/2: 25 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "FX-01_guard_break/3: 194 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "FX-01_guard_break/4: 202 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "FX-01_guard_break/5: 129 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "FX-02_landing_dust/0: 15 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "FX-02_landing_dust/1: 39 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "FX-02_landing_dust/2: 27 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "FX-02_landing_dust/3: 166 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "FX-02_landing_dust/4: 66 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "FX-02_landing_dust/5: 3 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "FX-02_takeoff_dust/0: 7 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "FX-02_takeoff_dust/1: 1 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "FX-02_takeoff_dust/3: 3 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "FX-02_takeoff_dust/4: 1 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "ABL-01_double_jump_bubble/0: 4 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "ABL-01_double_jump_bubble/1: 2 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "ABL-01_double_jump_bubble/2: 1 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "ABL-01_double_jump_bubble/3: 6 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "ABL-01_double_jump_bubble/4: 3 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "FX-02_dodge_afterimage/0: 10 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "FX-02_dodge_afterimage/1: 6 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "FX-02_dodge_afterimage/2: 1 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "FX-02_dodge_afterimage/3: 14 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "FX-02_dodge_afterimage/4: 20 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "FX-02_dodge_afterimage/5: 13 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "WPN-01_hammer_swing_1/0: 53 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "WPN-01_hammer_swing_1/1: 192 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "WPN-01_hammer_swing_1/2: 143 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "WPN-01_hammer_swing_1/3: 105 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "WPN-01_hammer_swing_1/4: 188 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "WPN-01_hammer_swing_1/5: 67 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "WPN-01_hammer_slam_3/0: 7 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "WPN-01_hammer_slam_3/1: 3 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "WPN-01_hammer_slam_3/3: 21 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "WPN-01_hammer_slam_3/4: 1 low-alpha source boundary pixels retained; no alpha > 16 on boundary",
+    "WPN-01_hammer_slam_3/5: 1 low-alpha source boundary pixels retained; no alpha > 16 on boundary"
+  ],
+  "duplicateFrames": [],
+  "effects": [
+    {
+      "id": "FX-01_physical_hit",
+      "frameCount": 6,
+      "anchor": [
+        32,
+        32
+      ],
+      "scale": 0.109375,
+      "transitions": [
+        {
+          "from": 0,
+          "to": 1,
+          "silhouetteIoU": 0.13385826771653545,
+          "meanPremultipliedChannelDelta": 4.843359375000003,
+          "areaRatio": 4.919354838709677,
+          "alphaMassRatio": 5.741888820004135,
+          "centroidDelta": [
+            1.0701549401247092,
+            0.03366265254603462
+          ]
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "silhouetteIoU": 0.23857868020304568,
+          "meanPremultipliedChannelDelta": 6.84126407398898,
+          "areaRatio": 1.1442622950819672,
+          "alphaMassRatio": 0.9403275148461413,
+          "centroidDelta": [
+            -1.2490456373868106,
+            -0.41306133157705816
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "silhouetteIoU": 0.2119815668202765,
+          "meanPremultipliedChannelDelta": 8.008717735140955,
+          "areaRatio": 1.002865329512894,
+          "alphaMassRatio": 1.1850193286638333,
+          "centroidDelta": [
+            0.3262898954707154,
+            -1.7647676724413977
+          ]
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "silhouetteIoU": 0.13157894736842105,
+          "meanPremultipliedChannelDelta": 7.105365109911168,
+          "areaRatio": 0.5514285714285714,
+          "alphaMassRatio": 0.45221407577274714,
+          "centroidDelta": [
+            1.8786414091998616,
+            -0.07432264760852547
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "silhouetteIoU": 0.08139534883720931,
+          "meanPremultipliedChannelDelta": 3.2865978764552723,
+          "areaRatio": 0.31088082901554404,
+          "alphaMassRatio": 0.3054067566602378,
+          "centroidDelta": [
+            -2.149396434933152,
+            0.7034925976489568
+          ]
+        }
+      ],
+      "frames": [
+        {
+          "id": "FX-01_physical_hit_f01",
+          "empty": false,
+          "area": 62,
+          "alphaMass": 18.97647058823529,
+          "transparent": 4034,
+          "partial": 62,
+          "opaque": 0,
+          "bounds": [
+            19,
+            12,
+            28,
+            36
+          ],
+          "centroid": [
+            30.700764620789414,
+            31.40297582145071
+          ],
+          "boundaryPixels": 0,
+          "boundarySides": [],
+          "cutoff": 0,
+          "thresholdDiagnostics": {
+            "empty": false,
+            "area": 21,
+            "alphaMass": 18.415686274509802,
+            "transparent": 4034,
+            "partial": 62,
+            "opaque": 0,
+            "bounds": [
+              26,
+              27,
+              10,
+              10
+            ],
+            "centroid": [
+              30.699531516183985,
+              31.40204429301534
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          }
+        },
+        {
+          "id": "FX-01_physical_hit_f02",
+          "empty": false,
+          "area": 305,
+          "alphaMass": 108.96078431372551,
+          "transparent": 3791,
+          "partial": 305,
+          "opaque": 0,
+          "bounds": [
+            20,
+            17,
+            35,
+            39
+          ],
+          "centroid": [
+            31.770919560914123,
+            31.436638473996744
+          ],
+          "boundaryPixels": 0,
+          "boundarySides": [],
+          "cutoff": 0,
+          "thresholdDiagnostics": {
+            "empty": false,
+            "area": 123,
+            "alphaMass": 106.6666666666666,
+            "transparent": 3791,
+            "partial": 305,
+            "opaque": 0,
+            "bounds": [
+              22,
+              22,
+              21,
+              20
+            ],
+            "centroid": [
+              31.778602941176498,
+              31.42665441176474
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          }
+        },
+        {
+          "id": "FX-01_physical_hit_f03",
+          "empty": false,
+          "area": 349,
+          "alphaMass": 102.45882352941193,
+          "transparent": 3747,
+          "partial": 349,
+          "opaque": 0,
+          "bounds": [
+            16,
+            17,
+            30,
+            29
+          ],
+          "centroid": [
+            30.521873923527313,
+            31.023577142419686
+          ],
+          "boundaryPixels": 0,
+          "boundarySides": [],
+          "cutoff": 0,
+          "thresholdDiagnostics": {
+            "empty": false,
+            "area": 121,
+            "alphaMass": 100.36470588235288,
+            "transparent": 3747,
+            "partial": 349,
+            "opaque": 0,
+            "bounds": [
+              17,
+              17,
+              29,
+              28
+            ],
+            "centroid": [
+              30.520845543703388,
+              31.01473059039583
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          }
+        },
+        {
+          "id": "FX-01_physical_hit_f04",
+          "empty": false,
+          "area": 350,
+          "alphaMass": 121.4156862745099,
+          "transparent": 3746,
+          "partial": 350,
+          "opaque": 0,
+          "bounds": [
+            13,
+            12,
+            38,
+            36
+          ],
+          "centroid": [
+            30.848163818998028,
+            29.25880946997829
+          ],
+          "boundaryPixels": 0,
+          "boundarySides": [],
+          "cutoff": 0,
+          "thresholdDiagnostics": {
+            "empty": false,
+            "area": 142,
+            "alphaMass": 119.5215686274509,
+            "transparent": 3746,
+            "partial": 350,
+            "opaque": 0,
+            "bounds": [
+              14,
+              13,
+              36,
+              34
+            ],
+            "centroid": [
+              30.871841984382197,
+              29.24447142200934
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          }
+        },
+        {
+          "id": "FX-01_physical_hit_f05",
+          "empty": false,
+          "area": 193,
+          "alphaMass": 54.90588235294131,
+          "transparent": 3903,
+          "partial": 193,
+          "opaque": 0,
+          "bounds": [
+            5,
+            10,
+            46,
+            38
+          ],
+          "centroid": [
+            32.72680522819789,
+            29.184486822369763
+          ],
+          "boundaryPixels": 0,
+          "boundarySides": [],
+          "cutoff": 0,
+          "thresholdDiagnostics": {
+            "empty": false,
+            "area": 73,
+            "alphaMass": 53.81176470588235,
+            "transparent": 3903,
+            "partial": 193,
+            "opaque": 0,
+            "bounds": [
+              15,
+              13,
+              36,
+              35
+            ],
+            "centroid": [
+              32.77510566972744,
+              29.167541174755865
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          }
+        },
+        {
+          "id": "FX-01_physical_hit_f06",
+          "empty": false,
+          "area": 60,
+          "alphaMass": 16.768627450980393,
+          "transparent": 4036,
+          "partial": 60,
+          "opaque": 0,
+          "bounds": [
+            14,
+            8,
+            37,
+            41
+          ],
+          "centroid": [
+            30.577408793264738,
+            29.88797942001872
+          ],
+          "boundaryPixels": 0,
+          "boundarySides": [],
+          "cutoff": 0,
+          "thresholdDiagnostics": {
+            "empty": false,
+            "area": 20,
+            "alphaMass": 16.419607843137257,
+            "transparent": 4036,
+            "partial": 60,
+            "opaque": 0,
+            "bounds": [
+              14,
+              14,
+              37,
+              34
+            ],
+            "centroid": [
+              30.561977549558154,
+              29.899928349653685
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          }
+        }
+      ]
+    },
+    {
+      "id": "FX-01_magic_hit",
+      "frameCount": 6,
+      "anchor": [
+        32,
+        32
+      ],
+      "scale": 0.109375,
+      "transitions": [
+        {
+          "from": 0,
+          "to": 1,
+          "silhouetteIoU": 0,
+          "meanPremultipliedChannelDelta": 15.21453354779417,
+          "areaRatio": 3.3020833333333335,
+          "alphaMassRatio": 7.850183109532717,
+          "centroidDelta": [
+            -0.5360999070314811,
+            -1.8874289985931867
+          ]
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "silhouetteIoU": 0.03940217391304348,
+          "meanPremultipliedChannelDelta": 29.958757707184542,
+          "areaRatio": 1.4037854889589905,
+          "alphaMassRatio": 1.3533461505838438,
+          "centroidDelta": [
+            -1.2901948312089289,
+            0.4022442151546919
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "silhouetteIoU": 0.23401162790697674,
+          "meanPremultipliedChannelDelta": 24.753777238434502,
+          "areaRatio": 0.8786516853932584,
+          "alphaMassRatio": 0.9809783460248841,
+          "centroidDelta": [
+            2.8824122629224753,
+            -0.6954357232730182
+          ]
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "silhouetteIoU": 0.2697768762677485,
+          "meanPremultipliedChannelDelta": 17.179645134420994,
+          "areaRatio": 0.6419437340153452,
+          "alphaMassRatio": 0.48090765823323883,
+          "centroidDelta": [
+            0.773440538730469,
+            -1.1903062209149482
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "silhouetteIoU": 0.048672566371681415,
+          "meanPremultipliedChannelDelta": 8.700206801470612,
+          "areaRatio": 0.4402390438247012,
+          "alphaMassRatio": 0.115227066403915,
+          "centroidDelta": [
+            -3.5222773813592454,
+            -5.904866134987042
+          ]
+        }
+      ],
+      "frames": [
+        {
+          "id": "FX-01_magic_hit_f01",
+          "empty": false,
+          "area": 192,
+          "alphaMass": 35.337254901961025,
+          "transparent": 3904,
+          "partial": 192,
+          "opaque": 0,
+          "bounds": [
+            8,
+            14,
+            52,
+            42
+          ],
+          "centroid": [
+            31.839529463988214,
+            32.66818333148361
+          ],
+          "boundaryPixels": 0,
+          "boundarySides": [],
+          "cutoff": 0,
+          "thresholdDiagnostics": {
+            "empty": false,
+            "area": 48,
+            "alphaMass": 34.529411764705884,
+            "transparent": 3904,
+            "partial": 192,
+            "opaque": 0,
+            "bounds": [
+              28,
+              28,
+              9,
+              11
+            ],
+            "centroid": [
+              31.82657580919932,
+              32.632708688245316
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          }
+        },
+        {
+          "id": "FX-01_magic_hit_f02",
+          "empty": false,
+          "area": 634,
+          "alphaMass": 277.40392156862663,
+          "transparent": 3462,
+          "partial": 634,
+          "opaque": 0,
+          "bounds": [
+            4,
+            7,
+            56,
+            52
+          ],
+          "centroid": [
+            31.303429556956733,
+            30.780754332890425
+          ],
+          "boundaryPixels": 0,
+          "boundarySides": [],
+          "cutoff": 0,
+          "thresholdDiagnostics": {
+            "empty": false,
+            "area": 333,
+            "alphaMass": 274.5686274509802,
+            "transparent": 3462,
+            "partial": 634,
+            "opaque": 0,
+            "bounds": [
+              17,
+              17,
+              31,
+              31
+            ],
+            "centroid": [
+              31.315303863457846,
+              30.77664786117261
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          }
+        },
+        {
+          "id": "FX-01_magic_hit_f03",
+          "empty": false,
+          "area": 890,
+          "alphaMass": 375.42352941176335,
+          "transparent": 3206,
+          "partial": 890,
+          "opaque": 0,
+          "bounds": [
+            5,
+            9,
+            48,
+            50
+          ],
+          "centroid": [
+            30.013234725747804,
+            31.182998548045116
+          ],
+          "boundaryPixels": 0,
+          "boundarySides": [],
+          "cutoff": 0,
+          "thresholdDiagnostics": {
+            "empty": false,
+            "area": 432,
+            "alphaMass": 370.48627450980365,
+            "transparent": 3206,
+            "partial": 890,
+            "opaque": 0,
+            "bounds": [
+              9,
+              11,
+              44,
+              42
+            ],
+            "centroid": [
+              30.009843978237498,
+              31.196297393991998
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          }
+        },
+        {
+          "id": "FX-01_magic_hit_f04",
+          "empty": false,
+          "area": 782,
+          "alphaMass": 368.28235294117604,
+          "transparent": 3314,
+          "partial": 782,
+          "opaque": 0,
+          "bounds": [
+            9,
+            8,
+            48,
+            47
+          ],
+          "centroid": [
+            32.89564698867028,
+            30.4875628247721
+          ],
+          "boundaryPixels": 0,
+          "boundarySides": [],
+          "cutoff": 0,
+          "thresholdDiagnostics": {
+            "empty": false,
+            "area": 417,
+            "alphaMass": 364.52549019607886,
+            "transparent": 3314,
+            "partial": 782,
+            "opaque": 0,
+            "bounds": [
+              10,
+              8,
+              46,
+              45
+            ],
+            "centroid": [
+              32.894582266497416,
+              30.50060244852288
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          }
+        },
+        {
+          "id": "FX-01_magic_hit_f05",
+          "empty": false,
+          "area": 502,
+          "alphaMass": 177.10980392156813,
+          "transparent": 3594,
+          "partial": 502,
+          "opaque": 0,
+          "bounds": [
+            4,
+            5,
+            56,
+            49
+          ],
+          "centroid": [
+            33.66908752740075,
+            29.29725660385715
+          ],
+          "boundaryPixels": 0,
+          "boundarySides": [],
+          "cutoff": 0,
+          "thresholdDiagnostics": {
+            "empty": false,
+            "area": 209,
+            "alphaMass": 174.43529411764672,
+            "transparent": 3594,
+            "partial": 502,
+            "opaque": 0,
+            "bounds": [
+              9,
+              9,
+              48,
+              44
+            ],
+            "centroid": [
+              33.69654459207311,
+              29.280187046154577
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          }
+        },
+        {
+          "id": "FX-01_magic_hit_f06",
+          "empty": false,
+          "area": 221,
+          "alphaMass": 20.407843137254897,
+          "transparent": 3875,
+          "partial": 221,
+          "opaque": 0,
+          "bounds": [
+            4,
+            4,
+            52,
+            50
+          ],
+          "centroid": [
+            30.146810146041503,
+            23.392390468870108
+          ],
+          "boundaryPixels": 0,
+          "boundarySides": [],
+          "cutoff": 0,
+          "thresholdDiagnostics": {
+            "empty": false,
+            "area": 28,
+            "alphaMass": 19.44705882352941,
+            "transparent": 3875,
+            "partial": 221,
+            "opaque": 0,
+            "bounds": [
+              19,
+              11,
+              31,
+              39
+            ],
+            "centroid": [
+              30.086912684008876,
+              23.415003024803386
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          }
+        }
+      ]
+    },
+    {
+      "id": "FX-01_guard_spark",
+      "frameCount": 6,
+      "anchor": [
+        32,
+        32
+      ],
+      "scale": 0.109375,
+      "transitions": [
+        {
+          "from": 0,
+          "to": 1,
+          "silhouetteIoU": 0.25252525252525254,
+          "meanPremultipliedChannelDelta": 2.92441861021752,
+          "areaRatio": 3.0869565217391304,
+          "alphaMassRatio": 3.1595127610208804,
+          "centroidDelta": [
+            -1.5284348128793859,
+            -0.17732426947377888
+          ]
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "silhouetteIoU": 0.36220472440944884,
+          "meanPremultipliedChannelDelta": 3.4389715456495074,
+          "areaRatio": 0.9765258215962441,
+          "alphaMassRatio": 0.8235726087754737,
+          "centroidDelta": [
+            0.7067047565970199,
+            -0.32350978967185284
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "silhouetteIoU": 0.36893203883495146,
+          "meanPremultipliedChannelDelta": 2.500995950137868,
+          "areaRatio": 0.7788461538461539,
+          "alphaMassRatio": 0.791740971912618,
+          "centroidDelta": [
+            2.3540394718232065,
+            -2.767719188681504
+          ]
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "silhouetteIoU": 0.22784810126582278,
+          "meanPremultipliedChannelDelta": 2.378550809972427,
+          "areaRatio": 0.6049382716049383,
+          "alphaMassRatio": 0.5572605053846684,
+          "centroidDelta": [
+            -2.560386625087549,
+            2.161430996728349
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "silhouetteIoU": 0.05555555555555555,
+          "meanPremultipliedChannelDelta": 1.407717715992646,
+          "areaRatio": 0.47959183673469385,
+          "alphaMassRatio": 0.1337627889352027,
+          "centroidDelta": [
+            2.2458105536155806,
+            -1.3013850139961356
+          ]
+        }
+      ],
+      "frames": [
+        {
+          "id": "FX-01_guard_spark_f01",
+          "empty": false,
+          "area": 69,
+          "alphaMass": 27.04313725490196,
+          "transparent": 4027,
+          "partial": 69,
+          "opaque": 0,
+          "bounds": [
+            22,
+            20,
+            35,
+            38
+          ],
+          "centroid": [
+            31.661397911832932,
+            31.803219257540626
+          ],
+          "boundaryPixels": 0,
+          "boundarySides": [],
+          "cutoff": 0,
+          "thresholdDiagnostics": {
+            "empty": false,
+            "area": 28,
+            "alphaMass": 26.76078431372549,
+            "transparent": 4027,
+            "partial": 69,
+            "opaque": 0,
+            "bounds": [
+              28,
+              28,
+              8,
+              8
+            ],
+            "centroid": [
+              31.64258499413833,
+              31.76230949589684
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          }
+        },
+        {
+          "id": "FX-01_guard_spark_f02",
+          "empty": false,
+          "area": 213,
+          "alphaMass": 85.44313725490193,
+          "transparent": 3883,
+          "partial": 213,
+          "opaque": 0,
+          "bounds": [
+            18,
+            12,
+            34,
+            33
+          ],
+          "centroid": [
+            30.132963098953546,
+            31.625894988066847
+          ],
+          "boundaryPixels": 0,
+          "boundarySides": [],
+          "cutoff": 0,
+          "thresholdDiagnostics": {
+            "empty": false,
+            "area": 96,
+            "alphaMass": 84.23529411764703,
+            "transparent": 3883,
+            "partial": 213,
+            "opaque": 0,
+            "bounds": [
+              19,
+              19,
+              24,
+              25
+            ],
+            "centroid": [
+              30.114757914338927,
+              31.635428305400385
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          }
+        },
+        {
+          "id": "FX-01_guard_spark_f03",
+          "empty": false,
+          "area": 208,
+          "alphaMass": 70.36862745098044,
+          "transparent": 3888,
+          "partial": 208,
+          "opaque": 0,
+          "bounds": [
+            9,
+            13,
+            45,
+            36
+          ],
+          "centroid": [
+            30.839667855550566,
+            31.302385198394994
+          ],
+          "boundaryPixels": 0,
+          "boundarySides": [],
+          "cutoff": 0,
+          "thresholdDiagnostics": {
+            "empty": false,
+            "area": 77,
+            "alphaMass": 69.14117647058816,
+            "transparent": 3888,
+            "partial": 208,
+            "opaque": 0,
+            "bounds": [
+              16,
+              16,
+              30,
+              31
+            ],
+            "centroid": [
+              30.85627587771542,
+              31.28035845953154
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          }
+        },
+        {
+          "id": "FX-01_guard_spark_f04",
+          "empty": false,
+          "area": 162,
+          "alphaMass": 55.71372549019619,
+          "transparent": 3934,
+          "partial": 162,
+          "opaque": 0,
+          "bounds": [
+            17,
+            7,
+            37,
+            39
+          ],
+          "centroid": [
+            33.19370732737377,
+            28.53466600971349
+          ],
+          "boundaryPixels": 0,
+          "boundarySides": [],
+          "cutoff": 0,
+          "thresholdDiagnostics": {
+            "empty": false,
+            "area": 64,
+            "alphaMass": 54.88235294117644,
+            "transparent": 3934,
+            "partial": 162,
+            "opaque": 0,
+            "bounds": [
+              18,
+              15,
+              29,
+              30
+            ],
+            "centroid": [
+              33.23565559128263,
+              28.486959628438736
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          }
+        },
+        {
+          "id": "FX-01_guard_spark_f05",
+          "empty": false,
+          "area": 98,
+          "alphaMass": 31.047058823529415,
+          "transparent": 3998,
+          "partial": 98,
+          "opaque": 0,
+          "bounds": [
+            13,
+            12,
+            45,
+            44
+          ],
+          "centroid": [
+            30.633320702286223,
+            30.69609700644184
+          ],
+          "boundaryPixels": 0,
+          "boundarySides": [],
+          "cutoff": 0,
+          "thresholdDiagnostics": {
+            "empty": false,
+            "area": 33,
+            "alphaMass": 30.525490196078437,
+            "transparent": 3998,
+            "partial": 98,
+            "opaque": 0,
+            "bounds": [
+              18,
+              18,
+              28,
+              26
+            ],
+            "centroid": [
+              30.615236382322706,
+              30.71621274409044
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          }
+        },
+        {
+          "id": "FX-01_guard_spark_f06",
+          "empty": false,
+          "area": 47,
+          "alphaMass": 4.152941176470588,
+          "transparent": 4049,
+          "partial": 47,
+          "opaque": 0,
+          "bounds": [
+            4,
+            7,
+            49,
+            41
+          ],
+          "centroid": [
+            32.879131255901804,
+            29.394711992445703
+          ],
+          "boundaryPixels": 0,
+          "boundarySides": [],
+          "cutoff": 0,
+          "thresholdDiagnostics": {
+            "empty": false,
+            "area": 5,
+            "alphaMass": 3.9607843137254903,
+            "transparent": 4049,
+            "partial": 47,
+            "opaque": 0,
+            "bounds": [
+              24,
+              21,
+              18,
+              19
+            ],
+            "centroid": [
+              32.93564356435643,
+              29.6069306930693
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          }
+        }
+      ]
+    },
+    {
+      "id": "FX-01_perfect_parry",
+      "frameCount": 6,
+      "anchor": [
+        32,
+        32
+      ],
+      "scale": 0.109375,
+      "transitions": [
+        {
+          "from": 0,
+          "to": 1,
+          "silhouetteIoU": 0.11267605633802817,
+          "meanPremultipliedChannelDelta": 16.404563514859124,
+          "areaRatio": 4.745945945945946,
+          "alphaMassRatio": 11.571353620146889,
+          "centroidDelta": [
+            0.23223856318377756,
+            0.027958929110450725
+          ]
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "silhouetteIoU": 0.130779392338177,
+          "meanPremultipliedChannelDelta": 28.4729884727329,
+          "areaRatio": 1.1708428246013667,
+          "alphaMassRatio": 1.030401269553388,
+          "centroidDelta": [
+            -0.04847760968237935,
+            -0.12894776715271306
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "silhouetteIoU": 0.34014869888475835,
+          "meanPremultipliedChannelDelta": 16.269117886412467,
+          "areaRatio": 0.8346303501945526,
+          "alphaMassRatio": 0.6966073353721572,
+          "centroidDelta": [
+            -0.7788132295790895,
+            -1.1718928962045254
+          ]
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "silhouetteIoU": 0.16666666666666666,
+          "meanPremultipliedChannelDelta": 14.591735839843784,
+          "areaRatio": 0.8146853146853147,
+          "alphaMassRatio": 0.56838747374572,
+          "centroidDelta": [
+            0.2176747511197732,
+            -0.5883716525966278
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "silhouetteIoU": 0.026881720430107527,
+          "meanPremultipliedChannelDelta": 7.240617101332756,
+          "areaRatio": 0.07725321888412018,
+          "alphaMassRatio": 0.06251389197599462,
+          "centroidDelta": [
+            0.2792448445335225,
+            1.6159826628140408
+          ]
+        }
+      ],
+      "frames": [
+        {
+          "id": "FX-01_perfect_parry_f01",
+          "empty": false,
+          "area": 185,
+          "alphaMass": 29.898039215686264,
+          "transparent": 3911,
+          "partial": 185,
+          "opaque": 0,
+          "bounds": [
+            9,
+            6,
+            51,
+            53
+          ],
+          "centroid": [
+            31.650577124868846,
+            31.689270724029384
+          ],
+          "boundaryPixels": 0,
+          "boundarySides": [],
+          "cutoff": 0,
+          "thresholdDiagnostics": {
+            "empty": false,
+            "area": 50,
+            "alphaMass": 28.45490196078431,
+            "transparent": 3911,
+            "partial": 185,
+            "opaque": 0,
+            "bounds": [
+              25,
+              25,
+              14,
+              14
+            ],
+            "centroid": [
+              31.602949283351702,
+              31.758958103638363
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          }
+        },
+        {
+          "id": "FX-01_perfect_parry_f02",
+          "empty": false,
+          "area": 878,
+          "alphaMass": 345.9607843137249,
+          "transparent": 3218,
+          "partial": 878,
+          "opaque": 0,
+          "bounds": [
+            4,
+            8,
+            56,
+            52
+          ],
+          "centroid": [
+            31.882815688052624,
+            31.717229653139835
+          ],
+          "boundaryPixels": 0,
+          "boundarySides": [],
+          "cutoff": 0,
+          "thresholdDiagnostics": {
+            "empty": false,
+            "area": 424,
+            "alphaMass": 340.6745098039218,
+            "transparent": 3218,
+            "partial": 878,
+            "opaque": 0,
+            "bounds": [
+              16,
+              14,
+              32,
+              35
+            ],
+            "centroid": [
+              31.90694354912975,
+              31.721268072566478
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          }
+        },
+        {
+          "id": "FX-01_perfect_parry_f03",
+          "empty": false,
+          "area": 1028,
+          "alphaMass": 356.47843137254796,
+          "transparent": 3068,
+          "partial": 1028,
+          "opaque": 0,
+          "bounds": [
+            4,
+            7,
+            52,
+            52
+          ],
+          "centroid": [
+            31.834338078370244,
+            31.588281885987122
+          ],
+          "boundaryPixels": 0,
+          "boundarySides": [],
+          "cutoff": 0,
+          "thresholdDiagnostics": {
+            "empty": false,
+            "area": 432,
+            "alphaMass": 350.0470588235296,
+            "transparent": 3068,
+            "partial": 1028,
+            "opaque": 0,
+            "bounds": [
+              12,
+              8,
+              40,
+              47
+            ],
+            "centroid": [
+              31.844581120745712,
+              31.593287177074203
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          }
+        },
+        {
+          "id": "FX-01_perfect_parry_f04",
+          "empty": false,
+          "area": 858,
+          "alphaMass": 248.32549019607706,
+          "transparent": 3238,
+          "partial": 858,
+          "opaque": 0,
+          "bounds": [
+            7,
+            8,
+            53,
+            48
+          ],
+          "centroid": [
+            31.055524848791155,
+            30.416388989782597
+          ],
+          "boundaryPixels": 0,
+          "boundarySides": [],
+          "cutoff": 0,
+          "thresholdDiagnostics": {
+            "empty": false,
+            "area": 289,
+            "alphaMass": 242.52941176470537,
+            "transparent": 3238,
+            "partial": 858,
+            "opaque": 0,
+            "bounds": [
+              8,
+              8,
+              48,
+              46
+            ],
+            "centroid": [
+              31.02596814617196,
+              30.415457999838363
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          }
+        },
+        {
+          "id": "FX-01_perfect_parry_f05",
+          "empty": false,
+          "area": 699,
+          "alphaMass": 141.14509803921578,
+          "transparent": 3397,
+          "partial": 699,
+          "opaque": 0,
+          "bounds": [
+            4,
+            4,
+            51,
+            49
+          ],
+          "centroid": [
+            31.273199599910928,
+            29.82801733718597
+          ],
+          "boundaryPixels": 0,
+          "boundarySides": [],
+          "cutoff": 0,
+          "thresholdDiagnostics": {
+            "empty": false,
+            "area": 180,
+            "alphaMass": 136.1333333333333,
+            "transparent": 3397,
+            "partial": 699,
+            "opaque": 0,
+            "bounds": [
+              10,
+              9,
+              44,
+              44
+            ],
+            "centroid": [
+              31.277179236043096,
+              29.767961053177398
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          }
+        },
+        {
+          "id": "FX-01_perfect_parry_f06",
+          "empty": false,
+          "area": 54,
+          "alphaMass": 8.823529411764705,
+          "transparent": 4042,
+          "partial": 54,
+          "opaque": 0,
+          "bounds": [
+            5,
+            4,
+            52,
+            44
+          ],
+          "centroid": [
+            31.55244444444445,
+            31.44400000000001
+          ],
+          "boundaryPixels": 0,
+          "boundarySides": [],
+          "cutoff": 0,
+          "thresholdDiagnostics": {
+            "empty": false,
+            "area": 11,
+            "alphaMass": 8.541176470588235,
+            "transparent": 4042,
+            "partial": 54,
+            "opaque": 0,
+            "bounds": [
+              15,
+              14,
+              35,
+              34
+            ],
+            "centroid": [
+              31.533057851239676,
+              31.488062442607898
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          }
+        }
+      ]
+    },
+    {
+      "id": "FX-01_guard_break",
+      "frameCount": 6,
+      "anchor": [
+        32,
+        32
+      ],
+      "scale": 0.109375,
+      "transitions": [
+        {
+          "from": 0,
+          "to": 1,
+          "silhouetteIoU": 0.008290155440414507,
+          "meanPremultipliedChannelDelta": 42.063910271139775,
+          "areaRatio": 5.729838709677419,
+          "alphaMassRatio": 10.015760277878615,
+          "centroidDelta": [
+            -0.3854848526353507,
+            -0.9293024204802585
+          ]
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "silhouetteIoU": 0.4210069444444444,
+          "meanPremultipliedChannelDelta": 34.86098249846828,
+          "areaRatio": 1.1231527093596059,
+          "alphaMassRatio": 0.8462271085023305,
+          "centroidDelta": [
+            0.7965239853870258,
+            0.08998675282591151
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "silhouetteIoU": 0.36172344689378755,
+          "meanPremultipliedChannelDelta": 31.485859231388055,
+          "areaRatio": 0.7650375939849624,
+          "alphaMassRatio": 0.7945450986628806,
+          "centroidDelta": [
+            0.4246169047025603,
+            -0.7397216697972375
+          ]
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "silhouetteIoU": 0.39504373177842567,
+          "meanPremultipliedChannelDelta": 19.38226318359389,
+          "areaRatio": 0.7354627354627354,
+          "alphaMassRatio": 0.5637620576302755,
+          "centroidDelta": [
+            -0.4654484861480874,
+            0.43112279856541136
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "silhouetteIoU": 0.12398921832884097,
+          "meanPremultipliedChannelDelta": 13.478990502451055,
+          "areaRatio": 0.22494432071269488,
+          "alphaMassRatio": 0.13895754530185392,
+          "centroidDelta": [
+            -1.313931454540974,
+            -0.286702304519558
+          ]
+        }
+      ],
+      "frames": [
+        {
+          "id": "FX-01_guard_break_f01",
+          "empty": false,
+          "area": 248,
+          "alphaMass": 75.64313725490194,
+          "transparent": 3848,
+          "partial": 248,
+          "opaque": 0,
+          "bounds": [
+            5,
+            4,
+            54,
+            54
+          ],
+          "centroid": [
+            31.593291513297707,
+            32.4593809943491
+          ],
+          "boundaryPixels": 0,
+          "boundarySides": [],
+          "cutoff": 0,
+          "thresholdDiagnostics": {
+            "empty": false,
+            "area": 97,
+            "alphaMass": 73.65098039215682,
+            "transparent": 3848,
+            "partial": 248,
+            "opaque": 0,
+            "bounds": [
+              24,
+              24,
+              15,
+              18
+            ],
+            "centroid": [
+              31.56413396517758,
+              32.50386028432992
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          }
+        },
+        {
+          "id": "FX-01_guard_break_f02",
+          "empty": false,
+          "area": 1421,
+          "alphaMass": 757.6235294117669,
+          "transparent": 2675,
+          "partial": 1421,
+          "opaque": 0,
+          "bounds": [
+            8,
+            6,
+            52,
+            54
+          ],
+          "centroid": [
+            31.207806660662357,
+            31.53007857386884
+          ],
+          "boundaryPixels": 0,
+          "boundarySides": [],
+          "cutoff": 0,
+          "thresholdDiagnostics": {
+            "empty": false,
+            "area": 876,
+            "alphaMass": 749.6235294117699,
+            "transparent": 2675,
+            "partial": 1421,
+            "opaque": 0,
+            "bounds": [
+              11,
+              10,
+              42,
+              42
+            ],
+            "centroid": [
+              31.225551126316883,
+              31.518419703485055
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          }
+        },
+        {
+          "id": "FX-01_guard_break_f03",
+          "empty": false,
+          "area": 1596,
+          "alphaMass": 641.1215686274498,
+          "transparent": 2500,
+          "partial": 1596,
+          "opaque": 0,
+          "bounds": [
+            4,
+            7,
+            53,
+            50
+          ],
+          "centroid": [
+            32.00433064604938,
+            31.62006532669475
+          ],
+          "boundaryPixels": 0,
+          "boundarySides": [],
+          "cutoff": 0,
+          "thresholdDiagnostics": {
+            "empty": false,
+            "area": 761,
+            "alphaMass": 630.61960784314,
+            "transparent": 2500,
+            "partial": 1596,
+            "opaque": 0,
+            "bounds": [
+              8,
+              8,
+              48,
+              47
+            ],
+            "centroid": [
+              32.0178535893736,
+              31.60823466494195
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          }
+        },
+        {
+          "id": "FX-01_guard_break_f04",
+          "empty": false,
+          "area": 1221,
+          "alphaMass": 509.39999999999793,
+          "transparent": 2875,
+          "partial": 1221,
+          "opaque": 0,
+          "bounds": [
+            8,
+            4,
+            52,
+            54
+          ],
+          "centroid": [
+            32.42894755075194,
+            30.880343656897512
+          ],
+          "boundaryPixels": 0,
+          "boundarySides": [],
+          "cutoff": 0,
+          "thresholdDiagnostics": {
+            "empty": false,
+            "area": 598,
+            "alphaMass": 501.5215686274513,
+            "transparent": 2875,
+            "partial": 1221,
+            "opaque": 0,
+            "bounds": [
+              9,
+              6,
+              51,
+              49
+            ],
+            "centroid": [
+              32.42780401601402,
+              30.8651632678594
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          }
+        },
+        {
+          "id": "FX-01_guard_break_f05",
+          "empty": false,
+          "area": 898,
+          "alphaMass": 287.1803921568612,
+          "transparent": 3198,
+          "partial": 898,
+          "opaque": 0,
+          "bounds": [
+            4,
+            4,
+            56,
+            52
+          ],
+          "centroid": [
+            31.963499064603855,
+            31.311466455462924
+          ],
+          "boundaryPixels": 0,
+          "boundarySides": [],
+          "cutoff": 0,
+          "thresholdDiagnostics": {
+            "empty": false,
+            "area": 359,
+            "alphaMass": 280.9647058823526,
+            "transparent": 3198,
+            "partial": 898,
+            "opaque": 0,
+            "bounds": [
+              11,
+              9,
+              46,
+              46
+            ],
+            "centroid": [
+              31.986824107417085,
+              31.28695251653967
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          }
+        },
+        {
+          "id": "FX-01_guard_break_f06",
+          "empty": false,
+          "area": 202,
+          "alphaMass": 39.90588235294121,
+          "transparent": 3894,
+          "partial": 202,
+          "opaque": 0,
+          "bounds": [
+            4,
+            7,
+            52,
+            48
+          ],
+          "centroid": [
+            30.64956761006288,
+            31.024764150943366
+          ],
+          "boundaryPixels": 0,
+          "boundarySides": [],
+          "cutoff": 0,
+          "thresholdDiagnostics": {
+            "empty": false,
+            "area": 58,
+            "alphaMass": 38.35686274509803,
+            "transparent": 3894,
+            "partial": 202,
+            "opaque": 0,
+            "bounds": [
+              14,
+              12,
+              36,
+              36
+            ],
+            "centroid": [
+              30.751968101421138,
+              30.9946835701871
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          }
+        }
+      ]
+    },
+    {
+      "id": "FX-02_landing_dust",
+      "frameCount": 6,
+      "anchor": [
+        32,
+        48
+      ],
+      "scale": 0.109375,
+      "transitions": [
+        {
+          "from": 0,
+          "to": 1,
+          "silhouetteIoU": 0.21584699453551912,
+          "meanPremultipliedChannelDelta": 15.043039838005544,
+          "areaRatio": 2.99492385786802,
+          "alphaMassRatio": 3.0721285607507745,
+          "centroidDelta": [
+            0.6147891337381601,
+            -2.9524428969081242
+          ]
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "silhouetteIoU": 0.40997830802603036,
+          "meanPremultipliedChannelDelta": 14.768061379825388,
+          "areaRatio": 1.071186440677966,
+          "alphaMassRatio": 0.9275509238608842,
+          "centroidDelta": [
+            -0.6677228479192685,
+            0.553560901133018
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "silhouetteIoU": 0.3700440528634361,
+          "meanPremultipliedChannelDelta": 13.408827119715111,
+          "areaRatio": 0.9240506329113924,
+          "alphaMassRatio": 1.002856185244012,
+          "centroidDelta": [
+            0.060150180165777556,
+            -0.6115051391707809
+          ]
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "silhouetteIoU": 0.3210227272727273,
+          "meanPremultipliedChannelDelta": 11.646314433976745,
+          "areaRatio": 0.6678082191780822,
+          "alphaMassRatio": 0.5301297606765589,
+          "centroidDelta": [
+            0.7422998151101083,
+            1.0992707055778723
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "silhouetteIoU": 0.10795454545454546,
+          "meanPremultipliedChannelDelta": 7.57433818742342,
+          "areaRatio": 0.30256410256410254,
+          "alphaMassRatio": 0.19041745470493115,
+          "centroidDelta": [
+            -3.1970260172444576,
+            -0.04269977895728516
+          ]
+        }
+      ],
+      "frames": [
+        {
+          "id": "FX-02_landing_dust_f01",
+          "empty": false,
+          "area": 197,
+          "alphaMass": 94.43921568627451,
+          "transparent": 3899,
+          "partial": 197,
+          "opaque": 0,
+          "bounds": [
+            18,
+            39,
+            28,
+            12
+          ],
+          "centroid": [
+            31.371937546715408,
+            45.17016859064857
+          ],
+          "boundaryPixels": 0,
+          "boundarySides": [],
+          "cutoff": 0,
+          "thresholdDiagnostics": {
+            "empty": false,
+            "area": 116,
+            "alphaMass": 93.65490196078423,
+            "transparent": 3899,
+            "partial": 197,
+            "opaque": 0,
+            "bounds": [
+              19,
+              41,
+              26,
+              8
+            ],
+            "centroid": [
+              31.380035172933624,
+              45.17083996315223
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          }
+        },
+        {
+          "id": "FX-02_landing_dust_f02",
+          "empty": false,
+          "area": 590,
+          "alphaMass": 290.12941176470645,
+          "transparent": 3506,
+          "partial": 590,
+          "opaque": 0,
+          "bounds": [
+            8,
+            33,
+            50,
+            25
+          ],
+          "centroid": [
+            31.986726680453568,
+            42.21772569374045
+          ],
+          "boundaryPixels": 0,
+          "boundarySides": [],
+          "cutoff": 0,
+          "thresholdDiagnostics": {
+            "empty": false,
+            "area": 329,
+            "alphaMass": 287.18823529411833,
+            "transparent": 3506,
+            "partial": 590,
+            "opaque": 0,
+            "bounds": [
+              9,
+              34,
+              47,
+              15
+            ],
+            "centroid": [
+              31.97680007646822,
+              42.21924542214568
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          }
+        },
+        {
+          "id": "FX-02_landing_dust_f03",
+          "empty": false,
+          "area": 632,
+          "alphaMass": 269.10980392156836,
+          "transparent": 3464,
+          "partial": 632,
+          "opaque": 0,
+          "bounds": [
+            4,
+            20,
+            56,
+            31
+          ],
+          "centroid": [
+            31.3190038325343,
+            42.771286594873466
+          ],
+          "boundaryPixels": 0,
+          "boundarySides": [],
+          "cutoff": 0,
+          "thresholdDiagnostics": {
+            "empty": false,
+            "area": 321,
+            "alphaMass": 265.3725490196078,
+            "transparent": 3464,
+            "partial": 632,
+            "opaque": 0,
+            "bounds": [
+              6,
+              34,
+              52,
+              15
+            ],
+            "centroid": [
+              31.310817201123104,
+              42.79110388650803
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          }
+        },
+        {
+          "id": "FX-02_landing_dust_f04",
+          "empty": false,
+          "area": 584,
+          "alphaMass": 269.8784313725481,
+          "transparent": 3512,
+          "partial": 584,
+          "opaque": 0,
+          "bounds": [
+            4,
+            10,
+            56,
+            41
+          ],
+          "centroid": [
+            31.379154012700077,
+            42.159781455702685
+          ],
+          "boundaryPixels": 0,
+          "boundarySides": [],
+          "cutoff": 0,
+          "thresholdDiagnostics": {
+            "empty": false,
+            "area": 301,
+            "alphaMass": 266.8862745098032,
+            "transparent": 3512,
+            "partial": 584,
+            "opaque": 0,
+            "bounds": [
+              5,
+              32,
+              54,
+              16
+            ],
+            "centroid": [
+              31.392661925473245,
+              42.179704948865705
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          }
+        },
+        {
+          "id": "FX-02_landing_dust_f05",
+          "empty": false,
+          "area": 390,
+          "alphaMass": 143.07058823529405,
+          "transparent": 3706,
+          "partial": 390,
+          "opaque": 0,
+          "bounds": [
+            5,
+            8,
+            52,
+            52
+          ],
+          "centroid": [
+            32.121453827810186,
+            43.25905216128056
+          ],
+          "boundaryPixels": 0,
+          "boundarySides": [],
+          "cutoff": 0,
+          "thresholdDiagnostics": {
+            "empty": false,
+            "area": 164,
+            "alphaMass": 141.25098039215672,
+            "transparent": 3706,
+            "partial": 390,
+            "opaque": 0,
+            "bounds": [
+              9,
+              33,
+              47,
+              15
+            ],
+            "centroid": [
+              32.15397429134626,
+              43.28782031705493
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          }
+        },
+        {
+          "id": "FX-02_landing_dust_f06",
+          "empty": false,
+          "area": 118,
+          "alphaMass": 27.24313725490196,
+          "transparent": 3978,
+          "partial": 118,
+          "opaque": 0,
+          "bounds": [
+            6,
+            14,
+            46,
+            43
+          ],
+          "centroid": [
+            28.924427810565728,
+            43.21635238232327
+          ],
+          "boundaryPixels": 0,
+          "boundarySides": [],
+          "cutoff": 0,
+          "thresholdDiagnostics": {
+            "empty": false,
+            "area": 31,
+            "alphaMass": 26.501960784313727,
+            "transparent": 3978,
+            "partial": 118,
+            "opaque": 0,
+            "bounds": [
+              12,
+              39,
+              39,
+              9
+            ],
+            "centroid": [
+              28.80541580349216,
+              43.23394495412844
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          }
+        }
+      ]
+    },
+    {
+      "id": "FX-02_takeoff_dust",
+      "frameCount": 6,
+      "anchor": [
+        32,
+        48
+      ],
+      "scale": 0.125,
+      "transitions": [
+        {
+          "from": 0,
+          "to": 1,
+          "silhouetteIoU": 0.2590909090909091,
+          "meanPremultipliedChannelDelta": 8.226233388863356,
+          "areaRatio": 2.5416666666666665,
+          "alphaMassRatio": 2.4473242274966407,
+          "centroidDelta": [
+            -0.3216964677329237,
+            -3.9058531366815785
+          ]
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "silhouetteIoU": 0.3201058201058201,
+          "meanPremultipliedChannelDelta": 12.751512714460816,
+          "areaRatio": 1.6754098360655738,
+          "alphaMassRatio": 1.5399483062284114,
+          "centroidDelta": [
+            -0.8308147732828601,
+            -7.0256708206216345
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "silhouetteIoU": 0.3010752688172043,
+          "meanPremultipliedChannelDelta": 16.132394349341336,
+          "areaRatio": 1.0489236790606653,
+          "alphaMassRatio": 1.0053917564054946,
+          "centroidDelta": [
+            1.2019077754058536,
+            -5.78217624207317
+          ]
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "silhouetteIoU": 0.19653179190751446,
+          "meanPremultipliedChannelDelta": 12.510755830652617,
+          "areaRatio": 0.5541044776119403,
+          "alphaMassRatio": 0.32428199976362215,
+          "centroidDelta": [
+            -1.1614835252407438,
+            -0.16587914830445527
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "silhouetteIoU": 0.09016393442622951,
+          "meanPremultipliedChannelDelta": 4.546220128676478,
+          "areaRatio": 0.1717171717171717,
+          "alphaMassRatio": 0.2079271070615034,
+          "centroidDelta": [
+            1.147400154522213,
+            -7.896238762704673
+          ]
+        }
+      ],
+      "frames": [
+        {
+          "id": "FX-02_takeoff_dust_f01",
+          "empty": false,
+          "area": 120,
+          "alphaMass": 70.05490196078429,
+          "transparent": 3976,
+          "partial": 120,
+          "opaque": 0,
+          "bounds": [
+            24,
+            30,
+            25,
+            27
+          ],
+          "centroid": [
+            31.88602776533811,
+            44.00850873264669
+          ],
+          "boundaryPixels": 0,
+          "boundarySides": [],
+          "cutoff": 0,
+          "thresholdDiagnostics": {
+            "empty": false,
+            "area": 78,
+            "alphaMass": 69.49019607843132,
+            "transparent": 3976,
+            "partial": 120,
+            "opaque": 0,
+            "bounds": [
+              25,
+              37,
+              14,
+              11
+            ],
+            "centroid": [
+              31.894469525959384,
+              44.02753950338606
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          }
+        },
+        {
+          "id": "FX-02_takeoff_dust_f02",
+          "empty": false,
+          "area": 305,
+          "alphaMass": 171.44705882352932,
+          "transparent": 3791,
+          "partial": 305,
+          "opaque": 0,
+          "bounds": [
+            20,
+            22,
+            24,
+            26
+          ],
+          "centroid": [
+            31.564331297605186,
+            40.10265559596511
+          ],
+          "boundaryPixels": 0,
+          "boundarySides": [],
+          "cutoff": 0,
+          "thresholdDiagnostics": {
+            "empty": false,
+            "area": 199,
+            "alphaMass": 170.28627450980386,
+            "transparent": 3791,
+            "partial": 305,
+            "opaque": 0,
+            "bounds": [
+              21,
+              28,
+              21,
+              20
+            ],
+            "centroid": [
+              31.562605071045322,
+              40.112843423991855
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          }
+        },
+        {
+          "id": "FX-02_takeoff_dust_f03",
+          "empty": false,
+          "area": 511,
+          "alphaMass": 264.0196078431368,
+          "transparent": 3585,
+          "partial": 511,
+          "opaque": 0,
+          "bounds": [
+            19,
+            17,
+            27,
+            32
+          ],
+          "centroid": [
+            30.733516524322326,
+            33.076984775343476
+          ],
+          "boundaryPixels": 0,
+          "boundarySides": [],
+          "cutoff": 0,
+          "thresholdDiagnostics": {
+            "empty": false,
+            "area": 300,
+            "alphaMass": 261.79607843137245,
+            "transparent": 3585,
+            "partial": 511,
+            "opaque": 0,
+            "bounds": [
+              20,
+              17,
+              25,
+              31
+            ],
+            "centroid": [
+              30.719479313340745,
+              33.07218610503611
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          }
+        },
+        {
+          "id": "FX-02_takeoff_dust_f04",
+          "empty": false,
+          "area": 536,
+          "alphaMass": 265.4431372549012,
+          "transparent": 3560,
+          "partial": 536,
+          "opaque": 0,
+          "bounds": [
+            16,
+            12,
+            30,
+            37
+          ],
+          "centroid": [
+            31.93542429972818,
+            27.294808533270306
+          ],
+          "boundaryPixels": 0,
+          "boundarySides": [],
+          "cutoff": 0,
+          "thresholdDiagnostics": {
+            "empty": false,
+            "area": 305,
+            "alphaMass": 262.8666666666663,
+            "transparent": 3560,
+            "partial": 536,
+            "opaque": 0,
+            "bounds": [
+              17,
+              12,
+              29,
+              36
+            ],
+            "centroid": [
+              31.93856573824056,
+              27.25904432277605
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          }
+        },
+        {
+          "id": "FX-02_takeoff_dust_f05",
+          "empty": false,
+          "area": 297,
+          "alphaMass": 86.078431372549,
+          "transparent": 3799,
+          "partial": 297,
+          "opaque": 0,
+          "bounds": [
+            20,
+            11,
+            34,
+            37
+          ],
+          "centroid": [
+            30.773940774487436,
+            27.12892938496585
+          ],
+          "boundaryPixels": 0,
+          "boundarySides": [],
+          "cutoff": 0,
+          "thresholdDiagnostics": {
+            "empty": false,
+            "area": 109,
+            "alphaMass": 84.12156862745087,
+            "transparent": 3799,
+            "partial": 297,
+            "opaque": 0,
+            "bounds": [
+              20,
+              15,
+              25,
+              33
+            ],
+            "centroid": [
+              30.76765651950963,
+              27.10596242599416
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          }
+        },
+        {
+          "id": "FX-02_takeoff_dust_f06",
+          "empty": false,
+          "area": 51,
+          "alphaMass": 17.89803921568627,
+          "transparent": 4045,
+          "partial": 51,
+          "opaque": 0,
+          "bounds": [
+            20,
+            14,
+            26,
+            22
+          ],
+          "centroid": [
+            31.92134092900965,
+            19.232690622261178
+          ],
+          "boundaryPixels": 0,
+          "boundarySides": [],
+          "cutoff": 0,
+          "thresholdDiagnostics": {
+            "empty": false,
+            "area": 24,
+            "alphaMass": 17.552941176470586,
+            "transparent": 4045,
+            "partial": 51,
+            "opaque": 0,
+            "bounds": [
+              20,
+              15,
+              25,
+              9
+            ],
+            "centroid": [
+              31.93163538873995,
+              19.231233243967832
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          }
+        }
+      ]
+    },
+    {
+      "id": "ABL-01_double_jump_bubble",
+      "frameCount": 6,
+      "anchor": [
+        32,
+        48
+      ],
+      "scale": 0.109375,
+      "transitions": [
+        {
+          "from": 0,
+          "to": 1,
+          "silhouetteIoU": 0.03773584905660377,
+          "meanPremultipliedChannelDelta": 14.595377843520245,
+          "areaRatio": 3.193798449612403,
+          "alphaMassRatio": 2.374811930259311,
+          "centroidDelta": [
+            0.4584239205820744,
+            -3.226644752115199
+          ]
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "silhouetteIoU": 0.25346534653465347,
+          "meanPremultipliedChannelDelta": 18.265732709099268,
+          "areaRatio": 1.5436893203883495,
+          "alphaMassRatio": 1.672865501434805,
+          "centroidDelta": [
+            -1.077985356820907,
+            -3.2234663387072118
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "silhouetteIoU": 0.19047619047619047,
+          "meanPremultipliedChannelDelta": 23.925228582644007,
+          "areaRatio": 0.8364779874213837,
+          "alphaMassRatio": 0.8525218321154864,
+          "centroidDelta": [
+            1.173797068054796,
+            -6.485325986867437
+          ]
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "silhouetteIoU": 0.24324324324324326,
+          "meanPremultipliedChannelDelta": 15.123587095971232,
+          "areaRatio": 0.5244360902255639,
+          "alphaMassRatio": 0.5375117591721534,
+          "centroidDelta": [
+            -1.458752509132161,
+            -1.8237373554955418
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "silhouetteIoU": 0.009708737864077669,
+          "meanPremultipliedChannelDelta": 9.290860284543529,
+          "areaRatio": 0.23655913978494625,
+          "alphaMassRatio": 0.17341209071683836,
+          "centroidDelta": [
+            0.2951195572351004,
+            -4.809920278685162
+          ]
+        }
+      ],
+      "frames": [
+        {
+          "id": "ABL-01_double_jump_bubble_f01",
+          "empty": false,
+          "area": 129,
+          "alphaMass": 88.61960784313723,
+          "transparent": 3967,
+          "partial": 129,
+          "opaque": 0,
+          "bounds": [
+            17,
+            25,
+            39,
+            25
+          ],
+          "centroid": [
+            31.300734578281258,
+            44.178290114169414
+          ],
+          "boundaryPixels": 0,
+          "boundarySides": [],
+          "cutoff": 0,
+          "thresholdDiagnostics": {
+            "empty": false,
+            "area": 93,
+            "alphaMass": 88.09411764705874,
+            "transparent": 3967,
+            "partial": 129,
+            "opaque": 0,
+            "bounds": [
+              25,
+              40,
+              14,
+              9
+            ],
+            "centroid": [
+              31.306178774928792,
+              44.16902599715105
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          }
+        },
+        {
+          "id": "ABL-01_double_jump_bubble_f02",
+          "empty": false,
+          "area": 412,
+          "alphaMass": 210.45490196078393,
+          "transparent": 3684,
+          "partial": 412,
+          "opaque": 0,
+          "bounds": [
+            11,
+            33,
+            42,
+            16
+          ],
+          "centroid": [
+            31.759158498863332,
+            40.951645362054215
+          ],
+          "boundaryPixels": 0,
+          "boundarySides": [],
+          "cutoff": 0,
+          "thresholdDiagnostics": {
+            "empty": false,
+            "area": 237,
+            "alphaMass": 207.9647058823527,
+            "transparent": 3684,
+            "partial": 412,
+            "opaque": 0,
+            "bounds": [
+              12,
+              33,
+              40,
+              16
+            ],
+            "centroid": [
+              31.76872018253478,
+              40.937602534366725
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          }
+        },
+        {
+          "id": "ABL-01_double_jump_bubble_f03",
+          "empty": false,
+          "area": 636,
+          "alphaMass": 352.06274509803956,
+          "transparent": 3460,
+          "partial": 636,
+          "opaque": 0,
+          "bounds": [
+            7,
+            25,
+            50,
+            24
+          ],
+          "centroid": [
+            30.681173142042425,
+            37.728179023347
+          ],
+          "boundaryPixels": 0,
+          "boundarySides": [],
+          "cutoff": 0,
+          "thresholdDiagnostics": {
+            "empty": false,
+            "area": 396,
+            "alphaMass": 349.2000000000009,
+            "transparent": 3460,
+            "partial": 636,
+            "opaque": 0,
+            "bounds": [
+              8,
+              25,
+              48,
+              23
+            ],
+            "centroid": [
+              30.686611414325153,
+              37.719392224243606
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          }
+        },
+        {
+          "id": "ABL-01_double_jump_bubble_f04",
+          "empty": false,
+          "area": 532,
+          "alphaMass": 300.14117647058816,
+          "transparent": 3564,
+          "partial": 532,
+          "opaque": 0,
+          "bounds": [
+            7,
+            17,
+            51,
+            28
+          ],
+          "centroid": [
+            31.85497021009722,
+            31.242853036479566
+          ],
+          "boundaryPixels": 0,
+          "boundarySides": [],
+          "cutoff": 0,
+          "thresholdDiagnostics": {
+            "empty": false,
+            "area": 329,
+            "alphaMass": 298.0274509803922,
+            "transparent": 3564,
+            "partial": 532,
+            "opaque": 0,
+            "bounds": [
+              8,
+              18,
+              49,
+              27
+            ],
+            "centroid": [
+              31.871165967077676,
+              31.251930997276226
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          }
+        },
+        {
+          "id": "ABL-01_double_jump_bubble_f05",
+          "empty": false,
+          "area": 279,
+          "alphaMass": 161.32941176470558,
+          "transparent": 3817,
+          "partial": 279,
+          "opaque": 0,
+          "bounds": [
+            11,
+            18,
+            43,
+            24
+          ],
+          "centroid": [
+            30.39621770096506,
+            29.419115680984024
+          ],
+          "boundaryPixels": 0,
+          "boundarySides": [],
+          "cutoff": 0,
+          "thresholdDiagnostics": {
+            "empty": false,
+            "area": 177,
+            "alphaMass": 160.45490196078407,
+            "transparent": 3817,
+            "partial": 279,
+            "opaque": 0,
+            "bounds": [
+              12,
+              18,
+              41,
+              24
+            ],
+            "centroid": [
+              30.394197868804444,
+              29.413261315866713
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          }
+        },
+        {
+          "id": "ABL-01_double_jump_bubble_f06",
+          "empty": false,
+          "area": 66,
+          "alphaMass": 27.976470588235294,
+          "transparent": 4030,
+          "partial": 66,
+          "opaque": 0,
+          "bounds": [
+            6,
+            6,
+            43,
+            35
+          ],
+          "centroid": [
+            30.69133725820016,
+            24.609195402298862
+          ],
+          "boundaryPixels": 0,
+          "boundarySides": [],
+          "cutoff": 0,
+          "thresholdDiagnostics": {
+            "empty": false,
+            "area": 31,
+            "alphaMass": 27.59607843137255,
+            "transparent": 4030,
+            "partial": 66,
+            "opaque": 0,
+            "bounds": [
+              15,
+              22,
+              34,
+              7
+            ],
+            "centroid": [
+              30.669035100184733,
+              24.603950547108145
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          }
+        }
+      ]
+    },
+    {
+      "id": "FX-02_dodge_afterimage",
+      "frameCount": 6,
+      "anchor": [
+        48,
+        64
+      ],
+      "scale": 0.11428571428571428,
+      "transitions": [
+        {
+          "from": 0,
+          "to": 1,
+          "silhouetteIoU": 0.716297786720322,
+          "meanPremultipliedChannelDelta": 5.602533573325197,
+          "areaRatio": 1.3406593406593406,
+          "alphaMassRatio": 1.2365955817776484,
+          "centroidDelta": [
+            -2.521789140355004,
+            0.2483759062953652
+          ]
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "silhouetteIoU": 0.8179530201342282,
+          "meanPremultipliedChannelDelta": 3.4500966350081828,
+          "areaRatio": 1.169398907103825,
+          "alphaMassRatio": 1.0962331667076346,
+          "centroidDelta": [
+            -1.4533183506844551,
+            0.2500491128103377
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "silhouetteIoU": 0.1912613355317395,
+          "meanPremultipliedChannelDelta": 24.71426993974653,
+          "areaRatio": 0.6705607476635514,
+          "alphaMassRatio": 0.18714907472008982,
+          "centroidDelta": [
+            0.14099001801663036,
+            2.577260086244607
+          ]
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "silhouetteIoU": 0.2125340599455041,
+          "meanPremultipliedChannelDelta": 5.994509548611132,
+          "areaRatio": 0.6689895470383276,
+          "alphaMassRatio": 0.721795668382746,
+          "centroidDelta": [
+            -0.6749628056203463,
+            -1.4447037775078115
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "silhouetteIoU": 0.005263157894736842,
+          "meanPremultipliedChannelDelta": 3.8799428104575244,
+          "areaRatio": 0.05381944444444445,
+          "alphaMassRatio": 0.06465397977065203,
+          "centroidDelta": [
+            -12.557625976654709,
+            1.4608448409832562
+          ]
+        }
+      ],
+      "frames": [
+        {
+          "id": "FX-02_dodge_afterimage_f01",
+          "empty": false,
+          "area": 819,
+          "alphaMass": 696.580392156867,
+          "transparent": 6861,
+          "partial": 819,
+          "opaque": 0,
+          "bounds": [
+            35,
+            24,
+            28,
+            42
+          ],
+          "centroid": [
+            47.899801833043966,
+            46.07507825342818
+          ],
+          "boundaryPixels": 0,
+          "boundarySides": [],
+          "cutoff": 0,
+          "thresholdDiagnostics": {
+            "empty": false,
+            "area": 720,
+            "alphaMass": 695.8078431372596,
+            "transparent": 6861,
+            "partial": 819,
+            "opaque": 0,
+            "bounds": [
+              36,
+              25,
+              26,
+              40
+            ],
+            "centroid": [
+              47.90015273542911,
+              46.07259159898741
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          }
+        },
+        {
+          "id": "FX-02_dodge_afterimage_f02",
+          "empty": false,
+          "area": 1098,
+          "alphaMass": 861.3882352941234,
+          "transparent": 6582,
+          "partial": 1098,
+          "opaque": 0,
+          "bounds": [
+            14,
+            16,
+            49,
+            50
+          ],
+          "centroid": [
+            45.37801269268896,
+            46.323454159723546
+          ],
+          "boundaryPixels": 0,
+          "boundarySides": [],
+          "cutoff": 0,
+          "thresholdDiagnostics": {
+            "empty": false,
+            "area": 986,
+            "alphaMass": 860.3137254902026,
+            "transparent": 6582,
+            "partial": 1098,
+            "opaque": 0,
+            "bounds": [
+              28,
+              25,
+              34,
+              40
+            ],
+            "centroid": [
+              45.378544078766915,
+              46.31958245965857
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          }
+        },
+        {
+          "id": "FX-02_dodge_afterimage_f03",
+          "empty": false,
+          "area": 1284,
+          "alphaMass": 944.2823529411779,
+          "transparent": 6396,
+          "partial": 1284,
+          "opaque": 0,
+          "bounds": [
+            21,
+            24,
+            42,
+            42
+          ],
+          "centroid": [
+            43.92469434200451,
+            46.573503272533884
+          ],
+          "boundaryPixels": 0,
+          "boundarySides": [],
+          "cutoff": 0,
+          "thresholdDiagnostics": {
+            "empty": false,
+            "area": 1181,
+            "alphaMass": 943.0588235294139,
+            "transparent": 6396,
+            "partial": 1284,
+            "opaque": 0,
+            "bounds": [
+              22,
+              25,
+              40,
+              40
+            ],
+            "centroid": [
+              43.92353626081144,
+              46.571511144377766
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          }
+        },
+        {
+          "id": "FX-02_dodge_afterimage_f04",
+          "empty": false,
+          "area": 861,
+          "alphaMass": 176.72156862745072,
+          "transparent": 6819,
+          "partial": 861,
+          "opaque": 0,
+          "bounds": [
+            22,
+            25,
+            46,
+            41
+          ],
+          "centroid": [
+            44.06568436002114,
+            49.15076335877849
+          ],
+          "boundaryPixels": 0,
+          "boundarySides": [],
+          "cutoff": 0,
+          "thresholdDiagnostics": {
+            "empty": false,
+            "area": 264,
+            "alphaMass": 170.43137254901936,
+            "transparent": 6819,
+            "partial": 861,
+            "opaque": 0,
+            "bounds": [
+              23,
+              26,
+              40,
+              39
+            ],
+            "centroid": [
+              44.15071329958591,
+              49.169489185457955
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          }
+        },
+        {
+          "id": "FX-02_dodge_afterimage_f05",
+          "empty": false,
+          "area": 576,
+          "alphaMass": 127.55686274509812,
+          "transparent": 7104,
+          "partial": 576,
+          "opaque": 0,
+          "bounds": [
+            12,
+            25,
+            51,
+            41
+          ],
+          "centroid": [
+            43.39072155440079,
+            47.70605958127068
+          ],
+          "boundaryPixels": 0,
+          "boundarySides": [],
+          "cutoff": 0,
+          "thresholdDiagnostics": {
+            "empty": false,
+            "area": 181,
+            "alphaMass": 123.60392156862744,
+            "transparent": 7104,
+            "partial": 576,
+            "opaque": 0,
+            "bounds": [
+              25,
+              26,
+              38,
+              39
+            ],
+            "centroid": [
+              43.334179383863706,
+              47.70627240711949
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          }
+        },
+        {
+          "id": "FX-02_dodge_afterimage_f06",
+          "empty": false,
+          "area": 31,
+          "alphaMass": 8.24705882352941,
+          "transparent": 7649,
+          "partial": 31,
+          "opaque": 0,
+          "bounds": [
+            12,
+            33,
+            45,
+            34
+          ],
+          "centroid": [
+            30.833095577746082,
+            49.166904422253936
+          ],
+          "boundaryPixels": 0,
+          "boundarySides": [],
+          "cutoff": 0,
+          "thresholdDiagnostics": {
+            "empty": false,
+            "area": 10,
+            "alphaMass": 8.058823529411764,
+            "transparent": 7649,
+            "partial": 31,
+            "opaque": 0,
+            "bounds": [
+              26,
+              41,
+              10,
+              20
+            ],
+            "centroid": [
+              30.889537712895375,
+              49.15912408759124
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          }
+        }
+      ]
+    },
+    {
+      "id": "WPN-01_hammer_swing_1",
+      "frameCount": 6,
+      "anchor": [
+        32,
+        32
+      ],
+      "scale": 0.109375,
+      "transitions": [
+        {
+          "from": 0,
+          "to": 1,
+          "silhouetteIoU": 0.17077175697865354,
+          "meanPremultipliedChannelDelta": 25.687959319469904,
+          "areaRatio": 3.897233201581028,
+          "alphaMassRatio": 4.684401364207513,
+          "centroidDelta": [
+            -2.5238690726588473,
+            12.832484040983331
+          ]
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "silhouetteIoU": 0.4349112426035503,
+          "meanPremultipliedChannelDelta": 20.44113937078744,
+          "areaRatio": 0.8042596348884381,
+          "alphaMassRatio": 0.6398102449342441,
+          "centroidDelta": [
+            -1.9113959619947778,
+            3.4551212669523608
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "silhouetteIoU": 0.11704312114989733,
+          "meanPremultipliedChannelDelta": 19.79829364851409,
+          "areaRatio": 0.41866330390920553,
+          "alphaMassRatio": 0.38105048811163694,
+          "centroidDelta": [
+            -0.9161124678396888,
+            -3.722146982194424
+          ]
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "silhouetteIoU": 0.2019704433497537,
+          "meanPremultipliedChannelDelta": 7.499981809129923,
+          "areaRatio": 0.9337349397590361,
+          "alphaMassRatio": 0.5677731673582291,
+          "centroidDelta": [
+            -2.7752600425183687,
+            0.4363648386156527
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "silhouetteIoU": 0.0891089108910891,
+          "meanPremultipliedChannelDelta": 3.817148485370713,
+          "areaRatio": 0.3096774193548387,
+          "alphaMassRatio": 0.27876204185582987,
+          "centroidDelta": [
+            0.36850854779476805,
+            0.1813913721214533
+          ]
+        }
+      ],
+      "frames": [
+        {
+          "id": "WPN-01_hammer_swing_1_f01",
+          "empty": false,
+          "area": 253,
+          "alphaMass": 109.235294117647,
+          "transparent": 3843,
+          "partial": 253,
+          "opaque": 0,
+          "bounds": [
+            19,
+            8,
+            39,
+            46
+          ],
+          "centroid": [
+            43.48623227427749,
+            22.48411416262786
+          ],
+          "boundaryPixels": 0,
+          "boundarySides": [],
+          "cutoff": 0,
+          "thresholdDiagnostics": {
+            "empty": false,
+            "area": 131,
+            "alphaMass": 108.16470588235288,
+            "transparent": 3843,
+            "partial": 253,
+            "opaque": 0,
+            "bounds": [
+              29,
+              15,
+              24,
+              21
+            ],
+            "centroid": [
+              43.502102820680186,
+              22.469400333550876
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          }
+        },
+        {
+          "id": "WPN-01_hammer_swing_1_f02",
+          "empty": false,
+          "area": 986,
+          "alphaMass": 511.70196078431456,
+          "transparent": 3110,
+          "partial": 986,
+          "opaque": 0,
+          "bounds": [
+            4,
+            7,
+            56,
+            53
+          ],
+          "centroid": [
+            40.96236320161864,
+            35.31659820361119
+          ],
+          "boundaryPixels": 0,
+          "boundarySides": [],
+          "cutoff": 0,
+          "thresholdDiagnostics": {
+            "empty": false,
+            "area": 582,
+            "alphaMass": 507.6078431372569,
+            "transparent": 3110,
+            "partial": 986,
+            "opaque": 0,
+            "bounds": [
+              16,
+              14,
+              39,
+              43
+            ],
+            "centroid": [
+              41.00971106304073,
+              35.33299598269463
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          }
+        },
+        {
+          "id": "WPN-01_hammer_swing_1_f03",
+          "empty": false,
+          "area": 793,
+          "alphaMass": 327.39215686274525,
+          "transparent": 3303,
+          "partial": 793,
+          "opaque": 0,
+          "bounds": [
+            4,
+            7,
+            56,
+            53
+          ],
+          "centroid": [
+            39.050967239623866,
+            38.77171947056355
+          ],
+          "boundaryPixels": 0,
+          "boundarySides": [],
+          "cutoff": 0,
+          "thresholdDiagnostics": {
+            "empty": false,
+            "area": 388,
+            "alphaMass": 322.9215686274516,
+            "transparent": 3303,
+            "partial": 793,
+            "opaque": 0,
+            "bounds": [
+              16,
+              15,
+              36,
+              42
+            ],
+            "centroid": [
+              39.118112818021665,
+              38.84946262675325
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          }
+        },
+        {
+          "id": "WPN-01_hammer_swing_1_f04",
+          "empty": false,
+          "area": 332,
+          "alphaMass": 124.75294117647069,
+          "transparent": 3764,
+          "partial": 332,
+          "opaque": 0,
+          "bounds": [
+            7,
+            4,
+            52,
+            50
+          ],
+          "centroid": [
+            38.13485477178418,
+            35.04957248836913
+          ],
+          "boundaryPixels": 0,
+          "boundarySides": [],
+          "cutoff": 0,
+          "thresholdDiagnostics": {
+            "empty": false,
+            "area": 156,
+            "alphaMass": 122.61960784313715,
+            "transparent": 3764,
+            "partial": 332,
+            "opaque": 0,
+            "bounds": [
+              22,
+              17,
+              35,
+              28
+            ],
+            "centroid": [
+              38.156166048356184,
+              35.066521683510324
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          }
+        },
+        {
+          "id": "WPN-01_hammer_swing_1_f05",
+          "empty": false,
+          "area": 310,
+          "alphaMass": 70.8313725490196,
+          "transparent": 3786,
+          "partial": 310,
+          "opaque": 0,
+          "bounds": [
+            7,
+            4,
+            53,
+            52
+          ],
+          "centroid": [
+            35.35959472926581,
+            35.48593732698478
+          ],
+          "boundaryPixels": 0,
+          "boundarySides": [],
+          "cutoff": 0,
+          "thresholdDiagnostics": {
+            "empty": false,
+            "area": 88,
+            "alphaMass": 68.79607843137251,
+            "transparent": 3786,
+            "partial": 310,
+            "opaque": 0,
+            "bounds": [
+              21,
+              22,
+              33,
+              24
+            ],
+            "centroid": [
+              35.29487544889701,
+              35.496038305877015
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          }
+        },
+        {
+          "id": "WPN-01_hammer_swing_1_f06",
+          "empty": false,
+          "area": 96,
+          "alphaMass": 19.745098039215684,
+          "transparent": 4000,
+          "partial": 96,
+          "opaque": 0,
+          "bounds": [
+            4,
+            4,
+            52,
+            51
+          ],
+          "centroid": [
+            35.728103277060576,
+            35.667328699106235
+          ],
+          "boundaryPixels": 0,
+          "boundarySides": [],
+          "cutoff": 0,
+          "thresholdDiagnostics": {
+            "empty": false,
+            "area": 22,
+            "alphaMass": 19.349019607843136,
+            "transparent": 4000,
+            "partial": 96,
+            "opaque": 0,
+            "bounds": [
+              30,
+              33,
+              11,
+              6
+            ],
+            "centroid": [
+              35.67835427644912,
+              35.76591001216052
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          }
+        }
+      ]
+    },
+    {
+      "id": "WPN-01_hammer_swing_2",
+      "frameCount": 6,
+      "anchor": [
+        32,
+        32
+      ],
+      "scale": 0.109375,
+      "transitions": [
+        {
+          "from": 0,
+          "to": 1,
+          "silhouetteIoU": 0.17065868263473055,
+          "meanPremultipliedChannelDelta": 15.10693598728557,
+          "areaRatio": 2.2884615384615383,
+          "alphaMassRatio": 2.7101153541831473,
+          "centroidDelta": [
+            5.221718021355116,
+            -8.477090128430476
+          ]
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "silhouetteIoU": 0.4590909090909091,
+          "meanPremultipliedChannelDelta": 12.72532719630827,
+          "areaRatio": 1.3172268907563025,
+          "alphaMassRatio": 1.2852115922431535,
+          "centroidDelta": [
+            1.7832327611645624,
+            -3.939332404152637
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "silhouetteIoU": 0.15706806282722513,
+          "meanPremultipliedChannelDelta": 17.870809637331508,
+          "areaRatio": 0.2727272727272727,
+          "alphaMassRatio": 0.21449323880008186,
+          "centroidDelta": [
+            5.165331904380466,
+            -13.967412500846613
+          ]
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "silhouetteIoU": 0.3516483516483517,
+          "meanPremultipliedChannelDelta": 3.06380040785846,
+          "areaRatio": 0.5614035087719298,
+          "alphaMassRatio": 0.5418617614269786,
+          "centroidDelta": [
+            0.27252703263884115,
+            -3.0938941736430507
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "silhouetteIoU": 0.10869565217391304,
+          "meanPremultipliedChannelDelta": 2.1313878676470583,
+          "areaRatio": 0.21875,
+          "alphaMassRatio": 0.16747248225491193,
+          "centroidDelta": [
+            0.10673635966816164,
+            -0.5850492879090723
+          ]
+        }
+      ],
+      "frames": [
+        {
+          "id": "WPN-01_hammer_swing_2_f01",
+          "empty": false,
+          "area": 208,
+          "alphaMass": 94.16862745098044,
+          "transparent": 3888,
+          "partial": 208,
+          "opaque": 0,
+          "bounds": [
+            15,
+            37,
+            34,
+            16
+          ],
+          "centroid": [
+            35.01249323283217,
+            45.43010036230372
+          ],
+          "boundaryPixels": 0,
+          "boundarySides": [],
+          "cutoff": 0,
+          "thresholdDiagnostics": {
+            "empty": false,
+            "area": 111,
+            "alphaMass": 93.11764705882348,
+            "transparent": 3888,
+            "partial": 208,
+            "opaque": 0,
+            "bounds": [
+              15,
+              37,
+              34,
+              16
+            ],
+            "centroid": [
+              35.04670456938306,
+              45.424763108022766
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          }
+        },
+        {
+          "id": "WPN-01_hammer_swing_2_f02",
+          "empty": false,
+          "area": 476,
+          "alphaMass": 255.20784313725468,
+          "transparent": 3620,
+          "partial": 476,
+          "opaque": 0,
+          "bounds": [
+            11,
+            19,
+            44,
+            34
+          ],
+          "centroid": [
+            40.23421125418729,
+            36.95301023387324
+          ],
+          "boundaryPixels": 0,
+          "boundarySides": [],
+          "cutoff": 0,
+          "thresholdDiagnostics": {
+            "empty": false,
+            "area": 280,
+            "alphaMass": 253.23921568627443,
+            "transparent": 3620,
+            "partial": 476,
+            "opaque": 0,
+            "bounds": [
+              13,
+              20,
+              41,
+              33
+            ],
+            "centroid": [
+              40.26814915758175,
+              36.94505698711602
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          }
+        },
+        {
+          "id": "WPN-01_hammer_swing_2_f03",
+          "empty": false,
+          "area": 627,
+          "alphaMass": 327.99607843137204,
+          "transparent": 3469,
+          "partial": 627,
+          "opaque": 0,
+          "bounds": [
+            11,
+            10,
+            45,
+            45
+          ],
+          "centroid": [
+            42.01744401535185,
+            33.013677829720606
+          ],
+          "boundaryPixels": 0,
+          "boundarySides": [],
+          "cutoff": 0,
+          "thresholdDiagnostics": {
+            "empty": false,
+            "area": 362,
+            "alphaMass": 325.0392156862748,
+            "transparent": 3469,
+            "partial": 627,
+            "opaque": 0,
+            "bounds": [
+              12,
+              10,
+              43,
+              44
+            ],
+            "centroid": [
+              42.06354587681727,
+              32.986692405139614
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          }
+        },
+        {
+          "id": "WPN-01_hammer_swing_2_f04",
+          "empty": false,
+          "area": 171,
+          "alphaMass": 70.35294117647067,
+          "transparent": 3925,
+          "partial": 171,
+          "opaque": 0,
+          "bounds": [
+            32,
+            9,
+            22,
+            30
+          ],
+          "centroid": [
+            47.182775919732315,
+            19.046265328873993
+          ],
+          "boundaryPixels": 0,
+          "boundarySides": [],
+          "cutoff": 0,
+          "thresholdDiagnostics": {
+            "empty": false,
+            "area": 80,
+            "alphaMass": 69.56862745098033,
+            "transparent": 3925,
+            "partial": 171,
+            "opaque": 0,
+            "bounds": [
+              32,
+              10,
+              21,
+              28
+            ],
+            "centroid": [
+              47.20715896279598,
+              19.028635851183783
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          }
+        },
+        {
+          "id": "WPN-01_hammer_swing_2_f05",
+          "empty": false,
+          "area": 96,
+          "alphaMass": 38.121568627451005,
+          "transparent": 4000,
+          "partial": 96,
+          "opaque": 0,
+          "bounds": [
+            39,
+            9,
+            14,
+            20
+          ],
+          "centroid": [
+            47.455302952371156,
+            15.952371155230942
+          ],
+          "boundaryPixels": 0,
+          "boundarySides": [],
+          "cutoff": 0,
+          "thresholdDiagnostics": {
+            "empty": false,
+            "area": 43,
+            "alphaMass": 37.56078431372548,
+            "transparent": 4000,
+            "partial": 96,
+            "opaque": 0,
+            "bounds": [
+              39,
+              11,
+              13,
+              17
+            ],
+            "centroid": [
+              47.48486114011278,
+              15.938296095218217
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          }
+        },
+        {
+          "id": "WPN-01_hammer_swing_2_f06",
+          "empty": false,
+          "area": 21,
+          "alphaMass": 6.384313725490196,
+          "transparent": 4075,
+          "partial": 21,
+          "opaque": 0,
+          "bounds": [
+            44,
+            11,
+            8,
+            9
+          ],
+          "centroid": [
+            47.56203931203932,
+            15.36732186732187
+          ],
+          "boundaryPixels": 0,
+          "boundarySides": [],
+          "cutoff": 0,
+          "thresholdDiagnostics": {
+            "empty": false,
+            "area": 8,
+            "alphaMass": 6.313725490196078,
+            "transparent": 4075,
+            "partial": 21,
+            "opaque": 0,
+            "bounds": [
+              45,
+              12,
+              6,
+              8
+            ],
+            "centroid": [
+              47.559006211180126,
+              15.368322981366461
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          }
+        }
+      ]
+    },
+    {
+      "id": "WPN-01_hammer_slam_3",
+      "frameCount": 6,
+      "anchor": [
+        32,
+        48
+      ],
+      "scale": 0.109375,
+      "transitions": [
+        {
+          "from": 0,
+          "to": 1,
+          "silhouetteIoU": 0.2964824120603015,
+          "meanPremultipliedChannelDelta": 6.636019598269016,
+          "areaRatio": 2.210191082802548,
+          "alphaMassRatio": 2.2228431939358866,
+          "centroidDelta": [
+            0.022153275585345966,
+            7.767646381326077
+          ]
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "silhouetteIoU": 0.1720226843100189,
+          "meanPremultipliedChannelDelta": 22.081348374310753,
+          "areaRatio": 2.645533141210375,
+          "alphaMassRatio": 2.9231569517093994,
+          "centroidDelta": [
+            -0.3766364943770313,
+            1.7466457828433022
+          ]
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "silhouetteIoU": 0.34305317324185247,
+          "meanPremultipliedChannelDelta": 20.35029751646754,
+          "areaRatio": 0.8366013071895425,
+          "alphaMassRatio": 0.7616411270390462,
+          "centroidDelta": [
+            0.23451913329019547,
+            -0.5632683087894819
+          ]
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "silhouetteIoU": 0.24396782841823056,
+          "meanPremultipliedChannelDelta": 15.094880706188773,
+          "areaRatio": 0.4739583333333333,
+          "alphaMassRatio": 0.333255451713397,
+          "centroidDelta": [
+            1.7926958664800878,
+            3.999965785355087
+          ]
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "silhouetteIoU": 0.0979020979020979,
+          "meanPremultipliedChannelDelta": 5.657271800321698,
+          "areaRatio": 0.32142857142857145,
+          "alphaMassRatio": 0.23498480953493797,
+          "centroidDelta": [
+            -3.0064725221842608,
+            -0.3921546125894153
+          ]
+        }
+      ],
+      "frames": [
+        {
+          "id": "WPN-01_hammer_slam_3_f01",
+          "empty": false,
+          "area": 157,
+          "alphaMass": 61.047058823529454,
+          "transparent": 3939,
+          "partial": 157,
+          "opaque": 0,
+          "bounds": [
+            20,
+            13,
+            38,
+            45
+          ],
+          "centroid": [
+            31.676687865356183,
+            30.68034945718507
+          ],
+          "boundaryPixels": 0,
+          "boundarySides": [],
+          "cutoff": 0,
+          "thresholdDiagnostics": {
+            "empty": false,
+            "area": 83,
+            "alphaMass": 60.10588235294116,
+            "transparent": 3939,
+            "partial": 157,
+            "opaque": 0,
+            "bounds": [
+              30,
+              15,
+              5,
+              27
+            ],
+            "centroid": [
+              31.67899784693678,
+              30.757682521041314
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          }
+        },
+        {
+          "id": "WPN-01_hammer_slam_3_f02",
+          "empty": false,
+          "area": 347,
+          "alphaMass": 135.69803921568615,
+          "transparent": 3749,
+          "partial": 347,
+          "opaque": 0,
+          "bounds": [
+            22,
+            13,
+            20,
+            38
+          ],
+          "centroid": [
+            31.69884114094153,
+            38.44799583851115
+          ],
+          "boundaryPixels": 0,
+          "boundarySides": [],
+          "cutoff": 0,
+          "thresholdDiagnostics": {
+            "empty": false,
+            "area": 175,
+            "alphaMass": 133.29019607843128,
+            "transparent": 3749,
+            "partial": 347,
+            "opaque": 0,
+            "bounds": [
+              23,
+              13,
+              19,
+              35
+            ],
+            "centroid": [
+              31.702433140133603,
+              38.54014534113979
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          }
+        },
+        {
+          "id": "WPN-01_hammer_slam_3_f03",
+          "empty": false,
+          "area": 918,
+          "alphaMass": 396.66666666666765,
+          "transparent": 3178,
+          "partial": 918,
+          "opaque": 0,
+          "bounds": [
+            7,
+            21,
+            50,
+            29
+          ],
+          "centroid": [
+            31.322204646564497,
+            40.19464162135445
+          ],
+          "boundaryPixels": 0,
+          "boundarySides": [],
+          "cutoff": 0,
+          "thresholdDiagnostics": {
+            "empty": false,
+            "area": 445,
+            "alphaMass": 389.94901960784387,
+            "transparent": 3178,
+            "partial": 918,
+            "opaque": 0,
+            "bounds": [
+              8,
+              23,
+              48,
+              25
+            ],
+            "centroid": [
+              31.294125928980158,
+              40.22457435361081
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          }
+        },
+        {
+          "id": "WPN-01_hammer_slam_3_f04",
+          "empty": false,
+          "area": 768,
+          "alphaMass": 302.1176470588224,
+          "transparent": 3328,
+          "partial": 768,
+          "opaque": 0,
+          "bounds": [
+            7,
+            5,
+            53,
+            49
+          ],
+          "centroid": [
+            31.556723779854693,
+            39.63137331256497
+          ],
+          "boundaryPixels": 0,
+          "boundarySides": [],
+          "cutoff": 0,
+          "thresholdDiagnostics": {
+            "empty": false,
+            "area": 338,
+            "alphaMass": 297.81176470588184,
+            "transparent": 3328,
+            "partial": 768,
+            "opaque": 0,
+            "bounds": [
+              8,
+              25,
+              48,
+              23
+            ],
+            "centroid": [
+              31.564325406231166,
+              39.64946933185857
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          }
+        },
+        {
+          "id": "WPN-01_hammer_slam_3_f05",
+          "empty": false,
+          "area": 364,
+          "alphaMass": 100.6823529411765,
+          "transparent": 3732,
+          "partial": 364,
+          "opaque": 0,
+          "bounds": [
+            8,
+            15,
+            48,
+            35
+          ],
+          "centroid": [
+            33.34941964633478,
+            43.631339097920055
+          ],
+          "boundaryPixels": 0,
+          "boundarySides": [],
+          "cutoff": 0,
+          "thresholdDiagnostics": {
+            "empty": false,
+            "area": 126,
+            "alphaMass": 97.93725490196069,
+            "transparent": 3732,
+            "partial": 364,
+            "opaque": 0,
+            "bounds": [
+              9,
+              35,
+              47,
+              13
+            ],
+            "centroid": [
+              33.362857371666564,
+              43.639144710498954
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          }
+        },
+        {
+          "id": "WPN-01_hammer_slam_3_f06",
+          "empty": false,
+          "area": 117,
+          "alphaMass": 23.658823529411762,
+          "transparent": 3979,
+          "partial": 117,
+          "opaque": 0,
+          "bounds": [
+            11,
+            15,
+            39,
+            33
+          ],
+          "centroid": [
+            30.34294712415052,
+            43.23918448533064
+          ],
+          "boundaryPixels": 0,
+          "boundarySides": [],
+          "cutoff": 0,
+          "thresholdDiagnostics": {
+            "empty": false,
+            "area": 31,
+            "alphaMass": 22.937254901960785,
+            "transparent": 3979,
+            "partial": 117,
+            "opaque": 0,
+            "bounds": [
+              15,
+              40,
+              34,
+              6
+            ],
+            "centroid": [
+              30.32090955718926,
+              43.307061036074536
+            ],
+            "boundaryPixels": 0,
+            "boundarySides": [],
+            "cutoff": 16
+          }
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "QA statistics are diagnostics, not animation or art acceptance.",
+    "Alpha bounds and centroid changes do not establish semantic attachment anchors.",
+    "All alpha > 0 is retained and checked for clipping. Boundary contact above the diagnostic alpha threshold blocks by default; low-alpha boundary contact is reported without altering pixels. No hidden repainting, interpolation, per-frame scale normalization or alpha removal is applied.",
+    "One-shot timing is configurable presentation data. Gameplay collision, attack windows and invulnerability timing remain external."
+  ],
+  "visualReview": {
+    "date": "2026-10-24",
+    "status": "passed",
+    "reviewedBy": "Codex primary agent and independent visual-review subagent",
+    "scope": "FX-01 five effects, FX-02 three effects, ABL-01 double jump, WPN-01 three combo effects",
+    "effectCount": 12,
+    "frameCount": 72,
+    "referenceCharacter": {
+      "path": "assets/PROCESSED/characters/CHR-01/v001/CHR-01_canonical_right_v001.png",
+      "anchor": [
+        32,
+        58
+      ]
+    },
+    "checks": [
+      "Transparent RGBA and original source traceability",
+      "Fixed per-effect scale and semantic root alignment",
+      "Dark-background frame contact sheet and interactive playback",
+      "One-shot synchronized end fade and afterimage opacity envelope",
+      "Integer translation and no output boundary pixels",
+      "Godot 4.7.2 import, playback, replay, completion/hide, marker attachment, root mirror, pause and playback-speed checks"
+    ],
+    "knownLimits": [
+      "Landing dust has an accepted 1px baseline variation during breakup.",
+      "Low-alpha source edge pixels are preserved and reported, not removed.",
+      "Afterimage PNGs must be played through EffectPlayer or an equivalent opacityByFrame envelope.",
+      "Main-game action-event and weapon-marker integration remains a separate step; these are presentation assets and components."
+    ]
+  }
+}

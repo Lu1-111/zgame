@@ -1,0 +1,1098 @@
+{
+  "batch": "FX-B01",
+  "version": "v001",
+  "group": "impact",
+  "createdDate": "2026-10-24",
+  "generationMode": "built-in image_gen",
+  "checklistPath": "/home/lululu/zgame/assets/素材设计清单.md",
+  "sourcePixelsUnmodified": true,
+  "qaStatus": "raw_layout_alpha_and_anchor_review_passed; processed_playback_review_required",
+  "qaMeasurementsPath": "/home/lululu/zgame/assets/RAW/effects/FX-B01/v001/impact/qa_measurements.json",
+  "effects": [
+    {
+      "id": "FX-01_physical_hit",
+      "checklistId": "FX-01",
+      "name": "physical_hit",
+      "label": "物理命中",
+      "sourcePath": "/home/lululu/zgame/assets/RAW/effects/FX-B01/v001/impact/FX-01_physical_hit_sheet_v001.png",
+      "promptPath": "/home/lululu/zgame/assets/RAW/effects/FX-B01/v001/impact/FX-01_physical_hit_sheet_v001.prompt.txt",
+      "generatedSourcePath": "/home/lululu/.codex/generated_images/01a16c78-a718-7233-ba4e-97179b4eed31/exec-0e4e211d-7262-4dbe-8fd6-9a0d730ef682.png",
+      "columns": 3,
+      "rows": 2,
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "sourceCellSize": [
+        512,
+        512
+      ],
+      "frameCount": 6,
+      "frameOrder": "left-to-right, top-to-bottom",
+      "target": [
+        64,
+        64
+      ],
+      "sourceAnchorNormalized": [
+        0.5,
+        0.5
+      ],
+      "anchor": [
+        32,
+        32
+      ],
+      "scale": 0.109375,
+      "scaledSourceCell": [
+        56,
+        56
+      ],
+      "padding": [
+        4,
+        4,
+        4,
+        4
+      ],
+      "fps": 12,
+      "loop": false,
+      "durationSeconds": 0.5,
+      "attachPoint": "hit",
+      "frames": [
+        {
+          "index": 0,
+          "filenameFrame": 1,
+          "phase": "小型能量起点"
+        },
+        {
+          "index": 1,
+          "filenameFrame": 2,
+          "phase": "黄白星状命中峰值"
+        },
+        {
+          "index": 2,
+          "filenameFrame": 3,
+          "phase": "射线向外扩散、中心缩小"
+        },
+        {
+          "index": 3,
+          "filenameFrame": 4,
+          "phase": "沿原方向碎裂"
+        },
+        {
+          "index": 4,
+          "filenameFrame": 5,
+          "phase": "碎片衰减"
+        },
+        {
+          "index": 5,
+          "filenameFrame": 6,
+          "phase": "少量末端尾屑"
+        }
+      ],
+      "runtimeFade": {
+        "startFrameIndex": 4,
+        "endTimeSeconds": 0.5,
+        "mode": "continuous opacity fade to zero",
+        "preservePngPixels": true
+      },
+      "qa": {
+        "hasTrueAlpha": true,
+        "layoutPassed": true,
+        "clippedVisibleBoundaryPixels": 0,
+        "sourceBoundaryAlphaMax": 1,
+        "fixedAnchorRequired": true,
+        "darkPreviewPath": "/home/lululu/zgame/assets/RAW/effects/FX-B01/v001/impact/QA_physical_hit_dark.png",
+        "measurement": {
+          "name": "physical_hit",
+          "dimensions": [
+            1536,
+            1024
+          ],
+          "hasAlpha": true,
+          "transparentPixels": 1454420,
+          "lowAlphaPixels": 74991,
+          "frames": [
+            {
+              "frame": 1,
+              "visibleCutoffForMeasurementOnly": 32,
+              "pixels": 2191,
+              "bbox": [
+                200,
+                206,
+                290,
+                300
+              ],
+              "minBorder": 200,
+              "alphaMass": 1899.74,
+              "weightedCentroid": [
+                245.64,
+                254.81
+              ]
+            },
+            {
+              "frame": 2,
+              "visibleCutoffForMeasurementOnly": 32,
+              "pixels": 11221,
+              "bbox": [
+                160,
+                161,
+                357,
+                346
+              ],
+              "minBorder": 154,
+              "alphaMass": 9778.78,
+              "weightedCentroid": [
+                256.23,
+                253.78
+              ]
+            },
+            {
+              "frame": 3,
+              "visibleCutoffForMeasurementOnly": 32,
+              "pixels": 9496,
+              "bbox": [
+                117,
+                119,
+                378,
+                374
+              ],
+              "minBorder": 117,
+              "alphaMass": 7998.78,
+              "weightedCentroid": [
+                243.86,
+                250
+              ]
+            },
+            {
+              "frame": 4,
+              "visibleCutoffForMeasurementOnly": 32,
+              "pixels": 11536,
+              "bbox": [
+                90,
+                78,
+                423,
+                393
+              ],
+              "minBorder": 78,
+              "alphaMass": 10116.76,
+              "weightedCentroid": [
+                246.58,
+                237.92
+              ]
+            },
+            {
+              "frame": 5,
+              "visibleCutoffForMeasurementOnly": 32,
+              "pixels": 5494,
+              "bbox": [
+                96,
+                82,
+                426,
+                395
+              ],
+              "minBorder": 82,
+              "alphaMass": 4637,
+              "weightedCentroid": [
+                255.34,
+                241.1
+              ]
+            },
+            {
+              "frame": 6,
+              "visibleCutoffForMeasurementOnly": 32,
+              "pixels": 1433,
+              "bbox": [
+                92,
+                86,
+                428,
+                399
+              ],
+              "minBorder": 83,
+              "alphaMass": 1163.7,
+              "weightedCentroid": [
+                251.03,
+                241.94
+              ]
+            }
+          ]
+        }
+      },
+      "knownIssues": [
+        "源图含极低Alpha背景噪声，所有格边Alpha≤2；仅诊断，保留全部源像素和透明度。",
+        "源图不是完全严格8px逻辑网格；整组固定512×512切片、scale=0.109375最近邻缩放至56×56并加四边4px透明边距，禁止逐帧裁切、重居中或自适应缩放。",
+        "末两帧仍有可见残屑；组件必须随时间淡出并在播放完成隐藏，PNG像素不改。",
+        "物理命中第4帧碎片面积略高于第2帧，建议播放预览时核对视觉峰值；第6帧约14粒尾屑，多于提示词目标。"
+      ]
+    },
+    {
+      "id": "FX-01_magic_hit",
+      "checklistId": "FX-01",
+      "name": "magic_hit",
+      "label": "法术命中",
+      "sourcePath": "/home/lululu/zgame/assets/RAW/effects/FX-B01/v001/impact/FX-01_magic_hit_sheet_v001.png",
+      "promptPath": "/home/lululu/zgame/assets/RAW/effects/FX-B01/v001/impact/FX-01_magic_hit_sheet_v001.prompt.txt",
+      "generatedSourcePath": "/home/lululu/.codex/generated_images/01a16c76-900e-7f20-8155-cccdc5cc521c/exec-13cf280e-dc1e-448e-a861-e40df9094da9.png",
+      "columns": 3,
+      "rows": 2,
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "sourceCellSize": [
+        512,
+        512
+      ],
+      "frameCount": 6,
+      "frameOrder": "left-to-right, top-to-bottom",
+      "target": [
+        64,
+        64
+      ],
+      "sourceAnchorNormalized": [
+        0.5,
+        0.5
+      ],
+      "anchor": [
+        32,
+        32
+      ],
+      "scale": 0.109375,
+      "scaledSourceCell": [
+        56,
+        56
+      ],
+      "padding": [
+        4,
+        4,
+        4,
+        4
+      ],
+      "fps": 12,
+      "loop": false,
+      "durationSeconds": 0.5,
+      "attachPoint": "hit",
+      "frames": [
+        {
+          "index": 0,
+          "filenameFrame": 1,
+          "phase": "小奶泡能量起点"
+        },
+        {
+          "index": 1,
+          "filenameFrame": 2,
+          "phase": "青白泡环峰值"
+        },
+        {
+          "index": 2,
+          "filenameFrame": 3,
+          "phase": "泡环扩散开裂"
+        },
+        {
+          "index": 3,
+          "filenameFrame": 4,
+          "phase": "环碎为弧形片"
+        },
+        {
+          "index": 4,
+          "filenameFrame": 5,
+          "phase": "碎片化成小奶滴"
+        },
+        {
+          "index": 5,
+          "filenameFrame": 6,
+          "phase": "极淡尾屑消失"
+        }
+      ],
+      "runtimeFade": {
+        "startFrameIndex": 4,
+        "endTimeSeconds": 0.5,
+        "mode": "continuous opacity fade to zero",
+        "preservePngPixels": true
+      },
+      "qa": {
+        "hasTrueAlpha": true,
+        "layoutPassed": true,
+        "clippedVisibleBoundaryPixels": 0,
+        "sourceBoundaryAlphaMax": 1,
+        "fixedAnchorRequired": true,
+        "darkPreviewPath": "/home/lululu/zgame/assets/RAW/effects/FX-B01/v001/impact/QA_magic_hit_dark.png",
+        "measurement": {
+          "name": "magic_hit",
+          "dimensions": [
+            1536,
+            1024
+          ],
+          "hasAlpha": true,
+          "transparentPixels": 1268227,
+          "lowAlphaPixels": 182678,
+          "frames": [
+            {
+              "frame": 1,
+              "visibleCutoffForMeasurementOnly": 32,
+              "pixels": 3626,
+              "bbox": [
+                216,
+                220,
+                297,
+                315
+              ],
+              "minBorder": 196,
+              "alphaMass": 3029.45,
+              "weightedCentroid": [
+                256.4,
+                263.11
+              ],
+              "edgeMax": 1,
+              "edgeCountAbove16": 0
+            },
+            {
+              "frame": 2,
+              "visibleCutoffForMeasurementOnly": 32,
+              "pixels": 26128,
+              "bbox": [
+                113,
+                116,
+                397,
+                400
+              ],
+              "minBorder": 111,
+              "alphaMass": 23414.68,
+              "weightedCentroid": [
+                248.53,
+                246.74
+              ],
+              "edgeMax": 1,
+              "edgeCountAbove16": 0
+            },
+            {
+              "frame": 3,
+              "visibleCutoffForMeasurementOnly": 32,
+              "pixels": 34771,
+              "bbox": [
+                45,
+                62,
+                440,
+                446
+              ],
+              "minBorder": 45,
+              "alphaMass": 30620.91,
+              "weightedCentroid": [
+                244.47,
+                250.78
+              ],
+              "edgeMax": 1,
+              "edgeCountAbove16": 0
+            },
+            {
+              "frame": 4,
+              "visibleCutoffForMeasurementOnly": 32,
+              "pixels": 33318,
+              "bbox": [
+                55,
+                34,
+                475,
+                450
+              ],
+              "minBorder": 34,
+              "alphaMass": 29827.22,
+              "weightedCentroid": [
+                268.74,
+                244.87
+              ],
+              "edgeMax": 1,
+              "edgeCountAbove16": 0
+            },
+            {
+              "frame": 5,
+              "visibleCutoffForMeasurementOnly": 32,
+              "pixels": 17249,
+              "bbox": [
+                41,
+                44,
+                484,
+                449
+              ],
+              "minBorder": 27,
+              "alphaMass": 14971.42,
+              "weightedCentroid": [
+                271.71,
+                236.34
+              ],
+              "edgeMax": 1,
+              "edgeCountAbove16": 0
+            },
+            {
+              "frame": 6,
+              "visibleCutoffForMeasurementOnly": 32,
+              "pixels": 1760,
+              "bbox": [
+                137,
+                64,
+                419,
+                417
+              ],
+              "minBorder": 64,
+              "alphaMass": 1319.73,
+              "weightedCentroid": [
+                244.64,
+                168.08
+              ],
+              "edgeMax": 1,
+              "edgeCountAbove16": 0
+            }
+          ]
+        }
+      },
+      "knownIssues": [
+        "源图含极低Alpha背景噪声，所有格边Alpha≤2；仅诊断，保留全部源像素和透明度。",
+        "源图不是完全严格8px逻辑网格；整组固定512×512切片、scale=0.109375最近邻缩放至56×56并加四边4px透明边距，禁止逐帧裁切、重居中或自适应缩放。",
+        "末两帧仍有可见残屑；组件必须随时间淡出并在播放完成隐藏，PNG像素不改。",
+        "法术泡环第3帧扩张后可见像素面积高于第2帧；保留环形扩张，并由组件控制末段消隐。",
+        "末帧尾屑分布不对称，质心偏上属碎片消失过程，不应按可见内容重新居中。"
+      ]
+    },
+    {
+      "id": "FX-01_guard_spark",
+      "checklistId": "FX-01",
+      "name": "guard_spark",
+      "label": "格挡火花",
+      "sourcePath": "/home/lululu/zgame/assets/RAW/effects/FX-B01/v001/impact/FX-01_guard_spark_sheet_v001.png",
+      "promptPath": "/home/lululu/zgame/assets/RAW/effects/FX-B01/v001/impact/FX-01_guard_spark_sheet_v001.prompt.txt",
+      "generatedSourcePath": "/home/lululu/.codex/generated_images/01a16c76-900e-7f20-8155-cccdc5cc521c/exec-1f12cd36-31cd-4e9d-b610-c30ea5b54f8a.png",
+      "columns": 3,
+      "rows": 2,
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "sourceCellSize": [
+        512,
+        512
+      ],
+      "frameCount": 6,
+      "frameOrder": "left-to-right, top-to-bottom",
+      "target": [
+        64,
+        64
+      ],
+      "sourceAnchorNormalized": [
+        0.5,
+        0.5
+      ],
+      "anchor": [
+        32,
+        32
+      ],
+      "scale": 0.109375,
+      "scaledSourceCell": [
+        56,
+        56
+      ],
+      "padding": [
+        4,
+        4,
+        4,
+        4
+      ],
+      "fps": 12,
+      "loop": false,
+      "durationSeconds": 0.5,
+      "attachPoint": "contact",
+      "frames": [
+        {
+          "index": 0,
+          "filenameFrame": 1,
+          "phase": "短小斜向接触点"
+        },
+        {
+          "index": 1,
+          "filenameFrame": 2,
+          "phase": "斜向金白火花峰值"
+        },
+        {
+          "index": 2,
+          "filenameFrame": 3,
+          "phase": "火花沿斜线弹开"
+        },
+        {
+          "index": 3,
+          "filenameFrame": 4,
+          "phase": "同向短火花碎裂"
+        },
+        {
+          "index": 4,
+          "filenameFrame": 5,
+          "phase": "金色碎屑衰减"
+        },
+        {
+          "index": 5,
+          "filenameFrame": 6,
+          "phase": "极淡末端火星"
+        }
+      ],
+      "runtimeFade": {
+        "startFrameIndex": 4,
+        "endTimeSeconds": 0.5,
+        "mode": "continuous opacity fade to zero",
+        "preservePngPixels": true
+      },
+      "qa": {
+        "hasTrueAlpha": true,
+        "layoutPassed": true,
+        "clippedVisibleBoundaryPixels": 0,
+        "sourceBoundaryAlphaMax": 1,
+        "fixedAnchorRequired": true,
+        "darkPreviewPath": "/home/lululu/zgame/assets/RAW/effects/FX-B01/v001/impact/QA_guard_spark_dark.png",
+        "measurement": {
+          "name": "guard_spark",
+          "dimensions": [
+            1536,
+            1024
+          ],
+          "hasAlpha": true,
+          "transparentPixels": 1487598,
+          "lowAlphaPixels": 58344,
+          "frames": [
+            {
+              "frame": 1,
+              "visibleCutoffForMeasurementOnly": 32,
+              "pixels": 2659,
+              "bbox": [
+                217,
+                217,
+                294,
+                295
+              ],
+              "minBorder": 216,
+              "alphaMass": 2365.69,
+              "weightedCentroid": [
+                255.19,
+                257.12
+              ]
+            },
+            {
+              "frame": 2,
+              "visibleCutoffForMeasurementOnly": 32,
+              "pixels": 8058,
+              "bbox": [
+                135,
+                139,
+                357,
+                364
+              ],
+              "minBorder": 135,
+              "alphaMass": 7119.89,
+              "weightedCentroid": [
+                243.11,
+                256.59
+              ]
+            },
+            {
+              "frame": 3,
+              "visibleCutoffForMeasurementOnly": 32,
+              "pixels": 6787,
+              "bbox": [
+                107,
+                108,
+                383,
+                395
+              ],
+              "minBorder": 107,
+              "alphaMass": 5917.57,
+              "weightedCentroid": [
+                247.16,
+                251.65
+              ]
+            },
+            {
+              "frame": 4,
+              "visibleCutoffForMeasurementOnly": 32,
+              "pixels": 5318,
+              "bbox": [
+                126,
+                102,
+                389,
+                375
+              ],
+              "minBorder": 102,
+              "alphaMass": 4553.62,
+              "weightedCentroid": [
+                262.71,
+                236.18
+              ]
+            },
+            {
+              "frame": 5,
+              "visibleCutoffForMeasurementOnly": 32,
+              "pixels": 2727,
+              "bbox": [
+                126,
+                124,
+                386,
+                362
+              ],
+              "minBorder": 124,
+              "alphaMass": 2359.79,
+              "weightedCentroid": [
+                251.35,
+                242.55
+              ]
+            },
+            {
+              "frame": 6,
+              "visibleCutoffForMeasurementOnly": 32,
+              "pixels": 384,
+              "bbox": [
+                181,
+                157,
+                345,
+                325
+              ],
+              "minBorder": 157,
+              "alphaMass": 311.2,
+              "weightedCentroid": [
+                258.37,
+                243.95
+              ]
+            }
+          ]
+        }
+      },
+      "knownIssues": [
+        "源图含极低Alpha背景噪声，所有格边Alpha≤2；仅诊断，保留全部源像素和透明度。",
+        "源图不是完全严格8px逻辑网格；整组固定512×512切片、scale=0.109375最近邻缩放至56×56并加四边4px透明边距，禁止逐帧裁切、重居中或自适应缩放。",
+        "末两帧仍有可见残屑；组件必须随时间淡出并在播放完成隐藏，PNG像素不改。",
+        "后半段火花长度收缩且末三粒分布略内收，保持固定接触锚点播放。"
+      ]
+    },
+    {
+      "id": "FX-01_perfect_parry",
+      "checklistId": "FX-01",
+      "name": "perfect_parry",
+      "label": "完美格挡",
+      "sourcePath": "/home/lululu/zgame/assets/RAW/effects/FX-B01/v001/impact/FX-01_perfect_parry_sheet_v001.png",
+      "promptPath": "/home/lululu/zgame/assets/RAW/effects/FX-B01/v001/impact/FX-01_perfect_parry_sheet_v001.prompt.txt",
+      "generatedSourcePath": "/home/lululu/.codex/generated_images/01a16c76-900e-7f20-8155-cccdc5cc521c/exec-c77cc916-907d-4ece-b451-d9e00b748315.png",
+      "columns": 3,
+      "rows": 2,
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "sourceCellSize": [
+        512,
+        512
+      ],
+      "frameCount": 6,
+      "frameOrder": "left-to-right, top-to-bottom",
+      "target": [
+        64,
+        64
+      ],
+      "sourceAnchorNormalized": [
+        0.5,
+        0.5
+      ],
+      "anchor": [
+        32,
+        32
+      ],
+      "scale": 0.109375,
+      "scaledSourceCell": [
+        56,
+        56
+      ],
+      "padding": [
+        4,
+        4,
+        4,
+        4
+      ],
+      "fps": 12,
+      "loop": false,
+      "durationSeconds": 0.5,
+      "attachPoint": "contact",
+      "frames": [
+        {
+          "index": 0,
+          "filenameFrame": 1,
+          "phase": "青金能量种子"
+        },
+        {
+          "index": 1,
+          "filenameFrame": 2,
+          "phase": "完整青金圆环与四芒闪峰值"
+        },
+        {
+          "index": 2,
+          "filenameFrame": 3,
+          "phase": "圆环扩大、四芒缩小"
+        },
+        {
+          "index": 3,
+          "filenameFrame": 4,
+          "phase": "圆环分为四弧"
+        },
+        {
+          "index": 4,
+          "filenameFrame": 5,
+          "phase": "四弧碎为小方粒"
+        },
+        {
+          "index": 5,
+          "filenameFrame": 6,
+          "phase": "四向极淡尾屑"
+        }
+      ],
+      "runtimeFade": {
+        "startFrameIndex": 4,
+        "endTimeSeconds": 0.5,
+        "mode": "continuous opacity fade to zero",
+        "preservePngPixels": true
+      },
+      "qa": {
+        "hasTrueAlpha": true,
+        "layoutPassed": true,
+        "clippedVisibleBoundaryPixels": 0,
+        "sourceBoundaryAlphaMax": 1,
+        "fixedAnchorRequired": true,
+        "darkPreviewPath": "/home/lululu/zgame/assets/RAW/effects/FX-B01/v001/impact/QA_perfect_parry_dark.png",
+        "measurement": {
+          "name": "perfect_parry",
+          "dimensions": [
+            1536,
+            1024
+          ],
+          "hasAlpha": true,
+          "transparentPixels": 1233318,
+          "lowAlphaPixels": 215795,
+          "frames": [
+            {
+              "frame": 1,
+              "visibleCutoffForMeasurementOnly": 32,
+              "pixels": 4216,
+              "bbox": [
+                189,
+                189,
+                319,
+                318
+              ],
+              "minBorder": 189,
+              "alphaMass": 3374.29,
+              "weightedCentroid": [
+                254.64,
+                254.17
+              ]
+            },
+            {
+              "frame": 2,
+              "visibleCutoffForMeasurementOnly": 32,
+              "pixels": 34416,
+              "bbox": [
+                90,
+                92,
+                421,
+                414
+              ],
+              "minBorder": 90,
+              "alphaMass": 29808.44,
+              "weightedCentroid": [
+                255.56,
+                254.6
+              ]
+            },
+            {
+              "frame": 3,
+              "visibleCutoffForMeasurementOnly": 32,
+              "pixels": 36628,
+              "bbox": [
+                40,
+                40,
+                471,
+                464
+              ],
+              "minBorder": 40,
+              "alphaMass": 32052.75,
+              "weightedCentroid": [
+                255.98,
+                253.89
+              ]
+            },
+            {
+              "frame": 4,
+              "visibleCutoffForMeasurementOnly": 32,
+              "pixels": 25969,
+              "bbox": [
+                32,
+                32,
+                479,
+                454
+              ],
+              "minBorder": 32,
+              "alphaMass": 22282.04,
+              "weightedCentroid": [
+                255.13,
+                243.02
+              ]
+            },
+            {
+              "frame": 5,
+              "visibleCutoffForMeasurementOnly": 32,
+              "pixels": 15013,
+              "bbox": [
+                55,
+                44,
+                456,
+                445
+              ],
+              "minBorder": 44,
+              "alphaMass": 11745.99,
+              "weightedCentroid": [
+                255.24,
+                244.47
+              ]
+            },
+            {
+              "frame": 6,
+              "visibleCutoffForMeasurementOnly": 32,
+              "pixels": 991,
+              "bbox": [
+                96,
+                89,
+                415,
+                397
+              ],
+              "minBorder": 89,
+              "alphaMass": 834.25,
+              "weightedCentroid": [
+                256.56,
+                244.59
+              ]
+            }
+          ]
+        }
+      },
+      "knownIssues": [
+        "源图含极低Alpha背景噪声，所有格边Alpha≤2；仅诊断，保留全部源像素和透明度。",
+        "源图不是完全严格8px逻辑网格；整组固定512×512切片、scale=0.109375最近邻缩放至56×56并加四边4px透明边距，禁止逐帧裁切、重居中或自适应缩放。",
+        "末两帧仍有可见残屑；组件必须随时间淡出并在播放完成隐藏，PNG像素不改。",
+        "第3帧环扩大后可见面积略高于第2帧，但第2帧中心四芒亮峰明确。",
+        "圆环碎裂为多段短弧而非严格四段；整体圆心稳定，不影响固定锚点。"
+      ]
+    },
+    {
+      "id": "FX-01_guard_break",
+      "checklistId": "FX-01",
+      "name": "guard_break",
+      "label": "破防",
+      "sourcePath": "/home/lululu/zgame/assets/RAW/effects/FX-B01/v001/impact/FX-01_guard_break_sheet_v001.png",
+      "promptPath": "/home/lululu/zgame/assets/RAW/effects/FX-B01/v001/impact/FX-01_guard_break_sheet_v001.prompt.txt",
+      "generatedSourcePath": "/home/lululu/.codex/generated_images/01a16c76-900e-7f20-8155-cccdc5cc521c/exec-1458f277-c5fc-43c9-a080-65cd78a83c50.png",
+      "columns": 3,
+      "rows": 2,
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "sourceCellSize": [
+        512,
+        512
+      ],
+      "frameCount": 6,
+      "frameOrder": "left-to-right, top-to-bottom",
+      "target": [
+        64,
+        64
+      ],
+      "sourceAnchorNormalized": [
+        0.5,
+        0.5
+      ],
+      "anchor": [
+        32,
+        32
+      ],
+      "scale": 0.109375,
+      "scaledSourceCell": [
+        56,
+        56
+      ],
+      "padding": [
+        4,
+        4,
+        4,
+        4
+      ],
+      "fps": 12,
+      "loop": false,
+      "durationSeconds": 0.5,
+      "attachPoint": "shield_center",
+      "frames": [
+        {
+          "index": 0,
+          "filenameFrame": 1,
+          "phase": "护盾能量种子"
+        },
+        {
+          "index": 1,
+          "filenameFrame": 2,
+          "phase": "青色盾环裂纹峰值"
+        },
+        {
+          "index": 2,
+          "filenameFrame": 3,
+          "phase": "裂成可追踪的弧形片"
+        },
+        {
+          "index": 3,
+          "filenameFrame": 4,
+          "phase": "碎片外崩并略向下落"
+        },
+        {
+          "index": 4,
+          "filenameFrame": 5,
+          "phase": "碎片变为小碎屑"
+        },
+        {
+          "index": 5,
+          "filenameFrame": 6,
+          "phase": "极淡尾屑消失"
+        }
+      ],
+      "runtimeFade": {
+        "startFrameIndex": 4,
+        "endTimeSeconds": 0.5,
+        "mode": "continuous opacity fade to zero",
+        "preservePngPixels": true
+      },
+      "qa": {
+        "hasTrueAlpha": true,
+        "layoutPassed": true,
+        "clippedVisibleBoundaryPixels": 0,
+        "sourceBoundaryAlphaMax": 2,
+        "fixedAnchorRequired": true,
+        "darkPreviewPath": "/home/lululu/zgame/assets/RAW/effects/FX-B01/v001/impact/QA_guard_break_dark.png",
+        "measurement": {
+          "name": "guard_break",
+          "dimensions": [
+            1536,
+            1024
+          ],
+          "hasAlpha": true,
+          "transparentPixels": 1077159,
+          "lowAlphaPixels": 260339,
+          "frames": [
+            {
+              "frame": 1,
+              "visibleCutoffForMeasurementOnly": 32,
+              "pixels": 7861,
+              "bbox": [
+                179,
+                180,
+                330,
+                346
+              ],
+              "minBorder": 165,
+              "alphaMass": 6397.02,
+              "weightedCentroid": [
+                256.16,
+                263.35
+              ]
+            },
+            {
+              "frame": 2,
+              "visibleCutoffForMeasurementOnly": 32,
+              "pixels": 70315,
+              "bbox": [
+                57,
+                55,
+                444,
+                435
+              ],
+              "minBorder": 55,
+              "alphaMass": 62993.87,
+              "weightedCentroid": [
+                250.84,
+                254.79
+              ]
+            },
+            {
+              "frame": 3,
+              "visibleCutoffForMeasurementOnly": 32,
+              "pixels": 61050,
+              "bbox": [
+                39,
+                36,
+                471,
+                466
+              ],
+              "minBorder": 36,
+              "alphaMass": 52682.49,
+              "weightedCentroid": [
+                257.24,
+                255.34
+              ]
+            },
+            {
+              "frame": 4,
+              "visibleCutoffForMeasurementOnly": 32,
+              "pixels": 48695,
+              "bbox": [
+                44,
+                17,
+                504,
+                467
+              ],
+              "minBorder": 7,
+              "alphaMass": 42046.78,
+              "weightedCentroid": [
+                264.61,
+                249.55
+              ]
+            },
+            {
+              "frame": 5,
+              "visibleCutoffForMeasurementOnly": 32,
+              "pixels": 28636,
+              "bbox": [
+                57,
+                44,
+                484,
+                459
+              ],
+              "minBorder": 27,
+              "alphaMass": 23354.5,
+              "weightedCentroid": [
+                260.04,
+                250.58
+              ]
+            },
+            {
+              "frame": 6,
+              "visibleCutoffForMeasurementOnly": 32,
+              "pixels": 4733,
+              "bbox": [
+                87,
+                76,
+                421,
+                398
+              ],
+              "minBorder": 76,
+              "alphaMass": 3632.78,
+              "weightedCentroid": [
+                239.96,
+                247.67
+              ]
+            }
+          ]
+        }
+      },
+      "knownIssues": [
+        "源图含极低Alpha背景噪声，所有格边Alpha≤2；仅诊断，保留全部源像素和透明度。",
+        "源图不是完全严格8px逻辑网格；整组固定512×512切片、scale=0.109375最近邻缩放至56×56并加四边4px透明边距，禁止逐帧裁切、重居中或自适应缩放。",
+        "末两帧仍有可见残屑；组件必须随时间淡出并在播放完成隐藏，PNG像素不改。",
+        "第4帧最右可见像素接近原始格边（x=504，余量7px），统一56px内容画布+4px外边距避免成品贴边。",
+        "破防有五块可追踪主碎片，末段碎片缩小；下坠趋势较轻，主要为径向外崩。"
+      ]
+    }
+  ]
+}

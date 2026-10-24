@@ -1,0 +1,233 @@
+{
+  "id": "ENM-05_attack",
+  "name": "attack",
+  "enemyId": "ENM-05",
+  "gameEnemyId": "frost_sprite",
+  "label": "attack",
+  "kind": "body",
+  "sourcePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-05/ENM-05_actions_A.png",
+  "sourceRects": [
+    [
+      0,
+      947,
+      306,
+      307
+    ],
+    [
+      306,
+      947,
+      314,
+      307
+    ],
+    [
+      620,
+      947,
+      326,
+      307
+    ],
+    [
+      946,
+      947,
+      308,
+      307
+    ]
+  ],
+  "sourceAnchors": [
+    [
+      156.75,
+      147.25
+    ],
+    [
+      164.25,
+      147.25
+    ],
+    [
+      163.75,
+      147.25
+    ],
+    [
+      151.25,
+      147.25
+    ]
+  ],
+  "scale": 0.21836228287841192,
+  "target": [
+    128,
+    128
+  ],
+  "anchor": [
+    64,
+    64
+  ],
+  "fps": 8,
+  "loop": false,
+  "promptPath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-05/ENM-05_A.prompt.txt",
+  "generationMode": "built-in-imagegen",
+  "processing": "rect crop, fixed per-sheet nearest scale, integer semantic root translation; original alpha retained",
+  "provenancePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B04/v001/ENM-05/provenance.json",
+  "frames": [
+    "frames/ENM-05_attack/ENM-05_attack_00.png",
+    "frames/ENM-05_attack/ENM-05_attack_01.png",
+    "frames/ENM-05_attack/ENM-05_attack_02.png",
+    "frames/ENM-05_attack/ENM-05_attack_03.png"
+  ],
+  "sheet": "sheets/ENM-05_attack.png",
+  "sheetRects": [
+    [
+      0,
+      0,
+      128,
+      128
+    ],
+    [
+      128,
+      0,
+      128,
+      128
+    ],
+    [
+      256,
+      0,
+      128,
+      128
+    ],
+    [
+      384,
+      0,
+      128,
+      128
+    ]
+  ],
+  "atlas": "atlas/ENM-05_attack.png",
+  "atlasColumns": 2,
+  "atlasRows": 2,
+  "atlasRects": [
+    [
+      0,
+      0,
+      128,
+      128
+    ],
+    [
+      128,
+      0,
+      128,
+      128
+    ],
+    [
+      0,
+      128,
+      128,
+      128
+    ],
+    [
+      128,
+      128,
+      128,
+      128
+    ]
+  ],
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "sourceSha256": "4d67f0773300ce71799f29bd263884ea56498eb677dab2111f822b87bdf61ecd",
+  "sourceBatch": "assets/RAW/enemies/ENM-B04/v001/ENM-05/batch.json",
+  "frameCount": 4,
+  "frameDetails": [
+    {
+      "sourceRect": [
+        0,
+        947,
+        306,
+        307
+      ],
+      "sourceAnchor": [
+        156.75,
+        147.25
+      ],
+      "offset": [
+        30,
+        32
+      ],
+      "alphaBBox": [
+        30,
+        32,
+        97,
+        99
+      ],
+      "sourceEdgeAlpha": 2
+    },
+    {
+      "sourceRect": [
+        306,
+        947,
+        314,
+        307
+      ],
+      "sourceAnchor": [
+        164.25,
+        147.25
+      ],
+      "offset": [
+        28,
+        32
+      ],
+      "alphaBBox": [
+        28,
+        32,
+        97,
+        99
+      ],
+      "sourceEdgeAlpha": 1
+    },
+    {
+      "sourceRect": [
+        620,
+        947,
+        326,
+        307
+      ],
+      "sourceAnchor": [
+        163.75,
+        147.25
+      ],
+      "offset": [
+        28,
+        32
+      ],
+      "alphaBBox": [
+        28,
+        32,
+        99,
+        99
+      ],
+      "sourceEdgeAlpha": 2
+    },
+    {
+      "sourceRect": [
+        946,
+        947,
+        308,
+        307
+      ],
+      "sourceAnchor": [
+        151.25,
+        147.25
+      ],
+      "offset": [
+        31,
+        32
+      ],
+      "alphaBBox": [
+        31,
+        32,
+        98,
+        99
+      ],
+      "sourceEdgeAlpha": 1
+    }
+  ],
+  "fadeStartNormalized": 1.0,
+  "loopBoundaryMeanDifference": 16.666666666666668
+}

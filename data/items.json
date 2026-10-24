@@ -1,0 +1,121 @@
+{
+  "items": [
+    {
+      "id": "potion_small",
+      "name": "小型奶瓶",
+      "type": "consumable",
+      "stack": 5,
+      "price_buy": 30,
+      "price_sell": 15,
+      "effect": { "restore_hp": 30 }
+    },
+    {
+      "id": "potion_mana",
+      "name": "奶力药剂",
+      "type": "consumable",
+      "stack": 5,
+      "price_buy": 35,
+      "price_sell": 17,
+      "effect": { "restore_mana": 20 }
+    },
+    {
+      "id": "potion_sta",
+      "name": "体力药剂",
+      "type": "consumable",
+      "stack": 5,
+      "price_buy": 25,
+      "price_sell": 12,
+      "effect": { "restore_sta": 40 }
+    },
+    {
+      "id": "milk_bomb",
+      "name": "奶弹",
+      "type": "consumable",
+      "stack": 5,
+      "price_buy": 20,
+      "price_sell": 10,
+      "effect": { "damage": 15 }
+    },
+    {
+      "id": "mushroom",
+      "name": "奶菇",
+      "type": "material",
+      "stack": 99,
+      "price_buy": null,
+      "price_sell": 5,
+      "effect": {}
+    },
+    {
+      "id": "honey_wax",
+      "name": "蜜蜡",
+      "type": "material",
+      "stack": 99,
+      "price_buy": null,
+      "price_sell": 8,
+      "effect": {}
+    },
+    {
+      "id": "milk_crystal",
+      "name": "奶晶",
+      "type": "material",
+      "stack": 99,
+      "price_buy": null,
+      "price_sell": 40,
+      "effect": {}
+    },
+    {
+      "id": "hp_fragment",
+      "name": "生命碎片",
+      "type": "fragment",
+      "stack": 1,
+      "price_buy": null,
+      "price_sell": null,
+      "effect": { "hp_max": 10 }
+    },
+    {
+      "id": "sta_fragment",
+      "name": "体力碎片",
+      "type": "fragment",
+      "stack": 1,
+      "price_buy": null,
+      "price_sell": null,
+      "effect": { "sta_max": 5 }
+    },
+    {
+      "id": "mana_fragment",
+      "name": "奶力碎片",
+      "type": "fragment",
+      "stack": 1,
+      "price_buy": null,
+      "price_sell": null,
+      "effect": { "mana_max": 8 }
+    },
+    {
+      "id": "bag_expand",
+      "name": "背包扩容卷",
+      "type": "special",
+      "stack": 1,
+      "price_buy": 120,
+      "price_sell": 60,
+      "effect": { "bag_slots": 5 }
+    },
+    {
+      "id": "map_fragment",
+      "name": "地图碎片",
+      "type": "special",
+      "stack": 1,
+      "price_buy": 60,
+      "price_sell": 30,
+      "effect": { "reveal_map": true }
+    },
+    {
+      "id": "ability_double_jump",
+      "name": "奶泡跃·二段跳",
+      "type": "ability",
+      "stack": 1,
+      "price_buy": null,
+      "price_sell": null,
+      "effect": { "unlock_ability": "double_jump" }
+    }
+  ]
+}

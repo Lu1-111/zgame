@@ -1,0 +1,295 @@
+{
+  "warnings": [],
+  "duplicates": [],
+  "animations": [
+    {
+      "name": "idle",
+      "frameCount": 6,
+      "allFramesTransparent": true,
+      "allFramesInBounds": true,
+      "anchor": [
+        32,
+        58
+      ],
+      "transitions": [
+        {
+          "from": 0,
+          "to": 1,
+          "silhouetteIoU": 0.9068684516880093,
+          "meanChannelDelta": 7.558837890625,
+          "centroidDelta": [
+            -0.6605392156862742,
+            -0.19410154572778282
+          ],
+          "areaRatio": 0.9927007299270073
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "silhouetteIoU": 0.9296600234466589,
+          "meanChannelDelta": 6.512451171875,
+          "centroidDelta": [
+            0.33322997873848337,
+            0.06540574060949922
+          ],
+          "areaRatio": 1.017156862745098
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "silhouetteIoU": 0.9607142857142857,
+          "meanChannelDelta": 4.130615234375,
+          "centroidDelta": [
+            -0.14494698500243075,
+            -0.0530533394287076
+          ],
+          "areaRatio": 0.9843373493975903
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "silhouetteIoU": 0.9501187648456056,
+          "meanChannelDelta": 5.09490966796875,
+          "centroidDelta": [
+            0.3043774340714336,
+            -0.13013760617187842
+          ],
+          "areaRatio": 1.0097919216646267
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "silhouetteIoU": 0.9316843345111896,
+          "meanChannelDelta": 5.83123779296875,
+          "centroidDelta": [
+            0.5971221416620196,
+            0.025647889942369773
+          ],
+          "areaRatio": 0.9878787878787879
+        },
+        {
+          "from": 5,
+          "to": 0,
+          "seam": true,
+          "silhouetteIoU": 0.9304245283018868,
+          "meanChannelDelta": 5.4886474609375
+        }
+      ]
+    },
+    {
+      "name": "talk",
+      "frameCount": 6,
+      "allFramesTransparent": true,
+      "allFramesInBounds": true,
+      "anchor": [
+        32,
+        58
+      ],
+      "transitions": [
+        {
+          "from": 0,
+          "to": 1,
+          "silhouetteIoU": 0.9171528588098017,
+          "meanChannelDelta": 6.934814453125,
+          "centroidDelta": [
+            0.4002129439050002,
+            -0.46078777381679714
+          ],
+          "areaRatio": 1.0563204005006257
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "silhouetteIoU": 0.9142857142857143,
+          "meanChannelDelta": 8.0955810546875,
+          "centroidDelta": [
+            -0.7317826406830115,
+            0.12611853474087553
+          ],
+          "areaRatio": 0.9845971563981043
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "silhouetteIoU": 0.8479467258601554,
+          "meanChannelDelta": 10.85711669921875,
+          "centroidDelta": [
+            1.3464188937658506,
+            -0.021890069172094684
+          ],
+          "areaRatio": 1.0036101083032491
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "silhouetteIoU": 0.9286536248561565,
+          "meanChannelDelta": 6.36041259765625,
+          "centroidDelta": [
+            -0.06294821624884861,
+            -0.0619656293967239
+          ],
+          "areaRatio": 1.0095923261390887
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "silhouetteIoU": 0.8953488372093024,
+          "meanChannelDelta": 7.3211669921875,
+          "centroidDelta": [
+            -0.4659048434353821,
+            0.2792963333614651
+          ],
+          "areaRatio": 0.9358669833729216
+        },
+        {
+          "from": 5,
+          "to": 0,
+          "seam": true,
+          "silhouetteIoU": 0.9400977995110025,
+          "meanChannelDelta": 5.0467529296875
+        }
+      ]
+    },
+    {
+      "name": "trade_offer",
+      "frameCount": 6,
+      "allFramesTransparent": true,
+      "allFramesInBounds": true,
+      "anchor": [
+        32,
+        58
+      ],
+      "transitions": [
+        {
+          "from": 0,
+          "to": 1,
+          "silhouetteIoU": 0.9316843345111896,
+          "meanChannelDelta": 7.1151123046875,
+          "centroidDelta": [
+            -0.24026770775236983,
+            0.23394683026585028
+          ],
+          "areaRatio": 1.0122699386503067
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "silhouetteIoU": 0.8888888888888888,
+          "meanChannelDelta": 8.646484375,
+          "centroidDelta": [
+            0.7696381288614269,
+            -0.5588187702265373
+          ],
+          "areaRatio": 0.9987878787878788
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "silhouetteIoU": 0.8257080610021786,
+          "meanChannelDelta": 12.74212646484375,
+          "centroidDelta": [
+            1.57906012124527,
+            0.10999247914672594
+          ],
+          "areaRatio": 1.0339805825242718
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "silhouetteIoU": 0.827968923418424,
+          "meanChannelDelta": 13.13604736328125,
+          "centroidDelta": [
+            -1.3556736646292862,
+            -0.025387545398174893
+          ],
+          "areaRatio": 0.9330985915492958
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "silhouetteIoU": 0.9126794258373205,
+          "meanChannelDelta": 8.481201171875,
+          "centroidDelta": [
+            -0.42111142401201107,
+            0.09137801558246395
+          ],
+          "areaRatio": 1.0113207547169811
+        }
+      ]
+    },
+    {
+      "name": "trade_confirm",
+      "frameCount": 6,
+      "allFramesTransparent": true,
+      "allFramesInBounds": true,
+      "anchor": [
+        32,
+        58
+      ],
+      "transitions": [
+        {
+          "from": 0,
+          "to": 1,
+          "silhouetteIoU": 0.9012629161882894,
+          "meanChannelDelta": 6.7164306640625,
+          "centroidDelta": [
+            0.5438230183013566,
+            -0.29357023107597513
+          ],
+          "areaRatio": 1.03690036900369
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "silhouetteIoU": 0.9148446490218642,
+          "meanChannelDelta": 6.73077392578125,
+          "centroidDelta": [
+            0.34223229779382436,
+            0.17364178453207302
+          ],
+          "areaRatio": 0.9739027283511269
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "silhouetteIoU": 0.8862068965517241,
+          "meanChannelDelta": 9.163818359375,
+          "centroidDelta": [
+            -0.4034089896319166,
+            -0.023703989780457846
+          ],
+          "areaRatio": 0.9987819732034104
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "silhouetteIoU": 0.8748564867967853,
+          "meanChannelDelta": 10.14495849609375,
+          "centroidDelta": [
+            -0.7839993399934002,
+            0.19529295292952753
+          ],
+          "areaRatio": 0.9914634146341463
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "silhouetteIoU": 0.8602771362586605,
+          "meanChannelDelta": 9.53369140625,
+          "centroidDelta": [
+            0.9702484994774778,
+            -0.040081754200997466
+          ],
+          "areaRatio": 0.981549815498155
+        }
+      ]
+    }
+  ],
+  "sourceAnalysisFile": "analysis.json",
+  "requiresHumanVisualReview": true,
+  "notes": [
+    "Each source sheet has one scale calibrated to the common standing height; every frame in that sheet shares that scale.",
+    "Alpha bounds and contact candidates do not establish semantic body/hand anchors.",
+    "Statistical change and seam measurements are diagnostics; intentional pose change is expected."
+  ]
+}

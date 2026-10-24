@@ -1,0 +1,593 @@
+{
+  "effects": [
+    {
+      "id": "ENM-10_idle",
+      "name": "idle",
+      "enemyId": "ENM-10",
+      "gameEnemyId": "acid_slug",
+      "label": "idle",
+      "sourcePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B03/v001/ENM-10/ENM-10_actions_A.png",
+      "sourceRects": [
+        [
+          0,
+          0,
+          314,
+          314
+        ],
+        [
+          314,
+          0,
+          313,
+          314
+        ],
+        [
+          627,
+          0,
+          313,
+          314
+        ],
+        [
+          940,
+          0,
+          314,
+          314
+        ]
+      ],
+      "sourceAnchors": [
+        [
+          156,
+          302
+        ],
+        [
+          156,
+          302
+        ],
+        [
+          156,
+          302
+        ],
+        [
+          156,
+          302
+        ]
+      ],
+      "target": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        56
+      ],
+      "scale": 0.16,
+      "fps": 8,
+      "loop": true,
+      "kind": "body",
+      "phases": [
+        "idle1",
+        "idle2",
+        "idle3",
+        "idle4"
+      ],
+      "promptPath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B03/v001/ENM-10/ENM-10_A_repair.prompt.txt",
+      "provenancePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B03/v001/ENM-10/provenance.json",
+      "generationMode": "built-in image_gen"
+    },
+    {
+      "id": "ENM-10_move",
+      "name": "move",
+      "enemyId": "ENM-10",
+      "gameEnemyId": "acid_slug",
+      "label": "move",
+      "sourcePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B03/v001/ENM-10/ENM-10_actions_A.png",
+      "sourceRects": [
+        [
+          0,
+          314,
+          314,
+          313
+        ],
+        [
+          314,
+          314,
+          313,
+          313
+        ],
+        [
+          627,
+          314,
+          313,
+          313
+        ],
+        [
+          940,
+          314,
+          314,
+          313
+        ]
+      ],
+      "sourceAnchors": [
+        [
+          156,
+          296
+        ],
+        [
+          156,
+          296
+        ],
+        [
+          156,
+          296
+        ],
+        [
+          156,
+          296
+        ]
+      ],
+      "target": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        56
+      ],
+      "scale": 0.16,
+      "fps": 10,
+      "loop": true,
+      "kind": "body",
+      "phases": [
+        "move1",
+        "move2",
+        "move3",
+        "move4"
+      ],
+      "promptPath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B03/v001/ENM-10/ENM-10_A_repair.prompt.txt",
+      "provenancePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B03/v001/ENM-10/provenance.json",
+      "generationMode": "built-in image_gen"
+    },
+    {
+      "id": "ENM-10_telegraph",
+      "name": "telegraph",
+      "enemyId": "ENM-10",
+      "gameEnemyId": "acid_slug",
+      "label": "telegraph",
+      "sourcePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B03/v001/ENM-10/ENM-10_actions_A.png",
+      "sourceRects": [
+        [
+          0,
+          627,
+          314,
+          313
+        ],
+        [
+          314,
+          627,
+          313,
+          313
+        ],
+        [
+          627,
+          627,
+          313,
+          313
+        ],
+        [
+          940,
+          627,
+          314,
+          313
+        ]
+      ],
+      "sourceAnchors": [
+        [
+          156,
+          277
+        ],
+        [
+          156,
+          277
+        ],
+        [
+          156,
+          277
+        ],
+        [
+          156,
+          277
+        ]
+      ],
+      "target": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        56
+      ],
+      "scale": 0.16,
+      "fps": 10,
+      "loop": false,
+      "kind": "body",
+      "phases": [
+        "telegraph1",
+        "telegraph2",
+        "telegraph3",
+        "telegraph4"
+      ],
+      "promptPath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B03/v001/ENM-10/ENM-10_A_repair.prompt.txt",
+      "provenancePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B03/v001/ENM-10/provenance.json",
+      "generationMode": "built-in image_gen"
+    },
+    {
+      "id": "ENM-10_attack",
+      "name": "attack",
+      "enemyId": "ENM-10",
+      "gameEnemyId": "acid_slug",
+      "label": "attack",
+      "sourcePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B03/v001/ENM-10/ENM-10_actions_A.png",
+      "sourceRects": [
+        [
+          0,
+          940,
+          329,
+          314
+        ],
+        [
+          329,
+          940,
+          323,
+          314
+        ],
+        [
+          652,
+          940,
+          315,
+          314
+        ],
+        [
+          967,
+          940,
+          287,
+          314
+        ]
+      ],
+      "sourceAnchors": [
+        [
+          156,
+          249
+        ],
+        [
+          141,
+          249
+        ],
+        [
+          131,
+          249
+        ],
+        [
+          129,
+          249
+        ]
+      ],
+      "target": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        56
+      ],
+      "scale": 0.16,
+      "fps": 14,
+      "loop": false,
+      "kind": "body",
+      "phases": [
+        "attack1",
+        "attack2",
+        "attack3",
+        "attack4"
+      ],
+      "promptPath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B03/v001/ENM-10/ENM-10_A_repair.prompt.txt",
+      "provenancePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B03/v001/ENM-10/provenance.json",
+      "generationMode": "built-in image_gen"
+    },
+    {
+      "id": "ENM-10_recover",
+      "name": "recover",
+      "enemyId": "ENM-10",
+      "gameEnemyId": "acid_slug",
+      "label": "recover",
+      "sourcePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B03/v001/ENM-10/ENM-10_actions_B.png",
+      "sourceRects": [
+        [
+          0,
+          0,
+          335,
+          314
+        ],
+        [
+          335,
+          0,
+          292,
+          314
+        ],
+        [
+          627,
+          0,
+          313,
+          314
+        ],
+        [
+          940,
+          0,
+          314,
+          314
+        ]
+      ],
+      "sourceAnchors": [
+        [
+          156,
+          299
+        ],
+        [
+          135,
+          299
+        ],
+        [
+          156,
+          299
+        ],
+        [
+          156,
+          299
+        ]
+      ],
+      "target": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        56
+      ],
+      "scale": 0.16,
+      "fps": 10,
+      "loop": false,
+      "kind": "body",
+      "phases": [
+        "recover1",
+        "recover2",
+        "recover3",
+        "recover4"
+      ],
+      "promptPath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B03/v001/ENM-10/ENM-10_B_repair.prompt.txt",
+      "provenancePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B03/v001/ENM-10/provenance.json",
+      "generationMode": "built-in image_gen"
+    },
+    {
+      "id": "ENM-10_hurt",
+      "name": "hurt",
+      "enemyId": "ENM-10",
+      "gameEnemyId": "acid_slug",
+      "label": "hurt",
+      "sourcePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B03/v001/ENM-10/ENM-10_actions_B.png",
+      "sourceRects": [
+        [
+          0,
+          314,
+          314,
+          313
+        ],
+        [
+          314,
+          314,
+          313,
+          313
+        ],
+        [
+          627,
+          314,
+          313,
+          313
+        ],
+        [
+          940,
+          314,
+          314,
+          313
+        ]
+      ],
+      "sourceAnchors": [
+        [
+          156,
+          295
+        ],
+        [
+          156,
+          295
+        ],
+        [
+          156,
+          295
+        ],
+        [
+          156,
+          295
+        ]
+      ],
+      "target": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        56
+      ],
+      "scale": 0.16,
+      "fps": 12,
+      "loop": false,
+      "kind": "body",
+      "phases": [
+        "hurt1",
+        "hurt2",
+        "hurt3",
+        "hurt4"
+      ],
+      "promptPath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B03/v001/ENM-10/ENM-10_B_repair.prompt.txt",
+      "provenancePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B03/v001/ENM-10/provenance.json",
+      "generationMode": "built-in image_gen"
+    },
+    {
+      "id": "ENM-10_death",
+      "name": "death",
+      "enemyId": "ENM-10",
+      "gameEnemyId": "acid_slug",
+      "label": "death",
+      "sourcePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B03/v001/ENM-10/ENM-10_actions_B.png",
+      "sourceRects": [
+        [
+          0,
+          627,
+          314,
+          313
+        ],
+        [
+          314,
+          627,
+          313,
+          313
+        ],
+        [
+          0,
+          940,
+          314,
+          314
+        ],
+        [
+          627,
+          627,
+          313,
+          313
+        ],
+        [
+          940,
+          627,
+          314,
+          313
+        ],
+        [
+          314,
+          940,
+          313,
+          314
+        ],
+        [
+          627,
+          940,
+          313,
+          314
+        ],
+        [
+          940,
+          940,
+          314,
+          314
+        ]
+      ],
+      "sourceAnchors": [
+        [
+          156,
+          288
+        ],
+        [
+          156,
+          288
+        ],
+        [
+          156,
+          243
+        ],
+        [
+          156,
+          288
+        ],
+        [
+          156,
+          288
+        ],
+        [
+          156,
+          243
+        ],
+        [
+          156,
+          243
+        ],
+        [
+          156,
+          243
+        ]
+      ],
+      "target": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        56
+      ],
+      "scale": 0.16,
+      "fps": 10,
+      "loop": false,
+      "kind": "body",
+      "phases": [
+        "失衡",
+        "收缩",
+        "酸囊失压",
+        "软体塌陷",
+        "残酸成滩",
+        "残泡坍缩",
+        "残液散开",
+        "尾液"
+      ],
+      "sourceFrameOrder": [
+        8,
+        9,
+        12,
+        10,
+        11,
+        13,
+        14,
+        15
+      ],
+      "promptPath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B03/v001/ENM-10/ENM-10_B_repair.prompt.txt",
+      "provenancePath": "/home/lululu/zgame/assets/RAW/enemies/ENM-B03/v001/ENM-10/provenance.json",
+      "generationMode": "built-in image_gen"
+    }
+  ],
+  "anchorPolicy": "semantic torso joint for flying; planted feet or belly baseline for ground; row calibration keeps all frames same scale .16; no bbox recenter",
+  "deathReview": {
+    "originalFrameOrder": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "revisedFrameOrder": [
+      8,
+      9,
+      12,
+      10,
+      11,
+      13,
+      14,
+      15
+    ],
+    "reason": "人工按实际死亡阶段重排，避免第四到第五帧从塌陷主体回到完整主体；原始PNG保留。"
+  }
+}

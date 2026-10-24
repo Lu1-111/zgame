@@ -1,0 +1,149 @@
+{
+  "format": "nailong-processed-enemies-v1",
+  "version": "v002",
+  "canvas": [
+    64,
+    64
+  ],
+  "direction": "right",
+  "pixel_filter": "nearest",
+  "enemies": {
+    "ENM-01": {
+      "name": "苔甲虫",
+      "slug": "moss_beetle",
+      "path": "assets/PROCESSED/enemies/ENM-01/v002",
+      "root": [
+        32,
+        58
+      ],
+      "root_kind": "ground",
+      "animation_count": 7,
+      "frame_count": 38,
+      "layers": [
+        "body"
+      ]
+    },
+    "ENM-02": {
+      "name": "奶罐哥布林",
+      "slug": "milk_goblin",
+      "path": "assets/PROCESSED/enemies/ENM-02/v002",
+      "root": [
+        32,
+        58
+      ],
+      "root_kind": "ground",
+      "animation_count": 7,
+      "frame_count": 38,
+      "layers": [
+        "body"
+      ]
+    },
+    "ENM-03": {
+      "name": "奶滴史莱姆",
+      "slug": "milk_slime",
+      "path": "assets/PROCESSED/enemies/ENM-03/v002",
+      "root": [
+        32,
+        58
+      ],
+      "root_kind": "ground",
+      "animation_count": 15,
+      "frame_count": 84,
+      "layers": [
+        "body",
+        "child"
+      ]
+    },
+    "ENM-04": {
+      "name": "苔原奶狐",
+      "slug": "moss_fox",
+      "path": "assets/PROCESSED/enemies/ENM-04/v002",
+      "root": [
+        32,
+        58
+      ],
+      "root_kind": "ground",
+      "animation_count": 7,
+      "frame_count": 38,
+      "layers": [
+        "body"
+      ]
+    },
+    "ENM-05": {
+      "name": "霜晶冰灵",
+      "slug": "frost_sprite",
+      "path": "assets/PROCESSED/enemies/ENM-05/v002",
+      "root": [
+        32,
+        32
+      ],
+      "root_kind": "body",
+      "animation_count": 7,
+      "frame_count": 38,
+      "layers": [
+        "body"
+      ]
+    },
+    "ENM-06": {
+      "name": "暗影奶灵",
+      "slug": "shadow_wraith",
+      "path": "assets/PROCESSED/enemies/ENM-06/v002",
+      "root": [
+        32,
+        32
+      ],
+      "root_kind": "body",
+      "animation_count": 8,
+      "frame_count": 44,
+      "layers": [
+        "body"
+      ]
+    },
+    "ENM-07": {
+      "name": "藤鞭花",
+      "slug": "vine_flower",
+      "path": "assets/PROCESSED/enemies/ENM-07/v002",
+      "root": [
+        32,
+        58
+      ],
+      "root_kind": "root",
+      "animation_count": 7,
+      "frame_count": 38,
+      "layers": [
+        "body"
+      ]
+    },
+    "ENM-08": {
+      "name": "蜜蜡蜂",
+      "slug": "wax_bee",
+      "path": "assets/PROCESSED/enemies/ENM-08/v002",
+      "root": [
+        32,
+        32
+      ],
+      "root_kind": "body",
+      "animation_count": 7,
+      "frame_count": 38,
+      "layers": [
+        "body"
+      ]
+    }
+  },
+  "latestLibraryIndex": "manifest_b04.json",
+  "supplements": [
+    {
+      "batch": "ENM-B03",
+      "catalog": "ENM-B03/v001/catalog.json",
+      "enemyCount": 6,
+      "newTypes": 5
+    },
+    {
+      "batch": "ENM-B04",
+      "catalog": "ENM-B04/v001/catalog.json",
+      "enemyCount": 9,
+      "remadeOldTypes": 7,
+      "gameTypesAdded": 2
+    }
+  ]
+}

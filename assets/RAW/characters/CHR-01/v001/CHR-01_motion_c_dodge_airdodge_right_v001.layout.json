@@ -1,0 +1,287 @@
+{
+  "sourceId": "motion_c",
+  "file": "/home/lululu/zgame/assets/RAW/characters/CHR-01/v001/CHR-01_motion_c_dodge_airdodge_right_v001.png",
+  "columns": 4,
+  "rows": 2,
+  "sourceSize": [
+    1774,
+    887
+  ],
+  "columnBoundsPx": [
+    0,
+    444,
+    887,
+    1330,
+    1774
+  ],
+  "rowBoundsPx": [
+    0,
+    451,
+    887
+  ],
+  "cellRects": {
+    "0": [
+      0,
+      0,
+      444,
+      451
+    ],
+    "1": [
+      444,
+      0,
+      443,
+      451
+    ],
+    "2": [
+      887,
+      0,
+      443,
+      451
+    ],
+    "3": [
+      1330,
+      0,
+      444,
+      451
+    ],
+    "4": [
+      0,
+      451,
+      444,
+      436
+    ],
+    "5": [
+      444,
+      451,
+      443,
+      436
+    ],
+    "6": [
+      887,
+      451,
+      443,
+      436
+    ],
+    "7": [
+      1330,
+      451,
+      444,
+      436
+    ]
+  },
+  "calibration": {
+    "referenceCell": 3,
+    "referenceHeightPx": 388,
+    "targetStandingHeight": 40
+  },
+  "animations": [
+    {
+      "name": "dodge",
+      "label": "地面闪避",
+      "fps": 16,
+      "loop": false,
+      "anchorMode": "ground",
+      "cells": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "name": "air_dodge",
+      "label": "空中闪避",
+      "fps": 16,
+      "loop": false,
+      "anchorMode": "air",
+      "cells": [
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  ],
+  "anchors": {
+    "0": [
+      226,
+      433
+    ],
+    "1": [
+      201,
+      433
+    ],
+    "2": [
+      201,
+      433
+    ],
+    "3": [
+      209,
+      436
+    ],
+    "4": [
+      234,
+      382
+    ],
+    "5": [
+      205,
+      382
+    ],
+    "6": [
+      227,
+      382
+    ],
+    "7": [
+      225,
+      382
+    ]
+  },
+  "anchorsAbsolute": {
+    "0": [
+      226,
+      433
+    ],
+    "1": [
+      645,
+      433
+    ],
+    "2": [
+      1088,
+      433
+    ],
+    "3": [
+      1539,
+      436
+    ],
+    "4": [
+      234,
+      833
+    ],
+    "5": [
+      649,
+      833
+    ],
+    "6": [
+      1114,
+      833
+    ],
+    "7": [
+      1555,
+      833
+    ]
+  },
+  "measurements": {
+    "0": {
+      "alpha128BBox": [
+        87,
+        92,
+        383,
+        433
+      ],
+      "lowestSilhouetteY": 432,
+      "lowest4RowXSpan": [
+        106,
+        346
+      ]
+    },
+    "1": {
+      "alpha128BBox": [
+        32,
+        176,
+        418,
+        433
+      ],
+      "lowestSilhouetteY": 432,
+      "lowest4RowXSpan": [
+        42,
+        360
+      ]
+    },
+    "2": {
+      "alpha128BBox": [
+        47,
+        145,
+        395,
+        433
+      ],
+      "lowestSilhouetteY": 432,
+      "lowest4RowXSpan": [
+        55,
+        346
+      ]
+    },
+    "3": {
+      "alpha128BBox": [
+        78,
+        48,
+        358,
+        436
+      ],
+      "lowestSilhouetteY": 435,
+      "lowest4RowXSpan": [
+        87,
+        330
+      ]
+    },
+    "4": {
+      "alpha128BBox": [
+        109,
+        17,
+        372,
+        357
+      ],
+      "lowestSilhouetteY": 356,
+      "lowest4RowXSpan": [
+        258,
+        275
+      ]
+    },
+    "5": {
+      "alpha128BBox": [
+        41,
+        64,
+        423,
+        353
+      ],
+      "lowestSilhouetteY": 352,
+      "lowest4RowXSpan": [
+        111,
+        126
+      ]
+    },
+    "6": {
+      "alpha128BBox": [
+        71,
+        49,
+        393,
+        369
+      ],
+      "lowestSilhouetteY": 368,
+      "lowest4RowXSpan": [
+        146,
+        164
+      ]
+    },
+    "7": {
+      "alpha128BBox": [
+        88,
+        16,
+        368,
+        372
+      ],
+      "lowestSilhouetteY": 371,
+      "lowest4RowXSpan": [
+        237,
+        265
+      ]
+    }
+  },
+  "notes": [
+    "Generated with built-in image_gen using CHR-01_master_right_v001.png as the sole reference.",
+    "RAW is preserved unchanged. Transparent alpha checked; alpha>=128 used only for measurement.",
+    "Explicit source rectangles follow empty horizontal bands; equal-row slicing can clip sprites.",
+    "Root anchors are hand estimated from pose and contact plane, not automatic bbox centers. They require visual playback validation.",
+    "Airborne poses use a virtual contact plane; do not bottom-align every frame. Run frames 4 and 8 of the sequence are airborne.",
+    "All final frames use64x64 canvas, anchor(32,58), standing height40 logical pixels."
+  ]
+}

@@ -1,0 +1,236 @@
+{
+  "schemaVersion": 1,
+  "batchId": "ITM-B01",
+  "dataId": "bag_expand",
+  "animation": "idle",
+  "version": "v001",
+  "rawImage": "ITEM_bag_expand_idle_v001.png",
+  "generationSourcePath": "/home/lululu/.codex/generated_images/01a16cb2-8e67-77f1-ac16-f2e0caa35b17/exec-a83e0fdc-f0e2-4e29-9963-a0ef31ada3a2.png",
+  "sha256": "5fd6b3c9d2f32ac29665e7478c10e536efc73917644f12c26370f4d1df80bf52",
+  "requestedSize": [
+    1024,
+    1024
+  ],
+  "actualSize": [
+    1254,
+    1254
+  ],
+  "mode": "RGBA",
+  "alphaExtrema": [
+    0,
+    255
+  ],
+  "grid": [
+    2,
+    2
+  ],
+  "frameSize": [
+    627,
+    627
+  ],
+  "frameOrder": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "sourceAnchors": [
+    [
+      313.5,
+      470.25
+    ],
+    [
+      313.5,
+      470.25
+    ],
+    [
+      313.5,
+      470.25
+    ],
+    [
+      313.5,
+      470.25
+    ]
+  ],
+  "frames": [
+    {
+      "frame": 0,
+      "rect": [
+        0,
+        0,
+        627,
+        627
+      ],
+      "sourceAnchor": [
+        313.5,
+        470.25
+      ],
+      "visibleBoundsByAlphaThreshold": {
+        "1": [
+          31,
+          0,
+          627,
+          627
+        ],
+        "16": [
+          196,
+          192,
+          474,
+          501
+        ],
+        "128": [
+          197,
+          193,
+          473,
+          500
+        ],
+        "240": [
+          198,
+          193,
+          473,
+          499
+        ]
+      }
+    },
+    {
+      "frame": 1,
+      "rect": [
+        627,
+        0,
+        627,
+        627
+      ],
+      "sourceAnchor": [
+        313.5,
+        470.25
+      ],
+      "visibleBoundsByAlphaThreshold": {
+        "1": [
+          1,
+          10,
+          539,
+          619
+        ],
+        "16": [
+          158,
+          192,
+          435,
+          501
+        ],
+        "128": [
+          159,
+          193,
+          434,
+          500
+        ],
+        "240": [
+          159,
+          193,
+          434,
+          499
+        ]
+      }
+    },
+    {
+      "frame": 2,
+      "rect": [
+        0,
+        627,
+        627,
+        627
+      ],
+      "sourceAnchor": [
+        313.5,
+        470.25
+      ],
+      "visibleBoundsByAlphaThreshold": {
+        "1": [
+          31,
+          0,
+          627,
+          627
+        ],
+        "16": [
+          196,
+          192,
+          474,
+          501
+        ],
+        "128": [
+          197,
+          193,
+          473,
+          500
+        ],
+        "240": [
+          198,
+          193,
+          473,
+          499
+        ]
+      }
+    },
+    {
+      "frame": 3,
+      "rect": [
+        627,
+        627,
+        627,
+        627
+      ],
+      "sourceAnchor": [
+        313.5,
+        470.25
+      ],
+      "visibleBoundsByAlphaThreshold": {
+        "1": [
+          0,
+          9,
+          587,
+          611
+        ],
+        "16": [
+          158,
+          192,
+          435,
+          501
+        ],
+        "128": [
+          159,
+          193,
+          434,
+          500
+        ],
+        "240": [
+          159,
+          193,
+          434,
+          499
+        ]
+      }
+    }
+  ],
+  "suggestedOutput": {
+    "worldCanvas": [
+      32,
+      32
+    ],
+    "worldAnchor": [
+      16,
+      24
+    ],
+    "iconCanvas": [
+      24,
+      24
+    ],
+    "loop": true,
+    "fps": 6
+  },
+  "inspection": {
+    "trueTransparency": true,
+    "rawUntouched": true,
+    "generatedDimensionsDifferFromRequested": true,
+    "anchorNormalizationRequired": true,
+    "notes": "Only crop/measure here. Preserve original alpha; faint low-alpha specks are measured separately from visible silhouette. Uniform registration and nearest-neighbor pixel normalization belong to the parent processing pass."
+  }
+}

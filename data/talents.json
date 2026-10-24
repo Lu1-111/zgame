@@ -1,0 +1,136 @@
+{
+  "talents": [
+    {
+      "id": "brute_1",
+      "name": "重锤精通",
+      "branch": "蛮力",
+      "tier": 1,
+      "requires": "",
+      "effect": { "physical_damage_pct": 15 },
+      "cost_point": 1,
+      "cost_coin": 100,
+      "desc": "物理攻击 +15%。"
+    },
+    {
+      "id": "brute_2",
+      "name": "破甲",
+      "branch": "蛮力",
+      "tier": 2,
+      "requires": "brute_1",
+      "effect": { "defense_ignore_pct": 20 },
+      "cost_point": 1,
+      "cost_coin": 130,
+      "desc": "无视敌人 20% 防御。"
+    },
+    {
+      "id": "brute_3",
+      "name": "嗜血",
+      "branch": "蛮力",
+      "tier": 3,
+      "requires": "brute_2",
+      "effect": { "kill_heal_hp": 3 },
+      "cost_point": 1,
+      "cost_coin": 160,
+      "desc": "击杀敌人回复 3 点生命。"
+    },
+    {
+      "id": "brute_4",
+      "name": "钢铁之躯",
+      "branch": "蛮力",
+      "tier": 4,
+      "requires": "brute_3",
+      "effect": { "damage_taken_pct": -10 },
+      "cost_point": 1,
+      "cost_coin": 170,
+      "desc": "受到的伤害 -10%。"
+    },
+    {
+      "id": "milk_1",
+      "name": "奶力涌动",
+      "branch": "奶术",
+      "tier": 1,
+      "requires": "",
+      "effect": { "mana_max": 20 },
+      "cost_point": 1,
+      "cost_coin": 100,
+      "desc": "奶力上限 +20。"
+    },
+    {
+      "id": "milk_2",
+      "name": "法术穿透",
+      "branch": "奶术",
+      "tier": 2,
+      "requires": "milk_1",
+      "effect": { "magic_damage_pct": 12 },
+      "cost_point": 1,
+      "cost_coin": 130,
+      "desc": "法术伤害 +12%。解锁技能『奶盾』。"
+    },
+    {
+      "id": "milk_3",
+      "name": "节流",
+      "branch": "奶术",
+      "tier": 3,
+      "requires": "milk_2",
+      "effect": { "skill_mana_pct": -15 },
+      "cost_point": 1,
+      "cost_coin": 160,
+      "desc": "技能奶力消耗 -15%。"
+    },
+    {
+      "id": "milk_4",
+      "name": "溢乳",
+      "branch": "奶术",
+      "tier": 4,
+      "requires": "milk_3",
+      "effect": { "skill_hit_mana_regen": 2 },
+      "cost_point": 1,
+      "cost_coin": 170,
+      "desc": "技能命中回复 2 点奶力。解锁技能『星乳坠落』。"
+    },
+    {
+      "id": "agile_1",
+      "name": "疾影",
+      "branch": "灵巧",
+      "tier": 1,
+      "requires": "",
+      "effect": { "dodge_cooldown_pct": -30 },
+      "cost_point": 1,
+      "cost_coin": 100,
+      "desc": "闪避冷却 -30%。"
+    },
+    {
+      "id": "agile_2",
+      "name": "铁壁",
+      "branch": "灵巧",
+      "tier": 2,
+      "requires": "agile_1",
+      "effect": { "guard_reduce_pct": 70 },
+      "cost_point": 1,
+      "cost_coin": 130,
+      "desc": "防御减伤由 60% 提高至 70%。"
+    },
+    {
+      "id": "agile_3",
+      "name": "乳步",
+      "branch": "灵巧",
+      "tier": 3,
+      "requires": "agile_2",
+      "effect": { "move_speed_pct": 10 },
+      "cost_point": 1,
+      "cost_coin": 160,
+      "desc": "移动速度 +10%。"
+    },
+    {
+      "id": "agile_4",
+      "name": "三重奶泡",
+      "branch": "灵巧",
+      "tier": 4,
+      "requires": "agile_3",
+      "effect": { "triple_jump": true, "enabled": false },
+      "cost_point": 1,
+      "cost_coin": 170,
+      "desc": "解锁三段跳（本期预留：enabled=false，暂不生效，后续版本开启）。"
+    }
+  ]
+}
