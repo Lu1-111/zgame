@@ -4,7 +4,7 @@
 
 ## 克隆与运行
 
-仓库为私有仓库，需要使用拥有访问权限的 GitHub 账号。安装 Git 与 Godot **4.7.2** 后执行：
+仓库已公开，任何人均可直接克隆，无需登录 GitHub。安装 Git 与 Godot **4.7.2** 后执行：
 
 ```bash
 git clone https://github.com/Lu1-111/zgame.git
