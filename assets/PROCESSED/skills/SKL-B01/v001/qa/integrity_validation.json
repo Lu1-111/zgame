@@ -1,0 +1,535 @@
+{
+  "pngFrameHashesValid": true,
+  "atlasPixelIdentical": true,
+  "totalFrames": 96,
+  "totalStandaloneProductionPngs": 114,
+  "derivedPngs": [
+    {
+      "file": "beam_components/beam_hold_a_muzzle.png",
+      "hash": true,
+      "trueAlpha": true,
+      "size": [
+        96,
+        144
+      ]
+    },
+    {
+      "file": "beam_components/beam_hold_a_middle.png",
+      "hash": true,
+      "trueAlpha": true,
+      "size": [
+        64,
+        144
+      ]
+    },
+    {
+      "file": "beam_components/beam_hold_a_head.png",
+      "hash": true,
+      "trueAlpha": true,
+      "size": [
+        96,
+        144
+      ]
+    },
+    {
+      "file": "beam_components/beam_hold_b_muzzle.png",
+      "hash": true,
+      "trueAlpha": true,
+      "size": [
+        96,
+        144
+      ]
+    },
+    {
+      "file": "beam_components/beam_hold_b_middle.png",
+      "hash": true,
+      "trueAlpha": true,
+      "size": [
+        64,
+        144
+      ]
+    },
+    {
+      "file": "beam_components/beam_hold_b_head.png",
+      "hash": true,
+      "trueAlpha": true,
+      "size": [
+        96,
+        144
+      ]
+    },
+    {
+      "file": "icons/24/skill_omni_slash.png",
+      "hash": true,
+      "trueAlpha": true,
+      "size": [
+        24,
+        24
+      ]
+    },
+    {
+      "file": "icons/48/skill_omni_slash.png",
+      "hash": true,
+      "trueAlpha": true,
+      "size": [
+        48,
+        48
+      ]
+    },
+    {
+      "file": "icons/24/skill_giga_milk_beam.png",
+      "hash": true,
+      "trueAlpha": true,
+      "size": [
+        24,
+        24
+      ]
+    },
+    {
+      "file": "icons/48/skill_giga_milk_beam.png",
+      "hash": true,
+      "trueAlpha": true,
+      "size": [
+        48,
+        48
+      ]
+    },
+    {
+      "file": "icons/24/skill_comet_dash.png",
+      "hash": true,
+      "trueAlpha": true,
+      "size": [
+        24,
+        24
+      ]
+    },
+    {
+      "file": "icons/48/skill_comet_dash.png",
+      "hash": true,
+      "trueAlpha": true,
+      "size": [
+        48,
+        48
+      ]
+    },
+    {
+      "file": "icons/24/skill_star_milk_prison.png",
+      "hash": true,
+      "trueAlpha": true,
+      "size": [
+        24,
+        24
+      ]
+    },
+    {
+      "file": "icons/48/skill_star_milk_prison.png",
+      "hash": true,
+      "trueAlpha": true,
+      "size": [
+        48,
+        48
+      ]
+    },
+    {
+      "file": "icons/24/skill_mirror_milk_guard.png",
+      "hash": true,
+      "trueAlpha": true,
+      "size": [
+        24,
+        24
+      ]
+    },
+    {
+      "file": "icons/48/skill_mirror_milk_guard.png",
+      "hash": true,
+      "trueAlpha": true,
+      "size": [
+        48,
+        48
+      ]
+    },
+    {
+      "file": "icons/24/skill_milk_spring.png",
+      "hash": true,
+      "trueAlpha": true,
+      "size": [
+        24,
+        24
+      ]
+    },
+    {
+      "file": "icons/48/skill_milk_spring.png",
+      "hash": true,
+      "trueAlpha": true,
+      "size": [
+        48,
+        48
+      ]
+    }
+  ],
+  "motion": [
+    {
+      "skill": "skill_omni_slash",
+      "frameCount": 8,
+      "oneUniformScale": true,
+      "contactErrors": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "adjacentSilhouetteOverlap": [
+        {
+          "from": 1,
+          "to": 2,
+          "silhouetteIoU": 0.6982
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "silhouetteIoU": 0.7094
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "silhouetteIoU": 0.7402
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "silhouetteIoU": 0.7405
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "silhouetteIoU": 0.7955
+        },
+        {
+          "from": 6,
+          "to": 7,
+          "silhouetteIoU": 0.7515
+        },
+        {
+          "from": 7,
+          "to": 8,
+          "silhouetteIoU": 0.9296
+        },
+        {
+          "from": 8,
+          "to": 1,
+          "silhouetteIoU": 0.9696
+        }
+      ],
+      "closureIoU": 0.9696
+    },
+    {
+      "skill": "skill_giga_milk_beam",
+      "frameCount": 8,
+      "oneUniformScale": true,
+      "contactErrors": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "adjacentSilhouetteOverlap": [
+        {
+          "from": 1,
+          "to": 2,
+          "silhouetteIoU": 0.8819
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "silhouetteIoU": 0.8894
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "silhouetteIoU": 0.8427
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "silhouetteIoU": 0.8434
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "silhouetteIoU": 0.806
+        },
+        {
+          "from": 6,
+          "to": 7,
+          "silhouetteIoU": 0.9383
+        },
+        {
+          "from": 7,
+          "to": 8,
+          "silhouetteIoU": 0.7835
+        },
+        {
+          "from": 8,
+          "to": 1,
+          "silhouetteIoU": 0.9545
+        }
+      ],
+      "closureIoU": 0.9545
+    },
+    {
+      "skill": "skill_comet_dash",
+      "frameCount": 8,
+      "oneUniformScale": true,
+      "contactErrors": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "adjacentSilhouetteOverlap": [
+        {
+          "from": 1,
+          "to": 2,
+          "silhouetteIoU": 0.7201
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "silhouetteIoU": 0.8196
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "silhouetteIoU": 0.9043
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "silhouetteIoU": 0.7726
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "silhouetteIoU": 0.7137
+        },
+        {
+          "from": 6,
+          "to": 7,
+          "silhouetteIoU": 0.8512
+        },
+        {
+          "from": 7,
+          "to": 8,
+          "silhouetteIoU": 0.9217
+        },
+        {
+          "from": 8,
+          "to": 1,
+          "silhouetteIoU": 0.9412
+        }
+      ],
+      "closureIoU": 0.9412
+    },
+    {
+      "skill": "skill_star_milk_prison",
+      "frameCount": 8,
+      "oneUniformScale": true,
+      "contactErrors": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "adjacentSilhouetteOverlap": [
+        {
+          "from": 1,
+          "to": 2,
+          "silhouetteIoU": 0.8793
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "silhouetteIoU": 0.9106
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "silhouetteIoU": 0.9193
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "silhouetteIoU": 0.8276
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "silhouetteIoU": 0.926
+        },
+        {
+          "from": 6,
+          "to": 7,
+          "silhouetteIoU": 0.856
+        },
+        {
+          "from": 7,
+          "to": 8,
+          "silhouetteIoU": 0.9289
+        },
+        {
+          "from": 8,
+          "to": 1,
+          "silhouetteIoU": 0.8226
+        }
+      ],
+      "closureIoU": 0.8226
+    },
+    {
+      "skill": "skill_mirror_milk_guard",
+      "frameCount": 8,
+      "oneUniformScale": true,
+      "contactErrors": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "adjacentSilhouetteOverlap": [
+        {
+          "from": 1,
+          "to": 2,
+          "silhouetteIoU": 0.8206
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "silhouetteIoU": 0.9105
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "silhouetteIoU": 0.9222
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "silhouetteIoU": 0.8935
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "silhouetteIoU": 0.8212
+        },
+        {
+          "from": 6,
+          "to": 7,
+          "silhouetteIoU": 0.7431
+        },
+        {
+          "from": 7,
+          "to": 8,
+          "silhouetteIoU": 0.8935
+        },
+        {
+          "from": 8,
+          "to": 1,
+          "silhouetteIoU": 0.8857
+        }
+      ],
+      "closureIoU": 0.8857
+    },
+    {
+      "skill": "skill_milk_spring",
+      "frameCount": 8,
+      "oneUniformScale": true,
+      "contactErrors": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "adjacentSilhouetteOverlap": [
+        {
+          "from": 1,
+          "to": 2,
+          "silhouetteIoU": 0.8965
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "silhouetteIoU": 0.8978
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "silhouetteIoU": 0.805
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "silhouetteIoU": 0.8957
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "silhouetteIoU": 0.8805
+        },
+        {
+          "from": 6,
+          "to": 7,
+          "silhouetteIoU": 0.864
+        },
+        {
+          "from": 7,
+          "to": 8,
+          "silhouetteIoU": 0.8987
+        },
+        {
+          "from": 8,
+          "to": 1,
+          "silhouetteIoU": 0.9101
+        }
+      ],
+      "closureIoU": 0.9101
+    }
+  ],
+  "middleSeams": [
+    {
+      "file": "beam_components/beam_hold_a_middle.png",
+      "edgeChannelMismatches": 0
+    },
+    {
+      "file": "beam_components/beam_hold_b_middle.png",
+      "edgeChannelMismatches": 0
+    }
+  ],
+  "notes": [
+    "轮廓重叠率用于提示检查，不把姿势变化当作抖动失败。",
+    "脚底contact按alpha>=128，细小半透明边缘可低于脚线。",
+    "原图8张/技能为阶段关键帧，逻辑时长与命中事件仍以skills.design.json为准。"
+  ]
+}

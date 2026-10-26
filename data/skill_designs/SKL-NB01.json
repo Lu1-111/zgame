@@ -1,0 +1,240 @@
+{
+  "schema_version": 1,
+  "batch_id": "SKL-NB01",
+  "version": "v001",
+  "status": "design_and_art_candidate",
+  "source": "制作人 2026-10-26 技能清单，取代本会话最初的两招及补充四招提案。",
+  "runtime_enabled": false,
+  "scope_note": "独立候选技能与素材批次；尚未替换开发计划书§3.6或data/skills.json中的5技能，不改现有四槽键位。",
+  "rules": {
+    "direction": "right",
+    "damage_formula": null,
+    "skill_loadout_slots": 4,
+    "input_binding": null,
+    "mutual_exclusion": {
+      "buffs_marked_by_producer": [
+        "frenzy",
+        "endurance"
+      ],
+      "relation": null,
+      "recast_policy": null
+    },
+    "unspecified_values_are_null": true
+  },
+  "skills": [
+    {
+      "id": "skill_nb_quickdraw",
+      "asset_id": "SKL-N01",
+      "name": "新奶流-拔刀",
+      "category": "physical",
+      "weapon_requirement": "sword",
+      "weapon_runtime_id": null,
+      "cost": {
+        "stamina": 20,
+        "mana": 0
+      },
+      "cooldown_seconds": 5,
+      "cooldown_start": null,
+      "stance_seconds": 0.2,
+      "trigger": "架势中受到攻击",
+      "effects": {
+        "prevent_triggering_hit_damage": true,
+        "immediate_dash_to": "nearest_target",
+        "attack_count": 1,
+        "ignore_target_defense": true
+      },
+      "damage_mult": null,
+      "dash_distance_px": null,
+      "target_search_radius_px": null,
+      "target_metric": null,
+      "empty_target_policy": null,
+      "animation_rows": [
+        "stance",
+        "counter_slash",
+        "white_wind",
+        "slash_fx"
+      ]
+    },
+    {
+      "id": "skill_nb_laughter",
+      "asset_id": "SKL-N02",
+      "name": "奶龙大笑",
+      "category": "milk_magic",
+      "weapon_requirement": null,
+      "cost": {
+        "stamina": 10,
+        "mana": 20
+      },
+      "cooldown_seconds": 40,
+      "cooldown_start": null,
+      "action": "原地捧腹大笑，随后获得狂击",
+      "buff": {
+        "id": "frenzy",
+        "duration_seconds": 20,
+        "damage_bonus_pct": 30,
+        "damage_taken_bonus_pct": 20,
+        "on_enemy_kill_heal_pct": 30,
+        "kill_heal_basis": null,
+        "non_coexistence": true,
+        "exclusive_with": null,
+        "visual": "continuous_red_particles"
+      },
+      "cast_seconds": null,
+      "animation_rows": [
+        "laugh_enter",
+        "laugh_loop",
+        "red_aura",
+        "kill_heal"
+      ]
+    },
+    {
+      "id": "skill_nb_king_slam",
+      "asset_id": "SKL-N03",
+      "name": "王从天降",
+      "category": "physical",
+      "weapon_requirement": "hammer",
+      "weapon_runtime_id": "hammer_01",
+      "cost": {
+        "stamina": 40,
+        "mana": 0
+      },
+      "cooldown_seconds": 10,
+      "cooldown_start": null,
+      "action": "跃至空中后快速下砸，砸碎地面并造成大范围伤害",
+      "effects": {
+        "stun_seconds": 3,
+        "stun_prevents_actions": true,
+        "visual_ground_debris": true
+      },
+      "damage_mult": null,
+      "radius_px": null,
+      "leap_height_px": null,
+      "slam_speed_px_per_second": null,
+      "terrain_collision_changes": null,
+      "air_cast_policy": null,
+      "boss_stun_policy": null,
+      "animation_rows": [
+        "leap",
+        "slam",
+        "ground_impact",
+        "stun_stars"
+      ]
+    },
+    {
+      "id": "skill_nb_endurance",
+      "asset_id": "SKL-N04",
+      "name": "奶之毅力",
+      "category": "milk_magic",
+      "weapon_requirement": null,
+      "cost": {
+        "stamina": 20,
+        "mana": 30
+      },
+      "cooldown_seconds": 30,
+      "cooldown_start": null,
+      "action": "一只脚踏地，随后获得忍耐",
+      "buff": {
+        "id": "endurance",
+        "duration_seconds": 10,
+        "damage_reduction_pct": 30,
+        "disable_dodge": true,
+        "non_coexistence": true,
+        "exclusive_with": null,
+        "visual": "continuous_white_glow"
+      },
+      "cast_seconds": null,
+      "animation_rows": [
+        "stomp",
+        "brace_recover",
+        "white_aura",
+        "reduced_hit"
+      ]
+    },
+    {
+      "id": "skill_nb_void_milk",
+      "asset_id": "SKL-N05",
+      "name": "虚式-奶",
+      "category": "milk_magic",
+      "weapon_requirement": null,
+      "cost": {
+        "stamina": 0,
+        "mana": 40
+      },
+      "cooldown_seconds": 20,
+      "cooldown_start": "orb_explosion",
+      "charge_seconds": 1,
+      "action": "原地蓄力，随后沿光标方向释放巨大直线光球",
+      "projectile": {
+        "direction": "cursor_at_release",
+        "direction_lock_time": null,
+        "trajectory": "straight",
+        "lifetime_seconds": 2,
+        "speed_px_per_second": null,
+        "contact_damage_mult": null,
+        "contact_hit_interval_seconds": null,
+        "contact_explodes": false,
+        "pierce_policy": null,
+        "terrain_collision_policy": null
+      },
+      "explosion": {
+        "manual_detonation": "再次点击同一技能键",
+        "automatic_detonation": "飞行满2秒",
+        "damage_mult": null,
+        "radius_px": null,
+        "higher_damage_than_contact": true
+      },
+      "recast_cost": {
+        "mana": 0,
+        "stamina": 0
+      },
+      "charge_interrupt_cost_policy": null,
+      "room_change_cleanup_policy": null,
+      "animation_rows": [
+        "charge",
+        "release",
+        "orb_loop",
+        "explosion"
+      ]
+    },
+    {
+      "id": "skill_nb_arcane_source",
+      "asset_id": "SKL-N06",
+      "name": "奶法之源",
+      "category": "milk_magic",
+      "weapon_requirement": null,
+      "cost": {
+        "stamina": 20,
+        "mana": 20
+      },
+      "cooldown_seconds": 30,
+      "cooldown_start": null,
+      "action": "拍地召出短暂存在的法阵，随后获得奥术",
+      "buff": {
+        "id": "arcane",
+        "duration_seconds": 20,
+        "normal_attack_physical_converts_to": "milk_magic",
+        "normal_attack_already_milk_magic_bonus_pct": 10,
+        "other_damage_unchanged": true,
+        "non_coexistence": null,
+        "visual": "continuous_blue_particles"
+      },
+      "cast_seconds": null,
+      "circle_visual_seconds": null,
+      "animation_rows": [
+        "ground_slap",
+        "rise",
+        "magic_circle",
+        "blue_aura"
+      ]
+    }
+  ],
+  "open_decisions": [
+    "狂击/忍耐的不可共存是否仅指二者；覆盖、拒绝施放、同类不叠加中的哪一种；奥术是否参与互斥。",
+    "击杀恢复30%生命值的基准（最大/当前/已损失生命值）、召唤物击杀归属。",
+    "剑类武器ID尚未在运行时武器表注册，现有4类为锤、枪、杖、法球；不擅自将拔刀映射到奶杖。",
+    "伤害倍率、判定范围、索敌距离、光球速度、持续接触伤害频率、穿透与撞墙行为。",
+    "王从天降的空中施放规则、眩晕对精英/BOSS的适用性、地形破坏是视觉还是物理机制。",
+    "除虚式-奶以外的冷却起点、蓄力/动作被打断时的资源与冷却处理。",
+    "虚式-奶瞄准采样时点、切房/死亡时光球回收与冷却起算规则。"
+  ]
+}

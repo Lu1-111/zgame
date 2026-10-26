@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-26",
+  "scope": "current main project after adding independent SKL-B01 assets; gameplay skills not implemented by this batch",
+  "checks": [
+    {
+      "name": "import",
+      "exitCode": 0,
+      "errors": [],
+      "summary": [],
+      "log": "qa/main_project/import.log"
+    },
+    {
+      "name": "unit_tests",
+      "exitCode": 0,
+      "errors": [],
+      "summary": [
+        "  ✅ PASS: honey_queen 原地循环播放多帧 idle",
+        "  ✅ PASS: honey_queen 镜像保持语义根",
+        "  ✅ PASS: honey_queen 待机不自动播放攻击特效",
+        "  ✅ PASS: honey_queen 与战斗表编号一致",
+        "<< 用例 test_enemy_assets.gd 通过（66 条断言）>>",
+        "=== 汇总：passed=423 / total=423 ===",
+        "RESULT: ALL PASS"
+      ],
+      "log": "qa/main_project/unit_tests.log"
+    },
+    {
+      "name": "smoke",
+      "exitCode": 0,
+      "errors": [],
+      "summary": [],
+      "log": "qa/main_project/smoke.log"
+    }
+  ],
+  "passed": true
+}

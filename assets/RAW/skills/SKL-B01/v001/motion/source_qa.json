@@ -1,0 +1,30 @@
+{
+  "status": "source_ready_for_processing",
+  "generated_by": "built-in image_gen",
+  "checks": {
+    "sheet_count": 3,
+    "total_body_poses": 48,
+    "actual_sheet_size": [1254, 1254],
+    "real_rgba_transparency": true,
+    "all_frames_face_right": true,
+    "all_frames_full_body_unclipped": true,
+    "large_vfx_kept_out_of_body_layer": true,
+    "same_yellow_cream_green_eye_identity": true,
+    "no_costume_or_horns_added": true
+  },
+  "visual_review": [
+    {"skill_id":"skill_omni_slash","frames":8,"result":"准备、挥砍、举刃终结、回收可读；有小奶白能量短刃，独立大刀光需由FX负责。"},
+    {"skill_id":"skill_giga_milk_beam","frames":8,"result":"准备、腹前双手辅助蓄力、鼓腮、张口、收招可读；实际释放口在嘴部，发射两帧可循环。"},
+    {"skill_id":"skill_comet_dash","frames":8,"result":"下压、前倾、双臂摆后、回稳可读，原地姿态不承诺世界位移。"},
+    {"skill_id":"skill_star_milk_prison","frames":8,"result":"聚掌、手掌下压、前伸控制、回收可读，牢笼和星环为独立特效。"},
+    {"skill_id":"skill_mirror_milk_guard","frames":8,"result":"架势、收臂格挡、受击缩肩、双掌前推、回正可读；盾面需独立特效。"},
+    {"skill_id":"skill_milk_spring","frames":8,"result":"合掌、向下施法、闭眼保持、摊掌、回正可读；泉水和治疗圈为独立特效。"}
+  ],
+  "processing_notes": [
+    "提示词要求1024方图，工具实际返回1254方图；必须采用layout.json的实测位置，不能直接按256格裁切。",
+    "图间源角色高度不同，已经分别提供统一缩放倍率；每张源表内保持一个倍率，禁止按帧bbox拉伸。",
+    "低透明度边缘会放大bbox；布局测量阈值alpha>64，只选择连通主体，保留原RAW的全部alpha。",
+    "脚带中心仅是源root建议，前倾动作和挥刃动作需要处理后连播微调，保留真实压身幅度。",
+    "首尾中立由生图独立绘制，非像素完全一致；PROCESSED可复用既有canonical作过渡，并把复用明确记录在manifest。"
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "skill_id": "skill_star_milk_prison",
+  "sheet": "skill_star_milk_prison_fx_sheet.png",
+  "layout": {
+    "columns": 4,
+    "rows": 2,
+    "order": "row_major",
+    "actual_size": [
+      1774,
+      887
+    ],
+    "cell_boundaries_x": [
+      0,
+      444,
+      887,
+      1330,
+      1774
+    ],
+    "cell_boundaries_y": [
+      0,
+      444,
+      887
+    ]
+  },
+  "target_frame_size": [
+    192,
+    128
+  ],
+  "target_root_px": [
+    96,
+    112
+  ],
+  "frames": [
+    "ring_small",
+    "ring_rise",
+    "cage_rise",
+    "cage_full",
+    "hold_a",
+    "hold_b",
+    "breakup",
+    "fade"
+  ],
+  "loop_frames": [
+    4,
+    5
+  ],
+  "generation": "builtin_image_gen",
+  "alpha_extrema": [
+    0,
+    255
+  ],
+  "source_root_measurement": "Common ground anchor at cell x=width/2,y=0.82*height; visually bottom center gold node on ring. Actual rings fall around local y355 in top row,390 in bottom row; measure ground ring lower/center line, common source scale, only translate. Cage interior alpha remains transparent, sparse rim speckles may float inward.",
+  "qa_note": "Actual grid size differs from request. Main cage ribs remain inside cells, alpha speckle can touch edges. Preserve intentional ring growth and hold silhouette; never per-frame bbox resize.",
+  "source_roots_px": [
+    [
+      222,
+      366
+    ],
+    [
+      222,
+      366
+    ],
+    [
+      222,
+      366
+    ],
+    [
+      222,
+      366
+    ],
+    [
+      222,
+      390
+    ],
+    [
+      222,
+      390
+    ],
+    [
+      222,
+      390
+    ],
+    [
+      222,
+      390
+    ]
+  ],
+  "suggested_common_scale": 0.24
+}

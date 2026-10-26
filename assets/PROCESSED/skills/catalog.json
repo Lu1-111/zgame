@@ -1,0 +1,176 @@
+{
+  "schema": "skill_asset_catalog/1.0",
+  "date": "2026-10-26",
+  "skill_count": 12,
+  "actor_frames": 96,
+  "fx_frames": 96,
+  "icon_designs": 12,
+  "icon_files": 24,
+  "beam_components": 6,
+  "raw_sheet_count_including_candidates": 22,
+  "runtime_note": "此索引统计素材，不代表12项均已接入玩法。各批次画布、锚点、帧率以各自manifest为准。",
+  "skills": [
+    {
+      "id": "skill_omni_slash",
+      "name": "超究极武神霸斩",
+      "batch": "SKL-B01",
+      "manifest": "SKL-B01/v001/manifest.json",
+      "actor_frames": 8,
+      "fx_frames": 8,
+      "icons": [
+        "icons/24/skill_omni_slash.png",
+        "icons/48/skill_omni_slash.png"
+      ],
+      "preview": "SKL-B01/v001/preview/index.html"
+    },
+    {
+      "id": "skill_giga_milk_beam",
+      "name": "极巨化奶光炮",
+      "batch": "SKL-B01",
+      "manifest": "SKL-B01/v001/manifest.json",
+      "actor_frames": 8,
+      "fx_frames": 8,
+      "icons": [
+        "icons/24/skill_giga_milk_beam.png",
+        "icons/48/skill_giga_milk_beam.png"
+      ],
+      "preview": "SKL-B01/v001/preview/index.html"
+    },
+    {
+      "id": "skill_comet_dash",
+      "name": "奶泡彗星冲",
+      "batch": "SKL-B01",
+      "manifest": "SKL-B01/v001/manifest.json",
+      "actor_frames": 8,
+      "fx_frames": 8,
+      "icons": [
+        "icons/24/skill_comet_dash.png",
+        "icons/48/skill_comet_dash.png"
+      ],
+      "preview": "SKL-B01/v001/preview/index.html"
+    },
+    {
+      "id": "skill_star_milk_prison",
+      "name": "星环凝乳牢",
+      "batch": "SKL-B01",
+      "manifest": "SKL-B01/v001/manifest.json",
+      "actor_frames": 8,
+      "fx_frames": 8,
+      "icons": [
+        "icons/24/skill_star_milk_prison.png",
+        "icons/48/skill_star_milk_prison.png"
+      ],
+      "preview": "SKL-B01/v001/preview/index.html"
+    },
+    {
+      "id": "skill_mirror_milk_guard",
+      "name": "奶盾·镜返",
+      "batch": "SKL-B01",
+      "manifest": "SKL-B01/v001/manifest.json",
+      "actor_frames": 8,
+      "fx_frames": 8,
+      "icons": [
+        "icons/24/skill_mirror_milk_guard.png",
+        "icons/48/skill_mirror_milk_guard.png"
+      ],
+      "preview": "SKL-B01/v001/preview/index.html"
+    },
+    {
+      "id": "skill_milk_spring",
+      "name": "生命奶泉",
+      "batch": "SKL-B01",
+      "manifest": "SKL-B01/v001/manifest.json",
+      "actor_frames": 8,
+      "fx_frames": 8,
+      "icons": [
+        "icons/24/skill_milk_spring.png",
+        "icons/48/skill_milk_spring.png"
+      ],
+      "preview": "SKL-B01/v001/preview/index.html"
+    },
+    {
+      "id": "skill_nb_quickdraw",
+      "asset_id": "SKL-N01",
+      "name": "新奶流-拔刀",
+      "batch": "SKL-NB01",
+      "manifest": "SKL-NB01/v001/manifest.json",
+      "actor_frames": 8,
+      "fx_frames": 8,
+      "icons": [
+        "icons/SKL-N01_icon_v001.png",
+        "icons/SKL-N01_icon_preview_v001.png"
+      ],
+      "preview": "SKL-NB01/v001/preview.html"
+    },
+    {
+      "id": "skill_nb_laughter",
+      "asset_id": "SKL-N02",
+      "name": "奶龙大笑",
+      "batch": "SKL-NB01",
+      "manifest": "SKL-NB01/v001/manifest.json",
+      "actor_frames": 8,
+      "fx_frames": 8,
+      "icons": [
+        "icons/SKL-N02_icon_v001.png",
+        "icons/SKL-N02_icon_preview_v001.png"
+      ],
+      "preview": "SKL-NB01/v001/preview.html"
+    },
+    {
+      "id": "skill_nb_king_slam",
+      "asset_id": "SKL-N03",
+      "name": "王从天降",
+      "batch": "SKL-NB01",
+      "manifest": "SKL-NB01/v001/manifest.json",
+      "actor_frames": 8,
+      "fx_frames": 8,
+      "icons": [
+        "icons/SKL-N03_icon_v001.png",
+        "icons/SKL-N03_icon_preview_v001.png"
+      ],
+      "preview": "SKL-NB01/v001/preview.html"
+    },
+    {
+      "id": "skill_nb_endurance",
+      "asset_id": "SKL-N04",
+      "name": "奶之毅力",
+      "batch": "SKL-NB01",
+      "manifest": "SKL-NB01/v001/manifest.json",
+      "actor_frames": 8,
+      "fx_frames": 8,
+      "icons": [
+        "icons/SKL-N04_icon_v001.png",
+        "icons/SKL-N04_icon_preview_v001.png"
+      ],
+      "preview": "SKL-NB01/v001/preview.html"
+    },
+    {
+      "id": "skill_nb_void_milk",
+      "asset_id": "SKL-N05",
+      "name": "虚式-奶",
+      "batch": "SKL-NB01",
+      "manifest": "SKL-NB01/v001/manifest.json",
+      "actor_frames": 8,
+      "fx_frames": 8,
+      "icons": [
+        "icons/SKL-N05_icon_v001.png",
+        "icons/SKL-N05_icon_preview_v001.png"
+      ],
+      "preview": "SKL-NB01/v001/preview.html"
+    },
+    {
+      "id": "skill_nb_arcane_source",
+      "asset_id": "SKL-N06",
+      "name": "奶法之源",
+      "batch": "SKL-NB01",
+      "manifest": "SKL-NB01/v001/manifest.json",
+      "actor_frames": 8,
+      "fx_frames": 8,
+      "icons": [
+        "icons/SKL-N06_icon_v001.png",
+        "icons/SKL-N06_icon_preview_v001.png"
+      ],
+      "preview": "SKL-NB01/v001/preview.html"
+    }
+  ]
+}

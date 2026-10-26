@@ -1,0 +1,89 @@
+{
+  "skill_id": "skill_omni_slash",
+  "sheet": "skill_omni_slash_fx_sheet.png",
+  "layout": {
+    "columns": 4,
+    "rows": 2,
+    "order": "row_major",
+    "actual_size": [
+      1774,
+      887
+    ],
+    "cell_boundaries_x": [
+      0,
+      444,
+      887,
+      1330,
+      1774
+    ],
+    "cell_boundaries_y": [
+      0,
+      444,
+      887
+    ]
+  },
+  "target_frame_size": [
+    256,
+    192
+  ],
+  "target_root_px": [
+    64,
+    160
+  ],
+  "source_prompt_root_fraction": [
+    0.25,
+    0.833333
+  ],
+  "frames": [
+    "rising_cut",
+    "descending_cut",
+    "opposite_cut",
+    "horizontal_sweep",
+    "cross",
+    "finish",
+    "breakup",
+    "fade"
+  ],
+  "generation": "builtin_image_gen",
+  "alpha_extrema": [
+    0,
+    255
+  ],
+  "qa_note": "Generated dimensions differ from requested; use exact boundaries. Inspect cell edge overlap before processing. Preserve temporal effect progression; no per-frame bbox scaling.",
+  "source_roots_px": [
+    [
+      64,
+      414
+    ],
+    [
+      64,
+      414
+    ],
+    [
+      64,
+      414
+    ],
+    [
+      64,
+      414
+    ],
+    [
+      64,
+      414
+    ],
+    [
+      64,
+      414
+    ],
+    [
+      64,
+      414
+    ],
+    [
+      64,
+      414
+    ]
+  ],
+  "source_root_measurement": "Effect-only attack shape; invisible player foot semantic root can be placed source(64,414) consistently across cells; common scale .38 to .40 => target(64,160) and all main arcs fully forward/up of player. The generated arcs are visually centered in the source cells, so do NOT use prompt root without visual registration.",
+  "suggested_common_scale": 0.38
+}

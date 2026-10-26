@@ -1,0 +1,3130 @@
+{
+  "schema_version": 1,
+  "batch_id": "SKL-NB01",
+  "version": "v001",
+  "status": "art_candidate_not_runtime_integrated",
+  "generator": "built-in image_gen",
+  "processing": "explicit row cuts; per-row column gutters; fixed hero scale per source; nearest-neighbor; original alpha preserved",
+  "frame_count": 96,
+  "icon_count": 6,
+  "sources": [
+    {
+      "asset_id": "SKL-N01",
+      "file": "SKL-N01_quickdraw_right_v001.png",
+      "sha256": "2de9a6f2634996187cbafd5fdf60d0af226afe5a46faa974a503de3da9785175",
+      "size": [
+        1254,
+        1254
+      ],
+      "row_edges": [
+        0,
+        349,
+        650,
+        973,
+        1254
+      ],
+      "animations": [
+        {
+          "id": "SKL-N01_stance",
+          "source_rects": [
+            [
+              46,
+              59,
+              237,
+              272
+            ],
+            [
+              364,
+              80,
+              240,
+              251
+            ],
+            [
+              671,
+              112,
+              241,
+              218
+            ],
+            [
+              991,
+              112,
+              239,
+              219
+            ]
+          ],
+          "source_anchors": [
+            [
+              149,
+              321
+            ],
+            [
+              483,
+              321
+            ],
+            [
+              787,
+              321
+            ],
+            [
+              1110,
+              321
+            ]
+          ]
+        },
+        {
+          "id": "SKL-N01_counter_slash",
+          "source_rects": [
+            [
+              4,
+              427,
+              309,
+              208
+            ],
+            [
+              326,
+              442,
+              356,
+              193
+            ],
+            [
+              661,
+              428,
+              313,
+              207
+            ],
+            [
+              1002,
+              368,
+              238,
+              267
+            ]
+          ],
+          "source_anchors": [
+            [
+              184,
+              626
+            ],
+            [
+              489,
+              626
+            ],
+            [
+              831,
+              626
+            ],
+            [
+              1100,
+              626
+            ]
+          ]
+        },
+        {
+          "id": "SKL-N01_white_wind",
+          "source_rects": [
+            [
+              0,
+              650,
+              314,
+              323
+            ],
+            [
+              314,
+              650,
+              313,
+              323
+            ],
+            [
+              627,
+              650,
+              318,
+              323
+            ],
+            [
+              945,
+              650,
+              309,
+              323
+            ]
+          ],
+          "source_anchors": [
+            [
+              157,
+              812
+            ],
+            [
+              470,
+              812
+            ],
+            [
+              784,
+              812
+            ],
+            [
+              1097,
+              812
+            ]
+          ]
+        },
+        {
+          "id": "SKL-N01_slash_fx",
+          "source_rects": [
+            [
+              0,
+              973,
+              314,
+              281
+            ],
+            [
+              314,
+              973,
+              332,
+              281
+            ],
+            [
+              646,
+              973,
+              296,
+              281
+            ],
+            [
+              942,
+              973,
+              312,
+              281
+            ]
+          ],
+          "source_anchors": [
+            [
+              157,
+              1114
+            ],
+            [
+              470,
+              1114
+            ],
+            [
+              784,
+              1114
+            ],
+            [
+              1097,
+              1114
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "asset_id": "SKL-N02",
+      "file": "SKL-N02_laughter_right_v002.png",
+      "sha256": "e76567694ff14cb674d2d71d7afe41b871428ea11cbf43166d68e5b115f5b87c",
+      "size": [
+        1254,
+        1254
+      ],
+      "row_edges": [
+        0,
+        326,
+        635,
+        951,
+        1254
+      ],
+      "animations": [
+        {
+          "id": "SKL-N02_laugh_enter",
+          "source_rects": [
+            [
+              61,
+              45,
+              205,
+              267
+            ],
+            [
+              375,
+              39,
+              201,
+              274
+            ],
+            [
+              678,
+              55,
+              214,
+              258
+            ],
+            [
+              982,
+              52,
+              226,
+              261
+            ]
+          ],
+          "source_anchors": [
+            [
+              150,
+              302
+            ],
+            [
+              457,
+              302
+            ],
+            [
+              770,
+              302
+            ],
+            [
+              1081,
+              302
+            ]
+          ]
+        },
+        {
+          "id": "SKL-N02_laugh_loop",
+          "source_rects": [
+            [
+              57,
+              360,
+              213,
+              266
+            ],
+            [
+              378,
+              351,
+              207,
+              275
+            ],
+            [
+              687,
+              351,
+              203,
+              275
+            ],
+            [
+              999,
+              355,
+              205,
+              271
+            ]
+          ],
+          "source_anchors": [
+            [
+              147,
+              616
+            ],
+            [
+              463,
+              616
+            ],
+            [
+              776,
+              616
+            ],
+            [
+              1083,
+              616
+            ]
+          ]
+        },
+        {
+          "id": "SKL-N02_red_aura",
+          "source_rects": [
+            [
+              0,
+              635,
+              314,
+              316
+            ],
+            [
+              314,
+              635,
+              313,
+              316
+            ],
+            [
+              627,
+              635,
+              314,
+              316
+            ],
+            [
+              941,
+              635,
+              313,
+              316
+            ]
+          ],
+          "source_anchors": [
+            [
+              157,
+              793
+            ],
+            [
+              470,
+              793
+            ],
+            [
+              784,
+              793
+            ],
+            [
+              1097,
+              793
+            ]
+          ]
+        },
+        {
+          "id": "SKL-N02_kill_heal",
+          "source_rects": [
+            [
+              0,
+              951,
+              314,
+              303
+            ],
+            [
+              314,
+              951,
+              313,
+              303
+            ],
+            [
+              627,
+              951,
+              314,
+              303
+            ],
+            [
+              941,
+              951,
+              313,
+              303
+            ]
+          ],
+          "source_anchors": [
+            [
+              157,
+              1103
+            ],
+            [
+              470,
+              1103
+            ],
+            [
+              784,
+              1103
+            ],
+            [
+              1097,
+              1103
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "asset_id": "SKL-N03",
+      "file": "SKL-N03_king_slam_right_v001.png",
+      "sha256": "23d22ac5a9af3d36012776483853ded5d286d872317c238856747030e6c40c26",
+      "size": [
+        1254,
+        1254
+      ],
+      "row_edges": [
+        0,
+        404,
+        793,
+        1028,
+        1254
+      ],
+      "animations": [
+        {
+          "id": "SKL-N03_leap",
+          "source_rects": [
+            [
+              26,
+              169,
+              309,
+              213
+            ],
+            [
+              346,
+              118,
+              302,
+              279
+            ],
+            [
+              628,
+              9,
+              261,
+              378
+            ],
+            [
+              968,
+              13,
+              250,
+              353
+            ]
+          ],
+          "source_anchors": [
+            [
+              167,
+              386
+            ],
+            [
+              487,
+              386
+            ],
+            [
+              775,
+              386
+            ],
+            [
+              1109,
+              386
+            ]
+          ]
+        },
+        {
+          "id": "SKL-N03_slam",
+          "source_rects": [
+            [
+              27,
+              413,
+              267,
+              335
+            ],
+            [
+              345,
+              558,
+              279,
+              207
+            ],
+            [
+              652,
+              584,
+              299,
+              181
+            ],
+            [
+              959,
+              520,
+              285,
+              245
+            ]
+          ],
+          "source_anchors": [
+            [
+              168,
+              755
+            ],
+            [
+              475,
+              755
+            ],
+            [
+              797,
+              755
+            ],
+            [
+              1079,
+              755
+            ]
+          ]
+        },
+        {
+          "id": "SKL-N03_ground_impact",
+          "source_rects": [
+            [
+              0,
+              793,
+              307,
+              235
+            ],
+            [
+              307,
+              793,
+              320,
+              235
+            ],
+            [
+              627,
+              793,
+              328,
+              235
+            ],
+            [
+              955,
+              793,
+              299,
+              235
+            ]
+          ],
+          "source_anchors": [
+            [
+              157,
+              1010
+            ],
+            [
+              470,
+              1010
+            ],
+            [
+              784,
+              1010
+            ],
+            [
+              1097,
+              1010
+            ]
+          ]
+        },
+        {
+          "id": "SKL-N03_stun_stars",
+          "source_rects": [
+            [
+              0,
+              1028,
+              314,
+              226
+            ],
+            [
+              314,
+              1028,
+              313,
+              226
+            ],
+            [
+              627,
+              1028,
+              314,
+              226
+            ],
+            [
+              941,
+              1028,
+              313,
+              226
+            ]
+          ],
+          "source_anchors": [
+            [
+              157,
+              1141
+            ],
+            [
+              470,
+              1141
+            ],
+            [
+              784,
+              1141
+            ],
+            [
+              1097,
+              1141
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "asset_id": "SKL-N04",
+      "file": "SKL-N04_endurance_right_v001.png",
+      "sha256": "bc8b1d066337e3198ef495f533ac96b43e1c28ad4e9d14de4bb3997f85cfa9e8",
+      "size": [
+        1254,
+        1254
+      ],
+      "row_edges": [
+        0,
+        356,
+        701,
+        1014,
+        1254
+      ],
+      "animations": [
+        {
+          "id": "SKL-N04_stomp",
+          "source_rects": [
+            [
+              54,
+              54,
+              225,
+              288
+            ],
+            [
+              365,
+              54,
+              249,
+              287
+            ],
+            [
+              656,
+              61,
+              221,
+              280
+            ],
+            [
+              950,
+              61,
+              277,
+              281
+            ]
+          ],
+          "source_anchors": [
+            [
+              159,
+              337
+            ],
+            [
+              470,
+              337
+            ],
+            [
+              762,
+              337
+            ],
+            [
+              1077,
+              337
+            ]
+          ]
+        },
+        {
+          "id": "SKL-N04_brace_recover",
+          "source_rects": [
+            [
+              42,
+              438,
+              254,
+              248
+            ],
+            [
+              367,
+              386,
+              235,
+              302
+            ],
+            [
+              664,
+              369,
+              242,
+              320
+            ],
+            [
+              975,
+              398,
+              222,
+              291
+            ]
+          ],
+          "source_anchors": [
+            [
+              172,
+              679
+            ],
+            [
+              470,
+              679
+            ],
+            [
+              766,
+              679
+            ],
+            [
+              1078,
+              679
+            ]
+          ]
+        },
+        {
+          "id": "SKL-N04_white_aura",
+          "source_rects": [
+            [
+              0,
+              701,
+              314,
+              313
+            ],
+            [
+              314,
+              701,
+              313,
+              313
+            ],
+            [
+              627,
+              701,
+              314,
+              313
+            ],
+            [
+              941,
+              701,
+              313,
+              313
+            ]
+          ],
+          "source_anchors": [
+            [
+              157,
+              858
+            ],
+            [
+              470,
+              858
+            ],
+            [
+              784,
+              858
+            ],
+            [
+              1097,
+              858
+            ]
+          ]
+        },
+        {
+          "id": "SKL-N04_reduced_hit",
+          "source_rects": [
+            [
+              0,
+              1014,
+              314,
+              240
+            ],
+            [
+              314,
+              1014,
+              313,
+              240
+            ],
+            [
+              627,
+              1014,
+              314,
+              240
+            ],
+            [
+              941,
+              1014,
+              313,
+              240
+            ]
+          ],
+          "source_anchors": [
+            [
+              157,
+              1134
+            ],
+            [
+              470,
+              1134
+            ],
+            [
+              784,
+              1134
+            ],
+            [
+              1097,
+              1134
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "asset_id": "SKL-N05",
+      "file": "SKL-N05_void_milk_right_v001.png",
+      "sha256": "dc80489d4928e9826605c1a08e139fa01fd21f6a88812a13bca4bd205f62a92e",
+      "size": [
+        1254,
+        1254
+      ],
+      "row_edges": [
+        0,
+        336,
+        652,
+        919,
+        1254
+      ],
+      "animations": [
+        {
+          "id": "SKL-N05_charge",
+          "source_rects": [
+            [
+              41,
+              51,
+              219,
+              259
+            ],
+            [
+              355,
+              51,
+              219,
+              259
+            ],
+            [
+              662,
+              50,
+              260,
+              260
+            ],
+            [
+              974,
+              49,
+              245,
+              261
+            ]
+          ],
+          "source_anchors": [
+            [
+              146,
+              298
+            ],
+            [
+              462,
+              298
+            ],
+            [
+              765,
+              298
+            ],
+            [
+              1078,
+              298
+            ]
+          ]
+        },
+        {
+          "id": "SKL-N05_release",
+          "source_rects": [
+            [
+              32,
+              368,
+              260,
+              259
+            ],
+            [
+              348,
+              369,
+              242,
+              257
+            ],
+            [
+              662,
+              366,
+              227,
+              260
+            ],
+            [
+              981,
+              363,
+              220,
+              263
+            ]
+          ],
+          "source_anchors": [
+            [
+              151,
+              616
+            ],
+            [
+              462,
+              616
+            ],
+            [
+              762,
+              616
+            ],
+            [
+              1083,
+              616
+            ]
+          ]
+        },
+        {
+          "id": "SKL-N05_orb_loop",
+          "source_rects": [
+            [
+              0,
+              652,
+              314,
+              267
+            ],
+            [
+              314,
+              652,
+              313,
+              267
+            ],
+            [
+              627,
+              652,
+              314,
+              267
+            ],
+            [
+              941,
+              652,
+              313,
+              267
+            ]
+          ],
+          "source_anchors": [
+            [
+              157,
+              786
+            ],
+            [
+              470,
+              786
+            ],
+            [
+              784,
+              786
+            ],
+            [
+              1097,
+              786
+            ]
+          ]
+        },
+        {
+          "id": "SKL-N05_explosion",
+          "source_rects": [
+            [
+              0,
+              919,
+              314,
+              335
+            ],
+            [
+              314,
+              919,
+              313,
+              335
+            ],
+            [
+              627,
+              919,
+              314,
+              335
+            ],
+            [
+              941,
+              919,
+              313,
+              335
+            ]
+          ],
+          "source_anchors": [
+            [
+              157,
+              1087
+            ],
+            [
+              470,
+              1087
+            ],
+            [
+              784,
+              1087
+            ],
+            [
+              1097,
+              1087
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "asset_id": "SKL-N06",
+      "file": "SKL-N06_arcane_source_right_v001.png",
+      "sha256": "a46d25f8821d2b95f58fb20b49febedf7621a1d85c3cd0dc5b2cfb2fbd06fe2a",
+      "size": [
+        1254,
+        1254
+      ],
+      "row_edges": [
+        0,
+        357,
+        683,
+        941,
+        1254
+      ],
+      "animations": [
+        {
+          "id": "SKL-N06_ground_slap",
+          "source_rects": [
+            [
+              23,
+              99,
+              256,
+              237
+            ],
+            [
+              336,
+              137,
+              283,
+              202
+            ],
+            [
+              642,
+              142,
+              296,
+              200
+            ],
+            [
+              972,
+              123,
+              250,
+              216
+            ]
+          ],
+          "source_anchors": [
+            [
+              155,
+              326
+            ],
+            [
+              474,
+              326
+            ],
+            [
+              775,
+              326
+            ],
+            [
+              1100,
+              326
+            ]
+          ]
+        },
+        {
+          "id": "SKL-N06_rise",
+          "source_rects": [
+            [
+              29,
+              403,
+              271,
+              266
+            ],
+            [
+              354,
+              386,
+              228,
+              284
+            ],
+            [
+              690,
+              374,
+              220,
+              297
+            ],
+            [
+              1001,
+              384,
+              215,
+              287
+            ]
+          ],
+          "source_anchors": [
+            [
+              155,
+              658
+            ],
+            [
+              466,
+              658
+            ],
+            [
+              785,
+              658
+            ],
+            [
+              1102,
+              658
+            ]
+          ]
+        },
+        {
+          "id": "SKL-N06_magic_circle",
+          "source_rects": [
+            [
+              0,
+              683,
+              314,
+              258
+            ],
+            [
+              314,
+              683,
+              313,
+              258
+            ],
+            [
+              627,
+              683,
+              314,
+              258
+            ],
+            [
+              941,
+              683,
+              313,
+              258
+            ]
+          ],
+          "source_anchors": [
+            [
+              157,
+              923
+            ],
+            [
+              470,
+              923
+            ],
+            [
+              784,
+              923
+            ],
+            [
+              1097,
+              923
+            ]
+          ]
+        },
+        {
+          "id": "SKL-N06_blue_aura",
+          "source_rects": [
+            [
+              0,
+              941,
+              314,
+              313
+            ],
+            [
+              314,
+              941,
+              313,
+              313
+            ],
+            [
+              627,
+              941,
+              314,
+              313
+            ],
+            [
+              941,
+              941,
+              313,
+              313
+            ]
+          ],
+          "source_anchors": [
+            [
+              157,
+              1098
+            ],
+            [
+              470,
+              1098
+            ],
+            [
+              784,
+              1098
+            ],
+            [
+              1097,
+              1098
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "animations": [
+    {
+      "id": "SKL-N01_stance",
+      "skill": "SKL-N01",
+      "label": "拔刀架势",
+      "kind": "hero",
+      "fps": 20,
+      "loop": false,
+      "canvas": [
+        96,
+        96
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "attach_point": "player_root",
+      "godot_offset": [
+        0,
+        -36
+      ],
+      "scale": 0.15625,
+      "notes": "同一源图全部主角帧统一尺度，不依包围框缩放；空中/抬脚保留姿态，实际位移由玩法驱动。",
+      "frames": [
+        "frames/SKL-N01_stance_right_v001_f01.png",
+        "frames/SKL-N01_stance_right_v001_f02.png",
+        "frames/SKL-N01_stance_right_v001_f03.png",
+        "frames/SKL-N01_stance_right_v001_f04.png"
+      ],
+      "source_rects": [
+        [
+          46,
+          59,
+          237,
+          272
+        ],
+        [
+          364,
+          80,
+          240,
+          251
+        ],
+        [
+          671,
+          112,
+          241,
+          218
+        ],
+        [
+          991,
+          112,
+          239,
+          219
+        ]
+      ],
+      "source_anchors": [
+        [
+          149,
+          321
+        ],
+        [
+          483,
+          321
+        ],
+        [
+          787,
+          321
+        ],
+        [
+          1110,
+          321
+        ]
+      ],
+      "sheet": "sheets/SKL-N01_stance_right_v001_sheet.png"
+    },
+    {
+      "id": "SKL-N01_counter_slash",
+      "skill": "SKL-N01",
+      "label": "居合反击",
+      "kind": "hero",
+      "fps": 10,
+      "loop": false,
+      "canvas": [
+        96,
+        96
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "attach_point": "player_root",
+      "godot_offset": [
+        0,
+        -36
+      ],
+      "scale": 0.15625,
+      "notes": "同一源图全部主角帧统一尺度，不依包围框缩放；空中/抬脚保留姿态，实际位移由玩法驱动。",
+      "frames": [
+        "frames/SKL-N01_counter_slash_right_v001_f01.png",
+        "frames/SKL-N01_counter_slash_right_v001_f02.png",
+        "frames/SKL-N01_counter_slash_right_v001_f03.png",
+        "frames/SKL-N01_counter_slash_right_v001_f04.png"
+      ],
+      "source_rects": [
+        [
+          4,
+          427,
+          309,
+          208
+        ],
+        [
+          326,
+          442,
+          356,
+          193
+        ],
+        [
+          661,
+          428,
+          313,
+          207
+        ],
+        [
+          1002,
+          368,
+          238,
+          267
+        ]
+      ],
+      "source_anchors": [
+        [
+          184,
+          626
+        ],
+        [
+          489,
+          626
+        ],
+        [
+          831,
+          626
+        ],
+        [
+          1100,
+          626
+        ]
+      ],
+      "sheet": "sheets/SKL-N01_counter_slash_right_v001_sheet.png"
+    },
+    {
+      "id": "SKL-N01_white_wind",
+      "skill": "SKL-N01",
+      "label": "白色气流",
+      "kind": "effect",
+      "fps": 12,
+      "loop": false,
+      "canvas": [
+        96,
+        80
+      ],
+      "anchor": [
+        48,
+        40
+      ],
+      "attach_point": "effect_center",
+      "godot_offset": [
+        0,
+        0
+      ],
+      "scale": 0.22,
+      "notes": "同一动画全部帧使用固定尺度与固定来源root，不做逐帧包围框居中。",
+      "frames": [
+        "frames/SKL-N01_white_wind_right_v001_f01.png",
+        "frames/SKL-N01_white_wind_right_v001_f02.png",
+        "frames/SKL-N01_white_wind_right_v001_f03.png",
+        "frames/SKL-N01_white_wind_right_v001_f04.png"
+      ],
+      "source_rects": [
+        [
+          0,
+          650,
+          314,
+          323
+        ],
+        [
+          314,
+          650,
+          313,
+          323
+        ],
+        [
+          627,
+          650,
+          318,
+          323
+        ],
+        [
+          945,
+          650,
+          309,
+          323
+        ]
+      ],
+      "source_anchors": [
+        [
+          157,
+          812
+        ],
+        [
+          470,
+          812
+        ],
+        [
+          784,
+          812
+        ],
+        [
+          1097,
+          812
+        ]
+      ],
+      "sheet": "sheets/SKL-N01_white_wind_right_v001_sheet.png"
+    },
+    {
+      "id": "SKL-N01_slash_fx",
+      "skill": "SKL-N01",
+      "label": "居合斩光",
+      "kind": "effect",
+      "fps": 12,
+      "loop": false,
+      "canvas": [
+        96,
+        80
+      ],
+      "anchor": [
+        48,
+        40
+      ],
+      "attach_point": "effect_center",
+      "godot_offset": [
+        0,
+        0
+      ],
+      "scale": 0.23,
+      "notes": "同一动画全部帧使用固定尺度与固定来源root，不做逐帧包围框居中。",
+      "frames": [
+        "frames/SKL-N01_slash_fx_right_v001_f01.png",
+        "frames/SKL-N01_slash_fx_right_v001_f02.png",
+        "frames/SKL-N01_slash_fx_right_v001_f03.png",
+        "frames/SKL-N01_slash_fx_right_v001_f04.png"
+      ],
+      "source_rects": [
+        [
+          0,
+          973,
+          314,
+          281
+        ],
+        [
+          314,
+          973,
+          332,
+          281
+        ],
+        [
+          646,
+          973,
+          296,
+          281
+        ],
+        [
+          942,
+          973,
+          312,
+          281
+        ]
+      ],
+      "source_anchors": [
+        [
+          157,
+          1114
+        ],
+        [
+          470,
+          1114
+        ],
+        [
+          784,
+          1114
+        ],
+        [
+          1097,
+          1114
+        ]
+      ],
+      "sheet": "sheets/SKL-N01_slash_fx_right_v001_sheet.png"
+    },
+    {
+      "id": "SKL-N02_laugh_enter",
+      "skill": "SKL-N02",
+      "label": "捧腹大笑起手",
+      "kind": "hero",
+      "fps": 10,
+      "loop": false,
+      "canvas": [
+        96,
+        96
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "attach_point": "player_root",
+      "godot_offset": [
+        0,
+        -36
+      ],
+      "scale": 0.15384615384615385,
+      "notes": "同一源图全部主角帧统一尺度，不依包围框缩放；空中/抬脚保留姿态，实际位移由玩法驱动。",
+      "frames": [
+        "frames/SKL-N02_laugh_enter_right_v001_f01.png",
+        "frames/SKL-N02_laugh_enter_right_v001_f02.png",
+        "frames/SKL-N02_laugh_enter_right_v001_f03.png",
+        "frames/SKL-N02_laugh_enter_right_v001_f04.png"
+      ],
+      "source_rects": [
+        [
+          61,
+          45,
+          205,
+          267
+        ],
+        [
+          375,
+          39,
+          201,
+          274
+        ],
+        [
+          678,
+          55,
+          214,
+          258
+        ],
+        [
+          982,
+          52,
+          226,
+          261
+        ]
+      ],
+      "source_anchors": [
+        [
+          150,
+          302
+        ],
+        [
+          457,
+          302
+        ],
+        [
+          770,
+          302
+        ],
+        [
+          1081,
+          302
+        ]
+      ],
+      "sheet": "sheets/SKL-N02_laugh_enter_right_v001_sheet.png"
+    },
+    {
+      "id": "SKL-N02_laugh_loop",
+      "skill": "SKL-N02",
+      "label": "大笑循环",
+      "kind": "hero",
+      "fps": 10,
+      "loop": true,
+      "canvas": [
+        96,
+        96
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "attach_point": "player_root",
+      "godot_offset": [
+        0,
+        -36
+      ],
+      "scale": 0.15384615384615385,
+      "notes": "同一源图全部主角帧统一尺度，不依包围框缩放；空中/抬脚保留姿态，实际位移由玩法驱动。",
+      "frames": [
+        "frames/SKL-N02_laugh_loop_right_v001_f01.png",
+        "frames/SKL-N02_laugh_loop_right_v001_f02.png",
+        "frames/SKL-N02_laugh_loop_right_v001_f03.png",
+        "frames/SKL-N02_laugh_loop_right_v001_f04.png"
+      ],
+      "source_rects": [
+        [
+          57,
+          360,
+          213,
+          266
+        ],
+        [
+          378,
+          351,
+          207,
+          275
+        ],
+        [
+          687,
+          351,
+          203,
+          275
+        ],
+        [
+          999,
+          355,
+          205,
+          271
+        ]
+      ],
+      "source_anchors": [
+        [
+          147,
+          616
+        ],
+        [
+          463,
+          616
+        ],
+        [
+          776,
+          616
+        ],
+        [
+          1083,
+          616
+        ]
+      ],
+      "sheet": "sheets/SKL-N02_laugh_loop_right_v001_sheet.png"
+    },
+    {
+      "id": "SKL-N02_red_aura",
+      "skill": "SKL-N02",
+      "label": "狂击红粒子",
+      "kind": "effect",
+      "fps": 12,
+      "loop": true,
+      "canvas": [
+        96,
+        80
+      ],
+      "anchor": [
+        48,
+        40
+      ],
+      "attach_point": "effect_center",
+      "godot_offset": [
+        0,
+        0
+      ],
+      "scale": 0.2,
+      "notes": "同一动画全部帧使用固定尺度与固定来源root，不做逐帧包围框居中。",
+      "frames": [
+        "frames/SKL-N02_red_aura_right_v001_f01.png",
+        "frames/SKL-N02_red_aura_right_v001_f02.png",
+        "frames/SKL-N02_red_aura_right_v001_f03.png",
+        "frames/SKL-N02_red_aura_right_v001_f04.png"
+      ],
+      "source_rects": [
+        [
+          0,
+          635,
+          314,
+          316
+        ],
+        [
+          314,
+          635,
+          313,
+          316
+        ],
+        [
+          627,
+          635,
+          314,
+          316
+        ],
+        [
+          941,
+          635,
+          313,
+          316
+        ]
+      ],
+      "source_anchors": [
+        [
+          157,
+          793
+        ],
+        [
+          470,
+          793
+        ],
+        [
+          784,
+          793
+        ],
+        [
+          1097,
+          793
+        ]
+      ],
+      "sheet": "sheets/SKL-N02_red_aura_right_v001_sheet.png"
+    },
+    {
+      "id": "SKL-N02_kill_heal",
+      "skill": "SKL-N02",
+      "label": "击杀恢复",
+      "kind": "effect",
+      "fps": 12,
+      "loop": false,
+      "canvas": [
+        96,
+        80
+      ],
+      "anchor": [
+        48,
+        40
+      ],
+      "attach_point": "effect_center",
+      "godot_offset": [
+        0,
+        0
+      ],
+      "scale": 0.2,
+      "notes": "同一动画全部帧使用固定尺度与固定来源root，不做逐帧包围框居中。",
+      "frames": [
+        "frames/SKL-N02_kill_heal_right_v001_f01.png",
+        "frames/SKL-N02_kill_heal_right_v001_f02.png",
+        "frames/SKL-N02_kill_heal_right_v001_f03.png",
+        "frames/SKL-N02_kill_heal_right_v001_f04.png"
+      ],
+      "source_rects": [
+        [
+          0,
+          951,
+          314,
+          303
+        ],
+        [
+          314,
+          951,
+          313,
+          303
+        ],
+        [
+          627,
+          951,
+          314,
+          303
+        ],
+        [
+          941,
+          951,
+          313,
+          303
+        ]
+      ],
+      "source_anchors": [
+        [
+          157,
+          1103
+        ],
+        [
+          470,
+          1103
+        ],
+        [
+          784,
+          1103
+        ],
+        [
+          1097,
+          1103
+        ]
+      ],
+      "sheet": "sheets/SKL-N02_kill_heal_right_v001_sheet.png"
+    },
+    {
+      "id": "SKL-N03_leap",
+      "skill": "SKL-N03",
+      "label": "持锤跃起",
+      "kind": "hero",
+      "fps": 10,
+      "loop": false,
+      "canvas": [
+        96,
+        96
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "attach_point": "player_root",
+      "godot_offset": [
+        0,
+        -36
+      ],
+      "scale": 0.15873015873015872,
+      "notes": "同一源图全部主角帧统一尺度，不依包围框缩放；空中/抬脚保留姿态，实际位移由玩法驱动。",
+      "frames": [
+        "frames/SKL-N03_leap_right_v001_f01.png",
+        "frames/SKL-N03_leap_right_v001_f02.png",
+        "frames/SKL-N03_leap_right_v001_f03.png",
+        "frames/SKL-N03_leap_right_v001_f04.png"
+      ],
+      "source_rects": [
+        [
+          26,
+          169,
+          309,
+          213
+        ],
+        [
+          346,
+          118,
+          302,
+          279
+        ],
+        [
+          628,
+          9,
+          261,
+          378
+        ],
+        [
+          968,
+          13,
+          250,
+          353
+        ]
+      ],
+      "source_anchors": [
+        [
+          167,
+          386
+        ],
+        [
+          487,
+          386
+        ],
+        [
+          775,
+          386
+        ],
+        [
+          1109,
+          386
+        ]
+      ],
+      "sheet": "sheets/SKL-N03_leap_right_v001_sheet.png"
+    },
+    {
+      "id": "SKL-N03_slam",
+      "skill": "SKL-N03",
+      "label": "下砸落地",
+      "kind": "hero",
+      "fps": 10,
+      "loop": false,
+      "canvas": [
+        96,
+        96
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "attach_point": "player_root",
+      "godot_offset": [
+        0,
+        -36
+      ],
+      "scale": 0.15873015873015872,
+      "notes": "同一源图全部主角帧统一尺度，不依包围框缩放；空中/抬脚保留姿态，实际位移由玩法驱动。",
+      "frames": [
+        "frames/SKL-N03_slam_right_v001_f01.png",
+        "frames/SKL-N03_slam_right_v001_f02.png",
+        "frames/SKL-N03_slam_right_v001_f03.png",
+        "frames/SKL-N03_slam_right_v001_f04.png"
+      ],
+      "source_rects": [
+        [
+          27,
+          413,
+          267,
+          335
+        ],
+        [
+          345,
+          558,
+          279,
+          207
+        ],
+        [
+          652,
+          584,
+          299,
+          181
+        ],
+        [
+          959,
+          520,
+          285,
+          245
+        ]
+      ],
+      "source_anchors": [
+        [
+          168,
+          755
+        ],
+        [
+          475,
+          755
+        ],
+        [
+          797,
+          755
+        ],
+        [
+          1079,
+          755
+        ]
+      ],
+      "sheet": "sheets/SKL-N03_slam_right_v001_sheet.png"
+    },
+    {
+      "id": "SKL-N03_ground_impact",
+      "skill": "SKL-N03",
+      "label": "碎石冲击",
+      "kind": "effect",
+      "fps": 12,
+      "loop": false,
+      "canvas": [
+        96,
+        80
+      ],
+      "anchor": [
+        48,
+        64
+      ],
+      "attach_point": "ground",
+      "godot_offset": [
+        0,
+        -24
+      ],
+      "scale": 0.24,
+      "notes": "同一动画全部帧使用固定尺度与固定来源root，不做逐帧包围框居中。",
+      "frames": [
+        "frames/SKL-N03_ground_impact_right_v001_f01.png",
+        "frames/SKL-N03_ground_impact_right_v001_f02.png",
+        "frames/SKL-N03_ground_impact_right_v001_f03.png",
+        "frames/SKL-N03_ground_impact_right_v001_f04.png"
+      ],
+      "source_rects": [
+        [
+          0,
+          793,
+          307,
+          235
+        ],
+        [
+          307,
+          793,
+          320,
+          235
+        ],
+        [
+          627,
+          793,
+          328,
+          235
+        ],
+        [
+          955,
+          793,
+          299,
+          235
+        ]
+      ],
+      "source_anchors": [
+        [
+          157,
+          1010
+        ],
+        [
+          470,
+          1010
+        ],
+        [
+          784,
+          1010
+        ],
+        [
+          1097,
+          1010
+        ]
+      ],
+      "sheet": "sheets/SKL-N03_ground_impact_right_v001_sheet.png"
+    },
+    {
+      "id": "SKL-N03_stun_stars",
+      "skill": "SKL-N03",
+      "label": "晕眩星环",
+      "kind": "effect",
+      "fps": 12,
+      "loop": true,
+      "canvas": [
+        96,
+        80
+      ],
+      "anchor": [
+        48,
+        40
+      ],
+      "attach_point": "above_target_head",
+      "godot_offset": [
+        0,
+        0
+      ],
+      "scale": 0.12,
+      "notes": "同一动画全部帧使用固定尺度与固定来源root，不做逐帧包围框居中。",
+      "frames": [
+        "frames/SKL-N03_stun_stars_right_v001_f01.png",
+        "frames/SKL-N03_stun_stars_right_v001_f02.png",
+        "frames/SKL-N03_stun_stars_right_v001_f03.png",
+        "frames/SKL-N03_stun_stars_right_v001_f04.png"
+      ],
+      "source_rects": [
+        [
+          0,
+          1028,
+          314,
+          226
+        ],
+        [
+          314,
+          1028,
+          313,
+          226
+        ],
+        [
+          627,
+          1028,
+          314,
+          226
+        ],
+        [
+          941,
+          1028,
+          313,
+          226
+        ]
+      ],
+      "source_anchors": [
+        [
+          157,
+          1141
+        ],
+        [
+          470,
+          1141
+        ],
+        [
+          784,
+          1141
+        ],
+        [
+          1097,
+          1141
+        ]
+      ],
+      "sheet": "sheets/SKL-N03_stun_stars_right_v001_sheet.png"
+    },
+    {
+      "id": "SKL-N04_stomp",
+      "skill": "SKL-N04",
+      "label": "单脚踏地",
+      "kind": "hero",
+      "fps": 10,
+      "loop": false,
+      "canvas": [
+        96,
+        96
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "attach_point": "player_root",
+      "godot_offset": [
+        0,
+        -36
+      ],
+      "scale": 0.14545454545454545,
+      "notes": "同一源图全部主角帧统一尺度，不依包围框缩放；空中/抬脚保留姿态，实际位移由玩法驱动。",
+      "frames": [
+        "frames/SKL-N04_stomp_right_v001_f01.png",
+        "frames/SKL-N04_stomp_right_v001_f02.png",
+        "frames/SKL-N04_stomp_right_v001_f03.png",
+        "frames/SKL-N04_stomp_right_v001_f04.png"
+      ],
+      "source_rects": [
+        [
+          54,
+          54,
+          225,
+          288
+        ],
+        [
+          365,
+          54,
+          249,
+          287
+        ],
+        [
+          656,
+          61,
+          221,
+          280
+        ],
+        [
+          950,
+          61,
+          277,
+          281
+        ]
+      ],
+      "source_anchors": [
+        [
+          159,
+          337
+        ],
+        [
+          470,
+          337
+        ],
+        [
+          762,
+          337
+        ],
+        [
+          1077,
+          337
+        ]
+      ],
+      "sheet": "sheets/SKL-N04_stomp_right_v001_sheet.png"
+    },
+    {
+      "id": "SKL-N04_brace_recover",
+      "skill": "SKL-N04",
+      "label": "稳定收势",
+      "kind": "hero",
+      "fps": 10,
+      "loop": false,
+      "canvas": [
+        96,
+        96
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "attach_point": "player_root",
+      "godot_offset": [
+        0,
+        -36
+      ],
+      "scale": 0.14545454545454545,
+      "notes": "同一源图全部主角帧统一尺度，不依包围框缩放；空中/抬脚保留姿态，实际位移由玩法驱动。",
+      "frames": [
+        "frames/SKL-N04_brace_recover_right_v001_f01.png",
+        "frames/SKL-N04_brace_recover_right_v001_f02.png",
+        "frames/SKL-N04_brace_recover_right_v001_f03.png",
+        "frames/SKL-N04_brace_recover_right_v001_f04.png"
+      ],
+      "source_rects": [
+        [
+          42,
+          438,
+          254,
+          248
+        ],
+        [
+          367,
+          386,
+          235,
+          302
+        ],
+        [
+          664,
+          369,
+          242,
+          320
+        ],
+        [
+          975,
+          398,
+          222,
+          291
+        ]
+      ],
+      "source_anchors": [
+        [
+          172,
+          679
+        ],
+        [
+          470,
+          679
+        ],
+        [
+          766,
+          679
+        ],
+        [
+          1078,
+          679
+        ]
+      ],
+      "sheet": "sheets/SKL-N04_brace_recover_right_v001_sheet.png"
+    },
+    {
+      "id": "SKL-N04_white_aura",
+      "skill": "SKL-N04",
+      "label": "忍耐白光",
+      "kind": "effect",
+      "fps": 12,
+      "loop": true,
+      "canvas": [
+        96,
+        80
+      ],
+      "anchor": [
+        48,
+        40
+      ],
+      "attach_point": "effect_center",
+      "godot_offset": [
+        0,
+        0
+      ],
+      "scale": 0.18,
+      "notes": "同一动画全部帧使用固定尺度与固定来源root，不做逐帧包围框居中。",
+      "frames": [
+        "frames/SKL-N04_white_aura_right_v001_f01.png",
+        "frames/SKL-N04_white_aura_right_v001_f02.png",
+        "frames/SKL-N04_white_aura_right_v001_f03.png",
+        "frames/SKL-N04_white_aura_right_v001_f04.png"
+      ],
+      "source_rects": [
+        [
+          0,
+          701,
+          314,
+          313
+        ],
+        [
+          314,
+          701,
+          313,
+          313
+        ],
+        [
+          627,
+          701,
+          314,
+          313
+        ],
+        [
+          941,
+          701,
+          313,
+          313
+        ]
+      ],
+      "source_anchors": [
+        [
+          157,
+          858
+        ],
+        [
+          470,
+          858
+        ],
+        [
+          784,
+          858
+        ],
+        [
+          1097,
+          858
+        ]
+      ],
+      "sheet": "sheets/SKL-N04_white_aura_right_v001_sheet.png"
+    },
+    {
+      "id": "SKL-N04_reduced_hit",
+      "skill": "SKL-N04",
+      "label": "减伤受击",
+      "kind": "effect",
+      "fps": 12,
+      "loop": false,
+      "canvas": [
+        96,
+        80
+      ],
+      "anchor": [
+        48,
+        40
+      ],
+      "attach_point": "effect_center",
+      "godot_offset": [
+        0,
+        0
+      ],
+      "scale": 0.24,
+      "notes": "同一动画全部帧使用固定尺度与固定来源root，不做逐帧包围框居中。",
+      "frames": [
+        "frames/SKL-N04_reduced_hit_right_v001_f01.png",
+        "frames/SKL-N04_reduced_hit_right_v001_f02.png",
+        "frames/SKL-N04_reduced_hit_right_v001_f03.png",
+        "frames/SKL-N04_reduced_hit_right_v001_f04.png"
+      ],
+      "source_rects": [
+        [
+          0,
+          1014,
+          314,
+          240
+        ],
+        [
+          314,
+          1014,
+          313,
+          240
+        ],
+        [
+          627,
+          1014,
+          314,
+          240
+        ],
+        [
+          941,
+          1014,
+          313,
+          240
+        ]
+      ],
+      "source_anchors": [
+        [
+          157,
+          1134
+        ],
+        [
+          470,
+          1134
+        ],
+        [
+          784,
+          1134
+        ],
+        [
+          1097,
+          1134
+        ]
+      ],
+      "sheet": "sheets/SKL-N04_reduced_hit_right_v001_sheet.png"
+    },
+    {
+      "id": "SKL-N05_charge",
+      "skill": "SKL-N05",
+      "label": "蓄力",
+      "kind": "hero",
+      "fps": 4,
+      "loop": false,
+      "canvas": [
+        96,
+        96
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "attach_point": "player_root",
+      "godot_offset": [
+        0,
+        -36
+      ],
+      "scale": 0.16260162601626016,
+      "notes": "同一源图全部主角帧统一尺度，不依包围框缩放；空中/抬脚保留姿态，实际位移由玩法驱动。",
+      "frames": [
+        "frames/SKL-N05_charge_right_v001_f01.png",
+        "frames/SKL-N05_charge_right_v001_f02.png",
+        "frames/SKL-N05_charge_right_v001_f03.png",
+        "frames/SKL-N05_charge_right_v001_f04.png"
+      ],
+      "source_rects": [
+        [
+          41,
+          51,
+          219,
+          259
+        ],
+        [
+          355,
+          51,
+          219,
+          259
+        ],
+        [
+          662,
+          50,
+          260,
+          260
+        ],
+        [
+          974,
+          49,
+          245,
+          261
+        ]
+      ],
+      "source_anchors": [
+        [
+          146,
+          298
+        ],
+        [
+          462,
+          298
+        ],
+        [
+          765,
+          298
+        ],
+        [
+          1078,
+          298
+        ]
+      ],
+      "sheet": "sheets/SKL-N05_charge_right_v001_sheet.png"
+    },
+    {
+      "id": "SKL-N05_release",
+      "skill": "SKL-N05",
+      "label": "推手释放",
+      "kind": "hero",
+      "fps": 10,
+      "loop": false,
+      "canvas": [
+        96,
+        96
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "attach_point": "player_root",
+      "godot_offset": [
+        0,
+        -36
+      ],
+      "scale": 0.16260162601626016,
+      "notes": "同一源图全部主角帧统一尺度，不依包围框缩放；空中/抬脚保留姿态，实际位移由玩法驱动。",
+      "frames": [
+        "frames/SKL-N05_release_right_v001_f01.png",
+        "frames/SKL-N05_release_right_v001_f02.png",
+        "frames/SKL-N05_release_right_v001_f03.png",
+        "frames/SKL-N05_release_right_v001_f04.png"
+      ],
+      "source_rects": [
+        [
+          32,
+          368,
+          260,
+          259
+        ],
+        [
+          348,
+          369,
+          242,
+          257
+        ],
+        [
+          662,
+          366,
+          227,
+          260
+        ],
+        [
+          981,
+          363,
+          220,
+          263
+        ]
+      ],
+      "source_anchors": [
+        [
+          151,
+          616
+        ],
+        [
+          462,
+          616
+        ],
+        [
+          762,
+          616
+        ],
+        [
+          1083,
+          616
+        ]
+      ],
+      "sheet": "sheets/SKL-N05_release_right_v001_sheet.png"
+    },
+    {
+      "id": "SKL-N05_orb_loop",
+      "skill": "SKL-N05",
+      "label": "巨大光球",
+      "kind": "effect",
+      "fps": 12,
+      "loop": true,
+      "canvas": [
+        128,
+        128
+      ],
+      "anchor": [
+        64,
+        64
+      ],
+      "attach_point": "effect_center",
+      "godot_offset": [
+        0,
+        0
+      ],
+      "scale": 0.32,
+      "notes": "同一动画全部帧使用固定尺度与固定来源root，不做逐帧包围框居中。",
+      "frames": [
+        "frames/SKL-N05_orb_loop_right_v001_f01.png",
+        "frames/SKL-N05_orb_loop_right_v001_f02.png",
+        "frames/SKL-N05_orb_loop_right_v001_f03.png",
+        "frames/SKL-N05_orb_loop_right_v001_f04.png"
+      ],
+      "source_rects": [
+        [
+          0,
+          652,
+          314,
+          267
+        ],
+        [
+          314,
+          652,
+          313,
+          267
+        ],
+        [
+          627,
+          652,
+          314,
+          267
+        ],
+        [
+          941,
+          652,
+          313,
+          267
+        ]
+      ],
+      "source_anchors": [
+        [
+          157,
+          786
+        ],
+        [
+          470,
+          786
+        ],
+        [
+          784,
+          786
+        ],
+        [
+          1097,
+          786
+        ]
+      ],
+      "sheet": "sheets/SKL-N05_orb_loop_right_v001_sheet.png"
+    },
+    {
+      "id": "SKL-N05_explosion",
+      "skill": "SKL-N05",
+      "label": "光球爆炸",
+      "kind": "effect",
+      "fps": 12,
+      "loop": false,
+      "canvas": [
+        128,
+        128
+      ],
+      "anchor": [
+        64,
+        64
+      ],
+      "attach_point": "effect_center",
+      "godot_offset": [
+        0,
+        0
+      ],
+      "scale": 0.32,
+      "notes": "同一动画全部帧使用固定尺度与固定来源root，不做逐帧包围框居中。",
+      "frames": [
+        "frames/SKL-N05_explosion_right_v001_f01.png",
+        "frames/SKL-N05_explosion_right_v001_f02.png",
+        "frames/SKL-N05_explosion_right_v001_f03.png",
+        "frames/SKL-N05_explosion_right_v001_f04.png"
+      ],
+      "source_rects": [
+        [
+          0,
+          919,
+          314,
+          335
+        ],
+        [
+          314,
+          919,
+          313,
+          335
+        ],
+        [
+          627,
+          919,
+          314,
+          335
+        ],
+        [
+          941,
+          919,
+          313,
+          335
+        ]
+      ],
+      "source_anchors": [
+        [
+          157,
+          1087
+        ],
+        [
+          470,
+          1087
+        ],
+        [
+          784,
+          1087
+        ],
+        [
+          1097,
+          1087
+        ]
+      ],
+      "sheet": "sheets/SKL-N05_explosion_right_v001_sheet.png"
+    },
+    {
+      "id": "SKL-N06_ground_slap",
+      "skill": "SKL-N06",
+      "label": "拍地施法",
+      "kind": "hero",
+      "fps": 10,
+      "loop": false,
+      "canvas": [
+        96,
+        96
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "attach_point": "player_root",
+      "godot_offset": [
+        0,
+        -36
+      ],
+      "scale": 0.1423487544483986,
+      "notes": "同一源图全部主角帧统一尺度，不依包围框缩放；空中/抬脚保留姿态，实际位移由玩法驱动。",
+      "frames": [
+        "frames/SKL-N06_ground_slap_right_v001_f01.png",
+        "frames/SKL-N06_ground_slap_right_v001_f02.png",
+        "frames/SKL-N06_ground_slap_right_v001_f03.png",
+        "frames/SKL-N06_ground_slap_right_v001_f04.png"
+      ],
+      "source_rects": [
+        [
+          23,
+          99,
+          256,
+          237
+        ],
+        [
+          336,
+          137,
+          283,
+          202
+        ],
+        [
+          642,
+          142,
+          296,
+          200
+        ],
+        [
+          972,
+          123,
+          250,
+          216
+        ]
+      ],
+      "source_anchors": [
+        [
+          155,
+          326
+        ],
+        [
+          474,
+          326
+        ],
+        [
+          775,
+          326
+        ],
+        [
+          1100,
+          326
+        ]
+      ],
+      "sheet": "sheets/SKL-N06_ground_slap_right_v001_sheet.png"
+    },
+    {
+      "id": "SKL-N06_rise",
+      "skill": "SKL-N06",
+      "label": "起身收势",
+      "kind": "hero",
+      "fps": 10,
+      "loop": false,
+      "canvas": [
+        96,
+        96
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "attach_point": "player_root",
+      "godot_offset": [
+        0,
+        -36
+      ],
+      "scale": 0.1423487544483986,
+      "notes": "同一源图全部主角帧统一尺度，不依包围框缩放；空中/抬脚保留姿态，实际位移由玩法驱动。",
+      "frames": [
+        "frames/SKL-N06_rise_right_v001_f01.png",
+        "frames/SKL-N06_rise_right_v001_f02.png",
+        "frames/SKL-N06_rise_right_v001_f03.png",
+        "frames/SKL-N06_rise_right_v001_f04.png"
+      ],
+      "source_rects": [
+        [
+          29,
+          403,
+          271,
+          266
+        ],
+        [
+          354,
+          386,
+          228,
+          284
+        ],
+        [
+          690,
+          374,
+          220,
+          297
+        ],
+        [
+          1001,
+          384,
+          215,
+          287
+        ]
+      ],
+      "source_anchors": [
+        [
+          155,
+          658
+        ],
+        [
+          466,
+          658
+        ],
+        [
+          785,
+          658
+        ],
+        [
+          1102,
+          658
+        ]
+      ],
+      "sheet": "sheets/SKL-N06_rise_right_v001_sheet.png"
+    },
+    {
+      "id": "SKL-N06_magic_circle",
+      "skill": "SKL-N06",
+      "label": "蓝色法阵",
+      "kind": "effect",
+      "fps": 12,
+      "loop": false,
+      "canvas": [
+        96,
+        80
+      ],
+      "anchor": [
+        48,
+        64
+      ],
+      "attach_point": "ground",
+      "godot_offset": [
+        0,
+        -24
+      ],
+      "scale": 0.24,
+      "notes": "同一动画全部帧使用固定尺度与固定来源root，不做逐帧包围框居中。",
+      "frames": [
+        "frames/SKL-N06_magic_circle_right_v001_f01.png",
+        "frames/SKL-N06_magic_circle_right_v001_f02.png",
+        "frames/SKL-N06_magic_circle_right_v001_f03.png",
+        "frames/SKL-N06_magic_circle_right_v001_f04.png"
+      ],
+      "source_rects": [
+        [
+          0,
+          683,
+          314,
+          258
+        ],
+        [
+          314,
+          683,
+          313,
+          258
+        ],
+        [
+          627,
+          683,
+          314,
+          258
+        ],
+        [
+          941,
+          683,
+          313,
+          258
+        ]
+      ],
+      "source_anchors": [
+        [
+          157,
+          923
+        ],
+        [
+          470,
+          923
+        ],
+        [
+          784,
+          923
+        ],
+        [
+          1097,
+          923
+        ]
+      ],
+      "sheet": "sheets/SKL-N06_magic_circle_right_v001_sheet.png"
+    },
+    {
+      "id": "SKL-N06_blue_aura",
+      "skill": "SKL-N06",
+      "label": "奥术蓝粒子",
+      "kind": "effect",
+      "fps": 12,
+      "loop": true,
+      "canvas": [
+        96,
+        80
+      ],
+      "anchor": [
+        48,
+        40
+      ],
+      "attach_point": "effect_center",
+      "godot_offset": [
+        0,
+        0
+      ],
+      "scale": 0.2,
+      "notes": "同一动画全部帧使用固定尺度与固定来源root，不做逐帧包围框居中。",
+      "frames": [
+        "frames/SKL-N06_blue_aura_right_v001_f01.png",
+        "frames/SKL-N06_blue_aura_right_v001_f02.png",
+        "frames/SKL-N06_blue_aura_right_v001_f03.png",
+        "frames/SKL-N06_blue_aura_right_v001_f04.png"
+      ],
+      "source_rects": [
+        [
+          0,
+          941,
+          314,
+          313
+        ],
+        [
+          314,
+          941,
+          313,
+          313
+        ],
+        [
+          627,
+          941,
+          314,
+          313
+        ],
+        [
+          941,
+          941,
+          313,
+          313
+        ]
+      ],
+      "source_anchors": [
+        [
+          157,
+          1098
+        ],
+        [
+          470,
+          1098
+        ],
+        [
+          784,
+          1098
+        ],
+        [
+          1097,
+          1098
+        ]
+      ],
+      "sheet": "sheets/SKL-N06_blue_aura_right_v001_sheet.png"
+    }
+  ],
+  "icons": [
+    {
+      "skill": "SKL-N01",
+      "file": "icons/SKL-N01_icon_v001.png",
+      "preview": "icons/SKL-N01_icon_preview_v001.png",
+      "size": [
+        24,
+        24
+      ],
+      "source": "SKL-NB01_icons_v002.png",
+      "source_rect": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "source_sha256": "d9b03db772efc0951dc0b01fc23b1e7d15f1b00cd8d188177699d89252ea55a0"
+    },
+    {
+      "skill": "SKL-N02",
+      "file": "icons/SKL-N02_icon_v001.png",
+      "preview": "icons/SKL-N02_icon_preview_v001.png",
+      "size": [
+        24,
+        24
+      ],
+      "source": "SKL-NB01_icons_v002.png",
+      "source_rect": [
+        512,
+        0,
+        512,
+        512
+      ],
+      "source_sha256": "d9b03db772efc0951dc0b01fc23b1e7d15f1b00cd8d188177699d89252ea55a0"
+    },
+    {
+      "skill": "SKL-N03",
+      "file": "icons/SKL-N03_icon_v001.png",
+      "preview": "icons/SKL-N03_icon_preview_v001.png",
+      "size": [
+        24,
+        24
+      ],
+      "source": "SKL-NB01_icons_v002.png",
+      "source_rect": [
+        1024,
+        0,
+        512,
+        512
+      ],
+      "source_sha256": "d9b03db772efc0951dc0b01fc23b1e7d15f1b00cd8d188177699d89252ea55a0"
+    },
+    {
+      "skill": "SKL-N04",
+      "file": "icons/SKL-N04_icon_v001.png",
+      "preview": "icons/SKL-N04_icon_preview_v001.png",
+      "size": [
+        24,
+        24
+      ],
+      "source": "SKL-NB01_icons_v002.png",
+      "source_rect": [
+        0,
+        512,
+        512,
+        512
+      ],
+      "source_sha256": "d9b03db772efc0951dc0b01fc23b1e7d15f1b00cd8d188177699d89252ea55a0"
+    },
+    {
+      "skill": "SKL-N05",
+      "file": "icons/SKL-N05_icon_v001.png",
+      "preview": "icons/SKL-N05_icon_preview_v001.png",
+      "size": [
+        24,
+        24
+      ],
+      "source": "SKL-NB01_icons_v002.png",
+      "source_rect": [
+        512,
+        512,
+        512,
+        512
+      ],
+      "source_sha256": "d9b03db772efc0951dc0b01fc23b1e7d15f1b00cd8d188177699d89252ea55a0"
+    },
+    {
+      "skill": "SKL-N06",
+      "file": "icons/SKL-N06_icon_v001.png",
+      "preview": "icons/SKL-N06_icon_preview_v001.png",
+      "size": [
+        24,
+        24
+      ],
+      "source": "SKL-NB01_icons_v002.png",
+      "source_rect": [
+        1024,
+        512,
+        512,
+        512
+      ],
+      "source_sha256": "d9b03db772efc0951dc0b01fc23b1e7d15f1b00cd8d188177699d89252ea55a0"
+    }
+  ]
+}

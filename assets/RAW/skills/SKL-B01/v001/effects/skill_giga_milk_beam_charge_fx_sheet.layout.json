@@ -1,0 +1,52 @@
+{
+  "skill_id": "skill_giga_milk_beam",
+  "part": "charge",
+  "sheet": "skill_giga_milk_beam_charge_fx_sheet.png",
+  "layout": {
+    "columns": 2,
+    "rows": 2,
+    "order": "row_major",
+    "actual_size": [
+      1254,
+      1254
+    ],
+    "cell_boundaries_x": [
+      0,
+      627,
+      1254
+    ],
+    "cell_boundaries_y": [
+      0,
+      627,
+      1254
+    ]
+  },
+  "target_frame_size": [
+    128,
+    128
+  ],
+  "target_root_px": [
+    64,
+    64
+  ],
+  "attachment_world": [
+    14,
+    -30
+  ],
+  "frames": [
+    "charge_small",
+    "charge_medium",
+    "charge_full_a",
+    "charge_full_b"
+  ],
+  "loop_frames": [
+    2,
+    3
+  ],
+  "generation": "builtin_image_gen",
+  "alpha_extrema": [
+    0,
+    255
+  ],
+  "qa_note": "Center-register charge balls. Actual dimensions may differ from prompt. Single common scale; frame1..3 designed size growth. No per-frame bbox scaling."
+}

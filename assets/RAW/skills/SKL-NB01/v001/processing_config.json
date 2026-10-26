@@ -1,0 +1,625 @@
+{
+  "schema_version": 1,
+  "batch_id": "SKL-NB01",
+  "version": "v001",
+  "state": "art_candidate",
+  "raw_dir": "assets/RAW/skills/SKL-NB01/v001",
+  "output_dir": "assets/PROCESSED/skills/SKL-NB01/v001",
+  "icon_source": "SKL-NB01_icons_v002.png",
+  "icon_grid": [
+    3,
+    2
+  ],
+  "icon_size": 24,
+  "icon_preview_size": 96,
+  "alpha_analysis_threshold": 16,
+  "transparent_padding": 6,
+  "sources": [
+    {
+      "asset_id": "SKL-N01",
+      "slug": "quickdraw",
+      "label": "新奶流-拔刀",
+      "file": "SKL-N01_quickdraw_right_v001.png",
+      "row_edges": [
+        0,
+        349,
+        650,
+        973,
+        1254
+      ],
+      "body_reference_height": 256,
+      "body_target_height": 40,
+      "hero_canvas": [
+        96,
+        96
+      ],
+      "hero_anchor": [
+        48,
+        84
+      ],
+      "animations": [
+        {
+          "name": "stance",
+          "label": "拔刀架势",
+          "row": 0,
+          "kind": "hero",
+          "fps": 20,
+          "loop": false,
+          "canvas": [
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            84
+          ],
+          "anchor_mode": "hero_semantic_root",
+          "scale": null,
+          "notes": "同一源图全部主角帧统一尺度，不依包围框缩放；空中/抬脚保留姿态，实际位移由玩法驱动。"
+        },
+        {
+          "name": "counter_slash",
+          "label": "居合反击",
+          "row": 1,
+          "kind": "hero",
+          "fps": 10,
+          "loop": false,
+          "canvas": [
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            84
+          ],
+          "anchor_mode": "hero_semantic_root",
+          "scale": null,
+          "notes": "同一源图全部主角帧统一尺度，不依包围框缩放；空中/抬脚保留姿态，实际位移由玩法驱动。"
+        },
+        {
+          "name": "white_wind",
+          "label": "白色气流",
+          "row": 2,
+          "kind": "effect",
+          "fps": 12,
+          "loop": false,
+          "canvas": [
+            96,
+            80
+          ],
+          "anchor": [
+            48,
+            40
+          ],
+          "anchor_mode": "center",
+          "scale": 0.22,
+          "notes": "同一动画全部帧使用固定尺度与固定来源root，不做逐帧包围框居中。"
+        },
+        {
+          "name": "slash_fx",
+          "label": "居合斩光",
+          "row": 3,
+          "kind": "effect",
+          "fps": 12,
+          "loop": false,
+          "canvas": [
+            96,
+            80
+          ],
+          "anchor": [
+            48,
+            40
+          ],
+          "anchor_mode": "center",
+          "scale": 0.23,
+          "notes": "同一动画全部帧使用固定尺度与固定来源root，不做逐帧包围框居中。"
+        }
+      ]
+    },
+    {
+      "asset_id": "SKL-N02",
+      "slug": "laughter",
+      "label": "奶龙大笑",
+      "file": "SKL-N02_laughter_right_v002.png",
+      "row_edges": [
+        0,
+        326,
+        635,
+        951,
+        1254
+      ],
+      "body_reference_height": 260,
+      "body_target_height": 40,
+      "hero_canvas": [
+        96,
+        96
+      ],
+      "hero_anchor": [
+        48,
+        84
+      ],
+      "animations": [
+        {
+          "name": "laugh_enter",
+          "label": "捧腹大笑起手",
+          "row": 0,
+          "kind": "hero",
+          "fps": 10,
+          "loop": false,
+          "canvas": [
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            84
+          ],
+          "anchor_mode": "hero_semantic_root",
+          "scale": null,
+          "notes": "同一源图全部主角帧统一尺度，不依包围框缩放；空中/抬脚保留姿态，实际位移由玩法驱动。"
+        },
+        {
+          "name": "laugh_loop",
+          "label": "大笑循环",
+          "row": 1,
+          "kind": "hero",
+          "fps": 10,
+          "loop": true,
+          "canvas": [
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            84
+          ],
+          "anchor_mode": "hero_semantic_root",
+          "scale": null,
+          "notes": "同一源图全部主角帧统一尺度，不依包围框缩放；空中/抬脚保留姿态，实际位移由玩法驱动。"
+        },
+        {
+          "name": "red_aura",
+          "label": "狂击红粒子",
+          "row": 2,
+          "kind": "effect",
+          "fps": 12,
+          "loop": true,
+          "canvas": [
+            96,
+            80
+          ],
+          "anchor": [
+            48,
+            40
+          ],
+          "anchor_mode": "center",
+          "scale": 0.2,
+          "notes": "同一动画全部帧使用固定尺度与固定来源root，不做逐帧包围框居中。"
+        },
+        {
+          "name": "kill_heal",
+          "label": "击杀恢复",
+          "row": 3,
+          "kind": "effect",
+          "fps": 12,
+          "loop": false,
+          "canvas": [
+            96,
+            80
+          ],
+          "anchor": [
+            48,
+            40
+          ],
+          "anchor_mode": "center",
+          "scale": 0.2,
+          "notes": "同一动画全部帧使用固定尺度与固定来源root，不做逐帧包围框居中。"
+        }
+      ]
+    },
+    {
+      "asset_id": "SKL-N03",
+      "slug": "king_slam",
+      "label": "王从天降",
+      "file": "SKL-N03_king_slam_right_v001.png",
+      "row_edges": [
+        0,
+        404,
+        793,
+        1028,
+        1254
+      ],
+      "body_reference_height": 252,
+      "body_target_height": 40,
+      "hero_canvas": [
+        96,
+        96
+      ],
+      "hero_anchor": [
+        48,
+        84
+      ],
+      "animations": [
+        {
+          "name": "leap",
+          "label": "持锤跃起",
+          "row": 0,
+          "kind": "hero",
+          "fps": 10,
+          "loop": false,
+          "canvas": [
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            84
+          ],
+          "anchor_mode": "hero_semantic_root",
+          "scale": null,
+          "notes": "同一源图全部主角帧统一尺度，不依包围框缩放；空中/抬脚保留姿态，实际位移由玩法驱动。"
+        },
+        {
+          "name": "slam",
+          "label": "下砸落地",
+          "row": 1,
+          "kind": "hero",
+          "fps": 10,
+          "loop": false,
+          "canvas": [
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            84
+          ],
+          "anchor_mode": "hero_semantic_root",
+          "scale": null,
+          "notes": "同一源图全部主角帧统一尺度，不依包围框缩放；空中/抬脚保留姿态，实际位移由玩法驱动。"
+        },
+        {
+          "name": "ground_impact",
+          "label": "碎石冲击",
+          "row": 2,
+          "kind": "effect",
+          "fps": 12,
+          "loop": false,
+          "canvas": [
+            96,
+            80
+          ],
+          "anchor": [
+            48,
+            64
+          ],
+          "anchor_mode": "ground",
+          "scale": 0.24,
+          "notes": "同一动画全部帧使用固定尺度与固定来源root，不做逐帧包围框居中。"
+        },
+        {
+          "name": "stun_stars",
+          "label": "晕眩星环",
+          "row": 3,
+          "kind": "effect",
+          "fps": 12,
+          "loop": true,
+          "canvas": [
+            96,
+            80
+          ],
+          "anchor": [
+            48,
+            40
+          ],
+          "anchor_mode": "center",
+          "scale": 0.12,
+          "notes": "同一动画全部帧使用固定尺度与固定来源root，不做逐帧包围框居中。"
+        }
+      ]
+    },
+    {
+      "asset_id": "SKL-N04",
+      "slug": "endurance",
+      "label": "奶之毅力",
+      "file": "SKL-N04_endurance_right_v001.png",
+      "row_edges": [
+        0,
+        356,
+        701,
+        1014,
+        1254
+      ],
+      "body_reference_height": 275,
+      "body_target_height": 40,
+      "hero_canvas": [
+        96,
+        96
+      ],
+      "hero_anchor": [
+        48,
+        84
+      ],
+      "animations": [
+        {
+          "name": "stomp",
+          "label": "单脚踏地",
+          "row": 0,
+          "kind": "hero",
+          "fps": 10,
+          "loop": false,
+          "canvas": [
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            84
+          ],
+          "anchor_mode": "hero_semantic_root",
+          "scale": null,
+          "notes": "同一源图全部主角帧统一尺度，不依包围框缩放；空中/抬脚保留姿态，实际位移由玩法驱动。"
+        },
+        {
+          "name": "brace_recover",
+          "label": "稳定收势",
+          "row": 1,
+          "kind": "hero",
+          "fps": 10,
+          "loop": false,
+          "canvas": [
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            84
+          ],
+          "anchor_mode": "hero_semantic_root",
+          "scale": null,
+          "notes": "同一源图全部主角帧统一尺度，不依包围框缩放；空中/抬脚保留姿态，实际位移由玩法驱动。"
+        },
+        {
+          "name": "white_aura",
+          "label": "忍耐白光",
+          "row": 2,
+          "kind": "effect",
+          "fps": 12,
+          "loop": true,
+          "canvas": [
+            96,
+            80
+          ],
+          "anchor": [
+            48,
+            40
+          ],
+          "anchor_mode": "center",
+          "scale": 0.18,
+          "notes": "同一动画全部帧使用固定尺度与固定来源root，不做逐帧包围框居中。"
+        },
+        {
+          "name": "reduced_hit",
+          "label": "减伤受击",
+          "row": 3,
+          "kind": "effect",
+          "fps": 12,
+          "loop": false,
+          "canvas": [
+            96,
+            80
+          ],
+          "anchor": [
+            48,
+            40
+          ],
+          "anchor_mode": "center",
+          "scale": 0.24,
+          "notes": "同一动画全部帧使用固定尺度与固定来源root，不做逐帧包围框居中。"
+        }
+      ]
+    },
+    {
+      "asset_id": "SKL-N05",
+      "slug": "void_milk",
+      "label": "虚式-奶",
+      "file": "SKL-N05_void_milk_right_v001.png",
+      "row_edges": [
+        0,
+        336,
+        652,
+        919,
+        1254
+      ],
+      "body_reference_height": 246,
+      "body_target_height": 40,
+      "hero_canvas": [
+        96,
+        96
+      ],
+      "hero_anchor": [
+        48,
+        84
+      ],
+      "animations": [
+        {
+          "name": "charge",
+          "label": "蓄力",
+          "row": 0,
+          "kind": "hero",
+          "fps": 4,
+          "loop": false,
+          "canvas": [
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            84
+          ],
+          "anchor_mode": "hero_semantic_root",
+          "scale": null,
+          "notes": "同一源图全部主角帧统一尺度，不依包围框缩放；空中/抬脚保留姿态，实际位移由玩法驱动。"
+        },
+        {
+          "name": "release",
+          "label": "推手释放",
+          "row": 1,
+          "kind": "hero",
+          "fps": 10,
+          "loop": false,
+          "canvas": [
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            84
+          ],
+          "anchor_mode": "hero_semantic_root",
+          "scale": null,
+          "notes": "同一源图全部主角帧统一尺度，不依包围框缩放；空中/抬脚保留姿态，实际位移由玩法驱动。"
+        },
+        {
+          "name": "orb_loop",
+          "label": "巨大光球",
+          "row": 2,
+          "kind": "effect",
+          "fps": 12,
+          "loop": true,
+          "canvas": [
+            128,
+            128
+          ],
+          "anchor": [
+            64,
+            64
+          ],
+          "anchor_mode": "center",
+          "scale": 0.32,
+          "notes": "同一动画全部帧使用固定尺度与固定来源root，不做逐帧包围框居中。"
+        },
+        {
+          "name": "explosion",
+          "label": "光球爆炸",
+          "row": 3,
+          "kind": "effect",
+          "fps": 12,
+          "loop": false,
+          "canvas": [
+            128,
+            128
+          ],
+          "anchor": [
+            64,
+            64
+          ],
+          "anchor_mode": "center",
+          "scale": 0.32,
+          "notes": "同一动画全部帧使用固定尺度与固定来源root，不做逐帧包围框居中。"
+        }
+      ]
+    },
+    {
+      "asset_id": "SKL-N06",
+      "slug": "arcane_source",
+      "label": "奶法之源",
+      "file": "SKL-N06_arcane_source_right_v001.png",
+      "row_edges": [
+        0,
+        357,
+        683,
+        941,
+        1254
+      ],
+      "body_reference_height": 281,
+      "body_target_height": 40,
+      "hero_canvas": [
+        96,
+        96
+      ],
+      "hero_anchor": [
+        48,
+        84
+      ],
+      "animations": [
+        {
+          "name": "ground_slap",
+          "label": "拍地施法",
+          "row": 0,
+          "kind": "hero",
+          "fps": 10,
+          "loop": false,
+          "canvas": [
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            84
+          ],
+          "anchor_mode": "hero_semantic_root",
+          "scale": null,
+          "notes": "同一源图全部主角帧统一尺度，不依包围框缩放；空中/抬脚保留姿态，实际位移由玩法驱动。"
+        },
+        {
+          "name": "rise",
+          "label": "起身收势",
+          "row": 1,
+          "kind": "hero",
+          "fps": 10,
+          "loop": false,
+          "canvas": [
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            84
+          ],
+          "anchor_mode": "hero_semantic_root",
+          "scale": null,
+          "notes": "同一源图全部主角帧统一尺度，不依包围框缩放；空中/抬脚保留姿态，实际位移由玩法驱动。"
+        },
+        {
+          "name": "magic_circle",
+          "label": "蓝色法阵",
+          "row": 2,
+          "kind": "effect",
+          "fps": 12,
+          "loop": false,
+          "canvas": [
+            96,
+            80
+          ],
+          "anchor": [
+            48,
+            64
+          ],
+          "anchor_mode": "ground",
+          "scale": 0.24,
+          "notes": "同一动画全部帧使用固定尺度与固定来源root，不做逐帧包围框居中。"
+        },
+        {
+          "name": "blue_aura",
+          "label": "奥术蓝粒子",
+          "row": 3,
+          "kind": "effect",
+          "fps": 12,
+          "loop": true,
+          "canvas": [
+            96,
+            80
+          ],
+          "anchor": [
+            48,
+            40
+          ],
+          "anchor_mode": "center",
+          "scale": 0.2,
+          "notes": "同一动画全部帧使用固定尺度与固定来源root，不做逐帧包围框居中。"
+        }
+      ]
+    }
+  ]
+}
