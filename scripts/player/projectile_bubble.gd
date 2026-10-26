@@ -78,6 +78,10 @@ func _play_impact() -> void:
 
 
 func _draw() -> void:
+	if visual_kind == "bullet":
+		draw_line(-dir*10,dir*2,Color("#d7cfb0"),2,false)
+		draw_line(-dir*16,-dir*6,Color(0.9,0.85,0.7,0.3),1,false)
+		return
 	if is_instance_valid(_weapon_visual):
 		return
 	draw_circle(Vector2.ZERO, RADIUS + 2.0, Color(0.55, 0.75, 1.0, 0.25))

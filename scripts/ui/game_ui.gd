@@ -50,6 +50,7 @@ func _ready() -> void:
 	var magic_theme := Theme.new()
 	magic_theme.default_font_size = int(cfg.layout.font)
 	magic_theme.set_stylebox("panel","TooltipPanel",_style(_color("panel"),_color("gold")))
+	magic_theme.default_font = RPGSkin.font()
 	root_control.theme = magic_theme
 	add_child(root_control)
 	var cursor := RPGSkin.cursor_texture()
@@ -88,6 +89,9 @@ func _process(delta: float) -> void:
 		_bind_scene(current)
 	if not is_instance_valid(player):
 		hud.hide()
+		_toast_time = 0
+		_toast_label.hide()
+		_damage_overlay.modulate.a = 0
 		return
 	hud.visible = mode in ["","rest"]
 	_coin_label.visible = not _resting
@@ -187,14 +191,7 @@ func _build_hud() -> void:
 	hud.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	root_control.add_child(hud)
 	var skin: Dictionary = RPGSkin.config().hud
-	var hud_art := TextureRect.new()
-	hud_art.texture = RPGSkin.texture("hud")
-	hud_art.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
-	hud_art.position = _rect(skin.rect).position
-	hud_art.size = _rect(skin.rect).size
-	hud_art.texture_filter = CanvasItem.TEXTURE_FILTER_LINEAR
-	hud_art.mouse_filter = Control.MOUSE_FILTER_IGNORE
-	hud.add_child(hud_art)
+	RPGSkin.frame(hud,"hud",_rect(skin.rect))
 	var portrait := _picture(hud, "res://assets/PROCESSED/characters/CHR-01/v001/frames/CHR-01_player_idle_right_v001_f01.png", _rect(skin.portrait))
 	var face := AtlasTexture.new()
 	face.atlas = portrait.texture
@@ -214,7 +211,7 @@ func _build_hud() -> void:
 		hud.add_child(bar)
 		bar.size = Vector2(spec[2],spec[3])
 		_bars.append(bar)
-		var numbers := _label(hud, "", bar.position - Vector2(0,3), 9)
+		var numbers := _label(hud, "", bar.position - Vector2(0,4), 7)
 		numbers.size = bar.size
 		numbers.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 		_bar_labels.append(numbers)
@@ -821,7 +818,7 @@ func _current_inventory_signature() -> String:
 func _set_item(slot: MagicSlot, id: String, count: int) -> void:
 	slot.item_id = id
 	slot.amount = count
-	slot.icon = load(ITEM_ICON % id) if ResourceLoader.exists(ITEM_ICON % id) else null
+	slot.icon = RPGSkin.icon_for_path(ITEM_ICON % id) if ResourceLoader.exists(ITEM_ICON % id) else null
 	slot.tooltip_text = str(DataDB.get_item(StringName(id)).get("name",id))
 	slot.queue_redraw()
 
@@ -831,7 +828,7 @@ func _update_hotbar(slot: MagicSlot, index: int) -> void:
 	var id := str(entry.id) if entry is Dictionary else ""
 	slot.item_id = id
 	slot.amount = int(entry.count) if entry is Dictionary else 0
-	slot.icon = load(ITEM_ICON%id) if id != "" and ResourceLoader.exists(ITEM_ICON%id) else null
+	slot.icon = RPGSkin.icon_for_path(ITEM_ICON%id) if id != "" and ResourceLoader.exists(ITEM_ICON%id) else null
 	slot.tooltip_text = str(DataDB.get_item(StringName(id)).get("name","")) if id != "" else "将行囊物品拖入此格独立存放"
 	slot.queue_redraw()
 
@@ -862,24 +859,26 @@ func _picture(parent: Control, path: String, rect: Rect2) -> TextureRect:
 	return image
 
 
-func _label(parent: Control, text: String, pos: Vector2, size: int = 12, color: Color = Color.WHITE) -> Label:
+func _label(parent: Control, text: String, pos: Vector2, size: int = 12, color: Color = Color("#d7d1bd")) -> Label:
 	var label := Label.new()
 	label.text = text
 	label.position = pos
 	label.add_theme_font_size_override("font_size",size)
+	label.add_theme_font_override("font",RPGSkin.font())
 	label.add_theme_color_override("font_color",color)
 	label.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	parent.add_child(label)
 	return label
 
 
-func _paragraph(parent: Control, text: String, rect: Rect2, font_size: int = 12, color: Color = Color.WHITE) -> Label:
+func _paragraph(parent: Control, text: String, rect: Rect2, font_size: int = 12, color: Color = Color("#d7d1bd")) -> Label:
 	var label := Label.new()
 	label.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 	label.clip_text = true
 	label.position = rect.position
 	label.size = rect.size
 	label.add_theme_font_size_override("font_size",font_size)
+	label.add_theme_font_override("font",RPGSkin.font())
 	label.add_theme_color_override("font_color",color)
 	label.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	parent.add_child(label)
@@ -911,7 +910,7 @@ func _style(fill: Color, border: Color = Color.TRANSPARENT) -> StyleBoxFlat:
 	style.bg_color = fill
 	style.border_color = border
 	style.set_border_width_all(1)
-	style.set_corner_radius_all(3)
+	style.set_corner_radius_all(0)
 	style.content_margin_left = 4
 	style.content_margin_right = 4
 	style.content_margin_top = 0

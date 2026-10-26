@@ -16,11 +16,10 @@ var mana_blocked := false
 var cooldown := 0.0
 var cooldown_ratio := 0.0
 var _hover := false
-var _frame: Texture2D
 
 
 func _ready() -> void:
-	_frame = RPGSkin.texture("slot")
+
 	texture_filter = CanvasItem.TEXTURE_FILTER_LINEAR
 	clip_contents = true
 	mouse_default_cursor_shape = Control.CURSOR_POINTING_HAND
@@ -29,11 +28,12 @@ func _ready() -> void:
 
 
 func _draw() -> void:
-	draw_texture_rect(_frame, Rect2(Vector2.ZERO, size), false)
+	draw_rect(Rect2(Vector2.ZERO,size),Color(0.08,0.085,0.07,0.64))
+	draw_rect(Rect2(Vector2.ONE,size-Vector2.ONE*2),Color("#625f4d"),false,0.5)
 	if selected:
 		draw_colored_polygon(PackedVector2Array([Vector2(size.x/2-3,2),Vector2(size.x/2+3,2),Vector2(size.x/2,6)]),Color("#f4dfa0"))
 	if selected or _hover:
-		draw_rect(Rect2(Vector2.ONE, size - Vector2.ONE * 2), Color("#f0d7a0"), false, 1)
+		draw_rect(Rect2(Vector2.ONE, size - Vector2.ONE * 2), Color("#bfb594"), false, 1)
 	if icon != null:
 		draw_texture_rect(icon, Rect2(Vector2.ONE * 4, size - Vector2.ONE * 8), false, Color(0.45,0.48,0.5) if locked or mana_blocked else Color.WHITE)
 	if locked:
@@ -46,7 +46,7 @@ func _draw() -> void:
 			var end_angle := -PI / 2 + minf(float(step+1) / 32,ratio) * TAU
 			if end_angle-angle > 0.00001:
 				draw_colored_polygon(PackedVector2Array([size*0.5,size*0.5+Vector2(cos(angle),sin(angle))*size.length(),size*0.5+Vector2(cos(end_angle),sin(end_angle))*size.length()]),Color(0.01,0.04,0.06,0.78))
-	var font := ThemeDB.fallback_font
+	var font := RPGSkin.font()
 	if key_text != "":
 		draw_string(font, Vector2(3,10), key_text, HORIZONTAL_ALIGNMENT_LEFT, -1, 9, Color("#efddb1"))
 	if amount > 0:

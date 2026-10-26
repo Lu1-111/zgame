@@ -8,583 +8,284 @@
     32,
     58
   ],
-  "shoulder": [
-    28,
-    36
-  ],
-  "regions": {
-    "hand": [
-      30,
-      41,
-      4,
-      5
-    ]
-  },
-  "palette_samples": {
-    "skin": [
-      28,
-      35
-    ],
-    "edge": [
-      31,
-      43
-    ]
-  },
   "sword": {
     "phase_indices": [
       3,
       5,
       7
     ],
-    "length": 18,
-    "hilt": 4,
-    "guard": 4,
-    "steel": "#b9d2d3",
-    "edge": "#e8eeee",
-    "shadow": "#536a72",
-    "grip": "#8d5c28",
-    "gold": "#d3b164"
-  },
-  "bow": {
-    "draw_distance": 13,
-    "limb": 12,
-    "curve": 5,
-    "wood": "#956b35",
-    "wood_light": "#d2ac6a",
-    "string": "#e8dec2",
-    "arrow": "#b5ccce",
-    "release_frame_seconds": 0.1
-  },
-  "full_frame": {
-    "frames": {
-      "idle": {
-        "path": "res://assets/PROCESSED/characters/CHR-01/v001/frames/CHR-01_player_idle_right_v001_f01.png",
-        "origin": [
-          0,
-          0
-        ],
-        "hand": [
-          32,
-          43
-        ],
-        "masks": [],
-        "bow_grip": [
-          43,
-          40
-        ]
-      },
-      "hammer_1_1": {
-        "path": "res://assets/PROCESSED/characters/CHR-01/v001/frames/CHR-01_player_hammer_1_right_v001_f01.png",
-        "origin": [
-          16,
-          32
-        ],
-        "hand": [
-          26,
-          36
-        ],
-        "masks": [
-          [
-            0,
-            10,
-            23,
-            29
-          ]
-        ],
-        "bow_grip": [
-          26,
-          36
-        ]
-      },
-      "hammer_1_2": {
-        "path": "res://assets/PROCESSED/characters/CHR-01/v001/frames/CHR-01_player_hammer_1_right_v001_f02.png",
-        "origin": [
-          16,
-          32
-        ],
-        "hand": [
-          44,
-          40
-        ],
-        "masks": [
-          [
-            44,
-            34,
-            20,
-            16
-          ]
-        ],
-        "bow_grip": [
-          44,
-          40
-        ]
-      },
-      "hammer_1_3": {
-        "path": "res://assets/PROCESSED/characters/CHR-01/v001/frames/CHR-01_player_hammer_1_right_v001_f03.png",
-        "origin": [
-          16,
-          32
-        ],
-        "hand": [
-          44,
-          48
-        ],
-        "masks": [
-          [
-            46,
-            44,
-            18,
-            11
-          ],
-          [
-            52,
-            54,
-            12,
-            10
-          ]
-        ],
-        "bow_grip": [
-          44,
-          48
-        ]
-      },
-      "hammer_1_4": {
-        "path": "res://assets/PROCESSED/characters/CHR-01/v001/frames/CHR-01_player_hammer_1_right_v001_f04.png",
-        "origin": [
-          16,
-          32
-        ],
-        "hand": [
-          36,
-          41
-        ],
-        "masks": [
-          [
-            43,
-            34,
-            21,
-            19
-          ],
-          [
-            49,
-            52,
-            15,
-            5
-          ]
-        ],
-        "bow_grip": [
-          36,
-          41
-        ]
-      },
-      "hammer_2_1": {
-        "path": "res://assets/PROCESSED/characters/CHR-01/v001/frames/CHR-01_player_hammer_2_right_v001_f01.png",
-        "origin": [
-          16,
-          32
-        ],
-        "hand": [
-          23,
-          44
-        ],
-        "masks": [
-          [
-            0,
-            38,
-            19,
-            22
-          ]
-        ],
-        "bow_grip": [
-          23,
-          44
-        ]
-      },
-      "hammer_2_2": {
-        "path": "res://assets/PROCESSED/characters/CHR-01/v001/frames/CHR-01_player_hammer_2_right_v001_f02.png",
-        "origin": [
-          16,
-          32
-        ],
-        "hand": [
-          42,
-          32
-        ],
-        "masks": [
-          [
-            45,
-            0,
-            19,
-            32
-          ]
-        ],
-        "bow_grip": [
-          42,
-          32
-        ]
-      },
-      "hammer_2_3": {
-        "path": "res://assets/PROCESSED/characters/CHR-01/v001/frames/CHR-01_player_hammer_2_right_v001_f03.png",
-        "origin": [
-          16,
-          32
-        ],
-        "hand": [
-          42,
-          31
-        ],
-        "masks": [
-          [
-            45,
-            0,
-            19,
-            32
-          ]
-        ],
-        "bow_grip": [
-          42,
-          31
-        ]
-      },
-      "hammer_2_4": {
-        "path": "res://assets/PROCESSED/characters/CHR-01/v001/frames/CHR-01_player_hammer_2_right_v001_f04.png",
-        "origin": [
-          16,
-          32
-        ],
-        "hand": [
-          36,
-          41
-        ],
-        "masks": [
-          [
-            43,
-            34,
-            21,
-            19
-          ],
-          [
-            49,
-            52,
-            15,
-            5
-          ]
-        ],
-        "bow_grip": [
-          36,
-          41
-        ]
-      },
-      "hammer_3_1": {
-        "path": "res://assets/PROCESSED/characters/CHR-01/v001/frames/CHR-01_player_hammer_3_right_v001_f01.png",
-        "origin": [
-          16,
-          32
-        ],
-        "hand": [
-          29,
-          28
-        ],
-        "masks": [
-          [
-            0,
-            0,
-            27,
-            30
-          ]
-        ],
-        "bow_grip": [
-          29,
-          28
-        ]
-      },
-      "hammer_3_2": {
-        "path": "res://assets/PROCESSED/characters/CHR-01/v001/frames/CHR-01_player_hammer_3_right_v001_f02.png",
-        "origin": [
-          16,
-          32
-        ],
-        "hand": [
-          43,
-          47
-        ],
-        "masks": [
-          [
-            46,
-            44,
-            18,
-            11
-          ],
-          [
-            52,
-            54,
-            12,
-            10
-          ]
-        ],
-        "bow_grip": [
-          43,
-          47
-        ]
-      },
-      "hammer_3_3": {
-        "path": "res://assets/PROCESSED/characters/CHR-01/v001/frames/CHR-01_player_hammer_3_right_v001_f03.png",
-        "origin": [
-          16,
-          32
-        ],
-        "hand": [
-          43,
-          47
-        ],
-        "masks": [
-          [
-            46,
-            44,
-            18,
-            11
-          ],
-          [
-            52,
-            54,
-            12,
-            10
-          ]
-        ],
-        "bow_grip": [
-          43,
-          47
-        ]
-      },
-      "hammer_3_4": {
-        "path": "res://assets/PROCESSED/characters/CHR-01/v001/frames/CHR-01_player_hammer_3_right_v001_f04.png",
-        "origin": [
-          16,
-          32
-        ],
-        "hand": [
-          36,
-          41
-        ],
-        "masks": [
-          [
-            43,
-            34,
-            21,
-            19
-          ],
-          [
-            49,
-            52,
-            15,
-            5
-          ]
-        ],
-        "bow_grip": [
-          36,
-          41
-        ]
-      },
-      "staff_sweep_1": {
-        "path": "res://assets/PROCESSED/characters/CHR-01/v001/frames/CHR-01_player_staff_sweep_right_v001_f01.png",
-        "origin": [
-          16,
-          32
-        ],
-        "hand": [
-          27,
-          37
-        ],
-        "masks": [
-          [
-            0,
-            0,
-            22,
-            34
-          ]
-        ],
-        "bow_grip": [
-          27,
-          37
-        ]
-      },
-      "staff_sweep_2": {
-        "path": "res://assets/PROCESSED/characters/CHR-01/v001/frames/CHR-01_player_staff_sweep_right_v001_f02.png",
-        "origin": [
-          16,
-          32
-        ],
-        "hand": [
+    "length": 27,
+    "hilt": 9,
+    "guard": 5,
+    "steel": "#b8c0bd",
+    "edge": "#e7ebe0",
+    "shadow": "#414f56",
+    "grip": "#5c4637",
+    "gold": "#9d9579",
+    "grips": [
+      [
+        [
           35,
-          40
+          39
         ],
-        "masks": [
-          [
-            45,
-            30,
-            19,
-            24
-          ]
+        [
+          36,
+          31
         ],
-        "bow_grip": [
-          44,
-          40
-        ]
-      },
-      "staff_sweep_3": {
-        "path": "res://assets/PROCESSED/characters/CHR-01/v001/frames/CHR-01_player_staff_sweep_right_v001_f03.png",
-        "origin": [
-          16,
-          32
-        ],
-        "hand": [
+        [
           37,
-          48
+          26
         ],
-        "masks": [
-          [
-            46,
-            45,
-            18,
-            10
-          ],
-          [
-            52,
-            54,
-            12,
-            10
-          ]
+        [
+          41,
+          28
         ],
-        "bow_grip": [
-          44,
-          48
+        [
+          46,
+          36
+        ],
+        [
+          43,
+          37
+        ],
+        [
+          40,
+          40
+        ],
+        [
+          34,
+          40
         ]
-      },
-      "staff_sweep_4": {
-        "path": "res://assets/PROCESSED/characters/CHR-01/v001/frames/CHR-01_player_staff_sweep_right_v001_f04.png",
-        "origin": [
-          16,
+      ],
+      [
+        [
+          43,
+          37
+        ],
+        [
+          44,
+          40
+        ],
+        [
+          47,
+          39
+        ],
+        [
+          46,
           32
         ],
-        "hand": [
-          35,
-          40
+        [
+          41,
+          25
         ],
-        "masks": [
-          [
-            46,
-            14,
-            18,
-            24
-          ]
+        [
+          36,
+          24
         ],
-        "bow_grip": [
-          44,
+        [
+          37,
+          31
+        ],
+        [
+          34,
           40
         ]
-      }
-    },
-    "sword_sequences": [
-      [
-        "hammer_1_1",
-        "hammer_1_1",
-        "hammer_1_1",
-        "hammer_1_2",
-        "hammer_1_2",
-        "hammer_1_3",
-        "hammer_1_4",
-        "hammer_1_4"
       ],
       [
-        "hammer_1_3",
-        "hammer_2_1",
-        "hammer_2_2",
-        "hammer_2_2",
-        "hammer_2_3",
-        "hammer_2_3",
-        "hammer_2_4",
-        "hammer_2_4"
-      ],
-      [
-        "hammer_1_1",
-        "hammer_2_2",
-        "hammer_2_3",
-        "hammer_2_3",
-        "hammer_3_2",
-        "hammer_3_3",
-        "hammer_1_4",
-        "hammer_1_4"
+        [
+          30,
+          40
+        ],
+        [
+          28,
+          37
+        ],
+        [
+          30,
+          34
+        ],
+        [
+          37,
+          35
+        ],
+        [
+          46,
+          37
+        ],
+        [
+          49,
+          39
+        ],
+        [
+          41,
+          40
+        ],
+        [
+          34,
+          40
+        ]
       ]
     ],
-    "sword_angles": [
+    "angles": [
       [
-        -145,
-        -130,
-        -85,
-        -15,
-        20,
-        60,
-        0,
-        -20
-      ],
-      [
-        65,
-        110,
-        35,
-        -30,
-        -65,
+        -35,
         -95,
-        -10,
-        -20
+        -125,
+        -65,
+        50,
+        140,
+        80,
+        -35
       ],
       [
-        -140,
-        -110,
-        -90,
+        140,
+        130,
+        75,
+        15,
         -65,
-        45,
-        85,
+        -120,
+        -70,
+        -35
+      ],
+      [
+        -170,
+        -160,
+        -130,
+        -65,
+        -5,
+        12,
+        -10,
+        -35
+      ]
+    ],
+    "body_degrees": [
+      [
+        -3,
+        -9,
+        -13,
+        -5,
+        9,
+        15,
+        8,
+        0
+      ],
+      [
         10,
-        -20
+        14,
+        10,
+        0,
+        -11,
+        -14,
+        -6,
+        0
+      ],
+      [
+        -5,
+        -12,
+        -15,
+        -5,
+        8,
+        14,
+        7,
+        0
       ]
     ],
-    "head_aim_factor": 0.07,
-    "draw_shift": [
-      -2,
-      1
-    ],
-    "bow_aim_sequences": {
-      "level": [
-        "staff_sweep_4",
-        "staff_sweep_4",
-        "staff_sweep_2",
-        "staff_sweep_2",
-        "staff_sweep_2",
-        "staff_sweep_3",
-        "staff_sweep_2",
-        "idle"
+    "depth": [
+      [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
       ],
-      "up": [
-        "hammer_2_1",
-        "hammer_2_2",
-        "hammer_2_2",
-        "hammer_2_3",
-        "hammer_2_3",
-        "hammer_2_4",
-        "hammer_2_2",
-        "idle"
+      [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
       ],
-      "down": [
-        "staff_sweep_2",
-        "staff_sweep_2",
-        "staff_sweep_3",
-        "staff_sweep_3",
-        "staff_sweep_3",
-        "hammer_3_2",
-        "staff_sweep_3",
-        "idle"
+      [
+        0.5,
+        0.6,
+        0.7,
+        0.85,
+        1,
+        0.9,
+        0.8,
+        1
       ]
-    },
-    "bow_angle_threshold": 0.35
+    ]
+  },
+  "rifle": {
+    "pivot": [
+      34,
+      39
+    ],
+    "pitch_offset": [
+      8,
+      8
+    ],
+    "barrel_length": 28,
+    "support": 15,
+    "recoil": 3,
+    "recoil_seconds": 0.12,
+    "body_aim_factor": 0.08,
+    "wood": "#765d42",
+    "wood_light": "#a28b67",
+    "steel": "#555f60",
+    "highlight": "#a2aeaa",
+    "dark": "#2d3434"
+  },
+  "arms": {
+    "front_shoulder": [
+      26,
+      35
+    ],
+    "back_shoulder": [
+      38,
+      35
+    ],
+    "skin_sample": [
+      25,
+      32
+    ],
+    "edge_sample": [
+      23,
+      43
+    ],
+    "highlight_sample": [
+      29,
+      26
+    ],
+    "mask": [
+      [
+        20,
+        35,
+        16,
+        13
+      ],
+      [
+        43,
+        34,
+        6,
+        12
+      ]
+    ],
+    "fill_row": 49,
+    "far_limit": 44,
+    "width": 4,
+    "hand_width": 3
+  },
+  "guard": {
+    "raise_frame_seconds": 0.1,
+    "hold_frame": 2,
+    "release_seconds": 0.18
   }
 }

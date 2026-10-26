@@ -20,6 +20,8 @@ var facing := 1
 var sm: StateMachine
 var checkpoint_position := Vector2.ZERO
 var is_guarding := false            ## Guard 状态维护（供受击结算/绘制）
+var guard_pose_time := 0.0
+var guard_release_from := 0
 var guard_perfect := 0.0            ## 完美格挡剩余窗口
 var dodge_iframe := false           ## Dodge 状态维护
 var attack_combo := 0               ## 当前连击段（0=未在连击中）
@@ -88,7 +90,7 @@ func _ready() -> void:
 		PlayerStates.Idle.new(), PlayerStates.Run.new(),
 		PlayerStates.Jump.new(), PlayerStates.Fall.new(),
 		PlayerStates.Land.new(), PlayerStates.Dodge.new(),
-		PlayerStates.Guard.new(), PlayerStates.Attack.new(),
+		PlayerStates.Guard.new(), PlayerStates.GuardRelease.new(), PlayerStates.Attack.new(),
 		PlayerStates.Skill.new(), PlayerStates.Hurt.new(),
 		PlayerStates.Dead.new(),
 	]
@@ -323,13 +325,16 @@ func fire_skill(id: StringName) -> void:
 	var cfg: Dictionary = _skill_cfgs.get(id, {})
 	match String(id):
 		"skill_cleave":
-			var presentation: Dictionary = cfg.presentation
-			var aim := aim_vector().normalized()
-			var hitbox: Array = presentation.hitbox
-			var socket := aim*float(presentation.reach)
-			var fx := AttackEffect.spawn(self,DamagePacket.new(damage_for_type("physical",float(cfg.damage_mult)),DamagePacket.DamageType.PHYSICAL,float(cfg.knockback),global_position,id),self,StringName(presentation.effect),global_position+socket,aim,Vector2(hitbox[0],hitbox[1]),Vector2.ZERO,float(presentation.active))
-			fx.orient_to_aim()
-			fx.hit_landed.connect(_on_hit_landed)
+			var wave := SwordWave.new()
+			wave.specification = cfg.presentation
+			wave.direction = aim_vector().normalized()
+			wave.packet = DamagePacket.new(damage_for_type("physical",float(cfg.damage_mult)),DamagePacket.DamageType.PHYSICAL,float(cfg.knockback),global_position,id)
+			wave.source_actor = self
+			wave.hit_landed.connect(_on_hit_landed)
+			var socket: Array = cfg.presentation.spawn_offset
+			var point := global_position+Vector2(float(socket[0])*facing,float(socket[1]))
+			get_tree().current_scene.add_child(wave)
+			wave.global_position = point
 		"skill_bubble":
 			spawn_bubble()
 		"skill_heal":
@@ -370,29 +375,29 @@ func weapon_is_ranged() -> bool:
 	return String(weapon_cfg().get("range_type", "melee")) == "ranged"
 
 
-## 弓箭与奶杖远程普攻；伤害、速度与蓄力倍率从武器和表现表读取。
-func spawn_weapon_projectile(charge: float = 1.0) -> void:
+## 步枪与奶杖远程普攻，枪口、子弹和瞄准使用同一组坐标。
+func spawn_weapon_projectile(_charge: float = 1.0) -> void:
 	var w := weapon_cfg()
 	var proj: Dictionary = w.get("projectile",{})
 	var kind := weapon_type()
 	var module := WeaponRuntime.module(kind)
-	var multiplier := lerpf(float(module.power_min),float(module.power_max),charge) if kind == "bow" else 1.0
 	var damage_type := DamagePacket.DamageType.MAGIC if str(w.get("damage_type","physical")) == "magic" else DamagePacket.DamageType.PHYSICAL
-	var packet := DamagePacket.new(attack_damage(multiplier),damage_type,PlayerTuning.ATTACK_KB,global_position,GameState.weapon_id)
-	var bubble := BUBBLE_SCENE.instantiate()
-	bubble.setup(aim_vector().normalized(),packet)
-	bubble.visual_kind = "arrow" if kind == "bow" else "staff"
-	bubble.speed = float(proj.get("speed",380)) * (lerpf(float(module.speed_min),1.0,charge) if kind == "bow" else 1.0)
-	bubble.source_actor = self
-	bubble.hit_landed.connect(_on_hit_landed)
+	var packet := DamagePacket.new(attack_damage(),damage_type,PlayerTuning.ATTACK_KB,global_position,GameState.weapon_id)
+	var bullet := BUBBLE_SCENE.instantiate()
+	bullet.setup(aim_vector().normalized(),packet)
+	bullet.visual_kind = "bullet" if kind == "rifle" else "staff"
+	bullet.speed = float(proj.get("speed",380))
+	bullet.source_actor = self
+	bullet.hit_landed.connect(_on_hit_landed)
 	var socket: Array = module.get("socket",[24,-9])
 	var point := global_position+Vector2(float(socket[0])*facing,float(socket[1]))
-	if kind == "bow" and is_instance_valid(_pixel_rig):
+	if kind == "rifle" and is_instance_valid(_pixel_rig):
 		_sync_rig_pose()
 		point = _pixel_rig.muzzle_global_position()
-	get_tree().current_scene.add_child(bubble)
-	bubble.global_position = point
-	AttackEffect.spawn(get_tree().current_scene,null,self,&"bow_release" if kind == "bow" else &"staff_cast",point,aim_vector(),Vector2.ZERO,Vector2.ZERO,0)
+		bullet.setup(_pixel_rig.firing_direction_global(),packet)
+	get_tree().current_scene.add_child(bullet)
+	bullet.global_position = point
+	AttackEffect.spawn(get_tree().current_scene,null,self,&"rifle_shot" if kind == "rifle" else &"staff_cast",point,bullet.dir,Vector2.ZERO,Vector2.ZERO,0)
 
 
 ## 近战普攻特效实体（M1.5 伤害判定实体化）：判定框随特效发射、伤害结算在特效位置；
@@ -767,7 +772,7 @@ func _process(_delta: float) -> void:
 func _update_animation() -> void:
 	if sprite.sprite_frames == null:
 		return
-	var rig_active := (sm.current_name() == &"Attack" and weapon_type() in ["sword","bow"]) or (sm.current_name() == &"Skill" and _current_skill == &"skill_cleave")
+	var rig_active := (sm.current_name() == &"Attack" and weapon_type() in ["sword","rifle"]) or (sm.current_name() == &"Skill" and _current_skill == &"skill_cleave")
 	_pixel_rig.visible = rig_active
 	sprite.visible = not rig_active
 	if rig_active:
@@ -776,16 +781,20 @@ func _update_animation() -> void:
 	if anim != &"" and sprite.animation != anim:
 		sprite.play(anim)
 	sprite.flip_h = facing < 0
-	if sm.current_name() == &"Attack" and weapon_type() == "bow":
+	if sm.current_name() in [&"Guard",&"GuardRelease"]:
 		sprite.pause()
-		sprite.frame = clampi(int(attack_charge*4),0,4) if attack_release_t < 0 else clampi(5+int(attack_release_t/float(WeaponRuntime.module("bow").recovery)*3),5,7)
+		var guard_cfg: Dictionary = _pixel_rig.cfg.guard
+		if sm.current_name() == &"Guard":
+			sprite.frame = mini(int(guard_pose_time/float(guard_cfg.raise_frame_seconds)),int(guard_cfg.hold_frame))
+		else:
+			sprite.frame = clampi(ceili(lerpf(float(guard_release_from),-1,guard_pose_time/float(guard_cfg.release_seconds))),0,int(guard_cfg.hold_frame))
 	_sync_weapon_sprite()
 
 
 func _sync_rig_pose() -> void:
-	_pixel_rig.kind = "bow" if weapon_type() == "bow" and sm.current_name() == &"Attack" else "sword"
-	_pixel_rig.combo = attack_combo
-	var module := WeaponRuntime.module("sword" if _pixel_rig.kind == "sword" else "bow")
+	_pixel_rig.kind = "rifle" if weapon_type() == "rifle" and sm.current_name() == &"Attack" else "sword"
+	_pixel_rig.combo = 3 if sm.current_name() == &"Skill" else attack_combo
+	var module := WeaponRuntime.module(_pixel_rig.kind)
 	var duration := float(module.startup)+float(module.active)+float(module.recovery)
 	_pixel_rig.progress = clampf((_clock-_last_attack_time)/duration,0,1)
 	if _pixel_rig.kind == "sword":
@@ -800,10 +809,16 @@ func _sync_rig_pose() -> void:
 			phase = lerpf(float(phases[1]),float(phases[2]),clampf((elapsed-float(module.startup)-float(module.active))/float(module.recovery),0,1))
 		_pixel_rig.progress = phase/float(phases[2])
 	_pixel_rig.charge = attack_charge
-	_pixel_rig.release_time = attack_release_t
+	_pixel_rig.release_time = maxf(-1,(_clock-_last_attack_time)-float(module.startup)) if _clock-_last_attack_time >= float(module.startup) else -1.0
 	_pixel_rig.aim = aim_vector()
 	_pixel_rig.facing = facing
 	_pixel_rig.apply_pose()
+	if _pixel_rig.kind == "rifle" and aim_vector().length() >= 48:
+		var target := global_position+aim_vector()
+		for iteration in 3:
+			var grip := _pixel_rig.to_global(_pixel_rig._grip-_pixel_rig._anchor)
+			_pixel_rig.aim = target-grip
+			_pixel_rig.apply_pose()
 
 
 ## 状态 → 动画名映射（动画名与 CHR-01_sprite_frames.tres 内 26 个动作一一对应）。
@@ -827,7 +842,9 @@ func _pick_animation() -> StringName:
 		&"Dodge":
 			return &"air_dodge" if _dodge_air else &"dodge"
 		&"Guard":
-			return &"parry" if guard_perfect > 0.0 else &"guard"
+			return &"guard"
+		&"GuardRelease":
+			return &"guard"
 		&"Attack":
 			return _attack_anim()
 		&"Skill":
@@ -869,7 +886,7 @@ func _draw() -> void:
 	draw_rect(Rect2(-10 + eye_x + 5, -10, 2.5, 4), Color(0.15, 0.12, 0.1))
 
 
-## 当前装备决定使用剑、锤、弓或杖模组。
+## 当前装备决定使用剑、锤、步枪或杖模组。
 func weapon_type() -> String:
 	return str(weapon_cfg().get("weapon_type","unarmed"))
 

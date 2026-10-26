@@ -16,6 +16,12 @@ func _ready() -> void:
 	add_to_group(&"npc_dialogue")
 	panel.color = Color.TRANSPARENT
 	panel.size = Vector2(480,88)
+	var theme := Theme.new()
+	theme.default_font = RPGSkin.font()
+	panel.theme = theme
+	speaker.add_theme_color_override("font_color",Color("#ded8c3"))
+	line.add_theme_color_override("font_color",Color("#d1cebc"))
+	hint.add_theme_color_override("font_color",Color("#939287"))
 	$Panel/Border.hide()
 	var background := RPGSkin.frame(panel,"dialogue",Rect2(Vector2.ZERO,panel.size))
 	background.modulate.a = float(RPGService.config().dialogue.opacity)

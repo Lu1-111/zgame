@@ -81,7 +81,7 @@ func _weapon_details() -> void:
 		return
 	ui._picture(details,str(definition.icon),Rect2(2,2,40,40))
 	ui._paragraph(details,str(definition.name),Rect2(48,3,120,42),14,ui._color("bright_gold"))
-	var types := {"sword":"剑 · 近战物理","hammer":"锤 · 近战物理","bow":"弓 · 蓄力远程","staff":"杖 · 远程奶术"}
+	var types := {"sword":"剑 · 近战物理","hammer":"锤 · 近战物理","rifle":"步枪 · 远程物理","staff":"杖 · 远程奶术"}
 	ui._label(details,str(types.get(str(definition.weapon_type),"武器")),Vector2(2,53),11,ui._color("accent"))
 	ui._label(details,"武器攻击力  %d" % int(definition.attack),Vector2(2,79),12)
 	ui._paragraph(details,str(definition.desc),Rect2(2,108,169,85),11,ui._color("text"))

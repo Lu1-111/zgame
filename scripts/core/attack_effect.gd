@@ -84,10 +84,13 @@ func _ready() -> void:
 ## （镜像按 _aim.x < 0，锚点由 EffectPlayer 自理，本地原点摆放）。
 ## 资源缺失或动作未知时保持 _draw() 灰盒回退，绝不阻断 spawn。
 func _setup_visual() -> void:
-	if _effect_name in [&"sword_slash",&"bow_release",&"staff_cast"]:
+	if WeaponRuntime.config().independent_fx.has(str(_effect_name)) or _effect_name in [&"sword_slash",&"bow_release",&"rifle_shot",&"staff_cast"]:
 		var generated := WeaponVFX.new()
-		generated.kind = {&"sword_slash":"sword",&"bow_release":"arrow",&"staff_cast":"staff"}[_effect_name]
+		generated.kind = str(_effect_name) if WeaponRuntime.config().independent_fx.has(str(_effect_name)) else {&"sword_slash":"sword",&"bow_release":"arrow",&"rifle_shot":"rifle_muzzle",&"staff_cast":"staff"}[_effect_name]
 		generated.scale.x = -1.0 if _aim.x < 0 else 1.0
+		if _effect_name == &"rifle_shot":
+			generated.scale.x = 1.0
+			generated.rotation = _aim.angle()
 		add_child(generated)
 		_effect_player = generated
 		_fx_playing = true

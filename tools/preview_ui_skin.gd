@@ -22,7 +22,7 @@ func _capture() -> void:
 		service.add_item(entry.id,int(entry.count))
 	service.register_hotbar("potion_small",0)
 	service.register_hotbar("potion_mana",1)
-	for mode in ["equipment","attributes","skills","inventory","pause","dialogue","rest","hud"]:
+	for mode in ["equipment","attributes","skills","inventory","pause","dialogue","rest","talents","storage","hud"]:
 		ui._force_close()
 		for npc in get_nodes_in_group(&"npc"):
 			npc.close_interaction()
@@ -43,6 +43,10 @@ func _capture() -> void:
 		elif mode == "dialogue":
 			actor.position = Vector2(426,527)
 			current_scene.get_node("MilkRabbit").interact()
+		elif mode == "talents":
+			ui._show_talents()
+		elif mode == "storage":
+			ui._show_storage()
 		elif mode == "rest":
 			actor.position = Vector2(340,527)
 			ui.begin_rest()
@@ -51,8 +55,13 @@ func _capture() -> void:
 		for frame in 4:
 			await process_frame
 		await RenderingServer.frame_post_draw
-		var path := ProjectSettings.globalize_path("res://docs/previews/rpg_%s_v3.png" % mode)
+		var path := ProjectSettings.globalize_path("res://docs/previews/rpg_%s_v5.png" % mode)
 		var error := root.get_texture().get_image().save_png(path)
 		print("Skin preview %s: %d" % [mode,error])
 	ui._force_close()
+	change_scene_to_file("res://scenes/main.tscn")
+	for frame in 6:
+		await process_frame
+	await RenderingServer.frame_post_draw
+	root.get_texture().get_image().save_png(ProjectSettings.globalize_path("res://docs/previews/rpg_title_v5.png"))
 	quit()

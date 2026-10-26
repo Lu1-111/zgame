@@ -76,7 +76,7 @@
     },
     {
       "id": "skill_cleave",
-      "name": "旋刃打击",
+      "name": "剑气",
       "category": "active",
       "damage_type": "physical",
       "mana_cost": 0,
@@ -84,16 +84,28 @@
       "cooldown": 2.0,
       "damage_mult": 1.35,
       "unlock": "initial",
-      "shape": "sector",
+      "shape": "projectile",
       "knockback": 220,
       "presentation": {
-        "reach": 30,
-        "hitbox": [54, 38],
-        "active": 0.12,
-        "effect": "sword_slash"
+        "speed": 460,
+        "range": 540,
+        "hitbox": [
+          36,
+          76
+        ],
+        "world_size": [
+          86,
+          100
+        ],
+        "spawn_offset": [
+          26,
+          -12
+        ],
+        "effect": "sword_wave",
+        "fps": 14
       },
       "icon": "res://assets/ui/magic/skill_cleave.svg",
-      "desc": "物理技能。向光标方向横扫，造成 1.35 倍物理伤害。消耗 18 体力。"
+      "desc": "挥出一道大型剑气，沿光标方向贯穿路径上的敌人，造成 1.35 倍物理伤害。消耗 18 体力。"
     },
     {
       "id": "active_future_01",

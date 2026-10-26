@@ -594,15 +594,18 @@ def main():
     if not (wby["hammer_01"]["hitbox"] == {"w": 44, "h": 36}
             and wby["hammer_01"].get("shield_break") is True):
         w_errs.append("hammer_01 hitbox/shield_break 字段不符")
-    if not (wby["milk_gun"]["projectile"] == {"speed": 420, "charge": True,
-                                              "pierce_when_full": True}):
-        w_errs.append("milk_gun projectile 字段不符")
+    # 制作人 2026-10-27：弓与旧奶弹枪均重定向到单发步枪，保留旧 ID。
+    for wid in ("bow_01", "milk_gun"):
+        if wby[wid].get("weapon_type") != "rifle" or wby[wid].get("projectile") != {"speed": 760, "charge": False}:
+            w_errs.append("%s 应使用无需蓄力的步枪模组" % wid)
+    if {w.get("weapon_type") for w in wlist} != {"sword", "hammer", "rifle", "staff"}:
+        w_errs.append("武器类别应为剑/锤/步枪/杖")
     if not (wby["milk_staff"]["hitbox"] == {"w": 52, "h": 30}
             and wby["milk_staff"].get("mana_regen") == 3):
         w_errs.append("milk_staff hitbox/mana_regen 字段不符")
     if not (wby["star_orb"]["projectile"] == {"speed": 260, "split": 6}):
         w_errs.append("star_orb projectile 字段不符")
-    check(not w_errs, "四类武器类型/攻速/连击符合 2026-10-26 规格并保留旧档字段（%s）"
+    check(not w_errs, "四类武器保留旧档 ID，弓按 2026-10-27 决策替换为步枪（%s）"
           % ("; ".join(w_errs) if w_errs else "全部通过"))
 
     # 13. skills.json：数值与 §3.6 一致
@@ -630,6 +633,12 @@ def main():
         s_errs.append("skill_bubble slow 应为 30")
     if sby["skill_slam"].get("shape") != "sector" or sby["skill_slam"].get("knockback") is None:
         s_errs.append("skill_slam 应为扇形+击退")
+    wave = sby["skill_cleave"]
+    if not (wave.get("shape") == "projectile" and wave.get("damage_type") == "physical"
+            and wave.get("stamina_cost") == 18 and wave.get("damage_mult") == 1.35
+            and wave.get("presentation", {}).get("effect") == "sword_wave"
+            and wave.get("presentation", {}).get("range", 0) >= 500):
+        s_errs.append("skill_cleave 应为独立的大范围物理剑气")
     check(not s_errs, "5 技能奶力/冷却/倍率/解锁与 §3.6 一致，专属字段齐全（%s）"
           % ("; ".join(s_errs) if s_errs else "全部通过"))
 

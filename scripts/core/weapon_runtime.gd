@@ -16,7 +16,7 @@ static func module(kind: String) -> Dictionary:
 	return config().weapon_modules.get(kind,{})
 
 
-## 非破坏读取新剑/弓图集，补充到角色精灵帧。
+## 非破坏读取新直剑/步枪图集，补充到角色精灵帧。
 static func inject_animations(frames: SpriteFrames) -> void:
 	for name: String in config().animations:
 		var definition: Dictionary = config().animations[name]
@@ -42,6 +42,20 @@ static func sync_sprite(sprite: AnimatedSprite2D) -> void:
 
 ## 读取生成的武器特效帧；UI 与投射物不改变源图。
 static func effect_frames(kind: String, loop: bool = false) -> SpriteFrames:
+	if config().independent_fx.has(kind):
+		var item: Dictionary = config().independent_fx[kind]
+		var frames := SpriteFrames.new()
+		frames.set_animation_loop(&"default",loop)
+		frames.set_animation_speed(&"default",float(item.fps))
+		var source: Texture2D = load(str(item.texture))
+		var cell := source.get_size()/Vector2(item.grid[0],item.grid[1])
+		for index in int(item.frames):
+			var atlas := AtlasTexture.new()
+			atlas.atlas = source
+			atlas.region = Rect2(Vector2(index%int(item.grid[0]),floorf(float(index)/float(item.grid[0])))*cell,cell)
+			atlas.filter_clip = true
+			frames.add_frame(&"default",atlas)
+		return frames
 	var cfg: Dictionary = config().fx
 	var row: Dictionary = cfg.rows.get(kind,cfg.rows.staff)
 	var frames := SpriteFrames.new()
@@ -59,5 +73,10 @@ static func effect_frames(kind: String, loop: bool = false) -> SpriteFrames:
 
 ## 返回特效在世界中的缩放比例。
 static func effect_scale(kind: String) -> Vector2:
+	if config().independent_fx.has(kind):
+		var item: Dictionary = config().independent_fx[kind]
+		var source: Texture2D = load(str(item.texture))
+		var cell := source.get_size()/Vector2(item.grid[0],item.grid[1])
+		return Vector2(item.world_size[0]/cell.x,item.world_size[1]/cell.y)
 	var row: Dictionary = config().fx.rows[kind]
 	return Vector2(row.world_size[0]/(float(config().fx.source_size[0])/float(config().fx.columns)),row.world_size[1]/float(row.h))

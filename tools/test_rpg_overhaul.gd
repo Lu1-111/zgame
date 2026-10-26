@@ -107,8 +107,11 @@ func _run() -> void:
 	_expect(actor.try_skill(&"skill_bubble") and gs.sta == 17 and gs.mana == 52,"奶术同时扣除奶力和少量体力")
 	actor.reset_cooldowns()
 	actor.fire_skill(&"skill_cleave")
-	var directed: Node2D = actor.get_child(actor.get_child_count()-1)
-	_expect(directed.has_method("orient_to_aim") and absf(angle_difference(directed.rotation,actor.aim_vector().angle())) < 0.001,"定向物理技能视觉与判定同时朝向鼠标")
+	var directed: Node2D
+	for child in current_scene.get_children():
+		if child is SwordWave:
+			directed = child
+	_expect(directed is SwordWave and absf(angle_difference(directed.rotation,actor.aim_vector().angle())) < 0.001,"独立剑气的视觉与贯穿判定同时朝向鼠标")
 	directed.queue_free()
 	gs.sta = 100
 	gs.mana = 60
@@ -155,10 +158,10 @@ func _run() -> void:
 	Input.action_press("attack")
 	actor.sm.to(&"Attack")
 	await _frames(40)
-	_expect(int(projectiles.get("bow_01",0)) == arrows_before and actor.attack_charge > 0.5,"弓按住时拉弓蓄力，不提前射箭")
+	_expect(int(projectiles.get("bow_01",0)) == arrows_before+1 and actor.weapon_type() == "rifle","步枪无需蓄力，一次按下射出一颗子弹")
 	Input.action_release("attack")
 	await _frames(3)
-	_expect(int(projectiles.get("bow_01",0)) == arrows_before+1,"弓松开后只射出一箭")
+	_expect(int(projectiles.get("bow_01",0)) == arrows_before+1,"松开步枪射击键不会额外生成子弹")
 	await _frames(25)
 	gs.weapon_id = &"milk_staff"
 	actor.cancel_weapon_action()
@@ -195,7 +198,7 @@ func _run() -> void:
 	var fire := current_scene.get_node("Campfire") as Node2D
 	var ui_cfg: Dictionary = JSON.parse_string(FileAccess.get_file_as_string("res://data/ui_skin.json"))
 	var anchor := fire.get_canvas_transform()*(fire.global_position+Vector2(0,float(ui_cfg.interaction.offset_y)))
-	_expect(ui._interaction_plaque.visible and "坐火休息" in ui._interaction_hint.text and (ui._interaction_plaque.position+ui._interaction_plaque.size/2).distance_to(anchor) < 1,"金属文本框中的 E 提示随待交互篝火定位到上方")
+	_expect(ui._interaction_plaque.visible and "坐火休息" in ui._interaction_hint.text and (ui._interaction_plaque.position+ui._interaction_plaque.size/2).distance_to(anchor) < 1,"细线文本框中的 E 提示随待交互篝火定位到上方")
 	_expect(ui.begin_rest() and actor.facing == 1 and not actor.sprite.flip_h,"从另一朝向坐火后人物真正面向篝火")
 	ui.close_menu()
 	await _frames(40)
@@ -220,7 +223,7 @@ func _test_pixels() -> void:
 		valid = valid and float(definition.scale) == 1.0
 		for path: String in definition.frame_paths:
 			var image := Image.load_from_file(ProjectSettings.globalize_path(path))
-			valid = valid and image.get_size() == Vector2i(64,64)
+			valid = valid and image.get_size() == Vector2i(96,96)
 			count += 1
 	var rig: Node2D = actor._pixel_rig
 	var base := Image.load_from_file(ProjectSettings.globalize_path(rig.source.resource_path))
@@ -230,7 +233,7 @@ func _test_pixels() -> void:
 		for x in base.get_width():
 			if base.get_pixel(x,y).a > 0.5:
 				valid = valid and native.get_pixel(x,y) == base.get_pixel(x,y)
-	_expect(valid and count == 32,"三十二帧当前动作保持64画布，完整人物母版的非透明RGBA与正式源图一致")
+	_expect(valid and count == 32,"三十二帧当前动作仅扩展到96武器留白画布，完整人物母版的非透明RGBA与正式源图一致")
 
 
 func _on_spawn(child: Node) -> void:

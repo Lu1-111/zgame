@@ -4,9 +4,16 @@ extends Node2D
 
 func _ready() -> void:
 	var root_ui := $UI/Root as Control
-	var frame := RPGSkin.frame(root_ui,"panel",Rect2(Vector2(10,10),get_viewport_rect().size-Vector2(20,20)))
+	var frame := RPGSkin.frame(root_ui,"title",Rect2(Vector2(10,10),get_viewport_rect().size-Vector2(20,20)))
 	root_ui.move_child(frame,1)
-	root_ui.resized.connect(func() -> void: frame.size = (root_ui.size-Vector2(20,20))/float(RPGSkin.config().frame_scale))
+	var theme := Theme.new()
+	theme.default_font = RPGSkin.font()
+	root_ui.theme = theme
+	$UI/Root/Center/Title.add_theme_color_override("font_color",Color("#ded8c3"))
+	$UI/Root/Center/Subtitle.add_theme_color_override("font_color",Color("#929588"))
+	$UI/Root/Hint.add_theme_color_override("font_color",Color("#929588"))
+	$UI/Root/Version.add_theme_color_override("font_color",Color("#6f7569"))
+	root_ui.resized.connect(func() -> void: frame.size = root_ui.size-Vector2(20,20))
 	var start := Button.new()
 	start.text = "开始新旅途"
 	start.custom_minimum_size.y = 30

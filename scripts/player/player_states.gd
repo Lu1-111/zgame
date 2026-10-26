@@ -124,12 +124,17 @@ class Guard extends PlayerState:
 
 	func enter(_msg: Dictionary) -> void:
 		p.is_guarding = true
+		p.guard_pose_time = 0.0
 		p.guard_perfect = PlayerTuning.PERFECT_GUARD_WINDOW
 		p.velocity.x = 0.0
 
 	func tick(delta: float) -> void:
-		if not Input.is_action_pressed(&"guard") or not p.is_on_floor():
-			sm.to(&"Idle")
+		p.guard_pose_time += delta
+		if not p.is_on_floor():
+			sm.to(&"Fall")
+			return
+		if not Input.is_action_pressed(&"guard"):
+			sm.to(&"GuardRelease")
 			return
 		# 防御中缓慢移动（40%）
 		var dir: float = p.input_dir()
@@ -150,6 +155,22 @@ class Guard extends PlayerState:
 
 	func exit() -> void:
 		p.is_guarding = false
+
+
+class GuardRelease extends PlayerState:
+	const NAME: StringName = &"GuardRelease"
+	func enter(_msg: Dictionary) -> void:
+		p.guard_release_from = maxi(0,mini(p.sprite.frame,int(p._pixel_rig.cfg.guard.hold_frame))-1)
+		p.guard_pose_time = 0.0
+		p.is_guarding = false
+	func tick(delta: float) -> void:
+		p.guard_pose_time += delta
+		p.velocity.x = 0
+		if Input.is_action_pressed(&"guard") and p.is_on_floor():
+			sm.to(&"Guard")
+			return
+		if p.guard_pose_time >= float(p._pixel_rig.cfg.guard.release_seconds):
+			sm.to(&"Idle" if p.is_on_floor() else &"Fall")
 
 
 class Attack extends PlayerState:
@@ -175,22 +196,8 @@ class Attack extends PlayerState:
 	func tick(delta: float) -> void:
 		_t += delta
 		p.velocity.x = 0.0
-		if p.weapon_type() == "bow":
+		if p.weapon_type() == "rifle":
 			p.set_facing(int(signf(p.aim_vector().x)))
-			p.attack_charge = clampf(_t/float(_module.charge_max),0,1) if not _opened else p.attack_charge
-			if not _opened:
-				p.attack_phase = &"charge"
-				if _t >= float(_module.charge_min) and not Input.is_action_pressed(&"attack"):
-					_opened = true
-					p.attack_release_t = 0.0
-					p.attack_phase = &"release"
-					p.set_facing(int(signf(p.aim_vector().x)))
-					p.spawn_weapon_projectile(p.attack_charge)
-			else:
-				p.attack_release_t += delta
-				if p.attack_release_t >= float(_module.recovery):
-					_finish()
-			return
 		var active_start := float(_module.get("startup",PlayerTuning.ATK_STARTUP))
 		var active_end := active_start+float(_module.get("active",PlayerTuning.ATK_ACTIVE))
 		p.attack_phase = &"startup" if _t < active_start else (&"active" if _t < active_end else &"recovery")
@@ -211,6 +218,9 @@ class Attack extends PlayerState:
 			if p.try_selected_skill():
 				return
 		if _t >= active_end+float(_module.get("recovery",PlayerTuning.ATK_RECOVERY)):
+			# 步枪单次按下只开火一次；长按保留双手瞄准姿势，松键后结束。
+			if p.weapon_type() == "rifle" and Input.is_action_pressed(&"attack"):
+				return
 			_finish()
 
 	func _finish() -> void:
