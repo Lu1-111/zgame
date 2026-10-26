@@ -8,7 +8,7 @@ var player: Node = null
 func _process(_delta: float) -> void:
 	if player == null:
 		return
-	text = "HP %d/%d   STA %d/%d   MANA %d/%d   武器: %s\n状态: %s   连击: %d   演示: T切武器 · 1-4用道具 · Q/R/F技能 · E拾取" % [
+	text = "HP %d/%d   STA %d/%d   MANA %d/%d   武器: %s\n状态: %s   连击: %d   I人物 · Tab行囊 · 1-5道具 · 滚轮选择/侧键4技能 · E交互" % [
 		GameState.hp, GameState.hp_max,
 		GameState.sta, GameState.sta_max,
 		GameState.mana, GameState.mana_max,

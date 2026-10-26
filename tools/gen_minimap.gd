@@ -111,24 +111,27 @@ func _scan_room(room: Dictionary) -> Dictionary:
 	return info
 
 
-func _walk(node: Node, info: Dictionary) -> void:
+func _walk(node: Node, info: Dictionary, parent_offset := Vector2.ZERO) -> void:
+	var offset := parent_offset + ((node as Node2D).position if node is Node2D else Vector2.ZERO)
 	if node is TileMapLayer:
 		var layer := node as TileMapLayer
 		for cell in layer.get_used_cells():
-			info.cells.append([cell.x, cell.y])
-			info.min_x = mini(info.min_x, cell.x)
-			info.min_y = mini(info.min_y, cell.y)
-			info.max_x = maxi(info.max_x, cell.x)
-			info.max_y = maxi(info.max_y, cell.y)
+			var world_cell := cell + Vector2i(offset / TILE)
+			var kind := str(layer.get_meta("platform_type", "solid"))
+			info.cells.append([world_cell.x, world_cell.y, kind])
+			info.min_x = mini(info.min_x, world_cell.x)
+			info.min_y = mini(info.min_y, world_cell.y)
+			info.max_x = maxi(info.max_x, world_cell.x)
+			info.max_y = maxi(info.max_y, world_cell.y)
 	if node.has_meta("target_room"):
 		info.doors.append({"target": str(node.get_meta("target_room")),
-			"pos": [int(node.position.x), int(node.position.y)]})
+			"pos": [int(offset.x), int(offset.y)]})
 	if node.has_meta("save_point"):
-		info.markers.append({"type": "campfire", "pos": [int(node.position.x), int(node.position.y)]})
+		info.markers.append({"type": "campfire", "pos": [int(offset.x), int(offset.y)]})
 	if node.has_meta("interact") and str(node.get_meta("interact")) == "chest":
-		info.markers.append({"type": "chest", "pos": [int(node.position.x), int(node.position.y)]})
+		info.markers.append({"type": "chest", "pos": [int(offset.x), int(offset.y)]})
 	for c in node.get_children():
-		_walk(c, info)
+		_walk(c, info, offset)
 
 
 func _render_room(info: Dictionary) -> Image:
@@ -142,7 +145,8 @@ func _render_room(info: Dictionary) -> Image:
 	for cell in info.cells:
 		var px := int((cell[0] + ox) * TILE / float(SCALE))
 		var py := int((cell[1] + oy) * TILE / float(SCALE))
-		_fill(img, px, py, 2, 2, C_GROUND)
+		var thin: bool = cell.size() > 2 and cell[2] == "oneway"
+		_fill(img, px, py, 2, 1 if thin else 2, C_DOOR if thin else C_GROUND)
 	for m in info.markers:
 		var px2 := int((m.pos[0] / float(TILE) + ox) * TILE / float(SCALE))
 		var py2 := int((m.pos[1] / float(TILE) + oy) * TILE / float(SCALE))

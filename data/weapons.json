@@ -8,10 +8,15 @@
       "attack": 12,
       "attack_interval": 0.55,
       "combo": 3,
-      "hitbox": { "w": 44, "h": 36 },
+      "hitbox": {
+        "w": 44,
+        "h": 36
+      },
       "knockback": 260,
       "shield_break": true,
-      "desc": "三段连击的近战物理锤：高伤、攻速慢、强击退，可击碎举盾敌人（破盾）。初始武器。"
+      "desc": "三段连击的近战物理锤：高伤、攻速慢、强击退，可击碎举盾敌人（破盾）。初始武器。",
+      "weapon_type": "hammer",
+      "icon": "res://assets/ui/magic/weapon_hammer.svg"
     },
     {
       "id": "milk_gun",
@@ -21,20 +26,35 @@
       "attack": 8,
       "attack_interval": 0.35,
       "combo": 1,
-      "projectile": { "speed": 420, "charge": true, "pierce_when_full": true },
-      "desc": "远程物理单发：中攻速、低单发伤害，可蓄力，蓄满后穿透。"
+      "projectile": {
+        "speed": 420,
+        "charge": true,
+        "pierce_when_full": true
+      },
+      "desc": "远程物理单发：中攻速、低单发伤害，可蓄力，蓄满后穿透。",
+      "weapon_type": "bow",
+      "icon": "res://assets/ui/magic/weapon_bow.svg",
+      "legacy": true
     },
     {
       "id": "milk_staff",
       "name": "奶杖",
       "damage_type": "magic",
-      "range_type": "melee",
+      "range_type": "ranged",
       "attack": 10,
       "attack_interval": 0.45,
       "combo": 1,
-      "hitbox": { "w": 52, "h": 30 },
+      "hitbox": {
+        "w": 52,
+        "h": 30
+      },
       "mana_regen": 3,
-      "desc": "近战法术横扫：判定宽、命中回复 3 点奶力，法术循环的核心。"
+      "desc": "奶杖远程普攻：挥动杖头射出奶术法球，法术命中回复奶力。",
+      "weapon_type": "staff",
+      "icon": "res://assets/ui/magic/weapon_staff.svg",
+      "projectile": {
+        "speed": 320
+      }
     },
     {
       "id": "star_orb",
@@ -44,8 +64,47 @@
       "attack": 14,
       "attack_interval": 0.9,
       "combo": 1,
-      "projectile": { "speed": 260, "split": 6 },
-      "desc": "远程法术慢速弹：单发高伤、弹速慢，命中分裂 6 枚小奶泡。"
+      "projectile": {
+        "speed": 260,
+        "split": 6
+      },
+      "desc": "远程法术慢速弹：单发高伤、弹速慢，命中分裂 6 枚小奶泡。",
+      "weapon_type": "staff",
+      "icon": "res://assets/ui/magic/weapon_staff.svg",
+      "legacy": true
+    },
+    {
+      "id": "sword_01",
+      "name": "营地短剑",
+      "weapon_type": "sword",
+      "damage_type": "physical",
+      "range_type": "melee",
+      "attack": 10,
+      "attack_interval": 0.42,
+      "combo": 3,
+      "hitbox": {
+        "w": 48,
+        "h": 34
+      },
+      "knockback": 180,
+      "icon": "res://assets/ui/magic/weapon_sword.svg",
+      "desc": "小队制式短剑。轻便的三段近战攻击，用于测试剑类动作与刀光。"
+    },
+    {
+      "id": "bow_01",
+      "name": "林行短弓",
+      "weapon_type": "bow",
+      "damage_type": "physical",
+      "range_type": "ranged",
+      "attack": 9,
+      "attack_interval": 0.5,
+      "combo": 1,
+      "projectile": {
+        "speed": 440,
+        "charge": true
+      },
+      "icon": "res://assets/ui/magic/weapon_bow.svg",
+      "desc": "按住左键拉弓蓄力，松开射出一箭。蓄力越充分，箭矢威力越高。"
     }
   ]
 }

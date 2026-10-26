@@ -22,12 +22,27 @@ var weapon_id: StringName = &"hammer_01"   ## 当前武器：奶瓶锤
 var abilities: Array[StringName] = []      ## 已解锁能力（本期仅 double_jump）
 var talents: Array[StringName] = []        ## 已点亮天赋 id
 
-# ---- 背包 / 快捷栏：背包 15 格、快捷栏 5 槽（填充逻辑 M2 实装）----
+# ---- 背包 / 快捷栏：两者各自持有实际物品堆叠，不再保存快捷引用 ----
 var inventory: Array = []
 var hotbar: Array = []
+var materials: Array = []                   ## 材料独立页，不占行囊消耗品格
+var storage: Array = []                     ## 篝火无限仓库
+var bag_upgrades := 0
+var owned_weapons: Array[StringName] = [&"sword_01",&"bow_01",&"milk_staff"]
+var learned_skills: Array[StringName] = [&"skill_bubble"]
+var equipped_skills: Array[StringName] = [&"skill_bubble",&"skill_cleave",&""]
+var equipped_passives: Array[StringName] = [&"",&""]
+var selected_skill := 0
+var equipment_revision := 1
+var map_revealed := false
+var checkpoint_room: StringName = &"camp_01"
+var checkpoint_position: Array = []
+var saved_position: Array = []
+var in_combat := false                      ## 瞬态战斗标记，不入存档
 
 # ---- 世界进度 ----
 var opened_chests: Array[StringName] = []     ## 已开启宝箱 id
+var opened_shortcuts: Array[StringName] = []  ## 已从另一侧开启的捷径 id
 var visited_rooms: Array[StringName] = []     ## 已到访房间 id
 var defeated_bosses: Array[StringName] = []   ## 已击败 BOSS id
 var current_room: StringName = &"camp_01"     ## 当前房间
@@ -54,7 +69,22 @@ func reset() -> void:
 	talents = []
 	inventory = []
 	hotbar = []
+	materials = []
+	storage = []
+	bag_upgrades = 0
+	owned_weapons = [&"sword_01",&"bow_01",&"milk_staff"]
+	learned_skills = [&"skill_bubble"]
+	equipped_skills = [&"skill_bubble",&"skill_cleave",&""]
+	equipped_passives = [&"",&""]
+	selected_skill = 0
+	equipment_revision = 1
+	map_revealed = false
+	checkpoint_room = &"camp_01"
+	checkpoint_position = []
+	saved_position = []
+	in_combat = false
 	opened_chests = []
+	opened_shortcuts = []
 	visited_rooms = []
 	defeated_bosses = []
 	current_room = &"camp_01"
@@ -79,7 +109,21 @@ func to_save_dict() -> Dictionary:
 		"talents": _names_to_strings(talents),
 		"inventory": inventory.duplicate(true),
 		"hotbar": hotbar.duplicate(true),
+		"materials": materials.duplicate(true),
+		"storage": storage.duplicate(true),
+		"bag_upgrades": bag_upgrades,
+		"owned_weapons": _names_to_strings(owned_weapons),
+		"learned_skills": _names_to_strings(learned_skills),
+		"equipped_skills": _names_to_strings(equipped_skills),
+		"equipped_passives": _names_to_strings(equipped_passives),
+		"selected_skill": selected_skill,
+		"equipment_revision": equipment_revision,
+		"map_revealed": map_revealed,
+		"checkpoint_room": String(checkpoint_room),
+		"checkpoint_position": checkpoint_position.duplicate(),
+		"saved_position": saved_position.duplicate(),
 		"opened_chests": _names_to_strings(opened_chests),
+		"opened_shortcuts": _names_to_strings(opened_shortcuts),
 		"visited_rooms": _names_to_strings(visited_rooms),
 		"defeated_bosses": _names_to_strings(defeated_bosses),
 		"current_room": String(current_room),
@@ -103,7 +147,21 @@ func load_from_dict(d: Dictionary) -> void:
 	talents = _to_names(d.get("talents", talents), talents)
 	inventory = _dup_array(d.get("inventory", inventory), inventory)
 	hotbar = _dup_array(d.get("hotbar", hotbar), hotbar)
+	materials = _dup_array(d.get("materials", []), [])
+	storage = _dup_array(d.get("storage", []), [])
+	bag_upgrades = int(d.get("bag_upgrades", 0))
+	owned_weapons = _to_names(d.get("owned_weapons", ["hammer_01"]), [])
+	learned_skills = _to_names(d.get("learned_skills", ["skill_bubble"]), [])
+	equipped_skills = _to_names(d.get("equipped_skills", ["skill_bubble","skill_shield","skill_heal","skill_slam"]), [])
+	equipped_passives = _to_names(d.get("equipped_passives", ["",""]), [])
+	selected_skill = int(d.get("selected_skill",0))
+	equipment_revision = int(d.get("equipment_revision",0))
+	map_revealed = bool(d.get("map_revealed", false))
+	checkpoint_room = StringName(d.get("checkpoint_room", "camp_01"))
+	checkpoint_position = _dup_array(d.get("checkpoint_position", []), [])
+	saved_position = _dup_array(d.get("saved_position", []), [])
 	opened_chests = _to_names(d.get("opened_chests", opened_chests), opened_chests)
+	opened_shortcuts = _to_names(d.get("opened_shortcuts", []), [])
 	visited_rooms = _to_names(d.get("visited_rooms", visited_rooms), visited_rooms)
 	defeated_bosses = _to_names(d.get("defeated_bosses", defeated_bosses), defeated_bosses)
 	current_room = StringName(String(d.get("current_room", current_room)))

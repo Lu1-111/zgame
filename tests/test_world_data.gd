@@ -25,8 +25,17 @@ func run(ctx) -> bool:
 	ctx.expect_eq(rank_count["elite"], 3, "敌人类别 elite == 3")
 	ctx.expect_eq(rank_count["boss"], 1, "敌人类别 boss == 1")
 	ctx.expect_true(db.items.size() >= 12, "道具数 items >= 12（实际 %d）" % db.items.size())
-	ctx.expect_eq(db.weapons.size(), 4, "武器数 weapons == 4")
-	ctx.expect_eq(db.skills.size(), 5, "技能数 skills == 5")
+	ctx.expect_eq(db.weapons.size(), 6, "四类武器六个资源（含旧档兼容）")
+	ctx.expect_eq(db.skills.size(), 20, "技能资源数 == 20")
+	var categories := {"active":0,"passive":0}
+	var weapon_types := {}
+	for skill: Dictionary in db.skills.values():
+		categories[str(skill.category)] += 1
+	for weapon: Dictionary in db.weapons.values():
+		weapon_types[str(weapon.weapon_type)] = true
+	ctx.expect_eq(categories.active,12,"主动技能规划槽十二个")
+	ctx.expect_eq(categories.passive,8,"被动技能规划槽八个")
+	ctx.expect_eq(weapon_types.size(),4,"剑锤弓杖四类模组齐全")
 	ctx.expect_eq(db.talents.size(), 12, "天赋数 talents == 12")
 
 	# ---- 门图完整性：每个房间的每扇门 ----

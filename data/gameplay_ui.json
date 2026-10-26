@@ -1,0 +1,246 @@
+{
+  "inventory": {
+    "base_slots": 15,
+    "extra_slots": 5,
+    "max_upgrades": 3,
+    "hotbar_slots": 5,
+    "columns": 4,
+    "reset_cost": 200
+  },
+  "layout": {
+    "screen": [
+      640,
+      360
+    ],
+    "avatar": [
+      10,
+      8,
+      44,
+      44
+    ],
+    "bars": [
+      54,
+      13,
+      142,
+      10
+    ],
+    "bar_gap": 13,
+    "hotbar": [
+      598,
+      96,
+      28,
+      4
+    ],
+    "skills": [
+      246,
+      326,
+      26,
+      6
+    ],
+    "window": [
+      28,
+      24,
+      584,
+      312
+    ],
+    "grid": [
+      54,
+      88,
+      48,
+      6
+    ],
+    "details": [
+      338,
+      88,
+      242,
+      174
+    ],
+    "bag_hotbar": [
+      178,
+      279,
+      40,
+      6
+    ],
+    "font": 12,
+    "small_font": 10,
+    "title_font": 21
+  },
+  "animation": {
+    "resource_smooth": 0.15,
+    "hit_flash": 0.1,
+    "toast_seconds": 2.5,
+    "rest_exit_seconds": 0.45,
+    "low_health": 0.3
+  },
+  "colors": {
+    "ink": "#091a23",
+    "panel": "#0e2631",
+    "slot": "#102f3b",
+    "gold": "#c5a56c",
+    "bright_gold": "#f0d7a0",
+    "text": "#f3ead5",
+    "muted": "#9cafae",
+    "hp": "#e56d70",
+    "sta": "#e9c75e",
+    "mana": "#a78be8",
+    "accent": "#7bd8bf",
+    "disabled": "#53606b"
+  },
+  "rest": {
+    "range": 58,
+    "seat_offset": [
+      -32,
+      -17
+    ],
+    "title": "灵火之憩",
+    "subtitle": "愿星火照亮归途",
+    "actions": [
+      "休息",
+      "天赋",
+      "仓库",
+      "离开"
+    ]
+  },
+  "campfires": {
+    "camp_01": {
+      "node": "Campfire",
+      "ground": [
+        352,
+        544
+      ],
+      "checkpoint": "cp_camp_01"
+    },
+    "forest_01": {
+      "node": "Campfire",
+      "ground": [
+        1088,
+        672
+      ],
+      "checkpoint": "cp_forest_01_tree"
+    }
+  },
+  "skills": [
+    {
+      "id": "skill_bubble",
+      "icon": "bubble",
+      "key": "1"
+    },
+    {
+      "id": "skill_cleave",
+      "icon": "cleave",
+      "key": "2"
+    },
+    {
+      "id": "",
+      "icon": "",
+      "key": "3"
+    }
+  ],
+  "combat": {
+    "item_animation": 0.35,
+    "bomb_speed": 300,
+    "pick_up_radius": 32,
+    "shield_hit_tint": "#9acffa",
+    "starfall_radius": 160,
+    "starfall_interval": 0.15,
+    "starfall_duration": 0.65,
+    "starfall_cast_range": 240,
+    "rest_block_radius": 180
+  },
+  "save": {
+    "version": 3,
+    "directory": "user://saves/",
+    "max_bytes": 65536
+  },
+  "growth": {
+    "level_cap": 15,
+    "hp_per_level": 4,
+    "mana_per_level": 3,
+    "cumulative_exp": [
+      0,
+      40,
+      120,
+      280,
+      550,
+      924,
+      1440,
+      2089,
+      2900,
+      3886,
+      5050,
+      6415,
+      7990,
+      9770,
+      11781
+    ]
+  },
+  "item_desc": {
+    "potion_small": "凝聚奶泉灵力的随身补给。\n回复 30 点生命。",
+    "potion_mana": "流转着星光的蓝紫药剂。\n回复 20 点奶力。",
+    "potion_sta": "唤醒疲惫身体的金色露滴。\n回复 40 点体力。",
+    "milk_bomb": "封存奶源能量的投掷物。\n投出后造成 15 点物理伤害。",
+    "mushroom": "林间生长的柔软奶菇，可存入仓库。",
+    "honey_wax": "带着清甜气息的蜜蜡材料。",
+    "milk_crystal": "凝结奶源能量的稀有晶体。",
+    "hp_fragment": "永久提高生命上限 10 点。",
+    "sta_fragment": "永久提高体力上限 5 点。",
+    "mana_fragment": "永久提高奶力上限 8 点。",
+    "bag_expand": "为行囊增加 5 个格子，最多扩容 3 次。",
+    "map_fragment": "记录已探索区域，永久揭示地图。",
+    "ability_double_jump": "习得奶泡跃，获得空中二段跳。"
+  },
+  "preview_items": [
+    {
+      "id": "potion_small",
+      "count": 3
+    },
+    {
+      "id": "potion_mana",
+      "count": 2
+    },
+    {
+      "id": "potion_sta",
+      "count": 2
+    },
+    {
+      "id": "milk_bomb",
+      "count": 4
+    },
+    {
+      "id": "bag_expand",
+      "count": 1
+    },
+    {
+      "id": "hp_fragment",
+      "count": 1
+    }
+  ],
+  "camp_supplies": {
+    "node": "ChestA",
+    "ground": [
+      662,
+      544
+    ],
+    "id": "camp_supplies",
+    "items": [
+      {
+        "id": "potion_small",
+        "count": 3
+      },
+      {
+        "id": "potion_mana",
+        "count": 2
+      },
+      {
+        "id": "potion_sta",
+        "count": 2
+      },
+      {
+        "id": "milk_bomb",
+        "count": 2
+      }
+    ],
+    "texture": "res://assets/PROCESSED/environments/ENV-B01/v001/ENV-01/props/chest.png"
+  },
+  "window_title": "奶宝：银河征途 · 灵火旅途"
+}

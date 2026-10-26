@@ -1,0 +1,535 @@
+{
+  "animations": {
+    "sword_1": {
+      "frame_paths": [
+        "res://assets/PROCESSED/characters/CHR-01/rpg_v2/sword_1_00.png",
+        "res://assets/PROCESSED/characters/CHR-01/rpg_v2/sword_1_01.png",
+        "res://assets/PROCESSED/characters/CHR-01/rpg_v2/sword_1_02.png",
+        "res://assets/PROCESSED/characters/CHR-01/rpg_v2/sword_1_03.png"
+      ],
+      "anchors": [
+        [
+          32,
+          58
+        ],
+        [
+          32,
+          58
+        ],
+        [
+          32,
+          58
+        ],
+        [
+          32,
+          58
+        ]
+      ],
+      "scale": 1.0,
+      "fps": 10,
+      "loop": false
+    },
+    "sword_2": {
+      "frame_paths": [
+        "res://assets/PROCESSED/characters/CHR-01/rpg_v2/sword_2_00.png",
+        "res://assets/PROCESSED/characters/CHR-01/rpg_v2/sword_2_01.png",
+        "res://assets/PROCESSED/characters/CHR-01/rpg_v2/sword_2_02.png",
+        "res://assets/PROCESSED/characters/CHR-01/rpg_v2/sword_2_03.png"
+      ],
+      "anchors": [
+        [
+          32,
+          58
+        ],
+        [
+          32,
+          58
+        ],
+        [
+          32,
+          58
+        ],
+        [
+          32,
+          58
+        ]
+      ],
+      "scale": 1.0,
+      "fps": 10,
+      "loop": false
+    },
+    "sword_3": {
+      "frame_paths": [
+        "res://assets/PROCESSED/characters/CHR-01/rpg_v2/sword_3_00.png",
+        "res://assets/PROCESSED/characters/CHR-01/rpg_v2/sword_3_01.png",
+        "res://assets/PROCESSED/characters/CHR-01/rpg_v2/sword_3_02.png",
+        "res://assets/PROCESSED/characters/CHR-01/rpg_v2/sword_3_03.png"
+      ],
+      "anchors": [
+        [
+          32,
+          58
+        ],
+        [
+          32,
+          58
+        ],
+        [
+          32,
+          58
+        ],
+        [
+          32,
+          58
+        ]
+      ],
+      "scale": 1.0,
+      "fps": 10,
+      "loop": false
+    },
+    "bow_shot": {
+      "frame_paths": [
+        "res://assets/PROCESSED/characters/CHR-01/rpg_v2/bow_shot_00.png",
+        "res://assets/PROCESSED/characters/CHR-01/rpg_v2/bow_shot_01.png",
+        "res://assets/PROCESSED/characters/CHR-01/rpg_v2/bow_shot_02.png",
+        "res://assets/PROCESSED/characters/CHR-01/rpg_v2/bow_shot_03.png",
+        "res://assets/PROCESSED/characters/CHR-01/rpg_v2/bow_shot_04.png",
+        "res://assets/PROCESSED/characters/CHR-01/rpg_v2/bow_shot_05.png",
+        "res://assets/PROCESSED/characters/CHR-01/rpg_v2/bow_shot_06.png",
+        "res://assets/PROCESSED/characters/CHR-01/rpg_v2/bow_shot_07.png"
+      ],
+      "anchors": [
+        [
+          32,
+          58
+        ],
+        [
+          32,
+          58
+        ],
+        [
+          32,
+          58
+        ],
+        [
+          32,
+          58
+        ],
+        [
+          32,
+          58
+        ],
+        [
+          32,
+          58
+        ],
+        [
+          32,
+          58
+        ],
+        [
+          32,
+          58
+        ]
+      ],
+      "scale": 1.0,
+      "fps": 10,
+      "loop": false
+    }
+  },
+  "fx": {
+    "texture": "res://assets/effects/rpg_v1/weapon_fx_v1.png",
+    "rows": {
+      "sword": {
+        "y": 0,
+        "h": 326,
+        "xs": [
+          0,
+          270,
+          525,
+          838,
+          1179,
+          1519,
+          1774
+        ],
+        "world_size": [
+          58,
+          55
+        ]
+      },
+      "arrow": {
+        "y": 327,
+        "h": 256,
+        "xs": [
+          0,
+          270,
+          525,
+          910,
+          1260,
+          1540,
+          1774
+        ],
+        "world_size": [
+          34,
+          26
+        ]
+      },
+      "staff": {
+        "y": 583,
+        "h": 304,
+        "xs": [
+          0,
+          270,
+          525,
+          838,
+          1179,
+          1519,
+          1774
+        ],
+        "world_size": [
+          28,
+          27
+        ]
+      }
+    },
+    "source_size": [
+      1774,
+      887
+    ],
+    "columns": 6,
+    "fps": 20
+  },
+  "weapon_modules": {
+    "hammer": {
+      "animations": [
+        "hammer_1",
+        "hammer_2",
+        "hammer_3"
+      ],
+      "effects": [
+        "hammer_swing_1",
+        "hammer_swing_2",
+        "hammer_slam_3"
+      ],
+      "sockets": [
+        [
+          25,
+          9
+        ],
+        [
+          22,
+          -19
+        ],
+        [
+          24,
+          17
+        ]
+      ],
+      "hitbox_offsets": [
+        [
+          0,
+          -4
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          -14
+        ]
+      ],
+      "startup": 0.24,
+      "active": 0.12,
+      "recovery": 0.14,
+      "effect_rate": 2.0
+    },
+    "sword": {
+      "animations": [
+        "sword_1",
+        "sword_2",
+        "sword_3"
+      ],
+      "effects": [
+        "sword_slash",
+        "sword_slash",
+        "sword_slash"
+      ],
+      "sockets": [
+        [
+          23,
+          -2
+        ],
+        [
+          20,
+          -15
+        ],
+        [
+          25,
+          -2
+        ]
+      ],
+      "hitbox_offsets": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "startup": 0.13,
+      "active": 0.12,
+      "recovery": 0.17,
+      "effect_rate": 1.0
+    },
+    "bow": {
+      "animations": [
+        "bow_shot"
+      ],
+      "charge_min": 0.16,
+      "charge_max": 1.0,
+      "recovery": 0.3,
+      "power_min": 0.65,
+      "power_max": 1.6,
+      "speed_min": 0.7,
+      "socket": [
+        24,
+        -3
+      ],
+      "startup": 0.16,
+      "active": 0.1
+    },
+    "staff": {
+      "animations": [
+        "staff_sweep"
+      ],
+      "startup": 0.18,
+      "active": 0.12,
+      "recovery": 0.22,
+      "socket": [
+        26,
+        -12
+      ],
+      "effects": [
+        "staff_cast"
+      ],
+      "sockets": [
+        [
+          26,
+          -12
+        ]
+      ]
+    }
+  },
+  "pixel_actions": {
+    "source": "res://assets/PROCESSED/characters/CHR-01/v001/frames/CHR-01_player_idle_right_v001_f01.png",
+    "canvas": [
+      64,
+      64
+    ],
+    "anchor": [
+      32,
+      58
+    ],
+    "arm_region": [
+      24,
+      33,
+      21,
+      17
+    ],
+    "clear_hand": [
+      30,
+      41,
+      4,
+      5
+    ],
+    "hand_source": [
+      30,
+      41,
+      4,
+      5
+    ],
+    "shoulder": [
+      27,
+      38
+    ],
+    "palette": {
+      "outline": "#6b4c1e",
+      "gold": "#eabb35",
+      "highlight": "#ffe175",
+      "steel": "#d2e0db",
+      "steel_edge": "#647c80",
+      "grip": "#28515a",
+      "wood": "#997043",
+      "string": "#d9c599"
+    },
+    "sword": [
+      [
+        {
+          "hand": [
+            32,
+            39
+          ],
+          "tip": [
+            23,
+            24
+          ]
+        },
+        {
+          "hand": [
+            35,
+            38
+          ],
+          "tip": [
+            56,
+            30
+          ]
+        },
+        {
+          "hand": [
+            38,
+            40
+          ],
+          "tip": [
+            61,
+            40
+          ]
+        },
+        {
+          "hand": [
+            34,
+            40
+          ],
+          "tip": [
+            51,
+            34
+          ]
+        }
+      ],
+      [
+        {
+          "hand": [
+            31,
+            43
+          ],
+          "tip": [
+            40,
+            56
+          ]
+        },
+        {
+          "hand": [
+            34,
+            40
+          ],
+          "tip": [
+            54,
+            27
+          ]
+        },
+        {
+          "hand": [
+            34,
+            35
+          ],
+          "tip": [
+            41,
+            14
+          ]
+        },
+        {
+          "hand": [
+            34,
+            40
+          ],
+          "tip": [
+            51,
+            34
+          ]
+        }
+      ],
+      [
+        {
+          "hand": [
+            32,
+            40
+          ],
+          "tip": [
+            46,
+            36
+          ]
+        },
+        {
+          "hand": [
+            37,
+            40
+          ],
+          "tip": [
+            59,
+            38
+          ]
+        },
+        {
+          "hand": [
+            39,
+            40
+          ],
+          "tip": [
+            62,
+            40
+          ]
+        },
+        {
+          "hand": [
+            34,
+            40
+          ],
+          "tip": [
+            52,
+            36
+          ]
+        }
+      ]
+    ],
+    "bow_rear_hands": [
+      [
+        42,
+        38
+      ],
+      [
+        41,
+        38
+      ],
+      [
+        39,
+        38
+      ],
+      [
+        37,
+        38
+      ],
+      [
+        34,
+        38
+      ],
+      [
+        39,
+        38
+      ],
+      [
+        41,
+        39
+      ],
+      [
+        42,
+        40
+      ]
+    ]
+  }
+}

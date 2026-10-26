@@ -1,0 +1,412 @@
+{
+  "id": "camp_01",
+  "name": "奶族小队临时据点",
+  "revision": 2,
+  "safe_zone": true,
+  "initial_checkpoint": "cp_camp_01",
+  "tile_size": 16,
+  "bounds": [
+    1280,
+    640
+  ],
+  "world_origin": [
+    0,
+    0
+  ],
+  "spawn": [
+    112,
+    527
+  ],
+  "presentation": "res://data/maps/camp_01_art.json",
+  "background": "res://assets/backgrounds/camp_01/moonlit_woods_v1.png",
+  "background_tint": "#d4dcf2",
+  "oneway_thickness": 4,
+  "palette": {
+    "solid_edge": "#ca8570",
+    "solid_top": "#749267",
+    "solid_fill": "#51483e",
+    "solid_dark": "#383a34",
+    "solid_grain": "#645748",
+    "oneway_edge": "#b2e5ed",
+    "oneway_fill": "#508ca0",
+    "oneway_dark": "#315e70",
+    "wall_fill": "#41443b",
+    "wall_grain": "#535448"
+  },
+  "platforms": [
+    {
+      "id": "camp_ground",
+      "type": "solid",
+      "rect": [
+        0,
+        544,
+        1280,
+        96
+      ]
+    },
+    {
+      "id": "step_01",
+      "type": "oneway",
+      "rect": [
+        480,
+        448,
+        128,
+        4
+      ]
+    },
+    {
+      "id": "step_02",
+      "type": "oneway",
+      "rect": [
+        560,
+        352,
+        96,
+        4
+      ]
+    },
+    {
+      "id": "trade_foundation",
+      "type": "solid",
+      "rect": [
+        672,
+        256,
+        576,
+        48
+      ]
+    }
+  ],
+  "walls": [
+    {
+      "id": "west_trunk",
+      "polygon": [
+        [
+          0,
+          0
+        ],
+        [
+          32,
+          0
+        ],
+        [
+          32,
+          544
+        ],
+        [
+          0,
+          544
+        ]
+      ]
+    },
+    {
+      "id": "east_canopy",
+      "polygon": [
+        [
+          1264,
+          0
+        ],
+        [
+          1280,
+          0
+        ],
+        [
+          1280,
+          480
+        ],
+        [
+          1264,
+          480
+        ]
+      ]
+    }
+  ],
+  "campfire": {
+    "id": "cp_camp_01",
+    "pos": [
+      352,
+      544
+    ],
+    "ground": [
+      352,
+      544
+    ],
+    "frames_texture": "res://assets/third_party/metroidvania_forge/ch_02_world_building_foundations/forgotten_forest_example_tileset.png",
+    "frame_region": [
+      512,
+      266,
+      32,
+      54
+    ],
+    "frame_count": 5,
+    "fps": 8
+  },
+  "chest": {
+    "node": "ChestA",
+    "id": "camp_supplies",
+    "pos": [
+      662,
+      544
+    ]
+  },
+  "doors": [
+    {
+      "id": "DoorEast",
+      "pos": [
+        1240,
+        528
+      ],
+      "target_room": "forest_01",
+      "target_door": "DoorWest",
+      "arrive_offset": [
+        -48,
+        -1
+      ]
+    }
+  ],
+  "interaction": {
+    "door_size": [
+      32,
+      64
+    ],
+    "npc_range": 46,
+    "npc_patrol_radius": 0,
+    "npc_walk_speed": 12,
+    "dialogue_layer": 30
+  },
+  "npcs": [
+    {
+      "id": "NPC-S01",
+      "node": "MilkRabbit",
+      "name": "奶兔向导",
+      "role": "guide",
+      "pos": [
+        426,
+        544
+      ],
+      "frames": "res://assets/PROCESSED/characters/NPC-S01/v002/godot/NPC-S01_sprite_frames.tres",
+      "dialogue": [
+        "篝火还亮着，这里就是我们小队今晚的家。累了就坐下，安心休息。",
+        "补给箱给你留了药剂和奶弹。按 Tab 整理行囊，把常用物品拖到快捷栏。",
+        "右侧林径通往巨木森林。交易台地在上方，踩着两层细枝就能上去。"
+      ]
+    },
+    {
+      "id": "NPC-S02",
+      "node": "MilkCow",
+      "name": "奶牛商人",
+      "role": "merchant",
+      "pos": [
+        1090,
+        256
+      ],
+      "frames": "res://assets/PROCESSED/characters/NPC-S02/v002/godot/NPC-S02_sprite_frames.tres",
+      "dialogue": [
+        "夜里赶路容易手忙脚乱，药剂记得放在顺手的位置。",
+        "货物和包裹都搬上来了，这块岩台比林子里踏实多了。"
+      ]
+    },
+    {
+      "id": "NPC-S03",
+      "node": "MilkMouse",
+      "name": "奶鼠铁匠",
+      "role": "blacksmith",
+      "pos": [
+        840,
+        256
+      ],
+      "frames": "res://assets/PROCESSED/characters/NPC-S03/v002/godot/NPC-S03_sprite_frames.tres",
+      "dialogue": [
+        "铁砧摆稳，炉火烧旺，小队的武器就交给我照看。",
+        "闪避后再找出手机会。好武器也需要沉着的手。"
+      ]
+    },
+    {
+      "id": "NPC-S04",
+      "node": "MilkScholar",
+      "name": "奶龙学者",
+      "role": "scholar",
+      "pos": [
+        280,
+        544
+      ],
+      "frames": "res://assets/PROCESSED/characters/NPC-S04/v002/godot/NPC-S04_sprite_frames.tres",
+      "dialogue": [
+        "月光照到的树冠之外，还有更古老的林地。",
+        "这张桌上的地图记着来路。出发前，不妨再看一眼营地的位置。"
+      ]
+    },
+    {
+      "id": "NPC-S05",
+      "node": "MilkGuard",
+      "name": "奶熊守卫",
+      "role": "guard",
+      "pos": [
+        1170,
+        544
+      ],
+      "frames": "res://assets/PROCESSED/characters/NPC-S05/v002/godot/NPC-S05_sprite_frames.tres",
+      "dialogue": [
+        "这里由我守着。营地是安全区，你可以放心整理装备。",
+        "穿过右边那道树根，就是巨木森林。记得带上补给。"
+      ]
+    },
+    {
+      "id": "NPC-S06",
+      "node": "MilkMessenger",
+      "name": "奶鸟信使",
+      "role": "messenger",
+      "pos": [
+        968,
+        544
+      ],
+      "frames": "res://assets/PROCESSED/characters/NPC-S06/v002/godot/NPC-S06_sprite_frames.tres",
+      "dialogue": [
+        "小队的消息都钉在这块告示板上，回来时别忘了看看。",
+        "我会把你平安出发的消息带给大家。"
+      ]
+    }
+  ],
+  "props": [
+    {
+      "id": "TentA",
+      "asset": "tent_cream",
+      "pos": [
+        164,
+        544
+      ],
+      "width": 164
+    },
+    {
+      "id": "TentB",
+      "asset": "tent_teal",
+      "pos": [
+        816,
+        544
+      ],
+      "width": 152
+    },
+    {
+      "id": "SmithFurnace",
+      "asset": "furnace",
+      "pos": [
+        756,
+        256
+      ],
+      "width": 102
+    },
+    {
+      "id": "SmithAnvil",
+      "asset": "anvil",
+      "pos": [
+        854,
+        256
+      ],
+      "width": 54
+    },
+    {
+      "id": "SmithWeaponRack",
+      "asset": "weapon_rack",
+      "pos": [
+        936,
+        256
+      ],
+      "width": 70
+    },
+    {
+      "id": "MerchantStall",
+      "asset": "market_stall",
+      "pos": [
+        1100,
+        256
+      ],
+      "width": 146
+    },
+    {
+      "id": "MerchantCargo",
+      "asset": "cargo",
+      "pos": [
+        1200,
+        256
+      ],
+      "width": 78
+    },
+    {
+      "id": "ScholarDesk",
+      "asset": "field_desk",
+      "pos": [
+        260,
+        544
+      ],
+      "width": 54
+    },
+    {
+      "id": "CampNoticeboard",
+      "asset": "noticeboard",
+      "pos": [
+        1000,
+        544
+      ],
+      "width": 78
+    },
+    {
+      "id": "SuppliesCargo",
+      "asset": "cargo",
+      "pos": [
+        898,
+        544
+      ],
+      "width": 65
+    }
+  ],
+  "lights": [
+    {
+      "id": "FireGlow",
+      "pos": [
+        352,
+        510
+      ],
+      "color": "#ffc66e",
+      "radius": 190,
+      "energy": 0.65
+    },
+    {
+      "id": "ForgeGlow",
+      "pos": [
+        756,
+        220
+      ],
+      "color": "#ffad55",
+      "radius": 100,
+      "energy": 0.4
+    },
+    {
+      "id": "MarketGlow",
+      "pos": [
+        1152,
+        197
+      ],
+      "color": "#ffe0a2",
+      "radius": 85,
+      "energy": 0.25
+    }
+  ],
+  "jump_route": [
+    {
+      "from": "camp_ground",
+      "to": "step_01",
+      "start_x": 520,
+      "target_x": 536
+    },
+    {
+      "from": "step_01",
+      "to": "step_02",
+      "start_x": 564,
+      "target_x": 624
+    },
+    {
+      "from": "step_02",
+      "to": "trade_foundation",
+      "start_x": 628,
+      "target_x": 706
+    }
+  ]
+}

@@ -1,0 +1,986 @@
+{
+  "id": "forest_01",
+  "name": "始点森林 · 巨木回环",
+  "tile_size": 16,
+  "bounds": [
+    1280,
+    1856
+  ],
+  "world_origin": [
+    1280,
+    -1280
+  ],
+  "spawn": [
+    304,
+    1807
+  ],
+  "background": "res://assets/backgrounds/forest_01/ancient_tree_v1.png",
+  "background_tint": "#8babad",
+  "presentation": "res://data/maps/forest_01_art.json",
+  "solid_thickness": 32,
+  "oneway_thickness": 4,
+  "jump_height_ratio": [
+    0.8,
+    0.9
+  ],
+  "max_gap_dodges": 2,
+  "palette": {
+    "solid_edge": "#ca8570",
+    "solid_top": "#749267",
+    "solid_fill": "#51483e",
+    "solid_dark": "#383a34",
+    "solid_grain": "#645748",
+    "oneway_edge": "#b2e5ed",
+    "oneway_fill": "#508ca0",
+    "oneway_dark": "#315e70",
+    "wall_fill": "#41443b",
+    "wall_grain": "#535448"
+  },
+  "interaction": {
+    "range": 52,
+    "prompt_offset": [
+      0,
+      -62
+    ],
+    "font_size": 14,
+    "body_half_height": 17,
+    "door_size": [
+      24,
+      64
+    ],
+    "gate_size": [
+      16,
+      96
+    ],
+    "door_arrival_grace": 0.5
+  },
+  "platforms": [
+    {
+      "id": "root_floor",
+      "type": "solid",
+      "rect": [
+        0,
+        1824,
+        1280,
+        32
+      ]
+    },
+    {
+      "id": "root_step_l",
+      "type": "oneway",
+      "rect": [
+        384,
+        1728,
+        144,
+        4
+      ]
+    },
+    {
+      "id": "root_step_r",
+      "type": "oneway",
+      "rect": [
+        720,
+        1728,
+        144,
+        4
+      ]
+    },
+    {
+      "id": "root_step_c",
+      "type": "oneway",
+      "rect": [
+        544,
+        1632,
+        144,
+        4
+      ]
+    },
+    {
+      "id": "lower_shelf_l",
+      "type": "solid",
+      "rect": [
+        64,
+        1536,
+        288,
+        32
+      ]
+    },
+    {
+      "id": "lower_bridge",
+      "type": "oneway",
+      "rect": [
+        352,
+        1536,
+        704,
+        4
+      ]
+    },
+    {
+      "id": "lower_shelf_r",
+      "type": "solid",
+      "rect": [
+        1056,
+        1536,
+        144,
+        32
+      ]
+    },
+    {
+      "id": "trunk_step_1",
+      "type": "oneway",
+      "rect": [
+        448,
+        1440,
+        144,
+        4
+      ]
+    },
+    {
+      "id": "trunk_step_2",
+      "type": "oneway",
+      "rect": [
+        608,
+        1344,
+        144,
+        4
+      ]
+    },
+    {
+      "id": "trunk_step_3",
+      "type": "oneway",
+      "rect": [
+        752,
+        1248,
+        144,
+        4
+      ]
+    },
+    {
+      "id": "middle_shelf_l",
+      "type": "solid",
+      "rect": [
+        64,
+        1152,
+        544,
+        32
+      ]
+    },
+    {
+      "id": "middle_bridge",
+      "type": "oneway",
+      "rect": [
+        608,
+        1152,
+        352,
+        4
+      ]
+    },
+    {
+      "id": "middle_shelf_r",
+      "type": "solid",
+      "rect": [
+        960,
+        1152,
+        240,
+        32
+      ]
+    },
+    {
+      "id": "heart_step_1",
+      "type": "oneway",
+      "rect": [
+        384,
+        1056,
+        416,
+        4
+      ]
+    },
+    {
+      "id": "heart_step_2",
+      "type": "oneway",
+      "rect": [
+        640,
+        960,
+        192,
+        4
+      ]
+    },
+    {
+      "id": "heart_solid_r",
+      "type": "solid",
+      "rect": [
+        848,
+        960,
+        96,
+        32
+      ]
+    },
+    {
+      "id": "heart_solid_l",
+      "type": "solid",
+      "rect": [
+        384,
+        864,
+        400,
+        32
+      ]
+    },
+    {
+      "id": "heart_step_3",
+      "type": "oneway",
+      "rect": [
+        800,
+        768,
+        144,
+        4
+      ]
+    },
+    {
+      "id": "rest_shelf_l",
+      "type": "solid",
+      "rect": [
+        384,
+        672,
+        416,
+        32
+      ]
+    },
+    {
+      "id": "rest_bridge",
+      "type": "oneway",
+      "rect": [
+        800,
+        672,
+        160,
+        4
+      ]
+    },
+    {
+      "id": "rest_shelf_r",
+      "type": "solid",
+      "rect": [
+        960,
+        672,
+        320,
+        32
+      ]
+    },
+    {
+      "id": "upper_step_1",
+      "type": "oneway",
+      "rect": [
+        640,
+        576,
+        192,
+        4
+      ]
+    },
+    {
+      "id": "upper_step_2",
+      "type": "oneway",
+      "rect": [
+        720,
+        480,
+        144,
+        4
+      ]
+    },
+    {
+      "id": "crown_shelf_l",
+      "type": "solid",
+      "rect": [
+        64,
+        384,
+        480,
+        32
+      ]
+    },
+    {
+      "id": "crown_bridge",
+      "type": "oneway",
+      "rect": [
+        544,
+        384,
+        384,
+        4
+      ]
+    },
+    {
+      "id": "crown_shelf_r",
+      "type": "solid",
+      "rect": [
+        928,
+        384,
+        272,
+        32
+      ]
+    },
+    {
+      "id": "crown_step_l",
+      "type": "oneway",
+      "rect": [
+        336,
+        288,
+        144,
+        4
+      ]
+    },
+    {
+      "id": "crown_step_c",
+      "type": "oneway",
+      "rect": [
+        624,
+        288,
+        144,
+        4
+      ]
+    },
+    {
+      "id": "crown_step_r",
+      "type": "oneway",
+      "rect": [
+        944,
+        288,
+        144,
+        4
+      ]
+    },
+    {
+      "id": "crown_top_l",
+      "type": "oneway",
+      "rect": [
+        496,
+        192,
+        112,
+        4
+      ]
+    },
+    {
+      "id": "crown_top_r",
+      "type": "oneway",
+      "rect": [
+        784,
+        192,
+        112,
+        4
+      ]
+    }
+  ],
+  "walls": [
+    {
+      "id": "west_upper",
+      "type": "solid",
+      "polygon": [
+        [
+          48,
+          128
+        ],
+        [
+          64,
+          128
+        ],
+        [
+          64,
+          1728
+        ],
+        [
+          48,
+          1728
+        ]
+      ]
+    },
+    {
+      "id": "west_trunk",
+      "type": "solid",
+      "polygon": [
+        [
+          64,
+          416
+        ],
+        [
+          384,
+          704
+        ],
+        [
+          384,
+          1152
+        ],
+        [
+          64,
+          1152
+        ]
+      ]
+    },
+    {
+      "id": "east_trunk",
+      "type": "solid",
+      "polygon": [
+        [
+          960,
+          704
+        ],
+        [
+          1200,
+          704
+        ],
+        [
+          1200,
+          1152
+        ],
+        [
+          960,
+          1152
+        ]
+      ]
+    },
+    {
+      "id": "west_lower",
+      "type": "solid",
+      "polygon": [
+        [
+          64,
+          1184
+        ],
+        [
+          224,
+          1184
+        ],
+        [
+          224,
+          1536
+        ],
+        [
+          64,
+          1536
+        ]
+      ]
+    },
+    {
+      "id": "east_lower",
+      "type": "solid",
+      "polygon": [
+        [
+          1088,
+          1184
+        ],
+        [
+          1200,
+          1184
+        ],
+        [
+          1200,
+          1536
+        ],
+        [
+          1088,
+          1536
+        ]
+      ]
+    },
+    {
+      "id": "west_root_lip",
+      "type": "solid",
+      "polygon": [
+        [
+          64,
+          1568
+        ],
+        [
+          256,
+          1568
+        ],
+        [
+          256,
+          1728
+        ],
+        [
+          64,
+          1728
+        ]
+      ]
+    },
+    {
+      "id": "east_root_lip",
+      "type": "solid",
+      "polygon": [
+        [
+          1056,
+          1568
+        ],
+        [
+          1200,
+          1568
+        ],
+        [
+          1200,
+          1728
+        ],
+        [
+          1056,
+          1728
+        ]
+      ]
+    },
+    {
+      "id": "west_root_ceiling",
+      "type": "solid",
+      "polygon": [
+        [
+          0,
+          1728
+        ],
+        [
+          256,
+          1728
+        ],
+        [
+          256,
+          1760
+        ],
+        [
+          0,
+          1760
+        ]
+      ]
+    },
+    {
+      "id": "east_root_ceiling",
+      "type": "solid",
+      "polygon": [
+        [
+          1056,
+          1728
+        ],
+        [
+          1280,
+          1728
+        ],
+        [
+          1280,
+          1760
+        ],
+        [
+          1056,
+          1760
+        ]
+      ]
+    },
+    {
+      "id": "east_upper",
+      "type": "solid",
+      "polygon": [
+        [
+          1200,
+          128
+        ],
+        [
+          1232,
+          128
+        ],
+        [
+          1232,
+          608
+        ],
+        [
+          1200,
+          608
+        ]
+      ]
+    },
+    {
+      "id": "east_exit_lintel",
+      "type": "solid",
+      "polygon": [
+        [
+          1200,
+          576
+        ],
+        [
+          1280,
+          576
+        ],
+        [
+          1280,
+          608
+        ],
+        [
+          1200,
+          608
+        ]
+      ]
+    },
+    {
+      "id": "ceiling",
+      "type": "solid",
+      "polygon": [
+        [
+          48,
+          64
+        ],
+        [
+          1232,
+          64
+        ],
+        [
+          1232,
+          80
+        ],
+        [
+          48,
+          80
+        ]
+      ]
+    },
+    {
+      "id": "outer_top",
+      "type": "solid",
+      "polygon": [
+        [
+          0,
+          0
+        ],
+        [
+          1280,
+          0
+        ],
+        [
+          1280,
+          64
+        ],
+        [
+          0,
+          64
+        ]
+      ]
+    },
+    {
+      "id": "outer_west",
+      "type": "solid",
+      "polygon": [
+        [
+          0,
+          64
+        ],
+        [
+          64,
+          64
+        ],
+        [
+          64,
+          1760
+        ],
+        [
+          0,
+          1760
+        ]
+      ]
+    },
+    {
+      "id": "outer_east_upper",
+      "type": "solid",
+      "polygon": [
+        [
+          1200,
+          64
+        ],
+        [
+          1280,
+          64
+        ],
+        [
+          1280,
+          608
+        ],
+        [
+          1200,
+          608
+        ]
+      ]
+    },
+    {
+      "id": "outer_east_lower",
+      "type": "solid",
+      "polygon": [
+        [
+          1200,
+          704
+        ],
+        [
+          1280,
+          704
+        ],
+        [
+          1280,
+          1760
+        ],
+        [
+          1200,
+          1760
+        ]
+      ]
+    }
+  ],
+  "doors": [
+    {
+      "id": "DoorWest",
+      "pos": [
+        16,
+        1807
+      ],
+      "target": "camp_01",
+      "target_door": "DoorEast",
+      "arrive_offset": [
+        48,
+        0
+      ]
+    },
+    {
+      "id": "DoorEast",
+      "pos": [
+        1264,
+        655
+      ],
+      "target": "forest_02",
+      "target_door": "DoorWest",
+      "arrive_offset": [
+        -48,
+        0
+      ]
+    },
+    {
+      "id": "DoorEastShortcut",
+      "pos": [
+        1264,
+        1807
+      ],
+      "target": "forest_02",
+      "target_door": "DoorWestShortcut",
+      "arrive_offset": [
+        -48,
+        0
+      ],
+      "shortcut": "forest_01_roots",
+      "gate_pos": [
+        1168,
+        1776
+      ]
+    }
+  ],
+  "campfire": {
+    "id": "cp_forest_01_tree",
+    "pos": [
+      1088,
+      672
+    ]
+  },
+  "chest": {
+    "id": "chest_f01",
+    "pos": [
+      480,
+      672
+    ],
+    "item": "potion_small",
+    "count": 2
+  },
+  "routes": [
+    [
+      "root_floor",
+      "root_step_l"
+    ],
+    [
+      "root_floor",
+      "root_step_r"
+    ],
+    [
+      "root_step_l",
+      "root_step_c"
+    ],
+    [
+      "root_step_r",
+      "root_step_c"
+    ],
+    [
+      "root_step_c",
+      "lower_bridge"
+    ],
+    [
+      "lower_bridge",
+      "trunk_step_1"
+    ],
+    [
+      "trunk_step_1",
+      "trunk_step_2"
+    ],
+    [
+      "trunk_step_2",
+      "trunk_step_3"
+    ],
+    [
+      "trunk_step_3",
+      "middle_bridge"
+    ],
+    [
+      "middle_bridge",
+      "heart_step_1"
+    ],
+    [
+      "heart_step_1",
+      "heart_step_2"
+    ],
+    [
+      "heart_step_2",
+      "heart_solid_l"
+    ],
+    [
+      "heart_solid_l",
+      "heart_step_3"
+    ],
+    [
+      "heart_step_3",
+      "rest_bridge"
+    ],
+    [
+      "rest_bridge",
+      "upper_step_1"
+    ],
+    [
+      "upper_step_1",
+      "upper_step_2"
+    ],
+    [
+      "upper_step_2",
+      "crown_bridge"
+    ],
+    [
+      "crown_shelf_l",
+      "crown_step_l"
+    ],
+    [
+      "crown_bridge",
+      "crown_step_c"
+    ],
+    [
+      "crown_shelf_r",
+      "crown_step_r"
+    ],
+    [
+      "crown_step_l",
+      "crown_top_l"
+    ],
+    [
+      "crown_step_c",
+      "crown_top_l"
+    ],
+    [
+      "crown_step_c",
+      "crown_top_r"
+    ],
+    [
+      "crown_step_r",
+      "crown_top_r"
+    ]
+  ],
+  "connection_preview": {
+    "scene": "res://assets/PROCESSED/environments/ENV-B01/v001/maps/forest_02/forest_02.tscn",
+    "bounds": [
+      1280,
+      360
+    ],
+    "spawn": [
+      72,
+      323
+    ],
+    "shortcut": "forest_01_roots",
+    "gate_pos": [
+      960,
+      292
+    ],
+    "switch_pos": [
+      912,
+      340
+    ],
+    "doors": [
+      {
+        "id": "DoorWest",
+        "pos": [
+          16,
+          323
+        ],
+        "target": "forest_01",
+        "target_door": "DoorEast",
+        "arrive_offset": [
+          48,
+          0
+        ]
+      },
+      {
+        "id": "DoorWestShortcut",
+        "pos": [
+          1024,
+          323
+        ],
+        "target": "forest_01",
+        "target_door": "DoorEastShortcut",
+        "arrive_offset": [
+          -48,
+          0
+        ],
+        "shortcut": "forest_01_roots"
+      }
+    ]
+  },
+  "enemies": [
+    {
+      "spawn_id": "heart_left",
+      "enemy_id": "moss_beetle",
+      "pos": [
+        460,
+        864
+      ],
+      "platform_id": "heart_solid_l",
+      "patrol_bounds": [
+        408,
+        552
+      ]
+    },
+    {
+      "spawn_id": "heart_right",
+      "enemy_id": "milk_slime",
+      "pos": [
+        650,
+        864
+      ],
+      "platform_id": "heart_solid_l",
+      "patrol_bounds": [
+        568,
+        760
+      ]
+    },
+    {
+      "spawn_id": "heart_lower",
+      "enemy_id": "moss_beetle",
+      "pos": [
+        640,
+        1056
+      ],
+      "platform_id": "heart_step_1",
+      "patrol_bounds": [
+        408,
+        776
+      ]
+    },
+    {
+      "spawn_id": "middle_left",
+      "enemy_id": "milk_slime",
+      "pos": [
+        460,
+        1152
+      ],
+      "platform_id": "middle_shelf_l",
+      "patrol_bounds": [
+        400,
+        584
+      ]
+    }
+  ]
+}

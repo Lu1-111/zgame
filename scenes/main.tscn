@@ -1,7 +1,7 @@
 [gd_scene load_steps=2 format=3]
 
 ; main.tscn —— 标题屏（纯 UI 节点，不引用任何外部资源文件）
-; Enter/空格/左键 进入 M1 试玩场；M2 起接入 SceneRouter 正式主菜单流转。
+; Enter/空格/左键开始新旅途；有效存档可点击继续旅途。
 
 [ext_resource type="Script" path="res://scripts/ui/main_menu.gd" id="1_menu"]
 
@@ -52,14 +52,14 @@ vertical_alignment = 1
 [node name="Subtitle" type="Label" parent="UI/Root/Center"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 16
-text = "2D 银河恶魔城原型 · M1 手感试玩"
+text = "灵火旅途 · 从奶泉营地启程"
 horizontal_alignment = 1
 color = Color(0.72, 0.72, 0.78, 1)
 
 [node name="Hint" type="Label" parent="UI/Root/Center"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 12
-text = "F2 战斗演练 · F3 待机预览（12类可选） · Enter/空格/左键 进入试玩场：A/D 移动 · Space 跳(×2) · Shift 闪避 · 右键 防御 · 左键 普攻 · Q 技能 · E 与 NPC 交谈 · S 下穿 · Esc 返回"
+text = "A/D 移动 · Space 跳跃 · Shift 闪避 · S 下穿\n左键攻击 · 右键防御 · Q/E/R/F 奶术\nE 优先交互 · Tab 行囊 · 1–5 快捷物品 · Esc 暂停\nF2 战斗演练 · F3 动作预览"
 horizontal_alignment = 1
 color = Color(0.6, 0.6, 0.66, 1)
 
@@ -74,5 +74,5 @@ offset_right = 320.0
 offset_bottom = -8.0
 grow_vertical = 0
 theme_override_font_sizes/font_size = 10
-text = "v0.0.1 · Godot 4.7 · 灰盒阶段"
+text = "v1.1 原型 · Godot 4.7 · 林地与灵火系统"
 color = Color(0.5, 0.5, 0.55, 1)

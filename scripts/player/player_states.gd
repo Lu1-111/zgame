@@ -139,14 +139,14 @@ class Guard extends PlayerState:
 				dir * PlayerTuning.MAX_SPEED * PlayerTuning.GUARD_MOVE_MULT,
 				PlayerTuning.GROUND_ACCEL * delta)
 		# 防御可取消：普攻 / 闪避 / 技能（防反衔接）
-		if p.buffer_consume(&"attack"):
+		if p.buffer_consume(&"attack") and not p.weapon_cfg().is_empty():
 			sm.to(&"Attack", {"combo": p.next_combo()})
 			return
 		if p.buffer_consume(&"dodge") and p.can_dodge():
 			sm.to(&"Dodge", {"dir": dir})
 			return
-		if p.buffer_consume(&"skill_1") and p.try_skill():
-			sm.to(&"Skill")
+		if p.try_selected_skill():
+			return
 
 	func exit() -> void:
 		p.is_guarding = false
@@ -157,13 +157,16 @@ class Attack extends PlayerState:
 	var _t := 0.0
 	var _combo := 1
 	var _opened := false
+	var _module: Dictionary
 
 	func enter(msg: Dictionary) -> void:
-		_combo = clampi(int(msg.get("combo", 1)), 1, p.max_combo())
+		_combo = clampi(int(msg.get("combo",1)),1,p.max_combo())
 		_t = 0.0
 		_opened = false
-		# M1.5 鼠标自动转向：进招瞬间朝鼠标方位（aim.x==0 时 set_facing 保持原朝向）；
-		# 连击每一拍都会重新进入本状态 → 每拍重新取鼠标方位。
+		_module = WeaponRuntime.module(p.weapon_type())
+		p.velocity.x = 0.0
+		p.attack_charge = 0.0
+		p.attack_release_t = -1.0
 		p.set_facing(int(signf(p.aim_vector().x)))
 		p.attack_combo = _combo
 		p.attack_chain = false
@@ -171,37 +174,49 @@ class Attack extends PlayerState:
 
 	func tick(delta: float) -> void:
 		_t += delta
-		var active_start := PlayerTuning.ATK_STARTUP
-		var active_end := PlayerTuning.ATK_STARTUP + PlayerTuning.ATK_ACTIVE
+		p.velocity.x = 0.0
+		if p.weapon_type() == "bow":
+			p.attack_charge = clampf(_t/float(_module.charge_max),0,1) if not _opened else p.attack_charge
+			if not _opened:
+				p.attack_phase = &"charge"
+				if _t >= float(_module.charge_min) and not Input.is_action_pressed(&"attack"):
+					_opened = true
+					p.attack_release_t = 0.0
+					p.attack_phase = &"release"
+					p.set_facing(int(signf(p.aim_vector().x)))
+					p.spawn_weapon_projectile(p.attack_charge)
+			else:
+				p.attack_release_t += delta
+				if p.attack_release_t >= float(_module.recovery):
+					_finish()
+			return
+		var active_start := float(_module.get("startup",PlayerTuning.ATK_STARTUP))
+		var active_end := active_start+float(_module.get("active",PlayerTuning.ATK_ACTIVE))
 		p.attack_phase = &"startup" if _t < active_start else (&"active" if _t < active_end else &"recovery")
 		if not _opened and _t >= active_start:
 			_opened = true
-			# ---- 生效帧：近战发射特效判定实体（伤害结算在特效位置，M1.5 实体化）----
-			# ---- 远程发射投射物（伤害类型与速度随武器表）----
 			if p.weapon_is_ranged():
 				p.spawn_weapon_projectile()
 			else:
 				p.spawn_melee_effect(_combo)
 		if _t >= active_end:
-			p.hitbox.deactivate()
-			# ---- 后摇窗口的取消规则（连贯性核心）----
 			if _combo < p.max_combo() and p.attack_chain:
-				sm.to(&"Attack", {"combo": _combo + 1})  # 三段连击续拍
+				sm.to(&"Attack",{"combo":_combo+1})
 				return
 			if p.buffer_peek(&"dodge") and p.can_dodge():
 				p.buffer_consume(&"dodge")
-				sm.to(&"Dodge", {"dir": p.input_dir()})
+				sm.to(&"Dodge",{"dir":p.input_dir()})
 				return
-			if p.buffer_peek(&"skill_1") and p.try_skill():
-				p.buffer_consume(&"skill_1")
-				sm.to(&"Skill")
+			if p.try_selected_skill():
 				return
-		if _t >= active_end + PlayerTuning.ATK_RECOVERY:
-			sm.to(&"Fall" if not p.is_on_floor()
-					else (&"Run" if absf(p.input_dir()) > 0.01 else &"Idle"))
+		if _t >= active_end+float(_module.get("recovery",PlayerTuning.ATK_RECOVERY)):
+			_finish()
+
+	func _finish() -> void:
+		sm.to(&"Fall" if not p.is_on_floor() else (&"Run" if absf(p.input_dir())>0.01 else &"Idle"))
 
 	func exit() -> void:
-		p.hitbox.deactivate()  # 静态判定节点兜底关闭（M1.5 起近战判定走 AttackEffect）
+		p.hitbox.deactivate()
 		p.attack_phase = &""
 		p.attack_chain = false
 
@@ -215,11 +230,11 @@ class Skill extends PlayerState:
 		_t = 0.0
 		_fired = false
 		p.set_facing(int(signf(p.aim_vector().x)))  # M1.5 鼠标自动转向：施法朝鼠标方位
-		p.velocity.x *= 0.3  # 施法急停
+		p.velocity.x = 0.0  # 施放期间锁定水平位移
 
 	func tick(delta: float) -> void:
 		_t += delta
-		p.air_accelerate(delta)
+		p.velocity.x = 0.0
 		if not _fired and _t >= PlayerTuning.SKILL_STARTUP:
 			_fired = true
 			p.fire_skill(p._current_skill)  # 分派：奶泡弹/治愈之乳/挤奶冲击

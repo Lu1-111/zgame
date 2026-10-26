@@ -87,6 +87,15 @@ func _ready() -> void:
 ## （镜像按 _aim.x < 0，锚点由 EffectPlayer 自理，本地原点摆放）。
 ## 资源缺失或动作未知时保持 _draw() 灰盒回退，绝不阻断 spawn。
 func _setup_visual() -> void:
+	if _effect_name in [&"sword_slash",&"bow_release",&"staff_cast"]:
+		var generated := WeaponVFX.new()
+		generated.kind = {&"sword_slash":"sword",&"bow_release":"arrow",&"staff_cast":"staff"}[_effect_name]
+		generated.scale.x = -1.0 if _aim.x < 0 else 1.0
+		add_child(generated)
+		_effect_player = generated
+		_fx_playing = true
+		generated.finished.connect(func() -> void: _fx_done = true)
+		return
 	if not ResourceLoader.exists(FX_PLAYER_SCENE):
 		return   # 素材缺失：保留灰盒回退，不报错
 	var scene: PackedScene = load(FX_PLAYER_SCENE)
@@ -112,6 +121,13 @@ func _setup_visual() -> void:
 ## EffectPlayer 自然播完回调（一次性动画结束必发）；节点释放统一交给 _physics_process 收口。
 func _on_effect_completed(_completed: StringName) -> void:
 	_fx_done = true
+
+
+## 定向技能将视觉和判定一起旋转至鼠标方向，普攻不调用此接口。
+func orient_to_aim() -> void:
+	rotation = _aim.angle()
+	if _effect_player is WeaponVFX:
+		_effect_player.scale.x = 1.0
 
 
 func _physics_process(delta: float) -> void:
@@ -145,3 +161,21 @@ func _draw() -> void:
 			else Color(1.0, 0.85, 0.4, 0.55)
 	draw_rect(Rect2(_hitbox_offset - _hitbox_size / 2.0, _hitbox_size), col, true)
 	draw_circle(_hitbox_offset, 3.0, Color(1, 1, 1, 0.9))
+
+
+## 校准武器特效时序；砸地特效的可见最下端与角色脚底平齐。
+func align_weapon_visual(rate: float, ground_contact: bool = false) -> void:
+	if _effect_player == null:
+		return
+	if _effect_player is WeaponVFX:
+		_effect_player.set_rate(rate)
+	else:
+		_effect_player.play_effect(_effect_name,_aim.x<0,rate)
+		if ground_contact:
+			var visual := _effect_player.get_node("VisualRoot/AnimatedSprite2D") as AnimatedSprite2D
+			var bottom := 0.0
+			for index in visual.sprite_frames.get_frame_count(_effect_name):
+				var texture := visual.sprite_frames.get_frame_texture(_effect_name,index)
+				var bounds := texture.get_image().get_used_rect()
+				bottom = maxf(bottom,float(bounds.end.y)+visual.offset.y)
+			_effect_player.position.y = -bottom

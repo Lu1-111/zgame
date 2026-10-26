@@ -1,0 +1,136 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/world/forest_room.gd" id="1_cnhmd"]
+[ext_resource type="PackedScene" path="res://assets/PROCESSED/environments/ENV-B01/v001/maps/forest_02/forest_02.tscn" id="2_cyi7f"]
+[ext_resource type="Script" path="res://scripts/world/forest_passage.gd" id="3_i6c0h"]
+[ext_resource type="Texture2D" path="res://assets/third_party/metroidvania_forge/ch_02_world_building_foundations/forgotten_forest_example_tileset.png" id="4_4ynhi"]
+[ext_resource type="PackedScene" path="res://scenes/player/player.tscn" id="5_hdn3s"]
+[ext_resource type="Script" path="res://scripts/player/player.gd" id="6_7gibj"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jnhc0"]
+size = Vector2(24, 64)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fbl0a"]
+size = Vector2(24, 64)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yxlhq"]
+size = Vector2(16, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pcqxu"]
+atlas = ExtResource("4_4ynhi")
+region = Rect2(512, 192, 128, 16)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sj2p0"]
+atlas = ExtResource("4_4ynhi")
+region = Rect2(512, 192, 128, 16)
+filter_clip = true
+
+[node name="Forest02ConnectionPreview" type="Node2D" unique_id=984690137]
+script = ExtResource("1_cnhmd")
+connection_preview = true
+
+[node name="Environment" type="Node2D" parent="." unique_id=1171412615 instance=ExtResource("2_cyi7f")]
+texture_filter = 1
+metadata/room_id = "forest_02"
+metadata/art_preview_only = true
+metadata/display_name = "苔甲小径"
+metadata/source_sha256 = "c17448d54a40227ebf9896c6fd951130fd670aafcd5546cb3fce8be39b03df29"
+metadata/size_px = Vector2(1280, 360)
+
+[node name="DoorWest" type="Area2D" parent="." unique_id=1856252901]
+position = Vector2(16, 323)
+script = ExtResource("3_i6c0h")
+target_room = &"forest_01"
+target_door = &"DoorEast"
+metadata/target_room = "forest_01"
+metadata/target_door = "DoorEast"
+metadata/arrive_offset = Vector2(48, 0)
+
+[node name="Shape" type="CollisionShape2D" parent="DoorWest" unique_id=1923348163]
+shape = SubResource("RectangleShape2D_jnhc0")
+
+[node name="@Polygon2D@28" type="Polygon2D" parent="DoorWest" unique_id=1105514322]
+z_index = 1
+color = Color(0.7254902, 0.8980392, 0.7921569, 1)
+polygon = PackedVector2Array(16, -4, 0, -4, 0, -8, -16, 0, 0, 8, 0, 4, 16, 4)
+
+[node name="DoorWestShortcut" type="Area2D" parent="." unique_id=1889964434]
+position = Vector2(1024, 323)
+script = ExtResource("3_i6c0h")
+shortcut_id = &"forest_01_roots"
+target_room = &"forest_01"
+target_door = &"DoorEastShortcut"
+metadata/target_room = "forest_01"
+metadata/target_door = "DoorEastShortcut"
+metadata/arrive_offset = Vector2(-48, 0)
+
+[node name="Shape" type="CollisionShape2D" parent="DoorWestShortcut" unique_id=212016716]
+shape = SubResource("RectangleShape2D_fbl0a")
+
+[node name="@Polygon2D@29" type="Polygon2D" parent="DoorWestShortcut" unique_id=1541439953]
+z_index = 1
+color = Color(0.7254902, 0.8980392, 0.7921569, 1)
+polygon = PackedVector2Array(16, -4, 0, -4, 0, -8, -16, 0, 0, 8, 0, 4, 16, 4)
+
+[node name="ShortcutGate" type="StaticBody2D" parent="." unique_id=1480431932]
+position = Vector2(960, 292)
+collision_mask = 0
+metadata/shortcut_id = "forest_01_roots"
+
+[node name="Shape" type="CollisionShape2D" parent="ShortcutGate" unique_id=1658125719]
+shape = SubResource("RectangleShape2D_yxlhq")
+
+[node name="WoodPost_-1" type="Node2D" parent="ShortcutGate" unique_id=442965302]
+z_index = 1
+position = Vector2(-4, -48)
+rotation = 1.5707964
+
+[node name="Bark" type="Sprite2D" parent="ShortcutGate/WoodPost_-1" unique_id=2118806577]
+texture_filter = 2
+scale = Vector2(0.75, 0.4375)
+texture = SubResource("AtlasTexture_pcqxu")
+centered = false
+
+[node name="WoodPost_1" type="Node2D" parent="ShortcutGate" unique_id=895416768]
+z_index = 1
+position = Vector2(4, -48)
+rotation = 1.5707964
+
+[node name="Bark" type="Sprite2D" parent="ShortcutGate/WoodPost_1" unique_id=1834033461]
+texture_filter = 2
+scale = Vector2(0.75, 0.4375)
+texture = SubResource("AtlasTexture_sj2p0")
+centered = false
+
+[node name="RootBinding_-1" type="Line2D" parent="ShortcutGate" unique_id=411307848]
+z_index = 1
+points = PackedVector2Array(-16, 32, 16, -32)
+width = 5.0
+default_color = Color(0.5764706, 0.627451, 0.42352942, 1)
+
+[node name="RootBinding_1" type="Line2D" parent="ShortcutGate" unique_id=649745148]
+z_index = 1
+points = PackedVector2Array(-16, -32, 16, 32)
+width = 5.0
+default_color = Color(0.5764706, 0.627451, 0.42352942, 1)
+
+[node name="ShortcutSwitch" type="Polygon2D" parent="." unique_id=820022101]
+z_index = 1
+position = Vector2(912, 340)
+color = Color(0.9137255, 0.74509805, 0.4, 1)
+polygon = PackedVector2Array(-8, 0, -8, -32, 8, -32, 8, 0)
+
+[node name="Player" type="CharacterBody2D" parent="." unique_id=309480380 groups=["player"] instance=ExtResource("5_hdn3s")]
+z_index = 20
+position = Vector2(72, 323)
+collision_layer = 2
+collision_mask = 129
+script = ExtResource("6_7gibj")
+
+[node name="SpawnPoint" type="Marker2D" parent="." unique_id=202909811]
+position = Vector2(72, 323)
+
+[node name="InteractionPrompt" type="Label" parent="." unique_id=1520642708]
+z_index = 1
+theme_override_font_sizes/font_size = 14

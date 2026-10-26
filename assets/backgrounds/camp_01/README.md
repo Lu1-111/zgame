@@ -1,0 +1,7 @@
+# 营地月夜密林 v1
+
+内置 image_gen 原创背景，制作人 2026-10-26 授权。最终文件：`assets/backgrounds/camp_01/moonlit_woods_v1.png`，无透明背景。源文件：`exec-4a8655f9-81a2-4625-84b1-e4fb4559d6d3.png`。场景按 1280×640 铺满，z=-25；动态物件和角色独立放置。
+
+完整生成提示词：
+
+> Use case: stylized-concept. Asset type: final seamless-looking BACKGROUND painting for a 2D side scrolling fantasy forest game, landscape 2:1 composition. Create a lush deep forest AT NIGHT, majestic broadleaf tree trunks, abundant interwoven leafy canopy, layered distant trees, blue-green mist, deep navy shadows, a small silvery moon glimpsed through the top left canopy, a few tiny fireflies. Painterly detailed semi-realistic fantasy game environment with fine textured bark, moss and leaves, similar to a richly painted moss-and-root Metroidvania forest. Quiet, sheltered, safe woodland encampment atmosphere. The entire image is background only: NO tents, NO buildings, NO campfires, NO characters, NO platforms, NO UI, NO text or watermarks. Orthographic SIDE VIEW for a side scrolling game, not a road receding into perspective. Dense tree trunks frame both edges, spacious darker hazy clearing throughout middle and lower half leaves readable space behind foreground game props. Muted desaturated teal and midnight indigo with softly luminous moonlight; keep trees legible and elegant, avoid black featureless darkness or excessive bright stars. Fill the complete landscape edge to edge with richly layered forest.

@@ -214,10 +214,14 @@ func receive_hit(packet: DamagePacket) -> int:
 	var resist_key := "magic" if packet.type == DamagePacket.DamageType.MAGIC else "physical"
 	var resist := float(definition.resist.get(resist_key, 1.0))
 	var defense := float(definition.defense)
+	if packet.type == DamagePacket.DamageType.PHYSICAL:
+		defense *= 1.0 - InventoryService.talent_effect("defense_ignore_pct") / 100.0
 	var damage := maxi(0, roundi(float(packet.amount) * resist * (1.0 - defense / (defense + float(tuning.defense_constant)))))
 	if damage == 0:
 		return 0
 	hp = maxi(0, hp - damage)
+	if str(packet.source_id).begins_with("skill_"):
+		GameState.mana = mini(GameState.mana_max,GameState.mana + int(InventoryService.talent_effect("skill_hit_mana_regen")))
 	if packet.source_id == &"skill_bubble":
 		_slow_left = float(tuning.slow_duration)
 	if hp == 0:

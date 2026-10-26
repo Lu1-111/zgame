@@ -9,7 +9,11 @@
       "unlock": "initial",
       "shape": "projectile_line",
       "slow": 30,
-      "desc": "初始技能。直线奶泡弹，命中造成 1.0 倍法术伤害并减速 30%。"
+      "desc": "初始技能。直线奶泡弹，命中造成 1.0 倍法术伤害并减速 30%。",
+      "category": "active",
+      "damage_type": "magic",
+      "stamina_cost": 3,
+      "icon": "res://assets/ui/magic/skill_bubble.svg"
     },
     {
       "id": "skill_shield",
@@ -20,7 +24,11 @@
       "unlock": "talent_milk_2",
       "absorb": 40,
       "duration": 5,
-      "desc": "增益技能（天赋·奶术 2 解锁）。展开奶盾，5 秒内吸收 40 点伤害。"
+      "desc": "增益技能（天赋·奶术 2 解锁）。展开奶盾，5 秒内吸收 40 点伤害。",
+      "category": "active",
+      "damage_type": "magic",
+      "stamina_cost": 4,
+      "icon": "res://assets/ui/magic/skill_shield.svg"
     },
     {
       "id": "skill_slam",
@@ -31,7 +39,11 @@
       "unlock": "chest_cave",
       "shape": "sector",
       "knockback": 200,
-      "desc": "近战法术（洞窟宝箱解锁后获得）。前方扇形 1.5 倍法术伤害并击退敌人。"
+      "desc": "近战法术（洞窟宝箱解锁后获得）。前方扇形 1.5 倍法术伤害并击退敌人。",
+      "category": "active",
+      "damage_type": "magic",
+      "stamina_cost": 4,
+      "icon": "res://assets/ui/magic/skill_slam.svg"
     },
     {
       "id": "skill_heal",
@@ -41,7 +53,11 @@
       "damage_mult": null,
       "unlock": "merchant",
       "heal_pct": 30,
-      "desc": "治疗技能（商人处习得）。回复自身 30% 最大生命值。"
+      "desc": "治疗技能（商人处习得）。回复自身 30% 最大生命值。",
+      "category": "active",
+      "damage_type": "magic",
+      "stamina_cost": 4,
+      "icon": "res://assets/ui/magic/skill_heal.svg"
     },
     {
       "id": "skill_starfall",
@@ -52,7 +68,240 @@
       "unlock": "talent_milk_4",
       "shape": "area_rain",
       "hits": 3,
-      "desc": "爆发技能（天赋·奶术 4 解锁）。天降星乳，3 段范围伤害，每段 0.8 倍法术伤害。"
+      "desc": "爆发技能（天赋·奶术 4 解锁）。天降星乳，3 段范围伤害，每段 0.8 倍法术伤害。",
+      "category": "active",
+      "damage_type": "magic",
+      "stamina_cost": 6,
+      "icon": "res://assets/ui/magic/skill_starfall.svg"
+    },
+    {
+      "id": "skill_cleave",
+      "name": "旋刃打击",
+      "category": "active",
+      "damage_type": "physical",
+      "mana_cost": 0,
+      "stamina_cost": 18,
+      "cooldown": 2.0,
+      "damage_mult": 1.35,
+      "unlock": "initial",
+      "shape": "sector",
+      "knockback": 220,
+      "presentation": {
+        "reach": 30,
+        "hitbox": [54, 38],
+        "active": 0.12,
+        "effect": "sword_slash"
+      },
+      "icon": "res://assets/ui/magic/skill_cleave.svg",
+      "desc": "物理技能。向光标方向横扫，造成 1.35 倍物理伤害。消耗 18 体力。"
+    },
+    {
+      "id": "active_future_01",
+      "name": "破阵突刺",
+      "category": "active",
+      "damage_type": "physical",
+      "mana_cost": 0,
+      "stamina_cost": 0,
+      "cooldown": 0,
+      "damage_mult": null,
+      "unlock": "future",
+      "placeholder": true,
+      "icon": "res://assets/ui/magic/skill_future_01.svg",
+      "desc": "迅捷的前向穿刺，打击正面的敌人。\n尚未习得。"
+    },
+    {
+      "id": "active_future_02",
+      "name": "回旋斩",
+      "category": "active",
+      "damage_type": "physical",
+      "mana_cost": 0,
+      "stamina_cost": 0,
+      "cooldown": 0,
+      "damage_mult": null,
+      "unlock": "future",
+      "placeholder": true,
+      "icon": "res://assets/ui/magic/skill_future_02.svg",
+      "desc": "挥刃回旋，攻击身边的敌人。\n尚未习得。"
+    },
+    {
+      "id": "active_future_03",
+      "name": "裂地重击",
+      "category": "active",
+      "damage_type": "physical",
+      "mana_cost": 0,
+      "stamina_cost": 0,
+      "cooldown": 0,
+      "damage_mult": null,
+      "unlock": "future",
+      "placeholder": true,
+      "icon": "res://assets/ui/magic/skill_future_03.svg",
+      "desc": "以重击震裂前方地面。\n尚未习得。"
+    },
+    {
+      "id": "active_future_04",
+      "name": "霜乳飞矢",
+      "category": "active",
+      "damage_type": "magic",
+      "mana_cost": 0,
+      "stamina_cost": 0,
+      "cooldown": 0,
+      "damage_mult": null,
+      "unlock": "future",
+      "placeholder": true,
+      "icon": "res://assets/ui/magic/skill_future_04.svg",
+      "desc": "凝结寒冷奶力，发射霜白飞矢。\n尚未习得。"
+    },
+    {
+      "id": "active_future_05",
+      "name": "星环护体",
+      "category": "active",
+      "damage_type": "magic",
+      "mana_cost": 0,
+      "stamina_cost": 0,
+      "cooldown": 0,
+      "damage_mult": null,
+      "unlock": "future",
+      "placeholder": true,
+      "icon": "res://assets/ui/magic/skill_future_05.svg",
+      "desc": "以旋转星环守护周身。\n尚未习得。"
+    },
+    {
+      "id": "active_future_06",
+      "name": "月华祝福",
+      "category": "active",
+      "damage_type": "magic",
+      "mana_cost": 0,
+      "stamina_cost": 0,
+      "cooldown": 0,
+      "damage_mult": null,
+      "unlock": "future",
+      "placeholder": true,
+      "icon": "res://assets/ui/magic/skill_future_06.svg",
+      "desc": "凝聚月光，为下一次战斗积蓄力量。\n尚未习得。"
+    },
+    {
+      "id": "passive_01",
+      "name": "生机回响",
+      "category": "passive",
+      "damage_type": "none",
+      "mana_cost": 0,
+      "stamina_cost": 0,
+      "cooldown": 0,
+      "damage_mult": null,
+      "unlock": "initial",
+      "placeholder": false,
+      "effect": {
+        "hp_regen": 0.25
+      },
+      "icon": "res://assets/ui/magic/passive_01.svg",
+      "desc": "生命每秒恢复 0.25 点。"
+    },
+    {
+      "id": "passive_02",
+      "name": "奶力潮汐",
+      "category": "passive",
+      "damage_type": "none",
+      "mana_cost": 0,
+      "stamina_cost": 0,
+      "cooldown": 0,
+      "damage_mult": null,
+      "unlock": "initial",
+      "placeholder": false,
+      "effect": {
+        "mana_regen": 0.3
+      },
+      "icon": "res://assets/ui/magic/passive_02.svg",
+      "desc": "奶力每秒恢复 0.3 点。"
+    },
+    {
+      "id": "passive_03",
+      "name": "嗜血之印",
+      "category": "passive",
+      "damage_type": "none",
+      "mana_cost": 0,
+      "stamina_cost": 0,
+      "cooldown": 0,
+      "damage_mult": null,
+      "unlock": "future",
+      "placeholder": true,
+      "effect": {},
+      "icon": "res://assets/ui/magic/passive_03.svg",
+      "desc": "以命中敌人的力量滋养自身。\n尚未习得。"
+    },
+    {
+      "id": "passive_04",
+      "name": "坚韧意志",
+      "category": "passive",
+      "damage_type": "none",
+      "mana_cost": 0,
+      "stamina_cost": 0,
+      "cooldown": 0,
+      "damage_mult": null,
+      "unlock": "future",
+      "placeholder": true,
+      "effect": {},
+      "icon": "res://assets/ui/magic/passive_04.svg",
+      "desc": "坚定的意志能够抵御伤害。\n尚未习得。"
+    },
+    {
+      "id": "passive_05",
+      "name": "灵巧步伐",
+      "category": "passive",
+      "damage_type": "none",
+      "mana_cost": 0,
+      "stamina_cost": 0,
+      "cooldown": 0,
+      "damage_mult": null,
+      "unlock": "future",
+      "placeholder": true,
+      "effect": {},
+      "icon": "res://assets/ui/magic/passive_05.svg",
+      "desc": "轻盈的步伐有助于把握战斗节奏。\n尚未习得。"
+    },
+    {
+      "id": "passive_06",
+      "name": "精准之眼",
+      "category": "passive",
+      "damage_type": "none",
+      "mana_cost": 0,
+      "stamina_cost": 0,
+      "cooldown": 0,
+      "damage_mult": null,
+      "unlock": "future",
+      "placeholder": true,
+      "effect": {},
+      "icon": "res://assets/ui/magic/passive_06.svg",
+      "desc": "寻找武器与目标之间的最佳距离。\n尚未习得。"
+    },
+    {
+      "id": "passive_07",
+      "name": "星乳亲和",
+      "category": "passive",
+      "damage_type": "none",
+      "mana_cost": 0,
+      "stamina_cost": 0,
+      "cooldown": 0,
+      "damage_mult": null,
+      "unlock": "future",
+      "placeholder": true,
+      "effect": {},
+      "icon": "res://assets/ui/magic/passive_07.svg",
+      "desc": "感受星乳的流动。\n尚未习得。"
+    },
+    {
+      "id": "passive_08",
+      "name": "不屈之心",
+      "category": "passive",
+      "damage_type": "none",
+      "mana_cost": 0,
+      "stamina_cost": 0,
+      "cooldown": 0,
+      "damage_mult": null,
+      "unlock": "future",
+      "placeholder": true,
+      "effect": {},
+      "icon": "res://assets/ui/magic/passive_08.svg",
+      "desc": "在逆境中守护最后的希望。\n尚未习得。"
     }
   ]
 }

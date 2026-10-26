@@ -74,7 +74,7 @@ res://
 
 ## 6. 已知事项 / 待制作人决策
 
-- **E 键冲突**：附录 C 中 `skill_2` 与 `interact` 都映射 E，现按参考书原样保留，待决策。
+- **新版操作**：制作人 2026-10-26 决策，E 仅交互；I 人物面板；滚轮选择三个主动槽，鼠标侧键4（Godot XBUTTON1）施放；两个被动槽在人物面板装配。旧 Q/E/R/F 施法逻辑停用。
 - **IP 命名**：对外工程名用「奶宝：银河征途」（参考书 §1.6 建议），文档内沿用参考书称呼；正式上线前必须全部换成原创命名。
 - **单向门数据约定**：`one_way: true` 表示该门只能作为单向通道的**落点**，不可从此侧主动进入。
 - **物理层**（project.godot 已注册）：1 world / 2 player_body / 3 enemy_body / 4 player_hitbox / 5 enemy_hitbox / 6 hurtbox / 7 interactable / 8 oneway / 9 hazard。

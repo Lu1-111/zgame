@@ -7,7 +7,7 @@ const REQUIRED_ACTIONS := [
 	"move_left", "move_right", "move_down", "jump", "dodge", "guard", "attack",
 	"skill_1", "skill_2", "skill_3", "skill_4",
 	"item_1", "item_2", "item_3", "item_4", "item_5",
-	"interact", "inventory", "map", "pause", "weapon_next",
+	"interact", "inventory", "map", "pause", "weapon_next", "character_panel", "cast_selected",
 ]
 
 ## AGENTS.md §6 物理层名（layer_1..layer_9 依次）
@@ -26,6 +26,10 @@ func run(ctx) -> bool:
 			ctx.expect_true(false, "InputMap 动作 '%s' 存在且 events 非空（动作缺失）" % action)
 
 	# ---- ProjectSettings：主场景 ----
+	var panel_events := InputMap.action_get_events("character_panel")
+	ctx.expect_true(panel_events.size() == 1 and panel_events[0] is InputEventKey and panel_events[0].physical_keycode == KEY_I,"人物面板默认绑定 I")
+	var cast_events := InputMap.action_get_events("cast_selected")
+	ctx.expect_true(cast_events.size() == 1 and cast_events[0] is InputEventMouseButton and cast_events[0].button_index == MOUSE_BUTTON_XBUTTON1,"选中技能默认绑定鼠标侧键4")
 	ctx.expect_eq(
 		String(ProjectSettings.get_setting("application/run/main_scene", "<缺失>")),
 		"res://scenes/main.tscn",

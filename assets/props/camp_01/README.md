@@ -1,0 +1,13 @@
+# 营地远征道具图集 v1
+
+制作人 2026-10-26 授权营地精细化，本图通过内置 image_gen 生成，无外部下载素材。源图保留真实 RGBA 透明通道（1254×1254）。Godot 使用 AtlasTexture 的区域裁切，不重复压缩或改画原图；九种道具区域和实例宽度见 `data/maps/camp_01_art.json` / `camp_01.json`。
+
+包含两顶不同帐篷、石炉与风箱、铁砧及工具桌、武器架、货摊、货箱包裹、学者桌、告示板。小队徽记与布料配色统一为深青与奶油色。角色、篝火、宝箱及地形不烘焙进此图，分别作为可交互节点保留。
+
+生成方式：built-in image_gen；transparent_background=true。原始生成文件：`exec-789f2983-b0c6-4e0f-b9a7-f34c4cde5625.png`。项目内最终文件：`assets/props/camp_01/expedition_props_v1.png`。
+
+完整生成提示词：
+
+> Use case: stylized-concept. Asset type: production sprite atlas for an existing 2D side scrolling forest Metroidvania in Godot. Create ONE transparent PNG sprite atlas, square 1536 by 1536, exactly 3 columns by 3 rows, each cell 512 by 512. Every prop isolated entirely inside its own cell with at least 28 pixels transparent padding, ground baseline near y=476 in EACH cell. No labels, no text, no characters, no terrain/platform strips, no watermarks. Front-facing SIDE-VIEW game objects (only a slight view of top surfaces, NO isometric camera), clear silhouette, intricate hand-painted fantasy textures with visible wooden grain, cloth folds, rope knots, brass hardware and worn iron. Muted olive moss, dark weathered timber, beige canvas and teal cloth; warm amber lantern highlights. Match a detailed mossy rock-and-tree-root forest game setting, grounded rustic temporary expedition camp, not a town or modern campsite. Grid content exactly: top left: large cream canvas A-frame expedition tent, moss-green trim, open dark doorway, rolled sleeping blanket and small hanging amber lamp. Top center: a distinct teal canvas expedition tent with cream trim, tied guy ropes, rolled entrance flap, small travel bag by entrance. Top right: squat rustic blacksmith furnace of dark stone with orange coals, small chimney and leather bellows. Middle left: heavy iron anvil on a weathered wooden stump, tongs and smith hammer resting on a small adjacent tool bench. Middle center: wooden weapon rack with iron swords, a spear and a round shield. Middle right: compact merchant market stall with teal cloth awning, wooden counter, pottery bottles and small cloth goods, open front, no person. Bottom left: a stack of wooden cargo crates with rope-tied sacks, parcels and a small barrel. Bottom center: a scholar's field desk with open book, rolled maps, ink bottle, stool and an amber candle. Bottom right: rustic wooden camp noticeboard on two posts with blank parchment slips and a small attached hanging lantern. Keep all NINE different assets separate, no touching across cells, complete objects including feet/supports. True alpha transparency throughout all empty background.
+
+实际输出尺寸与格子间距由模型决定，消费端按可见道具轮廓配置独立区域，不能假定源图严格为 512px 等分格。

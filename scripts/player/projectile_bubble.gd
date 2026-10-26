@@ -4,6 +4,10 @@ extends Area2D
 ## 命中减速 30% 的施加在敌侧 AI（M1 敌人实装时消费）。
 ## M1.5：方向 2D 化（随鼠标瞄准发射）；命中/撞墙时播 AttackEffect 命中冲击（纯视觉）。
 
+signal hit_landed(target: Node, final_damage: int)
+var visual_kind := ""
+var _weapon_visual: AnimatedSprite2D
+
 const SPEED := 380.0        ## 飞行速度（手感参数，M1 调参区）
 const LIFETIME := 1.2       ## 存活秒数（防泄漏）
 const RADIUS := 5.0
@@ -26,6 +30,16 @@ func _ready() -> void:
 	collision_layer = 8        # player_hitbox
 	collision_mask = 32 | 1    # hurtbox + world（撞墙消散）
 	monitoring = true
+	if visual_kind in ["arrow","staff"]:
+		_weapon_visual = AnimatedSprite2D.new()
+		_weapon_visual.sprite_frames = WeaponRuntime.effect_frames(visual_kind,true)
+		_weapon_visual.scale = WeaponRuntime.effect_scale(visual_kind)
+		_weapon_visual.rotation = dir.angle()
+		add_child(_weapon_visual)
+		if visual_kind == "arrow":
+			_weapon_visual.frame = 3
+		else:
+			_weapon_visual.play()
 	area_entered.connect(_on_area_entered)
 	body_entered.connect(_on_body_entered)
 
@@ -46,7 +60,8 @@ func _on_area_entered(area: Area2D) -> void:
 		return
 	if area.has_method("receive_hit"):
 		_hit[area] = true
-		area.receive_hit(packet)
+		var damage: int = area.receive_hit(packet)
+		hit_landed.emit(area.owner_actor if area is HurtboxComponent else area,damage)
 		_play_impact()
 		queue_free()
 
@@ -63,6 +78,8 @@ func _play_impact() -> void:
 
 
 func _draw() -> void:
+	if is_instance_valid(_weapon_visual):
+		return
 	draw_circle(Vector2.ZERO, RADIUS + 2.0, Color(0.55, 0.75, 1.0, 0.25))
 	draw_circle(Vector2.ZERO, RADIUS, Color(0.7, 0.85, 1.0, 0.95))
 	draw_circle(-dir * 3.0, RADIUS * 0.6, Color(0.7, 0.85, 1.0, 0.4))

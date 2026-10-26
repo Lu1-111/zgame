@@ -1,0 +1,54 @@
+{
+  "revision": 1,
+  "active_slots": 3,
+  "passive_slots": 2,
+  "starter_weapons": [
+    "sword_01",
+    "bow_01",
+    "milk_staff"
+  ],
+  "default_active": [
+    "skill_bubble",
+    "skill_cleave",
+    ""
+  ],
+  "panel_rect": [
+    8,
+    6,
+    624,
+    348
+  ],
+  "base_attributes": {
+    "physical_attack": 8,
+    "magic_attack": 8,
+    "attack_per_level": 2,
+    "defense": 0,
+    "defense_constant": 120,
+    "damage_reduction": 0,
+    "life_steal": 0,
+    "hp_regen": 0,
+    "mana_regen": 0,
+    "max_damage_reduction": 95
+  },
+  "pause": {
+    "dim_alpha": 0.58,
+    "rect": [
+      18,
+      54,
+      270,
+      294
+    ]
+  },
+  "dialogue": {
+    "size": [
+      480,
+      88
+    ],
+    "bottom_margin": 12,
+    "opacity": 0.88
+  },
+  "cursor_hotspot": [
+    5,
+    3
+  ]
+}

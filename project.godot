@@ -22,6 +22,7 @@ DataDB="*res://scripts/autoload/data_db.gd"
 SaveSystem="*res://scripts/autoload/save_system.gd"
 SceneRouter="*res://scripts/autoload/scene_router.gd"
 AudioManager="*res://scripts/autoload/audio_manager.gd"
+GameUI="*res://scripts/ui/game_ui.gd"
 
 [display]
 
@@ -30,8 +31,18 @@ window/size/viewport_height=360
 window/size/window_width_override=1280
 window/size/window_height_override=720
 window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
 
 [input]
+
+character_panel={
+"deadzone": 0.2,
+"events": [Object(InputEventKey,"physical_keycode":73)]
+}
+cast_selected={
+"deadzone": 0.2,
+"events": [Object(InputEventMouseButton,"button_index":8)]
+}
 
 move_left={
 "deadzone": 0.2,

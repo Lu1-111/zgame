@@ -1,0 +1,170 @@
+{
+  "wall": {
+    "texture": "res://assets/terrain/forest_01/moss_root_cliff_v1.png",
+    "world_size": [
+      512,
+      512
+    ],
+    "tint": "#dfe2d5",
+    "edge_width": 16,
+    "edge_tint": "#51674f"
+  },
+  "solid": {
+    "texture": "res://assets/terrain/forest_01/platform_sheet_v1.png",
+    "region": [
+      35,
+      344,
+      1191,
+      312
+    ],
+    "surface_y": 372,
+    "body_source_depth": 176,
+    "cap_source_width": 96,
+    "cap_world_width": 12,
+    "segment_world_width": 320,
+    "tint": "#e9eddf"
+  },
+  "oneway": {
+    "texture": "res://assets/terrain/forest_01/platform_sheet_v1.png",
+    "region": [
+      40,
+      896,
+      1184,
+      108
+    ],
+    "surface_y": 907,
+    "body_source_depth": 28,
+    "cap_source_width": 48,
+    "cap_world_width": 6,
+    "segment_world_width": 256,
+    "tint": "#d6f1e6"
+  },
+  "gate": {
+    "texture": "res://assets/third_party/metroidvania_forge/ch_02_world_building_foundations/forgotten_forest_example_tileset.png",
+    "region": [
+      512,
+      192,
+      128,
+      16
+    ],
+    "post_width": 7,
+    "post_spacing": 8,
+    "brace_width": 5,
+    "brace_tint": "#93a06c"
+  },
+  "decorations": [
+    {
+      "id": "fern_rest",
+      "texture": "res://assets/PROCESSED/environments/ENV-B01/v001/ENV-02/props/fern_mushrooms.png",
+      "pos": [
+        996,
+        672
+      ],
+      "scale": 0.36,
+      "flip_h": false
+    },
+    {
+      "id": "fern_chest",
+      "texture": "res://assets/PROCESSED/environments/ENV-B01/v001/ENV-02/props/fern_mushrooms.png",
+      "pos": [
+        410,
+        672
+      ],
+      "scale": 0.3,
+      "flip_h": true
+    },
+    {
+      "id": "fern_lower",
+      "texture": "res://assets/PROCESSED/environments/ENV-B01/v001/ENV-02/props/fern_mushrooms.png",
+      "pos": [
+        176,
+        1536
+      ],
+      "scale": 0.45,
+      "flip_h": false
+    },
+    {
+      "id": "fern_crown_l",
+      "texture": "res://assets/PROCESSED/environments/ENV-B01/v001/ENV-02/props/fern_mushrooms.png",
+      "pos": [
+        144,
+        384
+      ],
+      "scale": 0.4,
+      "flip_h": true
+    },
+    {
+      "id": "fern_crown_r",
+      "texture": "res://assets/PROCESSED/environments/ENV-B01/v001/ENV-02/props/fern_mushrooms.png",
+      "pos": [
+        1136,
+        384
+      ],
+      "scale": 0.35,
+      "flip_h": false
+    },
+    {
+      "id": "rocks_lower",
+      "texture": "res://assets/PROCESSED/environments/ENV-B01/v001/ENV-02/props/moss_rocks.png",
+      "pos": [
+        1120,
+        1536
+      ],
+      "scale": 0.32,
+      "flip_h": false
+    },
+    {
+      "id": "rocks_middle",
+      "texture": "res://assets/PROCESSED/environments/ENV-B01/v001/ENV-02/props/moss_rocks.png",
+      "pos": [
+        192,
+        1152
+      ],
+      "scale": 0.3,
+      "flip_h": true
+    }
+  ],
+  "vines": [
+    {
+      "pos": [
+        380,
+        738
+      ],
+      "scale": 0.34,
+      "flip_h": false
+    },
+    {
+      "pos": [
+        966,
+        834
+      ],
+      "scale": 0.35,
+      "flip_h": true
+    },
+    {
+      "pos": [
+        1058,
+        1590
+      ],
+      "scale": 0.32,
+      "flip_h": true
+    },
+    {
+      "pos": [
+        258,
+        1600
+      ],
+      "scale": 0.32,
+      "flip_h": false
+    },
+    {
+      "pos": [
+        1188,
+        435
+      ],
+      "scale": 0.3,
+      "flip_h": true
+    }
+  ],
+  "vine_texture": "res://assets/PROCESSED/environments/ENV-B01/v001/ENV-02/props/vine.png"
+}

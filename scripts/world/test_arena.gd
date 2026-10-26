@@ -133,11 +133,12 @@ func _try_pickup() -> void:
 			best_id = d["id"]
 	if best == null:
 		return
+	if not InventoryService.add_item(String(best_id),1):
+		GameUI.toast("行囊已满")
+		return
 	for d in _drops:
 		if d["node"] == best:
 			d["collecting"] = true
-	GameState.inventory.append({"id": String(best_id), "count": 1})
-	EventBus.item_picked.emit(best_id, 1)
 	best.play_pickup()
 
 

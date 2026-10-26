@@ -1,0 +1,7 @@
+# 补充武器特效（2026-10-26）
+
+内置 image_gen 生成，真实透明背景，最终文件 `weapon_fx_v1.png`。剑斩、蓄力箭及奶杖法球各六帧，复用时通过 AtlasTexture 配置读取，锤特效沿用原 FX-B01。
+
+完整提示词：
+
+Use case: stylized-concept. Asset type: transparent PIXEL ART combat effects sprite atlas for a 2D fantasy game, no characters. Exactly SIX columns by THREE rows, eighteen separate equally sized cells, centered and fully contained with ample clear padding. Crisp readable low-resolution pixel forms with luminous soft colored glow matching classic hand-painted 2D RPG VFX. Row 1 is a 6-frame silver/cyan SWORD SLASH: a thin bright crescent grows from a short arc to a full sweeping blade arc to the RIGHT, then dissolves into a few sparkles; center of weapon contact stays in place. Row 2 is a 6-frame charged BOW RELEASE effect: small golden string sparks form an oval pulse facing right, a long slim pointed golden arrow shoots across the center toward the right, then the release pulse fades. Row 3 is a 6-frame STAFF CAST and magic bolt effect: a bright teal blue pearl/orb with small ornate rotating gold runes, swells and pulses with a short sparkling trail to its LEFT, then resolves to a compact luminous orb. Frames are temporal progression LEFT TO RIGHT. True alpha transparency throughout empty space. No scenery, no weapons held by hands, no silhouettes of people, no labels, numbers, borders, interface frames, text or watermark. All effect centers aligned within their cells; never cross cell edges.

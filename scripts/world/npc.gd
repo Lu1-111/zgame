@@ -100,13 +100,33 @@ func _face_and_wait() -> void:
 func _unhandled_input(event: InputEvent) -> void:
 	if not event.is_action_pressed(&"interact"):
 		return
-	if not _player_near:
-		return
+	if interact():
+		get_viewport().set_input_as_handled()
+
+
+## 检查交谈距离，供全局 E 键交互优先规则选择目标。
+func can_interact() -> bool:
+	return is_instance_valid(_player) and global_position.distance_to(_player.global_position) <= interact_radius
+
+
+## 推进附近 NPC 对话；返回是否消费本次交互，避免同时施放奶盾。
+func interact() -> bool:
+	if not can_interact():
+		return false
+	if dialogue.is_empty():
+		return false
 	if _mode == Mode.TALK:
 		_advance_dialogue()
 	else:
 		_open_dialogue()
-	get_viewport().set_input_as_handled()
+	return true
+
+
+## 背包、暂停或休息菜单开启时结束交谈，避免对话框叠在模态界面之上。
+func close_interaction() -> void:
+	if _mode == Mode.TALK:
+		_close_dialogue()
+	prompt.hide()
 
 
 func _open_dialogue() -> void:
@@ -119,8 +139,10 @@ func _open_dialogue() -> void:
 	_mode = Mode.TALK
 	_line_index = 0
 	prompt.visible = false
+	sprite.process_mode = Node.PROCESS_MODE_ALWAYS
 	sprite.play(&"talk")
-	ui.show_line(display_name, dialogue[0], 1, dialogue.size())
+	ui.begin_dialogue(self)
+	ui.show_line(display_name,dialogue[0],1,dialogue.size(),frames.get_frame_texture(&"idle",0))
 
 
 func _advance_dialogue() -> void:
@@ -140,7 +162,13 @@ func _close_dialogue() -> void:
 	_mode = Mode.WAIT
 	_wait_left = 0.35
 	sprite.play(&"idle")
+	sprite.process_mode = Node.PROCESS_MODE_INHERIT
 	var ui := get_tree().get_first_node_in_group(&"npc_dialogue")
 	if ui and ui.has_method("close_dialogue"):
 		ui.close_dialogue()
 	prompt.visible = _player_near
+
+
+## 由对话框推进下一句，任意按键共用此入口。
+func advance_dialogue() -> void:
+	_advance_dialogue()

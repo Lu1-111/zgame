@@ -1,0 +1,301 @@
+{
+  "wall": {
+    "texture": "res://assets/terrain/forest_01/moss_root_cliff_v1.png",
+    "world_size": [
+      512,
+      512
+    ],
+    "tint": "#dfe2d5",
+    "edge_width": 16,
+    "edge_tint": "#51674f"
+  },
+  "solid": {
+    "texture": "res://assets/terrain/forest_01/platform_sheet_v1.png",
+    "region": [
+      35,
+      344,
+      1191,
+      312
+    ],
+    "surface_y": 372,
+    "body_source_depth": 176,
+    "cap_source_width": 96,
+    "cap_world_width": 12,
+    "segment_world_width": 320,
+    "tint": "#bfcebb"
+  },
+  "oneway": {
+    "texture": "res://assets/terrain/forest_01/platform_sheet_v1.png",
+    "region": [
+      40,
+      896,
+      1184,
+      108
+    ],
+    "surface_y": 907,
+    "body_source_depth": 28,
+    "cap_source_width": 48,
+    "cap_world_width": 6,
+    "segment_world_width": 256,
+    "tint": "#b9d7cc"
+  },
+  "gate": {
+    "texture": "res://assets/third_party/metroidvania_forge/ch_02_world_building_foundations/forgotten_forest_example_tileset.png",
+    "region": [
+      512,
+      192,
+      128,
+      16
+    ],
+    "post_width": 7,
+    "post_spacing": 8,
+    "brace_width": 5,
+    "brace_tint": "#93a06c"
+  },
+  "decorations": [
+    {
+      "id": "Fern_00",
+      "texture": "res://assets/PROCESSED/environments/ENV-B01/v001/ENV-02/props/fern_mushrooms.png",
+      "pos": [
+        52,
+        544
+      ],
+      "scale": 0.34,
+      "flip_h": true,
+      "contact_y": 79
+    },
+    {
+      "id": "Fern_01",
+      "texture": "res://assets/PROCESSED/environments/ENV-B01/v001/ENV-02/props/fern_mushrooms.png",
+      "pos": [
+        94,
+        544
+      ],
+      "scale": 0.24,
+      "flip_h": false,
+      "contact_y": 79
+    },
+    {
+      "id": "Fern_02",
+      "texture": "res://assets/PROCESSED/environments/ENV-B01/v001/ENV-02/props/fern_mushrooms.png",
+      "pos": [
+        468,
+        544
+      ],
+      "scale": 0.25,
+      "flip_h": true,
+      "contact_y": 79
+    },
+    {
+      "id": "Fern_03",
+      "texture": "res://assets/PROCESSED/environments/ENV-B01/v001/ENV-02/props/fern_mushrooms.png",
+      "pos": [
+        604,
+        544
+      ],
+      "scale": 0.3,
+      "flip_h": false,
+      "contact_y": 79
+    },
+    {
+      "id": "Fern_04",
+      "texture": "res://assets/PROCESSED/environments/ENV-B01/v001/ENV-02/props/fern_mushrooms.png",
+      "pos": [
+        718,
+        544
+      ],
+      "scale": 0.29,
+      "flip_h": true,
+      "contact_y": 79
+    },
+    {
+      "id": "Fern_05",
+      "texture": "res://assets/PROCESSED/environments/ENV-B01/v001/ENV-02/props/fern_mushrooms.png",
+      "pos": [
+        1066,
+        544
+      ],
+      "scale": 0.33,
+      "flip_h": false,
+      "contact_y": 79
+    },
+    {
+      "id": "Fern_06",
+      "texture": "res://assets/PROCESSED/environments/ENV-B01/v001/ENV-02/props/fern_mushrooms.png",
+      "pos": [
+        1210,
+        544
+      ],
+      "scale": 0.28,
+      "flip_h": true,
+      "contact_y": 79
+    },
+    {
+      "id": "Fern_07",
+      "texture": "res://assets/PROCESSED/environments/ENV-B01/v001/ENV-02/props/fern_mushrooms.png",
+      "pos": [
+        684,
+        256
+      ],
+      "scale": 0.23,
+      "flip_h": false,
+      "contact_y": 79
+    },
+    {
+      "id": "Fern_08",
+      "texture": "res://assets/PROCESSED/environments/ENV-B01/v001/ENV-02/props/fern_mushrooms.png",
+      "pos": [
+        978,
+        256
+      ],
+      "scale": 0.2,
+      "flip_h": true,
+      "contact_y": 79
+    },
+    {
+      "id": "Fern_09",
+      "texture": "res://assets/PROCESSED/environments/ENV-B01/v001/ENV-02/props/fern_mushrooms.png",
+      "pos": [
+        1238,
+        256
+      ],
+      "scale": 0.24,
+      "flip_h": false,
+      "contact_y": 79
+    },
+    {
+      "id": "Fern_10",
+      "texture": "res://assets/PROCESSED/environments/ENV-B01/v001/ENV-02/props/fern_mushrooms.png",
+      "pos": [
+        490,
+        448
+      ],
+      "scale": 0.17,
+      "flip_h": true,
+      "contact_y": 79
+    },
+    {
+      "id": "Fern_11",
+      "texture": "res://assets/PROCESSED/environments/ENV-B01/v001/ENV-02/props/fern_mushrooms.png",
+      "pos": [
+        564,
+        352
+      ],
+      "scale": 0.15,
+      "flip_h": false,
+      "contact_y": 79
+    }
+  ],
+  "vines": [
+    {
+      "pos": [
+        380,
+        738
+      ],
+      "scale": 0.34,
+      "flip_h": false
+    },
+    {
+      "pos": [
+        966,
+        834
+      ],
+      "scale": 0.35,
+      "flip_h": true
+    },
+    {
+      "pos": [
+        1058,
+        1590
+      ],
+      "scale": 0.32,
+      "flip_h": true
+    },
+    {
+      "pos": [
+        258,
+        1600
+      ],
+      "scale": 0.32,
+      "flip_h": false
+    },
+    {
+      "pos": [
+        1188,
+        435
+      ],
+      "scale": 0.3,
+      "flip_h": true
+    }
+  ],
+  "vine_texture": "res://assets/PROCESSED/environments/ENV-B01/v001/ENV-02/props/vine.png",
+  "atlas": "res://assets/props/camp_01/expedition_props_v1.png",
+  "regions": {
+    "tent_cream": [
+      0,
+      0,
+      445,
+      434
+    ],
+    "tent_teal": [
+      446,
+      8,
+      415,
+      429
+    ],
+    "furnace": [
+      862,
+      0,
+      392,
+      433
+    ],
+    "anvil": [
+      47,
+      440,
+      403,
+      386
+    ],
+    "weapon_rack": [
+      451,
+      435,
+      391,
+      391
+    ],
+    "market_stall": [
+      843,
+      439,
+      399,
+      386
+    ],
+    "cargo": [
+      0,
+      839,
+      444,
+      415
+    ],
+    "field_desk": [
+      446,
+      835,
+      408,
+      387
+    ],
+    "noticeboard": [
+      861,
+      835,
+      385,
+      395
+    ]
+  },
+  "ground_contacts": {
+    "tent_cream": 420,
+    "tent_teal": 417,
+    "furnace": 419,
+    "anvil": 377,
+    "weapon_rack": 375,
+    "market_stall": 373,
+    "cargo": 361,
+    "field_desk": 369,
+    "noticeboard": 362
+  },
+  "chest_contact_y": 48
+}

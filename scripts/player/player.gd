@@ -24,6 +24,10 @@ var guard_perfect := 0.0            ## 完美格挡剩余窗口
 var dodge_iframe := false           ## Dodge 状态维护
 var attack_combo := 0               ## 当前连击段（0=未在连击中）
 var attack_chain := false           ## 连击中再按攻击 → 下一拍（深度 1 的动作队列）
+var attack_charge := 0.0
+var attack_release_t := -1.0
+var _hp_regen_acc := 0.0
+var _mana_regen_acc := 0.0
 var attack_phase := &""             ## 供绘制的攻击阶段
 
 var _buffers: Dictionary = {}       ## 动作名 → 剩余缓冲秒数
@@ -51,6 +55,8 @@ var _skill_ready: Dictionary = {}  ## 技能 id → 冷却就绪时刻（_clock 
 var _current_skill: StringName = &"skill_bubble"  ## 正在施放的技能（Skill 状态与动画用）
 var _item_anim: StringName = &""   ## 使用道具的演出动画（heal/cast）
 var _item_anim_t := 0.0
+var _shield_hp := 0
+var _shield_until := 0.0
 
 @onready var hurtbox: HurtboxComponent = $Hurtbox
 @onready var hitbox: HitboxComponent = $AttackPivot/Hitbox  # 判定已移至 AttackEffect（节点保留不激活）
@@ -64,7 +70,7 @@ func _ready() -> void:
 	hurtbox.owner_actor = self      # 归属标记：普攻/投射物绝不命中自己
 	hitbox.source_actor = self
 	hitbox.hit_landed.connect(_on_hit_landed)
-	for id in [&"skill_bubble", &"skill_heal", &"skill_slam"]:
+	for id in DataDB.skills:
 		_skill_cfgs[id] = DataDB.get_skill(id)
 	_setup_sprite()
 	sm = StateMachine.new()
@@ -84,18 +90,22 @@ func _ready() -> void:
 
 ## 注入 CHR-01 精灵帧；资源缺失时保持 _draw() 灰盒回退（素材容错约定）。
 func _setup_sprite() -> void:
-	var frames := load(SPRITE_FRAMES_PATH) as SpriteFrames
+	var frames := (load(SPRITE_FRAMES_PATH) as SpriteFrames).duplicate(true) as SpriteFrames
 	if frames == null:
 		push_warning("Player：主角精灵帧缺失，回退灰盒色块 —— %s" % SPRITE_FRAMES_PATH)
 		sprite.visible = false
 		return
+	WeaponRuntime.inject_animations(frames)
 	sprite.sprite_frames = frames
+	sprite.frame_changed.connect(_sync_weapon_sprite)
+	sprite.animation_changed.connect(_sync_weapon_sprite)
 	sprite.play(&"idle")
 
 
 func _physics_process(delta: float) -> void:
 	_clock += delta
 	_update_timers(delta)
+	_update_passive_regeneration(delta)
 	_update_input()
 	sm.tick(delta)
 	# 半步重力（leapfrog）：tick 先行（含跳跃脉冲赋速），随后 g·dt/2 → 位移 → 再 g·dt/2，
@@ -125,20 +135,21 @@ func input_dir() -> float:
 
 ## 把 just_pressed 动作写入缓冲（普攻在连击中走专用 1 槽 chain 标记）。
 func _update_input() -> void:
-	for action in [&"jump", &"dodge", &"attack", &"skill_1", &"skill_3", &"skill_4"]:
+	if GameUI.gameplay_input_blocked():
+		clear_action_buffers()
+		return
+	for action in [&"jump",&"dodge",&"attack",&"cast_selected"]:
 		if Input.is_action_just_pressed(action):
+			if action == &"attack" and GameUI.pointer_over_interface():
+				continue
 			if action == &"attack" and sm.current_name() == &"Attack":
 				attack_chain = true
 			elif action == &"jump":
 				_buffers[action] = PlayerTuning.JUMP_BUFFER
 			else:
 				_buffers[action] = PlayerTuning.ATTACK_BUFFER
-	# 武器切换：即时生效（M2 由背包/装备界面接管）
-	if Input.is_action_just_pressed(&"weapon_next"):
-		_cycle_weapon()
-	# 快捷栏道具：数字键 1–5 使用对应槽位
 	for i in 5:
-		if Input.is_action_just_pressed(StringName("item_%d" % (i + 1))):
+		if Input.is_action_just_pressed(StringName("item_%d" % (i+1))):
 			use_hotbar_slot(i)
 
 
@@ -176,24 +187,11 @@ func try_actions() -> bool:
 		buffer_consume(&"dodge")
 		sm.to(&"Dodge", {"dir": input_dir()})
 		return true
-	if buffer_peek(&"attack"):
+	if buffer_peek(&"attack") and not weapon_cfg().is_empty():
 		buffer_consume(&"attack")
 		sm.to(&"Attack", {"combo": next_combo()})
 		return true
-	if buffer_peek(&"skill_1") and try_skill(&"skill_bubble"):
-		buffer_consume(&"skill_1")
-		_current_skill = &"skill_bubble"
-		sm.to(&"Skill")
-		return true
-	if buffer_peek(&"skill_3") and try_skill(&"skill_heal"):
-		buffer_consume(&"skill_3")
-		_current_skill = &"skill_heal"
-		sm.to(&"Skill")
-		return true
-	if buffer_peek(&"skill_4") and try_skill(&"skill_slam"):
-		buffer_consume(&"skill_4")
-		_current_skill = &"skill_slam"
-		sm.to(&"Skill")
+	if try_selected_skill():
 		return true
 	if Input.is_action_pressed(&"guard") and is_on_floor():
 		sm.to(&"Guard")
@@ -208,14 +206,14 @@ func try_actions() -> bool:
 ## 地面加减速。
 func ground_accelerate(delta: float) -> void:
 	var dir := input_dir()
-	velocity.x = move_toward(velocity.x, dir * PlayerTuning.MAX_SPEED,
+	velocity.x = move_toward(velocity.x, dir * PlayerTuning.MAX_SPEED * (1.0 + InventoryService.talent_effect("move_speed_pct") / 100.0),
 			(PlayerTuning.GROUND_ACCEL if absf(dir) > 0.01 else PlayerTuning.GROUND_DECEL) * delta)
 
 
 ## 空中加减速。
 func air_accelerate(delta: float) -> void:
 	var dir := input_dir()
-	velocity.x = move_toward(velocity.x, dir * PlayerTuning.MAX_SPEED,
+	velocity.x = move_toward(velocity.x, dir * PlayerTuning.MAX_SPEED * (1.0 + InventoryService.talent_effect("move_speed_pct") / 100.0),
 			(PlayerTuning.AIR_ACCEL if absf(dir) > 0.01 else PlayerTuning.AIR_DECEL) * delta)
 
 
@@ -287,23 +285,25 @@ func pay_sta(v: int) -> bool:
 ## 闪避起手结算（Dodge 状态 enter 时调用）：扣体力、进冷却、记空中次数。
 func begin_dodge() -> void:
 	pay_sta(PlayerTuning.DODGE_STA_COST)
-	_dodge_cd = PlayerTuning.DODGE_COOLDOWN
+	_dodge_cd = PlayerTuning.DODGE_COOLDOWN * (1.0 + InventoryService.talent_effect("dodge_cooldown_pct") / 100.0)
 	if not is_on_floor():
 		_air_dodge_used = true
 
 
-## 技能施放条件（Q=奶泡弹 / R=治愈之乳 / F=挤奶冲击）：冷却完毕且奶力充足。
+## 技能施放条件：已解锁且冷却完毕，体力与奶力同时满足后原子扣除。
 func try_skill(skill_id: StringName = &"skill_bubble") -> bool:
-	var cfg: Dictionary = _skill_cfgs.get(skill_id, {})
-	if cfg.is_empty():
+	if not InventoryService.skill_unlocked(skill_id):
 		return false
-	if float(_skill_ready.get(skill_id, 0.0)) > _clock:
+	var cfg: Dictionary = _skill_cfgs.get(skill_id,{})
+	if cfg.is_empty() or str(cfg.get("category","active")) != "active" or float(_skill_ready.get(skill_id,0.0)) > _clock:
 		return false
-	var cost := int(cfg.get("mana_cost", 8))
-	if GameState.mana < cost:
+	var mana := InventoryService.skill_mana_cost(skill_id)
+	var stamina := InventoryService.skill_stamina_cost(skill_id)
+	if GameState.mana < mana or GameState.sta < stamina:
 		return false
-	GameState.mana -= cost
-	_skill_ready[skill_id] = _clock + float(cfg.get("cooldown", 0.6))
+	GameState.mana -= mana
+	pay_sta(stamina)
+	_skill_ready[skill_id] = _clock + float(cfg.cooldown)
 	return true
 
 
@@ -311,6 +311,14 @@ func try_skill(skill_id: StringName = &"skill_bubble") -> bool:
 func fire_skill(id: StringName) -> void:
 	var cfg: Dictionary = _skill_cfgs.get(id, {})
 	match String(id):
+		"skill_cleave":
+			var presentation: Dictionary = cfg.presentation
+			var aim := aim_vector().normalized()
+			var hitbox: Array = presentation.hitbox
+			var socket := aim*float(presentation.reach)
+			var fx := AttackEffect.spawn(self,DamagePacket.new(damage_for_type("physical",float(cfg.damage_mult)),DamagePacket.DamageType.PHYSICAL,float(cfg.knockback),global_position,id),self,StringName(presentation.effect),global_position+socket,aim,Vector2(hitbox[0],hitbox[1]),Vector2.ZERO,float(presentation.active))
+			fx.orient_to_aim()
+			fx.hit_landed.connect(_on_hit_landed)
 		"skill_bubble":
 			spawn_bubble()
 		"skill_heal":
@@ -319,17 +327,29 @@ func fire_skill(id: StringName) -> void:
 		"skill_slam":
 			# 挤奶冲击：伤害判定实体化为 AttackEffect（64×48 法术判定窗 0.12s）
 			spawn_slam_effect()
+		"skill_starfall":
+			var rain := Node2D.new()
+			rain.set_script(load("res://scripts/player/starfall_effect.gd"))
+			rain.set("source",self)
+			rain.set("packet",DamagePacket.new(attack_damage(float(cfg.damage_mult),true),DamagePacket.DamageType.MAGIC,PlayerTuning.SKILL_KB,global_position,id))
+			get_tree().current_scene.add_child(rain)
+			var aim := get_global_mouse_position() - global_position
+			rain.global_position = global_position + aim.limit_length(float(InventoryService.config().combat.starfall_cast_range))
+		"skill_shield":
+			_shield_hp = int(cfg.get("absorb",0))
+			_shield_until = _clock + float(cfg.get("duration",0))
 
 
 ## 生成奶泡弹投射物（skill_bubble）。
 func spawn_bubble() -> void:
 	var bubble := BUBBLE_SCENE.instantiate()
 	var cfg: Dictionary = _skill_cfgs.get(&"skill_bubble", {})
-	var pkt := DamagePacket.new(attack_damage(float(cfg.get("damage_mult", 1.0))),
+	var pkt := DamagePacket.new(attack_damage(float(cfg.get("damage_mult", 1.0)),true),
 			DamagePacket.DamageType.MAGIC, PlayerTuning.SKILL_KB,
 			global_position, &"skill_bubble")
 	bubble.setup(aim_vector().normalized(), pkt)
 	bubble.source_actor = self
+	bubble.hit_landed.connect(_on_hit_landed)
 	get_tree().current_scene.add_child(bubble)
 	bubble.global_position = _bubble_spawn.global_position
 
@@ -339,65 +359,56 @@ func weapon_is_ranged() -> bool:
 	return String(weapon_cfg().get("range_type", "melee")) == "ranged"
 
 
-## 远程普攻发射（奶弹枪 speed 420 / 星乳法球 speed 260，伤害类型随武器表）。
-func spawn_weapon_projectile() -> void:
+## 弓箭与奶杖远程普攻；伤害、速度与蓄力倍率从武器和表现表读取。
+func spawn_weapon_projectile(charge: float = 1.0) -> void:
 	var w := weapon_cfg()
-	var proj: Dictionary = w.get("projectile", {})
-	var type := DamagePacket.DamageType.MAGIC \
-			if String(w.get("damage_type", "physical")) == "magic" else DamagePacket.DamageType.PHYSICAL
-	var pkt := DamagePacket.new(attack_damage(1.0), type,
-			PlayerTuning.ATTACK_KB, global_position, GameState.weapon_id)
+	var proj: Dictionary = w.get("projectile",{})
+	var kind := weapon_type()
+	var module := WeaponRuntime.module(kind)
+	var multiplier := lerpf(float(module.power_min),float(module.power_max),charge) if kind == "bow" else 1.0
+	var damage_type := DamagePacket.DamageType.MAGIC if str(w.get("damage_type","physical")) == "magic" else DamagePacket.DamageType.PHYSICAL
+	var packet := DamagePacket.new(attack_damage(multiplier),damage_type,PlayerTuning.ATTACK_KB,global_position,GameState.weapon_id)
 	var bubble := BUBBLE_SCENE.instantiate()
-	bubble.setup(aim_vector().normalized(), pkt)
-	bubble.speed = float(proj.get("speed", 380.0))
+	bubble.setup(aim_vector().normalized(),packet)
+	bubble.visual_kind = "arrow" if kind == "bow" else "staff"
+	bubble.speed = float(proj.get("speed",380)) * (lerpf(float(module.speed_min),1.0,charge) if kind == "bow" else 1.0)
 	bubble.source_actor = self
+	bubble.hit_landed.connect(_on_hit_landed)
+	var socket: Array = module.get("socket",[24,-9])
+	var point := global_position+Vector2(float(socket[0])*facing,float(socket[1]))
 	get_tree().current_scene.add_child(bubble)
-	bubble.global_position = _bubble_spawn.global_position
+	bubble.global_position = point
+	AttackEffect.spawn(get_tree().current_scene,null,self,&"bow_release" if kind == "bow" else &"staff_cast",point,aim_vector(),Vector2.ZERO,Vector2.ZERO,0)
 
 
 ## 近战普攻特效实体（M1.5 伤害判定实体化）：判定框随特效发射、伤害结算在特效位置；
 ## 玩家身上的静态 $AttackPivot/Hitbox 不再激活（判定已移至 AttackEffect，节点保留兼容）。
 func spawn_melee_effect(combo_idx: int) -> void:
-	var aim := aim_vector()
-	var cfg: Dictionary = weapon_cfg().get("hitbox", {})
-	var aim_y := clampf(aim.normalized().y * MELEE_FX_OFFSET_Y, -MELEE_FX_OFFSET_Y, MELEE_FX_OFFSET_Y_DOWN)
-	# 特效挂玩家节点下（跟随移动），位置=武器持握点；判定框相对武器点前伸
-	var weapon_local := Vector2(float(facing) * WEAPON_FX_X, WEAPON_FX_Y + aim_y * 0.5)
-	var fx := AttackEffect.spawn(self, build_attack_packet(combo_idx), self,
-			melee_effect_name(combo_idx), global_position + weapon_local, aim,
-			Vector2(float(cfg.get("w", 44)), float(cfg.get("h", 36))),
-			Vector2(float(facing) * MELEE_FX_OFFSET_X, aim_y),
-			PlayerTuning.ATK_ACTIVE)
+	var module := WeaponRuntime.module(weapon_type())
+	var index := clampi(combo_idx-1,0,module.sockets.size()-1)
+	var raw: Array = module.sockets[index]
+	var socket := Vector2(float(raw[0])*facing,float(raw[1]))
+	var cfg: Dictionary = weapon_cfg().get("hitbox",{})
+	var raw_offset: Array = module.hitbox_offsets[index]
+	var fx := AttackEffect.spawn(self,build_attack_packet(combo_idx),self,melee_effect_name(combo_idx),global_position+socket,Vector2(float(facing),0),Vector2(float(cfg.get("w",44)),float(cfg.get("h",36))),Vector2(float(raw_offset[0])*facing,float(raw_offset[1])),float(module.active))
+	fx.align_weapon_visual(float(module.effect_rate),weapon_type() == "hammer" and combo_idx == 3)
 	fx.hit_landed.connect(_on_hit_landed)
 
 
 ## 挤奶冲击特效实体（skill_slam 判定实体化）：前方 64×48 法术判定窗，数值读 skills.json。
 func spawn_slam_effect() -> void:
-	var cfg: Dictionary = _skill_cfgs.get(&"skill_slam", {})
-	var aim := aim_vector()
-	var aim_y := clampf(aim.normalized().y * MELEE_FX_OFFSET_Y, -MELEE_FX_OFFSET_Y, MELEE_FX_OFFSET_Y_DOWN)
-	var weapon_local := Vector2(float(facing) * WEAPON_FX_X, WEAPON_FX_Y + aim_y * 0.5)
-	var fx := AttackEffect.spawn(self,
-			DamagePacket.new(attack_damage(float(cfg.get("damage_mult", 1.5))),
-					DamagePacket.DamageType.MAGIC, float(cfg.get("knockback", 200.0)),
-					global_position, &"skill_slam"),
-			self, &"hammer_slam_3", global_position + weapon_local, aim,
-			Vector2(64, 48), Vector2(float(facing) * MELEE_FX_OFFSET_X, aim_y),
-			PlayerTuning.ATK_ACTIVE)
+	var cfg: Dictionary = _skill_cfgs.get(&"skill_slam",{})
+	var raw: Array = WeaponRuntime.module("hammer").sockets[2]
+	var socket := Vector2(float(raw[0])*facing,float(raw[1]))
+	var fx := AttackEffect.spawn(self,DamagePacket.new(damage_for_type("magic",float(cfg.damage_mult)),DamagePacket.DamageType.MAGIC,float(cfg.get("knockback",200)),global_position,&"skill_slam"),self,&"hammer_slam_3",global_position+socket,Vector2(float(facing),0),Vector2(64,48),Vector2(0,-20),PlayerTuning.ATK_ACTIVE)
+	fx.align_weapon_visual(2.0,true)
 	fx.hit_landed.connect(_on_hit_landed)
 
 
-## 武器 + 连击段 → 攻击特效动画名（FX-B01；无专属特效的近战武器借用锤击 1 段）。
+## 武器类别和连击段决定对应的独立攻击特效。
 func melee_effect_name(combo_idx: int) -> StringName:
-	if String(GameState.weapon_id) == "hammer_01":
-		match combo_idx:
-			1:
-				return &"hammer_swing_1"
-			2:
-				return &"hammer_swing_2"
-			_:
-				return &"hammer_slam_3"
-	return &"hammer_swing_1"
+	var names: Array = WeaponRuntime.module(weapon_type()).get("effects",[])
+	return StringName(names[clampi(combo_idx-1,0,names.size()-1)]) if not names.is_empty() else &"hammer_swing_1"
 
 
 ## 调试：T 键按 DataDB 登记顺序循环切换武器（M2 由装备界面接管）。
@@ -409,61 +420,63 @@ func _cycle_weapon() -> void:
 	GameState.weapon_id = StringName(String(order[(idx + 1) % order.size()]))
 
 
-## 使用快捷栏槽位道具（M1.5 调试通路；M2 接背包/快捷栏正式 UI 与堆叠规则）。
+## 使用快捷栏槽位道具，数量与堆叠统一交给正式背包服务。
 func use_hotbar_slot(slot: int) -> bool:
-	if slot < 0 or slot >= GameState.hotbar.size():
-		return false
-	var item_id := String(GameState.hotbar[slot])
-	if item_id.is_empty():
-		return false
-	for entry in GameState.inventory:
-		if entry is Dictionary and String(entry.get("id", "")) == item_id \
-				and int(entry.get("count", 0)) > 0:
-			return _consume_item(item_id, entry)
-	return false
-
-
-## 扣减背包数量并结算道具效果（效果键见 docs/数据契约.md §4）。
-func _consume_item(item_id: String, entry: Dictionary) -> bool:
-	var item := DataDB.get_item(StringName(item_id))
-	if item.is_empty():
-		return false
-	entry["count"] = int(entry.get("count", 0)) - 1
-	if int(entry["count"]) <= 0:
-		GameState.inventory.erase(entry)
-	var effect: Dictionary = item.get("effect", {})
-	var used_anim := &"cast"
-	if effect.has("restore_hp"):
-		GameState.hp = mini(GameState.hp_max, GameState.hp + int(effect.get("restore_hp", 0)))
-		used_anim = &"heal"
-	elif effect.has("restore_mana"):
-		GameState.mana = mini(GameState.mana_max, GameState.mana + int(effect.get("restore_mana", 0)))
-	elif effect.has("restore_sta"):
-		GameState.sta = mini(GameState.sta_max, GameState.sta + int(effect.get("restore_sta", 0)))
-	elif effect.has("damage"):
-		# 奶弹：投掷物（物理包，效果值即伤害）
-		var pkt := DamagePacket.new(int(effect.get("damage", 15)),
-				DamagePacket.DamageType.PHYSICAL, PlayerTuning.ATTACK_KB,
-				global_position, StringName(item_id))
-		var bubble := BUBBLE_SCENE.instantiate()
-		bubble.setup(aim_vector().normalized(), pkt)
-		bubble.speed = 300.0
-		bubble.source_actor = self
-		get_tree().current_scene.add_child(bubble)
-		bubble.global_position = _bubble_spawn.global_position
-	EventBus.item_picked.emit(StringName(item_id), -1)  # count -1 表示消耗（M2 统一信号语义）
-	_item_anim = used_anim
-	_item_anim_t = 0.35
-	return true
+	var result := InventoryService.use_hotbar(slot,self)
+	if result:
+		GameUI.select_hotbar(slot)
+	return result
 
 
 # ============================================================
 # 武器 / 数值
 # ============================================================
 
+## 清除界面交互前后的动作缓冲，避免关菜单后误触攻击或跳跃。
+func clear_action_buffers() -> void:
+	_buffers.clear()
+	attack_chain = false
+
+
+## 篝火恢复全部技能冷却。
+func reset_cooldowns() -> void:
+	_skill_ready.clear()
+	_dodge_cd = 0.0
+
+
+## HUD 获取指定技能的剩余冷却秒数。
+func skill_cooldown(id: StringName) -> float:
+	return maxf(0.0,float(_skill_ready.get(id,0.0)) - _clock)
+
+
+## 点击技能格与键盘共用同一套施法规则。
+func cast_ui_skill(id: StringName) -> bool:
+	if sm.current_name() not in [&"Idle",&"Run",&"Land",&"Fall",&"Jump"] or not try_skill(id):
+		return false
+	_current_skill = id
+	sm.to(&"Skill")
+	return true
+
+
+## 背包使用道具后选择对应的正式演出动作。
+func play_item_animation(id: String) -> void:
+	_item_anim = &"heal" if id == "potion_small" else &"cast"
+	_item_anim_t = float(InventoryService.config().combat.item_animation)
+
+
+## 奶弹从玩家位置发射；物品扣除由背包服务统一负责。
+func throw_inventory_item(id: String, damage: int) -> void:
+	var packet := DamagePacket.new(damage,DamagePacket.DamageType.PHYSICAL,PlayerTuning.ATTACK_KB,global_position,StringName(id))
+	var bubble := BUBBLE_SCENE.instantiate()
+	bubble.setup(aim_vector().normalized(),packet)
+	bubble.speed = float(InventoryService.config().combat.bomb_speed)
+	bubble.source_actor = self
+	bubble.hit_landed.connect(_on_hit_landed)
+	get_tree().current_scene.add_child(bubble)
+	bubble.global_position = _bubble_spawn.global_position
+
 func weapon_cfg() -> Dictionary:
-	var w := DataDB.get_weapon(GameState.weapon_id)
-	return w if not w.is_empty() else DataDB.get_weapon(&"hammer_01")
+	return DataDB.get_weapon(GameState.weapon_id)
 
 
 func max_combo() -> int:
@@ -477,8 +490,8 @@ func next_combo() -> int:
 	return 1
 
 
-func attack_damage(mult: float = 1.0) -> int:
-	return CombatMath.compute_attack(int(weapon_cfg().get("attack", 12)), GameState.level, mult)
+func attack_damage(mult: float = 1.0, magic: bool = false) -> int:
+	return damage_for_type("magic" if magic or str(weapon_cfg().get("damage_type","physical")) == "magic" else "physical",mult)
 
 
 ## 生成普攻伤害包（Attack 状态调用；末段强击退）。
@@ -507,6 +520,16 @@ func apply_hit(pkt: DamagePacket) -> int:
 	if is_invulnerable():
 		return 0
 	var amount := int(pkt.amount)
+	var attributes := RPGService.stats()
+	var defense := float(attributes.defense)
+	var constant := float(RPGService.config().base_attributes.defense_constant)
+	amount = maxi(0,roundi(amount*(1.0-defense/(defense+constant))*(1.0-float(attributes.damage_reduction)/100.0)))
+	if _shield_hp > 0 and _clock < _shield_until:
+		var absorbed := mini(amount,_shield_hp)
+		_shield_hp -= absorbed
+		amount -= absorbed
+		if amount <= 0:
+			return 0
 	var kb_dir := 1 if global_position.x >= pkt.from_position.x else -1
 
 	if is_guarding and is_on_floor():
@@ -523,6 +546,9 @@ func apply_hit(pkt: DamagePacket) -> int:
 			sm.to(&"Hurt", {"stun": PlayerTuning.GUARD_BREAK_STUN, "kb_dir": kb_dir, "break": true})
 			return amount
 		var dmg := int(r["damage"])
+		var reduce := InventoryService.talent_effect("guard_reduce_pct")
+		if reduce > 0:
+			dmg = int(amount * (1.0 - reduce / 100.0))
 		GameState.hp = max(0, GameState.hp - dmg)
 		EventBus.player_damaged.emit(dmg)
 		if GameState.hp <= 0:
@@ -548,6 +574,8 @@ func is_invulnerable() -> bool:
 func _on_hit_landed(_target: Node, final_damage: int) -> void:
 	if final_damage <= 0:
 		return
+	var heal := roundi(final_damage*float(RPGService.stats().life_steal)/100.0)
+	GameState.hp = mini(GameState.hp_max,GameState.hp+heal)
 	hitstop(0.04)
 	cam.shake(3.0, 0.15)
 
@@ -579,6 +607,11 @@ func respawn() -> void:
 	GameState.hp = GameState.hp_max
 	GameState.sta = int(GameState.sta_max / 2.0)
 	GameState.mana = int(GameState.mana_max / 2.0)
+	if GameState.checkpoint_room != GameState.current_room and GameState.checkpoint_position.size() == 2:
+		GameState.saved_position = GameState.checkpoint_position.duplicate()
+		SaveSystem.restoring = true
+		SceneRouter.goto_room(GameState.checkpoint_room)
+		return
 	global_position = checkpoint_position
 	velocity = Vector2.ZERO
 	_invuln = 1.0
@@ -701,6 +734,10 @@ func _update_animation() -> void:
 	if anim != &"" and sprite.animation != anim:
 		sprite.play(anim)
 	sprite.flip_h = facing < 0
+	if sm.current_name() == &"Attack" and weapon_type() == "bow":
+		sprite.pause()
+		sprite.frame = clampi(int(attack_charge*4),0,4) if attack_release_t < 0 else clampi(5+int(attack_release_t/float(WeaponRuntime.module("bow").recovery)*3),5,7)
+	_sync_weapon_sprite()
 
 
 ## 状态 → 动画名映射（动画名与 CHR-01_sprite_frames.tres 内 26 个动作一一对应）。
@@ -729,6 +766,8 @@ func _pick_animation() -> StringName:
 			return _attack_anim()
 		&"Skill":
 			match String(_current_skill):
+				"skill_cleave":
+					return &"sword_1"
 				"skill_heal":
 					return &"heal"
 				"skill_slam":
@@ -744,20 +783,14 @@ func _pick_animation() -> StringName:
 
 ## 武器 id → 普攻动画名（连击段仅锤系有 1/2/3 段）。
 func _attack_anim() -> StringName:
-	var combo_idx := clampi(attack_combo if attack_combo > 0 else 1, 1, 3)
-	match String(GameState.weapon_id):
-		"hammer_01":
-			return StringName("hammer_%d" % combo_idx)
-		"milk_gun":
-			return &"blaster_fire"
-		"milk_staff":
-			return &"staff_sweep"
-		"star_orb":
-			return &"orb_cast"
-	return &"hammer_1"
+	var names: Array = WeaponRuntime.module(weapon_type()).get("animations",["cast"])
+	return StringName(names[clampi(attack_combo-1,0,names.size()-1)])
 
 
 func _draw() -> void:
+	if _shield_hp > 0 and _clock < _shield_until:
+		draw_circle(Vector2.ZERO,24,Color(0.3,0.65,1.0,0.15))
+		draw_arc(Vector2.ZERO,24,0,TAU,48,Color("#a2dbea"),2,true)
 	# 精灵帧已注入时不画灰盒（回退路径专用）
 	if sprite.visible:
 		return
@@ -768,3 +801,55 @@ func _draw() -> void:
 	var eye_x := facing * 3.0
 	draw_rect(Rect2(-10 + eye_x + 1, -10, 2.5, 4), Color(0.15, 0.12, 0.1))
 	draw_rect(Rect2(-10 + eye_x + 5, -10, 2.5, 4), Color(0.15, 0.12, 0.1))
+
+
+## 当前装备决定使用剑、锤、弓或杖模组。
+func weapon_type() -> String:
+	return str(weapon_cfg().get("weapon_type","unarmed"))
+
+
+## 统一伤害类型入口，人物面板显示值与实际伤害基础一致。
+func damage_for_type(kind: String, multiplier: float = 1.0) -> int:
+	return roundi(RPGService.attack_power(kind)*multiplier)
+
+
+## 侧键施放滚轮选中的主动技能。
+func try_selected_skill() -> bool:
+	if not buffer_peek(&"cast_selected"):
+		return false
+	var id := InventoryService.equipped_skill(GameState.selected_skill)
+	if id == &"" or not try_skill(id):
+		return false
+	buffer_consume(&"cast_selected")
+	_current_skill = id
+	sm.to(&"Skill")
+	return true
+
+
+func _sync_weapon_sprite() -> void:
+	WeaponRuntime.sync_sprite(sprite)
+
+
+func _update_passive_regeneration(delta: float) -> void:
+	if GameState.hp <= 0:
+		return
+	var attributes := RPGService.stats()
+	_hp_regen_acc += float(attributes.hp_regen)*delta
+	_mana_regen_acc += float(attributes.mana_regen)*delta
+	var hp := floori(_hp_regen_acc)
+	var mana := floori(_mana_regen_acc)
+	_hp_regen_acc -= hp
+	_mana_regen_acc -= mana
+	GameState.hp = mini(GameState.hp_max,GameState.hp+hp)
+	GameState.mana = mini(GameState.mana_max,GameState.mana+mana)
+
+
+## 装备交换时结束旧武器动作，避免菜单关闭后延续旧判定。
+func cancel_weapon_action() -> void:
+	clear_action_buffers()
+	if sm.current_name() in [&"Attack",&"Skill"]:
+		sm.to(&"Idle")
+	velocity.x = 0
+	for child in get_children():
+		if child is AttackEffect:
+			child.queue_free()

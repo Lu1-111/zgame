@@ -1,8 +1,25 @@
 extends Node2D
-## 标题屏（M0）→ M1 试玩场入口：Enter / 空格 / 鼠标左键 进入；Esc 退出游戏。
-## TODO(M2)：接入 SceneRouter 正式主菜单流转（开始/读档/设置）。
+## 标题屏：开始新旅途、校验存档后继续，以及独立演练场入口。
 
-const ARENA_SCENE := "res://scenes/rooms/camp_01.tscn"
+
+func _ready() -> void:
+	var start := Button.new()
+	start.text = "开始新旅途"
+	$UI/Root/Center.add_child(start)
+	start.pressed.connect(_start_journey)
+	if SaveSystem.has_save():
+		var button := Button.new()
+		button.text = "继续旅途"
+		$UI/Root/Center.add_child(button)
+		button.pressed.connect(func() -> void:
+			if SaveSystem.load_game():
+				SceneRouter.goto_room(GameState.current_room))
+
+
+func _start_journey() -> void:
+	GameState.reset()
+	SaveSystem.restoring = false
+	SceneRouter.goto_room(&"camp_01")
 
 
 func _unhandled_input(event: InputEvent) -> void:
@@ -15,4 +32,4 @@ func _unhandled_input(event: InputEvent) -> void:
 	elif event.is_action_pressed(&"attack") \
 			or event.is_action_pressed(&"jump") \
 			or event.is_action_pressed(&"ui_accept"):
-		SceneRouter.change_scene(ARENA_SCENE)
+		_start_journey()

@@ -200,7 +200,9 @@ EXPECTED_ITEMS = {  # id -> (type, stack, buy, sell)
 EXPECTED_WEAPONS = {  # id -> (damage_type, range_type, attack, interval, combo)
     "hammer_01": ("physical", "melee", 12, 0.55, 3),
     "milk_gun": ("physical", "ranged", 8, 0.35, 1),
-    "milk_staff": ("magic", "melee", 10, 0.45, 1),
+    "milk_staff": ("magic", "ranged", 10, 0.45, 1),
+    "sword_01": ("physical", "melee", 10, 0.42, 3),
+    "bow_01": ("physical", "ranged", 9, 0.5, 1),
     "star_orb": ("magic", "ranged", 14, 0.9, 1),
 }
 
@@ -577,7 +579,7 @@ def main():
 
     # 12. weapons.json：四象限、数值、专属字段
     wlist = weapons_doc["weapons"]
-    check(len(wlist) == 4 and len({w["id"] for w in wlist}) == 4, "武器 4 条且 id 唯一")
+    check(len(wlist) == 6 and len({w["id"] for w in wlist}) == 6, "四类武器六条资源（含两条旧档兼容资源）且 id 唯一")
     w_errs = []
     for w in wlist:
         if w["id"] not in EXPECTED_WEAPONS:
@@ -600,12 +602,14 @@ def main():
         w_errs.append("milk_staff hitbox/mana_regen 字段不符")
     if not (wby["star_orb"]["projectile"] == {"speed": 260, "split": 6}):
         w_errs.append("star_orb projectile 字段不符")
-    check(not w_errs, "四武器四象限类型/攻速/连击/专属字段与 §3.3 一致（%s）"
+    check(not w_errs, "四类武器类型/攻速/连击符合 2026-10-26 规格并保留旧档字段（%s）"
           % ("; ".join(w_errs) if w_errs else "全部通过"))
 
     # 13. skills.json：数值与 §3.6 一致
     slist = skills_doc["skills"]
-    check(len(slist) == 5 and len({s["id"] for s in slist}) == 5, "技能 5 条且 id 唯一")
+    check(len(slist) == 20 and len({s["id"] for s in slist}) == 20, "技能二十条（12 主动 / 8 被动）且 id 唯一")
+    check(sum(s.get("category") == "active" for s in slist) == 12 and sum(s.get("category") == "passive" for s in slist) == 8, "主动与被动技能类别数量正确")
+    check(all(s.get("damage_type") in ("physical", "magic") and s.get("stamina_cost", 0) > 0 and (s.get("mana_cost",0) == 0 if s["damage_type"] == "physical" else s.get("mana_cost",0) > 0) for s in slist if s.get("category") == "active" and not s.get("placeholder",False)), "可施放主动技能声明伤害类型，物理耗体力、奶术双资源")
     s_errs = []
     sby = {s["id"]: s for s in slist}
     for sid, exp in EXPECTED_SKILLS.items():

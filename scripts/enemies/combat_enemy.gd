@@ -4,6 +4,7 @@ extends CharacterBody2D
 signal defeated(enemy: CombatEnemy)
 const CONFIG_PATH := "res://data/enemy_combat_b04.json"
 @export var enemy_id: StringName = &"moss_beetle"
+@export var patrol_bounds := Vector2.ZERO ## 关卡指定的水平活动范围；零范围沿用默认 AI。
 var target: Node2D
 var tuning: Dictionary = {}
 var definition: Dictionary = {}
@@ -27,6 +28,8 @@ var _aim_point := Vector2.ZERO
 var _has_aim := false
 
 func _ready() -> void:
+	if not is_instance_valid(target):
+		target = get_tree().get_first_node_in_group(&"player") as Node2D
 	tuning = JSON.parse_string(FileAccess.get_file_as_string(CONFIG_PATH))
 	tuning.merge(tuning.get("per_enemy", {}).get(String(enemy_id), {}), true)
 	definition = DataDB.get_enemy(enemy_id)
@@ -97,6 +100,12 @@ func _physics_process(delta: float) -> void:
 		_return_home()
 	else:
 		_update_state(delta)
+	# 地面小怪在平台边缘折返，追击也不会因主动走路掉下平台；受击击退保留。
+	if not _flying and patrol_bounds.x < patrol_bounds.y and state not in [&"hurt", &"death"]:
+		var next_x := global_position.x + velocity.x * delta
+		if (velocity.x < 0 and next_x < patrol_bounds.x) or (velocity.x > 0 and next_x > patrol_bounds.y):
+			facing = -1 if velocity.x > 0 else 1
+			velocity.x = 0
 	move_and_slide()
 	queue_redraw()
 
@@ -240,10 +249,14 @@ func receive_hit(packet: DamagePacket) -> int:
 	var resist_key := "magic" if packet.type == DamagePacket.DamageType.MAGIC else "physical"
 	var resist := float(definition.resist.get(resist_key, 1.0))
 	var defense := float(definition.defense)
+	if packet.type == DamagePacket.DamageType.PHYSICAL:
+		defense *= 1.0 - InventoryService.talent_effect("defense_ignore_pct") / 100.0
 	var damage := maxi(0, roundi(float(packet.amount) * resist * (1.0 - defense / (defense + float(tuning.defense_constant)))))
 	if damage == 0:
 		return 0
 	hp = maxi(0, hp - damage)
+	if str(packet.source_id).begins_with("skill_"):
+		GameState.mana = mini(GameState.mana_max,GameState.mana + int(InventoryService.talent_effect("skill_hit_mana_regen")))
 	if packet.source_id == &"skill_bubble":
 		_slow_left = float(tuning.slow_duration)
 	if hp == 0:

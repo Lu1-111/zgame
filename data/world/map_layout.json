@@ -4,8 +4,8 @@
       "doors": [
         {
           "pos": [
-            1112,
-            296
+            1240,
+            528
           ],
           "target": "forest_01"
         }
@@ -14,10 +14,17 @@
       "markers": [
         {
           "pos": [
-            336,
-            250
+            352,
+            544
           ],
           "type": "campfire"
+        },
+        {
+          "pos": [
+            662,
+            544
+          ],
+          "type": "chest"
         }
       ],
       "name": "奶族营地",
@@ -27,8 +34,8 @@
       ],
       "scene": "res://scenes/rooms/camp_01.tscn",
       "size": [
-        1152.0,
-        352.0
+        1280.0,
+        640.0
       ]
     },
     {
@@ -36,79 +43,51 @@
         {
           "pos": [
             16,
-            1688
+            1807
           ],
           "target": "camp_01"
         },
         {
           "pos": [
-            1232,
-            680
+            1264,
+            655
           ],
-          "target": "cave_01"
+          "target": "forest_02"
+        },
+        {
+          "pos": [
+            1264,
+            1807
+          ],
+          "target": "forest_02"
         }
       ],
       "id": "forest_01",
       "markers": [
         {
           "pos": [
-            224,
-            1642
+            1088,
+            672
           ],
           "type": "campfire"
         },
         {
           "pos": [
-            256,
-            634
-          ],
-          "type": "campfire"
-        },
-        {
-          "pos": [
-            960,
-            1632
-          ],
-          "type": "chest"
-        },
-        {
-          "pos": [
-            1152,
-            1392
-          ],
-          "type": "chest"
-        },
-        {
-          "pos": [
-            928,
-            864
-          ],
-          "type": "chest"
-        },
-        {
-          "pos": [
-            1024,
-            624
-          ],
-          "type": "chest"
-        },
-        {
-          "pos": [
-            736,
-            400
+            480,
+            672
           ],
           "type": "chest"
         }
       ],
       "name": "始点森林",
       "origin": [
-        1168.0,
-        -1408.0
+        1280.0,
+        -1280.0
       ],
       "scene": "res://scenes/rooms/forest_01.tscn",
       "size": [
         1280.0,
-        1760.0
+        1856.0
       ]
     }
   ],

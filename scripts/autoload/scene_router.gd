@@ -78,13 +78,24 @@ func _transition(room_id: StringName, door_id: StringName) -> void:
 		_busy = false
 		return
 
+	GameState.current_room = room_id
+	if not GameState.visited_rooms.has(room_id):
+		GameState.visited_rooms.append(room_id)
+
 	await get_tree().process_frame
 	await get_tree().process_frame
 	_place_player_at_door(door_id)
+	var player := get_tree().current_scene.get_node_or_null("Player") as CharacterBody2D
+	if SaveSystem.restoring and player != null and GameState.saved_position.size() == 2:
+		player.position = Vector2(GameState.saved_position[0],GameState.saved_position[1])
+		player.velocity = Vector2.ZERO
+		SaveSystem.restoring = false
 
 	await get_tree().create_timer(FADE_HOLD).timeout
 	await _fade_to(0.0, FADE_IN)
 	_busy = false
+	EventBus.room_entered.emit(room_id)
+	SaveSystem.save_game()
 
 
 func _fade_to(alpha: float, duration: float) -> void:

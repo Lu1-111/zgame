@@ -56,6 +56,8 @@
       "id": "forest_01",
       "name": "林地入口",
       "region": "forest",
+      "layout_data": "res://data/maps/forest_01.json",
+      "playable_scene": "res://scenes/rooms/forest_01.tscn",
       "size": [2, 1],
       "bg": "#16241a",
       "platforms": [

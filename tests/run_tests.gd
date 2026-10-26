@@ -8,6 +8,7 @@ extends SceneTree
 ##       「树上单例」与「直接实例化」两条路径（直接实例化不跑 _ready，DataDB 需手动 load_all）。
 
 const CASE_SCRIPTS := [
+	preload("res://tests/test_forest_layout.gd"),
 	preload("res://tests/test_slime_grab.gd"),
 	preload("res://tests/test_enemy_combat_b04_assets.gd"),
 	preload("res://tests/test_project_config.gd"),
