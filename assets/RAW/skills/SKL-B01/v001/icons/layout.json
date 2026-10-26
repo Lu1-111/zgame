@@ -1,0 +1,91 @@
+{
+  "source": "SKL-B01_icons_v001.png",
+  "generation": "builtin_image_gen",
+  "columns": 3,
+  "rows": 2,
+  "actualSize": [
+    1536,
+    1024
+  ],
+  "alpha": {
+    "min": 0,
+    "max": 254,
+    "transparentPixelFraction": 0.4541098276774089
+  },
+  "skills": [
+    {
+      "skill": "skill_omni_slash",
+      "index": 0,
+      "rect": [
+        0,
+        0,
+        512,
+        512
+      ]
+    },
+    {
+      "skill": "skill_giga_milk_beam",
+      "index": 1,
+      "rect": [
+        512,
+        0,
+        512,
+        512
+      ]
+    },
+    {
+      "skill": "skill_comet_dash",
+      "index": 2,
+      "rect": [
+        1024,
+        0,
+        512,
+        512
+      ]
+    },
+    {
+      "skill": "skill_star_milk_prison",
+      "index": 3,
+      "rect": [
+        0,
+        512,
+        512,
+        512
+      ]
+    },
+    {
+      "skill": "skill_mirror_milk_guard",
+      "index": 4,
+      "rect": [
+        512,
+        512,
+        512,
+        512
+      ]
+    },
+    {
+      "skill": "skill_milk_spring",
+      "index": 5,
+      "rect": [
+        1024,
+        512,
+        512,
+        512
+      ]
+    }
+  ],
+  "targetSizes": [
+    [
+      24,
+      24
+    ],
+    [
+      48,
+      48
+    ]
+  ],
+  "notes": [
+    "True alpha with semi-transparent glow; colored hidden RGB is not an opaque backdrop. Do not chromakey black.",
+    "Palette and silhouette are distinct; check glyph readability at24px and consistent inset within26px skill slots."
+  ]
+}

@@ -1,0 +1,1225 @@
+{
+  "kind": "source_sheet_measurement",
+  "measurement_alpha_threshold": 64,
+  "processed_canvas_px": [
+    96,
+    96
+  ],
+  "processed_root_px": [
+    48,
+    90
+  ],
+  "root_method": "source foot-band bounding midpoint over last 20px, y=max body alpha bbox; review body alignment visually and use one scale per sheet",
+  "important": "Never normalize every frame to the same bbox; preserve compression, extension and head size. Frame order row-major. Grid conceptual4x4, sheets generated at actual1254x1254; source bboxes measured individually, not assumed exact equal grid.",
+  "sheets": [
+    {
+      "file": "SKL-B01_motion_01_slash_beam_v001.png",
+      "size_px": [
+        1254,
+        1254
+      ],
+      "true_transparency": true,
+      "fully_transparent_fraction": 0.611478,
+      "neutral_height_px": 245,
+      "suggested_uniform_scale_to_40px": 0.16326531,
+      "row_ground_y_px": [
+        309,
+        618,
+        917,
+        1202
+      ],
+      "frames": [
+        {
+          "frame_index": 0,
+          "row": 0,
+          "column": 0,
+          "skill_id": "skill_omni_slash",
+          "skill_frame": 0,
+          "phase": "neutral_prepare",
+          "body_bbox_px": [
+            89,
+            65,
+            174,
+            245
+          ],
+          "area_alpha64_px": 30364,
+          "source_foot_band_xrange_px": [
+            89,
+            255
+          ],
+          "suggested_source_root_px": [
+            172.0,
+            309
+          ],
+          "note": "Feet baseline only; use surrounding frames to lock torso center for dash and slash. This is measurement, not baked world movement."
+        },
+        {
+          "frame_index": 1,
+          "row": 0,
+          "column": 1,
+          "skill_id": "skill_omni_slash",
+          "skill_frame": 1,
+          "phase": "anticipation",
+          "body_bbox_px": [
+            367,
+            93,
+            216,
+            217
+          ],
+          "area_alpha64_px": 30530,
+          "source_foot_band_xrange_px": [
+            386,
+            575
+          ],
+          "suggested_source_root_px": [
+            480.5,
+            309
+          ],
+          "note": "Feet baseline only; use surrounding frames to lock torso center for dash and slash. This is measurement, not baked world movement."
+        },
+        {
+          "frame_index": 2,
+          "row": 0,
+          "column": 2,
+          "skill_id": "skill_omni_slash",
+          "skill_frame": 2,
+          "phase": "horizontal_slash",
+          "body_bbox_px": [
+            693,
+            79,
+            246,
+            231
+          ],
+          "area_alpha64_px": 30403,
+          "source_foot_band_xrange_px": [
+            693,
+            877
+          ],
+          "suggested_source_root_px": [
+            785.0,
+            309
+          ],
+          "note": "Feet baseline only; use surrounding frames to lock torso center for dash and slash. This is measurement, not baked world movement."
+        },
+        {
+          "frame_index": 3,
+          "row": 0,
+          "column": 3,
+          "skill_id": "skill_omni_slash",
+          "skill_frame": 3,
+          "phase": "upward_slash",
+          "body_bbox_px": [
+            1004,
+            63,
+            205,
+            247
+          ],
+          "area_alpha64_px": 32992,
+          "source_foot_band_xrange_px": [
+            1004,
+            1176
+          ],
+          "suggested_source_root_px": [
+            1090.0,
+            309
+          ],
+          "note": "Feet baseline only; use surrounding frames to lock torso center for dash and slash. This is measurement, not baked world movement."
+        },
+        {
+          "frame_index": 4,
+          "row": 1,
+          "column": 0,
+          "skill_id": "skill_omni_slash",
+          "skill_frame": 4,
+          "phase": "downward_slash",
+          "body_bbox_px": [
+            76,
+            390,
+            206,
+            229
+          ],
+          "area_alpha64_px": 30305,
+          "source_foot_band_xrange_px": [
+            76,
+            281
+          ],
+          "suggested_source_root_px": [
+            178.5,
+            618
+          ],
+          "note": "Feet baseline only; use surrounding frames to lock torso center for dash and slash. This is measurement, not baked world movement."
+        },
+        {
+          "frame_index": 5,
+          "row": 1,
+          "column": 1,
+          "skill_id": "skill_omni_slash",
+          "skill_frame": 5,
+          "phase": "overhead_finish",
+          "body_bbox_px": [
+            376,
+            337,
+            207,
+            282
+          ],
+          "area_alpha64_px": 35211,
+          "source_foot_band_xrange_px": [
+            376,
+            582
+          ],
+          "suggested_source_root_px": [
+            479.0,
+            618
+          ],
+          "note": "Feet baseline only; use surrounding frames to lock torso center for dash and slash. This is measurement, not baked world movement."
+        },
+        {
+          "frame_index": 6,
+          "row": 1,
+          "column": 2,
+          "skill_id": "skill_omni_slash",
+          "skill_frame": 6,
+          "phase": "recover",
+          "body_bbox_px": [
+            707,
+            385,
+            178,
+            234
+          ],
+          "area_alpha64_px": 29743,
+          "source_foot_band_xrange_px": [
+            707,
+            878
+          ],
+          "suggested_source_root_px": [
+            792.5,
+            618
+          ],
+          "note": "Feet baseline only; use surrounding frames to lock torso center for dash and slash. This is measurement, not baked world movement."
+        },
+        {
+          "frame_index": 7,
+          "row": 1,
+          "column": 3,
+          "skill_id": "skill_omni_slash",
+          "skill_frame": 7,
+          "phase": "neutral_return",
+          "body_bbox_px": [
+            1013,
+            377,
+            175,
+            242
+          ],
+          "area_alpha64_px": 30244,
+          "source_foot_band_xrange_px": [
+            1013,
+            1176
+          ],
+          "suggested_source_root_px": [
+            1094.5,
+            618
+          ],
+          "note": "Feet baseline only; use surrounding frames to lock torso center for dash and slash. This is measurement, not baked world movement."
+        },
+        {
+          "frame_index": 8,
+          "row": 2,
+          "column": 0,
+          "skill_id": "skill_giga_milk_beam",
+          "skill_frame": 0,
+          "phase": "neutral_prepare",
+          "body_bbox_px": [
+            88,
+            676,
+            175,
+            242
+          ],
+          "area_alpha64_px": 30360,
+          "source_foot_band_xrange_px": [
+            89,
+            257
+          ],
+          "suggested_source_root_px": [
+            173.0,
+            917
+          ],
+          "note": "Feet baseline only; use surrounding frames to lock torso center for dash and slash. This is measurement, not baked world movement."
+        },
+        {
+          "frame_index": 9,
+          "row": 2,
+          "column": 1,
+          "skill_id": "skill_giga_milk_beam",
+          "skill_frame": 1,
+          "phase": "hands_belly",
+          "body_bbox_px": [
+            388,
+            688,
+            179,
+            230
+          ],
+          "area_alpha64_px": 29692,
+          "source_foot_band_xrange_px": [
+            388,
+            566
+          ],
+          "suggested_source_root_px": [
+            477.0,
+            917
+          ],
+          "note": "Feet baseline only; use surrounding frames to lock torso center for dash and slash. This is measurement, not baked world movement."
+        },
+        {
+          "frame_index": 10,
+          "row": 2,
+          "column": 2,
+          "skill_id": "skill_giga_milk_beam",
+          "skill_frame": 2,
+          "phase": "charge_begin",
+          "body_bbox_px": [
+            703,
+            688,
+            181,
+            230
+          ],
+          "area_alpha64_px": 29942,
+          "source_foot_band_xrange_px": [
+            703,
+            883
+          ],
+          "suggested_source_root_px": [
+            793.0,
+            917
+          ],
+          "note": "Feet baseline only; use surrounding frames to lock torso center for dash and slash. This is measurement, not baked world movement."
+        },
+        {
+          "frame_index": 11,
+          "row": 2,
+          "column": 3,
+          "skill_id": "skill_giga_milk_beam",
+          "skill_frame": 3,
+          "phase": "charge_deep",
+          "body_bbox_px": [
+            1011,
+            690,
+            179,
+            228
+          ],
+          "area_alpha64_px": 29504,
+          "source_foot_band_xrange_px": [
+            1012,
+            1189
+          ],
+          "suggested_source_root_px": [
+            1100.5,
+            917
+          ],
+          "note": "Feet baseline only; use surrounding frames to lock torso center for dash and slash. This is measurement, not baked world movement."
+        },
+        {
+          "frame_index": 12,
+          "row": 3,
+          "column": 0,
+          "skill_id": "skill_giga_milk_beam",
+          "skill_frame": 4,
+          "phase": "charge_full_hold",
+          "body_bbox_px": [
+            86,
+            966,
+            185,
+            237
+          ],
+          "area_alpha64_px": 31822,
+          "source_foot_band_xrange_px": [
+            86,
+            269
+          ],
+          "suggested_source_root_px": [
+            177.5,
+            1202
+          ],
+          "note": "Feet baseline only; use surrounding frames to lock torso center for dash and slash. This is measurement, not baked world movement."
+        },
+        {
+          "frame_index": 13,
+          "row": 3,
+          "column": 1,
+          "skill_id": "skill_giga_milk_beam",
+          "skill_frame": 5,
+          "phase": "mouth_fire_a",
+          "body_bbox_px": [
+            378,
+            964,
+            216,
+            239
+          ],
+          "area_alpha64_px": 33354,
+          "source_foot_band_xrange_px": [
+            378,
+            582
+          ],
+          "suggested_source_root_px": [
+            480.0,
+            1202
+          ],
+          "note": "Feet baseline only; use surrounding frames to lock torso center for dash and slash. This is measurement, not baked world movement."
+        },
+        {
+          "frame_index": 14,
+          "row": 3,
+          "column": 2,
+          "skill_id": "skill_giga_milk_beam",
+          "skill_frame": 6,
+          "phase": "mouth_fire_b",
+          "body_bbox_px": [
+            688,
+            966,
+            204,
+            237
+          ],
+          "area_alpha64_px": 32774,
+          "source_foot_band_xrange_px": [
+            688,
+            886
+          ],
+          "suggested_source_root_px": [
+            787.0,
+            1202
+          ],
+          "note": "Feet baseline only; use surrounding frames to lock torso center for dash and slash. This is measurement, not baked world movement."
+        },
+        {
+          "frame_index": 15,
+          "row": 3,
+          "column": 3,
+          "skill_id": "skill_giga_milk_beam",
+          "skill_frame": 7,
+          "phase": "recover",
+          "body_bbox_px": [
+            1007,
+            965,
+            175,
+            238
+          ],
+          "area_alpha64_px": 29803,
+          "source_foot_band_xrange_px": [
+            1007,
+            1178
+          ],
+          "suggested_source_root_px": [
+            1092.5,
+            1202
+          ],
+          "note": "Feet baseline only; use surrounding frames to lock torso center for dash and slash. This is measurement, not baked world movement."
+        }
+      ]
+    },
+    {
+      "file": "SKL-B01_motion_02_dash_prison_v001.png",
+      "size_px": [
+        1254,
+        1254
+      ],
+      "true_transparency": true,
+      "fully_transparent_fraction": 0.593602,
+      "neutral_height_px": 256,
+      "suggested_uniform_scale_to_40px": 0.15625,
+      "row_ground_y_px": [
+        301,
+        609,
+        925,
+        1226
+      ],
+      "frames": [
+        {
+          "frame_index": 0,
+          "row": 0,
+          "column": 0,
+          "skill_id": "skill_comet_dash",
+          "skill_frame": 0,
+          "phase": "neutral_prepare",
+          "body_bbox_px": [
+            81,
+            46,
+            178,
+            256
+          ],
+          "area_alpha64_px": 32485,
+          "source_foot_band_xrange_px": [
+            84,
+            250
+          ],
+          "suggested_source_root_px": [
+            167.0,
+            301
+          ],
+          "note": "Feet baseline only; use surrounding frames to lock torso center for dash and slash. This is measurement, not baked world movement."
+        },
+        {
+          "frame_index": 1,
+          "row": 0,
+          "column": 1,
+          "skill_id": "skill_comet_dash",
+          "skill_frame": 1,
+          "phase": "compress",
+          "body_bbox_px": [
+            384,
+            90,
+            178,
+            212
+          ],
+          "area_alpha64_px": 27675,
+          "source_foot_band_xrange_px": [
+            394,
+            560
+          ],
+          "suggested_source_root_px": [
+            477.0,
+            301
+          ],
+          "note": "Feet baseline only; use surrounding frames to lock torso center for dash and slash. This is measurement, not baked world movement."
+        },
+        {
+          "frame_index": 2,
+          "row": 0,
+          "column": 2,
+          "skill_id": "skill_comet_dash",
+          "skill_frame": 2,
+          "phase": "lean_forward",
+          "body_bbox_px": [
+            685,
+            73,
+            202,
+            229
+          ],
+          "area_alpha64_px": 30287,
+          "source_foot_band_xrange_px": [
+            697,
+            859
+          ],
+          "suggested_source_root_px": [
+            778.0,
+            301
+          ],
+          "note": "Feet baseline only; use surrounding frames to lock torso center for dash and slash. This is measurement, not baked world movement."
+        },
+        {
+          "frame_index": 3,
+          "row": 0,
+          "column": 3,
+          "skill_id": "skill_comet_dash",
+          "skill_frame": 3,
+          "phase": "dash_a",
+          "body_bbox_px": [
+            997,
+            73,
+            209,
+            229
+          ],
+          "area_alpha64_px": 32200,
+          "source_foot_band_xrange_px": [
+            1000,
+            1187
+          ],
+          "suggested_source_root_px": [
+            1093.5,
+            301
+          ],
+          "note": "Feet baseline only; use surrounding frames to lock torso center for dash and slash. This is measurement, not baked world movement."
+        },
+        {
+          "frame_index": 4,
+          "row": 1,
+          "column": 0,
+          "skill_id": "skill_comet_dash",
+          "skill_frame": 4,
+          "phase": "dash_b",
+          "body_bbox_px": [
+            50,
+            387,
+            230,
+            223
+          ],
+          "area_alpha64_px": 34342,
+          "source_foot_band_xrange_px": [
+            50,
+            266
+          ],
+          "suggested_source_root_px": [
+            158.0,
+            609
+          ],
+          "note": "Feet baseline only; use surrounding frames to lock torso center for dash and slash. This is measurement, not baked world movement."
+        },
+        {
+          "frame_index": 5,
+          "row": 1,
+          "column": 1,
+          "skill_id": "skill_comet_dash",
+          "skill_frame": 5,
+          "phase": "decelerate",
+          "body_bbox_px": [
+            385,
+            364,
+            195,
+            247
+          ],
+          "area_alpha64_px": 32884,
+          "source_foot_band_xrange_px": [
+            385,
+            559
+          ],
+          "suggested_source_root_px": [
+            472.0,
+            610
+          ],
+          "note": "Feet baseline only; use surrounding frames to lock torso center for dash and slash. This is measurement, not baked world movement."
+        },
+        {
+          "frame_index": 6,
+          "row": 1,
+          "column": 2,
+          "skill_id": "skill_comet_dash",
+          "skill_frame": 6,
+          "phase": "recover",
+          "body_bbox_px": [
+            704,
+            358,
+            180,
+            254
+          ],
+          "area_alpha64_px": 32568,
+          "source_foot_band_xrange_px": [
+            705,
+            873
+          ],
+          "suggested_source_root_px": [
+            789.0,
+            611
+          ],
+          "note": "Feet baseline only; use surrounding frames to lock torso center for dash and slash. This is measurement, not baked world movement."
+        },
+        {
+          "frame_index": 7,
+          "row": 1,
+          "column": 3,
+          "skill_id": "skill_comet_dash",
+          "skill_frame": 7,
+          "phase": "neutral_return",
+          "body_bbox_px": [
+            1014,
+            358,
+            179,
+            254
+          ],
+          "area_alpha64_px": 32348,
+          "source_foot_band_xrange_px": [
+            1018,
+            1185
+          ],
+          "suggested_source_root_px": [
+            1101.5,
+            611
+          ],
+          "note": "Feet baseline only; use surrounding frames to lock torso center for dash and slash. This is measurement, not baked world movement."
+        },
+        {
+          "frame_index": 8,
+          "row": 2,
+          "column": 0,
+          "skill_id": "skill_star_milk_prison",
+          "skill_frame": 0,
+          "phase": "neutral_prepare",
+          "body_bbox_px": [
+            80,
+            670,
+            178,
+            256
+          ],
+          "area_alpha64_px": 32414,
+          "source_foot_band_xrange_px": [
+            84,
+            248
+          ],
+          "suggested_source_root_px": [
+            166.0,
+            925
+          ],
+          "note": "Feet baseline only; use surrounding frames to lock torso center for dash and slash. This is measurement, not baked world movement."
+        },
+        {
+          "frame_index": 9,
+          "row": 2,
+          "column": 1,
+          "skill_id": "skill_star_milk_prison",
+          "skill_frame": 1,
+          "phase": "gather_hands",
+          "body_bbox_px": [
+            387,
+            673,
+            182,
+            254
+          ],
+          "area_alpha64_px": 33457,
+          "source_foot_band_xrange_px": [
+            387,
+            568
+          ],
+          "suggested_source_root_px": [
+            477.5,
+            926
+          ],
+          "note": "Feet baseline only; use surrounding frames to lock torso center for dash and slash. This is measurement, not baked world movement."
+        },
+        {
+          "frame_index": 10,
+          "row": 2,
+          "column": 2,
+          "skill_id": "skill_star_milk_prison",
+          "skill_frame": 2,
+          "phase": "concentrate",
+          "body_bbox_px": [
+            699,
+            679,
+            181,
+            249
+          ],
+          "area_alpha64_px": 31938,
+          "source_foot_band_xrange_px": [
+            699,
+            879
+          ],
+          "suggested_source_root_px": [
+            789.0,
+            927
+          ],
+          "note": "Feet baseline only; use surrounding frames to lock torso center for dash and slash. This is measurement, not baked world movement."
+        },
+        {
+          "frame_index": 11,
+          "row": 2,
+          "column": 3,
+          "skill_id": "skill_star_milk_prison",
+          "skill_frame": 3,
+          "phase": "palms_ground",
+          "body_bbox_px": [
+            1014,
+            683,
+            188,
+            244
+          ],
+          "area_alpha64_px": 31883,
+          "source_foot_band_xrange_px": [
+            1017,
+            1191
+          ],
+          "suggested_source_root_px": [
+            1104.0,
+            926
+          ],
+          "note": "Feet baseline only; use surrounding frames to lock torso center for dash and slash. This is measurement, not baked world movement."
+        },
+        {
+          "frame_index": 12,
+          "row": 3,
+          "column": 0,
+          "skill_id": "skill_star_milk_prison",
+          "skill_frame": 4,
+          "phase": "cast_forward",
+          "body_bbox_px": [
+            78,
+            979,
+            214,
+            248
+          ],
+          "area_alpha64_px": 34134,
+          "source_foot_band_xrange_px": [
+            79,
+            257
+          ],
+          "suggested_source_root_px": [
+            168.0,
+            1226
+          ],
+          "note": "Feet baseline only; use surrounding frames to lock torso center for dash and slash. This is measurement, not baked world movement."
+        },
+        {
+          "frame_index": 13,
+          "row": 3,
+          "column": 1,
+          "skill_id": "skill_star_milk_prison",
+          "skill_frame": 5,
+          "phase": "control_hold",
+          "body_bbox_px": [
+            386,
+            983,
+            207,
+            244
+          ],
+          "area_alpha64_px": 33424,
+          "source_foot_band_xrange_px": [
+            387,
+            569
+          ],
+          "suggested_source_root_px": [
+            478.0,
+            1226
+          ],
+          "note": "Feet baseline only; use surrounding frames to lock torso center for dash and slash. This is measurement, not baked world movement."
+        },
+        {
+          "frame_index": 14,
+          "row": 3,
+          "column": 2,
+          "skill_id": "skill_star_milk_prison",
+          "skill_frame": 6,
+          "phase": "recover",
+          "body_bbox_px": [
+            707,
+            977,
+            180,
+            250
+          ],
+          "area_alpha64_px": 32183,
+          "source_foot_band_xrange_px": [
+            707,
+            876
+          ],
+          "suggested_source_root_px": [
+            791.5,
+            1226
+          ],
+          "note": "Feet baseline only; use surrounding frames to lock torso center for dash and slash. This is measurement, not baked world movement."
+        },
+        {
+          "frame_index": 15,
+          "row": 3,
+          "column": 3,
+          "skill_id": "skill_star_milk_prison",
+          "skill_frame": 7,
+          "phase": "neutral_return",
+          "body_bbox_px": [
+            1019,
+            976,
+            177,
+            251
+          ],
+          "area_alpha64_px": 31833,
+          "source_foot_band_xrange_px": [
+            1020,
+            1187
+          ],
+          "suggested_source_root_px": [
+            1103.5,
+            1226
+          ],
+          "note": "Feet baseline only; use surrounding frames to lock torso center for dash and slash. This is measurement, not baked world movement."
+        }
+      ]
+    },
+    {
+      "file": "SKL-B01_motion_03_guard_spring_v001.png",
+      "size_px": [
+        1254,
+        1254
+      ],
+      "true_transparency": true,
+      "fully_transparent_fraction": 0.561669,
+      "neutral_height_px": 270,
+      "suggested_uniform_scale_to_40px": 0.14814815,
+      "row_ground_y_px": [
+        308,
+        613,
+        929,
+        1230
+      ],
+      "frames": [
+        {
+          "frame_index": 0,
+          "row": 0,
+          "column": 0,
+          "skill_id": "skill_mirror_milk_guard",
+          "skill_frame": 0,
+          "phase": "neutral_prepare",
+          "body_bbox_px": [
+            66,
+            39,
+            193,
+            270
+          ],
+          "area_alpha64_px": 36571,
+          "source_foot_band_xrange_px": [
+            69,
+            252
+          ],
+          "suggested_source_root_px": [
+            160.5,
+            308
+          ],
+          "note": "Feet baseline only; use surrounding frames to lock torso center for dash and slash. This is measurement, not baked world movement."
+        },
+        {
+          "frame_index": 1,
+          "row": 0,
+          "column": 1,
+          "skill_id": "skill_mirror_milk_guard",
+          "skill_frame": 1,
+          "phase": "brace",
+          "body_bbox_px": [
+            372,
+            46,
+            201,
+            263
+          ],
+          "area_alpha64_px": 36451,
+          "source_foot_band_xrange_px": [
+            372,
+            566
+          ],
+          "suggested_source_root_px": [
+            469.0,
+            308
+          ],
+          "note": "Feet baseline only; use surrounding frames to lock torso center for dash and slash. This is measurement, not baked world movement."
+        },
+        {
+          "frame_index": 2,
+          "row": 0,
+          "column": 2,
+          "skill_id": "skill_mirror_milk_guard",
+          "skill_frame": 2,
+          "phase": "guard_raise",
+          "body_bbox_px": [
+            686,
+            45,
+            193,
+            264
+          ],
+          "area_alpha64_px": 35971,
+          "source_foot_band_xrange_px": [
+            687,
+            878
+          ],
+          "suggested_source_root_px": [
+            782.5,
+            308
+          ],
+          "note": "Feet baseline only; use surrounding frames to lock torso center for dash and slash. This is measurement, not baked world movement."
+        },
+        {
+          "frame_index": 3,
+          "row": 0,
+          "column": 3,
+          "skill_id": "skill_mirror_milk_guard",
+          "skill_frame": 3,
+          "phase": "guard_hold",
+          "body_bbox_px": [
+            1000,
+            55,
+            194,
+            254
+          ],
+          "area_alpha64_px": 35028,
+          "source_foot_band_xrange_px": [
+            1000,
+            1193
+          ],
+          "suggested_source_root_px": [
+            1096.5,
+            308
+          ],
+          "note": "Feet baseline only; use surrounding frames to lock torso center for dash and slash. This is measurement, not baked world movement."
+        },
+        {
+          "frame_index": 4,
+          "row": 1,
+          "column": 0,
+          "skill_id": "skill_mirror_milk_guard",
+          "skill_frame": 4,
+          "phase": "parry_compress",
+          "body_bbox_px": [
+            58,
+            356,
+            208,
+            258
+          ],
+          "area_alpha64_px": 36945,
+          "source_foot_band_xrange_px": [
+            58,
+            265
+          ],
+          "suggested_source_root_px": [
+            161.5,
+            613
+          ],
+          "note": "Feet baseline only; use surrounding frames to lock torso center for dash and slash. This is measurement, not baked world movement."
+        },
+        {
+          "frame_index": 5,
+          "row": 1,
+          "column": 1,
+          "skill_id": "skill_mirror_milk_guard",
+          "skill_frame": 5,
+          "phase": "palm_counter",
+          "body_bbox_px": [
+            357,
+            353,
+            260,
+            262
+          ],
+          "area_alpha64_px": 40901,
+          "source_foot_band_xrange_px": [
+            357,
+            594
+          ],
+          "suggested_source_root_px": [
+            475.5,
+            614
+          ],
+          "note": "Feet baseline only; use surrounding frames to lock torso center for dash and slash. This is measurement, not baked world movement."
+        },
+        {
+          "frame_index": 6,
+          "row": 1,
+          "column": 2,
+          "skill_id": "skill_mirror_milk_guard",
+          "skill_frame": 6,
+          "phase": "recover",
+          "body_bbox_px": [
+            691,
+            345,
+            191,
+            270
+          ],
+          "area_alpha64_px": 37274,
+          "source_foot_band_xrange_px": [
+            692,
+            881
+          ],
+          "suggested_source_root_px": [
+            786.5,
+            614
+          ],
+          "note": "Feet baseline only; use surrounding frames to lock torso center for dash and slash. This is measurement, not baked world movement."
+        },
+        {
+          "frame_index": 7,
+          "row": 1,
+          "column": 3,
+          "skill_id": "skill_mirror_milk_guard",
+          "skill_frame": 7,
+          "phase": "neutral_return",
+          "body_bbox_px": [
+            1009,
+            348,
+            192,
+            265
+          ],
+          "area_alpha64_px": 35751,
+          "source_foot_band_xrange_px": [
+            1011,
+            1192
+          ],
+          "suggested_source_root_px": [
+            1101.5,
+            612
+          ],
+          "note": "Feet baseline only; use surrounding frames to lock torso center for dash and slash. This is measurement, not baked world movement."
+        },
+        {
+          "frame_index": 8,
+          "row": 2,
+          "column": 0,
+          "skill_id": "skill_milk_spring",
+          "skill_frame": 0,
+          "phase": "neutral_prepare",
+          "body_bbox_px": [
+            66,
+            661,
+            193,
+            269
+          ],
+          "area_alpha64_px": 36441,
+          "source_foot_band_xrange_px": [
+            69,
+            252
+          ],
+          "suggested_source_root_px": [
+            160.5,
+            929
+          ],
+          "note": "Feet baseline only; use surrounding frames to lock torso center for dash and slash. This is measurement, not baked world movement."
+        },
+        {
+          "frame_index": 9,
+          "row": 2,
+          "column": 1,
+          "skill_id": "skill_milk_spring",
+          "skill_frame": 1,
+          "phase": "hands_chest",
+          "body_bbox_px": [
+            376,
+            663,
+            189,
+            267
+          ],
+          "area_alpha64_px": 36026,
+          "source_foot_band_xrange_px": [
+            377,
+            564
+          ],
+          "suggested_source_root_px": [
+            470.5,
+            929
+          ],
+          "note": "Feet baseline only; use surrounding frames to lock torso center for dash and slash. This is measurement, not baked world movement."
+        },
+        {
+          "frame_index": 10,
+          "row": 2,
+          "column": 2,
+          "skill_id": "skill_milk_spring",
+          "skill_frame": 2,
+          "phase": "hands_down",
+          "body_bbox_px": [
+            689,
+            667,
+            192,
+            264
+          ],
+          "area_alpha64_px": 35566,
+          "source_foot_band_xrange_px": [
+            692,
+            880
+          ],
+          "suggested_source_root_px": [
+            786.0,
+            930
+          ],
+          "note": "Feet baseline only; use surrounding frames to lock torso center for dash and slash. This is measurement, not baked world movement."
+        },
+        {
+          "frame_index": 11,
+          "row": 2,
+          "column": 3,
+          "skill_id": "skill_milk_spring",
+          "skill_frame": 3,
+          "phase": "palms_ground",
+          "body_bbox_px": [
+            1000,
+            687,
+            212,
+            244
+          ],
+          "area_alpha64_px": 34822,
+          "source_foot_band_xrange_px": [
+            1000,
+            1199
+          ],
+          "suggested_source_root_px": [
+            1099.5,
+            930
+          ],
+          "note": "Feet baseline only; use surrounding frames to lock torso center for dash and slash. This is measurement, not baked world movement."
+        },
+        {
+          "frame_index": 12,
+          "row": 3,
+          "column": 0,
+          "skill_id": "skill_milk_spring",
+          "skill_frame": 4,
+          "phase": "prayer_hold",
+          "body_bbox_px": [
+            61,
+            979,
+            212,
+            252
+          ],
+          "area_alpha64_px": 35315,
+          "source_foot_band_xrange_px": [
+            61,
+            253
+          ],
+          "suggested_source_root_px": [
+            157.0,
+            1230
+          ],
+          "note": "Feet baseline only; use surrounding frames to lock torso center for dash and slash. This is measurement, not baked world movement."
+        },
+        {
+          "frame_index": 13,
+          "row": 3,
+          "column": 1,
+          "skill_id": "skill_milk_spring",
+          "skill_frame": 5,
+          "phase": "open_palms",
+          "body_bbox_px": [
+            378,
+            968,
+            207,
+            263
+          ],
+          "area_alpha64_px": 36177,
+          "source_foot_band_xrange_px": [
+            378,
+            568
+          ],
+          "suggested_source_root_px": [
+            473.0,
+            1230
+          ],
+          "note": "Feet baseline only; use surrounding frames to lock torso center for dash and slash. This is measurement, not baked world movement."
+        },
+        {
+          "frame_index": 14,
+          "row": 3,
+          "column": 2,
+          "skill_id": "skill_milk_spring",
+          "skill_frame": 6,
+          "phase": "recover",
+          "body_bbox_px": [
+            693,
+            966,
+            197,
+            265
+          ],
+          "area_alpha64_px": 36478,
+          "source_foot_band_xrange_px": [
+            694,
+            878
+          ],
+          "suggested_source_root_px": [
+            786.0,
+            1230
+          ],
+          "note": "Feet baseline only; use surrounding frames to lock torso center for dash and slash. This is measurement, not baked world movement."
+        },
+        {
+          "frame_index": 15,
+          "row": 3,
+          "column": 3,
+          "skill_id": "skill_milk_spring",
+          "skill_frame": 7,
+          "phase": "neutral_return",
+          "body_bbox_px": [
+            1009,
+            967,
+            192,
+            264
+          ],
+          "area_alpha64_px": 35550,
+          "source_foot_band_xrange_px": [
+            1011,
+            1192
+          ],
+          "suggested_source_root_px": [
+            1101.5,
+            1230
+          ],
+          "note": "Feet baseline only; use surrounding frames to lock torso center for dash and slash. This is measurement, not baked world movement."
+        }
+      ]
+    }
+  ]
+}

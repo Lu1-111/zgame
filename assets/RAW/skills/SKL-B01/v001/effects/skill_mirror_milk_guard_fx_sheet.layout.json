@@ -1,0 +1,89 @@
+{
+  "skill_id": "skill_mirror_milk_guard",
+  "sheet": "skill_mirror_milk_guard_fx_sheet.png",
+  "layout": {
+    "columns": 4,
+    "rows": 2,
+    "order": "row_major",
+    "actual_size": [
+      1774,
+      887
+    ],
+    "cell_boundaries_x": [
+      0,
+      444,
+      887,
+      1330,
+      1774
+    ],
+    "cell_boundaries_y": [
+      0,
+      444,
+      887
+    ]
+  },
+  "target_frame_size": [
+    128,
+    128
+  ],
+  "target_root_px": [
+    64,
+    112
+  ],
+  "frames": [
+    "form_low",
+    "form_rise",
+    "hold_a",
+    "hold_b",
+    "parry_flash",
+    "counter_pulse",
+    "breakup",
+    "fade"
+  ],
+  "loop_frames": [
+    2,
+    3
+  ],
+  "generation": "builtin_image_gen",
+  "alpha_extrema": [
+    0,
+    255
+  ],
+  "source_roots_px": [
+    [
+      222,
+      410
+    ],
+    [
+      222,
+      410
+    ],
+    [
+      222,
+      410
+    ],
+    [
+      222,
+      410
+    ],
+    [
+      222,
+      390
+    ],
+    [
+      222,
+      390
+    ],
+    [
+      222,
+      390
+    ],
+    [
+      222,
+      390
+    ]
+  ],
+  "suggested_common_scale": 0.24,
+  "source_root_measurement": "Shield center around source cell(222,250) top row and(222,230) bottom row; invisible player feet root is 160px below center, set row-based root(222,410)/(222,390). Use common scale .24 so shield center ends near target y74 and root(64,112). Counter pulse goes toward cell-right and is entire.",
+  "qa_note": "Actual dims differ from prompt. Thin ring rim, alpha-hollow center; alpha speckles cross interior and edges. Do not per-frame scale. Frame2/3 loop-compatible centered circumference."
+}

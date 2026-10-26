@@ -1,0 +1,88 @@
+{
+  "skill_id": "skill_milk_spring",
+  "sheet": "skill_milk_spring_fx_sheet.png",
+  "layout": {
+    "columns": 4,
+    "rows": 2,
+    "order": "row_major",
+    "actual_size": [
+      1774,
+      887
+    ],
+    "cell_boundaries_x": [
+      0,
+      444,
+      887,
+      1330,
+      1774
+    ],
+    "cell_boundaries_y": [
+      0,
+      444,
+      887
+    ]
+  },
+  "target_frame_size": [
+    160,
+    96
+  ],
+  "target_root_px": [
+    80,
+    80
+  ],
+  "frames": [
+    "ripple_small",
+    "ripple_rise",
+    "spring_rise",
+    "spring_full",
+    "hold_a",
+    "hold_b",
+    "fall",
+    "fade"
+  ],
+  "loop_frames": [
+    4,
+    5
+  ],
+  "generation": "builtin_image_gen",
+  "alpha_extrema": [
+    0,
+    255
+  ],
+  "source_roots_px": [
+    [
+      222,
+      367
+    ],
+    [
+      222,
+      367
+    ],
+    [
+      222,
+      367
+    ],
+    [
+      222,
+      367
+    ],
+    [
+      222,
+      354
+    ],
+    [
+      222,
+      354
+    ],
+    [
+      222,
+      354
+    ],
+    [
+      222,
+      354
+    ]
+  ],
+  "source_root_measurement": "Fixed ground plane defined as elliptical water surface center, x centered. Top row surface y=367; bottom row local y=354. Root y at plane center, not bottom of glow; preserve growth height. Suggested source common scale=0.29, target root(80,80), all eight use one scale.",
+  "qa_note": "Actual dimensions differ from requested. Main spring contained per cell. Intended heal loop frames4,5 same height; droplets advance. No per-frame bbox scale."
+}

@@ -1,0 +1,450 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+=== 《奶宝：银河征途》单元测试宿主 run_tests.gd ===
+
+---- 用例 test_slime_grab.gd ----
+  ✅ PASS: 史莱姆抓取保留16个完整动作帧
+  ✅ PASS: 红色感叹号仅在蓄势帧出现，伸手前完全消失
+  ✅ PASS: 新增抓取未删除史莱姆原有动作
+  ✅ PASS: 抓取蓄势4帧
+  ✅ PASS: 触手伸出与闭合8帧
+  ✅ PASS: 触手释放与收回4帧
+  ✅ PASS: enemy_presentation 已启用触手抓取
+  ✅ PASS: enemy_presentation 命中延后到触手闭合
+  ✅ PASS: enemy_combat_b04 已启用触手抓取
+  ✅ PASS: enemy_combat_b04 命中延后到触手闭合
+<< 用例 test_slime_grab.gd 通过（10 条断言）>>
+
+---- 用例 test_enemy_combat_b04_assets.gd ----
+  ✅ PASS: moss_beetle 新战斗素材可装载
+  ✅ PASS: moss_beetle 新素材七动作完整且锚点一致
+  ✅ PASS: moss_beetle 战斗动作镜像保持语义根
+  ✅ PASS: milk_moth 新战斗素材可装载
+  ✅ PASS: milk_moth 新素材七动作完整且锚点一致
+  ✅ PASS: milk_moth 战斗动作镜像保持语义根
+  ✅ PASS: milk_slime 新战斗素材可装载
+  ✅ PASS: milk_slime 新素材七动作完整且锚点一致
+  ✅ PASS: milk_slime 战斗动作镜像保持语义根
+  ✅ PASS: vine_flower 新战斗素材可装载
+  ✅ PASS: vine_flower 新素材七动作完整且锚点一致
+  ✅ PASS: vine_flower 战斗动作镜像保持语义根
+  ✅ PASS: lamp_bug 新战斗素材可装载
+  ✅ PASS: lamp_bug 新素材七动作完整且锚点一致
+  ✅ PASS: lamp_bug 战斗动作镜像保持语义根
+  ✅ PASS: shadow_wisp 新战斗素材可装载
+  ✅ PASS: shadow_wisp 新素材七动作完整且锚点一致
+  ✅ PASS: shadow_wisp 战斗动作镜像保持语义根
+  ✅ PASS: acid_slug 新战斗素材可装载
+  ✅ PASS: acid_slug 新素材七动作完整且锚点一致
+  ✅ PASS: acid_slug 战斗动作镜像保持语义根
+  ✅ PASS: wax_bee 新战斗素材可装载
+  ✅ PASS: wax_bee 新素材七动作完整且锚点一致
+  ✅ PASS: wax_bee 战斗动作镜像保持语义根
+  ✅ PASS: moss_guard 新战斗素材可装载
+  ✅ PASS: moss_guard 新素材七动作完整且锚点一致
+  ✅ PASS: moss_guard 战斗动作镜像保持语义根
+  ✅ PASS: hive_guard 新战斗素材可装载
+  ✅ PASS: hive_guard 新素材七动作完整且锚点一致
+  ✅ PASS: hive_guard 战斗动作镜像保持语义根
+  ✅ PASS: acid_mother 新战斗素材可装载
+  ✅ PASS: acid_mother 新素材七动作完整且锚点一致
+  ✅ PASS: acid_mother 战斗动作镜像保持语义根
+  ✅ PASS: honey_queen 新战斗素材可装载
+  ✅ PASS: honey_queen 新素材七动作完整且锚点一致
+  ✅ PASS: honey_queen 战斗动作镜像保持语义根
+<< 用例 test_enemy_combat_b04_assets.gd 通过（36 条断言）>>
+
+---- 用例 test_project_config.gd ----
+  ✅ PASS: InputMap 动作 'move_left' 存在且 events 非空（1 个事件）
+  ✅ PASS: InputMap 动作 'move_right' 存在且 events 非空（1 个事件）
+  ✅ PASS: InputMap 动作 'move_down' 存在且 events 非空（2 个事件）
+  ✅ PASS: InputMap 动作 'jump' 存在且 events 非空（1 个事件）
+  ✅ PASS: InputMap 动作 'dodge' 存在且 events 非空（1 个事件）
+  ✅ PASS: InputMap 动作 'guard' 存在且 events 非空（1 个事件）
+  ✅ PASS: InputMap 动作 'attack' 存在且 events 非空（1 个事件）
+  ✅ PASS: InputMap 动作 'skill_1' 存在且 events 非空（1 个事件）
+  ✅ PASS: InputMap 动作 'skill_2' 存在且 events 非空（1 个事件）
+  ✅ PASS: InputMap 动作 'skill_3' 存在且 events 非空（1 个事件）
+  ✅ PASS: InputMap 动作 'skill_4' 存在且 events 非空（1 个事件）
+  ✅ PASS: InputMap 动作 'item_1' 存在且 events 非空（1 个事件）
+  ✅ PASS: InputMap 动作 'item_2' 存在且 events 非空（1 个事件）
+  ✅ PASS: InputMap 动作 'item_3' 存在且 events 非空（1 个事件）
+  ✅ PASS: InputMap 动作 'item_4' 存在且 events 非空（1 个事件）
+  ✅ PASS: InputMap 动作 'item_5' 存在且 events 非空（1 个事件）
+  ✅ PASS: InputMap 动作 'interact' 存在且 events 非空（1 个事件）
+  ✅ PASS: InputMap 动作 'inventory' 存在且 events 非空（1 个事件）
+  ✅ PASS: InputMap 动作 'map' 存在且 events 非空（1 个事件）
+  ✅ PASS: InputMap 动作 'pause' 存在且 events 非空（1 个事件）
+  ✅ PASS: InputMap 动作 'weapon_next' 存在且 events 非空（1 个事件）
+  ✅ PASS: application/run/main_scene == res://scenes/main.tscn
+  ✅ PASS: layer_names/2d_physics/layer_1 == "world"
+  ✅ PASS: layer_names/2d_physics/layer_2 == "player_body"
+  ✅ PASS: layer_names/2d_physics/layer_3 == "enemy_body"
+  ✅ PASS: layer_names/2d_physics/layer_4 == "player_hitbox"
+  ✅ PASS: layer_names/2d_physics/layer_5 == "enemy_hitbox"
+  ✅ PASS: layer_names/2d_physics/layer_6 == "hurtbox"
+  ✅ PASS: layer_names/2d_physics/layer_7 == "interactable"
+  ✅ PASS: layer_names/2d_physics/layer_8 == "oneway"
+  ✅ PASS: layer_names/2d_physics/layer_9 == "hazard"
+  ✅ PASS: display/window/size/viewport_width == 640
+  ✅ PASS: display/window/size/viewport_height == 360
+  ✅ PASS: physics/common/physics_ticks_per_second == 60（物理 60Hz）
+<< 用例 test_project_config.gd 通过（34 条断言）>>
+
+---- 用例 test_world_data.gd ----
+  ✅ PASS: DataDB.load_all() 返回 OK
+  ✅ PASS: DataDB.loaded == true
+  ✅ PASS: 区域数 regions == 3
+  ✅ PASS: 房间数 rooms == 15
+  ✅ PASS: 敌人数 enemies == 12
+  ✅ PASS: 敌人类别 small == 8
+  ✅ PASS: 敌人类别 elite == 3
+  ✅ PASS: 敌人类别 boss == 1
+  ✅ PASS: 道具数 items >= 12（实际 13）
+  ✅ PASS: 武器数 weapons == 4
+  ✅ PASS: 技能数 skills == 5
+  ✅ PASS: 天赋数 talents == 12
+  ✅ PASS: 房间 camp_01 门 w：target 房间 'camp_02' 存在
+  ✅ PASS: 房间 camp_01 门 w：目标房间 'camp_02' 存在 id=='e' 的门
+  ✅ PASS: 房间 camp_01 门 w：与 camp_02/e 两门互指（对方 target=='camp_01'、target_door=='w'）
+  ✅ PASS: 房间 camp_01 门 w：与 camp_02/e 的 one_way 组合合法（双向门两侧均 false / 单向对恰一侧 true）
+  ✅ PASS: 房间 camp_01 门 w：requires '' ∈ {"", "double_jump"}
+  ✅ PASS: 房间 camp_01 门 e：target 房间 'forest_01' 存在
+  ✅ PASS: 房间 camp_01 门 e：目标房间 'forest_01' 存在 id=='w' 的门
+  ✅ PASS: 房间 camp_01 门 e：与 forest_01/w 两门互指（对方 target=='camp_01'、target_door=='e'）
+  ✅ PASS: 房间 camp_01 门 e：与 forest_01/w 的 one_way 组合合法（双向门两侧均 false / 单向对恰一侧 true）
+  ✅ PASS: 房间 camp_01 门 e：requires '' ∈ {"", "double_jump"}
+  ✅ PASS: 房间 camp_01 门 n：target 房间 'cave_07' 存在
+  ✅ PASS: 房间 camp_01 门 n：目标房间 'cave_07' 存在 id=='s' 的门
+  ✅ PASS: 房间 camp_01 门 n：与 cave_07/s 两门互指（对方 target=='camp_01'、target_door=='n'）
+  ✅ PASS: 房间 camp_01 门 n：与 cave_07/s 的 one_way 组合合法（双向门两侧均 false / 单向对恰一侧 true）
+  ✅ PASS: 房间 camp_01 门 n：requires '' ∈ {"", "double_jump"}
+  ✅ PASS: 房间 camp_02 门 e：target 房间 'camp_01' 存在
+  ✅ PASS: 房间 camp_02 门 e：目标房间 'camp_01' 存在 id=='w' 的门
+  ✅ PASS: 房间 camp_02 门 e：与 camp_01/w 两门互指（对方 target=='camp_02'、target_door=='e'）
+  ✅ PASS: 房间 camp_02 门 e：与 camp_01/w 的 one_way 组合合法（双向门两侧均 false / 单向对恰一侧 true）
+  ✅ PASS: 房间 camp_02 门 e：requires '' ∈ {"", "double_jump"}
+  ✅ PASS: 房间 forest_01 门 w：target 房间 'camp_01' 存在
+  ✅ PASS: 房间 forest_01 门 w：目标房间 'camp_01' 存在 id=='e' 的门
+  ✅ PASS: 房间 forest_01 门 w：与 camp_01/e 两门互指（对方 target=='forest_01'、target_door=='w'）
+  ✅ PASS: 房间 forest_01 门 w：与 camp_01/e 的 one_way 组合合法（双向门两侧均 false / 单向对恰一侧 true）
+  ✅ PASS: 房间 forest_01 门 w：requires '' ∈ {"", "double_jump"}
+  ✅ PASS: 房间 forest_01 门 e：target 房间 'forest_02' 存在
+  ✅ PASS: 房间 forest_01 门 e：目标房间 'forest_02' 存在 id=='w' 的门
+  ✅ PASS: 房间 forest_01 门 e：与 forest_02/w 两门互指（对方 target=='forest_01'、target_door=='e'）
+  ✅ PASS: 房间 forest_01 门 e：与 forest_02/w 的 one_way 组合合法（双向门两侧均 false / 单向对恰一侧 true）
+  ✅ PASS: 房间 forest_01 门 e：requires '' ∈ {"", "double_jump"}
+  ✅ PASS: 房间 forest_01 门 e2：target 房间 'forest_04' 存在
+  ✅ PASS: 房间 forest_01 门 e2：目标房间 'forest_04' 存在 id=='w' 的门
+  ✅ PASS: 房间 forest_01 门 e2：与 forest_04/w 两门互指（对方 target=='forest_01'、target_door=='e2'）
+  ✅ PASS: 房间 forest_01 门 e2：与 forest_04/w 的 one_way 组合合法（双向门两侧均 false / 单向对恰一侧 true）
+  ✅ PASS: 房间 forest_01 门 e2：requires '' ∈ {"", "double_jump"}
+  ✅ PASS: 房间 forest_02 门 w：target 房间 'forest_01' 存在
+  ✅ PASS: 房间 forest_02 门 w：目标房间 'forest_01' 存在 id=='e' 的门
+  ✅ PASS: 房间 forest_02 门 w：与 forest_01/e 两门互指（对方 target=='forest_02'、target_door=='w'）
+  ✅ PASS: 房间 forest_02 门 w：与 forest_01/e 的 one_way 组合合法（双向门两侧均 false / 单向对恰一侧 true）
+  ✅ PASS: 房间 forest_02 门 w：requires '' ∈ {"", "double_jump"}
+  ✅ PASS: 房间 forest_02 门 e：target 房间 'forest_03' 存在
+  ✅ PASS: 房间 forest_02 门 e：目标房间 'forest_03' 存在 id=='w' 的门
+  ✅ PASS: 房间 forest_02 门 e：与 forest_03/w 两门互指（对方 target=='forest_02'、target_door=='e'）
+  ✅ PASS: 房间 forest_02 门 e：与 forest_03/w 的 one_way 组合合法（双向门两侧均 false / 单向对恰一侧 true）
+  ✅ PASS: 房间 forest_02 门 e：requires '' ∈ {"", "double_jump"}
+  ✅ PASS: 房间 forest_02 门 s：target 房间 'forest_04' 存在
+  ✅ PASS: 房间 forest_02 门 s：目标房间 'forest_04' 存在 id=='n' 的门
+  ✅ PASS: 房间 forest_02 门 s：与 forest_04/n 两门互指（对方 target=='forest_02'、target_door=='s'）
+  ✅ PASS: 房间 forest_02 门 s：与 forest_04/n 的 one_way 组合合法（双向门两侧均 false / 单向对恰一侧 true）
+  ✅ PASS: 房间 forest_02 门 s：requires '' ∈ {"", "double_jump"}
+  ✅ PASS: 房间 forest_03 门 w：target 房间 'forest_02' 存在
+  ✅ PASS: 房间 forest_03 门 w：目标房间 'forest_02' 存在 id=='e' 的门
+  ✅ PASS: 房间 forest_03 门 w：与 forest_02/e 两门互指（对方 target=='forest_03'、target_door=='w'）
+  ✅ PASS: 房间 forest_03 门 w：与 forest_02/e 的 one_way 组合合法（双向门两侧均 false / 单向对恰一侧 true）
+  ✅ PASS: 房间 forest_03 门 w：requires '' ∈ {"", "double_jump"}
+  ✅ PASS: 房间 forest_03 门 n：target 房间 'forest_06' 存在
+  ✅ PASS: 房间 forest_03 门 n：目标房间 'forest_06' 存在 id=='s' 的门
+  ✅ PASS: 房间 forest_03 门 n：与 forest_06/s 两门互指（对方 target=='forest_03'、target_door=='n'）
+  ✅ PASS: 房间 forest_03 门 n：与 forest_06/s 的 one_way 组合合法（双向门两侧均 false / 单向对恰一侧 true）
+  ✅ PASS: 房间 forest_03 门 n：requires 'double_jump' ∈ {"", "double_jump"}
+  ✅ PASS: 房间 forest_04 门 w：target 房间 'forest_01' 存在
+  ✅ PASS: 房间 forest_04 门 w：目标房间 'forest_01' 存在 id=='e2' 的门
+  ✅ PASS: 房间 forest_04 门 w：与 forest_01/e2 两门互指（对方 target=='forest_04'、target_door=='w'）
+  ✅ PASS: 房间 forest_04 门 w：与 forest_01/e2 的 one_way 组合合法（双向门两侧均 false / 单向对恰一侧 true）
+  ✅ PASS: 房间 forest_04 门 w：requires '' ∈ {"", "double_jump"}
+  ✅ PASS: 房间 forest_04 门 n：target 房间 'forest_02' 存在
+  ✅ PASS: 房间 forest_04 门 n：目标房间 'forest_02' 存在 id=='s' 的门
+  ✅ PASS: 房间 forest_04 门 n：与 forest_02/s 两门互指（对方 target=='forest_04'、target_door=='n'）
+  ✅ PASS: 房间 forest_04 门 n：与 forest_02/s 的 one_way 组合合法（双向门两侧均 false / 单向对恰一侧 true）
+  ✅ PASS: 房间 forest_04 门 n：requires '' ∈ {"", "double_jump"}
+  ✅ PASS: 房间 forest_04 门 e：target 房间 'forest_05' 存在
+  ✅ PASS: 房间 forest_04 门 e：目标房间 'forest_05' 存在 id=='w' 的门
+  ✅ PASS: 房间 forest_04 门 e：与 forest_05/w 两门互指（对方 target=='forest_04'、target_door=='e'）
+  ✅ PASS: 房间 forest_04 门 e：与 forest_05/w 的 one_way 组合合法（双向门两侧均 false / 单向对恰一侧 true）
+  ✅ PASS: 房间 forest_04 门 e：requires '' ∈ {"", "double_jump"}
+  ✅ PASS: 房间 forest_05 门 w：target 房间 'forest_04' 存在
+  ✅ PASS: 房间 forest_05 门 w：目标房间 'forest_04' 存在 id=='e' 的门
+  ✅ PASS: 房间 forest_05 门 w：与 forest_04/e 两门互指（对方 target=='forest_05'、target_door=='w'）
+  ✅ PASS: 房间 forest_05 门 w：与 forest_04/e 的 one_way 组合合法（双向门两侧均 false / 单向对恰一侧 true）
+  ✅ PASS: 房间 forest_05 门 w：requires '' ∈ {"", "double_jump"}
+  ✅ PASS: 房间 forest_05 门 e：target 房间 'cave_01' 存在
+  ✅ PASS: 房间 forest_05 门 e：目标房间 'cave_01' 存在 id=='w' 的门
+  ✅ PASS: 房间 forest_05 门 e：与 cave_01/w 两门互指（对方 target=='forest_05'、target_door=='e'）
+  ✅ PASS: 房间 forest_05 门 e：与 cave_01/w 的 one_way 组合合法（双向门两侧均 false / 单向对恰一侧 true）
+  ✅ PASS: 房间 forest_05 门 e：requires '' ∈ {"", "double_jump"}
+  ✅ PASS: 房间 forest_06 门 s：target 房间 'forest_03' 存在
+  ✅ PASS: 房间 forest_06 门 s：目标房间 'forest_03' 存在 id=='n' 的门
+  ✅ PASS: 房间 forest_06 门 s：与 forest_03/n 两门互指（对方 target=='forest_06'、target_door=='s'）
+  ✅ PASS: 房间 forest_06 门 s：与 forest_03/n 的 one_way 组合合法（双向门两侧均 false / 单向对恰一侧 true）
+  ✅ PASS: 房间 forest_06 门 s：requires 'double_jump' ∈ {"", "double_jump"}
+  ✅ PASS: 房间 cave_01 门 w：target 房间 'forest_05' 存在
+  ✅ PASS: 房间 cave_01 门 w：目标房间 'forest_05' 存在 id=='e' 的门
+  ✅ PASS: 房间 cave_01 门 w：与 forest_05/e 两门互指（对方 target=='cave_01'、target_door=='w'）
+  ✅ PASS: 房间 cave_01 门 w：与 forest_05/e 的 one_way 组合合法（双向门两侧均 false / 单向对恰一侧 true）
+  ✅ PASS: 房间 cave_01 门 w：requires '' ∈ {"", "double_jump"}
+  ✅ PASS: 房间 cave_01 门 e：target 房间 'cave_02' 存在
+  ✅ PASS: 房间 cave_01 门 e：目标房间 'cave_02' 存在 id=='w' 的门
+  ✅ PASS: 房间 cave_01 门 e：与 cave_02/w 两门互指（对方 target=='cave_01'、target_door=='e'）
+  ✅ PASS: 房间 cave_01 门 e：与 cave_02/w 的 one_way 组合合法（双向门两侧均 false / 单向对恰一侧 true）
+  ✅ PASS: 房间 cave_01 门 e：requires '' ∈ {"", "double_jump"}
+  ✅ PASS: 房间 cave_02 门 w：target 房间 'cave_01' 存在
+  ✅ PASS: 房间 cave_02 门 w：目标房间 'cave_01' 存在 id=='e' 的门
+  ✅ PASS: 房间 cave_02 门 w：与 cave_01/e 两门互指（对方 target=='cave_02'、target_door=='w'）
+  ✅ PASS: 房间 cave_02 门 w：与 cave_01/e 的 one_way 组合合法（双向门两侧均 false / 单向对恰一侧 true）
+  ✅ PASS: 房间 cave_02 门 w：requires '' ∈ {"", "double_jump"}
+  ✅ PASS: 房间 cave_02 门 e：target 房间 'cave_03' 存在
+  ✅ PASS: 房间 cave_02 门 e：目标房间 'cave_03' 存在 id=='w' 的门
+  ✅ PASS: 房间 cave_02 门 e：与 cave_03/w 两门互指（对方 target=='cave_02'、target_door=='e'）
+  ✅ PASS: 房间 cave_02 门 e：与 cave_03/w 的 one_way 组合合法（双向门两侧均 false / 单向对恰一侧 true）
+  ✅ PASS: 房间 cave_02 门 e：requires '' ∈ {"", "double_jump"}
+  ✅ PASS: 房间 cave_03 门 w：target 房间 'cave_02' 存在
+  ✅ PASS: 房间 cave_03 门 w：目标房间 'cave_02' 存在 id=='e' 的门
+  ✅ PASS: 房间 cave_03 门 w：与 cave_02/e 两门互指（对方 target=='cave_03'、target_door=='w'）
+  ✅ PASS: 房间 cave_03 门 w：与 cave_02/e 的 one_way 组合合法（双向门两侧均 false / 单向对恰一侧 true）
+  ✅ PASS: 房间 cave_03 门 w：requires '' ∈ {"", "double_jump"}
+  ✅ PASS: 房间 cave_03 门 e：target 房间 'cave_04' 存在
+  ✅ PASS: 房间 cave_03 门 e：目标房间 'cave_04' 存在 id=='w' 的门
+  ✅ PASS: 房间 cave_03 门 e：与 cave_04/w 两门互指（对方 target=='cave_03'、target_door=='e'）
+  ✅ PASS: 房间 cave_03 门 e：与 cave_04/w 的 one_way 组合合法（双向门两侧均 false / 单向对恰一侧 true）
+  ✅ PASS: 房间 cave_03 门 e：requires '' ∈ {"", "double_jump"}
+  ✅ PASS: 房间 cave_04 门 w：target 房间 'cave_03' 存在
+  ✅ PASS: 房间 cave_04 门 w：目标房间 'cave_03' 存在 id=='e' 的门
+  ✅ PASS: 房间 cave_04 门 w：与 cave_03/e 两门互指（对方 target=='cave_04'、target_door=='w'）
+  ✅ PASS: 房间 cave_04 门 w：与 cave_03/e 的 one_way 组合合法（双向门两侧均 false / 单向对恰一侧 true）
+  ✅ PASS: 房间 cave_04 门 w：requires '' ∈ {"", "double_jump"}
+  ✅ PASS: 房间 cave_04 门 e：target 房间 'cave_05' 存在
+  ✅ PASS: 房间 cave_04 门 e：目标房间 'cave_05' 存在 id=='w' 的门
+  ✅ PASS: 房间 cave_04 门 e：与 cave_05/w 两门互指（对方 target=='cave_04'、target_door=='e'）
+  ✅ PASS: 房间 cave_04 门 e：与 cave_05/w 的 one_way 组合合法（双向门两侧均 false / 单向对恰一侧 true）
+  ✅ PASS: 房间 cave_04 门 e：requires '' ∈ {"", "double_jump"}
+  ✅ PASS: 房间 cave_04 门 e2：target 房间 'cave_06' 存在
+  ✅ PASS: 房间 cave_04 门 e2：目标房间 'cave_06' 存在 id=='w' 的门
+  ✅ PASS: 房间 cave_04 门 e2：与 cave_06/w 两门互指（对方 target=='cave_04'、target_door=='e2'）
+  ✅ PASS: 房间 cave_04 门 e2：与 cave_06/w 的 one_way 组合合法（双向门两侧均 false / 单向对恰一侧 true）
+  ✅ PASS: 房间 cave_04 门 e2：requires '' ∈ {"", "double_jump"}
+  ✅ PASS: 房间 cave_05 门 w：target 房间 'cave_04' 存在
+  ✅ PASS: 房间 cave_05 门 w：目标房间 'cave_04' 存在 id=='e' 的门
+  ✅ PASS: 房间 cave_05 门 w：与 cave_04/e 两门互指（对方 target=='cave_05'、target_door=='w'）
+  ✅ PASS: 房间 cave_05 门 w：与 cave_04/e 的 one_way 组合合法（双向门两侧均 false / 单向对恰一侧 true）
+  ✅ PASS: 房间 cave_05 门 w：requires '' ∈ {"", "double_jump"}
+  ✅ PASS: 房间 cave_06 门 w：target 房间 'cave_04' 存在
+  ✅ PASS: 房间 cave_06 门 w：目标房间 'cave_04' 存在 id=='e2' 的门
+  ✅ PASS: 房间 cave_06 门 w：与 cave_04/e2 两门互指（对方 target=='cave_06'、target_door=='w'）
+  ✅ PASS: 房间 cave_06 门 w：与 cave_04/e2 的 one_way 组合合法（双向门两侧均 false / 单向对恰一侧 true）
+  ✅ PASS: 房间 cave_06 门 w：requires '' ∈ {"", "double_jump"}
+  ✅ PASS: 房间 cave_06 门 s：target 房间 'cave_07' 存在
+  ✅ PASS: 房间 cave_06 门 s：目标房间 'cave_07' 存在 id=='n' 的门
+  ✅ PASS: 房间 cave_06 门 s：与 cave_07/n 两门互指（对方 target=='cave_06'、target_door=='s'）
+  ✅ PASS: 房间 cave_06 门 s：与 cave_07/n 的 one_way 组合合法（双向门两侧均 false / 单向对恰一侧 true）
+  ✅ PASS: 房间 cave_06 门 s：requires '' ∈ {"", "double_jump"}
+  ✅ PASS: 房间 cave_07 门 n：target 房间 'cave_06' 存在
+  ✅ PASS: 房间 cave_07 门 n：目标房间 'cave_06' 存在 id=='s' 的门
+  ✅ PASS: 房间 cave_07 门 n：与 cave_06/s 两门互指（对方 target=='cave_07'、target_door=='n'）
+  ✅ PASS: 房间 cave_07 门 n：与 cave_06/s 的 one_way 组合合法（双向门两侧均 false / 单向对恰一侧 true）
+  ✅ PASS: 房间 cave_07 门 n：requires '' ∈ {"", "double_jump"}
+  ✅ PASS: 房间 cave_07 门 s：target 房间 'camp_01' 存在
+  ✅ PASS: 房间 cave_07 门 s：目标房间 'camp_01' 存在 id=='n' 的门
+  ✅ PASS: 房间 cave_07 门 s：与 camp_01/n 两门互指（对方 target=='cave_07'、target_door=='s'）
+  ✅ PASS: 房间 cave_07 门 s：与 camp_01/n 的 one_way 组合合法（双向门两侧均 false / 单向对恰一侧 true）
+  ✅ PASS: 房间 cave_07 门 s：requires '' ∈ {"", "double_jump"}
+  ✅ PASS: 房间 forest_01 刷怪 id 'moss_beetle' 能经 get_enemy 查到
+  ✅ PASS: 房间 forest_01 刷怪 id 'moss_beetle' 能经 get_enemy 查到
+  ✅ PASS: 宝箱 chest_f01：item 'potion_small' 能经 get_item 查到
+  ✅ PASS: 房间 forest_02 刷怪 id 'milk_moth' 能经 get_enemy 查到
+  ✅ PASS: 房间 forest_02 刷怪 id 'milk_slime' 能经 get_enemy 查到
+  ✅ PASS: 房间 forest_03 刷怪 id 'vine_flower' 能经 get_enemy 查到
+  ✅ PASS: 房间 forest_04 刷怪 id 'moss_guard' 能经 get_enemy 查到
+  ✅ PASS: 宝箱 chest_f04：item 'hp_fragment' 能经 get_item 查到
+  ✅ PASS: 宝箱 chest_f06：item 'hp_fragment' 能经 get_item 查到
+  ✅ PASS: 房间 cave_02 刷怪 id 'lamp_bug' 能经 get_enemy 查到
+  ✅ PASS: 房间 cave_02 刷怪 id 'lamp_bug' 能经 get_enemy 查到
+  ✅ PASS: 房间 cave_02 刷怪 id 'shadow_wisp' 能经 get_enemy 查到
+  ✅ PASS: 宝箱 chest_c02：item 'sta_fragment' 能经 get_item 查到
+  ✅ PASS: 房间 cave_03 刷怪 id 'acid_slug' 能经 get_enemy 查到
+  ✅ PASS: 房间 cave_03 刷怪 id 'acid_slug' 能经 get_enemy 查到
+  ✅ PASS: 宝箱 chest_c03：item 为空串时必须 coins>0（实际 coins=30.0）
+  ✅ PASS: 房间 cave_04 刷怪 id 'hive_guard' 能经 get_enemy 查到
+  ✅ PASS: 房间 cave_05 刷怪 id 'acid_mother' 能经 get_enemy 查到
+  ✅ PASS: 宝箱 chest_c05：item 'bag_expand' 能经 get_item 查到
+  ✅ PASS: 宝箱 chest_c05_h：item 'mana_fragment' 能经 get_item 查到
+  ✅ PASS: 房间 cave_06 刷怪 id 'honey_queen' 能经 get_enemy 查到
+  ✅ PASS: 宝箱 chest_c07：item 'ability_double_jump' 能经 get_item 查到
+<< 用例 test_world_data.gd 通过（194 条断言）>>
+
+---- 用例 test_game_state.gd ----
+  ✅ PASS: 初始默认值：hp == 80
+  ✅ PASS: 初始默认值：hp_max == 80
+  ✅ PASS: 初始默认值：sta == 100
+  ✅ PASS: 初始默认值：sta_max == 100
+  ✅ PASS: 初始默认值：mana == 60
+  ✅ PASS: 初始默认值：mana_max == 60
+  ✅ PASS: 初始默认值：level == 1
+  ✅ PASS: 初始默认值：exp == 0
+  ✅ PASS: 初始默认值：coin == 0
+  ✅ PASS: 初始默认值：weapon_id == hammer_01
+  ✅ PASS: 初始默认值：current_room == camp_01
+  ✅ PASS: 初始默认值：checkpoint_id == cp_camp_01
+  ✅ PASS: 初始默认值：abilities 为空
+  ✅ PASS: 初始默认值：talents 为空
+  ✅ PASS: 初始默认值：inventory 为空
+  ✅ PASS: 初始默认值：hotbar 为空
+  ✅ PASS: 初始默认值：opened_chests 为空
+  ✅ PASS: 初始默认值：visited_rooms 为空
+  ✅ PASS: 初始默认值：defeated_bosses 为空
+  ✅ PASS: 初始默认值：play_time == 0.0
+  ✅ PASS: 存档往返恢复字段 'level'
+  ✅ PASS: 存档往返恢复字段 'exp'
+  ✅ PASS: 存档往返恢复字段 'coin'
+  ✅ PASS: 存档往返恢复字段 'hp'
+  ✅ PASS: 存档往返恢复字段 'hp_max'
+  ✅ PASS: 存档往返恢复字段 'sta'
+  ✅ PASS: 存档往返恢复字段 'sta_max'
+  ✅ PASS: 存档往返恢复字段 'mana'
+  ✅ PASS: 存档往返恢复字段 'mana_max'
+  ✅ PASS: 存档往返恢复字段 'weapon_id'
+  ✅ PASS: 存档往返恢复字段 'abilities'
+  ✅ PASS: 存档往返恢复字段 'talents'
+  ✅ PASS: 存档往返恢复字段 'inventory'
+  ✅ PASS: 存档往返恢复字段 'hotbar'
+  ✅ PASS: 存档往返恢复字段 'opened_chests'
+  ✅ PASS: 存档往返恢复字段 'visited_rooms'
+  ✅ PASS: 存档往返恢复字段 'defeated_bosses'
+  ✅ PASS: 存档往返恢复字段 'current_room'
+  ✅ PASS: 存档往返恢复字段 'checkpoint_id'
+  ✅ PASS: 存档往返恢复字段 'play_time'
+  ✅ PASS: 读档后 level == 5
+  ✅ PASS: 读档后 coin == 77
+  ✅ PASS: 读档后 weapon_id == milk_gun
+  ✅ PASS: 读档后 current_room == cave_03
+  ✅ PASS: 读档后 checkpoint_id == cp_cave_04
+  ✅ PASS: reset 后默认值：hp == 80
+  ✅ PASS: reset 后默认值：hp_max == 80
+  ✅ PASS: reset 后默认值：sta == 100
+  ✅ PASS: reset 后默认值：sta_max == 100
+  ✅ PASS: reset 后默认值：mana == 60
+  ✅ PASS: reset 后默认值：mana_max == 60
+  ✅ PASS: reset 后默认值：level == 1
+  ✅ PASS: reset 后默认值：exp == 0
+  ✅ PASS: reset 后默认值：coin == 0
+  ✅ PASS: reset 后默认值：weapon_id == hammer_01
+  ✅ PASS: reset 后默认值：current_room == camp_01
+  ✅ PASS: reset 后默认值：checkpoint_id == cp_camp_01
+  ✅ PASS: reset 后默认值：abilities 为空
+  ✅ PASS: reset 后默认值：talents 为空
+  ✅ PASS: reset 后默认值：inventory 为空
+  ✅ PASS: reset 后默认值：hotbar 为空
+  ✅ PASS: reset 后默认值：opened_chests 为空
+  ✅ PASS: reset 后默认值：visited_rooms 为空
+  ✅ PASS: reset 后默认值：defeated_bosses 为空
+  ✅ PASS: reset 后默认值：play_time == 0.0
+<< 用例 test_game_state.gd 通过（65 条断言）>>
+
+---- 用例 test_player.gd ----
+  ✅ PASS: Lv1 奶瓶锤普攻 = (12+8+0)×1.0 = 20
+  ✅ PASS: Lv10 奶瓶锤普攻 = (12+8+18) = 38
+  ✅ PASS: 技能倍率 1.5 生效：(10+8)×1.5 = 27
+  ✅ PASS: Lv15 公式值：8+8+2×14 = 44
+  ✅ PASS: 普通格挡 20 伤害 → 减伤 60% 后扣 8 HP
+  ✅ PASS: 普通格挡体力消耗 = 20×1.2 = 24
+  ✅ PASS: 格挡后体力 = 76
+  ✅ PASS: 体力充足不破防
+  ✅ PASS: 完美格挡 0 伤害
+  ✅ PASS: 完美格挡反弹 30% = 6
+  ✅ PASS: 完美格挡不耗体力
+  ✅ PASS: 体力不足 → 破防吃全额
+  ✅ PASS: 破防标记置位
+  ✅ PASS: 体力恰好够（24≥24）不破防
+  ✅ PASS: DamagePacket 基础伤害注入
+  ✅ PASS: DamagePacket 类型：法术
+  ✅ PASS: DamagePacket 来源 id
+  ✅ PASS: DamagePacket 默认物理
+<< 用例 test_player.gd 通过（18 条断言）>>
+
+---- 用例 test_enemy_assets.gd ----
+  ✅ PASS: moss_beetle 正式待机素材可装载
+  ✅ PASS: moss_beetle 原地循环播放多帧 idle
+  ✅ PASS: moss_beetle 镜像保持语义根
+  ✅ PASS: moss_beetle 待机不自动播放攻击特效
+  ✅ PASS: moss_beetle 六帧专属特效已接入
+  ✅ PASS: moss_beetle 与战斗表编号一致
+  ✅ PASS: milk_moth 正式待机素材可装载
+  ✅ PASS: milk_moth 原地循环播放多帧 idle
+  ✅ PASS: milk_moth 镜像保持语义根
+  ✅ PASS: milk_moth 待机不自动播放攻击特效
+  ✅ PASS: milk_moth 与战斗表编号一致
+  ✅ PASS: milk_slime 正式待机素材可装载
+  ✅ PASS: milk_slime 原地循环播放多帧 idle
+  ✅ PASS: milk_slime 镜像保持语义根
+  ✅ PASS: milk_slime 待机不自动播放攻击特效
+  ✅ PASS: milk_slime 与战斗表编号一致
+  ✅ PASS: vine_flower 正式待机素材可装载
+  ✅ PASS: vine_flower 原地循环播放多帧 idle
+  ✅ PASS: vine_flower 镜像保持语义根
+  ✅ PASS: vine_flower 待机不自动播放攻击特效
+  ✅ PASS: vine_flower 与战斗表编号一致
+  ✅ PASS: lamp_bug 正式待机素材可装载
+  ✅ PASS: lamp_bug 原地循环播放多帧 idle
+  ✅ PASS: lamp_bug 镜像保持语义根
+  ✅ PASS: lamp_bug 待机不自动播放攻击特效
+  ✅ PASS: lamp_bug 六帧专属特效已接入
+  ✅ PASS: lamp_bug 与战斗表编号一致
+  ✅ PASS: shadow_wisp 正式待机素材可装载
+  ✅ PASS: shadow_wisp 原地循环播放多帧 idle
+  ✅ PASS: shadow_wisp 镜像保持语义根
+  ✅ PASS: shadow_wisp 待机不自动播放攻击特效
+  ✅ PASS: shadow_wisp 与战斗表编号一致
+  ✅ PASS: acid_slug 正式待机素材可装载
+  ✅ PASS: acid_slug 原地循环播放多帧 idle
+  ✅ PASS: acid_slug 镜像保持语义根
+  ✅ PASS: acid_slug 待机不自动播放攻击特效
+  ✅ PASS: acid_slug 六帧专属特效已接入
+  ✅ PASS: acid_slug 与战斗表编号一致
+  ✅ PASS: wax_bee 正式待机素材可装载
+  ✅ PASS: wax_bee 原地循环播放多帧 idle
+  ✅ PASS: wax_bee 镜像保持语义根
+  ✅ PASS: wax_bee 待机不自动播放攻击特效
+  ✅ PASS: wax_bee 与战斗表编号一致
+  ✅ PASS: moss_guard 正式待机素材可装载
+  ✅ PASS: moss_guard 原地循环播放多帧 idle
+  ✅ PASS: moss_guard 镜像保持语义根
+  ✅ PASS: moss_guard 待机不自动播放攻击特效
+  ✅ PASS: moss_guard 六帧专属特效已接入
+  ✅ PASS: moss_guard 与战斗表编号一致
+  ✅ PASS: hive_guard 正式待机素材可装载
+  ✅ PASS: hive_guard 原地循环播放多帧 idle
+  ✅ PASS: hive_guard 镜像保持语义根
+  ✅ PASS: hive_guard 待机不自动播放攻击特效
+  ✅ PASS: hive_guard 六帧专属特效已接入
+  ✅ PASS: hive_guard 与战斗表编号一致
+  ✅ PASS: acid_mother 正式待机素材可装载
+  ✅ PASS: acid_mother 原地循环播放多帧 idle
+  ✅ PASS: acid_mother 镜像保持语义根
+  ✅ PASS: acid_mother 待机不自动播放攻击特效
+  ✅ PASS: acid_mother 六帧专属特效已接入
+  ✅ PASS: acid_mother 与战斗表编号一致
+  ✅ PASS: honey_queen 正式待机素材可装载
+  ✅ PASS: honey_queen 原地循环播放多帧 idle
+  ✅ PASS: honey_queen 镜像保持语义根
+  ✅ PASS: honey_queen 待机不自动播放攻击特效
+  ✅ PASS: honey_queen 与战斗表编号一致
+<< 用例 test_enemy_assets.gd 通过（66 条断言）>>
+
+=== 汇总：passed=423 / total=423 ===
+RESULT: ALL PASS

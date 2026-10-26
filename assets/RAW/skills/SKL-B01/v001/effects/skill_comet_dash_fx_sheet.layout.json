@@ -1,0 +1,84 @@
+{
+  "skill_id": "skill_comet_dash",
+  "sheet": "skill_comet_dash_fx_sheet.png",
+  "layout": {
+    "columns": 4,
+    "rows": 2,
+    "order": "row_major",
+    "actual_size": [
+      1774,
+      887
+    ],
+    "cell_boundaries_x": [
+      0,
+      444,
+      887,
+      1330,
+      1774
+    ],
+    "cell_boundaries_y": [
+      0,
+      444,
+      887
+    ]
+  },
+  "target_frame_size": [
+    128,
+    96
+  ],
+  "target_root_px": [
+    96,
+    88
+  ],
+  "frames": [
+    "bubble_start",
+    "tail_short",
+    "tail_grow",
+    "dash_full",
+    "dash_hold",
+    "breakup",
+    "tail_fade",
+    "glint_fade"
+  ],
+  "generation": "builtin_image_gen",
+  "alpha_extrema": [
+    0,
+    255
+  ],
+  "source_roots_px": [
+    [
+      330,
+      340
+    ],
+    [
+      330,
+      340
+    ],
+    [
+      330,
+      340
+    ],
+    [
+      330,
+      340
+    ],
+    [
+      330,
+      340
+    ],
+    [
+      330,
+      340
+    ],
+    [
+      330,
+      340
+    ],
+    [
+      330,
+      340
+    ]
+  ],
+  "source_root_measurement": "Invisible player foot root is about(330,340) in each ~444 square cell. Tail body centerline is about y=240. Suggested common scale .24 to .25 so player foot target(96,88), body center around y63. Root may shift <=8px per frame if measuring leading bubble line; never bbox resize. Right crescent complete but close to 4x2 grid boundary in full frames.",
+  "qa_note": "Sheet actual differs from requested. Main tail kept within cells but soft alpha speckles can touch boundaries. Frame5/6 leading crescent reaches near right cell edge. Do not interpret extent growth as scale drift."
+}

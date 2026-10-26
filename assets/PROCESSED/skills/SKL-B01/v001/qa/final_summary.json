@@ -1,0 +1,62 @@
+{
+  "date": "2026-10-26",
+  "frameCount": 96,
+  "actorFrames": 48,
+  "fxFrames": 48,
+  "animationCount": 43,
+  "icons24": 6,
+  "icons48": 6,
+  "allFramesTrueAlpha": true,
+  "actorContactMaxError": 0,
+  "emptyFrames": [],
+  "warnings": [],
+  "status": "asset_ready_for_integration",
+  "gameplayImplemented": false,
+  "standaloneProductionPng": 114,
+  "actorClips": 30,
+  "fxClips": 13,
+  "actorSheets": 30,
+  "fxSheets": 13,
+  "atlasCount": 2,
+  "beamComponents": 6,
+  "canonicalBridge": "qa/canonical_bridge.png",
+  "preview": "preview/index.html",
+  "coordinateContract": "素材局部root脚底，对应现有CharacterBody2D碰撞中心+(0,17)，口部相对脚底(14,-30)",
+  "godot": {
+    "isolatedProject": true,
+    "liveProjectScriptsChanged": false,
+    "engine": "4.7.2-stable (official)",
+    "resources": [
+      {
+        "animation_frame_references": 96,
+        "animations": 30,
+        "layer": "actor"
+      },
+      {
+        "animation_frame_references": 60,
+        "animations": 13,
+        "layer": "fx"
+      }
+    ],
+    "checks": [
+      {
+        "name": "import",
+        "exitCode": 0,
+        "errors": []
+      },
+      {
+        "name": "resources",
+        "exitCode": 0,
+        "errors": []
+      }
+    ]
+  },
+  "mainProject": {
+    "passed": true,
+    "importExitCode": 0,
+    "unitAssertionsPassed": 423,
+    "unitAssertionsTotal": 423,
+    "smokeExitCode": 0,
+    "report": "qa/main_project/report.json"
+  }
+}

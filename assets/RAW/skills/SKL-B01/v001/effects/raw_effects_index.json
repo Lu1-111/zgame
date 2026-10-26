@@ -1,0 +1,117 @@
+{
+  "batch": "SKL-B01",
+  "version": "v001",
+  "asset_role": "effects_only",
+  "generation": "builtin_image_gen",
+  "sheet_count": 7,
+  "frame_count": 48,
+  "skills_count": 6,
+  "items": [
+    {
+      "skill_id": "skill_comet_dash",
+      "part": "main",
+      "image": "skill_comet_dash_fx_sheet.png",
+      "prompt": "skill_comet_dash_fx_sheet.prompt.txt",
+      "layout": "skill_comet_dash_fx_sheet.layout.json",
+      "frame_count": 8,
+      "size": [
+        1774,
+        887
+      ],
+      "mode": "RGBA",
+      "alpha_zero_fraction": 0.81399,
+      "sha256": "f0f6351fb291b49c700c62eadf7dd4a47f13f0ff71c0d203968d2dd53ba9aebc"
+    },
+    {
+      "skill_id": "skill_giga_milk_beam",
+      "part": "charge",
+      "image": "skill_giga_milk_beam_charge_fx_sheet.png",
+      "prompt": "skill_giga_milk_beam_charge_fx_sheet.prompt.txt",
+      "layout": "skill_giga_milk_beam_charge_fx_sheet.layout.json",
+      "frame_count": 4,
+      "size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "alpha_zero_fraction": 0.57186,
+      "sha256": "b9c5229f7719706d9d6cb8852c94a1f6a41ab691c2a9ac7aeee3bcaa9243306a"
+    },
+    {
+      "skill_id": "skill_giga_milk_beam",
+      "part": "release",
+      "image": "skill_giga_milk_beam_release_fx_sheet.png",
+      "prompt": "skill_giga_milk_beam_release_fx_sheet.prompt.txt",
+      "layout": "skill_giga_milk_beam_release_fx_sheet.layout.json",
+      "frame_count": 4,
+      "size": [
+        2172,
+        724
+      ],
+      "mode": "RGBA",
+      "alpha_zero_fraction": 0.70112,
+      "sha256": "a32b8de8f3df423b7cf4e9d597d9d0d9dc2fb22bb2718bc3d7d138a290d2d15a"
+    },
+    {
+      "skill_id": "skill_milk_spring",
+      "part": "main",
+      "image": "skill_milk_spring_fx_sheet.png",
+      "prompt": "skill_milk_spring_fx_sheet.prompt.txt",
+      "layout": "skill_milk_spring_fx_sheet.layout.json",
+      "frame_count": 8,
+      "size": [
+        1774,
+        887
+      ],
+      "mode": "RGBA",
+      "alpha_zero_fraction": 0.78859,
+      "sha256": "60aa8b25b287738fc8f91720b6388b6a872860616b84e09af15cc81772283873"
+    },
+    {
+      "skill_id": "skill_mirror_milk_guard",
+      "part": "main",
+      "image": "skill_mirror_milk_guard_fx_sheet.png",
+      "prompt": "skill_mirror_milk_guard_fx_sheet.prompt.txt",
+      "layout": "skill_mirror_milk_guard_fx_sheet.layout.json",
+      "frame_count": 8,
+      "size": [
+        1774,
+        887
+      ],
+      "mode": "RGBA",
+      "alpha_zero_fraction": 0.68992,
+      "sha256": "dd189501943b5ab80269c97450e8738591afd9cc32316e763e63b467543f9630"
+    },
+    {
+      "skill_id": "skill_omni_slash",
+      "part": "main",
+      "image": "skill_omni_slash_fx_sheet.png",
+      "prompt": "skill_omni_slash_fx_sheet.prompt.txt",
+      "layout": "skill_omni_slash_fx_sheet.layout.json",
+      "frame_count": 8,
+      "size": [
+        1774,
+        887
+      ],
+      "mode": "RGBA",
+      "alpha_zero_fraction": 0.59588,
+      "sha256": "57ec9f65385136efb31a083dcf5bc3ccab2fd9e7c53749a46df276039a87ab43"
+    },
+    {
+      "skill_id": "skill_star_milk_prison",
+      "part": "main",
+      "image": "skill_star_milk_prison_fx_sheet.png",
+      "prompt": "skill_star_milk_prison_fx_sheet.prompt.txt",
+      "layout": "skill_star_milk_prison_fx_sheet.layout.json",
+      "frame_count": 8,
+      "size": [
+        1774,
+        887
+      ],
+      "mode": "RGBA",
+      "alpha_zero_fraction": 0.68377,
+      "sha256": "c186b18548e6789441373c06167e9e8df2147f6b719de8fb4eb77d696db05565"
+    }
+  ],
+  "validation": "PNG RGBA, true alpha with zero and opaque pixels. All prompts/layouts present. Actual dimensions and measured anchors documented. No source art editing performed."
+}

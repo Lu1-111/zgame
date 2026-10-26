@@ -1,0 +1,524 @@
+{
+  "schema": "skill_design_proposal/1.0",
+  "batch": "CHR-01_SKILL-B01",
+  "date": "2026-10-26",
+  "status": "design_and_asset_preparation_only",
+  "sources": [
+    "AGENTS.md",
+    "docs/开发计划书-奶龙银河征途.md §3.3/3.6/3.10",
+    "data/skills.json"
+  ],
+  "scope": {
+    "requested_skill_count": 6,
+    "equipped_skill_slots": 4,
+    "input_actions": [
+      "skill_1",
+      "skill_2",
+      "skill_3",
+      "skill_4"
+    ],
+    "new_key_bindings": false,
+    "live_data_changed": false,
+    "gameplay_implemented": false,
+    "reference_conflict_resolution": "制作人本轮明确要求设计6招，设计和素材范围按新需求执行；参考书旧5招与现有live数据暂保留，后续接入再迁移解锁和存档。E键既有冲突仍待制作人决策。"
+  },
+  "shared_rules": {
+    "coordinate_system": "Godot逻辑像素；x向右、y向下；角色局部原点为既有脚底锚点",
+    "facing": "全部基础素材朝右，左向由运行时镜像；不在图中烘焙世界移动",
+    "body_scale": 1,
+    "change_collision_shape": false,
+    "actor_z_index": 20,
+    "damage_formula": "沿用参考书§3.3：武器攻击+8+2*(等级-1)，乘本技能独立物理/法术类型倍率，再走现有DamagePacket、抗性、防御、暴击结算",
+    "timing": "以下时间为游戏逻辑秒，不包含统一命中顿帧；美术关键帧可保持、循环、插值，不得以PNG张数推断判定时刻",
+    "recovery_cancel": "所有收招阶段允许已有闪避取消；取消已提交技能不退费、不重置冷却；施放前取消不产生判定",
+    "root_motion": "角色图像不承担位移；彗星冲位移交物理控制器，其他招式保持世界站位",
+    "terrain": "所有攻击查询必须做world层遮挡与同房间校验；特效透明区域不产生判定",
+    "proc_policy": {
+      "weapon_basic_attack_on_hit_applies": false,
+      "talent_skill_hit_mana_regen_max_triggers_per_cast": 1
+    },
+    "art_policy": {
+      "actor_keyframes_per_skill_target": 8,
+      "actor_frames_are_phase_samples": true,
+      "separate_actor_and_fx": true,
+      "transparent_png": true,
+      "baked_text": false
+    }
+  },
+  "skills": [
+    {
+      "id": "skill_omni_slash",
+      "name": "超究极武神霸斩",
+      "role": "近战终结爆发",
+      "damage_type": "physical",
+      "mana_cost": 32,
+      "cooldown": 18,
+      "damage_mult": 4.25,
+      "commit_at": "第一道斩击开始时",
+      "ground_only": true,
+      "range_px": 100,
+      "hit_shape": {
+        "width": 100,
+        "height": 72,
+        "origin_px": [
+          48,
+          -38
+        ]
+      },
+      "phases": [
+        {
+          "name": "anticipation",
+          "duration_sec": 0.24
+        },
+        {
+          "name": "slashes",
+          "duration_sec": 0.6
+        },
+        {
+          "name": "finisher",
+          "duration_sec": 0.18
+        },
+        {
+          "name": "recovery",
+          "duration_sec": 0.3
+        }
+      ],
+      "hit_events": [
+        {
+          "time_sec": 0.24,
+          "mult": 0.5
+        },
+        {
+          "time_sec": 0.36,
+          "mult": 0.5
+        },
+        {
+          "time_sec": 0.48,
+          "mult": 0.5
+        },
+        {
+          "time_sec": 0.6,
+          "mult": 0.5
+        },
+        {
+          "time_sec": 0.72,
+          "mult": 0.5
+        },
+        {
+          "time_sec": 0.84,
+          "mult": 1.75
+        }
+      ],
+      "per_hit_target_limit": 1,
+      "invulnerability_sec": 0,
+      "cancel_rules": "起手可闪避取消且不扣费；连斩与终结动作不可主动取消，但受击仍会打断；进入recovery后可闪避取消，不退奶力与CD。",
+      "wall_rule": "不瞬移、不自动追踪、斩击不穿world墙；命中扇区内还要做视线检测；不能命中墙后或异房间敌人。",
+      "boss_rule": "不强制拉怪或锁住BOSS；BOSS可脱离斩击范围；伤害仍受物理抗性和防御影响。",
+      "visual_keyframes": [
+        "平稳起手",
+        "压低重心聚出奶光刃",
+        "右上挑斩",
+        "右下劈斩",
+        "横扫残影",
+        "反手交叉斩",
+        "前方终结星形斩",
+        "收势回站姿"
+      ],
+      "fx_layers": [
+        "短刀光弧",
+        "交叉斩痕",
+        "终结星芒",
+        "少量乳白粒子"
+      ],
+      "old_skill_relation": "新增物理终结位，与旧星乳坠落的法术范围爆发区分；不会自动替换skill_starfall。",
+      "unlock_suggestion": "后续终结技天赋；本轮不修改天赋或获取表"
+    },
+    {
+      "id": "skill_giga_milk_beam",
+      "name": "极巨化奶光炮",
+      "role": "有风险的蓄力直线法术爆发",
+      "damage_type": "magic",
+      "mana_cost": 28,
+      "cooldown": 8,
+      "damage_mult": 3.6,
+      "commit_at": "松开技能键并实际发射时",
+      "ground_only": true,
+      "charge": {
+        "minimum_release_sec": 0.18,
+        "full_charge_sec": 1.2,
+        "auto_release_sec": 1.8,
+        "move_speed_ratio": 0.25,
+        "facing_locked_after_sec": 0.18,
+        "mana_reserved": false,
+        "tier_selection": "释放时选择已达到且当前奶力可支付的最高档，最低档也付不起则取消；按实际释放档扣费并开始冷却",
+        "cancel": "蓄力期间可闪避取消；未发射不扣奶力、不开始CD；受击同样取消",
+        "tiers": [
+          {
+            "name": "quick",
+            "min_hold_sec": 0.18,
+            "mana_cost": 14,
+            "damage_mult": 1.4,
+            "range_px": 240,
+            "beam_height_px": 24,
+            "active_sec": 0.12
+          },
+          {
+            "name": "charged",
+            "min_hold_sec": 0.6,
+            "mana_cost": 20,
+            "damage_mult": 2.4,
+            "range_px": 300,
+            "beam_height_px": 36,
+            "active_sec": 0.2
+          },
+          {
+            "name": "full",
+            "min_hold_sec": 1.2,
+            "mana_cost": 28,
+            "damage_mult": 3.6,
+            "range_px": 360,
+            "beam_height_px": 48,
+            "active_sec": 0.3
+          }
+        ]
+      },
+      "phases": [
+        {
+          "name": "charge_start",
+          "duration_sec": 0.18
+        },
+        {
+          "name": "charge_grow",
+          "duration_sec": 1.02
+        },
+        {
+          "name": "full_hold_loop",
+          "max_duration_sec": 0.6
+        },
+        {
+          "name": "release",
+          "duration_sec": 0.3
+        },
+        {
+          "name": "recovery",
+          "duration_sec": 0.3
+        }
+      ],
+      "muzzle_origin_px": [
+        14,
+        -30
+      ],
+      "emission_rule": "聚能后张口发射；双手仅参与聚能与架势，光束实际从嘴部炮口射出。默认嘴点为角色脚底锚点相对坐标[14,-30]；成品每帧允许1至2逻辑像素语义嘴点偏移，须在逐帧元数据中记录。",
+      "per_cast_hits_per_target": 1,
+      "penetrate_enemies": true,
+      "invulnerability_sec": 0,
+      "cancel_rules": "发射前可闪避取消；发射阶段动作锁定且可被受击打断；已发射的瞬间命中不撤回，进入recovery可闪避取消。按键时间不足最低档直接取消。",
+      "wall_rule": "从炮口向前检测最近world实体，光束头端与判定一起截断；穿敌不穿墙；贴墙时展示短撞击光斑，不让光束在墙后露出。",
+      "boss_rule": "法术抗性照常生效；暗影奶灵法术免疫，蜂蜜女王按法术0.5结算。不能用持续光束外观重复结算伤害。",
+      "visual_keyframes": [
+        "双手聚能架势",
+        "胸前聚能并微张口",
+        "嘴前光核扩大",
+        "张口压缩奶光核",
+        "张口蓄满呼吸循环",
+        "张口发射强后坐",
+        "嘴部残留光点收束",
+        "闭口站稳回待机"
+      ],
+      "fx_layers": [
+        "嘴前蓄力光核",
+        "蓄满环形脉冲",
+        "嘴部炮口",
+        "可平铺光束中段",
+        "光束头端",
+        "撞墙光斑"
+      ],
+      "size_note": "极巨化指能量光束变大；角色体型、脚底锚点、碰撞体均不变。",
+      "old_skill_relation": "旧奶泡弹保留低耗快速远程定位；奶光炮是长前摇高耗直线输出，不能视为旧弹贴图替换。",
+      "unlock_suggestion": "洞窟主线或宝箱奖励候选；本轮不替换旧洞窟宝箱内容"
+    },
+    {
+      "id": "skill_comet_dash",
+      "name": "奶泡彗星冲",
+      "role": "短突进与贴身破阵",
+      "damage_type": "physical",
+      "mana_cost": 10,
+      "cooldown": 4,
+      "damage_mult": 1.2,
+      "commit_at": "突进开始时",
+      "ground_only": true,
+      "displacement_px": 110,
+      "dash_duration_sec": 0.2,
+      "speed_px_sec": 550,
+      "hit_shape": {
+        "width": 42,
+        "height": 40,
+        "origin_px": [
+          24,
+          -24
+        ]
+      },
+      "phases": [
+        {
+          "name": "anticipation",
+          "duration_sec": 0.1
+        },
+        {
+          "name": "dash",
+          "duration_sec": 0.2
+        },
+        {
+          "name": "brake",
+          "duration_sec": 0.12
+        },
+        {
+          "name": "recovery",
+          "duration_sec": 0.18
+        }
+      ],
+      "per_cast_hits_per_target": 1,
+      "knockback_px_sec": 140,
+      "invulnerability_sec": 0,
+      "air_dash_or_jump_reset": false,
+      "ledge_rule": "地面限定，台阶边缘停止主动水平推进并进入正常落下；不提供空中悬停、越壕额外距离或跳跃次数重置。",
+      "cancel_rules": "起手可闪避取消且不扣费；dash/brake不可主动取消；碰墙立即转brake；recovery允许闪避取消。",
+      "wall_rule": "用现有角色物理移动与world碰撞，不改碰撞层、不穿门、不越墙；不能触发未经能力解锁的房门。",
+      "boss_rule": "只造成物理伤害，BOSS免疫强制位移；接触伤害仍生效，不作为无敌闪避替代。",
+      "visual_keyframes": [
+        "收身低伏",
+        "前倾压缩",
+        "双脚蹬地",
+        "肩膀向右冲刺",
+        "彗星尾迹冲刺",
+        "脚跟刹停",
+        "小幅回弹",
+        "回到待机"
+      ],
+      "fx_layers": [
+        "身后奶泡拖尾",
+        "起步粉尘",
+        "刹停小星屑"
+      ],
+      "old_skill_relation": "新增物理位移技；旧挤奶冲击仍为原地扇形法术击退，二者判定与用途不同。",
+      "unlock_suggestion": "可作为初期可选入门技能；本轮不改变初始技能和教学"
+    },
+    {
+      "id": "skill_star_milk_prison",
+      "name": "星环凝乳牢",
+      "role": "短时控场与制造输出窗口",
+      "damage_type": "magic",
+      "mana_cost": 18,
+      "cooldown": 10,
+      "damage_mult": 1,
+      "commit_at": "星环在地面出现时",
+      "ground_only": true,
+      "placement_forward_px": 80,
+      "radius_px": 64,
+      "lifetime_sec": 2,
+      "phases": [
+        {
+          "name": "anticipation",
+          "duration_sec": 0.24
+        },
+        {
+          "name": "cast",
+          "duration_sec": 0.18
+        },
+        {
+          "name": "recovery",
+          "duration_sec": 0.24
+        }
+      ],
+      "hit_events": [
+        {
+          "time_sec_after_spawn": 0,
+          "mult": 0.6
+        },
+        {
+          "time_sec_after_spawn": 2,
+          "mult": 0.4
+        }
+      ],
+      "control": {
+        "normal": {
+          "root_sec": 1,
+          "slow_pct": 40,
+          "slow_sec_after_root": 1
+        },
+        "elite": {
+          "root_sec": 0,
+          "slow_pct": 30,
+          "slow_sec_after_root": 1
+        },
+        "boss": {
+          "root_sec": 0,
+          "slow_pct": 15,
+          "slow_sec_after_root": 0.6
+        },
+        "magic_immune": {
+          "root_sec": 0,
+          "slow_pct": 0,
+          "slow_sec_after_root": 0
+        },
+        "interrupt_attack_or_phase": false,
+        "refresh_or_stack": false,
+        "apply_only_on_entry_once_per_cast": true
+      },
+      "cancel_rules": "星环生成前可闪避取消且不扣费；生成后星环独立存在；recovery可闪避取消，费用和CD保留。",
+      "wall_rule": "落点沿地面投影，不能落在world实体内部、悬崖空中或墙后；前方无有效地面则在脚前最近有效点释放，无有效点则取消且不扣费。范围伤害逐目标检查world遮挡。",
+      "boss_rule": "不定身、不拉拽、不取消攻击，不打断换阶段；仅短时轻减速且遵守BOSS状态免疫。",
+      "visual_keyframes": [
+        "抬爪指向前方",
+        "胸前凝聚双环",
+        "双爪推出光环",
+        "双爪下压",
+        "指爪维持短暂停顿",
+        "放松双臂",
+        "落爪",
+        "回到待机"
+      ],
+      "fx_layers": [
+        "地面星环",
+        "凝乳弧线牢笼",
+        "减速小星点",
+        "消散乳滴"
+      ],
+      "old_skill_relation": "扩展旧奶泡弹的减速用途，但为地面定点控制、低伤害长CD，不替换旧远程弹。",
+      "unlock_suggestion": "林地探索奖励候选；本轮不增加房间或宝箱"
+    },
+    {
+      "id": "skill_mirror_milk_guard",
+      "name": "奶盾·镜返",
+      "role": "读招防御与近战反击",
+      "damage_type": "physical",
+      "mana_cost": 16,
+      "cooldown": 10,
+      "damage_mult": 1,
+      "commit_at": "护盾展开时",
+      "ground_only": true,
+      "duration_sec": 3,
+      "absorb": 32,
+      "facing_arc_deg": 140,
+      "perfect_window_sec": 0.18,
+      "perfect_reflect_ratio": 0.3,
+      "perfect_stagger_sec_normal": 0.5,
+      "counter_range_px": 64,
+      "counter_damage_mult": 1,
+      "one_counter_per_cast": true,
+      "block_hazard_damage": false,
+      "phases": [
+        {
+          "name": "anticipation",
+          "duration_sec": 0.12
+        },
+        {
+          "name": "shield_open",
+          "duration_sec": 0.18
+        },
+        {
+          "name": "guard_loop",
+          "max_duration_sec": 2.82
+        },
+        {
+          "name": "counter_on_perfect",
+          "duration_sec": 0.2
+        },
+        {
+          "name": "recovery",
+          "duration_sec": 0.22
+        }
+      ],
+      "guard_behavior": "施放后进入原地举盾；松开技能键或闪避可提前收盾。普通正面受击按护盾余量吸收，溢出伤害正常结算；背后与地形伤害正常命中。完美窗口从护盾实际展开起算，消耗护盾并立即执行一次短反击，反弹沿用参考书30%规则，不额外复制同一弹体伤害。",
+      "cancel_rules": "展开前可闪避取消且不扣费；举盾中可闪避退出，已消耗奶力和CD不退；反击出手后不可主动取消，recovery可闪避取消。",
+      "wall_rule": "护盾不改变世界碰撞；反击与反弹都遵守world阻挡；反弹实体不穿墙。",
+      "boss_rule": "能防可防攻击，但不使BOSS强制硬直或换阶段；不可防招式与hazard不触发完美反击。",
+      "visual_keyframes": [
+        "前爪抬起",
+        "双臂合抱",
+        "奶盾张开",
+        "稳固举盾循环",
+        "镜面闪光命中",
+        "前爪反推短反击",
+        "盾面碎成星点",
+        "回到待机"
+      ],
+      "fx_layers": [
+        "乳白蓝边镜盾",
+        "完美格挡十字闪",
+        "短程反击波",
+        "护盾碎片消散"
+      ],
+      "old_skill_relation": "旧奶盾为5秒40点全向吸收增益；镜返是3秒32点正面主动举盾与一次反击，保留明确操作取舍。两种盾后续必须互斥，不叠加吸收池。",
+      "unlock_suggestion": "天赋奶术2的进阶分支候选；本轮不改talent_milk_2"
+    },
+    {
+      "id": "skill_milk_spring",
+      "name": "生命奶泉",
+      "role": "站位换续航的地面持续治疗",
+      "damage_type": "none",
+      "mana_cost": 24,
+      "cooldown": 16,
+      "damage_mult": null,
+      "commit_at": "奶泉生成时",
+      "ground_only": true,
+      "radius_px": 48,
+      "lifetime_sec": 4,
+      "max_active_fields": 1,
+      "heal_total_pct_max_hp": 32,
+      "heal_events": [
+        {
+          "time_sec_after_spawn": 1,
+          "heal_pct_max_hp": 8
+        },
+        {
+          "time_sec_after_spawn": 2,
+          "heal_pct_max_hp": 8
+        },
+        {
+          "time_sec_after_spawn": 3,
+          "heal_pct_max_hp": 8
+        },
+        {
+          "time_sec_after_spawn": 4,
+          "heal_pct_max_hp": 8
+        }
+      ],
+      "phases": [
+        {
+          "name": "anticipation",
+          "duration_sec": 0.3
+        },
+        {
+          "name": "cast",
+          "duration_sec": 0.18
+        },
+        {
+          "name": "recovery",
+          "duration_sec": 0.24
+        }
+      ],
+      "heal_rule": "只在每次治疗tick时检查玩家是否处于同房间、同地表且半径内；离开后不补发漏掉tick，不治疗敌人，不溢出上限，不复活。每次施放保留小数余量以避免逐tick取整损失。房间切换或死亡清除。",
+      "cancel_rules": "生成前可闪避取消且不扣费；生成后奶泉独立存在；recovery可闪避取消但不退费与CD。",
+      "wall_rule": "脚下有效地面生成；平台高度与world遮挡参与治疗检查，不能隔墙或隔一层平台回血。奶泉不充当地形，不可站上、不垫高。",
+      "boss_rule": "不免伤、不净化地形危害、不打断敌人；需要玩家在敌人攻击间隙选择站位。",
+      "visual_keyframes": [
+        "双爪收向胸前",
+        "闭眼凝聚一滴奶光",
+        "双爪缓缓下压",
+        "乳滴落地",
+        "泉眼点亮",
+        "抬头放松",
+        "双爪回落",
+        "回到待机"
+      ],
+      "fx_layers": [
+        "地面浅奶泉",
+        "细小向上乳滴",
+        "周期治疗星点",
+        "泉眼淡出"
+      ],
+      "old_skill_relation": "旧治愈之乳为25奶力即时回复30%；新奶泉为24奶力、4秒内最多32%，以留在范围内和更长CD换略高总收益，不直接覆盖旧skill_heal。",
+      "unlock_suggestion": "商人治疗技能进阶候选；本轮不改商店与获取逻辑"
+    }
+  ]
+}

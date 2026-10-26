@@ -29,3 +29,7 @@ plan/
 # 系统
 .DS_Store
 Thumbs.db
+
+# 技能素材导入描述由各机器重建，避免同步本机缓存引用
+/assets/RAW/skills/**/*.import
+/assets/PROCESSED/skills/**/*.import

@@ -1,0 +1,53 @@
+{
+  "skill_id": "skill_giga_milk_beam",
+  "part": "release",
+  "sheet": "skill_giga_milk_beam_release_fx_sheet.png",
+  "layout": {
+    "columns": 2,
+    "rows": 2,
+    "order": "row_major",
+    "actual_size": [
+      2172,
+      724
+    ],
+    "cell_boundaries_x": [
+      0,
+      1086,
+      2172
+    ],
+    "cell_boundaries_y": [
+      0,
+      362,
+      724
+    ]
+  },
+  "target_frame_size": [
+    384,
+    128
+  ],
+  "target_root_px": [
+    16,
+    64
+  ],
+  "attachment_world": [
+    14,
+    -30
+  ],
+  "frames": [
+    "release_short",
+    "beam_hold_a",
+    "beam_hold_b",
+    "release_fade"
+  ],
+  "loop_frames": [
+    1,
+    2
+  ],
+  "generation": "builtin_image_gen",
+  "alpha_extrema": [
+    0,
+    255
+  ],
+  "source_root_measurement": "Visually small emission star at approximately cell x=78,y=192 (actual 1086x362 cell); use left core center as root; full beam and end already complete. Measure alpha-thresholded central bright core and shift y to semantic 64. Split head/middle/tip from full hold frames after common scaling.",
+  "qa_note": "Generated actual dimensions differ from request. Single common scale. Short frame should remain short. Sheet looks correctly separated; no solid part crosses grid."
+}

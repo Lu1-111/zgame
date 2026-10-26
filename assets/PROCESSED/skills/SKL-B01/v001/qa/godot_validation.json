@@ -1,0 +1,29 @@
+{
+  "isolatedProject": true,
+  "liveProjectScriptsChanged": false,
+  "engine": "4.7.2-stable (official)",
+  "resources": [
+    {
+      "animation_frame_references": 96,
+      "animations": 30,
+      "layer": "actor"
+    },
+    {
+      "animation_frame_references": 60,
+      "animations": 13,
+      "layer": "fx"
+    }
+  ],
+  "checks": [
+    {
+      "name": "import",
+      "exitCode": 0,
+      "errors": []
+    },
+    {
+      "name": "resources",
+      "exitCode": 0,
+      "errors": []
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+SKL-NB01 最终本地验收 · Godot 4.7.2
+
+导入检查：exit=0；ERROR=0；WARNING=0
+
+资源加载：exit=0；ERROR=0；WARNING=0
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+SKL-NB01 RESOURCE PASS: 24 animations / 96 textures
+
+单元测试：exit=0；ERROR=0；WARNING=0
+=== 汇总：passed=423 / total=423 ===
+RESULT: ALL PASS
+
+120帧冒烟：exit=0；ERROR=0；WARNING=0
+
+素材 QA：96帧，24动画，6图标；空帧0，透明边距失败0，来源裁切警告0。
+UI目检：六技能动态预览、明暗底原稿、宽屏和窄屏布局；总览为preview_top/preview_bottom两张截图拼接。
+仅交付素材与设计，尚未接入战斗逻辑。
