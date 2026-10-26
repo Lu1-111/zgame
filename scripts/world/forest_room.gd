@@ -37,14 +37,6 @@ func _ready() -> void:
 
 func _process(_delta: float) -> void:
 	_prompt.text = ""
-	var at := _nearest_interaction()
-	if at == "":
-		return
-	if at == "Campfire":
-		return
-	var target: Node2D = get_node(at)
-	_prompt.position = target.position + Vector2(config.interaction.prompt_offset[0], config.interaction.prompt_offset[1])
-	_prompt.text = {"Campfire":"E 坐火休息", "Chest":"E 打开宝箱", "ShortcutSwitch":"E 拉动机关"}[at]
 
 
 func _unhandled_input(event: InputEvent) -> void:

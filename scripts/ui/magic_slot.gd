@@ -16,10 +16,12 @@ var mana_blocked := false
 var cooldown := 0.0
 var cooldown_ratio := 0.0
 var _hover := false
-var _frame: Texture2D = preload("res://assets/ui/magic/slot.svg")
+var _frame: Texture2D
 
 
 func _ready() -> void:
+	_frame = RPGSkin.texture("slot")
+	texture_filter = CanvasItem.TEXTURE_FILTER_LINEAR
 	clip_contents = true
 	mouse_default_cursor_shape = Control.CURSOR_POINTING_HAND
 	mouse_entered.connect(func() -> void: _hover = true; queue_redraw())

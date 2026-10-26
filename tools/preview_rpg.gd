@@ -68,7 +68,8 @@ func _capture() -> void:
 		await process_frame
 	await RenderingServer.frame_post_draw
 	var suffix := "_16_10" if args.size()>1 and args[1] == "16_10" else ""
-	var path := "res://docs/previews/rpg_%s%s.png" % [mode,suffix]
+	var edition := "_v3" if args.has("v3") else ""
+	var path := "res://docs/previews/rpg_%s%s%s.png" % [mode,edition,suffix]
 	var error := root.get_texture().get_image().save_png(ProjectSettings.globalize_path(path))
 	print("RPG render: %s, error=%d" % [path,error])
 	quit(error)

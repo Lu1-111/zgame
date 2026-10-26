@@ -22,7 +22,7 @@ func open(next_page: String = "equipment") -> void:
 		var key: String = ["equipment","attributes","skills"][index]
 		var button: Button = ui._button(ui.modal,["装备","属性","技能"][index],Rect2(24+index*174,17,162,30),func() -> void: open(key))
 		if page == key:
-			button.add_theme_stylebox_override("normal",ui._style(Color("#31514e"),Color("#ead6a0")))
+			button.modulate = Color(1.16,1.09,0.88)
 	ui._button(ui.modal,"×",Rect2(574,18,26,28),ui.close_menu)
 	match page:
 		"equipment": _equipment()
@@ -91,6 +91,7 @@ func _attributes() -> void:
 	var stats := RPGService.stats()
 	ui._label(ui.modal,"Lv.%d  奶族先锋" % GameState.level,Vector2(30,78),19,ui._color("bright_gold"))
 	var progress := RPGService.experience_progress()
+	RPGSkin.frame(ui.modal,"track",Rect2(214,78,370,30))
 	var bar := ProgressBar.new()
 	bar.position = Vector2(222,86)
 	bar.size = Vector2(350,16)
@@ -99,7 +100,7 @@ func _attributes() -> void:
 	bar.show_percentage = false
 	bar.add_theme_font_size_override("font_size",8)
 	bar.add_theme_stylebox_override("background",ui._style(ui._color("ink"),ui._color("gold")))
-	bar.add_theme_stylebox_override("fill",ui._style(Color("#698eab")))
+	bar.add_theme_stylebox_override("fill",RPGSkin.bar_fill(Color("#698eab")))
 	ui.modal.add_child(bar)
 	ui._label(ui.modal,"本级经验  %d / %d" % [progress.x,progress.y],Vector2(226,120),10,ui._color("muted"))
 	var rows := [["生命值","%d / %d" % [GameState.hp,GameState.hp_max]],["体力值","%d / %d" % [GameState.sta,GameState.sta_max]],["奶力值","%d / %d" % [GameState.mana,GameState.mana_max]],["物理攻击力",str(stats.physical_attack)],["奶术攻击力",str(stats.magic_attack)],["防御力","%.0f" % stats.defense],["伤害减免","%.1f %%" % stats.damage_reduction],["吸血","%.1f %%" % stats.life_steal],["生命恢复","%.2f 点/秒" % stats.hp_regen],["奶力回复","%.2f 点/秒" % stats.mana_regen]]
@@ -198,7 +199,7 @@ func _set_weapon(slot: MagicSlot, id: StringName) -> void:
 	slot.item_id = str(id)
 	var definition := DataDB.get_weapon(id)
 	if not definition.is_empty():
-		slot.icon = load(definition.icon)
+		slot.icon = RPGSkin.icon_for_path(str(definition.icon))
 		slot.tooltip_text = str(definition.name)
 
 
@@ -206,7 +207,7 @@ func _set_skill(slot: MagicSlot, id: StringName) -> void:
 	slot.item_id = str(id)
 	var definition := DataDB.get_skill(id)
 	if not definition.is_empty():
-		slot.icon = load(definition.icon)
+		slot.icon = RPGSkin.icon_for_path(str(definition.icon))
 		slot.tooltip_text = str(definition.name)
 
 

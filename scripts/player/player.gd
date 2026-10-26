@@ -28,6 +28,10 @@ var attack_charge := 0.0
 var attack_release_t := -1.0
 var _hp_regen_acc := 0.0
 var _mana_regen_acc := 0.0
+var _contact_left := 0.0
+var _contact_cooldown := 0.0
+var _contact_velocity := 0.0
+var _pixel_rig: PixelHeroRig
 var attack_phase := &""             ## 供绘制的攻击阶段
 
 var _buffers: Dictionary = {}       ## 动作名 → 剩余缓冲秒数
@@ -73,6 +77,10 @@ func _ready() -> void:
 	for id in DataDB.skills:
 		_skill_cfgs[id] = DataDB.get_skill(id)
 	_setup_sprite()
+	_pixel_rig = PixelHeroRig.new()
+	_pixel_rig.position = sprite.position
+	_pixel_rig.hide()
+	add_child(_pixel_rig)
 	sm = StateMachine.new()
 	sm.name = "StateMachine"
 	add_child(sm)
@@ -108,6 +116,8 @@ func _physics_process(delta: float) -> void:
 	_update_passive_regeneration(delta)
 	_update_input()
 	sm.tick(delta)
+	if _contact_left > 0:
+		velocity.x = _contact_velocity
 	# 半步重力（leapfrog）：tick 先行（含跳跃脉冲赋速），随后 g·dt/2 → 位移 → 再 g·dt/2，
 	# 使离散跳高逼近连续解析值（§3.1 验收 4）；Dodge/Dead 等可整体关闭重力。
 	if gravity_enabled:
@@ -115,6 +125,7 @@ func _physics_process(delta: float) -> void:
 		velocity.y = minf(velocity.y + _last_g * delta * 0.5, PlayerTuning.MAX_FALL)
 	_update_collision_mask()   # 位移前更新：上升帧当帧即放行平台
 	move_and_slide()
+	_resolve_enemy_contact()
 	if gravity_enabled:
 		velocity.y = minf(velocity.y + _last_g * delta * 0.5, PlayerTuning.MAX_FALL)
 	_update_floor_state()
@@ -376,6 +387,9 @@ func spawn_weapon_projectile(charge: float = 1.0) -> void:
 	bubble.hit_landed.connect(_on_hit_landed)
 	var socket: Array = module.get("socket",[24,-9])
 	var point := global_position+Vector2(float(socket[0])*facing,float(socket[1]))
+	if kind == "bow" and is_instance_valid(_pixel_rig):
+		_sync_rig_pose()
+		point = _pixel_rig.muzzle_global_position()
 	get_tree().current_scene.add_child(bubble)
 	bubble.global_position = point
 	AttackEffect.spawn(get_tree().current_scene,null,self,&"bow_release" if kind == "bow" else &"staff_cast",point,aim_vector(),Vector2.ZERO,Vector2.ZERO,0)
@@ -624,6 +638,8 @@ func respawn() -> void:
 # ============================================================
 
 func _update_timers(delta: float) -> void:
+	_contact_left = maxf(0.0,_contact_left-delta)
+	_contact_cooldown = maxf(0.0,_contact_cooldown-delta)
 	for k in _buffers.keys():
 		_buffers[k] = maxf(0.0, float(_buffers[k]) - delta)
 	_coyote = maxf(0.0, _coyote - delta)
@@ -661,9 +677,30 @@ func _update_floor_state() -> void:
 ## 保证起跳当帧即生效。
 func _update_collision_mask() -> void:
 	if velocity.y < 0.0 or _drop_through > 0.0:
-		collision_mask = PlayerTuning.BODY_MASK & ~128
+		collision_mask = (PlayerTuning.BODY_MASK | 4) & ~128
 	else:
-		collision_mask = PlayerTuning.BODY_MASK
+		collision_mask = PlayerTuning.BODY_MASK | 4
+
+
+func _resolve_enemy_contact() -> void:
+	if _contact_cooldown > 0 or sm.current_name() == &"Dead":
+		return
+	for index in get_slide_collision_count():
+		var collision := get_slide_collision(index)
+		var enemy := collision.get_collider()
+		if not (enemy is CombatEnemy or enemy is GameEnemy) or enemy.hp <= 0:
+			continue
+		var cfg: Dictionary = EncounterRules.config().contact
+		var away := signf(global_position.x-enemy.global_position.x)
+		if is_zero_approx(away):
+			away = -float(facing)
+		_contact_velocity = away*float(cfg.bounce_speed)
+		_contact_left = float(cfg.bounce_time)
+		_contact_cooldown = float(cfg.cooldown)
+		velocity.x = _contact_velocity
+		if collision.get_normal().y < -0.5:
+			velocity.y = -float(cfg.vertical_impulse)
+		break
 
 
 func _update_drop_trigger() -> void:
@@ -728,8 +765,13 @@ func _process(_delta: float) -> void:
 
 ## 每物理帧按当前状态切换动画；资源未注入时跳过（灰盒回退）。
 func _update_animation() -> void:
-	if not sprite.visible:
+	if sprite.sprite_frames == null:
 		return
+	var rig_active := (sm.current_name() == &"Attack" and weapon_type() in ["sword","bow"]) or (sm.current_name() == &"Skill" and _current_skill == &"skill_cleave")
+	_pixel_rig.visible = rig_active
+	sprite.visible = not rig_active
+	if rig_active:
+		_sync_rig_pose()
 	var anim := _pick_animation()
 	if anim != &"" and sprite.animation != anim:
 		sprite.play(anim)
@@ -738,6 +780,30 @@ func _update_animation() -> void:
 		sprite.pause()
 		sprite.frame = clampi(int(attack_charge*4),0,4) if attack_release_t < 0 else clampi(5+int(attack_release_t/float(WeaponRuntime.module("bow").recovery)*3),5,7)
 	_sync_weapon_sprite()
+
+
+func _sync_rig_pose() -> void:
+	_pixel_rig.kind = "bow" if weapon_type() == "bow" and sm.current_name() == &"Attack" else "sword"
+	_pixel_rig.combo = attack_combo
+	var module := WeaponRuntime.module("sword" if _pixel_rig.kind == "sword" else "bow")
+	var duration := float(module.startup)+float(module.active)+float(module.recovery)
+	_pixel_rig.progress = clampf((_clock-_last_attack_time)/duration,0,1)
+	if _pixel_rig.kind == "sword":
+		var elapsed := _clock-_last_attack_time
+		var phases: Array = _pixel_rig.cfg.sword.phase_indices
+		var phase: float
+		if elapsed < float(module.startup):
+			phase = float(phases[0])*elapsed/float(module.startup)
+		elif elapsed < float(module.startup)+float(module.active):
+			phase = lerpf(float(phases[0]),float(phases[1]),(elapsed-float(module.startup))/float(module.active))
+		else:
+			phase = lerpf(float(phases[1]),float(phases[2]),clampf((elapsed-float(module.startup)-float(module.active))/float(module.recovery),0,1))
+		_pixel_rig.progress = phase/float(phases[2])
+	_pixel_rig.charge = attack_charge
+	_pixel_rig.release_time = attack_release_t
+	_pixel_rig.aim = aim_vector()
+	_pixel_rig.facing = facing
+	_pixel_rig.apply_pose()
 
 
 ## 状态 → 动画名映射（动画名与 CHR-01_sprite_frames.tres 内 26 个动作一一对应）。
@@ -781,7 +847,7 @@ func _pick_animation() -> StringName:
 	return &"idle"
 
 
-## 武器 id → 普攻动画名（连击段仅锤系有 1/2/3 段）。
+## 武器类别决定普攻动画名，剑和锤分别采用三段连击。
 func _attack_anim() -> StringName:
 	var names: Array = WeaponRuntime.module(weapon_type()).get("animations",["cast"])
 	return StringName(names[clampi(attack_combo-1,0,names.size()-1)])
@@ -792,7 +858,7 @@ func _draw() -> void:
 		draw_circle(Vector2.ZERO,24,Color(0.3,0.65,1.0,0.15))
 		draw_arc(Vector2.ZERO,24,0,TAU,48,Color("#a2dbea"),2,true)
 	# 精灵帧已注入时不画灰盒（回退路径专用）
-	if sprite.visible:
+	if sprite.visible or (is_instance_valid(_pixel_rig) and _pixel_rig.visible):
 		return
 	# 灰盒视觉：奶白色圆角方块 + 朝向眼睛 + 状态描边（§3.13）
 	var body := Rect2(-10, -17, 20, 34)
@@ -850,6 +916,7 @@ func cancel_weapon_action() -> void:
 	if sm.current_name() in [&"Attack",&"Skill"]:
 		sm.to(&"Idle")
 	velocity.x = 0
+	_update_animation()
 	for child in get_children():
 		if child is AttackEffect:
 			child.queue_free()

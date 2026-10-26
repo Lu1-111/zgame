@@ -8,7 +8,7 @@ const CONFIG_PATH := "res://data/enemy_combat_b04.json"
 var target: Node2D
 var tuning: Dictionary = {}
 var definition: Dictionary = {}
-var state: StringName = &"chase"
+var state: StringName = &"patrol"
 var hp := 0
 var facing := 1
 var elapsed := 0.0
@@ -26,21 +26,28 @@ var _body_size := Vector2.ZERO
 var _charge_direction := Vector2.ZERO
 var _aim_point := Vector2.ZERO
 var _has_aim := false
+var _feedback_left := 0.0
+var _flash_left := 0.0
+var _health_trail := 1.0
 
 func _ready() -> void:
 	if not is_instance_valid(target):
 		target = get_tree().get_first_node_in_group(&"player") as Node2D
 	tuning = JSON.parse_string(FileAccess.get_file_as_string(CONFIG_PATH))
 	tuning.merge(tuning.get("per_enemy", {}).get(String(enemy_id), {}), true)
+	tuning.detect_range = float(EncounterRules.config().perception.detect_range)
+	tuning.lose_range = float(EncounterRules.config().perception.lose_range)
 	definition = DataDB.get_enemy(enemy_id)
 	if definition.is_empty():
 		queue_free()
 		return
 	hp = int(definition.hp)
+	add_to_group(&"enemies")
 	origin = global_position
 	_flying = str(definition.ai.type) in ["fly", "float"]
 	collision_layer = 4
-	collision_mask = 129
+	collision_mask = 129 | 2 | 4
+	floor_snap_length = float(EncounterRules.config().navigation.floor_snap)
 	var size: Array = tuning.fly_body_size if _flying else tuning.body_size
 	_body_size = Vector2(size[0], size[1])
 	_body_offset = Vector2.ZERO if _flying else Vector2(0, -_body_size.y / 2.0)
@@ -69,7 +76,7 @@ func _ready() -> void:
 		tuning.get("sprite_resources", {})
 	)
 	visual.action_completed.connect(_on_animation_completed)
-	_set_state(&"chase")
+	_set_state(&"patrol")
 
 func _add_shape(parent: Node, size: Vector2, offset: Vector2) -> void:
 	var shape := CollisionShape2D.new()
@@ -88,6 +95,10 @@ func _physics_process(delta: float) -> void:
 	elapsed += delta
 	_time += delta
 	_slow_left = maxf(0.0, _slow_left - delta)
+	_feedback_left = maxf(0.0,_feedback_left-delta)
+	_flash_left = maxf(0.0,_flash_left-delta)
+	visual.modulate = Color(2.4,2.1,1.6) if _flash_left > 0 else Color.WHITE
+	_health_trail = move_toward(_health_trail,float(hp)/float(definition.hp),float(EncounterRules.config().feedback.trail_speed)*delta)
 	if not _flying:
 		velocity.y += float(tuning.gravity) * delta
 	if state == &"death":
@@ -100,31 +111,37 @@ func _physics_process(delta: float) -> void:
 		_return_home()
 	else:
 		_update_state(delta)
-	# 地面小怪在平台边缘折返，追击也不会因主动走路掉下平台；受击击退保留。
-	if not _flying and patrol_bounds.x < patrol_bounds.y and state not in [&"hurt", &"death"]:
-		var next_x := global_position.x + velocity.x * delta
-		if (velocity.x < 0 and next_x < patrol_bounds.x) or (velocity.x > 0 and next_x > patrol_bounds.y):
-			facing = -1 if velocity.x > 0 else 1
-			velocity.x = 0
+	if not _flying and state not in [&"hurt",&"death"] and not EnemyAwareness.has_support_ahead(self,velocity.x,_body_size.x):
+		facing = -1 if velocity.x > 0 else 1
+		velocity.x = 0
 	move_and_slide()
 	queue_redraw()
 
 func _update_state(delta: float) -> void:
 	var distance := global_position.distance_to(target.global_position)
+	var sees := EnemyAwareness.can_sense(self,target,_body_offset,_flying,state == &"chase")
 	match state:
 		&"idle":
 			velocity.x = 0.0
 			if elapsed >= float(tuning.idle_duration):
-				_set_state(&"chase" if distance <= float(tuning.detect_range) else &"patrol")
+				_set_state(&"chase" if sees else &"patrol")
 		&"patrol", &"chase":
-			if distance <= float(tuning.detect_range) and state == &"patrol":
+			if sees and state == &"patrol":
 				_set_state(&"chase")
-			if state == &"chase" and distance > float(tuning.lose_range):
+			if state == &"chase" and not sees:
 				_set_state(&"patrol")
 			if state == &"chase":
 				facing = -1 if target.global_position.x < global_position.x else 1
-			elif absf(global_position.x - origin.x) >= float(tuning.patrol_distance) or is_on_wall():
-				facing *= -1
+			else:
+				if patrol_bounds.x < patrol_bounds.y:
+					if global_position.x <= patrol_bounds.x and facing < 0:
+						facing = 1
+					elif global_position.x >= patrol_bounds.y and facing > 0:
+						facing = -1
+				elif absf(global_position.x-origin.x) >= float(tuning.patrol_distance):
+					facing = -1 if global_position.x > origin.x else 1
+				if is_on_wall():
+					facing *= -1
 			var speed := float(definition.ai.chase_speed if state == &"chase" else definition.ai.patrol_speed)
 			if _slow_left > 0.0:
 				speed *= float(tuning.slow_multiplier)
@@ -135,7 +152,7 @@ func _update_state(delta: float) -> void:
 				if definition.ai.features.has("sine"):
 					velocity.y += sin(_time * float(tuning.sine_frequency)) * float(tuning.sine_amplitude)
 			visual.play_action(&"move", facing < 0)
-			if state == &"chase" and distance <= float(tuning.get("attack_range", definition.ai.attack_range)):
+			if state == &"chase" and sees and distance <= float(tuning.get("attack_range", definition.ai.attack_range)):
 				_set_state(&"telegraph")
 		&"telegraph":
 			velocity = Vector2.ZERO
@@ -255,6 +272,14 @@ func receive_hit(packet: DamagePacket) -> int:
 	if damage == 0:
 		return 0
 	hp = maxi(0, hp - damage)
+	_feedback_left = float(EncounterRules.config().feedback.health_seconds)
+	_flash_left = float(EncounterRules.config().feedback.flash_seconds)
+	var number := DamageNumber.new()
+	number.amount = damage
+	number.magic = packet.type == DamagePacket.DamageType.MAGIC
+	get_parent().add_child(number)
+	number.global_position = global_position+_body_offset+Vector2.UP*_body_size.y/2
+	AttackEffect.play_impact(get_parent(),global_position+_body_offset,number.magic)
 	if str(packet.source_id).begins_with("skill_"):
 		GameState.mana = mini(GameState.mana_max,GameState.mana + int(InventoryService.talent_effect("skill_hit_mana_regen")))
 	if packet.source_id == &"skill_bubble":
@@ -289,6 +314,13 @@ func _on_animation_completed(action: StringName) -> void:
 		queue_free()
 
 func _draw() -> void:
-	if visual == null or visual.body.visible:
+	if visual == null or not visual.body.visible:
+		draw_rect(Rect2(_body_offset - _body_size / 2.0, _body_size), Color.DARK_OLIVE_GREEN)
+	if definition.is_empty() or state == &"death" or (_feedback_left <= 0 and state not in [&"chase",&"attack",&"telegraph"]):
 		return
-	draw_rect(Rect2(_body_offset - _body_size / 2.0, _body_size), Color.DARK_OLIVE_GREEN)
+	var cfg: Dictionary = EncounterRules.config().feedback
+	var rect := Rect2(Vector2(-float(cfg.health_bar_width)/2,_body_offset.y-_body_size.y/2-float(cfg.health_bar_gap)),Vector2(float(cfg.health_bar_width),float(cfg.health_bar_height)))
+	draw_rect(rect.grow(1),Color(str(cfg.health_border)))
+	draw_rect(rect,Color("#17151a"))
+	draw_rect(Rect2(rect.position,Vector2(rect.size.x*_health_trail,rect.size.y)),Color(str(cfg.health_trail)))
+	draw_rect(Rect2(rect.position,Vector2(rect.size.x*float(hp)/float(definition.hp),rect.size.y)),Color(str(cfg.health_fill)))

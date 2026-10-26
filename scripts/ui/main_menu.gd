@@ -3,14 +3,22 @@ extends Node2D
 
 
 func _ready() -> void:
+	var root_ui := $UI/Root as Control
+	var frame := RPGSkin.frame(root_ui,"panel",Rect2(Vector2(10,10),get_viewport_rect().size-Vector2(20,20)))
+	root_ui.move_child(frame,1)
+	root_ui.resized.connect(func() -> void: frame.size = (root_ui.size-Vector2(20,20))/float(RPGSkin.config().frame_scale))
 	var start := Button.new()
 	start.text = "开始新旅途"
+	start.custom_minimum_size.y = 30
 	$UI/Root/Center.add_child(start)
+	RPGSkin.dress_button(start)
 	start.pressed.connect(_start_journey)
 	if SaveSystem.has_save():
 		var button := Button.new()
 		button.text = "继续旅途"
+		button.custom_minimum_size.y = 30
 		$UI/Root/Center.add_child(button)
+		RPGSkin.dress_button(button)
 		button.pressed.connect(func() -> void:
 			if SaveSystem.load_game():
 				SceneRouter.goto_room(GameState.current_room))

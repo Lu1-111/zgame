@@ -44,7 +44,7 @@ theme_override_constants/separation = 10
 
 [node name="Title" type="Label" parent="UI/Root/Center"]
 layout_mode = 2
-theme_override_font_sizes/font_size = 40
+theme_override_font_sizes/font_size = 30
 text = "奶宝：银河征途"
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -59,7 +59,7 @@ color = Color(0.72, 0.72, 0.78, 1)
 [node name="Hint" type="Label" parent="UI/Root/Center"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 12
-text = "A/D 移动 · Space 跳跃 · Shift 闪避 · S 下穿\n左键攻击 · 右键防御 · Q/E/R/F 奶术\nE 优先交互 · Tab 行囊 · 1–5 快捷物品 · Esc 暂停\nF2 战斗演练 · F3 动作预览"
+text = "A/D 移动 · Space 跳跃 · Shift 闪避 · S 下穿\n左键攻击（弓按住蓄力）· 右键防御\n滚轮选择技能 · 鼠标侧键4施放 · E 交互\nI 人物 · Tab 行囊 · 1–5 道具 · Esc 暂停"
 horizontal_alignment = 1
 color = Color(0.6, 0.6, 0.66, 1)
 

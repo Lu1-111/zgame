@@ -17,12 +17,8 @@ func _ready() -> void:
 	panel.color = Color.TRANSPARENT
 	panel.size = Vector2(480,88)
 	$Panel/Border.hide()
-	var background := TextureRect.new()
-	background.texture = load("res://assets/ui/magic/dialogue_panel.svg")
-	background.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
-	background.size = panel.size
-	background.mouse_filter = Control.MOUSE_FILTER_IGNORE
-	panel.add_child(background)
+	var background := RPGSkin.frame(panel,"dialogue",Rect2(Vector2.ZERO,panel.size))
+	background.modulate.a = float(RPGService.config().dialogue.opacity)
 	panel.move_child(background,0)
 	portrait = TextureRect.new()
 	portrait.expand_mode = TextureRect.EXPAND_IGNORE_SIZE

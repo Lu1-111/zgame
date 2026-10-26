@@ -1,0 +1,6 @@
+{
+  "perception": {"detect_range": 144, "lose_range": 208, "ground_vertical_range": 42, "ground_lose_vertical_range": 58, "fly_vertical_range": 144, "line_of_sight_mask": 129},
+  "navigation": {"floor_snap": 6, "floor_probe_ahead": 5, "floor_probe_above": 10, "floor_probe_below": 18, "home_deadzone": 4},
+  "contact": {"bounce_speed": 170, "bounce_time": 0.14, "cooldown": 0.32, "vertical_impulse": 70},
+  "feedback": {"flash_seconds": 0.12, "health_seconds": 2.5, "health_bar_width": 32, "health_bar_height": 4, "health_bar_gap": 7, "trail_speed": 1.8, "number_seconds": 0.7, "number_rise": 26, "number_font_size": 12, "health_border": "#ba9b65", "health_fill": "#c9504d", "health_trail": "#f1cb86", "number_physical": "#ffe6af", "number_magic": "#bfdefa"}
+}

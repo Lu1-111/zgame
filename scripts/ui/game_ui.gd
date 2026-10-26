@@ -30,6 +30,7 @@ var _consumed_frame := -100
 var _inventory_signature := ""
 var _enemy_profiles: Array = []
 var _interaction_hint: Label
+var _interaction_plaque: Control
 var _selected_hotbar := -1
 var _previous_sta := 100
 var _regen_glow := 0.0
@@ -51,8 +52,8 @@ func _ready() -> void:
 	magic_theme.set_stylebox("panel","TooltipPanel",_style(_color("panel"),_color("gold")))
 	root_control.theme = magic_theme
 	add_child(root_control)
-	var cursor := load("res://assets/ui/magic/cursor_rune.svg") as Texture2D
-	var hotspot: Array = RPGService.config().cursor_hotspot
+	var cursor := RPGSkin.cursor_texture()
+	var hotspot: Array = RPGSkin.config().cursor_hotspot
 	Input.set_custom_mouse_cursor(cursor,Input.CURSOR_ARROW,Vector2(hotspot[0],hotspot[1]))
 	Input.set_custom_mouse_cursor(cursor,Input.CURSOR_POINTING_HAND,Vector2(hotspot[0],hotspot[1]))
 	Input.set_custom_mouse_cursor(cursor,Input.CURSOR_DRAG,Vector2(hotspot[0],hotspot[1]))
@@ -60,7 +61,17 @@ func _ready() -> void:
 	_toast_label = _label(root_control, "", Vector2(180,83), 12, _color("bright_gold"))
 	_toast_label.size.x = 360
 	_toast_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
-	_interaction_hint = _label(hud,"",Vector2(240,299),11,_color("bright_gold"))
+	_interaction_plaque = Control.new()
+	_interaction_plaque.name = "InteractionPlaque"
+	_interaction_plaque.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	_interaction_plaque.size = Vector2(RPGSkin.config().interaction.width,RPGSkin.config().interaction.height)
+	hud.add_child(_interaction_plaque)
+	RPGSkin.frame(_interaction_plaque,"tooltip",Rect2(Vector2.ZERO,_interaction_plaque.size))
+	_interaction_hint = _label(_interaction_plaque,"",Vector2.ZERO,int(RPGSkin.config().interaction.font_size),_color("bright_gold"))
+	_interaction_hint.size = _interaction_plaque.size
+	_interaction_hint.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	_interaction_hint.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
+	_interaction_plaque.hide()
 	_damage_overlay = _picture(root_control,"res://assets/ui/magic/hit_vignette.svg",Rect2(0,0,cfg.layout.screen[0],cfg.layout.screen[1]))
 	_damage_overlay.modulate.a = 0
 	EventBus.exp_gained.connect(_on_exp)
@@ -83,9 +94,7 @@ func _process(delta: float) -> void:
 	var inventory_hint := hud.get_node_or_null("InventoryHint")
 	if inventory_hint != null:
 		inventory_hint.visible = mode == ""
-	_interaction_hint.text = "E  坐火休息" if mode == "" and not dialogue_active() and _nearest_fire() != null else ""
-	if mode == "" and not dialogue_active() and GameState.current_room == &"camp_01" and not GameState.opened_chests.has(&"camp_supplies") and player.position.distance_to(Vector2(cfg.camp_supplies.ground[0],cfg.camp_supplies.ground[1])) < float(cfg.rest.range):
-		_interaction_hint.text = "E  打开补给箱"
+	_update_interaction_prompt()
 	var view_size := get_viewport().get_visible_rect().size
 	if inventory_hint != null:
 		inventory_hint.position.y = view_size.y - 23
@@ -126,7 +135,7 @@ func _process(delta: float) -> void:
 		var skill := DataDB.get_skill(id)
 		if slot.item_id != str(id):
 			slot.item_id = str(id)
-			slot.icon = load(str(skill.icon)) if not skill.is_empty() else null
+			slot.icon = RPGSkin.icon_for_path(str(skill.icon)) if not skill.is_empty() else null
 		slot.locked = id != &"" and not InventoryService.skill_unlocked(id)
 		slot.mana_blocked = GameState.mana < InventoryService.skill_mana_cost(id) or GameState.sta < InventoryService.skill_stamina_cost(id)
 		slot.selected = index == GameState.selected_skill
@@ -177,31 +186,39 @@ func _build_hud() -> void:
 	hud.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	hud.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	root_control.add_child(hud)
-	_picture(hud, "res://assets/ui/magic/hud_frame.svg", Rect2(2,2,210,64))
-	var portrait := _picture(hud, "res://assets/PROCESSED/characters/CHR-01/v001/frames/CHR-01_player_idle_right_v001_f01.png", Rect2(14,11,39,42))
+	var skin: Dictionary = RPGSkin.config().hud
+	var hud_art := TextureRect.new()
+	hud_art.texture = RPGSkin.texture("hud")
+	hud_art.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+	hud_art.position = _rect(skin.rect).position
+	hud_art.size = _rect(skin.rect).size
+	hud_art.texture_filter = CanvasItem.TEXTURE_FILTER_LINEAR
+	hud_art.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	hud.add_child(hud_art)
+	var portrait := _picture(hud, "res://assets/PROCESSED/characters/CHR-01/v001/frames/CHR-01_player_idle_right_v001_f01.png", _rect(skin.portrait))
 	var face := AtlasTexture.new()
 	face.atlas = portrait.texture
 	face.region = Rect2(21,13,27,29)
 	portrait.texture = face
 	portrait.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
-	var spec: Array = cfg.layout.bars
+	var spec: Array = skin.bars
 	for index in 3:
 		var bar := ProgressBar.new()
-		bar.position = Vector2(spec[0] + 2, spec[1] + index * int(cfg.layout.bar_gap) + 1)
-		bar.size = Vector2(int(spec[2]) - index * 11 - 4, int(spec[3]) - 2)
+		bar.position = Vector2(spec[0],spec[1]+index*float(skin.gap))
+		bar.size = Vector2(spec[2],spec[3])
 		bar.show_percentage = false
 		bar.add_theme_font_size_override("font_size",1)
 		bar.mouse_filter = Control.MOUSE_FILTER_IGNORE
 		bar.add_theme_stylebox_override("background", _style(_color("ink")))
-		bar.add_theme_stylebox_override("fill", _style(_color(["hp","sta","mana"][index])))
+		bar.add_theme_stylebox_override("fill",RPGSkin.bar_fill(_color(["hp","sta","mana"][index])))
 		hud.add_child(bar)
-		bar.size = Vector2(int(spec[2]) - index * 11 - 4,int(spec[3]) - 2)
+		bar.size = Vector2(spec[2],spec[3])
 		_bars.append(bar)
 		var numbers := _label(hud, "", bar.position - Vector2(0,3), 9)
 		numbers.size = bar.size
 		numbers.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 		_bar_labels.append(numbers)
-	_coin_label = _label(hud, "", Vector2(14,66), 10, _color("bright_gold"))
+	_coin_label = _label(hud,"",Vector2(skin.coin[0],skin.coin[1]),10,_color("bright_gold"))
 	var hotbar: Array = cfg.layout.hotbar
 	for index in int(cfg.inventory.hotbar_slots):
 		var slot := _slot(hud, "hotbar", index, Vector2(hotbar[0], hotbar[1] + index * (hotbar[2] + hotbar[3])), hotbar[2])
@@ -299,6 +316,45 @@ func _try_interact() -> bool:
 	if scene.has_method("interact_nearby"):
 		return scene.interact_nearby()
 	return false
+
+
+func _update_interaction_prompt() -> void:
+	_interaction_plaque.hide()
+	if mode != "" or dialogue_active():
+		return
+	var candidate := _interaction_candidate()
+	if candidate.is_empty():
+		return
+	var target: Node2D = candidate.target
+	var anchor := target.global_position+Vector2(0,float(RPGSkin.config().interaction.offset_y))
+	var point := target.get_canvas_transform()*anchor
+	_interaction_hint.text = str(candidate.text)
+	_interaction_plaque.position = (point-_interaction_plaque.size/2).round()
+	_interaction_plaque.show()
+
+
+func _interaction_candidate() -> Dictionary:
+	var fire := _nearest_fire()
+	if fire != null:
+		return {"target":fire,"text":"E  坐火休息"}
+	if GameState.current_room == &"camp_01" and scene.has_node("ChestA") and not GameState.opened_chests.has(&"camp_supplies"):
+		var chest := scene.get_node("ChestA") as Node2D
+		if player.global_position.distance_to(chest.global_position) <= float(cfg.rest.range):
+			return {"target":chest,"text":"E  打开补给箱"}
+	var nearest: Node2D
+	for npc in get_tree().get_nodes_in_group(&"npc"):
+		if npc.has_method("can_interact") and npc.can_interact() and (nearest == null or player.global_position.distance_to(npc.global_position) < player.global_position.distance_to(nearest.global_position)):
+			nearest = npc
+	if nearest != null:
+		return {"target":nearest,"text":"E  交谈"}
+	for pickup in get_tree().get_nodes_in_group(&"world_pickups"):
+		if player.global_position.distance_to(pickup.global_position) <= float(cfg.combat.pick_up_radius):
+			return {"target":pickup,"text":"E  拾取"}
+	if scene.has_method("_nearest_interaction"):
+		var id: String = scene._nearest_interaction()
+		if id != "":
+			return {"target":scene.get_node(id),"text":"E  拉动机关" if id == "ShortcutSwitch" else "E  打开宝箱"}
+	return {}
 
 
 func _nearest_fire() -> Node2D:
@@ -658,7 +714,7 @@ func _force_close() -> void:
 	_details = null
 
 
-func _open_modal(next_mode: String, rect: Rect2, art: String) -> void:
+func _open_modal(next_mode: String, rect: Rect2, _art: String) -> void:
 	for npc in get_tree().get_nodes_in_group(&"npc"):
 		if npc.has_method("close_interaction"):
 			npc.close_interaction()
@@ -677,7 +733,7 @@ func _open_modal(next_mode: String, rect: Rect2, art: String) -> void:
 	modal.position = rect.position + (get_viewport().get_visible_rect().size - Vector2(cfg.layout.screen[0],cfg.layout.screen[1])) / 2
 	modal.size = rect.size
 	root_control.add_child(modal)
-	_picture(modal,art,Rect2(Vector2.ZERO,rect.size))
+	RPGSkin.frame(modal,"secondary" if next_mode == "pause" else "panel",Rect2(Vector2.ZERO,rect.size))
 	mode = next_mode
 	get_tree().paused = true
 	_view_slots.clear()
@@ -795,7 +851,7 @@ func _slot(parent: Control, kind: String, index: int, pos: Vector2, length: floa
 func _picture(parent: Control, path: String, rect: Rect2) -> TextureRect:
 	var image := TextureRect.new()
 	image.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
-	image.texture = load(path)
+	image.texture = RPGSkin.icon_for_path(path)
 	image.position = rect.position
 	image.size = rect.size
 	image.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
@@ -846,6 +902,7 @@ func _button(parent: Control, text: String, rect: Rect2, callback: Callable) -> 
 	button.add_theme_stylebox_override("disabled",_style(_color("ink"),Color("#44514d")))
 	button.pressed.connect(callback)
 	parent.add_child(button)
+	RPGSkin.dress_button(button)
 	return button
 
 
@@ -909,3 +966,4 @@ func _exit_tree() -> void:
 	Input.set_custom_mouse_cursor(null,Input.CURSOR_ARROW)
 	Input.set_custom_mouse_cursor(null,Input.CURSOR_POINTING_HAND)
 	Input.set_custom_mouse_cursor(null,Input.CURSOR_DRAG)
+	RPGSkin.release_cursor()

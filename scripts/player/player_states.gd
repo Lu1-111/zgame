@@ -176,6 +176,7 @@ class Attack extends PlayerState:
 		_t += delta
 		p.velocity.x = 0.0
 		if p.weapon_type() == "bow":
+			p.set_facing(int(signf(p.aim_vector().x)))
 			p.attack_charge = clampf(_t/float(_module.charge_max),0,1) if not _opened else p.attack_charge
 			if not _opened:
 				p.attack_phase = &"charge"
@@ -229,6 +230,8 @@ class Skill extends PlayerState:
 	func enter(_msg: Dictionary) -> void:
 		_t = 0.0
 		_fired = false
+		if p._current_skill == &"skill_cleave":
+			p._last_attack_time = p._clock
 		p.set_facing(int(signf(p.aim_vector().x)))  # M1.5 鼠标自动转向：施法朝鼠标方位
 		p.velocity.x = 0.0  # 施放期间锁定水平位移
 

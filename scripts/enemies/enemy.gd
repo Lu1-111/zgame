@@ -7,7 +7,7 @@ const CONFIG_PATH := "res://data/enemy_presentation.json"
 var target: Node2D
 var tuning: Dictionary = {}
 var definition: Dictionary = {}
-var state: StringName = &"chase"
+var state: StringName = &"patrol"
 var hp := 0
 var facing := 1
 var elapsed := 0.0
@@ -26,15 +26,19 @@ var _body_size := Vector2.ZERO
 func _ready() -> void:
 	tuning = JSON.parse_string(FileAccess.get_file_as_string(CONFIG_PATH))
 	tuning.merge(tuning.get("per_enemy", {}).get(String(enemy_id), {}), true)
+	tuning.detect_range = float(EncounterRules.config().perception.detect_range)
+	tuning.lose_range = float(EncounterRules.config().perception.lose_range)
 	definition = DataDB.get_enemy(enemy_id)
 	if definition.is_empty():
 		queue_free()
 		return
 	hp = int(definition.hp)
+	add_to_group(&"enemies")
 	origin = global_position
 	_flying = str(definition.ai.type) in ["fly", "float"]
 	collision_layer = 4
-	collision_mask = 129
+	collision_mask = 129 | 2 | 4
+	floor_snap_length = float(EncounterRules.config().navigation.floor_snap)
 	var size: Array = tuning.fly_body_size if _flying else tuning.body_size
 	_body_size = Vector2(size[0], size[1])
 	_body_offset = Vector2.ZERO if _flying else Vector2(0, -_body_size.y / 2.0)
@@ -63,7 +67,7 @@ func _ready() -> void:
 		tuning.get("sprite_resources", {})
 	)
 	visual.action_completed.connect(_on_animation_completed)
-	_set_state(&"chase")
+	_set_state(&"patrol")
 
 func _add_shape(parent: Node, size: Vector2, offset: Vector2) -> void:
 	var shape := CollisionShape2D.new()
@@ -94,24 +98,30 @@ func _physics_process(delta: float) -> void:
 		_return_home()
 	else:
 		_update_state(delta)
+	if not _flying and state not in [&"hurt",&"death"] and not EnemyAwareness.has_support_ahead(self,velocity.x,_body_size.x):
+		facing = -1 if velocity.x > 0 else 1
+		velocity.x = 0
 	move_and_slide()
 	queue_redraw()
 
 func _update_state(delta: float) -> void:
 	var distance := global_position.distance_to(target.global_position)
+	var sees := EnemyAwareness.can_sense(self,target,_body_offset,_flying,state == &"chase")
 	match state:
 		&"idle":
 			velocity.x = 0.0
-			_set_state(&"chase")
+			_set_state(&"chase" if sees else &"patrol")
 		&"patrol", &"chase":
-			if distance <= float(tuning.detect_range) and state == &"patrol":
+			if sees and state == &"patrol":
 				_set_state(&"chase")
-			if state == &"chase" and distance > float(tuning.lose_range):
+			if state == &"chase" and not sees:
 				_set_state(&"patrol")
 			if state == &"chase":
 				facing = -1 if target.global_position.x < global_position.x else 1
-			elif absf(global_position.x - origin.x) >= float(tuning.patrol_distance) or is_on_wall():
+			elif is_on_wall():
 				facing *= -1
+			elif absf(global_position.x-origin.x) >= float(tuning.patrol_distance):
+				facing = -1 if global_position.x > origin.x else 1
 			var speed := float(definition.ai.chase_speed if state == &"chase" else definition.ai.patrol_speed)
 			if _slow_left > 0.0:
 				speed *= float(tuning.slow_multiplier)

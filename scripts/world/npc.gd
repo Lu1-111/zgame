@@ -43,7 +43,7 @@ func _process(delta: float) -> void:
 	if _mode == Mode.TALK:
 		return
 	if _player_near:
-		prompt.visible = true
+		prompt.visible = false
 		if _mode != Mode.WAIT:
 			_mode = Mode.WAIT
 			sprite.play(&"idle")
@@ -77,7 +77,7 @@ func _update_nearby() -> void:
 	if _player_near == was_near:
 		return
 	if _player_near:
-		prompt.visible = true
+		prompt.visible = false
 		if _mode != Mode.TALK:
 			_mode = Mode.WAIT
 			_wait_left = 0.3
@@ -166,7 +166,7 @@ func _close_dialogue() -> void:
 	var ui := get_tree().get_first_node_in_group(&"npc_dialogue")
 	if ui and ui.has_method("close_dialogue"):
 		ui.close_dialogue()
-	prompt.visible = _player_near
+	prompt.visible = false
 
 
 ## 由对话框推进下一句，任意按键共用此入口。

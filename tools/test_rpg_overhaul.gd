@@ -192,6 +192,10 @@ func _run() -> void:
 	actor.set_facing(-1)
 	actor.sprite.flip_h = true
 	await _frames(8)
+	var fire := current_scene.get_node("Campfire") as Node2D
+	var ui_cfg: Dictionary = JSON.parse_string(FileAccess.get_file_as_string("res://data/ui_skin.json"))
+	var anchor := fire.get_canvas_transform()*(fire.global_position+Vector2(0,float(ui_cfg.interaction.offset_y)))
+	_expect(ui._interaction_plaque.visible and "坐火休息" in ui._interaction_hint.text and (ui._interaction_plaque.position+ui._interaction_plaque.size/2).distance_to(anchor) < 1,"金属文本框中的 E 提示随待交互篝火定位到上方")
 	_expect(ui.begin_rest() and actor.facing == 1 and not actor.sprite.flip_h,"从另一朝向坐火后人物真正面向篝火")
 	ui.close_menu()
 	await _frames(40)
@@ -210,9 +214,6 @@ func _run() -> void:
 
 func _test_pixels() -> void:
 	var cfg: Dictionary = JSON.parse_string(FileAccess.get_file_as_string("res://data/combat_presentation.json"))
-	var base := Image.load_from_file(ProjectSettings.globalize_path(str(cfg.pixel_actions.source)))
-	var raw: Array = cfg.pixel_actions.arm_region
-	var arms := Rect2i(raw[0],raw[1],raw[2],raw[3])
 	var valid := true
 	var count := 0
 	for definition: Dictionary in cfg.animations.values():
@@ -220,12 +221,16 @@ func _test_pixels() -> void:
 		for path: String in definition.frame_paths:
 			var image := Image.load_from_file(ProjectSettings.globalize_path(path))
 			valid = valid and image.get_size() == Vector2i(64,64)
-			for y in 64:
-				for x in 64:
-					if base.get_pixel(x,y).a > 0 and not arms.has_point(Vector2i(x,y)):
-						valid = valid and image.get_pixel(x,y) == base.get_pixel(x,y)
 			count += 1
-	_expect(valid and count == 20,"二十帧动作使用原64画布，手臂区域外人物RGBA逐像素一致")
+	var rig: Node2D = actor._pixel_rig
+	var base := Image.load_from_file(ProjectSettings.globalize_path(rig.source.resource_path))
+	valid = valid and rig._whole_body.texture == rig.source and rig._whole_body.scale == Vector2.ONE and rig._source_rect.size == Vector2(64,64)
+	var native: Image = rig.source.get_image()
+	for y in base.get_height():
+		for x in base.get_width():
+			if base.get_pixel(x,y).a > 0.5:
+				valid = valid and native.get_pixel(x,y) == base.get_pixel(x,y)
+	_expect(valid and count == 32,"三十二帧当前动作保持64画布，完整人物母版的非透明RGBA与正式源图一致")
 
 
 func _on_spawn(child: Node) -> void:

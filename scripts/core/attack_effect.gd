@@ -64,20 +64,17 @@ static func play_impact(parent: Node, global_pos: Vector2, is_magic: bool) -> vo
 
 func _ready() -> void:
 	if _active_time > 0.0 and packet != null:
-		var area := Area2D.new()
-		area.name = "HitboxArea"
-		area.collision_layer = 8    # player_hitbox
-		area.collision_mask = 32    # hurtbox
-		add_child(area)
-		area.position = _hitbox_offset
+		_hitbox = HitboxComponent.new()
+		_hitbox.name = "HitboxArea"
+		_hitbox.source_actor = source_actor
+		_hitbox.position = _hitbox_offset
 		var cs := CollisionShape2D.new()
+		cs.name = "Shape"
 		var shape := RectangleShape2D.new()
 		shape.size = _hitbox_size
 		cs.shape = shape
-		area.add_child(cs)
-		_hitbox = HitboxComponent.new()
-		_hitbox.source_actor = source_actor
-		area.add_child(_hitbox)
+		_hitbox.add_child(cs)
+		add_child(_hitbox)
 		_hitbox.activate(packet)
 		_hitbox.hit_landed.connect(func(t: Node, d: int) -> void: hit_landed.emit(t, d))
 	_setup_visual()
