@@ -20,12 +20,12 @@ var _front_foot_target: Node2D
 var _back_foot_target: Node2D
 var _front_upper: Bone2D
 var _front_fore: Bone2D
-var _front_hand: Bone2D
+var _front_hand: Node2D
 var _back_upper: Bone2D
 var _back_fore: Bone2D
-var _back_hand: Bone2D
-var _front_foot: Bone2D
-var _back_foot: Bone2D
+var _back_hand: Node2D
+var _front_foot: Node2D
+var _back_foot: Node2D
 var _torso: Bone2D
 var _head: Bone2D
 var _mount: Node2D
@@ -34,6 +34,11 @@ var _bones: Array[Bone2D] = []
 var _rest: Array[Transform2D] = []
 var _ik_modifiers: Array[SkeletonModification2DTwoBoneIK] = []
 var _ik_local_limits: Array[Vector2] = []
+var _ik_default_bends: Array[bool] = []
+var _arm_modifiers: Array[SkeletonModification2DTwoBoneIK] = []
+var _arm_elbows: Array[Bone2D] = []
+var _sword_return_bones: Array[Transform2D] = []
+var _sword_return_controls: Array[Transform2D] = []
 var _overlay: BoneOverlay
 var _external: StringName = &""
 var _external_time := 0.0
@@ -195,14 +200,14 @@ func _bind() -> bool:
 		return false
 	_front_upper = _bone("Root/Torso/FrontUpperArm")
 	_front_fore = _bone("Root/Torso/FrontUpperArm/FrontForearm")
-	_front_hand = _bone("Root/Torso/FrontUpperArm/FrontForearm/FrontHand")
+	_front_hand = _skeleton.get_node_or_null("Root/Torso/FrontUpperArm/FrontForearm/FrontHand") as Node2D
 	_back_upper = _bone("Root/Torso/BackUpperArm")
 	_back_fore = _bone("Root/Torso/BackUpperArm/BackForearm")
-	_back_hand = _bone("Root/Torso/BackUpperArm/BackForearm/BackHand")
-	_front_foot = _bone("Root/FrontThigh/FrontShin/FrontFoot")
-	_back_foot = _bone("Root/BackThigh/BackShin/BackFoot")
+	_back_hand = _skeleton.get_node_or_null("Root/Torso/BackUpperArm/BackForearm/BackHand") as Node2D
+	_front_foot = _skeleton.get_node_or_null("Root/FrontThigh/FrontShin/FrontFoot") as Node2D
+	_back_foot = _skeleton.get_node_or_null("Root/BackThigh/BackShin/BackFoot") as Node2D
 	_torso = _bone("Root/Torso")
-	_head = _bone("Root/Torso/Neck/Head")
+	_head = _bone("Root/Torso/Head")
 	if _front_hand == null or _back_hand == null or _front_upper == null or _front_fore == null or _back_upper == null or _back_fore == null or _front_foot == null or _back_foot == null or _torso == null or _head == null:
 		return false
 	_mount = _front_hand.get_node_or_null("WeaponMount") as Node2D
@@ -232,6 +237,8 @@ func _bone(path: String) -> Bone2D:
 	return _skeleton.get_node_or_null(NodePath(path)) as Bone2D
 
 func _resolve_clip(state: StringName, weapon: String, combo: int) -> StringName:
+	if weapon == "sword" and str(state).to_lower() == "idle":
+		return &"sword_ready"
 	if _player.has_animation(state):
 		return state
 	var key := str(state).to_lower()
@@ -251,6 +258,13 @@ func _resolve_clip(state: StringName, weapon: String, combo: int) -> StringName:
 func _evaluate(clip: StringName, time: float) -> void:
 	if not _player.has_animation(clip):
 		return
+	if clip == &"sword_ready" and _weapon_kind == "sword":
+		if _clip != &"sword_ready":
+			_clear_sword_return()
+			if _clip in [&"sword_1", &"sword_2", &"sword_3"]:
+				_capture_sword_return()
+	else:
+		_clear_sword_return()
 	for index in _bones.size():
 		_bones[index].transform = _rest[index]
 	var animation := _player.get_animation(clip)
@@ -262,9 +276,47 @@ func _evaluate(clip: StringName, time: float) -> void:
 	_player.play(clip)
 	_player.seek(sample, true)
 	_player.pause()
+	if clip == &"sword_ready":
+		_blend_sword_return(time)
 	_clip = clip
 	_weapon.configure(_weapon_kind, _cfg)
 	_weapon.visible = str(clip) not in _cfg.get("hidden_weapon_clips", [])
+
+func _capture_sword_return() -> void:
+	# 缓存上一帧已完成 IK 的可见姿态，不能用上一动作的默认首帧替代。
+	for bone: Bone2D in _bones:
+		_sword_return_bones.append(bone.transform)
+	for control: Node2D in [_grip, _front_foot_target, _back_foot_target]:
+		_sword_return_controls.append(control.transform)
+
+func _clear_sword_return() -> void:
+	_sword_return_bones.clear()
+	_sword_return_controls.clear()
+
+func _blend_sword_return(time: float) -> void:
+	if _sword_return_bones.is_empty():
+		return
+	var duration := float(_runtime.get("sword_return_seconds", 0.0))
+	if duration <= 0.0:
+		return
+	var amount := clampf(time / duration, 0.0, 1.0)
+	if amount >= 1.0:
+		return
+	for index in _bones.size():
+		_blend_local_transform(_bones[index], _sword_return_bones[index], amount)
+	var controls: Array[Node2D] = [_grip, _front_foot_target, _back_foot_target]
+	for index in controls.size():
+		_blend_local_transform(controls[index], _sword_return_controls[index], amount)
+
+func _blend_local_transform(node: Node2D, source: Transform2D, amount: float) -> void:
+	if amount <= 0.0:
+		node.transform = source
+		return
+	node.position = source.origin.lerp(node.position, amount)
+	# 剑动作可累计转过整圈，返回待机只取等价角之间的最短路径。
+	node.rotation = lerp_angle(source.get_rotation(), node.rotation, amount)
+	node.scale = source.get_scale().lerp(node.scale, amount)
+	node.skew = lerp_angle(source.get_skew(), node.skew, amount)
 
 func _aim_rifle(time: float) -> void:
 	var aim_origin := global_position
@@ -310,7 +362,7 @@ func _solve_limbs() -> void:
 	var direction := _grip.global_transform.x.normalized()
 	var wrist := _grip.global_position - direction * float(_runtime.hand_mount_offset) * absf(global_scale.x)
 	_front_target.global_position = _clamp_arm_target(_front_upper, _front_fore, wrist)
-	_skeleton.execute_modifications(0.0, 0)
+	_solve_native_ik()
 	_align_bone(_front_hand, direction)
 	_weapon.global_transform = _mount.global_transform
 	var spacing := float(_runtime.other_offhand)
@@ -320,7 +372,7 @@ func _solve_limbs() -> void:
 		spacing = float(_runtime.rifle_offhand)
 	var rear_wrist := _mount.global_position + direction * (spacing - float(_runtime.hand_mount_offset)) * absf(global_scale.x)
 	_back_target.global_position = _clamp_arm_target(_back_upper, _back_fore, rear_wrist)
-	_skeleton.execute_modifications(0.0, 0)
+	_solve_native_ik()
 	_align_bone(_front_hand, direction)
 	_align_bone(_back_hand, direction)
 	_align_bone(_front_foot, _front_foot_target.global_transform.x.normalized())
@@ -334,6 +386,9 @@ func _cache_ik_local_limits() -> void:
 	# 仅缓存一次原始值，避免重复求解时把已经缩放过的限制再次相乘。
 	_ik_modifiers.clear()
 	_ik_local_limits.clear()
+	_ik_default_bends.clear()
+	_arm_modifiers.clear()
+	_arm_elbows.clear()
 	var stack := _skeleton.get_modification_stack()
 	if stack == null:
 		return
@@ -342,6 +397,33 @@ func _cache_ik_local_limits() -> void:
 		if modifier != null:
 			_ik_modifiers.append(modifier)
 			_ik_local_limits.append(Vector2(modifier.target_minimum_distance, modifier.target_maximum_distance))
+			_ik_default_bends.append(modifier.flip_bend_direction)
+			var upper := _skeleton.get_node_or_null(modifier.joint_one_bone2d_node)
+			if upper == _front_upper or upper == _back_upper:
+				_arm_modifiers.append(modifier)
+				_arm_elbows.append(_front_fore if upper == _front_upper else _back_fore)
+
+func _solve_native_ik() -> void:
+	if _weapon_kind != "sword" or _arm_modifiers.is_empty():
+		# 其他武器继续使用场景中原定的关节分支，不继承上一次剑姿态的选择。
+		for index in _ik_modifiers.size():
+			_ik_modifiers[index].flip_bend_direction = _ik_default_bends[index]
+		_skeleton.execute_modifications(0.0, 0)
+		return
+	# 两种分支都由原生 IK 真正求解；用世界坐标选择更低的肘点。
+	# 不能固定 flip：镜像、整体缩放和躯干旋转都会改变正确的弯曲方向。
+	for modifier: SkeletonModification2DTwoBoneIK in _arm_modifiers:
+		modifier.flip_bend_direction = false
+	_skeleton.execute_modifications(0.0, 0)
+	var unflipped_y: Array[float] = []
+	for elbow: Bone2D in _arm_elbows:
+		unflipped_y.append(elbow.global_position.y)
+	for modifier: SkeletonModification2DTwoBoneIK in _arm_modifiers:
+		modifier.flip_bend_direction = true
+	_skeleton.execute_modifications(0.0, 0)
+	for index in _arm_modifiers.size():
+		_arm_modifiers[index].flip_bend_direction = _arm_elbows[index].global_position.y > unflipped_y[index]
+	_skeleton.execute_modifications(0.0, 0)
 
 func _update_ik_global_limits() -> void:
 	var magnitude := absf(_skeleton.global_scale.x)
@@ -363,9 +445,10 @@ func _clamp_arm_target(upper: Bone2D, fore: Bone2D, target: Vector2) -> Vector2:
 	var direction := offset.normalized() if not offset.is_zero_approx() else Vector2.RIGHT
 	return to_global(shoulder + direction * length)
 
-func _align_bone(bone: Bone2D, direction: Vector2) -> void:
-	var holder := bone.get_parent() as Node2D
-	bone.rotation = holder.global_transform.basis_xform_inv(direction).angle()
+func _align_bone(endpoint: Node2D, direction: Vector2) -> void:
+	# 手、脚是合并蒙皮末端的 Marker2D；只转挂点，不转前臂或小腿网格。
+	var holder := endpoint.get_parent() as Node2D
+	endpoint.rotation = holder.global_transform.basis_xform_inv(direction).angle()
 
 func _finish_external_if_needed() -> void:
 	if _external_complete or not _player.has_animation(_external):

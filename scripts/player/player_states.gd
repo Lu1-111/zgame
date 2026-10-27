@@ -207,8 +207,12 @@ class Attack extends PlayerState:
 				p.spawn_weapon_projectile()
 			else:
 				p.spawn_melee_effect(_combo)
+		# 骨骼直剑在后摇中完成收剑与下一段预备，保留连击缓冲直到完整过渡结束。
+		var chain_ready := active_end
+		if p.uses_skeletal_animation() and p.weapon_type() == "sword":
+			chain_ready += float(_module.get("recovery",PlayerTuning.ATK_RECOVERY))
 		if _t >= active_end:
-			if _combo < p.max_combo() and p.attack_chain:
+			if _combo < p.max_combo() and p.attack_chain and _t >= chain_ready:
 				sm.to(&"Attack",{"combo":_combo+1})
 				return
 			if p.buffer_peek(&"dodge") and p.can_dodge():

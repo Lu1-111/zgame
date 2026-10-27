@@ -7,7 +7,7 @@ const CONFIG_PATH := "res://data/skeleton_test.json"
 const MODEL_PATH := "res://scenes/player/skeletal/hero_skeleton_test.tscn"
 const ORIGINAL_FRAMES := "res://assets/PROCESSED/characters/CHR-01/v001/godot/CHR-01_sprite_frames.tres"
 const EXTERNAL_LIBRARY := "res://assets/PROCESSED/characters/CHR-01/skeleton_test/hero_bone_animations.tres"
-const REQUIRED_CLIPS := ["idle", "run", "jump", "fall", "land", "dodge", "guard", "guard_lower", "sword_1", "sword_2", "sword_3", "rifle", "hammer_1", "hammer_2", "hammer_3", "staff", "hurt", "death", "rest_enter", "rest", "rest_exit"]
+const REQUIRED_CLIPS := ["idle", "run", "jump", "fall", "land", "dodge", "guard", "guard_lower", "sword_ready", "sword_1", "sword_2", "sword_3", "rifle", "hammer_1", "hammer_2", "hammer_3", "staff", "hurt", "death", "rest_enter", "rest", "rest_exit"]
 const ARM_PATHS := ["Root/Torso/FrontUpperArm/FrontForearm/FrontHand", "Root/Torso/BackUpperArm/BackForearm/BackHand"]
 const FOOT_PATHS := ["Root/FrontThigh/FrontShin/FrontFoot", "Root/BackThigh/BackShin/BackFoot"]
 
@@ -57,6 +57,10 @@ func _run() -> void:
 	var valid := _check_native_structure(rig)
 	if valid:
 		await _check_native_motion(rig)
+		_expect(_config.has("sword_sequence"), "七关键姿势剑动作包含独立轨迹验收数据")
+		if _config.has("sword_sequence"):
+			_check_sword_trajectory(rig)
+			await _check_sword_return_integration()
 	rig.queue_free()
 	await _frames(2)
 	await _check_player_integration()
@@ -85,13 +89,21 @@ func _check_native_structure(rig: Node2D) -> bool:
 			bones.append(node)
 		if node is Polygon2D:
 			meshes.append(node)
-	_expect(bones.size() >= _config.get("bones", []).size() and bones.size() >= 16, "原生骨链覆盖头身双臂双腿")
+	_expect(bones.size() == _config.get("bones", []).size() and bones.size() == 11, "角色严格使用 11 个原生骨骼，头部直接连接躯干")
 	var rest_ok := true
+	var integrated_parts := true
 	for node in bones:
 		var bone := node as Bone2D
 		rest_ok = rest_ok and absf(bone.rest.determinant()) > 0.001 and bone.get_length() > 0.0
+		integrated_parts = integrated_parts and str(bone.name) not in ["Neck", "FrontHand", "BackHand", "FrontFoot", "BackFoot"]
 	_expect(rest_ok, "所有骨骼有非退化 rest 与有效长度")
-	_expect(meshes.size() >= _config.get("meshes", []).size() and meshes.size() >= 15, "角色各静态分件通过 Polygon2D 蒙皮")
+	var expected_meshes := ["Head", "Torso", "FrontUpperArm", "FrontForearm", "BackUpperArm", "BackForearm", "FrontThigh", "FrontShin", "BackThigh", "BackShin"]
+	for mesh in meshes:
+		integrated_parts = integrated_parts and str(mesh.name) in expected_meshes
+	for path in ARM_PATHS + FOOT_PATHS:
+		integrated_parts = integrated_parts and skeleton.get_node_or_null(path) is Marker2D
+	_expect(meshes.size() == _config.get("meshes", []).size() and meshes.size() == 10, "六类分件左右展开后严格使用 10 个 Polygon2D 蒙皮")
+	_expect(integrated_parts and skeleton.get_node_or_null("Root/Torso/Head") is Bone2D, "无独立颈部、手掌、脚部骨骼或网格，手脚末端仅保留 IK Marker2D")
 	var weights_ok := true
 	var source_ok := true
 	var source_paths: Array[String] = []
@@ -145,7 +157,7 @@ func _check_native_structure(rig: Node2D) -> bool:
 			forbidden_tracks = forbidden_tracks or path.ends_with(":texture") or path.ends_with(":frame") or path.ends_with(":sprite_frames")
 			bone_tracks = bone_tracks or path.begins_with("Skeleton2D/")
 			goal_tracks = goal_tracks or path.begins_with("Controls/")
-	_expect(clips_ok, "21 个基础/武器/格挡/坐火原生 clip 均存在且有曲线")
+	_expect(clips_ok, "22 个基础/武器/格挡/坐火原生 clip 均存在且有曲线")
 	_expect(bone_tracks and goal_tracks and not forbidden_tracks, "动画曲线驱动骨骼与 IK 目标，不以换贴图模拟动作")
 	var library := animator.get_animation_library(&"")
 	_expect(library != null and library.resource_path == EXTERNAL_LIBRARY and not library.resource_path.contains("::"), "AnimationPlayer 实际引用独立可编辑的外部 AnimationLibrary，未内嵌子资源")
@@ -168,9 +180,9 @@ func _check_native_motion(rig: Node2D) -> void:
 			await _frames(1)
 			material_intact = material_intact and textures == _texture_snapshot(rig)
 			torso_samples[_transform_key(skeleton.get_node("Root/Torso"))] = true
-			head_samples[_transform_key(skeleton.get_node("Root/Torso/Neck/Head"))] = true
+			head_samples[_transform_key(skeleton.get_node("Root/Torso/Head"))] = true
 			for index in ARM_PATHS.size():
-				var hand := skeleton.get_node(ARM_PATHS[index]) as Bone2D
+				var hand := skeleton.get_node(ARM_PATHS[index]) as Node2D
 				var target := rig.get_node("Controls/FrontTarget" if index == 0 else "Controls/BackTarget") as Node2D
 				hand_samples[_transform_key(hand)] = true
 				grip_error = maxf(grip_error, hand.global_position.distance_to(target.global_position))
@@ -178,7 +190,7 @@ func _check_native_motion(rig: Node2D) -> void:
 		rig.sync_pose(&"Run", time, "hammer", 1, Vector2.RIGHT, 1)
 		await _frames(1)
 		for index in FOOT_PATHS.size():
-			var foot := skeleton.get_node(FOOT_PATHS[index]) as Bone2D
+			var foot := skeleton.get_node(FOOT_PATHS[index]) as Node2D
 			var goal := rig.get_node("Controls/FrontFoot" if index == 0 else "Controls/BackFoot") as Node2D
 			foot_samples[_transform_key(foot)] = true
 			foot_error = maxf(foot_error, foot.global_position.distance_to(goal.global_position))
@@ -200,7 +212,7 @@ func _check_native_motion(rig: Node2D) -> void:
 			var to_cursor := (rig.global_position + aim_offset - muzzle).normalized()
 			directional_ok = directional_ok and actual.is_finite() and actual.normalized().dot(to_cursor) > 0.995
 			directional_ok = directional_ok and muzzle.is_finite()
-			head_aims[_transform_key(skeleton.get_node("Root/Torso/Neck/Head"))] = true
+			head_aims[_transform_key(skeleton.get_node("Root/Torso/Head"))] = true
 			material_intact = material_intact and textures == _texture_snapshot(rig)
 	_expect(directional_ok and head_aims.size() >= 5, "步枪上下/左右瞄准驱动枪口与头身骨骼，方向连续且有效")
 	_expect(material_intact, "步枪各瞄准方向不替换身体分件贴图")
@@ -209,7 +221,7 @@ func _check_native_motion(rig: Node2D) -> void:
 	await _frames(1)
 	var scaled_error := 0.0
 	for index in ARM_PATHS.size():
-		var hand := skeleton.get_node(ARM_PATHS[index]) as Bone2D
+		var hand := skeleton.get_node(ARM_PATHS[index]) as Node2D
 		var target := rig.get_node("Controls/FrontTarget" if index == 0 else "Controls/BackTarget") as Node2D
 		scaled_error = maxf(scaled_error, hand.global_position.distance_to(target.global_position))
 	_expect(scaled_error < 1.0, "测试台放大五倍后原生 IK 仍能抵达握点（误差 %.3f px）" % scaled_error)
@@ -226,6 +238,125 @@ func _check_native_motion(rig: Node2D) -> void:
 	_expect(not rig.is_external_active(), "坐火展示可退出并归还状态机")
 	var original := load(ORIGINAL_FRAMES) as SpriteFrames
 	_expect(original != null and original.has_animation(&"idle") and original.has_animation(&"hammer_1") and original.has_animation(&"staff_sweep"), "原角色正式逐帧资源及锤杖动作仍可加载")
+
+
+func _check_sword_trajectory(rig: Node2D) -> void:
+	var sequence: Dictionary = _config.get("sword_sequence", {})
+	var tolerances: Dictionary = sequence.get("tolerances", {})
+	var samples := maxi(3, int(sequence.get("samples_per_clip", 61)))
+	var skeleton := rig.get_node("Skeleton2D") as Skeleton2D
+	var elbow_tolerance := float(tolerances.get("elbow_down_px", 0.05))
+	var length_tolerance := float(tolerances.get("segment_length_px", 0.05))
+	var target_tolerance := float(tolerances.get("wrist_target_px", 0.2))
+	var angle_tolerance := deg_to_rad(float(tolerances.get("joint_angle_degrees", 0.05)))
+	for magnitude: float in sequence.get("scales", [1.0, 5.0]):
+		for facing: int in sequence.get("facings", [1, -1]):
+			rig.scale = Vector2(magnitude, magnitude)
+			for combo in [1, 2, 3]:
+				var minimum_down_margin := INF
+				var minimum_shoulder_margin := INF
+				var maximum_length_error := 0.0
+				var maximum_target_error := 0.0
+				var maximum_raw_joint_angle := 0.0
+				var maximum_elbow_step := 0.0
+				var previous_elbows: Array[Vector2] = []
+				var finite := true
+				for sample in samples:
+					var progress := float(sample) / float(samples - 1)
+					rig.sync_pose(&"Attack", 0.0, "sword", combo, Vector2(float(facing), 0), facing, progress)
+					for index in ARM_PATHS.size():
+						var wrist := skeleton.get_node(ARM_PATHS[index]) as Node2D
+						var forearm := wrist.get_parent() as Bone2D
+						var upper_arm := forearm.get_parent() as Bone2D
+						var target := rig.get_node("Controls/FrontTarget" if index == 0 else "Controls/BackTarget") as Node2D
+						var shoulder_position := upper_arm.global_position
+						var elbow_position := forearm.global_position
+						var wrist_position := wrist.global_position
+						var axis := (wrist_position - shoulder_position).normalized()
+						var projected_elbow := shoulder_position + axis * (elbow_position - shoulder_position).dot(axis)
+						var other_elbow := projected_elbow * 2.0 - elbow_position
+						var down_margin := (elbow_position.y - other_elbow.y) / magnitude
+						if sample > 0:
+							maximum_elbow_step = maxf(maximum_elbow_step, elbow_position.distance_to(previous_elbows[index]) / magnitude)
+						if previous_elbows.size() <= index:
+							previous_elbows.append(elbow_position)
+						else:
+							previous_elbows[index] = elbow_position
+						minimum_down_margin = minf(minimum_down_margin, down_margin)
+						minimum_shoulder_margin = minf(minimum_shoulder_margin, (elbow_position.y - shoulder_position.y) / magnitude)
+						maximum_length_error = maxf(maximum_length_error, absf(shoulder_position.distance_to(elbow_position) / magnitude - upper_arm.length))
+						maximum_length_error = maxf(maximum_length_error, absf(elbow_position.distance_to(wrist_position) / magnitude - forearm.length))
+						maximum_target_error = maxf(maximum_target_error, wrist_position.distance_to(target.global_position) / magnitude)
+						maximum_raw_joint_angle = maxf(maximum_raw_joint_angle, absf(forearm.rotation))
+						finite = finite and shoulder_position.is_finite() and elbow_position.is_finite() and wrist_position.is_finite() and is_finite(forearm.rotation)
+				var label := "剑%d段 %d面 %.0f倍 %d点" % [combo, facing, magnitude, samples]
+				_expect(finite and minimum_down_margin >= -elbow_tolerance, "%s：双肘均选择肩腕几何解中更靠下的分支（最小差 %.4f px）" % [label, minimum_down_margin])
+				_expect(finite and minimum_shoulder_margin >= -elbow_tolerance, "%s：真实双肘不高于各自肩部，排除两个解都向上的假通过（最小肩肘差 %.4f px）" % [label, minimum_shoulder_margin])
+				_expect(maximum_raw_joint_angle <= PI + angle_tolerance, "%s：前臂原始局部旋转不越过 ±180°，不以 acos 恒真检查代替（最大 %.3f°）" % [label, rad_to_deg(maximum_raw_joint_angle)])
+				_expect(maximum_length_error <= length_tolerance and maximum_target_error <= target_tolerance, "%s：上下臂长度恒定且手腕抵达 IK 目标（骨长差 %.4f / 握点差 %.4f px）" % [label, maximum_length_error, maximum_target_error])
+				if tolerances.has("elbow_step_px"):
+					_expect(maximum_elbow_step <= float(tolerances.elbow_step_px), "%s：相邻肘位移连续，无穿肩换支突跳（最大 %.3f px）" % [label, maximum_elbow_step])
+	_check_sword_keyframes(rig, sequence)
+	rig.scale = Vector2.ONE
+	rig.sync_pose(&"idle", 0.0, "sword", 1, Vector2.RIGHT, 1, 0.0)
+
+
+func _check_sword_keyframes(rig: Node2D, sequence: Dictionary) -> void:
+	var keyframes: Array = sequence.get("keyframes", [])
+	_expect(keyframes.size() == 7, "剑动作数据完整声明七个关键姿势")
+	for magnitude: float in sequence.get("scales", [1.0, 5.0]):
+		for facing: int in sequence.get("facings", [1, -1]):
+			var first_pose: Dictionary = {}
+			for index in keyframes.size():
+				var keyframe: Dictionary = keyframes[index]
+				rig.scale = Vector2(magnitude, magnitude)
+				var clip := StringName(keyframe.get("clip", "idle"))
+				var progress := float(keyframe.get("progress", 0.0))
+				rig.sync_pose(clip, 0.0, "sword", int(keyframe.get("combo", 1)), Vector2(float(facing), 0), facing, progress)
+				var actual := _sword_pose_metrics(rig)
+				var constraints: Dictionary = keyframe.get("metrics", {})
+				var valid := not constraints.is_empty()
+				var failures: Array[String] = []
+				for metric: String in constraints:
+					var limits: Array = constraints[metric]
+					if not actual.has(metric) or limits.size() != 2:
+						valid = false
+						failures.append("未知约束 %s" % metric)
+						continue
+					var value := float(actual[metric])
+					if not is_finite(value) or value < float(limits[0]) or value > float(limits[1]):
+						valid = false
+						failures.append("%s=%.4f，预期%s" % [metric, value, limits])
+				var detail := "" if failures.is_empty() else "；" + "；".join(failures)
+				_expect(valid, "剑关键姿势 %s %d面 %.0f倍满足位置/方向/伸臂约束%s" % [str(keyframe.get("name", clip)), facing, magnitude, detail])
+				if index == 0:
+					first_pose = actual.duplicate()
+				elif index == 6:
+					var same_pose := true
+					for metric: String in first_pose:
+						same_pose = same_pose and absf(float(actual[metric]) - float(first_pose[metric])) <= 0.05
+					_expect(same_pose, "第七姿势恢复第一姿势的肩上持剑与双脚位置（%d面 %.0f倍）" % [facing, magnitude])
+
+
+func _sword_pose_metrics(rig: Node2D) -> Dictionary:
+	var skeleton := rig.get_node("Skeleton2D") as Skeleton2D
+	var weapon := rig.get_node("WeaponVisual") as Node2D
+	var front_wrist := skeleton.get_node(ARM_PATHS[0]) as Node2D
+	var back_wrist := skeleton.get_node(ARM_PATHS[1]) as Node2D
+	var front_arm := front_wrist.get_parent().get_parent() as Bone2D
+	var back_arm := back_wrist.get_parent().get_parent() as Bone2D
+	var front_forearm := front_wrist.get_parent() as Bone2D
+	var back_forearm := back_wrist.get_parent() as Bone2D
+	var torso := skeleton.get_node("Root/Torso") as Bone2D
+	var tip := rig.to_local(rig.muzzle_global_position())
+	var grip := rig.to_local(weapon.global_position)
+	var direction := rig.global_transform.basis_xform_inv(rig.firing_direction_global()).normalized()
+	var front_foot := rig.to_local((skeleton.get_node(FOOT_PATHS[0]) as Node2D).global_position)
+	var back_foot := rig.to_local((skeleton.get_node(FOOT_PATHS[1]) as Node2D).global_position)
+	var result := {"tip_x": tip.x, "tip_y": tip.y, "grip_x": grip.x, "grip_y": grip.y, "blade_dir_x": direction.x, "blade_dir_y": direction.y, "torso_rotation": torso.rotation, "front_foot_x": front_foot.x, "front_foot_y": front_foot.y, "back_foot_x": back_foot.x, "back_foot_y": back_foot.y}
+	result["front_extension"] = rig.to_local(front_arm.global_position).distance_to(rig.to_local(front_wrist.global_position)) / (front_arm.length + front_forearm.length)
+	result["back_extension"] = rig.to_local(back_arm.global_position).distance_to(rig.to_local(back_wrist.global_position)) / (back_arm.length + back_forearm.length)
+	return result
 
 
 func _check_player_integration() -> void:
@@ -315,8 +446,103 @@ func _check_player_integration() -> void:
 	_expect(rest_switch_ok, "坐火演出中往返切换保留动作及播放进度，原动画可继续完成")
 	actor.stop_presentation_animation()
 	_check_ui_switch(actor)
+	_check_player_sword_chain_timing(actor)
 	actor.queue_free()
 	await _frames(2)
+
+
+func _check_sword_return_integration() -> void:
+	var packed := load(MODEL_PATH) as PackedScene
+	var rig := packed.instantiate() as Node2D
+	_room.add_child(rig)
+	await _frames(3)
+	var duration := float(_config.get("runtime", {}).get("sword_return_seconds", 0.0))
+	_expect(duration > 0.0, "直剑回肩过渡时长来自运行时数据")
+	rig.sync_pose(&"Idle", 0.0, "sword", 1, Vector2.RIGHT, 1)
+	var first_frame := _sword_pose_metrics(rig)
+	var first_constraints: Dictionary = _config.sword_sequence.keyframes[0].metrics
+	var immediate_ready := true
+	for metric: String in first_constraints:
+		var limits: Array = first_constraints[metric]
+		immediate_ready = immediate_ready and float(first_frame[metric]) >= float(limits[0]) and float(first_frame[metric]) <= float(limits[1])
+	_expect(immediate_ready, "新创建骨架首次 Idle 立即使用肩上持剑架势")
+	for magnitude: float in _config.sword_sequence.get("scales", [1.0, 5.0]):
+		for facing: int in _config.sword_sequence.get("facings", [1, -1]):
+			rig.scale = Vector2(magnitude, magnitude)
+			rig.sync_pose(&"sword_ready", duration, "sword", 1, Vector2(float(facing), 0), facing)
+			var ready_pose := _sword_spatial_snapshot(rig)
+			var ready_direction: Vector2 = rig.firing_direction_global()
+			for combo in [1, 2]:
+				for progress in [0.28, 0.65, 0.84]:
+					rig.sync_pose(&"Attack", 0.0, "sword", combo, Vector2(float(facing), 0), facing, progress)
+					var source_pose := _sword_spatial_snapshot(rig)
+					var source_direction: Vector2 = rig.firing_direction_global()
+					rig.sync_pose(&"sword_ready", 0.0, "sword", combo, Vector2(float(facing), 0), facing)
+					var held_pose := _sword_spatial_snapshot(rig)
+					var label := "剑%d段 %.2f处返回 %d面 %.0f倍" % [combo, progress, facing, magnitude]
+					_expect(_same_sword_spatial_pose(source_pose, held_pose, magnitude), "%s：time0根/头/双肩/握点及世界朝向连续" % label)
+					var travelled_angle := 0.0
+					var previous_direction: Vector2 = rig.firing_direction_global()
+					for sample in range(1, 17):
+						rig.sync_pose(&"sword_ready", duration * float(sample) / 16.0, "sword", combo, Vector2(float(facing), 0), facing)
+						var next_direction: Vector2 = rig.firing_direction_global()
+						travelled_angle += absf(previous_direction.angle_to(next_direction))
+						previous_direction = next_direction
+					var expected_angle := absf(source_direction.angle_to(ready_direction))
+					_expect(_same_sword_spatial_pose(ready_pose, _sword_spatial_snapshot(rig), magnitude) and travelled_angle <= expected_angle + deg_to_rad(0.1), "%s：规定时长回肩，仅走最短等价角（实际 %.3f° / 预期 %.3f°）" % [label, rad_to_deg(travelled_angle), rad_to_deg(expected_angle)])
+	rig.queue_free()
+	await _frames(2)
+
+
+func _sword_spatial_snapshot(rig: Node2D) -> Dictionary:
+	var result := {}
+	for path in ["Skeleton2D/Root", "Skeleton2D/Root/Torso", "Skeleton2D/Root/Torso/Head", "Skeleton2D/Root/Torso/FrontUpperArm", "Skeleton2D/Root/Torso/BackUpperArm", "Controls/Grip", "Controls/FrontFoot", "Controls/BackFoot", "WeaponVisual"]:
+		result[path] = (rig.get_node(path) as Node2D).global_transform
+	return result
+
+
+func _same_sword_spatial_pose(expected: Dictionary, actual: Dictionary, magnitude: float) -> bool:
+	for path: String in expected:
+		var before: Transform2D = expected[path]
+		var after: Transform2D = actual[path]
+		if before.origin.distance_to(after.origin) / magnitude > 0.05 or absf(before.x.angle_to(after.x)) > deg_to_rad(0.05):
+			return false
+	return true
+
+
+func _check_player_sword_chain_timing(actor: Node) -> void:
+	_state.weapon_id = &"sword_01"
+	for backend in ["skeleton", "frames"]:
+		actor.set_animation_backend(backend)
+		for combo in [1, 2]:
+			actor.clear_action_buffers()
+			actor.sm.to(&"Attack", {"combo": combo})
+			actor.attack_chain = true
+			var module: Dictionary = actor.sm.current._module
+			var active_end := float(module.startup) + float(module.active)
+			var full_duration := active_end + float(module.recovery)
+			var epsilon := minf(0.001, float(module.recovery) * 0.1)
+			_tick_player_state(actor, active_end - epsilon)
+			var before_active_end: bool = actor.sm.current_name() == &"Attack" and actor.attack_combo == combo
+			_tick_player_state(actor, epsilon * 2.0)
+			if backend == "skeleton" or bool(module.get("chain_after_recovery",false)):
+				var keeps_recovery: bool = actor.sm.current_name() == &"Attack" and actor.attack_combo == combo and actor.attack_phase == &"recovery" and actor.attack_chain
+				_tick_player_state(actor, full_duration - float(actor.sm.current._t) - epsilon)
+				keeps_recovery = keeps_recovery and actor.sm.current_name() == &"Attack" and actor.attack_combo == combo
+				_expect(before_active_end and keeps_recovery, "真实 Player 骨骼剑%d段经过 active_end 后继续原段后摇，完整时长前不衔接" % combo)
+				_tick_player_state(actor, epsilon * 2.0)
+				_expect(actor.sm.current_name() == &"Attack" and actor.attack_combo == combo + 1 and is_zero_approx(float(actor.sm.current._t)), "真实 Player 骨骼剑%d段完整 startup+active+recovery 后才进入下一段" % combo)
+			else:
+				_expect(before_active_end and actor.sm.current_name() == &"Attack" and actor.attack_combo == combo + 1 and is_zero_approx(float(actor.sm.current._t)), "真实 Player 逐帧剑%d段仍在 active_end 立即衔接，保留原时序" % combo)
+	actor.clear_action_buffers()
+	actor.sm.to(&"Idle")
+	actor._update_animation()
+
+
+func _tick_player_state(actor: Node, delta: float) -> void:
+	actor._clock += delta
+	actor.sm.tick(delta)
+	actor._update_animation()
 
 
 func _check_ui_switch(actor: Node) -> void:

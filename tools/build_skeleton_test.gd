@@ -36,6 +36,13 @@ func _build() -> void:
 		_add(parent,node)
 		bone_nodes[str(definition.path)] = node
 		rest_global[str(definition.path)] = rest_global[str(definition.parent)]*node.rest
+	for definition: Dictionary in cfg.endpoints:
+		var marker := Marker2D.new()
+		marker.name = str(definition.path).get_file()
+		marker.position = _vec(definition.position)
+		marker.rotation = deg_to_rad(float(definition.rotation_degrees))
+		_add(bone_nodes[str(definition.parent)],marker)
+		bone_nodes[str(definition.path)] = marker
 	var mount := Marker2D.new()
 	mount.name = "WeaponMount"
 	mount.position = Vector2(float(cfg.runtime.hand_mount_offset),0)
