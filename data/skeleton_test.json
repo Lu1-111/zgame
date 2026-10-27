@@ -1,0 +1,4076 @@
+{
+  "schema_version": 1,
+  "status": "prototype_opt_in",
+  "integration": {
+    "default_backend": "frames",
+    "toggle_key": "F6",
+    "debug_key": "F7",
+    "model_scene": "res://scenes/player/skeletal/hero_skeleton_test.tscn",
+    "lab_scene": "res://scenes/testing/skeleton_lab.tscn"
+  },
+  "source_anchor": [
+    32,
+    58
+  ],
+  "sources": {
+    "idle": {
+      "path": "res://assets/PROCESSED/characters/CHR-01/v001/frames/CHR-01_player_idle_right_v001_f01.png",
+      "origin": [
+        0,
+        0
+      ]
+    },
+    "torso": {
+      "path": "res://assets/PROCESSED/characters/CHR-01/v001/frames/CHR-01_player_hammer_3_right_v001_f01.png",
+      "origin": [
+        16,
+        32
+      ]
+    },
+    "arm": {
+      "path": "res://assets/PROCESSED/characters/CHR-01/v001/frames/CHR-01_player_hammer_1_right_v001_f02.png",
+      "origin": [
+        16,
+        32
+      ]
+    }
+  },
+  "bones": [
+    {
+      "path": "Root",
+      "parent": "",
+      "position": [
+        0,
+        -9
+      ],
+      "length": 4,
+      "rotation_degrees": 0
+    },
+    {
+      "path": "Root/Torso",
+      "parent": "Root",
+      "position": [
+        0,
+        -4
+      ],
+      "length": 12,
+      "rotation_degrees": 0
+    },
+    {
+      "path": "Root/Torso/Neck",
+      "parent": "Root/Torso",
+      "position": [
+        0,
+        -12
+      ],
+      "length": 4,
+      "rotation_degrees": 0
+    },
+    {
+      "path": "Root/Torso/Neck/Head",
+      "parent": "Root/Torso/Neck",
+      "position": [
+        4,
+        -4
+      ],
+      "length": 9,
+      "rotation_degrees": 0
+    },
+    {
+      "path": "Root/Torso/BackUpperArm",
+      "parent": "Root/Torso",
+      "position": [
+        6,
+        -11
+      ],
+      "length": 9,
+      "rotation_degrees": 0
+    },
+    {
+      "path": "Root/Torso/BackUpperArm/BackForearm",
+      "parent": "Root/Torso/BackUpperArm",
+      "position": [
+        9,
+        0
+      ],
+      "length": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "path": "Root/Torso/BackUpperArm/BackForearm/BackHand",
+      "parent": "Root/Torso/BackUpperArm/BackForearm",
+      "position": [
+        8,
+        0
+      ],
+      "length": 3,
+      "rotation_degrees": 0
+    },
+    {
+      "path": "Root/Torso/FrontUpperArm",
+      "parent": "Root/Torso",
+      "position": [
+        -6,
+        -11
+      ],
+      "length": 9,
+      "rotation_degrees": 0
+    },
+    {
+      "path": "Root/Torso/FrontUpperArm/FrontForearm",
+      "parent": "Root/Torso/FrontUpperArm",
+      "position": [
+        9,
+        0
+      ],
+      "length": 8,
+      "rotation_degrees": 0
+    },
+    {
+      "path": "Root/Torso/FrontUpperArm/FrontForearm/FrontHand",
+      "parent": "Root/Torso/FrontUpperArm/FrontForearm",
+      "position": [
+        8,
+        0
+      ],
+      "length": 3,
+      "rotation_degrees": 0
+    },
+    {
+      "path": "Root/BackThigh",
+      "parent": "Root",
+      "position": [
+        -7,
+        0
+      ],
+      "length": 4.5,
+      "rotation_degrees": 90
+    },
+    {
+      "path": "Root/BackThigh/BackShin",
+      "parent": "Root/BackThigh",
+      "position": [
+        4.5,
+        0
+      ],
+      "length": 4.5,
+      "rotation_degrees": 0
+    },
+    {
+      "path": "Root/BackThigh/BackShin/BackFoot",
+      "parent": "Root/BackThigh/BackShin",
+      "position": [
+        4.5,
+        0
+      ],
+      "length": 6,
+      "rotation_degrees": -90
+    },
+    {
+      "path": "Root/FrontThigh",
+      "parent": "Root",
+      "position": [
+        7,
+        0
+      ],
+      "length": 4.5,
+      "rotation_degrees": 90
+    },
+    {
+      "path": "Root/FrontThigh/FrontShin",
+      "parent": "Root/FrontThigh",
+      "position": [
+        4.5,
+        0
+      ],
+      "length": 4.5,
+      "rotation_degrees": 0
+    },
+    {
+      "path": "Root/FrontThigh/FrontShin/FrontFoot",
+      "parent": "Root/FrontThigh/FrontShin",
+      "position": [
+        4.5,
+        0
+      ],
+      "length": 6,
+      "rotation_degrees": -90
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Torso",
+      "bone": "Root/Torso",
+      "polygon": [
+        [
+          24,
+          31
+        ],
+        [
+          30,
+          31
+        ],
+        [
+          37,
+          33
+        ],
+        [
+          42,
+          37
+        ],
+        [
+          44,
+          44
+        ],
+        [
+          43,
+          50
+        ],
+        [
+          39,
+          53
+        ],
+        [
+          28,
+          53
+        ],
+        [
+          22,
+          50
+        ],
+        [
+          21,
+          44
+        ],
+        [
+          23,
+          36
+        ]
+      ],
+      "uv": [
+        [
+          24,
+          31
+        ],
+        [
+          30,
+          31
+        ],
+        [
+          37,
+          33
+        ],
+        [
+          42,
+          37
+        ],
+        [
+          44,
+          44
+        ],
+        [
+          43,
+          50
+        ],
+        [
+          39,
+          53
+        ],
+        [
+          28,
+          53
+        ],
+        [
+          22,
+          50
+        ],
+        [
+          21,
+          44
+        ],
+        [
+          23,
+          36
+        ]
+      ],
+      "source": "torso",
+      "z": 0,
+      "space": "reference",
+      "shade": 1,
+      "blend_root": [
+        0,
+        0,
+        0,
+        0,
+        0.05,
+        0.55,
+        1,
+        1,
+        0.8,
+        0.15,
+        0
+      ]
+    },
+    {
+      "name": "Neck",
+      "bone": "Root/Torso/Neck",
+      "polygon": [
+        [
+          29,
+          30
+        ],
+        [
+          38,
+          30
+        ],
+        [
+          40,
+          36
+        ],
+        [
+          29,
+          37
+        ]
+      ],
+      "uv": [
+        [
+          29,
+          30
+        ],
+        [
+          38,
+          30
+        ],
+        [
+          40,
+          36
+        ],
+        [
+          29,
+          37
+        ]
+      ],
+      "source": "idle",
+      "z": 1,
+      "space": "reference",
+      "shade": 1
+    },
+    {
+      "name": "Head",
+      "bone": "Root/Torso/Neck/Head",
+      "polygon": [
+        [
+          28,
+          18
+        ],
+        [
+          35,
+          16
+        ],
+        [
+          40,
+          18
+        ],
+        [
+          44,
+          21
+        ],
+        [
+          46,
+          25
+        ],
+        [
+          45,
+          29
+        ],
+        [
+          40,
+          31
+        ],
+        [
+          39,
+          35
+        ],
+        [
+          31,
+          34
+        ],
+        [
+          27,
+          31
+        ],
+        [
+          26,
+          26
+        ],
+        [
+          27,
+          21
+        ]
+      ],
+      "uv": [
+        [
+          28,
+          18
+        ],
+        [
+          35,
+          16
+        ],
+        [
+          40,
+          18
+        ],
+        [
+          44,
+          21
+        ],
+        [
+          46,
+          25
+        ],
+        [
+          45,
+          29
+        ],
+        [
+          40,
+          31
+        ],
+        [
+          39,
+          35
+        ],
+        [
+          31,
+          34
+        ],
+        [
+          27,
+          31
+        ],
+        [
+          26,
+          26
+        ],
+        [
+          27,
+          21
+        ]
+      ],
+      "source": "idle",
+      "z": 2,
+      "space": "reference",
+      "shade": 1
+    },
+    {
+      "name": "BackUpperArm",
+      "bone": "Root/Torso/BackUpperArm",
+      "polygon": [
+        [
+          0,
+          -2.5
+        ],
+        [
+          6,
+          -2.5
+        ],
+        [
+          9,
+          -1
+        ],
+        [
+          9,
+          1.5
+        ],
+        [
+          6,
+          2.5
+        ],
+        [
+          0,
+          2.5
+        ],
+        [
+          -1,
+          0
+        ]
+      ],
+      "uv": [
+        [
+          26,
+          36
+        ],
+        [
+          32,
+          36
+        ],
+        [
+          35,
+          37.5
+        ],
+        [
+          35,
+          40
+        ],
+        [
+          32,
+          41
+        ],
+        [
+          26,
+          41
+        ],
+        [
+          25,
+          38.5
+        ]
+      ],
+      "source": "arm",
+      "z": -2,
+      "space": "bone",
+      "shade": 0.88
+    },
+    {
+      "name": "BackForearm",
+      "bone": "Root/Torso/BackUpperArm/BackForearm",
+      "polygon": [
+        [
+          0,
+          -2
+        ],
+        [
+          5,
+          -2.5
+        ],
+        [
+          8,
+          -1
+        ],
+        [
+          8,
+          1.5
+        ],
+        [
+          5,
+          2.5
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "uv": [
+        [
+          33,
+          36.5
+        ],
+        [
+          38,
+          36
+        ],
+        [
+          41,
+          37.5
+        ],
+        [
+          41,
+          40
+        ],
+        [
+          38,
+          41
+        ],
+        [
+          33,
+          40.5
+        ]
+      ],
+      "source": "arm",
+      "z": -2,
+      "space": "bone",
+      "shade": 0.88
+    },
+    {
+      "name": "BackHand",
+      "bone": "Root/Torso/BackUpperArm/BackForearm/BackHand",
+      "polygon": [
+        [
+          -1,
+          -2
+        ],
+        [
+          2,
+          -2
+        ],
+        [
+          4,
+          -1
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          -1,
+          1
+        ]
+      ],
+      "uv": [
+        [
+          40,
+          38
+        ],
+        [
+          42,
+          38
+        ],
+        [
+          44,
+          39
+        ],
+        [
+          44,
+          41
+        ],
+        [
+          42,
+          42
+        ],
+        [
+          40,
+          41
+        ]
+      ],
+      "source": "arm",
+      "z": 2,
+      "space": "bone",
+      "shade": 0.88
+    },
+    {
+      "name": "FrontUpperArm",
+      "bone": "Root/Torso/FrontUpperArm",
+      "polygon": [
+        [
+          0,
+          -2.5
+        ],
+        [
+          6,
+          -2.5
+        ],
+        [
+          9,
+          -1
+        ],
+        [
+          9,
+          1.5
+        ],
+        [
+          6,
+          2.5
+        ],
+        [
+          0,
+          2.5
+        ],
+        [
+          -1,
+          0
+        ]
+      ],
+      "uv": [
+        [
+          26,
+          36
+        ],
+        [
+          32,
+          36
+        ],
+        [
+          35,
+          37.5
+        ],
+        [
+          35,
+          40
+        ],
+        [
+          32,
+          41
+        ],
+        [
+          26,
+          41
+        ],
+        [
+          25,
+          38.5
+        ]
+      ],
+      "source": "arm",
+      "z": 4,
+      "space": "bone",
+      "shade": 1
+    },
+    {
+      "name": "FrontForearm",
+      "bone": "Root/Torso/FrontUpperArm/FrontForearm",
+      "polygon": [
+        [
+          0,
+          -2
+        ],
+        [
+          5,
+          -2.5
+        ],
+        [
+          8,
+          -1
+        ],
+        [
+          8,
+          1.5
+        ],
+        [
+          5,
+          2.5
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "uv": [
+        [
+          33,
+          36.5
+        ],
+        [
+          38,
+          36
+        ],
+        [
+          41,
+          37.5
+        ],
+        [
+          41,
+          40
+        ],
+        [
+          38,
+          41
+        ],
+        [
+          33,
+          40.5
+        ]
+      ],
+      "source": "arm",
+      "z": 4,
+      "space": "bone",
+      "shade": 1
+    },
+    {
+      "name": "FrontHand",
+      "bone": "Root/Torso/FrontUpperArm/FrontForearm/FrontHand",
+      "polygon": [
+        [
+          -1,
+          -2
+        ],
+        [
+          2,
+          -2
+        ],
+        [
+          4,
+          -1
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          -1,
+          1
+        ]
+      ],
+      "uv": [
+        [
+          40,
+          38
+        ],
+        [
+          42,
+          38
+        ],
+        [
+          44,
+          39
+        ],
+        [
+          44,
+          41
+        ],
+        [
+          42,
+          42
+        ],
+        [
+          40,
+          41
+        ]
+      ],
+      "source": "arm",
+      "z": 5,
+      "space": "bone",
+      "shade": 1
+    },
+    {
+      "name": "BackThigh",
+      "bone": "Root/BackThigh",
+      "polygon": [
+        [
+          -1,
+          -2
+        ],
+        [
+          3,
+          -2.5
+        ],
+        [
+          4.5,
+          -1
+        ],
+        [
+          4.5,
+          1.5
+        ],
+        [
+          2,
+          2.5
+        ],
+        [
+          -1,
+          2
+        ]
+      ],
+      "uv": [
+        [
+          27,
+          48
+        ],
+        [
+          27.5,
+          52
+        ],
+        [
+          26,
+          53.5
+        ],
+        [
+          23.5,
+          53.5
+        ],
+        [
+          22.5,
+          51
+        ],
+        [
+          23,
+          48
+        ]
+      ],
+      "source": "idle",
+      "z": -1,
+      "space": "bone",
+      "shade": 1
+    },
+    {
+      "name": "BackShin",
+      "bone": "Root/BackThigh/BackShin",
+      "polygon": [
+        [
+          -1,
+          -1.8
+        ],
+        [
+          3,
+          -2
+        ],
+        [
+          4.5,
+          -1
+        ],
+        [
+          4.5,
+          1.5
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          -1,
+          1.8
+        ]
+      ],
+      "uv": [
+        [
+          26.8,
+          52.5
+        ],
+        [
+          27,
+          56.5
+        ],
+        [
+          26,
+          58.0
+        ],
+        [
+          23.5,
+          58.0
+        ],
+        [
+          23,
+          55.5
+        ],
+        [
+          23.2,
+          52.5
+        ]
+      ],
+      "source": "idle",
+      "z": -1,
+      "space": "bone",
+      "shade": 1
+    },
+    {
+      "name": "BackFoot",
+      "bone": "Root/BackThigh/BackShin/BackFoot",
+      "polygon": [
+        [
+          -4,
+          -3
+        ],
+        [
+          -1,
+          -4
+        ],
+        [
+          3,
+          -3
+        ],
+        [
+          6,
+          -1
+        ],
+        [
+          6,
+          0
+        ],
+        [
+          -4,
+          0
+        ]
+      ],
+      "uv": [
+        [
+          21,
+          55
+        ],
+        [
+          24,
+          54
+        ],
+        [
+          28,
+          55
+        ],
+        [
+          31,
+          57
+        ],
+        [
+          31,
+          58
+        ],
+        [
+          21,
+          58
+        ]
+      ],
+      "source": "idle",
+      "z": -1,
+      "space": "bone",
+      "shade": 1
+    },
+    {
+      "name": "FrontThigh",
+      "bone": "Root/FrontThigh",
+      "polygon": [
+        [
+          -1,
+          -2
+        ],
+        [
+          3,
+          -2.5
+        ],
+        [
+          4.5,
+          -1
+        ],
+        [
+          4.5,
+          1.5
+        ],
+        [
+          2,
+          2.5
+        ],
+        [
+          -1,
+          2
+        ]
+      ],
+      "uv": [
+        [
+          41,
+          48
+        ],
+        [
+          41.5,
+          52
+        ],
+        [
+          40,
+          53.5
+        ],
+        [
+          37.5,
+          53.5
+        ],
+        [
+          36.5,
+          51
+        ],
+        [
+          37,
+          48
+        ]
+      ],
+      "source": "idle",
+      "z": 1,
+      "space": "bone",
+      "shade": 1
+    },
+    {
+      "name": "FrontShin",
+      "bone": "Root/FrontThigh/FrontShin",
+      "polygon": [
+        [
+          -1,
+          -1.8
+        ],
+        [
+          3,
+          -2
+        ],
+        [
+          4.5,
+          -1
+        ],
+        [
+          4.5,
+          1.5
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          -1,
+          1.8
+        ]
+      ],
+      "uv": [
+        [
+          40.8,
+          52.5
+        ],
+        [
+          41,
+          56.5
+        ],
+        [
+          40,
+          58.0
+        ],
+        [
+          37.5,
+          58.0
+        ],
+        [
+          37,
+          55.5
+        ],
+        [
+          37.2,
+          52.5
+        ]
+      ],
+      "source": "idle",
+      "z": 1,
+      "space": "bone",
+      "shade": 1
+    },
+    {
+      "name": "FrontFoot",
+      "bone": "Root/FrontThigh/FrontShin/FrontFoot",
+      "polygon": [
+        [
+          -4,
+          -3
+        ],
+        [
+          -1,
+          -4
+        ],
+        [
+          3,
+          -3
+        ],
+        [
+          6,
+          -1
+        ],
+        [
+          6,
+          0
+        ],
+        [
+          -4,
+          0
+        ]
+      ],
+      "uv": [
+        [
+          35,
+          55
+        ],
+        [
+          38,
+          54
+        ],
+        [
+          42,
+          55
+        ],
+        [
+          45,
+          57
+        ],
+        [
+          45,
+          58
+        ],
+        [
+          35,
+          58
+        ]
+      ],
+      "source": "idle",
+      "z": 1,
+      "space": "bone",
+      "shade": 1
+    }
+  ],
+  "defaults": {
+    "Skeleton2D/Root:position": [
+      0,
+      -8.5
+    ],
+    "Skeleton2D/Root:rotation": 0,
+    "Skeleton2D/Root/Torso:rotation": 0,
+    "Skeleton2D/Root/Torso/Neck:rotation": 0,
+    "Skeleton2D/Root/Torso/Neck/Head:rotation": 0,
+    "Controls/Grip:position": [
+      5,
+      -19
+    ],
+    "Controls/Grip:rotation": -20,
+    "Controls/BackFoot:position": [
+      -7,
+      0
+    ],
+    "Controls/FrontFoot:position": [
+      7,
+      0
+    ],
+    "Controls/BackFoot:rotation": 0,
+    "Controls/FrontFoot:rotation": 0
+  },
+  "clips": {
+    "idle": {
+      "length": 1.6,
+      "loop": true,
+      "tracks": {
+        "Skeleton2D/Root:position": [
+          [
+            0.0,
+            [
+              0,
+              -8.5
+            ]
+          ],
+          [
+            0.5,
+            [
+              0,
+              -8.9
+            ]
+          ],
+          [
+            1.0,
+            [
+              0,
+              -8.5
+            ]
+          ]
+        ],
+        "Skeleton2D/Root/Torso/Neck/Head:rotation": [
+          [
+            0.0,
+            0
+          ],
+          [
+            0.5,
+            2
+          ],
+          [
+            1.0,
+            0
+          ]
+        ],
+        "Controls/Grip:position": [
+          [
+            0.0,
+            [
+              5,
+              -19
+            ]
+          ],
+          [
+            0.5,
+            [
+              5,
+              -19.4
+            ]
+          ],
+          [
+            1.0,
+            [
+              5,
+              -19
+            ]
+          ]
+        ]
+      }
+    },
+    "run": {
+      "length": 0.6,
+      "loop": true,
+      "tracks": {
+        "Skeleton2D/Root:position": [
+          [
+            0.0,
+            [
+              0,
+              -8.2
+            ]
+          ],
+          [
+            0.25,
+            [
+              0,
+              -9
+            ]
+          ],
+          [
+            0.5,
+            [
+              0,
+              -8.2
+            ]
+          ],
+          [
+            0.75,
+            [
+              0,
+              -9
+            ]
+          ],
+          [
+            1.0,
+            [
+              0,
+              -8.2
+            ]
+          ]
+        ],
+        "Skeleton2D/Root/Torso:rotation": [
+          [
+            0.0,
+            6
+          ],
+          [
+            0.25,
+            9
+          ],
+          [
+            0.5,
+            6
+          ],
+          [
+            0.75,
+            9
+          ],
+          [
+            1.0,
+            6
+          ]
+        ],
+        "Skeleton2D/Root/Torso/Neck/Head:rotation": [
+          [
+            0.0,
+            -3
+          ],
+          [
+            0.25,
+            -6
+          ],
+          [
+            0.5,
+            -3
+          ],
+          [
+            0.75,
+            -6
+          ],
+          [
+            1.0,
+            -3
+          ]
+        ],
+        "Controls/BackFoot:position": [
+          [
+            0.0,
+            [
+              -10,
+              0
+            ]
+          ],
+          [
+            0.25,
+            [
+              -7,
+              -4
+            ]
+          ],
+          [
+            0.5,
+            [
+              -3,
+              0
+            ]
+          ],
+          [
+            0.75,
+            [
+              -7,
+              0
+            ]
+          ],
+          [
+            1.0,
+            [
+              -10,
+              0
+            ]
+          ]
+        ],
+        "Controls/FrontFoot:position": [
+          [
+            0.0,
+            [
+              10,
+              0
+            ]
+          ],
+          [
+            0.25,
+            [
+              7,
+              0
+            ]
+          ],
+          [
+            0.5,
+            [
+              3,
+              0
+            ]
+          ],
+          [
+            0.75,
+            [
+              7,
+              -4
+            ]
+          ],
+          [
+            1.0,
+            [
+              10,
+              0
+            ]
+          ]
+        ],
+        "Controls/Grip:position": [
+          [
+            0.0,
+            [
+              4,
+              -20
+            ]
+          ],
+          [
+            0.25,
+            [
+              6,
+              -21
+            ]
+          ],
+          [
+            0.5,
+            [
+              4,
+              -20
+            ]
+          ],
+          [
+            0.75,
+            [
+              6,
+              -21
+            ]
+          ],
+          [
+            1.0,
+            [
+              4,
+              -20
+            ]
+          ]
+        ]
+      }
+    },
+    "jump": {
+      "length": 0.4,
+      "loop": true,
+      "tracks": {
+        "Skeleton2D/Root:position": [
+          [
+            0.0,
+            [
+              0,
+              -9.2
+            ]
+          ],
+          [
+            1.0,
+            [
+              0,
+              -9.2
+            ]
+          ]
+        ],
+        "Skeleton2D/Root/Torso:rotation": [
+          [
+            0.0,
+            -5
+          ],
+          [
+            1.0,
+            -5
+          ]
+        ],
+        "Controls/BackFoot:position": [
+          [
+            0.0,
+            [
+              -7,
+              -3
+            ]
+          ],
+          [
+            1.0,
+            [
+              -7,
+              -3
+            ]
+          ]
+        ],
+        "Controls/FrontFoot:position": [
+          [
+            0.0,
+            [
+              8,
+              -2
+            ]
+          ],
+          [
+            1.0,
+            [
+              8,
+              -2
+            ]
+          ]
+        ],
+        "Controls/Grip:position": [
+          [
+            0.0,
+            [
+              4,
+              -21
+            ]
+          ],
+          [
+            1.0,
+            [
+              4,
+              -21
+            ]
+          ]
+        ]
+      }
+    },
+    "fall": {
+      "length": 0.4,
+      "loop": true,
+      "tracks": {
+        "Skeleton2D/Root:position": [
+          [
+            0.0,
+            [
+              0,
+              -9.2
+            ]
+          ],
+          [
+            1.0,
+            [
+              0,
+              -9.2
+            ]
+          ]
+        ],
+        "Skeleton2D/Root/Torso:rotation": [
+          [
+            0.0,
+            -5
+          ],
+          [
+            1.0,
+            -5
+          ]
+        ],
+        "Controls/BackFoot:position": [
+          [
+            0.0,
+            [
+              -7,
+              -1
+            ]
+          ],
+          [
+            1.0,
+            [
+              -7,
+              -1
+            ]
+          ]
+        ],
+        "Controls/FrontFoot:position": [
+          [
+            0.0,
+            [
+              8,
+              -1
+            ]
+          ],
+          [
+            1.0,
+            [
+              8,
+              -1
+            ]
+          ]
+        ],
+        "Controls/Grip:position": [
+          [
+            0.0,
+            [
+              4,
+              -21
+            ]
+          ],
+          [
+            1.0,
+            [
+              4,
+              -21
+            ]
+          ]
+        ]
+      }
+    },
+    "land": {
+      "length": 0.18,
+      "loop": false,
+      "tracks": {
+        "Skeleton2D/Root:position": [
+          [
+            0.0,
+            [
+              0,
+              -7
+            ]
+          ],
+          [
+            1.0,
+            [
+              0,
+              -8.5
+            ]
+          ]
+        ],
+        "Skeleton2D/Root/Torso:rotation": [
+          [
+            0.0,
+            10
+          ],
+          [
+            1.0,
+            0
+          ]
+        ]
+      }
+    },
+    "dodge": {
+      "length": 0.24,
+      "loop": false,
+      "tracks": {
+        "Skeleton2D/Root:position": [
+          [
+            0.0,
+            [
+              0,
+              -7.5
+            ]
+          ],
+          [
+            0.5,
+            [
+              1,
+              -7
+            ]
+          ],
+          [
+            1.0,
+            [
+              0,
+              -8.5
+            ]
+          ]
+        ],
+        "Skeleton2D/Root/Torso:rotation": [
+          [
+            0.0,
+            -35
+          ],
+          [
+            0.5,
+            -45
+          ],
+          [
+            1.0,
+            0
+          ]
+        ],
+        "Controls/Grip:position": [
+          [
+            0.0,
+            [
+              0,
+              -19
+            ]
+          ],
+          [
+            0.5,
+            [
+              0,
+              -20
+            ]
+          ],
+          [
+            1.0,
+            [
+              5,
+              -19
+            ]
+          ]
+        ]
+      }
+    },
+    "guard": {
+      "length": 0.28,
+      "loop": false,
+      "tracks": {
+        "Controls/Grip:position": [
+          [
+            0.0,
+            [
+              5,
+              -19
+            ]
+          ],
+          [
+            0.5,
+            [
+              4,
+              -28
+            ]
+          ],
+          [
+            1.0,
+            [
+              4,
+              -32
+            ]
+          ]
+        ],
+        "Controls/Grip:rotation": [
+          [
+            0.0,
+            -20
+          ],
+          [
+            0.5,
+            -70
+          ],
+          [
+            1.0,
+            -90
+          ]
+        ],
+        "Skeleton2D/Root/Torso:rotation": [
+          [
+            0.0,
+            -2
+          ],
+          [
+            0.5,
+            -6
+          ],
+          [
+            1.0,
+            -6
+          ]
+        ]
+      }
+    },
+    "guard_lower": {
+      "length": 0.18,
+      "loop": false,
+      "tracks": {
+        "Controls/Grip:position": [
+          [
+            0.0,
+            [
+              4,
+              -32
+            ]
+          ],
+          [
+            0.5,
+            [
+              5,
+              -25
+            ]
+          ],
+          [
+            1.0,
+            [
+              5,
+              -19
+            ]
+          ]
+        ],
+        "Controls/Grip:rotation": [
+          [
+            0.0,
+            -90
+          ],
+          [
+            0.5,
+            -45
+          ],
+          [
+            1.0,
+            -20
+          ]
+        ],
+        "Skeleton2D/Root/Torso:rotation": [
+          [
+            0.0,
+            -6
+          ],
+          [
+            0.5,
+            -3
+          ],
+          [
+            1.0,
+            0
+          ]
+        ]
+      }
+    },
+    "sword_1": {
+      "length": 0.53,
+      "loop": false,
+      "tracks": {
+        "Controls/Grip:position": [
+          [
+            0,
+            [
+              2,
+              -20
+            ]
+          ],
+          [
+            0.2,
+            [
+              1,
+              -30
+            ]
+          ],
+          [
+            0.32,
+            [
+              6,
+              -34
+            ]
+          ],
+          [
+            0.5,
+            [
+              11,
+              -18
+            ]
+          ],
+          [
+            0.67,
+            [
+              5,
+              -13
+            ]
+          ],
+          [
+            1,
+            [
+              7,
+              -18
+            ]
+          ]
+        ],
+        "Controls/Grip:rotation": [
+          [
+            0,
+            -35
+          ],
+          [
+            0.2,
+            -105
+          ],
+          [
+            0.32,
+            -120
+          ],
+          [
+            0.5,
+            35
+          ],
+          [
+            0.67,
+            160
+          ],
+          [
+            1,
+            -20
+          ]
+        ],
+        "Skeleton2D/Root/Torso:rotation": [
+          [
+            0,
+            0
+          ],
+          [
+            0.2,
+            -6
+          ],
+          [
+            0.32,
+            -10
+          ],
+          [
+            0.5,
+            14
+          ],
+          [
+            0.67,
+            20
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "Skeleton2D/Root/Torso/Neck/Head:rotation": [
+          [
+            0,
+            0
+          ],
+          [
+            0.2,
+            -3
+          ],
+          [
+            0.32,
+            -4
+          ],
+          [
+            0.5,
+            5
+          ],
+          [
+            0.67,
+            8
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "Skeleton2D/Root:position": [
+          [
+            0,
+            [
+              0,
+              -8.5
+            ]
+          ],
+          [
+            0.2,
+            [
+              0,
+              -9
+            ]
+          ],
+          [
+            0.32,
+            [
+              0,
+              -9
+            ]
+          ],
+          [
+            0.5,
+            [
+              1,
+              -8
+            ]
+          ],
+          [
+            0.67,
+            [
+              1,
+              -7.5
+            ]
+          ],
+          [
+            1,
+            [
+              0,
+              -8.5
+            ]
+          ]
+        ],
+        "Controls/BackFoot:position": [
+          [
+            0,
+            [
+              -7,
+              0
+            ]
+          ],
+          [
+            0.2,
+            [
+              -7,
+              0
+            ]
+          ],
+          [
+            0.32,
+            [
+              -7,
+              0
+            ]
+          ],
+          [
+            0.5,
+            [
+              -8,
+              0
+            ]
+          ],
+          [
+            0.67,
+            [
+              -8,
+              0
+            ]
+          ],
+          [
+            1,
+            [
+              -7,
+              0
+            ]
+          ]
+        ],
+        "Controls/FrontFoot:position": [
+          [
+            0,
+            [
+              7,
+              0
+            ]
+          ],
+          [
+            0.2,
+            [
+              7,
+              0
+            ]
+          ],
+          [
+            0.32,
+            [
+              7,
+              0
+            ]
+          ],
+          [
+            0.5,
+            [
+              9,
+              0
+            ]
+          ],
+          [
+            0.67,
+            [
+              9,
+              0
+            ]
+          ],
+          [
+            1,
+            [
+              7,
+              0
+            ]
+          ]
+        ]
+      }
+    },
+    "sword_2": {
+      "length": 0.53,
+      "loop": false,
+      "tracks": {
+        "Controls/Grip:position": [
+          [
+            0,
+            [
+              5,
+              -13
+            ]
+          ],
+          [
+            0.2,
+            [
+              4,
+              -12
+            ]
+          ],
+          [
+            0.32,
+            [
+              7,
+              -16
+            ]
+          ],
+          [
+            0.5,
+            [
+              12,
+              -22
+            ]
+          ],
+          [
+            0.67,
+            [
+              6,
+              -34
+            ]
+          ],
+          [
+            1,
+            [
+              7,
+              -18
+            ]
+          ]
+        ],
+        "Controls/Grip:rotation": [
+          [
+            0,
+            160
+          ],
+          [
+            0.2,
+            150
+          ],
+          [
+            0.32,
+            110
+          ],
+          [
+            0.5,
+            25
+          ],
+          [
+            0.67,
+            -100
+          ],
+          [
+            1,
+            -20
+          ]
+        ],
+        "Skeleton2D/Root/Torso:rotation": [
+          [
+            0,
+            16
+          ],
+          [
+            0.2,
+            20
+          ],
+          [
+            0.32,
+            12
+          ],
+          [
+            0.5,
+            0
+          ],
+          [
+            0.67,
+            -12
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "Skeleton2D/Root/Torso/Neck/Head:rotation": [
+          [
+            0,
+            0
+          ],
+          [
+            0.2,
+            -3
+          ],
+          [
+            0.32,
+            -4
+          ],
+          [
+            0.5,
+            5
+          ],
+          [
+            0.67,
+            8
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "Skeleton2D/Root:position": [
+          [
+            0,
+            [
+              0,
+              -8.5
+            ]
+          ],
+          [
+            0.2,
+            [
+              0,
+              -9
+            ]
+          ],
+          [
+            0.32,
+            [
+              0,
+              -9
+            ]
+          ],
+          [
+            0.5,
+            [
+              1,
+              -8
+            ]
+          ],
+          [
+            0.67,
+            [
+              1,
+              -7.5
+            ]
+          ],
+          [
+            1,
+            [
+              0,
+              -8.5
+            ]
+          ]
+        ],
+        "Controls/BackFoot:position": [
+          [
+            0,
+            [
+              -7,
+              0
+            ]
+          ],
+          [
+            0.2,
+            [
+              -7,
+              0
+            ]
+          ],
+          [
+            0.32,
+            [
+              -7,
+              0
+            ]
+          ],
+          [
+            0.5,
+            [
+              -8,
+              0
+            ]
+          ],
+          [
+            0.67,
+            [
+              -8,
+              0
+            ]
+          ],
+          [
+            1,
+            [
+              -7,
+              0
+            ]
+          ]
+        ],
+        "Controls/FrontFoot:position": [
+          [
+            0,
+            [
+              7,
+              0
+            ]
+          ],
+          [
+            0.2,
+            [
+              7,
+              0
+            ]
+          ],
+          [
+            0.32,
+            [
+              7,
+              0
+            ]
+          ],
+          [
+            0.5,
+            [
+              9,
+              0
+            ]
+          ],
+          [
+            0.67,
+            [
+              9,
+              0
+            ]
+          ],
+          [
+            1,
+            [
+              7,
+              0
+            ]
+          ]
+        ]
+      }
+    },
+    "sword_3": {
+      "length": 0.53,
+      "loop": false,
+      "tracks": {
+        "Controls/Grip:position": [
+          [
+            0,
+            [
+              -3,
+              -22
+            ]
+          ],
+          [
+            0.2,
+            [
+              -3,
+              -27
+            ]
+          ],
+          [
+            0.32,
+            [
+              4,
+              -25
+            ]
+          ],
+          [
+            0.5,
+            [
+              12,
+              -23
+            ]
+          ],
+          [
+            0.67,
+            [
+              11,
+              -18
+            ]
+          ],
+          [
+            1,
+            [
+              7,
+              -18
+            ]
+          ]
+        ],
+        "Controls/Grip:rotation": [
+          [
+            0,
+            -155
+          ],
+          [
+            0.2,
+            -150
+          ],
+          [
+            0.32,
+            -105
+          ],
+          [
+            0.5,
+            -5
+          ],
+          [
+            0.67,
+            15
+          ],
+          [
+            1,
+            -20
+          ]
+        ],
+        "Skeleton2D/Root/Torso:rotation": [
+          [
+            0,
+            -7
+          ],
+          [
+            0.2,
+            -15
+          ],
+          [
+            0.32,
+            -10
+          ],
+          [
+            0.5,
+            10
+          ],
+          [
+            0.67,
+            17
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "Skeleton2D/Root/Torso/Neck/Head:rotation": [
+          [
+            0,
+            0
+          ],
+          [
+            0.2,
+            -3
+          ],
+          [
+            0.32,
+            -4
+          ],
+          [
+            0.5,
+            5
+          ],
+          [
+            0.67,
+            8
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "Skeleton2D/Root:position": [
+          [
+            0,
+            [
+              0,
+              -8.5
+            ]
+          ],
+          [
+            0.2,
+            [
+              0,
+              -9
+            ]
+          ],
+          [
+            0.32,
+            [
+              0,
+              -9
+            ]
+          ],
+          [
+            0.5,
+            [
+              1,
+              -8
+            ]
+          ],
+          [
+            0.67,
+            [
+              1,
+              -7.5
+            ]
+          ],
+          [
+            1,
+            [
+              0,
+              -8.5
+            ]
+          ]
+        ],
+        "Controls/BackFoot:position": [
+          [
+            0,
+            [
+              -7,
+              0
+            ]
+          ],
+          [
+            0.2,
+            [
+              -7,
+              0
+            ]
+          ],
+          [
+            0.32,
+            [
+              -7,
+              0
+            ]
+          ],
+          [
+            0.5,
+            [
+              -8,
+              0
+            ]
+          ],
+          [
+            0.67,
+            [
+              -8,
+              0
+            ]
+          ],
+          [
+            1,
+            [
+              -7,
+              0
+            ]
+          ]
+        ],
+        "Controls/FrontFoot:position": [
+          [
+            0,
+            [
+              7,
+              0
+            ]
+          ],
+          [
+            0.2,
+            [
+              7,
+              0
+            ]
+          ],
+          [
+            0.32,
+            [
+              7,
+              0
+            ]
+          ],
+          [
+            0.5,
+            [
+              9,
+              0
+            ]
+          ],
+          [
+            0.67,
+            [
+              9,
+              0
+            ]
+          ],
+          [
+            1,
+            [
+              7,
+              0
+            ]
+          ]
+        ]
+      }
+    },
+    "hammer_1": {
+      "length": 0.5,
+      "loop": false,
+      "tracks": {
+        "Controls/Grip:position": [
+          [
+            0,
+            [
+              2,
+              -20
+            ]
+          ],
+          [
+            0.2,
+            [
+              1,
+              -30
+            ]
+          ],
+          [
+            0.32,
+            [
+              6,
+              -34
+            ]
+          ],
+          [
+            0.5,
+            [
+              11,
+              -18
+            ]
+          ],
+          [
+            0.67,
+            [
+              5,
+              -13
+            ]
+          ],
+          [
+            1,
+            [
+              7,
+              -18
+            ]
+          ]
+        ],
+        "Controls/Grip:rotation": [
+          [
+            0,
+            -35
+          ],
+          [
+            0.2,
+            -105
+          ],
+          [
+            0.32,
+            -120
+          ],
+          [
+            0.5,
+            35
+          ],
+          [
+            0.67,
+            160
+          ],
+          [
+            1,
+            -20
+          ]
+        ],
+        "Skeleton2D/Root/Torso:rotation": [
+          [
+            0,
+            0
+          ],
+          [
+            0.2,
+            -6
+          ],
+          [
+            0.32,
+            -10
+          ],
+          [
+            0.5,
+            14
+          ],
+          [
+            0.67,
+            20
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "Skeleton2D/Root/Torso/Neck/Head:rotation": [
+          [
+            0,
+            0
+          ],
+          [
+            0.2,
+            -3
+          ],
+          [
+            0.32,
+            -4
+          ],
+          [
+            0.5,
+            5
+          ],
+          [
+            0.67,
+            8
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "Skeleton2D/Root:position": [
+          [
+            0,
+            [
+              0,
+              -8.5
+            ]
+          ],
+          [
+            0.2,
+            [
+              0,
+              -9
+            ]
+          ],
+          [
+            0.32,
+            [
+              0,
+              -9
+            ]
+          ],
+          [
+            0.5,
+            [
+              1,
+              -8
+            ]
+          ],
+          [
+            0.67,
+            [
+              1,
+              -7.5
+            ]
+          ],
+          [
+            1,
+            [
+              0,
+              -8.5
+            ]
+          ]
+        ],
+        "Controls/BackFoot:position": [
+          [
+            0,
+            [
+              -7,
+              0
+            ]
+          ],
+          [
+            0.2,
+            [
+              -7,
+              0
+            ]
+          ],
+          [
+            0.32,
+            [
+              -7,
+              0
+            ]
+          ],
+          [
+            0.5,
+            [
+              -8,
+              0
+            ]
+          ],
+          [
+            0.67,
+            [
+              -8,
+              0
+            ]
+          ],
+          [
+            1,
+            [
+              -7,
+              0
+            ]
+          ]
+        ],
+        "Controls/FrontFoot:position": [
+          [
+            0,
+            [
+              7,
+              0
+            ]
+          ],
+          [
+            0.2,
+            [
+              7,
+              0
+            ]
+          ],
+          [
+            0.32,
+            [
+              7,
+              0
+            ]
+          ],
+          [
+            0.5,
+            [
+              9,
+              0
+            ]
+          ],
+          [
+            0.67,
+            [
+              9,
+              0
+            ]
+          ],
+          [
+            1,
+            [
+              7,
+              0
+            ]
+          ]
+        ]
+      }
+    },
+    "hammer_2": {
+      "length": 0.5,
+      "loop": false,
+      "tracks": {
+        "Controls/Grip:position": [
+          [
+            0,
+            [
+              5,
+              -13
+            ]
+          ],
+          [
+            0.2,
+            [
+              4,
+              -12
+            ]
+          ],
+          [
+            0.32,
+            [
+              7,
+              -16
+            ]
+          ],
+          [
+            0.5,
+            [
+              12,
+              -22
+            ]
+          ],
+          [
+            0.67,
+            [
+              6,
+              -34
+            ]
+          ],
+          [
+            1,
+            [
+              7,
+              -18
+            ]
+          ]
+        ],
+        "Controls/Grip:rotation": [
+          [
+            0,
+            160
+          ],
+          [
+            0.2,
+            150
+          ],
+          [
+            0.32,
+            110
+          ],
+          [
+            0.5,
+            25
+          ],
+          [
+            0.67,
+            -100
+          ],
+          [
+            1,
+            -20
+          ]
+        ],
+        "Skeleton2D/Root/Torso:rotation": [
+          [
+            0,
+            16
+          ],
+          [
+            0.2,
+            20
+          ],
+          [
+            0.32,
+            12
+          ],
+          [
+            0.5,
+            0
+          ],
+          [
+            0.67,
+            -12
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "Skeleton2D/Root/Torso/Neck/Head:rotation": [
+          [
+            0,
+            0
+          ],
+          [
+            0.2,
+            -3
+          ],
+          [
+            0.32,
+            -4
+          ],
+          [
+            0.5,
+            5
+          ],
+          [
+            0.67,
+            8
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "Skeleton2D/Root:position": [
+          [
+            0,
+            [
+              0,
+              -8.5
+            ]
+          ],
+          [
+            0.2,
+            [
+              0,
+              -9
+            ]
+          ],
+          [
+            0.32,
+            [
+              0,
+              -9
+            ]
+          ],
+          [
+            0.5,
+            [
+              1,
+              -8
+            ]
+          ],
+          [
+            0.67,
+            [
+              1,
+              -7.5
+            ]
+          ],
+          [
+            1,
+            [
+              0,
+              -8.5
+            ]
+          ]
+        ],
+        "Controls/BackFoot:position": [
+          [
+            0,
+            [
+              -7,
+              0
+            ]
+          ],
+          [
+            0.2,
+            [
+              -7,
+              0
+            ]
+          ],
+          [
+            0.32,
+            [
+              -7,
+              0
+            ]
+          ],
+          [
+            0.5,
+            [
+              -8,
+              0
+            ]
+          ],
+          [
+            0.67,
+            [
+              -8,
+              0
+            ]
+          ],
+          [
+            1,
+            [
+              -7,
+              0
+            ]
+          ]
+        ],
+        "Controls/FrontFoot:position": [
+          [
+            0,
+            [
+              7,
+              0
+            ]
+          ],
+          [
+            0.2,
+            [
+              7,
+              0
+            ]
+          ],
+          [
+            0.32,
+            [
+              7,
+              0
+            ]
+          ],
+          [
+            0.5,
+            [
+              9,
+              0
+            ]
+          ],
+          [
+            0.67,
+            [
+              9,
+              0
+            ]
+          ],
+          [
+            1,
+            [
+              7,
+              0
+            ]
+          ]
+        ]
+      }
+    },
+    "hammer_3": {
+      "length": 0.5,
+      "loop": false,
+      "tracks": {
+        "Controls/Grip:position": [
+          [
+            0,
+            [
+              -3,
+              -22
+            ]
+          ],
+          [
+            0.2,
+            [
+              -3,
+              -27
+            ]
+          ],
+          [
+            0.32,
+            [
+              4,
+              -25
+            ]
+          ],
+          [
+            0.5,
+            [
+              12,
+              -23
+            ]
+          ],
+          [
+            0.67,
+            [
+              11,
+              -18
+            ]
+          ],
+          [
+            1,
+            [
+              7,
+              -18
+            ]
+          ]
+        ],
+        "Controls/Grip:rotation": [
+          [
+            0,
+            -155
+          ],
+          [
+            0.2,
+            -150
+          ],
+          [
+            0.32,
+            -105
+          ],
+          [
+            0.5,
+            -5
+          ],
+          [
+            0.67,
+            15
+          ],
+          [
+            1,
+            -20
+          ]
+        ],
+        "Skeleton2D/Root/Torso:rotation": [
+          [
+            0,
+            -7
+          ],
+          [
+            0.2,
+            -15
+          ],
+          [
+            0.32,
+            -10
+          ],
+          [
+            0.5,
+            10
+          ],
+          [
+            0.67,
+            17
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "Skeleton2D/Root/Torso/Neck/Head:rotation": [
+          [
+            0,
+            0
+          ],
+          [
+            0.2,
+            -3
+          ],
+          [
+            0.32,
+            -4
+          ],
+          [
+            0.5,
+            5
+          ],
+          [
+            0.67,
+            8
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "Skeleton2D/Root:position": [
+          [
+            0,
+            [
+              0,
+              -8.5
+            ]
+          ],
+          [
+            0.2,
+            [
+              0,
+              -9
+            ]
+          ],
+          [
+            0.32,
+            [
+              0,
+              -9
+            ]
+          ],
+          [
+            0.5,
+            [
+              1,
+              -8
+            ]
+          ],
+          [
+            0.67,
+            [
+              1,
+              -7.5
+            ]
+          ],
+          [
+            1,
+            [
+              0,
+              -8.5
+            ]
+          ]
+        ],
+        "Controls/BackFoot:position": [
+          [
+            0,
+            [
+              -7,
+              0
+            ]
+          ],
+          [
+            0.2,
+            [
+              -7,
+              0
+            ]
+          ],
+          [
+            0.32,
+            [
+              -7,
+              0
+            ]
+          ],
+          [
+            0.5,
+            [
+              -8,
+              0
+            ]
+          ],
+          [
+            0.67,
+            [
+              -8,
+              0
+            ]
+          ],
+          [
+            1,
+            [
+              -7,
+              0
+            ]
+          ]
+        ],
+        "Controls/FrontFoot:position": [
+          [
+            0,
+            [
+              7,
+              0
+            ]
+          ],
+          [
+            0.2,
+            [
+              7,
+              0
+            ]
+          ],
+          [
+            0.32,
+            [
+              7,
+              0
+            ]
+          ],
+          [
+            0.5,
+            [
+              9,
+              0
+            ]
+          ],
+          [
+            0.67,
+            [
+              9,
+              0
+            ]
+          ],
+          [
+            1,
+            [
+              7,
+              0
+            ]
+          ]
+        ]
+      }
+    },
+    "rifle": {
+      "length": 0.44,
+      "loop": false,
+      "tracks": {
+        "Skeleton2D/Root:position": [
+          [
+            0,
+            [
+              0,
+              -8.5
+            ]
+          ],
+          [
+            0.3,
+            [
+              0,
+              -8.8
+            ]
+          ],
+          [
+            0.4,
+            [
+              -0.6,
+              -8.4
+            ]
+          ],
+          [
+            1,
+            [
+              0,
+              -8.5
+            ]
+          ]
+        ],
+        "Skeleton2D/Root/Torso:rotation": [
+          [
+            0,
+            0
+          ],
+          [
+            0.3,
+            -2
+          ],
+          [
+            0.4,
+            -6
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "Skeleton2D/Root/Torso/Neck/Head:rotation": [
+          [
+            0,
+            0
+          ],
+          [
+            0.3,
+            0
+          ],
+          [
+            0.4,
+            -3
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "Controls/Grip:position": [
+          [
+            0,
+            [
+              4,
+              -22
+            ]
+          ],
+          [
+            0.3,
+            [
+              4,
+              -23
+            ]
+          ],
+          [
+            0.4,
+            [
+              2,
+              -23
+            ]
+          ],
+          [
+            1,
+            [
+              4,
+              -22
+            ]
+          ]
+        ],
+        "Controls/Grip:rotation": [
+          [
+            0,
+            0
+          ],
+          [
+            0.3,
+            0
+          ],
+          [
+            0.4,
+            0
+          ],
+          [
+            1,
+            0
+          ]
+        ]
+      }
+    },
+    "staff": {
+      "length": 0.52,
+      "loop": false,
+      "tracks": {
+        "Controls/Grip:position": [
+          [
+            0,
+            [
+              5,
+              -20
+            ]
+          ],
+          [
+            0.25,
+            [
+              1,
+              -28
+            ]
+          ],
+          [
+            0.4,
+            [
+              8,
+              -29
+            ]
+          ],
+          [
+            0.6,
+            [
+              11,
+              -21
+            ]
+          ],
+          [
+            1,
+            [
+              5,
+              -19
+            ]
+          ]
+        ],
+        "Controls/Grip:rotation": [
+          [
+            0,
+            -30
+          ],
+          [
+            0.25,
+            -115
+          ],
+          [
+            0.4,
+            -40
+          ],
+          [
+            0.6,
+            10
+          ],
+          [
+            1,
+            -20
+          ]
+        ],
+        "Skeleton2D/Root/Torso:rotation": [
+          [
+            0,
+            0
+          ],
+          [
+            0.25,
+            -10
+          ],
+          [
+            0.4,
+            -6
+          ],
+          [
+            0.6,
+            8
+          ],
+          [
+            1,
+            0
+          ]
+        ]
+      }
+    },
+    "hurt": {
+      "length": 0.22,
+      "loop": false,
+      "tracks": {
+        "Skeleton2D/Root:position": [
+          [
+            0.0,
+            [
+              0,
+              -8.5
+            ]
+          ],
+          [
+            0.5,
+            [
+              -1,
+              -8
+            ]
+          ],
+          [
+            1.0,
+            [
+              0,
+              -8.5
+            ]
+          ]
+        ],
+        "Skeleton2D/Root/Torso:rotation": [
+          [
+            0.0,
+            -15
+          ],
+          [
+            0.5,
+            -10
+          ],
+          [
+            1.0,
+            0
+          ]
+        ],
+        "Skeleton2D/Root/Torso/Neck/Head:rotation": [
+          [
+            0.0,
+            -8
+          ],
+          [
+            0.5,
+            -4
+          ],
+          [
+            1.0,
+            0
+          ]
+        ]
+      }
+    },
+    "death": {
+      "length": 0.6,
+      "loop": false,
+      "tracks": {
+        "Skeleton2D/Root:position": [
+          [
+            0.0,
+            [
+              0,
+              -8.5
+            ]
+          ],
+          [
+            0.5,
+            [
+              0,
+              -5
+            ]
+          ],
+          [
+            1.0,
+            [
+              0,
+              -3
+            ]
+          ]
+        ],
+        "Skeleton2D/Root/Torso:rotation": [
+          [
+            0.0,
+            0
+          ],
+          [
+            0.5,
+            40
+          ],
+          [
+            1.0,
+            78
+          ]
+        ],
+        "Skeleton2D/Root/Torso/Neck/Head:rotation": [
+          [
+            0.0,
+            0
+          ],
+          [
+            0.5,
+            12
+          ],
+          [
+            1.0,
+            18
+          ]
+        ],
+        "Controls/Grip:position": [
+          [
+            0.0,
+            [
+              5,
+              -19
+            ]
+          ],
+          [
+            0.5,
+            [
+              8,
+              -9
+            ]
+          ],
+          [
+            1.0,
+            [
+              13,
+              -3
+            ]
+          ]
+        ]
+      }
+    },
+    "rest_enter": {
+      "length": 0.5,
+      "loop": false,
+      "tracks": {
+        "Skeleton2D/Root:position": [
+          [
+            0.0,
+            [
+              0,
+              -8.5
+            ]
+          ],
+          [
+            0.5,
+            [
+              0,
+              -6
+            ]
+          ],
+          [
+            1.0,
+            [
+              0,
+              -4
+            ]
+          ]
+        ],
+        "Skeleton2D/Root/Torso:rotation": [
+          [
+            0.0,
+            0
+          ],
+          [
+            0.5,
+            -5
+          ],
+          [
+            1.0,
+            -8
+          ]
+        ],
+        "Controls/Grip:position": [
+          [
+            0.0,
+            [
+              5,
+              -19
+            ]
+          ],
+          [
+            0.5,
+            [
+              4,
+              -14
+            ]
+          ],
+          [
+            1.0,
+            [
+              4,
+              -10
+            ]
+          ]
+        ]
+      }
+    },
+    "rest": {
+      "length": 1.6,
+      "loop": true,
+      "tracks": {
+        "Skeleton2D/Root:position": [
+          [
+            0.0,
+            [
+              0,
+              -4
+            ]
+          ],
+          [
+            0.5,
+            [
+              0,
+              -4.25
+            ]
+          ],
+          [
+            1.0,
+            [
+              0,
+              -4
+            ]
+          ]
+        ],
+        "Skeleton2D/Root/Torso:rotation": [
+          [
+            0.0,
+            -8
+          ],
+          [
+            0.5,
+            -7
+          ],
+          [
+            1.0,
+            -8
+          ]
+        ],
+        "Controls/Grip:position": [
+          [
+            0.0,
+            [
+              4,
+              -10
+            ]
+          ],
+          [
+            0.5,
+            [
+              4,
+              -10.3
+            ]
+          ],
+          [
+            1.0,
+            [
+              4,
+              -10
+            ]
+          ]
+        ]
+      }
+    },
+    "rest_exit": {
+      "length": 0.45,
+      "loop": false,
+      "tracks": {
+        "Skeleton2D/Root:position": [
+          [
+            0.0,
+            [
+              0,
+              -4
+            ]
+          ],
+          [
+            0.5,
+            [
+              0,
+              -6
+            ]
+          ],
+          [
+            1.0,
+            [
+              0,
+              -8.5
+            ]
+          ]
+        ],
+        "Skeleton2D/Root/Torso:rotation": [
+          [
+            0.0,
+            -8
+          ],
+          [
+            0.5,
+            -3
+          ],
+          [
+            1.0,
+            0
+          ]
+        ],
+        "Controls/Grip:position": [
+          [
+            0.0,
+            [
+              4,
+              -10
+            ]
+          ],
+          [
+            0.5,
+            [
+              4,
+              -15
+            ]
+          ],
+          [
+            1.0,
+            [
+              5,
+              -19
+            ]
+          ]
+        ]
+      }
+    }
+  },
+  "runtime": {
+    "arm_reach_margin": 0.15,
+    "ik_min_distance": 1.2,
+    "hand_mount_offset": 2.0,
+    "sword_offhand": -6.0,
+    "rifle_offhand": 10.0,
+    "other_offhand": -5.0,
+    "rifle_grip": [
+      4,
+      -22
+    ],
+    "rifle_pitch_lift": 4.0,
+    "rifle_pitch_side": 4.0,
+    "rifle_recoil": 2.0,
+    "rifle_recoil_seconds": 0.12,
+    "rifle_torso_aim": 0.08,
+    "rifle_head_aim": 0.15,
+    "max_torso_aim": 0.18,
+    "max_head_aim": 0.26,
+    "rifle_barrel": 28.0,
+    "aim_iterations": 3,
+    "aim_min_distance": 48.0,
+    "debug_line_width": 0.6,
+    "debug_joint_radius": 1.2,
+    "debug_color": "#60d4d6",
+    "editor_ik_preview": true
+  },
+  "hidden_weapon_clips": [
+    "guard",
+    "guard_lower",
+    "hurt",
+    "death",
+    "rest_enter",
+    "rest",
+    "rest_exit",
+    "dodge"
+  ],
+  "weapon_shapes": {
+    "hammer": {
+      "handle_length": 18,
+      "head_size": [
+        12,
+        10
+      ],
+      "head_offset": [
+        18,
+        0
+      ],
+      "wood": "#72573d",
+      "cream": "#e8dfc6",
+      "cap": "#849aa2"
+    },
+    "staff": {
+      "length": 25,
+      "gem_size": 6,
+      "wood": "#8d7653",
+      "gem": "#c1ddd7"
+    }
+  },
+  "lab": {
+    "preview_scale": 4,
+    "clip_speed": 1.0,
+    "background": "#20231f"
+  },
+  "controls": {
+    "FrontTarget": [
+      9,
+      -24
+    ],
+    "BackTarget": [
+      6,
+      -21
+    ]
+  },
+  "ik": [
+    {
+      "upper": "Root/Torso/FrontUpperArm",
+      "lower": "Root/Torso/FrontUpperArm/FrontForearm",
+      "target": "FrontTarget",
+      "flip": false,
+      "maximum_distance": 16.85,
+      "minimum_distance": 1.2
+    },
+    {
+      "upper": "Root/Torso/BackUpperArm",
+      "lower": "Root/Torso/BackUpperArm/BackForearm",
+      "target": "BackTarget",
+      "flip": true,
+      "maximum_distance": 16.85,
+      "minimum_distance": 1.2
+    },
+    {
+      "upper": "Root/BackThigh",
+      "lower": "Root/BackThigh/BackShin",
+      "target": "BackFoot",
+      "flip": true,
+      "maximum_distance": 8.99,
+      "minimum_distance": 0.1
+    },
+    {
+      "upper": "Root/FrontThigh",
+      "lower": "Root/FrontThigh/FrontShin",
+      "target": "FrontFoot",
+      "flip": false,
+      "maximum_distance": 8.99,
+      "minimum_distance": 0.1
+    }
+  ]
+}

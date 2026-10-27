@@ -160,7 +160,7 @@ class Guard extends PlayerState:
 class GuardRelease extends PlayerState:
 	const NAME: StringName = &"GuardRelease"
 	func enter(_msg: Dictionary) -> void:
-		p.guard_release_from = maxi(0,mini(p.sprite.frame,int(p._pixel_rig.cfg.guard.hold_frame))-1)
+		p.guard_release_from = maxi(0,mini(p.guard_visual_frame(),int(p._pixel_rig.cfg.guard.hold_frame))-1)
 		p.guard_pose_time = 0.0
 		p.is_guarding = false
 	func tick(delta: float) -> void:

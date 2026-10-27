@@ -245,6 +245,17 @@ func _input(event: InputEvent) -> void:
 		dialogue.handle_dialogue_input(event)
 		get_viewport().set_input_as_handled()
 		return
+	if event is InputEventKey and event.pressed and not event.echo:
+		if event.keycode == KEY_F6:
+			_toggle_animation_backend()
+			get_viewport().set_input_as_handled()
+			return
+		if event.keycode == KEY_F7:
+			player.toggle_skeleton_debug()
+			if not player.uses_skeletal_animation():
+				toast("F6 切换至骨骼测试后可显示关节")
+			get_viewport().set_input_as_handled()
+			return
 	if _closing:
 		return
 	if event.is_action_pressed(&"character_panel"):
@@ -383,12 +394,10 @@ func begin_rest() -> bool:
 	player.clear_action_buffers()
 	player.sm.to(&"Idle")
 	player.set_facing(1 if float(fire.ground[0]) >= seat.x else -1)
-	player.sprite.flip_h = player.facing < 0
-	player.sprite.process_mode = Node.PROCESS_MODE_ALWAYS
-	player.sprite.play(&"rest_enter")
-	if not player.sprite.animation_finished.is_connected(_on_rest_animation_finished):
-		player.sprite.animation_finished.connect(_on_rest_animation_finished)
 	_resting = true
+	if not player.presentation_animation_finished.is_connected(_on_rest_animation_finished):
+		player.presentation_animation_finished.connect(_on_rest_animation_finished)
+	player.play_presentation_animation(&"rest_enter")
 	GameState.checkpoint_id = StringName(fire.checkpoint)
 	GameState.checkpoint_room = GameState.current_room
 	GameState.checkpoint_position = [seat.x,seat.y]
@@ -400,9 +409,9 @@ func begin_rest() -> bool:
 	return true
 
 
-func _on_rest_animation_finished() -> void:
-	if _resting and not _closing and is_instance_valid(player) and player.sprite.animation == &"rest_enter":
-		player.sprite.play(&"rest")
+func _on_rest_animation_finished(animation: StringName) -> void:
+	if _resting and not _closing and is_instance_valid(player) and animation == &"rest_enter":
+		player.play_presentation_animation(&"rest")
 
 
 func _rest_resources() -> void:
@@ -437,12 +446,31 @@ func _rest_action(action: String) -> void:
 func _show_pause() -> void:
 	_open_modal("pause",_rect(RPGService.config().pause.rect),"res://assets/ui/magic/pause_options.svg")
 	_label(modal,"旅途暂歇",Vector2(32,22),23,_color("bright_gold"))
-	_button(modal,"继续旅途",Rect2(28,87,220,32),close_menu)
-	_button(modal,"人物面板  I",Rect2(28,130,220,32),open_character)
-	_button(modal,"行囊  Tab",Rect2(28,173,220,32),open_inventory)
+	_button(modal,"继续旅途",Rect2(28,72,220,30),close_menu)
+	_button(modal,"人物面板  I",Rect2(28,110,220,30),open_character)
+	_button(modal,"行囊  Tab",Rect2(28,148,220,30),open_inventory)
+	var animation_button := _button(modal,_animation_button_text(),Rect2(28,186,220,30),_toggle_animation_backend)
+	animation_button.name = "AnimationBackend"
+	animation_button.tooltip_text = "F6 随时切换；仅本次运行生效，不影响存档。F7 显示骨架。"
 	var leave := _button(modal,"保存并返回主菜单",Rect2(28,226,220,32),_return_to_title)
 	leave.disabled = GameState.in_combat
 	leave.tooltip_text = "战斗结束后可保存并返回" if GameState.in_combat else ""
+
+
+func _animation_button_text() -> String:
+	return "动画：骨骼测试  F6" if player.uses_skeletal_animation() else "动画：原逐帧  F6"
+
+
+func _toggle_animation_backend() -> void:
+	if not is_instance_valid(player):
+		return
+	var requested := "frames" if player.uses_skeletal_animation() else "skeleton"
+	player.set_animation_backend(requested)
+	toast("展示方案：%s" % CharacterAnimationMode.display_name(player.get_animation_backend()))
+	if is_instance_valid(modal):
+		var button := modal.get_node_or_null("AnimationBackend") as Button
+		if button != null:
+			button.text = _animation_button_text()
 
 
 func _return_to_title() -> void:
@@ -680,11 +708,10 @@ func close_menu() -> void:
 		if is_instance_valid(modal):
 			modal.hide()
 		SaveSystem.save_game()
-		player.sprite.play(&"rest_exit")
+		player.play_presentation_animation(&"rest_exit")
 		await get_tree().create_timer(float(cfg.animation.rest_exit_seconds),true).timeout
 		if is_instance_valid(player):
-			player.sprite.process_mode = Node.PROCESS_MODE_INHERIT
-			player.sprite.play(&"idle")
+			player.stop_presentation_animation()
 		_force_close()
 	else:
 		_force_close()

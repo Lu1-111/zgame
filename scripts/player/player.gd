@@ -5,6 +5,9 @@ extends CharacterBody2D
 ## 武器/技能数值 = DataDB（data/weapons.json、data/skills.json）；
 ## 三资源（HP/STA/奶力）权威在 GameState，本脚本只做读写与规则结算。
 
+signal presentation_animation_finished(animation: StringName)
+
+const ANIMATION_MODE := preload("res://scripts/player/character_animation_mode.gd")
 const BUBBLE_SCENE := preload("res://scenes/player/projectile_bubble.tscn")
 const SPRITE_FRAMES_PATH := "res://assets/PROCESSED/characters/CHR-01/v001/godot/CHR-01_sprite_frames.tres"
 
@@ -34,6 +37,12 @@ var _contact_left := 0.0
 var _contact_cooldown := 0.0
 var _contact_velocity := 0.0
 var _pixel_rig: PixelHeroRig
+var _skeletal_rig: Node2D
+var _animation_backend := "frames"
+var _presentation_state: StringName = &""
+var _presentation_state_since := 0.0
+var _external_animation: StringName = &""
+var _external_completed_time := 0.0
 var attack_phase := &""             ## 供绘制的攻击阶段
 
 var _buffers: Dictionary = {}       ## 动作名 → 剩余缓冲秒数
@@ -96,6 +105,7 @@ func _ready() -> void:
 	]
 	sm.setup(self, &"Idle", list)
 	checkpoint_position = global_position
+	set_animation_backend(ANIMATION_MODE.current())
 
 
 ## 注入 CHR-01 精灵帧；资源缺失时保持 _draw() 灰盒回退（素材容错约定）。
@@ -109,6 +119,7 @@ func _setup_sprite() -> void:
 	sprite.sprite_frames = frames
 	sprite.frame_changed.connect(_sync_weapon_sprite)
 	sprite.animation_changed.connect(_sync_weapon_sprite)
+	sprite.animation_finished.connect(_on_frame_presentation_finished)
 	sprite.play(&"idle")
 
 
@@ -391,7 +402,11 @@ func spawn_weapon_projectile(_charge: float = 1.0) -> void:
 	bullet.hit_landed.connect(_on_hit_landed)
 	var socket: Array = module.get("socket",[24,-9])
 	var point := global_position+Vector2(float(socket[0])*facing,float(socket[1]))
-	if kind == "rifle" and is_instance_valid(_pixel_rig):
+	if kind == "rifle" and uses_skeletal_animation():
+		_sync_skeletal_pose()
+		point = _skeletal_rig.call("muzzle_global_position")
+		bullet.setup(_skeletal_rig.call("firing_direction_global"),packet)
+	elif kind == "rifle" and is_instance_valid(_pixel_rig):
 		_sync_rig_pose()
 		point = _pixel_rig.muzzle_global_position()
 		bullet.setup(_pixel_rig.firing_direction_global(),packet)
@@ -770,6 +785,18 @@ func _process(_delta: float) -> void:
 
 ## 每物理帧按当前状态切换动画；资源未注入时跳过（灰盒回退）。
 func _update_animation() -> void:
+	if sm != null and _presentation_state != sm.current_name():
+		_presentation_state = sm.current_name()
+		_presentation_state_since = _clock
+	if uses_skeletal_animation():
+		sprite.hide()
+		sprite.pause()
+		_pixel_rig.hide()
+		if _external_animation == &"":
+			_sync_skeletal_pose()
+		return
+	if _external_animation != &"":
+		return
 	if sprite.sprite_frames == null:
 		return
 	var rig_active := (sm.current_name() == &"Attack" and weapon_type() in ["sword","rifle"]) or (sm.current_name() == &"Skill" and _current_skill == &"skill_cleave")
@@ -789,6 +816,203 @@ func _update_animation() -> void:
 		else:
 			sprite.frame = clampi(ceili(lerpf(float(guard_release_from),-1,guard_pose_time/float(guard_cfg.release_seconds))),0,int(guard_cfg.hold_frame))
 	_sync_weapon_sprite()
+
+
+## 切换展示后端；战斗状态、速度、判定和动作计时保持原样。
+func set_animation_backend(mode: String) -> bool:
+	var requested := "skeleton" if mode == "skeleton" else "frames"
+	var external := get_presentation_animation()
+	var external_time := _presentation_external_time()
+	if requested == "skeleton" and not _ensure_skeletal_rig():
+		ANIMATION_MODE.report_fallback()
+		requested = "frames"
+	if is_instance_valid(_skeletal_rig):
+		_skeletal_rig.call("stop_external")
+		_skeletal_rig.visible = requested == "skeleton"
+	_animation_backend = requested
+	ANIMATION_MODE.select(requested)
+	if requested == "skeleton":
+		sprite.pause()
+		sprite.process_mode = Node.PROCESS_MODE_DISABLED
+		sprite.hide()
+		_pixel_rig.hide()
+		_sync_skeletal_pose()
+	else:
+		sprite.process_mode = Node.PROCESS_MODE_INHERIT
+		# 骨骼模式已暂停旧精灵，返回时从当前状态的实际时序恢复。
+		if sprite.sprite_frames != null:
+			sprite.play(_pick_animation())
+		_update_animation()
+		if external == &"" and sm.current_name() not in [&"Guard",&"GuardRelease"]:
+			_seek_frame_time(maxf(0,_clock-(_last_attack_time if sm.current_name() == &"Attack" else _presentation_state_since)))
+	if external != &"":
+		play_presentation_animation(external)
+		if uses_skeletal_animation():
+			_skeletal_rig.call("seek_external",external_time)
+		else:
+			_seek_frame_time(external_time)
+	queue_redraw()
+	return requested == mode
+
+
+## 当前是否使用原生骨骼展示。
+func uses_skeletal_animation() -> bool:
+	return _animation_backend == "skeleton" and is_instance_valid(_skeletal_rig)
+
+
+## 返回当前展示后端，供暂停菜单和测试工具使用。
+func get_animation_backend() -> String:
+	return _animation_backend
+
+
+## 返回防御举手的展示帧，避免骨骼模式读取暂停精灵的旧帧。
+func guard_visual_frame() -> int:
+	if uses_skeletal_animation():
+		var guard_cfg: Dictionary = _pixel_rig.cfg.guard
+		return mini(int(guard_pose_time/float(guard_cfg.raise_frame_seconds)),int(guard_cfg.hold_frame))
+	return sprite.frame
+
+
+## 切换原生骨骼和关节可视化，不改变游戏状态。
+func toggle_skeleton_debug() -> void:
+	if uses_skeletal_animation():
+		_skeletal_rig.call("toggle_debug")
+
+
+## 播放休息等界面驱动的演出；世界暂停时仅活动展示器继续运行。
+func play_presentation_animation(animation: StringName) -> void:
+	if uses_skeletal_animation():
+		_sync_skeletal_pose()
+	_external_animation = animation
+	_external_completed_time = 0.0
+	_pixel_rig.hide()
+	if uses_skeletal_animation():
+		sprite.hide()
+		sprite.pause()
+		_skeletal_rig.call("play_external",animation)
+	else:
+		sprite.visible = sprite.sprite_frames != null
+		sprite.process_mode = Node.PROCESS_MODE_ALWAYS
+		sprite.flip_h = facing < 0
+		sprite.play(animation)
+
+
+## 结束界面演出，恢复当前战斗状态的展示。
+func stop_presentation_animation() -> void:
+	_external_animation = &""
+	_external_completed_time = 0.0
+	if is_instance_valid(_skeletal_rig):
+		_skeletal_rig.call("stop_external")
+	sprite.process_mode = Node.PROCESS_MODE_DISABLED if uses_skeletal_animation() else Node.PROCESS_MODE_INHERIT
+	_update_animation()
+
+
+## 返回当前界面演出名；普通状态机动画不属于外部演出。
+func get_presentation_animation() -> StringName:
+	if uses_skeletal_animation() and _skeletal_rig.call("is_external_active"):
+		return StringName(_skeletal_rig.call("get_external_animation"))
+	return _external_animation
+
+
+func _ensure_skeletal_rig() -> bool:
+	if is_instance_valid(_skeletal_rig):
+		return true
+	var integration: Dictionary = ANIMATION_MODE.configuration().get("integration",{})
+	var path := str(integration.get("model_scene","res://scenes/player/skeletal/hero_skeleton_test.tscn"))
+	if not ResourceLoader.exists(path):
+		return false
+	var packed := load(path) as PackedScene
+	if packed == null:
+		return false
+	var candidate := packed.instantiate() as Node2D
+	if candidate == null or not candidate.has_method("sync_pose"):
+		if candidate != null:
+			candidate.free()
+		return false
+	_skeletal_rig = candidate
+	_skeletal_rig.name = "SkeletalPresentation"
+	_skeletal_rig.position = sprite.position
+	add_child(_skeletal_rig)
+	if _skeletal_rig.has_method("is_ready_for_animation") and not bool(_skeletal_rig.call("is_ready_for_animation")):
+		remove_child(_skeletal_rig)
+		_skeletal_rig.queue_free()
+		_skeletal_rig = null
+		return false
+	_skeletal_rig.connect("external_finished",_on_skeletal_presentation_finished)
+	return true
+
+
+func _sync_skeletal_pose() -> void:
+	if not uses_skeletal_animation() or sm == null:
+		return
+	var state := sm.current_name()
+	var clip: StringName
+	var elapsed := maxf(0,_clock-_presentation_state_since)
+	var progress := -1.0
+	match state:
+		&"Attack":
+			clip = StringName("%s_%d" % [weapon_type(),maxi(1,attack_combo)]) if weapon_type() in ["sword","hammer"] else StringName(weapon_type())
+			var module := WeaponRuntime.module(weapon_type())
+			elapsed = maxf(0,_clock-_last_attack_time)
+			progress = clampf(elapsed/(float(module.startup)+float(module.active)+float(module.recovery)),0,1)
+		&"Skill":
+			clip = &"sword_3" if _current_skill == &"skill_cleave" else &"staff"
+		&"Guard":
+			clip = &"guard"
+			var guard_cfg: Dictionary = _pixel_rig.cfg.guard
+			progress = clampf(guard_pose_time/(float(guard_cfg.raise_frame_seconds)*float(guard_cfg.hold_frame)),0,1)
+		&"GuardRelease":
+			clip = &"guard_lower"
+			var guard_cfg: Dictionary = _pixel_rig.cfg.guard
+			progress = clampf(1-float(guard_release_from)/float(guard_cfg.hold_frame)+guard_pose_time/float(guard_cfg.release_seconds),0,1)
+		&"Dead": clip = &"death"
+		&"Jump": clip = &"jump" if velocity.y < 0 else &"fall"
+		_: clip = StringName(String(state).to_lower())
+	_skeletal_rig.call("sync_pose",clip,elapsed,weapon_type(),attack_combo,aim_vector(),facing,progress)
+
+
+func _presentation_external_time() -> float:
+	if _external_animation == &"":
+		return 0.0
+	if uses_skeletal_animation():
+		return float(_skeletal_rig.call("get_external_time")) if _skeletal_rig.call("is_external_active") else _external_completed_time
+	if sprite.sprite_frames == null:
+		return 0.0
+	var speed := sprite.sprite_frames.get_animation_speed(sprite.animation)
+	var elapsed := 0.0
+	for index in sprite.frame:
+		elapsed += sprite.sprite_frames.get_frame_duration(sprite.animation,index)/speed
+	return elapsed+sprite.frame_progress*sprite.sprite_frames.get_frame_duration(sprite.animation,sprite.frame)/speed
+
+
+func _seek_frame_time(time: float) -> void:
+	if sprite.sprite_frames == null:
+		return
+	var speed := sprite.sprite_frames.get_animation_speed(sprite.animation)
+	var remaining := time
+	if sprite.sprite_frames.get_animation_loop(sprite.animation):
+		var total := 0.0
+		for index in sprite.sprite_frames.get_frame_count(sprite.animation):
+			total += sprite.sprite_frames.get_frame_duration(sprite.animation,index)/speed
+		remaining = fposmod(remaining,maxf(total,0.001))
+	for index in sprite.sprite_frames.get_frame_count(sprite.animation):
+		var duration := sprite.sprite_frames.get_frame_duration(sprite.animation,index)/speed
+		if remaining <= duration:
+			sprite.set_frame_and_progress(index,remaining/duration)
+			return
+		remaining -= duration
+	sprite.frame = maxi(0,sprite.sprite_frames.get_frame_count(sprite.animation)-1)
+
+
+func _on_frame_presentation_finished() -> void:
+	if not uses_skeletal_animation() and _external_animation != &"":
+		presentation_animation_finished.emit(_external_animation)
+
+
+func _on_skeletal_presentation_finished(animation: StringName) -> void:
+	if uses_skeletal_animation() and _external_animation != &"":
+		_external_completed_time = float(_skeletal_rig.call("get_external_time"))
+		presentation_animation_finished.emit(animation)
 
 
 func _sync_rig_pose() -> void:
@@ -875,7 +1099,7 @@ func _draw() -> void:
 		draw_circle(Vector2.ZERO,24,Color(0.3,0.65,1.0,0.15))
 		draw_arc(Vector2.ZERO,24,0,TAU,48,Color("#a2dbea"),2,true)
 	# 精灵帧已注入时不画灰盒（回退路径专用）
-	if sprite.visible or (is_instance_valid(_pixel_rig) and _pixel_rig.visible):
+	if sprite.visible or (is_instance_valid(_pixel_rig) and _pixel_rig.visible) or uses_skeletal_animation():
 		return
 	# 灰盒视觉：奶白色圆角方块 + 朝向眼睛 + 状态描边（§3.13）
 	var body := Rect2(-10, -17, 20, 34)
