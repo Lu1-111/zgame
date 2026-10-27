@@ -45,9 +45,9 @@ func _run() -> void:
 	_expect(actor.weapon_type() == "rifle" and actor._pixel_rig.kind == "rifle" and actor._pixel_rig.visible,"旧弓武器存档自动使用双手步枪模组")
 	var rig: Node = actor._pixel_rig
 	var natural: Image = rig.source.get_image()
-	var original := Image.load_from_file(ProjectSettings.globalize_path(str(rig.cfg.source)))
+	var original := Image.load_from_file(ProjectSettings.globalize_path(str(rig.source.resource_path)))
 	_expect(natural.get_size() == original.get_size() and rig._whole_body.scale == Vector2.ONE,"人物母版和原像素密度保持不变，96画布仅扩展武器留白")
-	_expect(rig.cfg.arms.mask.size() == 2 and rig._rear_hand.distance_to(rig._support_hand) > 10,"两段旧手臂被替换，步枪只连接两只握持手")
+	_expect(int(rig.cfg.native_motion.version) >= 6 and rig._native_hands.texture == rig.source and not rig.has_method("_arm"),"保留正式人物的手臂和掌形，不绘制额外程序手臂")
 	var first: Vector2 = rig.muzzle_global_position()
 	var target_direction: Vector2 = (actor.aim_point-first).normalized()
 	_expect(rig.firing_direction_global().dot(target_direction) > 0.999,"枪管、枪口弹道与光标一致，补偿人物中心和枪口偏移")

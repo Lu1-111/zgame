@@ -1,6 +1,6 @@
 class_name PixelHeroRig
 extends Node2D
-## 保留原闲置完整人物母版与像素密度；仅原位替换双臂，避免叠出第三只手。
+## 直接使用正式锤、杖、射击的整个人物动作与原生手臂，仅替换武器。
 var cfg: Dictionary
 var source: Texture2D
 var kind := "sword"
@@ -11,50 +11,58 @@ var release_time := -1.0
 var aim := Vector2.RIGHT
 var facing := 1
 var _whole_body := Sprite2D.new()
-var _source_id := "idle"
-var _source_rect := Rect2(0,0,64,64)
+var _upper_body := Sprite2D.new()
+var _native_hands := Sprite2D.new()
+var _source_id := ""
+var _source_rect := Rect2()
 var _anchor := Vector2(32,58)
 var _grip := Vector2.ZERO
 var _rear_hand := Vector2.ZERO
 var _support_hand := Vector2.ZERO
-var _front_shoulder := Vector2.ZERO
-var _back_shoulder := Vector2.ZERO
 var _local_aim := Vector2.RIGHT
 var _sword_angle := 0.0
 var _depth := 1.0
-var _skin: Color
-var _edge: Color
-var _light: Color
+var _textures: Dictionary = {}
+var _materials: Dictionary = {}
+static var _pose_shader: Shader
+const POSE_SHADER := """shader_type canvas_item;
+uniform vec2 source_origin;
+uniform vec4 cut0;
+uniform vec4 cut1;
+uniform int cut_count;
+uniform int part_mode;
+uniform vec4 hand_rect;
+uniform float split_line;
+uniform float overlap_rows;
+varying vec4 actor_color;
+bool inside(vec2 p,vec4 r){return p.x>=r.x&&p.x<r.x+r.z&&p.y>=r.y&&p.y<r.y+r.w;}
+void vertex(){actor_color=COLOR;}
+void fragment(){
+ vec2 p=floor(UV*vec2(textureSize(TEXTURE,0)))-source_origin;
+ vec4 src=texture(TEXTURE,UV);
+ if(src.b>src.r*1.015&&src.b>src.g*1.005){discard;}
+ if(cut_count>0&&inside(p,cut0)){discard;}
+ if(cut_count>1&&inside(p,cut1)){discard;}
+ if(part_mode==1&&p.y<split_line){discard;}
+ if(part_mode==2&&p.y>=split_line+overlap_rows){discard;}
+ if(part_mode==3&&!inside(p,hand_rect)){discard;}
+ COLOR=src*actor_color;
+}"""
 
 func _ready() -> void:
 	cfg = JSON.parse_string(FileAccess.get_file_as_string("res://data/hero_motion.json"))
-	source = load(str(cfg.source))
 	_anchor = _vec(cfg.anchor)
 	texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
-	_whole_body.texture = source
-	_whole_body.centered = false
-	_whole_body.region_enabled = true
-	_whole_body.region_rect = _source_rect
-	_whole_body.offset = -_anchor
+	for layer in [_whole_body,_upper_body,_native_hands]:
+		layer.centered = false
+		layer.region_enabled = true
+		layer.offset = -_anchor
+		add_child(layer)
 	_whole_body.show_behind_parent = true
-	add_child(_whole_body)
-	var image := source.get_image()
-	_skin = image.get_pixelv(Vector2i(_vec(cfg.arms.skin_sample)))
-	_edge = image.get_pixelv(Vector2i(_vec(cfg.arms.edge_sample)))
-	_light = image.get_pixelv(Vector2i(_vec(cfg.arms.highlight_sample)))
-	# 只清理原手臂覆盖的局部像素，底色取同一母版相同列的腹部，不重新生成头身。
-	var shader := Shader.new()
-	var code := "shader_type canvas_item; varying vec4 actor_color; void vertex(){actor_color=COLOR;} void fragment(){ vec2 p=floor(UV*vec2(textureSize(TEXTURE,0))); vec4 src=texture(TEXTURE,UV);"
-	for r: Array in cfg.arms.mask:
-		code += "if(p.x>=%.1f&&p.x<%.1f&&p.y>=%.1f&&p.y<%.1f){src=texture(TEXTURE,vec2(p.x+0.5,%.1f)/vec2(textureSize(TEXTURE,0)));if(p.x>=%.1f){src.a=0.0;}}" % [r[0],r[0]+r[2],r[1],r[1]+r[3],float(cfg.arms.fill_row)+0.5,float(cfg.arms.far_limit)]
-	code += "COLOR=src*actor_color;}"
-	shader.code = code
-	var mat := ShaderMaterial.new()
-	mat.shader = shader
-	_whole_body.material = mat
+	_upper_body.show_behind_parent = true
 	apply_pose()
 
-## 武器与两只手共用握点，持枪俯仰连续变化；完整人物只旋转重心，不缩放。
+## 身体、手臂、腿部均随正式姿态换帧；不再从闲置抹去手臂后用线段重画。
 func apply_pose() -> void:
 	if cfg.is_empty():
 		return
@@ -62,63 +70,101 @@ func apply_pose() -> void:
 	_local_aim = Vector2(aim.x*float(facing),aim.y).normalized()
 	if _local_aim.is_zero_approx():
 		_local_aim = Vector2.RIGHT
+	var motion: Dictionary = cfg.native_motion
+	var pose := 0
 	if kind == "rifle":
-		var rifle: Dictionary = cfg.rifle
-		var pitch := _local_aim.angle()
-		_whole_body.rotation = pitch*float(rifle.body_aim_factor)
-		var recoil := float(rifle.recoil)*maxf(0.0,1.0-release_time/float(rifle.recoil_seconds)) if release_time >= 0 else 0.0
-		_grip = _vec(rifle.pivot)+Vector2(absf(sin(pitch))*float(rifle.pitch_offset[0]),-absf(sin(pitch))*float(rifle.pitch_offset[1]))-_local_aim*recoil
-		_rear_hand = _grip+Vector2(-_local_aim.y,_local_aim.x)*3
-		_support_hand = _grip+_local_aim*float(rifle.support)+Vector2(-_local_aim.y,_local_aim.x)*3
+		var definition: Dictionary
+		for row: Dictionary in motion.rifle_aim:
+			if _local_aim.angle() <= float(row.limit):
+				definition = row
+				break
+		var phase := "hold"
+		if release_time < 0 and progress < float(motion.rifle_prepare_fraction):
+			phase = "prepare"
+		elif release_time >= 0 and release_time < float(motion.rifle_fire_seconds):
+			phase = "fire"
+		elif release_time >= 0 and release_time < float(motion.rifle_recover_seconds):
+			phase = "recover"
+		_source_id = str(definition[phase])
 	else:
-		var s: Dictionary = cfg.sword
 		var row := clampi(combo-1,0,2)
 		var phase := clampf(progress,0,1)*7
-		var frame := mini(floori(phase),6)
-		var fraction := phase-frame
-		_grip = _vec(s.grips[row][frame]).lerp(_vec(s.grips[row][frame+1]),fraction)
-		_sword_angle = deg_to_rad(lerpf(float(s.angles[row][frame]),float(s.angles[row][frame+1]),fraction))
-		_whole_body.rotation = deg_to_rad(lerpf(float(s.body_degrees[row][frame]),float(s.body_degrees[row][frame+1]),fraction))
-		_depth = lerpf(float(s.depth[row][frame]),float(s.depth[row][frame+1]),fraction)
-		var direction := Vector2.from_angle(_sword_angle)
-		_support_hand = _grip-direction*2
-		_rear_hand = _grip-direction*7
-	var left := Vector2(-14,0).rotated(_whole_body.rotation).y
-	var right := Vector2(18,0).rotated(_whole_body.rotation).y
-	_whole_body.position.y = -maxf(left,right)
-	_front_shoulder = _body_point(_vec(cfg.arms.front_shoulder))
-	_back_shoulder = _body_point(_vec(cfg.arms.back_shoulder))
+		pose = clampi(roundi(phase),0,7)
+		_source_id = str(motion.sword_sequences[row][pose])
+		var index := mini(floori(phase),6)
+		var fraction := phase-index
+		_sword_angle = deg_to_rad(lerpf(float(cfg.sword.angles[row][index]),float(cfg.sword.angles[row][index+1]),fraction))
+		_depth = lerpf(float(cfg.sword.depth[row][index]),float(cfg.sword.depth[row][index+1]),fraction)
+	var frame: Dictionary = motion.frames[_source_id]
+	if not _textures.has(_source_id):
+		_textures[_source_id] = load(str(frame.path))
+	source = _textures[_source_id]
+	_source_rect = Rect2(_vec(frame.origin),_vec(cfg.canvas))
+	var rotation_angle := clampf(_local_aim.angle()-deg_to_rad(float(frame.weapon_angle)),-float(motion.rifle_body_pitch),float(motion.rifle_body_pitch)) if kind == "rifle" else 0.0
+	var translation := Vector2.ZERO
+	if kind == "rifle" and release_time >= 0:
+		translation.x -= float(motion.rifle_recoil_body)*maxf(0,1-release_time/float(cfg.rifle.recoil_seconds))
+	for layer in [_whole_body,_upper_body,_native_hands]:
+		layer.texture = source
+		layer.region_rect = _source_rect
+		layer.rotation = 0.0
+		layer.offset = -_anchor
+		layer.position = Vector2.ZERO
+	var native_hand := _vec(frame.hand)
+	var split := float(motion.body_split_high) if native_hand.y > float(motion.body_split_hand_threshold) else float(motion.body_split_low)
+	var waist := Vector2(float(motion.waist_x),split-float(motion.waist_offset))
+	_upper_body.visible = kind == "rifle"
+	if kind == "rifle":
+		_whole_body.material = _material_for(_source_id,"lower",split)
+		_upper_body.material = _material_for(_source_id,"upper",split)
+		for layer in [_upper_body,_native_hands]:
+			layer.offset = -waist
+			layer.position = waist-_anchor+translation
+			layer.rotation = rotation_angle
+	else:
+		_whole_body.material = _material_for(_source_id,"body",split)
+	_native_hands.material = _material_for(_source_id,"hands",split)
+	_support_hand = (native_hand-waist).rotated(rotation_angle)+waist+translation if kind == "rifle" else native_hand
+	if kind == "rifle":
+		_grip = _support_hand-_local_aim*3-Vector2(-_local_aim.y,_local_aim.x)*3
+		_rear_hand = _support_hand-_local_aim*float(motion.rifle_hand_spacing)
+	else:
+		_grip = _support_hand
+		_rear_hand = _grip-Vector2.from_angle(_sword_angle)*6
 	queue_redraw()
 
-func _body_point(point: Vector2) -> Vector2:
-	return (point-_anchor).rotated(_whole_body.rotation)+_whole_body.position+_anchor
+func _material_for(id: String, mode: String, split: float) -> ShaderMaterial:
+	var key := id+mode
+	if _materials.has(key):
+		return _materials[key]
+	if _pose_shader == null:
+		_pose_shader = Shader.new()
+		_pose_shader.code = POSE_SHADER
+	var frame: Dictionary = cfg.native_motion.frames[id]
+	var material := ShaderMaterial.new()
+	material.shader = _pose_shader
+	material.set_shader_parameter("source_origin",_vec(frame.origin))
+	material.set_shader_parameter("part_mode",{"body":0,"lower":1,"upper":2,"hands":3}[mode])
+	material.set_shader_parameter("cut_count",frame.masks.size())
+	for index in mini(2,frame.masks.size()):
+		material.set_shader_parameter("cut%d" % index,_rect_uniform(frame.masks[index]))
+	material.set_shader_parameter("hand_rect",_rect_uniform(frame.hand_region))
+	material.set_shader_parameter("split_line",split)
+	material.set_shader_parameter("overlap_rows",float(cfg.native_motion.upper_overlap))
+	_materials[key] = material
+	return material
+
+func _rect_uniform(values: Array) -> Vector4:
+	return Vector4(values[0],values[1],values[2],values[3])
 
 func _draw() -> void:
 	if cfg.is_empty():
 		return
 	draw_set_transform(-_anchor)
-	# 只有这两条完整手臂，原素材的手臂已经由局部遮罩替换。
-	_arm(_back_shoulder,_support_hand,-1)
-	_arm(_front_shoulder,_rear_hand,1)
 	if kind == "rifle":
 		_draw_rifle()
 	else:
 		_draw_sword()
-	_hand(_support_hand)
-	_hand(_rear_hand)
-
-func _arm(start: Vector2, end: Vector2, bend: float) -> void:
-	var d := (end-start).normalized()
-	var middle := ((start+end)/2+Vector2(-d.y,d.x)*bend*3).round()
-	var points := PackedVector2Array([start.round(),middle,end.round()])
-	draw_polyline(points,_edge,float(cfg.arms.width),false)
-	draw_polyline(points,_skin,float(cfg.arms.width)-1,false)
-	draw_line(start.round(),middle,_light,1,false)
-
-func _hand(point: Vector2) -> void:
-	var width := float(cfg.arms.hand_width)
-	draw_rect(Rect2(point.round()-Vector2.ONE*width/2,Vector2.ONE*width),_edge)
-	draw_rect(Rect2(point.round()-Vector2.ONE,Vector2.ONE*2),_skin)
 
 func _draw_sword() -> void:
 	var s: Dictionary = cfg.sword
@@ -153,15 +199,15 @@ func _draw_rifle() -> void:
 	draw_line((_grip-d*2-n).round(),(_grip+d*float(r.barrel_length)-n).round(),Color(r.dark),4,false)
 	draw_line((_grip-d*2-n*2).round(),(_grip+d*float(r.barrel_length)-n*2).round(),Color(r.steel),2,false)
 	draw_line((_grip+d*3-n*3).round(),(_grip+d*float(r.barrel_length)-n*3).round(),Color(r.highlight),1,false)
-	draw_line((_grip+d*8+n*2).round(),(_grip+d*18+n*2).round(),Color(r.wood_light),2,false)
+	draw_line((_grip+d*6+n*2).round(),(_grip+d*14+n*2).round(),Color(r.wood_light),2,false)
 	draw_line((_grip-d-n*4).round(),(_grip+d*3-n*4).round(),Color(r.highlight),1,false)
 	draw_line((_grip+d*25-n*4).round(),(_grip+d*25-n*2).round(),Color(r.dark),1,false)
 
-## 实际枪口和可见枪管共用长度、握点与方向。
+## 枪口与正式人物握点、枪管方向共用坐标。
 func muzzle_global_position() -> Vector2:
 	return to_global(_grip+_local_aim*float(cfg.rifle.barrel_length)-_anchor)
 
-## 将握持方向转换到世界坐标，子弹沿可见枪管飞行。
+## 子弹沿可见枪管飞行，不改变原人物手臂画法。
 func firing_direction_global() -> Vector2:
 	return (to_global(_local_aim)-to_global(Vector2.ZERO)).normalized()
 

@@ -43,7 +43,7 @@ func _capture() -> void:
 	for frame in 4:
 		await process_frame
 	await RenderingServer.frame_post_draw
-	var error := view.get_texture().get_image().save_png(ProjectSettings.globalize_path("res://docs/previews/sword_effects_v5.png"))
+	var error := view.get_texture().get_image().save_png(ProjectSettings.globalize_path("res://docs/previews/sword_effects_v6.png"))
 	print("Sword effects preview: %d" % error)
 	quit(error)
 

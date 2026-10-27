@@ -22,171 +22,35 @@
     "shadow": "#414f56",
     "grip": "#5c4637",
     "gold": "#9d9579",
-    "grips": [
-      [
-        [
-          35,
-          39
-        ],
-        [
-          36,
-          31
-        ],
-        [
-          37,
-          26
-        ],
-        [
-          41,
-          28
-        ],
-        [
-          46,
-          36
-        ],
-        [
-          43,
-          37
-        ],
-        [
-          40,
-          40
-        ],
-        [
-          34,
-          40
-        ]
-      ],
-      [
-        [
-          43,
-          37
-        ],
-        [
-          44,
-          40
-        ],
-        [
-          47,
-          39
-        ],
-        [
-          46,
-          32
-        ],
-        [
-          41,
-          25
-        ],
-        [
-          36,
-          24
-        ],
-        [
-          37,
-          31
-        ],
-        [
-          34,
-          40
-        ]
-      ],
-      [
-        [
-          30,
-          40
-        ],
-        [
-          28,
-          37
-        ],
-        [
-          30,
-          34
-        ],
-        [
-          37,
-          35
-        ],
-        [
-          46,
-          37
-        ],
-        [
-          49,
-          39
-        ],
-        [
-          41,
-          40
-        ],
-        [
-          34,
-          40
-        ]
-      ]
-    ],
     "angles": [
       [
-        -35,
-        -95,
-        -125,
-        -65,
-        50,
-        140,
-        80,
-        -35
-      ],
-      [
-        140,
-        130,
-        75,
-        15,
-        -65,
-        -120,
-        -70,
-        -35
-      ],
-      [
-        -170,
-        -160,
         -130,
-        -65,
-        -5,
-        12,
-        -10,
-        -35
-      ]
-    ],
-    "body_degrees": [
-      [
-        -3,
-        -9,
-        -13,
-        -5,
-        9,
-        15,
-        8,
+        -120,
+        -105,
+        -50,
+        25,
+        160,
+        165,
         0
       ],
       [
-        10,
-        14,
-        10,
+        160,
+        150,
+        150,
+        40,
+        -35,
+        -100,
+        -40,
+        0
+      ],
+      [
+        -145,
+        -130,
+        -160,
+        -20,
         0,
-        -11,
-        -14,
-        -6,
-        0
-      ],
-      [
-        -5,
-        -12,
-        -15,
-        -5,
-        8,
-        14,
-        7,
+        20,
+        -35,
         0
       ]
     ],
@@ -212,80 +76,798 @@
         1
       ],
       [
-        0.5,
-        0.6,
-        0.7,
-        0.85,
-        1,
-        0.9,
         0.8,
-        1
+        0.8,
+        0.7,
+        0.8,
+        1,
+        0.85,
+        0.8,
+        0.8
       ]
     ]
   },
   "rifle": {
-    "pivot": [
-      34,
-      39
-    ],
-    "pitch_offset": [
-      8,
-      8
-    ],
     "barrel_length": 28,
-    "support": 15,
-    "recoil": 3,
     "recoil_seconds": 0.12,
-    "body_aim_factor": 0.08,
     "wood": "#765d42",
     "wood_light": "#a28b67",
     "steel": "#555f60",
     "highlight": "#a2aeaa",
     "dark": "#2d3434"
   },
-  "arms": {
-    "front_shoulder": [
-      26,
-      35
-    ],
-    "back_shoulder": [
-      38,
-      35
-    ],
-    "skin_sample": [
-      25,
-      32
-    ],
-    "edge_sample": [
-      23,
-      43
-    ],
-    "highlight_sample": [
-      29,
-      26
-    ],
-    "mask": [
-      [
-        20,
-        35,
-        16,
-        13
-      ],
-      [
-        43,
-        34,
-        6,
-        12
-      ]
-    ],
-    "fill_row": 49,
-    "far_limit": 44,
-    "width": 4,
-    "hand_width": 3
-  },
   "guard": {
     "raise_frame_seconds": 0.1,
     "hold_frame": 2,
     "release_seconds": 0.18
+  },
+  "native_motion": {
+    "version": 6,
+    "frames": {
+      "idle": {
+        "path": "res://assets/PROCESSED/characters/CHR-01/v001/frames/CHR-01_player_idle_right_v001_f01.png",
+        "origin": [
+          0,
+          0
+        ],
+        "hand": [
+          32,
+          43
+        ],
+        "masks": [],
+        "hand_region": [
+          24,
+          38,
+          13,
+          11
+        ],
+        "weapon_angle": 0
+      },
+      "hammer_1_1": {
+        "path": "res://assets/PROCESSED/characters/CHR-01/v001/frames/CHR-01_player_hammer_1_right_v001_f01.png",
+        "origin": [
+          16,
+          32
+        ],
+        "hand": [
+          25,
+          37
+        ],
+        "masks": [
+          [
+            0,
+            10,
+            20,
+            24
+          ]
+        ],
+        "hand_region": [
+          17,
+          32,
+          14,
+          11
+        ],
+        "weapon_angle": -140
+      },
+      "hammer_1_2": {
+        "path": "res://assets/PROCESSED/characters/CHR-01/v001/frames/CHR-01_player_hammer_1_right_v001_f02.png",
+        "origin": [
+          16,
+          32
+        ],
+        "hand": [
+          43,
+          40
+        ],
+        "masks": [
+          [
+            47,
+            34,
+            17,
+            18
+          ]
+        ],
+        "hand_region": [
+          35,
+          35,
+          14,
+          11
+        ],
+        "weapon_angle": 0
+      },
+      "hammer_1_3": {
+        "path": "res://assets/PROCESSED/characters/CHR-01/v001/frames/CHR-01_player_hammer_1_right_v001_f03.png",
+        "origin": [
+          16,
+          32
+        ],
+        "hand": [
+          44,
+          44
+        ],
+        "masks": [
+          [
+            48,
+            43,
+            16,
+            21
+          ]
+        ],
+        "hand_region": [
+          36,
+          39,
+          14,
+          11
+        ],
+        "weapon_angle": 40
+      },
+      "hammer_1_4": {
+        "path": "res://assets/PROCESSED/characters/CHR-01/v001/frames/CHR-01_player_hammer_1_right_v001_f04.png",
+        "origin": [
+          16,
+          32
+        ],
+        "hand": [
+          39,
+          43
+        ],
+        "masks": [
+          [
+            45,
+            34,
+            19,
+            22
+          ]
+        ],
+        "hand_region": [
+          31,
+          38,
+          14,
+          11
+        ],
+        "weapon_angle": 0
+      },
+      "hammer_2_1": {
+        "path": "res://assets/PROCESSED/characters/CHR-01/v001/frames/CHR-01_player_hammer_2_right_v001_f01.png",
+        "origin": [
+          16,
+          32
+        ],
+        "hand": [
+          23,
+          43
+        ],
+        "masks": [
+          [
+            0,
+            38,
+            19,
+            22
+          ]
+        ],
+        "hand_region": [
+          15,
+          38,
+          14,
+          11
+        ],
+        "weapon_angle": 165
+      },
+      "hammer_2_2": {
+        "path": "res://assets/PROCESSED/characters/CHR-01/v001/frames/CHR-01_player_hammer_2_right_v001_f02.png",
+        "origin": [
+          16,
+          32
+        ],
+        "hand": [
+          42,
+          32
+        ],
+        "masks": [
+          [
+            45,
+            0,
+            19,
+            32
+          ]
+        ],
+        "hand_region": [
+          34,
+          27,
+          14,
+          11
+        ],
+        "weapon_angle": -52
+      },
+      "hammer_2_3": {
+        "path": "res://assets/PROCESSED/characters/CHR-01/v001/frames/CHR-01_player_hammer_2_right_v001_f03.png",
+        "origin": [
+          16,
+          32
+        ],
+        "hand": [
+          42,
+          31
+        ],
+        "masks": [
+          [
+            45,
+            0,
+            19,
+            32
+          ]
+        ],
+        "hand_region": [
+          34,
+          26,
+          14,
+          11
+        ],
+        "weapon_angle": -52
+      },
+      "hammer_2_4": {
+        "path": "res://assets/PROCESSED/characters/CHR-01/v001/frames/CHR-01_player_hammer_2_right_v001_f04.png",
+        "origin": [
+          16,
+          32
+        ],
+        "hand": [
+          39,
+          43
+        ],
+        "masks": [
+          [
+            45,
+            34,
+            19,
+            22
+          ]
+        ],
+        "hand_region": [
+          31,
+          38,
+          14,
+          11
+        ],
+        "weapon_angle": 0
+      },
+      "hammer_3_1": {
+        "path": "res://assets/PROCESSED/characters/CHR-01/v001/frames/CHR-01_player_hammer_3_right_v001_f01.png",
+        "origin": [
+          16,
+          32
+        ],
+        "hand": [
+          29,
+          22
+        ],
+        "masks": [
+          [
+            0,
+            0,
+            28,
+            18
+          ]
+        ],
+        "hand_region": [
+          21,
+          17,
+          14,
+          11
+        ],
+        "weapon_angle": -110
+      },
+      "hammer_3_2": {
+        "path": "res://assets/PROCESSED/characters/CHR-01/v001/frames/CHR-01_player_hammer_3_right_v001_f02.png",
+        "origin": [
+          16,
+          32
+        ],
+        "hand": [
+          43,
+          46
+        ],
+        "masks": [
+          [
+            48,
+            43,
+            16,
+            21
+          ]
+        ],
+        "hand_region": [
+          35,
+          41,
+          14,
+          11
+        ],
+        "weapon_angle": 55
+      },
+      "hammer_3_3": {
+        "path": "res://assets/PROCESSED/characters/CHR-01/v001/frames/CHR-01_player_hammer_3_right_v001_f03.png",
+        "origin": [
+          16,
+          32
+        ],
+        "hand": [
+          43,
+          46
+        ],
+        "masks": [
+          [
+            48,
+            43,
+            16,
+            21
+          ]
+        ],
+        "hand_region": [
+          35,
+          41,
+          14,
+          11
+        ],
+        "weapon_angle": 55
+      },
+      "hammer_3_4": {
+        "path": "res://assets/PROCESSED/characters/CHR-01/v001/frames/CHR-01_player_hammer_3_right_v001_f04.png",
+        "origin": [
+          16,
+          32
+        ],
+        "hand": [
+          39,
+          43
+        ],
+        "masks": [
+          [
+            45,
+            34,
+            19,
+            22
+          ]
+        ],
+        "hand_region": [
+          31,
+          38,
+          14,
+          11
+        ],
+        "weapon_angle": 0
+      },
+      "staff_sweep_1": {
+        "path": "res://assets/PROCESSED/characters/CHR-01/v001/frames/CHR-01_player_staff_sweep_right_v001_f01.png",
+        "origin": [
+          16,
+          32
+        ],
+        "hand": [
+          24,
+          31
+        ],
+        "masks": [
+          [
+            0,
+            0,
+            22,
+            25
+          ]
+        ],
+        "hand_region": [
+          16,
+          26,
+          14,
+          11
+        ],
+        "weapon_angle": -125
+      },
+      "staff_sweep_2": {
+        "path": "res://assets/PROCESSED/characters/CHR-01/v001/frames/CHR-01_player_staff_sweep_right_v001_f02.png",
+        "origin": [
+          16,
+          32
+        ],
+        "hand": [
+          35,
+          38
+        ],
+        "masks": [
+          [
+            45,
+            30,
+            19,
+            24
+          ]
+        ],
+        "hand_region": [
+          27,
+          33,
+          14,
+          11
+        ],
+        "weapon_angle": 0
+      },
+      "staff_sweep_3": {
+        "path": "res://assets/PROCESSED/characters/CHR-01/v001/frames/CHR-01_player_staff_sweep_right_v001_f03.png",
+        "origin": [
+          16,
+          32
+        ],
+        "hand": [
+          40,
+          44
+        ],
+        "masks": [
+          [
+            46,
+            45,
+            18,
+            10
+          ],
+          [
+            52,
+            54,
+            12,
+            10
+          ]
+        ],
+        "hand_region": [
+          32,
+          39,
+          14,
+          11
+        ],
+        "weapon_angle": 40
+      },
+      "staff_sweep_4": {
+        "path": "res://assets/PROCESSED/characters/CHR-01/v001/frames/CHR-01_player_staff_sweep_right_v001_f04.png",
+        "origin": [
+          16,
+          32
+        ],
+        "hand": [
+          41,
+          38
+        ],
+        "masks": [
+          [
+            46,
+            14,
+            18,
+            24
+          ]
+        ],
+        "hand_region": [
+          33,
+          33,
+          14,
+          11
+        ],
+        "weapon_angle": -35
+      },
+      "blaster_fire_1": {
+        "path": "res://assets/PROCESSED/characters/CHR-01/v001/frames/CHR-01_player_blaster_fire_right_v001_f01.png",
+        "origin": [
+          0,
+          0
+        ],
+        "hand": [
+          39,
+          38
+        ],
+        "masks": [
+          [
+            39,
+            29,
+            25,
+            10
+          ],
+          [
+            50,
+            20,
+            14,
+            32
+          ]
+        ],
+        "hand_region": [
+          31,
+          33,
+          14,
+          11
+        ],
+        "weapon_angle": 0
+      },
+      "blaster_fire_2": {
+        "path": "res://assets/PROCESSED/characters/CHR-01/v001/frames/CHR-01_player_blaster_fire_right_v001_f02.png",
+        "origin": [
+          0,
+          0
+        ],
+        "hand": [
+          37,
+          39
+        ],
+        "masks": [
+          [
+            39,
+            29,
+            25,
+            10
+          ],
+          [
+            50,
+            20,
+            14,
+            32
+          ]
+        ],
+        "hand_region": [
+          29,
+          34,
+          14,
+          11
+        ],
+        "weapon_angle": 0
+      },
+      "blaster_fire_3": {
+        "path": "res://assets/PROCESSED/characters/CHR-01/v001/frames/CHR-01_player_blaster_fire_right_v001_f03.png",
+        "origin": [
+          0,
+          0
+        ],
+        "hand": [
+          38,
+          39
+        ],
+        "masks": [
+          [
+            39,
+            29,
+            25,
+            10
+          ],
+          [
+            50,
+            20,
+            14,
+            32
+          ]
+        ],
+        "hand_region": [
+          30,
+          34,
+          14,
+          11
+        ],
+        "weapon_angle": 0
+      },
+      "blaster_fire_4": {
+        "path": "res://assets/PROCESSED/characters/CHR-01/v001/frames/CHR-01_player_blaster_fire_right_v001_f04.png",
+        "origin": [
+          0,
+          0
+        ],
+        "hand": [
+          39,
+          40
+        ],
+        "masks": [
+          [
+            39,
+            29,
+            25,
+            10
+          ],
+          [
+            50,
+            20,
+            14,
+            32
+          ]
+        ],
+        "hand_region": [
+          31,
+          35,
+          14,
+          11
+        ],
+        "weapon_angle": 0
+      },
+      "blaster_charge_1": {
+        "path": "res://assets/PROCESSED/characters/CHR-01/v001/frames/CHR-01_player_blaster_charge_right_v001_f01.png",
+        "origin": [
+          16,
+          32
+        ],
+        "hand": [
+          36,
+          40
+        ],
+        "masks": [
+          [
+            39,
+            29,
+            25,
+            10
+          ],
+          [
+            50,
+            20,
+            14,
+            32
+          ]
+        ],
+        "hand_region": [
+          28,
+          35,
+          16,
+          12
+        ],
+        "weapon_angle": 0
+      },
+      "blaster_charge_2": {
+        "path": "res://assets/PROCESSED/characters/CHR-01/v001/frames/CHR-01_player_blaster_charge_right_v001_f02.png",
+        "origin": [
+          16,
+          32
+        ],
+        "hand": [
+          35,
+          40
+        ],
+        "masks": [
+          [
+            39,
+            29,
+            25,
+            10
+          ],
+          [
+            50,
+            20,
+            14,
+            32
+          ]
+        ],
+        "hand_region": [
+          28,
+          35,
+          16,
+          12
+        ],
+        "weapon_angle": 0
+      },
+      "blaster_charge_3": {
+        "path": "res://assets/PROCESSED/characters/CHR-01/v001/frames/CHR-01_player_blaster_charge_right_v001_f03.png",
+        "origin": [
+          16,
+          32
+        ],
+        "hand": [
+          34,
+          40
+        ],
+        "masks": [
+          [
+            39,
+            29,
+            25,
+            10
+          ],
+          [
+            50,
+            20,
+            14,
+            32
+          ]
+        ],
+        "hand_region": [
+          28,
+          35,
+          16,
+          12
+        ],
+        "weapon_angle": 0
+      },
+      "blaster_charge_4": {
+        "path": "res://assets/PROCESSED/characters/CHR-01/v001/frames/CHR-01_player_blaster_charge_right_v001_f04.png",
+        "origin": [
+          16,
+          32
+        ],
+        "hand": [
+          36,
+          40
+        ],
+        "masks": [
+          [
+            39,
+            29,
+            25,
+            10
+          ],
+          [
+            50,
+            20,
+            14,
+            32
+          ]
+        ],
+        "hand_region": [
+          28,
+          35,
+          16,
+          12
+        ],
+        "weapon_angle": 0
+      }
+    },
+    "sword_sequences": [
+      [
+        "staff_sweep_1",
+        "hammer_3_1",
+        "hammer_3_1",
+        "hammer_2_3",
+        "hammer_1_2",
+        "hammer_3_3",
+        "hammer_1_3",
+        "hammer_1_4"
+      ],
+      [
+        "hammer_1_3",
+        "hammer_3_3",
+        "hammer_2_1",
+        "hammer_1_2",
+        "hammer_2_2",
+        "hammer_2_3",
+        "hammer_2_4",
+        "hammer_1_4"
+      ],
+      [
+        "hammer_1_1",
+        "staff_sweep_1",
+        "hammer_1_1",
+        "staff_sweep_2",
+        "hammer_1_2",
+        "hammer_1_3",
+        "staff_sweep_4",
+        "hammer_1_4"
+      ]
+    ],
+    "rifle_aim": [
+      {
+        "limit": -0.65,
+        "prepare": "hammer_2_2",
+        "hold": "hammer_2_2",
+        "fire": "hammer_2_3",
+        "recover": "hammer_2_2"
+      },
+      {
+        "limit": 0.45,
+        "prepare": "blaster_charge_1",
+        "hold": "blaster_fire_1",
+        "fire": "blaster_fire_2",
+        "recover": "blaster_fire_3"
+      },
+      {
+        "limit": 3.2,
+        "prepare": "hammer_1_3",
+        "hold": "staff_sweep_3",
+        "fire": "hammer_3_3",
+        "recover": "hammer_3_2"
+      }
+    ],
+    "rifle_prepare_fraction": 0.12,
+    "rifle_fire_seconds": 0.065,
+    "rifle_recover_seconds": 0.14,
+    "rifle_recoil_body": 1.0,
+    "rifle_hand_spacing": 7.0,
+    "rifle_body_pitch": 0.21,
+    "body_split_low": 50,
+    "body_split_high": 54,
+    "body_split_hand_threshold": 43,
+    "waist_x": 33,
+    "waist_offset": 2,
+    "upper_overlap": 2
   }
 }

@@ -96,7 +96,7 @@ func _run() -> void:
 	Input.action_press("attack")
 	actor.sm.to(&"Attack")
 	await _frames(5)
-	_expect(actor._pixel_rig.visible and not actor.sprite.visible and actor._pixel_rig._whole_body.rotation < 0 and actor._pixel_rig.kind == "rifle","向上持枪双臂与完整人物随枪口同步瞄准")
+	_expect(actor._pixel_rig.visible and not actor.sprite.visible and actor._pixel_rig._upper_body.rotation < 0 and actor._pixel_rig.kind == "rifle","向上持枪双臂与完整人物随枪口同步瞄准")
 	_expect(actor._pixel_rig._source_rect.size == Vector2(64,64) and actor._pixel_rig._whole_body.scale == Vector2.ONE and actor._pixel_rig.source.resource_path.begins_with("res://assets/PROCESSED/characters/CHR-01/v001/frames/"),"新动作直接使用正式完整人物母版，只替换双臂，不缩放和拼接头身")
 	_aim_at(actor.global_position+Vector2(-50,-100))
 	await _frames(2)

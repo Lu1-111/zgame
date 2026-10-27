@@ -49,12 +49,12 @@ func _capture() -> void:
 	await RenderingServer.frame_post_draw
 	var screenshot := viewport.get_texture().get_image()
 	screenshot.resize(1536,1920,Image.INTERPOLATE_NEAREST)
-	var error := screenshot.save_png(ProjectSettings.globalize_path("res://docs/previews/hero_sword_rifle_v5.png"))
+	var error := screenshot.save_png(ProjectSettings.globalize_path("res://docs/previews/hero_sword_rifle_v6.png"))
 	bg.hide()
 	await process_frame
 	await RenderingServer.frame_post_draw
 	var sheet := viewport.get_texture().get_image()
-	var destination := "res://assets/PROCESSED/characters/CHR-01/rpg_v5/"
+	var destination := "res://assets/PROCESSED/characters/CHR-01/rpg_v6/"
 	for combo in 3:
 		for frame in 8:
 			sheet.get_region(Rect2i(frame*96,96+combo*96,96,96)).save_png(ProjectSettings.globalize_path(destination+"sword_%d_%02d.png" % [combo+1,frame]))
