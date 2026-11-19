@@ -1,0 +1,3020 @@
+{
+  "tool": "tools/assets/pixel_grid.py",
+  "conversions": [
+    {
+      "action": "idle",
+      "frame": 0,
+      "source_rect": [
+        0,
+        0,
+        229,
+        229
+      ],
+      "common_body_scale": 0.27906976744186046,
+      "common_source_root_x": 109.75,
+      "native_registration": [
+        23,
+        38
+      ],
+      "canvas_pixels": [
+        96,
+        96
+      ],
+      "source_pixels": [
+        229,
+        229
+      ],
+      "source_crop": [
+        48,
+        60,
+        197,
+        209
+      ],
+      "sampled_pixels": [
+        42,
+        42
+      ],
+      "resampling_passes": 1,
+      "sampling": "alpha_weighted_area_then_palette",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32,
+      "anchor": "bottom",
+      "id": "bone_dragon_blade_idle_00"
+    },
+    {
+      "action": "idle",
+      "frame": 1,
+      "source_rect": [
+        229,
+        0,
+        458,
+        229
+      ],
+      "common_body_scale": 0.27906976744186046,
+      "common_source_root_x": 109.75,
+      "native_registration": [
+        22,
+        36
+      ],
+      "canvas_pixels": [
+        96,
+        96
+      ],
+      "source_pixels": [
+        229,
+        229
+      ],
+      "source_crop": [
+        47,
+        52,
+        197,
+        209
+      ],
+      "sampled_pixels": [
+        42,
+        44
+      ],
+      "resampling_passes": 1,
+      "sampling": "alpha_weighted_area_then_palette",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32,
+      "anchor": "bottom",
+      "id": "bone_dragon_blade_idle_01"
+    },
+    {
+      "action": "idle",
+      "frame": 2,
+      "source_rect": [
+        458,
+        0,
+        687,
+        229
+      ],
+      "common_body_scale": 0.27906976744186046,
+      "common_source_root_x": 109.75,
+      "native_registration": [
+        22,
+        34
+      ],
+      "canvas_pixels": [
+        96,
+        96
+      ],
+      "source_pixels": [
+        229,
+        229
+      ],
+      "source_crop": [
+        46,
+        46,
+        198,
+        210
+      ],
+      "sampled_pixels": [
+        42,
+        46
+      ],
+      "resampling_passes": 1,
+      "sampling": "alpha_weighted_area_then_palette",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32,
+      "anchor": "bottom",
+      "id": "bone_dragon_blade_idle_02"
+    },
+    {
+      "action": "idle",
+      "frame": 3,
+      "source_rect": [
+        687,
+        0,
+        916,
+        229
+      ],
+      "common_body_scale": 0.27906976744186046,
+      "common_source_root_x": 109.75,
+      "native_registration": [
+        22,
+        38
+      ],
+      "canvas_pixels": [
+        96,
+        96
+      ],
+      "source_pixels": [
+        229,
+        229
+      ],
+      "source_crop": [
+        46,
+        57,
+        200,
+        209
+      ],
+      "sampled_pixels": [
+        43,
+        42
+      ],
+      "resampling_passes": 1,
+      "sampling": "alpha_weighted_area_then_palette",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32,
+      "anchor": "bottom",
+      "id": "bone_dragon_blade_idle_03"
+    },
+    {
+      "action": "idle",
+      "frame": 4,
+      "source_rect": [
+        916,
+        0,
+        1145,
+        229
+      ],
+      "common_body_scale": 0.27906976744186046,
+      "common_source_root_x": 109.75,
+      "native_registration": [
+        22,
+        39
+      ],
+      "canvas_pixels": [
+        96,
+        96
+      ],
+      "source_pixels": [
+        229,
+        229
+      ],
+      "source_crop": [
+        46,
+        62,
+        198,
+        209
+      ],
+      "sampled_pixels": [
+        42,
+        41
+      ],
+      "resampling_passes": 1,
+      "sampling": "alpha_weighted_area_then_palette",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32,
+      "anchor": "bottom",
+      "id": "bone_dragon_blade_idle_04"
+    },
+    {
+      "action": "idle",
+      "frame": 5,
+      "source_rect": [
+        1145,
+        0,
+        1374,
+        229
+      ],
+      "common_body_scale": 0.27906976744186046,
+      "common_source_root_x": 109.75,
+      "native_registration": [
+        23,
+        39
+      ],
+      "canvas_pixels": [
+        96,
+        96
+      ],
+      "source_pixels": [
+        229,
+        229
+      ],
+      "source_crop": [
+        48,
+        62,
+        199,
+        210
+      ],
+      "sampled_pixels": [
+        42,
+        41
+      ],
+      "resampling_passes": 1,
+      "sampling": "alpha_weighted_area_then_palette",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32,
+      "anchor": "bottom",
+      "id": "bone_dragon_blade_idle_05"
+    },
+    {
+      "action": "move",
+      "frame": 0,
+      "source_rect": [
+        0,
+        229,
+        229,
+        458
+      ],
+      "common_body_scale": 0.27906976744186046,
+      "common_source_root_x": 109.75,
+      "native_registration": [
+        22,
+        39
+      ],
+      "canvas_pixels": [
+        96,
+        96
+      ],
+      "source_pixels": [
+        229,
+        229
+      ],
+      "source_crop": [
+        46,
+        62,
+        198,
+        209
+      ],
+      "sampled_pixels": [
+        42,
+        41
+      ],
+      "resampling_passes": 1,
+      "sampling": "alpha_weighted_area_then_palette",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32,
+      "anchor": "bottom",
+      "id": "bone_dragon_blade_move_00"
+    },
+    {
+      "action": "move",
+      "frame": 1,
+      "source_rect": [
+        229,
+        229,
+        458,
+        458
+      ],
+      "common_body_scale": 0.27906976744186046,
+      "common_source_root_x": 109.75,
+      "native_registration": [
+        22,
+        40
+      ],
+      "canvas_pixels": [
+        96,
+        96
+      ],
+      "source_pixels": [
+        229,
+        229
+      ],
+      "source_crop": [
+        46,
+        63,
+        198,
+        208
+      ],
+      "sampled_pixels": [
+        42,
+        40
+      ],
+      "resampling_passes": 1,
+      "sampling": "alpha_weighted_area_then_palette",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32,
+      "anchor": "bottom",
+      "id": "bone_dragon_blade_move_01"
+    },
+    {
+      "action": "move",
+      "frame": 2,
+      "source_rect": [
+        458,
+        229,
+        687,
+        458
+      ],
+      "common_body_scale": 0.27906976744186046,
+      "common_source_root_x": 109.75,
+      "native_registration": [
+        24,
+        37
+      ],
+      "canvas_pixels": [
+        96,
+        96
+      ],
+      "source_pixels": [
+        229,
+        229
+      ],
+      "source_crop": [
+        52,
+        55,
+        203,
+        209
+      ],
+      "sampled_pixels": [
+        42,
+        43
+      ],
+      "resampling_passes": 1,
+      "sampling": "alpha_weighted_area_then_palette",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32,
+      "anchor": "bottom",
+      "id": "bone_dragon_blade_move_02"
+    },
+    {
+      "action": "move",
+      "frame": 3,
+      "source_rect": [
+        687,
+        229,
+        916,
+        458
+      ],
+      "common_body_scale": 0.27906976744186046,
+      "common_source_root_x": 109.75,
+      "native_registration": [
+        24,
+        35
+      ],
+      "canvas_pixels": [
+        96,
+        96
+      ],
+      "source_pixels": [
+        229,
+        229
+      ],
+      "source_crop": [
+        52,
+        47,
+        199,
+        208
+      ],
+      "sampled_pixels": [
+        41,
+        45
+      ],
+      "resampling_passes": 1,
+      "sampling": "alpha_weighted_area_then_palette",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32,
+      "anchor": "bottom",
+      "id": "bone_dragon_blade_move_03"
+    },
+    {
+      "action": "move",
+      "frame": 4,
+      "source_rect": [
+        916,
+        229,
+        1145,
+        458
+      ],
+      "common_body_scale": 0.27906976744186046,
+      "common_source_root_x": 109.75,
+      "native_registration": [
+        22,
+        38
+      ],
+      "canvas_pixels": [
+        96,
+        96
+      ],
+      "source_pixels": [
+        229,
+        229
+      ],
+      "source_crop": [
+        46,
+        61,
+        198,
+        210
+      ],
+      "sampled_pixels": [
+        42,
+        42
+      ],
+      "resampling_passes": 1,
+      "sampling": "alpha_weighted_area_then_palette",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32,
+      "anchor": "bottom",
+      "id": "bone_dragon_blade_move_04"
+    },
+    {
+      "action": "move",
+      "frame": 5,
+      "source_rect": [
+        1145,
+        229,
+        1374,
+        458
+      ],
+      "common_body_scale": 0.27906976744186046,
+      "common_source_root_x": 109.75,
+      "native_registration": [
+        23,
+        40
+      ],
+      "canvas_pixels": [
+        96,
+        96
+      ],
+      "source_pixels": [
+        229,
+        229
+      ],
+      "source_crop": [
+        48,
+        67,
+        199,
+        210
+      ],
+      "sampled_pixels": [
+        42,
+        40
+      ],
+      "resampling_passes": 1,
+      "sampling": "alpha_weighted_area_then_palette",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32,
+      "anchor": "bottom",
+      "id": "bone_dragon_blade_move_05"
+    },
+    {
+      "action": "slash_down",
+      "frame": 0,
+      "source_rect": [
+        0,
+        458,
+        229,
+        687
+      ],
+      "common_body_scale": 0.27906976744186046,
+      "common_source_root_x": 109.75,
+      "native_registration": [
+        22,
+        39
+      ],
+      "canvas_pixels": [
+        96,
+        96
+      ],
+      "source_pixels": [
+        229,
+        229
+      ],
+      "source_crop": [
+        46,
+        62,
+        199,
+        210
+      ],
+      "sampled_pixels": [
+        43,
+        41
+      ],
+      "resampling_passes": 1,
+      "sampling": "alpha_weighted_area_then_palette",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32,
+      "anchor": "bottom",
+      "id": "bone_dragon_blade_slash_down_00"
+    },
+    {
+      "action": "slash_down",
+      "frame": 1,
+      "source_rect": [
+        229,
+        458,
+        458,
+        687
+      ],
+      "common_body_scale": 0.27906976744186046,
+      "common_source_root_x": 109.75,
+      "native_registration": [
+        22,
+        40
+      ],
+      "canvas_pixels": [
+        96,
+        96
+      ],
+      "source_pixels": [
+        229,
+        229
+      ],
+      "source_crop": [
+        45,
+        67,
+        194,
+        209
+      ],
+      "sampled_pixels": [
+        42,
+        40
+      ],
+      "resampling_passes": 1,
+      "sampling": "alpha_weighted_area_then_palette",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32,
+      "anchor": "bottom",
+      "id": "bone_dragon_blade_slash_down_01"
+    },
+    {
+      "action": "slash_down",
+      "frame": 2,
+      "source_rect": [
+        458,
+        458,
+        687,
+        687
+      ],
+      "common_body_scale": 0.27906976744186046,
+      "common_source_root_x": 109.75,
+      "native_registration": [
+        21,
+        29
+      ],
+      "canvas_pixels": [
+        96,
+        96
+      ],
+      "source_pixels": [
+        229,
+        229
+      ],
+      "source_crop": [
+        41,
+        27,
+        181,
+        209
+      ],
+      "sampled_pixels": [
+        39,
+        51
+      ],
+      "resampling_passes": 1,
+      "sampling": "alpha_weighted_area_then_palette",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32,
+      "anchor": "bottom",
+      "id": "bone_dragon_blade_slash_down_02"
+    },
+    {
+      "action": "slash_down",
+      "frame": 3,
+      "source_rect": [
+        687,
+        458,
+        916,
+        687
+      ],
+      "common_body_scale": 0.27906976744186046,
+      "common_source_root_x": 109.75,
+      "native_registration": [
+        19,
+        42
+      ],
+      "canvas_pixels": [
+        96,
+        96
+      ],
+      "source_pixels": [
+        229,
+        229
+      ],
+      "source_crop": [
+        33,
+        73,
+        199,
+        210
+      ],
+      "sampled_pixels": [
+        46,
+        38
+      ],
+      "resampling_passes": 1,
+      "sampling": "alpha_weighted_area_then_palette",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32,
+      "anchor": "bottom",
+      "id": "bone_dragon_blade_slash_down_03"
+    },
+    {
+      "action": "slash_down",
+      "frame": 4,
+      "source_rect": [
+        916,
+        458,
+        1145,
+        687
+      ],
+      "common_body_scale": 0.27906976744186046,
+      "common_source_root_x": 109.75,
+      "native_registration": [
+        19,
+        43
+      ],
+      "canvas_pixels": [
+        96,
+        96
+      ],
+      "source_pixels": [
+        229,
+        229
+      ],
+      "source_crop": [
+        33,
+        80,
+        183,
+        211
+      ],
+      "sampled_pixels": [
+        42,
+        37
+      ],
+      "resampling_passes": 1,
+      "sampling": "alpha_weighted_area_then_palette",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32,
+      "anchor": "bottom",
+      "id": "bone_dragon_blade_slash_down_04"
+    },
+    {
+      "action": "slash_down",
+      "frame": 5,
+      "source_rect": [
+        1145,
+        458,
+        1374,
+        687
+      ],
+      "common_body_scale": 0.27906976744186046,
+      "common_source_root_x": 109.75,
+      "native_registration": [
+        22,
+        40
+      ],
+      "canvas_pixels": [
+        96,
+        96
+      ],
+      "source_pixels": [
+        229,
+        229
+      ],
+      "source_crop": [
+        44,
+        65,
+        199,
+        209
+      ],
+      "sampled_pixels": [
+        43,
+        40
+      ],
+      "resampling_passes": 1,
+      "sampling": "alpha_weighted_area_then_palette",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32,
+      "anchor": "bottom",
+      "id": "bone_dragon_blade_slash_down_05"
+    },
+    {
+      "action": "slash_up",
+      "frame": 0,
+      "source_rect": [
+        0,
+        687,
+        229,
+        916
+      ],
+      "common_body_scale": 0.27906976744186046,
+      "common_source_root_x": 109.75,
+      "native_registration": [
+        22,
+        39
+      ],
+      "canvas_pixels": [
+        96,
+        96
+      ],
+      "source_pixels": [
+        229,
+        229
+      ],
+      "source_crop": [
+        46,
+        62,
+        199,
+        210
+      ],
+      "sampled_pixels": [
+        43,
+        41
+      ],
+      "resampling_passes": 1,
+      "sampling": "alpha_weighted_area_then_palette",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32,
+      "anchor": "bottom",
+      "id": "bone_dragon_blade_slash_up_00"
+    },
+    {
+      "action": "slash_up",
+      "frame": 1,
+      "source_rect": [
+        229,
+        687,
+        458,
+        916
+      ],
+      "common_body_scale": 0.27906976744186046,
+      "common_source_root_x": 109.75,
+      "native_registration": [
+        22,
+        43
+      ],
+      "canvas_pixels": [
+        96,
+        96
+      ],
+      "source_pixels": [
+        229,
+        229
+      ],
+      "source_crop": [
+        45,
+        76,
+        191,
+        210
+      ],
+      "sampled_pixels": [
+        41,
+        37
+      ],
+      "resampling_passes": 1,
+      "sampling": "alpha_weighted_area_then_palette",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32,
+      "anchor": "bottom",
+      "id": "bone_dragon_blade_slash_up_01"
+    },
+    {
+      "action": "slash_up",
+      "frame": 2,
+      "source_rect": [
+        458,
+        687,
+        687,
+        916
+      ],
+      "common_body_scale": 0.27906976744186046,
+      "common_source_root_x": 109.75,
+      "native_registration": [
+        21,
+        40
+      ],
+      "canvas_pixels": [
+        96,
+        96
+      ],
+      "source_pixels": [
+        229,
+        229
+      ],
+      "source_crop": [
+        41,
+        65,
+        184,
+        210
+      ],
+      "sampled_pixels": [
+        40,
+        40
+      ],
+      "resampling_passes": 1,
+      "sampling": "alpha_weighted_area_then_palette",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32,
+      "anchor": "bottom",
+      "id": "bone_dragon_blade_slash_up_02"
+    },
+    {
+      "action": "slash_up",
+      "frame": 3,
+      "source_rect": [
+        687,
+        687,
+        916,
+        916
+      ],
+      "common_body_scale": 0.27906976744186046,
+      "common_source_root_x": 109.75,
+      "native_registration": [
+        19,
+        36
+      ],
+      "canvas_pixels": [
+        96,
+        96
+      ],
+      "source_pixels": [
+        229,
+        229
+      ],
+      "source_crop": [
+        34,
+        52,
+        178,
+        210
+      ],
+      "sampled_pixels": [
+        40,
+        44
+      ],
+      "resampling_passes": 1,
+      "sampling": "alpha_weighted_area_then_palette",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32,
+      "anchor": "bottom",
+      "id": "bone_dragon_blade_slash_up_03"
+    },
+    {
+      "action": "slash_up",
+      "frame": 4,
+      "source_rect": [
+        916,
+        687,
+        1145,
+        916
+      ],
+      "common_body_scale": 0.27906976744186046,
+      "common_source_root_x": 109.75,
+      "native_registration": [
+        19,
+        39
+      ],
+      "canvas_pixels": [
+        96,
+        96
+      ],
+      "source_pixels": [
+        229,
+        229
+      ],
+      "source_crop": [
+        33,
+        62,
+        181,
+        209
+      ],
+      "sampled_pixels": [
+        41,
+        41
+      ],
+      "resampling_passes": 1,
+      "sampling": "alpha_weighted_area_then_palette",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32,
+      "anchor": "bottom",
+      "id": "bone_dragon_blade_slash_up_04"
+    },
+    {
+      "action": "slash_up",
+      "frame": 5,
+      "source_rect": [
+        1145,
+        687,
+        1374,
+        916
+      ],
+      "common_body_scale": 0.27906976744186046,
+      "common_source_root_x": 109.75,
+      "native_registration": [
+        22,
+        38
+      ],
+      "canvas_pixels": [
+        96,
+        96
+      ],
+      "source_pixels": [
+        229,
+        229
+      ],
+      "source_crop": [
+        44,
+        61,
+        198,
+        210
+      ],
+      "sampled_pixels": [
+        43,
+        42
+      ],
+      "resampling_passes": 1,
+      "sampling": "alpha_weighted_area_then_palette",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32,
+      "anchor": "bottom",
+      "id": "bone_dragon_blade_slash_up_05"
+    },
+    {
+      "action": "thrust",
+      "frame": 0,
+      "source_rect": [
+        0,
+        916,
+        229,
+        1145
+      ],
+      "common_body_scale": 0.27906976744186046,
+      "common_source_root_x": 109.75,
+      "native_registration": [
+        21,
+        40
+      ],
+      "canvas_pixels": [
+        96,
+        96
+      ],
+      "source_pixels": [
+        229,
+        229
+      ],
+      "source_crop": [
+        43,
+        68,
+        189,
+        211
+      ],
+      "sampled_pixels": [
+        41,
+        40
+      ],
+      "resampling_passes": 1,
+      "sampling": "alpha_weighted_area_then_palette",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32,
+      "anchor": "bottom",
+      "id": "bone_dragon_blade_thrust_00"
+    },
+    {
+      "action": "thrust",
+      "frame": 1,
+      "source_rect": [
+        229,
+        916,
+        458,
+        1145
+      ],
+      "common_body_scale": 0.27906976744186046,
+      "common_source_root_x": 109.75,
+      "native_registration": [
+        19,
+        40
+      ],
+      "canvas_pixels": [
+        96,
+        96
+      ],
+      "source_pixels": [
+        229,
+        229
+      ],
+      "source_crop": [
+        35,
+        67,
+        188,
+        211
+      ],
+      "sampled_pixels": [
+        43,
+        40
+      ],
+      "resampling_passes": 1,
+      "sampling": "alpha_weighted_area_then_palette",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32,
+      "anchor": "bottom",
+      "id": "bone_dragon_blade_thrust_01"
+    },
+    {
+      "action": "thrust",
+      "frame": 2,
+      "source_rect": [
+        458,
+        916,
+        687,
+        1145
+      ],
+      "common_body_scale": 0.27906976744186046,
+      "common_source_root_x": 109.75,
+      "native_registration": [
+        17,
+        40
+      ],
+      "canvas_pixels": [
+        96,
+        96
+      ],
+      "source_pixels": [
+        229,
+        229
+      ],
+      "source_crop": [
+        29,
+        66,
+        206,
+        211
+      ],
+      "sampled_pixels": [
+        49,
+        40
+      ],
+      "resampling_passes": 1,
+      "sampling": "alpha_weighted_area_then_palette",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32,
+      "anchor": "bottom",
+      "id": "bone_dragon_blade_thrust_02"
+    },
+    {
+      "action": "thrust",
+      "frame": 3,
+      "source_rect": [
+        687,
+        916,
+        916,
+        1145
+      ],
+      "common_body_scale": 0.27906976744186046,
+      "common_source_root_x": 109.75,
+      "native_registration": [
+        17,
+        40
+      ],
+      "canvas_pixels": [
+        96,
+        96
+      ],
+      "source_pixels": [
+        229,
+        229
+      ],
+      "source_crop": [
+        29,
+        67,
+        217,
+        210
+      ],
+      "sampled_pixels": [
+        52,
+        40
+      ],
+      "resampling_passes": 1,
+      "sampling": "alpha_weighted_area_then_palette",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32,
+      "anchor": "bottom",
+      "id": "bone_dragon_blade_thrust_03"
+    },
+    {
+      "action": "thrust",
+      "frame": 4,
+      "source_rect": [
+        916,
+        916,
+        1145,
+        1145
+      ],
+      "common_body_scale": 0.27906976744186046,
+      "common_source_root_x": 109.75,
+      "native_registration": [
+        19,
+        40
+      ],
+      "canvas_pixels": [
+        96,
+        96
+      ],
+      "source_pixels": [
+        229,
+        229
+      ],
+      "source_crop": [
+        33,
+        66,
+        192,
+        211
+      ],
+      "sampled_pixels": [
+        44,
+        40
+      ],
+      "resampling_passes": 1,
+      "sampling": "alpha_weighted_area_then_palette",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32,
+      "anchor": "bottom",
+      "id": "bone_dragon_blade_thrust_04"
+    },
+    {
+      "action": "thrust",
+      "frame": 5,
+      "source_rect": [
+        1145,
+        916,
+        1374,
+        1145
+      ],
+      "common_body_scale": 0.27906976744186046,
+      "common_source_root_x": 109.75,
+      "native_registration": [
+        22,
+        38
+      ],
+      "canvas_pixels": [
+        96,
+        96
+      ],
+      "source_pixels": [
+        229,
+        229
+      ],
+      "source_crop": [
+        45,
+        61,
+        198,
+        211
+      ],
+      "sampled_pixels": [
+        43,
+        42
+      ],
+      "resampling_passes": 1,
+      "sampling": "alpha_weighted_area_then_palette",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32,
+      "anchor": "bottom",
+      "id": "bone_dragon_blade_thrust_05"
+    },
+    {
+      "action": "idle",
+      "frame": 0,
+      "source_rect": [
+        0,
+        0,
+        341,
+        256
+      ],
+      "common_body_scale": 0.21705426356589147,
+      "common_source_root_x": 154.25,
+      "native_registration": [
+        19,
+        39
+      ],
+      "canvas_pixels": [
+        128,
+        96
+      ],
+      "source_pixels": [
+        341,
+        256
+      ],
+      "source_crop": [
+        59,
+        42,
+        283,
+        232
+      ],
+      "sampled_pixels": [
+        49,
+        41
+      ],
+      "resampling_passes": 1,
+      "sampling": "alpha_weighted_area_then_palette",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32,
+      "anchor": "bottom",
+      "id": "bone_dragon_spear_idle_00"
+    },
+    {
+      "action": "idle",
+      "frame": 1,
+      "source_rect": [
+        341,
+        0,
+        683,
+        256
+      ],
+      "common_body_scale": 0.21705426356589147,
+      "common_source_root_x": 154.25,
+      "native_registration": [
+        20,
+        36
+      ],
+      "canvas_pixels": [
+        128,
+        96
+      ],
+      "source_pixels": [
+        342,
+        256
+      ],
+      "source_crop": [
+        61,
+        27,
+        290,
+        232
+      ],
+      "sampled_pixels": [
+        50,
+        44
+      ],
+      "resampling_passes": 1,
+      "sampling": "alpha_weighted_area_then_palette",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32,
+      "anchor": "bottom",
+      "id": "bone_dragon_spear_idle_01"
+    },
+    {
+      "action": "idle",
+      "frame": 2,
+      "source_rect": [
+        683,
+        0,
+        1024,
+        256
+      ],
+      "common_body_scale": 0.21705426356589147,
+      "common_source_root_x": 154.25,
+      "native_registration": [
+        21,
+        34
+      ],
+      "canvas_pixels": [
+        128,
+        96
+      ],
+      "source_pixels": [
+        341,
+        256
+      ],
+      "source_crop": [
+        67,
+        22,
+        295,
+        232
+      ],
+      "sampled_pixels": [
+        49,
+        46
+      ],
+      "resampling_passes": 1,
+      "sampling": "alpha_weighted_area_then_palette",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32,
+      "anchor": "bottom",
+      "id": "bone_dragon_spear_idle_02"
+    },
+    {
+      "action": "idle",
+      "frame": 3,
+      "source_rect": [
+        1024,
+        0,
+        1365,
+        256
+      ],
+      "common_body_scale": 0.21705426356589147,
+      "common_source_root_x": 154.25,
+      "native_registration": [
+        20,
+        37
+      ],
+      "canvas_pixels": [
+        128,
+        96
+      ],
+      "source_pixels": [
+        341,
+        256
+      ],
+      "source_crop": [
+        64,
+        35,
+        293,
+        232
+      ],
+      "sampled_pixels": [
+        50,
+        43
+      ],
+      "resampling_passes": 1,
+      "sampling": "alpha_weighted_area_then_palette",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32,
+      "anchor": "bottom",
+      "id": "bone_dragon_spear_idle_03"
+    },
+    {
+      "action": "idle",
+      "frame": 4,
+      "source_rect": [
+        1365,
+        0,
+        1707,
+        256
+      ],
+      "common_body_scale": 0.21705426356589147,
+      "common_source_root_x": 154.25,
+      "native_registration": [
+        19,
+        41
+      ],
+      "canvas_pixels": [
+        128,
+        96
+      ],
+      "source_pixels": [
+        342,
+        256
+      ],
+      "source_crop": [
+        59,
+        52,
+        293,
+        232
+      ],
+      "sampled_pixels": [
+        51,
+        39
+      ],
+      "resampling_passes": 1,
+      "sampling": "alpha_weighted_area_then_palette",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32,
+      "anchor": "bottom",
+      "id": "bone_dragon_spear_idle_04"
+    },
+    {
+      "action": "idle",
+      "frame": 5,
+      "source_rect": [
+        1707,
+        0,
+        2048,
+        256
+      ],
+      "common_body_scale": 0.21705426356589147,
+      "common_source_root_x": 154.25,
+      "native_registration": [
+        20,
+        39
+      ],
+      "canvas_pixels": [
+        128,
+        96
+      ],
+      "source_pixels": [
+        341,
+        256
+      ],
+      "source_crop": [
+        60,
+        43,
+        290,
+        232
+      ],
+      "sampled_pixels": [
+        50,
+        41
+      ],
+      "resampling_passes": 1,
+      "sampling": "alpha_weighted_area_then_palette",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32,
+      "anchor": "bottom",
+      "id": "bone_dragon_spear_idle_05"
+    },
+    {
+      "action": "move",
+      "frame": 0,
+      "source_rect": [
+        0,
+        256,
+        341,
+        512
+      ],
+      "common_body_scale": 0.21705426356589147,
+      "common_source_root_x": 154.25,
+      "native_registration": [
+        17,
+        38
+      ],
+      "canvas_pixels": [
+        128,
+        96
+      ],
+      "source_pixels": [
+        341,
+        256
+      ],
+      "source_crop": [
+        49,
+        38,
+        293,
+        233
+      ],
+      "sampled_pixels": [
+        53,
+        42
+      ],
+      "resampling_passes": 1,
+      "sampling": "alpha_weighted_area_then_palette",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32,
+      "anchor": "bottom",
+      "id": "bone_dragon_spear_move_00"
+    },
+    {
+      "action": "move",
+      "frame": 1,
+      "source_rect": [
+        341,
+        256,
+        683,
+        512
+      ],
+      "common_body_scale": 0.21705426356589147,
+      "common_source_root_x": 154.25,
+      "native_registration": [
+        18,
+        41
+      ],
+      "canvas_pixels": [
+        128,
+        96
+      ],
+      "source_pixels": [
+        342,
+        256
+      ],
+      "source_crop": [
+        53,
+        52,
+        296,
+        233
+      ],
+      "sampled_pixels": [
+        53,
+        39
+      ],
+      "resampling_passes": 1,
+      "sampling": "alpha_weighted_area_then_palette",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32,
+      "anchor": "bottom",
+      "id": "bone_dragon_spear_move_01"
+    },
+    {
+      "action": "move",
+      "frame": 2,
+      "source_rect": [
+        683,
+        256,
+        1024,
+        512
+      ],
+      "common_body_scale": 0.21705426356589147,
+      "common_source_root_x": 154.25,
+      "native_registration": [
+        21,
+        37
+      ],
+      "canvas_pixels": [
+        128,
+        96
+      ],
+      "source_pixels": [
+        341,
+        256
+      ],
+      "source_crop": [
+        65,
+        33,
+        297,
+        233
+      ],
+      "sampled_pixels": [
+        50,
+        43
+      ],
+      "resampling_passes": 1,
+      "sampling": "alpha_weighted_area_then_palette",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32,
+      "anchor": "bottom",
+      "id": "bone_dragon_spear_move_02"
+    },
+    {
+      "action": "move",
+      "frame": 3,
+      "source_rect": [
+        1024,
+        256,
+        1365,
+        512
+      ],
+      "common_body_scale": 0.21705426356589147,
+      "common_source_root_x": 154.25,
+      "native_registration": [
+        20,
+        35
+      ],
+      "canvas_pixels": [
+        128,
+        96
+      ],
+      "source_pixels": [
+        341,
+        256
+      ],
+      "source_crop": [
+        64,
+        25,
+        300,
+        233
+      ],
+      "sampled_pixels": [
+        51,
+        45
+      ],
+      "resampling_passes": 1,
+      "sampling": "alpha_weighted_area_then_palette",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32,
+      "anchor": "bottom",
+      "id": "bone_dragon_spear_move_03"
+    },
+    {
+      "action": "move",
+      "frame": 4,
+      "source_rect": [
+        1365,
+        256,
+        1707,
+        512
+      ],
+      "common_body_scale": 0.21705426356589147,
+      "common_source_root_x": 154.25,
+      "native_registration": [
+        19,
+        38
+      ],
+      "canvas_pixels": [
+        128,
+        96
+      ],
+      "source_pixels": [
+        342,
+        256
+      ],
+      "source_crop": [
+        58,
+        41,
+        301,
+        233
+      ],
+      "sampled_pixels": [
+        53,
+        42
+      ],
+      "resampling_passes": 1,
+      "sampling": "alpha_weighted_area_then_palette",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32,
+      "anchor": "bottom",
+      "id": "bone_dragon_spear_move_04"
+    },
+    {
+      "action": "move",
+      "frame": 5,
+      "source_rect": [
+        1707,
+        256,
+        2048,
+        512
+      ],
+      "common_body_scale": 0.21705426356589147,
+      "common_source_root_x": 154.25,
+      "native_registration": [
+        18,
+        40
+      ],
+      "canvas_pixels": [
+        128,
+        96
+      ],
+      "source_pixels": [
+        341,
+        256
+      ],
+      "source_crop": [
+        53,
+        49,
+        298,
+        233
+      ],
+      "sampled_pixels": [
+        53,
+        40
+      ],
+      "resampling_passes": 1,
+      "sampling": "alpha_weighted_area_then_palette",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32,
+      "anchor": "bottom",
+      "id": "bone_dragon_spear_move_05"
+    },
+    {
+      "action": "thrust",
+      "frame": 0,
+      "source_rect": [
+        0,
+        512,
+        341,
+        768
+      ],
+      "common_body_scale": 0.21705426356589147,
+      "common_source_root_x": 154.25,
+      "native_registration": [
+        19,
+        38
+      ],
+      "canvas_pixels": [
+        128,
+        96
+      ],
+      "source_pixels": [
+        341,
+        256
+      ],
+      "source_crop": [
+        59,
+        42,
+        287,
+        234
+      ],
+      "sampled_pixels": [
+        49,
+        42
+      ],
+      "resampling_passes": 1,
+      "sampling": "alpha_weighted_area_then_palette",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32,
+      "anchor": "bottom",
+      "id": "bone_dragon_spear_thrust_00"
+    },
+    {
+      "action": "thrust",
+      "frame": 1,
+      "source_rect": [
+        341,
+        512,
+        683,
+        768
+      ],
+      "common_body_scale": 0.21705426356589147,
+      "common_source_root_x": 154.25,
+      "native_registration": [
+        15,
+        42
+      ],
+      "canvas_pixels": [
+        128,
+        96
+      ],
+      "source_pixels": [
+        342,
+        256
+      ],
+      "source_crop": [
+        39,
+        58,
+        278,
+        234
+      ],
+      "sampled_pixels": [
+        52,
+        38
+      ],
+      "resampling_passes": 1,
+      "sampling": "alpha_weighted_area_then_palette",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32,
+      "anchor": "bottom",
+      "id": "bone_dragon_spear_thrust_01"
+    },
+    {
+      "action": "thrust",
+      "frame": 2,
+      "source_rect": [
+        683,
+        512,
+        1024,
+        768
+      ],
+      "common_body_scale": 0.21705426356589147,
+      "common_source_root_x": 154.25,
+      "native_registration": [
+        12,
+        40
+      ],
+      "canvas_pixels": [
+        128,
+        96
+      ],
+      "source_pixels": [
+        341,
+        256
+      ],
+      "source_crop": [
+        25,
+        51,
+        298,
+        234
+      ],
+      "sampled_pixels": [
+        59,
+        40
+      ],
+      "resampling_passes": 1,
+      "sampling": "alpha_weighted_area_then_palette",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32,
+      "anchor": "bottom",
+      "id": "bone_dragon_spear_thrust_02"
+    },
+    {
+      "action": "thrust",
+      "frame": 3,
+      "source_rect": [
+        1024,
+        512,
+        1365,
+        768
+      ],
+      "common_body_scale": 0.21705426356589147,
+      "common_source_root_x": 154.25,
+      "native_registration": [
+        9,
+        42
+      ],
+      "canvas_pixels": [
+        128,
+        96
+      ],
+      "source_pixels": [
+        341,
+        256
+      ],
+      "source_crop": [
+        10,
+        61,
+        321,
+        234
+      ],
+      "sampled_pixels": [
+        68,
+        38
+      ],
+      "resampling_passes": 1,
+      "sampling": "alpha_weighted_area_then_palette",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32,
+      "anchor": "bottom",
+      "id": "bone_dragon_spear_thrust_03"
+    },
+    {
+      "action": "thrust",
+      "frame": 4,
+      "source_rect": [
+        1365,
+        512,
+        1707,
+        768
+      ],
+      "common_body_scale": 0.21705426356589147,
+      "common_source_root_x": 154.25,
+      "native_registration": [
+        15,
+        40
+      ],
+      "canvas_pixels": [
+        128,
+        96
+      ],
+      "source_pixels": [
+        342,
+        256
+      ],
+      "source_crop": [
+        39,
+        48,
+        283,
+        234
+      ],
+      "sampled_pixels": [
+        53,
+        40
+      ],
+      "resampling_passes": 1,
+      "sampling": "alpha_weighted_area_then_palette",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32,
+      "anchor": "bottom",
+      "id": "bone_dragon_spear_thrust_04"
+    },
+    {
+      "action": "thrust",
+      "frame": 5,
+      "source_rect": [
+        1707,
+        512,
+        2048,
+        768
+      ],
+      "common_body_scale": 0.21705426356589147,
+      "common_source_root_x": 154.25,
+      "native_registration": [
+        19,
+        38
+      ],
+      "canvas_pixels": [
+        128,
+        96
+      ],
+      "source_pixels": [
+        341,
+        256
+      ],
+      "source_crop": [
+        57,
+        42,
+        288,
+        234
+      ],
+      "sampled_pixels": [
+        50,
+        42
+      ],
+      "resampling_passes": 1,
+      "sampling": "alpha_weighted_area_then_palette",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32,
+      "anchor": "bottom",
+      "id": "bone_dragon_spear_thrust_05"
+    },
+    {
+      "action": "idle",
+      "frame": 0,
+      "source_rect": [
+        0,
+        0,
+        296,
+        296
+      ],
+      "common_body_scale": 0.19858156028368795,
+      "common_source_root_x": 136.75,
+      "native_registration": [
+        23,
+        38
+      ],
+      "canvas_pixels": [
+        96,
+        96
+      ],
+      "source_pixels": [
+        296,
+        296
+      ],
+      "source_crop": [
+        49,
+        41,
+        236,
+        252
+      ],
+      "sampled_pixels": [
+        37,
+        42
+      ],
+      "resampling_passes": 1,
+      "sampling": "alpha_weighted_area_then_palette",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32,
+      "anchor": "bottom",
+      "id": "bone_dragon_bow_idle_00"
+    },
+    {
+      "action": "idle",
+      "frame": 1,
+      "source_rect": [
+        296,
+        0,
+        591,
+        296
+      ],
+      "common_body_scale": 0.19858156028368795,
+      "common_source_root_x": 136.75,
+      "native_registration": [
+        23,
+        37
+      ],
+      "canvas_pixels": [
+        96,
+        96
+      ],
+      "source_pixels": [
+        295,
+        296
+      ],
+      "source_crop": [
+        50,
+        34,
+        236,
+        252
+      ],
+      "sampled_pixels": [
+        37,
+        43
+      ],
+      "resampling_passes": 1,
+      "sampling": "alpha_weighted_area_then_palette",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32,
+      "anchor": "bottom",
+      "id": "bone_dragon_bow_idle_01"
+    },
+    {
+      "action": "idle",
+      "frame": 2,
+      "source_rect": [
+        591,
+        0,
+        887,
+        296
+      ],
+      "common_body_scale": 0.19858156028368795,
+      "common_source_root_x": 136.75,
+      "native_registration": [
+        23,
+        35
+      ],
+      "canvas_pixels": [
+        96,
+        96
+      ],
+      "source_pixels": [
+        296,
+        296
+      ],
+      "source_crop": [
+        53,
+        25,
+        240,
+        252
+      ],
+      "sampled_pixels": [
+        37,
+        45
+      ],
+      "resampling_passes": 1,
+      "sampling": "alpha_weighted_area_then_palette",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32,
+      "anchor": "bottom",
+      "id": "bone_dragon_bow_idle_02"
+    },
+    {
+      "action": "idle",
+      "frame": 3,
+      "source_rect": [
+        887,
+        0,
+        1183,
+        296
+      ],
+      "common_body_scale": 0.19858156028368795,
+      "common_source_root_x": 136.75,
+      "native_registration": [
+        23,
+        38
+      ],
+      "canvas_pixels": [
+        96,
+        96
+      ],
+      "source_pixels": [
+        296,
+        296
+      ],
+      "source_crop": [
+        52,
+        40,
+        238,
+        252
+      ],
+      "sampled_pixels": [
+        37,
+        42
+      ],
+      "resampling_passes": 1,
+      "sampling": "alpha_weighted_area_then_palette",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32,
+      "anchor": "bottom",
+      "id": "bone_dragon_bow_idle_03"
+    },
+    {
+      "action": "idle",
+      "frame": 4,
+      "source_rect": [
+        1183,
+        0,
+        1478,
+        296
+      ],
+      "common_body_scale": 0.19858156028368795,
+      "common_source_root_x": 136.75,
+      "native_registration": [
+        23,
+        39
+      ],
+      "canvas_pixels": [
+        96,
+        96
+      ],
+      "source_pixels": [
+        295,
+        296
+      ],
+      "source_crop": [
+        50,
+        50,
+        237,
+        255
+      ],
+      "sampled_pixels": [
+        37,
+        41
+      ],
+      "resampling_passes": 1,
+      "sampling": "alpha_weighted_area_then_palette",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32,
+      "anchor": "bottom",
+      "id": "bone_dragon_bow_idle_04"
+    },
+    {
+      "action": "idle",
+      "frame": 5,
+      "source_rect": [
+        1478,
+        0,
+        1774,
+        296
+      ],
+      "common_body_scale": 0.19858156028368795,
+      "common_source_root_x": 136.75,
+      "native_registration": [
+        23,
+        39
+      ],
+      "canvas_pixels": [
+        96,
+        96
+      ],
+      "source_pixels": [
+        296,
+        296
+      ],
+      "source_crop": [
+        53,
+        44,
+        238,
+        252
+      ],
+      "sampled_pixels": [
+        37,
+        41
+      ],
+      "resampling_passes": 1,
+      "sampling": "alpha_weighted_area_then_palette",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32,
+      "anchor": "bottom",
+      "id": "bone_dragon_bow_idle_05"
+    },
+    {
+      "action": "move",
+      "frame": 0,
+      "source_rect": [
+        0,
+        296,
+        296,
+        591
+      ],
+      "common_body_scale": 0.19858156028368795,
+      "common_source_root_x": 136.75,
+      "native_registration": [
+        22,
+        39
+      ],
+      "canvas_pixels": [
+        96,
+        96
+      ],
+      "source_pixels": [
+        296,
+        295
+      ],
+      "source_crop": [
+        48,
+        45,
+        239,
+        251
+      ],
+      "sampled_pixels": [
+        38,
+        41
+      ],
+      "resampling_passes": 1,
+      "sampling": "alpha_weighted_area_then_palette",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32,
+      "anchor": "bottom",
+      "id": "bone_dragon_bow_move_00"
+    },
+    {
+      "action": "move",
+      "frame": 1,
+      "source_rect": [
+        296,
+        296,
+        591,
+        591
+      ],
+      "common_body_scale": 0.19858156028368795,
+      "common_source_root_x": 136.75,
+      "native_registration": [
+        22,
+        41
+      ],
+      "canvas_pixels": [
+        96,
+        96
+      ],
+      "source_pixels": [
+        295,
+        295
+      ],
+      "source_crop": [
+        45,
+        55,
+        241,
+        251
+      ],
+      "sampled_pixels": [
+        39,
+        39
+      ],
+      "resampling_passes": 1,
+      "sampling": "alpha_weighted_area_then_palette",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32,
+      "anchor": "bottom",
+      "id": "bone_dragon_bow_move_01"
+    },
+    {
+      "action": "move",
+      "frame": 2,
+      "source_rect": [
+        591,
+        296,
+        887,
+        591
+      ],
+      "common_body_scale": 0.19858156028368795,
+      "common_source_root_x": 136.75,
+      "native_registration": [
+        23,
+        40
+      ],
+      "canvas_pixels": [
+        96,
+        96
+      ],
+      "source_pixels": [
+        296,
+        295
+      ],
+      "source_crop": [
+        52,
+        52,
+        244,
+        251
+      ],
+      "sampled_pixels": [
+        38,
+        40
+      ],
+      "resampling_passes": 1,
+      "sampling": "alpha_weighted_area_then_palette",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32,
+      "anchor": "bottom",
+      "id": "bone_dragon_bow_move_02"
+    },
+    {
+      "action": "move",
+      "frame": 3,
+      "source_rect": [
+        887,
+        296,
+        1183,
+        591
+      ],
+      "common_body_scale": 0.19858156028368795,
+      "common_source_root_x": 136.75,
+      "native_registration": [
+        23,
+        38
+      ],
+      "canvas_pixels": [
+        96,
+        96
+      ],
+      "source_pixels": [
+        296,
+        295
+      ],
+      "source_crop": [
+        50,
+        39,
+        241,
+        251
+      ],
+      "sampled_pixels": [
+        38,
+        42
+      ],
+      "resampling_passes": 1,
+      "sampling": "alpha_weighted_area_then_palette",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32,
+      "anchor": "bottom",
+      "id": "bone_dragon_bow_move_03"
+    },
+    {
+      "action": "move",
+      "frame": 4,
+      "source_rect": [
+        1183,
+        296,
+        1478,
+        591
+      ],
+      "common_body_scale": 0.19858156028368795,
+      "common_source_root_x": 136.75,
+      "native_registration": [
+        23,
+        38
+      ],
+      "canvas_pixels": [
+        96,
+        96
+      ],
+      "source_pixels": [
+        295,
+        295
+      ],
+      "source_crop": [
+        50,
+        39,
+        245,
+        251
+      ],
+      "sampled_pixels": [
+        39,
+        42
+      ],
+      "resampling_passes": 1,
+      "sampling": "alpha_weighted_area_then_palette",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32,
+      "anchor": "bottom",
+      "id": "bone_dragon_bow_move_04"
+    },
+    {
+      "action": "move",
+      "frame": 5,
+      "source_rect": [
+        1478,
+        296,
+        1774,
+        591
+      ],
+      "common_body_scale": 0.19858156028368795,
+      "common_source_root_x": 136.75,
+      "native_registration": [
+        23,
+        38
+      ],
+      "canvas_pixels": [
+        96,
+        96
+      ],
+      "source_pixels": [
+        296,
+        295
+      ],
+      "source_crop": [
+        52,
+        41,
+        240,
+        251
+      ],
+      "sampled_pixels": [
+        37,
+        42
+      ],
+      "resampling_passes": 1,
+      "sampling": "alpha_weighted_area_then_palette",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32,
+      "anchor": "bottom",
+      "id": "bone_dragon_bow_move_05"
+    },
+    {
+      "action": "shoot",
+      "frame": 0,
+      "source_rect": [
+        0,
+        591,
+        296,
+        887
+      ],
+      "common_body_scale": 0.19858156028368795,
+      "common_source_root_x": 136.75,
+      "native_registration": [
+        21,
+        39
+      ],
+      "canvas_pixels": [
+        96,
+        96
+      ],
+      "source_pixels": [
+        296,
+        296
+      ],
+      "source_crop": [
+        39,
+        44,
+        232,
+        252
+      ],
+      "sampled_pixels": [
+        38,
+        41
+      ],
+      "resampling_passes": 1,
+      "sampling": "alpha_weighted_area_then_palette",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32,
+      "anchor": "bottom",
+      "id": "bone_dragon_bow_shoot_00"
+    },
+    {
+      "action": "shoot",
+      "frame": 1,
+      "source_rect": [
+        296,
+        591,
+        591,
+        887
+      ],
+      "common_body_scale": 0.19858156028368795,
+      "common_source_root_x": 136.75,
+      "native_registration": [
+        20,
+        39
+      ],
+      "canvas_pixels": [
+        96,
+        96
+      ],
+      "source_pixels": [
+        295,
+        296
+      ],
+      "source_crop": [
+        36,
+        47,
+        245,
+        252
+      ],
+      "sampled_pixels": [
+        42,
+        41
+      ],
+      "resampling_passes": 1,
+      "sampling": "alpha_weighted_area_then_palette",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32,
+      "anchor": "bottom",
+      "id": "bone_dragon_bow_shoot_01"
+    },
+    {
+      "action": "shoot",
+      "frame": 2,
+      "source_rect": [
+        591,
+        591,
+        887,
+        887
+      ],
+      "common_body_scale": 0.19858156028368795,
+      "common_source_root_x": 136.75,
+      "native_registration": [
+        20,
+        39
+      ],
+      "canvas_pixels": [
+        96,
+        96
+      ],
+      "source_pixels": [
+        296,
+        296
+      ],
+      "source_crop": [
+        38,
+        44,
+        255,
+        252
+      ],
+      "sampled_pixels": [
+        43,
+        41
+      ],
+      "resampling_passes": 1,
+      "sampling": "alpha_weighted_area_then_palette",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32,
+      "anchor": "bottom",
+      "id": "bone_dragon_bow_shoot_02"
+    },
+    {
+      "action": "shoot",
+      "frame": 3,
+      "source_rect": [
+        887,
+        591,
+        1183,
+        887
+      ],
+      "common_body_scale": 0.19858156028368795,
+      "common_source_root_x": 136.75,
+      "native_registration": [
+        21,
+        39
+      ],
+      "canvas_pixels": [
+        96,
+        96
+      ],
+      "source_pixels": [
+        296,
+        296
+      ],
+      "source_crop": [
+        39,
+        44,
+        262,
+        252
+      ],
+      "sampled_pixels": [
+        44,
+        41
+      ],
+      "resampling_passes": 1,
+      "sampling": "alpha_weighted_area_then_palette",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32,
+      "anchor": "bottom",
+      "id": "bone_dragon_bow_shoot_03"
+    },
+    {
+      "action": "shoot",
+      "frame": 4,
+      "source_rect": [
+        1183,
+        591,
+        1478,
+        887
+      ],
+      "common_body_scale": 0.19858156028368795,
+      "common_source_root_x": 136.75,
+      "native_registration": [
+        20,
+        39
+      ],
+      "canvas_pixels": [
+        96,
+        96
+      ],
+      "source_pixels": [
+        295,
+        296
+      ],
+      "source_crop": [
+        36,
+        47,
+        238,
+        252
+      ],
+      "sampled_pixels": [
+        40,
+        41
+      ],
+      "resampling_passes": 1,
+      "sampling": "alpha_weighted_area_then_palette",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32,
+      "anchor": "bottom",
+      "id": "bone_dragon_bow_shoot_04"
+    },
+    {
+      "action": "shoot",
+      "frame": 5,
+      "source_rect": [
+        1478,
+        591,
+        1774,
+        887
+      ],
+      "common_body_scale": 0.19858156028368795,
+      "common_source_root_x": 136.75,
+      "native_registration": [
+        20,
+        39
+      ],
+      "canvas_pixels": [
+        96,
+        96
+      ],
+      "source_pixels": [
+        296,
+        296
+      ],
+      "source_crop": [
+        37,
+        47,
+        232,
+        252
+      ],
+      "sampled_pixels": [
+        39,
+        41
+      ],
+      "resampling_passes": 1,
+      "sampling": "alpha_weighted_area_then_palette",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32,
+      "anchor": "bottom",
+      "id": "bone_dragon_bow_shoot_05"
+    },
+    {
+      "id": "bone_arrow_fly_00",
+      "frame": 0,
+      "source_rect": [
+        0,
+        0,
+        486,
+        809
+      ],
+      "final_canvas": [
+        48,
+        16
+      ],
+      "source_pixels": [
+        486,
+        809
+      ],
+      "source_crop": [
+        78,
+        355,
+        419,
+        445
+      ],
+      "sampled_pixels": [
+        32,
+        8
+      ],
+      "canvas_pixels": [
+        48,
+        16
+      ],
+      "resampling_passes": 1,
+      "sampling": "alpha_weighted_area_then_palette",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32,
+      "anchor": "bottom",
+      "sampled_canvas_pixels": [
+        32,
+        8
+      ]
+    },
+    {
+      "id": "bone_arrow_fly_01",
+      "frame": 1,
+      "source_rect": [
+        486,
+        0,
+        971,
+        809
+      ],
+      "final_canvas": [
+        48,
+        16
+      ],
+      "source_pixels": [
+        485,
+        809
+      ],
+      "source_crop": [
+        45,
+        355,
+        418,
+        445
+      ],
+      "sampled_pixels": [
+        32,
+        8
+      ],
+      "canvas_pixels": [
+        48,
+        16
+      ],
+      "resampling_passes": 1,
+      "sampling": "alpha_weighted_area_then_palette",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32,
+      "anchor": "bottom",
+      "sampled_canvas_pixels": [
+        32,
+        8
+      ]
+    },
+    {
+      "id": "bone_arrow_fly_02",
+      "frame": 2,
+      "source_rect": [
+        971,
+        0,
+        1456,
+        809
+      ],
+      "final_canvas": [
+        48,
+        16
+      ],
+      "source_pixels": [
+        485,
+        809
+      ],
+      "source_crop": [
+        34,
+        356,
+        418,
+        445
+      ],
+      "sampled_pixels": [
+        32,
+        8
+      ],
+      "canvas_pixels": [
+        48,
+        16
+      ],
+      "resampling_passes": 1,
+      "sampling": "alpha_weighted_area_then_palette",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32,
+      "anchor": "bottom",
+      "sampled_canvas_pixels": [
+        32,
+        8
+      ]
+    },
+    {
+      "id": "bone_arrow_fly_03",
+      "frame": 3,
+      "source_rect": [
+        1456,
+        0,
+        1942,
+        809
+      ],
+      "final_canvas": [
+        48,
+        16
+      ],
+      "source_pixels": [
+        486,
+        809
+      ],
+      "source_crop": [
+        79,
+        355,
+        419,
+        445
+      ],
+      "sampled_pixels": [
+        32,
+        8
+      ],
+      "canvas_pixels": [
+        48,
+        16
+      ],
+      "resampling_passes": 1,
+      "sampling": "alpha_weighted_area_then_palette",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32,
+      "anchor": "bottom",
+      "sampled_canvas_pixels": [
+        32,
+        8
+      ]
+    }
+  ],
+  "tool_version": "native-grid-v1"
+}

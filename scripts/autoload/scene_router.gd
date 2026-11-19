@@ -3,7 +3,7 @@ extends Node
 ## 黑场转场：淡出 0.15s → 切房间 → 落在目标门内侧 → 停留 0.10s → 淡入 0.15s（合计 0.40s）。
 ## 参考书 §3.11：切房后玩家对齐目标门（误差 ≤ 4px）；进房自动存档待接 SaveSystem。
 
-const ROOM_DIR := "res://scenes/rooms/"
+const ROOM_DIR := "res://scenes/maps/"
 const ARRIVE_DEFAULT := Vector2(40, -9)
 
 const FADE_OUT := 0.10
@@ -13,6 +13,7 @@ const FADE_IN := 0.10
 var _pending_door: StringName = &""
 var _busy := false
 var _fade_rect: ColorRect
+var _checkpoint_arrival: Dictionary = {}
 
 
 func _ready() -> void:
@@ -62,6 +63,15 @@ func goto_room(room_id: StringName, door_id: StringName = &"") -> bool:
 	return true
 
 
+## 由已解锁篝火发起黑场旅行；落点、复活点和自动存档在转场内统一更新。
+func goto_checkpoint(room_id: StringName, checkpoint: StringName, position: Vector2) -> bool:
+	if _busy or not can_goto(room_id) or not CampfireService.is_unlocked(room_id,checkpoint):
+		return false
+	_checkpoint_arrival = {"room":room_id,"checkpoint":checkpoint,"position":position}
+	SaveSystem.restoring = false
+	return goto_room(room_id)
+
+
 func change_scene(path: String) -> void:
 	## 切换到任意场景（res:// 路径）；供调试与测试宿主使用
 	get_tree().change_scene_to_file(path)
@@ -71,8 +81,11 @@ func _transition(room_id: StringName, door_id: StringName) -> void:
 	await _fade_to(1.0, FADE_OUT)
 	await get_tree().process_frame
 
-	var err := get_tree().change_scene_to_file(room_path(room_id))
+	# 同房间火点旅行保留遭遇状态，避免用点击当前篝火代替“休息”刷新敌人。
+	var same_room_fire := not _checkpoint_arrival.is_empty() and GameState.current_room == room_id and get_tree().current_scene != null and get_tree().current_scene.scene_file_path == room_path(room_id)
+	var err := OK if same_room_fire else get_tree().change_scene_to_file(room_path(room_id))
 	if err != OK:
+		_checkpoint_arrival.clear()
 		push_error("SceneRouter: 切场景失败 %s (err=%d)" % [room_path(room_id), err])
 		await _fade_to(0.0, FADE_IN)
 		_busy = false
@@ -86,6 +99,14 @@ func _transition(room_id: StringName, door_id: StringName) -> void:
 	await get_tree().process_frame
 	_place_player_at_door(door_id)
 	var player := get_tree().current_scene.get_node_or_null("Player") as CharacterBody2D
+	if not _checkpoint_arrival.is_empty() and player != null:
+		player.position = _checkpoint_arrival.position
+		player.velocity = Vector2.ZERO
+		player.set("checkpoint_position",player.position)
+		GameState.checkpoint_id = _checkpoint_arrival.checkpoint
+		GameState.checkpoint_room = room_id
+		GameState.checkpoint_position = [player.position.x,player.position.y]
+		_checkpoint_arrival.clear()
 	if SaveSystem.restoring and player != null and GameState.saved_position.size() == 2:
 		player.position = Vector2(GameState.saved_position[0],GameState.saved_position[1])
 		player.velocity = Vector2.ZERO

@@ -1,0 +1,1538 @@
+{
+  "id": "forest_02",
+  "name": "苔甲小径 · 古根回廊",
+  "tile_size": 16,
+  "bounds": [
+    2768,
+    1808
+  ],
+  "world_origin": [
+    2560,
+    -928
+  ],
+  "spawn": [
+    80,
+    287
+  ],
+  "background": "res://assets/environments/backgrounds/forest/v002/deep_woodland.png",
+  "background_tint": "#bacdc0",
+  "presentation": "res://data/maps/forest_02_art.json",
+  "oneway_thickness": 4,
+  "jump_height_ratio": [
+    0.5,
+    0.9
+  ],
+  "max_gap_dodges": 2,
+  "interaction": {
+    "range": 68,
+    "font_size": 14,
+    "body_half_height": 17,
+    "door_size": [
+      24,
+      64
+    ],
+    "door_arrival_grace": 0.5
+  },
+  "walkable_areas": [
+    {
+      "id": "upper_gallery",
+      "polygon": [
+        [
+          0,
+          240
+        ],
+        [
+          112,
+          240
+        ],
+        [
+          112,
+          96
+        ],
+        [
+          2656,
+          96
+        ],
+        [
+          2656,
+          304
+        ],
+        [
+          0,
+          304
+        ]
+      ]
+    },
+    {
+      "id": "canopy_shaft_w",
+      "polygon": [
+        [
+          1152,
+          304
+        ],
+        [
+          1344,
+          304
+        ],
+        [
+          1344,
+          496
+        ],
+        [
+          1152,
+          496
+        ]
+      ]
+    },
+    {
+      "id": "canopy_shaft_e",
+      "polygon": [
+        [
+          2000,
+          304
+        ],
+        [
+          2192,
+          304
+        ],
+        [
+          2192,
+          496
+        ],
+        [
+          2000,
+          496
+        ]
+      ]
+    },
+    {
+      "id": "middle_gallery",
+      "polygon": [
+        [
+          1152,
+          496
+        ],
+        [
+          2192,
+          496
+        ],
+        [
+          2192,
+          480
+        ],
+        [
+          2512,
+          480
+        ],
+        [
+          2512,
+          688
+        ],
+        [
+          768,
+          688
+        ],
+        [
+          768,
+          544
+        ],
+        [
+          1024,
+          544
+        ],
+        [
+          1024,
+          608
+        ],
+        [
+          1152,
+          608
+        ]
+      ]
+    },
+    {
+      "id": "west_chamber",
+      "polygon": [
+        [
+          112,
+          448
+        ],
+        [
+          1024,
+          448
+        ],
+        [
+          1024,
+          544
+        ],
+        [
+          608,
+          544
+        ],
+        [
+          608,
+          784
+        ],
+        [
+          192,
+          784
+        ],
+        [
+          192,
+          1120
+        ],
+        [
+          112,
+          1120
+        ]
+      ]
+    },
+    {
+      "id": "hollow_loop",
+      "polygon": [
+        [
+          112,
+          1120
+        ],
+        [
+          224,
+          1120
+        ],
+        [
+          336,
+          880
+        ],
+        [
+          928,
+          880
+        ],
+        [
+          1024,
+          1120
+        ],
+        [
+          1152,
+          1120
+        ],
+        [
+          1152,
+          688
+        ],
+        [
+          1232,
+          688
+        ],
+        [
+          1232,
+          1040
+        ],
+        [
+          1376,
+          832
+        ],
+        [
+          1904,
+          832
+        ],
+        [
+          2000,
+          1024
+        ],
+        [
+          2128,
+          1024
+        ],
+        [
+          2336,
+          1216
+        ],
+        [
+          2416,
+          1216
+        ],
+        [
+          2416,
+          688
+        ],
+        [
+          2512,
+          688
+        ],
+        [
+          2512,
+          1328
+        ],
+        [
+          2384,
+          1328
+        ],
+        [
+          2384,
+          1520
+        ],
+        [
+          2304,
+          1520
+        ],
+        [
+          2304,
+          1328
+        ],
+        [
+          2144,
+          1216
+        ],
+        [
+          112,
+          1216
+        ]
+      ]
+    },
+    {
+      "id": "root_road",
+      "polygon": [
+        [
+          0,
+          1648
+        ],
+        [
+          192,
+          1648
+        ],
+        [
+          192,
+          1472
+        ],
+        [
+          944,
+          1472
+        ],
+        [
+          1184,
+          1360
+        ],
+        [
+          2112,
+          1360
+        ],
+        [
+          2304,
+          1520
+        ],
+        [
+          2304,
+          1328
+        ],
+        [
+          2384,
+          1328
+        ],
+        [
+          2384,
+          1616
+        ],
+        [
+          2768,
+          1616
+        ],
+        [
+          2768,
+          1712
+        ],
+        [
+          2304,
+          1712
+        ],
+        [
+          2144,
+          1584
+        ],
+        [
+          1232,
+          1584
+        ],
+        [
+          992,
+          1712
+        ],
+        [
+          0,
+          1712
+        ]
+      ]
+    },
+    {
+      "id": "east_canopy_link",
+      "polygon": [
+        [
+          2608,
+          96
+        ],
+        [
+          2768,
+          96
+        ],
+        [
+          2768,
+          304
+        ],
+        [
+          2608,
+          304
+        ]
+      ]
+    }
+  ],
+  "platforms": [
+    {
+      "id": "canopy_w",
+      "type": "oneway",
+      "rect": [
+        288,
+        224,
+        656,
+        4
+      ]
+    },
+    {
+      "id": "canopy_e",
+      "type": "oneway",
+      "rect": [
+        1488,
+        208,
+        464,
+        4
+      ]
+    },
+    {
+      "id": "canopy_west_0",
+      "type": "oneway",
+      "rect": [
+        1152,
+        304,
+        192,
+        4
+      ]
+    },
+    {
+      "id": "canopy_west_1",
+      "type": "oneway",
+      "rect": [
+        1152,
+        400,
+        192,
+        4
+      ]
+    },
+    {
+      "id": "canopy_west_2",
+      "type": "oneway",
+      "rect": [
+        1152,
+        496,
+        192,
+        4
+      ]
+    },
+    {
+      "id": "canopy_east_0",
+      "type": "oneway",
+      "rect": [
+        2000,
+        304,
+        192,
+        4
+      ]
+    },
+    {
+      "id": "canopy_east_1",
+      "type": "oneway",
+      "rect": [
+        2000,
+        400,
+        192,
+        4
+      ]
+    },
+    {
+      "id": "canopy_east_2",
+      "type": "oneway",
+      "rect": [
+        2000,
+        496,
+        192,
+        4
+      ]
+    },
+    {
+      "id": "west_high_l",
+      "type": "oneway",
+      "rect": [
+        224,
+        544,
+        128,
+        4
+      ]
+    },
+    {
+      "id": "west_high_r",
+      "type": "oneway",
+      "rect": [
+        480,
+        544,
+        128,
+        4
+      ]
+    },
+    {
+      "id": "alcove_roof",
+      "type": "oneway",
+      "rect": [
+        768,
+        544,
+        48,
+        4
+      ]
+    },
+    {
+      "id": "west_middle",
+      "type": "oneway",
+      "rect": [
+        256,
+        640,
+        304,
+        4
+      ]
+    },
+    {
+      "id": "west_low_l",
+      "type": "oneway",
+      "rect": [
+        208,
+        704,
+        112,
+        4
+      ]
+    },
+    {
+      "id": "west_low_r",
+      "type": "oneway",
+      "rect": [
+        496,
+        704,
+        112,
+        4
+      ]
+    },
+    {
+      "id": "alcove_step",
+      "type": "oneway",
+      "rect": [
+        768,
+        608,
+        48,
+        4
+      ]
+    },
+    {
+      "id": "alcove_lip",
+      "type": "oneway",
+      "rect": [
+        1152,
+        688,
+        64,
+        4
+      ]
+    },
+    {
+      "id": "east_shaft_lip",
+      "type": "oneway",
+      "rect": [
+        2416,
+        688,
+        96,
+        4
+      ]
+    },
+    {
+      "id": "west_cave_high",
+      "type": "oneway",
+      "rect": [
+        384,
+        976,
+        464,
+        4
+      ]
+    },
+    {
+      "id": "west_cave_l",
+      "type": "oneway",
+      "rect": [
+        272,
+        1056,
+        208,
+        4
+      ]
+    },
+    {
+      "id": "west_cave_r",
+      "type": "oneway",
+      "rect": [
+        752,
+        1056,
+        224,
+        4
+      ]
+    },
+    {
+      "id": "west_cave_low",
+      "type": "oneway",
+      "rect": [
+        304,
+        1136,
+        640,
+        4
+      ]
+    },
+    {
+      "id": "center_high",
+      "type": "oneway",
+      "rect": [
+        1456,
+        1024,
+        352,
+        4
+      ]
+    },
+    {
+      "id": "center_low_l",
+      "type": "oneway",
+      "rect": [
+        1360,
+        1120,
+        144,
+        4
+      ]
+    },
+    {
+      "id": "center_low_c",
+      "type": "oneway",
+      "rect": [
+        1568,
+        1120,
+        128,
+        4
+      ]
+    },
+    {
+      "id": "center_low_r",
+      "type": "oneway",
+      "rect": [
+        1776,
+        1120,
+        144,
+        4
+      ]
+    },
+    {
+      "id": "root_bridge",
+      "type": "oneway",
+      "rect": [
+        1264,
+        1488,
+        832,
+        4
+      ]
+    },
+    {
+      "id": "west_loop_0",
+      "type": "oneway",
+      "rect": [
+        112,
+        800,
+        80,
+        4
+      ]
+    },
+    {
+      "id": "west_loop_1",
+      "type": "oneway",
+      "rect": [
+        112,
+        880,
+        80,
+        4
+      ]
+    },
+    {
+      "id": "west_loop_2",
+      "type": "oneway",
+      "rect": [
+        112,
+        960,
+        80,
+        4
+      ]
+    },
+    {
+      "id": "west_loop_3",
+      "type": "oneway",
+      "rect": [
+        112,
+        1040,
+        80,
+        4
+      ]
+    },
+    {
+      "id": "west_loop_4",
+      "type": "oneway",
+      "rect": [
+        112,
+        1120,
+        80,
+        4
+      ]
+    },
+    {
+      "id": "center_loop_0",
+      "type": "oneway",
+      "rect": [
+        1152,
+        768,
+        80,
+        4
+      ]
+    },
+    {
+      "id": "center_loop_1",
+      "type": "oneway",
+      "rect": [
+        1152,
+        848,
+        80,
+        4
+      ]
+    },
+    {
+      "id": "center_loop_2",
+      "type": "oneway",
+      "rect": [
+        1152,
+        928,
+        80,
+        4
+      ]
+    },
+    {
+      "id": "center_loop_3",
+      "type": "oneway",
+      "rect": [
+        1152,
+        992,
+        80,
+        4
+      ]
+    },
+    {
+      "id": "center_loop_4",
+      "type": "oneway",
+      "rect": [
+        1152,
+        1072,
+        80,
+        4
+      ]
+    },
+    {
+      "id": "center_loop_5",
+      "type": "oneway",
+      "rect": [
+        1152,
+        1152,
+        80,
+        4
+      ]
+    },
+    {
+      "id": "root_return_0",
+      "type": "oneway",
+      "rect": [
+        2304,
+        1392,
+        80,
+        4
+      ]
+    },
+    {
+      "id": "root_return_1",
+      "type": "oneway",
+      "rect": [
+        2304,
+        1472,
+        80,
+        4
+      ]
+    },
+    {
+      "id": "root_return_2",
+      "type": "oneway",
+      "rect": [
+        2304,
+        1552,
+        80,
+        4
+      ]
+    },
+    {
+      "id": "root_return_3",
+      "type": "oneway",
+      "rect": [
+        2304,
+        1632,
+        80,
+        4
+      ]
+    },
+    {
+      "id": "gallery_return_step",
+      "type": "oneway",
+      "rect": [
+        1176,
+        592,
+        168,
+        4
+      ]
+    }
+  ],
+  "walls": [],
+  "campfire": {
+    "id": "cp_forest_02_roots",
+    "pos": [
+      272,
+      1712
+    ]
+  },
+  "chests": [
+    {
+      "id": "chest_f02_canopy",
+      "node": "Chest_canopy",
+      "pos": [
+        2544,
+        304
+      ],
+      "item": "potion_mana",
+      "count": 2,
+      "requires_clear": false,
+      "encounter_id": ""
+    },
+    {
+      "id": "chest_f02_switch",
+      "node": "Chest_switch",
+      "pos": [
+        976,
+        688
+      ],
+      "item": "potion_sta",
+      "count": 2,
+      "requires_clear": false,
+      "encounter_id": ""
+    },
+    {
+      "id": "chest_f02_west_trial",
+      "node": "Chest_west_trial",
+      "pos": [
+        384,
+        784
+      ],
+      "item": "potion_small",
+      "count": 3,
+      "requires_clear": true,
+      "encounter_id": "f02_west_trial"
+    },
+    {
+      "id": "chest_f02_hollow_trial",
+      "node": "Chest_hollow_trial",
+      "pos": [
+        1632,
+        1216
+      ],
+      "item": "milk_bomb",
+      "count": 3,
+      "requires_clear": true,
+      "encounter_id": "f02_hollow_trial"
+    },
+    {
+      "id": "chest_f02_root_supplies",
+      "node": "Chest_root_supplies",
+      "pos": [
+        864,
+        1712
+      ],
+      "item": "potion_small",
+      "count": 2,
+      "requires_clear": false,
+      "encounter_id": ""
+    }
+  ],
+  "doors": [
+    {
+      "id": "DoorWest",
+      "pos": [
+        16,
+        287
+      ],
+      "target": "forest_01",
+      "target_door": "DoorEast",
+      "arrive_offset": [
+        48,
+        0
+      ]
+    },
+    {
+      "id": "DoorWestShortcut",
+      "pos": [
+        16,
+        1695
+      ],
+      "target": "forest_01",
+      "target_door": "DoorEastShortcut",
+      "arrive_offset": [
+        48,
+        0
+      ],
+      "shortcut": "forest_01_roots",
+      "unlock_on_exit": true
+    },
+    {
+      "id": "DoorEast",
+      "pos": [
+        2752,
+        1695
+      ],
+      "target": "forest_03",
+      "target_door": "DoorWest",
+      "arrive_offset": [
+        -48,
+        0
+      ]
+    },
+    {
+      "id": "DoorEastShortcut",
+      "pos": [
+        2752,
+        287
+      ],
+      "target": "forest_03",
+      "target_door": "DoorWestShortcut",
+      "arrive_offset": [
+        -48,
+        0
+      ],
+      "shortcut": "forest_02_canopy_link",
+      "unlock_on_exit": false
+    }
+  ],
+  "switch": {
+    "node": "ShortcutSwitch",
+    "id": "forest_02_verdant_seal",
+    "pos": [
+      896,
+      688
+    ],
+    "color": "#7ee7aa"
+  },
+  "gates": [
+    {
+      "id": "AlcoveGate",
+      "switch_id": "forest_02_verdant_seal",
+      "pos": [
+        1056,
+        648.0
+      ],
+      "size": [
+        16,
+        80
+      ],
+      "orientation": "vertical"
+    },
+    {
+      "id": "RootGate",
+      "switch_id": "forest_02_verdant_seal",
+      "pos": [
+        2336,
+        1328
+      ],
+      "size": [
+        80,
+        16
+      ],
+      "orientation": "horizontal"
+    }
+  ],
+  "encounters": [
+    {
+      "id": "f02_west_trial",
+      "spawn_ids": [
+        "f02_west_mid",
+        "f02_west_low_l",
+        "f02_west_low_r",
+        "f02_west_guard_l",
+        "f02_west_guard_r"
+      ]
+    },
+    {
+      "id": "f02_hollow_trial",
+      "spawn_ids": [
+        "f02_hollow_l",
+        "f02_hollow_r"
+      ]
+    }
+  ],
+  "npcs": [],
+  "routes": [
+    [
+      "upper_floor",
+      "canopy_w"
+    ],
+    [
+      "canopy_west_1",
+      "upper_floor"
+    ],
+    [
+      "canopy_west_2",
+      "canopy_west_1"
+    ],
+    [
+      "canopy_west_1",
+      "canopy_west_0"
+    ],
+    [
+      "canopy_east_2",
+      "canopy_east_1"
+    ],
+    [
+      "canopy_east_1",
+      "canopy_east_0"
+    ],
+    [
+      "canopy_east_0",
+      "canopy_e"
+    ],
+    [
+      "west_floor",
+      "west_low_l"
+    ],
+    [
+      "west_low_l",
+      "west_middle"
+    ],
+    [
+      "west_middle",
+      "west_high_l"
+    ],
+    [
+      "west_loop_4",
+      "west_loop_3"
+    ],
+    [
+      "west_loop_3",
+      "west_loop_2"
+    ],
+    [
+      "west_loop_2",
+      "west_loop_1"
+    ],
+    [
+      "west_loop_1",
+      "west_loop_0"
+    ],
+    [
+      "center_loop_5",
+      "center_loop_4"
+    ],
+    [
+      "center_loop_4",
+      "center_loop_3"
+    ],
+    [
+      "center_loop_3",
+      "center_loop_2"
+    ],
+    [
+      "center_loop_2",
+      "center_loop_1"
+    ],
+    [
+      "center_loop_1",
+      "center_loop_0"
+    ],
+    [
+      "root_return_3",
+      "root_return_2"
+    ],
+    [
+      "root_return_2",
+      "root_return_1"
+    ],
+    [
+      "root_return_1",
+      "root_return_0"
+    ],
+    [
+      "cave_floor",
+      "west_cave_low"
+    ],
+    [
+      "west_cave_low",
+      "west_cave_l"
+    ],
+    [
+      "west_cave_l",
+      "west_cave_high"
+    ],
+    [
+      "cave_floor",
+      "center_low_l"
+    ],
+    [
+      "center_low_l",
+      "center_high"
+    ],
+    [
+      "east_root_floor",
+      "root_return_3"
+    ],
+    [
+      "cave_floor",
+      "west_loop_4"
+    ],
+    [
+      "west_loop_0",
+      "west_low_l"
+    ],
+    [
+      "cave_floor",
+      "center_loop_5"
+    ],
+    [
+      "center_loop_0",
+      "alcove_lip"
+    ],
+    [
+      "gallery_return_floor",
+      "gallery_return_step"
+    ],
+    [
+      "gallery_return_step",
+      "canopy_west_2"
+    ]
+  ],
+  "floor_samples": [
+    {
+      "id": "upper_floor",
+      "rect": [
+        128,
+        304,
+        1040,
+        4
+      ]
+    },
+    {
+      "id": "west_floor",
+      "rect": [
+        192,
+        784,
+        416,
+        4
+      ]
+    },
+    {
+      "id": "cave_floor",
+      "rect": [
+        112,
+        1216,
+        2016,
+        4
+      ]
+    },
+    {
+      "id": "root_floor",
+      "rect": [
+        0,
+        1712,
+        992,
+        4
+      ]
+    },
+    {
+      "id": "east_root_floor",
+      "rect": [
+        2304,
+        1712,
+        464,
+        4
+      ]
+    },
+    {
+      "id": "gallery_return_floor",
+      "rect": [
+        1232,
+        688,
+        192,
+        4
+      ]
+    }
+  ],
+  "source_sketch": "forest_02.png / producer 2026-10-29",
+  "smoothing": {
+    "radius": 20,
+    "segments": 6,
+    "edge_fraction": 0.3,
+    "distance_cell": 4,
+    "distance_max": 32
+  },
+  "enemies": [
+    {
+      "spawn_id": "f02_upper_w1",
+      "enemy_id": "moss_beetle",
+      "pos": [
+        520,
+        304
+      ],
+      "platform_id": "upper_floor",
+      "patrol_bounds": [
+        430,
+        610
+      ]
+    },
+    {
+      "spawn_id": "f02_upper_w2",
+      "enemy_id": "milk_slime",
+      "pos": [
+        768,
+        304
+      ],
+      "platform_id": "upper_floor",
+      "patrol_bounds": [
+        680,
+        920
+      ]
+    },
+    {
+      "spawn_id": "f02_canopy_sentry",
+      "enemy_id": "vine_flower",
+      "pos": [
+        1616,
+        208
+      ],
+      "platform_id": "canopy_e",
+      "patrol_bounds": [
+        1616,
+        1616
+      ]
+    },
+    {
+      "spawn_id": "f02_upper_center",
+      "enemy_id": "milk_slime",
+      "pos": [
+        1776,
+        304
+      ],
+      "platform_id": "upper_center_floor",
+      "patrol_bounds": [
+        1510,
+        1930
+      ]
+    },
+    {
+      "spawn_id": "f02_upper_e1",
+      "enemy_id": "moss_beetle",
+      "pos": [
+        2320,
+        304
+      ],
+      "platform_id": "upper_e_floor",
+      "patrol_bounds": [
+        2220,
+        2410
+      ]
+    },
+    {
+      "spawn_id": "f02_upper_e2",
+      "enemy_id": "milk_slime",
+      "pos": [
+        2420,
+        304
+      ],
+      "platform_id": "upper_e_floor",
+      "patrol_bounds": [
+        2330,
+        2500
+      ]
+    },
+    {
+      "spawn_id": "f02_west_mid",
+      "enemy_id": "milk_slime",
+      "pos": [
+        432,
+        640
+      ],
+      "platform_id": "west_middle",
+      "patrol_bounds": [
+        290,
+        530
+      ]
+    },
+    {
+      "spawn_id": "f02_west_low_l",
+      "enemy_id": "moss_beetle",
+      "pos": [
+        264,
+        704
+      ],
+      "platform_id": "west_low_l",
+      "patrol_bounds": [
+        230,
+        300
+      ]
+    },
+    {
+      "spawn_id": "f02_west_low_r",
+      "enemy_id": "milk_slime",
+      "pos": [
+        552,
+        704
+      ],
+      "platform_id": "west_low_r",
+      "patrol_bounds": [
+        522,
+        584
+      ]
+    },
+    {
+      "spawn_id": "f02_west_guard_l",
+      "enemy_id": "moss_beetle",
+      "pos": [
+        464,
+        784
+      ],
+      "platform_id": "west_floor",
+      "patrol_bounds": [
+        420,
+        500
+      ]
+    },
+    {
+      "spawn_id": "f02_west_guard_r",
+      "enemy_id": "milk_slime",
+      "pos": [
+        552,
+        784
+      ],
+      "platform_id": "west_floor",
+      "patrol_bounds": [
+        512,
+        582
+      ]
+    },
+    {
+      "spawn_id": "f02_middle_w",
+      "enemy_id": "moss_beetle",
+      "pos": [
+        1600,
+        688
+      ],
+      "platform_id": "middle_floor",
+      "patrol_bounds": [
+        1510,
+        1690
+      ]
+    },
+    {
+      "spawn_id": "f02_middle_c",
+      "enemy_id": "vine_flower",
+      "pos": [
+        1792,
+        688
+      ],
+      "platform_id": "middle_floor",
+      "patrol_bounds": [
+        1792,
+        1792
+      ]
+    },
+    {
+      "spawn_id": "f02_middle_e",
+      "enemy_id": "milk_slime",
+      "pos": [
+        2016,
+        688
+      ],
+      "platform_id": "middle_floor",
+      "patrol_bounds": [
+        1900,
+        2150
+      ]
+    },
+    {
+      "spawn_id": "f02_cave_l",
+      "enemy_id": "milk_slime",
+      "pos": [
+        408,
+        1056
+      ],
+      "platform_id": "west_cave_l",
+      "patrol_bounds": [
+        302,
+        450
+      ]
+    },
+    {
+      "spawn_id": "f02_cave_low",
+      "enemy_id": "moss_beetle",
+      "pos": [
+        688,
+        1136
+      ],
+      "platform_id": "west_cave_low",
+      "patrol_bounds": [
+        520,
+        850
+      ]
+    },
+    {
+      "spawn_id": "f02_cave_floor_l",
+      "enemy_id": "moss_beetle",
+      "pos": [
+        384,
+        1216
+      ],
+      "platform_id": "cave_floor",
+      "patrol_bounds": [
+        280,
+        450
+      ]
+    },
+    {
+      "spawn_id": "f02_cave_floor_c",
+      "enemy_id": "milk_slime",
+      "pos": [
+        568,
+        1216
+      ],
+      "platform_id": "cave_floor",
+      "patrol_bounds": [
+        490,
+        650
+      ]
+    },
+    {
+      "spawn_id": "f02_cave_floor_r",
+      "enemy_id": "vine_flower",
+      "pos": [
+        736,
+        1216
+      ],
+      "platform_id": "cave_floor",
+      "patrol_bounds": [
+        736,
+        736
+      ]
+    },
+    {
+      "spawn_id": "f02_hollow_l",
+      "enemy_id": "milk_slime",
+      "pos": [
+        1424,
+        1120
+      ],
+      "platform_id": "center_low_l",
+      "patrol_bounds": [
+        1384,
+        1480
+      ]
+    },
+    {
+      "spawn_id": "f02_hollow_r",
+      "enemy_id": "moss_beetle",
+      "pos": [
+        1840,
+        1120
+      ],
+      "platform_id": "center_low_r",
+      "patrol_bounds": [
+        1800,
+        1890
+      ]
+    },
+    {
+      "spawn_id": "f02_root_bridge_guard",
+      "enemy_id": "vine_flower",
+      "pos": [
+        1576,
+        1488
+      ],
+      "platform_id": "root_bridge",
+      "patrol_bounds": [
+        1576,
+        1576
+      ]
+    },
+    {
+      "spawn_id": "f02_root_w",
+      "enemy_id": "milk_slime",
+      "pos": [
+        1440,
+        1584
+      ],
+      "platform_id": "root_high_floor",
+      "patrol_bounds": [
+        1320,
+        1530
+      ]
+    },
+    {
+      "spawn_id": "f02_root_c",
+      "enemy_id": "moss_beetle",
+      "pos": [
+        1640,
+        1584
+      ],
+      "platform_id": "root_high_floor",
+      "patrol_bounds": [
+        1560,
+        1710
+      ]
+    },
+    {
+      "spawn_id": "f02_root_e",
+      "enemy_id": "milk_slime",
+      "pos": [
+        1736,
+        1584
+      ],
+      "platform_id": "root_high_floor",
+      "patrol_bounds": [
+        1680,
+        1850
+      ]
+    }
+  ],
+  "shortcut_gate": {
+    "id": "CanopyShortcutGate",
+    "pos": [
+      2728,
+      200
+    ],
+    "size": [
+      24,
+      208
+    ],
+    "visual_size": [
+      48,
+      224
+    ],
+    "clear_flag": "forest_02_canopy_link"
+  }
+}

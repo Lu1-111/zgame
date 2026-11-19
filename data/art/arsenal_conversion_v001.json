@@ -1,0 +1,825 @@
+{
+  "tool": "tools/assets/convert_arsenal_art.py",
+  "tool_version": "Version: ImageMagick 7.1.2-36 Q8 x64 dcec873:20261116 https://imagemagick.org",
+  "conversions": [
+    {
+      "id": "rifle_02",
+      "source": "res://assets/RAW/weapons/rifle_02/v001/source.png",
+      "source_pixels": [
+        1774,
+        887
+      ],
+      "source_crop": [
+        114,
+        110,
+        1657,
+        810
+      ],
+      "sampled_pixels": [
+        34,
+        15
+      ],
+      "offset": [
+        7,
+        4
+      ],
+      "canvas_pixels": [
+        48,
+        24
+      ],
+      "anchor": [
+        18,
+        12
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "resampling_passes": 1,
+      "sampling": "ImageMagick Point, hard alpha, no dither",
+      "palette": "shared",
+      "source_sha256": "d32cd38cbe9a31e6e5dd353710b8b64e44717aadf959a53d43318ddaf6710ff9",
+      "output_sha256": "90fcba943ac1e4cff694360f91a546183742b2200aa1634a7d7f7c08afe682c7"
+    },
+    {
+      "id": "rifle_03",
+      "source": "res://assets/RAW/weapons/rifle_03/v001/source.png",
+      "source_pixels": [
+        1774,
+        887
+      ],
+      "source_crop": [
+        125,
+        232,
+        1648,
+        691
+      ],
+      "sampled_pixels": [
+        34,
+        10
+      ],
+      "offset": [
+        7,
+        7
+      ],
+      "canvas_pixels": [
+        48,
+        24
+      ],
+      "anchor": [
+        18,
+        12
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "resampling_passes": 1,
+      "sampling": "ImageMagick Point, hard alpha, no dither",
+      "palette": "shared",
+      "source_sha256": "aac88abd55a0058e1c3a86e77f9ca5179721c958ea5ed9fcf8fbed4edf794a20",
+      "output_sha256": "d608fb5559e3494275136b268c8a1be989556cd210805c105b46bf42428f6844"
+    },
+    {
+      "id": "rifle_04",
+      "source": "res://assets/RAW/weapons/rifle_04/v001/source.png",
+      "source_pixels": [
+        1774,
+        887
+      ],
+      "source_crop": [
+        87,
+        268,
+        1687,
+        676
+      ],
+      "sampled_pixels": [
+        34,
+        9
+      ],
+      "offset": [
+        7,
+        7
+      ],
+      "canvas_pixels": [
+        48,
+        24
+      ],
+      "anchor": [
+        18,
+        12
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "resampling_passes": 1,
+      "sampling": "ImageMagick Point, hard alpha, no dither",
+      "palette": "shared",
+      "source_sha256": "92e690b477b74f299b2d249717e222b0bae5cff5dd0f60b9d77b070783136631",
+      "output_sha256": "6aca0abc68869e5ff1ab56deccfe053e4e11ceee796f159501874981d716c970"
+    },
+    {
+      "id": "rifle_05",
+      "source": "res://assets/RAW/weapons/rifle_05/v001/source.png",
+      "source_pixels": [
+        1774,
+        887
+      ],
+      "source_crop": [
+        40,
+        82,
+        1734,
+        818
+      ],
+      "sampled_pixels": [
+        34,
+        15
+      ],
+      "offset": [
+        7,
+        4
+      ],
+      "canvas_pixels": [
+        48,
+        24
+      ],
+      "anchor": [
+        18,
+        12
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "resampling_passes": 1,
+      "sampling": "ImageMagick Point, hard alpha, no dither",
+      "palette": "iron",
+      "source_sha256": "4aa74838e4164d7b767a9e62c9994b9ea2d149838ec8966a9c07aaed0ff9bdf2",
+      "output_sha256": "73a1cc1bde466d84900e5511b5b7e5f05881e900958a93e78a4e6d807cf4db78"
+    },
+    {
+      "id": "rifle_06",
+      "source": "res://assets/RAW/weapons/rifle_06/v001/source.png",
+      "source_pixels": [
+        1774,
+        887
+      ],
+      "source_crop": [
+        150,
+        185,
+        1628,
+        713
+      ],
+      "sampled_pixels": [
+        34,
+        12
+      ],
+      "offset": [
+        7,
+        6
+      ],
+      "canvas_pixels": [
+        48,
+        24
+      ],
+      "anchor": [
+        18,
+        12
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "resampling_passes": 1,
+      "sampling": "ImageMagick Point, hard alpha, no dither",
+      "palette": "shared",
+      "source_sha256": "6c572396ce40891a5a197f950c65cd80077ab0a67d2f44ba5d891f48e5870dd0",
+      "output_sha256": "e28266d51456c506c597b64adfb0316657ce4645940e39f04410e0ca8b0e4c4b"
+    },
+    {
+      "id": "accessory_01",
+      "source": "res://assets/RAW/accessories/accessory_01/v001/source.png",
+      "source_pixels": [
+        1262,
+        1246
+      ],
+      "source_crop": [
+        265,
+        157,
+        948,
+        1132
+      ],
+      "sampled_pixels": [
+        17,
+        24
+      ],
+      "offset": [
+        7,
+        4
+      ],
+      "canvas_pixels": [
+        32,
+        32
+      ],
+      "anchor": [
+        16,
+        16
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "resampling_passes": 1,
+      "sampling": "ImageMagick Point, hard alpha, no dither",
+      "palette": "shared",
+      "source_sha256": "ac10a9d9664e582f8c233b318e09fbae1e8760cc69bca1d51cfa4aec5bd6ef4c",
+      "output_sha256": "b09d8a82ec3e30e86c6db3e8ce7e2033c3bc2b5571d2cdc3399f77d7c2b597a1"
+    },
+    {
+      "id": "accessory_02",
+      "source": "res://assets/RAW/accessories/accessory_02/v001/source.png",
+      "source_pixels": [
+        1261,
+        1247
+      ],
+      "source_crop": [
+        256,
+        103,
+        1006,
+        1160
+      ],
+      "sampled_pixels": [
+        17,
+        24
+      ],
+      "offset": [
+        7,
+        4
+      ],
+      "canvas_pixels": [
+        32,
+        32
+      ],
+      "anchor": [
+        16,
+        16
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "resampling_passes": 1,
+      "sampling": "ImageMagick Point, hard alpha, no dither",
+      "palette": "shared",
+      "source_sha256": "763255e35eb8a1c4e0c8a79a9e4e3abb800e986c36f27348ebadadcfcfdc29d3",
+      "output_sha256": "f846d1f00db095f46778d79e6086b19937d43e2ee5c3a16af9217ae8b6fc822e"
+    },
+    {
+      "id": "accessory_03",
+      "source": "res://assets/RAW/accessories/accessory_03/v001/source.png",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "source_crop": [
+        201,
+        353,
+        979,
+        1122
+      ],
+      "sampled_pixels": [
+        24,
+        24
+      ],
+      "offset": [
+        4,
+        4
+      ],
+      "canvas_pixels": [
+        32,
+        32
+      ],
+      "anchor": [
+        16,
+        16
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "resampling_passes": 1,
+      "sampling": "ImageMagick Point, hard alpha, no dither",
+      "palette": "shared",
+      "source_sha256": "5510c1802d870ce005f3006a296330d40fa8dc3ed494d5c4631a46d8db230310",
+      "output_sha256": "63126371872c970724e2d5b0a3e564a497272fe2cd21b59b2a9df463229ba626"
+    },
+    {
+      "id": "accessory_04",
+      "source": "res://assets/RAW/accessories/accessory_04/v001/source.png",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "source_crop": [
+        391,
+        55,
+        886,
+        1207
+      ],
+      "sampled_pixels": [
+        10,
+        24
+      ],
+      "offset": [
+        11,
+        4
+      ],
+      "canvas_pixels": [
+        32,
+        32
+      ],
+      "anchor": [
+        16,
+        16
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "resampling_passes": 1,
+      "sampling": "ImageMagick Point, hard alpha, no dither",
+      "palette": "shared",
+      "source_sha256": "eb0f4dea18147cd32a7e9178b921e28066600b8b2230227c94818212d7931a7d",
+      "output_sha256": "0c207353a9c1ac21521fb3dab981ee13133abbb35b482fdb205e9c2d3a0dc1da"
+    },
+    {
+      "id": "accessory_05",
+      "source": "res://assets/RAW/accessories/accessory_05/v001/source.png",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "source_crop": [
+        128,
+        120,
+        1121,
+        1152
+      ],
+      "sampled_pixels": [
+        23,
+        24
+      ],
+      "offset": [
+        4,
+        4
+      ],
+      "canvas_pixels": [
+        32,
+        32
+      ],
+      "anchor": [
+        16,
+        16
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "resampling_passes": 1,
+      "sampling": "ImageMagick Point, hard alpha, no dither",
+      "palette": "shared",
+      "source_sha256": "b436430c0b1e48f38ab6f839c180215f79b459d8f65c7d2f3c55eabe97b1fb77",
+      "output_sha256": "d2496081cddc29e11a63d1f5a7641c1364918a6bcd9bd605ca808497728ea301"
+    },
+    {
+      "id": "accessory_06",
+      "source": "res://assets/RAW/accessories/accessory_06/v001/source.png",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "source_crop": [
+        291,
+        142,
+        963,
+        1176
+      ],
+      "sampled_pixels": [
+        16,
+        24
+      ],
+      "offset": [
+        8,
+        4
+      ],
+      "canvas_pixels": [
+        32,
+        32
+      ],
+      "anchor": [
+        16,
+        16
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "resampling_passes": 1,
+      "sampling": "ImageMagick Point, hard alpha, no dither",
+      "palette": "shared",
+      "source_sha256": "15e8bef3fddbcfb458ae08f58ad3480ecea440bfb190bd83d4b371d64807f36d",
+      "output_sha256": "fe1c86ff0fed73f3ac97b27b7a97106b13683edd499161b52bb4edeeeffae676"
+    },
+    {
+      "id": "accessory_07",
+      "source": "res://assets/RAW/accessories/accessory_07/v001/source.png",
+      "source_pixels": [
+        1261,
+        1247
+      ],
+      "source_crop": [
+        276,
+        268,
+        992,
+        1047
+      ],
+      "sampled_pixels": [
+        22,
+        24
+      ],
+      "offset": [
+        5,
+        4
+      ],
+      "canvas_pixels": [
+        32,
+        32
+      ],
+      "anchor": [
+        16,
+        16
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "resampling_passes": 1,
+      "sampling": "ImageMagick Point, hard alpha, no dither",
+      "palette": "shared",
+      "source_sha256": "2490054ecdef2bb499504c4f4b0c997a1e5e6b5e57c8399133429f573526f3d0",
+      "output_sha256": "0fd36de467a0ba53e32e02055bfed7a3e3fa80f9050d13ab7f8001674d04d4f7"
+    },
+    {
+      "id": "accessory_08",
+      "source": "res://assets/RAW/accessories/accessory_08/v001/source.png",
+      "source_pixels": [
+        1536,
+        1024
+      ],
+      "source_crop": [
+        418,
+        318,
+        1108,
+        718
+      ],
+      "sampled_pixels": [
+        24,
+        14
+      ],
+      "offset": [
+        4,
+        9
+      ],
+      "canvas_pixels": [
+        32,
+        32
+      ],
+      "anchor": [
+        16,
+        16
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "resampling_passes": 1,
+      "sampling": "ImageMagick Point, hard alpha, no dither",
+      "palette": "shared",
+      "source_sha256": "e3cc9b5dc7b9dc54a6cba0518a7b9b1dd17caf3ea4f3040ab89940aa1eecbc39",
+      "output_sha256": "ce3a0acb1c8637b792b534eb14e1fa8fb979e2f5e732d5bc51a20d538ec2dc8d"
+    },
+    {
+      "id": "accessory_09",
+      "source": "res://assets/RAW/accessories/accessory_09/v001/source.png",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "source_crop": [
+        240,
+        197,
+        1014,
+        1062
+      ],
+      "sampled_pixels": [
+        21,
+        24
+      ],
+      "offset": [
+        5,
+        4
+      ],
+      "canvas_pixels": [
+        32,
+        32
+      ],
+      "anchor": [
+        16,
+        16
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "resampling_passes": 1,
+      "sampling": "ImageMagick Point, hard alpha, no dither",
+      "palette": "shared",
+      "source_sha256": "09154974f8c8e00dae4228b122700d3756b3677286b9874be56602b1aa971830",
+      "output_sha256": "b9b1f16723e571844795cfc7078892eb10ec261cc08d22badd2052913c162ccb"
+    },
+    {
+      "id": "accessory_10",
+      "source": "res://assets/RAW/accessories/accessory_10/v001/source.png",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "source_crop": [
+        287,
+        331,
+        971,
+        994
+      ],
+      "sampled_pixels": [
+        24,
+        23
+      ],
+      "offset": [
+        4,
+        4
+      ],
+      "canvas_pixels": [
+        32,
+        32
+      ],
+      "anchor": [
+        16,
+        16
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "resampling_passes": 1,
+      "sampling": "ImageMagick Point, hard alpha, no dither",
+      "palette": "shared",
+      "source_sha256": "17b18cf72ac9a2175371c22ded55659a6dd7416c043dba3a949c3c957cf65b1c",
+      "output_sha256": "d866c90c3c722b679a295b42690cfc26a651664cd8afb62a38d019147e045734"
+    },
+    {
+      "id": "accessory_11",
+      "source": "res://assets/RAW/accessories/accessory_11/v001/source.png",
+      "source_pixels": [
+        1312,
+        1199
+      ],
+      "source_crop": [
+        277,
+        168,
+        1028,
+        1041
+      ],
+      "sampled_pixels": [
+        21,
+        24
+      ],
+      "offset": [
+        5,
+        4
+      ],
+      "canvas_pixels": [
+        32,
+        32
+      ],
+      "anchor": [
+        16,
+        16
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "resampling_passes": 1,
+      "sampling": "ImageMagick Point, hard alpha, no dither",
+      "palette": "shared",
+      "source_sha256": "35c2b2bfd4da27f6fce5322b930037f0d18f59a51815e0f4035154826c864aa6",
+      "output_sha256": "b6bd27acf036a4b12f2c8514771155831fd832f3ade69126dc16e447ea2d4ecc"
+    },
+    {
+      "id": "accessory_12",
+      "source": "res://assets/RAW/accessories/accessory_12/v001/source.png",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "source_crop": [
+        205,
+        238,
+        1050,
+        1077
+      ],
+      "sampled_pixels": [
+        24,
+        24
+      ],
+      "offset": [
+        4,
+        4
+      ],
+      "canvas_pixels": [
+        32,
+        32
+      ],
+      "anchor": [
+        16,
+        16
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "resampling_passes": 1,
+      "sampling": "ImageMagick Point, hard alpha, no dither",
+      "palette": "shared",
+      "source_sha256": "f4750d5b5ef5190811b712fbefb4468f4634231bc5320d7e061e304767e830f0",
+      "output_sha256": "4e44c5e27f576b4fc0191cec9809b7284303b8a87f1126625a545dd1c0c66a69"
+    },
+    {
+      "id": "accessory_13",
+      "source": "res://assets/RAW/accessories/accessory_13/v001/source.png",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "source_crop": [
+        223,
+        223,
+        1032,
+        1057
+      ],
+      "sampled_pixels": [
+        23,
+        24
+      ],
+      "offset": [
+        4,
+        4
+      ],
+      "canvas_pixels": [
+        32,
+        32
+      ],
+      "anchor": [
+        16,
+        16
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "resampling_passes": 1,
+      "sampling": "ImageMagick Point, hard alpha, no dither",
+      "palette": "shared",
+      "source_sha256": "19cbbf4f76a90e2702574456879a6e28587be60af3aaa13aad44bc764af5168f",
+      "output_sha256": "fd0f3e5a1098be1e94fef43294f8ab35315d239bfe266bc7bac857dc4d4fbba2"
+    },
+    {
+      "id": "accessory_14",
+      "source": "res://assets/RAW/accessories/accessory_14/v001/source.png",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "source_crop": [
+        330,
+        209,
+        932,
+        1092
+      ],
+      "sampled_pixels": [
+        16,
+        24
+      ],
+      "offset": [
+        8,
+        4
+      ],
+      "canvas_pixels": [
+        32,
+        32
+      ],
+      "anchor": [
+        16,
+        16
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "resampling_passes": 1,
+      "sampling": "ImageMagick Point, hard alpha, no dither",
+      "palette": "shared",
+      "source_sha256": "0c6792986d44d54d8e118e0c7df339b34dfd9d5c6eb6b9ef509e2d3586ddd572",
+      "output_sha256": "7469ade667abf152022da17591deebc7b1cc9a9ac0ef2cf3fb47691ecd457dd4"
+    },
+    {
+      "id": "accessory_15",
+      "source": "res://assets/RAW/accessories/accessory_15/v001/source.png",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "source_crop": [
+        391,
+        115,
+        850,
+        1139
+      ],
+      "sampled_pixels": [
+        11,
+        24
+      ],
+      "offset": [
+        10,
+        4
+      ],
+      "canvas_pixels": [
+        32,
+        32
+      ],
+      "anchor": [
+        16,
+        16
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "resampling_passes": 1,
+      "sampling": "ImageMagick Point, hard alpha, no dither",
+      "palette": "shared",
+      "source_sha256": "d73c18f006769bfdcab05a3515e1dfbef361303d1245e9c0645b4deeff4d8cd1",
+      "output_sha256": "a8b7b9778c39749ff737ef63f12bd38116063fc226567e5a04e801dac25de47f"
+    },
+    {
+      "id": "accessory_16",
+      "source": "res://assets/RAW/accessories/accessory_16/v001/source.png",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "source_crop": [
+        287,
+        185,
+        968,
+        1091
+      ],
+      "sampled_pixels": [
+        18,
+        24
+      ],
+      "offset": [
+        7,
+        4
+      ],
+      "canvas_pixels": [
+        32,
+        32
+      ],
+      "anchor": [
+        16,
+        16
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "resampling_passes": 1,
+      "sampling": "ImageMagick Point, hard alpha, no dither",
+      "palette": "shared",
+      "source_sha256": "f1b90bd38242a9091e20f4937ade8a600e4400055451b8b90c8c9dfc3ce7bf74",
+      "output_sha256": "cef2eb4a633b7cbef4f7a4be412746d0daf370eb934f6bdf40969a27cfb93fc7"
+    }
+  ]
+}

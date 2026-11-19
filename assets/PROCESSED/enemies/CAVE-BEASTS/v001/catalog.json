@@ -1,0 +1,45 @@
+{
+  "batch": "CAVE-BEASTS",
+  "version": "v001",
+  "pixel_spec": "res://assets/RAW/enemies/CAVE-BEASTS/v001/pixel_spec.json",
+  "prompts": "res://assets/RAW/enemies/CAVE-BEASTS/v001/prompts.json",
+  "enemies": {
+    "stonehelm_beast": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/catalog.json",
+    "cave_spider": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/catalog.json",
+    "animated_crystal": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/animated_crystal/catalog.json",
+    "cavern_hunter": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/catalog.json"
+  },
+  "effects": {
+    "web_thread": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/effects/web_thread/catalog.json",
+    "sharp_crystal": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/effects/sharp_crystal/catalog.json",
+    "ground_shockwave": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/effects/ground_shockwave/catalog.json"
+  },
+  "palette": [
+    "#10131d",
+    "#202431",
+    "#343a49",
+    "#525c6c",
+    "#8794a0",
+    "#c5ced0",
+    "#edf1e9",
+    "#49403c",
+    "#77614f",
+    "#b59970",
+    "#e6d5ab",
+    "#187180",
+    "#65d1d5",
+    "#d9ffff",
+    "#292e3c",
+    "#424959"
+  ],
+  "native_pixel_scale": 1,
+  "runtime_scale": [
+    1,
+    1
+  ],
+  "stats": "unassigned placeholders, no combat balancing authored",
+  "generation": "Source: built-in imagegen. Runtime conversion: ImageMagick point sampling, hard alpha, no averaging.",
+  "pixel_conversion": "res://data/art/cave_enemy_imagemagick.json",
+  "art_revision": "imagemagick_v002",
+  "processing": "ImageMagick point sampling from RAW; no dithering; shared 16-color palette; fixed native canvas and anchor"
+}

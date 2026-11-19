@@ -20,7 +20,7 @@
 
 ## Godot 接入
 
-已在 `scenes/levels/test_arena.tscn` 布置 6 个实例，进入试玩场即可看到巡逻；靠近 NPC 显示“E 交谈”，按 E 进入对话，再按 E 推进/关闭。
+已在 `test/scenes/arenas/test_arena.tscn` 布置 6 个实例，进入试玩场即可看到巡逻；靠近 NPC 显示“E 交谈”，按 E 进入对话，再按 E 推进/关闭。
 
 - 可复用场景：`scenes/npcs/npc.tscn`，实例覆写 `frames`、姓名、台词和巡逻半径。
 - 控制脚本：`scripts/world/npc.gd`。

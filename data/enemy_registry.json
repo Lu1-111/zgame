@@ -1,0 +1,1217 @@
+{
+  "schema": 1,
+  "date": "2026-11-18",
+  "id_policy": "Four digit strings, globally unique, append only, never renumber/reuse; runtime and historical art IDs are aliases, not numeric IDs.",
+  "next_numeric_id": "0025",
+  "entries": [
+    {
+      "numeric_id": "0001",
+      "runtime_id": "moss_beetle",
+      "name": "苔甲虫",
+      "category": "small",
+      "aliases": [],
+      "variant_of": null,
+      "source": {
+        "file": "data/enemies.json",
+        "collection": "enemies",
+        "id": "moss_beetle"
+      },
+      "draft": {},
+      "moves": {},
+      "loot": {
+        "item_drops": null,
+        "drop_rolls": null,
+        "note": "待制作人设定；当前通用战斗只发放经验与奶币。"
+      },
+      "notes": "",
+      "combat_ready": true
+    },
+    {
+      "numeric_id": "0002",
+      "runtime_id": "milk_moth",
+      "name": "飞奶蛾",
+      "category": "small",
+      "aliases": [],
+      "variant_of": null,
+      "source": {
+        "file": "data/enemies.json",
+        "collection": "enemies",
+        "id": "milk_moth"
+      },
+      "draft": {},
+      "moves": {},
+      "loot": {
+        "item_drops": null,
+        "drop_rolls": null,
+        "note": "待制作人设定；当前通用战斗只发放经验与奶币。"
+      },
+      "notes": "",
+      "combat_ready": true
+    },
+    {
+      "numeric_id": "0003",
+      "runtime_id": "milk_slime",
+      "name": "奶滴史莱姆",
+      "category": "small",
+      "aliases": [],
+      "variant_of": null,
+      "source": {
+        "file": "data/enemies.json",
+        "collection": "enemies",
+        "id": "milk_slime"
+      },
+      "draft": {},
+      "moves": {
+        "planned_split": {
+          "damage_multiplier": null,
+          "damage_type": null,
+          "windup_seconds": null,
+          "active_seconds": null,
+          "recovery_seconds": null,
+          "cooldown_seconds": null,
+          "attack_hit_start": null,
+          "attack_hit_end": null,
+          "attack_range": null,
+          "hitbox_size": null,
+          "hitbox_offset": null,
+          "attack_knockback": null,
+          "poise_damage": null,
+          "projectile_id": null,
+          "count": null,
+          "lifetime_seconds": null,
+          "probability": null
+        }
+      },
+      "loot": {
+        "item_drops": null,
+        "drop_rolls": null,
+        "note": "待制作人设定；当前通用战斗只发放经验与奶币。"
+      },
+      "notes": "",
+      "combat_ready": true
+    },
+    {
+      "numeric_id": "0004",
+      "runtime_id": "vine_flower",
+      "name": "藤鞭花",
+      "category": "small",
+      "aliases": [],
+      "variant_of": null,
+      "source": {
+        "file": "data/enemies.json",
+        "collection": "enemies",
+        "id": "vine_flower"
+      },
+      "draft": {},
+      "moves": {},
+      "loot": {
+        "item_drops": null,
+        "drop_rolls": null,
+        "note": "待制作人设定；当前通用战斗只发放经验与奶币。"
+      },
+      "notes": "",
+      "combat_ready": true
+    },
+    {
+      "numeric_id": "0005",
+      "runtime_id": "lamp_bug",
+      "name": "矿灯虫",
+      "category": "small",
+      "aliases": [
+        "lamp_beetle"
+      ],
+      "variant_of": null,
+      "source": {
+        "file": "data/enemies.json",
+        "collection": "enemies",
+        "id": "lamp_bug"
+      },
+      "draft": {},
+      "moves": {
+        "planned_glow": {
+          "damage_multiplier": null,
+          "damage_type": null,
+          "windup_seconds": null,
+          "active_seconds": null,
+          "recovery_seconds": null,
+          "cooldown_seconds": null,
+          "attack_hit_start": null,
+          "attack_hit_end": null,
+          "attack_range": null,
+          "hitbox_size": null,
+          "hitbox_offset": null,
+          "attack_knockback": null,
+          "poise_damage": null,
+          "projectile_id": null,
+          "count": null,
+          "lifetime_seconds": null,
+          "probability": null
+        }
+      },
+      "loot": {
+        "item_drops": null,
+        "drop_rolls": null,
+        "note": "待制作人设定；当前通用战斗只发放经验与奶币。"
+      },
+      "notes": "",
+      "combat_ready": true
+    },
+    {
+      "numeric_id": "0006",
+      "runtime_id": "shadow_wisp",
+      "name": "暗影奶灵",
+      "category": "small",
+      "aliases": [
+        "shadow_wraith"
+      ],
+      "variant_of": null,
+      "source": {
+        "file": "data/enemies.json",
+        "collection": "enemies",
+        "id": "shadow_wisp"
+      },
+      "draft": {},
+      "moves": {},
+      "loot": {
+        "item_drops": null,
+        "drop_rolls": null,
+        "note": "待制作人设定；当前通用战斗只发放经验与奶币。"
+      },
+      "notes": "",
+      "combat_ready": true
+    },
+    {
+      "numeric_id": "0007",
+      "runtime_id": "acid_slug",
+      "name": "酸液蛞",
+      "category": "small",
+      "aliases": [],
+      "variant_of": null,
+      "source": {
+        "file": "data/enemies.json",
+        "collection": "enemies",
+        "id": "acid_slug"
+      },
+      "draft": {},
+      "moves": {
+        "planned_acid_trail": {
+          "damage_multiplier": null,
+          "damage_type": null,
+          "windup_seconds": null,
+          "active_seconds": null,
+          "recovery_seconds": null,
+          "cooldown_seconds": null,
+          "attack_hit_start": null,
+          "attack_hit_end": null,
+          "attack_range": null,
+          "hitbox_size": null,
+          "hitbox_offset": null,
+          "attack_knockback": null,
+          "poise_damage": null,
+          "projectile_id": null,
+          "count": null,
+          "lifetime_seconds": null,
+          "probability": null
+        }
+      },
+      "loot": {
+        "item_drops": null,
+        "drop_rolls": null,
+        "note": "待制作人设定；当前通用战斗只发放经验与奶币。"
+      },
+      "notes": "",
+      "combat_ready": true
+    },
+    {
+      "numeric_id": "0008",
+      "runtime_id": "wax_bee",
+      "name": "蜜蜡蜂",
+      "category": "small",
+      "aliases": [],
+      "variant_of": null,
+      "source": {
+        "file": "data/enemies.json",
+        "collection": "enemies",
+        "id": "wax_bee"
+      },
+      "draft": {},
+      "moves": {},
+      "loot": {
+        "item_drops": null,
+        "drop_rolls": null,
+        "note": "待制作人设定；当前通用战斗只发放经验与奶币。"
+      },
+      "notes": "",
+      "combat_ready": true
+    },
+    {
+      "numeric_id": "0009",
+      "runtime_id": "moss_guard",
+      "name": "苔甲卫",
+      "category": "elite",
+      "aliases": [],
+      "variant_of": null,
+      "source": {
+        "file": "data/enemies.json",
+        "collection": "enemies",
+        "id": "moss_guard"
+      },
+      "draft": {},
+      "moves": {
+        "planned_shield": {
+          "damage_multiplier": null,
+          "damage_type": null,
+          "windup_seconds": null,
+          "active_seconds": null,
+          "recovery_seconds": null,
+          "cooldown_seconds": null,
+          "attack_hit_start": null,
+          "attack_hit_end": null,
+          "attack_range": null,
+          "hitbox_size": null,
+          "hitbox_offset": null,
+          "attack_knockback": null,
+          "poise_damage": null,
+          "projectile_id": null,
+          "count": null,
+          "lifetime_seconds": null,
+          "probability": null
+        }
+      },
+      "loot": {
+        "item_drops": null,
+        "drop_rolls": null,
+        "note": "待制作人设定；当前通用战斗只发放经验与奶币。"
+      },
+      "notes": "",
+      "combat_ready": true
+    },
+    {
+      "numeric_id": "0010",
+      "runtime_id": "hive_guard",
+      "name": "蜂巢守卫",
+      "category": "elite",
+      "aliases": [],
+      "variant_of": null,
+      "source": {
+        "file": "data/enemies.json",
+        "collection": "enemies",
+        "id": "hive_guard"
+      },
+      "draft": {},
+      "moves": {
+        "planned_summon": {
+          "damage_multiplier": null,
+          "damage_type": null,
+          "windup_seconds": null,
+          "active_seconds": null,
+          "recovery_seconds": null,
+          "cooldown_seconds": null,
+          "attack_hit_start": null,
+          "attack_hit_end": null,
+          "attack_range": null,
+          "hitbox_size": null,
+          "hitbox_offset": null,
+          "attack_knockback": null,
+          "poise_damage": null,
+          "projectile_id": null,
+          "count": null,
+          "lifetime_seconds": null,
+          "probability": null
+        }
+      },
+      "loot": {
+        "item_drops": null,
+        "drop_rolls": null,
+        "note": "待制作人设定；当前通用战斗只发放经验与奶币。"
+      },
+      "notes": "",
+      "combat_ready": true
+    },
+    {
+      "numeric_id": "0011",
+      "runtime_id": "acid_mother",
+      "name": "酸液母体",
+      "category": "elite",
+      "aliases": [],
+      "variant_of": null,
+      "source": {
+        "file": "data/enemies.json",
+        "collection": "enemies",
+        "id": "acid_mother"
+      },
+      "draft": {},
+      "moves": {
+        "planned_split": {
+          "damage_multiplier": null,
+          "damage_type": null,
+          "windup_seconds": null,
+          "active_seconds": null,
+          "recovery_seconds": null,
+          "cooldown_seconds": null,
+          "attack_hit_start": null,
+          "attack_hit_end": null,
+          "attack_range": null,
+          "hitbox_size": null,
+          "hitbox_offset": null,
+          "attack_knockback": null,
+          "poise_damage": null,
+          "projectile_id": null,
+          "count": null,
+          "lifetime_seconds": null,
+          "probability": null
+        },
+        "planned_spray": {
+          "damage_multiplier": null,
+          "damage_type": null,
+          "windup_seconds": null,
+          "active_seconds": null,
+          "recovery_seconds": null,
+          "cooldown_seconds": null,
+          "attack_hit_start": null,
+          "attack_hit_end": null,
+          "attack_range": null,
+          "hitbox_size": null,
+          "hitbox_offset": null,
+          "attack_knockback": null,
+          "poise_damage": null,
+          "projectile_id": null,
+          "count": null,
+          "lifetime_seconds": null,
+          "probability": null
+        }
+      },
+      "loot": {
+        "item_drops": null,
+        "drop_rolls": null,
+        "note": "待制作人设定；当前通用战斗只发放经验与奶币。"
+      },
+      "notes": "",
+      "combat_ready": true
+    },
+    {
+      "numeric_id": "0012",
+      "runtime_id": "honey_queen",
+      "name": "蜂蜜女王",
+      "category": "boss",
+      "aliases": [],
+      "variant_of": null,
+      "source": {
+        "file": "data/enemies.json",
+        "collection": "enemies",
+        "id": "honey_queen"
+      },
+      "draft": {},
+      "moves": {
+        "planned_summon": {
+          "damage_multiplier": null,
+          "damage_type": null,
+          "windup_seconds": null,
+          "active_seconds": null,
+          "recovery_seconds": null,
+          "cooldown_seconds": null,
+          "attack_hit_start": null,
+          "attack_hit_end": null,
+          "attack_range": null,
+          "hitbox_size": null,
+          "hitbox_offset": null,
+          "attack_knockback": null,
+          "poise_damage": null,
+          "projectile_id": null,
+          "count": null,
+          "lifetime_seconds": null,
+          "probability": null
+        },
+        "planned_spray": {
+          "damage_multiplier": null,
+          "damage_type": null,
+          "windup_seconds": null,
+          "active_seconds": null,
+          "recovery_seconds": null,
+          "cooldown_seconds": null,
+          "attack_hit_start": null,
+          "attack_hit_end": null,
+          "attack_range": null,
+          "hitbox_size": null,
+          "hitbox_offset": null,
+          "attack_knockback": null,
+          "poise_damage": null,
+          "projectile_id": null,
+          "count": null,
+          "lifetime_seconds": null,
+          "probability": null
+        }
+      },
+      "loot": {
+        "item_drops": null,
+        "drop_rolls": null,
+        "note": "待制作人设定；当前通用战斗只发放经验与奶币。"
+      },
+      "notes": "",
+      "combat_ready": true
+    },
+    {
+      "numeric_id": "0013",
+      "runtime_id": "corrumpt",
+      "name": "奶化病毒催化体-克拉弗特",
+      "category": "boss",
+      "aliases": [
+        "claffert",
+        "BOSS-CLAFFERT"
+      ],
+      "variant_of": null,
+      "source": {
+        "file": "data/bosses/claffert.json"
+      },
+      "draft": {},
+      "moves": {},
+      "loot": {
+        "item_drops": null,
+        "drop_rolls": null,
+        "note": "待制作人设定；当前通用战斗只发放经验与奶币。"
+      },
+      "notes": "",
+      "combat_ready": true
+    },
+    {
+      "numeric_id": "0014",
+      "runtime_id": "milk_goblin",
+      "name": "奶罐哥布林",
+      "category": "small",
+      "aliases": [],
+      "variant_of": null,
+      "source": null,
+      "draft": {
+        "base_hp": null,
+        "base_damage": null,
+        "defense": null,
+        "poise": null,
+        "resist": {
+          "physical": null,
+          "magic": null
+        },
+        "tier": null,
+        "exp": null,
+        "coin_drop": null,
+        "item_drops": null,
+        "ai": {
+          "type": null,
+          "patrol_speed": null,
+          "chase_speed": null,
+          "attack_range": null,
+          "telegraph_time": null,
+          "features": []
+        }
+      },
+      "moves": {
+        "attack": {
+          "damage_multiplier": null,
+          "damage_type": null,
+          "windup_seconds": null,
+          "active_seconds": null,
+          "recovery_seconds": null,
+          "cooldown_seconds": null,
+          "attack_hit_start": null,
+          "attack_hit_end": null,
+          "attack_range": null,
+          "hitbox_size": null,
+          "hitbox_offset": null,
+          "attack_knockback": null,
+          "poise_damage": null,
+          "projectile_id": null
+        }
+      },
+      "loot": {
+        "item_drops": null,
+        "drop_rolls": null,
+        "note": "待制作人设定；当前通用战斗只发放经验与奶币。"
+      },
+      "notes": "",
+      "combat_ready": false
+    },
+    {
+      "numeric_id": "0015",
+      "runtime_id": "moss_fox",
+      "name": "苔原奶狐",
+      "category": "small",
+      "aliases": [],
+      "variant_of": null,
+      "source": null,
+      "draft": {
+        "base_hp": null,
+        "base_damage": null,
+        "defense": null,
+        "poise": null,
+        "resist": {
+          "physical": null,
+          "magic": null
+        },
+        "tier": null,
+        "exp": null,
+        "coin_drop": null,
+        "item_drops": null,
+        "ai": {
+          "type": null,
+          "patrol_speed": null,
+          "chase_speed": null,
+          "attack_range": null,
+          "telegraph_time": null,
+          "features": []
+        }
+      },
+      "moves": {
+        "attack": {
+          "damage_multiplier": null,
+          "damage_type": null,
+          "windup_seconds": null,
+          "active_seconds": null,
+          "recovery_seconds": null,
+          "cooldown_seconds": null,
+          "attack_hit_start": null,
+          "attack_hit_end": null,
+          "attack_range": null,
+          "hitbox_size": null,
+          "hitbox_offset": null,
+          "attack_knockback": null,
+          "poise_damage": null,
+          "projectile_id": null
+        }
+      },
+      "loot": {
+        "item_drops": null,
+        "drop_rolls": null,
+        "note": "待制作人设定；当前通用战斗只发放经验与奶币。"
+      },
+      "notes": "",
+      "combat_ready": false
+    },
+    {
+      "numeric_id": "0016",
+      "runtime_id": "frost_sprite",
+      "name": "霜晶冰灵",
+      "category": "small",
+      "aliases": [],
+      "variant_of": null,
+      "source": null,
+      "draft": {
+        "base_hp": null,
+        "base_damage": null,
+        "defense": null,
+        "poise": null,
+        "resist": {
+          "physical": null,
+          "magic": null
+        },
+        "tier": null,
+        "exp": null,
+        "coin_drop": null,
+        "item_drops": null,
+        "ai": {
+          "type": null,
+          "patrol_speed": null,
+          "chase_speed": null,
+          "attack_range": null,
+          "telegraph_time": null,
+          "features": []
+        }
+      },
+      "moves": {
+        "attack": {
+          "damage_multiplier": null,
+          "damage_type": null,
+          "windup_seconds": null,
+          "active_seconds": null,
+          "recovery_seconds": null,
+          "cooldown_seconds": null,
+          "attack_hit_start": null,
+          "attack_hit_end": null,
+          "attack_range": null,
+          "hitbox_size": null,
+          "hitbox_offset": null,
+          "attack_knockback": null,
+          "poise_damage": null,
+          "projectile_id": null
+        }
+      },
+      "loot": {
+        "item_drops": null,
+        "drop_rolls": null,
+        "note": "待制作人设定；当前通用战斗只发放经验与奶币。"
+      },
+      "notes": "",
+      "combat_ready": false
+    },
+    {
+      "numeric_id": "0017",
+      "runtime_id": "bone_dragon_blade",
+      "name": "骨龙·刀型",
+      "category": "small",
+      "aliases": [],
+      "variant_of": null,
+      "source": {
+        "file": "data/enemy_designs/cave_v001.json",
+        "collection": "enemies",
+        "id": "bone_dragon_blade"
+      },
+      "draft": {
+        "base_hp": null,
+        "base_damage": null,
+        "defense": null,
+        "poise": null,
+        "resist": {
+          "physical": null,
+          "magic": null
+        },
+        "tier": null,
+        "exp": null,
+        "coin_drop": null,
+        "item_drops": null,
+        "ai": {
+          "type": null,
+          "patrol_speed": null,
+          "chase_speed": null,
+          "attack_range": null,
+          "telegraph_time": null,
+          "features": []
+        }
+      },
+      "moves": {
+        "slash_down": {
+          "damage_multiplier": null,
+          "damage_type": null,
+          "windup_seconds": null,
+          "active_seconds": null,
+          "recovery_seconds": null,
+          "cooldown_seconds": null,
+          "attack_hit_start": null,
+          "attack_hit_end": null,
+          "attack_range": null,
+          "hitbox_size": null,
+          "hitbox_offset": null,
+          "attack_knockback": null,
+          "poise_damage": null,
+          "projectile_id": null
+        },
+        "slash_up": {
+          "damage_multiplier": null,
+          "damage_type": null,
+          "windup_seconds": null,
+          "active_seconds": null,
+          "recovery_seconds": null,
+          "cooldown_seconds": null,
+          "attack_hit_start": null,
+          "attack_hit_end": null,
+          "attack_range": null,
+          "hitbox_size": null,
+          "hitbox_offset": null,
+          "attack_knockback": null,
+          "poise_damage": null,
+          "projectile_id": null
+        },
+        "thrust": {
+          "damage_multiplier": null,
+          "damage_type": null,
+          "windup_seconds": null,
+          "active_seconds": null,
+          "recovery_seconds": null,
+          "cooldown_seconds": null,
+          "attack_hit_start": null,
+          "attack_hit_end": null,
+          "attack_range": null,
+          "hitbox_size": null,
+          "hitbox_offset": null,
+          "attack_knockback": null,
+          "poise_damage": null,
+          "projectile_id": null
+        }
+      },
+      "loot": {
+        "item_drops": null,
+        "drop_rolls": null,
+        "note": "待制作人设定；当前通用战斗只发放经验与奶币。"
+      },
+      "notes": "",
+      "combat_ready": false
+    },
+    {
+      "numeric_id": "0018",
+      "runtime_id": "bone_dragon_spear",
+      "name": "骨龙·矛型",
+      "category": "small",
+      "aliases": [],
+      "variant_of": null,
+      "source": {
+        "file": "data/enemy_designs/cave_v001.json",
+        "collection": "enemies",
+        "id": "bone_dragon_spear"
+      },
+      "draft": {
+        "base_hp": null,
+        "base_damage": null,
+        "defense": null,
+        "poise": null,
+        "resist": {
+          "physical": null,
+          "magic": null
+        },
+        "tier": null,
+        "exp": null,
+        "coin_drop": null,
+        "item_drops": null,
+        "ai": {
+          "type": null,
+          "patrol_speed": null,
+          "chase_speed": null,
+          "attack_range": null,
+          "telegraph_time": null,
+          "features": []
+        }
+      },
+      "moves": {
+        "thrust": {
+          "damage_multiplier": null,
+          "damage_type": null,
+          "windup_seconds": null,
+          "active_seconds": null,
+          "recovery_seconds": null,
+          "cooldown_seconds": null,
+          "attack_hit_start": null,
+          "attack_hit_end": null,
+          "attack_range": null,
+          "hitbox_size": null,
+          "hitbox_offset": null,
+          "attack_knockback": null,
+          "poise_damage": null,
+          "projectile_id": null
+        }
+      },
+      "loot": {
+        "item_drops": null,
+        "drop_rolls": null,
+        "note": "待制作人设定；当前通用战斗只发放经验与奶币。"
+      },
+      "notes": "",
+      "combat_ready": false
+    },
+    {
+      "numeric_id": "0019",
+      "runtime_id": "bone_dragon_bow",
+      "name": "骨龙·弓型",
+      "category": "small",
+      "aliases": [],
+      "variant_of": null,
+      "source": {
+        "file": "data/enemy_designs/cave_v001.json",
+        "collection": "enemies",
+        "id": "bone_dragon_bow"
+      },
+      "draft": {
+        "base_hp": null,
+        "base_damage": null,
+        "defense": null,
+        "poise": null,
+        "resist": {
+          "physical": null,
+          "magic": null
+        },
+        "tier": null,
+        "exp": null,
+        "coin_drop": null,
+        "item_drops": null,
+        "ai": {
+          "type": null,
+          "patrol_speed": null,
+          "chase_speed": null,
+          "attack_range": null,
+          "telegraph_time": null,
+          "features": []
+        }
+      },
+      "moves": {
+        "shoot": {
+          "damage_multiplier": null,
+          "damage_type": null,
+          "windup_seconds": null,
+          "active_seconds": null,
+          "recovery_seconds": null,
+          "cooldown_seconds": null,
+          "attack_hit_start": null,
+          "attack_hit_end": null,
+          "attack_range": null,
+          "hitbox_size": null,
+          "hitbox_offset": null,
+          "attack_knockback": null,
+          "poise_damage": null,
+          "projectile_id": null
+        }
+      },
+      "loot": {
+        "item_drops": null,
+        "drop_rolls": null,
+        "note": "待制作人设定；当前通用战斗只发放经验与奶币。"
+      },
+      "notes": "",
+      "combat_ready": false
+    },
+    {
+      "numeric_id": "0020",
+      "runtime_id": "stonehelm_beast",
+      "name": "岩盔兽",
+      "category": "small",
+      "aliases": [],
+      "variant_of": null,
+      "source": {
+        "file": "data/enemy_designs/cave_v001.json",
+        "collection": "enemies",
+        "id": "stonehelm_beast"
+      },
+      "draft": {
+        "base_hp": null,
+        "base_damage": null,
+        "defense": null,
+        "poise": null,
+        "resist": {
+          "physical": null,
+          "magic": null
+        },
+        "tier": null,
+        "exp": null,
+        "coin_drop": null,
+        "item_drops": null,
+        "ai": {
+          "type": null,
+          "patrol_speed": null,
+          "chase_speed": null,
+          "attack_range": null,
+          "telegraph_time": null,
+          "features": []
+        }
+      },
+      "moves": {
+        "ram": {
+          "damage_multiplier": null,
+          "damage_type": null,
+          "windup_seconds": null,
+          "active_seconds": null,
+          "recovery_seconds": null,
+          "cooldown_seconds": null,
+          "attack_hit_start": null,
+          "attack_hit_end": null,
+          "attack_range": null,
+          "hitbox_size": null,
+          "hitbox_offset": null,
+          "attack_knockback": null,
+          "poise_damage": null,
+          "projectile_id": null
+        },
+        "shell_defense": {
+          "damage_multiplier": null,
+          "damage_type": null,
+          "windup_seconds": null,
+          "active_seconds": null,
+          "recovery_seconds": null,
+          "cooldown_seconds": null,
+          "attack_hit_start": null,
+          "attack_hit_end": null,
+          "attack_range": null,
+          "hitbox_size": null,
+          "hitbox_offset": null,
+          "attack_knockback": null,
+          "poise_damage": null,
+          "projectile_id": null
+        }
+      },
+      "loot": {
+        "item_drops": null,
+        "drop_rolls": null,
+        "note": "待制作人设定；当前通用战斗只发放经验与奶币。"
+      },
+      "notes": "",
+      "combat_ready": false
+    },
+    {
+      "numeric_id": "0021",
+      "runtime_id": "cave_spider",
+      "name": "洞穴蜘蛛",
+      "category": "small",
+      "aliases": [],
+      "variant_of": null,
+      "source": {
+        "file": "data/enemy_designs/cave_v001.json",
+        "collection": "enemies",
+        "id": "cave_spider"
+      },
+      "draft": {
+        "base_hp": null,
+        "base_damage": null,
+        "defense": null,
+        "poise": null,
+        "resist": {
+          "physical": null,
+          "magic": null
+        },
+        "tier": null,
+        "exp": null,
+        "coin_drop": null,
+        "item_drops": null,
+        "ai": {
+          "type": null,
+          "patrol_speed": null,
+          "chase_speed": null,
+          "attack_range": null,
+          "telegraph_time": null,
+          "features": []
+        }
+      },
+      "moves": {
+        "claw_attack": {
+          "damage_multiplier": null,
+          "damage_type": null,
+          "windup_seconds": null,
+          "active_seconds": null,
+          "recovery_seconds": null,
+          "cooldown_seconds": null,
+          "attack_hit_start": null,
+          "attack_hit_end": null,
+          "attack_range": null,
+          "hitbox_size": null,
+          "hitbox_offset": null,
+          "attack_knockback": null,
+          "poise_damage": null,
+          "projectile_id": null
+        },
+        "web_spit": {
+          "damage_multiplier": null,
+          "damage_type": null,
+          "windup_seconds": null,
+          "active_seconds": null,
+          "recovery_seconds": null,
+          "cooldown_seconds": null,
+          "attack_hit_start": null,
+          "attack_hit_end": null,
+          "attack_range": null,
+          "hitbox_size": null,
+          "hitbox_offset": null,
+          "attack_knockback": null,
+          "poise_damage": null,
+          "projectile_id": null
+        }
+      },
+      "loot": {
+        "item_drops": null,
+        "drop_rolls": null,
+        "note": "待制作人设定；当前通用战斗只发放经验与奶币。"
+      },
+      "notes": "",
+      "combat_ready": false
+    },
+    {
+      "numeric_id": "0022",
+      "runtime_id": "animated_crystal",
+      "name": "活化晶石",
+      "category": "small",
+      "aliases": [],
+      "variant_of": null,
+      "source": {
+        "file": "data/enemy_designs/cave_v001.json",
+        "collection": "enemies",
+        "id": "animated_crystal"
+      },
+      "draft": {
+        "base_hp": null,
+        "base_damage": null,
+        "defense": null,
+        "poise": null,
+        "resist": {
+          "physical": null,
+          "magic": null
+        },
+        "tier": null,
+        "exp": null,
+        "coin_drop": null,
+        "item_drops": null,
+        "ai": {
+          "type": null,
+          "patrol_speed": null,
+          "chase_speed": null,
+          "attack_range": null,
+          "telegraph_time": null,
+          "features": []
+        }
+      },
+      "moves": {
+        "charge_ready": {
+          "damage_multiplier": null,
+          "damage_type": null,
+          "windup_seconds": null,
+          "active_seconds": null,
+          "recovery_seconds": null,
+          "cooldown_seconds": null,
+          "attack_hit_start": null,
+          "attack_hit_end": null,
+          "attack_range": null,
+          "hitbox_size": null,
+          "hitbox_offset": null,
+          "attack_knockback": null,
+          "poise_damage": null,
+          "projectile_id": null
+        }
+      },
+      "loot": {
+        "item_drops": null,
+        "drop_rolls": null,
+        "note": "待制作人设定；当前通用战斗只发放经验与奶币。"
+      },
+      "notes": "",
+      "combat_ready": false
+    },
+    {
+      "numeric_id": "0023",
+      "runtime_id": "cavern_hunter",
+      "name": "岩穴猎手",
+      "category": "elite",
+      "aliases": [],
+      "variant_of": null,
+      "source": {
+        "file": "data/enemy_designs/cave_v001.json",
+        "collection": "enemies",
+        "id": "cavern_hunter"
+      },
+      "draft": {
+        "base_hp": null,
+        "base_damage": null,
+        "defense": null,
+        "poise": null,
+        "resist": {
+          "physical": null,
+          "magic": null
+        },
+        "tier": null,
+        "exp": null,
+        "coin_drop": null,
+        "item_drops": null,
+        "ai": {
+          "type": null,
+          "patrol_speed": null,
+          "chase_speed": null,
+          "attack_range": null,
+          "telegraph_time": null,
+          "features": []
+        }
+      },
+      "moves": {
+        "elbow_blade": {
+          "damage_multiplier": null,
+          "damage_type": null,
+          "windup_seconds": null,
+          "active_seconds": null,
+          "recovery_seconds": null,
+          "cooldown_seconds": null,
+          "attack_hit_start": null,
+          "attack_hit_end": null,
+          "attack_range": null,
+          "hitbox_size": null,
+          "hitbox_offset": null,
+          "attack_knockback": null,
+          "poise_damage": null,
+          "projectile_id": null
+        },
+        "leap_slam": {
+          "damage_multiplier": null,
+          "damage_type": null,
+          "windup_seconds": null,
+          "active_seconds": null,
+          "recovery_seconds": null,
+          "cooldown_seconds": null,
+          "attack_hit_start": null,
+          "attack_hit_end": null,
+          "attack_range": null,
+          "hitbox_size": null,
+          "hitbox_offset": null,
+          "attack_knockback": null,
+          "poise_damage": null,
+          "projectile_id": null
+        },
+        "tail_crystal_shot": {
+          "damage_multiplier": null,
+          "damage_type": null,
+          "windup_seconds": null,
+          "active_seconds": null,
+          "recovery_seconds": null,
+          "cooldown_seconds": null,
+          "attack_hit_start": null,
+          "attack_hit_end": null,
+          "attack_range": null,
+          "hitbox_size": null,
+          "hitbox_offset": null,
+          "attack_knockback": null,
+          "poise_damage": null,
+          "projectile_id": null
+        }
+      },
+      "loot": {
+        "item_drops": null,
+        "drop_rolls": null,
+        "note": "待制作人设定；当前通用战斗只发放经验与奶币。"
+      },
+      "notes": "制作人2026-11-18指定精英怪。",
+      "combat_ready": false
+    },
+    {
+      "numeric_id": "0024",
+      "runtime_id": "milk_slime_child",
+      "name": "小奶滴（史莱姆分裂体）",
+      "category": "small",
+      "aliases": [],
+      "variant_of": "milk_slime",
+      "source": null,
+      "draft": {
+        "base_hp": null,
+        "base_damage": null,
+        "defense": null,
+        "poise": null,
+        "resist": {
+          "physical": null,
+          "magic": null
+        },
+        "tier": null,
+        "exp": null,
+        "coin_drop": null,
+        "item_drops": null,
+        "ai": {
+          "type": null,
+          "patrol_speed": null,
+          "chase_speed": null,
+          "attack_range": null,
+          "telegraph_time": null,
+          "features": []
+        }
+      },
+      "moves": {
+        "attack": {
+          "damage_multiplier": null,
+          "damage_type": null,
+          "windup_seconds": null,
+          "active_seconds": null,
+          "recovery_seconds": null,
+          "cooldown_seconds": null,
+          "attack_hit_start": null,
+          "attack_hit_end": null,
+          "attack_range": null,
+          "hitbox_size": null,
+          "hitbox_offset": null,
+          "attack_knockback": null,
+          "poise_damage": null,
+          "projectile_id": null
+        }
+      },
+      "loot": {
+        "item_drops": null,
+        "drop_rolls": null,
+        "note": "待制作人设定；当前通用战斗只发放经验与奶币。"
+      },
+      "notes": "独立child_*逐帧已存在；通用战斗尚未实装死亡分裂生成，不继承或捏造母体数值。",
+      "combat_ready": false
+    }
+  ]
+}

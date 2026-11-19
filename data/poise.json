@@ -1,0 +1,188 @@
+{
+  "revision": 2,
+  "enemy_max": 100,
+  "unfilled_policy": "已填写28项按制作人表格同步；空白旧bow_01条目仍为null，按0处理，不从生命伤害推导",
+  "direct_stun_on_attack": false,
+  "feedback": {
+    "seconds": 0.12,
+    "amplitude": 1.6,
+    "frequency": 22
+  },
+  "attacks": {
+    "normal:hammer_01:1": {
+      "label": "奶瓶锤 · 第一击",
+      "category": "普攻",
+      "poise_damage": 40.0,
+      "note": "每次有效命中计算一次"
+    },
+    "normal:hammer_01:2": {
+      "label": "奶瓶锤 · 第二击",
+      "category": "普攻",
+      "poise_damage": 40.0,
+      "note": "每次有效命中计算一次"
+    },
+    "normal:hammer_01:3": {
+      "label": "奶瓶锤 · 砸地",
+      "category": "普攻",
+      "poise_damage": 60.0,
+      "note": "每次有效命中计算一次"
+    },
+    "normal:milk_gun:1": {
+      "label": "制式步枪 · 单发普攻",
+      "category": "普攻",
+      "poise_damage": 25.0,
+      "note": "每次有效命中计算一次"
+    },
+    "normal:milk_staff:1": {
+      "label": "奶杖 · 单发普攻",
+      "category": "普攻",
+      "poise_damage": 30.0,
+      "note": "每次有效命中计算一次"
+    },
+    "normal:star_orb:1": {
+      "label": "星乳法球 · 单发普攻",
+      "category": "普攻",
+      "poise_damage": 25.0,
+      "note": "每次有效命中计算一次"
+    },
+    "normal:sword_01:1": {
+      "label": "制式直剑 · 下劈",
+      "category": "普攻",
+      "poise_damage": 30.0,
+      "note": "每次有效命中计算一次"
+    },
+    "normal:sword_01:2": {
+      "label": "制式直剑 · 前刺",
+      "category": "普攻",
+      "poise_damage": 30.0,
+      "note": "每次有效命中计算一次"
+    },
+    "normal:sword_01:3": {
+      "label": "制式直剑 · 挑斩",
+      "category": "普攻",
+      "poise_damage": 40.0,
+      "note": "每次有效命中计算一次"
+    },
+    "normal:bow_01:1": {
+      "label": "制式步枪 · 单发普攻",
+      "category": "普攻",
+      "poise_damage": null,
+      "note": "每次有效命中计算一次"
+    },
+    "skill_omni_slash:hit_1": {
+      "label": "超究极武神霸斩 · 第1斩",
+      "category": "技能",
+      "poise_damage": 10.0,
+      "note": "每次有效命中计算一次"
+    },
+    "skill_omni_slash:hit_2": {
+      "label": "超究极武神霸斩 · 第2斩",
+      "category": "技能",
+      "poise_damage": 10.0,
+      "note": "每次有效命中计算一次"
+    },
+    "skill_omni_slash:hit_3": {
+      "label": "超究极武神霸斩 · 第3斩",
+      "category": "技能",
+      "poise_damage": 10.0,
+      "note": "每次有效命中计算一次"
+    },
+    "skill_omni_slash:hit_4": {
+      "label": "超究极武神霸斩 · 第4斩",
+      "category": "技能",
+      "poise_damage": 10.0,
+      "note": "每次有效命中计算一次"
+    },
+    "skill_omni_slash:hit_5": {
+      "label": "超究极武神霸斩 · 第5斩",
+      "category": "技能",
+      "poise_damage": 10.0,
+      "note": "每次有效命中计算一次"
+    },
+    "skill_omni_slash:hit_6": {
+      "label": "超究极武神霸斩 · 终结斩",
+      "category": "技能",
+      "poise_damage": 100.0,
+      "note": "每次有效命中计算一次"
+    },
+    "skill_giga_milk_beam:quick": {
+      "label": "极巨化奶光炮 · 短蓄",
+      "category": "技能",
+      "poise_damage": 50.0,
+      "note": "每次有效命中计算一次"
+    },
+    "skill_giga_milk_beam:charged": {
+      "label": "极巨化奶光炮 · 中蓄",
+      "category": "技能",
+      "poise_damage": 100.0,
+      "note": "每次有效命中计算一次"
+    },
+    "skill_giga_milk_beam:full": {
+      "label": "极巨化奶光炮 · 满蓄",
+      "category": "技能",
+      "poise_damage": 200.0,
+      "note": "每次有效命中计算一次"
+    },
+    "skill_comet_dash:hit": {
+      "label": "彗星冲 · 冲撞",
+      "category": "技能",
+      "poise_damage": 120.0,
+      "note": "每次有效命中计算一次"
+    },
+    "skill_star_milk_prison:hit_1": {
+      "label": "星华奶牢 · 展开",
+      "category": "技能",
+      "poise_damage": 60.0,
+      "note": "每次有效命中计算一次"
+    },
+    "skill_star_milk_prison:hit_2": {
+      "label": "星华奶牢 · 终结",
+      "category": "技能",
+      "poise_damage": 100.0,
+      "note": "每次有效命中计算一次"
+    },
+    "skill_mirror_milk_guard:hit": {
+      "label": "奶盾·镜返 · 精准盾击",
+      "category": "技能",
+      "poise_damage": 150.0,
+      "note": "每次有效命中计算一次"
+    },
+    "skill_mirror_milk_guard:reflect": {
+      "label": "奶盾·镜返 · 反弹伤害",
+      "category": "技能",
+      "poise_damage": 30.0,
+      "note": "每次有效命中计算一次"
+    },
+    "skill_nb_quickdraw:hit": {
+      "label": "新奶流·拔刀 · 居合反击",
+      "category": "技能",
+      "poise_damage": 150.0,
+      "note": "每次有效命中计算一次"
+    },
+    "skill_nb_king_slam:hit": {
+      "label": "奶王天降 · 落地冲击",
+      "category": "技能",
+      "poise_damage": 200.0,
+      "note": "每次有效命中计算一次"
+    },
+    "skill_nb_void_milk:contact": {
+      "label": "奶式·虚 · 球体接触",
+      "category": "技能",
+      "poise_damage": 50.0,
+      "note": "接触伤害每目标每0.5秒各算一次"
+    },
+    "skill_nb_void_milk:explosion": {
+      "label": "奶式·虚 · 爆炸",
+      "category": "技能",
+      "poise_damage": 120.0,
+      "note": "每次有效命中计算一次"
+    },
+    "item:milk_bomb": {
+      "label": "奶弹 · 命中伤害",
+      "category": "道具",
+      "poise_damage": 40.0,
+      "note": "每次有效命中计算一次"
+    }
+  },
+  "approved_source": "docs/gameplay/削韧值填写表.md"
+}

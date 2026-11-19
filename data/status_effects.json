@@ -1,0 +1,27 @@
+{
+  "tick_seconds": 1.0,
+  "rank_damage_multiplier": {"small": 1.0, "elite": 0.6, "boss": 0.3},
+  "particle_period": 0.42,
+  "particle_seconds": 0.24,
+  "particle_drift": 10,
+  "particle_spread": [0.56, 0.24, 0.13],
+  "statuses": {
+    "bleeding": {
+      "name": "流血",
+      "max_hp_pct_per_tick": 2,
+      "poise_taken_multiplier": 1.1,
+      "particle": "res://assets/PROCESSED/effects/status_v001/bleeding.png"
+    },
+    "poison": {
+      "name": "中毒",
+      "max_hp_pct_per_tick": 2,
+      "block_healing": true,
+      "particle": "res://assets/PROCESSED/effects/status_v001/poison.png"
+    },
+    "chill": {
+      "name": "冰缓",
+      "action_speed_multiplier": 0.8,
+      "particle": "res://assets/PROCESSED/effects/status_v001/chill.png"
+    }
+  }
+}

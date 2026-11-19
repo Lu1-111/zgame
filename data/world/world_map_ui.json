@@ -1,0 +1,58 @@
+{
+  "layout": "res://data/world/map_layout.json",
+  "room_origins": {
+    "camp_01": [
+      0,
+      0
+    ],
+    "forest_01": [
+      1440,
+      -1280
+    ],
+    "forest_02": [
+      2880,
+      -912
+    ],
+    "forest_03": [
+      5808,
+      -944
+    ]
+  },
+  "margin": 20,
+  "header": 64,
+  "footer": 40,
+  "font_size": 11,
+  "title_size": 22,
+  "room_title_size": 11,
+  "world_padding": 56,
+  "zoom_min": 1.0,
+  "zoom_max": 5.0,
+  "zoom_step": 1.25,
+  "marker_radius": 4,
+  "marker_ring": 7,
+  "marker_line": 1.3,
+  "pulse_seconds": 1.6,
+  "connection_width": 2,
+  "connection_bend": 48,
+  "colors": {
+    "background": "#0a1013f5",
+    "surface": "#111c20",
+    "edge": "#687269",
+    "text": "#d8d8c7",
+    "muted": "#8c9d96",
+    "player": "#fff2bc",
+    "player_ring": "#e4cb89",
+    "link": "#97c4b8",
+    "locked_link": "#777265",
+    "current_room": "#a9c8c0",
+    "other_room": "#586f68",
+    "fire": "#ebbd72",
+    "chest": "#b6a4c5"
+  },
+  "bonfire": {
+    "icon": "res://assets/ui/map/bonfire_v1.png",
+    "icon_size": 24,
+    "hit_padding": 4,
+    "click_slop": 5
+  }
+}

@@ -1,0 +1,36 @@
+[gd_resource type="SpriteFrames" load_steps=19 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_spear/frames/idle/00.png" id="T_1"]
+[ext_resource type="Texture2D" path="res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_spear/frames/idle/01.png" id="T_2"]
+[ext_resource type="Texture2D" path="res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_spear/frames/idle/02.png" id="T_3"]
+[ext_resource type="Texture2D" path="res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_spear/frames/idle/03.png" id="T_4"]
+[ext_resource type="Texture2D" path="res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_spear/frames/idle/04.png" id="T_5"]
+[ext_resource type="Texture2D" path="res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_spear/frames/idle/05.png" id="T_6"]
+[ext_resource type="Texture2D" path="res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_spear/frames/move/00.png" id="T_7"]
+[ext_resource type="Texture2D" path="res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_spear/frames/move/01.png" id="T_8"]
+[ext_resource type="Texture2D" path="res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_spear/frames/move/02.png" id="T_9"]
+[ext_resource type="Texture2D" path="res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_spear/frames/move/03.png" id="T_10"]
+[ext_resource type="Texture2D" path="res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_spear/frames/move/04.png" id="T_11"]
+[ext_resource type="Texture2D" path="res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_spear/frames/move/05.png" id="T_12"]
+[ext_resource type="Texture2D" path="res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_spear/frames/thrust/00.png" id="T_13"]
+[ext_resource type="Texture2D" path="res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_spear/frames/thrust/01.png" id="T_14"]
+[ext_resource type="Texture2D" path="res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_spear/frames/thrust/02.png" id="T_15"]
+[ext_resource type="Texture2D" path="res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_spear/frames/thrust/03.png" id="T_16"]
+[ext_resource type="Texture2D" path="res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_spear/frames/thrust/04.png" id="T_17"]
+[ext_resource type="Texture2D" path="res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_spear/frames/thrust/05.png" id="T_18"]
+
+[resource]
+animations = [{
+"frames": [{"duration": 1.0, "texture": ExtResource("T_1")} , {"duration": 1.0, "texture": ExtResource("T_2")} , {"duration": 1.0, "texture": ExtResource("T_3")} , {"duration": 1.0, "texture": ExtResource("T_4")} , {"duration": 1.0, "texture": ExtResource("T_5")} , {"duration": 1.0, "texture": ExtResource("T_6")} ],
+"loop": true,
+"name": &"idle",
+"speed": 6.0}, {
+"frames": [{"duration": 1.0, "texture": ExtResource("T_7")} , {"duration": 1.0, "texture": ExtResource("T_8")} , {"duration": 1.0, "texture": ExtResource("T_9")} , {"duration": 1.0, "texture": ExtResource("T_10")} , {"duration": 1.0, "texture": ExtResource("T_11")} , {"duration": 1.0, "texture": ExtResource("T_12")} ],
+"loop": true,
+"name": &"move",
+"speed": 9.0}, {
+"frames": [{"duration": 1.0, "texture": ExtResource("T_13")} , {"duration": 1.0, "texture": ExtResource("T_14")} , {"duration": 1.0, "texture": ExtResource("T_15")} , {"duration": 1.0, "texture": ExtResource("T_16")} , {"duration": 1.0, "texture": ExtResource("T_17")} , {"duration": 1.0, "texture": ExtResource("T_18")} ],
+"loop": false,
+"name": &"thrust",
+"speed": 10.0
+}]

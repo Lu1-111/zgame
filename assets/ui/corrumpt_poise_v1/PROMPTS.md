@@ -1,0 +1,7 @@
+# 内置 imagegen 最终提示词
+
+参考图：`docs/previews/corrumpt_warning_ingame.png`，只参考上方Boss血条的配色和几何。
+
+```text
+Transparent VFX overlay atlas for the thin antique-gold / muted-purple boss health bar in reference screenshot. Do not draw a health bar, panel, frame, rectangle, backing, fill, glass surface or any solid shape. Draw ONLY the hairline CRACK LINES and tiny repair glints on actual transparent background, ready to lay on top of the existing live HP fill without obscuring HP. Exactly six rows of crack overlays; each row spans the same long thin invisible footprint about26:1 wide:high, separated by large completely transparent gaps. Row1 few fine branching fracture lines; Row2 more connected cracks; Row3 dense branching cracked-glass web over whole footprint, small segments angular, varied branching, NO glass pieces or shading between lines; Row4 the same web with very faint antique gold repair glints tracing selected cracks; Row5 only a few fading cracks and small repair glints; Row6 just two tiny fading gold flecks, nearly empty transparent. Lines should be dark charcoal with occasional thin desaturated bone/gray-purple edge, repair glints muted antique gold; restrained and compatible with existing simple brass frame and purple HP, no ornament, no text. Line thickness readable when resized to350x16 native game UI pixels. All six overlays have exactly same invisible bounds/center baseline, and completely TRANSPARENT space between all lines. NO filled polygon interiors. This is an isolated crack-and-repair effect asset, NOT a picture of a solid health bar.
+```

@@ -1,0 +1,509 @@
+{
+  "revision": 1,
+  "provisional": {
+    "approved": "制作人2026-10-28批准先用临时参数完成接入",
+    "all_active_unlocked": true,
+    "quickdraw": "倍率2.0、索敌280、位移上限160，无可见目标时仍免本次伤害但不位移；碰墙停止",
+    "king_slam": "倍率2.5，范围76，普通敌人眩晕3秒，精英/BOSS免晕；只破坏视觉，不改变碰撞地形",
+    "void_milk": "速度190，接触0.65倍每目标每0.5秒，爆炸3.2倍范围76，穿敌不穿墙，撞墙引爆",
+    "buffs": "狂击与忍耐相互替换，狂击击杀恢复以最大生命为基准，奥术可并存",
+    "interrupt": "未提交不扣费不进入冷却；光球提交后被回收也开始冷却；切房清除状态和独立效果"
+  },
+  "skills": {
+    "skill_omni_slash": {
+      "behavior": "slash",
+      "commit_at": 0.24,
+      "recovery_at": 1.02,
+      "phases": [
+        {
+          "name": "anticipation",
+          "duration": 0.24,
+          "actor": "skill_omni_slash__anticipation"
+        },
+        {
+          "name": "slashes",
+          "duration": 0.6,
+          "actor": "skill_omni_slash__slashes"
+        },
+        {
+          "name": "finisher",
+          "duration": 0.18,
+          "actor": "skill_omni_slash__finisher"
+        },
+        {
+          "name": "recovery",
+          "duration": 0.3,
+          "actor": "skill_omni_slash__recovery"
+        }
+      ],
+      "hits": [
+        {
+          "time_sec": 0.24,
+          "mult": 0.5
+        },
+        {
+          "time_sec": 0.36,
+          "mult": 0.5
+        },
+        {
+          "time_sec": 0.48,
+          "mult": 0.5
+        },
+        {
+          "time_sec": 0.6,
+          "mult": 0.5
+        },
+        {
+          "time_sec": 0.72,
+          "mult": 0.5
+        },
+        {
+          "time_sec": 0.84,
+          "mult": 1.75
+        }
+      ],
+      "hit_size": [
+        100,
+        72
+      ],
+      "hit_offset": [
+        48,
+        -38
+      ],
+      "knockback": 140,
+      "fx": "skill_omni_slash__fx",
+      "damage_range_type": "melee"
+    },
+    "skill_giga_milk_beam": {
+      "behavior": "beam",
+      "charge": {
+        "minimum_release_sec": 0.18,
+        "full_charge_sec": 1.2,
+        "auto_release_sec": 1.8,
+        "move_speed_ratio": 0.25,
+        "facing_locked_after_sec": 0.18,
+        "mana_reserved": false,
+        "tier_selection": "释放时选择已达到且当前奶力可支付的最高档，最低档也付不起则取消；按实际释放档扣费并开始冷却",
+        "cancel": "蓄力期间可闪避取消；未发射不扣奶力、不开始CD；受击同样取消",
+        "tiers": [
+          {
+            "name": "quick",
+            "min_hold_sec": 0.18,
+            "mana_cost": 14,
+            "damage_mult": 1.4,
+            "range_px": 240,
+            "beam_height_px": 24,
+            "active_sec": 0.12
+          },
+          {
+            "name": "charged",
+            "min_hold_sec": 0.6,
+            "mana_cost": 20,
+            "damage_mult": 2.4,
+            "range_px": 300,
+            "beam_height_px": 36,
+            "active_sec": 0.2
+          },
+          {
+            "name": "full",
+            "min_hold_sec": 1.2,
+            "mana_cost": 28,
+            "damage_mult": 3.6,
+            "range_px": 360,
+            "beam_height_px": 48,
+            "active_sec": 0.3
+          }
+        ]
+      },
+      "muzzle_offset": [
+        14,
+        -30
+      ],
+      "release_seconds": 0.3,
+      "recovery_seconds": 0.3,
+      "knockback": 100,
+      "beam_art_height": 104,
+      "charge_fx": "skill_giga_milk_beam__charge_fx",
+      "damage_range_type": "ranged"
+    },
+    "skill_comet_dash": {
+      "behavior": "dash",
+      "commit_at": 0.1,
+      "recovery_at": 0.42,
+      "phases": [
+        {
+          "name": "anticipation",
+          "duration": 0.1,
+          "actor": "skill_comet_dash__anticipation"
+        },
+        {
+          "name": "dash",
+          "duration": 0.2,
+          "actor": "skill_comet_dash__dash"
+        },
+        {
+          "name": "brake",
+          "duration": 0.12,
+          "actor": "skill_comet_dash__brake"
+        },
+        {
+          "name": "recovery",
+          "duration": 0.18,
+          "actor": "skill_comet_dash__recovery"
+        }
+      ],
+      "dash_end": 0.3,
+      "distance": 110,
+      "speed": 550,
+      "hit_size": [
+        42,
+        40
+      ],
+      "hit_offset": [
+        24,
+        -24
+      ],
+      "knockback": 140,
+      "fx": "skill_comet_dash__fx",
+      "damage_range_type": "melee"
+    },
+    "skill_star_milk_prison": {
+      "behavior": "prison",
+      "commit_at": 0.24,
+      "recovery_at": 0.42,
+      "phases": [
+        {
+          "name": "anticipation",
+          "duration": 0.24,
+          "actor": "skill_star_milk_prison__anticipation"
+        },
+        {
+          "name": "cast",
+          "duration": 0.18,
+          "actor": "skill_star_milk_prison__cast"
+        },
+        {
+          "name": "recovery",
+          "duration": 0.24,
+          "actor": "skill_star_milk_prison__recovery"
+        }
+      ],
+      "placement_forward": 80,
+      "radius": 64,
+      "height": 100,
+      "lifetime": 2,
+      "hits": [
+        {
+          "time_sec_after_spawn": 0,
+          "mult": 0.6
+        },
+        {
+          "time_sec_after_spawn": 2,
+          "mult": 0.4
+        }
+      ],
+      "control": {
+        "normal": {
+          "root_sec": 1,
+          "slow_pct": 40,
+          "slow_sec_after_root": 1
+        },
+        "elite": {
+          "root_sec": 0,
+          "slow_pct": 30,
+          "slow_sec_after_root": 1
+        },
+        "boss": {
+          "root_sec": 0,
+          "slow_pct": 15,
+          "slow_sec_after_root": 0.6
+        },
+        "magic_immune": {
+          "root_sec": 0,
+          "slow_pct": 0,
+          "slow_sec_after_root": 0
+        },
+        "interrupt_attack_or_phase": false,
+        "refresh_or_stack": false,
+        "apply_only_on_entry_once_per_cast": true
+      },
+      "knockback": 0,
+      "fx": "skill_star_milk_prison__fx",
+      "loop_fx": "skill_star_milk_prison__loop_fx",
+      "damage_range_type": "ranged"
+    },
+    "skill_mirror_milk_guard": {
+      "behavior": "mirror",
+      "commit_at": 0.12,
+      "recovery_at": 3.12,
+      "phases": [
+        {
+          "name": "anticipation",
+          "duration": 0.12,
+          "actor": "skill_mirror_milk_guard__anticipation"
+        },
+        {
+          "name": "shield_open",
+          "duration": 0.18,
+          "actor": "skill_mirror_milk_guard__shield_open"
+        },
+        {
+          "name": "guard_loop",
+          "duration": 2.82,
+          "actor": "skill_mirror_milk_guard__guard_loop"
+        },
+        {
+          "name": "recovery",
+          "duration": 0.22,
+          "actor": "skill_mirror_milk_guard__recovery"
+        }
+      ],
+      "duration": 3,
+      "absorb": 32,
+      "facing_arc_deg": 140,
+      "perfect_window": 0.18,
+      "reflect_ratio": 0.3,
+      "counter_range": 64,
+      "counter_height": 64,
+      "counter_mult": 1,
+      "counter_seconds": 0.2,
+      "knockback": 160,
+      "fx": "skill_mirror_milk_guard__fx",
+      "loop_fx": "skill_mirror_milk_guard__loop_fx",
+      "damage_range_type": "melee"
+    },
+    "skill_milk_spring": {
+      "behavior": "spring",
+      "commit_at": 0.3,
+      "recovery_at": 0.48,
+      "phases": [
+        {
+          "name": "anticipation",
+          "duration": 0.3,
+          "actor": "skill_milk_spring__anticipation"
+        },
+        {
+          "name": "cast",
+          "duration": 0.18,
+          "actor": "skill_milk_spring__cast"
+        },
+        {
+          "name": "recovery",
+          "duration": 0.24,
+          "actor": "skill_milk_spring__recovery"
+        }
+      ],
+      "radius": 48,
+      "lifetime": 4,
+      "heals": [
+        {
+          "time_sec_after_spawn": 1,
+          "heal_pct_max_hp": 8
+        },
+        {
+          "time_sec_after_spawn": 2,
+          "heal_pct_max_hp": 8
+        },
+        {
+          "time_sec_after_spawn": 3,
+          "heal_pct_max_hp": 8
+        },
+        {
+          "time_sec_after_spawn": 4,
+          "heal_pct_max_hp": 8
+        }
+      ],
+      "fx": "skill_milk_spring__fx",
+      "loop_fx": "skill_milk_spring__loop_fx"
+    },
+    "skill_nb_quickdraw": {
+      "behavior": "quickdraw",
+      "commit_at": 0,
+      "recovery_at": 0.7,
+      "phases": [
+        {
+          "name": "stance_enter",
+          "duration": 0.2,
+          "actor": "SKL-N01_stance"
+        },
+        {
+          "name": "stance_hold",
+          "duration": 0.5,
+          "actor": "SKL-N01_stance"
+        }
+      ],
+      "counter_seconds": 0.4,
+      "stance_seconds": 0.7,
+      "search_radius": 280,
+      "dash_max": 160,
+      "hit_size": [
+        92,
+        52
+      ],
+      "hit_offset": [
+        34,
+        -24
+      ],
+      "knockback": 160,
+      "fx": "SKL-N01_white_wind",
+      "counter_fx": "SKL-N01_slash_fx",
+      "counter_actor": "SKL-N01_counter_slash",
+      "damage_range_type": "melee"
+    },
+    "skill_nb_laughter": {
+      "behavior": "buff",
+      "commit_at": 0.4,
+      "recovery_at": 0.65,
+      "phases": [
+        {
+          "name": "laugh_enter",
+          "duration": 0.4,
+          "actor": "SKL-N02_laugh_enter"
+        },
+        {
+          "name": "laugh_loop",
+          "duration": 0.4,
+          "actor": "SKL-N02_laugh_loop"
+        }
+      ],
+      "buff": {
+        "id": "frenzy",
+        "duration_seconds": 20,
+        "damage_bonus_pct": 30,
+        "damage_taken_bonus_pct": 20,
+        "on_enemy_kill_heal_pct": 30,
+        "kill_heal_basis": "max_hp",
+        "non_coexistence": true,
+        "exclusive_with": null,
+        "visual": "continuous_red_particles"
+      },
+      "exclusive": [
+        "endurance"
+      ],
+      "aura": "SKL-N02_red_aura",
+      "heal_fx": "SKL-N02_kill_heal"
+    },
+    "skill_nb_king_slam": {
+      "behavior": "slam",
+      "commit_at": 0.18,
+      "recovery_at": 0.85,
+      "phases": [
+        {
+          "name": "leap",
+          "duration": 0.4,
+          "actor": "SKL-N03_leap"
+        },
+        {
+          "name": "slam",
+          "duration": 0.7,
+          "actor": "SKL-N03_slam"
+        }
+      ],
+      "leap_speed": 260,
+      "slam_start": 0.4,
+      "slam_speed": 720,
+      "landing_timeout": 2.5,
+      "landing_recovery": 0.3,
+      "radius": 76,
+      "height": 72,
+      "stun_seconds": 3,
+      "stun_boss": false,
+      "knockback": 220,
+      "fx": "SKL-N03_ground_impact",
+      "stun_fx": "SKL-N03_stun_stars",
+      "damage_range_type": "melee"
+    },
+    "skill_nb_endurance": {
+      "behavior": "buff",
+      "commit_at": 0.35,
+      "recovery_at": 0.4,
+      "phases": [
+        {
+          "name": "stomp",
+          "duration": 0.4,
+          "actor": "SKL-N04_stomp"
+        },
+        {
+          "name": "brace_recover",
+          "duration": 0.4,
+          "actor": "SKL-N04_brace_recover"
+        }
+      ],
+      "buff": {
+        "id": "endurance",
+        "duration_seconds": 10,
+        "damage_reduction_pct": 30,
+        "disable_dodge": true,
+        "non_coexistence": true,
+        "exclusive_with": null,
+        "visual": "continuous_white_glow"
+      },
+      "exclusive": [
+        "frenzy"
+      ],
+      "aura": "SKL-N04_white_aura",
+      "hit_fx": "SKL-N04_reduced_hit"
+    },
+    "skill_nb_void_milk": {
+      "behavior": "orb",
+      "commit_at": 1,
+      "recovery_at": 1.2,
+      "phases": [
+        {
+          "name": "charge",
+          "duration": 1,
+          "actor": "SKL-N05_charge"
+        },
+        {
+          "name": "release",
+          "duration": 0.4,
+          "actor": "SKL-N05_release"
+        }
+      ],
+      "speed": 190,
+      "lifetime": 2,
+      "contact_radius": 26,
+      "contact_interval": 0.5,
+      "explosion_mult": 3.2,
+      "explosion_radius": 76,
+      "knockback": 180,
+      "spawn_offset": [
+        24,
+        -30
+      ],
+      "fx": "SKL-N05_orb_loop",
+      "explosion_fx": "SKL-N05_explosion",
+      "damage_range_type": "ranged"
+    },
+    "skill_nb_arcane_source": {
+      "behavior": "buff",
+      "commit_at": 0.35,
+      "recovery_at": 0.4,
+      "phases": [
+        {
+          "name": "ground_slap",
+          "duration": 0.4,
+          "actor": "SKL-N06_ground_slap"
+        },
+        {
+          "name": "rise",
+          "duration": 0.4,
+          "actor": "SKL-N06_rise"
+        }
+      ],
+      "buff": {
+        "id": "arcane",
+        "duration_seconds": 20,
+        "normal_attack_physical_converts_to": "milk_magic",
+        "normal_attack_already_milk_magic_bonus_pct": 10,
+        "other_damage_unchanged": true,
+        "non_coexistence": null,
+        "visual": "continuous_blue_particles"
+      },
+      "exclusive": [],
+      "fx": "SKL-N06_magic_circle",
+      "circle_seconds": 0.4,
+      "aura": "SKL-N06_blue_aura"
+    }
+  }
+}

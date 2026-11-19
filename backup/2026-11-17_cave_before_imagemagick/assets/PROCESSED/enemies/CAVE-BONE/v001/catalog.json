@@ -1,0 +1,478 @@
+{
+  "batch": "CAVE-BONE",
+  "version": "v001",
+  "format": "native-cave-enemy-art",
+  "palette": [
+    "#11141a",
+    "#201e20",
+    "#302a27",
+    "#44392f",
+    "#5b4938",
+    "#715b44",
+    "#897153",
+    "#a58c65",
+    "#bfaa82",
+    "#d5c4a0",
+    "#e4d5b5",
+    "#f1e4c9",
+    "#fff1d7",
+    "#fff8e8",
+    "#20262b",
+    "#303a42",
+    "#414e58",
+    "#596773",
+    "#74828b",
+    "#96a1a7",
+    "#bdc5c5",
+    "#e3e7df",
+    "#2b241f",
+    "#443122",
+    "#5d4029",
+    "#795335",
+    "#97734a",
+    "#b39261",
+    "#7c8080",
+    "#aaa793",
+    "#cac2a7",
+    "#e5dfcc"
+  ],
+  "pixel_spec": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/pixel_spec.json",
+  "generation_mode": "built-in-image_gen",
+  "direction": "right",
+  "enemies": [
+    {
+      "id": "bone_dragon_blade",
+      "name": "骨龙·刀型",
+      "canvas": [
+        96,
+        96
+      ],
+      "root": [
+        40,
+        80
+      ],
+      "world_scale": [
+        1,
+        1
+      ],
+      "direction": "right",
+      "native_body_height": 42,
+      "base_stats": {
+        "base_hp": null,
+        "base_damage": null,
+        "poise": null,
+        "resist": {
+          "physical": null,
+          "magic": null
+        }
+      },
+      "actions": [
+        {
+          "id": "idle",
+          "frames": [
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/idle/00.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/idle/01.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/idle/02.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/idle/03.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/idle/04.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/idle/05.png"
+          ],
+          "frame_count": 6,
+          "fps": 6,
+          "loop": true,
+          "anchor": [
+            40,
+            80
+          ],
+          "canvas": [
+            96,
+            96
+          ],
+          "sheet": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/idle.png",
+          "gif": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/idle.gif",
+          "unique_frames": 6
+        },
+        {
+          "id": "move",
+          "frames": [
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/move/00.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/move/01.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/move/02.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/move/03.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/move/04.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/move/05.png"
+          ],
+          "frame_count": 6,
+          "fps": 9,
+          "loop": true,
+          "anchor": [
+            40,
+            80
+          ],
+          "canvas": [
+            96,
+            96
+          ],
+          "sheet": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/move.png",
+          "gif": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/move.gif",
+          "unique_frames": 6
+        },
+        {
+          "id": "slash_down",
+          "frames": [
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/slash_down/00.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/slash_down/01.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/slash_down/02.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/slash_down/03.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/slash_down/04.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/slash_down/05.png"
+          ],
+          "frame_count": 6,
+          "fps": 10,
+          "loop": false,
+          "anchor": [
+            40,
+            80
+          ],
+          "canvas": [
+            96,
+            96
+          ],
+          "sheet": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/slash_down.png",
+          "gif": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/slash_down.gif",
+          "unique_frames": 6
+        },
+        {
+          "id": "slash_up",
+          "frames": [
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/slash_up/00.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/slash_up/01.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/slash_up/02.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/slash_up/03.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/slash_up/04.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/slash_up/05.png"
+          ],
+          "frame_count": 6,
+          "fps": 10,
+          "loop": false,
+          "anchor": [
+            40,
+            80
+          ],
+          "canvas": [
+            96,
+            96
+          ],
+          "sheet": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/slash_up.png",
+          "gif": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/slash_up.gif",
+          "unique_frames": 6
+        },
+        {
+          "id": "thrust",
+          "frames": [
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/thrust/00.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/thrust/01.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/thrust/02.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/thrust/03.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/thrust/04.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/thrust/05.png"
+          ],
+          "frame_count": 6,
+          "fps": 10,
+          "loop": false,
+          "anchor": [
+            40,
+            80
+          ],
+          "canvas": [
+            96,
+            96
+          ],
+          "sheet": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/thrust.png",
+          "gif": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/thrust.gif",
+          "unique_frames": 6
+        }
+      ],
+      "sprite_frames": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/godot/bone_dragon_blade.tres",
+      "source_pixel_measurement": {
+        "idle_visible_source_heights": [
+          149,
+          157,
+          164,
+          152,
+          147,
+          148
+        ],
+        "common_scale": 0.27906976744186046,
+        "body_height_basis": "median idle silhouette; weapon reach never determines body scale"
+      }
+    },
+    {
+      "id": "bone_dragon_spear",
+      "name": "骨龙·矛型",
+      "canvas": [
+        128,
+        96
+      ],
+      "root": [
+        40,
+        80
+      ],
+      "world_scale": [
+        1,
+        1
+      ],
+      "direction": "right",
+      "native_body_height": 42,
+      "base_stats": {
+        "base_hp": null,
+        "base_damage": null,
+        "poise": null,
+        "resist": {
+          "physical": null,
+          "magic": null
+        }
+      },
+      "actions": [
+        {
+          "id": "idle",
+          "frames": [
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_spear/frames/idle/00.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_spear/frames/idle/01.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_spear/frames/idle/02.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_spear/frames/idle/03.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_spear/frames/idle/04.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_spear/frames/idle/05.png"
+          ],
+          "frame_count": 6,
+          "fps": 6,
+          "loop": true,
+          "anchor": [
+            40,
+            80
+          ],
+          "canvas": [
+            128,
+            96
+          ],
+          "sheet": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_spear/idle.png",
+          "gif": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_spear/idle.gif",
+          "unique_frames": 6
+        },
+        {
+          "id": "move",
+          "frames": [
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_spear/frames/move/00.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_spear/frames/move/01.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_spear/frames/move/02.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_spear/frames/move/03.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_spear/frames/move/04.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_spear/frames/move/05.png"
+          ],
+          "frame_count": 6,
+          "fps": 9,
+          "loop": true,
+          "anchor": [
+            40,
+            80
+          ],
+          "canvas": [
+            128,
+            96
+          ],
+          "sheet": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_spear/move.png",
+          "gif": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_spear/move.gif",
+          "unique_frames": 6
+        },
+        {
+          "id": "thrust",
+          "frames": [
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_spear/frames/thrust/00.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_spear/frames/thrust/01.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_spear/frames/thrust/02.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_spear/frames/thrust/03.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_spear/frames/thrust/04.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_spear/frames/thrust/05.png"
+          ],
+          "frame_count": 6,
+          "fps": 10,
+          "loop": false,
+          "anchor": [
+            40,
+            80
+          ],
+          "canvas": [
+            128,
+            96
+          ],
+          "sheet": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_spear/thrust.png",
+          "gif": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_spear/thrust.gif",
+          "unique_frames": 6
+        }
+      ],
+      "sprite_frames": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/godot/bone_dragon_spear.tres",
+      "source_pixel_measurement": {
+        "idle_visible_source_heights": [
+          190,
+          205,
+          210,
+          197,
+          180,
+          189
+        ],
+        "common_scale": 0.21705426356589147,
+        "body_height_basis": "median idle silhouette; weapon reach never determines body scale"
+      }
+    },
+    {
+      "id": "bone_dragon_bow",
+      "name": "骨龙·弓型",
+      "canvas": [
+        96,
+        96
+      ],
+      "root": [
+        40,
+        80
+      ],
+      "world_scale": [
+        1,
+        1
+      ],
+      "direction": "right",
+      "native_body_height": 42,
+      "base_stats": {
+        "base_hp": null,
+        "base_damage": null,
+        "poise": null,
+        "resist": {
+          "physical": null,
+          "magic": null
+        }
+      },
+      "actions": [
+        {
+          "id": "idle",
+          "frames": [
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_bow/frames/idle/00.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_bow/frames/idle/01.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_bow/frames/idle/02.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_bow/frames/idle/03.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_bow/frames/idle/04.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_bow/frames/idle/05.png"
+          ],
+          "frame_count": 6,
+          "fps": 6,
+          "loop": true,
+          "anchor": [
+            40,
+            80
+          ],
+          "canvas": [
+            96,
+            96
+          ],
+          "sheet": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_bow/idle.png",
+          "gif": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_bow/idle.gif",
+          "unique_frames": 6
+        },
+        {
+          "id": "move",
+          "frames": [
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_bow/frames/move/00.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_bow/frames/move/01.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_bow/frames/move/02.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_bow/frames/move/03.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_bow/frames/move/04.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_bow/frames/move/05.png"
+          ],
+          "frame_count": 6,
+          "fps": 9,
+          "loop": true,
+          "anchor": [
+            40,
+            80
+          ],
+          "canvas": [
+            96,
+            96
+          ],
+          "sheet": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_bow/move.png",
+          "gif": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_bow/move.gif",
+          "unique_frames": 6
+        },
+        {
+          "id": "shoot",
+          "frames": [
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_bow/frames/shoot/00.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_bow/frames/shoot/01.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_bow/frames/shoot/02.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_bow/frames/shoot/03.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_bow/frames/shoot/04.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_bow/frames/shoot/05.png"
+          ],
+          "frame_count": 6,
+          "fps": 8,
+          "loop": false,
+          "anchor": [
+            40,
+            80
+          ],
+          "canvas": [
+            96,
+            96
+          ],
+          "sheet": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_bow/shoot.png",
+          "gif": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_bow/shoot.gif",
+          "unique_frames": 6
+        }
+      ],
+      "sprite_frames": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/godot/bone_dragon_bow.tres",
+      "source_pixel_measurement": {
+        "idle_visible_source_heights": [
+          211,
+          218,
+          227,
+          212,
+          205,
+          208
+        ],
+        "common_scale": 0.19858156028368795,
+        "body_height_basis": "median idle silhouette; weapon reach never determines body scale"
+      }
+    }
+  ],
+  "projectiles": [
+    {
+      "id": "bone_arrow",
+      "canvas": [
+        48,
+        16
+      ],
+      "root": [
+        24,
+        8
+      ],
+      "world_scale": [
+        1,
+        1
+      ],
+      "sprite_frames": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/godot/bone_arrow.tres",
+      "actions": [
+        {
+          "id": "fly",
+          "frames": [
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/projectiles/arrow/frames/00.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/projectiles/arrow/frames/01.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/projectiles/arrow/frames/02.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/projectiles/arrow/frames/03.png"
+          ],
+          "fps": 10,
+          "loop": true,
+          "frame_count": 4
+        }
+      ]
+    }
+  ],
+  "note": "Art-only preparation; stats remain null. No combat balance or game world registration."
+}

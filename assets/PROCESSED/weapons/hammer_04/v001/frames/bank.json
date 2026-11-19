@@ -1,0 +1,61 @@
+{
+  "id": "hammer_04",
+  "weapon_type": "hammer",
+  "source": {
+    "id": "hammer_04",
+    "name": "巨剑",
+    "weapon_type": "hammer",
+    "texture": "res://assets/PROCESSED/weapons/hammer_04/v001/model.png",
+    "native_canvas": [
+      48,
+      24
+    ],
+    "grip": [
+      7,
+      12
+    ],
+    "source_angle_degrees": 0,
+    "runtime_scale": [
+      1,
+      1
+    ]
+  },
+  "animations": {
+    "hammer_1": [
+      "res://assets/PROCESSED/weapons/hammer_04/v001/frames/hammer_1/00.png",
+      "res://assets/PROCESSED/weapons/hammer_04/v001/frames/hammer_1/01.png",
+      "res://assets/PROCESSED/weapons/hammer_04/v001/frames/hammer_1/02.png",
+      "res://assets/PROCESSED/weapons/hammer_04/v001/frames/hammer_1/03.png"
+    ],
+    "hammer_2": [
+      "res://assets/PROCESSED/weapons/hammer_04/v001/frames/hammer_2/00.png",
+      "res://assets/PROCESSED/weapons/hammer_04/v001/frames/hammer_2/01.png",
+      "res://assets/PROCESSED/weapons/hammer_04/v001/frames/hammer_2/02.png",
+      "res://assets/PROCESSED/weapons/hammer_04/v001/frames/hammer_2/03.png"
+    ],
+    "hammer_3": [
+      "res://assets/PROCESSED/weapons/hammer_04/v001/frames/hammer_3/00.png",
+      "res://assets/PROCESSED/weapons/hammer_04/v001/frames/hammer_3/01.png",
+      "res://assets/PROCESSED/weapons/hammer_04/v001/frames/hammer_3/02.png",
+      "res://assets/PROCESSED/weapons/hammer_04/v001/frames/hammer_3/03.png"
+    ],
+    "SKL-N03_leap": [
+      "res://assets/PROCESSED/weapons/hammer_04/v001/frames/SKL-N03_leap/00.png",
+      "res://assets/PROCESSED/weapons/hammer_04/v001/frames/SKL-N03_leap/01.png",
+      "res://assets/PROCESSED/weapons/hammer_04/v001/frames/SKL-N03_leap/02.png",
+      "res://assets/PROCESSED/weapons/hammer_04/v001/frames/SKL-N03_leap/03.png"
+    ],
+    "SKL-N03_slam": [
+      "res://assets/PROCESSED/weapons/hammer_04/v001/frames/SKL-N03_slam/00.png",
+      "res://assets/PROCESSED/weapons/hammer_04/v001/frames/SKL-N03_slam/01.png",
+      "res://assets/PROCESSED/weapons/hammer_04/v001/frames/SKL-N03_slam/02.png",
+      "res://assets/PROCESSED/weapons/hammer_04/v001/frames/SKL-N03_slam/03.png"
+    ],
+    "guard_hammer": [
+      "res://assets/PROCESSED/weapons/hammer_04/v001/frames/guard_hammer/00.png",
+      "res://assets/PROCESSED/weapons/hammer_04/v001/frames/guard_hammer/01.png",
+      "res://assets/PROCESSED/weapons/hammer_04/v001/frames/guard_hammer/02.png"
+    ]
+  },
+  "resampling": "native nearest rotation only; scale=1; no body edits"
+}

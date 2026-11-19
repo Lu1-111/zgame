@@ -1,0 +1,4681 @@
+{
+  "id": "weapons_v001",
+  "pixel_standard": "res://data/art/pixel_standards.json",
+  "pixel_spec": "res://assets/PROCESSED/weapons/catalog_v001/pixel_spec.json",
+  "assets": [
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_02/v001/model.png",
+      "native_canvas": [
+        48,
+        24
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        7,
+        12
+      ]
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_03/v001/model.png",
+      "native_canvas": [
+        48,
+        24
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        7,
+        12
+      ]
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_04/v001/model.png",
+      "native_canvas": [
+        48,
+        24
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        7,
+        12
+      ]
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_05/v001/model.png",
+      "native_canvas": [
+        48,
+        24
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        7,
+        12
+      ]
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_06/v001/model.png",
+      "native_canvas": [
+        48,
+        24
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        7,
+        12
+      ]
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/hammer_02/v001/model.png",
+      "native_canvas": [
+        48,
+        24
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        7,
+        12
+      ]
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/hammer_03/v001/model.png",
+      "native_canvas": [
+        48,
+        24
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        7,
+        12
+      ]
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/hammer_04/v001/model.png",
+      "native_canvas": [
+        48,
+        24
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        7,
+        12
+      ]
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/hammer_05/v001/model.png",
+      "native_canvas": [
+        48,
+        24
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        7,
+        12
+      ]
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/hammer_02/v001/frames/hammer_1/00.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        90
+      ],
+      "derived_from": "hammer_02",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/hammer_03/v001/frames/hammer_1/00.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        90
+      ],
+      "derived_from": "hammer_03",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/hammer_04/v001/frames/hammer_1/00.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        90
+      ],
+      "derived_from": "hammer_04",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/hammer_05/v001/frames/hammer_1/00.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        90
+      ],
+      "derived_from": "hammer_05",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/hammer_02/v001/frames/hammer_1/01.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        90
+      ],
+      "derived_from": "hammer_02",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/hammer_03/v001/frames/hammer_1/01.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        90
+      ],
+      "derived_from": "hammer_03",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/hammer_04/v001/frames/hammer_1/01.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        90
+      ],
+      "derived_from": "hammer_04",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/hammer_05/v001/frames/hammer_1/01.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        90
+      ],
+      "derived_from": "hammer_05",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/hammer_02/v001/frames/hammer_1/02.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        90
+      ],
+      "derived_from": "hammer_02",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/hammer_03/v001/frames/hammer_1/02.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        90
+      ],
+      "derived_from": "hammer_03",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/hammer_04/v001/frames/hammer_1/02.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        90
+      ],
+      "derived_from": "hammer_04",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/hammer_05/v001/frames/hammer_1/02.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        90
+      ],
+      "derived_from": "hammer_05",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/hammer_02/v001/frames/hammer_1/03.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        90
+      ],
+      "derived_from": "hammer_02",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/hammer_03/v001/frames/hammer_1/03.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        90
+      ],
+      "derived_from": "hammer_03",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/hammer_04/v001/frames/hammer_1/03.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        90
+      ],
+      "derived_from": "hammer_04",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/hammer_05/v001/frames/hammer_1/03.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        90
+      ],
+      "derived_from": "hammer_05",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/hammer_02/v001/frames/hammer_2/00.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        90
+      ],
+      "derived_from": "hammer_02",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/hammer_03/v001/frames/hammer_2/00.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        90
+      ],
+      "derived_from": "hammer_03",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/hammer_04/v001/frames/hammer_2/00.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        90
+      ],
+      "derived_from": "hammer_04",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/hammer_05/v001/frames/hammer_2/00.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        90
+      ],
+      "derived_from": "hammer_05",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/hammer_02/v001/frames/hammer_2/01.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        90
+      ],
+      "derived_from": "hammer_02",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/hammer_03/v001/frames/hammer_2/01.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        90
+      ],
+      "derived_from": "hammer_03",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/hammer_04/v001/frames/hammer_2/01.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        90
+      ],
+      "derived_from": "hammer_04",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/hammer_05/v001/frames/hammer_2/01.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        90
+      ],
+      "derived_from": "hammer_05",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/hammer_02/v001/frames/hammer_2/02.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        90
+      ],
+      "derived_from": "hammer_02",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/hammer_03/v001/frames/hammer_2/02.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        90
+      ],
+      "derived_from": "hammer_03",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/hammer_04/v001/frames/hammer_2/02.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        90
+      ],
+      "derived_from": "hammer_04",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/hammer_05/v001/frames/hammer_2/02.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        90
+      ],
+      "derived_from": "hammer_05",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/hammer_02/v001/frames/hammer_2/03.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        90
+      ],
+      "derived_from": "hammer_02",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/hammer_03/v001/frames/hammer_2/03.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        90
+      ],
+      "derived_from": "hammer_03",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/hammer_04/v001/frames/hammer_2/03.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        90
+      ],
+      "derived_from": "hammer_04",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/hammer_05/v001/frames/hammer_2/03.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        90
+      ],
+      "derived_from": "hammer_05",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/hammer_02/v001/frames/hammer_3/00.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        90
+      ],
+      "derived_from": "hammer_02",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/hammer_03/v001/frames/hammer_3/00.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        90
+      ],
+      "derived_from": "hammer_03",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/hammer_04/v001/frames/hammer_3/00.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        90
+      ],
+      "derived_from": "hammer_04",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/hammer_05/v001/frames/hammer_3/00.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        90
+      ],
+      "derived_from": "hammer_05",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/hammer_02/v001/frames/hammer_3/01.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        90
+      ],
+      "derived_from": "hammer_02",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/hammer_03/v001/frames/hammer_3/01.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        90
+      ],
+      "derived_from": "hammer_03",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/hammer_04/v001/frames/hammer_3/01.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        90
+      ],
+      "derived_from": "hammer_04",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/hammer_05/v001/frames/hammer_3/01.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        90
+      ],
+      "derived_from": "hammer_05",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/hammer_02/v001/frames/hammer_3/02.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        90
+      ],
+      "derived_from": "hammer_02",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/hammer_03/v001/frames/hammer_3/02.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        90
+      ],
+      "derived_from": "hammer_03",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/hammer_04/v001/frames/hammer_3/02.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        90
+      ],
+      "derived_from": "hammer_04",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/hammer_05/v001/frames/hammer_3/02.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        90
+      ],
+      "derived_from": "hammer_05",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/hammer_02/v001/frames/hammer_3/03.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        90
+      ],
+      "derived_from": "hammer_02",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/hammer_03/v001/frames/hammer_3/03.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        90
+      ],
+      "derived_from": "hammer_03",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/hammer_04/v001/frames/hammer_3/03.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        90
+      ],
+      "derived_from": "hammer_04",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/hammer_05/v001/frames/hammer_3/03.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        90
+      ],
+      "derived_from": "hammer_05",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_02/v001/frames/SKL-N01_stance/00.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_02",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_03/v001/frames/SKL-N01_stance/00.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_03",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_04/v001/frames/SKL-N01_stance/00.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_04",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_05/v001/frames/SKL-N01_stance/00.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_05",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_06/v001/frames/SKL-N01_stance/00.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_06",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_02/v001/frames/SKL-N01_stance/01.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_02",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_03/v001/frames/SKL-N01_stance/01.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_03",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_04/v001/frames/SKL-N01_stance/01.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_04",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_05/v001/frames/SKL-N01_stance/01.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_05",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_06/v001/frames/SKL-N01_stance/01.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_06",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_02/v001/frames/SKL-N01_stance/02.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_02",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_03/v001/frames/SKL-N01_stance/02.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_03",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_04/v001/frames/SKL-N01_stance/02.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_04",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_05/v001/frames/SKL-N01_stance/02.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_05",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_06/v001/frames/SKL-N01_stance/02.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_06",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_02/v001/frames/SKL-N01_stance/03.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_02",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_03/v001/frames/SKL-N01_stance/03.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_03",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_04/v001/frames/SKL-N01_stance/03.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_04",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_05/v001/frames/SKL-N01_stance/03.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_05",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_06/v001/frames/SKL-N01_stance/03.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_06",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_02/v001/frames/SKL-N01_counter_slash/00.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_02",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_03/v001/frames/SKL-N01_counter_slash/00.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_03",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_04/v001/frames/SKL-N01_counter_slash/00.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_04",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_05/v001/frames/SKL-N01_counter_slash/00.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_05",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_06/v001/frames/SKL-N01_counter_slash/00.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_06",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_02/v001/frames/SKL-N01_counter_slash/01.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_02",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_03/v001/frames/SKL-N01_counter_slash/01.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_03",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_04/v001/frames/SKL-N01_counter_slash/01.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_04",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_05/v001/frames/SKL-N01_counter_slash/01.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_05",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_06/v001/frames/SKL-N01_counter_slash/01.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_06",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_02/v001/frames/SKL-N01_counter_slash/02.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_02",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_03/v001/frames/SKL-N01_counter_slash/02.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_03",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_04/v001/frames/SKL-N01_counter_slash/02.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_04",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_05/v001/frames/SKL-N01_counter_slash/02.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_05",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_06/v001/frames/SKL-N01_counter_slash/02.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_06",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_02/v001/frames/SKL-N01_counter_slash/03.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_02",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_03/v001/frames/SKL-N01_counter_slash/03.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_03",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_04/v001/frames/SKL-N01_counter_slash/03.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_04",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_05/v001/frames/SKL-N01_counter_slash/03.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_05",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_06/v001/frames/SKL-N01_counter_slash/03.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_06",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/hammer_02/v001/frames/SKL-N03_leap/00.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "hammer_02",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/hammer_03/v001/frames/SKL-N03_leap/00.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "hammer_03",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/hammer_04/v001/frames/SKL-N03_leap/00.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "hammer_04",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/hammer_05/v001/frames/SKL-N03_leap/00.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "hammer_05",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/hammer_02/v001/frames/SKL-N03_leap/01.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "hammer_02",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/hammer_03/v001/frames/SKL-N03_leap/01.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "hammer_03",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/hammer_04/v001/frames/SKL-N03_leap/01.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "hammer_04",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/hammer_05/v001/frames/SKL-N03_leap/01.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "hammer_05",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/hammer_02/v001/frames/SKL-N03_leap/02.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "hammer_02",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/hammer_03/v001/frames/SKL-N03_leap/02.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "hammer_03",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/hammer_04/v001/frames/SKL-N03_leap/02.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "hammer_04",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/hammer_05/v001/frames/SKL-N03_leap/02.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "hammer_05",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/hammer_02/v001/frames/SKL-N03_leap/03.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "hammer_02",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/hammer_03/v001/frames/SKL-N03_leap/03.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "hammer_03",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/hammer_04/v001/frames/SKL-N03_leap/03.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "hammer_04",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/hammer_05/v001/frames/SKL-N03_leap/03.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "hammer_05",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/hammer_02/v001/frames/SKL-N03_slam/00.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "hammer_02",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/hammer_03/v001/frames/SKL-N03_slam/00.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "hammer_03",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/hammer_04/v001/frames/SKL-N03_slam/00.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "hammer_04",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/hammer_05/v001/frames/SKL-N03_slam/00.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "hammer_05",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/hammer_02/v001/frames/SKL-N03_slam/01.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "hammer_02",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/hammer_03/v001/frames/SKL-N03_slam/01.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "hammer_03",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/hammer_04/v001/frames/SKL-N03_slam/01.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "hammer_04",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/hammer_05/v001/frames/SKL-N03_slam/01.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "hammer_05",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/hammer_02/v001/frames/SKL-N03_slam/02.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "hammer_02",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/hammer_03/v001/frames/SKL-N03_slam/02.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "hammer_03",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/hammer_04/v001/frames/SKL-N03_slam/02.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "hammer_04",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/hammer_05/v001/frames/SKL-N03_slam/02.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "hammer_05",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/hammer_02/v001/frames/SKL-N03_slam/03.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "hammer_02",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/hammer_03/v001/frames/SKL-N03_slam/03.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "hammer_03",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/hammer_04/v001/frames/SKL-N03_slam/03.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "hammer_04",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/hammer_05/v001/frames/SKL-N03_slam/03.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "hammer_05",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_02/v001/frames/sword_1/00.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_02",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_03/v001/frames/sword_1/00.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_03",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_04/v001/frames/sword_1/00.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_04",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_05/v001/frames/sword_1/00.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_05",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_06/v001/frames/sword_1/00.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_06",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_02/v001/frames/sword_1/01.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_02",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_03/v001/frames/sword_1/01.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_03",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_04/v001/frames/sword_1/01.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_04",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_05/v001/frames/sword_1/01.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_05",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_06/v001/frames/sword_1/01.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_06",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_02/v001/frames/sword_1/02.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_02",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_03/v001/frames/sword_1/02.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_03",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_04/v001/frames/sword_1/02.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_04",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_05/v001/frames/sword_1/02.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_05",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_06/v001/frames/sword_1/02.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_06",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_02/v001/frames/sword_1/03.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_02",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_03/v001/frames/sword_1/03.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_03",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_04/v001/frames/sword_1/03.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_04",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_05/v001/frames/sword_1/03.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_05",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_06/v001/frames/sword_1/03.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_06",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_02/v001/frames/sword_1/04.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_02",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_03/v001/frames/sword_1/04.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_03",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_04/v001/frames/sword_1/04.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_04",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_05/v001/frames/sword_1/04.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_05",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_06/v001/frames/sword_1/04.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_06",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_02/v001/frames/sword_1/05.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_02",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_03/v001/frames/sword_1/05.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_03",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_04/v001/frames/sword_1/05.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_04",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_05/v001/frames/sword_1/05.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_05",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_06/v001/frames/sword_1/05.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_06",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_02/v001/frames/sword_1/06.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_02",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_03/v001/frames/sword_1/06.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_03",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_04/v001/frames/sword_1/06.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_04",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_05/v001/frames/sword_1/06.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_05",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_06/v001/frames/sword_1/06.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_06",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_02/v001/frames/sword_1/07.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_02",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_03/v001/frames/sword_1/07.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_03",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_04/v001/frames/sword_1/07.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_04",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_05/v001/frames/sword_1/07.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_05",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_06/v001/frames/sword_1/07.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_06",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_02/v001/frames/sword_2/00.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_02",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_03/v001/frames/sword_2/00.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_03",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_04/v001/frames/sword_2/00.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_04",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_05/v001/frames/sword_2/00.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_05",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_06/v001/frames/sword_2/00.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_06",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_02/v001/frames/sword_2/01.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_02",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_03/v001/frames/sword_2/01.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_03",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_04/v001/frames/sword_2/01.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_04",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_05/v001/frames/sword_2/01.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_05",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_06/v001/frames/sword_2/01.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_06",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_02/v001/frames/sword_2/02.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_02",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_03/v001/frames/sword_2/02.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_03",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_04/v001/frames/sword_2/02.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_04",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_05/v001/frames/sword_2/02.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_05",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_06/v001/frames/sword_2/02.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_06",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_02/v001/frames/sword_2/03.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_02",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_03/v001/frames/sword_2/03.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_03",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_04/v001/frames/sword_2/03.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_04",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_05/v001/frames/sword_2/03.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_05",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_06/v001/frames/sword_2/03.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_06",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_02/v001/frames/sword_2/04.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_02",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_03/v001/frames/sword_2/04.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_03",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_04/v001/frames/sword_2/04.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_04",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_05/v001/frames/sword_2/04.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_05",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_06/v001/frames/sword_2/04.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_06",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_02/v001/frames/sword_2/05.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_02",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_03/v001/frames/sword_2/05.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_03",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_04/v001/frames/sword_2/05.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_04",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_05/v001/frames/sword_2/05.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_05",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_06/v001/frames/sword_2/05.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_06",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_02/v001/frames/sword_2/06.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_02",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_03/v001/frames/sword_2/06.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_03",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_04/v001/frames/sword_2/06.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_04",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_05/v001/frames/sword_2/06.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_05",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_06/v001/frames/sword_2/06.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_06",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_02/v001/frames/sword_2/07.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_02",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_03/v001/frames/sword_2/07.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_03",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_04/v001/frames/sword_2/07.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_04",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_05/v001/frames/sword_2/07.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_05",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_06/v001/frames/sword_2/07.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_06",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_02/v001/frames/sword_3/00.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_02",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_03/v001/frames/sword_3/00.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_03",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_04/v001/frames/sword_3/00.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_04",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_05/v001/frames/sword_3/00.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_05",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_06/v001/frames/sword_3/00.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_06",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_02/v001/frames/sword_3/01.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_02",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_03/v001/frames/sword_3/01.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_03",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_04/v001/frames/sword_3/01.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_04",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_05/v001/frames/sword_3/01.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_05",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_06/v001/frames/sword_3/01.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_06",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_02/v001/frames/sword_3/02.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_02",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_03/v001/frames/sword_3/02.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_03",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_04/v001/frames/sword_3/02.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_04",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_05/v001/frames/sword_3/02.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_05",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_06/v001/frames/sword_3/02.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_06",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_02/v001/frames/sword_3/03.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_02",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_03/v001/frames/sword_3/03.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_03",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_04/v001/frames/sword_3/03.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_04",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_05/v001/frames/sword_3/03.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_05",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_06/v001/frames/sword_3/03.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_06",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_02/v001/frames/sword_3/04.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_02",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_03/v001/frames/sword_3/04.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_03",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_04/v001/frames/sword_3/04.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_04",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_05/v001/frames/sword_3/04.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_05",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_06/v001/frames/sword_3/04.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_06",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_02/v001/frames/sword_3/05.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_02",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_03/v001/frames/sword_3/05.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_03",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_04/v001/frames/sword_3/05.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_04",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_05/v001/frames/sword_3/05.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_05",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_06/v001/frames/sword_3/05.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_06",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_02/v001/frames/sword_3/06.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_02",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_03/v001/frames/sword_3/06.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_03",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_04/v001/frames/sword_3/06.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_04",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_05/v001/frames/sword_3/06.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_05",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_06/v001/frames/sword_3/06.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_06",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_02/v001/frames/sword_3/07.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_02",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_03/v001/frames/sword_3/07.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_03",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_04/v001/frames/sword_3/07.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_04",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_05/v001/frames/sword_3/07.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_05",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_06/v001/frames/sword_3/07.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_06",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_02/v001/frames/guard_sword/00.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_02",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_03/v001/frames/guard_sword/00.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_03",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_04/v001/frames/guard_sword/00.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_04",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_05/v001/frames/guard_sword/00.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_05",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_06/v001/frames/guard_sword/00.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_06",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_02/v001/frames/guard_sword/01.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_02",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_03/v001/frames/guard_sword/01.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_03",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_04/v001/frames/guard_sword/01.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_04",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_05/v001/frames/guard_sword/01.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_05",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_06/v001/frames/guard_sword/01.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_06",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_02/v001/frames/guard_sword/02.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_02",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_03/v001/frames/guard_sword/02.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_03",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_04/v001/frames/guard_sword/02.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_04",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_05/v001/frames/guard_sword/02.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_05",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/sword_06/v001/frames/guard_sword/02.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "sword_06",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/hammer_02/v001/frames/guard_hammer/00.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "hammer_02",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/hammer_03/v001/frames/guard_hammer/00.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "hammer_03",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/hammer_04/v001/frames/guard_hammer/00.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "hammer_04",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/hammer_05/v001/frames/guard_hammer/00.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "hammer_05",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/hammer_02/v001/frames/guard_hammer/01.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "hammer_02",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/hammer_03/v001/frames/guard_hammer/01.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "hammer_03",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/hammer_04/v001/frames/guard_hammer/01.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "hammer_04",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/hammer_05/v001/frames/guard_hammer/01.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "hammer_05",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/hammer_02/v001/frames/guard_hammer/02.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "hammer_02",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/hammer_03/v001/frames/guard_hammer/02.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "hammer_03",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/hammer_04/v001/frames/guard_hammer/02.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "hammer_04",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    },
+    {
+      "path": "res://assets/PROCESSED/weapons/hammer_05/v001/frames/guard_hammer/02.png",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "derived_from": "hammer_05",
+      "sampling": "native 1:1 nearest rotation of converted model; fixed per-frame socket"
+    }
+  ]
+}

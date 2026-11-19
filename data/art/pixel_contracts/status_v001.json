@@ -1,0 +1,89 @@
+{
+  "manifest": "data/art/status_pixel_manifest_v001.json",
+  "assets": {
+    "res://assets/PROCESSED/effects/status_v001/bleeding.png": {
+      "native_canvas": [
+        2,
+        2
+      ],
+      "visible_rect": [
+        0,
+        0,
+        2,
+        2
+      ],
+      "anchor": [
+        1,
+        1
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 12
+    },
+    "res://assets/PROCESSED/effects/status_v001/poison.png": {
+      "native_canvas": [
+        3,
+        3
+      ],
+      "visible_rect": [
+        0,
+        0,
+        3,
+        3
+      ],
+      "anchor": [
+        1,
+        1
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 12
+    },
+    "res://assets/PROCESSED/effects/status_v001/chill.png": {
+      "native_canvas": [
+        5,
+        5
+      ],
+      "visible_rect": [
+        0,
+        0,
+        5,
+        5
+      ],
+      "anchor": [
+        2,
+        2
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 12
+    },
+    "res://assets/PROCESSED/effects/status_v001/bolt.png": {
+      "native_canvas": [
+        24,
+        7
+      ],
+      "visible_rect": [
+        0,
+        0,
+        24,
+        7
+      ],
+      "anchor": [
+        23,
+        3
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 12
+    }
+  }
+}

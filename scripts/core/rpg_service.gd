@@ -19,10 +19,17 @@ static func ensure_state() -> void:
 		for id: String in cfg.starter_weapons:
 			if id != str(GameState.weapon_id) and not GameState.owned_weapons.has(StringName(id)):
 				GameState.owned_weapons.append(StringName(id))
+		for id: String in cfg.starter_accessories:
+			var key := StringName(id)
+			if not GameState.owned_accessories.has(key) and not GameState.equipped_accessories.has(key):
+				GameState.owned_accessories.append(key)
 		GameState.equipment_revision = int(cfg.revision)
+	while GameState.equipped_accessories.size() < int(cfg.accessory_slots):
+		GameState.equipped_accessories.append(&"")
 	GameState.equipped_skills.resize(int(cfg.active_slots))
 	GameState.equipped_passives.resize(int(cfg.passive_slots))
 	GameState.selected_skill = clampi(GameState.selected_skill,0,int(cfg.active_slots)-1)
+	SkillLibrary.migrate_state(GameState)
 
 
 ## 装上武器并将原武器退回同一物品格，交换全程守恒。
@@ -64,6 +71,7 @@ static func move_weapon(from: int, to: int) -> bool:
 
 ## 未解锁技能可查看但不可装备；同一技能不会重复占用两个槽。
 static func equip_skill(id: StringName, index: int, passive: bool = false) -> bool:
+	id = SkillLibrary.canonical(id)
 	var definition := DataDB.get_skill(id)
 	var category := "passive" if passive else "active"
 	var slots: Array[StringName] = GameState.equipped_passives if passive else GameState.equipped_skills
@@ -75,6 +83,7 @@ static func equip_skill(id: StringName, index: int, passive: bool = false) -> bo
 	if old_index >= 0:
 		slots[old_index] = slots[index]
 	slots[index] = id
+	ProgressionService.refresh_limits()
 	return true
 
 
@@ -89,20 +98,21 @@ static func passive_effect(key: String) -> float:
 
 ## 属性页和战斗共用攻击力，武器加成只加入对应伤害类型。
 static func attack_power(kind: String) -> int:
-	var base: Dictionary = config().base_attributes
+	var key := "magic_attack" if kind == "magic" else "physical_attack"
 	var weapon := DataDB.get_weapon(GameState.weapon_id)
-	var result := float(base.magic_attack if kind == "magic" else base.physical_attack)
-	result += float(base.attack_per_level) * (GameState.level-1)
-	if str(weapon.get("damage_type","")) == kind:
-		result += float(weapon.get("attack",0))
-	var key := "magic_damage_pct" if kind == "magic" else "physical_damage_pct"
-	return roundi(result * (1.0+InventoryService.talent_effect(key)/100.0))
-
-
-## 返回人物当前实际生效的全部派生属性。
-static func stats() -> Dictionary:
 	var base: Dictionary = config().base_attributes
-	return {"physical_attack":attack_power("physical"),"magic_attack":attack_power("magic"),"defense":float(base.defense)+passive_effect("defense"),"damage_reduction":clampf(float(base.damage_reduction)-InventoryService.talent_effect("damage_taken_pct")+passive_effect("damage_reduction"),0,float(base.max_damage_reduction)),"life_steal":float(base.life_steal)+passive_effect("life_steal"),"hp_regen":float(base.hp_regen)+passive_effect("hp_regen"),"mana_regen":float(base.mana_regen)+passive_effect("mana_regen")}
+	var raw := float(base[key])+float(base.attack_per_level)*(GameState.level-1)
+	if str(weapon.get("damage_type","")) == kind:
+		raw += float(weapon.get("attack",0))
+	var multiplier := 1.0+ProgressionService.point_effect(key+"_pct")/100.0
+	var extra := InventoryService.talent_effect("magic_damage_pct" if kind == "magic" else "physical_damage_pct")
+	var frenzy: Dictionary = GameState.skill_buffs.get("frenzy",{})
+	return roundi(raw*multiplier*(1.0+extra/100.0)*(1.0+float(frenzy.get("damage_bonus_pct",0))/100.0))
+
+
+## 返回战斗和人物面板共用的实际属性。
+static func stats() -> Dictionary:
+	return ProgressionService.total_stats()
 
 
 ## 计算当前等级内已积累经验和升至下一级的经验需求。

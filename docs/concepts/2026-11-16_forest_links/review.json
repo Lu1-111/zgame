@@ -1,0 +1,458 @@
+{
+  "status": "proposal_only",
+  "plans": 10,
+  "groups": 5,
+  "choices_checked": 32,
+  "all_combinations_connected_without_04_or_double_jump": true,
+  "note": "Graph review only. Collision geometry, jumps, seals, puzzle states and save/load require approval then in-engine playtesting.",
+  "combinations": [
+    {
+      "selection": "05A/06A/07A/08A/09A",
+      "without_04_and_double_jump_reachable": [
+        "01",
+        "02",
+        "03",
+        "05",
+        "06",
+        "07",
+        "08",
+        "09"
+      ],
+      "pass": true
+    },
+    {
+      "selection": "05A/06A/07A/08A/09B",
+      "without_04_and_double_jump_reachable": [
+        "01",
+        "02",
+        "03",
+        "05",
+        "06",
+        "07",
+        "08",
+        "09"
+      ],
+      "pass": true
+    },
+    {
+      "selection": "05A/06A/07A/08B/09A",
+      "without_04_and_double_jump_reachable": [
+        "01",
+        "02",
+        "03",
+        "05",
+        "06",
+        "07",
+        "08",
+        "09"
+      ],
+      "pass": true
+    },
+    {
+      "selection": "05A/06A/07A/08B/09B",
+      "without_04_and_double_jump_reachable": [
+        "01",
+        "02",
+        "03",
+        "05",
+        "06",
+        "07",
+        "08",
+        "09"
+      ],
+      "pass": true
+    },
+    {
+      "selection": "05A/06A/07B/08A/09A",
+      "without_04_and_double_jump_reachable": [
+        "01",
+        "02",
+        "03",
+        "05",
+        "06",
+        "07",
+        "08",
+        "09"
+      ],
+      "pass": true
+    },
+    {
+      "selection": "05A/06A/07B/08A/09B",
+      "without_04_and_double_jump_reachable": [
+        "01",
+        "02",
+        "03",
+        "05",
+        "06",
+        "07",
+        "08",
+        "09"
+      ],
+      "pass": true
+    },
+    {
+      "selection": "05A/06A/07B/08B/09A",
+      "without_04_and_double_jump_reachable": [
+        "01",
+        "02",
+        "03",
+        "05",
+        "06",
+        "07",
+        "08",
+        "09"
+      ],
+      "pass": true
+    },
+    {
+      "selection": "05A/06A/07B/08B/09B",
+      "without_04_and_double_jump_reachable": [
+        "01",
+        "02",
+        "03",
+        "05",
+        "06",
+        "07",
+        "08",
+        "09"
+      ],
+      "pass": true
+    },
+    {
+      "selection": "05A/06B/07A/08A/09A",
+      "without_04_and_double_jump_reachable": [
+        "01",
+        "02",
+        "03",
+        "05",
+        "06",
+        "07",
+        "08",
+        "09"
+      ],
+      "pass": true
+    },
+    {
+      "selection": "05A/06B/07A/08A/09B",
+      "without_04_and_double_jump_reachable": [
+        "01",
+        "02",
+        "03",
+        "05",
+        "06",
+        "07",
+        "08",
+        "09"
+      ],
+      "pass": true
+    },
+    {
+      "selection": "05A/06B/07A/08B/09A",
+      "without_04_and_double_jump_reachable": [
+        "01",
+        "02",
+        "03",
+        "05",
+        "06",
+        "07",
+        "08",
+        "09"
+      ],
+      "pass": true
+    },
+    {
+      "selection": "05A/06B/07A/08B/09B",
+      "without_04_and_double_jump_reachable": [
+        "01",
+        "02",
+        "03",
+        "05",
+        "06",
+        "07",
+        "08",
+        "09"
+      ],
+      "pass": true
+    },
+    {
+      "selection": "05A/06B/07B/08A/09A",
+      "without_04_and_double_jump_reachable": [
+        "01",
+        "02",
+        "03",
+        "05",
+        "06",
+        "07",
+        "08",
+        "09"
+      ],
+      "pass": true
+    },
+    {
+      "selection": "05A/06B/07B/08A/09B",
+      "without_04_and_double_jump_reachable": [
+        "01",
+        "02",
+        "03",
+        "05",
+        "06",
+        "07",
+        "08",
+        "09"
+      ],
+      "pass": true
+    },
+    {
+      "selection": "05A/06B/07B/08B/09A",
+      "without_04_and_double_jump_reachable": [
+        "01",
+        "02",
+        "03",
+        "05",
+        "06",
+        "07",
+        "08",
+        "09"
+      ],
+      "pass": true
+    },
+    {
+      "selection": "05A/06B/07B/08B/09B",
+      "without_04_and_double_jump_reachable": [
+        "01",
+        "02",
+        "03",
+        "05",
+        "06",
+        "07",
+        "08",
+        "09"
+      ],
+      "pass": true
+    },
+    {
+      "selection": "05B/06A/07A/08A/09A",
+      "without_04_and_double_jump_reachable": [
+        "01",
+        "02",
+        "03",
+        "05",
+        "06",
+        "07",
+        "08",
+        "09"
+      ],
+      "pass": true
+    },
+    {
+      "selection": "05B/06A/07A/08A/09B",
+      "without_04_and_double_jump_reachable": [
+        "01",
+        "02",
+        "03",
+        "05",
+        "06",
+        "07",
+        "08",
+        "09"
+      ],
+      "pass": true
+    },
+    {
+      "selection": "05B/06A/07A/08B/09A",
+      "without_04_and_double_jump_reachable": [
+        "01",
+        "02",
+        "03",
+        "05",
+        "06",
+        "07",
+        "08",
+        "09"
+      ],
+      "pass": true
+    },
+    {
+      "selection": "05B/06A/07A/08B/09B",
+      "without_04_and_double_jump_reachable": [
+        "01",
+        "02",
+        "03",
+        "05",
+        "06",
+        "07",
+        "08",
+        "09"
+      ],
+      "pass": true
+    },
+    {
+      "selection": "05B/06A/07B/08A/09A",
+      "without_04_and_double_jump_reachable": [
+        "01",
+        "02",
+        "03",
+        "05",
+        "06",
+        "07",
+        "08",
+        "09"
+      ],
+      "pass": true
+    },
+    {
+      "selection": "05B/06A/07B/08A/09B",
+      "without_04_and_double_jump_reachable": [
+        "01",
+        "02",
+        "03",
+        "05",
+        "06",
+        "07",
+        "08",
+        "09"
+      ],
+      "pass": true
+    },
+    {
+      "selection": "05B/06A/07B/08B/09A",
+      "without_04_and_double_jump_reachable": [
+        "01",
+        "02",
+        "03",
+        "05",
+        "06",
+        "07",
+        "08",
+        "09"
+      ],
+      "pass": true
+    },
+    {
+      "selection": "05B/06A/07B/08B/09B",
+      "without_04_and_double_jump_reachable": [
+        "01",
+        "02",
+        "03",
+        "05",
+        "06",
+        "07",
+        "08",
+        "09"
+      ],
+      "pass": true
+    },
+    {
+      "selection": "05B/06B/07A/08A/09A",
+      "without_04_and_double_jump_reachable": [
+        "01",
+        "02",
+        "03",
+        "05",
+        "06",
+        "07",
+        "08",
+        "09"
+      ],
+      "pass": true
+    },
+    {
+      "selection": "05B/06B/07A/08A/09B",
+      "without_04_and_double_jump_reachable": [
+        "01",
+        "02",
+        "03",
+        "05",
+        "06",
+        "07",
+        "08",
+        "09"
+      ],
+      "pass": true
+    },
+    {
+      "selection": "05B/06B/07A/08B/09A",
+      "without_04_and_double_jump_reachable": [
+        "01",
+        "02",
+        "03",
+        "05",
+        "06",
+        "07",
+        "08",
+        "09"
+      ],
+      "pass": true
+    },
+    {
+      "selection": "05B/06B/07A/08B/09B",
+      "without_04_and_double_jump_reachable": [
+        "01",
+        "02",
+        "03",
+        "05",
+        "06",
+        "07",
+        "08",
+        "09"
+      ],
+      "pass": true
+    },
+    {
+      "selection": "05B/06B/07B/08A/09A",
+      "without_04_and_double_jump_reachable": [
+        "01",
+        "02",
+        "03",
+        "05",
+        "06",
+        "07",
+        "08",
+        "09"
+      ],
+      "pass": true
+    },
+    {
+      "selection": "05B/06B/07B/08A/09B",
+      "without_04_and_double_jump_reachable": [
+        "01",
+        "02",
+        "03",
+        "05",
+        "06",
+        "07",
+        "08",
+        "09"
+      ],
+      "pass": true
+    },
+    {
+      "selection": "05B/06B/07B/08B/09A",
+      "without_04_and_double_jump_reachable": [
+        "01",
+        "02",
+        "03",
+        "05",
+        "06",
+        "07",
+        "08",
+        "09"
+      ],
+      "pass": true
+    },
+    {
+      "selection": "05B/06B/07B/08B/09B",
+      "without_04_and_double_jump_reachable": [
+        "01",
+        "02",
+        "03",
+        "05",
+        "06",
+        "07",
+        "08",
+        "09"
+      ],
+      "pass": true
+    }
+  ]
+}

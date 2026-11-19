@@ -1,0 +1,16 @@
+{
+  "schema": 1,
+  "tier_multipliers": {
+    "0": 1.0,
+    "1": 1.0,
+    "2": 1.0
+  },
+  "region_multiplier_field": "enemy_multiplier",
+  "default_tier_multiplier": 1.0,
+  "scaled_prefix": "base_",
+  "rounded_fields": [
+    "hp",
+    "damage"
+  ],
+  "note": "现有三个区域未指定等级成长系数，等级0/1/2暂沿用已确认的1.0；不擅自加成长。区域enemy_multiplier为独立修正，最终倍率为等级表×区域修正；无区域上下文沿用1.0。未定义的等级不可用于正式刷怪。"
+}

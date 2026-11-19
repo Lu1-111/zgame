@@ -1,0 +1,34 @@
+[gd_resource type="SpriteFrames" load_steps=25 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/idle/00.png" id="t0"]
+[ext_resource type="Texture2D" path="res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/idle/01.png" id="t1"]
+[ext_resource type="Texture2D" path="res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/idle/02.png" id="t2"]
+[ext_resource type="Texture2D" path="res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/idle/03.png" id="t3"]
+[ext_resource type="Texture2D" path="res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/idle/04.png" id="t4"]
+[ext_resource type="Texture2D" path="res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/idle/05.png" id="t5"]
+[ext_resource type="Texture2D" path="res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/move/00.png" id="t6"]
+[ext_resource type="Texture2D" path="res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/move/01.png" id="t7"]
+[ext_resource type="Texture2D" path="res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/move/02.png" id="t8"]
+[ext_resource type="Texture2D" path="res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/move/03.png" id="t9"]
+[ext_resource type="Texture2D" path="res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/move/04.png" id="t10"]
+[ext_resource type="Texture2D" path="res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/move/05.png" id="t11"]
+[ext_resource type="Texture2D" path="res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/ram/00.png" id="t12"]
+[ext_resource type="Texture2D" path="res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/ram/01.png" id="t13"]
+[ext_resource type="Texture2D" path="res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/ram/02.png" id="t14"]
+[ext_resource type="Texture2D" path="res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/ram/03.png" id="t15"]
+[ext_resource type="Texture2D" path="res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/ram/04.png" id="t16"]
+[ext_resource type="Texture2D" path="res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/ram/05.png" id="t17"]
+[ext_resource type="Texture2D" path="res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/shell_defense/00.png" id="t18"]
+[ext_resource type="Texture2D" path="res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/shell_defense/01.png" id="t19"]
+[ext_resource type="Texture2D" path="res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/shell_defense/02.png" id="t20"]
+[ext_resource type="Texture2D" path="res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/shell_defense/03.png" id="t21"]
+[ext_resource type="Texture2D" path="res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/shell_defense/04.png" id="t22"]
+[ext_resource type="Texture2D" path="res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/shell_defense/05.png" id="t23"]
+
+[resource]
+animations = [
+{"frames":[{"duration":1.0,"texture":ExtResource("t0")},{"duration":1.0,"texture":ExtResource("t1")},{"duration":1.0,"texture":ExtResource("t2")},{"duration":1.0,"texture":ExtResource("t3")},{"duration":1.0,"texture":ExtResource("t4")},{"duration":1.0,"texture":ExtResource("t5")}],"loop":true,"name":&"idle","speed":6},
+{"frames":[{"duration":1.0,"texture":ExtResource("t6")},{"duration":1.0,"texture":ExtResource("t7")},{"duration":1.0,"texture":ExtResource("t8")},{"duration":1.0,"texture":ExtResource("t9")},{"duration":1.0,"texture":ExtResource("t10")},{"duration":1.0,"texture":ExtResource("t11")}],"loop":true,"name":&"move","speed":9},
+{"frames":[{"duration":1.0,"texture":ExtResource("t12")},{"duration":1.0,"texture":ExtResource("t13")},{"duration":1.0,"texture":ExtResource("t14")},{"duration":1.0,"texture":ExtResource("t15")},{"duration":1.0,"texture":ExtResource("t16")},{"duration":1.0,"texture":ExtResource("t17")}],"loop":false,"name":&"ram","speed":10},
+{"frames":[{"duration":1.0,"texture":ExtResource("t18")},{"duration":1.0,"texture":ExtResource("t19")},{"duration":1.0,"texture":ExtResource("t20")},{"duration":1.0,"texture":ExtResource("t21")},{"duration":1.0,"texture":ExtResource("t22")},{"duration":1.0,"texture":ExtResource("t23")}],"loop":false,"name":&"shell_defense","speed":8}
+]

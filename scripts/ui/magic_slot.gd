@@ -30,12 +30,22 @@ func _ready() -> void:
 func _draw() -> void:
 	draw_rect(Rect2(Vector2.ZERO,size),Color(0.08,0.085,0.07,0.64))
 	draw_rect(Rect2(Vector2.ONE,size-Vector2.ONE*2),Color("#625f4d"),false,0.5)
+	draw_rect(Rect2(Vector2.ONE*3,size-Vector2.ONE*6),Color("#0b0d0bcc"),false,1)
+	var trim := Color(RPGSkin.config().trim.highlight)
+	trim.a = 0.5
+	for corner in [Vector2.ONE,size-Vector2.ONE]:
+		var sign_dir := 1.0 if corner.x < size.x/2 else -1.0
+		draw_line(corner,corner+Vector2(sign_dir*5,0),trim,1)
+		draw_line(corner,corner+Vector2(0,sign_dir*5),trim,1)
 	if selected:
 		draw_colored_polygon(PackedVector2Array([Vector2(size.x/2-3,2),Vector2(size.x/2+3,2),Vector2(size.x/2,6)]),Color("#f4dfa0"))
 	if selected or _hover:
 		draw_rect(Rect2(Vector2.ONE, size - Vector2.ONE * 2), Color("#bfb594"), false, 1)
 	if icon != null:
-		draw_texture_rect(icon, Rect2(Vector2.ONE * 4, size - Vector2.ONE * 8), false, Color(0.45,0.48,0.5) if locked or mana_blocked else Color.WHITE)
+		var bounds := size - Vector2.ONE * 8
+		var native := icon.get_size()
+		var display := native * minf(bounds.x / native.x, bounds.y / native.y)
+		draw_texture_rect(icon, Rect2((size - display) / 2.0, display), false, Color(0.45,0.48,0.5) if locked or mana_blocked else Color.WHITE)
 	if locked:
 		draw_rect(Rect2(size * 0.5 - Vector2(3,0), Vector2(6,6)), Color("#aa9470"))
 		draw_arc(size * 0.5 - Vector2(0,1), 3, PI, TAU, 8, Color("#aa9470"), 1)
@@ -77,6 +87,10 @@ func _can_drop_data(_at_position: Vector2, data: Variant) -> bool:
 	if locked or not data is Dictionary or not data.has("source"):
 		return false
 	var accepted := {"hotbar":["inventory","hotbar"],"inventory":["inventory","hotbar","storage"],"materials":["materials","storage"],"storage":["inventory","materials"],"weapon_inventory":["weapon_inventory","weapon_equipped"],"weapon_equipped":["weapon_inventory"],"active_slot":["active_skill","active_slot"],"passive_slot":["passive_skill","passive_slot"]}
+	if kind == "accessory_equipped":
+		return str(data.source) == "accessory_inventory"
+	if kind == "accessory_inventory":
+		return str(data.source) == "accessory_equipped" and item_id == ""
 	return str(data.source) in accepted.get(kind,[])
 
 

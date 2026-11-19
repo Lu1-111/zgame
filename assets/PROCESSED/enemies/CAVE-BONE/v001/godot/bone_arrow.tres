@@ -1,0 +1,11 @@
+[gd_resource type="SpriteFrames" load_steps=5 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/PROCESSED/enemies/CAVE-BONE/v001/projectiles/arrow/frames/00.png" id="t0"]
+[ext_resource type="Texture2D" path="res://assets/PROCESSED/enemies/CAVE-BONE/v001/projectiles/arrow/frames/01.png" id="t1"]
+[ext_resource type="Texture2D" path="res://assets/PROCESSED/enemies/CAVE-BONE/v001/projectiles/arrow/frames/02.png" id="t2"]
+[ext_resource type="Texture2D" path="res://assets/PROCESSED/enemies/CAVE-BONE/v001/projectiles/arrow/frames/03.png" id="t3"]
+
+[resource]
+animations = [
+{"frames":[{"duration":1.0,"texture":ExtResource("t0")},{"duration":1.0,"texture":ExtResource("t1")},{"duration":1.0,"texture":ExtResource("t2")},{"duration":1.0,"texture":ExtResource("t3")}],"loop":true,"name":&"fly","speed":7.5}
+]

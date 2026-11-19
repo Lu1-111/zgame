@@ -1,0 +1,73 @@
+{
+  "id": "sword_06",
+  "weapon_type": "sword",
+  "source": {
+    "id": "sword_06",
+    "name": "切割者TS-01",
+    "weapon_type": "sword",
+    "texture": "res://assets/PROCESSED/weapons/sword_06/v001/model.png",
+    "native_canvas": [
+      48,
+      24
+    ],
+    "grip": [
+      7,
+      12
+    ],
+    "source_angle_degrees": 0,
+    "runtime_scale": [
+      1,
+      1
+    ]
+  },
+  "animations": {
+    "SKL-N01_stance": [
+      "res://assets/PROCESSED/weapons/sword_06/v001/frames/SKL-N01_stance/00.png",
+      "res://assets/PROCESSED/weapons/sword_06/v001/frames/SKL-N01_stance/01.png",
+      "res://assets/PROCESSED/weapons/sword_06/v001/frames/SKL-N01_stance/02.png",
+      "res://assets/PROCESSED/weapons/sword_06/v001/frames/SKL-N01_stance/03.png"
+    ],
+    "SKL-N01_counter_slash": [
+      "res://assets/PROCESSED/weapons/sword_06/v001/frames/SKL-N01_counter_slash/00.png",
+      "res://assets/PROCESSED/weapons/sword_06/v001/frames/SKL-N01_counter_slash/01.png",
+      "res://assets/PROCESSED/weapons/sword_06/v001/frames/SKL-N01_counter_slash/02.png",
+      "res://assets/PROCESSED/weapons/sword_06/v001/frames/SKL-N01_counter_slash/03.png"
+    ],
+    "sword_1": [
+      "res://assets/PROCESSED/weapons/sword_06/v001/frames/sword_1/00.png",
+      "res://assets/PROCESSED/weapons/sword_06/v001/frames/sword_1/01.png",
+      "res://assets/PROCESSED/weapons/sword_06/v001/frames/sword_1/02.png",
+      "res://assets/PROCESSED/weapons/sword_06/v001/frames/sword_1/03.png",
+      "res://assets/PROCESSED/weapons/sword_06/v001/frames/sword_1/04.png",
+      "res://assets/PROCESSED/weapons/sword_06/v001/frames/sword_1/05.png",
+      "res://assets/PROCESSED/weapons/sword_06/v001/frames/sword_1/06.png",
+      "res://assets/PROCESSED/weapons/sword_06/v001/frames/sword_1/07.png"
+    ],
+    "sword_2": [
+      "res://assets/PROCESSED/weapons/sword_06/v001/frames/sword_2/00.png",
+      "res://assets/PROCESSED/weapons/sword_06/v001/frames/sword_2/01.png",
+      "res://assets/PROCESSED/weapons/sword_06/v001/frames/sword_2/02.png",
+      "res://assets/PROCESSED/weapons/sword_06/v001/frames/sword_2/03.png",
+      "res://assets/PROCESSED/weapons/sword_06/v001/frames/sword_2/04.png",
+      "res://assets/PROCESSED/weapons/sword_06/v001/frames/sword_2/05.png",
+      "res://assets/PROCESSED/weapons/sword_06/v001/frames/sword_2/06.png",
+      "res://assets/PROCESSED/weapons/sword_06/v001/frames/sword_2/07.png"
+    ],
+    "sword_3": [
+      "res://assets/PROCESSED/weapons/sword_06/v001/frames/sword_3/00.png",
+      "res://assets/PROCESSED/weapons/sword_06/v001/frames/sword_3/01.png",
+      "res://assets/PROCESSED/weapons/sword_06/v001/frames/sword_3/02.png",
+      "res://assets/PROCESSED/weapons/sword_06/v001/frames/sword_3/03.png",
+      "res://assets/PROCESSED/weapons/sword_06/v001/frames/sword_3/04.png",
+      "res://assets/PROCESSED/weapons/sword_06/v001/frames/sword_3/05.png",
+      "res://assets/PROCESSED/weapons/sword_06/v001/frames/sword_3/06.png",
+      "res://assets/PROCESSED/weapons/sword_06/v001/frames/sword_3/07.png"
+    ],
+    "guard_sword": [
+      "res://assets/PROCESSED/weapons/sword_06/v001/frames/guard_sword/00.png",
+      "res://assets/PROCESSED/weapons/sword_06/v001/frames/guard_sword/01.png",
+      "res://assets/PROCESSED/weapons/sword_06/v001/frames/guard_sword/02.png"
+    ]
+  },
+  "resampling": "native nearest rotation only; scale=1; no body edits"
+}

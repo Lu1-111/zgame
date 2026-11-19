@@ -1,0 +1,6706 @@
+{
+  "id": "cave_enemy_imagemagick_v002",
+  "tool": "tools/assets/convert_cave_imagemagick.py",
+  "speed_multiplier": 0.75,
+  "alpha_source_threshold_percent": 87.5,
+  "alpha_output_threshold_percent": 50,
+  "colorspace": "sRGB",
+  "filter": "point",
+  "dither": "none",
+  "sampling_passes": 1,
+  "runtime_scale": [
+    1,
+    1
+  ],
+  "packages": {
+    "CAVE-BONE": {
+      "folder": "assets/PROCESSED/enemies/CAVE-BONE/v001",
+      "palette": [
+        "#11141a",
+        "#302a27",
+        "#44392f",
+        "#715b44",
+        "#a58c65",
+        "#d5c4a0",
+        "#fff1d7",
+        "#20262b",
+        "#414e58",
+        "#74828b",
+        "#bdc5c5",
+        "#e3e7df",
+        "#443122",
+        "#795335",
+        "#b39261",
+        "#e5dfcc"
+      ],
+      "frames": [
+        {
+          "id": "bone_dragon_blade_idle_00",
+          "entity": "bone_dragon_blade",
+          "action": "idle",
+          "index": 0,
+          "source": "assets/RAW/enemies/CAVE-BONE/v001/blade_source.png",
+          "source_sha256": "eec6eaddafa56b3fb2bf83387998c0e591fee5f1f7ac2e64a0a069f519380ff4",
+          "source_rect": [
+            0,
+            0,
+            229,
+            229
+          ],
+          "crop": [
+            48,
+            60,
+            197,
+            209
+          ],
+          "sampled_pixels": [
+            42,
+            42
+          ],
+          "canvas_pixels": [
+            96,
+            96
+          ],
+          "offset": [
+            23,
+            38
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/idle/00.png"
+        },
+        {
+          "id": "bone_dragon_blade_idle_01",
+          "entity": "bone_dragon_blade",
+          "action": "idle",
+          "index": 1,
+          "source": "assets/RAW/enemies/CAVE-BONE/v001/blade_source.png",
+          "source_sha256": "eec6eaddafa56b3fb2bf83387998c0e591fee5f1f7ac2e64a0a069f519380ff4",
+          "source_rect": [
+            229,
+            0,
+            458,
+            229
+          ],
+          "crop": [
+            47,
+            52,
+            197,
+            209
+          ],
+          "sampled_pixels": [
+            42,
+            44
+          ],
+          "canvas_pixels": [
+            96,
+            96
+          ],
+          "offset": [
+            22,
+            36
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/idle/01.png"
+        },
+        {
+          "id": "bone_dragon_blade_idle_02",
+          "entity": "bone_dragon_blade",
+          "action": "idle",
+          "index": 2,
+          "source": "assets/RAW/enemies/CAVE-BONE/v001/blade_source.png",
+          "source_sha256": "eec6eaddafa56b3fb2bf83387998c0e591fee5f1f7ac2e64a0a069f519380ff4",
+          "source_rect": [
+            458,
+            0,
+            687,
+            229
+          ],
+          "crop": [
+            46,
+            46,
+            198,
+            210
+          ],
+          "sampled_pixels": [
+            42,
+            46
+          ],
+          "canvas_pixels": [
+            96,
+            96
+          ],
+          "offset": [
+            22,
+            34
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/idle/02.png"
+        },
+        {
+          "id": "bone_dragon_blade_idle_03",
+          "entity": "bone_dragon_blade",
+          "action": "idle",
+          "index": 3,
+          "source": "assets/RAW/enemies/CAVE-BONE/v001/blade_source.png",
+          "source_sha256": "eec6eaddafa56b3fb2bf83387998c0e591fee5f1f7ac2e64a0a069f519380ff4",
+          "source_rect": [
+            687,
+            0,
+            916,
+            229
+          ],
+          "crop": [
+            46,
+            57,
+            200,
+            209
+          ],
+          "sampled_pixels": [
+            43,
+            42
+          ],
+          "canvas_pixels": [
+            96,
+            96
+          ],
+          "offset": [
+            22,
+            38
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/idle/03.png"
+        },
+        {
+          "id": "bone_dragon_blade_idle_04",
+          "entity": "bone_dragon_blade",
+          "action": "idle",
+          "index": 4,
+          "source": "assets/RAW/enemies/CAVE-BONE/v001/blade_source.png",
+          "source_sha256": "eec6eaddafa56b3fb2bf83387998c0e591fee5f1f7ac2e64a0a069f519380ff4",
+          "source_rect": [
+            916,
+            0,
+            1145,
+            229
+          ],
+          "crop": [
+            46,
+            62,
+            198,
+            209
+          ],
+          "sampled_pixels": [
+            42,
+            41
+          ],
+          "canvas_pixels": [
+            96,
+            96
+          ],
+          "offset": [
+            22,
+            39
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/idle/04.png"
+        },
+        {
+          "id": "bone_dragon_blade_idle_05",
+          "entity": "bone_dragon_blade",
+          "action": "idle",
+          "index": 5,
+          "source": "assets/RAW/enemies/CAVE-BONE/v001/blade_source.png",
+          "source_sha256": "eec6eaddafa56b3fb2bf83387998c0e591fee5f1f7ac2e64a0a069f519380ff4",
+          "source_rect": [
+            1145,
+            0,
+            1374,
+            229
+          ],
+          "crop": [
+            48,
+            62,
+            199,
+            210
+          ],
+          "sampled_pixels": [
+            42,
+            41
+          ],
+          "canvas_pixels": [
+            96,
+            96
+          ],
+          "offset": [
+            23,
+            39
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/idle/05.png"
+        },
+        {
+          "id": "bone_dragon_blade_move_00",
+          "entity": "bone_dragon_blade",
+          "action": "move",
+          "index": 0,
+          "source": "assets/RAW/enemies/CAVE-BONE/v001/blade_source.png",
+          "source_sha256": "eec6eaddafa56b3fb2bf83387998c0e591fee5f1f7ac2e64a0a069f519380ff4",
+          "source_rect": [
+            0,
+            229,
+            229,
+            458
+          ],
+          "crop": [
+            46,
+            62,
+            198,
+            209
+          ],
+          "sampled_pixels": [
+            42,
+            41
+          ],
+          "canvas_pixels": [
+            96,
+            96
+          ],
+          "offset": [
+            22,
+            39
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/move/00.png"
+        },
+        {
+          "id": "bone_dragon_blade_move_01",
+          "entity": "bone_dragon_blade",
+          "action": "move",
+          "index": 1,
+          "source": "assets/RAW/enemies/CAVE-BONE/v001/blade_source.png",
+          "source_sha256": "eec6eaddafa56b3fb2bf83387998c0e591fee5f1f7ac2e64a0a069f519380ff4",
+          "source_rect": [
+            229,
+            229,
+            458,
+            458
+          ],
+          "crop": [
+            46,
+            63,
+            198,
+            208
+          ],
+          "sampled_pixels": [
+            42,
+            40
+          ],
+          "canvas_pixels": [
+            96,
+            96
+          ],
+          "offset": [
+            22,
+            40
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/move/01.png"
+        },
+        {
+          "id": "bone_dragon_blade_move_02",
+          "entity": "bone_dragon_blade",
+          "action": "move",
+          "index": 2,
+          "source": "assets/RAW/enemies/CAVE-BONE/v001/blade_source.png",
+          "source_sha256": "eec6eaddafa56b3fb2bf83387998c0e591fee5f1f7ac2e64a0a069f519380ff4",
+          "source_rect": [
+            458,
+            229,
+            687,
+            458
+          ],
+          "crop": [
+            52,
+            55,
+            203,
+            209
+          ],
+          "sampled_pixels": [
+            42,
+            43
+          ],
+          "canvas_pixels": [
+            96,
+            96
+          ],
+          "offset": [
+            24,
+            37
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/move/02.png"
+        },
+        {
+          "id": "bone_dragon_blade_move_03",
+          "entity": "bone_dragon_blade",
+          "action": "move",
+          "index": 3,
+          "source": "assets/RAW/enemies/CAVE-BONE/v001/blade_source.png",
+          "source_sha256": "eec6eaddafa56b3fb2bf83387998c0e591fee5f1f7ac2e64a0a069f519380ff4",
+          "source_rect": [
+            687,
+            229,
+            916,
+            458
+          ],
+          "crop": [
+            52,
+            47,
+            199,
+            208
+          ],
+          "sampled_pixels": [
+            41,
+            45
+          ],
+          "canvas_pixels": [
+            96,
+            96
+          ],
+          "offset": [
+            24,
+            35
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/move/03.png"
+        },
+        {
+          "id": "bone_dragon_blade_move_04",
+          "entity": "bone_dragon_blade",
+          "action": "move",
+          "index": 4,
+          "source": "assets/RAW/enemies/CAVE-BONE/v001/blade_source.png",
+          "source_sha256": "eec6eaddafa56b3fb2bf83387998c0e591fee5f1f7ac2e64a0a069f519380ff4",
+          "source_rect": [
+            916,
+            229,
+            1145,
+            458
+          ],
+          "crop": [
+            46,
+            61,
+            198,
+            210
+          ],
+          "sampled_pixels": [
+            42,
+            42
+          ],
+          "canvas_pixels": [
+            96,
+            96
+          ],
+          "offset": [
+            22,
+            38
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/move/04.png"
+        },
+        {
+          "id": "bone_dragon_blade_move_05",
+          "entity": "bone_dragon_blade",
+          "action": "move",
+          "index": 5,
+          "source": "assets/RAW/enemies/CAVE-BONE/v001/blade_source.png",
+          "source_sha256": "eec6eaddafa56b3fb2bf83387998c0e591fee5f1f7ac2e64a0a069f519380ff4",
+          "source_rect": [
+            1145,
+            229,
+            1374,
+            458
+          ],
+          "crop": [
+            48,
+            67,
+            199,
+            210
+          ],
+          "sampled_pixels": [
+            42,
+            40
+          ],
+          "canvas_pixels": [
+            96,
+            96
+          ],
+          "offset": [
+            23,
+            40
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/move/05.png"
+        },
+        {
+          "id": "bone_dragon_blade_slash_down_00",
+          "entity": "bone_dragon_blade",
+          "action": "slash_down",
+          "index": 0,
+          "source": "assets/RAW/enemies/CAVE-BONE/v001/blade_source.png",
+          "source_sha256": "eec6eaddafa56b3fb2bf83387998c0e591fee5f1f7ac2e64a0a069f519380ff4",
+          "source_rect": [
+            0,
+            458,
+            229,
+            687
+          ],
+          "crop": [
+            46,
+            62,
+            199,
+            210
+          ],
+          "sampled_pixels": [
+            43,
+            41
+          ],
+          "canvas_pixels": [
+            96,
+            96
+          ],
+          "offset": [
+            22,
+            39
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/slash_down/00.png"
+        },
+        {
+          "id": "bone_dragon_blade_slash_down_01",
+          "entity": "bone_dragon_blade",
+          "action": "slash_down",
+          "index": 1,
+          "source": "assets/RAW/enemies/CAVE-BONE/v001/blade_source.png",
+          "source_sha256": "eec6eaddafa56b3fb2bf83387998c0e591fee5f1f7ac2e64a0a069f519380ff4",
+          "source_rect": [
+            229,
+            458,
+            458,
+            687
+          ],
+          "crop": [
+            45,
+            67,
+            194,
+            209
+          ],
+          "sampled_pixels": [
+            42,
+            40
+          ],
+          "canvas_pixels": [
+            96,
+            96
+          ],
+          "offset": [
+            22,
+            40
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/slash_down/01.png"
+        },
+        {
+          "id": "bone_dragon_blade_slash_down_02",
+          "entity": "bone_dragon_blade",
+          "action": "slash_down",
+          "index": 2,
+          "source": "assets/RAW/enemies/CAVE-BONE/v001/blade_source.png",
+          "source_sha256": "eec6eaddafa56b3fb2bf83387998c0e591fee5f1f7ac2e64a0a069f519380ff4",
+          "source_rect": [
+            458,
+            458,
+            687,
+            687
+          ],
+          "crop": [
+            41,
+            27,
+            181,
+            209
+          ],
+          "sampled_pixels": [
+            39,
+            51
+          ],
+          "canvas_pixels": [
+            96,
+            96
+          ],
+          "offset": [
+            21,
+            29
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/slash_down/02.png"
+        },
+        {
+          "id": "bone_dragon_blade_slash_down_03",
+          "entity": "bone_dragon_blade",
+          "action": "slash_down",
+          "index": 3,
+          "source": "assets/RAW/enemies/CAVE-BONE/v001/blade_source.png",
+          "source_sha256": "eec6eaddafa56b3fb2bf83387998c0e591fee5f1f7ac2e64a0a069f519380ff4",
+          "source_rect": [
+            687,
+            458,
+            916,
+            687
+          ],
+          "crop": [
+            33,
+            73,
+            199,
+            210
+          ],
+          "sampled_pixels": [
+            46,
+            38
+          ],
+          "canvas_pixels": [
+            96,
+            96
+          ],
+          "offset": [
+            19,
+            42
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/slash_down/03.png"
+        },
+        {
+          "id": "bone_dragon_blade_slash_down_04",
+          "entity": "bone_dragon_blade",
+          "action": "slash_down",
+          "index": 4,
+          "source": "assets/RAW/enemies/CAVE-BONE/v001/blade_source.png",
+          "source_sha256": "eec6eaddafa56b3fb2bf83387998c0e591fee5f1f7ac2e64a0a069f519380ff4",
+          "source_rect": [
+            916,
+            458,
+            1145,
+            687
+          ],
+          "crop": [
+            33,
+            80,
+            183,
+            211
+          ],
+          "sampled_pixels": [
+            42,
+            37
+          ],
+          "canvas_pixels": [
+            96,
+            96
+          ],
+          "offset": [
+            19,
+            43
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/slash_down/04.png"
+        },
+        {
+          "id": "bone_dragon_blade_slash_down_05",
+          "entity": "bone_dragon_blade",
+          "action": "slash_down",
+          "index": 5,
+          "source": "assets/RAW/enemies/CAVE-BONE/v001/blade_source.png",
+          "source_sha256": "eec6eaddafa56b3fb2bf83387998c0e591fee5f1f7ac2e64a0a069f519380ff4",
+          "source_rect": [
+            1145,
+            458,
+            1374,
+            687
+          ],
+          "crop": [
+            44,
+            65,
+            199,
+            209
+          ],
+          "sampled_pixels": [
+            43,
+            40
+          ],
+          "canvas_pixels": [
+            96,
+            96
+          ],
+          "offset": [
+            22,
+            40
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/slash_down/05.png"
+        },
+        {
+          "id": "bone_dragon_blade_slash_up_00",
+          "entity": "bone_dragon_blade",
+          "action": "slash_up",
+          "index": 0,
+          "source": "assets/RAW/enemies/CAVE-BONE/v001/blade_source.png",
+          "source_sha256": "eec6eaddafa56b3fb2bf83387998c0e591fee5f1f7ac2e64a0a069f519380ff4",
+          "source_rect": [
+            0,
+            687,
+            229,
+            916
+          ],
+          "crop": [
+            46,
+            62,
+            199,
+            210
+          ],
+          "sampled_pixels": [
+            43,
+            41
+          ],
+          "canvas_pixels": [
+            96,
+            96
+          ],
+          "offset": [
+            22,
+            39
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/slash_up/00.png"
+        },
+        {
+          "id": "bone_dragon_blade_slash_up_01",
+          "entity": "bone_dragon_blade",
+          "action": "slash_up",
+          "index": 1,
+          "source": "assets/RAW/enemies/CAVE-BONE/v001/blade_source.png",
+          "source_sha256": "eec6eaddafa56b3fb2bf83387998c0e591fee5f1f7ac2e64a0a069f519380ff4",
+          "source_rect": [
+            229,
+            687,
+            458,
+            916
+          ],
+          "crop": [
+            45,
+            76,
+            191,
+            210
+          ],
+          "sampled_pixels": [
+            41,
+            37
+          ],
+          "canvas_pixels": [
+            96,
+            96
+          ],
+          "offset": [
+            22,
+            43
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/slash_up/01.png"
+        },
+        {
+          "id": "bone_dragon_blade_slash_up_02",
+          "entity": "bone_dragon_blade",
+          "action": "slash_up",
+          "index": 2,
+          "source": "assets/RAW/enemies/CAVE-BONE/v001/blade_source.png",
+          "source_sha256": "eec6eaddafa56b3fb2bf83387998c0e591fee5f1f7ac2e64a0a069f519380ff4",
+          "source_rect": [
+            458,
+            687,
+            687,
+            916
+          ],
+          "crop": [
+            41,
+            65,
+            184,
+            210
+          ],
+          "sampled_pixels": [
+            40,
+            40
+          ],
+          "canvas_pixels": [
+            96,
+            96
+          ],
+          "offset": [
+            21,
+            40
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/slash_up/02.png"
+        },
+        {
+          "id": "bone_dragon_blade_slash_up_03",
+          "entity": "bone_dragon_blade",
+          "action": "slash_up",
+          "index": 3,
+          "source": "assets/RAW/enemies/CAVE-BONE/v001/blade_source.png",
+          "source_sha256": "eec6eaddafa56b3fb2bf83387998c0e591fee5f1f7ac2e64a0a069f519380ff4",
+          "source_rect": [
+            687,
+            687,
+            916,
+            916
+          ],
+          "crop": [
+            34,
+            52,
+            178,
+            210
+          ],
+          "sampled_pixels": [
+            40,
+            44
+          ],
+          "canvas_pixels": [
+            96,
+            96
+          ],
+          "offset": [
+            19,
+            36
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/slash_up/03.png"
+        },
+        {
+          "id": "bone_dragon_blade_slash_up_04",
+          "entity": "bone_dragon_blade",
+          "action": "slash_up",
+          "index": 4,
+          "source": "assets/RAW/enemies/CAVE-BONE/v001/blade_source.png",
+          "source_sha256": "eec6eaddafa56b3fb2bf83387998c0e591fee5f1f7ac2e64a0a069f519380ff4",
+          "source_rect": [
+            916,
+            687,
+            1145,
+            916
+          ],
+          "crop": [
+            33,
+            62,
+            181,
+            209
+          ],
+          "sampled_pixels": [
+            41,
+            41
+          ],
+          "canvas_pixels": [
+            96,
+            96
+          ],
+          "offset": [
+            19,
+            39
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/slash_up/04.png"
+        },
+        {
+          "id": "bone_dragon_blade_slash_up_05",
+          "entity": "bone_dragon_blade",
+          "action": "slash_up",
+          "index": 5,
+          "source": "assets/RAW/enemies/CAVE-BONE/v001/blade_source.png",
+          "source_sha256": "eec6eaddafa56b3fb2bf83387998c0e591fee5f1f7ac2e64a0a069f519380ff4",
+          "source_rect": [
+            1145,
+            687,
+            1374,
+            916
+          ],
+          "crop": [
+            44,
+            61,
+            198,
+            210
+          ],
+          "sampled_pixels": [
+            43,
+            42
+          ],
+          "canvas_pixels": [
+            96,
+            96
+          ],
+          "offset": [
+            22,
+            38
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/slash_up/05.png"
+        },
+        {
+          "id": "bone_dragon_blade_thrust_00",
+          "entity": "bone_dragon_blade",
+          "action": "thrust",
+          "index": 0,
+          "source": "assets/RAW/enemies/CAVE-BONE/v001/blade_source.png",
+          "source_sha256": "eec6eaddafa56b3fb2bf83387998c0e591fee5f1f7ac2e64a0a069f519380ff4",
+          "source_rect": [
+            0,
+            916,
+            229,
+            1145
+          ],
+          "crop": [
+            43,
+            68,
+            189,
+            211
+          ],
+          "sampled_pixels": [
+            41,
+            40
+          ],
+          "canvas_pixels": [
+            96,
+            96
+          ],
+          "offset": [
+            21,
+            40
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/thrust/00.png"
+        },
+        {
+          "id": "bone_dragon_blade_thrust_01",
+          "entity": "bone_dragon_blade",
+          "action": "thrust",
+          "index": 1,
+          "source": "assets/RAW/enemies/CAVE-BONE/v001/blade_source.png",
+          "source_sha256": "eec6eaddafa56b3fb2bf83387998c0e591fee5f1f7ac2e64a0a069f519380ff4",
+          "source_rect": [
+            229,
+            916,
+            458,
+            1145
+          ],
+          "crop": [
+            35,
+            67,
+            188,
+            211
+          ],
+          "sampled_pixels": [
+            43,
+            40
+          ],
+          "canvas_pixels": [
+            96,
+            96
+          ],
+          "offset": [
+            19,
+            40
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/thrust/01.png"
+        },
+        {
+          "id": "bone_dragon_blade_thrust_02",
+          "entity": "bone_dragon_blade",
+          "action": "thrust",
+          "index": 2,
+          "source": "assets/RAW/enemies/CAVE-BONE/v001/blade_source.png",
+          "source_sha256": "eec6eaddafa56b3fb2bf83387998c0e591fee5f1f7ac2e64a0a069f519380ff4",
+          "source_rect": [
+            458,
+            916,
+            687,
+            1145
+          ],
+          "crop": [
+            29,
+            66,
+            206,
+            211
+          ],
+          "sampled_pixels": [
+            49,
+            40
+          ],
+          "canvas_pixels": [
+            96,
+            96
+          ],
+          "offset": [
+            17,
+            40
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/thrust/02.png"
+        },
+        {
+          "id": "bone_dragon_blade_thrust_03",
+          "entity": "bone_dragon_blade",
+          "action": "thrust",
+          "index": 3,
+          "source": "assets/RAW/enemies/CAVE-BONE/v001/blade_source.png",
+          "source_sha256": "eec6eaddafa56b3fb2bf83387998c0e591fee5f1f7ac2e64a0a069f519380ff4",
+          "source_rect": [
+            687,
+            916,
+            916,
+            1145
+          ],
+          "crop": [
+            29,
+            67,
+            217,
+            210
+          ],
+          "sampled_pixels": [
+            52,
+            40
+          ],
+          "canvas_pixels": [
+            96,
+            96
+          ],
+          "offset": [
+            17,
+            40
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/thrust/03.png"
+        },
+        {
+          "id": "bone_dragon_blade_thrust_04",
+          "entity": "bone_dragon_blade",
+          "action": "thrust",
+          "index": 4,
+          "source": "assets/RAW/enemies/CAVE-BONE/v001/blade_source.png",
+          "source_sha256": "eec6eaddafa56b3fb2bf83387998c0e591fee5f1f7ac2e64a0a069f519380ff4",
+          "source_rect": [
+            916,
+            916,
+            1145,
+            1145
+          ],
+          "crop": [
+            33,
+            66,
+            192,
+            211
+          ],
+          "sampled_pixels": [
+            44,
+            40
+          ],
+          "canvas_pixels": [
+            96,
+            96
+          ],
+          "offset": [
+            19,
+            40
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/thrust/04.png"
+        },
+        {
+          "id": "bone_dragon_blade_thrust_05",
+          "entity": "bone_dragon_blade",
+          "action": "thrust",
+          "index": 5,
+          "source": "assets/RAW/enemies/CAVE-BONE/v001/blade_source.png",
+          "source_sha256": "eec6eaddafa56b3fb2bf83387998c0e591fee5f1f7ac2e64a0a069f519380ff4",
+          "source_rect": [
+            1145,
+            916,
+            1374,
+            1145
+          ],
+          "crop": [
+            45,
+            61,
+            198,
+            211
+          ],
+          "sampled_pixels": [
+            43,
+            42
+          ],
+          "canvas_pixels": [
+            96,
+            96
+          ],
+          "offset": [
+            22,
+            38
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/thrust/05.png"
+        },
+        {
+          "id": "bone_dragon_spear_idle_00",
+          "entity": "bone_dragon_spear",
+          "action": "idle",
+          "index": 0,
+          "source": "assets/RAW/enemies/CAVE-BONE/v001/spear_source.png",
+          "source_sha256": "1889209daeba96ca237b7ec62e84afb2b2e453354054f718453ddd65f6857f64",
+          "source_rect": [
+            0,
+            0,
+            341,
+            256
+          ],
+          "crop": [
+            59,
+            42,
+            283,
+            232
+          ],
+          "sampled_pixels": [
+            49,
+            41
+          ],
+          "canvas_pixels": [
+            128,
+            96
+          ],
+          "offset": [
+            19,
+            39
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_spear/frames/idle/00.png"
+        },
+        {
+          "id": "bone_dragon_spear_idle_01",
+          "entity": "bone_dragon_spear",
+          "action": "idle",
+          "index": 1,
+          "source": "assets/RAW/enemies/CAVE-BONE/v001/spear_source.png",
+          "source_sha256": "1889209daeba96ca237b7ec62e84afb2b2e453354054f718453ddd65f6857f64",
+          "source_rect": [
+            341,
+            0,
+            683,
+            256
+          ],
+          "crop": [
+            61,
+            27,
+            290,
+            232
+          ],
+          "sampled_pixels": [
+            50,
+            44
+          ],
+          "canvas_pixels": [
+            128,
+            96
+          ],
+          "offset": [
+            20,
+            36
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_spear/frames/idle/01.png"
+        },
+        {
+          "id": "bone_dragon_spear_idle_02",
+          "entity": "bone_dragon_spear",
+          "action": "idle",
+          "index": 2,
+          "source": "assets/RAW/enemies/CAVE-BONE/v001/spear_source.png",
+          "source_sha256": "1889209daeba96ca237b7ec62e84afb2b2e453354054f718453ddd65f6857f64",
+          "source_rect": [
+            683,
+            0,
+            1024,
+            256
+          ],
+          "crop": [
+            67,
+            22,
+            295,
+            232
+          ],
+          "sampled_pixels": [
+            49,
+            46
+          ],
+          "canvas_pixels": [
+            128,
+            96
+          ],
+          "offset": [
+            21,
+            34
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_spear/frames/idle/02.png"
+        },
+        {
+          "id": "bone_dragon_spear_idle_03",
+          "entity": "bone_dragon_spear",
+          "action": "idle",
+          "index": 3,
+          "source": "assets/RAW/enemies/CAVE-BONE/v001/spear_source.png",
+          "source_sha256": "1889209daeba96ca237b7ec62e84afb2b2e453354054f718453ddd65f6857f64",
+          "source_rect": [
+            1024,
+            0,
+            1365,
+            256
+          ],
+          "crop": [
+            64,
+            35,
+            293,
+            232
+          ],
+          "sampled_pixels": [
+            50,
+            43
+          ],
+          "canvas_pixels": [
+            128,
+            96
+          ],
+          "offset": [
+            20,
+            37
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_spear/frames/idle/03.png"
+        },
+        {
+          "id": "bone_dragon_spear_idle_04",
+          "entity": "bone_dragon_spear",
+          "action": "idle",
+          "index": 4,
+          "source": "assets/RAW/enemies/CAVE-BONE/v001/spear_source.png",
+          "source_sha256": "1889209daeba96ca237b7ec62e84afb2b2e453354054f718453ddd65f6857f64",
+          "source_rect": [
+            1365,
+            0,
+            1707,
+            256
+          ],
+          "crop": [
+            59,
+            52,
+            293,
+            232
+          ],
+          "sampled_pixels": [
+            51,
+            39
+          ],
+          "canvas_pixels": [
+            128,
+            96
+          ],
+          "offset": [
+            19,
+            41
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_spear/frames/idle/04.png"
+        },
+        {
+          "id": "bone_dragon_spear_idle_05",
+          "entity": "bone_dragon_spear",
+          "action": "idle",
+          "index": 5,
+          "source": "assets/RAW/enemies/CAVE-BONE/v001/spear_source.png",
+          "source_sha256": "1889209daeba96ca237b7ec62e84afb2b2e453354054f718453ddd65f6857f64",
+          "source_rect": [
+            1707,
+            0,
+            2048,
+            256
+          ],
+          "crop": [
+            60,
+            43,
+            290,
+            232
+          ],
+          "sampled_pixels": [
+            50,
+            41
+          ],
+          "canvas_pixels": [
+            128,
+            96
+          ],
+          "offset": [
+            20,
+            39
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_spear/frames/idle/05.png"
+        },
+        {
+          "id": "bone_dragon_spear_move_00",
+          "entity": "bone_dragon_spear",
+          "action": "move",
+          "index": 0,
+          "source": "assets/RAW/enemies/CAVE-BONE/v001/spear_source.png",
+          "source_sha256": "1889209daeba96ca237b7ec62e84afb2b2e453354054f718453ddd65f6857f64",
+          "source_rect": [
+            0,
+            256,
+            341,
+            512
+          ],
+          "crop": [
+            49,
+            38,
+            293,
+            233
+          ],
+          "sampled_pixels": [
+            53,
+            42
+          ],
+          "canvas_pixels": [
+            128,
+            96
+          ],
+          "offset": [
+            17,
+            38
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_spear/frames/move/00.png"
+        },
+        {
+          "id": "bone_dragon_spear_move_01",
+          "entity": "bone_dragon_spear",
+          "action": "move",
+          "index": 1,
+          "source": "assets/RAW/enemies/CAVE-BONE/v001/spear_source.png",
+          "source_sha256": "1889209daeba96ca237b7ec62e84afb2b2e453354054f718453ddd65f6857f64",
+          "source_rect": [
+            341,
+            256,
+            683,
+            512
+          ],
+          "crop": [
+            53,
+            52,
+            296,
+            233
+          ],
+          "sampled_pixels": [
+            53,
+            39
+          ],
+          "canvas_pixels": [
+            128,
+            96
+          ],
+          "offset": [
+            18,
+            41
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_spear/frames/move/01.png"
+        },
+        {
+          "id": "bone_dragon_spear_move_02",
+          "entity": "bone_dragon_spear",
+          "action": "move",
+          "index": 2,
+          "source": "assets/RAW/enemies/CAVE-BONE/v001/spear_source.png",
+          "source_sha256": "1889209daeba96ca237b7ec62e84afb2b2e453354054f718453ddd65f6857f64",
+          "source_rect": [
+            683,
+            256,
+            1024,
+            512
+          ],
+          "crop": [
+            65,
+            33,
+            297,
+            233
+          ],
+          "sampled_pixels": [
+            50,
+            43
+          ],
+          "canvas_pixels": [
+            128,
+            96
+          ],
+          "offset": [
+            21,
+            37
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_spear/frames/move/02.png"
+        },
+        {
+          "id": "bone_dragon_spear_move_03",
+          "entity": "bone_dragon_spear",
+          "action": "move",
+          "index": 3,
+          "source": "assets/RAW/enemies/CAVE-BONE/v001/spear_source.png",
+          "source_sha256": "1889209daeba96ca237b7ec62e84afb2b2e453354054f718453ddd65f6857f64",
+          "source_rect": [
+            1024,
+            256,
+            1365,
+            512
+          ],
+          "crop": [
+            64,
+            25,
+            300,
+            233
+          ],
+          "sampled_pixels": [
+            51,
+            45
+          ],
+          "canvas_pixels": [
+            128,
+            96
+          ],
+          "offset": [
+            20,
+            35
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_spear/frames/move/03.png"
+        },
+        {
+          "id": "bone_dragon_spear_move_04",
+          "entity": "bone_dragon_spear",
+          "action": "move",
+          "index": 4,
+          "source": "assets/RAW/enemies/CAVE-BONE/v001/spear_source.png",
+          "source_sha256": "1889209daeba96ca237b7ec62e84afb2b2e453354054f718453ddd65f6857f64",
+          "source_rect": [
+            1365,
+            256,
+            1707,
+            512
+          ],
+          "crop": [
+            58,
+            41,
+            301,
+            233
+          ],
+          "sampled_pixels": [
+            53,
+            42
+          ],
+          "canvas_pixels": [
+            128,
+            96
+          ],
+          "offset": [
+            19,
+            38
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_spear/frames/move/04.png"
+        },
+        {
+          "id": "bone_dragon_spear_move_05",
+          "entity": "bone_dragon_spear",
+          "action": "move",
+          "index": 5,
+          "source": "assets/RAW/enemies/CAVE-BONE/v001/spear_source.png",
+          "source_sha256": "1889209daeba96ca237b7ec62e84afb2b2e453354054f718453ddd65f6857f64",
+          "source_rect": [
+            1707,
+            256,
+            2048,
+            512
+          ],
+          "crop": [
+            53,
+            49,
+            298,
+            233
+          ],
+          "sampled_pixels": [
+            53,
+            40
+          ],
+          "canvas_pixels": [
+            128,
+            96
+          ],
+          "offset": [
+            18,
+            40
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_spear/frames/move/05.png"
+        },
+        {
+          "id": "bone_dragon_spear_thrust_00",
+          "entity": "bone_dragon_spear",
+          "action": "thrust",
+          "index": 0,
+          "source": "assets/RAW/enemies/CAVE-BONE/v001/spear_source.png",
+          "source_sha256": "1889209daeba96ca237b7ec62e84afb2b2e453354054f718453ddd65f6857f64",
+          "source_rect": [
+            0,
+            512,
+            341,
+            768
+          ],
+          "crop": [
+            59,
+            42,
+            287,
+            234
+          ],
+          "sampled_pixels": [
+            49,
+            42
+          ],
+          "canvas_pixels": [
+            128,
+            96
+          ],
+          "offset": [
+            19,
+            38
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_spear/frames/thrust/00.png"
+        },
+        {
+          "id": "bone_dragon_spear_thrust_01",
+          "entity": "bone_dragon_spear",
+          "action": "thrust",
+          "index": 1,
+          "source": "assets/RAW/enemies/CAVE-BONE/v001/spear_source.png",
+          "source_sha256": "1889209daeba96ca237b7ec62e84afb2b2e453354054f718453ddd65f6857f64",
+          "source_rect": [
+            341,
+            512,
+            683,
+            768
+          ],
+          "crop": [
+            39,
+            58,
+            278,
+            234
+          ],
+          "sampled_pixels": [
+            52,
+            38
+          ],
+          "canvas_pixels": [
+            128,
+            96
+          ],
+          "offset": [
+            15,
+            42
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_spear/frames/thrust/01.png"
+        },
+        {
+          "id": "bone_dragon_spear_thrust_02",
+          "entity": "bone_dragon_spear",
+          "action": "thrust",
+          "index": 2,
+          "source": "assets/RAW/enemies/CAVE-BONE/v001/spear_source.png",
+          "source_sha256": "1889209daeba96ca237b7ec62e84afb2b2e453354054f718453ddd65f6857f64",
+          "source_rect": [
+            683,
+            512,
+            1024,
+            768
+          ],
+          "crop": [
+            25,
+            51,
+            298,
+            234
+          ],
+          "sampled_pixels": [
+            59,
+            40
+          ],
+          "canvas_pixels": [
+            128,
+            96
+          ],
+          "offset": [
+            12,
+            40
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_spear/frames/thrust/02.png"
+        },
+        {
+          "id": "bone_dragon_spear_thrust_03",
+          "entity": "bone_dragon_spear",
+          "action": "thrust",
+          "index": 3,
+          "source": "assets/RAW/enemies/CAVE-BONE/v001/spear_source.png",
+          "source_sha256": "1889209daeba96ca237b7ec62e84afb2b2e453354054f718453ddd65f6857f64",
+          "source_rect": [
+            1024,
+            512,
+            1365,
+            768
+          ],
+          "crop": [
+            10,
+            61,
+            321,
+            234
+          ],
+          "sampled_pixels": [
+            68,
+            38
+          ],
+          "canvas_pixels": [
+            128,
+            96
+          ],
+          "offset": [
+            9,
+            42
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_spear/frames/thrust/03.png"
+        },
+        {
+          "id": "bone_dragon_spear_thrust_04",
+          "entity": "bone_dragon_spear",
+          "action": "thrust",
+          "index": 4,
+          "source": "assets/RAW/enemies/CAVE-BONE/v001/spear_source.png",
+          "source_sha256": "1889209daeba96ca237b7ec62e84afb2b2e453354054f718453ddd65f6857f64",
+          "source_rect": [
+            1365,
+            512,
+            1707,
+            768
+          ],
+          "crop": [
+            39,
+            48,
+            283,
+            234
+          ],
+          "sampled_pixels": [
+            53,
+            40
+          ],
+          "canvas_pixels": [
+            128,
+            96
+          ],
+          "offset": [
+            15,
+            40
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_spear/frames/thrust/04.png"
+        },
+        {
+          "id": "bone_dragon_spear_thrust_05",
+          "entity": "bone_dragon_spear",
+          "action": "thrust",
+          "index": 5,
+          "source": "assets/RAW/enemies/CAVE-BONE/v001/spear_source.png",
+          "source_sha256": "1889209daeba96ca237b7ec62e84afb2b2e453354054f718453ddd65f6857f64",
+          "source_rect": [
+            1707,
+            512,
+            2048,
+            768
+          ],
+          "crop": [
+            57,
+            42,
+            288,
+            234
+          ],
+          "sampled_pixels": [
+            50,
+            42
+          ],
+          "canvas_pixels": [
+            128,
+            96
+          ],
+          "offset": [
+            19,
+            38
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_spear/frames/thrust/05.png"
+        },
+        {
+          "id": "bone_dragon_bow_idle_00",
+          "entity": "bone_dragon_bow",
+          "action": "idle",
+          "index": 0,
+          "source": "assets/RAW/enemies/CAVE-BONE/v001/bow_source.png",
+          "source_sha256": "eac6f17df56313a593fdd75651646f50470a66cb1332abcf1699e3e1d43fc62f",
+          "source_rect": [
+            0,
+            0,
+            296,
+            296
+          ],
+          "crop": [
+            49,
+            41,
+            236,
+            252
+          ],
+          "sampled_pixels": [
+            37,
+            42
+          ],
+          "canvas_pixels": [
+            96,
+            96
+          ],
+          "offset": [
+            23,
+            38
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_bow/frames/idle/00.png"
+        },
+        {
+          "id": "bone_dragon_bow_idle_01",
+          "entity": "bone_dragon_bow",
+          "action": "idle",
+          "index": 1,
+          "source": "assets/RAW/enemies/CAVE-BONE/v001/bow_source.png",
+          "source_sha256": "eac6f17df56313a593fdd75651646f50470a66cb1332abcf1699e3e1d43fc62f",
+          "source_rect": [
+            296,
+            0,
+            591,
+            296
+          ],
+          "crop": [
+            50,
+            34,
+            236,
+            252
+          ],
+          "sampled_pixels": [
+            37,
+            43
+          ],
+          "canvas_pixels": [
+            96,
+            96
+          ],
+          "offset": [
+            23,
+            37
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_bow/frames/idle/01.png"
+        },
+        {
+          "id": "bone_dragon_bow_idle_02",
+          "entity": "bone_dragon_bow",
+          "action": "idle",
+          "index": 2,
+          "source": "assets/RAW/enemies/CAVE-BONE/v001/bow_source.png",
+          "source_sha256": "eac6f17df56313a593fdd75651646f50470a66cb1332abcf1699e3e1d43fc62f",
+          "source_rect": [
+            591,
+            0,
+            887,
+            296
+          ],
+          "crop": [
+            53,
+            25,
+            240,
+            252
+          ],
+          "sampled_pixels": [
+            37,
+            45
+          ],
+          "canvas_pixels": [
+            96,
+            96
+          ],
+          "offset": [
+            23,
+            35
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_bow/frames/idle/02.png"
+        },
+        {
+          "id": "bone_dragon_bow_idle_03",
+          "entity": "bone_dragon_bow",
+          "action": "idle",
+          "index": 3,
+          "source": "assets/RAW/enemies/CAVE-BONE/v001/bow_source.png",
+          "source_sha256": "eac6f17df56313a593fdd75651646f50470a66cb1332abcf1699e3e1d43fc62f",
+          "source_rect": [
+            887,
+            0,
+            1183,
+            296
+          ],
+          "crop": [
+            52,
+            40,
+            238,
+            252
+          ],
+          "sampled_pixels": [
+            37,
+            42
+          ],
+          "canvas_pixels": [
+            96,
+            96
+          ],
+          "offset": [
+            23,
+            38
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_bow/frames/idle/03.png"
+        },
+        {
+          "id": "bone_dragon_bow_idle_04",
+          "entity": "bone_dragon_bow",
+          "action": "idle",
+          "index": 4,
+          "source": "assets/RAW/enemies/CAVE-BONE/v001/bow_source.png",
+          "source_sha256": "eac6f17df56313a593fdd75651646f50470a66cb1332abcf1699e3e1d43fc62f",
+          "source_rect": [
+            1183,
+            0,
+            1478,
+            296
+          ],
+          "crop": [
+            50,
+            50,
+            237,
+            255
+          ],
+          "sampled_pixels": [
+            37,
+            41
+          ],
+          "canvas_pixels": [
+            96,
+            96
+          ],
+          "offset": [
+            23,
+            39
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_bow/frames/idle/04.png"
+        },
+        {
+          "id": "bone_dragon_bow_idle_05",
+          "entity": "bone_dragon_bow",
+          "action": "idle",
+          "index": 5,
+          "source": "assets/RAW/enemies/CAVE-BONE/v001/bow_source.png",
+          "source_sha256": "eac6f17df56313a593fdd75651646f50470a66cb1332abcf1699e3e1d43fc62f",
+          "source_rect": [
+            1478,
+            0,
+            1774,
+            296
+          ],
+          "crop": [
+            53,
+            44,
+            238,
+            252
+          ],
+          "sampled_pixels": [
+            37,
+            41
+          ],
+          "canvas_pixels": [
+            96,
+            96
+          ],
+          "offset": [
+            23,
+            39
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_bow/frames/idle/05.png"
+        },
+        {
+          "id": "bone_dragon_bow_move_00",
+          "entity": "bone_dragon_bow",
+          "action": "move",
+          "index": 0,
+          "source": "assets/RAW/enemies/CAVE-BONE/v001/bow_source.png",
+          "source_sha256": "eac6f17df56313a593fdd75651646f50470a66cb1332abcf1699e3e1d43fc62f",
+          "source_rect": [
+            0,
+            296,
+            296,
+            591
+          ],
+          "crop": [
+            48,
+            45,
+            239,
+            251
+          ],
+          "sampled_pixels": [
+            38,
+            41
+          ],
+          "canvas_pixels": [
+            96,
+            96
+          ],
+          "offset": [
+            22,
+            39
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_bow/frames/move/00.png"
+        },
+        {
+          "id": "bone_dragon_bow_move_01",
+          "entity": "bone_dragon_bow",
+          "action": "move",
+          "index": 1,
+          "source": "assets/RAW/enemies/CAVE-BONE/v001/bow_source.png",
+          "source_sha256": "eac6f17df56313a593fdd75651646f50470a66cb1332abcf1699e3e1d43fc62f",
+          "source_rect": [
+            296,
+            296,
+            591,
+            591
+          ],
+          "crop": [
+            45,
+            55,
+            241,
+            251
+          ],
+          "sampled_pixels": [
+            39,
+            39
+          ],
+          "canvas_pixels": [
+            96,
+            96
+          ],
+          "offset": [
+            22,
+            41
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_bow/frames/move/01.png"
+        },
+        {
+          "id": "bone_dragon_bow_move_02",
+          "entity": "bone_dragon_bow",
+          "action": "move",
+          "index": 2,
+          "source": "assets/RAW/enemies/CAVE-BONE/v001/bow_source.png",
+          "source_sha256": "eac6f17df56313a593fdd75651646f50470a66cb1332abcf1699e3e1d43fc62f",
+          "source_rect": [
+            591,
+            296,
+            887,
+            591
+          ],
+          "crop": [
+            52,
+            52,
+            244,
+            251
+          ],
+          "sampled_pixels": [
+            38,
+            40
+          ],
+          "canvas_pixels": [
+            96,
+            96
+          ],
+          "offset": [
+            23,
+            40
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_bow/frames/move/02.png"
+        },
+        {
+          "id": "bone_dragon_bow_move_03",
+          "entity": "bone_dragon_bow",
+          "action": "move",
+          "index": 3,
+          "source": "assets/RAW/enemies/CAVE-BONE/v001/bow_source.png",
+          "source_sha256": "eac6f17df56313a593fdd75651646f50470a66cb1332abcf1699e3e1d43fc62f",
+          "source_rect": [
+            887,
+            296,
+            1183,
+            591
+          ],
+          "crop": [
+            50,
+            39,
+            241,
+            251
+          ],
+          "sampled_pixels": [
+            38,
+            42
+          ],
+          "canvas_pixels": [
+            96,
+            96
+          ],
+          "offset": [
+            23,
+            38
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_bow/frames/move/03.png"
+        },
+        {
+          "id": "bone_dragon_bow_move_04",
+          "entity": "bone_dragon_bow",
+          "action": "move",
+          "index": 4,
+          "source": "assets/RAW/enemies/CAVE-BONE/v001/bow_source.png",
+          "source_sha256": "eac6f17df56313a593fdd75651646f50470a66cb1332abcf1699e3e1d43fc62f",
+          "source_rect": [
+            1183,
+            296,
+            1478,
+            591
+          ],
+          "crop": [
+            50,
+            39,
+            245,
+            251
+          ],
+          "sampled_pixels": [
+            39,
+            42
+          ],
+          "canvas_pixels": [
+            96,
+            96
+          ],
+          "offset": [
+            23,
+            38
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_bow/frames/move/04.png"
+        },
+        {
+          "id": "bone_dragon_bow_move_05",
+          "entity": "bone_dragon_bow",
+          "action": "move",
+          "index": 5,
+          "source": "assets/RAW/enemies/CAVE-BONE/v001/bow_source.png",
+          "source_sha256": "eac6f17df56313a593fdd75651646f50470a66cb1332abcf1699e3e1d43fc62f",
+          "source_rect": [
+            1478,
+            296,
+            1774,
+            591
+          ],
+          "crop": [
+            52,
+            41,
+            240,
+            251
+          ],
+          "sampled_pixels": [
+            37,
+            42
+          ],
+          "canvas_pixels": [
+            96,
+            96
+          ],
+          "offset": [
+            23,
+            38
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_bow/frames/move/05.png"
+        },
+        {
+          "id": "bone_dragon_bow_shoot_00",
+          "entity": "bone_dragon_bow",
+          "action": "shoot",
+          "index": 0,
+          "source": "assets/RAW/enemies/CAVE-BONE/v001/bow_source.png",
+          "source_sha256": "eac6f17df56313a593fdd75651646f50470a66cb1332abcf1699e3e1d43fc62f",
+          "source_rect": [
+            0,
+            591,
+            296,
+            887
+          ],
+          "crop": [
+            39,
+            44,
+            232,
+            252
+          ],
+          "sampled_pixels": [
+            38,
+            41
+          ],
+          "canvas_pixels": [
+            96,
+            96
+          ],
+          "offset": [
+            21,
+            39
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_bow/frames/shoot/00.png"
+        },
+        {
+          "id": "bone_dragon_bow_shoot_01",
+          "entity": "bone_dragon_bow",
+          "action": "shoot",
+          "index": 1,
+          "source": "assets/RAW/enemies/CAVE-BONE/v001/bow_source.png",
+          "source_sha256": "eac6f17df56313a593fdd75651646f50470a66cb1332abcf1699e3e1d43fc62f",
+          "source_rect": [
+            296,
+            591,
+            591,
+            887
+          ],
+          "crop": [
+            36,
+            47,
+            245,
+            252
+          ],
+          "sampled_pixels": [
+            42,
+            41
+          ],
+          "canvas_pixels": [
+            96,
+            96
+          ],
+          "offset": [
+            20,
+            39
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_bow/frames/shoot/01.png"
+        },
+        {
+          "id": "bone_dragon_bow_shoot_02",
+          "entity": "bone_dragon_bow",
+          "action": "shoot",
+          "index": 2,
+          "source": "assets/RAW/enemies/CAVE-BONE/v001/bow_source.png",
+          "source_sha256": "eac6f17df56313a593fdd75651646f50470a66cb1332abcf1699e3e1d43fc62f",
+          "source_rect": [
+            591,
+            591,
+            887,
+            887
+          ],
+          "crop": [
+            38,
+            44,
+            255,
+            252
+          ],
+          "sampled_pixels": [
+            43,
+            41
+          ],
+          "canvas_pixels": [
+            96,
+            96
+          ],
+          "offset": [
+            20,
+            39
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_bow/frames/shoot/02.png"
+        },
+        {
+          "id": "bone_dragon_bow_shoot_03",
+          "entity": "bone_dragon_bow",
+          "action": "shoot",
+          "index": 3,
+          "source": "assets/RAW/enemies/CAVE-BONE/v001/bow_source.png",
+          "source_sha256": "eac6f17df56313a593fdd75651646f50470a66cb1332abcf1699e3e1d43fc62f",
+          "source_rect": [
+            887,
+            591,
+            1183,
+            887
+          ],
+          "crop": [
+            39,
+            44,
+            262,
+            252
+          ],
+          "sampled_pixels": [
+            44,
+            41
+          ],
+          "canvas_pixels": [
+            96,
+            96
+          ],
+          "offset": [
+            21,
+            39
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_bow/frames/shoot/03.png"
+        },
+        {
+          "id": "bone_dragon_bow_shoot_04",
+          "entity": "bone_dragon_bow",
+          "action": "shoot",
+          "index": 4,
+          "source": "assets/RAW/enemies/CAVE-BONE/v001/bow_source.png",
+          "source_sha256": "eac6f17df56313a593fdd75651646f50470a66cb1332abcf1699e3e1d43fc62f",
+          "source_rect": [
+            1183,
+            591,
+            1478,
+            887
+          ],
+          "crop": [
+            36,
+            47,
+            238,
+            252
+          ],
+          "sampled_pixels": [
+            40,
+            41
+          ],
+          "canvas_pixels": [
+            96,
+            96
+          ],
+          "offset": [
+            20,
+            39
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_bow/frames/shoot/04.png"
+        },
+        {
+          "id": "bone_dragon_bow_shoot_05",
+          "entity": "bone_dragon_bow",
+          "action": "shoot",
+          "index": 5,
+          "source": "assets/RAW/enemies/CAVE-BONE/v001/bow_source.png",
+          "source_sha256": "eac6f17df56313a593fdd75651646f50470a66cb1332abcf1699e3e1d43fc62f",
+          "source_rect": [
+            1478,
+            591,
+            1774,
+            887
+          ],
+          "crop": [
+            37,
+            47,
+            232,
+            252
+          ],
+          "sampled_pixels": [
+            39,
+            41
+          ],
+          "canvas_pixels": [
+            96,
+            96
+          ],
+          "offset": [
+            20,
+            39
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_bow/frames/shoot/05.png"
+        },
+        {
+          "id": "bone_arrow_fly_00",
+          "entity": "bone_arrow",
+          "action": "fly",
+          "index": 0,
+          "source": "assets/RAW/enemies/CAVE-BONE/v001/arrow_source.png",
+          "source_sha256": "4e215217eef899b6eb0f76310a5fe167a26894f8651a0b2fe1deef4df4b82be1",
+          "source_rect": [
+            0,
+            0,
+            486,
+            809
+          ],
+          "crop": [
+            78,
+            355,
+            419,
+            445
+          ],
+          "sampled_pixels": [
+            32,
+            8
+          ],
+          "canvas_pixels": [
+            48,
+            16
+          ],
+          "offset": [
+            8,
+            4
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/projectiles/arrow/frames/00.png"
+        },
+        {
+          "id": "bone_arrow_fly_01",
+          "entity": "bone_arrow",
+          "action": "fly",
+          "index": 1,
+          "source": "assets/RAW/enemies/CAVE-BONE/v001/arrow_source.png",
+          "source_sha256": "4e215217eef899b6eb0f76310a5fe167a26894f8651a0b2fe1deef4df4b82be1",
+          "source_rect": [
+            486,
+            0,
+            971,
+            809
+          ],
+          "crop": [
+            45,
+            355,
+            418,
+            445
+          ],
+          "sampled_pixels": [
+            32,
+            8
+          ],
+          "canvas_pixels": [
+            48,
+            16
+          ],
+          "offset": [
+            8,
+            4
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/projectiles/arrow/frames/01.png"
+        },
+        {
+          "id": "bone_arrow_fly_02",
+          "entity": "bone_arrow",
+          "action": "fly",
+          "index": 2,
+          "source": "assets/RAW/enemies/CAVE-BONE/v001/arrow_source.png",
+          "source_sha256": "4e215217eef899b6eb0f76310a5fe167a26894f8651a0b2fe1deef4df4b82be1",
+          "source_rect": [
+            971,
+            0,
+            1456,
+            809
+          ],
+          "crop": [
+            34,
+            356,
+            418,
+            445
+          ],
+          "sampled_pixels": [
+            32,
+            8
+          ],
+          "canvas_pixels": [
+            48,
+            16
+          ],
+          "offset": [
+            8,
+            4
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/projectiles/arrow/frames/02.png"
+        },
+        {
+          "id": "bone_arrow_fly_03",
+          "entity": "bone_arrow",
+          "action": "fly",
+          "index": 3,
+          "source": "assets/RAW/enemies/CAVE-BONE/v001/arrow_source.png",
+          "source_sha256": "4e215217eef899b6eb0f76310a5fe167a26894f8651a0b2fe1deef4df4b82be1",
+          "source_rect": [
+            1456,
+            0,
+            1942,
+            809
+          ],
+          "crop": [
+            79,
+            355,
+            419,
+            445
+          ],
+          "sampled_pixels": [
+            32,
+            8
+          ],
+          "canvas_pixels": [
+            48,
+            16
+          ],
+          "offset": [
+            8,
+            4
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/projectiles/arrow/frames/03.png"
+        }
+      ],
+      "entities": [
+        {
+          "id": "bone_dragon_blade",
+          "name": "骨龙·刀型",
+          "canvas": [
+            96,
+            96
+          ],
+          "anchor": [
+            40,
+            80
+          ],
+          "sprite_frames": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/godot/bone_dragon_blade.tres",
+          "actions": [
+            {
+              "id": "idle",
+              "base_fps": 6,
+              "loop": true,
+              "frames": [
+                "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/idle/00.png",
+                "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/idle/01.png",
+                "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/idle/02.png",
+                "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/idle/03.png",
+                "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/idle/04.png",
+                "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/idle/05.png"
+              ]
+            },
+            {
+              "id": "move",
+              "base_fps": 9,
+              "loop": true,
+              "frames": [
+                "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/move/00.png",
+                "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/move/01.png",
+                "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/move/02.png",
+                "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/move/03.png",
+                "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/move/04.png",
+                "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/move/05.png"
+              ]
+            },
+            {
+              "id": "slash_down",
+              "base_fps": 10,
+              "loop": false,
+              "frames": [
+                "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/slash_down/00.png",
+                "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/slash_down/01.png",
+                "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/slash_down/02.png",
+                "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/slash_down/03.png",
+                "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/slash_down/04.png",
+                "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/slash_down/05.png"
+              ]
+            },
+            {
+              "id": "slash_up",
+              "base_fps": 10,
+              "loop": false,
+              "frames": [
+                "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/slash_up/00.png",
+                "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/slash_up/01.png",
+                "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/slash_up/02.png",
+                "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/slash_up/03.png",
+                "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/slash_up/04.png",
+                "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/slash_up/05.png"
+              ]
+            },
+            {
+              "id": "thrust",
+              "base_fps": 10,
+              "loop": false,
+              "frames": [
+                "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/thrust/00.png",
+                "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/thrust/01.png",
+                "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/thrust/02.png",
+                "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/thrust/03.png",
+                "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/thrust/04.png",
+                "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/thrust/05.png"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bone_dragon_spear",
+          "name": "骨龙·矛型",
+          "canvas": [
+            128,
+            96
+          ],
+          "anchor": [
+            40,
+            80
+          ],
+          "sprite_frames": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/godot/bone_dragon_spear.tres",
+          "actions": [
+            {
+              "id": "idle",
+              "base_fps": 6,
+              "loop": true,
+              "frames": [
+                "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_spear/frames/idle/00.png",
+                "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_spear/frames/idle/01.png",
+                "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_spear/frames/idle/02.png",
+                "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_spear/frames/idle/03.png",
+                "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_spear/frames/idle/04.png",
+                "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_spear/frames/idle/05.png"
+              ]
+            },
+            {
+              "id": "move",
+              "base_fps": 9,
+              "loop": true,
+              "frames": [
+                "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_spear/frames/move/00.png",
+                "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_spear/frames/move/01.png",
+                "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_spear/frames/move/02.png",
+                "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_spear/frames/move/03.png",
+                "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_spear/frames/move/04.png",
+                "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_spear/frames/move/05.png"
+              ]
+            },
+            {
+              "id": "thrust",
+              "base_fps": 10,
+              "loop": false,
+              "frames": [
+                "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_spear/frames/thrust/00.png",
+                "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_spear/frames/thrust/01.png",
+                "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_spear/frames/thrust/02.png",
+                "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_spear/frames/thrust/03.png",
+                "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_spear/frames/thrust/04.png",
+                "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_spear/frames/thrust/05.png"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bone_dragon_bow",
+          "name": "骨龙·弓型",
+          "canvas": [
+            96,
+            96
+          ],
+          "anchor": [
+            40,
+            80
+          ],
+          "sprite_frames": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/godot/bone_dragon_bow.tres",
+          "actions": [
+            {
+              "id": "idle",
+              "base_fps": 6,
+              "loop": true,
+              "frames": [
+                "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_bow/frames/idle/00.png",
+                "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_bow/frames/idle/01.png",
+                "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_bow/frames/idle/02.png",
+                "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_bow/frames/idle/03.png",
+                "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_bow/frames/idle/04.png",
+                "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_bow/frames/idle/05.png"
+              ]
+            },
+            {
+              "id": "move",
+              "base_fps": 9,
+              "loop": true,
+              "frames": [
+                "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_bow/frames/move/00.png",
+                "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_bow/frames/move/01.png",
+                "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_bow/frames/move/02.png",
+                "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_bow/frames/move/03.png",
+                "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_bow/frames/move/04.png",
+                "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_bow/frames/move/05.png"
+              ]
+            },
+            {
+              "id": "shoot",
+              "base_fps": 8,
+              "loop": false,
+              "frames": [
+                "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_bow/frames/shoot/00.png",
+                "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_bow/frames/shoot/01.png",
+                "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_bow/frames/shoot/02.png",
+                "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_bow/frames/shoot/03.png",
+                "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_bow/frames/shoot/04.png",
+                "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_bow/frames/shoot/05.png"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bone_arrow",
+          "name": "箭矢",
+          "canvas": [
+            48,
+            16
+          ],
+          "anchor": [
+            24,
+            8
+          ],
+          "sprite_frames": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/godot/bone_arrow.tres",
+          "actions": [
+            {
+              "id": "fly",
+              "base_fps": 10.0,
+              "loop": true,
+              "frames": [
+                "res://assets/PROCESSED/enemies/CAVE-BONE/v001/projectiles/arrow/frames/00.png",
+                "res://assets/PROCESSED/enemies/CAVE-BONE/v001/projectiles/arrow/frames/01.png",
+                "res://assets/PROCESSED/enemies/CAVE-BONE/v001/projectiles/arrow/frames/02.png",
+                "res://assets/PROCESSED/enemies/CAVE-BONE/v001/projectiles/arrow/frames/03.png"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "CAVE-BEASTS": {
+      "folder": "assets/PROCESSED/enemies/CAVE-BEASTS/v001",
+      "palette": [
+        "#10131d",
+        "#202431",
+        "#343a49",
+        "#525c6c",
+        "#8794a0",
+        "#c5ced0",
+        "#edf1e9",
+        "#49403c",
+        "#77614f",
+        "#b59970",
+        "#e6d5ab",
+        "#187180",
+        "#65d1d5",
+        "#d9ffff",
+        "#292e3c",
+        "#424959"
+      ],
+      "frames": [
+        {
+          "id": "stonehelm_beast_idle_00",
+          "entity": "stonehelm_beast",
+          "action": "idle",
+          "index": 0,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/stone.png",
+          "source_sha256": "dcef4b0b3199cc098c770b8bc944a5adf83ade01e4727feed15ba4e3bcfbfebe",
+          "source_rect": [
+            0,
+            0,
+            241,
+            272
+          ],
+          "crop": [
+            0,
+            0,
+            241,
+            272
+          ],
+          "sampled_pixels": [
+            83,
+            94
+          ],
+          "canvas_pixels": [
+            128,
+            96
+          ],
+          "offset": [
+            22,
+            3
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/idle/00.png"
+        },
+        {
+          "id": "stonehelm_beast_idle_01",
+          "entity": "stonehelm_beast",
+          "action": "idle",
+          "index": 1,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/stone.png",
+          "source_sha256": "dcef4b0b3199cc098c770b8bc944a5adf83ade01e4727feed15ba4e3bcfbfebe",
+          "source_rect": [
+            241,
+            0,
+            483,
+            272
+          ],
+          "crop": [
+            0,
+            0,
+            242,
+            272
+          ],
+          "sampled_pixels": [
+            84,
+            94
+          ],
+          "canvas_pixels": [
+            128,
+            96
+          ],
+          "offset": [
+            22,
+            3
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/idle/01.png"
+        },
+        {
+          "id": "stonehelm_beast_idle_02",
+          "entity": "stonehelm_beast",
+          "action": "idle",
+          "index": 2,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/stone.png",
+          "source_sha256": "dcef4b0b3199cc098c770b8bc944a5adf83ade01e4727feed15ba4e3bcfbfebe",
+          "source_rect": [
+            483,
+            0,
+            724,
+            272
+          ],
+          "crop": [
+            0,
+            0,
+            241,
+            272
+          ],
+          "sampled_pixels": [
+            83,
+            94
+          ],
+          "canvas_pixels": [
+            128,
+            96
+          ],
+          "offset": [
+            22,
+            3
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/idle/02.png"
+        },
+        {
+          "id": "stonehelm_beast_idle_03",
+          "entity": "stonehelm_beast",
+          "action": "idle",
+          "index": 3,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/stone.png",
+          "source_sha256": "dcef4b0b3199cc098c770b8bc944a5adf83ade01e4727feed15ba4e3bcfbfebe",
+          "source_rect": [
+            724,
+            0,
+            965,
+            272
+          ],
+          "crop": [
+            0,
+            0,
+            241,
+            272
+          ],
+          "sampled_pixels": [
+            83,
+            94
+          ],
+          "canvas_pixels": [
+            128,
+            96
+          ],
+          "offset": [
+            22,
+            3
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/idle/03.png"
+        },
+        {
+          "id": "stonehelm_beast_idle_04",
+          "entity": "stonehelm_beast",
+          "action": "idle",
+          "index": 4,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/stone.png",
+          "source_sha256": "dcef4b0b3199cc098c770b8bc944a5adf83ade01e4727feed15ba4e3bcfbfebe",
+          "source_rect": [
+            965,
+            0,
+            1207,
+            272
+          ],
+          "crop": [
+            0,
+            0,
+            242,
+            272
+          ],
+          "sampled_pixels": [
+            84,
+            94
+          ],
+          "canvas_pixels": [
+            128,
+            96
+          ],
+          "offset": [
+            22,
+            3
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/idle/04.png"
+        },
+        {
+          "id": "stonehelm_beast_idle_05",
+          "entity": "stonehelm_beast",
+          "action": "idle",
+          "index": 5,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/stone.png",
+          "source_sha256": "dcef4b0b3199cc098c770b8bc944a5adf83ade01e4727feed15ba4e3bcfbfebe",
+          "source_rect": [
+            1207,
+            0,
+            1448,
+            272
+          ],
+          "crop": [
+            0,
+            0,
+            241,
+            272
+          ],
+          "sampled_pixels": [
+            83,
+            94
+          ],
+          "canvas_pixels": [
+            128,
+            96
+          ],
+          "offset": [
+            22,
+            3
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/idle/05.png"
+        },
+        {
+          "id": "stonehelm_beast_move_00",
+          "entity": "stonehelm_beast",
+          "action": "move",
+          "index": 0,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/stone.png",
+          "source_sha256": "dcef4b0b3199cc098c770b8bc944a5adf83ade01e4727feed15ba4e3bcfbfebe",
+          "source_rect": [
+            0,
+            272,
+            241,
+            543
+          ],
+          "crop": [
+            0,
+            0,
+            241,
+            271
+          ],
+          "sampled_pixels": [
+            83,
+            94
+          ],
+          "canvas_pixels": [
+            128,
+            96
+          ],
+          "offset": [
+            22,
+            3
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/move/00.png"
+        },
+        {
+          "id": "stonehelm_beast_move_01",
+          "entity": "stonehelm_beast",
+          "action": "move",
+          "index": 1,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/stone.png",
+          "source_sha256": "dcef4b0b3199cc098c770b8bc944a5adf83ade01e4727feed15ba4e3bcfbfebe",
+          "source_rect": [
+            241,
+            272,
+            483,
+            543
+          ],
+          "crop": [
+            0,
+            0,
+            242,
+            271
+          ],
+          "sampled_pixels": [
+            84,
+            94
+          ],
+          "canvas_pixels": [
+            128,
+            96
+          ],
+          "offset": [
+            22,
+            3
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/move/01.png"
+        },
+        {
+          "id": "stonehelm_beast_move_02",
+          "entity": "stonehelm_beast",
+          "action": "move",
+          "index": 2,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/stone.png",
+          "source_sha256": "dcef4b0b3199cc098c770b8bc944a5adf83ade01e4727feed15ba4e3bcfbfebe",
+          "source_rect": [
+            483,
+            272,
+            724,
+            543
+          ],
+          "crop": [
+            0,
+            0,
+            241,
+            271
+          ],
+          "sampled_pixels": [
+            83,
+            94
+          ],
+          "canvas_pixels": [
+            128,
+            96
+          ],
+          "offset": [
+            22,
+            3
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/move/02.png"
+        },
+        {
+          "id": "stonehelm_beast_move_03",
+          "entity": "stonehelm_beast",
+          "action": "move",
+          "index": 3,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/stone.png",
+          "source_sha256": "dcef4b0b3199cc098c770b8bc944a5adf83ade01e4727feed15ba4e3bcfbfebe",
+          "source_rect": [
+            724,
+            272,
+            965,
+            543
+          ],
+          "crop": [
+            0,
+            0,
+            241,
+            271
+          ],
+          "sampled_pixels": [
+            83,
+            94
+          ],
+          "canvas_pixels": [
+            128,
+            96
+          ],
+          "offset": [
+            22,
+            3
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/move/03.png"
+        },
+        {
+          "id": "stonehelm_beast_move_04",
+          "entity": "stonehelm_beast",
+          "action": "move",
+          "index": 4,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/stone.png",
+          "source_sha256": "dcef4b0b3199cc098c770b8bc944a5adf83ade01e4727feed15ba4e3bcfbfebe",
+          "source_rect": [
+            965,
+            272,
+            1207,
+            543
+          ],
+          "crop": [
+            0,
+            0,
+            242,
+            271
+          ],
+          "sampled_pixels": [
+            84,
+            94
+          ],
+          "canvas_pixels": [
+            128,
+            96
+          ],
+          "offset": [
+            22,
+            3
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/move/04.png"
+        },
+        {
+          "id": "stonehelm_beast_move_05",
+          "entity": "stonehelm_beast",
+          "action": "move",
+          "index": 5,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/stone.png",
+          "source_sha256": "dcef4b0b3199cc098c770b8bc944a5adf83ade01e4727feed15ba4e3bcfbfebe",
+          "source_rect": [
+            1207,
+            272,
+            1448,
+            543
+          ],
+          "crop": [
+            0,
+            0,
+            241,
+            271
+          ],
+          "sampled_pixels": [
+            83,
+            94
+          ],
+          "canvas_pixels": [
+            128,
+            96
+          ],
+          "offset": [
+            22,
+            3
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/move/05.png"
+        },
+        {
+          "id": "stonehelm_beast_ram_00",
+          "entity": "stonehelm_beast",
+          "action": "ram",
+          "index": 0,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/stone.png",
+          "source_sha256": "dcef4b0b3199cc098c770b8bc944a5adf83ade01e4727feed15ba4e3bcfbfebe",
+          "source_rect": [
+            0,
+            543,
+            241,
+            814
+          ],
+          "crop": [
+            0,
+            0,
+            241,
+            271
+          ],
+          "sampled_pixels": [
+            83,
+            94
+          ],
+          "canvas_pixels": [
+            128,
+            96
+          ],
+          "offset": [
+            22,
+            3
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/ram/00.png"
+        },
+        {
+          "id": "stonehelm_beast_ram_01",
+          "entity": "stonehelm_beast",
+          "action": "ram",
+          "index": 1,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/stone.png",
+          "source_sha256": "dcef4b0b3199cc098c770b8bc944a5adf83ade01e4727feed15ba4e3bcfbfebe",
+          "source_rect": [
+            241,
+            543,
+            483,
+            814
+          ],
+          "crop": [
+            0,
+            0,
+            242,
+            271
+          ],
+          "sampled_pixels": [
+            84,
+            94
+          ],
+          "canvas_pixels": [
+            128,
+            96
+          ],
+          "offset": [
+            22,
+            3
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/ram/01.png"
+        },
+        {
+          "id": "stonehelm_beast_ram_02",
+          "entity": "stonehelm_beast",
+          "action": "ram",
+          "index": 2,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/stone.png",
+          "source_sha256": "dcef4b0b3199cc098c770b8bc944a5adf83ade01e4727feed15ba4e3bcfbfebe",
+          "source_rect": [
+            483,
+            543,
+            724,
+            814
+          ],
+          "crop": [
+            0,
+            0,
+            241,
+            271
+          ],
+          "sampled_pixels": [
+            83,
+            94
+          ],
+          "canvas_pixels": [
+            128,
+            96
+          ],
+          "offset": [
+            22,
+            2
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/ram/02.png"
+        },
+        {
+          "id": "stonehelm_beast_ram_03",
+          "entity": "stonehelm_beast",
+          "action": "ram",
+          "index": 3,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/stone.png",
+          "source_sha256": "dcef4b0b3199cc098c770b8bc944a5adf83ade01e4727feed15ba4e3bcfbfebe",
+          "source_rect": [
+            724,
+            543,
+            965,
+            814
+          ],
+          "crop": [
+            0,
+            0,
+            241,
+            271
+          ],
+          "sampled_pixels": [
+            83,
+            94
+          ],
+          "canvas_pixels": [
+            128,
+            96
+          ],
+          "offset": [
+            22,
+            2
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/ram/03.png"
+        },
+        {
+          "id": "stonehelm_beast_ram_04",
+          "entity": "stonehelm_beast",
+          "action": "ram",
+          "index": 4,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/stone.png",
+          "source_sha256": "dcef4b0b3199cc098c770b8bc944a5adf83ade01e4727feed15ba4e3bcfbfebe",
+          "source_rect": [
+            965,
+            543,
+            1207,
+            814
+          ],
+          "crop": [
+            0,
+            0,
+            242,
+            271
+          ],
+          "sampled_pixels": [
+            84,
+            94
+          ],
+          "canvas_pixels": [
+            128,
+            96
+          ],
+          "offset": [
+            22,
+            2
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/ram/04.png"
+        },
+        {
+          "id": "stonehelm_beast_ram_05",
+          "entity": "stonehelm_beast",
+          "action": "ram",
+          "index": 5,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/stone.png",
+          "source_sha256": "dcef4b0b3199cc098c770b8bc944a5adf83ade01e4727feed15ba4e3bcfbfebe",
+          "source_rect": [
+            1207,
+            543,
+            1448,
+            814
+          ],
+          "crop": [
+            0,
+            0,
+            241,
+            271
+          ],
+          "sampled_pixels": [
+            83,
+            94
+          ],
+          "canvas_pixels": [
+            128,
+            96
+          ],
+          "offset": [
+            22,
+            3
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/ram/05.png"
+        },
+        {
+          "id": "stonehelm_beast_shell_defense_00",
+          "entity": "stonehelm_beast",
+          "action": "shell_defense",
+          "index": 0,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/stone.png",
+          "source_sha256": "dcef4b0b3199cc098c770b8bc944a5adf83ade01e4727feed15ba4e3bcfbfebe",
+          "source_rect": [
+            0,
+            814,
+            241,
+            1086
+          ],
+          "crop": [
+            0,
+            0,
+            241,
+            272
+          ],
+          "sampled_pixels": [
+            83,
+            94
+          ],
+          "canvas_pixels": [
+            128,
+            96
+          ],
+          "offset": [
+            22,
+            3
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/shell_defense/00.png"
+        },
+        {
+          "id": "stonehelm_beast_shell_defense_01",
+          "entity": "stonehelm_beast",
+          "action": "shell_defense",
+          "index": 1,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/stone.png",
+          "source_sha256": "dcef4b0b3199cc098c770b8bc944a5adf83ade01e4727feed15ba4e3bcfbfebe",
+          "source_rect": [
+            241,
+            814,
+            483,
+            1086
+          ],
+          "crop": [
+            0,
+            0,
+            242,
+            272
+          ],
+          "sampled_pixels": [
+            84,
+            94
+          ],
+          "canvas_pixels": [
+            128,
+            96
+          ],
+          "offset": [
+            22,
+            3
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/shell_defense/01.png"
+        },
+        {
+          "id": "stonehelm_beast_shell_defense_02",
+          "entity": "stonehelm_beast",
+          "action": "shell_defense",
+          "index": 2,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/stone.png",
+          "source_sha256": "dcef4b0b3199cc098c770b8bc944a5adf83ade01e4727feed15ba4e3bcfbfebe",
+          "source_rect": [
+            483,
+            814,
+            724,
+            1086
+          ],
+          "crop": [
+            0,
+            0,
+            241,
+            272
+          ],
+          "sampled_pixels": [
+            83,
+            94
+          ],
+          "canvas_pixels": [
+            128,
+            96
+          ],
+          "offset": [
+            22,
+            3
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/shell_defense/02.png"
+        },
+        {
+          "id": "stonehelm_beast_shell_defense_03",
+          "entity": "stonehelm_beast",
+          "action": "shell_defense",
+          "index": 3,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/stone.png",
+          "source_sha256": "dcef4b0b3199cc098c770b8bc944a5adf83ade01e4727feed15ba4e3bcfbfebe",
+          "source_rect": [
+            724,
+            814,
+            965,
+            1086
+          ],
+          "crop": [
+            0,
+            0,
+            241,
+            272
+          ],
+          "sampled_pixels": [
+            83,
+            94
+          ],
+          "canvas_pixels": [
+            128,
+            96
+          ],
+          "offset": [
+            22,
+            3
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/shell_defense/03.png"
+        },
+        {
+          "id": "stonehelm_beast_shell_defense_04",
+          "entity": "stonehelm_beast",
+          "action": "shell_defense",
+          "index": 4,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/stone.png",
+          "source_sha256": "dcef4b0b3199cc098c770b8bc944a5adf83ade01e4727feed15ba4e3bcfbfebe",
+          "source_rect": [
+            965,
+            814,
+            1207,
+            1086
+          ],
+          "crop": [
+            0,
+            0,
+            242,
+            272
+          ],
+          "sampled_pixels": [
+            84,
+            94
+          ],
+          "canvas_pixels": [
+            128,
+            96
+          ],
+          "offset": [
+            22,
+            3
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/shell_defense/04.png"
+        },
+        {
+          "id": "stonehelm_beast_shell_defense_05",
+          "entity": "stonehelm_beast",
+          "action": "shell_defense",
+          "index": 5,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/stone.png",
+          "source_sha256": "dcef4b0b3199cc098c770b8bc944a5adf83ade01e4727feed15ba4e3bcfbfebe",
+          "source_rect": [
+            1207,
+            814,
+            1448,
+            1086
+          ],
+          "crop": [
+            0,
+            0,
+            241,
+            272
+          ],
+          "sampled_pixels": [
+            83,
+            94
+          ],
+          "canvas_pixels": [
+            128,
+            96
+          ],
+          "offset": [
+            22,
+            3
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/shell_defense/05.png"
+        },
+        {
+          "id": "cave_spider_idle_00",
+          "entity": "cave_spider",
+          "action": "idle",
+          "index": 0,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/spider.png",
+          "source_sha256": "0110a7099925f9cbefe5de538ffde740c828112907b60acbdafbc23c8de43ab0",
+          "source_rect": [
+            0,
+            0,
+            256,
+            256
+          ],
+          "crop": [
+            0,
+            0,
+            256,
+            256
+          ],
+          "sampled_pixels": [
+            88,
+            88
+          ],
+          "canvas_pixels": [
+            128,
+            96
+          ],
+          "offset": [
+            20,
+            6
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/idle/00.png"
+        },
+        {
+          "id": "cave_spider_idle_01",
+          "entity": "cave_spider",
+          "action": "idle",
+          "index": 1,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/spider.png",
+          "source_sha256": "0110a7099925f9cbefe5de538ffde740c828112907b60acbdafbc23c8de43ab0",
+          "source_rect": [
+            256,
+            0,
+            512,
+            256
+          ],
+          "crop": [
+            0,
+            0,
+            256,
+            256
+          ],
+          "sampled_pixels": [
+            88,
+            88
+          ],
+          "canvas_pixels": [
+            128,
+            96
+          ],
+          "offset": [
+            20,
+            6
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/idle/01.png"
+        },
+        {
+          "id": "cave_spider_idle_02",
+          "entity": "cave_spider",
+          "action": "idle",
+          "index": 2,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/spider.png",
+          "source_sha256": "0110a7099925f9cbefe5de538ffde740c828112907b60acbdafbc23c8de43ab0",
+          "source_rect": [
+            512,
+            0,
+            768,
+            256
+          ],
+          "crop": [
+            0,
+            0,
+            256,
+            256
+          ],
+          "sampled_pixels": [
+            88,
+            88
+          ],
+          "canvas_pixels": [
+            128,
+            96
+          ],
+          "offset": [
+            20,
+            6
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/idle/02.png"
+        },
+        {
+          "id": "cave_spider_idle_03",
+          "entity": "cave_spider",
+          "action": "idle",
+          "index": 3,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/spider.png",
+          "source_sha256": "0110a7099925f9cbefe5de538ffde740c828112907b60acbdafbc23c8de43ab0",
+          "source_rect": [
+            768,
+            0,
+            1024,
+            256
+          ],
+          "crop": [
+            0,
+            0,
+            256,
+            256
+          ],
+          "sampled_pixels": [
+            88,
+            88
+          ],
+          "canvas_pixels": [
+            128,
+            96
+          ],
+          "offset": [
+            20,
+            6
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/idle/03.png"
+        },
+        {
+          "id": "cave_spider_idle_04",
+          "entity": "cave_spider",
+          "action": "idle",
+          "index": 4,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/spider.png",
+          "source_sha256": "0110a7099925f9cbefe5de538ffde740c828112907b60acbdafbc23c8de43ab0",
+          "source_rect": [
+            1024,
+            0,
+            1280,
+            256
+          ],
+          "crop": [
+            0,
+            0,
+            256,
+            256
+          ],
+          "sampled_pixels": [
+            88,
+            88
+          ],
+          "canvas_pixels": [
+            128,
+            96
+          ],
+          "offset": [
+            20,
+            6
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/idle/04.png"
+        },
+        {
+          "id": "cave_spider_idle_05",
+          "entity": "cave_spider",
+          "action": "idle",
+          "index": 5,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/spider.png",
+          "source_sha256": "0110a7099925f9cbefe5de538ffde740c828112907b60acbdafbc23c8de43ab0",
+          "source_rect": [
+            1280,
+            0,
+            1536,
+            256
+          ],
+          "crop": [
+            0,
+            0,
+            256,
+            256
+          ],
+          "sampled_pixels": [
+            88,
+            88
+          ],
+          "canvas_pixels": [
+            128,
+            96
+          ],
+          "offset": [
+            20,
+            6
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/idle/05.png"
+        },
+        {
+          "id": "cave_spider_move_00",
+          "entity": "cave_spider",
+          "action": "move",
+          "index": 0,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/spider.png",
+          "source_sha256": "0110a7099925f9cbefe5de538ffde740c828112907b60acbdafbc23c8de43ab0",
+          "source_rect": [
+            0,
+            256,
+            256,
+            512
+          ],
+          "crop": [
+            0,
+            0,
+            256,
+            256
+          ],
+          "sampled_pixels": [
+            88,
+            88
+          ],
+          "canvas_pixels": [
+            128,
+            96
+          ],
+          "offset": [
+            20,
+            8
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/move/00.png"
+        },
+        {
+          "id": "cave_spider_move_01",
+          "entity": "cave_spider",
+          "action": "move",
+          "index": 1,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/spider.png",
+          "source_sha256": "0110a7099925f9cbefe5de538ffde740c828112907b60acbdafbc23c8de43ab0",
+          "source_rect": [
+            256,
+            256,
+            512,
+            512
+          ],
+          "crop": [
+            0,
+            0,
+            256,
+            256
+          ],
+          "sampled_pixels": [
+            88,
+            88
+          ],
+          "canvas_pixels": [
+            128,
+            96
+          ],
+          "offset": [
+            20,
+            8
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/move/01.png"
+        },
+        {
+          "id": "cave_spider_move_02",
+          "entity": "cave_spider",
+          "action": "move",
+          "index": 2,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/spider.png",
+          "source_sha256": "0110a7099925f9cbefe5de538ffde740c828112907b60acbdafbc23c8de43ab0",
+          "source_rect": [
+            512,
+            256,
+            768,
+            512
+          ],
+          "crop": [
+            0,
+            0,
+            256,
+            256
+          ],
+          "sampled_pixels": [
+            88,
+            88
+          ],
+          "canvas_pixels": [
+            128,
+            96
+          ],
+          "offset": [
+            20,
+            6
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/move/02.png"
+        },
+        {
+          "id": "cave_spider_move_03",
+          "entity": "cave_spider",
+          "action": "move",
+          "index": 3,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/spider.png",
+          "source_sha256": "0110a7099925f9cbefe5de538ffde740c828112907b60acbdafbc23c8de43ab0",
+          "source_rect": [
+            768,
+            256,
+            1024,
+            512
+          ],
+          "crop": [
+            0,
+            0,
+            256,
+            256
+          ],
+          "sampled_pixels": [
+            88,
+            88
+          ],
+          "canvas_pixels": [
+            128,
+            96
+          ],
+          "offset": [
+            20,
+            7
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/move/03.png"
+        },
+        {
+          "id": "cave_spider_move_04",
+          "entity": "cave_spider",
+          "action": "move",
+          "index": 4,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/spider.png",
+          "source_sha256": "0110a7099925f9cbefe5de538ffde740c828112907b60acbdafbc23c8de43ab0",
+          "source_rect": [
+            1024,
+            256,
+            1280,
+            512
+          ],
+          "crop": [
+            0,
+            0,
+            256,
+            256
+          ],
+          "sampled_pixels": [
+            88,
+            88
+          ],
+          "canvas_pixels": [
+            128,
+            96
+          ],
+          "offset": [
+            20,
+            7
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/move/04.png"
+        },
+        {
+          "id": "cave_spider_move_05",
+          "entity": "cave_spider",
+          "action": "move",
+          "index": 5,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/spider.png",
+          "source_sha256": "0110a7099925f9cbefe5de538ffde740c828112907b60acbdafbc23c8de43ab0",
+          "source_rect": [
+            1280,
+            256,
+            1536,
+            512
+          ],
+          "crop": [
+            0,
+            0,
+            256,
+            256
+          ],
+          "sampled_pixels": [
+            88,
+            88
+          ],
+          "canvas_pixels": [
+            128,
+            96
+          ],
+          "offset": [
+            20,
+            7
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/move/05.png"
+        },
+        {
+          "id": "cave_spider_claw_attack_00",
+          "entity": "cave_spider",
+          "action": "claw_attack",
+          "index": 0,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/spider.png",
+          "source_sha256": "0110a7099925f9cbefe5de538ffde740c828112907b60acbdafbc23c8de43ab0",
+          "source_rect": [
+            0,
+            512,
+            256,
+            768
+          ],
+          "crop": [
+            0,
+            0,
+            256,
+            256
+          ],
+          "sampled_pixels": [
+            88,
+            88
+          ],
+          "canvas_pixels": [
+            128,
+            96
+          ],
+          "offset": [
+            20,
+            5
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/claw_attack/00.png"
+        },
+        {
+          "id": "cave_spider_claw_attack_01",
+          "entity": "cave_spider",
+          "action": "claw_attack",
+          "index": 1,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/spider.png",
+          "source_sha256": "0110a7099925f9cbefe5de538ffde740c828112907b60acbdafbc23c8de43ab0",
+          "source_rect": [
+            256,
+            512,
+            512,
+            768
+          ],
+          "crop": [
+            0,
+            0,
+            256,
+            256
+          ],
+          "sampled_pixels": [
+            88,
+            88
+          ],
+          "canvas_pixels": [
+            128,
+            96
+          ],
+          "offset": [
+            20,
+            5
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/claw_attack/01.png"
+        },
+        {
+          "id": "cave_spider_claw_attack_02",
+          "entity": "cave_spider",
+          "action": "claw_attack",
+          "index": 2,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/spider.png",
+          "source_sha256": "0110a7099925f9cbefe5de538ffde740c828112907b60acbdafbc23c8de43ab0",
+          "source_rect": [
+            512,
+            512,
+            768,
+            768
+          ],
+          "crop": [
+            0,
+            0,
+            256,
+            256
+          ],
+          "sampled_pixels": [
+            88,
+            88
+          ],
+          "canvas_pixels": [
+            128,
+            96
+          ],
+          "offset": [
+            20,
+            6
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/claw_attack/02.png"
+        },
+        {
+          "id": "cave_spider_claw_attack_03",
+          "entity": "cave_spider",
+          "action": "claw_attack",
+          "index": 3,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/spider.png",
+          "source_sha256": "0110a7099925f9cbefe5de538ffde740c828112907b60acbdafbc23c8de43ab0",
+          "source_rect": [
+            768,
+            512,
+            1024,
+            768
+          ],
+          "crop": [
+            0,
+            0,
+            256,
+            256
+          ],
+          "sampled_pixels": [
+            88,
+            88
+          ],
+          "canvas_pixels": [
+            128,
+            96
+          ],
+          "offset": [
+            20,
+            5
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/claw_attack/03.png"
+        },
+        {
+          "id": "cave_spider_claw_attack_04",
+          "entity": "cave_spider",
+          "action": "claw_attack",
+          "index": 4,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/spider.png",
+          "source_sha256": "0110a7099925f9cbefe5de538ffde740c828112907b60acbdafbc23c8de43ab0",
+          "source_rect": [
+            1024,
+            512,
+            1280,
+            768
+          ],
+          "crop": [
+            0,
+            0,
+            256,
+            256
+          ],
+          "sampled_pixels": [
+            88,
+            88
+          ],
+          "canvas_pixels": [
+            128,
+            96
+          ],
+          "offset": [
+            20,
+            4
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/claw_attack/04.png"
+        },
+        {
+          "id": "cave_spider_claw_attack_05",
+          "entity": "cave_spider",
+          "action": "claw_attack",
+          "index": 5,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/spider.png",
+          "source_sha256": "0110a7099925f9cbefe5de538ffde740c828112907b60acbdafbc23c8de43ab0",
+          "source_rect": [
+            1280,
+            512,
+            1536,
+            768
+          ],
+          "crop": [
+            0,
+            0,
+            256,
+            256
+          ],
+          "sampled_pixels": [
+            88,
+            88
+          ],
+          "canvas_pixels": [
+            128,
+            96
+          ],
+          "offset": [
+            20,
+            4
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/claw_attack/05.png"
+        },
+        {
+          "id": "cave_spider_web_spit_00",
+          "entity": "cave_spider",
+          "action": "web_spit",
+          "index": 0,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/spider.png",
+          "source_sha256": "0110a7099925f9cbefe5de538ffde740c828112907b60acbdafbc23c8de43ab0",
+          "source_rect": [
+            0,
+            768,
+            256,
+            1024
+          ],
+          "crop": [
+            0,
+            0,
+            256,
+            256
+          ],
+          "sampled_pixels": [
+            88,
+            88
+          ],
+          "canvas_pixels": [
+            128,
+            96
+          ],
+          "offset": [
+            20,
+            3
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/web_spit/00.png"
+        },
+        {
+          "id": "cave_spider_web_spit_01",
+          "entity": "cave_spider",
+          "action": "web_spit",
+          "index": 1,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/spider.png",
+          "source_sha256": "0110a7099925f9cbefe5de538ffde740c828112907b60acbdafbc23c8de43ab0",
+          "source_rect": [
+            256,
+            768,
+            512,
+            1024
+          ],
+          "crop": [
+            0,
+            0,
+            256,
+            256
+          ],
+          "sampled_pixels": [
+            88,
+            88
+          ],
+          "canvas_pixels": [
+            128,
+            96
+          ],
+          "offset": [
+            20,
+            3
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/web_spit/01.png"
+        },
+        {
+          "id": "cave_spider_web_spit_02",
+          "entity": "cave_spider",
+          "action": "web_spit",
+          "index": 2,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/spider.png",
+          "source_sha256": "0110a7099925f9cbefe5de538ffde740c828112907b60acbdafbc23c8de43ab0",
+          "source_rect": [
+            512,
+            768,
+            768,
+            1024
+          ],
+          "crop": [
+            0,
+            0,
+            256,
+            256
+          ],
+          "sampled_pixels": [
+            88,
+            88
+          ],
+          "canvas_pixels": [
+            128,
+            96
+          ],
+          "offset": [
+            20,
+            3
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/web_spit/02.png"
+        },
+        {
+          "id": "cave_spider_web_spit_03",
+          "entity": "cave_spider",
+          "action": "web_spit",
+          "index": 3,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/spider.png",
+          "source_sha256": "0110a7099925f9cbefe5de538ffde740c828112907b60acbdafbc23c8de43ab0",
+          "source_rect": [
+            768,
+            768,
+            1024,
+            1024
+          ],
+          "crop": [
+            0,
+            0,
+            256,
+            256
+          ],
+          "sampled_pixels": [
+            88,
+            88
+          ],
+          "canvas_pixels": [
+            128,
+            96
+          ],
+          "offset": [
+            20,
+            3
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/web_spit/03.png"
+        },
+        {
+          "id": "cave_spider_web_spit_04",
+          "entity": "cave_spider",
+          "action": "web_spit",
+          "index": 4,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/spider.png",
+          "source_sha256": "0110a7099925f9cbefe5de538ffde740c828112907b60acbdafbc23c8de43ab0",
+          "source_rect": [
+            1024,
+            768,
+            1280,
+            1024
+          ],
+          "crop": [
+            0,
+            0,
+            256,
+            256
+          ],
+          "sampled_pixels": [
+            88,
+            88
+          ],
+          "canvas_pixels": [
+            128,
+            96
+          ],
+          "offset": [
+            20,
+            3
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/web_spit/04.png"
+        },
+        {
+          "id": "cave_spider_web_spit_05",
+          "entity": "cave_spider",
+          "action": "web_spit",
+          "index": 5,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/spider.png",
+          "source_sha256": "0110a7099925f9cbefe5de538ffde740c828112907b60acbdafbc23c8de43ab0",
+          "source_rect": [
+            1280,
+            768,
+            1536,
+            1024
+          ],
+          "crop": [
+            0,
+            0,
+            256,
+            256
+          ],
+          "sampled_pixels": [
+            88,
+            88
+          ],
+          "canvas_pixels": [
+            128,
+            96
+          ],
+          "offset": [
+            20,
+            3
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/web_spit/05.png"
+        },
+        {
+          "id": "animated_crystal_idle_00",
+          "entity": "animated_crystal",
+          "action": "idle",
+          "index": 0,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/crystal.png",
+          "source_sha256": "72df8c2658e14dc2a3f3112ae18f95638717c2e9de8d4797893729e9e6da864d",
+          "source_rect": [
+            0,
+            0,
+            296,
+            296
+          ],
+          "crop": [
+            0,
+            0,
+            296,
+            296
+          ],
+          "sampled_pixels": [
+            80,
+            80
+          ],
+          "canvas_pixels": [
+            96,
+            96
+          ],
+          "offset": [
+            8,
+            8
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/animated_crystal/frames/idle/00.png"
+        },
+        {
+          "id": "animated_crystal_idle_01",
+          "entity": "animated_crystal",
+          "action": "idle",
+          "index": 1,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/crystal.png",
+          "source_sha256": "72df8c2658e14dc2a3f3112ae18f95638717c2e9de8d4797893729e9e6da864d",
+          "source_rect": [
+            296,
+            0,
+            591,
+            296
+          ],
+          "crop": [
+            0,
+            0,
+            295,
+            296
+          ],
+          "sampled_pixels": [
+            79,
+            80
+          ],
+          "canvas_pixels": [
+            96,
+            96
+          ],
+          "offset": [
+            8,
+            8
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/animated_crystal/frames/idle/01.png"
+        },
+        {
+          "id": "animated_crystal_idle_02",
+          "entity": "animated_crystal",
+          "action": "idle",
+          "index": 2,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/crystal.png",
+          "source_sha256": "72df8c2658e14dc2a3f3112ae18f95638717c2e9de8d4797893729e9e6da864d",
+          "source_rect": [
+            591,
+            0,
+            887,
+            296
+          ],
+          "crop": [
+            0,
+            0,
+            296,
+            296
+          ],
+          "sampled_pixels": [
+            80,
+            80
+          ],
+          "canvas_pixels": [
+            96,
+            96
+          ],
+          "offset": [
+            8,
+            8
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/animated_crystal/frames/idle/02.png"
+        },
+        {
+          "id": "animated_crystal_idle_03",
+          "entity": "animated_crystal",
+          "action": "idle",
+          "index": 3,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/crystal.png",
+          "source_sha256": "72df8c2658e14dc2a3f3112ae18f95638717c2e9de8d4797893729e9e6da864d",
+          "source_rect": [
+            887,
+            0,
+            1183,
+            296
+          ],
+          "crop": [
+            0,
+            0,
+            296,
+            296
+          ],
+          "sampled_pixels": [
+            80,
+            80
+          ],
+          "canvas_pixels": [
+            96,
+            96
+          ],
+          "offset": [
+            8,
+            8
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/animated_crystal/frames/idle/03.png"
+        },
+        {
+          "id": "animated_crystal_idle_04",
+          "entity": "animated_crystal",
+          "action": "idle",
+          "index": 4,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/crystal.png",
+          "source_sha256": "72df8c2658e14dc2a3f3112ae18f95638717c2e9de8d4797893729e9e6da864d",
+          "source_rect": [
+            1183,
+            0,
+            1478,
+            296
+          ],
+          "crop": [
+            0,
+            0,
+            295,
+            296
+          ],
+          "sampled_pixels": [
+            79,
+            80
+          ],
+          "canvas_pixels": [
+            96,
+            96
+          ],
+          "offset": [
+            8,
+            8
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/animated_crystal/frames/idle/04.png"
+        },
+        {
+          "id": "animated_crystal_idle_05",
+          "entity": "animated_crystal",
+          "action": "idle",
+          "index": 5,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/crystal.png",
+          "source_sha256": "72df8c2658e14dc2a3f3112ae18f95638717c2e9de8d4797893729e9e6da864d",
+          "source_rect": [
+            1478,
+            0,
+            1774,
+            296
+          ],
+          "crop": [
+            0,
+            0,
+            296,
+            296
+          ],
+          "sampled_pixels": [
+            80,
+            80
+          ],
+          "canvas_pixels": [
+            96,
+            96
+          ],
+          "offset": [
+            8,
+            8
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/animated_crystal/frames/idle/05.png"
+        },
+        {
+          "id": "animated_crystal_move_00",
+          "entity": "animated_crystal",
+          "action": "move",
+          "index": 0,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/crystal.png",
+          "source_sha256": "72df8c2658e14dc2a3f3112ae18f95638717c2e9de8d4797893729e9e6da864d",
+          "source_rect": [
+            0,
+            296,
+            296,
+            591
+          ],
+          "crop": [
+            0,
+            0,
+            296,
+            295
+          ],
+          "sampled_pixels": [
+            80,
+            79
+          ],
+          "canvas_pixels": [
+            96,
+            96
+          ],
+          "offset": [
+            8,
+            8
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/animated_crystal/frames/move/00.png"
+        },
+        {
+          "id": "animated_crystal_move_01",
+          "entity": "animated_crystal",
+          "action": "move",
+          "index": 1,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/crystal.png",
+          "source_sha256": "72df8c2658e14dc2a3f3112ae18f95638717c2e9de8d4797893729e9e6da864d",
+          "source_rect": [
+            296,
+            296,
+            591,
+            591
+          ],
+          "crop": [
+            0,
+            0,
+            295,
+            295
+          ],
+          "sampled_pixels": [
+            79,
+            79
+          ],
+          "canvas_pixels": [
+            96,
+            96
+          ],
+          "offset": [
+            8,
+            8
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/animated_crystal/frames/move/01.png"
+        },
+        {
+          "id": "animated_crystal_move_02",
+          "entity": "animated_crystal",
+          "action": "move",
+          "index": 2,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/crystal.png",
+          "source_sha256": "72df8c2658e14dc2a3f3112ae18f95638717c2e9de8d4797893729e9e6da864d",
+          "source_rect": [
+            591,
+            296,
+            887,
+            591
+          ],
+          "crop": [
+            0,
+            0,
+            296,
+            295
+          ],
+          "sampled_pixels": [
+            80,
+            79
+          ],
+          "canvas_pixels": [
+            96,
+            96
+          ],
+          "offset": [
+            8,
+            8
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/animated_crystal/frames/move/02.png"
+        },
+        {
+          "id": "animated_crystal_move_03",
+          "entity": "animated_crystal",
+          "action": "move",
+          "index": 3,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/crystal.png",
+          "source_sha256": "72df8c2658e14dc2a3f3112ae18f95638717c2e9de8d4797893729e9e6da864d",
+          "source_rect": [
+            887,
+            296,
+            1183,
+            591
+          ],
+          "crop": [
+            0,
+            0,
+            296,
+            295
+          ],
+          "sampled_pixels": [
+            80,
+            79
+          ],
+          "canvas_pixels": [
+            96,
+            96
+          ],
+          "offset": [
+            8,
+            8
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/animated_crystal/frames/move/03.png"
+        },
+        {
+          "id": "animated_crystal_move_04",
+          "entity": "animated_crystal",
+          "action": "move",
+          "index": 4,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/crystal.png",
+          "source_sha256": "72df8c2658e14dc2a3f3112ae18f95638717c2e9de8d4797893729e9e6da864d",
+          "source_rect": [
+            1183,
+            296,
+            1478,
+            591
+          ],
+          "crop": [
+            0,
+            0,
+            295,
+            295
+          ],
+          "sampled_pixels": [
+            79,
+            79
+          ],
+          "canvas_pixels": [
+            96,
+            96
+          ],
+          "offset": [
+            8,
+            8
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/animated_crystal/frames/move/04.png"
+        },
+        {
+          "id": "animated_crystal_move_05",
+          "entity": "animated_crystal",
+          "action": "move",
+          "index": 5,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/crystal.png",
+          "source_sha256": "72df8c2658e14dc2a3f3112ae18f95638717c2e9de8d4797893729e9e6da864d",
+          "source_rect": [
+            1478,
+            296,
+            1774,
+            591
+          ],
+          "crop": [
+            0,
+            0,
+            296,
+            295
+          ],
+          "sampled_pixels": [
+            80,
+            79
+          ],
+          "canvas_pixels": [
+            96,
+            96
+          ],
+          "offset": [
+            8,
+            8
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/animated_crystal/frames/move/05.png"
+        },
+        {
+          "id": "animated_crystal_charge_ready_00",
+          "entity": "animated_crystal",
+          "action": "charge_ready",
+          "index": 0,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/crystal.png",
+          "source_sha256": "72df8c2658e14dc2a3f3112ae18f95638717c2e9de8d4797893729e9e6da864d",
+          "source_rect": [
+            0,
+            591,
+            296,
+            887
+          ],
+          "crop": [
+            0,
+            0,
+            296,
+            296
+          ],
+          "sampled_pixels": [
+            80,
+            80
+          ],
+          "canvas_pixels": [
+            96,
+            96
+          ],
+          "offset": [
+            8,
+            8
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/animated_crystal/frames/charge_ready/00.png"
+        },
+        {
+          "id": "animated_crystal_charge_ready_01",
+          "entity": "animated_crystal",
+          "action": "charge_ready",
+          "index": 1,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/crystal.png",
+          "source_sha256": "72df8c2658e14dc2a3f3112ae18f95638717c2e9de8d4797893729e9e6da864d",
+          "source_rect": [
+            296,
+            591,
+            591,
+            887
+          ],
+          "crop": [
+            0,
+            0,
+            295,
+            296
+          ],
+          "sampled_pixels": [
+            79,
+            80
+          ],
+          "canvas_pixels": [
+            96,
+            96
+          ],
+          "offset": [
+            8,
+            8
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/animated_crystal/frames/charge_ready/01.png"
+        },
+        {
+          "id": "animated_crystal_charge_ready_02",
+          "entity": "animated_crystal",
+          "action": "charge_ready",
+          "index": 2,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/crystal.png",
+          "source_sha256": "72df8c2658e14dc2a3f3112ae18f95638717c2e9de8d4797893729e9e6da864d",
+          "source_rect": [
+            591,
+            591,
+            887,
+            887
+          ],
+          "crop": [
+            0,
+            0,
+            296,
+            296
+          ],
+          "sampled_pixels": [
+            80,
+            80
+          ],
+          "canvas_pixels": [
+            96,
+            96
+          ],
+          "offset": [
+            8,
+            8
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/animated_crystal/frames/charge_ready/02.png"
+        },
+        {
+          "id": "animated_crystal_charge_ready_03",
+          "entity": "animated_crystal",
+          "action": "charge_ready",
+          "index": 3,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/crystal.png",
+          "source_sha256": "72df8c2658e14dc2a3f3112ae18f95638717c2e9de8d4797893729e9e6da864d",
+          "source_rect": [
+            887,
+            591,
+            1183,
+            887
+          ],
+          "crop": [
+            0,
+            0,
+            296,
+            296
+          ],
+          "sampled_pixels": [
+            80,
+            80
+          ],
+          "canvas_pixels": [
+            96,
+            96
+          ],
+          "offset": [
+            8,
+            8
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/animated_crystal/frames/charge_ready/03.png"
+        },
+        {
+          "id": "animated_crystal_charge_ready_04",
+          "entity": "animated_crystal",
+          "action": "charge_ready",
+          "index": 4,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/crystal.png",
+          "source_sha256": "72df8c2658e14dc2a3f3112ae18f95638717c2e9de8d4797893729e9e6da864d",
+          "source_rect": [
+            1183,
+            591,
+            1478,
+            887
+          ],
+          "crop": [
+            0,
+            0,
+            295,
+            296
+          ],
+          "sampled_pixels": [
+            79,
+            80
+          ],
+          "canvas_pixels": [
+            96,
+            96
+          ],
+          "offset": [
+            8,
+            8
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/animated_crystal/frames/charge_ready/04.png"
+        },
+        {
+          "id": "animated_crystal_charge_ready_05",
+          "entity": "animated_crystal",
+          "action": "charge_ready",
+          "index": 5,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/crystal.png",
+          "source_sha256": "72df8c2658e14dc2a3f3112ae18f95638717c2e9de8d4797893729e9e6da864d",
+          "source_rect": [
+            1478,
+            591,
+            1774,
+            887
+          ],
+          "crop": [
+            0,
+            0,
+            296,
+            296
+          ],
+          "sampled_pixels": [
+            80,
+            80
+          ],
+          "canvas_pixels": [
+            96,
+            96
+          ],
+          "offset": [
+            8,
+            8
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/animated_crystal/frames/charge_ready/05.png"
+        },
+        {
+          "id": "cavern_hunter_idle_00",
+          "entity": "cavern_hunter",
+          "action": "idle",
+          "index": 0,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/hunter.png",
+          "source_sha256": "c4bfd24b89914081b6f4c92b43ea1b2aa8f3fd8cb70c56316607d92149f7b7ef",
+          "source_rect": [
+            0,
+            0,
+            229,
+            229
+          ],
+          "crop": [
+            0,
+            0,
+            229,
+            229
+          ],
+          "sampled_pixels": [
+            176,
+            176
+          ],
+          "canvas_pixels": [
+            192,
+            160
+          ],
+          "offset": [
+            8,
+            1
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/idle/00.png"
+        },
+        {
+          "id": "cavern_hunter_idle_01",
+          "entity": "cavern_hunter",
+          "action": "idle",
+          "index": 1,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/hunter.png",
+          "source_sha256": "c4bfd24b89914081b6f4c92b43ea1b2aa8f3fd8cb70c56316607d92149f7b7ef",
+          "source_rect": [
+            229,
+            0,
+            458,
+            229
+          ],
+          "crop": [
+            0,
+            0,
+            229,
+            229
+          ],
+          "sampled_pixels": [
+            176,
+            176
+          ],
+          "canvas_pixels": [
+            192,
+            160
+          ],
+          "offset": [
+            8,
+            1
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/idle/01.png"
+        },
+        {
+          "id": "cavern_hunter_idle_02",
+          "entity": "cavern_hunter",
+          "action": "idle",
+          "index": 2,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/hunter.png",
+          "source_sha256": "c4bfd24b89914081b6f4c92b43ea1b2aa8f3fd8cb70c56316607d92149f7b7ef",
+          "source_rect": [
+            458,
+            0,
+            687,
+            229
+          ],
+          "crop": [
+            0,
+            0,
+            229,
+            229
+          ],
+          "sampled_pixels": [
+            176,
+            176
+          ],
+          "canvas_pixels": [
+            192,
+            160
+          ],
+          "offset": [
+            8,
+            1
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/idle/02.png"
+        },
+        {
+          "id": "cavern_hunter_idle_03",
+          "entity": "cavern_hunter",
+          "action": "idle",
+          "index": 3,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/hunter.png",
+          "source_sha256": "c4bfd24b89914081b6f4c92b43ea1b2aa8f3fd8cb70c56316607d92149f7b7ef",
+          "source_rect": [
+            687,
+            0,
+            916,
+            229
+          ],
+          "crop": [
+            0,
+            0,
+            229,
+            229
+          ],
+          "sampled_pixels": [
+            176,
+            176
+          ],
+          "canvas_pixels": [
+            192,
+            160
+          ],
+          "offset": [
+            8,
+            1
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/idle/03.png"
+        },
+        {
+          "id": "cavern_hunter_idle_04",
+          "entity": "cavern_hunter",
+          "action": "idle",
+          "index": 4,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/hunter.png",
+          "source_sha256": "c4bfd24b89914081b6f4c92b43ea1b2aa8f3fd8cb70c56316607d92149f7b7ef",
+          "source_rect": [
+            916,
+            0,
+            1145,
+            229
+          ],
+          "crop": [
+            0,
+            0,
+            229,
+            229
+          ],
+          "sampled_pixels": [
+            176,
+            176
+          ],
+          "canvas_pixels": [
+            192,
+            160
+          ],
+          "offset": [
+            8,
+            1
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/idle/04.png"
+        },
+        {
+          "id": "cavern_hunter_idle_05",
+          "entity": "cavern_hunter",
+          "action": "idle",
+          "index": 5,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/hunter.png",
+          "source_sha256": "c4bfd24b89914081b6f4c92b43ea1b2aa8f3fd8cb70c56316607d92149f7b7ef",
+          "source_rect": [
+            1145,
+            0,
+            1374,
+            229
+          ],
+          "crop": [
+            0,
+            0,
+            229,
+            229
+          ],
+          "sampled_pixels": [
+            176,
+            176
+          ],
+          "canvas_pixels": [
+            192,
+            160
+          ],
+          "offset": [
+            8,
+            0
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/idle/05.png"
+        },
+        {
+          "id": "cavern_hunter_move_00",
+          "entity": "cavern_hunter",
+          "action": "move",
+          "index": 0,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/hunter.png",
+          "source_sha256": "c4bfd24b89914081b6f4c92b43ea1b2aa8f3fd8cb70c56316607d92149f7b7ef",
+          "source_rect": [
+            0,
+            229,
+            229,
+            458
+          ],
+          "crop": [
+            0,
+            0,
+            229,
+            229
+          ],
+          "sampled_pixels": [
+            176,
+            176
+          ],
+          "canvas_pixels": [
+            192,
+            160
+          ],
+          "offset": [
+            8,
+            1
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/move/00.png"
+        },
+        {
+          "id": "cavern_hunter_move_01",
+          "entity": "cavern_hunter",
+          "action": "move",
+          "index": 1,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/hunter.png",
+          "source_sha256": "c4bfd24b89914081b6f4c92b43ea1b2aa8f3fd8cb70c56316607d92149f7b7ef",
+          "source_rect": [
+            229,
+            229,
+            458,
+            458
+          ],
+          "crop": [
+            0,
+            0,
+            229,
+            229
+          ],
+          "sampled_pixels": [
+            176,
+            176
+          ],
+          "canvas_pixels": [
+            192,
+            160
+          ],
+          "offset": [
+            8,
+            1
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/move/01.png"
+        },
+        {
+          "id": "cavern_hunter_move_02",
+          "entity": "cavern_hunter",
+          "action": "move",
+          "index": 2,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/hunter.png",
+          "source_sha256": "c4bfd24b89914081b6f4c92b43ea1b2aa8f3fd8cb70c56316607d92149f7b7ef",
+          "source_rect": [
+            458,
+            229,
+            687,
+            458
+          ],
+          "crop": [
+            0,
+            0,
+            229,
+            229
+          ],
+          "sampled_pixels": [
+            176,
+            176
+          ],
+          "canvas_pixels": [
+            192,
+            160
+          ],
+          "offset": [
+            8,
+            1
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/move/02.png"
+        },
+        {
+          "id": "cavern_hunter_move_03",
+          "entity": "cavern_hunter",
+          "action": "move",
+          "index": 3,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/hunter.png",
+          "source_sha256": "c4bfd24b89914081b6f4c92b43ea1b2aa8f3fd8cb70c56316607d92149f7b7ef",
+          "source_rect": [
+            687,
+            229,
+            916,
+            458
+          ],
+          "crop": [
+            0,
+            0,
+            229,
+            229
+          ],
+          "sampled_pixels": [
+            176,
+            176
+          ],
+          "canvas_pixels": [
+            192,
+            160
+          ],
+          "offset": [
+            8,
+            1
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/move/03.png"
+        },
+        {
+          "id": "cavern_hunter_move_04",
+          "entity": "cavern_hunter",
+          "action": "move",
+          "index": 4,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/hunter.png",
+          "source_sha256": "c4bfd24b89914081b6f4c92b43ea1b2aa8f3fd8cb70c56316607d92149f7b7ef",
+          "source_rect": [
+            916,
+            229,
+            1145,
+            458
+          ],
+          "crop": [
+            0,
+            0,
+            229,
+            229
+          ],
+          "sampled_pixels": [
+            176,
+            176
+          ],
+          "canvas_pixels": [
+            192,
+            160
+          ],
+          "offset": [
+            8,
+            1
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/move/04.png"
+        },
+        {
+          "id": "cavern_hunter_move_05",
+          "entity": "cavern_hunter",
+          "action": "move",
+          "index": 5,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/hunter.png",
+          "source_sha256": "c4bfd24b89914081b6f4c92b43ea1b2aa8f3fd8cb70c56316607d92149f7b7ef",
+          "source_rect": [
+            1145,
+            229,
+            1374,
+            458
+          ],
+          "crop": [
+            0,
+            0,
+            229,
+            229
+          ],
+          "sampled_pixels": [
+            176,
+            176
+          ],
+          "canvas_pixels": [
+            192,
+            160
+          ],
+          "offset": [
+            8,
+            1
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/move/05.png"
+        },
+        {
+          "id": "cavern_hunter_elbow_blade_00",
+          "entity": "cavern_hunter",
+          "action": "elbow_blade",
+          "index": 0,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/hunter.png",
+          "source_sha256": "c4bfd24b89914081b6f4c92b43ea1b2aa8f3fd8cb70c56316607d92149f7b7ef",
+          "source_rect": [
+            0,
+            458,
+            229,
+            687
+          ],
+          "crop": [
+            0,
+            0,
+            229,
+            229
+          ],
+          "sampled_pixels": [
+            176,
+            176
+          ],
+          "canvas_pixels": [
+            192,
+            160
+          ],
+          "offset": [
+            8,
+            2
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/elbow_blade/00.png"
+        },
+        {
+          "id": "cavern_hunter_elbow_blade_01",
+          "entity": "cavern_hunter",
+          "action": "elbow_blade",
+          "index": 1,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/hunter.png",
+          "source_sha256": "c4bfd24b89914081b6f4c92b43ea1b2aa8f3fd8cb70c56316607d92149f7b7ef",
+          "source_rect": [
+            229,
+            458,
+            458,
+            687
+          ],
+          "crop": [
+            0,
+            0,
+            229,
+            229
+          ],
+          "sampled_pixels": [
+            176,
+            176
+          ],
+          "canvas_pixels": [
+            192,
+            160
+          ],
+          "offset": [
+            8,
+            2
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/elbow_blade/01.png"
+        },
+        {
+          "id": "cavern_hunter_elbow_blade_02",
+          "entity": "cavern_hunter",
+          "action": "elbow_blade",
+          "index": 2,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/hunter.png",
+          "source_sha256": "c4bfd24b89914081b6f4c92b43ea1b2aa8f3fd8cb70c56316607d92149f7b7ef",
+          "source_rect": [
+            458,
+            458,
+            687,
+            687
+          ],
+          "crop": [
+            0,
+            0,
+            229,
+            229
+          ],
+          "sampled_pixels": [
+            176,
+            176
+          ],
+          "canvas_pixels": [
+            192,
+            160
+          ],
+          "offset": [
+            8,
+            2
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/elbow_blade/02.png"
+        },
+        {
+          "id": "cavern_hunter_elbow_blade_03",
+          "entity": "cavern_hunter",
+          "action": "elbow_blade",
+          "index": 3,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/hunter.png",
+          "source_sha256": "c4bfd24b89914081b6f4c92b43ea1b2aa8f3fd8cb70c56316607d92149f7b7ef",
+          "source_rect": [
+            687,
+            458,
+            916,
+            687
+          ],
+          "crop": [
+            0,
+            0,
+            229,
+            229
+          ],
+          "sampled_pixels": [
+            176,
+            176
+          ],
+          "canvas_pixels": [
+            192,
+            160
+          ],
+          "offset": [
+            8,
+            2
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/elbow_blade/03.png"
+        },
+        {
+          "id": "cavern_hunter_elbow_blade_04",
+          "entity": "cavern_hunter",
+          "action": "elbow_blade",
+          "index": 4,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/hunter.png",
+          "source_sha256": "c4bfd24b89914081b6f4c92b43ea1b2aa8f3fd8cb70c56316607d92149f7b7ef",
+          "source_rect": [
+            916,
+            458,
+            1145,
+            687
+          ],
+          "crop": [
+            0,
+            0,
+            229,
+            229
+          ],
+          "sampled_pixels": [
+            176,
+            176
+          ],
+          "canvas_pixels": [
+            192,
+            160
+          ],
+          "offset": [
+            8,
+            2
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/elbow_blade/04.png"
+        },
+        {
+          "id": "cavern_hunter_elbow_blade_05",
+          "entity": "cavern_hunter",
+          "action": "elbow_blade",
+          "index": 5,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/hunter.png",
+          "source_sha256": "c4bfd24b89914081b6f4c92b43ea1b2aa8f3fd8cb70c56316607d92149f7b7ef",
+          "source_rect": [
+            1145,
+            458,
+            1374,
+            687
+          ],
+          "crop": [
+            0,
+            0,
+            229,
+            229
+          ],
+          "sampled_pixels": [
+            176,
+            176
+          ],
+          "canvas_pixels": [
+            192,
+            160
+          ],
+          "offset": [
+            8,
+            2
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/elbow_blade/05.png"
+        },
+        {
+          "id": "cavern_hunter_leap_slam_00",
+          "entity": "cavern_hunter",
+          "action": "leap_slam",
+          "index": 0,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/hunter.png",
+          "source_sha256": "c4bfd24b89914081b6f4c92b43ea1b2aa8f3fd8cb70c56316607d92149f7b7ef",
+          "source_rect": [
+            0,
+            687,
+            229,
+            916
+          ],
+          "crop": [
+            0,
+            0,
+            229,
+            229
+          ],
+          "sampled_pixels": [
+            176,
+            176
+          ],
+          "canvas_pixels": [
+            192,
+            160
+          ],
+          "offset": [
+            8,
+            1
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/leap_slam/00.png"
+        },
+        {
+          "id": "cavern_hunter_leap_slam_01",
+          "entity": "cavern_hunter",
+          "action": "leap_slam",
+          "index": 1,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/hunter.png",
+          "source_sha256": "c4bfd24b89914081b6f4c92b43ea1b2aa8f3fd8cb70c56316607d92149f7b7ef",
+          "source_rect": [
+            229,
+            687,
+            458,
+            916
+          ],
+          "crop": [
+            0,
+            0,
+            229,
+            229
+          ],
+          "sampled_pixels": [
+            176,
+            176
+          ],
+          "canvas_pixels": [
+            192,
+            160
+          ],
+          "offset": [
+            8,
+            -6
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/leap_slam/01.png"
+        },
+        {
+          "id": "cavern_hunter_leap_slam_02",
+          "entity": "cavern_hunter",
+          "action": "leap_slam",
+          "index": 2,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/hunter.png",
+          "source_sha256": "c4bfd24b89914081b6f4c92b43ea1b2aa8f3fd8cb70c56316607d92149f7b7ef",
+          "source_rect": [
+            458,
+            687,
+            687,
+            916
+          ],
+          "crop": [
+            0,
+            0,
+            229,
+            229
+          ],
+          "sampled_pixels": [
+            176,
+            176
+          ],
+          "canvas_pixels": [
+            192,
+            160
+          ],
+          "offset": [
+            8,
+            -6
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/leap_slam/02.png"
+        },
+        {
+          "id": "cavern_hunter_leap_slam_03",
+          "entity": "cavern_hunter",
+          "action": "leap_slam",
+          "index": 3,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/hunter.png",
+          "source_sha256": "c4bfd24b89914081b6f4c92b43ea1b2aa8f3fd8cb70c56316607d92149f7b7ef",
+          "source_rect": [
+            687,
+            687,
+            916,
+            916
+          ],
+          "crop": [
+            0,
+            0,
+            229,
+            229
+          ],
+          "sampled_pixels": [
+            176,
+            176
+          ],
+          "canvas_pixels": [
+            192,
+            160
+          ],
+          "offset": [
+            8,
+            2
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/leap_slam/03.png"
+        },
+        {
+          "id": "cavern_hunter_leap_slam_04",
+          "entity": "cavern_hunter",
+          "action": "leap_slam",
+          "index": 4,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/hunter.png",
+          "source_sha256": "c4bfd24b89914081b6f4c92b43ea1b2aa8f3fd8cb70c56316607d92149f7b7ef",
+          "source_rect": [
+            916,
+            687,
+            1145,
+            916
+          ],
+          "crop": [
+            0,
+            0,
+            229,
+            229
+          ],
+          "sampled_pixels": [
+            176,
+            176
+          ],
+          "canvas_pixels": [
+            192,
+            160
+          ],
+          "offset": [
+            8,
+            1
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/leap_slam/04.png"
+        },
+        {
+          "id": "cavern_hunter_leap_slam_05",
+          "entity": "cavern_hunter",
+          "action": "leap_slam",
+          "index": 5,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/hunter.png",
+          "source_sha256": "c4bfd24b89914081b6f4c92b43ea1b2aa8f3fd8cb70c56316607d92149f7b7ef",
+          "source_rect": [
+            1145,
+            687,
+            1374,
+            916
+          ],
+          "crop": [
+            0,
+            0,
+            229,
+            229
+          ],
+          "sampled_pixels": [
+            176,
+            176
+          ],
+          "canvas_pixels": [
+            192,
+            160
+          ],
+          "offset": [
+            8,
+            1
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/leap_slam/05.png"
+        },
+        {
+          "id": "cavern_hunter_tail_crystal_shot_00",
+          "entity": "cavern_hunter",
+          "action": "tail_crystal_shot",
+          "index": 0,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/hunter.png",
+          "source_sha256": "c4bfd24b89914081b6f4c92b43ea1b2aa8f3fd8cb70c56316607d92149f7b7ef",
+          "source_rect": [
+            0,
+            916,
+            229,
+            1145
+          ],
+          "crop": [
+            0,
+            0,
+            229,
+            229
+          ],
+          "sampled_pixels": [
+            176,
+            176
+          ],
+          "canvas_pixels": [
+            192,
+            160
+          ],
+          "offset": [
+            8,
+            2
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/tail_crystal_shot/00.png"
+        },
+        {
+          "id": "cavern_hunter_tail_crystal_shot_01",
+          "entity": "cavern_hunter",
+          "action": "tail_crystal_shot",
+          "index": 1,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/hunter.png",
+          "source_sha256": "c4bfd24b89914081b6f4c92b43ea1b2aa8f3fd8cb70c56316607d92149f7b7ef",
+          "source_rect": [
+            229,
+            916,
+            458,
+            1145
+          ],
+          "crop": [
+            0,
+            0,
+            229,
+            229
+          ],
+          "sampled_pixels": [
+            176,
+            176
+          ],
+          "canvas_pixels": [
+            192,
+            160
+          ],
+          "offset": [
+            8,
+            2
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/tail_crystal_shot/01.png"
+        },
+        {
+          "id": "cavern_hunter_tail_crystal_shot_02",
+          "entity": "cavern_hunter",
+          "action": "tail_crystal_shot",
+          "index": 2,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/hunter.png",
+          "source_sha256": "c4bfd24b89914081b6f4c92b43ea1b2aa8f3fd8cb70c56316607d92149f7b7ef",
+          "source_rect": [
+            458,
+            916,
+            687,
+            1145
+          ],
+          "crop": [
+            0,
+            0,
+            229,
+            229
+          ],
+          "sampled_pixels": [
+            176,
+            176
+          ],
+          "canvas_pixels": [
+            192,
+            160
+          ],
+          "offset": [
+            8,
+            2
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/tail_crystal_shot/02.png"
+        },
+        {
+          "id": "cavern_hunter_tail_crystal_shot_03",
+          "entity": "cavern_hunter",
+          "action": "tail_crystal_shot",
+          "index": 3,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/hunter.png",
+          "source_sha256": "c4bfd24b89914081b6f4c92b43ea1b2aa8f3fd8cb70c56316607d92149f7b7ef",
+          "source_rect": [
+            687,
+            916,
+            916,
+            1145
+          ],
+          "crop": [
+            0,
+            0,
+            229,
+            229
+          ],
+          "sampled_pixels": [
+            176,
+            176
+          ],
+          "canvas_pixels": [
+            192,
+            160
+          ],
+          "offset": [
+            8,
+            2
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/tail_crystal_shot/03.png"
+        },
+        {
+          "id": "cavern_hunter_tail_crystal_shot_04",
+          "entity": "cavern_hunter",
+          "action": "tail_crystal_shot",
+          "index": 4,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/hunter.png",
+          "source_sha256": "c4bfd24b89914081b6f4c92b43ea1b2aa8f3fd8cb70c56316607d92149f7b7ef",
+          "source_rect": [
+            916,
+            916,
+            1145,
+            1145
+          ],
+          "crop": [
+            0,
+            0,
+            229,
+            229
+          ],
+          "sampled_pixels": [
+            176,
+            176
+          ],
+          "canvas_pixels": [
+            192,
+            160
+          ],
+          "offset": [
+            8,
+            2
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/tail_crystal_shot/04.png"
+        },
+        {
+          "id": "cavern_hunter_tail_crystal_shot_05",
+          "entity": "cavern_hunter",
+          "action": "tail_crystal_shot",
+          "index": 5,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/hunter.png",
+          "source_sha256": "c4bfd24b89914081b6f4c92b43ea1b2aa8f3fd8cb70c56316607d92149f7b7ef",
+          "source_rect": [
+            1145,
+            916,
+            1374,
+            1145
+          ],
+          "crop": [
+            0,
+            0,
+            229,
+            229
+          ],
+          "sampled_pixels": [
+            176,
+            176
+          ],
+          "canvas_pixels": [
+            192,
+            160
+          ],
+          "offset": [
+            8,
+            2
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/tail_crystal_shot/05.png"
+        },
+        {
+          "id": "web_thread_00",
+          "entity": "web_thread",
+          "action": "web_thread",
+          "index": 0,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/effects.png",
+          "source_sha256": "28f684a27ceacf2f4b300a98fe746798a8fe66ff43119106ee1a0ad2d3c50509",
+          "source_rect": [
+            0,
+            0,
+            296,
+            296
+          ],
+          "crop": [
+            0,
+            0,
+            296,
+            296
+          ],
+          "sampled_pixels": [
+            34,
+            34
+          ],
+          "canvas_pixels": [
+            48,
+            32
+          ],
+          "offset": [
+            9,
+            -4
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/effects/web_thread/00.png"
+        },
+        {
+          "id": "web_thread_01",
+          "entity": "web_thread",
+          "action": "web_thread",
+          "index": 1,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/effects.png",
+          "source_sha256": "28f684a27ceacf2f4b300a98fe746798a8fe66ff43119106ee1a0ad2d3c50509",
+          "source_rect": [
+            296,
+            0,
+            591,
+            296
+          ],
+          "crop": [
+            0,
+            0,
+            295,
+            296
+          ],
+          "sampled_pixels": [
+            34,
+            34
+          ],
+          "canvas_pixels": [
+            48,
+            32
+          ],
+          "offset": [
+            7,
+            -4
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/effects/web_thread/01.png"
+        },
+        {
+          "id": "web_thread_02",
+          "entity": "web_thread",
+          "action": "web_thread",
+          "index": 2,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/effects.png",
+          "source_sha256": "28f684a27ceacf2f4b300a98fe746798a8fe66ff43119106ee1a0ad2d3c50509",
+          "source_rect": [
+            591,
+            0,
+            887,
+            296
+          ],
+          "crop": [
+            0,
+            0,
+            296,
+            296
+          ],
+          "sampled_pixels": [
+            34,
+            34
+          ],
+          "canvas_pixels": [
+            48,
+            32
+          ],
+          "offset": [
+            7,
+            -3
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/effects/web_thread/02.png"
+        },
+        {
+          "id": "web_thread_03",
+          "entity": "web_thread",
+          "action": "web_thread",
+          "index": 3,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/effects.png",
+          "source_sha256": "28f684a27ceacf2f4b300a98fe746798a8fe66ff43119106ee1a0ad2d3c50509",
+          "source_rect": [
+            887,
+            0,
+            1183,
+            296
+          ],
+          "crop": [
+            0,
+            0,
+            296,
+            296
+          ],
+          "sampled_pixels": [
+            34,
+            34
+          ],
+          "canvas_pixels": [
+            48,
+            32
+          ],
+          "offset": [
+            8,
+            -3
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/effects/web_thread/03.png"
+        },
+        {
+          "id": "web_thread_04",
+          "entity": "web_thread",
+          "action": "web_thread",
+          "index": 4,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/effects.png",
+          "source_sha256": "28f684a27ceacf2f4b300a98fe746798a8fe66ff43119106ee1a0ad2d3c50509",
+          "source_rect": [
+            1183,
+            0,
+            1478,
+            296
+          ],
+          "crop": [
+            0,
+            0,
+            295,
+            296
+          ],
+          "sampled_pixels": [
+            34,
+            34
+          ],
+          "canvas_pixels": [
+            48,
+            32
+          ],
+          "offset": [
+            7,
+            -3
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/effects/web_thread/04.png"
+        },
+        {
+          "id": "web_thread_05",
+          "entity": "web_thread",
+          "action": "web_thread",
+          "index": 5,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/effects.png",
+          "source_sha256": "28f684a27ceacf2f4b300a98fe746798a8fe66ff43119106ee1a0ad2d3c50509",
+          "source_rect": [
+            1478,
+            0,
+            1774,
+            296
+          ],
+          "crop": [
+            0,
+            0,
+            296,
+            296
+          ],
+          "sampled_pixels": [
+            34,
+            34
+          ],
+          "canvas_pixels": [
+            48,
+            32
+          ],
+          "offset": [
+            7,
+            -4
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/effects/web_thread/05.png"
+        },
+        {
+          "id": "sharp_crystal_00",
+          "entity": "sharp_crystal",
+          "action": "sharp_crystal",
+          "index": 0,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/effects.png",
+          "source_sha256": "28f684a27ceacf2f4b300a98fe746798a8fe66ff43119106ee1a0ad2d3c50509",
+          "source_rect": [
+            0,
+            296,
+            296,
+            591
+          ],
+          "crop": [
+            0,
+            0,
+            296,
+            295
+          ],
+          "sampled_pixels": [
+            46,
+            45
+          ],
+          "canvas_pixels": [
+            48,
+            32
+          ],
+          "offset": [
+            1,
+            -8
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/effects/sharp_crystal/00.png"
+        },
+        {
+          "id": "sharp_crystal_01",
+          "entity": "sharp_crystal",
+          "action": "sharp_crystal",
+          "index": 1,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/effects.png",
+          "source_sha256": "28f684a27ceacf2f4b300a98fe746798a8fe66ff43119106ee1a0ad2d3c50509",
+          "source_rect": [
+            296,
+            296,
+            591,
+            591
+          ],
+          "crop": [
+            0,
+            0,
+            295,
+            295
+          ],
+          "sampled_pixels": [
+            45,
+            45
+          ],
+          "canvas_pixels": [
+            48,
+            32
+          ],
+          "offset": [
+            0,
+            -6
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/effects/sharp_crystal/01.png"
+        },
+        {
+          "id": "sharp_crystal_02",
+          "entity": "sharp_crystal",
+          "action": "sharp_crystal",
+          "index": 2,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/effects.png",
+          "source_sha256": "28f684a27ceacf2f4b300a98fe746798a8fe66ff43119106ee1a0ad2d3c50509",
+          "source_rect": [
+            591,
+            296,
+            887,
+            591
+          ],
+          "crop": [
+            0,
+            0,
+            296,
+            295
+          ],
+          "sampled_pixels": [
+            46,
+            45
+          ],
+          "canvas_pixels": [
+            48,
+            32
+          ],
+          "offset": [
+            0,
+            -7
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/effects/sharp_crystal/02.png"
+        },
+        {
+          "id": "sharp_crystal_03",
+          "entity": "sharp_crystal",
+          "action": "sharp_crystal",
+          "index": 3,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/effects.png",
+          "source_sha256": "28f684a27ceacf2f4b300a98fe746798a8fe66ff43119106ee1a0ad2d3c50509",
+          "source_rect": [
+            887,
+            296,
+            1183,
+            591
+          ],
+          "crop": [
+            0,
+            0,
+            296,
+            295
+          ],
+          "sampled_pixels": [
+            46,
+            45
+          ],
+          "canvas_pixels": [
+            48,
+            32
+          ],
+          "offset": [
+            1,
+            -8
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/effects/sharp_crystal/03.png"
+        },
+        {
+          "id": "sharp_crystal_04",
+          "entity": "sharp_crystal",
+          "action": "sharp_crystal",
+          "index": 4,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/effects.png",
+          "source_sha256": "28f684a27ceacf2f4b300a98fe746798a8fe66ff43119106ee1a0ad2d3c50509",
+          "source_rect": [
+            1183,
+            296,
+            1478,
+            591
+          ],
+          "crop": [
+            0,
+            0,
+            295,
+            295
+          ],
+          "sampled_pixels": [
+            45,
+            45
+          ],
+          "canvas_pixels": [
+            48,
+            32
+          ],
+          "offset": [
+            1,
+            -7
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/effects/sharp_crystal/04.png"
+        },
+        {
+          "id": "sharp_crystal_05",
+          "entity": "sharp_crystal",
+          "action": "sharp_crystal",
+          "index": 5,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/effects.png",
+          "source_sha256": "28f684a27ceacf2f4b300a98fe746798a8fe66ff43119106ee1a0ad2d3c50509",
+          "source_rect": [
+            1478,
+            296,
+            1774,
+            591
+          ],
+          "crop": [
+            0,
+            0,
+            296,
+            295
+          ],
+          "sampled_pixels": [
+            46,
+            45
+          ],
+          "canvas_pixels": [
+            48,
+            32
+          ],
+          "offset": [
+            0,
+            -7
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/effects/sharp_crystal/05.png"
+        },
+        {
+          "id": "ground_shockwave_00",
+          "entity": "ground_shockwave",
+          "action": "ground_shockwave",
+          "index": 0,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/effects.png",
+          "source_sha256": "28f684a27ceacf2f4b300a98fe746798a8fe66ff43119106ee1a0ad2d3c50509",
+          "source_rect": [
+            0,
+            591,
+            296,
+            887
+          ],
+          "crop": [
+            0,
+            0,
+            296,
+            296
+          ],
+          "sampled_pixels": [
+            136,
+            136
+          ],
+          "canvas_pixels": [
+            160,
+            64
+          ],
+          "offset": [
+            12,
+            -30
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/effects/ground_shockwave/00.png"
+        },
+        {
+          "id": "ground_shockwave_01",
+          "entity": "ground_shockwave",
+          "action": "ground_shockwave",
+          "index": 1,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/effects.png",
+          "source_sha256": "28f684a27ceacf2f4b300a98fe746798a8fe66ff43119106ee1a0ad2d3c50509",
+          "source_rect": [
+            296,
+            591,
+            591,
+            887
+          ],
+          "crop": [
+            0,
+            0,
+            295,
+            296
+          ],
+          "sampled_pixels": [
+            136,
+            136
+          ],
+          "canvas_pixels": [
+            160,
+            64
+          ],
+          "offset": [
+            12,
+            -30
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/effects/ground_shockwave/01.png"
+        },
+        {
+          "id": "ground_shockwave_02",
+          "entity": "ground_shockwave",
+          "action": "ground_shockwave",
+          "index": 2,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/effects.png",
+          "source_sha256": "28f684a27ceacf2f4b300a98fe746798a8fe66ff43119106ee1a0ad2d3c50509",
+          "source_rect": [
+            591,
+            591,
+            887,
+            887
+          ],
+          "crop": [
+            0,
+            0,
+            296,
+            296
+          ],
+          "sampled_pixels": [
+            136,
+            136
+          ],
+          "canvas_pixels": [
+            160,
+            64
+          ],
+          "offset": [
+            12,
+            -30
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/effects/ground_shockwave/02.png"
+        },
+        {
+          "id": "ground_shockwave_03",
+          "entity": "ground_shockwave",
+          "action": "ground_shockwave",
+          "index": 3,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/effects.png",
+          "source_sha256": "28f684a27ceacf2f4b300a98fe746798a8fe66ff43119106ee1a0ad2d3c50509",
+          "source_rect": [
+            887,
+            591,
+            1183,
+            887
+          ],
+          "crop": [
+            0,
+            0,
+            296,
+            296
+          ],
+          "sampled_pixels": [
+            136,
+            136
+          ],
+          "canvas_pixels": [
+            160,
+            64
+          ],
+          "offset": [
+            12,
+            -30
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/effects/ground_shockwave/03.png"
+        },
+        {
+          "id": "ground_shockwave_04",
+          "entity": "ground_shockwave",
+          "action": "ground_shockwave",
+          "index": 4,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/effects.png",
+          "source_sha256": "28f684a27ceacf2f4b300a98fe746798a8fe66ff43119106ee1a0ad2d3c50509",
+          "source_rect": [
+            1183,
+            591,
+            1478,
+            887
+          ],
+          "crop": [
+            0,
+            0,
+            295,
+            296
+          ],
+          "sampled_pixels": [
+            136,
+            136
+          ],
+          "canvas_pixels": [
+            160,
+            64
+          ],
+          "offset": [
+            12,
+            -30
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/effects/ground_shockwave/04.png"
+        },
+        {
+          "id": "ground_shockwave_05",
+          "entity": "ground_shockwave",
+          "action": "ground_shockwave",
+          "index": 5,
+          "source": "assets/RAW/enemies/CAVE-BEASTS/v001/effects.png",
+          "source_sha256": "28f684a27ceacf2f4b300a98fe746798a8fe66ff43119106ee1a0ad2d3c50509",
+          "source_rect": [
+            1478,
+            591,
+            1774,
+            887
+          ],
+          "crop": [
+            0,
+            0,
+            296,
+            296
+          ],
+          "sampled_pixels": [
+            136,
+            136
+          ],
+          "canvas_pixels": [
+            160,
+            64
+          ],
+          "offset": [
+            12,
+            -29
+          ],
+          "output": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/effects/ground_shockwave/05.png"
+        }
+      ],
+      "entities": [
+        {
+          "id": "stonehelm_beast",
+          "name": "岩盔兽",
+          "canvas": [
+            128,
+            96
+          ],
+          "anchor": [
+            64,
+            80
+          ],
+          "sprite_frames": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/sprite_frames.tres",
+          "actions": [
+            {
+              "id": "idle",
+              "base_fps": 6,
+              "loop": true,
+              "frames": [
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/idle/00.png",
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/idle/01.png",
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/idle/02.png",
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/idle/03.png",
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/idle/04.png",
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/idle/05.png"
+              ]
+            },
+            {
+              "id": "move",
+              "base_fps": 9,
+              "loop": true,
+              "frames": [
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/move/00.png",
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/move/01.png",
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/move/02.png",
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/move/03.png",
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/move/04.png",
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/move/05.png"
+              ]
+            },
+            {
+              "id": "ram",
+              "base_fps": 10,
+              "loop": false,
+              "frames": [
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/ram/00.png",
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/ram/01.png",
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/ram/02.png",
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/ram/03.png",
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/ram/04.png",
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/ram/05.png"
+              ]
+            },
+            {
+              "id": "shell_defense",
+              "base_fps": 8,
+              "loop": false,
+              "frames": [
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/shell_defense/00.png",
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/shell_defense/01.png",
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/shell_defense/02.png",
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/shell_defense/03.png",
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/shell_defense/04.png",
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/shell_defense/05.png"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "cave_spider",
+          "name": "洞穴蜘蛛",
+          "canvas": [
+            128,
+            96
+          ],
+          "anchor": [
+            64,
+            80
+          ],
+          "sprite_frames": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/sprite_frames.tres",
+          "actions": [
+            {
+              "id": "idle",
+              "base_fps": 6,
+              "loop": true,
+              "frames": [
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/idle/00.png",
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/idle/01.png",
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/idle/02.png",
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/idle/03.png",
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/idle/04.png",
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/idle/05.png"
+              ]
+            },
+            {
+              "id": "move",
+              "base_fps": 10,
+              "loop": true,
+              "frames": [
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/move/00.png",
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/move/01.png",
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/move/02.png",
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/move/03.png",
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/move/04.png",
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/move/05.png"
+              ]
+            },
+            {
+              "id": "claw_attack",
+              "base_fps": 10,
+              "loop": false,
+              "frames": [
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/claw_attack/00.png",
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/claw_attack/01.png",
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/claw_attack/02.png",
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/claw_attack/03.png",
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/claw_attack/04.png",
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/claw_attack/05.png"
+              ]
+            },
+            {
+              "id": "web_spit",
+              "base_fps": 9,
+              "loop": false,
+              "frames": [
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/web_spit/00.png",
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/web_spit/01.png",
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/web_spit/02.png",
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/web_spit/03.png",
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/web_spit/04.png",
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/web_spit/05.png"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "animated_crystal",
+          "name": "活化晶石",
+          "canvas": [
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            48
+          ],
+          "sprite_frames": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/animated_crystal/sprite_frames.tres",
+          "actions": [
+            {
+              "id": "idle",
+              "base_fps": 7,
+              "loop": true,
+              "frames": [
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/animated_crystal/frames/idle/00.png",
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/animated_crystal/frames/idle/01.png",
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/animated_crystal/frames/idle/02.png",
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/animated_crystal/frames/idle/03.png",
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/animated_crystal/frames/idle/04.png",
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/animated_crystal/frames/idle/05.png"
+              ]
+            },
+            {
+              "id": "move",
+              "base_fps": 9,
+              "loop": true,
+              "frames": [
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/animated_crystal/frames/move/00.png",
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/animated_crystal/frames/move/01.png",
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/animated_crystal/frames/move/02.png",
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/animated_crystal/frames/move/03.png",
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/animated_crystal/frames/move/04.png",
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/animated_crystal/frames/move/05.png"
+              ]
+            },
+            {
+              "id": "charge_ready",
+              "base_fps": 8,
+              "loop": false,
+              "frames": [
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/animated_crystal/frames/charge_ready/00.png",
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/animated_crystal/frames/charge_ready/01.png",
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/animated_crystal/frames/charge_ready/02.png",
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/animated_crystal/frames/charge_ready/03.png",
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/animated_crystal/frames/charge_ready/04.png",
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/animated_crystal/frames/charge_ready/05.png"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "cavern_hunter",
+          "name": "岩穴猎手",
+          "canvas": [
+            192,
+            160
+          ],
+          "anchor": [
+            96,
+            140
+          ],
+          "sprite_frames": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/sprite_frames.tres",
+          "actions": [
+            {
+              "id": "idle",
+              "base_fps": 6,
+              "loop": true,
+              "frames": [
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/idle/00.png",
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/idle/01.png",
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/idle/02.png",
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/idle/03.png",
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/idle/04.png",
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/idle/05.png"
+              ]
+            },
+            {
+              "id": "move",
+              "base_fps": 9,
+              "loop": true,
+              "frames": [
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/move/00.png",
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/move/01.png",
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/move/02.png",
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/move/03.png",
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/move/04.png",
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/move/05.png"
+              ]
+            },
+            {
+              "id": "elbow_blade",
+              "base_fps": 10,
+              "loop": false,
+              "frames": [
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/elbow_blade/00.png",
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/elbow_blade/01.png",
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/elbow_blade/02.png",
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/elbow_blade/03.png",
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/elbow_blade/04.png",
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/elbow_blade/05.png"
+              ]
+            },
+            {
+              "id": "leap_slam",
+              "base_fps": 9,
+              "loop": false,
+              "frames": [
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/leap_slam/00.png",
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/leap_slam/01.png",
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/leap_slam/02.png",
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/leap_slam/03.png",
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/leap_slam/04.png",
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/leap_slam/05.png"
+              ]
+            },
+            {
+              "id": "tail_crystal_shot",
+              "base_fps": 9,
+              "loop": false,
+              "frames": [
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/tail_crystal_shot/00.png",
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/tail_crystal_shot/01.png",
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/tail_crystal_shot/02.png",
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/tail_crystal_shot/03.png",
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/tail_crystal_shot/04.png",
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/tail_crystal_shot/05.png"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "web_thread",
+          "name": "丝线弹",
+          "canvas": [
+            48,
+            32
+          ],
+          "anchor": [
+            24,
+            16
+          ],
+          "sprite_frames": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/effects/web_thread/sprite_frames.tres",
+          "actions": [
+            {
+              "id": "web_thread",
+              "base_fps": 12.0,
+              "loop": true,
+              "frames": [
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/effects/web_thread/00.png",
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/effects/web_thread/01.png",
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/effects/web_thread/02.png",
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/effects/web_thread/03.png",
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/effects/web_thread/04.png",
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/effects/web_thread/05.png"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sharp_crystal",
+          "name": "尖晶石",
+          "canvas": [
+            48,
+            32
+          ],
+          "anchor": [
+            24,
+            16
+          ],
+          "sprite_frames": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/effects/sharp_crystal/sprite_frames.tres",
+          "actions": [
+            {
+              "id": "sharp_crystal",
+              "base_fps": 12.0,
+              "loop": true,
+              "frames": [
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/effects/sharp_crystal/00.png",
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/effects/sharp_crystal/01.png",
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/effects/sharp_crystal/02.png",
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/effects/sharp_crystal/03.png",
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/effects/sharp_crystal/04.png",
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/effects/sharp_crystal/05.png"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ground_shockwave",
+          "name": "下砸震荡波",
+          "canvas": [
+            160,
+            64
+          ],
+          "anchor": [
+            80,
+            56
+          ],
+          "sprite_frames": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/effects/ground_shockwave/sprite_frames.tres",
+          "actions": [
+            {
+              "id": "ground_shockwave",
+              "base_fps": 12.0,
+              "loop": true,
+              "frames": [
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/effects/ground_shockwave/00.png",
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/effects/ground_shockwave/01.png",
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/effects/ground_shockwave/02.png",
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/effects/ground_shockwave/03.png",
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/effects/ground_shockwave/04.png",
+                "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/effects/ground_shockwave/05.png"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "preview_integer_scale": 2
+}

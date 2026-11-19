@@ -15,6 +15,16 @@ static func config() -> Dictionary:
 static func module(kind: String) -> Dictionary:
 	return config().weapon_modules.get(kind,{})
 
+## 普通攻击起手、判定、收招均以类别基础时间除以武器攻速倍率。
+static func attack_module(weapon: Dictionary, effective_speed: float = 0.0) -> Dictionary:
+	var kind := str(weapon.get("weapon_type",""))
+	var result: Dictionary=module(kind).duplicate(true)
+	var base: Dictionary=WeaponAttributes.config().types.get(kind,{}).get("base_attack_time",{})
+	var speed := effective_speed if effective_speed > 0.0 else float(weapon.get("attack_speed_multiplier", 1.0))
+	for phase: String in base:
+		result[phase] = float(base[phase]) / speed
+	return result
+
 
 ## 非破坏读取新直剑/步枪图集，补充到角色精灵帧。
 static func inject_animations(frames: SpriteFrames) -> void:
@@ -31,6 +41,8 @@ static func inject_animations(frames: SpriteFrames) -> void:
 
 ## 同步新动作每一帧的实际脚底与人物比例；旧动作仍用正式包锚点。
 static func sync_sprite(sprite: AnimatedSprite2D) -> void:
+	if SkillLibrary.sync_actor(sprite):
+		return
 	var definition: Dictionary = config().animations.get(str(sprite.animation),{})
 	if definition.is_empty():
 		sprite.scale = Vector2.ONE

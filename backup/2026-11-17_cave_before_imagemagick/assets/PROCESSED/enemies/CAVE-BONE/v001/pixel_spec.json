@@ -1,0 +1,179 @@
+{
+  "id": "CAVE-BONE_v001",
+  "direction": "right",
+  "native_body_height": 42,
+  "palette": [
+    "#11141a",
+    "#201e20",
+    "#302a27",
+    "#44392f",
+    "#5b4938",
+    "#715b44",
+    "#897153",
+    "#a58c65",
+    "#bfaa82",
+    "#d5c4a0",
+    "#e4d5b5",
+    "#f1e4c9",
+    "#fff1d7",
+    "#fff8e8",
+    "#20262b",
+    "#303a42",
+    "#414e58",
+    "#596773",
+    "#74828b",
+    "#96a1a7",
+    "#bdc5c5",
+    "#e3e7df",
+    "#2b241f",
+    "#443122",
+    "#5d4029",
+    "#795335",
+    "#97734a",
+    "#b39261",
+    "#7c8080",
+    "#aaa793",
+    "#cac2a7",
+    "#e5dfcc"
+  ],
+  "max_colors": 32,
+  "alpha_cutoff": 224,
+  "root": [
+    40,
+    80
+  ],
+  "variants": {
+    "bone_dragon_blade": {
+      "source": "blade_source.png",
+      "name": "骨龙·刀型",
+      "columns": 6,
+      "rows": 5,
+      "canvas": [
+        96,
+        96
+      ],
+      "actions": [
+        {
+          "id": "idle",
+          "row": 0,
+          "fps": 6,
+          "loop": true
+        },
+        {
+          "id": "move",
+          "row": 1,
+          "fps": 9,
+          "loop": true
+        },
+        {
+          "id": "slash_down",
+          "row": 2,
+          "fps": 10,
+          "loop": false
+        },
+        {
+          "id": "slash_up",
+          "row": 3,
+          "fps": 10,
+          "loop": false
+        },
+        {
+          "id": "thrust",
+          "row": 4,
+          "fps": 10,
+          "loop": false
+        }
+      ]
+    },
+    "bone_dragon_spear": {
+      "source": "spear_source.png",
+      "name": "骨龙·矛型",
+      "columns": 6,
+      "rows": 3,
+      "canvas": [
+        128,
+        96
+      ],
+      "actions": [
+        {
+          "id": "idle",
+          "row": 0,
+          "fps": 6,
+          "loop": true
+        },
+        {
+          "id": "move",
+          "row": 1,
+          "fps": 9,
+          "loop": true
+        },
+        {
+          "id": "thrust",
+          "row": 2,
+          "fps": 10,
+          "loop": false
+        }
+      ]
+    },
+    "bone_dragon_bow": {
+      "source": "bow_source.png",
+      "name": "骨龙·弓型",
+      "columns": 6,
+      "rows": 3,
+      "canvas": [
+        96,
+        96
+      ],
+      "actions": [
+        {
+          "id": "idle",
+          "row": 0,
+          "fps": 6,
+          "loop": true
+        },
+        {
+          "id": "move",
+          "row": 1,
+          "fps": 9,
+          "loop": true
+        },
+        {
+          "id": "shoot",
+          "row": 2,
+          "fps": 8,
+          "loop": false
+        }
+      ]
+    }
+  },
+  "projectiles": {
+    "arrow": {
+      "source": "arrow_source.png",
+      "columns": 4,
+      "rows": 1,
+      "canvas": [
+        48,
+        16
+      ],
+      "visible_size": [
+        32,
+        8
+      ],
+      "anchor": [
+        24,
+        8
+      ],
+      "fps": 10,
+      "loop": true
+    }
+  },
+  "base_stats": {
+    "base_hp": null,
+    "base_damage": null,
+    "poise": null,
+    "resist": {
+      "physical": null,
+      "magic": null
+    }
+  }
+}

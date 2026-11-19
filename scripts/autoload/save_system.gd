@@ -9,8 +9,10 @@ func save_game(slot: int = 1) -> Error:
 		return ERR_BUSY
 	var settings: Dictionary = InventoryService.config().save
 	var scene := get_tree().current_scene
+	if scene != null and bool(scene.get_meta("disable_save",false)):
+		return ERR_UNAVAILABLE
 	if scene != null and scene.has_node("Player"):
-		if not str(scene.scene_file_path).begins_with("res://scenes/rooms/"):
+		if not str(scene.scene_file_path).begins_with("res://scenes/maps/"):
 			return ERR_UNAVAILABLE
 		var pos: Vector2 = scene.get_node("Player").position
 		GameState.saved_position = [pos.x, pos.y]

@@ -1,0 +1,3660 @@
+{
+  "date": "2026-11-17",
+  "scope": "Existing playable camp/forest_01/02/03 and ten forest candidates; corrump(t) remains separate boss controller already tested elsewhere",
+  "finding": "All five map enemy types have real distinct attack frames already in repository. No attack art regeneration needed.",
+  "controller_audit": {
+    "all_natural_map_placements": "CombatEnemy",
+    "natural_GameEnemy_placements": [],
+    "legacy_GameEnemy": "scripts/enemies/enemy.gd only used by debug/old showcases; not current natural map path"
+  },
+  "root_cause": {
+    "moss_guard": "center threshold30 < physical contact minimum sqrt((44/2+20/2)^2+(70/2-34/2)^2)≈36.7",
+    "milk_moth": "center threshold22 equals horizontal contact limit12+10; safe margins and vertical movement prevent reliable entry",
+    "other_three": "attack resources correctly catalogued; natural AI end-to-end verification added, not assumed missing"
+  },
+  "enemies": [
+    {
+      "id": "moss_beetle",
+      "name": "苔甲虫",
+      "map_sources": [
+        "data/maps/forest_01.json",
+        "data/maps/forest_02.json",
+        "data/maps/forest_03.json",
+        "test/data/forest_candidates/08A.json",
+        "test/data/forest_candidates/08B.json",
+        "test/data/forest_candidates/09A.json",
+        "test/data/forest_candidates/09B.json"
+      ],
+      "attack_material_exists": true,
+      "actions": [
+        {
+          "action": "idle",
+          "catalog": "assets/PROCESSED/enemies/ENM-B03/v001/catalog.json",
+          "fps": 8,
+          "loop": true,
+          "anchor": [
+            32,
+            56
+          ],
+          "frames": [
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B03/v001/frames/ENM-01_idle/ENM-01_idle_00.png",
+              "pixels": [
+                64,
+                64
+              ],
+              "pixel_sha256": "96e3496dfabf44c5ec520d8c83dbca263b3b623b71a25d3526654f759d732702",
+              "visible_rect": [
+                12,
+                17,
+                56,
+                56
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B03/v001/frames/ENM-01_idle/ENM-01_idle_01.png",
+              "pixels": [
+                64,
+                64
+              ],
+              "pixel_sha256": "50c7c625bd7df8a9049d4dacc47c0e5c6c9c7eba8254c9812b2968b7e8b7010d",
+              "visible_rect": [
+                11,
+                18,
+                56,
+                60
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B03/v001/frames/ENM-01_idle/ENM-01_idle_02.png",
+              "pixels": [
+                64,
+                64
+              ],
+              "pixel_sha256": "d320da6b8692ea27f2b45cf663d6f3849cf371bdbc40d25280238538291dedc3",
+              "visible_rect": [
+                12,
+                17,
+                57,
+                59
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B03/v001/frames/ENM-01_idle/ENM-01_idle_03.png",
+              "pixels": [
+                64,
+                64
+              ],
+              "pixel_sha256": "cf0fcf54369e0ed33bb98c56abdcaa5175ceefee72f61c572731413170f0421e",
+              "visible_rect": [
+                11,
+                19,
+                54,
+                56
+              ]
+            }
+          ],
+          "unique_pixel_frames": 4,
+          "raw_source": "assets/RAW/enemies/ENM-B03/v001/ENM-01/ENM-01_actions_A.png",
+          "raw_source_exists": true
+        },
+        {
+          "action": "move",
+          "catalog": "assets/PROCESSED/enemies/ENM-B03/v001/catalog.json",
+          "fps": 10,
+          "loop": true,
+          "anchor": [
+            32,
+            56
+          ],
+          "frames": [
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B03/v001/frames/ENM-01_move/ENM-01_move_00.png",
+              "pixels": [
+                64,
+                64
+              ],
+              "pixel_sha256": "1fdb73267fe87f28d7f81fd1c9e9abb97883965f160f180175bfa79cbbd7baa0",
+              "visible_rect": [
+                10,
+                12,
+                57,
+                57
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B03/v001/frames/ENM-01_move/ENM-01_move_01.png",
+              "pixels": [
+                64,
+                64
+              ],
+              "pixel_sha256": "2084c38101f7282be9359e9b2b422aac72a3691a516f7cd7e4ea4f3c223ab98e",
+              "visible_rect": [
+                10,
+                11,
+                57,
+                60
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B03/v001/frames/ENM-01_move/ENM-01_move_02.png",
+              "pixels": [
+                64,
+                64
+              ],
+              "pixel_sha256": "33f1041fd2ca83c5bea90970f37eb4179703be635436f3a309d78005a7a1ecf5",
+              "visible_rect": [
+                8,
+                16,
+                56,
+                58
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B03/v001/frames/ENM-01_move/ENM-01_move_03.png",
+              "pixels": [
+                64,
+                64
+              ],
+              "pixel_sha256": "da858226f4d7ee18691829318eee2da7ddbfcc656eff858156cce068a8267dcc",
+              "visible_rect": [
+                11,
+                11,
+                57,
+                56
+              ]
+            }
+          ],
+          "unique_pixel_frames": 4,
+          "raw_source": "assets/RAW/enemies/ENM-B03/v001/ENM-01/ENM-01_actions_A.png",
+          "raw_source_exists": true
+        },
+        {
+          "action": "telegraph",
+          "catalog": "assets/PROCESSED/enemies/ENM-B03/v001/catalog.json",
+          "fps": 10,
+          "loop": false,
+          "anchor": [
+            32,
+            56
+          ],
+          "frames": [
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B03/v001/frames/ENM-01_telegraph/ENM-01_telegraph_00.png",
+              "pixels": [
+                64,
+                64
+              ],
+              "pixel_sha256": "f7f9e8a00a44542395c3c36376fee49f3e6f5e802c0aed9550372af5c0bd40a6",
+              "visible_rect": [
+                12,
+                14,
+                56,
+                63
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B03/v001/frames/ENM-01_telegraph/ENM-01_telegraph_01.png",
+              "pixels": [
+                64,
+                64
+              ],
+              "pixel_sha256": "f3b4f18e1019c5294d59f034243c5bb83cab65c223589a466807d8877eb73fe1",
+              "visible_rect": [
+                7,
+                13,
+                55,
+                63
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B03/v001/frames/ENM-01_telegraph/ENM-01_telegraph_02.png",
+              "pixels": [
+                64,
+                64
+              ],
+              "pixel_sha256": "a9505f0172699a3ca4c30cf972316d1ac87f910801d724f68cf0ba38fccd1254",
+              "visible_rect": [
+                14,
+                16,
+                57,
+                63
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B03/v001/frames/ENM-01_telegraph/ENM-01_telegraph_03.png",
+              "pixels": [
+                64,
+                64
+              ],
+              "pixel_sha256": "09a04273539a4f1fea07b0623cef85fc3589cfadb4ed29d55a54dff7ed364644",
+              "visible_rect": [
+                9,
+                13,
+                52,
+                57
+              ]
+            }
+          ],
+          "unique_pixel_frames": 4,
+          "raw_source": "assets/RAW/enemies/ENM-B03/v001/ENM-01/ENM-01_actions_A.png",
+          "raw_source_exists": true
+        },
+        {
+          "action": "attack",
+          "catalog": "assets/PROCESSED/enemies/ENM-B03/v001/catalog.json",
+          "fps": 14,
+          "loop": false,
+          "anchor": [
+            32,
+            56
+          ],
+          "frames": [
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B03/v001/frames/ENM-01_attack/ENM-01_attack_00.png",
+              "pixels": [
+                64,
+                64
+              ],
+              "pixel_sha256": "6d03a3c6542291be12b29ad2fb463e9f16bd220c0d36320a96c1015ddcfffb37",
+              "visible_rect": [
+                8,
+                22,
+                58,
+                58
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B03/v001/frames/ENM-01_attack/ENM-01_attack_01.png",
+              "pixels": [
+                64,
+                64
+              ],
+              "pixel_sha256": "d06825fa5c08510301b5aca10bf7e242c1a21fdefacebda18720731354e2f6e6",
+              "visible_rect": [
+                9,
+                17,
+                60,
+                64
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B03/v001/frames/ENM-01_attack/ENM-01_attack_02.png",
+              "pixels": [
+                64,
+                64
+              ],
+              "pixel_sha256": "d7a5ac40ba8bcf7f70b55a80f8b89cd166bd5a0b6746b3c9ecd2237e889ca5ec",
+              "visible_rect": [
+                12,
+                17,
+                61,
+                59
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B03/v001/frames/ENM-01_attack/ENM-01_attack_03.png",
+              "pixels": [
+                64,
+                64
+              ],
+              "pixel_sha256": "d6d78ba31647d3d0b4c909aec43a25ac3d47d5d251b9a61bc63afc1b73d7bf9e",
+              "visible_rect": [
+                13,
+                18,
+                53,
+                59
+              ]
+            }
+          ],
+          "unique_pixel_frames": 4,
+          "raw_source": "assets/RAW/enemies/ENM-B03/v001/ENM-01/ENM-01_actions_A.png",
+          "raw_source_exists": true
+        },
+        {
+          "action": "recover",
+          "catalog": "assets/PROCESSED/enemies/ENM-B03/v001/catalog.json",
+          "fps": 10,
+          "loop": false,
+          "anchor": [
+            32,
+            56
+          ],
+          "frames": [
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B03/v001/frames/ENM-01_recover/ENM-01_recover_00.png",
+              "pixels": [
+                64,
+                64
+              ],
+              "pixel_sha256": "c8e22022e412cfc6c66254b9f252264a2d131a16761a7488a061724886d42f3e",
+              "visible_rect": [
+                12,
+                25,
+                59,
+                57
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B03/v001/frames/ENM-01_recover/ENM-01_recover_01.png",
+              "pixels": [
+                64,
+                64
+              ],
+              "pixel_sha256": "83093ff53b23dc6993a8fff4a1ca05fabae26b3ca5ea1cb7e59acb86cb879cc9",
+              "visible_rect": [
+                12,
+                27,
+                57,
+                57
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B03/v001/frames/ENM-01_recover/ENM-01_recover_02.png",
+              "pixels": [
+                64,
+                64
+              ],
+              "pixel_sha256": "f237d29e59b1adada94088f0ea5f2fe9388f015979daa818b7a96f8519bad854",
+              "visible_rect": [
+                11,
+                25,
+                55,
+                57
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B03/v001/frames/ENM-01_recover/ENM-01_recover_03.png",
+              "pixels": [
+                64,
+                64
+              ],
+              "pixel_sha256": "d37abf4cd04185d91e96b71457d352573679c19e399440853ea0e5c21f119777",
+              "visible_rect": [
+                11,
+                26,
+                54,
+                57
+              ]
+            }
+          ],
+          "unique_pixel_frames": 4,
+          "raw_source": "assets/RAW/enemies/ENM-B03/v001/ENM-01/ENM-01_actions_B.png",
+          "raw_source_exists": true
+        },
+        {
+          "action": "hurt",
+          "catalog": "assets/PROCESSED/enemies/ENM-B03/v001/catalog.json",
+          "fps": 12,
+          "loop": false,
+          "anchor": [
+            32,
+            56
+          ],
+          "frames": [
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B03/v001/frames/ENM-01_hurt/ENM-01_hurt_00.png",
+              "pixels": [
+                64,
+                64
+              ],
+              "pixel_sha256": "23bf91642b2537424578909b7e58514685d748f32160d7adafd6828a7d65ade5",
+              "visible_rect": [
+                12,
+                25,
+                57,
+                57
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B03/v001/frames/ENM-01_hurt/ENM-01_hurt_01.png",
+              "pixels": [
+                64,
+                64
+              ],
+              "pixel_sha256": "5899a29ec26689da92ce02e979f160015fda8868eeb9c2b5eb1805892c2e9ada",
+              "visible_rect": [
+                7,
+                25,
+                57,
+                58
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B03/v001/frames/ENM-01_hurt/ENM-01_hurt_02.png",
+              "pixels": [
+                64,
+                64
+              ],
+              "pixel_sha256": "e31aea852a7769f38c5e1d1014e163e4c2ac388c74665888d396e4b171ffcb1f",
+              "visible_rect": [
+                9,
+                16,
+                57,
+                57
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B03/v001/frames/ENM-01_hurt/ENM-01_hurt_03.png",
+              "pixels": [
+                64,
+                64
+              ],
+              "pixel_sha256": "05d17d7711d2880609ce3a15bac7e087196e0dff5b9d2d958934782211f5ebcf",
+              "visible_rect": [
+                11,
+                11,
+                55,
+                57
+              ]
+            }
+          ],
+          "unique_pixel_frames": 4,
+          "raw_source": "assets/RAW/enemies/ENM-B03/v001/ENM-01/ENM-01_actions_B.png",
+          "raw_source_exists": true
+        },
+        {
+          "action": "death",
+          "catalog": "assets/PROCESSED/enemies/ENM-B03/v001/catalog.json",
+          "fps": 10,
+          "loop": false,
+          "anchor": [
+            32,
+            56
+          ],
+          "frames": [
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B03/v001/frames/ENM-01_death/ENM-01_death_00.png",
+              "pixels": [
+                64,
+                64
+              ],
+              "pixel_sha256": "0a9ca95fef6698b520d51a85b2a1a8d14ea811f375d1aa51d89d0be2b6557d5d",
+              "visible_rect": [
+                11,
+                24,
+                57,
+                55
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B03/v001/frames/ENM-01_death/ENM-01_death_01.png",
+              "pixels": [
+                64,
+                64
+              ],
+              "pixel_sha256": "d7f1e45c5ca54433ea3e1f1785eae20f16e3746d3191cb58cc6d0d52022e55c7",
+              "visible_rect": [
+                12,
+                14,
+                57,
+                57
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B03/v001/frames/ENM-01_death/ENM-01_death_02.png",
+              "pixels": [
+                64,
+                64
+              ],
+              "pixel_sha256": "39e90bd3b0f8b8dc27bcc1caac0940b2c3f3a02e7e21d59f7e7d87221f06e5ce",
+              "visible_rect": [
+                7,
+                27,
+                57,
+                57
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B03/v001/frames/ENM-01_death/ENM-01_death_03.png",
+              "pixels": [
+                64,
+                64
+              ],
+              "pixel_sha256": "595493a995d06b4d4bb959b96d88d5fc1ce768d720b09364395fc48a6dacdf24",
+              "visible_rect": [
+                7,
+                26,
+                56,
+                57
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B03/v001/frames/ENM-01_death/ENM-01_death_04.png",
+              "pixels": [
+                64,
+                64
+              ],
+              "pixel_sha256": "2168ebcbc73245747c5784cc0e66921af6dfa728f7e72a082280068f1bb661f3",
+              "visible_rect": [
+                10,
+                30,
+                57,
+                57
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B03/v001/frames/ENM-01_death/ENM-01_death_05.png",
+              "pixels": [
+                64,
+                64
+              ],
+              "pixel_sha256": "1498bdbc5e497a81d5fbe4deafd793d6ea31a63daa7b25de0f85857364902e00",
+              "visible_rect": [
+                7,
+                31,
+                54,
+                58
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B03/v001/frames/ENM-01_death/ENM-01_death_06.png",
+              "pixels": [
+                64,
+                64
+              ],
+              "pixel_sha256": "0b9b57ff66a458441325a39e5ac64066d43ad66a0271a905f81bcf669b9a5a32",
+              "visible_rect": [
+                7,
+                15,
+                57,
+                57
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B03/v001/frames/ENM-01_death/ENM-01_death_07.png",
+              "pixels": [
+                64,
+                64
+              ],
+              "pixel_sha256": "552d7cd28d42519c4b435d04100cd388428f200cff1ecffc9102a945f2592d42",
+              "visible_rect": [
+                7,
+                18,
+                54,
+                57
+              ]
+            }
+          ],
+          "unique_pixel_frames": 8,
+          "raw_source": "assets/RAW/enemies/ENM-B03/v001/ENM-01/ENM-01_actions_B.png",
+          "raw_source_exists": true
+        }
+      ],
+      "runtime_controller": "scripts/enemies/combat_enemy.gd",
+      "runtime_visual": "scripts/enemies/combat_enemy_visual.gd",
+      "repair": "physical-body edge trigger + melee hitbox reach guard; no invented balance values"
+    },
+    {
+      "id": "milk_slime",
+      "name": "奶滴史莱姆",
+      "map_sources": [
+        "data/maps/forest_01.json",
+        "data/maps/forest_02.json",
+        "data/maps/forest_03.json"
+      ],
+      "attack_material_exists": true,
+      "actions": [
+        {
+          "action": "idle",
+          "catalog": "assets/PROCESSED/enemies/ENM-B04/v001/catalog.json",
+          "fps": 8,
+          "loop": true,
+          "anchor": [
+            96,
+            136
+          ],
+          "frames": [
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B04/v001/frames/ENM-03_idle/ENM-03_idle_00.png",
+              "pixels": [
+                192,
+                160
+              ],
+              "pixel_sha256": "ce267371774bd0d5777da68a51d0e39be0160f6d66adeb7c5da0382775cf7865",
+              "visible_rect": [
+                60,
+                83,
+                138,
+                138
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B04/v001/frames/ENM-03_idle/ENM-03_idle_01.png",
+              "pixels": [
+                192,
+                160
+              ],
+              "pixel_sha256": "667b955c12d03d7ed5c6e8259d44da401a53a765a2f3f2cf1b813cec49e8733e",
+              "visible_rect": [
+                53,
+                78,
+                139,
+                139
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B04/v001/frames/ENM-03_idle/ENM-03_idle_02.png",
+              "pixels": [
+                192,
+                160
+              ],
+              "pixel_sha256": "eb845471058b691e6a5b866b840f0f00650fa18be1117a3237319eaa5b6e0add",
+              "visible_rect": [
+                53,
+                80,
+                139,
+                140
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B04/v001/frames/ENM-03_idle/ENM-03_idle_03.png",
+              "pixels": [
+                192,
+                160
+              ],
+              "pixel_sha256": "c63adf8bf14fc906d548dac09647ca89c6bc2aa444289c03b7b4a2e1dd877aeb",
+              "visible_rect": [
+                54,
+                78,
+                132,
+                137
+              ]
+            }
+          ],
+          "unique_pixel_frames": 4,
+          "raw_source": "assets/RAW/enemies/ENM-B04/v001/ENM-03/ENM-03_actions_A.png",
+          "raw_source_exists": true
+        },
+        {
+          "action": "move",
+          "catalog": "assets/PROCESSED/enemies/ENM-B04/v001/catalog.json",
+          "fps": 8,
+          "loop": true,
+          "anchor": [
+            96,
+            136
+          ],
+          "frames": [
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B04/v001/frames/ENM-03_move/ENM-03_move_00.png",
+              "pixels": [
+                192,
+                160
+              ],
+              "pixel_sha256": "cfffef73a2c1724a5aedcd3c4ffb22a7ea886cfeb04c48b5442bbb7308cb93fd",
+              "visible_rect": [
+                53,
+                79,
+                142,
+                140
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B04/v001/frames/ENM-03_move/ENM-03_move_01.png",
+              "pixels": [
+                192,
+                160
+              ],
+              "pixel_sha256": "a92eb84f809760acf3c9e13ba9ec4575cb9f381ff0277ba9714e19b5d4c8160d",
+              "visible_rect": [
+                57,
+                72,
+                138,
+                140
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B04/v001/frames/ENM-03_move/ENM-03_move_02.png",
+              "pixels": [
+                192,
+                160
+              ],
+              "pixel_sha256": "1a6c12db27ae3c084269a3267f225c8e89dc39a7a2a8cab9990418e1fafc584a",
+              "visible_rect": [
+                57,
+                75,
+                128,
+                139
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B04/v001/frames/ENM-03_move/ENM-03_move_03.png",
+              "pixels": [
+                192,
+                160
+              ],
+              "pixel_sha256": "33ec36d76cf98cc366a4ed8ea4645ea4b296a2059168923c4c1f18b3679b6dda",
+              "visible_rect": [
+                45,
+                71,
+                134,
+                140
+              ]
+            }
+          ],
+          "unique_pixel_frames": 4,
+          "raw_source": "assets/RAW/enemies/ENM-B04/v001/ENM-03/ENM-03_actions_A.png",
+          "raw_source_exists": true
+        },
+        {
+          "action": "telegraph",
+          "catalog": "assets/PROCESSED/enemies/ENM-B04/v001/catalog.json",
+          "fps": 8,
+          "loop": false,
+          "anchor": [
+            96,
+            136
+          ],
+          "frames": [
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B04/v001/frames/ENM-03_telegraph/ENM-03_telegraph_00.png",
+              "pixels": [
+                192,
+                160
+              ],
+              "pixel_sha256": "b97cfb30ae02137e9a356756dec47dd88896eb6cfc8a045e6c2533ca09955750",
+              "visible_rect": [
+                60,
+                72,
+                145,
+                139
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B04/v001/frames/ENM-03_telegraph/ENM-03_telegraph_01.png",
+              "pixels": [
+                192,
+                160
+              ],
+              "pixel_sha256": "3b528e683570dc8504cf9e7b100ab39a98b71603f2e3cbd6f8edece8a1d51df1",
+              "visible_rect": [
+                60,
+                71,
+                136,
+                138
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B04/v001/frames/ENM-03_telegraph/ENM-03_telegraph_02.png",
+              "pixels": [
+                192,
+                160
+              ],
+              "pixel_sha256": "cfbe4bb0507e877a5c0939ed93ba5f9651dcd6bb634c438d1b52be6c2f7ae21d",
+              "visible_rect": [
+                52,
+                71,
+                125,
+                139
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B04/v001/frames/ENM-03_telegraph/ENM-03_telegraph_03.png",
+              "pixels": [
+                192,
+                160
+              ],
+              "pixel_sha256": "c2df894cd8b466bb17ec84fcdd84bcca504e6794a3234bb42817a95bce70142a",
+              "visible_rect": [
+                47,
+                71,
+                133,
+                139
+              ]
+            }
+          ],
+          "unique_pixel_frames": 4,
+          "raw_source": "assets/RAW/enemies/ENM-B04/v001/ENM-03/ENM-03_actions_A.png",
+          "raw_source_exists": true
+        },
+        {
+          "action": "attack",
+          "catalog": "assets/PROCESSED/enemies/ENM-B04/v001/catalog.json",
+          "fps": 8,
+          "loop": false,
+          "anchor": [
+            96,
+            136
+          ],
+          "frames": [
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B04/v001/frames/ENM-03_attack/ENM-03_attack_00.png",
+              "pixels": [
+                192,
+                160
+              ],
+              "pixel_sha256": "88a417fc186fbf3be1000a212ded88116adf046c4fe3c3a0ff22f161b0f6e8b6",
+              "visible_rect": [
+                56,
+                73,
+                139,
+                140
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B04/v001/frames/ENM-03_attack/ENM-03_attack_01.png",
+              "pixels": [
+                192,
+                160
+              ],
+              "pixel_sha256": "96b57ba9d0266a0efd48c4c9045a839b7e6fa03492f594f1e4d066bc1ff455a6",
+              "visible_rect": [
+                53,
+                81,
+                132,
+                139
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B04/v001/frames/ENM-03_attack/ENM-03_attack_02.png",
+              "pixels": [
+                192,
+                160
+              ],
+              "pixel_sha256": "e2989c77562aa4a11a0b28353ce2b5d0fd0e4eb8a9a58eb61b6bc1e7e73f342c",
+              "visible_rect": [
+                47,
+                73,
+                139,
+                141
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B04/v001/frames/ENM-03_attack/ENM-03_attack_03.png",
+              "pixels": [
+                192,
+                160
+              ],
+              "pixel_sha256": "a6ee5b8c38adbaed26983b3e0cf4921906dd6f26c810b796a42a55239cbfe8b0",
+              "visible_rect": [
+                53,
+                73,
+                136,
+                141
+              ]
+            }
+          ],
+          "unique_pixel_frames": 4,
+          "raw_source": "assets/RAW/enemies/ENM-B04/v001/ENM-03/ENM-03_actions_A.png",
+          "raw_source_exists": true
+        },
+        {
+          "action": "recover",
+          "catalog": "assets/PROCESSED/enemies/ENM-B04/v001/catalog.json",
+          "fps": 8,
+          "loop": false,
+          "anchor": [
+            96,
+            136
+          ],
+          "frames": [
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B04/v001/frames/ENM-03_recover/ENM-03_recover_00.png",
+              "pixels": [
+                192,
+                160
+              ],
+              "pixel_sha256": "bb0adf31d1111dc8bcff78e573e65f314bd70ca494637b53548510515dfdb650",
+              "visible_rect": [
+                56,
+                77,
+                152,
+                142
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B04/v001/frames/ENM-03_recover/ENM-03_recover_01.png",
+              "pixels": [
+                192,
+                160
+              ],
+              "pixel_sha256": "4a0cb25bfb81df097dc789a2a1efd77f7f2d0ff9d17f46f42cb9df1d9bdcf863",
+              "visible_rect": [
+                50,
+                71,
+                148,
+                142
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B04/v001/frames/ENM-03_recover/ENM-03_recover_02.png",
+              "pixels": [
+                192,
+                160
+              ],
+              "pixel_sha256": "480ccbfb06db7fd63e5ea2e7882f09d28ce911f8934a6c22c34f003153f0c11c",
+              "visible_rect": [
+                50,
+                75,
+                147,
+                139
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B04/v001/frames/ENM-03_recover/ENM-03_recover_03.png",
+              "pixels": [
+                192,
+                160
+              ],
+              "pixel_sha256": "816d6e63aec43576d0b137838c54e94c5cf01354607458a75ac1df00b2e5787f",
+              "visible_rect": [
+                52,
+                74,
+                143,
+                139
+              ]
+            }
+          ],
+          "unique_pixel_frames": 4,
+          "raw_source": "assets/RAW/enemies/ENM-B04/v001/ENM-03/ENM-03_actions_B.png",
+          "raw_source_exists": true
+        },
+        {
+          "action": "hurt",
+          "catalog": "assets/PROCESSED/enemies/ENM-B04/v001/catalog.json",
+          "fps": 8,
+          "loop": false,
+          "anchor": [
+            96,
+            136
+          ],
+          "frames": [
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B04/v001/frames/ENM-03_hurt/ENM-03_hurt_00.png",
+              "pixels": [
+                192,
+                160
+              ],
+              "pixel_sha256": "d94bc6a49dd9bd5c2314a99741f50fd8c209ae286408d8def94555156f18e1a3",
+              "visible_rect": [
+                56,
+                74,
+                156,
+                140
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B04/v001/frames/ENM-03_hurt/ENM-03_hurt_01.png",
+              "pixels": [
+                192,
+                160
+              ],
+              "pixel_sha256": "8fb812c142db783b6eff0c1f19b917e4fbb1fdd598a092ccea365a02b84c762a",
+              "visible_rect": [
+                61,
+                74,
+                153,
+                142
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B04/v001/frames/ENM-03_hurt/ENM-03_hurt_02.png",
+              "pixels": [
+                192,
+                160
+              ],
+              "pixel_sha256": "06d173677926baa69adadd6da232e72f92a42c32dd601528492c95d66eacb97a",
+              "visible_rect": [
+                65,
+                74,
+                139,
+                142
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B04/v001/frames/ENM-03_hurt/ENM-03_hurt_03.png",
+              "pixels": [
+                192,
+                160
+              ],
+              "pixel_sha256": "975e0df3e0fa428f0ea66c4172ab151114a31e5e64a1d1da3edd4e3bb54e7fb7",
+              "visible_rect": [
+                45,
+                79,
+                142,
+                142
+              ]
+            }
+          ],
+          "unique_pixel_frames": 4,
+          "raw_source": "assets/RAW/enemies/ENM-B04/v001/ENM-03/ENM-03_actions_B.png",
+          "raw_source_exists": true
+        },
+        {
+          "action": "death",
+          "catalog": "assets/PROCESSED/enemies/ENM-B04/v001/catalog.json",
+          "fps": 10,
+          "loop": false,
+          "anchor": [
+            96,
+            136
+          ],
+          "frames": [
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B04/v001/frames/ENM-03_death/ENM-03_death_00.png",
+              "pixels": [
+                192,
+                160
+              ],
+              "pixel_sha256": "a665e9a2837d00e0da467bf8cb313850d90f04d06cee018149b1e5cd475a5945",
+              "visible_rect": [
+                51,
+                82,
+                151,
+                143
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B04/v001/frames/ENM-03_death/ENM-03_death_01.png",
+              "pixels": [
+                192,
+                160
+              ],
+              "pixel_sha256": "7471a4898b67fd839fbde80b46f63509b49eb436d14455f52ce9003a5f3d4381",
+              "visible_rect": [
+                49,
+                79,
+                152,
+                143
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B04/v001/frames/ENM-03_death/ENM-03_death_02.png",
+              "pixels": [
+                192,
+                160
+              ],
+              "pixel_sha256": "a020e13bb87aaed71d973ff89ec79e6703c108c70b036a53871a3d6a282713c2",
+              "visible_rect": [
+                53,
+                79,
+                154,
+                139
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B04/v001/frames/ENM-03_death/ENM-03_death_03.png",
+              "pixels": [
+                192,
+                160
+              ],
+              "pixel_sha256": "4233e1b18b930bad30bdd8d2193e45f3eee1261a9459f1af8f24bc034f5ab24e",
+              "visible_rect": [
+                55,
+                79,
+                142,
+                140
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B04/v001/frames/ENM-03_death/ENM-03_death_04.png",
+              "pixels": [
+                192,
+                160
+              ],
+              "pixel_sha256": "e139767fdf0e79d1f6a6fa6a270b089559ce0d11352f5653f5de73add2d982b9",
+              "visible_rect": [
+                52,
+                81,
+                150,
+                148
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B04/v001/frames/ENM-03_death/ENM-03_death_05.png",
+              "pixels": [
+                192,
+                160
+              ],
+              "pixel_sha256": "62dfb47e70fd3c5920c6401a9cbd6f7df66c90632b8a7a7a2964fbd177587777",
+              "visible_rect": [
+                53,
+                81,
+                125,
+                142
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B04/v001/frames/ENM-03_death/ENM-03_death_06.png",
+              "pixels": [
+                192,
+                160
+              ],
+              "pixel_sha256": "61c4f0110fba95bb1a160146774da5751c787ed26c86b33b5b783379e0b52def",
+              "visible_rect": [
+                23,
+                81,
+                129,
+                143
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B04/v001/frames/ENM-03_death/ENM-03_death_07.png",
+              "pixels": [
+                192,
+                160
+              ],
+              "pixel_sha256": "5a8575b4d730e74f66ac4b7199abaac7cd65a43beb0e97bcb19f47bb1d5d5a34",
+              "visible_rect": [
+                27,
+                82,
+                143,
+                144
+              ]
+            }
+          ],
+          "unique_pixel_frames": 8,
+          "raw_source": "assets/RAW/enemies/ENM-B04/v001/ENM-03/ENM-03_actions_B.png",
+          "raw_source_exists": true
+        },
+        {
+          "action": "grab_ready",
+          "catalog": "assets/PROCESSED/enemies/ENM-SLIME-GRAB/v001/catalog.json",
+          "fps": 8,
+          "loop": false,
+          "anchor": [
+            96,
+            136
+          ],
+          "frames": [
+            {
+              "path": "assets/PROCESSED/enemies/ENM-SLIME-GRAB/v001/frames/tentacle_grab/00.png",
+              "pixels": [
+                288,
+                176
+              ],
+              "pixel_sha256": "15930504c95aecf5c83658a4989caf7780f039633fa1ccc7949468ed32d35815",
+              "visible_rect": [
+                60,
+                33,
+                147,
+                164
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-SLIME-GRAB/v001/frames/tentacle_grab/01.png",
+              "pixels": [
+                288,
+                176
+              ],
+              "pixel_sha256": "e7d3556865cd9bb1cefff140effb8108f8d5142fe77d587e8a6f09e4022f4229",
+              "visible_rect": [
+                45,
+                37,
+                145,
+                164
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-SLIME-GRAB/v001/frames/tentacle_grab/02.png",
+              "pixels": [
+                288,
+                176
+              ],
+              "pixel_sha256": "99741ed250fdc5a515176c551ad7c45cfcf110d99fd63a91ce3288f732c9beb1",
+              "visible_rect": [
+                47,
+                50,
+                152,
+                165
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-SLIME-GRAB/v001/frames/tentacle_grab/03.png",
+              "pixels": [
+                288,
+                176
+              ],
+              "pixel_sha256": "7abe2122b09267501cb0226858d43e4765e2808fa36e4f09d7815cbcae308725",
+              "visible_rect": [
+                51,
+                42,
+                160,
+                164
+              ]
+            }
+          ],
+          "unique_pixel_frames": 4,
+          "raw_source": "assets/RAW/enemies/ENM-SLIME-GRAB/v001/tentacle_grab.png",
+          "raw_source_exists": true
+        },
+        {
+          "action": "grab_attack",
+          "catalog": "assets/PROCESSED/enemies/ENM-SLIME-GRAB/v001/catalog.json",
+          "fps": 10,
+          "loop": false,
+          "anchor": [
+            96,
+            136
+          ],
+          "frames": [
+            {
+              "path": "assets/PROCESSED/enemies/ENM-SLIME-GRAB/v001/frames/tentacle_grab/04.png",
+              "pixels": [
+                288,
+                176
+              ],
+              "pixel_sha256": "b504e60f762786f8b72696616caf41c955d15f41abb8b785686092ecc2d47c4f",
+              "visible_rect": [
+                60,
+                64,
+                154,
+                150
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-SLIME-GRAB/v001/frames/tentacle_grab/05.png",
+              "pixels": [
+                288,
+                176
+              ],
+              "pixel_sha256": "4b410cd67fb2066e3acd3ebf48fb04f0ba63a471b39e209064d847092883b8e0",
+              "visible_rect": [
+                55,
+                63,
+                161,
+                147
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-SLIME-GRAB/v001/frames/tentacle_grab/06.png",
+              "pixels": [
+                288,
+                176
+              ],
+              "pixel_sha256": "460e42540f3d8b9f072e54ad8b4178497b5472aa8656446fc334829b659009d4",
+              "visible_rect": [
+                60,
+                63,
+                165,
+                139
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-SLIME-GRAB/v001/frames/tentacle_grab/07.png",
+              "pixels": [
+                288,
+                176
+              ],
+              "pixel_sha256": "d1c5f0ce04b225bcd692a47e5f915af68860d83781003db303235371e95341e6",
+              "visible_rect": [
+                64,
+                63,
+                174,
+                149
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-SLIME-GRAB/v001/frames/tentacle_grab/08.png",
+              "pixels": [
+                288,
+                176
+              ],
+              "pixel_sha256": "e122427e38fdcf79b85429db9f10e1e942b5e42a5383b26d5cb6d815850e5ea4",
+              "visible_rect": [
+                61,
+                51,
+                167,
+                138
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-SLIME-GRAB/v001/frames/tentacle_grab/09.png",
+              "pixels": [
+                288,
+                176
+              ],
+              "pixel_sha256": "f5a6bd750d836d9163b7579208333cd561240052e47eb8159316708d5ee915b8",
+              "visible_rect": [
+                61,
+                56,
+                158,
+                149
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-SLIME-GRAB/v001/frames/tentacle_grab/10.png",
+              "pixels": [
+                288,
+                176
+              ],
+              "pixel_sha256": "0b08f808a88cf94736e365571374d8a7250338b10704c3959e88ad1848a157a7",
+              "visible_rect": [
+                56,
+                51,
+                159,
+                148
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-SLIME-GRAB/v001/frames/tentacle_grab/11.png",
+              "pixels": [
+                288,
+                176
+              ],
+              "pixel_sha256": "7e121b7e9093ffaf208e34a47d5924a936908c97d79d3cba8972de92269a9505",
+              "visible_rect": [
+                59,
+                51,
+                158,
+                150
+              ]
+            }
+          ],
+          "unique_pixel_frames": 8,
+          "raw_source": "assets/RAW/enemies/ENM-SLIME-GRAB/v001/tentacle_grab.png",
+          "raw_source_exists": true
+        },
+        {
+          "action": "grab_recover",
+          "catalog": "assets/PROCESSED/enemies/ENM-SLIME-GRAB/v001/catalog.json",
+          "fps": 10,
+          "loop": false,
+          "anchor": [
+            96,
+            136
+          ],
+          "frames": [
+            {
+              "path": "assets/PROCESSED/enemies/ENM-SLIME-GRAB/v001/frames/tentacle_grab/12.png",
+              "pixels": [
+                288,
+                176
+              ],
+              "pixel_sha256": "06b8b815733e22ed1a08b9048e512c361c73d5dc2e18cae2fc484035377d60af",
+              "visible_rect": [
+                60,
+                57,
+                164,
+                138
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-SLIME-GRAB/v001/frames/tentacle_grab/13.png",
+              "pixels": [
+                288,
+                176
+              ],
+              "pixel_sha256": "6e76adbf83bdfd98d41a2cfad155e8ee4efbb7478decfb770a7ac5252ba24585",
+              "visible_rect": [
+                56,
+                56,
+                153,
+                149
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-SLIME-GRAB/v001/frames/tentacle_grab/14.png",
+              "pixels": [
+                288,
+                176
+              ],
+              "pixel_sha256": "97217f69e418eab5eb1044020ede54acd254021b348e54ec090e8f8d2565bcc3",
+              "visible_rect": [
+                53,
+                56,
+                156,
+                138
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-SLIME-GRAB/v001/frames/tentacle_grab/15.png",
+              "pixels": [
+                288,
+                176
+              ],
+              "pixel_sha256": "2ad0c1069f4cbabb2fbb20de759494062a8964d6167e50a461fc466ac7f018db",
+              "visible_rect": [
+                56,
+                55,
+                155,
+                143
+              ]
+            }
+          ],
+          "unique_pixel_frames": 4,
+          "raw_source": "assets/RAW/enemies/ENM-SLIME-GRAB/v001/tentacle_grab.png",
+          "raw_source_exists": true
+        },
+        {
+          "action": "tentacle_grab",
+          "catalog": "assets/PROCESSED/enemies/ENM-SLIME-GRAB/v001/catalog.json",
+          "fps": 10,
+          "loop": false,
+          "anchor": [
+            96,
+            136
+          ],
+          "frames": [
+            {
+              "path": "assets/PROCESSED/enemies/ENM-SLIME-GRAB/v001/frames/tentacle_grab/00.png",
+              "pixels": [
+                288,
+                176
+              ],
+              "pixel_sha256": "15930504c95aecf5c83658a4989caf7780f039633fa1ccc7949468ed32d35815",
+              "visible_rect": [
+                60,
+                33,
+                147,
+                164
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-SLIME-GRAB/v001/frames/tentacle_grab/01.png",
+              "pixels": [
+                288,
+                176
+              ],
+              "pixel_sha256": "e7d3556865cd9bb1cefff140effb8108f8d5142fe77d587e8a6f09e4022f4229",
+              "visible_rect": [
+                45,
+                37,
+                145,
+                164
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-SLIME-GRAB/v001/frames/tentacle_grab/02.png",
+              "pixels": [
+                288,
+                176
+              ],
+              "pixel_sha256": "99741ed250fdc5a515176c551ad7c45cfcf110d99fd63a91ce3288f732c9beb1",
+              "visible_rect": [
+                47,
+                50,
+                152,
+                165
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-SLIME-GRAB/v001/frames/tentacle_grab/03.png",
+              "pixels": [
+                288,
+                176
+              ],
+              "pixel_sha256": "7abe2122b09267501cb0226858d43e4765e2808fa36e4f09d7815cbcae308725",
+              "visible_rect": [
+                51,
+                42,
+                160,
+                164
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-SLIME-GRAB/v001/frames/tentacle_grab/04.png",
+              "pixels": [
+                288,
+                176
+              ],
+              "pixel_sha256": "b504e60f762786f8b72696616caf41c955d15f41abb8b785686092ecc2d47c4f",
+              "visible_rect": [
+                60,
+                64,
+                154,
+                150
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-SLIME-GRAB/v001/frames/tentacle_grab/05.png",
+              "pixels": [
+                288,
+                176
+              ],
+              "pixel_sha256": "4b410cd67fb2066e3acd3ebf48fb04f0ba63a471b39e209064d847092883b8e0",
+              "visible_rect": [
+                55,
+                63,
+                161,
+                147
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-SLIME-GRAB/v001/frames/tentacle_grab/06.png",
+              "pixels": [
+                288,
+                176
+              ],
+              "pixel_sha256": "460e42540f3d8b9f072e54ad8b4178497b5472aa8656446fc334829b659009d4",
+              "visible_rect": [
+                60,
+                63,
+                165,
+                139
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-SLIME-GRAB/v001/frames/tentacle_grab/07.png",
+              "pixels": [
+                288,
+                176
+              ],
+              "pixel_sha256": "d1c5f0ce04b225bcd692a47e5f915af68860d83781003db303235371e95341e6",
+              "visible_rect": [
+                64,
+                63,
+                174,
+                149
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-SLIME-GRAB/v001/frames/tentacle_grab/08.png",
+              "pixels": [
+                288,
+                176
+              ],
+              "pixel_sha256": "e122427e38fdcf79b85429db9f10e1e942b5e42a5383b26d5cb6d815850e5ea4",
+              "visible_rect": [
+                61,
+                51,
+                167,
+                138
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-SLIME-GRAB/v001/frames/tentacle_grab/09.png",
+              "pixels": [
+                288,
+                176
+              ],
+              "pixel_sha256": "f5a6bd750d836d9163b7579208333cd561240052e47eb8159316708d5ee915b8",
+              "visible_rect": [
+                61,
+                56,
+                158,
+                149
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-SLIME-GRAB/v001/frames/tentacle_grab/10.png",
+              "pixels": [
+                288,
+                176
+              ],
+              "pixel_sha256": "0b08f808a88cf94736e365571374d8a7250338b10704c3959e88ad1848a157a7",
+              "visible_rect": [
+                56,
+                51,
+                159,
+                148
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-SLIME-GRAB/v001/frames/tentacle_grab/11.png",
+              "pixels": [
+                288,
+                176
+              ],
+              "pixel_sha256": "7e121b7e9093ffaf208e34a47d5924a936908c97d79d3cba8972de92269a9505",
+              "visible_rect": [
+                59,
+                51,
+                158,
+                150
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-SLIME-GRAB/v001/frames/tentacle_grab/12.png",
+              "pixels": [
+                288,
+                176
+              ],
+              "pixel_sha256": "06b8b815733e22ed1a08b9048e512c361c73d5dc2e18cae2fc484035377d60af",
+              "visible_rect": [
+                60,
+                57,
+                164,
+                138
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-SLIME-GRAB/v001/frames/tentacle_grab/13.png",
+              "pixels": [
+                288,
+                176
+              ],
+              "pixel_sha256": "6e76adbf83bdfd98d41a2cfad155e8ee4efbb7478decfb770a7ac5252ba24585",
+              "visible_rect": [
+                56,
+                56,
+                153,
+                149
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-SLIME-GRAB/v001/frames/tentacle_grab/14.png",
+              "pixels": [
+                288,
+                176
+              ],
+              "pixel_sha256": "97217f69e418eab5eb1044020ede54acd254021b348e54ec090e8f8d2565bcc3",
+              "visible_rect": [
+                53,
+                56,
+                156,
+                138
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-SLIME-GRAB/v001/frames/tentacle_grab/15.png",
+              "pixels": [
+                288,
+                176
+              ],
+              "pixel_sha256": "2ad0c1069f4cbabb2fbb20de759494062a8964d6167e50a461fc466ac7f018db",
+              "visible_rect": [
+                56,
+                55,
+                155,
+                143
+              ]
+            }
+          ],
+          "unique_pixel_frames": 16,
+          "raw_source": "assets/RAW/enemies/ENM-SLIME-GRAB/v001/tentacle_grab.png",
+          "raw_source_exists": true
+        }
+      ],
+      "runtime_controller": "scripts/enemies/combat_enemy.gd",
+      "runtime_visual": "scripts/enemies/combat_enemy_visual.gd",
+      "repair": "physical-body edge trigger + melee hitbox reach guard; no invented balance values"
+    },
+    {
+      "id": "vine_flower",
+      "name": "藤鞭花",
+      "map_sources": [
+        "data/maps/forest_02.json",
+        "data/maps/forest_03.json",
+        "test/data/forest_candidates/09A.json",
+        "test/data/forest_candidates/09B.json"
+      ],
+      "attack_material_exists": true,
+      "actions": [
+        {
+          "action": "idle",
+          "catalog": "assets/PROCESSED/enemies/ENM-B04/v001/catalog.json",
+          "fps": 8,
+          "loop": true,
+          "anchor": [
+            58,
+            72
+          ],
+          "frames": [
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B04/v001/frames/ENM-07_idle/ENM-07_idle_00.png",
+              "pixels": [
+                128,
+                88
+              ],
+              "pixel_sha256": "0dac34de34803cfbc1e03057b716f71706a99348a2436939931ab7a26a9c705f",
+              "visible_rect": [
+                33,
+                27,
+                95,
+                74
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B04/v001/frames/ENM-07_idle/ENM-07_idle_01.png",
+              "pixels": [
+                128,
+                88
+              ],
+              "pixel_sha256": "265af4868a5e7a99ecf1268338f926be060f6bde23ded56da2b88a8e86b7f468",
+              "visible_rect": [
+                27,
+                27,
+                98,
+                75
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B04/v001/frames/ENM-07_idle/ENM-07_idle_02.png",
+              "pixels": [
+                128,
+                88
+              ],
+              "pixel_sha256": "81ca7cdb88a75038add851cc57eb5cd9e93ea466682fb7b3bffe99ac78090efa",
+              "visible_rect": [
+                18,
+                27,
+                96,
+                75
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B04/v001/frames/ENM-07_idle/ENM-07_idle_03.png",
+              "pixels": [
+                128,
+                88
+              ],
+              "pixel_sha256": "4c310f8bdfe67841d64f3618a1d97db4a3cdf61c173f285085d544d45d18ae4d",
+              "visible_rect": [
+                25,
+                28,
+                95,
+                80
+              ]
+            }
+          ],
+          "unique_pixel_frames": 4,
+          "raw_source": "assets/RAW/enemies/ENM-B04/v001/ENM-07/ENM-07_actions_A.png",
+          "raw_source_exists": true
+        },
+        {
+          "action": "move",
+          "catalog": "assets/PROCESSED/enemies/ENM-B04/v001/catalog.json",
+          "fps": 10,
+          "loop": true,
+          "anchor": [
+            58,
+            72
+          ],
+          "frames": [
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B04/v001/frames/ENM-07_move/ENM-07_move_00.png",
+              "pixels": [
+                128,
+                88
+              ],
+              "pixel_sha256": "4e2ab3c1cc2600893df5c0f4686d8ba2e02b27af55e38cb42f96d2847eeaa397",
+              "visible_rect": [
+                26,
+                26,
+                98,
+                74
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B04/v001/frames/ENM-07_move/ENM-07_move_01.png",
+              "pixels": [
+                128,
+                88
+              ],
+              "pixel_sha256": "9d3ca5ff0f710b4d6ea30c618194263c53d08cae8494f4058677ad04e6868e89",
+              "visible_rect": [
+                20,
+                23,
+                99,
+                78
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B04/v001/frames/ENM-07_move/ENM-07_move_02.png",
+              "pixels": [
+                128,
+                88
+              ],
+              "pixel_sha256": "3a46c195f51d24e69bac69d99f9b7ca5fa761c360a4d0eb8515ede09509065a5",
+              "visible_rect": [
+                20,
+                26,
+                100,
+                79
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B04/v001/frames/ENM-07_move/ENM-07_move_03.png",
+              "pixels": [
+                128,
+                88
+              ],
+              "pixel_sha256": "dbd4d6f38425f73c56a7910c51c091a88073544705500c74bb712657eb23cedc",
+              "visible_rect": [
+                21,
+                27,
+                95,
+                80
+              ]
+            }
+          ],
+          "unique_pixel_frames": 4,
+          "raw_source": "assets/RAW/enemies/ENM-B04/v001/ENM-07/ENM-07_actions_A.png",
+          "raw_source_exists": true
+        },
+        {
+          "action": "telegraph",
+          "catalog": "assets/PROCESSED/enemies/ENM-B04/v001/catalog.json",
+          "fps": 10,
+          "loop": false,
+          "anchor": [
+            58,
+            72
+          ],
+          "frames": [
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B04/v001/frames/ENM-07_telegraph/ENM-07_telegraph_00.png",
+              "pixels": [
+                128,
+                88
+              ],
+              "pixel_sha256": "ead6c7325945d08f47b28da172ec82c23feb078d7f98d921c3a9ffebcb5ade5a",
+              "visible_rect": [
+                30,
+                25,
+                98,
+                75
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B04/v001/frames/ENM-07_telegraph/ENM-07_telegraph_01.png",
+              "pixels": [
+                128,
+                88
+              ],
+              "pixel_sha256": "0735cc993bcc6f8afe9e146af910a83493a64a9955c9a4cad938fbc08a91f774",
+              "visible_rect": [
+                20,
+                27,
+                96,
+                75
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B04/v001/frames/ENM-07_telegraph/ENM-07_telegraph_02.png",
+              "pixels": [
+                128,
+                88
+              ],
+              "pixel_sha256": "e17256fa2679b208fcee7016d3c8c75f45a814f31e813320e8a33336ac2f2db7",
+              "visible_rect": [
+                23,
+                29,
+                95,
+                75
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B04/v001/frames/ENM-07_telegraph/ENM-07_telegraph_03.png",
+              "pixels": [
+                128,
+                88
+              ],
+              "pixel_sha256": "57ef1231975ac2bc42c26ece70356c9d7b18bb7fd806dbd002871577e9d9ac06",
+              "visible_rect": [
+                30,
+                23,
+                96,
+                76
+              ]
+            }
+          ],
+          "unique_pixel_frames": 4,
+          "raw_source": "assets/RAW/enemies/ENM-B04/v001/ENM-07/ENM-07_actions_A.png",
+          "raw_source_exists": true
+        },
+        {
+          "action": "attack",
+          "catalog": "assets/PROCESSED/enemies/ENM-B04/v001/catalog.json",
+          "fps": 14,
+          "loop": false,
+          "anchor": [
+            58,
+            72
+          ],
+          "frames": [
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B04/v001/frames/ENM-07_attack/ENM-07_attack_00.png",
+              "pixels": [
+                128,
+                88
+              ],
+              "pixel_sha256": "ae2039d7cdc3867cba381103f90ce81388bf6289212beec5907da34da55805e2",
+              "visible_rect": [
+                28,
+                26,
+                111,
+                74
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B04/v001/frames/ENM-07_attack/ENM-07_attack_01.png",
+              "pixels": [
+                128,
+                88
+              ],
+              "pixel_sha256": "acea3a3744c91cf796ca59975fb5fae8abc2c6ccc57c89209dd6ac5289eafd0d",
+              "visible_rect": [
+                23,
+                26,
+                124,
+                74
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B04/v001/frames/ENM-07_attack/ENM-07_attack_02.png",
+              "pixels": [
+                128,
+                88
+              ],
+              "pixel_sha256": "abdb2ec4f6538fb8c866989a6f1bdb8b8869d8c9d20e8e559d460869b2a330a3",
+              "visible_rect": [
+                38,
+                24,
+                110,
+                74
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B04/v001/frames/ENM-07_attack/ENM-07_attack_03.png",
+              "pixels": [
+                128,
+                88
+              ],
+              "pixel_sha256": "136a1c16e210bac6b2eac26835c0a7b3d8acc7cf793c804809d16eacfab58fc9",
+              "visible_rect": [
+                25,
+                26,
+                96,
+                74
+              ]
+            }
+          ],
+          "unique_pixel_frames": 4,
+          "raw_source": "assets/RAW/enemies/ENM-B04/v001/ENM-07/ENM-07_actions_A.png",
+          "raw_source_exists": true
+        },
+        {
+          "action": "recover",
+          "catalog": "assets/PROCESSED/enemies/ENM-B04/v001/catalog.json",
+          "fps": 10,
+          "loop": false,
+          "anchor": [
+            58,
+            72
+          ],
+          "frames": [
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B04/v001/frames/ENM-07_recover/ENM-07_recover_00.png",
+              "pixels": [
+                128,
+                88
+              ],
+              "pixel_sha256": "67c281b6f6a52e69601553992340c1a83c924c2b3f5dd2f5fb058dd684d2aef7",
+              "visible_rect": [
+                29,
+                26,
+                110,
+                76
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B04/v001/frames/ENM-07_recover/ENM-07_recover_01.png",
+              "pixels": [
+                128,
+                88
+              ],
+              "pixel_sha256": "f837aacd8d8e2f652fcd8e0cb2856a99f3923bef12c8cfab8f5135bf6c4b5f98",
+              "visible_rect": [
+                23,
+                25,
+                104,
+                75
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B04/v001/frames/ENM-07_recover/ENM-07_recover_02.png",
+              "pixels": [
+                128,
+                88
+              ],
+              "pixel_sha256": "ff79c63aff623db304290234a825b6d94d8846abaadda7d97a35792311a24674",
+              "visible_rect": [
+                20,
+                25,
+                101,
+                75
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B04/v001/frames/ENM-07_recover/ENM-07_recover_03.png",
+              "pixels": [
+                128,
+                88
+              ],
+              "pixel_sha256": "1c8c079131e071aad25ac51abbcd2f28533fd01bb036d66f62d969968fef63f8",
+              "visible_rect": [
+                18,
+                25,
+                96,
+                78
+              ]
+            }
+          ],
+          "unique_pixel_frames": 4,
+          "raw_source": "assets/RAW/enemies/ENM-B04/v001/ENM-07/ENM-07_actions_B.png",
+          "raw_source_exists": true
+        },
+        {
+          "action": "hurt",
+          "catalog": "assets/PROCESSED/enemies/ENM-B04/v001/catalog.json",
+          "fps": 12,
+          "loop": false,
+          "anchor": [
+            58,
+            72
+          ],
+          "frames": [
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B04/v001/frames/ENM-07_hurt/ENM-07_hurt_00.png",
+              "pixels": [
+                128,
+                88
+              ],
+              "pixel_sha256": "ca7937f1832f645cca30d7b53d8edc5c8c84fdd599efe1e236d91ca41a6a3540",
+              "visible_rect": [
+                30,
+                24,
+                116,
+                78
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B04/v001/frames/ENM-07_hurt/ENM-07_hurt_01.png",
+              "pixels": [
+                128,
+                88
+              ],
+              "pixel_sha256": "fca3592fcdbf0edeeee88e99c8492469a2a1c4f75b9c842c08c4699f47ae14df",
+              "visible_rect": [
+                32,
+                25,
+                109,
+                77
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B04/v001/frames/ENM-07_hurt/ENM-07_hurt_02.png",
+              "pixels": [
+                128,
+                88
+              ],
+              "pixel_sha256": "67925672c062639e3b5f71ae9abdcd01864986b5aeeb98916637dee75977bd3e",
+              "visible_rect": [
+                27,
+                25,
+                109,
+                77
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B04/v001/frames/ENM-07_hurt/ENM-07_hurt_03.png",
+              "pixels": [
+                128,
+                88
+              ],
+              "pixel_sha256": "9b829f999548d2f363ac8de036e3cf9a085f018dfdd72e73a215b41da4ea6535",
+              "visible_rect": [
+                26,
+                25,
+                97,
+                75
+              ]
+            }
+          ],
+          "unique_pixel_frames": 4,
+          "raw_source": "assets/RAW/enemies/ENM-B04/v001/ENM-07/ENM-07_actions_B.png",
+          "raw_source_exists": true
+        },
+        {
+          "action": "death",
+          "catalog": "assets/PROCESSED/enemies/ENM-B04/v001/catalog.json",
+          "fps": 10,
+          "loop": false,
+          "anchor": [
+            58,
+            72
+          ],
+          "frames": [
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B04/v001/frames/ENM-07_death/ENM-07_death_00.png",
+              "pixels": [
+                128,
+                88
+              ],
+              "pixel_sha256": "fbd02dcd0d84c59eba5b30795d478d17c8f57b4a234eb8ca4662228a5a74a67b",
+              "visible_rect": [
+                27,
+                24,
+                103,
+                76
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B04/v001/frames/ENM-07_death/ENM-07_death_01.png",
+              "pixels": [
+                128,
+                88
+              ],
+              "pixel_sha256": "e333a5512e843c88b712f9d799a932331030240a3854fbbc9f86ecd735c0759a",
+              "visible_rect": [
+                28,
+                24,
+                106,
+                80
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B04/v001/frames/ENM-07_death/ENM-07_death_02.png",
+              "pixels": [
+                128,
+                88
+              ],
+              "pixel_sha256": "4962601afef0d8819e4b52b0c8437a4663933ebc4af3d23f031be59a91856708",
+              "visible_rect": [
+                22,
+                28,
+                102,
+                79
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B04/v001/frames/ENM-07_death/ENM-07_death_03.png",
+              "pixels": [
+                128,
+                88
+              ],
+              "pixel_sha256": "f931ed174d274839be378e237a38a9c19af40be2ca0b3603e1defbd0563368de",
+              "visible_rect": [
+                17,
+                32,
+                97,
+                79
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B04/v001/frames/ENM-07_death/ENM-07_death_04.png",
+              "pixels": [
+                128,
+                88
+              ],
+              "pixel_sha256": "da716f9fc4a741efae80f253386008e6efd86bd4b71585ba34db1bb2d3a0a6b6",
+              "visible_rect": [
+                26,
+                29,
+                105,
+                75
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B04/v001/frames/ENM-07_death/ENM-07_death_05.png",
+              "pixels": [
+                128,
+                88
+              ],
+              "pixel_sha256": "f25e78c879106d7f5467383b8c07388c95b372a876aae6f135c7014b8e64ef94",
+              "visible_rect": [
+                21,
+                26,
+                106,
+                77
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B04/v001/frames/ENM-07_death/ENM-07_death_06.png",
+              "pixels": [
+                128,
+                88
+              ],
+              "pixel_sha256": "db430b1ff6cbbc71eea10a413ac61cc347a203aaeeb685b6168ccb57f6f4f3a8",
+              "visible_rect": [
+                23,
+                40,
+                101,
+                75
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B04/v001/frames/ENM-07_death/ENM-07_death_07.png",
+              "pixels": [
+                128,
+                88
+              ],
+              "pixel_sha256": "d6b7f417062bd1a5ed02f9ce0275df5052b1438b433f49e70b7ed8dee0a134a9",
+              "visible_rect": [
+                22,
+                36,
+                93,
+                74
+              ]
+            }
+          ],
+          "unique_pixel_frames": 8,
+          "raw_source": "assets/RAW/enemies/ENM-B04/v001/ENM-07/ENM-07_actions_B.png",
+          "raw_source_exists": true
+        }
+      ],
+      "runtime_controller": "scripts/enemies/combat_enemy.gd",
+      "runtime_visual": "scripts/enemies/combat_enemy_visual.gd",
+      "repair": "physical-body edge trigger + melee hitbox reach guard; no invented balance values"
+    },
+    {
+      "id": "milk_moth",
+      "name": "飞奶蛾",
+      "map_sources": [
+        "data/maps/forest_03.json",
+        "test/data/forest_candidates/08A.json",
+        "test/data/forest_candidates/08B.json"
+      ],
+      "attack_material_exists": true,
+      "actions": [
+        {
+          "action": "idle",
+          "catalog": "assets/PROCESSED/enemies/ENM-B04/v001/catalog.json",
+          "fps": 8,
+          "loop": true,
+          "anchor": [
+            44,
+            32
+          ],
+          "frames": [
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B04/v001/frames/ENM-11_idle/ENM-11_idle_00.png",
+              "pixels": [
+                88,
+                64
+              ],
+              "pixel_sha256": "67257dd63dede2d91990ab981e54bbac7501fcf7944be1a5ac53552ded890be7",
+              "visible_rect": [
+                16,
+                9,
+                67,
+                48
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B04/v001/frames/ENM-11_idle/ENM-11_idle_01.png",
+              "pixels": [
+                88,
+                64
+              ],
+              "pixel_sha256": "72c14cf48d6e5497c7e37305c6d2eef2d21cb32cb80f3f6211bf3f5d235221e9",
+              "visible_rect": [
+                7,
+                11,
+                69,
+                48
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B04/v001/frames/ENM-11_idle/ENM-11_idle_02.png",
+              "pixels": [
+                88,
+                64
+              ],
+              "pixel_sha256": "e8bad5c04c240d8946c1e32f18c2a1021f7e6c966e74512ef08a4824cc22ba76",
+              "visible_rect": [
+                8,
+                12,
+                64,
+                48
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B04/v001/frames/ENM-11_idle/ENM-11_idle_03.png",
+              "pixels": [
+                88,
+                64
+              ],
+              "pixel_sha256": "eec100bb0a058faff01302dad67c6e0eb68e62ae5c154fbe187e9d6a0b1a6a6e",
+              "visible_rect": [
+                7,
+                11,
+                65,
+                48
+              ]
+            }
+          ],
+          "unique_pixel_frames": 4,
+          "raw_source": "assets/RAW/enemies/ENM-B04/v001/ENM-11/ENM-11_actions_A.png",
+          "raw_source_exists": true
+        },
+        {
+          "action": "move",
+          "catalog": "assets/PROCESSED/enemies/ENM-B04/v001/catalog.json",
+          "fps": 10,
+          "loop": true,
+          "anchor": [
+            44,
+            32
+          ],
+          "frames": [
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B04/v001/frames/ENM-11_move/ENM-11_move_00.png",
+              "pixels": [
+                88,
+                64
+              ],
+              "pixel_sha256": "7f87dc57c5c009649ddf5f4001ca9e778a43f06c2de23aa3a70ba8dcfd1693b3",
+              "visible_rect": [
+                10,
+                7,
+                66,
+                52
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B04/v001/frames/ENM-11_move/ENM-11_move_01.png",
+              "pixels": [
+                88,
+                64
+              ],
+              "pixel_sha256": "834a64ba283f81f4e3ce4a973047e8e3b05a6131e956e3af4c7b326b443412d5",
+              "visible_rect": [
+                4,
+                7,
+                67,
+                52
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B04/v001/frames/ENM-11_move/ENM-11_move_02.png",
+              "pixels": [
+                88,
+                64
+              ],
+              "pixel_sha256": "7cf5f86d962953bde58a94dded3ec6655cef91177cacce3043eee3d69ac85e7f",
+              "visible_rect": [
+                7,
+                7,
+                67,
+                52
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B04/v001/frames/ENM-11_move/ENM-11_move_03.png",
+              "pixels": [
+                88,
+                64
+              ],
+              "pixel_sha256": "2d64a6f1dd887a97c2804ba8a0f3c584fc370ea402eb81658616a049b1528241",
+              "visible_rect": [
+                6,
+                7,
+                67,
+                52
+              ]
+            }
+          ],
+          "unique_pixel_frames": 4,
+          "raw_source": "assets/RAW/enemies/ENM-B04/v001/ENM-11/ENM-11_actions_A.png",
+          "raw_source_exists": true
+        },
+        {
+          "action": "telegraph",
+          "catalog": "assets/PROCESSED/enemies/ENM-B04/v001/catalog.json",
+          "fps": 10,
+          "loop": false,
+          "anchor": [
+            44,
+            32
+          ],
+          "frames": [
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B04/v001/frames/ENM-11_telegraph/ENM-11_telegraph_00.png",
+              "pixels": [
+                88,
+                64
+              ],
+              "pixel_sha256": "4c3d374b90cbc2e545c600fe4d4ec56c07d800b49ce32dbc476d41fba585a1b3",
+              "visible_rect": [
+                10,
+                11,
+                61,
+                46
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B04/v001/frames/ENM-11_telegraph/ENM-11_telegraph_01.png",
+              "pixels": [
+                88,
+                64
+              ],
+              "pixel_sha256": "5fd53347c6e32b2441f7e3dfddf45eb21a42b9308119890fe31ef3af6dc8da6c",
+              "visible_rect": [
+                0,
+                11,
+                69,
+                46
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B04/v001/frames/ENM-11_telegraph/ENM-11_telegraph_02.png",
+              "pixels": [
+                88,
+                64
+              ],
+              "pixel_sha256": "212df3417f230d566296e1a513832be8b561e0086e8a909df2348ee0e5a50585",
+              "visible_rect": [
+                9,
+                11,
+                69,
+                46
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B04/v001/frames/ENM-11_telegraph/ENM-11_telegraph_03.png",
+              "pixels": [
+                88,
+                64
+              ],
+              "pixel_sha256": "0598e0ed8cdf7a3fe2bf860cd6549dd0448c31702890740ca84c701629894b6a",
+              "visible_rect": [
+                9,
+                11,
+                64,
+                46
+              ]
+            }
+          ],
+          "unique_pixel_frames": 4,
+          "raw_source": "assets/RAW/enemies/ENM-B04/v001/ENM-11/ENM-11_actions_A.png",
+          "raw_source_exists": true
+        },
+        {
+          "action": "attack",
+          "catalog": "assets/PROCESSED/enemies/ENM-B04/v001/catalog.json",
+          "fps": 14,
+          "loop": false,
+          "anchor": [
+            44,
+            32
+          ],
+          "frames": [
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B04/v001/frames/ENM-11_attack/ENM-11_attack_00.png",
+              "pixels": [
+                88,
+                64
+              ],
+              "pixel_sha256": "84419cbdd66f2251f59c1b7349f1c8bb29692eacd36c6fffcb1f530afd5e4e45",
+              "visible_rect": [
+                7,
+                4,
+                67,
+                49
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B04/v001/frames/ENM-11_attack/ENM-11_attack_01.png",
+              "pixels": [
+                88,
+                64
+              ],
+              "pixel_sha256": "7bf135cc3caadb505e08e09f7f33179edb784dbdfc712f57cebf24eed5137182",
+              "visible_rect": [
+                6,
+                4,
+                67,
+                49
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B04/v001/frames/ENM-11_attack/ENM-11_attack_02.png",
+              "pixels": [
+                88,
+                64
+              ],
+              "pixel_sha256": "3528abb86198faf4bcacecdb5c82a6a0f9e5fd3b967e8769db08b77dc343c8e4",
+              "visible_rect": [
+                6,
+                4,
+                76,
+                47
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B04/v001/frames/ENM-11_attack/ENM-11_attack_03.png",
+              "pixels": [
+                88,
+                64
+              ],
+              "pixel_sha256": "225b4df7d3244b2c4fd02985c16684070a95057176a9437e85f5600386a31b16",
+              "visible_rect": [
+                14,
+                4,
+                65,
+                49
+              ]
+            }
+          ],
+          "unique_pixel_frames": 4,
+          "raw_source": "assets/RAW/enemies/ENM-B04/v001/ENM-11/ENM-11_actions_A.png",
+          "raw_source_exists": true
+        },
+        {
+          "action": "recover",
+          "catalog": "assets/PROCESSED/enemies/ENM-B04/v001/catalog.json",
+          "fps": 10,
+          "loop": false,
+          "anchor": [
+            44,
+            32
+          ],
+          "frames": [
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B04/v001/frames/ENM-11_recover/ENM-11_recover_00.png",
+              "pixels": [
+                88,
+                64
+              ],
+              "pixel_sha256": "23c7f4be4db9d7aba8dc009d4112902d07177721c18caed48fe98abc791e844e",
+              "visible_rect": [
+                14,
+                12,
+                64,
+                50
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B04/v001/frames/ENM-11_recover/ENM-11_recover_01.png",
+              "pixels": [
+                88,
+                64
+              ],
+              "pixel_sha256": "5e047c6ce97a29f9697717132fd71e9a27d2fdfbde133d6649bf6544f44b7523",
+              "visible_rect": [
+                6,
+                11,
+                61,
+                50
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B04/v001/frames/ENM-11_recover/ENM-11_recover_02.png",
+              "pixels": [
+                88,
+                64
+              ],
+              "pixel_sha256": "c88a15f200d8c9f5b1b05a8e8f80236df435613a658c9de8b604a8848aaf85fc",
+              "visible_rect": [
+                2,
+                9,
+                71,
+                50
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B04/v001/frames/ENM-11_recover/ENM-11_recover_03.png",
+              "pixels": [
+                88,
+                64
+              ],
+              "pixel_sha256": "0e6706e627ea0bdd6b190348068a0fb2f2d872d20692f15af9c1af6f4c32c926",
+              "visible_rect": [
+                10,
+                9,
+                68,
+                50
+              ]
+            }
+          ],
+          "unique_pixel_frames": 4,
+          "raw_source": "assets/RAW/enemies/ENM-B04/v001/ENM-11/ENM-11_actions_B.png",
+          "raw_source_exists": true
+        },
+        {
+          "action": "hurt",
+          "catalog": "assets/PROCESSED/enemies/ENM-B04/v001/catalog.json",
+          "fps": 12,
+          "loop": false,
+          "anchor": [
+            44,
+            32
+          ],
+          "frames": [
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B04/v001/frames/ENM-11_hurt/ENM-11_hurt_00.png",
+              "pixels": [
+                88,
+                64
+              ],
+              "pixel_sha256": "1b23314d00258718db1f7dbf9e15040fad74efde8fb8b1ccdd53f9bb82240f73",
+              "visible_rect": [
+                11,
+                8,
+                62,
+                49
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B04/v001/frames/ENM-11_hurt/ENM-11_hurt_01.png",
+              "pixels": [
+                88,
+                64
+              ],
+              "pixel_sha256": "04773e59c8ae2c3d7611ac427f6819de8cc1aefe414129fa54d2377a49b87bee",
+              "visible_rect": [
+                4,
+                8,
+                71,
+                49
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B04/v001/frames/ENM-11_hurt/ENM-11_hurt_02.png",
+              "pixels": [
+                88,
+                64
+              ],
+              "pixel_sha256": "7537e85c3ca3377862692ebb83d33b332d2860c8a0f19ae9c1d3424b0b7ed8cf",
+              "visible_rect": [
+                10,
+                8,
+                69,
+                49
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B04/v001/frames/ENM-11_hurt/ENM-11_hurt_03.png",
+              "pixels": [
+                88,
+                64
+              ],
+              "pixel_sha256": "acd8095a5f9b0d3cf53196e0e023c546a2732a531b194c895b3bf51448f7f073",
+              "visible_rect": [
+                7,
+                8,
+                66,
+                49
+              ]
+            }
+          ],
+          "unique_pixel_frames": 4,
+          "raw_source": "assets/RAW/enemies/ENM-B04/v001/ENM-11/ENM-11_actions_B.png",
+          "raw_source_exists": true
+        },
+        {
+          "action": "death",
+          "catalog": "assets/PROCESSED/enemies/ENM-B04/v001/catalog.json",
+          "fps": 10,
+          "loop": false,
+          "anchor": [
+            44,
+            32
+          ],
+          "frames": [
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B04/v001/frames/ENM-11_death/ENM-11_death_00.png",
+              "pixels": [
+                88,
+                64
+              ],
+              "pixel_sha256": "cdf48037543b6c185ab483d49ad6e82cb4b272b53bd55bca8a9443fe93b20196",
+              "visible_rect": [
+                7,
+                8,
+                65,
+                49
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B04/v001/frames/ENM-11_death/ENM-11_death_01.png",
+              "pixels": [
+                88,
+                64
+              ],
+              "pixel_sha256": "1ba3f89ba0bb2a88ebc7c98ca711700e7eb7b8b4be33181f9bdfee4e50d2bc66",
+              "visible_rect": [
+                7,
+                8,
+                65,
+                49
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B04/v001/frames/ENM-11_death/ENM-11_death_02.png",
+              "pixels": [
+                88,
+                64
+              ],
+              "pixel_sha256": "9e77227ea5c693b38391abcf032068825a932c367bae486785329f6bf0d9a6d5",
+              "visible_rect": [
+                7,
+                8,
+                69,
+                49
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B04/v001/frames/ENM-11_death/ENM-11_death_03.png",
+              "pixels": [
+                88,
+                64
+              ],
+              "pixel_sha256": "3a66f00f42f242de896c2b72839f1bf3af24037a6ad271bccd122602b2a40cc2",
+              "visible_rect": [
+                13,
+                9,
+                66,
+                48
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B04/v001/frames/ENM-11_death/ENM-11_death_04.png",
+              "pixels": [
+                88,
+                64
+              ],
+              "pixel_sha256": "b5f12ecdd137fdb2bcf33687e35d4b9123b5c52333bfa01d9e15f99c7980deb4",
+              "visible_rect": [
+                7,
+                8,
+                63,
+                49
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B04/v001/frames/ENM-11_death/ENM-11_death_05.png",
+              "pixels": [
+                88,
+                64
+              ],
+              "pixel_sha256": "13031e636336997361d10c72740e26108abdc522fe8ee2e47c51ed5bff418677",
+              "visible_rect": [
+                7,
+                9,
+                65,
+                48
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B04/v001/frames/ENM-11_death/ENM-11_death_06.png",
+              "pixels": [
+                88,
+                64
+              ],
+              "pixel_sha256": "0bc1c6a8867001fa609255f7f60138d355dbd3ffdfcbb6fe853e8481361de633",
+              "visible_rect": [
+                7,
+                9,
+                64,
+                46
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B04/v001/frames/ENM-11_death/ENM-11_death_07.png",
+              "pixels": [
+                88,
+                64
+              ],
+              "pixel_sha256": "0c33ac9645e57a9fc3e9b4347c24da15551897a0d2f3ba81217392db919a7c14",
+              "visible_rect": [
+                4,
+                9,
+                67,
+                50
+              ]
+            }
+          ],
+          "unique_pixel_frames": 8,
+          "raw_source": "assets/RAW/enemies/ENM-B04/v001/ENM-11/ENM-11_actions_B.png",
+          "raw_source_exists": true
+        }
+      ],
+      "runtime_controller": "scripts/enemies/combat_enemy.gd",
+      "runtime_visual": "scripts/enemies/combat_enemy_visual.gd",
+      "repair": "physical-body edge trigger + melee hitbox reach guard; no invented balance values"
+    },
+    {
+      "id": "moss_guard",
+      "name": "苔甲卫",
+      "map_sources": [
+        "data/maps/forest_03.json",
+        "test/data/forest_candidates/08A.json",
+        "test/data/forest_candidates/08B.json",
+        "test/data/forest_candidates/09A.json",
+        "test/data/forest_candidates/09B.json"
+      ],
+      "attack_material_exists": true,
+      "actions": [
+        {
+          "action": "idle",
+          "catalog": "assets/PROCESSED/enemies/ENM-B03/v001/catalog.json",
+          "fps": 8,
+          "loop": true,
+          "anchor": [
+            64,
+            100
+          ],
+          "frames": [
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B03/v001/frames/ELT-01_idle/ELT-01_idle_00.png",
+              "pixels": [
+                128,
+                144
+              ],
+              "pixel_sha256": "a69502fd1ea1effb6584c7bed6e55d798e50ec612b806d791674245370c447d7",
+              "visible_rect": [
+                8,
+                19,
+                126,
+                125
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B03/v001/frames/ELT-01_idle/ELT-01_idle_01.png",
+              "pixels": [
+                128,
+                144
+              ],
+              "pixel_sha256": "510784f30e3de1bb69cc36c2d9a9aa15f92b2e08707c98f92f4762aad3ba9ce0",
+              "visible_rect": [
+                1,
+                10,
+                123,
+                125
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B03/v001/frames/ELT-01_idle/ELT-01_idle_02.png",
+              "pixels": [
+                128,
+                144
+              ],
+              "pixel_sha256": "11ebde432e406573b426089e87184f30ef52f4545ae3568413c83be66fac312d",
+              "visible_rect": [
+                7,
+                15,
+                122,
+                125
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B03/v001/frames/ELT-01_idle/ELT-01_idle_03.png",
+              "pixels": [
+                128,
+                144
+              ],
+              "pixel_sha256": "5cab46f2b55cf9177b52758d2a261e9c05d9b9a8429ee89d207728b3e6965208",
+              "visible_rect": [
+                3,
+                12,
+                119,
+                125
+              ]
+            }
+          ],
+          "unique_pixel_frames": 4,
+          "raw_source": "assets/RAW/enemies/ENM-B03/v001/moss_guard/moss_guard_A_v002.png",
+          "raw_source_exists": true
+        },
+        {
+          "action": "move",
+          "catalog": "assets/PROCESSED/enemies/ENM-B03/v001/catalog.json",
+          "fps": 10,
+          "loop": true,
+          "anchor": [
+            64,
+            100
+          ],
+          "frames": [
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B03/v001/frames/ELT-01_move/ELT-01_move_00.png",
+              "pixels": [
+                128,
+                144
+              ],
+              "pixel_sha256": "7f7324418de85dd6fb117740deca0e3b1aaa3de7dbdcbd107424a8e9fef88606",
+              "visible_rect": [
+                13,
+                4,
+                125,
+                127
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B03/v001/frames/ELT-01_move/ELT-01_move_01.png",
+              "pixels": [
+                128,
+                144
+              ],
+              "pixel_sha256": "f208fc18acd481b10cb4e6e9e633dff4f2b90f856ff5ed828d02157414264f7b",
+              "visible_rect": [
+                4,
+                9,
+                126,
+                129
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B03/v001/frames/ELT-01_move/ELT-01_move_02.png",
+              "pixels": [
+                128,
+                144
+              ],
+              "pixel_sha256": "1ca035dd97a97616344c06be190f9c9ebcc5d775c76a8196a0c872ac8de95965",
+              "visible_rect": [
+                1,
+                5,
+                125,
+                126
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B03/v001/frames/ELT-01_move/ELT-01_move_03.png",
+              "pixels": [
+                128,
+                144
+              ],
+              "pixel_sha256": "acb1e08feea28ffcd44810ea9eaf24927cd4db6203744ef06e04dd4994b2efb5",
+              "visible_rect": [
+                3,
+                14,
+                120,
+                122
+              ]
+            }
+          ],
+          "unique_pixel_frames": 4,
+          "raw_source": "assets/RAW/enemies/ENM-B03/v001/moss_guard/moss_guard_A_v002.png",
+          "raw_source_exists": true
+        },
+        {
+          "action": "telegraph",
+          "catalog": "assets/PROCESSED/enemies/ENM-B03/v001/catalog.json",
+          "fps": 8,
+          "loop": false,
+          "anchor": [
+            64,
+            100
+          ],
+          "frames": [
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B03/v001/frames/ELT-01_telegraph/ELT-01_telegraph_00.png",
+              "pixels": [
+                128,
+                144
+              ],
+              "pixel_sha256": "acb105b432ebc40e5998ee185bb2a9c35ef9371aed9f83c1e3c2ba5efc76fff2",
+              "visible_rect": [
+                5,
+                19,
+                126,
+                137
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B03/v001/frames/ELT-01_telegraph/ELT-01_telegraph_01.png",
+              "pixels": [
+                128,
+                144
+              ],
+              "pixel_sha256": "8d1bec741958842aaf69866083e869dc0baae3ceffa96077209d1aab4c4c88cf",
+              "visible_rect": [
+                1,
+                12,
+                126,
+                137
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B03/v001/frames/ELT-01_telegraph/ELT-01_telegraph_02.png",
+              "pixels": [
+                128,
+                144
+              ],
+              "pixel_sha256": "921508cca285d0f8c96d73787397abb13ee27230a41ef7d17775a400d11b82e7",
+              "visible_rect": [
+                1,
+                13,
+                124,
+                134
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B03/v001/frames/ELT-01_telegraph/ELT-01_telegraph_03.png",
+              "pixels": [
+                128,
+                144
+              ],
+              "pixel_sha256": "51c14285f283518103c84c2979996b5ab6a72fce1e923f3aaf4f7a31b6aae342",
+              "visible_rect": [
+                15,
+                12,
+                117,
+                137
+              ]
+            }
+          ],
+          "unique_pixel_frames": 4,
+          "raw_source": "assets/RAW/enemies/ENM-B03/v001/moss_guard/moss_guard_A_v002.png",
+          "raw_source_exists": true
+        },
+        {
+          "action": "attack",
+          "catalog": "assets/PROCESSED/enemies/ENM-B03/v001/catalog.json",
+          "fps": 12,
+          "loop": false,
+          "anchor": [
+            64,
+            100
+          ],
+          "frames": [
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B03/v001/frames/ELT-01_attack/ELT-01_attack_00.png",
+              "pixels": [
+                128,
+                144
+              ],
+              "pixel_sha256": "8bdfc382ad36f958d2a1dff05890214a6dc03ac7cb2fb81910ec779e02246220",
+              "visible_rect": [
+                9,
+                23,
+                126,
+                141
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B03/v001/frames/ELT-01_attack/ELT-01_attack_01.png",
+              "pixels": [
+                128,
+                144
+              ],
+              "pixel_sha256": "8caeecbb96091e8a49ddb63a7c65ebf8c5e105d82ab29ba4160a991e6e85009a",
+              "visible_rect": [
+                2,
+                22,
+                126,
+                126
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B03/v001/frames/ELT-01_attack/ELT-01_attack_02.png",
+              "pixels": [
+                128,
+                144
+              ],
+              "pixel_sha256": "d45b1b3be5ccfa830cf9a13bf885d0555ef228d0a666064d92c171e87c456f4e",
+              "visible_rect": [
+                1,
+                22,
+                126,
+                127
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B03/v001/frames/ELT-01_attack/ELT-01_attack_03.png",
+              "pixels": [
+                128,
+                144
+              ],
+              "pixel_sha256": "8c63651d0923a09de548a4a70cdd2e72d893c9368a49ed11e1b238d8364ddd1e",
+              "visible_rect": [
+                1,
+                22,
+                117,
+                142
+              ]
+            }
+          ],
+          "unique_pixel_frames": 4,
+          "raw_source": "assets/RAW/enemies/ENM-B03/v001/moss_guard/moss_guard_A_v002.png",
+          "raw_source_exists": true
+        },
+        {
+          "action": "recover",
+          "catalog": "assets/PROCESSED/enemies/ENM-B03/v001/catalog.json",
+          "fps": 10,
+          "loop": false,
+          "anchor": [
+            64,
+            100
+          ],
+          "frames": [
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B03/v001/frames/ELT-01_recover/ELT-01_recover_00.png",
+              "pixels": [
+                128,
+                144
+              ],
+              "pixel_sha256": "b978c5b6a4b99c4dd3712be692661585aeb4a080b96ddd69becdcf5288efadc9",
+              "visible_rect": [
+                15,
+                22,
+                106,
+                102
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B03/v001/frames/ELT-01_recover/ELT-01_recover_01.png",
+              "pixels": [
+                128,
+                144
+              ],
+              "pixel_sha256": "dee3b579288655c3f5e9c36a088a8b13ee1badaccccd6002a813710c60afccb6",
+              "visible_rect": [
+                13,
+                10,
+                111,
+                101
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B03/v001/frames/ELT-01_recover/ELT-01_recover_02.png",
+              "pixels": [
+                128,
+                144
+              ],
+              "pixel_sha256": "3f938b470848fb221c2457d8bafccc056debeb241ffc793ba36f5907b0315047",
+              "visible_rect": [
+                12,
+                20,
+                115,
+                101
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B03/v001/frames/ELT-01_recover/ELT-01_recover_03.png",
+              "pixels": [
+                128,
+                144
+              ],
+              "pixel_sha256": "1332e75afb486f542373a25852565b49c0ade29eebfc222151df4d7fedbed8ab",
+              "visible_rect": [
+                18,
+                18,
+                115,
+                104
+              ]
+            }
+          ],
+          "unique_pixel_frames": 4,
+          "raw_source": "assets/RAW/enemies/ENM-B03/v001/moss_guard/moss_guard_B_v002.png",
+          "raw_source_exists": true
+        },
+        {
+          "action": "hurt",
+          "catalog": "assets/PROCESSED/enemies/ENM-B03/v001/catalog.json",
+          "fps": 12,
+          "loop": false,
+          "anchor": [
+            64,
+            100
+          ],
+          "frames": [
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B03/v001/frames/ELT-01_hurt/ELT-01_hurt_00.png",
+              "pixels": [
+                128,
+                144
+              ],
+              "pixel_sha256": "9f3edd6f82d9a9545b7de2beda9b72b53c3e3aa99b6a7cd6a7ef1de6f1e8dfb1",
+              "visible_rect": [
+                19,
+                11,
+                107,
+                101
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B03/v001/frames/ELT-01_hurt/ELT-01_hurt_01.png",
+              "pixels": [
+                128,
+                144
+              ],
+              "pixel_sha256": "ddf3f3e597dbce72a56fb33a152f49ffebfdf9ab1d60685f42c53d457f82268d",
+              "visible_rect": [
+                13,
+                4,
+                108,
+                100
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B03/v001/frames/ELT-01_hurt/ELT-01_hurt_02.png",
+              "pixels": [
+                128,
+                144
+              ],
+              "pixel_sha256": "968efcb22f57f4b0432b9bea7196b05e5f4a5e40801c07bc54f63d561ff8563f",
+              "visible_rect": [
+                12,
+                11,
+                115,
+                103
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B03/v001/frames/ELT-01_hurt/ELT-01_hurt_03.png",
+              "pixels": [
+                128,
+                144
+              ],
+              "pixel_sha256": "cc81b89c8277f2faa3fd45f90540525fda744871f49efba9d742337cbba7a1ec",
+              "visible_rect": [
+                18,
+                1,
+                113,
+                102
+              ]
+            }
+          ],
+          "unique_pixel_frames": 4,
+          "raw_source": "assets/RAW/enemies/ENM-B03/v001/moss_guard/moss_guard_B_v002.png",
+          "raw_source_exists": true
+        },
+        {
+          "action": "death",
+          "catalog": "assets/PROCESSED/enemies/ENM-B03/v001/catalog.json",
+          "fps": 10,
+          "loop": false,
+          "anchor": [
+            64,
+            100
+          ],
+          "frames": [
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B03/v001/frames/ELT-01_death/ELT-01_death_00.png",
+              "pixels": [
+                128,
+                144
+              ],
+              "pixel_sha256": "5312472a9346224ffeac5a559d82d266bd41c9284cbb77724e117ffa334d1d25",
+              "visible_rect": [
+                19,
+                8,
+                96,
+                99
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B03/v001/frames/ELT-01_death/ELT-01_death_01.png",
+              "pixels": [
+                128,
+                144
+              ],
+              "pixel_sha256": "796d9a88a0696947f4398c20975d8084f444a70ecfed30b217722fd692a9c806",
+              "visible_rect": [
+                10,
+                30,
+                110,
+                102
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B03/v001/frames/ELT-01_death/ELT-01_death_02.png",
+              "pixels": [
+                128,
+                144
+              ],
+              "pixel_sha256": "036b5b6148e99d7a91405a4919432d6dc855d070a9fe98c2e86ae9ecf944a4fd",
+              "visible_rect": [
+                16,
+                10,
+                111,
+                111
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B03/v001/frames/ELT-01_death/ELT-01_death_03.png",
+              "pixels": [
+                128,
+                144
+              ],
+              "pixel_sha256": "5029d4dbb62d53aece53ee03d3e8c33e834921c7d13b7939e10efe5fa008e2d6",
+              "visible_rect": [
+                21,
+                24,
+                113,
+                111
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B03/v001/frames/ELT-01_death/ELT-01_death_04.png",
+              "pixels": [
+                128,
+                144
+              ],
+              "pixel_sha256": "9e8c189e1e5d3012fc67385cbc4225c1ab9adc7bff25452b6742cc1438755d0e",
+              "visible_rect": [
+                15,
+                34,
+                101,
+                104
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B03/v001/frames/ELT-01_death/ELT-01_death_05.png",
+              "pixels": [
+                128,
+                144
+              ],
+              "pixel_sha256": "f27385b2cc67fd2334a74f211fcb2ef04e7e63e223662dff68a55bf9e4f23003",
+              "visible_rect": [
+                16,
+                55,
+                106,
+                114
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B03/v001/frames/ELT-01_death/ELT-01_death_06.png",
+              "pixels": [
+                128,
+                144
+              ],
+              "pixel_sha256": "108951e1bff9332135b7e1aa40ff2a3e26da21782ce06ade98c404d43407fffc",
+              "visible_rect": [
+                14,
+                21,
+                106,
+                116
+              ]
+            },
+            {
+              "path": "assets/PROCESSED/enemies/ENM-B03/v001/frames/ELT-01_death/ELT-01_death_07.png",
+              "pixels": [
+                128,
+                144
+              ],
+              "pixel_sha256": "e2c647ad5ed3a9cf78a6df8dba2bbabea3fc08945b3d811d7e16eeff294a1edb",
+              "visible_rect": [
+                19,
+                21,
+                105,
+                105
+              ]
+            }
+          ],
+          "unique_pixel_frames": 8,
+          "raw_source": "assets/RAW/enemies/ENM-B03/v001/moss_guard/moss_guard_B_v002.png",
+          "raw_source_exists": true
+        }
+      ],
+      "runtime_controller": "scripts/enemies/combat_enemy.gd",
+      "runtime_visual": "scripts/enemies/combat_enemy_visual.gd",
+      "repair": "physical-body edge trigger + melee hitbox reach guard; no invented balance values"
+    }
+  ],
+  "runtime_validation": {
+    "command": "Godot --headless --path . --fixed-fps 60 --script res://test/integration/test_enemy_attack_animation.gd",
+    "exit_code": 0,
+    "diagnostics": 0,
+    "peak_mib": 166.4,
+    "log": "work/qa/enemy_attack_natural.log",
+    "result": {
+      "checks": 33,
+      "enemies": [
+        {
+          "damage_to_player": 6,
+          "first_attack_position": [
+            332.0,
+            259.92529296875
+          ],
+          "frames_seen": {
+            "attack": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "recover": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "telegraph": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          "id": "moss_beetle",
+          "state_order": [
+            "patrol",
+            "chase",
+            "telegraph",
+            "attack",
+            "recover"
+          ]
+        },
+        {
+          "damage_to_player": 6,
+          "first_attack_position": [
+            337.000427246094,
+            247.717147827148
+          ],
+          "frames_seen": {
+            "attack": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "recover": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "telegraph": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          "id": "milk_moth",
+          "state_order": [
+            "patrol",
+            "chase",
+            "telegraph",
+            "attack",
+            "recover"
+          ]
+        },
+        {
+          "damage_to_player": 12,
+          "first_attack_position": [
+            295.000610351563,
+            259.92529296875
+          ],
+          "frames_seen": {
+            "attack": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "grab_attack": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7
+            ],
+            "grab_ready": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "grab_recover": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "recover": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "telegraph": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          "id": "milk_slime",
+          "state_order": [
+            "patrol",
+            "chase",
+            "telegraph",
+            "attack",
+            "recover",
+            "chase",
+            "telegraph",
+            "attack",
+            "recover"
+          ]
+        },
+        {
+          "damage_to_player": 6,
+          "first_attack_position": [
+            260.0,
+            260.0
+          ],
+          "frames_seen": {
+            "attack": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "recover": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "telegraph": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          "id": "vine_flower",
+          "state_order": [
+            "patrol",
+            "telegraph",
+            "attack",
+            "recover"
+          ]
+        },
+        {
+          "damage_to_player": 10,
+          "first_attack_position": [
+            324.00048828125,
+            259.92529296875
+          ],
+          "frames_seen": {
+            "attack": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "recover": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "telegraph": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          "id": "moss_guard",
+          "state_order": [
+            "patrol",
+            "chase",
+            "telegraph",
+            "attack",
+            "recover"
+          ]
+        }
+      ],
+      "failures": 0
+    }
+  },
+  "registered_but_not_in_existing_natural_maps": [
+    {
+      "id": "lamp_bug",
+      "name": "矿灯虫",
+      "attack_art": {
+        "catalog": "assets/PROCESSED/enemies/ENM-B03/v001/catalog.json",
+        "frames": 4
+      }
+    },
+    {
+      "id": "shadow_wisp",
+      "name": "暗影奶灵",
+      "attack_art": {
+        "catalog": "assets/PROCESSED/enemies/ENM-B04/v001/catalog.json",
+        "frames": 4
+      }
+    },
+    {
+      "id": "acid_slug",
+      "name": "酸液蛞",
+      "attack_art": {
+        "catalog": "assets/PROCESSED/enemies/ENM-B03/v001/catalog.json",
+        "frames": 4
+      }
+    },
+    {
+      "id": "wax_bee",
+      "name": "蜜蜡蜂",
+      "attack_art": {
+        "catalog": "assets/PROCESSED/enemies/ENM-B04/v001/catalog.json",
+        "frames": 4
+      }
+    },
+    {
+      "id": "hive_guard",
+      "name": "蜂巢守卫",
+      "attack_art": {
+        "catalog": "assets/PROCESSED/enemies/ENM-B03/v001/catalog.json",
+        "frames": 4
+      }
+    },
+    {
+      "id": "acid_mother",
+      "name": "酸液母体",
+      "attack_art": {
+        "catalog": "assets/PROCESSED/enemies/ENM-B03/v001/catalog.json",
+        "frames": 4
+      }
+    },
+    {
+      "id": "honey_queen",
+      "name": "蜂蜜女王",
+      "attack_art": {
+        "catalog": "assets/PROCESSED/enemies/ENM-B04/v001/catalog.json",
+        "frames": 4
+      }
+    }
+  ],
+  "art_only_reserve_not_registered_enemy_data": [
+    {
+      "id": "milk_goblin",
+      "catalog": "assets/PROCESSED/enemies/ENM-B04/v001/catalog.json",
+      "frames": 4
+    },
+    {
+      "id": "moss_fox",
+      "catalog": "assets/PROCESSED/enemies/ENM-B04/v001/catalog.json",
+      "frames": 4
+    },
+    {
+      "id": "frost_sprite",
+      "catalog": "assets/PROCESSED/enemies/ENM-B04/v001/catalog.json",
+      "frames": 4
+    }
+  ]
+}

@@ -1,16 +1,30 @@
 {
-  "revision": 1,
+  "revision": 3,
   "active_slots": 3,
   "passive_slots": 2,
   "starter_weapons": [
     "sword_01",
     "bow_01",
-    "milk_staff"
+    "milk_staff",
+    "sword_02",
+    "sword_03",
+    "sword_04",
+    "sword_05",
+    "sword_06",
+    "hammer_02",
+    "hammer_03",
+    "hammer_04",
+    "hammer_05",
+    "rifle_02",
+    "rifle_03",
+    "rifle_04",
+    "rifle_05",
+    "rifle_06"
   ],
   "default_active": [
-    "skill_bubble",
-    "skill_cleave",
-    ""
+    "skill_comet_dash",
+    "skill_giga_milk_beam",
+    "skill_milk_spring"
   ],
   "panel_rect": [
     8,
@@ -50,5 +64,25 @@
   "cursor_hotspot": [
     5,
     3
-  ]
+  ],
+  "weapon_rollout_note": "2026-11-19: grant arsenal and accessories once for prototype use; preserve current equipment and ownership.",
+  "starter_accessories": [
+    "accessory_01",
+    "accessory_02",
+    "accessory_03",
+    "accessory_04",
+    "accessory_05",
+    "accessory_06",
+    "accessory_07",
+    "accessory_08",
+    "accessory_09",
+    "accessory_10",
+    "accessory_11",
+    "accessory_12",
+    "accessory_13",
+    "accessory_14",
+    "accessory_15",
+    "accessory_16"
+  ],
+  "accessory_slots": 2
 }

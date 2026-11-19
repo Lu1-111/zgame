@@ -1,0 +1,1861 @@
+{
+  "revision": 1,
+  "skill_count": 12,
+  "actor_foot_offset": [
+    0,
+    17
+  ],
+  "body_center_offset": [
+    0,
+    -20
+  ],
+  "query_max_results": 96,
+  "contact_margin": 2,
+  "ground_probe_up": 12,
+  "ground_probe_down": 48,
+  "same_ground_tolerance": 12,
+  "target_clearance": 30,
+  "field_intro_frames": 4,
+  "field_outro_frames": 2,
+  "beam_fps": 8,
+  "beam_probe_fractions": [
+    -0.5,
+    0,
+    0.5
+  ],
+  "unguardable_sources": [
+    "hazard",
+    "spike",
+    "lava",
+    "fall"
+  ],
+  "animations": {
+    "skill_omni_slash": {
+      "batch": "SKL-B01",
+      "manifest": "res://assets/PROCESSED/skills/SKL-B01/v001/manifest.json",
+      "kind": "actor",
+      "frames": [
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/actor/skill_omni_slash_actor_01.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/actor/skill_omni_slash_actor_02.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/actor/skill_omni_slash_actor_03.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/actor/skill_omni_slash_actor_04.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/actor/skill_omni_slash_actor_05.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/actor/skill_omni_slash_actor_06.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/actor/skill_omni_slash_actor_07.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/actor/skill_omni_slash_actor_08.png"
+      ],
+      "sha256": [
+        "1b5cf097fcedfc62e210c059b40c9c4d286ad4eaa6c1d3151ea47e6c8dabee2a",
+        "0ba912ef8839ee73ba6b5ed6732a8b255af22a99701c5bd4dd291298d4d50aa5",
+        "3f6fddb3926c0bcdbdbcba3d9a6679781e398f7c91bb0459afc98469d814f3a4",
+        "d593c2b449acc5aeaea974b9fe74b5c20d2ba7c0fcf8d6c9d6eabbf99b8d47ad",
+        "11f3da4d7f25ca8a42ea2838a6c744130d25cd67d2f321a4e49108fa24902df8",
+        "22099d96d2539679ed692389fec88ffb0b74660bdad8ceaed8231a6809a74887",
+        "edfeec43cd857f9c46ead4b96b34cecd8c370ca9daf1c4a2be5964864fc9c6d3",
+        "1f102cf3bc4c4353c7ae4c426f1a878da6823f72d61a079c0c1c62dec24ccf1c"
+      ],
+      "root": [
+        48,
+        90
+      ],
+      "attachment": [
+        0,
+        0
+      ],
+      "fps": 8,
+      "loop": false
+    },
+    "skill_omni_slash__anticipation": {
+      "batch": "SKL-B01",
+      "manifest": "res://assets/PROCESSED/skills/SKL-B01/v001/manifest.json",
+      "kind": "actor",
+      "frames": [
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/actor/skill_omni_slash_actor_01.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/actor/skill_omni_slash_actor_02.png"
+      ],
+      "sha256": [
+        "1b5cf097fcedfc62e210c059b40c9c4d286ad4eaa6c1d3151ea47e6c8dabee2a",
+        "0ba912ef8839ee73ba6b5ed6732a8b255af22a99701c5bd4dd291298d4d50aa5"
+      ],
+      "root": [
+        48,
+        90
+      ],
+      "attachment": [
+        0,
+        0
+      ],
+      "fps": 8,
+      "loop": false
+    },
+    "skill_omni_slash__slashes": {
+      "batch": "SKL-B01",
+      "manifest": "res://assets/PROCESSED/skills/SKL-B01/v001/manifest.json",
+      "kind": "actor",
+      "frames": [
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/actor/skill_omni_slash_actor_03.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/actor/skill_omni_slash_actor_04.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/actor/skill_omni_slash_actor_05.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/actor/skill_omni_slash_actor_06.png"
+      ],
+      "sha256": [
+        "3f6fddb3926c0bcdbdbcba3d9a6679781e398f7c91bb0459afc98469d814f3a4",
+        "d593c2b449acc5aeaea974b9fe74b5c20d2ba7c0fcf8d6c9d6eabbf99b8d47ad",
+        "11f3da4d7f25ca8a42ea2838a6c744130d25cd67d2f321a4e49108fa24902df8",
+        "22099d96d2539679ed692389fec88ffb0b74660bdad8ceaed8231a6809a74887"
+      ],
+      "root": [
+        48,
+        90
+      ],
+      "attachment": [
+        0,
+        0
+      ],
+      "fps": 8,
+      "loop": false
+    },
+    "skill_omni_slash__finisher": {
+      "batch": "SKL-B01",
+      "manifest": "res://assets/PROCESSED/skills/SKL-B01/v001/manifest.json",
+      "kind": "actor",
+      "frames": [
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/actor/skill_omni_slash_actor_07.png"
+      ],
+      "sha256": [
+        "edfeec43cd857f9c46ead4b96b34cecd8c370ca9daf1c4a2be5964864fc9c6d3"
+      ],
+      "root": [
+        48,
+        90
+      ],
+      "attachment": [
+        0,
+        0
+      ],
+      "fps": 8,
+      "loop": false
+    },
+    "skill_omni_slash__recovery": {
+      "batch": "SKL-B01",
+      "manifest": "res://assets/PROCESSED/skills/SKL-B01/v001/manifest.json",
+      "kind": "actor",
+      "frames": [
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/actor/skill_omni_slash_actor_08.png"
+      ],
+      "sha256": [
+        "1f102cf3bc4c4353c7ae4c426f1a878da6823f72d61a079c0c1c62dec24ccf1c"
+      ],
+      "root": [
+        48,
+        90
+      ],
+      "attachment": [
+        0,
+        0
+      ],
+      "fps": 8,
+      "loop": false
+    },
+    "skill_giga_milk_beam": {
+      "batch": "SKL-B01",
+      "manifest": "res://assets/PROCESSED/skills/SKL-B01/v001/manifest.json",
+      "kind": "actor",
+      "frames": [
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/actor/skill_giga_milk_beam_actor_01.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/actor/skill_giga_milk_beam_actor_02.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/actor/skill_giga_milk_beam_actor_03.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/actor/skill_giga_milk_beam_actor_04.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/actor/skill_giga_milk_beam_actor_05.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/actor/skill_giga_milk_beam_actor_06.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/actor/skill_giga_milk_beam_actor_07.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/actor/skill_giga_milk_beam_actor_08.png"
+      ],
+      "sha256": [
+        "c09e7a93547a20e299d59d3461588720072c3353dd9a79f7282e2f80a864d02c",
+        "cb2c6b42b074fe27f2651022c00207faf531a17b868c490a1e556a5d72bc9a6a",
+        "0512f11314e901ff2c3ad5720ea56eb0b3434629050a39b4ec693c495d2bcc62",
+        "8abb7a80fca9ff88c146220e79c8d63561208c4670434edc87f9286f38ed9581",
+        "3abfaad5d571de9b00b1ac9023eafa79dcb9b23f0ebc65a90393580b0ea8696e",
+        "b74996733cbd9bef4fe39e039d9ab108ba02cf7b48b5de1dfe553922cae6e5a6",
+        "bd477b38ff07e70629fed2db3025acdffc7208da37dade714a78881d133bf7fb",
+        "b0546cf2ce25108d00cd666fa7dfbc99597c4e87952d0eeb0bd810b642303401"
+      ],
+      "root": [
+        48,
+        90
+      ],
+      "attachment": [
+        0,
+        0
+      ],
+      "fps": 8,
+      "loop": false
+    },
+    "skill_giga_milk_beam__charge_start": {
+      "batch": "SKL-B01",
+      "manifest": "res://assets/PROCESSED/skills/SKL-B01/v001/manifest.json",
+      "kind": "actor",
+      "frames": [
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/actor/skill_giga_milk_beam_actor_01.png"
+      ],
+      "sha256": [
+        "c09e7a93547a20e299d59d3461588720072c3353dd9a79f7282e2f80a864d02c"
+      ],
+      "root": [
+        48,
+        90
+      ],
+      "attachment": [
+        0,
+        0
+      ],
+      "fps": 8,
+      "loop": false
+    },
+    "skill_giga_milk_beam__charge_grow": {
+      "batch": "SKL-B01",
+      "manifest": "res://assets/PROCESSED/skills/SKL-B01/v001/manifest.json",
+      "kind": "actor",
+      "frames": [
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/actor/skill_giga_milk_beam_actor_02.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/actor/skill_giga_milk_beam_actor_03.png"
+      ],
+      "sha256": [
+        "cb2c6b42b074fe27f2651022c00207faf531a17b868c490a1e556a5d72bc9a6a",
+        "0512f11314e901ff2c3ad5720ea56eb0b3434629050a39b4ec693c495d2bcc62"
+      ],
+      "root": [
+        48,
+        90
+      ],
+      "attachment": [
+        0,
+        0
+      ],
+      "fps": 8,
+      "loop": false
+    },
+    "skill_giga_milk_beam__full_hold_loop": {
+      "batch": "SKL-B01",
+      "manifest": "res://assets/PROCESSED/skills/SKL-B01/v001/manifest.json",
+      "kind": "actor",
+      "frames": [
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/actor/skill_giga_milk_beam_actor_04.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/actor/skill_giga_milk_beam_actor_05.png"
+      ],
+      "sha256": [
+        "8abb7a80fca9ff88c146220e79c8d63561208c4670434edc87f9286f38ed9581",
+        "3abfaad5d571de9b00b1ac9023eafa79dcb9b23f0ebc65a90393580b0ea8696e"
+      ],
+      "root": [
+        48,
+        90
+      ],
+      "attachment": [
+        0,
+        0
+      ],
+      "fps": 8,
+      "loop": true
+    },
+    "skill_giga_milk_beam__release": {
+      "batch": "SKL-B01",
+      "manifest": "res://assets/PROCESSED/skills/SKL-B01/v001/manifest.json",
+      "kind": "actor",
+      "frames": [
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/actor/skill_giga_milk_beam_actor_06.png"
+      ],
+      "sha256": [
+        "b74996733cbd9bef4fe39e039d9ab108ba02cf7b48b5de1dfe553922cae6e5a6"
+      ],
+      "root": [
+        48,
+        90
+      ],
+      "attachment": [
+        0,
+        0
+      ],
+      "fps": 8,
+      "loop": false
+    },
+    "skill_giga_milk_beam__recovery": {
+      "batch": "SKL-B01",
+      "manifest": "res://assets/PROCESSED/skills/SKL-B01/v001/manifest.json",
+      "kind": "actor",
+      "frames": [
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/actor/skill_giga_milk_beam_actor_07.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/actor/skill_giga_milk_beam_actor_08.png"
+      ],
+      "sha256": [
+        "bd477b38ff07e70629fed2db3025acdffc7208da37dade714a78881d133bf7fb",
+        "b0546cf2ce25108d00cd666fa7dfbc99597c4e87952d0eeb0bd810b642303401"
+      ],
+      "root": [
+        48,
+        90
+      ],
+      "attachment": [
+        0,
+        0
+      ],
+      "fps": 8,
+      "loop": false
+    },
+    "skill_comet_dash": {
+      "batch": "SKL-B01",
+      "manifest": "res://assets/PROCESSED/skills/SKL-B01/v001/manifest.json",
+      "kind": "actor",
+      "frames": [
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/actor/skill_comet_dash_actor_01.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/actor/skill_comet_dash_actor_02.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/actor/skill_comet_dash_actor_03.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/actor/skill_comet_dash_actor_04.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/actor/skill_comet_dash_actor_05.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/actor/skill_comet_dash_actor_06.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/actor/skill_comet_dash_actor_07.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/actor/skill_comet_dash_actor_08.png"
+      ],
+      "sha256": [
+        "f83ae2cee00e9d600a961f78c5b31465ee1af9627ae9215eca934f19451cc943",
+        "5c73409df34ae8ee5fb116b41c8b8f9b97daac33fad17497626a477ba1b9c46d",
+        "54f52b51ff3a311d730f6a8b9381ced34a75ae510f7b617e92ea65071c1bcb3d",
+        "735bb66dc322b382b211cd8303d54da67bf21fa76d094229507f3b09cac16b32",
+        "643eee5151a0da8322c055c7b3a404f13336a5014e5fa1a59121dfc9e03bb879",
+        "8bbd71f011f7e1b6714a5a50ae96b99ed54b6dac076ba975025f5dfacd35d2e2",
+        "18616738d9910f9122981311cbb0baf2def93e06719079a88a7a2ba832572217",
+        "25b7a5fdf416052ec4d34dcac896a400855a62a7f7a7d57a7189025a03e54594"
+      ],
+      "root": [
+        48,
+        90
+      ],
+      "attachment": [
+        0,
+        0
+      ],
+      "fps": 8,
+      "loop": false
+    },
+    "skill_comet_dash__anticipation": {
+      "batch": "SKL-B01",
+      "manifest": "res://assets/PROCESSED/skills/SKL-B01/v001/manifest.json",
+      "kind": "actor",
+      "frames": [
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/actor/skill_comet_dash_actor_01.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/actor/skill_comet_dash_actor_02.png"
+      ],
+      "sha256": [
+        "f83ae2cee00e9d600a961f78c5b31465ee1af9627ae9215eca934f19451cc943",
+        "5c73409df34ae8ee5fb116b41c8b8f9b97daac33fad17497626a477ba1b9c46d"
+      ],
+      "root": [
+        48,
+        90
+      ],
+      "attachment": [
+        0,
+        0
+      ],
+      "fps": 8,
+      "loop": false
+    },
+    "skill_comet_dash__dash": {
+      "batch": "SKL-B01",
+      "manifest": "res://assets/PROCESSED/skills/SKL-B01/v001/manifest.json",
+      "kind": "actor",
+      "frames": [
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/actor/skill_comet_dash_actor_03.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/actor/skill_comet_dash_actor_04.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/actor/skill_comet_dash_actor_05.png"
+      ],
+      "sha256": [
+        "54f52b51ff3a311d730f6a8b9381ced34a75ae510f7b617e92ea65071c1bcb3d",
+        "735bb66dc322b382b211cd8303d54da67bf21fa76d094229507f3b09cac16b32",
+        "643eee5151a0da8322c055c7b3a404f13336a5014e5fa1a59121dfc9e03bb879"
+      ],
+      "root": [
+        48,
+        90
+      ],
+      "attachment": [
+        0,
+        0
+      ],
+      "fps": 8,
+      "loop": true
+    },
+    "skill_comet_dash__brake": {
+      "batch": "SKL-B01",
+      "manifest": "res://assets/PROCESSED/skills/SKL-B01/v001/manifest.json",
+      "kind": "actor",
+      "frames": [
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/actor/skill_comet_dash_actor_06.png"
+      ],
+      "sha256": [
+        "8bbd71f011f7e1b6714a5a50ae96b99ed54b6dac076ba975025f5dfacd35d2e2"
+      ],
+      "root": [
+        48,
+        90
+      ],
+      "attachment": [
+        0,
+        0
+      ],
+      "fps": 8,
+      "loop": false
+    },
+    "skill_comet_dash__recovery": {
+      "batch": "SKL-B01",
+      "manifest": "res://assets/PROCESSED/skills/SKL-B01/v001/manifest.json",
+      "kind": "actor",
+      "frames": [
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/actor/skill_comet_dash_actor_07.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/actor/skill_comet_dash_actor_08.png"
+      ],
+      "sha256": [
+        "18616738d9910f9122981311cbb0baf2def93e06719079a88a7a2ba832572217",
+        "25b7a5fdf416052ec4d34dcac896a400855a62a7f7a7d57a7189025a03e54594"
+      ],
+      "root": [
+        48,
+        90
+      ],
+      "attachment": [
+        0,
+        0
+      ],
+      "fps": 8,
+      "loop": false
+    },
+    "skill_star_milk_prison": {
+      "batch": "SKL-B01",
+      "manifest": "res://assets/PROCESSED/skills/SKL-B01/v001/manifest.json",
+      "kind": "actor",
+      "frames": [
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/actor/skill_star_milk_prison_actor_01.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/actor/skill_star_milk_prison_actor_02.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/actor/skill_star_milk_prison_actor_03.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/actor/skill_star_milk_prison_actor_04.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/actor/skill_star_milk_prison_actor_05.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/actor/skill_star_milk_prison_actor_06.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/actor/skill_star_milk_prison_actor_07.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/actor/skill_star_milk_prison_actor_08.png"
+      ],
+      "sha256": [
+        "7b0145bb63785012a776c04d3dbe372f3af3aa0e45b739f96b78eb2bf1f577f4",
+        "2cb6020f249edee9291d1a983db5e0720718965f55d890ce1b165b20918e6a18",
+        "9013b49ba2d2178d8e82bc71244f25db1f0590aae0c06ea33caccd16b8b76f01",
+        "3240ac519d739a92052eff0260244e05cf9d04d65e37c9fe8cda38441967ee30",
+        "699d794320defb634b2c245fd3249a80f8f3edcf2990573fd35b18014b9033e1",
+        "804623d6e7ed044f975a0737cf8a566f5ee2a1a50b5f32d4274e86bfb67e8d76",
+        "7a6fa3cae2b3acd2b39a1dda496637e211eaab7893b24b123659647e823bce85",
+        "2df34e49fc8249cafa08fad54e41df97ffec0bc988aa43e935f3a9643c4af90e"
+      ],
+      "root": [
+        48,
+        90
+      ],
+      "attachment": [
+        0,
+        0
+      ],
+      "fps": 8,
+      "loop": false
+    },
+    "skill_star_milk_prison__anticipation": {
+      "batch": "SKL-B01",
+      "manifest": "res://assets/PROCESSED/skills/SKL-B01/v001/manifest.json",
+      "kind": "actor",
+      "frames": [
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/actor/skill_star_milk_prison_actor_01.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/actor/skill_star_milk_prison_actor_02.png"
+      ],
+      "sha256": [
+        "7b0145bb63785012a776c04d3dbe372f3af3aa0e45b739f96b78eb2bf1f577f4",
+        "2cb6020f249edee9291d1a983db5e0720718965f55d890ce1b165b20918e6a18"
+      ],
+      "root": [
+        48,
+        90
+      ],
+      "attachment": [
+        0,
+        0
+      ],
+      "fps": 8,
+      "loop": false
+    },
+    "skill_star_milk_prison__cast": {
+      "batch": "SKL-B01",
+      "manifest": "res://assets/PROCESSED/skills/SKL-B01/v001/manifest.json",
+      "kind": "actor",
+      "frames": [
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/actor/skill_star_milk_prison_actor_03.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/actor/skill_star_milk_prison_actor_04.png"
+      ],
+      "sha256": [
+        "9013b49ba2d2178d8e82bc71244f25db1f0590aae0c06ea33caccd16b8b76f01",
+        "3240ac519d739a92052eff0260244e05cf9d04d65e37c9fe8cda38441967ee30"
+      ],
+      "root": [
+        48,
+        90
+      ],
+      "attachment": [
+        0,
+        0
+      ],
+      "fps": 8,
+      "loop": false
+    },
+    "skill_star_milk_prison__recovery": {
+      "batch": "SKL-B01",
+      "manifest": "res://assets/PROCESSED/skills/SKL-B01/v001/manifest.json",
+      "kind": "actor",
+      "frames": [
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/actor/skill_star_milk_prison_actor_05.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/actor/skill_star_milk_prison_actor_06.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/actor/skill_star_milk_prison_actor_07.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/actor/skill_star_milk_prison_actor_08.png"
+      ],
+      "sha256": [
+        "699d794320defb634b2c245fd3249a80f8f3edcf2990573fd35b18014b9033e1",
+        "804623d6e7ed044f975a0737cf8a566f5ee2a1a50b5f32d4274e86bfb67e8d76",
+        "7a6fa3cae2b3acd2b39a1dda496637e211eaab7893b24b123659647e823bce85",
+        "2df34e49fc8249cafa08fad54e41df97ffec0bc988aa43e935f3a9643c4af90e"
+      ],
+      "root": [
+        48,
+        90
+      ],
+      "attachment": [
+        0,
+        0
+      ],
+      "fps": 8,
+      "loop": false
+    },
+    "skill_mirror_milk_guard": {
+      "batch": "SKL-B01",
+      "manifest": "res://assets/PROCESSED/skills/SKL-B01/v001/manifest.json",
+      "kind": "actor",
+      "frames": [
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/actor/skill_mirror_milk_guard_actor_01.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/actor/skill_mirror_milk_guard_actor_02.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/actor/skill_mirror_milk_guard_actor_03.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/actor/skill_mirror_milk_guard_actor_04.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/actor/skill_mirror_milk_guard_actor_05.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/actor/skill_mirror_milk_guard_actor_06.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/actor/skill_mirror_milk_guard_actor_07.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/actor/skill_mirror_milk_guard_actor_08.png"
+      ],
+      "sha256": [
+        "569cc7481a6655daeac098bcf86f31494d9f335407e0301340626dd5734f397c",
+        "b7fe903eeb022519e8790c305d862abd7681c93c6a6cb8356359da8ede2da5a1",
+        "555565ae685f908eb0bbf98ef6de9393d61b9b78e127c422945f88ab92a6cf9f",
+        "2ce256bd6872c3494c5fd75ead4ff7455093657fc36514e735e1166496c441c6",
+        "e8710c80416f9586ec6abaf19e6ad422491e8ba962e8ac2d749d22da9f831763",
+        "611232a6b503acd00dca1e623d31f3d8afbb0e1064a2874ffc53ad2774faff17",
+        "1d023c2253a2f3467cc37df0da1b021ef9a9bf3e59d845ae2d752dc5e2d18675",
+        "126898671b771e331fea3c7a45999dedeb1c8f7295528f08d181bf90cc7bf970"
+      ],
+      "root": [
+        48,
+        90
+      ],
+      "attachment": [
+        0,
+        0
+      ],
+      "fps": 8,
+      "loop": false
+    },
+    "skill_mirror_milk_guard__anticipation": {
+      "batch": "SKL-B01",
+      "manifest": "res://assets/PROCESSED/skills/SKL-B01/v001/manifest.json",
+      "kind": "actor",
+      "frames": [
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/actor/skill_mirror_milk_guard_actor_01.png"
+      ],
+      "sha256": [
+        "569cc7481a6655daeac098bcf86f31494d9f335407e0301340626dd5734f397c"
+      ],
+      "root": [
+        48,
+        90
+      ],
+      "attachment": [
+        0,
+        0
+      ],
+      "fps": 8,
+      "loop": false
+    },
+    "skill_mirror_milk_guard__shield_open": {
+      "batch": "SKL-B01",
+      "manifest": "res://assets/PROCESSED/skills/SKL-B01/v001/manifest.json",
+      "kind": "actor",
+      "frames": [
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/actor/skill_mirror_milk_guard_actor_02.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/actor/skill_mirror_milk_guard_actor_03.png"
+      ],
+      "sha256": [
+        "b7fe903eeb022519e8790c305d862abd7681c93c6a6cb8356359da8ede2da5a1",
+        "555565ae685f908eb0bbf98ef6de9393d61b9b78e127c422945f88ab92a6cf9f"
+      ],
+      "root": [
+        48,
+        90
+      ],
+      "attachment": [
+        0,
+        0
+      ],
+      "fps": 8,
+      "loop": false
+    },
+    "skill_mirror_milk_guard__guard_loop": {
+      "batch": "SKL-B01",
+      "manifest": "res://assets/PROCESSED/skills/SKL-B01/v001/manifest.json",
+      "kind": "actor",
+      "frames": [
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/actor/skill_mirror_milk_guard_actor_04.png"
+      ],
+      "sha256": [
+        "2ce256bd6872c3494c5fd75ead4ff7455093657fc36514e735e1166496c441c6"
+      ],
+      "root": [
+        48,
+        90
+      ],
+      "attachment": [
+        0,
+        0
+      ],
+      "fps": 8,
+      "loop": true
+    },
+    "skill_mirror_milk_guard__counter_on_perfect": {
+      "batch": "SKL-B01",
+      "manifest": "res://assets/PROCESSED/skills/SKL-B01/v001/manifest.json",
+      "kind": "actor",
+      "frames": [
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/actor/skill_mirror_milk_guard_actor_05.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/actor/skill_mirror_milk_guard_actor_06.png"
+      ],
+      "sha256": [
+        "e8710c80416f9586ec6abaf19e6ad422491e8ba962e8ac2d749d22da9f831763",
+        "611232a6b503acd00dca1e623d31f3d8afbb0e1064a2874ffc53ad2774faff17"
+      ],
+      "root": [
+        48,
+        90
+      ],
+      "attachment": [
+        0,
+        0
+      ],
+      "fps": 8,
+      "loop": false
+    },
+    "skill_mirror_milk_guard__recovery": {
+      "batch": "SKL-B01",
+      "manifest": "res://assets/PROCESSED/skills/SKL-B01/v001/manifest.json",
+      "kind": "actor",
+      "frames": [
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/actor/skill_mirror_milk_guard_actor_07.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/actor/skill_mirror_milk_guard_actor_08.png"
+      ],
+      "sha256": [
+        "1d023c2253a2f3467cc37df0da1b021ef9a9bf3e59d845ae2d752dc5e2d18675",
+        "126898671b771e331fea3c7a45999dedeb1c8f7295528f08d181bf90cc7bf970"
+      ],
+      "root": [
+        48,
+        90
+      ],
+      "attachment": [
+        0,
+        0
+      ],
+      "fps": 8,
+      "loop": false
+    },
+    "skill_milk_spring": {
+      "batch": "SKL-B01",
+      "manifest": "res://assets/PROCESSED/skills/SKL-B01/v001/manifest.json",
+      "kind": "actor",
+      "frames": [
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/actor/skill_milk_spring_actor_01.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/actor/skill_milk_spring_actor_02.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/actor/skill_milk_spring_actor_03.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/actor/skill_milk_spring_actor_04.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/actor/skill_milk_spring_actor_05.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/actor/skill_milk_spring_actor_06.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/actor/skill_milk_spring_actor_07.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/actor/skill_milk_spring_actor_08.png"
+      ],
+      "sha256": [
+        "21d77e56624237ee5fc280f47ad256be2a61e80207bd2b536ce65cdeebd6f9c7",
+        "c64f3e270f02ecd9a656312de21830289e07731c676a37feba53a6592fc4853c",
+        "ac3d4939de7042841f45a5eec77f51410c57fa2d41ac984bf30719f7facd20ae",
+        "c48e3d60fac1f10d1a199c4f140e5f787f01f4ba68b3b4ab8860212ed0b7a7c6",
+        "31aee99253d0e22abacc0f2c86d0933000b83728741e7109acde1f400f490806",
+        "13776167beecafe682e0aee94e2cd84ea615673b17c30f05df45f82c1feb65d3",
+        "9edfd8cff1a266d17213077429ec00894038996dde43f398d694139e8969d34f",
+        "38ab9d28427458d6be909901e15dd03b27f5e00f5906ea2815bf47d4305f3595"
+      ],
+      "root": [
+        48,
+        90
+      ],
+      "attachment": [
+        0,
+        0
+      ],
+      "fps": 8,
+      "loop": false
+    },
+    "skill_milk_spring__anticipation": {
+      "batch": "SKL-B01",
+      "manifest": "res://assets/PROCESSED/skills/SKL-B01/v001/manifest.json",
+      "kind": "actor",
+      "frames": [
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/actor/skill_milk_spring_actor_01.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/actor/skill_milk_spring_actor_02.png"
+      ],
+      "sha256": [
+        "21d77e56624237ee5fc280f47ad256be2a61e80207bd2b536ce65cdeebd6f9c7",
+        "c64f3e270f02ecd9a656312de21830289e07731c676a37feba53a6592fc4853c"
+      ],
+      "root": [
+        48,
+        90
+      ],
+      "attachment": [
+        0,
+        0
+      ],
+      "fps": 8,
+      "loop": false
+    },
+    "skill_milk_spring__cast": {
+      "batch": "SKL-B01",
+      "manifest": "res://assets/PROCESSED/skills/SKL-B01/v001/manifest.json",
+      "kind": "actor",
+      "frames": [
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/actor/skill_milk_spring_actor_03.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/actor/skill_milk_spring_actor_04.png"
+      ],
+      "sha256": [
+        "ac3d4939de7042841f45a5eec77f51410c57fa2d41ac984bf30719f7facd20ae",
+        "c48e3d60fac1f10d1a199c4f140e5f787f01f4ba68b3b4ab8860212ed0b7a7c6"
+      ],
+      "root": [
+        48,
+        90
+      ],
+      "attachment": [
+        0,
+        0
+      ],
+      "fps": 8,
+      "loop": false
+    },
+    "skill_milk_spring__recovery": {
+      "batch": "SKL-B01",
+      "manifest": "res://assets/PROCESSED/skills/SKL-B01/v001/manifest.json",
+      "kind": "actor",
+      "frames": [
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/actor/skill_milk_spring_actor_05.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/actor/skill_milk_spring_actor_06.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/actor/skill_milk_spring_actor_07.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/actor/skill_milk_spring_actor_08.png"
+      ],
+      "sha256": [
+        "31aee99253d0e22abacc0f2c86d0933000b83728741e7109acde1f400f490806",
+        "13776167beecafe682e0aee94e2cd84ea615673b17c30f05df45f82c1feb65d3",
+        "9edfd8cff1a266d17213077429ec00894038996dde43f398d694139e8969d34f",
+        "38ab9d28427458d6be909901e15dd03b27f5e00f5906ea2815bf47d4305f3595"
+      ],
+      "root": [
+        48,
+        90
+      ],
+      "attachment": [
+        0,
+        0
+      ],
+      "fps": 8,
+      "loop": false
+    },
+    "skill_omni_slash__fx": {
+      "batch": "SKL-B01",
+      "manifest": "res://assets/PROCESSED/skills/SKL-B01/v001/manifest.json",
+      "kind": "fx",
+      "frames": [
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/fx/skill_omni_slash_fx_rising_cut.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/fx/skill_omni_slash_fx_descending_cut.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/fx/skill_omni_slash_fx_opposite_cut.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/fx/skill_omni_slash_fx_horizontal_sweep.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/fx/skill_omni_slash_fx_cross.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/fx/skill_omni_slash_fx_finish.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/fx/skill_omni_slash_fx_breakup.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/fx/skill_omni_slash_fx_fade.png"
+      ],
+      "sha256": [
+        "ebe41168a05b77c9fce8db7182c490c1998ae803089e09a10d76e12ba1c1cbed",
+        "ec8b9c29cc61b1979443ffd5e1db9a4f01f900c7216a2621125d89e2b96971d1",
+        "a829f4690b40a26b7b28763794ed90ae8d67128e168917a851ce310b953cbaf9",
+        "8a82db54219e540e4ddf529d752d1d9aae0a6729a63f5310dbae2f11f6f065ff",
+        "b6f8454e06081c2808da9de190aa2961c10d7bf94877a54da9171108b3ed1804",
+        "67f68f19b79fb0e8ee8a820a1e6ebf193ad0671a4dff4cb71b4a09bfd6c35b7f",
+        "cd882def283c25190f6aa4f30c47b135421fc92a66eef2d1030b3a951b854e43",
+        "1d7d7a5428c513f9d443e9d07041abb0ff9fcc07dda29712c8675c63db8760ea"
+      ],
+      "root": [
+        64,
+        160
+      ],
+      "attachment": [
+        0,
+        0
+      ],
+      "fps": 10,
+      "loop": false
+    },
+    "skill_giga_milk_beam__charge_fx": {
+      "batch": "SKL-B01",
+      "manifest": "res://assets/PROCESSED/skills/SKL-B01/v001/manifest.json",
+      "kind": "fx",
+      "frames": [
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/fx/skill_giga_milk_beam_fx_charge_small.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/fx/skill_giga_milk_beam_fx_charge_medium.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/fx/skill_giga_milk_beam_fx_charge_full_a.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/fx/skill_giga_milk_beam_fx_charge_full_b.png"
+      ],
+      "sha256": [
+        "2e96e9df884b6885efc95ae9552ef918ae10f048a68fe9dfae22b50d81368633",
+        "894eff2df87742685e4cddd58b95508aa52c085ff1980219370fff57dc04b638",
+        "d2cfc39a8a863b81d38df8b6414d4a6b327a021adcdae0dd924a70c418a47023",
+        "ed1de5a1913316c5f8e370db06c40848aa2ef138daec37814b4a122a3b4cfc07"
+      ],
+      "root": [
+        64,
+        64
+      ],
+      "attachment": [
+        14,
+        -30
+      ],
+      "fps": 10,
+      "loop": false
+    },
+    "skill_giga_milk_beam__charge_loop_fx": {
+      "batch": "SKL-B01",
+      "manifest": "res://assets/PROCESSED/skills/SKL-B01/v001/manifest.json",
+      "kind": "fx",
+      "frames": [
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/fx/skill_giga_milk_beam_fx_charge_full_a.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/fx/skill_giga_milk_beam_fx_charge_full_b.png"
+      ],
+      "sha256": [
+        "d2cfc39a8a863b81d38df8b6414d4a6b327a021adcdae0dd924a70c418a47023",
+        "ed1de5a1913316c5f8e370db06c40848aa2ef138daec37814b4a122a3b4cfc07"
+      ],
+      "root": [
+        64,
+        64
+      ],
+      "attachment": [
+        14,
+        -30
+      ],
+      "fps": 8,
+      "loop": true
+    },
+    "skill_giga_milk_beam__release_fx": {
+      "batch": "SKL-B01",
+      "manifest": "res://assets/PROCESSED/skills/SKL-B01/v001/manifest.json",
+      "kind": "fx",
+      "frames": [
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/fx/skill_giga_milk_beam_fx_release_short.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/fx/skill_giga_milk_beam_fx_beam_hold_a.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/fx/skill_giga_milk_beam_fx_beam_hold_b.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/fx/skill_giga_milk_beam_fx_release_fade.png"
+      ],
+      "sha256": [
+        "8d9185aa3dab95530a172f5f70dfd33796a939a2f17769f0adf92143fc7209a7",
+        "887492799839652b265d60d7110c3bfc6b70f7317a835ee6a71a003dc5d035ec",
+        "933071c9292e9e757d941d8d3392598b399604913e22c0c47ca1ccf8c6113785",
+        "e998201c584659317e20b34a29cae8feb12c65434cba0b0508293445ae6183b9"
+      ],
+      "root": [
+        32,
+        72
+      ],
+      "attachment": [
+        14,
+        -30
+      ],
+      "fps": 10,
+      "loop": false
+    },
+    "skill_giga_milk_beam__release_loop_fx": {
+      "batch": "SKL-B01",
+      "manifest": "res://assets/PROCESSED/skills/SKL-B01/v001/manifest.json",
+      "kind": "fx",
+      "frames": [
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/fx/skill_giga_milk_beam_fx_beam_hold_a.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/fx/skill_giga_milk_beam_fx_beam_hold_b.png"
+      ],
+      "sha256": [
+        "887492799839652b265d60d7110c3bfc6b70f7317a835ee6a71a003dc5d035ec",
+        "933071c9292e9e757d941d8d3392598b399604913e22c0c47ca1ccf8c6113785"
+      ],
+      "root": [
+        32,
+        72
+      ],
+      "attachment": [
+        14,
+        -30
+      ],
+      "fps": 8,
+      "loop": true
+    },
+    "skill_comet_dash__fx": {
+      "batch": "SKL-B01",
+      "manifest": "res://assets/PROCESSED/skills/SKL-B01/v001/manifest.json",
+      "kind": "fx",
+      "frames": [
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/fx/skill_comet_dash_fx_bubble_start.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/fx/skill_comet_dash_fx_tail_short.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/fx/skill_comet_dash_fx_tail_grow.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/fx/skill_comet_dash_fx_dash_full.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/fx/skill_comet_dash_fx_dash_hold.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/fx/skill_comet_dash_fx_breakup.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/fx/skill_comet_dash_fx_tail_fade.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/fx/skill_comet_dash_fx_glint_fade.png"
+      ],
+      "sha256": [
+        "96b7a91357cca50858f7a3cabababe1c690af344826b1a1e44a230957c07f4ed",
+        "a2adc0b8d3dd4a681016dac5e2c81097fb77ce9b1dba1b3501060fb5c0b3149c",
+        "45a0ca4ae44e3bd53cc201f6df061ca195acfc19077ca0d60e89eca7b3396dce",
+        "063fd3eb44387a4bee50e97fe127f258447d42620c6325b4498d60f5ad923695",
+        "f5a805ca73030acb50671a5ea03b1154d98d2ddc6c51c598194579f05b402fa0",
+        "3b25a6ea3cfe232bcea80495d110a2f1604bccd08a897a1e60522c18fde02a75",
+        "e185f8fc5fbcc1ea2b3fec60fe07909d765b35e8ab1f00be4347135ad9fc6b03",
+        "3ffc06e450c947a9f1ca84aae66fa71b350ee48ce3ab659be9e19cf9e2a1590a"
+      ],
+      "root": [
+        112,
+        112
+      ],
+      "attachment": [
+        0,
+        0
+      ],
+      "fps": 10,
+      "loop": false
+    },
+    "skill_comet_dash__loop_fx": {
+      "batch": "SKL-B01",
+      "manifest": "res://assets/PROCESSED/skills/SKL-B01/v001/manifest.json",
+      "kind": "fx",
+      "frames": [
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/fx/skill_comet_dash_fx_dash_full.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/fx/skill_comet_dash_fx_dash_hold.png"
+      ],
+      "sha256": [
+        "063fd3eb44387a4bee50e97fe127f258447d42620c6325b4498d60f5ad923695",
+        "f5a805ca73030acb50671a5ea03b1154d98d2ddc6c51c598194579f05b402fa0"
+      ],
+      "root": [
+        112,
+        112
+      ],
+      "attachment": [
+        0,
+        0
+      ],
+      "fps": 8,
+      "loop": true
+    },
+    "skill_star_milk_prison__fx": {
+      "batch": "SKL-B01",
+      "manifest": "res://assets/PROCESSED/skills/SKL-B01/v001/manifest.json",
+      "kind": "fx",
+      "frames": [
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/fx/skill_star_milk_prison_fx_ring_small.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/fx/skill_star_milk_prison_fx_ring_rise.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/fx/skill_star_milk_prison_fx_cage_rise.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/fx/skill_star_milk_prison_fx_cage_full.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/fx/skill_star_milk_prison_fx_hold_a.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/fx/skill_star_milk_prison_fx_hold_b.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/fx/skill_star_milk_prison_fx_breakup.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/fx/skill_star_milk_prison_fx_fade.png"
+      ],
+      "sha256": [
+        "d6e960647cd13e81d1ef1644c902db120846dd52ade555ac7977860d7643ea8a",
+        "26f4dfeb67529ca7d3f7b7184b1556ab2223daf639eb73bad10b8cf15980fc43",
+        "84c0d3eb4da7fed2cb1eba234219dfb9db91bad093a643d003baaa124946a6a8",
+        "37b27f654457072e552c96283c71dfa65925ac0210e5fd11d42aee1d88694094",
+        "90b92abff04ed637ad21a47409d2525083ac46c0dee9ca4d307b281f1feecf81",
+        "8b4c83c74baa73f8934098e2c652c764ae78b6af5c600c7da10521ffdbc909d5",
+        "ff0328504d6e412572cec674db2e922e2d69ad82b75a1f9cf968f8435d7dd4ac",
+        "247b0414ba31cd7ab6f8cd3c8c1916fe8f3a4290d00e4282443b7b472e99fee2"
+      ],
+      "root": [
+        96,
+        120
+      ],
+      "attachment": [
+        80,
+        0
+      ],
+      "fps": 10,
+      "loop": false
+    },
+    "skill_star_milk_prison__loop_fx": {
+      "batch": "SKL-B01",
+      "manifest": "res://assets/PROCESSED/skills/SKL-B01/v001/manifest.json",
+      "kind": "fx",
+      "frames": [
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/fx/skill_star_milk_prison_fx_hold_a.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/fx/skill_star_milk_prison_fx_hold_b.png"
+      ],
+      "sha256": [
+        "90b92abff04ed637ad21a47409d2525083ac46c0dee9ca4d307b281f1feecf81",
+        "8b4c83c74baa73f8934098e2c652c764ae78b6af5c600c7da10521ffdbc909d5"
+      ],
+      "root": [
+        96,
+        120
+      ],
+      "attachment": [
+        80,
+        0
+      ],
+      "fps": 8,
+      "loop": true
+    },
+    "skill_mirror_milk_guard__fx": {
+      "batch": "SKL-B01",
+      "manifest": "res://assets/PROCESSED/skills/SKL-B01/v001/manifest.json",
+      "kind": "fx",
+      "frames": [
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/fx/skill_mirror_milk_guard_fx_form_low.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/fx/skill_mirror_milk_guard_fx_form_rise.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/fx/skill_mirror_milk_guard_fx_hold_a.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/fx/skill_mirror_milk_guard_fx_hold_b.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/fx/skill_mirror_milk_guard_fx_parry_flash.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/fx/skill_mirror_milk_guard_fx_counter_pulse.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/fx/skill_mirror_milk_guard_fx_breakup.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/fx/skill_mirror_milk_guard_fx_fade.png"
+      ],
+      "sha256": [
+        "d6279d1271039b2b58b4b8ae32778f603096b11f87bc715bdbd7c1307d5522ac",
+        "9ec6903c9a9fbe267330da88ad876484d5bf40b5a31a797a73f359fa927695e8",
+        "91d886f1aff89545af49891c67399c54004fc9daf8dae46c0698ae3cb9dde241",
+        "0ee55896aa7582ba3525d8c2861c4cf64c1a5e591ef52b4e3b4394737cc693c5",
+        "f688664e4dc866ca25973263c8780df66caee19391274ccb04840c1faf938a31",
+        "9864cba7a261908b27ef15fd06ece429cc83c0d3aecdffe7fe2a8ff447de48aa",
+        "4070819eb88631b2a88b220dbf3de24840ad25c5800f8e039dd253335dc8c17d",
+        "84db9817c13672f8f2b99290085a47ca8f8d3be8b2274f69aae494c664ee0a73"
+      ],
+      "root": [
+        80,
+        120
+      ],
+      "attachment": [
+        18,
+        0
+      ],
+      "fps": 10,
+      "loop": false
+    },
+    "skill_mirror_milk_guard__loop_fx": {
+      "batch": "SKL-B01",
+      "manifest": "res://assets/PROCESSED/skills/SKL-B01/v001/manifest.json",
+      "kind": "fx",
+      "frames": [
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/fx/skill_mirror_milk_guard_fx_hold_a.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/fx/skill_mirror_milk_guard_fx_hold_b.png"
+      ],
+      "sha256": [
+        "91d886f1aff89545af49891c67399c54004fc9daf8dae46c0698ae3cb9dde241",
+        "0ee55896aa7582ba3525d8c2861c4cf64c1a5e591ef52b4e3b4394737cc693c5"
+      ],
+      "root": [
+        80,
+        120
+      ],
+      "attachment": [
+        18,
+        0
+      ],
+      "fps": 8,
+      "loop": true
+    },
+    "skill_milk_spring__fx": {
+      "batch": "SKL-B01",
+      "manifest": "res://assets/PROCESSED/skills/SKL-B01/v001/manifest.json",
+      "kind": "fx",
+      "frames": [
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/fx/skill_milk_spring_fx_ripple_small.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/fx/skill_milk_spring_fx_ripple_rise.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/fx/skill_milk_spring_fx_spring_rise.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/fx/skill_milk_spring_fx_spring_full.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/fx/skill_milk_spring_fx_hold_a.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/fx/skill_milk_spring_fx_hold_b.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/fx/skill_milk_spring_fx_fall.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/fx/skill_milk_spring_fx_fade.png"
+      ],
+      "sha256": [
+        "c33a689cd920045fb91821f637f8c64343cc39172a09a8d3729f1cec51d2a99e",
+        "2ca1aef49d0ac9c8e1d1f31288293696778495ed1e155f0cd67d4791a417273f",
+        "216cda0a7a7fd045f19846316393adaddf0ded4b2d174c0da298e3026c3f03e5",
+        "7e7f352fd79f8393b2e2f5681a4da846c6d9a7d0dda3391b8511ae16f0daa99e",
+        "3e445d4bec6a3e7b21e9a43ac2d7a435bb9d93a0d0939726f1ddab41a350cd8e",
+        "3f4571c78be372aaa988ac40fea7d4d96e5e0691b5260731c571a42d346a070e",
+        "f987bd37d7f07024a44e57e1e4be3813479c0df415a1f524f10a9d6b1d821b59",
+        "14649ffa13f87e8d28fac9a2541c4f8447a8e92b1d745d3100dc9f117bbfcc42"
+      ],
+      "root": [
+        80,
+        124
+      ],
+      "attachment": [
+        0,
+        0
+      ],
+      "fps": 10,
+      "loop": false
+    },
+    "skill_milk_spring__loop_fx": {
+      "batch": "SKL-B01",
+      "manifest": "res://assets/PROCESSED/skills/SKL-B01/v001/manifest.json",
+      "kind": "fx",
+      "frames": [
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/fx/skill_milk_spring_fx_hold_a.png",
+        "res://assets/PROCESSED/skills/SKL-B01/v001/frames/fx/skill_milk_spring_fx_hold_b.png"
+      ],
+      "sha256": [
+        "3e445d4bec6a3e7b21e9a43ac2d7a435bb9d93a0d0939726f1ddab41a350cd8e",
+        "3f4571c78be372aaa988ac40fea7d4d96e5e0691b5260731c571a42d346a070e"
+      ],
+      "root": [
+        80,
+        124
+      ],
+      "attachment": [
+        0,
+        0
+      ],
+      "fps": 8,
+      "loop": true
+    },
+    "SKL-N01_stance": {
+      "batch": "SKL-NB01",
+      "manifest": "res://assets/PROCESSED/skills/SKL-NB01/v001/manifest.json",
+      "kind": "actor",
+      "frames": [
+        "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N01_stance_right_v001_f01.png",
+        "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N01_stance_right_v001_f02.png",
+        "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N01_stance_right_v001_f03.png",
+        "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N01_stance_right_v001_f04.png"
+      ],
+      "sha256": [
+        "272e3bc2955be6d3e9764ded37bd746cdb74c4af08e440c4edf96a7312652918",
+        "71588af755a8f38b938c5386d606ac7561022b457f47ac313e92e189ff6f4081",
+        "f9961e38877b26e421367e40f0e9ecb84d386ac677d1291563b4d8cec852b667",
+        "c4f664bd53fd8b1fcd116c19e5bdeb141ba014d3ba1edbff9ff69031dbc6af53"
+      ],
+      "root": [
+        48,
+        84
+      ],
+      "attachment": [
+        0,
+        0
+      ],
+      "fps": 20,
+      "loop": false
+    },
+    "SKL-N01_counter_slash": {
+      "batch": "SKL-NB01",
+      "manifest": "res://assets/PROCESSED/skills/SKL-NB01/v001/manifest.json",
+      "kind": "actor",
+      "frames": [
+        "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N01_counter_slash_right_v001_f01.png",
+        "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N01_counter_slash_right_v001_f02.png",
+        "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N01_counter_slash_right_v001_f03.png",
+        "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N01_counter_slash_right_v001_f04.png"
+      ],
+      "sha256": [
+        "21695ec0c471cf730035e0dfc3a5bed7c8ac809362e4c24f239e61859b42e41f",
+        "425da9ff60ce7933f83e5c7e315357db015a587e50e02413dc6a6dbad6b36a22",
+        "df290d4cccd07c00f46213d82dcddc25c6ffd1e70193859b060f567cfa7e4926",
+        "43a7df9765924ac91627beb0131df3739920050836ce6b3607b6d28fb41c0af1"
+      ],
+      "root": [
+        48,
+        84
+      ],
+      "attachment": [
+        0,
+        0
+      ],
+      "fps": 10,
+      "loop": false
+    },
+    "SKL-N01_white_wind": {
+      "batch": "SKL-NB01",
+      "manifest": "res://assets/PROCESSED/skills/SKL-NB01/v001/manifest.json",
+      "kind": "fx",
+      "frames": [
+        "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N01_white_wind_right_v001_f01.png",
+        "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N01_white_wind_right_v001_f02.png",
+        "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N01_white_wind_right_v001_f03.png",
+        "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N01_white_wind_right_v001_f04.png"
+      ],
+      "sha256": [
+        "28e028649ff646b33ff38d27e017e53e0f8f4a4a8c8d699061dc45ed7f2d9a2a",
+        "5fe7f0fb9a586c9f846d93170b017508e90338972e27aae103624b903b3d3ac7",
+        "346933d18399925a2db47cad1bc6d8feb5a5bd1c397071e6276ce6f749542ac4",
+        "b05a765271dc132d06de1ad3bc9ef7ebf808dff8d98ab9a47180ecda970feeef"
+      ],
+      "root": [
+        48,
+        40
+      ],
+      "attachment": [
+        0,
+        0
+      ],
+      "fps": 12,
+      "loop": false
+    },
+    "SKL-N01_slash_fx": {
+      "batch": "SKL-NB01",
+      "manifest": "res://assets/PROCESSED/skills/SKL-NB01/v001/manifest.json",
+      "kind": "fx",
+      "frames": [
+        "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N01_slash_fx_right_v001_f01.png",
+        "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N01_slash_fx_right_v001_f02.png",
+        "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N01_slash_fx_right_v001_f03.png",
+        "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N01_slash_fx_right_v001_f04.png"
+      ],
+      "sha256": [
+        "cb2c88618c5f38f8fdad08adb9257338846d189e08fb23c43b6f9b43f368e9e9",
+        "ebc2163228cff9b0358beecfcea41f68af257ecf72f27e9a1f0e7f19af7f91d7",
+        "17ceebac4f39aaec32db9c24a7bbed5f9c464512db9c05abb30b236377d9bc70",
+        "b9965ded7f40e97939b6a357bffdd7d2f29d104a122236f5a8873ef0f3cb9f18"
+      ],
+      "root": [
+        48,
+        40
+      ],
+      "attachment": [
+        0,
+        0
+      ],
+      "fps": 12,
+      "loop": false
+    },
+    "SKL-N02_laugh_enter": {
+      "batch": "SKL-NB01",
+      "manifest": "res://assets/PROCESSED/skills/SKL-NB01/v001/manifest.json",
+      "kind": "actor",
+      "frames": [
+        "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N02_laugh_enter_right_v001_f01.png",
+        "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N02_laugh_enter_right_v001_f02.png",
+        "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N02_laugh_enter_right_v001_f03.png",
+        "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N02_laugh_enter_right_v001_f04.png"
+      ],
+      "sha256": [
+        "b261ec297532327bfa2351f8a3e0435c517a5f04ac5c801e656d2b795239276e",
+        "74efd150ab7e13d0fa63f7e84173f13e80dd87bbee7737ed6d01ada8aa04d7d8",
+        "aa56b72eac500c6a06a40bf74d24f1915eb6f702e7c56342c5c1c8ae28d2cae7",
+        "09d3a5b769e319496f62887dbecfbd407e109f12fb84636e92594f5069a54c07"
+      ],
+      "root": [
+        48,
+        84
+      ],
+      "attachment": [
+        0,
+        0
+      ],
+      "fps": 10,
+      "loop": false
+    },
+    "SKL-N02_laugh_loop": {
+      "batch": "SKL-NB01",
+      "manifest": "res://assets/PROCESSED/skills/SKL-NB01/v001/manifest.json",
+      "kind": "actor",
+      "frames": [
+        "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N02_laugh_loop_right_v001_f01.png",
+        "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N02_laugh_loop_right_v001_f02.png",
+        "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N02_laugh_loop_right_v001_f03.png",
+        "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N02_laugh_loop_right_v001_f04.png"
+      ],
+      "sha256": [
+        "ff56c21a93e02c4c6b48871d67d537262488195c264828748951f5a9064dc38f",
+        "51d00d66e0f097b2d8382f2e2bb5b196a6fd48a067009c5479cac09a16b2e2f3",
+        "fa9635b62b56d05d10b1a41d7d5ab01f53259cefcc3ff604311494dd0c2dd4eb",
+        "8706da7f9cb0fb97fe30ea49a689c1e2fe01ce498ca80c045ce4f2caab69249f"
+      ],
+      "root": [
+        48,
+        84
+      ],
+      "attachment": [
+        0,
+        0
+      ],
+      "fps": 10,
+      "loop": true
+    },
+    "SKL-N02_red_aura": {
+      "batch": "SKL-NB01",
+      "manifest": "res://assets/PROCESSED/skills/SKL-NB01/v001/manifest.json",
+      "kind": "fx",
+      "frames": [
+        "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N02_red_aura_right_v001_f01.png",
+        "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N02_red_aura_right_v001_f02.png",
+        "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N02_red_aura_right_v001_f03.png",
+        "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N02_red_aura_right_v001_f04.png"
+      ],
+      "sha256": [
+        "c0f54b47a94d96a20cb20afb26f8b92f05765b43efcdc49a548d09b941963ea4",
+        "df77915d94313b91cb15427a30b8dd409acca5af92b79cc4ef955e9381ec0b1f",
+        "78ad65d32b7f7efc101b16114e07041030480f3d2aab158ca4817e97f925aa87",
+        "5b7fffdaee6f5d3605b039f79942787dd3b595abb38959c728772053c30c0228"
+      ],
+      "root": [
+        48,
+        40
+      ],
+      "attachment": [
+        0,
+        0
+      ],
+      "fps": 12,
+      "loop": true
+    },
+    "SKL-N02_kill_heal": {
+      "batch": "SKL-NB01",
+      "manifest": "res://assets/PROCESSED/skills/SKL-NB01/v001/manifest.json",
+      "kind": "fx",
+      "frames": [
+        "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N02_kill_heal_right_v001_f01.png",
+        "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N02_kill_heal_right_v001_f02.png",
+        "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N02_kill_heal_right_v001_f03.png",
+        "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N02_kill_heal_right_v001_f04.png"
+      ],
+      "sha256": [
+        "479007ed97f5610acf919b98d4a8313209c133796bd9ae152498d251f20a67c3",
+        "54ed4189e5acde322515258f40b4e072648b898e251867e8ba907d4b6723550d",
+        "088f2205cbb5847d66e4b82a5f391e5ea4ed803478c920937f4bd9a257031bfc",
+        "35ce5e8f1c895acb1d490dc3d0b344b9baacb84700798f384a72f63b82b3e8e0"
+      ],
+      "root": [
+        48,
+        40
+      ],
+      "attachment": [
+        0,
+        0
+      ],
+      "fps": 12,
+      "loop": false
+    },
+    "SKL-N03_leap": {
+      "batch": "SKL-NB01",
+      "manifest": "res://assets/PROCESSED/skills/SKL-NB01/v001/manifest.json",
+      "kind": "actor",
+      "frames": [
+        "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N03_leap_right_v001_f01.png",
+        "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N03_leap_right_v001_f02.png",
+        "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N03_leap_right_v001_f03.png",
+        "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N03_leap_right_v001_f04.png"
+      ],
+      "sha256": [
+        "614da83abece92b2f5aad8decabd9bb63ee86ac7d243c3366e3250eec30cfc48",
+        "ed63fcccc354f137ba3e6e03744b9bacb18ad9df8f443891147bda0c9ce2b76a",
+        "7d6c4515832bff5313214a2129e569e4d4752479c72d07a0b9cda59493cd5c31",
+        "652bcd47f96104fbc61cc3cba8af94193ca192c8798050f712e2399f3ff37b83"
+      ],
+      "root": [
+        48,
+        84
+      ],
+      "attachment": [
+        0,
+        0
+      ],
+      "fps": 10,
+      "loop": false
+    },
+    "SKL-N03_slam": {
+      "batch": "SKL-NB01",
+      "manifest": "res://assets/PROCESSED/skills/SKL-NB01/v001/manifest.json",
+      "kind": "actor",
+      "frames": [
+        "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N03_slam_right_v001_f01.png",
+        "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N03_slam_right_v001_f02.png",
+        "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N03_slam_right_v001_f03.png",
+        "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N03_slam_right_v001_f04.png"
+      ],
+      "sha256": [
+        "6177dfacd98c97da73e302ef851e8e98500c4c96b14e051e0aafecefa3a5fc7a",
+        "493e11f60594686ab3f43e7df4e8e0f80aec9752846d6c29ab17b45e18adeead",
+        "67bb8507d1012367a6c24d535370ce4c8a92e0a38cf3804d68aafb291e7fcccd",
+        "3ce7814b0d90efdfb487bb356697fafa0473bde002464c4a1904001d0d79bb2f"
+      ],
+      "root": [
+        48,
+        84
+      ],
+      "attachment": [
+        0,
+        0
+      ],
+      "fps": 10,
+      "loop": false
+    },
+    "SKL-N03_ground_impact": {
+      "batch": "SKL-NB01",
+      "manifest": "res://assets/PROCESSED/skills/SKL-NB01/v001/manifest.json",
+      "kind": "fx",
+      "frames": [
+        "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N03_ground_impact_right_v001_f01.png",
+        "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N03_ground_impact_right_v001_f02.png",
+        "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N03_ground_impact_right_v001_f03.png",
+        "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N03_ground_impact_right_v001_f04.png"
+      ],
+      "sha256": [
+        "69cfff1852c9e460aec7286209a8281277561b1dd55db2997cb3d9c432f396a8",
+        "c90c5152bc4d1775d4d12fd0258e21b92eece3e60eac838f3814ba7c937c515f",
+        "0fab18227752859fbfcdb4a57bae157a503bf311a4b14461f73b51361d31cda7",
+        "991a4792c114f5e73821bcbf4acca43ddbd4944eeb4a53941f97f1210a4c17a1"
+      ],
+      "root": [
+        48,
+        64
+      ],
+      "attachment": [
+        0,
+        0
+      ],
+      "fps": 12,
+      "loop": false
+    },
+    "SKL-N03_stun_stars": {
+      "batch": "SKL-NB01",
+      "manifest": "res://assets/PROCESSED/skills/SKL-NB01/v001/manifest.json",
+      "kind": "fx",
+      "frames": [
+        "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N03_stun_stars_right_v001_f01.png",
+        "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N03_stun_stars_right_v001_f02.png",
+        "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N03_stun_stars_right_v001_f03.png",
+        "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N03_stun_stars_right_v001_f04.png"
+      ],
+      "sha256": [
+        "1c422305d976d4382ee09fba8de59253ca368227785f7c0a019624d112e106d2",
+        "71fc91e8af3c825e83b89caebf671ef678fe7789f9568b5ad41af44e44f27d6b",
+        "50ae302b6c770780f46542f8749f4b4983c9f11edf014fcf08cd6b4a6932c329",
+        "cf35598ab076512702db2385bf9d1efe6c4e722d256d2ca5b8aede8687716265"
+      ],
+      "root": [
+        48,
+        40
+      ],
+      "attachment": [
+        0,
+        0
+      ],
+      "fps": 12,
+      "loop": true
+    },
+    "SKL-N04_stomp": {
+      "batch": "SKL-NB01",
+      "manifest": "res://assets/PROCESSED/skills/SKL-NB01/v001/manifest.json",
+      "kind": "actor",
+      "frames": [
+        "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N04_stomp_right_v001_f01.png",
+        "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N04_stomp_right_v001_f02.png",
+        "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N04_stomp_right_v001_f03.png",
+        "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N04_stomp_right_v001_f04.png"
+      ],
+      "sha256": [
+        "d61d5199b8b2c76c8eebb7399f22e6a344e0e97b803b0a4a98a2cf58556c0eee",
+        "de680bfcc019d34243749927450fcc16a8d3f27892f50c70451408c6dcc3816b",
+        "e55acacd6cdefa3a1cdc23e60df158d4e7b3889782d8a8d087c3cb1e18da7b0a",
+        "2c58afb50f5a55635a4c90492766f94db8ef67d539c00cd2dbb86b872e88acb4"
+      ],
+      "root": [
+        48,
+        84
+      ],
+      "attachment": [
+        0,
+        0
+      ],
+      "fps": 10,
+      "loop": false
+    },
+    "SKL-N04_brace_recover": {
+      "batch": "SKL-NB01",
+      "manifest": "res://assets/PROCESSED/skills/SKL-NB01/v001/manifest.json",
+      "kind": "actor",
+      "frames": [
+        "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N04_brace_recover_right_v001_f01.png",
+        "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N04_brace_recover_right_v001_f02.png",
+        "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N04_brace_recover_right_v001_f03.png",
+        "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N04_brace_recover_right_v001_f04.png"
+      ],
+      "sha256": [
+        "d539ff45ce7813fbd201e796b94da79fd56184ea81f13d92af7c35fb0ec115f1",
+        "a3fd0f8da8f5f1ff3ce49f3dea587cfceb561b201f182cbf63305a31875f4271",
+        "bbb4dea091d9fb1608c16398c9c691574ff4862d31eca242f801bf7d31c9e6f3",
+        "473e24c69a5336b74ba4ef6de9278d9973005ef445d3ebfea1619d3c88c5bfcb"
+      ],
+      "root": [
+        48,
+        84
+      ],
+      "attachment": [
+        0,
+        0
+      ],
+      "fps": 10,
+      "loop": false
+    },
+    "SKL-N04_white_aura": {
+      "batch": "SKL-NB01",
+      "manifest": "res://assets/PROCESSED/skills/SKL-NB01/v001/manifest.json",
+      "kind": "fx",
+      "frames": [
+        "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N04_white_aura_right_v001_f01.png",
+        "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N04_white_aura_right_v001_f02.png",
+        "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N04_white_aura_right_v001_f03.png",
+        "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N04_white_aura_right_v001_f04.png"
+      ],
+      "sha256": [
+        "3acbf3b07ff15f5c11bcf7c94a9d0b43f7e7f037799ad116b43a78375d94bd5b",
+        "1e65973277db955e2eddc00471b5590e78c4f82515f147a75a3ac2aeb943f4f9",
+        "9bb29b6475ff16ffbb6afaa63055db3de72e3462ebfd90ef88507883c631d8be",
+        "a8c58bf924db8cfe3e692c948cab1e1b82abbf88942a4a03105bfe055bfe6c6c"
+      ],
+      "root": [
+        48,
+        40
+      ],
+      "attachment": [
+        0,
+        0
+      ],
+      "fps": 12,
+      "loop": true
+    },
+    "SKL-N04_reduced_hit": {
+      "batch": "SKL-NB01",
+      "manifest": "res://assets/PROCESSED/skills/SKL-NB01/v001/manifest.json",
+      "kind": "fx",
+      "frames": [
+        "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N04_reduced_hit_right_v001_f01.png",
+        "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N04_reduced_hit_right_v001_f02.png",
+        "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N04_reduced_hit_right_v001_f03.png",
+        "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N04_reduced_hit_right_v001_f04.png"
+      ],
+      "sha256": [
+        "969e8ed4391898b0e91f48a5893d6d11dc2097f1e1d51ff0ecf27ad02fe5fa7e",
+        "cb0e991c4d00167b7115b04dddacc9918ad798368395651bdef1ef3c670d6f0a",
+        "0b574cc19abd8760c2f9efb633964e9fa0e49c060f99408122401bb56b67c8b9",
+        "b5e201836399ba5df5c8b2eb61dfa82ad5db1b6b8e78bfb58a894dedb006422d"
+      ],
+      "root": [
+        48,
+        40
+      ],
+      "attachment": [
+        0,
+        0
+      ],
+      "fps": 12,
+      "loop": false
+    },
+    "SKL-N05_charge": {
+      "batch": "SKL-NB01",
+      "manifest": "res://assets/PROCESSED/skills/SKL-NB01/v001/manifest.json",
+      "kind": "actor",
+      "frames": [
+        "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N05_charge_right_v001_f01.png",
+        "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N05_charge_right_v001_f02.png",
+        "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N05_charge_right_v001_f03.png",
+        "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N05_charge_right_v001_f04.png"
+      ],
+      "sha256": [
+        "d93bce02da2816155c0b269b786ae17aa4aadcea623ad654691c4861635041ab",
+        "7bd08eaa9135c18ab587fa875efd8d77e9eb00fec24d157d65963705d59c850c",
+        "36ddcfa5318a66ffecffb9937d50f864ba369053c6fe146d4e6f2318892b9cb9",
+        "9dcceca4b4a492bae4692aedb0564af3da9c9749463ebb156f34942eaa0d0fea"
+      ],
+      "root": [
+        48,
+        84
+      ],
+      "attachment": [
+        0,
+        0
+      ],
+      "fps": 4,
+      "loop": false
+    },
+    "SKL-N05_release": {
+      "batch": "SKL-NB01",
+      "manifest": "res://assets/PROCESSED/skills/SKL-NB01/v001/manifest.json",
+      "kind": "actor",
+      "frames": [
+        "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N05_release_right_v001_f01.png",
+        "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N05_release_right_v001_f02.png",
+        "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N05_release_right_v001_f03.png",
+        "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N05_release_right_v001_f04.png"
+      ],
+      "sha256": [
+        "6a44ec588d3645dd73eebfa03ccc1dbd2d6e005aee91adf72d5983a2c0d69d04",
+        "32ce5b706b2326bfb85542849c8a6aec23a452015b80a560edd154df8f93ddab",
+        "e46600417bed8b6552273fbf98cf6b1261f55501e3d31bd7971b6c0bd4d3cdae",
+        "728eac52ac2bfc5fe63d2589d3c9bc42e6cfb32c9242d5871516224e1da8c50a"
+      ],
+      "root": [
+        48,
+        84
+      ],
+      "attachment": [
+        0,
+        0
+      ],
+      "fps": 10,
+      "loop": false
+    },
+    "SKL-N05_orb_loop": {
+      "batch": "SKL-NB01",
+      "manifest": "res://assets/PROCESSED/skills/SKL-NB01/v001/manifest.json",
+      "kind": "fx",
+      "frames": [
+        "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N05_orb_loop_right_v001_f01.png",
+        "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N05_orb_loop_right_v001_f02.png",
+        "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N05_orb_loop_right_v001_f03.png",
+        "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N05_orb_loop_right_v001_f04.png"
+      ],
+      "sha256": [
+        "55ca4548f39c28b80dc35dd6e8e7a47e07e1afcb33431f68c996303abf775c7e",
+        "a7fa301d35fc1d74acf75d30ec2416ad69f47d6a386b12647d4da98b3bed572c",
+        "f923257e838ac2c95efb103e3f71f84dd1e16138bbca67c771f88eb90dca5939",
+        "600cd7c28f81e9a762f14d942a4cd897728e2c185c156dd09d3942948d1a9a4d"
+      ],
+      "root": [
+        64,
+        64
+      ],
+      "attachment": [
+        0,
+        0
+      ],
+      "fps": 12,
+      "loop": true
+    },
+    "SKL-N05_explosion": {
+      "batch": "SKL-NB01",
+      "manifest": "res://assets/PROCESSED/skills/SKL-NB01/v001/manifest.json",
+      "kind": "fx",
+      "frames": [
+        "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N05_explosion_right_v001_f01.png",
+        "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N05_explosion_right_v001_f02.png",
+        "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N05_explosion_right_v001_f03.png",
+        "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N05_explosion_right_v001_f04.png"
+      ],
+      "sha256": [
+        "7db59f2c4799737162043b21b5b725986bdc2cebb9701f3fd4d26cc98af1fc9e",
+        "ee5671ee211995cab3d955d0ff2a2e5f88a02a64dd85c1f99986c8d0233ba284",
+        "3f6499d5eaae468d8a197cf2529442fa221099d32f6c6f1976d114b5fcb12da9",
+        "f905e7f2e2399929bb3409599227514f7434435931872dcc4cbf10125ff3308f"
+      ],
+      "root": [
+        64,
+        64
+      ],
+      "attachment": [
+        0,
+        0
+      ],
+      "fps": 12,
+      "loop": false
+    },
+    "SKL-N06_ground_slap": {
+      "batch": "SKL-NB01",
+      "manifest": "res://assets/PROCESSED/skills/SKL-NB01/v001/manifest.json",
+      "kind": "actor",
+      "frames": [
+        "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N06_ground_slap_right_v001_f01.png",
+        "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N06_ground_slap_right_v001_f02.png",
+        "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N06_ground_slap_right_v001_f03.png",
+        "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N06_ground_slap_right_v001_f04.png"
+      ],
+      "sha256": [
+        "5ad9e3e1cf44ea7a0515d3ddbb2d62479a9adac1b26a40df70dfcc37ea42166e",
+        "752453159adb76b75ba08b6fac1941a60fa68319445411cc508f21849787b1a3",
+        "df42e64b3335f3ccdf5459edc73d95169b3fdd310251d130194ca2628ff298b7",
+        "845d6fee926c9b93c906536c833b89f70414e0b9916a99e8ed20040b079816cd"
+      ],
+      "root": [
+        48,
+        84
+      ],
+      "attachment": [
+        0,
+        0
+      ],
+      "fps": 10,
+      "loop": false
+    },
+    "SKL-N06_rise": {
+      "batch": "SKL-NB01",
+      "manifest": "res://assets/PROCESSED/skills/SKL-NB01/v001/manifest.json",
+      "kind": "actor",
+      "frames": [
+        "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N06_rise_right_v001_f01.png",
+        "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N06_rise_right_v001_f02.png",
+        "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N06_rise_right_v001_f03.png",
+        "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N06_rise_right_v001_f04.png"
+      ],
+      "sha256": [
+        "bf2245474abe760e1880d5be2e8e242d46583de5beacb13d98809b07412600c0",
+        "ff7efae9213312b57f26ae14c6cac15404130977f80f22b4199f9a397a864915",
+        "676e22e31a41bdc2eb7a36dda8900e2d2f003a42ef9222c04363c7e1f5ca51e3",
+        "5e714d5fd6672ace6c7e82af852be90941ebcbbc68501f8a68bca2f8d1250655"
+      ],
+      "root": [
+        48,
+        84
+      ],
+      "attachment": [
+        0,
+        0
+      ],
+      "fps": 10,
+      "loop": false
+    },
+    "SKL-N06_magic_circle": {
+      "batch": "SKL-NB01",
+      "manifest": "res://assets/PROCESSED/skills/SKL-NB01/v001/manifest.json",
+      "kind": "fx",
+      "frames": [
+        "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N06_magic_circle_right_v001_f01.png",
+        "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N06_magic_circle_right_v001_f02.png",
+        "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N06_magic_circle_right_v001_f03.png",
+        "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N06_magic_circle_right_v001_f04.png"
+      ],
+      "sha256": [
+        "eaa2aab8f961742bc245e49a3ee96abe47461ffedbb72da389843723212675e6",
+        "a94da3227899cf835fd30fddc02ea7a2267f40cfad31ed67d5d4d3945f6bbaeb",
+        "77891e4bffe2e6411a2ddf85612883b17733680f22246d5d71bddc860a43533d",
+        "09baa34e22385d70366197039e232247626f49a108bbf6422183144956bd8847"
+      ],
+      "root": [
+        48,
+        64
+      ],
+      "attachment": [
+        0,
+        0
+      ],
+      "fps": 12,
+      "loop": false
+    },
+    "SKL-N06_blue_aura": {
+      "batch": "SKL-NB01",
+      "manifest": "res://assets/PROCESSED/skills/SKL-NB01/v001/manifest.json",
+      "kind": "fx",
+      "frames": [
+        "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N06_blue_aura_right_v001_f01.png",
+        "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N06_blue_aura_right_v001_f02.png",
+        "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N06_blue_aura_right_v001_f03.png",
+        "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N06_blue_aura_right_v001_f04.png"
+      ],
+      "sha256": [
+        "dfda9215530572b240e6e70ab37cbeefa412ae61dc39f9c21925fb144ea136de",
+        "5cf89a396db807cfa44e30e9bc95cc073399e2363ab195db7e3829201e1f3803",
+        "a43eb0de1e278fdcfd43f218fe9c820a51e18c0a72b9c89a3dc74f629f44b81f",
+        "787b2e625ea991e0c51f05c435d8827995bf637e5dc80a098b59254b7083ca92"
+      ],
+      "root": [
+        48,
+        40
+      ],
+      "attachment": [
+        0,
+        0
+      ],
+      "fps": 12,
+      "loop": true
+    }
+  },
+  "beam_components": {
+    "beam_hold_a_muzzle": {
+      "texture": "res://assets/PROCESSED/skills/SKL-B01/v001/beam_components/beam_hold_a_muzzle.png",
+      "root": [
+        32,
+        72
+      ],
+      "sha256": "44aca43566eda0722fb41b8f4a9632ca6cf7716ca56ee39147107d57c8e5c659"
+    },
+    "beam_hold_a_middle": {
+      "texture": "res://assets/PROCESSED/skills/SKL-B01/v001/beam_components/beam_hold_a_middle.png",
+      "root": [
+        0,
+        72
+      ],
+      "sha256": "0641386fb918460087af7757fa6169f383d002908e57d32e0ef29b5805342ab3"
+    },
+    "beam_hold_a_head": {
+      "texture": "res://assets/PROCESSED/skills/SKL-B01/v001/beam_components/beam_hold_a_head.png",
+      "root": [
+        0,
+        72
+      ],
+      "sha256": "8caf70ff4a5bc7da9d465c4b08e4f13edeff6d7ff84e3eceb6cba7d1679bbce0"
+    },
+    "beam_hold_b_muzzle": {
+      "texture": "res://assets/PROCESSED/skills/SKL-B01/v001/beam_components/beam_hold_b_muzzle.png",
+      "root": [
+        32,
+        72
+      ],
+      "sha256": "4f09be0b61aee498ace2c44a43126ebc41d8079b9363931169ffd69e538fe32b"
+    },
+    "beam_hold_b_middle": {
+      "texture": "res://assets/PROCESSED/skills/SKL-B01/v001/beam_components/beam_hold_b_middle.png",
+      "root": [
+        0,
+        72
+      ],
+      "sha256": "498438b39eeadb7a0f9c1ce4f8e2d2caf5033e62627a2335ebcf21ed3f8ff91d"
+    },
+    "beam_hold_b_head": {
+      "texture": "res://assets/PROCESSED/skills/SKL-B01/v001/beam_components/beam_hold_b_head.png",
+      "root": [
+        0,
+        72
+      ],
+      "sha256": "165d16f07ec469055fb26fbc2a6047d87af9017e36fe57dd8c818308402b9025"
+    }
+  }
+}

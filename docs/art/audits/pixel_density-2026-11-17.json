@@ -1,0 +1,1019 @@
+{
+  "date": "2026-11-17",
+  "basis": "640x360 logical screen, approved 64x64 player with ~42px visible height; foreground 1 texel/world unit",
+  "approved_and_current_cave": [
+    {
+      "path": "res://assets/PROCESSED/characters/CHR-01/v001/frames/CHR-01_player_idle_right_v001_f01.png",
+      "pixels": [
+        64,
+        64
+      ],
+      "visible_rect": [
+        8,
+        17,
+        52,
+        59
+      ],
+      "role": "approved_player_reference",
+      "world_units_per_texel": 1,
+      "note": "approved master preserved unchanged"
+    },
+    {
+      "path": "res://assets/environments/props/cave/v001/crystal/crystal_01.png",
+      "pixels": [
+        32,
+        24
+      ],
+      "visible_rect": [
+        0,
+        3,
+        32,
+        24
+      ],
+      "id": "crystal_01",
+      "space": "world",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "native_canvas": [
+        32,
+        24
+      ]
+    },
+    {
+      "path": "res://assets/environments/props/cave/v001/crystal/crystal_02.png",
+      "pixels": [
+        32,
+        32
+      ],
+      "visible_rect": [
+        0,
+        12,
+        32,
+        32
+      ],
+      "id": "crystal_02",
+      "space": "world",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "native_canvas": [
+        32,
+        32
+      ]
+    },
+    {
+      "path": "res://assets/environments/props/cave/v001/crystal/crystal_03.png",
+      "pixels": [
+        32,
+        48
+      ],
+      "visible_rect": [
+        0,
+        16,
+        32,
+        48
+      ],
+      "id": "crystal_03",
+      "space": "world",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "native_canvas": [
+        32,
+        48
+      ]
+    },
+    {
+      "path": "res://assets/environments/props/cave/v001/crystal/crystal_04.png",
+      "pixels": [
+        32,
+        24
+      ],
+      "visible_rect": [
+        0,
+        4,
+        32,
+        24
+      ],
+      "id": "crystal_04",
+      "space": "world",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "native_canvas": [
+        32,
+        24
+      ]
+    },
+    {
+      "path": "res://assets/environments/props/cave/v001/rock/rock_01.png",
+      "pixels": [
+        32,
+        16
+      ],
+      "visible_rect": [
+        0,
+        9,
+        32,
+        16
+      ],
+      "id": "rock_01",
+      "space": "world",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "native_canvas": [
+        32,
+        16
+      ]
+    },
+    {
+      "path": "res://assets/environments/props/cave/v001/rock/rock_02.png",
+      "pixels": [
+        40,
+        32
+      ],
+      "visible_rect": [
+        0,
+        9,
+        40,
+        32
+      ],
+      "id": "rock_02",
+      "space": "world",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "native_canvas": [
+        40,
+        32
+      ]
+    },
+    {
+      "path": "res://assets/environments/props/cave/v001/rock/rock_03.png",
+      "pixels": [
+        32,
+        48
+      ],
+      "visible_rect": [
+        0,
+        11,
+        32,
+        48
+      ],
+      "id": "rock_03",
+      "space": "world",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "native_canvas": [
+        32,
+        48
+      ]
+    },
+    {
+      "path": "res://assets/environments/props/cave/v001/rock/rock_04.png",
+      "pixels": [
+        48,
+        32
+      ],
+      "visible_rect": [
+        0,
+        9,
+        48,
+        32
+      ],
+      "id": "rock_04",
+      "space": "world",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "native_canvas": [
+        48,
+        32
+      ]
+    },
+    {
+      "path": "res://assets/environments/props/cave/v001/ore/ore_01.png",
+      "pixels": [
+        32,
+        32
+      ],
+      "visible_rect": [
+        0,
+        15,
+        32,
+        32
+      ],
+      "id": "ore_01",
+      "space": "world",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "native_canvas": [
+        32,
+        32
+      ]
+    },
+    {
+      "path": "res://assets/environments/props/cave/v001/ore/ore_02.png",
+      "pixels": [
+        32,
+        32
+      ],
+      "visible_rect": [
+        0,
+        12,
+        32,
+        32
+      ],
+      "id": "ore_02",
+      "space": "world",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "native_canvas": [
+        32,
+        32
+      ]
+    },
+    {
+      "path": "res://assets/environments/props/cave/v001/ore/ore_03.png",
+      "pixels": [
+        32,
+        32
+      ],
+      "visible_rect": [
+        0,
+        10,
+        32,
+        32
+      ],
+      "id": "ore_03",
+      "space": "world",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "native_canvas": [
+        32,
+        32
+      ]
+    },
+    {
+      "path": "res://assets/environments/props/cave/v001/ore/ore_04.png",
+      "pixels": [
+        32,
+        32
+      ],
+      "visible_rect": [
+        0,
+        13,
+        32,
+        32
+      ],
+      "id": "ore_04",
+      "space": "world",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "native_canvas": [
+        32,
+        32
+      ]
+    },
+    {
+      "path": "res://assets/environments/props/cave/v001/bones/bones_01.png",
+      "pixels": [
+        32,
+        24
+      ],
+      "visible_rect": [
+        0,
+        10,
+        32,
+        24
+      ],
+      "id": "bones_01",
+      "space": "world",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "native_canvas": [
+        32,
+        24
+      ]
+    },
+    {
+      "path": "res://assets/environments/props/cave/v001/bones/bones_02.png",
+      "pixels": [
+        48,
+        32
+      ],
+      "visible_rect": [
+        0,
+        12,
+        48,
+        32
+      ],
+      "id": "bones_02",
+      "space": "world",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "native_canvas": [
+        48,
+        32
+      ]
+    },
+    {
+      "path": "res://assets/environments/props/cave/v001/bones/bones_03.png",
+      "pixels": [
+        48,
+        16
+      ],
+      "visible_rect": [
+        0,
+        0,
+        48,
+        16
+      ],
+      "id": "bones_03",
+      "space": "world",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "native_canvas": [
+        48,
+        16
+      ]
+    },
+    {
+      "path": "res://assets/environments/props/cave/v001/bones/bones_04.png",
+      "pixels": [
+        48,
+        24
+      ],
+      "visible_rect": [
+        0,
+        7,
+        48,
+        24
+      ],
+      "id": "bones_04",
+      "space": "world",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "native_canvas": [
+        48,
+        24
+      ]
+    },
+    {
+      "path": "res://assets/environments/props/cave/v001/chests/chest_closed.png",
+      "pixels": [
+        48,
+        40
+      ],
+      "visible_rect": [
+        4,
+        14,
+        44,
+        40
+      ],
+      "id": "chest_closed",
+      "space": "world",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "native_canvas": [
+        48,
+        40
+      ]
+    },
+    {
+      "path": "res://assets/environments/props/cave/v001/chests/chest_locked.png",
+      "pixels": [
+        48,
+        40
+      ],
+      "visible_rect": [
+        4,
+        14,
+        44,
+        40
+      ],
+      "id": "chest_locked",
+      "space": "world",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "native_canvas": [
+        48,
+        40
+      ]
+    },
+    {
+      "path": "res://assets/environments/props/cave/v001/chests/chest_opening.png",
+      "pixels": [
+        48,
+        40
+      ],
+      "visible_rect": [
+        4,
+        10,
+        44,
+        40
+      ],
+      "id": "chest_opening",
+      "space": "world",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "native_canvas": [
+        48,
+        40
+      ]
+    },
+    {
+      "path": "res://assets/environments/props/cave/v001/chests/chest_open.png",
+      "pixels": [
+        48,
+        40
+      ],
+      "visible_rect": [
+        4,
+        4,
+        44,
+        40
+      ],
+      "id": "chest_open",
+      "space": "world",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "native_canvas": [
+        48,
+        40
+      ]
+    },
+    {
+      "path": "res://assets/environments/terrain/cave/v001/platforms/platform_01.png",
+      "pixels": [
+        48,
+        24
+      ],
+      "visible_rect": [
+        0,
+        0,
+        48,
+        20
+      ],
+      "id": "platform_01",
+      "space": "world",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "native_canvas": [
+        48,
+        24
+      ]
+    },
+    {
+      "path": "res://assets/environments/terrain/cave/v001/platforms/platform_02.png",
+      "pixels": [
+        48,
+        24
+      ],
+      "visible_rect": [
+        0,
+        0,
+        48,
+        20
+      ],
+      "id": "platform_02",
+      "space": "world",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "native_canvas": [
+        48,
+        24
+      ]
+    },
+    {
+      "path": "res://assets/environments/terrain/cave/v001/hazards/stalagmites_01.png",
+      "pixels": [
+        48,
+        40
+      ],
+      "visible_rect": [
+        0,
+        8,
+        48,
+        40
+      ],
+      "id": "stalagmites_01",
+      "space": "world",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "native_canvas": [
+        48,
+        40
+      ]
+    },
+    {
+      "path": "res://assets/environments/terrain/cave/v001/hazards/stalagmites_02.png",
+      "pixels": [
+        48,
+        40
+      ],
+      "visible_rect": [
+        0,
+        11,
+        48,
+        40
+      ],
+      "id": "stalagmites_02",
+      "space": "world",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "native_canvas": [
+        48,
+        40
+      ]
+    },
+    {
+      "path": "res://assets/environments/terrain/cave/v001/hazards/stalagmites_03.png",
+      "pixels": [
+        48,
+        40
+      ],
+      "visible_rect": [
+        0,
+        8,
+        48,
+        40
+      ],
+      "id": "stalagmites_03",
+      "space": "world",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "native_canvas": [
+        48,
+        40
+      ]
+    },
+    {
+      "path": "res://assets/environments/terrain/cave/v001/hazards/stalagmites_04.png",
+      "pixels": [
+        48,
+        40
+      ],
+      "visible_rect": [
+        0,
+        11,
+        48,
+        40
+      ],
+      "id": "stalagmites_04",
+      "space": "world",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "native_canvas": [
+        48,
+        40
+      ]
+    },
+    {
+      "path": "res://assets/environments/backgrounds/cave/v001/deep_cavern.png",
+      "pixels": [
+        640,
+        360
+      ],
+      "visible_rect": [
+        0,
+        0,
+        640,
+        360
+      ],
+      "id": "deep_cavern",
+      "space": "screen",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "native_canvas": [
+        640,
+        360
+      ]
+    }
+  ],
+  "current_forest": [
+    {
+      "path": "res://assets/environments/backgrounds/forest/v002/deep_woodland.png",
+      "pixels": [
+        640,
+        360
+      ],
+      "visible_rect": [
+        0,
+        0,
+        640,
+        360
+      ],
+      "map": "forest_01",
+      "status": "native_640x360_screen_background",
+      "runtime_filter": "nearest",
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "path": "res://assets/environments/terrain/forest/v002/rock_field.png",
+      "pixels": [
+        256,
+        256
+      ],
+      "visible_rect": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "map": "forest_01",
+      "world_pixels": [
+        256,
+        256
+      ],
+      "source_texels_per_world_unit": [
+        1.0,
+        1.0
+      ],
+      "status": "native_world_field"
+    },
+    {
+      "path": "res://assets/environments/backgrounds/forest/v002/deep_woodland.png",
+      "pixels": [
+        640,
+        360
+      ],
+      "visible_rect": [
+        0,
+        0,
+        640,
+        360
+      ],
+      "map": "forest_02",
+      "status": "native_640x360_screen_background",
+      "runtime_filter": "nearest",
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "path": "res://assets/environments/terrain/forest/v002/rock_field.png",
+      "pixels": [
+        256,
+        256
+      ],
+      "visible_rect": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "map": "forest_02",
+      "world_pixels": [
+        256,
+        256
+      ],
+      "source_texels_per_world_unit": [
+        1.0,
+        1.0
+      ],
+      "status": "native_world_field"
+    },
+    {
+      "path": "res://assets/environments/props/forest/v002/fallen_log.png",
+      "pixels": [
+        96,
+        40
+      ],
+      "visible_rect": [
+        0,
+        0,
+        95,
+        40
+      ],
+      "map": "forest_02",
+      "id": "fallen_log",
+      "status": "native_world_prop",
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "path": "res://assets/environments/props/forest/v002/broken_waystone.png",
+      "pixels": [
+        32,
+        48
+      ],
+      "visible_rect": [
+        1,
+        16,
+        32,
+        48
+      ],
+      "map": "forest_02",
+      "id": "broken_waystone",
+      "status": "native_world_prop",
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "path": "res://assets/environments/props/forest/v002/forest_fungi.png",
+      "pixels": [
+        48,
+        32
+      ],
+      "visible_rect": [
+        1,
+        5,
+        48,
+        32
+      ],
+      "map": "forest_02",
+      "id": "forest_fungi",
+      "status": "native_world_prop",
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "path": "res://assets/environments/props/forest/v002/hanging_roots.png",
+      "pixels": [
+        48,
+        64
+      ],
+      "visible_rect": [
+        1,
+        0,
+        47,
+        40
+      ],
+      "map": "forest_02",
+      "id": "hanging_roots",
+      "status": "native_world_prop",
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "path": "res://assets/environments/backgrounds/forest/v002/deep_woodland.png",
+      "pixels": [
+        640,
+        360
+      ],
+      "visible_rect": [
+        0,
+        0,
+        640,
+        360
+      ],
+      "map": "forest_03",
+      "status": "native_640x360_screen_background",
+      "runtime_filter": "nearest",
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "path": "res://assets/environments/terrain/forest/v002/rock_field.png",
+      "pixels": [
+        256,
+        256
+      ],
+      "visible_rect": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "map": "forest_03",
+      "world_pixels": [
+        256,
+        256
+      ],
+      "source_texels_per_world_unit": [
+        1.0,
+        1.0
+      ],
+      "status": "native_world_field"
+    },
+    {
+      "path": "res://assets/environments/props/forest/v002/fallen_log.png",
+      "pixels": [
+        96,
+        40
+      ],
+      "visible_rect": [
+        0,
+        0,
+        95,
+        40
+      ],
+      "map": "forest_03",
+      "id": "fallen_log",
+      "status": "native_world_prop",
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "path": "res://assets/environments/props/forest/v002/broken_waystone.png",
+      "pixels": [
+        32,
+        48
+      ],
+      "visible_rect": [
+        1,
+        16,
+        32,
+        48
+      ],
+      "map": "forest_03",
+      "id": "broken_waystone",
+      "status": "native_world_prop",
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "path": "res://assets/environments/props/forest/v002/forest_fungi.png",
+      "pixels": [
+        48,
+        32
+      ],
+      "visible_rect": [
+        1,
+        5,
+        48,
+        32
+      ],
+      "map": "forest_03",
+      "id": "forest_fungi",
+      "status": "native_world_prop",
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "path": "res://assets/environments/props/forest/v002/hanging_roots.png",
+      "pixels": [
+        48,
+        64
+      ],
+      "visible_rect": [
+        1,
+        0,
+        47,
+        40
+      ],
+      "map": "forest_03",
+      "id": "hanging_roots",
+      "status": "native_world_prop",
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "path": "res://assets/environments/props/forest/v002/glow_fungi.png",
+      "pixels": [
+        48,
+        32
+      ],
+      "visible_rect": [
+        4,
+        0,
+        46,
+        32
+      ],
+      "map": "forest_03",
+      "id": "glow_fungi",
+      "status": "native_world_prop",
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "path": "res://assets/environments/props/forest/v002/seedpod_vines.png",
+      "pixels": [
+        48,
+        64
+      ],
+      "visible_rect": [
+        0,
+        0,
+        47,
+        41
+      ],
+      "map": "forest_03",
+      "id": "seedpod_vines",
+      "status": "native_world_prop",
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "path": "res://assets/environments/props/forest/v002/root_arch.png",
+      "pixels": [
+        96,
+        64
+      ],
+      "visible_rect": [
+        1,
+        1,
+        95,
+        64
+      ],
+      "map": "forest_03",
+      "id": "root_arch",
+      "status": "native_world_prop",
+      "runtime_scale": [
+        1,
+        1
+      ]
+    }
+  ],
+  "historical_forest_deviations": [
+    {
+      "path": "res://assets/environments/terrain/forest_01/moss_root_cliff_v1.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "world_size": [
+        512,
+        512
+      ],
+      "status": "backed_up_original; active shared copy retained only for camp dependency; not a new-art reference",
+      "note": "Original snapshot: backup/2026-11-17_forest_original; not used by rebuilt forest maps"
+    },
+    {
+      "path": "res://assets/environments/terrain/forest_01/platform_sheet_v1.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "status": "backed_up_original; active shared copy retained only for camp dependency; not a new-art reference",
+      "note": "Original snapshot: backup/2026-11-17_forest_original; not used by rebuilt forest maps"
+    }
+  ],
+  "scope": "Forest v002 and cave native conversion; approved actor masters unchanged; old forest source/maps backed up"
+}

@@ -1,0 +1,376 @@
+{
+  "canvas": [
+    96.0,
+    96.0
+  ],
+  "anchor": [
+    48.0,
+    84.0
+  ],
+  "native_anchor": [
+    32.0,
+    58.0
+  ],
+  "export_dir": "res://assets/PROCESSED/characters/CHR-01/guard_v3/",
+  "weapons": [
+    "sword",
+    "rifle",
+    "hammer",
+    "staff"
+  ],
+  "poses": [
+    {
+      "source": "hammer_1_4",
+      "hand": [
+        39.0,
+        43.0
+      ],
+      "angle_degrees": -5.0,
+      "arm_regions": [
+        [
+          25.0,
+          34.0,
+          20.0,
+          13.0
+        ]
+      ],
+      "stage": "prepare",
+      "source_path": "res://assets/PROCESSED/characters/CHR-01/v001/frames/CHR-01_player_hammer_1_right_v001_f04.png",
+      "source_sha256": "e84428d9a767bced20550f81ce3d6397e62c5043d178af2e194a23ebc33a556c",
+      "source_origin": [
+        16.0,
+        32.0
+      ],
+      "weapon_masks": [
+        [
+          45.0,
+          34.0,
+          19.0,
+          22.0
+        ]
+      ],
+      "body_path": "res://assets/PROCESSED/characters/CHR-01/guard_v3/bodies/body_00.png",
+      "body_sha256": "225cfb26637cd8996477db1d1732eb3e395373c540a9881ded8e4d19da4ba70f",
+      "palm_regions": [
+        [
+          38.0,
+          42.0,
+          3.0,
+          3.0
+        ],
+        [
+          36.0,
+          44.0,
+          2.0,
+          2.0
+        ]
+      ]
+    },
+    {
+      "source": "hammer_1_3",
+      "hand": [
+        44.0,
+        44.0
+      ],
+      "angle_degrees": -20.0,
+      "arm_regions": [
+        [
+          27.0,
+          34.0,
+          20.0,
+          14.0
+        ]
+      ],
+      "stage": "raise",
+      "source_path": "res://assets/PROCESSED/characters/CHR-01/v001/frames/CHR-01_player_hammer_1_right_v001_f03.png",
+      "source_sha256": "eab5b368a597842b0d46323ab2e6abdfe92c94a7924545baa464a5cc6b9eb25b",
+      "source_origin": [
+        16.0,
+        32.0
+      ],
+      "weapon_masks": [
+        [
+          48.0,
+          43.0,
+          16.0,
+          21.0
+        ]
+      ],
+      "body_path": "res://assets/PROCESSED/characters/CHR-01/guard_v3/bodies/body_01.png",
+      "body_sha256": "561fd74e8f13a2f7e0f613ed2fdc5b0dc73b12925ef9db5aae951274eb543547",
+      "palm_regions": [
+        [
+          43.0,
+          43.0,
+          3.0,
+          3.0
+        ],
+        [
+          41.0,
+          45.0,
+          2.0,
+          2.0
+        ]
+      ]
+    },
+    {
+      "source": "hammer_1_2",
+      "hand": [
+        43.0,
+        40.0
+      ],
+      "angle_degrees": -40.0,
+      "arm_regions": [
+        [
+          27.0,
+          33.0,
+          20.0,
+          14.0
+        ]
+      ],
+      "stage": "hold",
+      "source_path": "res://assets/PROCESSED/characters/CHR-01/v001/frames/CHR-01_player_hammer_1_right_v001_f02.png",
+      "source_sha256": "bf60277981b6521ab87946afd7e83788cfbbbbe0f608e9c32f0cb54d3adb180e",
+      "source_origin": [
+        16.0,
+        32.0
+      ],
+      "weapon_masks": [
+        [
+          47.0,
+          34.0,
+          17.0,
+          18.0
+        ]
+      ],
+      "body_path": "res://assets/PROCESSED/characters/CHR-01/guard_v3/bodies/body_02.png",
+      "body_sha256": "c0583fcc5acc665a232f6d824b6f840263bed7efe87a2d93a695627fd44f7e4e",
+      "palm_regions": [
+        [
+          42.0,
+          39.0,
+          3.0,
+          3.0
+        ],
+        [
+          40.0,
+          41.0,
+          2.0,
+          2.0
+        ]
+      ]
+    }
+  ],
+  "version": 3.0,
+  "weapon_sources": {
+    "sword": {
+      "renderer": "res://scripts/player/pixel_hero_rig.gd",
+      "method": "_draw_sword",
+      "reference": "res://assets/PROCESSED/characters/CHR-01/rpg_v8/sword_3_04.png",
+      "animation": "sword_3",
+      "sha256": "ade7eec7107e8f01a9a7594c40dbe7f9ec7cd39111092c81f1f17eec4b49c30d",
+      "motion_sha256": "cd5f9ddc36bffa984c15a60f98fad4cd4a7798f9407eb8fe212b2c67ce159e38",
+      "frames": [
+        {
+          "path": "res://assets/PROCESSED/characters/CHR-01/guard_v3/guard_sword_00.png",
+          "weapon_path": "res://assets/PROCESSED/characters/CHR-01/guard_v3/weapons/guard_sword_00.png",
+          "weapon_sha256": "c41ade9f9ac60261238711850e7d380b2d2bbb8b2c53c00fa0ec9e5e1f7e1b82"
+        },
+        {
+          "path": "res://assets/PROCESSED/characters/CHR-01/guard_v3/guard_sword_01.png",
+          "weapon_path": "res://assets/PROCESSED/characters/CHR-01/guard_v3/weapons/guard_sword_01.png",
+          "weapon_sha256": "4776f8d85218110143559820aebefd0f4ef05db94041f1258181767603f28007"
+        },
+        {
+          "path": "res://assets/PROCESSED/characters/CHR-01/guard_v3/guard_sword_02.png",
+          "weapon_path": "res://assets/PROCESSED/characters/CHR-01/guard_v3/weapons/guard_sword_02.png",
+          "weapon_sha256": "ba54ec41b8746a61b9c21c2682835fff81c8631e5e4c8b8b08e6ba21e0ede380"
+        }
+      ],
+      "renderer_sha256_at_generation": "ec727910459dddb486c7594904b6010bf2b6b026c8ae887f6170266bd7975020",
+      "renderer_change": "2026-11-17: independent appearance lookup; original weapon geometry retained"
+    },
+    "rifle": {
+      "renderer": "res://scripts/player/pixel_hero_rig.gd",
+      "method": "_draw_rifle",
+      "animation": "rifle_shot",
+      "sha256": "ade7eec7107e8f01a9a7594c40dbe7f9ec7cd39111092c81f1f17eec4b49c30d",
+      "motion_sha256": "cd5f9ddc36bffa984c15a60f98fad4cd4a7798f9407eb8fe212b2c67ce159e38",
+      "frames": [
+        {
+          "path": "res://assets/PROCESSED/characters/CHR-01/guard_v3/guard_rifle_00.png",
+          "weapon_path": "res://assets/PROCESSED/characters/CHR-01/guard_v3/weapons/guard_rifle_00.png",
+          "weapon_sha256": "4166848b66ca274b2b40116a28dfa5f8d49f323c781623285f11492ff761aaec"
+        },
+        {
+          "path": "res://assets/PROCESSED/characters/CHR-01/guard_v3/guard_rifle_01.png",
+          "weapon_path": "res://assets/PROCESSED/characters/CHR-01/guard_v3/weapons/guard_rifle_01.png",
+          "weapon_sha256": "2998d7e03e731138583a1fe0dbc13fd2b514bdfb763303a1f22355742f972c73"
+        },
+        {
+          "path": "res://assets/PROCESSED/characters/CHR-01/guard_v3/guard_rifle_02.png",
+          "weapon_path": "res://assets/PROCESSED/characters/CHR-01/guard_v3/weapons/guard_rifle_02.png",
+          "weapon_sha256": "b38ff7faa01e218c498e8d806bddfbacf7ccce4baa4a2892ba9ad981319cd3ea"
+        }
+      ],
+      "renderer_sha256_at_generation": "ec727910459dddb486c7594904b6010bf2b6b026c8ae887f6170266bd7975020",
+      "renderer_change": "2026-11-17: independent appearance lookup; original weapon geometry retained"
+    },
+    "hammer": {
+      "frame": "hammer_1_2",
+      "source_origin": [
+        16.0,
+        32.0
+      ],
+      "source_hand": [
+        43.0,
+        40.0
+      ],
+      "source_angle_degrees": 0.0,
+      "regions": [
+        [
+          47.0,
+          35.0,
+          25.0,
+          13.0
+        ],
+        [
+          45.0,
+          38.0,
+          3.0,
+          4.0
+        ]
+      ],
+      "animation": "hammer_1",
+      "path": "res://assets/PROCESSED/characters/CHR-01/v001/frames/CHR-01_player_hammer_1_right_v001_f02.png",
+      "sha256": "bf60277981b6521ab87946afd7e83788cfbbbbe0f608e9c32f0cb54d3adb180e",
+      "frames": [
+        {
+          "path": "res://assets/PROCESSED/characters/CHR-01/guard_v3/guard_hammer_00.png",
+          "weapon_path": "res://assets/PROCESSED/characters/CHR-01/guard_v3/weapons/guard_hammer_00.png",
+          "weapon_sha256": "fcc1896ad22ea5ad46fb436ab1943c1db2ce21a55bb77b9b82ce26291401994a"
+        },
+        {
+          "path": "res://assets/PROCESSED/characters/CHR-01/guard_v3/guard_hammer_01.png",
+          "weapon_path": "res://assets/PROCESSED/characters/CHR-01/guard_v3/weapons/guard_hammer_01.png",
+          "weapon_sha256": "65d13d26275b996fea1adc120e8a6a81eb34e29fb4a6cbe594e5a3c4193edcd5"
+        },
+        {
+          "path": "res://assets/PROCESSED/characters/CHR-01/guard_v3/guard_hammer_02.png",
+          "weapon_path": "res://assets/PROCESSED/characters/CHR-01/guard_v3/weapons/guard_hammer_02.png",
+          "weapon_sha256": "476aa40587b65ffe625a467452c631c8327b761fba4fea18bda962a2ac4149a7"
+        }
+      ],
+      "complete_handle": {
+        "back_length": 6.0,
+        "front_length": 6.0,
+        "half_width": 1.0,
+        "reference": "res://assets/PROCESSED/characters/CHR-01/v001/frames/CHR-01_player_hammer_3_right_v001_f01.png",
+        "reference_origin": [
+          16.0,
+          32.0
+        ],
+        "color_samples": [
+          [
+            27.0,
+            18.0
+          ],
+          [
+            26.0,
+            18.0
+          ],
+          [
+            29.0,
+            21.0
+          ]
+        ],
+        "reference_sha256": "60967cc7cce78a9cfd3c88c19f89a4904104db530c3da581fc94d1c3d5ec1167"
+      }
+    },
+    "staff": {
+      "frame": "staff_sweep_2",
+      "source_origin": [
+        16.0,
+        32.0
+      ],
+      "source_hand": [
+        35.0,
+        38.0
+      ],
+      "source_angle_degrees": 0.0,
+      "regions": [
+        [
+          48.0,
+          33.0,
+          16.0,
+          11.0
+        ],
+        [
+          38.0,
+          38.0,
+          12.0,
+          3.0
+        ]
+      ],
+      "animation": "staff_sweep",
+      "path": "res://assets/PROCESSED/characters/CHR-01/v001/frames/CHR-01_player_staff_sweep_right_v001_f02.png",
+      "sha256": "5339e5b314ab6c1a188cbc051b1a628938f87bbca9aee1d234a80eb91e4d14cb",
+      "frames": [
+        {
+          "path": "res://assets/PROCESSED/characters/CHR-01/guard_v3/guard_staff_00.png",
+          "weapon_path": "res://assets/PROCESSED/characters/CHR-01/guard_v3/weapons/guard_staff_00.png",
+          "weapon_sha256": "a1be7a111343bb3a48415715a5db25351562d28ce8fa653858eecf99f5f36c7f"
+        },
+        {
+          "path": "res://assets/PROCESSED/characters/CHR-01/guard_v3/guard_staff_01.png",
+          "weapon_path": "res://assets/PROCESSED/characters/CHR-01/guard_v3/weapons/guard_staff_01.png",
+          "weapon_sha256": "c9d8a7d5518d5e47c6b5bbd351f4d94c61a0ebf5158c58b6eb02f4fafc8bbc8f"
+        },
+        {
+          "path": "res://assets/PROCESSED/characters/CHR-01/guard_v3/guard_staff_02.png",
+          "weapon_path": "res://assets/PROCESSED/characters/CHR-01/guard_v3/weapons/guard_staff_02.png",
+          "weapon_sha256": "78223463373076c55c3cec7f015cf0979b33673bd52d29cff11fcfc569ad020b"
+        }
+      ],
+      "complete_handle": {
+        "back_length": 8.0,
+        "front_length": 15.0,
+        "half_width": 1.0,
+        "reference": "res://assets/PROCESSED/characters/CHR-01/v001/frames/CHR-01_player_staff_sweep_right_v001_f04.png",
+        "reference_origin": [
+          16.0,
+          32.0
+        ],
+        "color_samples": [
+          [
+            35.0,
+            42.0
+          ],
+          [
+            36.0,
+            41.0
+          ],
+          [
+            37.0,
+            40.0
+          ]
+        ],
+        "reference_sha256": "0c3c47559c26d3d6b7b5016f0ceb9da64f93066dc988497356c2112d715ea4fa"
+      }
+    }
+  },
+  "body_pipeline": "native_character_frames",
+  "pose_contract": {
+    "hold_hand_min_y": 40.0,
+    "hold_weapon_min_y": 17.0
+  },
+  "hand_occlusion": "native_palms_only",
+  "palm_occlusion": {
+    "alpha_min": 0.5,
+    "belly_rgb_min": [
+      0.7,
+      0.65,
+      0.5
+    ]
+  }
+}

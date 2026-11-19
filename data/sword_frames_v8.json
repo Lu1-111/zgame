@@ -1,0 +1,737 @@
+{
+  "version": 8,
+  "kind": "native_pixel_frames",
+  "time_basis": "attack_duration",
+  "idle_pose_enabled": false,
+  "canvas": [
+    96,
+    96
+  ],
+  "anchor": [
+    48,
+    84
+  ],
+  "native_anchor": [
+    32,
+    58
+  ],
+  "identity_reference": "res://docs/previews/sword_combo_v8.gif",
+  "hand_to_guard": 3,
+  "rear_hand_spacing": 6,
+  "return_seconds": 0,
+  "poses": {
+    "sword_1_00": {
+      "source": "hammer_3_1",
+      "path": "res://assets/PROCESSED/characters/CHR-01/rpg_v8/sword_1_00.png",
+      "hand": [
+        29.0,
+        22.0
+      ],
+      "grip": [
+        27.973939570022992,
+        19.180922137642273
+      ],
+      "offhand": [
+        30.026060429977004,
+        24.819077862357723
+      ],
+      "tip": [
+        18.739395700229935,
+        -6.1907786235772555
+      ],
+      "angle_degrees": -110,
+      "depth": 1,
+      "body_pitch": 0,
+      "sha256": "1ecba9425a39003e0ddcb406bb65eb91a1733b23ae06bdb853d7cbe155e6b5fa"
+    },
+    "sword_1_01": {
+      "source": "hammer_3_1",
+      "path": "res://assets/PROCESSED/characters/CHR-01/rpg_v8/sword_1_01.png",
+      "hand": [
+        22.924639612383228,
+        23.85305634947244
+      ],
+      "grip": [
+        21.20391030333009,
+        21.395600216605466
+      ],
+      "offhand": [
+        24.64536892143637,
+        26.310512482339416
+      ],
+      "tip": [
+        5.717346521851844,
+        -0.7215049791973094
+      ],
+      "angle_degrees": -125,
+      "depth": 1,
+      "body_pitch": -15,
+      "sha256": "a4488340e26a47b04a3efbfcde654bffe71e5c47676bce46e7afda81600f2679"
+    },
+    "sword_1_02": {
+      "source": "hammer_2_3",
+      "path": "res://assets/PROCESSED/characters/CHR-01/rpg_v8/sword_1_02.png",
+      "hand": [
+        42.0,
+        31.0
+      ],
+      "grip": [
+        43.84698442597698,
+        28.635967739179833
+      ],
+      "offhand": [
+        40.15301557402303,
+        33.36403226082017
+      ],
+      "tip": [
+        60.46984425976975,
+        7.359677391798339
+      ],
+      "angle_degrees": -52,
+      "depth": 1,
+      "body_pitch": 0,
+      "sha256": "55ce38435e18f1a2abcecaf8e68875c04dcc15a54ca651a95ff4646e20fe0433"
+    },
+    "sword_1_03": {
+      "source": "hammer_1_2",
+      "path": "res://assets/PROCESSED/characters/CHR-01/rpg_v8/sword_1_03.png",
+      "hand": [
+        43.889966596123664,
+        41.827635258596054
+      ],
+      "grip": [
+        46.84438985516029,
+        42.34857979159685
+      ],
+      "offhand": [
+        40.93554333708704,
+        41.30669072559527
+      ],
+      "tip": [
+        73.4341991864899,
+        47.03708058860397
+      ],
+      "angle_degrees": 10,
+      "depth": 1,
+      "body_pitch": 10,
+      "sha256": "944b2f70636136e1b7205d6914faea48c7d15f67b33dbc38bdffe26a240b0886"
+    },
+    "sword_1_04": {
+      "source": "hammer_1_3",
+      "path": "res://assets/PROCESSED/characters/CHR-01/rpg_v8/sword_1_04.png",
+      "hand": [
+        43.783830193513886,
+        43.048897433592266
+      ],
+      "grip": [
+        46.24128632638086,
+        44.76962674264541
+      ],
+      "offhand": [
+        41.326374060646906,
+        41.32816812453913
+      ],
+      "tip": [
+        63.93497048302308,
+        57.158877767828
+      ],
+      "angle_degrees": 35,
+      "depth": 0.8,
+      "body_pitch": -5,
+      "sha256": "8eaaf3721f2dade353046e975156d20d2d5ea379318575a7b6074cb1d2d6ada0"
+    },
+    "sword_1_05": {
+      "source": "hammer_3_3",
+      "path": "res://assets/PROCESSED/characters/CHR-01/rpg_v8/sword_1_05.png",
+      "hand": [
+        42.65925826289068,
+        43.411809548974794
+      ],
+      "grip": [
+        44.95739159224762,
+        45.34017237803441
+      ],
+      "offhand": [
+        40.36112493353375,
+        41.48344671991517
+      ],
+      "tip": [
+        58.401471568985684,
+        56.62109492803317
+      ],
+      "angle_degrees": 40,
+      "depth": 0.65,
+      "body_pitch": -15,
+      "sha256": "07cecf7a49f52b70ed994334fc6b1d82394851b492e4dcf257f0c4aed04c4dc5"
+    },
+    "sword_1_06": {
+      "source": "hammer_2_1",
+      "path": "res://assets/PROCESSED/characters/CHR-01/rpg_v8/sword_1_06.png",
+      "hand": [
+        23.67286700287871,
+        41.309094964294076
+      ],
+      "grip": [
+        20.684282908603475,
+        41.570562192537054
+      ],
+      "offhand": [
+        26.66145109715395,
+        41.047627736051105
+      ],
+      "tip": [
+        -6.212973939873656,
+        43.92376724672383
+      ],
+      "angle_degrees": 175,
+      "depth": 1,
+      "body_pitch": 10,
+      "sha256": "5c2fefd8e1abfd1a147235b35b18e20fc72749eef59f1e600a1ff0574276e037"
+    },
+    "sword_1_07": {
+      "source": "hammer_2_1",
+      "path": "res://assets/PROCESSED/characters/CHR-01/rpg_v8/sword_1_07.png",
+      "hand": [
+        23.67286700287871,
+        41.309094964294076
+      ],
+      "grip": [
+        20.684282908603475,
+        41.570562192537054
+      ],
+      "offhand": [
+        26.66145109715395,
+        41.047627736051105
+      ],
+      "tip": [
+        -6.212973939873656,
+        43.92376724672383
+      ],
+      "angle_degrees": 175,
+      "depth": 1,
+      "body_pitch": 10,
+      "sha256": "5c2fefd8e1abfd1a147235b35b18e20fc72749eef59f1e600a1ff0574276e037"
+    },
+    "sword_2_00": {
+      "source": "hammer_2_1",
+      "path": "res://assets/PROCESSED/characters/CHR-01/rpg_v8/sword_2_00.png",
+      "hand": [
+        23.67286700287871,
+        41.309094964294076
+      ],
+      "grip": [
+        20.684282908603475,
+        41.570562192537054
+      ],
+      "offhand": [
+        26.66145109715395,
+        41.047627736051105
+      ],
+      "tip": [
+        -6.212973939873656,
+        43.92376724672383
+      ],
+      "angle_degrees": 175,
+      "depth": 1,
+      "body_pitch": 10,
+      "sha256": "5c2fefd8e1abfd1a147235b35b18e20fc72749eef59f1e600a1ff0574276e037"
+    },
+    "sword_2_01": {
+      "source": "hammer_2_1",
+      "path": "res://assets/PROCESSED/characters/CHR-01/rpg_v8/sword_2_01.png",
+      "hand": [
+        23.67286700287871,
+        41.309094964294076
+      ],
+      "grip": [
+        20.684282908603475,
+        41.570562192537054
+      ],
+      "offhand": [
+        26.66145109715395,
+        41.047627736051105
+      ],
+      "tip": [
+        -6.212973939873656,
+        43.92376724672383
+      ],
+      "angle_degrees": 175,
+      "depth": 1,
+      "body_pitch": 10,
+      "sha256": "5c2fefd8e1abfd1a147235b35b18e20fc72749eef59f1e600a1ff0574276e037"
+    },
+    "sword_2_02": {
+      "source": "hammer_3_3",
+      "path": "res://assets/PROCESSED/characters/CHR-01/rpg_v8/sword_2_02.png",
+      "hand": [
+        42.65925826289068,
+        43.411809548974794
+      ],
+      "grip": [
+        44.95739159224762,
+        45.34017237803441
+      ],
+      "offhand": [
+        40.36112493353375,
+        41.48344671991517
+      ],
+      "tip": [
+        58.401471568985684,
+        56.62109492803317
+      ],
+      "angle_degrees": 40,
+      "depth": 0.65,
+      "body_pitch": -15,
+      "sha256": "07cecf7a49f52b70ed994334fc6b1d82394851b492e4dcf257f0c4aed04c4dc5"
+    },
+    "sword_2_03": {
+      "source": "hammer_1_3",
+      "path": "res://assets/PROCESSED/characters/CHR-01/rpg_v8/sword_2_03.png",
+      "hand": [
+        43.783830193513886,
+        43.048897433592266
+      ],
+      "grip": [
+        46.24128632638086,
+        44.76962674264541
+      ],
+      "offhand": [
+        41.326374060646906,
+        41.32816812453913
+      ],
+      "tip": [
+        63.93497048302308,
+        57.158877767828
+      ],
+      "angle_degrees": 35,
+      "depth": 0.8,
+      "body_pitch": -5,
+      "sha256": "8eaaf3721f2dade353046e975156d20d2d5ea379318575a7b6074cb1d2d6ada0"
+    },
+    "sword_2_04": {
+      "source": "hammer_1_2",
+      "path": "res://assets/PROCESSED/characters/CHR-01/rpg_v8/sword_2_04.png",
+      "hand": [
+        43.0,
+        40.0
+      ],
+      "grip": [
+        46.0,
+        40.0
+      ],
+      "offhand": [
+        40.0,
+        40.0
+      ],
+      "tip": [
+        73.0,
+        40.0
+      ],
+      "angle_degrees": 0,
+      "depth": 1,
+      "body_pitch": 0,
+      "sha256": "72a8ccac1322f82935c935182720941999fd50efb78b3331480e7c0e40f7a03e"
+    },
+    "sword_2_05": {
+      "source": "hammer_3_1",
+      "path": "res://assets/PROCESSED/characters/CHR-01/rpg_v8/sword_2_05.png",
+      "hand": [
+        26.923483381689223,
+        22.439950216788738
+      ],
+      "grip": [
+        25.655628596467125,
+        19.721026855678787
+      ],
+      "offhand": [
+        28.191338166911322,
+        25.15887357789869
+      ],
+      "tip": [
+        14.244935529468243,
+        -4.7492833943107655
+      ],
+      "angle_degrees": -115,
+      "depth": 1,
+      "body_pitch": -5,
+      "sha256": "f32e461b89785b89485a831d147f6c2834b629e8e4d577a96dde50a4fef67a9f"
+    },
+    "sword_2_06": {
+      "source": "hammer_1_1",
+      "path": "res://assets/PROCESSED/characters/CHR-01/rpg_v8/sword_2_06.png",
+      "hand": [
+        24.246040730537114,
+        37.731493659155554
+      ],
+      "grip": [
+        21.788584597670138,
+        36.01076435010241
+      ],
+      "offhand": [
+        26.70349686340409,
+        39.45222296820869
+      ],
+      "tip": [
+        -0.3285205981326449,
+        20.524200568624174
+      ],
+      "angle_degrees": -145,
+      "depth": 1,
+      "body_pitch": -5,
+      "sha256": "c3d8062ef515a7ed87827c3ca40db2aea41c33a1a53d6a3728728bb4e507566f"
+    },
+    "sword_2_07": {
+      "source": "hammer_1_1",
+      "path": "res://assets/PROCESSED/characters/CHR-01/rpg_v8/sword_2_07.png",
+      "hand": [
+        24.246040730537114,
+        37.731493659155554
+      ],
+      "grip": [
+        21.788584597670138,
+        36.01076435010241
+      ],
+      "offhand": [
+        26.70349686340409,
+        39.45222296820869
+      ],
+      "tip": [
+        -0.3285205981326449,
+        20.524200568624174
+      ],
+      "angle_degrees": -145,
+      "depth": 1,
+      "body_pitch": -5,
+      "sha256": "c3d8062ef515a7ed87827c3ca40db2aea41c33a1a53d6a3728728bb4e507566f"
+    },
+    "sword_3_00": {
+      "source": "hammer_1_1",
+      "path": "res://assets/PROCESSED/characters/CHR-01/rpg_v8/sword_3_00.png",
+      "hand": [
+        24.246040730537114,
+        37.731493659155554
+      ],
+      "grip": [
+        21.788584597670138,
+        36.01076435010241
+      ],
+      "offhand": [
+        26.70349686340409,
+        39.45222296820869
+      ],
+      "tip": [
+        -0.3285205981326449,
+        20.524200568624174
+      ],
+      "angle_degrees": -145,
+      "depth": 1,
+      "body_pitch": -5,
+      "sha256": "c3d8062ef515a7ed87827c3ca40db2aea41c33a1a53d6a3728728bb4e507566f"
+    },
+    "sword_3_01": {
+      "source": "hammer_1_1",
+      "path": "res://assets/PROCESSED/characters/CHR-01/rpg_v8/sword_3_01.png",
+      "hand": [
+        23.55870437689996,
+        38.52591564422557
+      ],
+      "grip": [
+        20.960628165546645,
+        37.02591564422557
+      ],
+      "offhand": [
+        26.156780588253277,
+        40.02591564422557
+      ],
+      "tip": [
+        -2.4220577366331995,
+        23.52591564422557
+      ],
+      "angle_degrees": -150,
+      "depth": 1,
+      "body_pitch": -10,
+      "sha256": "405e8eb2e6ab9df8a2996cb277a3136b7d8a4558ef84aa70f41dabdb5c98c2fd"
+    },
+    "sword_3_02": {
+      "source": "staff_sweep_1",
+      "path": "res://assets/PROCESSED/characters/CHR-01/rpg_v8/sword_3_02.png",
+      "hand": [
+        20.424381886860573,
+        33.84048401158666
+      ],
+      "grip": [
+        18.12624855750364,
+        31.91212118252704
+      ],
+      "offhand": [
+        22.72251521621751,
+        35.768846840646276
+      ],
+      "tip": [
+        3.6480085825549597,
+        19.76343535945145
+      ],
+      "angle_degrees": -140,
+      "depth": 0.7,
+      "body_pitch": -15,
+      "sha256": "bed6df3da30ddb1adf6a30bfdc4dc3a3a245994e73387e3769f284c61c81d2df"
+    },
+    "sword_3_03": {
+      "source": "staff_sweep_2",
+      "path": "res://assets/PROCESSED/characters/CHR-01/rpg_v8/sword_3_03.png",
+      "hand": [
+        35.0,
+        38.0
+      ],
+      "grip": [
+        38.0,
+        38.0
+      ],
+      "offhand": [
+        32.0,
+        38.0
+      ],
+      "tip": [
+        55.55,
+        38.0
+      ],
+      "angle_degrees": 0,
+      "depth": 0.65,
+      "body_pitch": 0,
+      "sha256": "f50ed2bef07f22444662813b636056c95964bc952c8a981cec14c97e6f79e4ab"
+    },
+    "sword_3_04": {
+      "source": "hammer_1_2",
+      "path": "res://assets/PROCESSED/characters/CHR-01/rpg_v8/sword_3_04.png",
+      "hand": [
+        44.21217253350581,
+        42.792635493290796
+      ],
+      "grip": [
+        47.10995001237301,
+        43.569092628598355
+      ],
+      "offhand": [
+        41.3143950546386,
+        42.01617835798323
+      ],
+      "tip": [
+        73.18994732217786,
+        50.55720684636641
+      ],
+      "angle_degrees": 15,
+      "depth": 1,
+      "body_pitch": 15,
+      "sha256": "b0f1222db5bebeb4b414321717b3557ad72bc817d24b924fa2b8ac050c2d8337"
+    },
+    "sword_3_05": {
+      "source": "hammer_1_3",
+      "path": "res://assets/PROCESSED/characters/CHR-01/rpg_v8/sword_3_05.png",
+      "hand": [
+        43.783830193513886,
+        43.048897433592266
+      ],
+      "grip": [
+        46.24128632638086,
+        44.76962674264541
+      ],
+      "offhand": [
+        41.326374060646906,
+        41.32816812453913
+      ],
+      "tip": [
+        61.7232599634428,
+        55.61022138968018
+      ],
+      "angle_degrees": 35,
+      "depth": 0.7,
+      "body_pitch": -5,
+      "sha256": "0917435264148149afb10aceddad6d266071b7cd48017567b6a8d2c8202d597b"
+    },
+    "sword_3_06": {
+      "source": "hammer_1_4",
+      "path": "res://assets/PROCESSED/characters/CHR-01/rpg_v8/sword_3_06.png",
+      "hand": [
+        39.0,
+        43.0
+      ],
+      "grip": [
+        42.0,
+        43.0
+      ],
+      "offhand": [
+        36.0,
+        43.0
+      ],
+      "tip": [
+        69.0,
+        43.0
+      ],
+      "angle_degrees": 0,
+      "depth": 1,
+      "body_pitch": 0,
+      "sha256": "44c0edd708c24e419ba9a08d77b8e075317a8f73a28c94cef99c2a7ea32c3109"
+    },
+    "sword_3_07": {
+      "source": "hammer_1_4",
+      "path": "res://assets/PROCESSED/characters/CHR-01/rpg_v8/sword_3_07.png",
+      "hand": [
+        39.0,
+        43.0
+      ],
+      "grip": [
+        42.0,
+        43.0
+      ],
+      "offhand": [
+        36.0,
+        43.0
+      ],
+      "tip": [
+        69.0,
+        43.0
+      ],
+      "angle_degrees": 0,
+      "depth": 1,
+      "body_pitch": 0,
+      "sha256": "44c0edd708c24e419ba9a08d77b8e075317a8f73a28c94cef99c2a7ea32c3109"
+    }
+  },
+  "clips": {
+    "sword_1": {
+      "duration": 0.53,
+      "frames": [
+        {
+          "pose": "sword_1_00",
+          "progress": 0.0,
+          "path": "res://assets/PROCESSED/characters/CHR-01/rpg_v8/sword_1_00.png"
+        },
+        {
+          "pose": "sword_1_01",
+          "progress": 0.16037735849056603,
+          "path": "res://assets/PROCESSED/characters/CHR-01/rpg_v8/sword_1_01.png"
+        },
+        {
+          "pose": "sword_1_02",
+          "progress": 0.35471698113207545,
+          "path": "res://assets/PROCESSED/characters/CHR-01/rpg_v8/sword_1_02.png"
+        },
+        {
+          "pose": "sword_1_03",
+          "progress": 0.4226415094339622,
+          "path": "res://assets/PROCESSED/characters/CHR-01/rpg_v8/sword_1_03.png"
+        },
+        {
+          "pose": "sword_1_04",
+          "progress": 0.49056603773584906,
+          "path": "res://assets/PROCESSED/characters/CHR-01/rpg_v8/sword_1_04.png"
+        },
+        {
+          "pose": "sword_1_05",
+          "progress": 0.558490566037736,
+          "path": "res://assets/PROCESSED/characters/CHR-01/rpg_v8/sword_1_05.png"
+        },
+        {
+          "pose": "sword_1_06",
+          "progress": 0.6264150943396226,
+          "path": "res://assets/PROCESSED/characters/CHR-01/rpg_v8/sword_1_06.png"
+        },
+        {
+          "pose": "sword_1_07",
+          "progress": 0.8301886792452828,
+          "path": "res://assets/PROCESSED/characters/CHR-01/rpg_v8/sword_1_07.png"
+        }
+      ]
+    },
+    "sword_2": {
+      "duration": 0.53,
+      "frames": [
+        {
+          "pose": "sword_2_00",
+          "progress": 0.0,
+          "path": "res://assets/PROCESSED/characters/CHR-01/rpg_v8/sword_2_00.png"
+        },
+        {
+          "pose": "sword_2_01",
+          "progress": 0.16037735849056603,
+          "path": "res://assets/PROCESSED/characters/CHR-01/rpg_v8/sword_2_01.png"
+        },
+        {
+          "pose": "sword_2_02",
+          "progress": 0.35471698113207545,
+          "path": "res://assets/PROCESSED/characters/CHR-01/rpg_v8/sword_2_02.png"
+        },
+        {
+          "pose": "sword_2_03",
+          "progress": 0.4226415094339622,
+          "path": "res://assets/PROCESSED/characters/CHR-01/rpg_v8/sword_2_03.png"
+        },
+        {
+          "pose": "sword_2_04",
+          "progress": 0.49056603773584906,
+          "path": "res://assets/PROCESSED/characters/CHR-01/rpg_v8/sword_2_04.png"
+        },
+        {
+          "pose": "sword_2_05",
+          "progress": 0.558490566037736,
+          "path": "res://assets/PROCESSED/characters/CHR-01/rpg_v8/sword_2_05.png"
+        },
+        {
+          "pose": "sword_2_06",
+          "progress": 0.6264150943396226,
+          "path": "res://assets/PROCESSED/characters/CHR-01/rpg_v8/sword_2_06.png"
+        },
+        {
+          "pose": "sword_2_07",
+          "progress": 0.8301886792452828,
+          "path": "res://assets/PROCESSED/characters/CHR-01/rpg_v8/sword_2_07.png"
+        }
+      ]
+    },
+    "sword_3": {
+      "duration": 0.53,
+      "frames": [
+        {
+          "pose": "sword_3_00",
+          "progress": 0.0,
+          "path": "res://assets/PROCESSED/characters/CHR-01/rpg_v8/sword_3_00.png"
+        },
+        {
+          "pose": "sword_3_01",
+          "progress": 0.16037735849056603,
+          "path": "res://assets/PROCESSED/characters/CHR-01/rpg_v8/sword_3_01.png"
+        },
+        {
+          "pose": "sword_3_02",
+          "progress": 0.35471698113207545,
+          "path": "res://assets/PROCESSED/characters/CHR-01/rpg_v8/sword_3_02.png"
+        },
+        {
+          "pose": "sword_3_03",
+          "progress": 0.4226415094339622,
+          "path": "res://assets/PROCESSED/characters/CHR-01/rpg_v8/sword_3_03.png"
+        },
+        {
+          "pose": "sword_3_04",
+          "progress": 0.49056603773584906,
+          "path": "res://assets/PROCESSED/characters/CHR-01/rpg_v8/sword_3_04.png"
+        },
+        {
+          "pose": "sword_3_05",
+          "progress": 0.558490566037736,
+          "path": "res://assets/PROCESSED/characters/CHR-01/rpg_v8/sword_3_05.png"
+        },
+        {
+          "pose": "sword_3_06",
+          "progress": 0.6264150943396226,
+          "path": "res://assets/PROCESSED/characters/CHR-01/rpg_v8/sword_3_06.png"
+        },
+        {
+          "pose": "sword_3_07",
+          "progress": 0.8301886792452828,
+          "path": "res://assets/PROCESSED/characters/CHR-01/rpg_v8/sword_3_07.png"
+        }
+      ]
+    }
+  }
+}

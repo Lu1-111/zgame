@@ -1,0 +1,168 @@
+{
+  "revision": 1,
+  "energy_per_level": 1,
+  "point_cost": 1,
+  "defaults": {
+    "hp_max": 80,
+    "sta_max": 100,
+    "mana_max": 60
+  },
+  "attributes": [
+    {
+      "id": "vitality",
+      "name": "生命",
+      "description": "每级 +10 最大生命",
+      "effects": {
+        "hp_max": 10
+      }
+    },
+    {
+      "id": "endurance",
+      "name": "耐力",
+      "description": "每级 +10 体力，恢复同比提升",
+      "effects": {
+        "sta_max": 10
+      }
+    },
+    {
+      "id": "strength",
+      "name": "力量",
+      "description": "每级 +5% 物理攻击",
+      "effects": {
+        "physical_attack_pct": 5
+      }
+    },
+    {
+      "id": "intellect",
+      "name": "智力",
+      "description": "每级 +5% 奶术攻击、+10 奶力",
+      "effects": {
+        "magic_attack_pct": 5,
+        "mana_max": 10
+      }
+    },
+    {
+      "id": "perception",
+      "name": "感知",
+      "description": "每级 -2.5% 技能冷却时长",
+      "effects": {
+        "cooldown_reduction": 2.5
+      }
+    }
+  ],
+  "minimum_cooldown_multiplier": 0.05,
+  "weapon_bag_slots": 16,
+  "hud": {
+    "level": [
+      16,
+      58
+    ],
+    "experience": [
+      64,
+      62,
+      143,
+      5
+    ],
+    "coin_size": [
+      112,
+      25
+    ],
+    "coin_margin": [
+      10,
+      10
+    ],
+    "coin_popup_seconds": 1.2,
+    "coin_popup_rise": 18
+  },
+  "panel": {
+    "left_x": 28,
+    "right_x": 320,
+    "top": 78,
+    "point_gap": 42,
+    "attribute_gap": 18
+  },
+  "stat_rows": [
+    [
+      "hp_max",
+      "生命值",
+      ""
+    ],
+    [
+      "sta_max",
+      "体力值",
+      ""
+    ],
+    [
+      "mana_max",
+      "奶力值",
+      ""
+    ],
+    [
+      "physical_attack",
+      "物理攻击力",
+      ""
+    ],
+    [
+      "magic_attack",
+      "奶术攻击力",
+      ""
+    ],
+    [
+      "defense",
+      "防御力",
+      ""
+    ],
+    [
+      "damage_reduction",
+      "伤害减免",
+      "%"
+    ],
+    [
+      "life_steal",
+      "吸血",
+      "%"
+    ],
+    [
+      "hp_regen",
+      "生命恢复",
+      "/秒"
+    ],
+    [
+      "sta_regen",
+      "体力恢复",
+      "/秒"
+    ],
+    [
+      "mana_regen",
+      "奶力恢复",
+      "/秒"
+    ],
+    [
+      "cooldown_reduction",
+      "技能冷却缩减",
+      "%"
+    ]
+  ],
+  "storage_categories": [
+    [
+      "all",
+      "全部"
+    ],
+    [
+      "item",
+      "道具"
+    ],
+    [
+      "weapon",
+      "武器"
+    ],
+    [
+      "armor",
+      "护甲"
+    ],
+    [
+      "accessory",
+      "饰品"
+    ]
+  ]
+}

@@ -1,0 +1,1375 @@
+{
+  "id": "cave_beasts_v001",
+  "pixel_standard": "res://data/art/pixel_standards.json",
+  "pixel_spec": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/pixel_spec_runtime.json",
+  "assets": {
+    "stonehelm_beast_idle_00": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/idle/00.png",
+      "kind": "enemy_frame",
+      "native_canvas": [
+        128,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "stonehelm_beast_idle_01": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/idle/01.png",
+      "kind": "enemy_frame",
+      "native_canvas": [
+        128,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "stonehelm_beast_idle_02": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/idle/02.png",
+      "kind": "enemy_frame",
+      "native_canvas": [
+        128,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "stonehelm_beast_idle_03": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/idle/03.png",
+      "kind": "enemy_frame",
+      "native_canvas": [
+        128,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "stonehelm_beast_idle_04": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/idle/04.png",
+      "kind": "enemy_frame",
+      "native_canvas": [
+        128,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "stonehelm_beast_idle_05": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/idle/05.png",
+      "kind": "enemy_frame",
+      "native_canvas": [
+        128,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "stonehelm_beast_move_00": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/move/00.png",
+      "kind": "enemy_frame",
+      "native_canvas": [
+        128,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "stonehelm_beast_move_01": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/move/01.png",
+      "kind": "enemy_frame",
+      "native_canvas": [
+        128,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "stonehelm_beast_move_02": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/move/02.png",
+      "kind": "enemy_frame",
+      "native_canvas": [
+        128,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "stonehelm_beast_move_03": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/move/03.png",
+      "kind": "enemy_frame",
+      "native_canvas": [
+        128,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "stonehelm_beast_move_04": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/move/04.png",
+      "kind": "enemy_frame",
+      "native_canvas": [
+        128,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "stonehelm_beast_move_05": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/move/05.png",
+      "kind": "enemy_frame",
+      "native_canvas": [
+        128,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "stonehelm_beast_ram_00": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/ram/00.png",
+      "kind": "enemy_frame",
+      "native_canvas": [
+        128,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "stonehelm_beast_ram_01": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/ram/01.png",
+      "kind": "enemy_frame",
+      "native_canvas": [
+        128,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "stonehelm_beast_ram_02": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/ram/02.png",
+      "kind": "enemy_frame",
+      "native_canvas": [
+        128,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "stonehelm_beast_ram_03": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/ram/03.png",
+      "kind": "enemy_frame",
+      "native_canvas": [
+        128,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "stonehelm_beast_ram_04": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/ram/04.png",
+      "kind": "enemy_frame",
+      "native_canvas": [
+        128,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "stonehelm_beast_ram_05": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/ram/05.png",
+      "kind": "enemy_frame",
+      "native_canvas": [
+        128,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "stonehelm_beast_shell_defense_00": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/shell_defense/00.png",
+      "kind": "enemy_frame",
+      "native_canvas": [
+        128,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "stonehelm_beast_shell_defense_01": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/shell_defense/01.png",
+      "kind": "enemy_frame",
+      "native_canvas": [
+        128,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "stonehelm_beast_shell_defense_02": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/shell_defense/02.png",
+      "kind": "enemy_frame",
+      "native_canvas": [
+        128,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "stonehelm_beast_shell_defense_03": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/shell_defense/03.png",
+      "kind": "enemy_frame",
+      "native_canvas": [
+        128,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "stonehelm_beast_shell_defense_04": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/shell_defense/04.png",
+      "kind": "enemy_frame",
+      "native_canvas": [
+        128,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "stonehelm_beast_shell_defense_05": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/shell_defense/05.png",
+      "kind": "enemy_frame",
+      "native_canvas": [
+        128,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "cave_spider_idle_00": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/idle/00.png",
+      "kind": "enemy_frame",
+      "native_canvas": [
+        128,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "cave_spider_idle_01": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/idle/01.png",
+      "kind": "enemy_frame",
+      "native_canvas": [
+        128,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "cave_spider_idle_02": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/idle/02.png",
+      "kind": "enemy_frame",
+      "native_canvas": [
+        128,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "cave_spider_idle_03": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/idle/03.png",
+      "kind": "enemy_frame",
+      "native_canvas": [
+        128,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "cave_spider_idle_04": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/idle/04.png",
+      "kind": "enemy_frame",
+      "native_canvas": [
+        128,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "cave_spider_idle_05": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/idle/05.png",
+      "kind": "enemy_frame",
+      "native_canvas": [
+        128,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "cave_spider_move_00": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/move/00.png",
+      "kind": "enemy_frame",
+      "native_canvas": [
+        128,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "cave_spider_move_01": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/move/01.png",
+      "kind": "enemy_frame",
+      "native_canvas": [
+        128,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "cave_spider_move_02": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/move/02.png",
+      "kind": "enemy_frame",
+      "native_canvas": [
+        128,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "cave_spider_move_03": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/move/03.png",
+      "kind": "enemy_frame",
+      "native_canvas": [
+        128,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "cave_spider_move_04": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/move/04.png",
+      "kind": "enemy_frame",
+      "native_canvas": [
+        128,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "cave_spider_move_05": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/move/05.png",
+      "kind": "enemy_frame",
+      "native_canvas": [
+        128,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "cave_spider_claw_attack_00": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/claw_attack/00.png",
+      "kind": "enemy_frame",
+      "native_canvas": [
+        128,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "cave_spider_claw_attack_01": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/claw_attack/01.png",
+      "kind": "enemy_frame",
+      "native_canvas": [
+        128,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "cave_spider_claw_attack_02": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/claw_attack/02.png",
+      "kind": "enemy_frame",
+      "native_canvas": [
+        128,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "cave_spider_claw_attack_03": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/claw_attack/03.png",
+      "kind": "enemy_frame",
+      "native_canvas": [
+        128,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "cave_spider_claw_attack_04": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/claw_attack/04.png",
+      "kind": "enemy_frame",
+      "native_canvas": [
+        128,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "cave_spider_claw_attack_05": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/claw_attack/05.png",
+      "kind": "enemy_frame",
+      "native_canvas": [
+        128,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "cave_spider_web_spit_00": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/web_spit/00.png",
+      "kind": "enemy_frame",
+      "native_canvas": [
+        128,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "cave_spider_web_spit_01": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/web_spit/01.png",
+      "kind": "enemy_frame",
+      "native_canvas": [
+        128,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "cave_spider_web_spit_02": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/web_spit/02.png",
+      "kind": "enemy_frame",
+      "native_canvas": [
+        128,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "cave_spider_web_spit_03": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/web_spit/03.png",
+      "kind": "enemy_frame",
+      "native_canvas": [
+        128,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "cave_spider_web_spit_04": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/web_spit/04.png",
+      "kind": "enemy_frame",
+      "native_canvas": [
+        128,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "cave_spider_web_spit_05": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/web_spit/05.png",
+      "kind": "enemy_frame",
+      "native_canvas": [
+        128,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "animated_crystal_idle_00": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/animated_crystal/frames/idle/00.png",
+      "kind": "enemy_frame",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "animated_crystal_idle_01": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/animated_crystal/frames/idle/01.png",
+      "kind": "enemy_frame",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "animated_crystal_idle_02": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/animated_crystal/frames/idle/02.png",
+      "kind": "enemy_frame",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "animated_crystal_idle_03": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/animated_crystal/frames/idle/03.png",
+      "kind": "enemy_frame",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "animated_crystal_idle_04": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/animated_crystal/frames/idle/04.png",
+      "kind": "enemy_frame",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "animated_crystal_idle_05": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/animated_crystal/frames/idle/05.png",
+      "kind": "enemy_frame",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "animated_crystal_move_00": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/animated_crystal/frames/move/00.png",
+      "kind": "enemy_frame",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "animated_crystal_move_01": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/animated_crystal/frames/move/01.png",
+      "kind": "enemy_frame",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "animated_crystal_move_02": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/animated_crystal/frames/move/02.png",
+      "kind": "enemy_frame",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "animated_crystal_move_03": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/animated_crystal/frames/move/03.png",
+      "kind": "enemy_frame",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "animated_crystal_move_04": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/animated_crystal/frames/move/04.png",
+      "kind": "enemy_frame",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "animated_crystal_move_05": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/animated_crystal/frames/move/05.png",
+      "kind": "enemy_frame",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "animated_crystal_charge_ready_00": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/animated_crystal/frames/charge_ready/00.png",
+      "kind": "enemy_frame",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "animated_crystal_charge_ready_01": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/animated_crystal/frames/charge_ready/01.png",
+      "kind": "enemy_frame",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "animated_crystal_charge_ready_02": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/animated_crystal/frames/charge_ready/02.png",
+      "kind": "enemy_frame",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "animated_crystal_charge_ready_03": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/animated_crystal/frames/charge_ready/03.png",
+      "kind": "enemy_frame",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "animated_crystal_charge_ready_04": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/animated_crystal/frames/charge_ready/04.png",
+      "kind": "enemy_frame",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "animated_crystal_charge_ready_05": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/animated_crystal/frames/charge_ready/05.png",
+      "kind": "enemy_frame",
+      "native_canvas": [
+        96,
+        96
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "cavern_hunter_idle_00": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/idle/00.png",
+      "kind": "enemy_frame",
+      "native_canvas": [
+        192,
+        160
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "cavern_hunter_idle_01": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/idle/01.png",
+      "kind": "enemy_frame",
+      "native_canvas": [
+        192,
+        160
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "cavern_hunter_idle_02": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/idle/02.png",
+      "kind": "enemy_frame",
+      "native_canvas": [
+        192,
+        160
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "cavern_hunter_idle_03": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/idle/03.png",
+      "kind": "enemy_frame",
+      "native_canvas": [
+        192,
+        160
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "cavern_hunter_idle_04": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/idle/04.png",
+      "kind": "enemy_frame",
+      "native_canvas": [
+        192,
+        160
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "cavern_hunter_idle_05": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/idle/05.png",
+      "kind": "enemy_frame",
+      "native_canvas": [
+        192,
+        160
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "cavern_hunter_move_00": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/move/00.png",
+      "kind": "enemy_frame",
+      "native_canvas": [
+        192,
+        160
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "cavern_hunter_move_01": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/move/01.png",
+      "kind": "enemy_frame",
+      "native_canvas": [
+        192,
+        160
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "cavern_hunter_move_02": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/move/02.png",
+      "kind": "enemy_frame",
+      "native_canvas": [
+        192,
+        160
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "cavern_hunter_move_03": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/move/03.png",
+      "kind": "enemy_frame",
+      "native_canvas": [
+        192,
+        160
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "cavern_hunter_move_04": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/move/04.png",
+      "kind": "enemy_frame",
+      "native_canvas": [
+        192,
+        160
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "cavern_hunter_move_05": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/move/05.png",
+      "kind": "enemy_frame",
+      "native_canvas": [
+        192,
+        160
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "cavern_hunter_elbow_blade_00": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/elbow_blade/00.png",
+      "kind": "enemy_frame",
+      "native_canvas": [
+        192,
+        160
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "cavern_hunter_elbow_blade_01": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/elbow_blade/01.png",
+      "kind": "enemy_frame",
+      "native_canvas": [
+        192,
+        160
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "cavern_hunter_elbow_blade_02": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/elbow_blade/02.png",
+      "kind": "enemy_frame",
+      "native_canvas": [
+        192,
+        160
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "cavern_hunter_elbow_blade_03": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/elbow_blade/03.png",
+      "kind": "enemy_frame",
+      "native_canvas": [
+        192,
+        160
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "cavern_hunter_elbow_blade_04": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/elbow_blade/04.png",
+      "kind": "enemy_frame",
+      "native_canvas": [
+        192,
+        160
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "cavern_hunter_elbow_blade_05": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/elbow_blade/05.png",
+      "kind": "enemy_frame",
+      "native_canvas": [
+        192,
+        160
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "cavern_hunter_leap_slam_00": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/leap_slam/00.png",
+      "kind": "enemy_frame",
+      "native_canvas": [
+        192,
+        160
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "cavern_hunter_leap_slam_01": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/leap_slam/01.png",
+      "kind": "enemy_frame",
+      "native_canvas": [
+        192,
+        160
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "cavern_hunter_leap_slam_02": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/leap_slam/02.png",
+      "kind": "enemy_frame",
+      "native_canvas": [
+        192,
+        160
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "cavern_hunter_leap_slam_03": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/leap_slam/03.png",
+      "kind": "enemy_frame",
+      "native_canvas": [
+        192,
+        160
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "cavern_hunter_leap_slam_04": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/leap_slam/04.png",
+      "kind": "enemy_frame",
+      "native_canvas": [
+        192,
+        160
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "cavern_hunter_leap_slam_05": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/leap_slam/05.png",
+      "kind": "enemy_frame",
+      "native_canvas": [
+        192,
+        160
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "cavern_hunter_tail_crystal_shot_00": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/tail_crystal_shot/00.png",
+      "kind": "enemy_frame",
+      "native_canvas": [
+        192,
+        160
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "cavern_hunter_tail_crystal_shot_01": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/tail_crystal_shot/01.png",
+      "kind": "enemy_frame",
+      "native_canvas": [
+        192,
+        160
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "cavern_hunter_tail_crystal_shot_02": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/tail_crystal_shot/02.png",
+      "kind": "enemy_frame",
+      "native_canvas": [
+        192,
+        160
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "cavern_hunter_tail_crystal_shot_03": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/tail_crystal_shot/03.png",
+      "kind": "enemy_frame",
+      "native_canvas": [
+        192,
+        160
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "cavern_hunter_tail_crystal_shot_04": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/tail_crystal_shot/04.png",
+      "kind": "enemy_frame",
+      "native_canvas": [
+        192,
+        160
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "cavern_hunter_tail_crystal_shot_05": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/tail_crystal_shot/05.png",
+      "kind": "enemy_frame",
+      "native_canvas": [
+        192,
+        160
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "web_thread_00": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/effects/web_thread/00.png",
+      "kind": "projectile",
+      "native_canvas": [
+        48,
+        32
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "web_thread_01": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/effects/web_thread/01.png",
+      "kind": "projectile",
+      "native_canvas": [
+        48,
+        32
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "web_thread_02": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/effects/web_thread/02.png",
+      "kind": "projectile",
+      "native_canvas": [
+        48,
+        32
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "web_thread_03": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/effects/web_thread/03.png",
+      "kind": "projectile",
+      "native_canvas": [
+        48,
+        32
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "web_thread_04": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/effects/web_thread/04.png",
+      "kind": "projectile",
+      "native_canvas": [
+        48,
+        32
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "web_thread_05": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/effects/web_thread/05.png",
+      "kind": "projectile",
+      "native_canvas": [
+        48,
+        32
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "sharp_crystal_00": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/effects/sharp_crystal/00.png",
+      "kind": "projectile",
+      "native_canvas": [
+        48,
+        32
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "sharp_crystal_01": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/effects/sharp_crystal/01.png",
+      "kind": "projectile",
+      "native_canvas": [
+        48,
+        32
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "sharp_crystal_02": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/effects/sharp_crystal/02.png",
+      "kind": "projectile",
+      "native_canvas": [
+        48,
+        32
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "sharp_crystal_03": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/effects/sharp_crystal/03.png",
+      "kind": "projectile",
+      "native_canvas": [
+        48,
+        32
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "sharp_crystal_04": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/effects/sharp_crystal/04.png",
+      "kind": "projectile",
+      "native_canvas": [
+        48,
+        32
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "sharp_crystal_05": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/effects/sharp_crystal/05.png",
+      "kind": "projectile",
+      "native_canvas": [
+        48,
+        32
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "ground_shockwave_00": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/effects/ground_shockwave/00.png",
+      "kind": "effect",
+      "native_canvas": [
+        160,
+        64
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "ground_shockwave_01": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/effects/ground_shockwave/01.png",
+      "kind": "effect",
+      "native_canvas": [
+        160,
+        64
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "ground_shockwave_02": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/effects/ground_shockwave/02.png",
+      "kind": "effect",
+      "native_canvas": [
+        160,
+        64
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "ground_shockwave_03": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/effects/ground_shockwave/03.png",
+      "kind": "effect",
+      "native_canvas": [
+        160,
+        64
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "ground_shockwave_04": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/effects/ground_shockwave/04.png",
+      "kind": "effect",
+      "native_canvas": [
+        160,
+        64
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    },
+    "ground_shockwave_05": {
+      "path": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/effects/ground_shockwave/05.png",
+      "kind": "effect",
+      "native_canvas": [
+        160,
+        64
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ]
+    }
+  }
+}

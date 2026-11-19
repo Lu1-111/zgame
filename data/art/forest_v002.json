@@ -1,0 +1,1568 @@
+{
+  "id": "forest_v002",
+  "pixel_spec": "res://data/art/forest_v002_pixel_spec.json",
+  "pixel_standard": "res://data/art/pixel_standards.json",
+  "assets": {
+    "rock_field": {
+      "path": "res://assets/environments/terrain/forest/v002/rock_field.png",
+      "kind": "terrain",
+      "size": [
+        256,
+        256
+      ],
+      "native_canvas": [
+        256,
+        256
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        128,
+        256
+      ],
+      "visible_rect": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "z_index": 1
+    },
+    "forest_background": {
+      "path": "res://assets/environments/backgrounds/forest/v002/deep_woodland.png",
+      "kind": "background",
+      "size": [
+        640,
+        360
+      ],
+      "native_canvas": [
+        640,
+        360
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        0,
+        0
+      ],
+      "visible_rect": [
+        0,
+        0,
+        640,
+        360
+      ],
+      "z_index": -30,
+      "space": "screen"
+    },
+    "fallen_log": {
+      "path": "res://assets/environments/props/forest/v002/fallen_log.png",
+      "kind": "prop",
+      "size": [
+        96,
+        40
+      ],
+      "native_canvas": [
+        96,
+        40
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        46,
+        40
+      ],
+      "visible_rect": [
+        0,
+        0,
+        95,
+        40
+      ],
+      "z_index": 1
+    },
+    "broken_waystone": {
+      "path": "res://assets/environments/props/forest/v002/broken_waystone.png",
+      "kind": "prop",
+      "size": [
+        32,
+        48
+      ],
+      "native_canvas": [
+        32,
+        48
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        16,
+        48
+      ],
+      "visible_rect": [
+        1,
+        16,
+        31,
+        32
+      ],
+      "z_index": 1
+    },
+    "forest_fungi": {
+      "path": "res://assets/environments/props/forest/v002/forest_fungi.png",
+      "kind": "prop",
+      "size": [
+        48,
+        32
+      ],
+      "native_canvas": [
+        48,
+        32
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        23,
+        32
+      ],
+      "visible_rect": [
+        1,
+        5,
+        47,
+        27
+      ],
+      "z_index": 1
+    },
+    "hanging_roots": {
+      "path": "res://assets/environments/props/forest/v002/hanging_roots.png",
+      "kind": "prop",
+      "size": [
+        48,
+        64
+      ],
+      "native_canvas": [
+        48,
+        64
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        24,
+        0
+      ],
+      "visible_rect": [
+        1,
+        0,
+        46,
+        40
+      ],
+      "z_index": 1
+    },
+    "glow_fungi": {
+      "path": "res://assets/environments/props/forest/v002/glow_fungi.png",
+      "kind": "prop",
+      "size": [
+        48,
+        32
+      ],
+      "native_canvas": [
+        48,
+        32
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        22,
+        32
+      ],
+      "visible_rect": [
+        4,
+        0,
+        42,
+        32
+      ],
+      "z_index": 1
+    },
+    "seedpod_vines": {
+      "path": "res://assets/environments/props/forest/v002/seedpod_vines.png",
+      "kind": "prop",
+      "size": [
+        48,
+        64
+      ],
+      "native_canvas": [
+        48,
+        64
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        26,
+        0
+      ],
+      "visible_rect": [
+        0,
+        0,
+        47,
+        41
+      ],
+      "z_index": 1
+    },
+    "root_arch": {
+      "path": "res://assets/environments/props/forest/v002/root_arch.png",
+      "kind": "prop",
+      "size": [
+        96,
+        64
+      ],
+      "native_canvas": [
+        96,
+        64
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        36,
+        64
+      ],
+      "visible_rect": [
+        1,
+        1,
+        94,
+        63
+      ],
+      "z_index": 1
+    },
+    "moss_rocks": {
+      "path": "res://assets/environments/props/forest/v002/moss_rocks.png",
+      "kind": "prop",
+      "size": [
+        48,
+        32
+      ],
+      "native_canvas": [
+        48,
+        32
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        24,
+        32
+      ],
+      "visible_rect": [
+        1,
+        3,
+        47,
+        29
+      ],
+      "z_index": 1
+    },
+    "wooden_chest": {
+      "path": "res://assets/environments/props/forest/v002/wooden_chest.png",
+      "kind": "prop",
+      "size": [
+        48,
+        32
+      ],
+      "native_canvas": [
+        48,
+        32
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        13,
+        32
+      ],
+      "visible_rect": [
+        0,
+        2,
+        48,
+        30
+      ],
+      "z_index": 1
+    },
+    "ruin_switch": {
+      "path": "res://assets/environments/props/forest/v002/ruin_switch.png",
+      "kind": "prop",
+      "size": [
+        32,
+        48
+      ],
+      "native_canvas": [
+        32,
+        48
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        16,
+        48
+      ],
+      "visible_rect": [
+        1,
+        28,
+        31,
+        20
+      ],
+      "z_index": 1
+    },
+    "fern_mushrooms": {
+      "path": "res://assets/environments/props/forest/v002/fern_mushrooms.png",
+      "kind": "prop",
+      "size": [
+        48,
+        32
+      ],
+      "native_canvas": [
+        48,
+        32
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        24,
+        32
+      ],
+      "visible_rect": [
+        0,
+        1,
+        47,
+        31
+      ],
+      "z_index": 1
+    },
+    "vine": {
+      "path": "res://assets/environments/props/forest/v002/vine.png",
+      "kind": "prop",
+      "size": [
+        32,
+        64
+      ],
+      "native_canvas": [
+        32,
+        64
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        14,
+        0
+      ],
+      "visible_rect": [
+        3,
+        0,
+        25,
+        62
+      ],
+      "z_index": 1
+    },
+    "solid_top": {
+      "path": "res://assets/environments/terrain/forest/v002/solid_top.png",
+      "kind": "terrain",
+      "size": [
+        64,
+        32
+      ],
+      "native_canvas": [
+        64,
+        32
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        32,
+        32
+      ],
+      "visible_rect": [
+        0,
+        0,
+        64,
+        32
+      ],
+      "z_index": 1
+    },
+    "branch_platform": {
+      "path": "res://assets/environments/terrain/forest/v002/branch_platform.png",
+      "kind": "terrain",
+      "size": [
+        64,
+        12
+      ],
+      "native_canvas": [
+        64,
+        12
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        32,
+        12
+      ],
+      "visible_rect": [
+        0,
+        0,
+        64,
+        12
+      ],
+      "z_index": 1
+    },
+    "wood_gate": {
+      "path": "res://assets/environments/props/forest/v002/wood_gate.png",
+      "kind": "prop",
+      "size": [
+        16,
+        64
+      ],
+      "native_canvas": [
+        16,
+        64
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        8,
+        64
+      ],
+      "visible_rect": [
+        0,
+        0,
+        16,
+        64
+      ],
+      "z_index": 1
+    },
+    "fire_01": {
+      "path": "res://assets/environments/props/forest/v002/fire_01.png",
+      "kind": "prop",
+      "size": [
+        32,
+        56
+      ],
+      "native_canvas": [
+        32,
+        56
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        16,
+        56
+      ],
+      "visible_rect": [
+        0,
+        5,
+        32,
+        51
+      ],
+      "z_index": 1,
+      "authored_native": true
+    },
+    "fire_02": {
+      "path": "res://assets/environments/props/forest/v002/fire_02.png",
+      "kind": "prop",
+      "size": [
+        32,
+        56
+      ],
+      "native_canvas": [
+        32,
+        56
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        16,
+        56
+      ],
+      "visible_rect": [
+        0,
+        4,
+        32,
+        52
+      ],
+      "z_index": 1,
+      "authored_native": true
+    },
+    "fire_03": {
+      "path": "res://assets/environments/props/forest/v002/fire_03.png",
+      "kind": "prop",
+      "size": [
+        32,
+        56
+      ],
+      "native_canvas": [
+        32,
+        56
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        16,
+        56
+      ],
+      "visible_rect": [
+        0,
+        2,
+        32,
+        54
+      ],
+      "z_index": 1,
+      "authored_native": true
+    },
+    "fire_04": {
+      "path": "res://assets/environments/props/forest/v002/fire_04.png",
+      "kind": "prop",
+      "size": [
+        32,
+        56
+      ],
+      "native_canvas": [
+        32,
+        56
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        16,
+        56
+      ],
+      "visible_rect": [
+        0,
+        2,
+        32,
+        54
+      ],
+      "z_index": 1,
+      "authored_native": true
+    },
+    "fire_05": {
+      "path": "res://assets/environments/props/forest/v002/fire_05.png",
+      "kind": "prop",
+      "size": [
+        32,
+        56
+      ],
+      "native_canvas": [
+        32,
+        56
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        16,
+        56
+      ],
+      "visible_rect": [
+        0,
+        6,
+        32,
+        50
+      ],
+      "z_index": 1,
+      "authored_native": true
+    },
+    "edge_top_00": {
+      "path": "res://assets/environments/terrain/forest/v002/edges/edge_top_00.png",
+      "kind": "terrain",
+      "size": [
+        64,
+        64
+      ],
+      "native_canvas": [
+        64,
+        64
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        32,
+        64
+      ],
+      "visible_rect": [
+        0,
+        1,
+        64,
+        63
+      ],
+      "z_index": 1
+    },
+    "edge_top_01": {
+      "path": "res://assets/environments/terrain/forest/v002/edges/edge_top_01.png",
+      "kind": "terrain",
+      "size": [
+        64,
+        64
+      ],
+      "native_canvas": [
+        64,
+        64
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        32,
+        64
+      ],
+      "visible_rect": [
+        0,
+        1,
+        64,
+        63
+      ],
+      "z_index": 1
+    },
+    "edge_top_02": {
+      "path": "res://assets/environments/terrain/forest/v002/edges/edge_top_02.png",
+      "kind": "terrain",
+      "size": [
+        64,
+        64
+      ],
+      "native_canvas": [
+        64,
+        64
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        32,
+        64
+      ],
+      "visible_rect": [
+        0,
+        1,
+        64,
+        63
+      ],
+      "z_index": 1
+    },
+    "edge_top_03": {
+      "path": "res://assets/environments/terrain/forest/v002/edges/edge_top_03.png",
+      "kind": "terrain",
+      "size": [
+        64,
+        64
+      ],
+      "native_canvas": [
+        64,
+        64
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        32,
+        64
+      ],
+      "visible_rect": [
+        0,
+        1,
+        64,
+        63
+      ],
+      "z_index": 1
+    },
+    "edge_top_04": {
+      "path": "res://assets/environments/terrain/forest/v002/edges/edge_top_04.png",
+      "kind": "terrain",
+      "size": [
+        64,
+        64
+      ],
+      "native_canvas": [
+        64,
+        64
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        32,
+        64
+      ],
+      "visible_rect": [
+        0,
+        1,
+        64,
+        63
+      ],
+      "z_index": 1
+    },
+    "edge_top_05": {
+      "path": "res://assets/environments/terrain/forest/v002/edges/edge_top_05.png",
+      "kind": "terrain",
+      "size": [
+        64,
+        64
+      ],
+      "native_canvas": [
+        64,
+        64
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        32,
+        64
+      ],
+      "visible_rect": [
+        0,
+        1,
+        64,
+        63
+      ],
+      "z_index": 1
+    },
+    "edge_top_06": {
+      "path": "res://assets/environments/terrain/forest/v002/edges/edge_top_06.png",
+      "kind": "terrain",
+      "size": [
+        64,
+        64
+      ],
+      "native_canvas": [
+        64,
+        64
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        32,
+        64
+      ],
+      "visible_rect": [
+        0,
+        1,
+        64,
+        63
+      ],
+      "z_index": 1
+    },
+    "edge_top_07": {
+      "path": "res://assets/environments/terrain/forest/v002/edges/edge_top_07.png",
+      "kind": "terrain",
+      "size": [
+        64,
+        64
+      ],
+      "native_canvas": [
+        64,
+        64
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        32,
+        64
+      ],
+      "visible_rect": [
+        0,
+        1,
+        64,
+        63
+      ],
+      "z_index": 1
+    },
+    "edge_bottom_00": {
+      "path": "res://assets/environments/terrain/forest/v002/edges/edge_bottom_00.png",
+      "kind": "terrain",
+      "size": [
+        64,
+        64
+      ],
+      "native_canvas": [
+        64,
+        64
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        35,
+        63
+      ],
+      "visible_rect": [
+        0,
+        0,
+        64,
+        63
+      ],
+      "z_index": 1
+    },
+    "edge_bottom_01": {
+      "path": "res://assets/environments/terrain/forest/v002/edges/edge_bottom_01.png",
+      "kind": "terrain",
+      "size": [
+        64,
+        64
+      ],
+      "native_canvas": [
+        64,
+        64
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        33,
+        63
+      ],
+      "visible_rect": [
+        0,
+        0,
+        64,
+        63
+      ],
+      "z_index": 1
+    },
+    "edge_bottom_02": {
+      "path": "res://assets/environments/terrain/forest/v002/edges/edge_bottom_02.png",
+      "kind": "terrain",
+      "size": [
+        64,
+        64
+      ],
+      "native_canvas": [
+        64,
+        64
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        37,
+        63
+      ],
+      "visible_rect": [
+        0,
+        0,
+        64,
+        63
+      ],
+      "z_index": 1
+    },
+    "edge_bottom_03": {
+      "path": "res://assets/environments/terrain/forest/v002/edges/edge_bottom_03.png",
+      "kind": "terrain",
+      "size": [
+        64,
+        64
+      ],
+      "native_canvas": [
+        64,
+        64
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        32,
+        63
+      ],
+      "visible_rect": [
+        0,
+        0,
+        64,
+        63
+      ],
+      "z_index": 1
+    },
+    "edge_bottom_04": {
+      "path": "res://assets/environments/terrain/forest/v002/edges/edge_bottom_04.png",
+      "kind": "terrain",
+      "size": [
+        64,
+        64
+      ],
+      "native_canvas": [
+        64,
+        64
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        31,
+        63
+      ],
+      "visible_rect": [
+        0,
+        0,
+        64,
+        63
+      ],
+      "z_index": 1
+    },
+    "edge_bottom_05": {
+      "path": "res://assets/environments/terrain/forest/v002/edges/edge_bottom_05.png",
+      "kind": "terrain",
+      "size": [
+        64,
+        64
+      ],
+      "native_canvas": [
+        64,
+        64
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        29,
+        63
+      ],
+      "visible_rect": [
+        0,
+        0,
+        64,
+        63
+      ],
+      "z_index": 1
+    },
+    "edge_bottom_06": {
+      "path": "res://assets/environments/terrain/forest/v002/edges/edge_bottom_06.png",
+      "kind": "terrain",
+      "size": [
+        64,
+        64
+      ],
+      "native_canvas": [
+        64,
+        64
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        28,
+        63
+      ],
+      "visible_rect": [
+        0,
+        0,
+        64,
+        63
+      ],
+      "z_index": 1
+    },
+    "edge_bottom_07": {
+      "path": "res://assets/environments/terrain/forest/v002/edges/edge_bottom_07.png",
+      "kind": "terrain",
+      "size": [
+        64,
+        64
+      ],
+      "native_canvas": [
+        64,
+        64
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        31,
+        63
+      ],
+      "visible_rect": [
+        0,
+        0,
+        64,
+        63
+      ],
+      "z_index": 1
+    },
+    "edge_left_00": {
+      "path": "res://assets/environments/terrain/forest/v002/edges/edge_left_00.png",
+      "kind": "terrain",
+      "size": [
+        64,
+        64
+      ],
+      "native_canvas": [
+        64,
+        64
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        32,
+        64
+      ],
+      "visible_rect": [
+        1,
+        0,
+        63,
+        64
+      ],
+      "z_index": 1
+    },
+    "edge_left_01": {
+      "path": "res://assets/environments/terrain/forest/v002/edges/edge_left_01.png",
+      "kind": "terrain",
+      "size": [
+        64,
+        64
+      ],
+      "native_canvas": [
+        64,
+        64
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        32,
+        64
+      ],
+      "visible_rect": [
+        1,
+        0,
+        63,
+        64
+      ],
+      "z_index": 1
+    },
+    "edge_left_02": {
+      "path": "res://assets/environments/terrain/forest/v002/edges/edge_left_02.png",
+      "kind": "terrain",
+      "size": [
+        64,
+        64
+      ],
+      "native_canvas": [
+        64,
+        64
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        32,
+        64
+      ],
+      "visible_rect": [
+        1,
+        0,
+        63,
+        64
+      ],
+      "z_index": 1
+    },
+    "edge_left_03": {
+      "path": "res://assets/environments/terrain/forest/v002/edges/edge_left_03.png",
+      "kind": "terrain",
+      "size": [
+        64,
+        64
+      ],
+      "native_canvas": [
+        64,
+        64
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        32,
+        64
+      ],
+      "visible_rect": [
+        1,
+        0,
+        63,
+        64
+      ],
+      "z_index": 1
+    },
+    "edge_left_04": {
+      "path": "res://assets/environments/terrain/forest/v002/edges/edge_left_04.png",
+      "kind": "terrain",
+      "size": [
+        64,
+        64
+      ],
+      "native_canvas": [
+        64,
+        64
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        32,
+        64
+      ],
+      "visible_rect": [
+        1,
+        0,
+        63,
+        64
+      ],
+      "z_index": 1
+    },
+    "edge_left_05": {
+      "path": "res://assets/environments/terrain/forest/v002/edges/edge_left_05.png",
+      "kind": "terrain",
+      "size": [
+        64,
+        64
+      ],
+      "native_canvas": [
+        64,
+        64
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        32,
+        64
+      ],
+      "visible_rect": [
+        1,
+        0,
+        63,
+        64
+      ],
+      "z_index": 1
+    },
+    "edge_left_06": {
+      "path": "res://assets/environments/terrain/forest/v002/edges/edge_left_06.png",
+      "kind": "terrain",
+      "size": [
+        64,
+        64
+      ],
+      "native_canvas": [
+        64,
+        64
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        32,
+        64
+      ],
+      "visible_rect": [
+        1,
+        0,
+        63,
+        64
+      ],
+      "z_index": 1
+    },
+    "edge_left_07": {
+      "path": "res://assets/environments/terrain/forest/v002/edges/edge_left_07.png",
+      "kind": "terrain",
+      "size": [
+        64,
+        64
+      ],
+      "native_canvas": [
+        64,
+        64
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        32,
+        64
+      ],
+      "visible_rect": [
+        1,
+        0,
+        63,
+        64
+      ],
+      "z_index": 1
+    },
+    "edge_right_00": {
+      "path": "res://assets/environments/terrain/forest/v002/edges/edge_right_00.png",
+      "kind": "terrain",
+      "size": [
+        64,
+        64
+      ],
+      "native_canvas": [
+        64,
+        64
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        32,
+        64
+      ],
+      "visible_rect": [
+        0,
+        0,
+        63,
+        64
+      ],
+      "z_index": 1
+    },
+    "edge_right_01": {
+      "path": "res://assets/environments/terrain/forest/v002/edges/edge_right_01.png",
+      "kind": "terrain",
+      "size": [
+        64,
+        64
+      ],
+      "native_canvas": [
+        64,
+        64
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        32,
+        64
+      ],
+      "visible_rect": [
+        0,
+        0,
+        63,
+        64
+      ],
+      "z_index": 1
+    },
+    "edge_right_02": {
+      "path": "res://assets/environments/terrain/forest/v002/edges/edge_right_02.png",
+      "kind": "terrain",
+      "size": [
+        64,
+        64
+      ],
+      "native_canvas": [
+        64,
+        64
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        32,
+        64
+      ],
+      "visible_rect": [
+        0,
+        0,
+        63,
+        64
+      ],
+      "z_index": 1
+    },
+    "edge_right_03": {
+      "path": "res://assets/environments/terrain/forest/v002/edges/edge_right_03.png",
+      "kind": "terrain",
+      "size": [
+        64,
+        64
+      ],
+      "native_canvas": [
+        64,
+        64
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        32,
+        64
+      ],
+      "visible_rect": [
+        0,
+        0,
+        63,
+        64
+      ],
+      "z_index": 1
+    },
+    "edge_right_04": {
+      "path": "res://assets/environments/terrain/forest/v002/edges/edge_right_04.png",
+      "kind": "terrain",
+      "size": [
+        64,
+        64
+      ],
+      "native_canvas": [
+        64,
+        64
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        32,
+        64
+      ],
+      "visible_rect": [
+        0,
+        0,
+        63,
+        64
+      ],
+      "z_index": 1
+    },
+    "edge_right_05": {
+      "path": "res://assets/environments/terrain/forest/v002/edges/edge_right_05.png",
+      "kind": "terrain",
+      "size": [
+        64,
+        64
+      ],
+      "native_canvas": [
+        64,
+        64
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        32,
+        64
+      ],
+      "visible_rect": [
+        0,
+        0,
+        63,
+        64
+      ],
+      "z_index": 1
+    },
+    "edge_right_06": {
+      "path": "res://assets/environments/terrain/forest/v002/edges/edge_right_06.png",
+      "kind": "terrain",
+      "size": [
+        64,
+        64
+      ],
+      "native_canvas": [
+        64,
+        64
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        32,
+        64
+      ],
+      "visible_rect": [
+        0,
+        0,
+        63,
+        64
+      ],
+      "z_index": 1
+    },
+    "edge_right_07": {
+      "path": "res://assets/environments/terrain/forest/v002/edges/edge_right_07.png",
+      "kind": "terrain",
+      "size": [
+        64,
+        64
+      ],
+      "native_canvas": [
+        64,
+        64
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        32,
+        64
+      ],
+      "visible_rect": [
+        0,
+        0,
+        63,
+        64
+      ],
+      "z_index": 1
+    },
+    "mist_sheet": {
+      "path": "res://assets/effects/forest_mist_v2/mist_sheet.png",
+      "kind": "effect",
+      "size": [
+        256,
+        32
+      ],
+      "native_canvas": [
+        256,
+        32
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        135,
+        32
+      ],
+      "visible_rect": [
+        1,
+        0,
+        255,
+        32
+      ],
+      "z_index": 1
+    }
+  },
+  "palette": [
+    "#152523",
+    "#20352d",
+    "#2d4935",
+    "#3b5838",
+    "#526d3f",
+    "#71834c",
+    "#94a265",
+    "#b2b88b",
+    "#1d2520",
+    "#2d3026",
+    "#41412e",
+    "#595138",
+    "#726346",
+    "#917b57",
+    "#af9870",
+    "#d1ba8e",
+    "#263b3e",
+    "#36545a",
+    "#4b6b6a",
+    "#6e8c7c",
+    "#9ab29a",
+    "#c7d0ac",
+    "#353f3d",
+    "#4e5951",
+    "#687664",
+    "#87947b",
+    "#e2d8b2",
+    "#f1e7c3",
+    "#cba865",
+    "#9a7a42",
+    "#dec27d",
+    "#a7d2bd"
+  ],
+  "native_pixel_scale": 1,
+  "filter": "nearest",
+  "edge_variants": [
+    "edge_top_00",
+    "edge_top_01",
+    "edge_top_02",
+    "edge_top_03",
+    "edge_top_04",
+    "edge_top_05",
+    "edge_top_06",
+    "edge_top_07",
+    "edge_bottom_00",
+    "edge_bottom_01",
+    "edge_bottom_02",
+    "edge_bottom_03",
+    "edge_bottom_04",
+    "edge_bottom_05",
+    "edge_bottom_06",
+    "edge_bottom_07",
+    "edge_left_00",
+    "edge_left_01",
+    "edge_left_02",
+    "edge_left_03",
+    "edge_left_04",
+    "edge_left_05",
+    "edge_left_06",
+    "edge_left_07",
+    "edge_right_00",
+    "edge_right_01",
+    "edge_right_02",
+    "edge_right_03",
+    "edge_right_04",
+    "edge_right_05",
+    "edge_right_06",
+    "edge_right_07"
+  ]
+}

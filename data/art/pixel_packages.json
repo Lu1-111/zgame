@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "packages": [
+    {
+      "id": "cave_environment_v001",
+      "manifest": "data/art/cave_v001.json",
+      "expected_images": 109,
+      "metrics": "data/art/pixel_contracts/cave_v001.json"
+    },
+    {
+      "id": "forest_v002",
+      "manifest": "data/art/forest_v002.json",
+      "expected_images": 55,
+      "metrics": "data/art/pixel_contracts/forest_v002.json"
+    },
+    {
+      "id": "cave_bone_v001",
+      "manifest": "assets/PROCESSED/enemies/CAVE-BONE/v001/pixel_manifest.json",
+      "expected_images": 70,
+      "metrics": "data/art/pixel_contracts/cave_bone_v001.json"
+    },
+    {
+      "id": "cave_beasts_v001",
+      "manifest": "assets/PROCESSED/enemies/CAVE-BEASTS/v001/pixel_manifest.json",
+      "expected_images": 114,
+      "metrics": "data/art/pixel_contracts/cave_beasts_v001.json"
+    },
+    {
+      "id": "weapon_appearances_v001",
+      "manifest": "assets/PROCESSED/weapons/appearances/v001/pixel_manifest.json",
+      "expected_images": 152,
+      "metrics": "data/art/pixel_contracts/weapon_appearances_v001.json"
+    },
+    {
+      "id": "weapons_v001",
+      "manifest": "assets/PROCESSED/weapons/catalog_v001/pixel_manifest.json",
+      "expected_images": 276,
+      "metrics": "data/art/pixel_contracts/weapons_v001.json"
+    },
+    {
+      "id": "arsenal_v001",
+      "manifest": "data/art/arsenal_v001.json",
+      "expected_images": 76,
+      "metrics": "data/art/pixel_contracts/arsenal_v001.json"
+    },
+    {
+      "id": "status_v001",
+      "manifest": "data/art/status_pixel_manifest_v001.json",
+      "expected_images": 4,
+      "metrics": "data/art/pixel_contracts/status_v001.json"
+    }
+  ]
+}

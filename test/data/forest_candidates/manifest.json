@@ -1,0 +1,85 @@
+{
+  "candidates": [
+    {
+      "id": "05A",
+      "title": "分水根庭",
+      "kind": "解谜一 · 双闸分水",
+      "scene": "res://test/scenes/forest_candidates/forest_05A.tscn",
+      "config": "res://test/data/forest_candidates/05A.json",
+      "map": "res://test/assets/forest_candidates/05A_map.png"
+    },
+    {
+      "id": "05B",
+      "title": "双篮树井",
+      "kind": "解谜一 · 配重升降",
+      "scene": "res://test/scenes/forest_candidates/forest_05B.tscn",
+      "config": "res://test/data/forest_candidates/05B.json",
+      "map": "res://test/assets/forest_candidates/05B_map.png"
+    },
+    {
+      "id": "06A",
+      "title": "折光菌窟",
+      "kind": "解谜二 · 两层折光",
+      "scene": "res://test/scenes/forest_candidates/forest_06A.tscn",
+      "config": "res://test/data/forest_candidates/06A.json",
+      "map": "res://test/assets/forest_candidates/06A_map.png"
+    },
+    {
+      "id": "06B",
+      "title": "风息风琴",
+      "kind": "解谜二 · 三阀导风",
+      "scene": "res://test/scenes/forest_candidates/forest_06B.tscn",
+      "config": "res://test/data/forest_candidates/06B.json",
+      "map": "res://test/assets/forest_candidates/06B_map.png"
+    },
+    {
+      "id": "07A",
+      "title": "断冠攀环",
+      "kind": "跑酷 · 绕柱上升",
+      "scene": "res://test/scenes/forest_candidates/forest_07A.tscn",
+      "config": "res://test/data/forest_candidates/07A.json",
+      "map": "res://test/assets/forest_candidates/07A_map.png"
+    },
+    {
+      "id": "07B",
+      "title": "裂谷折返",
+      "kind": "跑酷 · 下降再攀出",
+      "scene": "res://test/scenes/forest_candidates/forest_07B.tscn",
+      "config": "res://test/data/forest_candidates/07B.json",
+      "map": "res://test/assets/forest_candidates/07B_map.png"
+    },
+    {
+      "id": "08A",
+      "title": "苔甲三庭",
+      "kind": "战斗一 · 平地串庭",
+      "scene": "res://test/scenes/forest_candidates/forest_08A.tscn",
+      "config": "res://test/data/forest_candidates/08A.json",
+      "map": "res://test/assets/forest_candidates/08A_map.png"
+    },
+    {
+      "id": "08B",
+      "title": "树心双层堂",
+      "kind": "战斗一 · 双厅错层",
+      "scene": "res://test/scenes/forest_candidates/forest_08B.tscn",
+      "config": "res://test/data/forest_candidates/08B.json",
+      "map": "res://test/assets/forest_candidates/08B_map.png"
+    },
+    {
+      "id": "09A",
+      "title": "断根哨营",
+      "kind": "战斗二 · 哨所与围场",
+      "scene": "res://test/scenes/forest_candidates/forest_09A.tscn",
+      "config": "res://test/data/forest_candidates/09A.json",
+      "map": "res://test/assets/forest_candidates/09A_map.png"
+    },
+    {
+      "id": "09B",
+      "title": "盘根防线",
+      "kind": "战斗二 · 中庭三支路",
+      "scene": "res://test/scenes/forest_candidates/forest_09B.tscn",
+      "config": "res://test/data/forest_candidates/09B.json",
+      "map": "res://test/assets/forest_candidates/09B_map.png"
+    }
+  ],
+  "rules": "res://test/data/forest_candidates_rules.json"
+}

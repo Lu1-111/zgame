@@ -1,0 +1,186 @@
+{
+  "accessories": [
+    {
+      "id": "accessory_01",
+      "name": "铭牌",
+      "appearance": "金属士兵铭牌",
+      "effect_description": "伤害提升5%",
+      "desc": "奶家军的士兵铭牌，奶龙一直随身携带，即使被选为勇者也从未忘记士兵的身份。",
+      "effects": {
+        "damage_pct": 5
+      },
+      "icon": "res://assets/PROCESSED/accessories/accessory_01/v001/icon.png"
+    },
+    {
+      "id": "accessory_02",
+      "name": "回春护符",
+      "appearance": "带藤蔓的花形护符",
+      "effect_description": "生命上限提升5%，生命回复量提升25%",
+      "desc": "增强使用者的生命力的护符",
+      "effects": {
+        "hp_max_pct": 5,
+        "heal_pct": 25
+      },
+      "icon": "res://assets/PROCESSED/accessories/accessory_02/v001/icon.png"
+    },
+    {
+      "id": "accessory_03",
+      "name": "锈蚀之剑",
+      "appearance": "锈迹斑斑的断剑",
+      "effect_description": "近战伤害提升8%",
+      "desc": "不知名英雄的遗物之一，久经沙场的断剑，铭刻着战斗的记忆",
+      "effects": {
+        "melee_damage_pct": 8
+      },
+      "icon": "res://assets/PROCESSED/accessories/accessory_03/v001/icon.png"
+    },
+    {
+      "id": "accessory_04",
+      "name": "腐朽之弓",
+      "appearance": "已经折断的弓",
+      "effect_description": "远程伤害提升8%",
+      "desc": "不知名英雄的遗物之一，久经沙场的断弓，铭刻着战斗的记忆",
+      "effects": {
+        "ranged_damage_pct": 8
+      },
+      "icon": "res://assets/PROCESSED/accessories/accessory_04/v001/icon.png"
+    },
+    {
+      "id": "accessory_05",
+      "name": "破败之盾",
+      "appearance": "严重损坏的盾牌",
+      "effect_description": "伤害减免提升8%",
+      "desc": "不知名英雄的遗物之一，久经沙场的盾牌，铭刻着战斗的记忆",
+      "effects": {
+        "damage_reduction_pct": 8
+      },
+      "icon": "res://assets/PROCESSED/accessories/accessory_05/v001/icon.png"
+    },
+    {
+      "id": "accessory_06",
+      "name": "弑血护符",
+      "appearance": "残破带血的铁护符",
+      "effect_description": "流血伤害提升50%",
+      "desc": "锈迹斑斑的铁质护符，附带破伤风属性",
+      "effects": {
+        "bleeding_damage_pct": 50
+      },
+      "icon": "res://assets/PROCESSED/accessories/accessory_06/v001/icon.png"
+    },
+    {
+      "id": "accessory_07",
+      "name": "追猎",
+      "appearance": "刺客匕首",
+      "effect_description": "造成破韧后，下次攻击伤害提升20%",
+      "desc": "刺客的匕首，一旦锁定目标，将抓住任何置其于死地的机会",
+      "effects": {
+        "next_attack_after_break_pct": 20
+      },
+      "icon": "res://assets/PROCESSED/accessories/accessory_07/v001/icon.png"
+    },
+    {
+      "id": "accessory_08",
+      "name": "弹丸腰带",
+      "appearance": "挂着弹药袋的腰带",
+      "effect_description": "枪类每次射击有1/3几率免耗弹药储量",
+      "desc": "蕴含魔法的腰带，能以魔法拟造出弹药",
+      "effects": {
+        "free_shot_probability": 0.3333333333333333
+      },
+      "icon": "res://assets/PROCESSED/accessories/accessory_08/v001/icon.png"
+    },
+    {
+      "id": "accessory_09",
+      "name": "豪情",
+      "appearance": "黑色卫衣",
+      "effect_description": "闪避动作后1秒内，伤害提升10%",
+      "desc": "豪情在天",
+      "effects": {
+        "post_dodge_damage_pct": 10,
+        "post_dodge_seconds": 1
+      },
+      "icon": "res://assets/PROCESSED/accessories/accessory_09/v001/icon.png"
+    },
+    {
+      "id": "accessory_10",
+      "name": "战意披风",
+      "appearance": "红色披风",
+      "effect_description": "每损失1%生命，伤害提升0.3%",
+      "desc": "永不言弃",
+      "effects": {
+        "damage_pct_per_missing_hp_pct": 0.3
+      },
+      "icon": "res://assets/PROCESSED/accessories/accessory_10/v001/icon.png"
+    },
+    {
+      "id": "accessory_11",
+      "name": "能量立方",
+      "appearance": "蓝光机械立方",
+      "effect_description": "当前装备武器均为机械武器时，伤害提升10%",
+      "desc": "未知文明遗迹中发现的奇怪装置，虽然不能解析其结构，但似乎与同源的机械武器能产生共鸣",
+      "effects": {
+        "mechanical_damage_pct": 10
+      },
+      "icon": "res://assets/PROCESSED/accessories/accessory_11/v001/icon.png"
+    },
+    {
+      "id": "accessory_12",
+      "name": "超频外骨骼",
+      "appearance": "机械外骨骼装置",
+      "effect_description": "移速提升5%，攻速提升10%，伤害降低10%",
+      "desc": "未知文明遗迹中的奇特装备，似乎能提升穿戴者的机动能力",
+      "effects": {
+        "move_speed_pct": 5,
+        "attack_speed_pct": 10,
+        "damage_pct": -10
+      },
+      "icon": "res://assets/PROCESSED/accessories/accessory_12/v001/icon.png"
+    },
+    {
+      "id": "accessory_13",
+      "name": "虚空意志",
+      "appearance": "深黑内核与紫色边缘的黑洞",
+      "effect_description": "伤害提升25%，受到伤害提升20%",
+      "desc": "深邃黑暗之祝福",
+      "effects": {
+        "damage_pct": 25,
+        "damage_taken_pct": 20
+      },
+      "icon": "res://assets/PROCESSED/accessories/accessory_13/v001/icon.png"
+    },
+    {
+      "id": "accessory_14",
+      "name": "坚盾护符",
+      "appearance": "盾形护符",
+      "effect_description": "防御时完全减免伤害，无视防御的攻击除外",
+      "desc": "能让使用者使出毫无破绽的防御架势的护符",
+      "effects": {
+        "full_guard": 1
+      },
+      "icon": "res://assets/PROCESSED/accessories/accessory_14/v001/icon.png"
+    },
+    {
+      "id": "accessory_15",
+      "name": "元素护符",
+      "appearance": "水晶护符",
+      "effect_description": "奶力消耗降低30%",
+      "desc": "星辰之力蕴含其中。",
+      "effects": {
+        "mana_cost_pct": -30
+      },
+      "icon": "res://assets/PROCESSED/accessories/accessory_15/v001/icon.png"
+    },
+    {
+      "id": "accessory_16",
+      "name": "活力护符",
+      "appearance": "绿金色新芽护符",
+      "effect_description": "体力消耗降低20%，体力回复速度提升20%",
+      "desc": "让使用者精力充沛的护符",
+      "effects": {
+        "stamina_cost_pct": -20,
+        "stamina_regen_pct": 20
+      },
+      "icon": "res://assets/PROCESSED/accessories/accessory_16/v001/icon.png"
+    }
+  ]
+}

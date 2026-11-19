@@ -1,0 +1,378 @@
+{
+  "id": "stonehelm_beast",
+  "name": "岩盔兽",
+  "canvas": [
+    128,
+    96
+  ],
+  "anchor": [
+    64,
+    80
+  ],
+  "palette": [
+    "#10131d",
+    "#202431",
+    "#343a49",
+    "#525c6c",
+    "#8794a0",
+    "#c5ced0",
+    "#edf1e9",
+    "#49403c",
+    "#77614f",
+    "#b59970",
+    "#e6d5ab",
+    "#187180",
+    "#65d1d5",
+    "#d9ffff",
+    "#292e3c",
+    "#424959"
+  ],
+  "native_pixel_scale": 1,
+  "runtime_scale": [
+    1,
+    1
+  ],
+  "filter": "nearest",
+  "base_hp": null,
+  "base_damage": null,
+  "poise": null,
+  "resist": {
+    "physical": null,
+    "magic": null
+  },
+  "direction": "right",
+  "combat_implemented": false,
+  "source": "res://assets/RAW/enemies/CAVE-BEASTS/v001/stone.png",
+  "source_sha256": "dcef4b0b3199cc098c770b8bc944a5adf83ade01e4727feed15ba4e3bcfbfebe",
+  "body_scale": 0.3464566929133858,
+  "reference_visible_height": 44,
+  "animations": {
+    "idle": {
+      "frames": [
+        "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/idle/00.png",
+        "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/idle/01.png",
+        "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/idle/02.png",
+        "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/idle/03.png",
+        "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/idle/04.png",
+        "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/idle/05.png"
+      ],
+      "frame_count": 6,
+      "fps": 4.5,
+      "loop": true,
+      "canvas": [
+        128,
+        96
+      ],
+      "anchor": [
+        64,
+        80
+      ],
+      "unique_frames": 6,
+      "sha256": [
+        "e404ee367d10311db49bfdb2ef19e5b8106c2e54b33d3cf0a71c509e81d2a3a2",
+        "0de77401b8e828c2548d7e9e1e3fec08f81c4e74333adecca4a17358e789d6fa",
+        "e96841d8bf0e9bfc4bf62b7d195be3237c6e82b0cf23c0bf7a2ec4cc74e727b9",
+        "1a5fb562cb670b644e07df57b7f119e543f8a874eeff8ec0ab2e2a66d4bd3f22",
+        "270cfac032201d7da6388f045409d76cb93d08c75b0785844eaf6c81a46e2696",
+        "51683f6bd6e312cd77487150dccf9bbf9f7103749fdffb2a93a14cb18a97f088"
+      ],
+      "visible_rects": [
+        [
+          28,
+          38,
+          100,
+          80
+        ],
+        [
+          28,
+          37,
+          100,
+          80
+        ],
+        [
+          27,
+          34,
+          99,
+          80
+        ],
+        [
+          28,
+          33,
+          98,
+          79
+        ],
+        [
+          28,
+          35,
+          99,
+          80
+        ],
+        [
+          27,
+          39,
+          99,
+          80
+        ]
+      ],
+      "grounded": true,
+      "phase_tags": [
+        "cycle",
+        "cycle",
+        "cycle",
+        "cycle",
+        "cycle",
+        "cycle"
+      ],
+      "base_fps": 6,
+      "speed_multiplier": 0.75,
+      "duration_seconds": 1.3333333333333333
+    },
+    "move": {
+      "frames": [
+        "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/move/00.png",
+        "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/move/01.png",
+        "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/move/02.png",
+        "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/move/03.png",
+        "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/move/04.png",
+        "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/move/05.png"
+      ],
+      "frame_count": 6,
+      "fps": 6.75,
+      "loop": true,
+      "canvas": [
+        128,
+        96
+      ],
+      "anchor": [
+        64,
+        80
+      ],
+      "unique_frames": 6,
+      "sha256": [
+        "33a55eec59e15a96ecd368a1fe31bdfb18a67de138c135d7e104f213ca073d6a",
+        "932d19a77228dd3fbe82bff2f8bebeed04203e69c372fe4470dbca68755d032d",
+        "bf89f26af4db50e7b1917f8e3fa336e564144f3ee76f90c5b2096db4be246e1c",
+        "0c9778921897aca10fc34dbb98613aeb15b88c84cca988c7fcecf42cea85835f",
+        "6d9654994aa8cc53bd684d14d010bee97a27a8cd67a28e25382d05e1890589a6",
+        "2bf5bc3280ccc4ec8a26b7610874271a766d8aab129b68c262fa4e313198adf6"
+      ],
+      "visible_rects": [
+        [
+          28,
+          38,
+          100,
+          80
+        ],
+        [
+          28,
+          36,
+          100,
+          80
+        ],
+        [
+          27,
+          38,
+          100,
+          80
+        ],
+        [
+          28,
+          40,
+          100,
+          80
+        ],
+        [
+          28,
+          39,
+          100,
+          80
+        ],
+        [
+          28,
+          38,
+          99,
+          80
+        ]
+      ],
+      "grounded": true,
+      "phase_tags": [
+        "cycle",
+        "cycle",
+        "cycle",
+        "cycle",
+        "cycle",
+        "cycle"
+      ],
+      "base_fps": 9,
+      "speed_multiplier": 0.75,
+      "duration_seconds": 0.8888888888888888
+    },
+    "ram": {
+      "frames": [
+        "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/ram/00.png",
+        "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/ram/01.png",
+        "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/ram/02.png",
+        "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/ram/03.png",
+        "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/ram/04.png",
+        "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/ram/05.png"
+      ],
+      "frame_count": 6,
+      "fps": 7.5,
+      "loop": false,
+      "canvas": [
+        128,
+        96
+      ],
+      "anchor": [
+        64,
+        80
+      ],
+      "unique_frames": 6,
+      "sha256": [
+        "1e95987e2e008d521c004e0b05b32d3d4c0c79790cc012a12c34146e0a2db19a",
+        "8fdccaa22bb7ab0817d9ee093a3f3b042710088114af29ea335efe0903bf2f75",
+        "2263c952a2085386181361b6fa9ca99ad04c0a623207acfd3b7177d2d916634b",
+        "ce5997dffd086f18908b2a8279bad8e60a4e17c87a7c3f5f3ef454cc226427da",
+        "dd0955d43df8744f2eea974121ea0194130c210c148d48ae95528a8a780522bf",
+        "6a93144f5cd81d65c628a5c658f73a8982ffeb83664cf470d12230cfec28bd1f"
+      ],
+      "visible_rects": [
+        [
+          28,
+          39,
+          101,
+          80
+        ],
+        [
+          28,
+          42,
+          99,
+          80
+        ],
+        [
+          27,
+          43,
+          99,
+          80
+        ],
+        [
+          23,
+          42,
+          103,
+          80
+        ],
+        [
+          26,
+          40,
+          101,
+          80
+        ],
+        [
+          28,
+          38,
+          100,
+          80
+        ]
+      ],
+      "grounded": true,
+      "phase_tags": [
+        "prepare",
+        "prepare",
+        "extend",
+        "active",
+        "recover",
+        "recover"
+      ],
+      "base_fps": 10,
+      "speed_multiplier": 0.75,
+      "duration_seconds": 0.8
+    },
+    "shell_defense": {
+      "frames": [
+        "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/shell_defense/00.png",
+        "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/shell_defense/01.png",
+        "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/shell_defense/02.png",
+        "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/shell_defense/03.png",
+        "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/shell_defense/04.png",
+        "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/shell_defense/05.png"
+      ],
+      "frame_count": 6,
+      "fps": 6.0,
+      "loop": false,
+      "canvas": [
+        128,
+        96
+      ],
+      "anchor": [
+        64,
+        80
+      ],
+      "unique_frames": 6,
+      "sha256": [
+        "47f816934e5342f89af9566b8ef6e78b7844e40807a7b338b00b6f180d372f7c",
+        "a6b21c6aa8ac6907636ec2c0883ee2408ef04eedfd8d6593cc820ab588bf9e45",
+        "48cdfccaec3dc4f914d875f20e3febba554ad65b181363b99c9b539b4f15b70f",
+        "407657cfc4071c0cffc9f2126a16932e6a9f4913aae903a4a1e760ccc3bc2546",
+        "1441d54e2e176f838acda3f8d164d30b5a58d6615ac1ddc481979e3a9e237d3e",
+        "6ad8981a65b8b002405d0175e8c2a0f11e0087fa42236648976d28336e0a75c9"
+      ],
+      "visible_rects": [
+        [
+          28,
+          39,
+          100,
+          80
+        ],
+        [
+          27,
+          41,
+          100,
+          80
+        ],
+        [
+          27,
+          45,
+          97,
+          80
+        ],
+        [
+          28,
+          47,
+          97,
+          80
+        ],
+        [
+          28,
+          43,
+          98,
+          80
+        ],
+        [
+          28,
+          39,
+          100,
+          80
+        ]
+      ],
+      "grounded": true,
+      "phase_tags": [
+        "prepare",
+        "prepare",
+        "extend",
+        "active",
+        "recover",
+        "recover"
+      ],
+      "hold_frame": 3,
+      "base_fps": 8,
+      "speed_multiplier": 0.75,
+      "duration_seconds": 1.0
+    }
+  },
+  "projectiles": {},
+  "effects": {},
+  "sprite_frames": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/sprite_frames.tres",
+  "pixel_conversion": "res://data/art/cave_enemy_imagemagick.json",
+  "art_revision": "imagemagick_v002",
+  "processing": "ImageMagick point sampling from RAW; no dithering; shared 16-color palette; fixed native canvas and anchor"
+}

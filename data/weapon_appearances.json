@@ -1,0 +1,699 @@
+{
+  "revision": 1,
+  "default": "original",
+  "modules": [
+    "sword",
+    "hammer",
+    "staff",
+    "rifle"
+  ],
+  "manifest": "res://assets/PROCESSED/weapons/appearances/v001/manifest.json",
+  "skins": {
+    "original": {
+      "name": "原版"
+    },
+    "bronze": {
+      "name": "铜金",
+      "palette": [
+        "#241c20",
+        "#50352d",
+        "#805335",
+        "#b38346",
+        "#dcba73",
+        "#fff0b0"
+      ],
+      "rifle": {
+        "wood": "#805335",
+        "wood_light": "#dcba73",
+        "steel": "#b38346",
+        "highlight": "#fff0b0",
+        "dark": "#50352d"
+      }
+    },
+    "frost": {
+      "name": "霜蓝",
+      "palette": [
+        "#142439",
+        "#264a69",
+        "#427f9a",
+        "#76b6c7",
+        "#b6e4e4",
+        "#f0fcf4"
+      ],
+      "rifle": {
+        "wood": "#427f9a",
+        "wood_light": "#b6e4e4",
+        "steel": "#76b6c7",
+        "highlight": "#f0fcf4",
+        "dark": "#264a69"
+      }
+    },
+    "placeholder": {
+      "name": "握点占位"
+    },
+    "sword_02": {
+      "name": "残刃",
+      "weapon_type": "sword",
+      "model_spec": {
+        "id": "sword_02",
+        "name": "残刃",
+        "weapon_type": "sword",
+        "texture": "res://assets/PROCESSED/weapons/sword_02/v001/model.png",
+        "native_canvas": [
+          48,
+          24
+        ],
+        "grip": [
+          7,
+          12
+        ],
+        "source_angle_degrees": 0,
+        "runtime_scale": [
+          1,
+          1
+        ]
+      }
+    },
+    "sword_03": {
+      "name": "阔剑",
+      "weapon_type": "sword",
+      "model_spec": {
+        "id": "sword_03",
+        "name": "阔剑",
+        "weapon_type": "sword",
+        "texture": "res://assets/PROCESSED/weapons/sword_03/v001/model.png",
+        "native_canvas": [
+          48,
+          24
+        ],
+        "grip": [
+          7,
+          12
+        ],
+        "source_angle_degrees": 0,
+        "runtime_scale": [
+          1,
+          1
+        ]
+      }
+    },
+    "sword_04": {
+      "name": "落英",
+      "weapon_type": "sword",
+      "model_spec": {
+        "id": "sword_04",
+        "name": "落英",
+        "weapon_type": "sword",
+        "texture": "res://assets/PROCESSED/weapons/sword_04/v001/model.png",
+        "native_canvas": [
+          48,
+          24
+        ],
+        "grip": [
+          7,
+          12
+        ],
+        "source_angle_degrees": 0,
+        "runtime_scale": [
+          1,
+          1
+        ]
+      }
+    },
+    "sword_05": {
+      "name": "咒诅血刃",
+      "weapon_type": "sword",
+      "model_spec": {
+        "id": "sword_05",
+        "name": "咒诅血刃",
+        "weapon_type": "sword",
+        "texture": "res://assets/PROCESSED/weapons/sword_05/v001/model.png",
+        "native_canvas": [
+          48,
+          24
+        ],
+        "grip": [
+          7,
+          12
+        ],
+        "source_angle_degrees": 0,
+        "runtime_scale": [
+          1,
+          1
+        ]
+      }
+    },
+    "sword_06": {
+      "name": "切割者TS-01",
+      "weapon_type": "sword",
+      "model_spec": {
+        "id": "sword_06",
+        "name": "切割者TS-01",
+        "weapon_type": "sword",
+        "texture": "res://assets/PROCESSED/weapons/sword_06/v001/model.png",
+        "native_canvas": [
+          48,
+          24
+        ],
+        "grip": [
+          7,
+          12
+        ],
+        "source_angle_degrees": 0,
+        "runtime_scale": [
+          1,
+          1
+        ]
+      }
+    },
+    "hammer_02": {
+      "name": "流星锤",
+      "weapon_type": "hammer",
+      "model_spec": {
+        "id": "hammer_02",
+        "name": "流星锤",
+        "weapon_type": "hammer",
+        "texture": "res://assets/PROCESSED/weapons/hammer_02/v001/model.png",
+        "native_canvas": [
+          48,
+          24
+        ],
+        "grip": [
+          7,
+          12
+        ],
+        "source_angle_degrees": 0,
+        "runtime_scale": [
+          1,
+          1
+        ]
+      }
+    },
+    "hammer_03": {
+      "name": "石中剑",
+      "weapon_type": "hammer",
+      "model_spec": {
+        "id": "hammer_03",
+        "name": "石中剑",
+        "weapon_type": "hammer",
+        "texture": "res://assets/PROCESSED/weapons/hammer_03/v001/model.png",
+        "native_canvas": [
+          48,
+          24
+        ],
+        "grip": [
+          7,
+          12
+        ],
+        "source_angle_degrees": 0,
+        "runtime_scale": [
+          1,
+          1
+        ]
+      }
+    },
+    "hammer_04": {
+      "name": "巨剑",
+      "weapon_type": "hammer",
+      "model_spec": {
+        "id": "hammer_04",
+        "name": "巨剑",
+        "weapon_type": "hammer",
+        "texture": "res://assets/PROCESSED/weapons/hammer_04/v001/model.png",
+        "native_canvas": [
+          48,
+          24
+        ],
+        "grip": [
+          7,
+          12
+        ],
+        "source_angle_degrees": 0,
+        "runtime_scale": [
+          1,
+          1
+        ]
+      }
+    },
+    "hammer_05": {
+      "name": "粉碎者TD-02",
+      "weapon_type": "hammer",
+      "model_spec": {
+        "id": "hammer_05",
+        "name": "粉碎者TD-02",
+        "weapon_type": "hammer",
+        "texture": "res://assets/PROCESSED/weapons/hammer_05/v001/model.png",
+        "native_canvas": [
+          48,
+          24
+        ],
+        "grip": [
+          7,
+          12
+        ],
+        "source_angle_degrees": 0,
+        "runtime_scale": [
+          1,
+          1
+        ]
+      }
+    },
+    "rifle_02": {
+      "name": "十字弩",
+      "weapon_type": "rifle",
+      "model_spec": {
+        "id": "rifle_02",
+        "name": "十字弩",
+        "weapon_type": "rifle",
+        "texture": "res://assets/PROCESSED/weapons/rifle_02/v001/model.png",
+        "native_canvas": [
+          48,
+          24
+        ],
+        "grip": [
+          18,
+          12
+        ],
+        "source_angle_degrees": 0,
+        "runtime_scale": [
+          1,
+          1
+        ]
+      },
+      "rifle_texture": {
+        "id": "rifle_02",
+        "name": "十字弩",
+        "weapon_type": "rifle",
+        "texture": "res://assets/PROCESSED/weapons/rifle_02/v001/model.png",
+        "native_canvas": [
+          48,
+          24
+        ],
+        "grip": [
+          18,
+          12
+        ],
+        "source_angle_degrees": 0,
+        "runtime_scale": [
+          1,
+          1
+        ]
+      }
+    },
+    "rifle_03": {
+      "name": "霰弹枪",
+      "weapon_type": "rifle",
+      "model_spec": {
+        "id": "rifle_03",
+        "name": "霰弹枪",
+        "weapon_type": "rifle",
+        "texture": "res://assets/PROCESSED/weapons/rifle_03/v001/model.png",
+        "native_canvas": [
+          48,
+          24
+        ],
+        "grip": [
+          18,
+          12
+        ],
+        "source_angle_degrees": 0,
+        "runtime_scale": [
+          1,
+          1
+        ]
+      },
+      "rifle_texture": {
+        "id": "rifle_03",
+        "name": "霰弹枪",
+        "weapon_type": "rifle",
+        "texture": "res://assets/PROCESSED/weapons/rifle_03/v001/model.png",
+        "native_canvas": [
+          48,
+          24
+        ],
+        "grip": [
+          18,
+          12
+        ],
+        "source_angle_degrees": 0,
+        "runtime_scale": [
+          1,
+          1
+        ]
+      }
+    },
+    "rifle_04": {
+      "name": "狙击步枪",
+      "weapon_type": "rifle",
+      "model_spec": {
+        "id": "rifle_04",
+        "name": "狙击步枪",
+        "weapon_type": "rifle",
+        "texture": "res://assets/PROCESSED/weapons/rifle_04/v001/model.png",
+        "native_canvas": [
+          48,
+          24
+        ],
+        "grip": [
+          18,
+          12
+        ],
+        "source_angle_degrees": 0,
+        "runtime_scale": [
+          1,
+          1
+        ]
+      },
+      "rifle_texture": {
+        "id": "rifle_04",
+        "name": "狙击步枪",
+        "weapon_type": "rifle",
+        "texture": "res://assets/PROCESSED/weapons/rifle_04/v001/model.png",
+        "native_canvas": [
+          48,
+          24
+        ],
+        "grip": [
+          18,
+          12
+        ],
+        "source_angle_degrees": 0,
+        "runtime_scale": [
+          1,
+          1
+        ]
+      }
+    },
+    "rifle_05": {
+      "name": "冲锋枪",
+      "weapon_type": "rifle",
+      "model_spec": {
+        "id": "rifle_05",
+        "name": "冲锋枪",
+        "weapon_type": "rifle",
+        "texture": "res://assets/PROCESSED/weapons/rifle_05/v001/model.png",
+        "native_canvas": [
+          48,
+          24
+        ],
+        "grip": [
+          18,
+          12
+        ],
+        "source_angle_degrees": 0,
+        "runtime_scale": [
+          1,
+          1
+        ]
+      },
+      "rifle_texture": {
+        "id": "rifle_05",
+        "name": "冲锋枪",
+        "weapon_type": "rifle",
+        "texture": "res://assets/PROCESSED/weapons/rifle_05/v001/model.png",
+        "native_canvas": [
+          48,
+          24
+        ],
+        "grip": [
+          18,
+          12
+        ],
+        "source_angle_degrees": 0,
+        "runtime_scale": [
+          1,
+          1
+        ]
+      }
+    },
+    "rifle_06": {
+      "name": "撕裂者TP-03",
+      "weapon_type": "rifle",
+      "model_spec": {
+        "id": "rifle_06",
+        "name": "撕裂者TP-03",
+        "weapon_type": "rifle",
+        "texture": "res://assets/PROCESSED/weapons/rifle_06/v001/model.png",
+        "native_canvas": [
+          48,
+          24
+        ],
+        "grip": [
+          18,
+          12
+        ],
+        "source_angle_degrees": 0,
+        "runtime_scale": [
+          1,
+          1
+        ]
+      },
+      "rifle_texture": {
+        "id": "rifle_06",
+        "name": "撕裂者TP-03",
+        "weapon_type": "rifle",
+        "texture": "res://assets/PROCESSED/weapons/rifle_06/v001/model.png",
+        "native_canvas": [
+          48,
+          24
+        ],
+        "grip": [
+          18,
+          12
+        ],
+        "source_angle_degrees": 0,
+        "runtime_scale": [
+          1,
+          1
+        ]
+      }
+    }
+  },
+  "pixel_contract": {
+    "runtime_scale": [
+      1,
+      1
+    ],
+    "resampling_passes": 0,
+    "max_weapon_colors": 32,
+    "alpha": [
+      0,
+      255
+    ],
+    "preserve_body_outside_mask": true
+  },
+  "extraction": {
+    "sword_half_width": 7,
+    "sword_handle_length": 12,
+    "blue_ratio_r": 1.015,
+    "blue_ratio_g": 1.005
+  },
+  "placeholder": {
+    "radius": 3,
+    "color": "#ec6ad1"
+  },
+  "rifle_model": {
+    "palette": {
+      "wood": "#765d42",
+      "wood_light": "#a28b67",
+      "steel": "#555f60",
+      "highlight": "#a2aeaa",
+      "dark": "#2d3434"
+    },
+    "primitives": [
+      {
+        "kind": "polygon",
+        "points": [
+          [
+            -12,
+            -1
+          ],
+          [
+            -8,
+            -2
+          ],
+          [
+            -2,
+            0
+          ],
+          [
+            8,
+            0
+          ],
+          [
+            8,
+            4
+          ],
+          [
+            -3,
+            3
+          ],
+          [
+            -9,
+            5
+          ],
+          [
+            -12,
+            4
+          ]
+        ],
+        "color": "wood",
+        "width": 0
+      },
+      {
+        "kind": "line",
+        "points": [
+          [
+            -11,
+            4
+          ],
+          [
+            -3,
+            2
+          ]
+        ],
+        "color": "wood_light",
+        "width": 1
+      },
+      {
+        "kind": "line",
+        "points": [
+          [
+            -2,
+            -1
+          ],
+          [
+            28,
+            -1
+          ]
+        ],
+        "color": "dark",
+        "width": 4
+      },
+      {
+        "kind": "line",
+        "points": [
+          [
+            -2,
+            -2
+          ],
+          [
+            28,
+            -2
+          ]
+        ],
+        "color": "steel",
+        "width": 2
+      },
+      {
+        "kind": "line",
+        "points": [
+          [
+            3,
+            -3
+          ],
+          [
+            28,
+            -3
+          ]
+        ],
+        "color": "highlight",
+        "width": 1
+      },
+      {
+        "kind": "line",
+        "points": [
+          [
+            6,
+            2
+          ],
+          [
+            14,
+            2
+          ]
+        ],
+        "color": "wood_light",
+        "width": 2
+      },
+      {
+        "kind": "line",
+        "points": [
+          [
+            -1,
+            -4
+          ],
+          [
+            3,
+            -4
+          ]
+        ],
+        "color": "highlight",
+        "width": 1
+      },
+      {
+        "kind": "line",
+        "points": [
+          [
+            25,
+            -4
+          ],
+          [
+            25,
+            -2
+          ]
+        ],
+        "color": "dark",
+        "width": 1
+      }
+    ]
+  },
+  "rifle_frame_extraction": {
+    "palette": [
+      "#a2aeaa",
+      "#555f60",
+      "#2d3434",
+      "#765d42",
+      "#a28b67"
+    ],
+    "region": [
+      36,
+      55,
+      81,
+      69
+    ],
+    "grips": [
+      [
+        49,
+        62
+      ],
+      [
+        49,
+        62
+      ],
+      [
+        49,
+        62
+      ],
+      [
+        49,
+        61
+      ],
+      [
+        50,
+        61
+      ],
+      [
+        51,
+        61
+      ],
+      [
+        52,
+        60
+      ],
+      [
+        52,
+        60
+      ]
+    ]
+  }
+}

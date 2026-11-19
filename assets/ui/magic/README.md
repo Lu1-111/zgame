@@ -1,6 +1,6 @@
 # 原创魔幻 UI
 
-代码绘制源：`tools/build_magic_ui_assets.py`，10 张可缩放 SVG。文字和操作按钮由 Godot 实时绘制。
+代码绘制源：`tools/assets/build_magic_ui_assets.py`，10 张可缩放 SVG。文字和操作按钮由 Godot 实时绘制。
 
 - `hud_frame.svg`：头像圈、三条相连量条及末端宝石。
 - `inventory_panel.svg`：行囊 / 仓库 / 天赋古金面板。

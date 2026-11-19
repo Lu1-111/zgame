@@ -12,6 +12,11 @@ var _bounds := Rect2()
 var _has_bounds := false
 var _shake_px := SHAKE_PX
 var _shake_left := 0.0
+var focus_target: Node2D
+
+## 过场可临时追踪Boss或构图标记；传null恢复玩家跟随。
+func set_focus_target(target: Node2D) -> void:
+	focus_target = target
 
 
 ## 注入房间边界（像素），摄像机会被钳制在该矩形内。
@@ -31,9 +36,9 @@ func shake(px: float = SHAKE_PX, duration: float = SHAKE_TIME) -> void:
 
 
 func _physics_process(delta: float) -> void:
-	var target := get_parent() as Node2D
+	var target := focus_target if is_instance_valid(focus_target) else get_parent() as Node2D
 	if target != null:
-		var face := float(target.get("facing")) if target.get("facing") != null else 0.0
+		var face := 0.0 if is_instance_valid(focus_target) else float(target.get("facing"))
 		var want := target.global_position + Vector2(LOOKAHEAD * signf(face), 0.0)
 		global_position = global_position.lerp(want, 1.0 - exp(-FOLLOW_LERP * delta))
 	if _shake_left > 0.0:

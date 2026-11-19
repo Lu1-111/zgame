@@ -22,7 +22,7 @@ RAW 共12张，位于 `assets/RAW/environments/ENV-B01/v001/`。每套保留完�
 
 ## 箱庭设计如何落地
 
-研究记录在 `docs/地图设计研究-ENV-B01.md`，含开发者访谈与官方文档来源。设计以巨木、奶泉、荧矿、采集蜂巢建立地标；林地小回环、断桥能力回访和女王后的回营大回环在连接图中区分。每房都有构图与节奏说明。
+研究记录在 `docs/maps/地图设计研究-ENV-B01.md`，含开发者访谈与官方文档来源。设计以巨木、奶泉、荧矿、采集蜂巢建立地标；林地小回环、断桥能力回访和女王后的回营大回环在连接图中区分。每房都有构图与节奏说明。
 
 为避免视觉误导，断桥使用单独桥面锚点对齐 y=340；森林出口洞口与边界门对齐；大株植物和岩石放在地形后方；回营小提示适配顶部落点；女王大厅采用新生成的宽背景，使中部战斗空间保持空净。背景不直接横向拉伸覆盖宽房。
 
@@ -31,15 +31,15 @@ RAW 共12张，位于 `assets/RAW/environments/ENV-B01/v001/`。每套保留完�
 在项目根目录依次运行：
 
 ```bash
-.venv/bin/python tools/build_environment_maps.py
+.venv/bin/python tools/maps/build_environment_maps.py
 ~/.local/bin/godot --headless --path . --import
-~/.local/bin/godot --headless --path . --script res://tools/build_environment_maps.gd
-~/.local/bin/godot --headless --path . --script res://tools/check_environment_maps.gd
-.venv/bin/python tools/validate_environment_maps.py
-~/.local/bin/godot --headless --path . --script res://tests/run_tests.gd
+~/.local/bin/godot --headless --path . --script res://tools/maps/build_environment_maps.gd
+~/.local/bin/godot --headless --path . --script res://tools/qa/check_environment_maps.gd
+.venv/bin/python tools/qa/validate_environment_maps.py
+~/.local/bin/godot --headless --path . --script res://test/run_tests.gd
 ```
 
-`tools/environment_map_design.json` 管理逐房构图和视觉配置；世界定义仍只读 `data/world/regions.json`。原画加工步骤、裁片和锚点在各套 `kit.json` 内。
+`tools/assets/environment_map_design.json` 管理逐房构图和视觉配置；世界定义仍只读 `data/world/regions.json`。原画加工步骤、裁片和锚点在各套 `kit.json` 内。
 
 ## 交付边界
 

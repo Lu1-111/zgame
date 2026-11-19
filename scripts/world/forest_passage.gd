@@ -2,6 +2,7 @@ extends RoomDoor
 ## 巨木通道：沿用房间路由，捷径由另一侧开关解锁，状态随 GameState 存档。
 
 @export var shortcut_id: StringName = &""
+@export var unlock_shortcut_on_exit := false
 var _arrival_grace := 0.0
 
 
@@ -24,6 +25,11 @@ func _physics_process(delta: float) -> void:
 func _on_body_entered(body: Node) -> void:
 	if _arrival_grace > 0.0 or SceneRouter.is_transitioning():
 		return
-	if shortcut_id != &"" and not GameState.opened_shortcuts.has(shortcut_id):
+	if not body.is_in_group(&"player"):
 		return
+	if shortcut_id != &"" and not GameState.opened_shortcuts.has(shortcut_id):
+		if not unlock_shortcut_on_exit:
+			return
+		# 从 forest_02 根部通道首次走到 forest_01 时，永久解除另一侧的单向封堵。
+		GameState.opened_shortcuts.append(shortcut_id)
 	super._on_body_entered(body)

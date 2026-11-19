@@ -98,8 +98,18 @@
       "休息",
       "天赋",
       "仓库",
+      "快速旅行",
       "离开"
-    ]
+    ],
+    "panel": [
+      20,
+      46,
+      240,
+      304
+    ],
+    "action_top": 92,
+    "action_gap": 33,
+    "footer_y": 278
   },
   "campfires": {
     "camp_01": {
@@ -117,21 +127,37 @@
         672
       ],
       "checkpoint": "cp_forest_01_tree"
+    },
+    "forest_02": {
+      "node": "Campfire",
+      "ground": [
+        272,
+        1712
+      ],
+      "checkpoint": "cp_forest_02_roots"
+    },
+    "forest_03": {
+      "node": "Campfire",
+      "ground": [
+        1968,
+        912
+      ],
+      "checkpoint": "cp_forest_03_gallery"
     }
   },
   "skills": [
     {
-      "id": "skill_bubble",
+      "id": "skill_comet_dash",
       "icon": "bubble",
       "key": "1"
     },
     {
-      "id": "skill_cleave",
+      "id": "skill_giga_milk_beam",
       "icon": "cleave",
       "key": "2"
     },
     {
-      "id": "",
+      "id": "skill_milk_spring",
       "icon": "",
       "key": "3"
     }

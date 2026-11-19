@@ -1,0 +1,142 @@
+{
+  "revision": 1,
+  "category_order": [
+    "main",
+    "side",
+    "exploration"
+  ],
+  "categories": {
+    "all": "全部",
+    "main": "主线",
+    "side": "支线",
+    "exploration": "探索"
+  },
+  "ui": {
+    "panel": [
+      16,
+      16,
+      608,
+      328
+    ],
+    "tracker": [
+      12,
+      84,
+      166,
+      62
+    ],
+    "marker_radius": 6,
+    "marker_color": "#e4d39f",
+    "map_header_y": 57,
+    "tracker_text": {
+      "title_rect": [
+        0,
+        0,
+        166,
+        18
+      ],
+      "objective_rect": [
+        2,
+        22,
+        164,
+        40
+      ],
+      "title_size": 10,
+      "objective_size": 9,
+      "title_color": "#efe5c7",
+      "objective_color": "#e2e3d4",
+      "outline_color": "#090b0ff2",
+      "outline_size": 2,
+      "shadow_color": "#000000a0",
+      "shadow_offset_y": 1
+    }
+  },
+  "quests": [
+    {
+      "id": "main_forest_fire",
+      "name": "林间的星火",
+      "category": "main",
+      "initial": true,
+      "sample": true,
+      "description": "沿营地东侧小径进入始点森林，找到巨树枝干上的灵火，为小队确认下一处歇脚地。",
+      "conditions": [
+        {
+          "kind": "visit_room",
+          "id": "forest_01",
+          "count": 1,
+          "text": "进入始点森林"
+        },
+        {
+          "kind": "campfire",
+          "id": "cp_forest_01_tree",
+          "count": 1,
+          "text": "与巨树灵火互动"
+        }
+      ],
+      "location": {
+        "room": "forest_01",
+        "position": [
+          1088,
+          672
+        ]
+      },
+      "rewards": {
+        "coin": 30,
+        "exp": 10
+      }
+    },
+    {
+      "id": "side_camp_supplies",
+      "name": "出发前的补给",
+      "category": "side",
+      "initial": true,
+      "sample": true,
+      "description": "临时据点的宝箱留有出行补给。打开宝箱，确认这些物资已装入行囊。",
+      "conditions": [
+        {
+          "kind": "chest",
+          "id": "camp_supplies",
+          "count": 1,
+          "text": "打开营地补给宝箱"
+        }
+      ],
+      "location": {
+        "room": "camp_01",
+        "position": [
+          662,
+          544
+        ]
+      },
+      "rewards": {
+        "coin": 15,
+        "exp": 5
+      }
+    },
+    {
+      "id": "explore_ancient_roots",
+      "name": "古根回路",
+      "category": "exploration",
+      "initial": true,
+      "sample": true,
+      "description": "苔甲小径深处残留着古老的机关。激活翡翠石碑，让被根蔓封锁的两处通道重新相连。",
+      "conditions": [
+        {
+          "kind": "shortcut",
+          "id": "forest_02_verdant_seal",
+          "count": 1,
+          "text": "激活古根机关"
+        }
+      ],
+      "location": {
+        "room": "forest_02",
+        "position": [
+          896,
+          688
+        ]
+      },
+      "rewards": {
+        "coin": 25,
+        "exp": 10
+      }
+    }
+  ]
+}

@@ -5,7 +5,8 @@ var ui: Node
 var page := "equipment"
 var gear_page := "weapon"
 var selected_weapon := -1
-var selected_skill := &"skill_bubble"
+var selected_accessory := &""
+var selected_skill := &"skill_comet_dash"
 var details: Control
 var _slots: Array[MagicSlot] = []
 
@@ -31,6 +32,8 @@ func open(next_page: String = "equipment") -> void:
 
 
 func _equipment() -> void:
+	RPGSkin.frame(ui.modal,"inset",Rect2(18,100,182,207))
+	RPGSkin.frame(ui.modal,"inset",Rect2(438,100,164,207))
 	ui._label(ui.modal,"装备详情",Vector2(24,74),13,ui._color("bright_gold"))
 	for index in 3:
 		var key: String = ["weapon","armor","accessory"][index]
@@ -39,14 +42,26 @@ func _equipment() -> void:
 	details.position = Vector2(22,102)
 	details.size = Vector2(174,198)
 	ui.modal.add_child(details)
-	for index in 16:
-		var slot := _slot("weapon_inventory",index,Vector2(216+(index%4)*48,109+floorf(index/4.0)*47),40)
-		if gear_page == "weapon":
-			var id := GameState.owned_weapons[index] if index < GameState.owned_weapons.size() else &""
-			_set_weapon(slot,id)
-			slot.selected = selected_weapon == index
-		else:
-			slot.locked = true
+	var accessories := gear_page == "accessory"
+	if gear_page in ["weapon", "accessory"]:
+		var owned := GameState.owned_accessories if accessories else GameState.owned_weapons
+		var count := maxi(20, owned.size())
+		var scroll := ScrollContainer.new()
+		scroll.position = Vector2(211, 104)
+		scroll.size = Vector2(217, 202)
+		scroll.horizontal_scroll_mode = ScrollContainer.SCROLL_MODE_DISABLED
+		ui.modal.add_child(scroll)
+		var grid := Control.new()
+		grid.custom_minimum_size = Vector2(204, ceili(count / 5.0) * 47)
+		scroll.add_child(grid)
+		for index in count:
+			var id := owned[index] if index < owned.size() else &""
+			var slot := _slot("accessory_inventory" if accessories else "weapon_inventory", index, Vector2((index%5)*41,floorf(index/5.0)*47), 38, grid)
+			if accessories:
+				_set_accessory(slot, id)
+			else:
+				_set_weapon(slot, id)
+				slot.selected = selected_weapon == index
 	ui._label(ui.modal,"人物",Vector2(450,75),13,ui._color("bright_gold"))
 	var portrait := AnimatedSprite2D.new()
 	portrait.sprite_frames = load("res://assets/PROCESSED/characters/CHR-01/v001/godot/CHR-01_sprite_frames.tres")
@@ -60,61 +75,75 @@ func _equipment() -> void:
 	_set_weapon(equipped,GameState.weapon_id)
 	equipped.tooltip_text = "武器 · 拖入替换，拖回格子卸下"
 	for index in 3:
-		var slot := _slot("equipment_reserved",index,Vector2(564,153+index*47),38)
-		slot.locked = true
+		var slot := _slot("equipment_reserved" if index == 0 else "accessory_equipped", index - 1, Vector2(564,153+index*47),38)
 		slot.key_text = ["甲","饰","饰"][index]
-		slot.tooltip_text = "护甲槽尚未开启" if index == 0 else "饰品槽尚未开启"
-	ui._label(ui.modal,"拖动武器装备或交换 · 换下的武器回到格子",Vector2(183,318),10,ui._color("muted"))
+		if index == 0:
+			slot.locked = true
+			slot.tooltip_text = "护甲槽尚未开启"
+		else:
+			_set_accessory(slot, GameState.equipped_accessories[index - 1])
+	ui._label(ui.modal,"拖动武器或饰品装备 · 换下的装备回到列表",Vector2(183,318),10,ui._color("muted"))
 	_weapon_details()
 
 
 func _weapon_details() -> void:
 	_clear_details()
-	if gear_page != "weapon":
+	if gear_page == "armor":
 		ui._label(details,"此装备槽尚未开启",Vector2(2,28),12,ui._color("muted"))
 		return
 	var id := GameState.owned_weapons[selected_weapon] if selected_weapon >= 0 and selected_weapon < GameState.owned_weapons.size() else &""
 	if selected_weapon == -2:
 		id = GameState.weapon_id
-	var definition := DataDB.get_weapon(id)
+	var definition := DataDB.get_accessory(selected_accessory) if gear_page == "accessory" else DataDB.get_weapon(id)
 	if definition.is_empty():
 		return
-	ui._picture(details,str(definition.icon),Rect2(2,2,40,40))
-	ui._paragraph(details,str(definition.name),Rect2(48,3,120,42),14,ui._color("bright_gold"))
-	var types := {"sword":"剑 · 近战物理","hammer":"锤 · 近战物理","rifle":"步枪 · 远程物理","staff":"杖 · 远程奶术"}
-	ui._label(details,str(types.get(str(definition.weapon_type),"武器")),Vector2(2,53),11,ui._color("accent"))
-	ui._label(details,"武器攻击力  %d" % int(definition.attack),Vector2(2,79),12)
-	ui._paragraph(details,str(definition.desc),Rect2(2,108,169,85),11,ui._color("text"))
+	var scroll := ScrollContainer.new()
+	scroll.size=details.size
+	scroll.horizontal_scroll_mode=ScrollContainer.SCROLL_MODE_DISABLED
+	details.add_child(scroll)
+	var content := VBoxContainer.new()
+	content.custom_minimum_size.x=152
+	scroll.add_child(content)
+	var icon := TextureRect.new()
+	icon.texture=load(str(definition.icon))
+	icon.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
+	icon.custom_minimum_size=Vector2(40,36)
+	icon.expand_mode=TextureRect.EXPAND_IGNORE_SIZE
+	icon.stretch_mode=TextureRect.STRETCH_KEEP_ASPECT_CENTERED
+	content.add_child(icon)
+	_detail_line(content,str(definition.name),14,ui._color("bright_gold"))
+	if gear_page == "accessory":
+		_detail_line(content, str(definition.effect_description), 11, ui._color("accent"))
+		_detail_line(content, str(definition.desc), 11, ui._color("text"))
+		return
+	_detail_line(content,"攻击力 %d\n削韧倍率 ×%.2f\n攻速倍率 ×%.2f" % [int(definition.attack),float(definition.get("poise_multiplier",1)),float(definition.get("attack_speed_multiplier",1))],11,ui._color("accent"))
+	if definition.weapon_type == "rifle":
+		_detail_line(content, "射击间隔 %.3f 秒\n每发耗弹 %s%%" % [WeaponAttributes.duration(definition), definition.get("ammo_cost_pct", 0)], 11, ui._color("accent"))
+	_detail_line(content,str(definition.desc),11,ui._color("text"))
+	if str(definition.get("special_description","无"))!="无":_detail_line(content,str(definition.special_description),10,ui._color("bright_gold"))
+	for effect: Dictionary in definition.get("special_effects",[]):
+		if not bool(effect.get("implemented",false)):
+			var label := str(effect.get("name",{"bleeding":"流血","poison":"中毒"}.get(str(effect.get("id","")),"效果")))
+			_detail_line(content,label+"（预留，尚未生效）",10,ui._color("muted"))
+
+func _detail_line(parent: Control,text: String,font_size: int,color: Color) -> void:
+	var label := Label.new()
+	label.text=text
+	label.autowrap_mode=TextServer.AUTOWRAP_WORD_SMART
+	label.custom_minimum_size.x=148
+	label.add_theme_font_size_override("font_size",font_size)
+	label.add_theme_color_override("font_color",color)
+	parent.add_child(label)
 
 
 func _attributes() -> void:
-	var stats := RPGService.stats()
-	ui._label(ui.modal,"Lv.%d  奶族先锋" % GameState.level,Vector2(30,78),19,ui._color("bright_gold"))
-	var progress := RPGService.experience_progress()
-	RPGSkin.frame(ui.modal,"track",Rect2(214,78,370,30))
-	var bar := ProgressBar.new()
-	bar.position = Vector2(222,86)
-	bar.size = Vector2(350,16)
-	bar.max_value = progress.y
-	bar.value = progress.x
-	bar.show_percentage = false
-	bar.add_theme_font_size_override("font_size",8)
-	bar.add_theme_stylebox_override("background",ui._style(ui._color("ink"),ui._color("gold")))
-	bar.add_theme_stylebox_override("fill",RPGSkin.bar_fill(Color("#698eab")))
-	ui.modal.add_child(bar)
-	ui._label(ui.modal,"本级经验  %d / %d" % [progress.x,progress.y],Vector2(226,120),10,ui._color("muted"))
-	var rows := [["生命值","%d / %d" % [GameState.hp,GameState.hp_max]],["体力值","%d / %d" % [GameState.sta,GameState.sta_max]],["奶力值","%d / %d" % [GameState.mana,GameState.mana_max]],["物理攻击力",str(stats.physical_attack)],["奶术攻击力",str(stats.magic_attack)],["防御力","%.0f" % stats.defense],["伤害减免","%.1f %%" % stats.damage_reduction],["吸血","%.1f %%" % stats.life_steal],["生命恢复","%.2f 点/秒" % stats.hp_regen],["奶力回复","%.2f 点/秒" % stats.mana_regen]]
-	for index in rows.size():
-		var col := int(index/5.0)
-		var row := index%5
-		var x := 30+int(col)*294
-		var y := 145+row*34
-		ui._label(ui.modal,str(rows[index][0]),Vector2(x,y),12,ui._color("muted"))
-		ui._label(ui.modal,str(rows[index][1]),Vector2(x+139,y),12,ui._color("bright_gold"))
-	ui._label(ui.modal,"属性随等级、武器、天赋与已装备被动实时生效",Vector2(174,320),10,ui._color("muted"))
+	var view := AttributePanel.new()
+	view.ui = ui
+	view.build(false)
 
 
 func _skills() -> void:
+	RPGSkin.frame(ui.modal,"inset",Rect2(432,70,174,244))
 	ui._label(ui.modal,"主动技能",Vector2(28,74),13,ui._color("bright_gold"))
 	ui._label(ui.modal,"被动技能",Vector2(240,74),13,ui._color("bright_gold"))
 	for passive in [false,true]:
@@ -126,18 +155,19 @@ func _skills() -> void:
 			slot.locked = not InventoryService.skill_unlocked(StringName(definition.id))
 			slot.selected = str(selected_skill) == str(definition.id)
 	ui._label(ui.modal,"已装配主动",Vector2(185,263),11,ui._color("muted"))
-	ui._label(ui.modal,"已装配被动",Vector2(387,263),11,ui._color("muted"))
+	ui._label(ui.modal,"已装配被动",Vector2(340,263),11,ui._color("muted"))
 	for index in 3:
 		var slot := _slot("active_slot",index,Vector2(186+index*47,284),38)
 		_set_skill(slot,InventoryService.equipped_skill(index))
 		slot.key_text = str(index+1)
 	for index in 2:
-		var slot := _slot("passive_slot",index,Vector2(388+index*47,284),38)
+		var slot := _slot("passive_slot",index,Vector2(340+index*47,284),38)
 		_set_skill(slot,GameState.equipped_passives[index])
 		slot.key_text = "被"
 	details = Control.new()
 	details.position = Vector2(438,75)
-	details.size = Vector2(164,181)
+	details.size = Vector2(164,235)
+	details.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	ui.modal.add_child(details)
 	ui._label(ui.modal,"拖动已解锁技能至下方槽位 · 滚轮选择主动 · 侧键4施放",Vector2(151,324),9,ui._color("muted"))
 	_skill_details()
@@ -149,19 +179,36 @@ func _skill_details() -> void:
 	if definition.is_empty():
 		return
 	ui._picture(details,str(definition.icon),Rect2(4,2,34,34))
-	ui._label(details,str(definition.name),Vector2(45,4),13,ui._color("bright_gold"))
+	ui._paragraph(details,str(definition.name),Rect2(45,2,116,42),12)
 	var passive := str(definition.category) == "passive"
 	ui._label(details,"被动技能" if passive else ("物理技能" if str(definition.damage_type) == "physical" else "奶术技能"),Vector2(4,47),11,ui._color("accent"))
 	var line := "尚未解锁" if not InventoryService.skill_unlocked(selected_skill) else "已习得"
 	if not passive and not bool(definition.get("placeholder",false)):
-		line += "\n体力 %d · 奶力 %d\n冷却 %.1f 秒" % [InventoryService.skill_stamina_cost(selected_skill),InventoryService.skill_mana_cost(selected_skill),float(definition.cooldown)]
+		line += "\n体力 %d · 奶力 %d\n冷却 %.1f 秒" % [InventoryService.skill_stamina_cost(selected_skill),InventoryService.skill_mana_cost(selected_skill),ProgressionService.skill_cooldown(selected_skill)]
+		if definition.get("weapon_requirement") != null:
+			line += "\n仅限%s" % ("剑" if str(definition.weapon_requirement) == "sword" else "锤")
 	ui._label(details,line,Vector2(4,67),10,ui._color("muted"))
-	ui._paragraph(details,str(definition.desc),Rect2(4,119,156,80),11)
+	ui._paragraph(details,str(definition.desc),Rect2(4,133,156,104),10)
 
 
 func _activate(kind: String, index: int) -> void:
-	if kind in ["weapon_inventory","weapon_equipped"]:
+	if kind in ["accessory_inventory", "accessory_equipped"]:
+		var owned := GameState.owned_accessories if kind == "accessory_inventory" else GameState.equipped_accessories
+		selected_accessory = owned[index] if index < owned.size() else &""
+		if gear_page != "accessory":
+			gear_page = "accessory"
+			open(page)
+			return
+		for slot in _slots:
+			slot.selected = slot.kind == kind and slot.index == index
+			slot.queue_redraw()
+		_weapon_details()
+	elif kind in ["weapon_inventory","weapon_equipped"]:
 		selected_weapon = index if kind == "weapon_inventory" else -2
+		if gear_page != "weapon":
+			gear_page = "weapon"
+			open(page)
+			return
 		for slot in _slots:
 			slot.selected = slot.kind == kind and slot.index == index
 			slot.queue_redraw()
@@ -185,6 +232,10 @@ func _drop(data: Dictionary, kind: String, index: int) -> void:
 		ok = RPGService.unequip_weapon(index)
 	elif kind == "weapon_inventory" and data.source == "weapon_inventory":
 		ok = RPGService.move_weapon(int(data.index),index)
+	elif kind == "accessory_equipped" and data.source == "accessory_inventory":
+		ok = AccessoryRules.swap(int(data.index), index)
+	elif kind == "accessory_inventory" and data.source == "accessory_equipped" and (index >= GameState.owned_accessories.size() or GameState.owned_accessories[index] == &""):
+		ok = AccessoryRules.swap(index, int(data.index))
 	elif kind in ["active_slot","passive_slot"]:
 		ok = RPGService.equip_skill(StringName(data.id),index,kind == "passive_slot")
 	if ok:
@@ -201,7 +252,15 @@ func _set_weapon(slot: MagicSlot, id: StringName) -> void:
 	if not definition.is_empty():
 		slot.icon = RPGSkin.icon_for_path(str(definition.icon))
 		slot.tooltip_text = str(definition.name)
+		slot.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
 
+func _set_accessory(slot: MagicSlot, id: StringName) -> void:
+	slot.item_id = str(id)
+	var definition := DataDB.get_accessory(id)
+	if not definition.is_empty():
+		slot.icon = RPGSkin.icon_for_path(str(definition.icon))
+		slot.tooltip_text = str(definition.name)
+		slot.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
 
 func _set_skill(slot: MagicSlot, id: StringName) -> void:
 	slot.item_id = str(id)
@@ -209,6 +268,7 @@ func _set_skill(slot: MagicSlot, id: StringName) -> void:
 	if not definition.is_empty():
 		slot.icon = RPGSkin.icon_for_path(str(definition.icon))
 		slot.tooltip_text = str(definition.name)
+		slot.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
 
 
 func _skill_list(passive: bool) -> Array:
@@ -219,7 +279,7 @@ func _skill_list(passive: bool) -> Array:
 	return result
 
 
-func _slot(kind: String, index: int, pos: Vector2, size: float) -> MagicSlot:
+func _slot(kind: String, index: int, pos: Vector2, size: float, parent: Control = null) -> MagicSlot:
 	var slot := MagicSlot.new()
 	slot.kind = kind
 	slot.index = index
@@ -227,7 +287,9 @@ func _slot(kind: String, index: int, pos: Vector2, size: float) -> MagicSlot:
 	slot.size = Vector2.ONE*size
 	slot.activated.connect(_activate)
 	slot.drop_requested.connect(_drop)
-	ui.modal.add_child(slot)
+	if parent == null:
+		parent = ui.modal
+	parent.add_child(slot)
 	_slots.append(slot)
 	return slot
 

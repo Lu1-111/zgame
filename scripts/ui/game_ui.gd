@@ -2,11 +2,13 @@ extends CanvasLayer
 ## 常驻魔幻 HUD、Tab 行囊、灵火休息、天赋和无限仓库；所有模态界面冻结世界。
 
 const ITEM_ICON := "res://assets/PROCESSED/items/ITM-B01/v001/icons/ITEM_%s_icon_v001.png"
+const WORLD_MAP_VIEW := preload("res://scripts/ui/world_map_view.gd")
 var cfg: Dictionary
 var root_control: Control
 var hud: Control
 var modal: Control
 var mode := ""
+var cinematic_active := false
 var scene: Node
 var player: Player
 var _resting := false
@@ -23,6 +25,16 @@ var _character: CharacterPanel
 var _input_lock_until := -1
 var _selected := -1
 var _page := "inventory"
+var _coin_frame: Panel
+var _coin_popup: Label
+var _coin_delta := 0
+var _coin_time := 0.0
+var _previous_coin := 0
+var _level_label: Label
+var _experience_bar: ProgressBar
+var _attribute_view: AttributePanel
+var _storage_view: StoragePanel
+var _talent_page := "points"
 var _coin_label: Label
 var _toast_label: Label
 var _toast_time := 0.0
@@ -36,6 +48,14 @@ var _previous_sta := 100
 var _regen_glow := 0.0
 var _modal_base := Rect2()
 var _damage_overlay: TextureRect
+var _damage_left := 0.0
+var _damage_seconds := 0.0
+var _damage_opacity := 0.0
+var _quest_panel: QuestPanel
+var _quest_tracker: Control
+var _quest_title: Label
+var _quest_objective: Label
+var _weapon_effect_label: Label
 
 
 func _ready() -> void:
@@ -51,6 +71,7 @@ func _ready() -> void:
 	magic_theme.default_font_size = int(cfg.layout.font)
 	magic_theme.set_stylebox("panel","TooltipPanel",_style(_color("panel"),_color("gold")))
 	magic_theme.default_font = RPGSkin.font()
+	RPGSkin.dress_theme(magic_theme)
 	root_control.theme = magic_theme
 	add_child(root_control)
 	var cursor := RPGSkin.cursor_texture()
@@ -59,6 +80,7 @@ func _ready() -> void:
 	Input.set_custom_mouse_cursor(cursor,Input.CURSOR_POINTING_HAND,Vector2(hotspot[0],hotspot[1]))
 	Input.set_custom_mouse_cursor(cursor,Input.CURSOR_DRAG,Vector2(hotspot[0],hotspot[1]))
 	_build_hud()
+	_weapon_effect_label=_label(hud,"",Vector2(12,94),11,_color("bright_gold"))
 	_toast_label = _label(root_control, "", Vector2(180,83), 12, _color("bright_gold"))
 	_toast_label.size.x = 360
 	_toast_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
@@ -77,8 +99,9 @@ func _ready() -> void:
 	_damage_overlay.modulate.a = 0
 	EventBus.exp_gained.connect(_on_exp)
 	EventBus.enemy_died.connect(_on_enemy_died)
+	EventBus.enemy_died.connect(func(id: StringName, _point: Vector2) -> void: QuestService.record_kill(id))
 	EventBus.boss_defeated.connect(_on_boss_defeated)
-	EventBus.player_damaged.connect(func(_amount: int) -> void: _flash_damage())
+	EventBus.player_damaged.connect(_flash_damage)
 	get_tree().set_auto_accept_quit(false)
 	get_tree().root.close_requested.connect(_save_and_quit)
 
@@ -92,12 +115,19 @@ func _process(delta: float) -> void:
 		_toast_time = 0
 		_toast_label.hide()
 		_damage_overlay.modulate.a = 0
+		_damage_left = 0
 		return
-	hud.visible = mode in ["","rest"]
-	_coin_label.visible = not _resting
+	_damage_left = maxf(0,_damage_left-delta)
+	_damage_overlay.modulate.a = _damage_opacity*_damage_left/_damage_seconds if _damage_seconds > 0 else 0.0
+	hud.visible = not cinematic_active and mode in ["","rest"]
+	_weapon_effect_label.text=player.weapon_effect_summary()
+	if player.weapon_type() == "rifle":
+		_weapon_effect_label.text = "弹药储量 %.1f%%" % (100.0 * GameState.ammo_units / WeaponAttributes.ammo_capacity())
+	_update_quest_tracker()
+	_coin_frame.visible = not _resting and not dialogue_active()
 	var inventory_hint := hud.get_node_or_null("InventoryHint")
 	if inventory_hint != null:
-		inventory_hint.visible = mode == ""
+		inventory_hint.visible = mode == "" and not dialogue_active()
 	_update_interaction_prompt()
 	var view_size := get_viewport().get_visible_rect().size
 	if inventory_hint != null:
@@ -105,7 +135,11 @@ func _process(delta: float) -> void:
 	_toast_label.position = Vector2((view_size.x-360)/2,8 if mode in ["inventory","storage","talents","pause"] else 83)
 	_damage_overlay.size = view_size
 	if is_instance_valid(modal):
-		modal.position = _modal_base.position + Vector2(0 if mode == "pause" else (view_size.x-float(cfg.layout.screen[0]))/2,(view_size.y-float(cfg.layout.screen[1]))/2)
+		if mode in ["map","travel"]:
+			modal.position = Vector2.ZERO
+			modal.size = view_size
+		else:
+			modal.position = _modal_base.position + Vector2(0 if mode == "pause" else (view_size.x-float(cfg.layout.screen[0]))/2,(view_size.y-float(cfg.layout.screen[1]))/2)
 	for index in _hud_slots.size():
 		_hud_slots[index].position.x = view_size.x - 42
 		_hud_slots[index].pivot_offset = _hud_slots[index].size / 2
@@ -128,9 +162,9 @@ func _process(delta: float) -> void:
 		_regen_glow = float(cfg.animation.resource_smooth)
 	_previous_sta = GameState.sta
 	_bars[1].modulate = Color(1.2,1.15,1.0) if _regen_glow > 0 else Color.WHITE
-	var minimum_cost := InventoryService.skill_mana_cost(InventoryService.equipped_skill(GameState.selected_skill))
+	var minimum_cost := InventoryService.skill_minimum_mana_cost(InventoryService.equipped_skill(GameState.selected_skill))
 	_bars[2].modulate = Color("#7d8191") if GameState.mana < minimum_cost else Color.WHITE
-	_coin_label.text = "Lv.%d  ·  %d 奶币" % [GameState.level,GameState.coin]
+	_update_growth_hud(delta,view_size)
 	for index in _hud_slots.size():
 		_update_hotbar(_hud_slots[index],index)
 	for index in _skill_slots.size():
@@ -140,12 +174,18 @@ func _process(delta: float) -> void:
 		if slot.item_id != str(id):
 			slot.item_id = str(id)
 			slot.icon = RPGSkin.icon_for_path(str(skill.icon)) if not skill.is_empty() else null
+			slot.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
 		slot.locked = id != &"" and not InventoryService.skill_unlocked(id)
-		slot.mana_blocked = GameState.mana < InventoryService.skill_mana_cost(id) or GameState.sta < InventoryService.skill_stamina_cost(id)
+		slot.mana_blocked = GameState.mana < InventoryService.skill_minimum_mana_cost(id) or GameState.sta < InventoryService.skill_stamina_cost(id)
+		var required: Variant = DataDB.get_skill(id).get("weapon_requirement")
+		if required != null:
+			slot.mana_blocked = slot.mana_blocked or str(required) != player.weapon_type()
+		if id == &"skill_nb_void_milk" and is_instance_valid(player.skills.orb) and player.skills.orb.mode == "orb":
+			slot.mana_blocked = false
 		slot.selected = index == GameState.selected_skill
-		slot.tooltip_text = "%s\n体力 %d · 奶力 %d · 冷却 %.1fs" % [skill.get("name","空技能槽"),InventoryService.skill_stamina_cost(id),InventoryService.skill_mana_cost(id),float(skill.get("cooldown",0))]
+		slot.tooltip_text = "%s\n体力 %d · 奶力 %d · 冷却 %.1fs" % [skill.get("name","空技能槽"),InventoryService.skill_stamina_cost(id),InventoryService.skill_mana_cost(id),ProgressionService.skill_cooldown(id)]
 		slot.cooldown = player.skill_cooldown(id)
-		slot.cooldown_ratio = clampf(slot.cooldown/maxf(0.001,float(skill.get("cooldown",1))),0,1)
+		slot.cooldown_ratio = clampf(slot.cooldown/maxf(0.001,maxf(0.001,ProgressionService.skill_cooldown(id))),0,1)
 		slot.queue_redraw()
 	var skill_hint := hud.get_node_or_null("SkillHint")
 	if skill_hint != null:
@@ -167,6 +207,9 @@ func _bind_scene(current: Node) -> void:
 	if scene == null or not scene.has_node("Player"):
 		return
 	player = scene.get_node("Player") as Player
+	_previous_coin = GameState.coin
+	_coin_time = 0
+	_coin_delta = 0
 	InventoryService.ensure_state()
 	if scene.has_node("HotbarLayer"):
 		scene.get_node("HotbarLayer").hide()
@@ -215,7 +258,7 @@ func _build_hud() -> void:
 		numbers.size = bar.size
 		numbers.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 		_bar_labels.append(numbers)
-	_coin_label = _label(hud,"",Vector2(skin.coin[0],skin.coin[1]),10,_color("bright_gold"))
+	_build_growth_hud()
 	var hotbar: Array = cfg.layout.hotbar
 	for index in int(cfg.inventory.hotbar_slots):
 		var slot := _slot(hud, "hotbar", index, Vector2(hotbar[0], hotbar[1] + index * (hotbar[2] + hotbar[3])), hotbar[2])
@@ -229,15 +272,61 @@ func _build_hud() -> void:
 		slot.icon = load("res://assets/ui/magic/skill_%s.svg" % definition.icon) if definition.icon != "" else null
 		slot.tooltip_text = str(DataDB.get_skill(StringName(definition.id)).get("desc", ""))
 		_skill_slots.append(slot)
-	var inventory_hint := _label(hud,"Tab  行囊",Vector2(12,337),10,_color("muted"))
+	var inventory_hint := _label(hud,"Tab  行囊 · M  地图 · L  任务",Vector2(12,337),10,_color("muted"))
 	inventory_hint.name = "InventoryHint"
 	var skill_hint := _label(hud,"滚轮选择 · 侧键4施放",Vector2(200,302),9,_color("muted"))
 	skill_hint.name = "SkillHint"
 	skill_hint.size.x = 240
 	skill_hint.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	_build_quest_tracker()
+
+
+func _build_quest_tracker() -> void:
+	var rect := _rect(QuestService.config().ui.tracker)
+	var text_style: Dictionary = QuestService.config().ui.tracker_text
+	_quest_tracker = Control.new()
+	_quest_tracker.name = "QuestTracker"
+	_quest_tracker.position = rect.position
+	_quest_tracker.size = rect.size
+	_quest_tracker.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	hud.add_child(_quest_tracker)
+	var title_rect := _rect(text_style.title_rect)
+	_quest_title = _label(_quest_tracker,"",title_rect.position,int(text_style.title_size),Color(text_style.title_color))
+	_quest_title.size = title_rect.size
+	_quest_title.clip_text = true
+	_quest_objective = _paragraph(_quest_tracker,"",_rect(text_style.objective_rect),int(text_style.objective_size),Color(text_style.objective_color))
+	for label in [_quest_title,_quest_objective]:
+		label.add_theme_color_override("font_outline_color",Color(text_style.outline_color))
+		label.add_theme_constant_override("outline_size",int(text_style.outline_size))
+		label.add_theme_color_override("font_shadow_color",Color(text_style.shadow_color))
+		label.add_theme_constant_override("shadow_offset_x",0)
+		label.add_theme_constant_override("shadow_offset_y",int(text_style.shadow_offset_y))
+
+
+func _update_quest_tracker() -> void:
+	QuestService.refresh()
+	var quest := QuestService.tracked()
+	_quest_tracker.visible = not quest.is_empty() and mode == "" and not dialogue_active()
+	if quest.is_empty():
+		return
+	_quest_title.text = "【%s】%s" % [QuestService.config().categories[quest.category],quest.name]
+	_quest_objective.text = QuestService.objective_text(StringName(quest.id))
+
+
+## L 打开任务面板，沿用世界暂停与互斥模态输入。
+func open_quests() -> void:
+	if not is_instance_valid(player) or dialogue_active():
+		return
+	if _quest_panel == null:
+		_quest_panel = QuestPanel.new()
+		_quest_panel.ui = self
+	_quest_panel.open()
 
 
 func _input(event: InputEvent) -> void:
+	if cinematic_active:
+		get_viewport().set_input_as_handled()
+		return
 	if not is_instance_valid(player):
 		return
 	if dialogue_active():
@@ -245,18 +334,24 @@ func _input(event: InputEvent) -> void:
 		dialogue.handle_dialogue_input(event)
 		get_viewport().set_input_as_handled()
 		return
-	if event is InputEventKey and event.pressed and not event.echo:
-		if event.keycode == KEY_F6:
-			_toggle_animation_backend()
-			get_viewport().set_input_as_handled()
-			return
-		if event.keycode == KEY_F7:
-			player.toggle_skeleton_debug()
-			if not player.uses_skeletal_animation():
-				toast("F6 切换至骨骼测试后可显示关节")
-			get_viewport().set_input_as_handled()
-			return
 	if _closing:
+		return
+	if event.is_action_pressed(&"quests") and not event.is_echo():
+		if mode == "quests":
+			close_menu()
+		elif mode == "":
+			open_quests()
+		get_viewport().set_input_as_handled()
+		return
+	if mode in ["map","travel"]:
+		if not event.is_echo() and (event.is_action_pressed(&"map") or event.is_action_pressed(&"pause")):
+			close_menu()
+			get_viewport().set_input_as_handled()
+		return
+	if event.is_action_pressed(&"map") and not event.is_echo():
+		if mode == "":
+			open_world_map()
+		get_viewport().set_input_as_handled()
 		return
 	if event.is_action_pressed(&"character_panel"):
 		if mode == "character":
@@ -334,7 +429,7 @@ func _update_interaction_prompt() -> void:
 	if candidate.is_empty():
 		return
 	var target: Node2D = candidate.target
-	var anchor := target.global_position+Vector2(0,float(RPGSkin.config().interaction.offset_y))
+	var anchor := target.global_position+Vector2(0,float(target.get_meta("interaction_offset_y", RPGSkin.config().interaction.offset_y)))
 	var point := target.get_canvas_transform()*anchor
 	_interaction_hint.text = str(candidate.text)
 	_interaction_plaque.position = (point-_interaction_plaque.size/2).round()
@@ -361,7 +456,9 @@ func _interaction_candidate() -> Dictionary:
 	if scene.has_method("_nearest_interaction"):
 		var id: String = scene._nearest_interaction()
 		if id != "":
-			return {"target":scene.get_node(id),"text":"E  拉动机关" if id == "ShortcutSwitch" else "E  打开宝箱"}
+			var target := scene.get_node(id) as Node2D
+			var hint := str(target.get_meta("interaction_text", "E  拉动机关" if id == "ShortcutSwitch" else "E  打开宝箱"))
+			return {"target":target,"text":hint}
 	return {}
 
 
@@ -402,7 +499,8 @@ func begin_rest() -> bool:
 	GameState.checkpoint_room = GameState.current_room
 	GameState.checkpoint_position = [seat.x,seat.y]
 	player.checkpoint_position = seat
-	_rest_resources()
+	if not GameState.unlocked_campfires.has(GameState.checkpoint_id):
+		GameState.unlocked_campfires.append(GameState.checkpoint_id)
 	_show_rest()
 	var error := SaveSystem.save_game()
 	toast("灵火已铭记旅途" if error == OK else "存档未完成，请再次休息")
@@ -418,17 +516,18 @@ func _rest_resources() -> void:
 	GameState.hp = GameState.hp_max
 	GameState.sta = GameState.sta_max
 	GameState.mana = GameState.mana_max
+	GameState.ammo_units = WeaponAttributes.ammo_capacity()
 	player.reset_cooldowns()
 
 
 func _show_rest() -> void:
-	_open_modal("rest", Rect2(20,72,240,282), "res://assets/ui/magic/rest_panel.svg")
+	_open_modal("rest", _rect(cfg.rest.panel), "res://assets/ui/magic/rest_panel.svg")
 	_label(modal, cfg.rest.title, Vector2(32,28), 24, _color("bright_gold"))
 	_label(modal, cfg.rest.subtitle, Vector2(34,62), 11, _color("muted"))
 	for index in cfg.rest.actions.size():
 		var action := str(cfg.rest.actions[index])
-		_button(modal, action, Rect2(34,106 + index * 35,172,28), func() -> void: _rest_action(action))
-	_label(modal, "已设置复活点 · Esc 离开", Vector2(43,254), 10, _color("muted"))
+		_button(modal, action, Rect2(34,float(cfg.rest.action_top) + index * float(cfg.rest.action_gap),172,28), func() -> void: _rest_action(action))
+	_label(modal, "已设置复活点 · Esc 离开", Vector2(43,cfg.rest.footer_y), 10, _color("muted"))
 
 
 func _rest_action(action: String) -> void:
@@ -440,6 +539,7 @@ func _rest_action(action: String) -> void:
 			toast("生命、体力与奶力已恢复 · 旅途已保存")
 		"天赋": _show_talents()
 		"仓库": _show_storage()
+		"快速旅行": open_fast_travel()
 		"离开": close_menu()
 
 
@@ -449,28 +549,43 @@ func _show_pause() -> void:
 	_button(modal,"继续旅途",Rect2(28,72,220,30),close_menu)
 	_button(modal,"人物面板  I",Rect2(28,110,220,30),open_character)
 	_button(modal,"行囊  Tab",Rect2(28,148,220,30),open_inventory)
-	var animation_button := _button(modal,_animation_button_text(),Rect2(28,186,220,30),_toggle_animation_backend)
-	animation_button.name = "AnimationBackend"
-	animation_button.tooltip_text = "F6 随时切换；仅本次运行生效，不影响存档。F7 显示骨架。"
 	var leave := _button(modal,"保存并返回主菜单",Rect2(28,226,220,32),_return_to_title)
 	leave.disabled = GameState.in_combat
 	leave.tooltip_text = "战斗结束后可保存并返回" if GameState.in_combat else ""
 
 
-func _animation_button_text() -> String:
-	return "动画：骨骼测试  F6" if player.uses_skeletal_animation() else "动画：原逐帧  F6"
-
-
-func _toggle_animation_backend() -> void:
-	if not is_instance_valid(player):
+## M 打开所有已制作房间的连通总览；地图与其他模态界面一样暂停世界。
+func open_world_map() -> void:
+	if not is_instance_valid(player) or mode != "" or dialogue_active():
 		return
-	var requested := "frames" if player.uses_skeletal_animation() else "skeleton"
-	player.set_animation_backend(requested)
-	toast("展示方案：%s" % CharacterAnimationMode.display_name(player.get_animation_backend()))
-	if is_instance_valid(modal):
-		var button := modal.get_node_or_null("AnimationBackend") as Button
-		if button != null:
-			button.text = _animation_button_text()
+	_open_modal("map", Rect2(Vector2.ZERO, get_viewport().get_visible_rect().size), "")
+	var map_view := WORLD_MAP_VIEW.new()
+	map_view.name = "WorldMapView"
+	modal.add_child(map_view)
+	map_view.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+
+
+## 坐火子菜单共用旅途地图，只有已经互动解锁的篝火可被点击传送。
+func open_fast_travel() -> void:
+	if not _resting or _closing:
+		return
+	_open_modal("travel", Rect2(Vector2.ZERO, get_viewport().get_visible_rect().size), "")
+	var map_view := WORLD_MAP_VIEW.new()
+	map_view.name = "WorldMapView"
+	map_view.travel_mode = true
+	map_view.travel_requested.connect(_travel_to_campfire)
+	modal.add_child(map_view)
+
+
+func _travel_to_campfire(room_id: StringName, checkpoint: StringName) -> void:
+	if mode != "travel" or not _resting or not CampfireService.is_unlocked(room_id,checkpoint):
+		return
+	var destination := CampfireService.destination(room_id)
+	if not SceneRouter.can_goto(room_id) or destination.is_empty():
+		return
+	player.stop_presentation_animation()
+	_force_close()
+	SceneRouter.goto_checkpoint(room_id,checkpoint,Vector2(destination.position[0],destination.position[1]))
 
 
 func _return_to_title() -> void:
@@ -507,6 +622,7 @@ func _show_inventory() -> void:
 		var page: String = ["inventory","materials"][index]
 		_button(modal,["行囊","材料"][index],Rect2(26+index*76,56,68,24),func() -> void: _page = page; _selected_source = page; _selected = -1; _refresh_inventory_view())
 	_button(modal,"人物 I",Rect2(178,56,68,24),open_character)
+	RPGSkin.frame(modal,"inset",Rect2(304,60,256,186))
 	_details = Control.new()
 	_details.position = Vector2(310,65)
 	_details.size = Vector2(244,182)
@@ -591,64 +707,34 @@ func _use_selected() -> void:
 
 
 func _show_storage() -> void:
-	_page = "inventory"
-	_open_modal("storage",_rect(cfg.layout.window),"res://assets/ui/magic/inventory_panel.svg")
-	_label(modal,"灵火仓库",Vector2(26,23),21,_color("bright_gold"))
-	_label(modal,"无限存储 · 点击物品存入 / 取回",Vector2(210,33),10,_color("muted"))
-	_button(modal,"返回",Rect2(512,23,46,24),_show_rest)
-	_label(modal,"随身行囊",Vector2(29,66),12,_color("muted"))
-	_label(modal,"仓库",Vector2(311,66),12,_color("muted"))
-	_button(modal,"行囊 / 材料",Rect2(108,61,92,24),func() -> void: _page = "materials" if _page == "inventory" else "inventory"; _refresh_inventory_view())
-	_refresh_storage()
+	_storage_view = StoragePanel.new()
+	_storage_view.ui = self
+	_open_modal("storage",_rect(RPGService.config().panel_rect),"res://assets/ui/magic/rpg_panel.svg")
+	_label(modal,"灵火仓库",Vector2(26,18),20,_color("bright_gold"))
+	_button(modal,"返回",Rect2(554,18,46,25),_show_rest)
+	_storage_view.build()
+	_inventory_signature = _current_inventory_signature()
 
 
 func _refresh_storage() -> void:
-	for child in modal.get_children():
-		if str(child.name).begins_with("StoreScroll"):
-			modal.remove_child(child)
-			child.queue_free()
-	var bag: Array = GameState.materials if _page == "materials" else GameState.inventory
-	for side in 2:
-		var scroll := ScrollContainer.new()
-		scroll.name = "StoreScroll%d" % side
-		scroll.position = Vector2(26 + side * 283,94)
-		scroll.size = Vector2(252,185)
-		modal.add_child(scroll)
-		var grid := Control.new()
-		var entries: Array = bag if side == 0 else GameState.storage
-		grid.custom_minimum_size = Vector2(236,ceilf(maxf(16,entries.size()) / 4) * 46 - 6)
-		scroll.add_child(grid)
-		for index in maxi(16,ceili(float(entries.size()) / 4) * 4):
-			var slot := _slot(grid,_page if side == 0 else "storage",index,Vector2(index % 4 * 58,floorf(float(index) / 4) * 46),40)
-			if index < entries.size() and entries[index] is Dictionary:
-				_set_item(slot,str(entries[index].id),int(entries[index].count))
-			_view_slots.append(slot)
+	if _storage_view != null:
+		_storage_view.refresh()
+	_inventory_signature = _current_inventory_signature()
 
 
 func _show_talents() -> void:
-	_open_modal("talents",_rect(cfg.layout.window),"res://assets/ui/magic/inventory_panel.svg")
-	_label(modal,"星纹天赋",Vector2(26,23),21,_color("bright_gold"))
-	_label(modal,"可用 %d 点 · %d 奶币" % [InventoryService.available_points(),GameState.coin],Vector2(201,32),11,_color("muted"))
-	_button(modal,"返回",Rect2(512,23,46,24),_show_rest)
-	var branches := ["蛮力","奶术","灵巧"]
-	for column in branches.size():
-		_label(modal,branches[column],Vector2(36 + column * 181,68),15,_color("accent"))
-		for definition: Dictionary in DataDB.talents.values():
-			if str(definition.branch) != branches[column]:
-				continue
-			var id := StringName(definition.id)
-			var learned := GameState.talents.has(id)
-			var prerequisite := StringName(definition.get("requires",""))
-			var allowed := prerequisite == &"" or GameState.talents.has(prerequisite)
-			var reserved := not bool(definition.effect.get("enabled",true))
-			var text := ("◆ " if learned else "◇ ") + str(definition.name)
-			text += "  已学" if learned else "  %d币" % int(definition.cost_coin)
-			var button := _button(modal,text,Rect2(26 + column * 181,99 + (int(definition.tier)-1) * 37,170,29),func() -> void: InventoryService.buy_talent(id); _show_talents())
-			button.tooltip_text = str(definition.desc) + ("\n需要前置：" + str(DataDB.get_talent(prerequisite).get("name","")) if not allowed else "")
-			button.disabled = learned or not allowed or reserved or InventoryService.available_points() < int(definition.cost_point) or GameState.coin < int(definition.cost_coin)
-	_button(modal,"重置天赋 · %d 奶币" % int(cfg.inventory.reset_cost),Rect2(194,269,200,26),func() -> void:
-		if InventoryService.reset_talents():
-			_show_talents())
+	_open_modal("talents",_rect(RPGService.config().panel_rect),"res://assets/ui/magic/rpg_panel.svg")
+	for index in 2:
+		var key: String = ["points","skills"][index]
+		_button(modal,["点数","技能"][index],Rect2(26+index*176,18,164,29),func() -> void: _talent_page = key; _show_talents())
+	_button(modal,"返回",Rect2(554,18,46,25),_show_rest)
+	if _talent_page == "skills":
+		_label(modal,"技能天赋",Vector2(265,135),20,_color("bright_gold"))
+		_label(modal,"后续开放",Vector2(282,176),13,_color("muted"))
+	else:
+		_attribute_view = AttributePanel.new()
+		_attribute_view.ui = self
+		_attribute_view.build(true)
 
 
 func _slot_activated(kind: String, index: int) -> void:
@@ -757,7 +843,8 @@ func _open_modal(next_mode: String, rect: Rect2, _art: String) -> void:
 	modal.position = rect.position + (get_viewport().get_visible_rect().size - Vector2(cfg.layout.screen[0],cfg.layout.screen[1])) / 2
 	modal.size = rect.size
 	root_control.add_child(modal)
-	RPGSkin.frame(modal,"secondary" if next_mode == "pause" else "panel",Rect2(Vector2.ZERO,rect.size))
+	if next_mode not in ["map","travel"]:
+		RPGSkin.frame(modal,"secondary" if next_mode == "pause" else "panel",Rect2(Vector2.ZERO,rect.size))
 	mode = next_mode
 	get_tree().paused = true
 	_view_slots.clear()
@@ -781,6 +868,8 @@ func toast(text: String) -> void:
 
 func _has_nearby_enemy() -> bool:
 	for child in scene.get_children():
+		if child is CorrumptBoss and child.hp > 0:
+			return true
 		if (child is GameEnemy or child is CombatEnemy) and child.hp > 0 and child.position.distance_to(player.position) < float(cfg.combat.rest_block_radius):
 			return true
 	return false
@@ -810,16 +899,15 @@ func _on_exp(_amount: int) -> void:
 	var growth: Dictionary = cfg.growth
 	while GameState.level < int(growth.level_cap) and GameState.exp >= int(growth.cumulative_exp[GameState.level]):
 		GameState.level += 1
-		GameState.hp_max += int(growth.hp_per_level)
-		GameState.mana_max += int(growth.mana_per_level)
+		ProgressionService.on_level_up()
 		EventBus.level_up.emit(GameState.level)
-		toast("等级提升 · 获得 1 天赋点")
+		toast("等级提升 · 获得 1 奶能")
 	if GameState.level == int(growth.level_cap):
 		GameState.exp = mini(GameState.exp,int(growth.cumulative_exp[-1]))
 
 
 func _on_enemy_died(_id: StringName, _pos: Vector2) -> void:
-	GameState.hp = mini(GameState.hp_max,GameState.hp + int(InventoryService.talent_effect("kill_heal_hp")))
+	GameState.hp = mini(GameState.hp_max,GameState.hp + roundi(InventoryService.talent_effect("kill_heal_hp") * AccessoryRules.healing_multiplier()))
 
 
 func _on_boss_defeated(id: StringName) -> void:
@@ -827,19 +915,20 @@ func _on_boss_defeated(id: StringName) -> void:
 		GameState.defeated_bosses.append(id)
 
 
-func _flash_damage() -> void:
+func _flash_damage(amount: int) -> void:
 	if not is_instance_valid(hud):
 		return
-	var tween := create_tween()
-	hud.modulate = Color(1,0.6,0.6)
-	tween.tween_property(hud,"modulate",Color.WHITE,float(cfg.animation.hit_flash))
-	_damage_overlay.modulate.a = 1
-	var edge_tween := create_tween()
-	edge_tween.tween_property(_damage_overlay,"modulate:a",0.0,float(cfg.animation.hit_flash))
+	var feedback := DamageFeedback.for_loss(amount,GameState.hp_max)
+	if feedback.is_empty():
+		return
+	_damage_seconds = float(feedback.seconds)
+	_damage_left = _damage_seconds
+	_damage_opacity = float(feedback.opacity)
+	_damage_overlay.modulate.a = _damage_opacity
 
 
 func _current_inventory_signature() -> String:
-	return JSON.stringify([GameState.inventory,GameState.hotbar,GameState.materials,GameState.storage,GameState.bag_upgrades,GameState.weapon_id,GameState.equipped_skills])
+	return JSON.stringify([GameState.inventory,GameState.hotbar,GameState.materials,GameState.storage,GameState.bag_upgrades,GameState.weapon_id,GameState.owned_weapons,GameState.equipped_skills])
 
 
 func _set_item(slot: MagicSlot, id: String, count: int) -> void:
@@ -971,7 +1060,7 @@ func dialogue_active() -> bool:
 
 ## 菜单、对话和关闭后的短保护期禁止角色读取玩法输入。
 func gameplay_input_blocked() -> bool:
-	return mode != "" or dialogue_active() or Engine.get_physics_frames() < _input_lock_until
+	return cinematic_active or mode != "" or dialogue_active() or Engine.get_physics_frames() < _input_lock_until
 
 
 ## 鼠标指向 HUD 时点击交由界面处理，避免同时挥动武器。
@@ -993,3 +1082,56 @@ func _exit_tree() -> void:
 	Input.set_custom_mouse_cursor(null,Input.CURSOR_POINTING_HAND)
 	Input.set_custom_mouse_cursor(null,Input.CURSOR_DRAG)
 	RPGSkin.release_cursor()
+
+
+## 查询是否处于灵火休息，供只能坐火操作的成长服务校验。
+func is_resting() -> bool:
+	return _resting
+
+
+func _build_growth_hud() -> void:
+	var layout: Dictionary = ProgressionService.config().hud
+	_level_label = _label(hud,"",Vector2(layout.level[0],layout.level[1]),10,_color("bright_gold"))
+	_experience_bar = ProgressBar.new()
+	_experience_bar.position = Vector2(layout.experience[0],layout.experience[1])
+	_experience_bar.size = Vector2(layout.experience[2],layout.experience[3])
+	_experience_bar.show_percentage = false
+	_experience_bar.add_theme_font_size_override("font_size",1)
+	_experience_bar.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	_experience_bar.add_theme_stylebox_override("background",_style(_color("ink")))
+	_experience_bar.add_theme_stylebox_override("fill",RPGSkin.bar_fill(_color("bright_gold")))
+	hud.add_child(_experience_bar)
+	_experience_bar.size = Vector2(layout.experience[2],layout.experience[3])
+	_coin_frame = Panel.new()
+	_coin_frame.name = "CoinFrame"
+	_coin_frame.size = Vector2(layout.coin_size[0],layout.coin_size[1])
+	_coin_frame.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	_coin_frame.add_theme_stylebox_override("panel",_style(_color("ink"),_color("bright_gold")))
+	hud.add_child(_coin_frame)
+	_coin_label = _label(_coin_frame,"",Vector2(6,2),12,_color("bright_gold"))
+	_coin_label.size.x = _coin_frame.size.x-12
+	_coin_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_RIGHT
+	_coin_popup = _label(hud,"",Vector2.ZERO,13,_color("bright_gold"))
+	_coin_popup.hide()
+	_previous_coin = GameState.coin
+
+
+func _update_growth_hud(delta: float, view_size: Vector2) -> void:
+	var layout: Dictionary = ProgressionService.config().hud
+	_level_label.text = "Lv.%d" % GameState.level
+	var progress := RPGService.experience_progress()
+	_experience_bar.max_value = progress.y
+	_experience_bar.value = progress.x
+	_level_label.tooltip_text = "经验 %d / %d" % [progress.x,progress.y]
+	_coin_frame.position = view_size-_coin_frame.size-Vector2(layout.coin_margin[0],layout.coin_margin[1])
+	_coin_label.text = "%d 奶币" % GameState.coin
+	_coin_time = maxf(0,_coin_time-delta)
+	if GameState.coin != _previous_coin:
+		_coin_delta = GameState.coin-_previous_coin
+		_previous_coin = GameState.coin
+		_coin_time = float(layout.coin_popup_seconds)
+	_coin_popup.visible = _coin_time > 0 and not _resting and not dialogue_active()
+	_coin_popup.text = "%+d" % _coin_delta
+	_coin_popup.modulate = Color("#f4dfa0") if _coin_delta >= 0 else Color("#ec8e82")
+	_coin_popup.modulate.a = clampf(_coin_time,0,1)
+	_coin_popup.position = _coin_frame.position+Vector2(16,-18-(1-_coin_time/float(layout.coin_popup_seconds))*float(layout.coin_popup_rise))

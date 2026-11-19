@@ -40,7 +40,7 @@ static func icon_for_path(path: String) -> Texture2D:
 	_textures[key] = result
 	return result
 
-## 面板只绘制一层半透明底与细线。
+## 共用切角压边和低对比暗金装饰，所有界面保持同一视觉语言。
 static func frame(parent: Control, kind: String, rect: Rect2, behind: bool = false, _scale_override: float = 0.0) -> Control:
 	var node := QuietFrame.new()
 	node.kind = kind
@@ -65,13 +65,17 @@ static func bar_fill(color: Color) -> StyleBoxTexture:
 	style.texture = fill
 	return style
 
-## 按钮以细下划线和悬停底色表示状态。
+## 按钮以暗金边框、内阴影和选中底色表达交互层次。
 static func dress_button(button: Button) -> void:
 	for state in ["normal","hover","pressed","disabled","focus"]:
 		var style := StyleBoxFlat.new()
-		style.bg_color = Color(0.55,0.51,0.40,0.13 if state in ["hover","focus"] else (0.21 if state == "pressed" else 0.0))
-		style.border_color = Color(config().colors.edge)
-		style.border_width_bottom = 1 if state in ["hover","focus","pressed"] else 0
+		style.bg_color = Color(0.55,0.51,0.40,0.13 if state in ["hover","focus"] else (0.23 if state == "pressed" else 0.035))
+		style.border_color = Color(config().trim.highlight if state in ["hover","focus","pressed"] else config().colors.rule)
+		style.set_border_width_all(1)
+		style.set_corner_radius_all(2)
+		style.shadow_color = Color(0,0,0,0.22)
+		style.shadow_size = 1
+		style.shadow_offset = Vector2(0,1)
 		button.add_theme_stylebox_override(state,style)
 	button.add_theme_font_override("font",font())
 	button.add_theme_color_override("font_color",Color(config().colors.text))
@@ -79,6 +83,18 @@ static func dress_button(button: Button) -> void:
 	button.add_theme_color_override("font_focus_color",Color(config().colors.selected))
 	button.add_theme_color_override("font_outline_color",Color.TRANSPARENT)
 	button.add_theme_constant_override("outline_size",0)
+
+## 滚动条与面板共用低对比金灰色，避免保留引擎默认亮灰控件。
+static func dress_theme(theme: Theme) -> void:
+	for direction in ["VScrollBar","HScrollBar"]:
+		for state in ["scroll","grabber","grabber_highlight","grabber_pressed"]:
+			var style := StyleBoxFlat.new()
+			style.bg_color = Color(config().colors.rule if state == "scroll" else config().colors.edge if state == "grabber" else config().trim.highlight)
+			style.content_margin_left = 3
+			style.content_margin_right = 3
+			style.content_margin_top = 3
+			style.content_margin_bottom = 3
+			theme.set_stylebox(state,direction,style)
 
 ## 简洁的象牙色箭形光标。
 static func cursor_texture() -> Texture2D:

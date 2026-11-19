@@ -1,0 +1,444 @@
+{
+  "animations": {
+    "SKL-N01_stance": {
+      "module": "sword",
+      "frames": [
+        {
+          "socket": [
+            56,
+            68
+          ],
+          "angle_degrees": 35,
+          "regions": [],
+          "strokes": [
+            [
+              [
+                54,
+                67
+              ],
+              [
+                68,
+                76
+              ],
+              3
+            ]
+          ],
+          "repair_belly": true
+        },
+        {
+          "socket": [
+            55,
+            68
+          ],
+          "angle_degrees": 35,
+          "regions": [],
+          "strokes": [
+            [
+              [
+                54,
+                67
+              ],
+              [
+                67,
+                76
+              ],
+              3
+            ]
+          ],
+          "repair_belly": true
+        },
+        {
+          "socket": [
+            55,
+            72
+          ],
+          "angle_degrees": 30,
+          "regions": [],
+          "strokes": [
+            [
+              [
+                54,
+                71
+              ],
+              [
+                67,
+                79
+              ],
+              3
+            ]
+          ],
+          "repair_belly": true
+        },
+        {
+          "socket": [
+            54,
+            72
+          ],
+          "angle_degrees": 30,
+          "regions": [],
+          "strokes": [
+            [
+              [
+                53,
+                70
+              ],
+              [
+                65,
+                78
+              ],
+              3
+            ]
+          ],
+          "repair_belly": true
+        }
+      ]
+    },
+    "SKL-N01_counter_slash": {
+      "module": "sword",
+      "frames": [
+        {
+          "socket": [
+            53,
+            70
+          ],
+          "angle_degrees": -170,
+          "regions": [],
+          "strokes": [
+            [
+              [
+                28,
+                66
+              ],
+              [
+                51,
+                69
+              ],
+              2
+            ]
+          ],
+          "repair_belly": false
+        },
+        {
+          "socket": [
+            54,
+            71
+          ],
+          "angle_degrees": 0,
+          "regions": [],
+          "strokes": [
+            [
+              [
+                56,
+                71
+              ],
+              [
+                76,
+                72
+              ],
+              2
+            ]
+          ],
+          "repair_belly": false
+        },
+        {
+          "socket": [
+            54,
+            71
+          ],
+          "angle_degrees": 0,
+          "regions": [],
+          "strokes": [
+            [
+              [
+                55,
+                72
+              ],
+              [
+                69,
+                72
+              ],
+              2
+            ]
+          ],
+          "repair_belly": false
+        },
+        {
+          "socket": [
+            57,
+            69
+          ],
+          "angle_degrees": 35,
+          "regions": [],
+          "strokes": [
+            [
+              [
+                56,
+                68
+              ],
+              [
+                70,
+                77
+              ],
+              3
+            ]
+          ],
+          "repair_belly": false
+        }
+      ]
+    },
+    "SKL-N03_leap": {
+      "module": "hammer",
+      "frames": [
+        {
+          "socket": [
+            54,
+            72
+          ],
+          "angle_degrees": 5,
+          "regions": [
+            [
+              58,
+              63,
+              17,
+              21
+            ]
+          ],
+          "strokes": [
+            [
+              [
+                54,
+                72
+              ],
+              [
+                62,
+                73
+              ],
+              3
+            ]
+          ],
+          "repair_belly": false
+        },
+        {
+          "socket": [
+            54,
+            65
+          ],
+          "angle_degrees": 25,
+          "regions": [
+            [
+              58,
+              62,
+              16,
+              23
+            ]
+          ],
+          "strokes": [
+            [
+              [
+                53,
+                65
+              ],
+              [
+                64,
+                71
+              ],
+              3
+            ]
+          ],
+          "repair_belly": false
+        },
+        {
+          "socket": [
+            54,
+            44
+          ],
+          "angle_degrees": -135,
+          "regions": [
+            [
+              26,
+              24,
+              27,
+              18
+            ],
+            [
+              26,
+              42,
+              18,
+              5
+            ]
+          ],
+          "strokes": [
+            [
+              [
+                46,
+                37
+              ],
+              [
+                55,
+                45
+              ],
+              3
+            ]
+          ],
+          "repair_belly": false
+        },
+        {
+          "socket": [
+            54,
+            44
+          ],
+          "angle_degrees": -135,
+          "regions": [
+            [
+              27,
+              25,
+              26,
+              18
+            ],
+            [
+              26,
+              42,
+              18,
+              5
+            ]
+          ],
+          "strokes": [
+            [
+              [
+                46,
+                38
+              ],
+              [
+                55,
+                45
+              ],
+              3
+            ]
+          ],
+          "repair_belly": false
+        }
+      ]
+    },
+    "SKL-N03_slam": {
+      "module": "hammer",
+      "frames": [
+        {
+          "socket": [
+            54,
+            52
+          ],
+          "angle_degrees": -135,
+          "regions": [
+            [
+              27,
+              31,
+              22,
+              22
+            ]
+          ],
+          "strokes": [
+            [
+              [
+                43,
+                46
+              ],
+              [
+                55,
+                53
+              ],
+              3
+            ]
+          ],
+          "repair_belly": false
+        },
+        {
+          "socket": [
+            54,
+            72
+          ],
+          "angle_degrees": 0,
+          "regions": [
+            [
+              57,
+              65,
+              14,
+              21
+            ]
+          ],
+          "strokes": [
+            [
+              [
+                53,
+                72
+              ],
+              [
+                61,
+                73
+              ],
+              3
+            ]
+          ],
+          "repair_belly": false
+        },
+        {
+          "socket": [
+            53,
+            73
+          ],
+          "angle_degrees": 0,
+          "regions": [
+            [
+              57,
+              64,
+              15,
+              21
+            ]
+          ],
+          "strokes": [
+            [
+              [
+                53,
+                73
+              ],
+              [
+                61,
+                74
+              ],
+              3
+            ]
+          ],
+          "repair_belly": false
+        },
+        {
+          "socket": [
+            57,
+            69
+          ],
+          "angle_degrees": 10,
+          "regions": [
+            [
+              59,
+              62,
+              15,
+              23
+            ]
+          ],
+          "strokes": [
+            [
+              [
+                56,
+                69
+              ],
+              [
+                64,
+                71
+              ],
+              3
+            ]
+          ],
+          "repair_belly": false
+        }
+      ]
+    }
+  }
+}

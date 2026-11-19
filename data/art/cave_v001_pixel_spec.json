@@ -1,0 +1,169 @@
+{
+  "id": "cave_v001_pixels",
+  "standard": "res://data/art/pixel_standards.json",
+  "tile_size": 64,
+  "rock_field_size": [
+    256,
+    256
+  ],
+  "alpha_cutoff": 224,
+  "output_alpha_threshold": 0.5,
+  "palette": [
+    "#10131d",
+    "#181b28",
+    "#202431",
+    "#292e3c",
+    "#343a49",
+    "#424959",
+    "#525c6c",
+    "#687585",
+    "#8794a0",
+    "#a7b2b7",
+    "#c5ced0",
+    "#edf1e9",
+    "#49403c",
+    "#77614f",
+    "#b59970",
+    "#e6d5ab",
+    "#185664",
+    "#187180",
+    "#3aafbb",
+    "#65d1d5",
+    "#a2edeb",
+    "#d9ffff",
+    "#2d2944",
+    "#5c4e81",
+    "#a493c5",
+    "#d3c5eb",
+    "#736953",
+    "#b4a58a",
+    "#eddfc2",
+    "#fff2d4",
+    "#314d78",
+    "#7eb4ed"
+  ],
+  "max_colors": 32,
+  "sprite_canvases": {
+    "crystal_01": [
+      32,
+      24
+    ],
+    "crystal_02": [
+      32,
+      32
+    ],
+    "crystal_03": [
+      32,
+      48
+    ],
+    "crystal_04": [
+      32,
+      24
+    ],
+    "rock_01": [
+      32,
+      16
+    ],
+    "rock_02": [
+      40,
+      32
+    ],
+    "rock_03": [
+      32,
+      48
+    ],
+    "rock_04": [
+      48,
+      32
+    ],
+    "ore_01": [
+      32,
+      32
+    ],
+    "ore_02": [
+      32,
+      32
+    ],
+    "ore_03": [
+      32,
+      32
+    ],
+    "ore_04": [
+      32,
+      32
+    ],
+    "bones_01": [
+      32,
+      24
+    ],
+    "bones_02": [
+      48,
+      32
+    ],
+    "bones_03": [
+      48,
+      16
+    ],
+    "bones_04": [
+      48,
+      24
+    ],
+    "chest_closed": [
+      48,
+      40
+    ],
+    "chest_locked": [
+      48,
+      40
+    ],
+    "chest_opening": [
+      48,
+      40
+    ],
+    "chest_open": [
+      48,
+      40
+    ],
+    "platform_01": [
+      48,
+      24
+    ],
+    "platform_02": [
+      48,
+      24
+    ],
+    "stalagmites_01": [
+      48,
+      40
+    ],
+    "stalagmites_02": [
+      48,
+      40
+    ],
+    "stalagmites_03": [
+      48,
+      40
+    ],
+    "stalagmites_04": [
+      48,
+      40
+    ],
+    "deep_cavern": [
+      640,
+      360
+    ]
+  },
+  "chest_visible": [
+    40,
+    26
+  ],
+  "atlas_columns": 8,
+  "atlas_rows": 10,
+  "sampling": "single_pass_alpha_weighted_area_then_palette",
+  "runtime_scale": [
+    1,
+    1
+  ],
+  "background_space": "screen",
+  "conversion_report": "res://docs/art/audits/cave_pixel_conversion.json"
+}

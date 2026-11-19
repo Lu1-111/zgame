@@ -1,0 +1,1929 @@
+{
+  "id": "cave_enemy_designs_v001",
+  "status": "art_only_stats_unassigned",
+  "enemies": [
+    {
+      "id": "bone_dragon_blade",
+      "name": "骨龙·刀型",
+      "canvas": [
+        96,
+        96
+      ],
+      "anchor": [
+        40,
+        80
+      ],
+      "sprite_frames": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/godot/bone_dragon_blade.tres",
+      "actions": [
+        {
+          "id": "idle",
+          "frames": [
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/idle/00.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/idle/01.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/idle/02.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/idle/03.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/idle/04.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/idle/05.png"
+          ],
+          "frame_count": 6,
+          "fps": 4.5,
+          "loop": true,
+          "anchor": [
+            40,
+            80
+          ],
+          "canvas": [
+            96,
+            96
+          ],
+          "sheet": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/idle.png",
+          "gif": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/idle.gif",
+          "unique_frames": 6,
+          "base_fps": 6,
+          "speed_multiplier": 0.75,
+          "duration_seconds": 1.3333333333333333
+        },
+        {
+          "id": "move",
+          "frames": [
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/move/00.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/move/01.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/move/02.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/move/03.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/move/04.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/move/05.png"
+          ],
+          "frame_count": 6,
+          "fps": 6.75,
+          "loop": true,
+          "anchor": [
+            40,
+            80
+          ],
+          "canvas": [
+            96,
+            96
+          ],
+          "sheet": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/move.png",
+          "gif": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/move.gif",
+          "unique_frames": 6,
+          "base_fps": 9,
+          "speed_multiplier": 0.75,
+          "duration_seconds": 0.8888888888888888
+        },
+        {
+          "id": "slash_down",
+          "frames": [
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/slash_down/00.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/slash_down/01.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/slash_down/02.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/slash_down/03.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/slash_down/04.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/slash_down/05.png"
+          ],
+          "frame_count": 6,
+          "fps": 7.5,
+          "loop": false,
+          "anchor": [
+            40,
+            80
+          ],
+          "canvas": [
+            96,
+            96
+          ],
+          "sheet": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/slash_down.png",
+          "gif": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/slash_down.gif",
+          "unique_frames": 6,
+          "base_fps": 10,
+          "speed_multiplier": 0.75,
+          "duration_seconds": 0.8
+        },
+        {
+          "id": "slash_up",
+          "frames": [
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/slash_up/00.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/slash_up/01.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/slash_up/02.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/slash_up/03.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/slash_up/04.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/slash_up/05.png"
+          ],
+          "frame_count": 6,
+          "fps": 7.5,
+          "loop": false,
+          "anchor": [
+            40,
+            80
+          ],
+          "canvas": [
+            96,
+            96
+          ],
+          "sheet": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/slash_up.png",
+          "gif": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/slash_up.gif",
+          "unique_frames": 6,
+          "base_fps": 10,
+          "speed_multiplier": 0.75,
+          "duration_seconds": 0.8
+        },
+        {
+          "id": "thrust",
+          "frames": [
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/thrust/00.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/thrust/01.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/thrust/02.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/thrust/03.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/thrust/04.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/frames/thrust/05.png"
+          ],
+          "frame_count": 6,
+          "fps": 7.5,
+          "loop": false,
+          "anchor": [
+            40,
+            80
+          ],
+          "canvas": [
+            96,
+            96
+          ],
+          "sheet": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/thrust.png",
+          "gif": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_blade/thrust.gif",
+          "unique_frames": 6,
+          "base_fps": 10,
+          "speed_multiplier": 0.75,
+          "duration_seconds": 0.8
+        }
+      ],
+      "base_hp": null,
+      "base_damage": null,
+      "defense": null,
+      "poise": null,
+      "resist": {
+        "physical": null,
+        "magic": null
+      },
+      "combat_implemented": false
+    },
+    {
+      "id": "bone_dragon_spear",
+      "name": "骨龙·矛型",
+      "canvas": [
+        128,
+        96
+      ],
+      "anchor": [
+        40,
+        80
+      ],
+      "sprite_frames": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/godot/bone_dragon_spear.tres",
+      "actions": [
+        {
+          "id": "idle",
+          "frames": [
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_spear/frames/idle/00.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_spear/frames/idle/01.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_spear/frames/idle/02.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_spear/frames/idle/03.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_spear/frames/idle/04.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_spear/frames/idle/05.png"
+          ],
+          "frame_count": 6,
+          "fps": 4.5,
+          "loop": true,
+          "anchor": [
+            40,
+            80
+          ],
+          "canvas": [
+            128,
+            96
+          ],
+          "sheet": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_spear/idle.png",
+          "gif": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_spear/idle.gif",
+          "unique_frames": 6,
+          "base_fps": 6,
+          "speed_multiplier": 0.75,
+          "duration_seconds": 1.3333333333333333
+        },
+        {
+          "id": "move",
+          "frames": [
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_spear/frames/move/00.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_spear/frames/move/01.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_spear/frames/move/02.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_spear/frames/move/03.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_spear/frames/move/04.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_spear/frames/move/05.png"
+          ],
+          "frame_count": 6,
+          "fps": 6.75,
+          "loop": true,
+          "anchor": [
+            40,
+            80
+          ],
+          "canvas": [
+            128,
+            96
+          ],
+          "sheet": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_spear/move.png",
+          "gif": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_spear/move.gif",
+          "unique_frames": 6,
+          "base_fps": 9,
+          "speed_multiplier": 0.75,
+          "duration_seconds": 0.8888888888888888
+        },
+        {
+          "id": "thrust",
+          "frames": [
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_spear/frames/thrust/00.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_spear/frames/thrust/01.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_spear/frames/thrust/02.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_spear/frames/thrust/03.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_spear/frames/thrust/04.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_spear/frames/thrust/05.png"
+          ],
+          "frame_count": 6,
+          "fps": 7.5,
+          "loop": false,
+          "anchor": [
+            40,
+            80
+          ],
+          "canvas": [
+            128,
+            96
+          ],
+          "sheet": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_spear/thrust.png",
+          "gif": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_spear/thrust.gif",
+          "unique_frames": 6,
+          "base_fps": 10,
+          "speed_multiplier": 0.75,
+          "duration_seconds": 0.8
+        }
+      ],
+      "base_hp": null,
+      "base_damage": null,
+      "defense": null,
+      "poise": null,
+      "resist": {
+        "physical": null,
+        "magic": null
+      },
+      "combat_implemented": false
+    },
+    {
+      "id": "bone_dragon_bow",
+      "name": "骨龙·弓型",
+      "canvas": [
+        96,
+        96
+      ],
+      "anchor": [
+        40,
+        80
+      ],
+      "sprite_frames": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/godot/bone_dragon_bow.tres",
+      "actions": [
+        {
+          "id": "idle",
+          "frames": [
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_bow/frames/idle/00.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_bow/frames/idle/01.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_bow/frames/idle/02.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_bow/frames/idle/03.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_bow/frames/idle/04.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_bow/frames/idle/05.png"
+          ],
+          "frame_count": 6,
+          "fps": 4.5,
+          "loop": true,
+          "anchor": [
+            40,
+            80
+          ],
+          "canvas": [
+            96,
+            96
+          ],
+          "sheet": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_bow/idle.png",
+          "gif": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_bow/idle.gif",
+          "unique_frames": 6,
+          "base_fps": 6,
+          "speed_multiplier": 0.75,
+          "duration_seconds": 1.3333333333333333
+        },
+        {
+          "id": "move",
+          "frames": [
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_bow/frames/move/00.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_bow/frames/move/01.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_bow/frames/move/02.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_bow/frames/move/03.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_bow/frames/move/04.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_bow/frames/move/05.png"
+          ],
+          "frame_count": 6,
+          "fps": 6.75,
+          "loop": true,
+          "anchor": [
+            40,
+            80
+          ],
+          "canvas": [
+            96,
+            96
+          ],
+          "sheet": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_bow/move.png",
+          "gif": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_bow/move.gif",
+          "unique_frames": 6,
+          "base_fps": 9,
+          "speed_multiplier": 0.75,
+          "duration_seconds": 0.8888888888888888
+        },
+        {
+          "id": "shoot",
+          "frames": [
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_bow/frames/shoot/00.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_bow/frames/shoot/01.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_bow/frames/shoot/02.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_bow/frames/shoot/03.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_bow/frames/shoot/04.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_bow/frames/shoot/05.png"
+          ],
+          "frame_count": 6,
+          "fps": 6.0,
+          "loop": false,
+          "anchor": [
+            40,
+            80
+          ],
+          "canvas": [
+            96,
+            96
+          ],
+          "sheet": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_bow/shoot.png",
+          "gif": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/bone_dragon_bow/shoot.gif",
+          "unique_frames": 6,
+          "base_fps": 8,
+          "speed_multiplier": 0.75,
+          "duration_seconds": 1.0
+        }
+      ],
+      "base_hp": null,
+      "base_damage": null,
+      "defense": null,
+      "poise": null,
+      "resist": {
+        "physical": null,
+        "magic": null
+      },
+      "combat_implemented": false
+    },
+    {
+      "id": "stonehelm_beast",
+      "name": "岩盔兽",
+      "canvas": [
+        128,
+        96
+      ],
+      "anchor": [
+        64,
+        80
+      ],
+      "sprite_frames": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/sprite_frames.tres",
+      "actions": [
+        {
+          "id": "idle",
+          "frames": [
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/idle/00.png",
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/idle/01.png",
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/idle/02.png",
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/idle/03.png",
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/idle/04.png",
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/idle/05.png"
+          ],
+          "frame_count": 6,
+          "fps": 4.5,
+          "loop": true,
+          "canvas": [
+            128,
+            96
+          ],
+          "anchor": [
+            64,
+            80
+          ],
+          "unique_frames": 6,
+          "sha256": [
+            "c6a624c3c40ff0d13f0b4a0f73271d5c8eef6c03566712368f2630bcc243bd96",
+            "d7677f2bd2d835378ec2e695b0f72d9007b58b0dd01aae29ae06cdad8c875f0d",
+            "8c1c49ea3a7534d69352bf1aa8b14e5702d13fb3096e9334f2a8f2136961da43",
+            "6b3c9250f49b2105c218526a09fd1476e4590c1577951a1bddac4e6c92af89ca",
+            "12a07447a30facf826cc19e83cdaceeac47f9936d85fe76732d236a49e384100",
+            "73516c8a712bedc127bf452a2287a70b2766131c199fbeac017c46d990385e49"
+          ],
+          "visible_rects": [
+            [
+              28,
+              38,
+              100,
+              80
+            ],
+            [
+              28,
+              37,
+              100,
+              80
+            ],
+            [
+              27,
+              34,
+              99,
+              80
+            ],
+            [
+              28,
+              33,
+              98,
+              79
+            ],
+            [
+              28,
+              35,
+              99,
+              80
+            ],
+            [
+              27,
+              39,
+              99,
+              80
+            ]
+          ],
+          "grounded": true,
+          "phase_tags": [
+            "cycle",
+            "cycle",
+            "cycle",
+            "cycle",
+            "cycle",
+            "cycle"
+          ],
+          "base_fps": 6,
+          "speed_multiplier": 0.75,
+          "duration_seconds": 1.3333333333333333
+        },
+        {
+          "id": "move",
+          "frames": [
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/move/00.png",
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/move/01.png",
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/move/02.png",
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/move/03.png",
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/move/04.png",
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/move/05.png"
+          ],
+          "frame_count": 6,
+          "fps": 6.75,
+          "loop": true,
+          "canvas": [
+            128,
+            96
+          ],
+          "anchor": [
+            64,
+            80
+          ],
+          "unique_frames": 6,
+          "sha256": [
+            "928c0552d50f5ea57fe38550898531d9ac099e8394a33c4bd5058cfecee60a0a",
+            "04e77ac24e80c2b61086a908b6491edf4f82ec53174c23a6028a7c7cd7f8bcd6",
+            "3dcb269caffef2b18e0105f4d5d58a5eec24b12f7bcd824656a8ee78686c126b",
+            "2f96b23d24241ccd0c42cc2b8dad454710a3b5254f2195c77a7715ec1d622719",
+            "633c193369763554c8544c84c7fd733a9638b9b74a21554d6b2c597f7cf5b2e7",
+            "a1c82e7caf7cb1e53c098f7bb12db42b4d3caf233b32aa91867b3fd38f606a46"
+          ],
+          "visible_rects": [
+            [
+              28,
+              38,
+              100,
+              80
+            ],
+            [
+              28,
+              36,
+              100,
+              80
+            ],
+            [
+              27,
+              38,
+              100,
+              80
+            ],
+            [
+              28,
+              40,
+              100,
+              80
+            ],
+            [
+              28,
+              39,
+              100,
+              80
+            ],
+            [
+              28,
+              38,
+              100,
+              80
+            ]
+          ],
+          "grounded": true,
+          "phase_tags": [
+            "cycle",
+            "cycle",
+            "cycle",
+            "cycle",
+            "cycle",
+            "cycle"
+          ],
+          "base_fps": 9,
+          "speed_multiplier": 0.75,
+          "duration_seconds": 0.8888888888888888
+        },
+        {
+          "id": "ram",
+          "frames": [
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/ram/00.png",
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/ram/01.png",
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/ram/02.png",
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/ram/03.png",
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/ram/04.png",
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/ram/05.png"
+          ],
+          "frame_count": 6,
+          "fps": 7.5,
+          "loop": false,
+          "canvas": [
+            128,
+            96
+          ],
+          "anchor": [
+            64,
+            80
+          ],
+          "unique_frames": 6,
+          "sha256": [
+            "44235ae27998df3f97756cf2b8bdb38d762d77fabbb52f85698eabb93b9979f0",
+            "c2c79a1e652ea969df21b074a4518db4dbce4899a55656cc3838a7b57ddd2ddb",
+            "a5b7f540125803c3bfe718c049c05e58ad740aac3f45e95fa6e715ee8979c6e6",
+            "026f6e55131717ec5ef08de1828dedf90218b14a5b0027c99a41f4145e716707",
+            "7870678a1cc6b3709c73c7d9ad84596490ebcd6244d8379732854de48a22b018",
+            "21713afd93a132ab3cb057b513284ed7ac3d7f6d15ea56090a18f9b57075a9b5"
+          ],
+          "visible_rects": [
+            [
+              28,
+              39,
+              101,
+              80
+            ],
+            [
+              28,
+              42,
+              99,
+              80
+            ],
+            [
+              27,
+              43,
+              99,
+              80
+            ],
+            [
+              23,
+              42,
+              103,
+              80
+            ],
+            [
+              26,
+              40,
+              101,
+              80
+            ],
+            [
+              28,
+              38,
+              100,
+              80
+            ]
+          ],
+          "grounded": true,
+          "phase_tags": [
+            "prepare",
+            "prepare",
+            "extend",
+            "active",
+            "recover",
+            "recover"
+          ],
+          "base_fps": 10,
+          "speed_multiplier": 0.75,
+          "duration_seconds": 0.8
+        },
+        {
+          "id": "shell_defense",
+          "frames": [
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/shell_defense/00.png",
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/shell_defense/01.png",
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/shell_defense/02.png",
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/shell_defense/03.png",
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/shell_defense/04.png",
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/stonehelm_beast/frames/shell_defense/05.png"
+          ],
+          "frame_count": 6,
+          "fps": 6.0,
+          "loop": false,
+          "canvas": [
+            128,
+            96
+          ],
+          "anchor": [
+            64,
+            80
+          ],
+          "unique_frames": 6,
+          "sha256": [
+            "bdb3f7135b930ca953408a2429dca895c55c5b250a0426dbc7d5172950e75eee",
+            "8bc6aeb87ae0c91da94c9ecc6b1efd27a36a2684c43d777b30af2c1be1c622bd",
+            "ec2d4bc2dfc2fa91748c0a91f086cfa9e2bb50b9a80fc87792a6a031d509f68d",
+            "2bebf2a1201508a02c4f8d53801f089292c046f486fb993937b9ae606eb9146b",
+            "573f53d9273de657a90db1bd43138f5325fe9b69eb1e277e0de6e17ee823cfd9",
+            "631e8f4cc71974ec3d58251e612c9e7767c9ee70b04cb4622cc97f1984cddc77"
+          ],
+          "visible_rects": [
+            [
+              28,
+              39,
+              100,
+              80
+            ],
+            [
+              27,
+              41,
+              100,
+              80
+            ],
+            [
+              27,
+              45,
+              97,
+              80
+            ],
+            [
+              28,
+              47,
+              97,
+              80
+            ],
+            [
+              28,
+              43,
+              98,
+              80
+            ],
+            [
+              28,
+              39,
+              100,
+              80
+            ]
+          ],
+          "grounded": true,
+          "phase_tags": [
+            "prepare",
+            "prepare",
+            "extend",
+            "active",
+            "recover",
+            "recover"
+          ],
+          "hold_frame": 3,
+          "base_fps": 8,
+          "speed_multiplier": 0.75,
+          "duration_seconds": 1.0
+        }
+      ],
+      "base_hp": null,
+      "base_damage": null,
+      "defense": null,
+      "poise": null,
+      "resist": {
+        "physical": null,
+        "magic": null
+      },
+      "combat_implemented": false
+    },
+    {
+      "id": "cave_spider",
+      "name": "洞穴蜘蛛",
+      "canvas": [
+        128,
+        96
+      ],
+      "anchor": [
+        64,
+        80
+      ],
+      "sprite_frames": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/sprite_frames.tres",
+      "actions": [
+        {
+          "id": "idle",
+          "frames": [
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/idle/00.png",
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/idle/01.png",
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/idle/02.png",
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/idle/03.png",
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/idle/04.png",
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/idle/05.png"
+          ],
+          "frame_count": 6,
+          "fps": 4.5,
+          "loop": true,
+          "canvas": [
+            128,
+            96
+          ],
+          "anchor": [
+            64,
+            80
+          ],
+          "unique_frames": 6,
+          "sha256": [
+            "cd31729c435cc981c0674d295106f6400749a19222ffdc74f726ae16d1d341f1",
+            "2d724d3ddeee380a4a429b3e4be48bed660ad5dd129bce71d0d2a7fcdf2c7920",
+            "54f78df06c086bad2007c73d8c37c01b973c72f463726b8fa8552c41efe6a257",
+            "5d5fe92e77d63557f87c53daeef1f865efe9f56c67bf4735957e969da8f4af72",
+            "da8ca16eb0f23534b9d351a7e70cf7edc6867eaa032ac13bb5b0994a1f8d2af4",
+            "0e5be205faa9416a54997c1d0f4f8cdeba68a3744e9bfbfee880a0672a4c64b6"
+          ],
+          "visible_rects": [
+            [
+              23,
+              35,
+              104,
+              80
+            ],
+            [
+              24,
+              32,
+              104,
+              80
+            ],
+            [
+              25,
+              29,
+              105,
+              79
+            ],
+            [
+              25,
+              32,
+              105,
+              79
+            ],
+            [
+              25,
+              36,
+              105,
+              80
+            ],
+            [
+              25,
+              38,
+              105,
+              80
+            ]
+          ],
+          "grounded": true,
+          "phase_tags": [
+            "cycle",
+            "cycle",
+            "cycle",
+            "cycle",
+            "cycle",
+            "cycle"
+          ],
+          "base_fps": 6,
+          "speed_multiplier": 0.75,
+          "duration_seconds": 1.3333333333333333
+        },
+        {
+          "id": "move",
+          "frames": [
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/move/00.png",
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/move/01.png",
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/move/02.png",
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/move/03.png",
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/move/04.png",
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/move/05.png"
+          ],
+          "frame_count": 6,
+          "fps": 7.5,
+          "loop": true,
+          "canvas": [
+            128,
+            96
+          ],
+          "anchor": [
+            64,
+            80
+          ],
+          "unique_frames": 6,
+          "sha256": [
+            "05a6e3f69199f8fd8c9ac45a5e6cb5d82c67255876cb2753e5ca3b9944edc99a",
+            "44daa75a572b26129b9061694b66eab16084be9477afa2ebb181dbb5a2c39f28",
+            "1a0ddf4d2cb5efc8c1228d266115bb7cb9443d3c20ab5a0c9edeb98c535367cb",
+            "d36a937f3bd57470269fd1afc43ca81230ef068594f0ab9203412e19b056a195",
+            "e801e5f41b6e17c80f98dbc1ec0c9d39a480a8611b0fa8a144a9c90a752d27a5",
+            "863c6321618fe41608d1cbd525f3ace73a4327ac5bef4aa781b7d2eeac487a4b"
+          ],
+          "visible_rects": [
+            [
+              24,
+              37,
+              104,
+              80
+            ],
+            [
+              24,
+              34,
+              105,
+              80
+            ],
+            [
+              25,
+              30,
+              106,
+              79
+            ],
+            [
+              27,
+              37,
+              107,
+              80
+            ],
+            [
+              27,
+              35,
+              106,
+              80
+            ],
+            [
+              28,
+              34,
+              105,
+              80
+            ]
+          ],
+          "grounded": true,
+          "phase_tags": [
+            "cycle",
+            "cycle",
+            "cycle",
+            "cycle",
+            "cycle",
+            "cycle"
+          ],
+          "base_fps": 10,
+          "speed_multiplier": 0.75,
+          "duration_seconds": 0.8
+        },
+        {
+          "id": "claw_attack",
+          "frames": [
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/claw_attack/00.png",
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/claw_attack/01.png",
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/claw_attack/02.png",
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/claw_attack/03.png",
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/claw_attack/04.png",
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/claw_attack/05.png"
+          ],
+          "frame_count": 6,
+          "fps": 7.5,
+          "loop": false,
+          "canvas": [
+            128,
+            96
+          ],
+          "anchor": [
+            64,
+            80
+          ],
+          "unique_frames": 6,
+          "sha256": [
+            "5febb3edd2a8eb3c05e8ee5fe6bbc1d638bfab375cdc67593c1344b3da83c436",
+            "0583ea999dc44ce372503774b3196bb8ac6d7b364b782a29a29d37a177de8225",
+            "609fe9685846205995145b2dccda15c3ec358051f7c0482b73cc0b38a56b28f2",
+            "8e9811932e0bd50fc7fc47438683c8fdb89c745e7c5e3aafca4be8ddc6a7c8e1",
+            "62c4d9f3fdb0e734a80333342ef71f5ffa774b54ff8a74ea5db9dc51f8aae3f3",
+            "d55f95d58cea4ac348c6366585585401448414e1844afd07ded91e8c1bbb45d5"
+          ],
+          "visible_rects": [
+            [
+              24,
+              35,
+              103,
+              80
+            ],
+            [
+              24,
+              30,
+              104,
+              80
+            ],
+            [
+              25,
+              16,
+              105,
+              79
+            ],
+            [
+              24,
+              31,
+              107,
+              80
+            ],
+            [
+              24,
+              38,
+              106,
+              80
+            ],
+            [
+              26,
+              36,
+              104,
+              80
+            ]
+          ],
+          "grounded": true,
+          "phase_tags": [
+            "prepare",
+            "prepare",
+            "extend",
+            "active",
+            "recover",
+            "recover"
+          ],
+          "base_fps": 10,
+          "speed_multiplier": 0.75,
+          "duration_seconds": 0.8
+        },
+        {
+          "id": "web_spit",
+          "frames": [
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/web_spit/00.png",
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/web_spit/01.png",
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/web_spit/02.png",
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/web_spit/03.png",
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/web_spit/04.png",
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/web_spit/05.png"
+          ],
+          "frame_count": 6,
+          "fps": 6.75,
+          "loop": false,
+          "canvas": [
+            128,
+            96
+          ],
+          "anchor": [
+            64,
+            80
+          ],
+          "unique_frames": 6,
+          "sha256": [
+            "9d3485cedd151b829658b8edfcb222997372a13d16cc583c189c2c0eb2efb963",
+            "4dc973f01226c871363262c9743b92e573d4e80346c08560fadc4660ff524414",
+            "81b2df7d4ca07f2616d601be9275e071a27ce4e7f626cc8478d0a5c4fa3a9a1a",
+            "983871ab88478dcd331a2a1607c6b960a9023f3420c2e8a4398257f5b5ed845a",
+            "e3678a13eaa2c79257a797b25f325465a6d1d1cd085a5c21b84df03ef1acfde2",
+            "6bae5ccbea94934013e162aea6d2d43360ad76aa480bf16339631a95f399fb24"
+          ],
+          "visible_rects": [
+            [
+              24,
+              35,
+              104,
+              80
+            ],
+            [
+              24,
+              39,
+              102,
+              80
+            ],
+            [
+              24,
+              35,
+              105,
+              80
+            ],
+            [
+              25,
+              35,
+              103,
+              80
+            ],
+            [
+              26,
+              35,
+              106,
+              80
+            ],
+            [
+              26,
+              35,
+              105,
+              79
+            ]
+          ],
+          "grounded": true,
+          "phase_tags": [
+            "prepare",
+            "prepare",
+            "extend",
+            "active",
+            "recover",
+            "recover"
+          ],
+          "suggested_emission_frame": 3,
+          "base_fps": 9,
+          "speed_multiplier": 0.75,
+          "duration_seconds": 0.8888888888888888
+        }
+      ],
+      "base_hp": null,
+      "base_damage": null,
+      "defense": null,
+      "poise": null,
+      "resist": {
+        "physical": null,
+        "magic": null
+      },
+      "combat_implemented": false
+    },
+    {
+      "id": "animated_crystal",
+      "name": "活化晶石",
+      "canvas": [
+        96,
+        96
+      ],
+      "anchor": [
+        48,
+        48
+      ],
+      "sprite_frames": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/animated_crystal/sprite_frames.tres",
+      "actions": [
+        {
+          "id": "idle",
+          "frames": [
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/animated_crystal/frames/idle/00.png",
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/animated_crystal/frames/idle/01.png",
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/animated_crystal/frames/idle/02.png",
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/animated_crystal/frames/idle/03.png",
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/animated_crystal/frames/idle/04.png",
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/animated_crystal/frames/idle/05.png"
+          ],
+          "frame_count": 6,
+          "fps": 5.25,
+          "loop": true,
+          "canvas": [
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            48
+          ],
+          "unique_frames": 6,
+          "sha256": [
+            "91f28cdb6df2fed853d8eabc03358f20e97bbe489e92c0acdd28effcf5ac5c58",
+            "6d45b8d123eafe28656bac08d7db4b1fac5565d2507f6cf0551502a05cd2fb4a",
+            "d26f60c6b9d0183ddee854f9a0db0e4f95abc12912deb0c250dfe601ba68002d",
+            "50a9bcd8aecb3f0777ffda55d1fbb19c91b5e5a0af91fe9675f817384089dd67",
+            "ccd98be1c0f5f24f0f6d3ba5bf316038584513c82b7322575294ca6c0237dce7",
+            "bbd4c020563dd800d75d5b238f77e668f2c400b239937eece75e8b11c21533a6"
+          ],
+          "visible_rects": [
+            [
+              22,
+              19,
+              75,
+              77
+            ],
+            [
+              22,
+              19,
+              71,
+              75
+            ],
+            [
+              23,
+              19,
+              72,
+              74
+            ],
+            [
+              22,
+              17,
+              72,
+              78
+            ],
+            [
+              22,
+              19,
+              71,
+              75
+            ],
+            [
+              24,
+              19,
+              73,
+              75
+            ]
+          ],
+          "grounded": false,
+          "phase_tags": [
+            "cycle",
+            "cycle",
+            "cycle",
+            "cycle",
+            "cycle",
+            "cycle"
+          ],
+          "base_fps": 7,
+          "speed_multiplier": 0.75,
+          "duration_seconds": 1.1428571428571428
+        },
+        {
+          "id": "move",
+          "frames": [
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/animated_crystal/frames/move/00.png",
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/animated_crystal/frames/move/01.png",
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/animated_crystal/frames/move/02.png",
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/animated_crystal/frames/move/03.png",
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/animated_crystal/frames/move/04.png",
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/animated_crystal/frames/move/05.png"
+          ],
+          "frame_count": 6,
+          "fps": 6.75,
+          "loop": true,
+          "canvas": [
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            48
+          ],
+          "unique_frames": 6,
+          "sha256": [
+            "fcc9ea02e0ab973444ce7a06b5793b04e9dd11b1423d07777a5cc0a587d995e2",
+            "cc4924b8c92e629e63bf8f783a158e8af36eafc877a25cdfac078b2eaccee8c5",
+            "ebf9f159bf1dabc0d0a447584ef9dc82c8db2f8d1ab491697fd7455ab3762c65",
+            "72ac999ee95a49fdec87cf876f890ab84c352f1b869e9edac7fe7b7d2de09e66",
+            "df7d5454b0b76bcf59cd8ab1751adb4f6cc51dbf3a39fb24a38b94f209cf8697",
+            "8ef5fb3736f7afe0a20cd69b3547b3c3fe25db2fbf24fefc60ed0467f8786c36"
+          ],
+          "visible_rects": [
+            [
+              19,
+              19,
+              72,
+              76
+            ],
+            [
+              19,
+              19,
+              71,
+              73
+            ],
+            [
+              18,
+              19,
+              73,
+              73
+            ],
+            [
+              18,
+              20,
+              73,
+              71
+            ],
+            [
+              16,
+              20,
+              74,
+              72
+            ],
+            [
+              20,
+              19,
+              75,
+              76
+            ]
+          ],
+          "grounded": false,
+          "phase_tags": [
+            "cycle",
+            "cycle",
+            "cycle",
+            "cycle",
+            "cycle",
+            "cycle"
+          ],
+          "base_fps": 9,
+          "speed_multiplier": 0.75,
+          "duration_seconds": 0.8888888888888888
+        },
+        {
+          "id": "charge_ready",
+          "frames": [
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/animated_crystal/frames/charge_ready/00.png",
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/animated_crystal/frames/charge_ready/01.png",
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/animated_crystal/frames/charge_ready/02.png",
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/animated_crystal/frames/charge_ready/03.png",
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/animated_crystal/frames/charge_ready/04.png",
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/animated_crystal/frames/charge_ready/05.png"
+          ],
+          "frame_count": 6,
+          "fps": 6.0,
+          "loop": false,
+          "canvas": [
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            48
+          ],
+          "unique_frames": 6,
+          "sha256": [
+            "c4078bf28aa8706e1f0bf5d7d18dfd07387fecb851d30f495fa568bb9f1e2c78",
+            "d3db25f0d8f5d814fbbeb8bf9892c03ffe5dfce1f74fbd2321aa62297a021683",
+            "611818d0dba87360cf7709261cfe833356b31b1334303243c8d1b5ec2ca6d8b2",
+            "3f3a8eafebd0a3ee582f9408ddd5df8f6c1e2aa4f73770862bd879e8c5b1d536",
+            "386cd116d72950fb762786b5f12ba6b47650041fa2659ec5f35b3adcd42efbc0",
+            "5c51ba5d055e7f136cbec41aecb1e88aa515c8bf377e3dba8fcc6f44c96c51ac"
+          ],
+          "visible_rects": [
+            [
+              22,
+              19,
+              72,
+              76
+            ],
+            [
+              23,
+              20,
+              69,
+              72
+            ],
+            [
+              26,
+              21,
+              70,
+              71
+            ],
+            [
+              25,
+              18,
+              70,
+              71
+            ],
+            [
+              22,
+              18,
+              74,
+              73
+            ],
+            [
+              24,
+              18,
+              75,
+              73
+            ]
+          ],
+          "grounded": false,
+          "phase_tags": [
+            "prepare",
+            "prepare",
+            "extend",
+            "active",
+            "recover",
+            "recover"
+          ],
+          "hold_frame": 5,
+          "base_fps": 8,
+          "speed_multiplier": 0.75,
+          "duration_seconds": 1.0
+        }
+      ],
+      "base_hp": null,
+      "base_damage": null,
+      "defense": null,
+      "poise": null,
+      "resist": {
+        "physical": null,
+        "magic": null
+      },
+      "combat_implemented": false
+    },
+    {
+      "id": "cavern_hunter",
+      "name": "岩穴猎手",
+      "canvas": [
+        192,
+        160
+      ],
+      "anchor": [
+        96,
+        140
+      ],
+      "sprite_frames": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/sprite_frames.tres",
+      "actions": [
+        {
+          "id": "idle",
+          "frames": [
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/idle/00.png",
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/idle/01.png",
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/idle/02.png",
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/idle/03.png",
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/idle/04.png",
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/idle/05.png"
+          ],
+          "frame_count": 6,
+          "fps": 4.5,
+          "loop": true,
+          "canvas": [
+            192,
+            160
+          ],
+          "anchor": [
+            96,
+            140
+          ],
+          "unique_frames": 6,
+          "sha256": [
+            "d82203a64772131f02f2963f07fdafe2506b55f3d839a8b26a2609efaadc48e4",
+            "79e5c6aec5647606f5d93677b9c1e5e8a4397ab98c20df0349f869ffd67696fa",
+            "2a273bb07e5e0e6b5cf06c9ba066f9eef90065e1fe3711c1e4af23ccfee620ad",
+            "2b391ec63737c33dfb674caf4668b1ef6d0e9d0e425c13742ed4d248b8200ee9",
+            "dbe2b62a2436d2031cde329874e6fa0b266c7df8b2372cff7f817a4edce9adc1",
+            "c81a9b6bec5fedc6d6992253665a39f6cb3ac2b8cb5b7fcf86f2d7bff64eb575"
+          ],
+          "visible_rects": [
+            [
+              33,
+              72,
+              162,
+              140
+            ],
+            [
+              33,
+              69,
+              159,
+              140
+            ],
+            [
+              36,
+              67,
+              160,
+              140
+            ],
+            [
+              35,
+              70,
+              161,
+              140
+            ],
+            [
+              33,
+              71,
+              162,
+              140
+            ],
+            [
+              32,
+              74,
+              162,
+              140
+            ]
+          ],
+          "grounded": true,
+          "phase_tags": [
+            "cycle",
+            "cycle",
+            "cycle",
+            "cycle",
+            "cycle",
+            "cycle"
+          ],
+          "base_fps": 6,
+          "speed_multiplier": 0.75,
+          "duration_seconds": 1.3333333333333333
+        },
+        {
+          "id": "move",
+          "frames": [
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/move/00.png",
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/move/01.png",
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/move/02.png",
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/move/03.png",
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/move/04.png",
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/move/05.png"
+          ],
+          "frame_count": 6,
+          "fps": 6.75,
+          "loop": true,
+          "canvas": [
+            192,
+            160
+          ],
+          "anchor": [
+            96,
+            140
+          ],
+          "unique_frames": 6,
+          "sha256": [
+            "12aa1daf98385d7e7c190ffc6491a415f725f959564f6483829e19bb0d302736",
+            "d8e7ef0b5b7cec0475a7428414d8b72836faf7855665009db5c5cb3be3875b7d",
+            "1eee490d994fa23debdc5e515f3a8d4d2b75e3bc5717efe6b40943bb8f4e73f5",
+            "1823540961644de4e9419d2b75047f0b5751bb5f5d814ff58fdaa5e99b50a903",
+            "5ed58af4f67935ed9a7b21ce88256960f514b7e233b330c0d4bd39df87fa30e4",
+            "113c33ff2dcc9b3dfbd365aaded85fdd8fcc1e9d4935edd5ea0e60a189a19102"
+          ],
+          "visible_rects": [
+            [
+              30,
+              73,
+              162,
+              140
+            ],
+            [
+              30,
+              71,
+              164,
+              140
+            ],
+            [
+              31,
+              67,
+              164,
+              140
+            ],
+            [
+              32,
+              71,
+              164,
+              140
+            ],
+            [
+              31,
+              72,
+              165,
+              140
+            ],
+            [
+              30,
+              73,
+              164,
+              140
+            ]
+          ],
+          "grounded": true,
+          "phase_tags": [
+            "cycle",
+            "cycle",
+            "cycle",
+            "cycle",
+            "cycle",
+            "cycle"
+          ],
+          "base_fps": 9,
+          "speed_multiplier": 0.75,
+          "duration_seconds": 0.8888888888888888
+        },
+        {
+          "id": "elbow_blade",
+          "frames": [
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/elbow_blade/00.png",
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/elbow_blade/01.png",
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/elbow_blade/02.png",
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/elbow_blade/03.png",
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/elbow_blade/04.png",
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/elbow_blade/05.png"
+          ],
+          "frame_count": 6,
+          "fps": 7.5,
+          "loop": false,
+          "canvas": [
+            192,
+            160
+          ],
+          "anchor": [
+            96,
+            140
+          ],
+          "unique_frames": 6,
+          "sha256": [
+            "b7673d22182d2833ee455db812f586572d72efa35162ebb0008aea2b98f3f80d",
+            "15000b25b9de75bea7893ff3a6d7d362c3aa4492cf57ce4522b88fb87edfabd2",
+            "39de4195afbd88d7716b5bafc2bc3a8bcdff950a02e34345eecf8236cf35feb2",
+            "8abc1d896810d8fd7e8b356b0321b629ec5116c650c5a2eae1a8cda88ef6c475",
+            "c4ba7c59f80dd0cd46f31de2402b001c4414525b0f40e3c3403529524c741861",
+            "624d00af50cc75af89d2dca1542a6e0f96cbe57f37f46755b1b1433d70f656ca"
+          ],
+          "visible_rects": [
+            [
+              33,
+              71,
+              162,
+              140
+            ],
+            [
+              33,
+              63,
+              155,
+              140
+            ],
+            [
+              33,
+              51,
+              153,
+              140
+            ],
+            [
+              31,
+              69,
+              160,
+              140
+            ],
+            [
+              32,
+              76,
+              162,
+              140
+            ],
+            [
+              35,
+              71,
+              163,
+              140
+            ]
+          ],
+          "grounded": true,
+          "phase_tags": [
+            "prepare",
+            "prepare",
+            "extend",
+            "active",
+            "recover",
+            "recover"
+          ],
+          "base_fps": 10,
+          "speed_multiplier": 0.75,
+          "duration_seconds": 0.8
+        },
+        {
+          "id": "leap_slam",
+          "frames": [
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/leap_slam/00.png",
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/leap_slam/01.png",
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/leap_slam/02.png",
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/leap_slam/03.png",
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/leap_slam/04.png",
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/leap_slam/05.png"
+          ],
+          "frame_count": 6,
+          "fps": 6.75,
+          "loop": false,
+          "canvas": [
+            192,
+            160
+          ],
+          "anchor": [
+            96,
+            140
+          ],
+          "unique_frames": 6,
+          "sha256": [
+            "f381a34108322afe2c4d8e8b9e638d5fa8bcfad92bf0598e5fbdfe9397e06da8",
+            "c77c39bca8b2c03583c3c665574e8ade09632d2357f3fcc4eadc54f9ddabf015",
+            "ad97e36c2fd90adcc00547e48906277ae0a36af51288111e3e5f694863935747",
+            "136a0d7aa0c558b9bea8cb19da9a96406cc90a761a62dd789576693f86182958",
+            "8f5f62cc81ea07cebdb751cea5bbdd6043d505aa8aab2db10400fe49612b7532",
+            "9dce16ca64db0115cf34fb820ab8eade7680e968f8efc35eba8332dec9594431"
+          ],
+          "visible_rects": [
+            [
+              34,
+              79,
+              162,
+              140
+            ],
+            [
+              33,
+              41,
+              158,
+              128
+            ],
+            [
+              35,
+              21,
+              155,
+              110
+            ],
+            [
+              32,
+              46,
+              160,
+              124
+            ],
+            [
+              33,
+              84,
+              164,
+              140
+            ],
+            [
+              35,
+              75,
+              163,
+              140
+            ]
+          ],
+          "grounded": true,
+          "phase_tags": [
+            "prepare",
+            "prepare",
+            "extend",
+            "active",
+            "recover",
+            "recover"
+          ],
+          "suggested_impact_frame": 4,
+          "base_fps": 9,
+          "speed_multiplier": 0.75,
+          "duration_seconds": 0.8888888888888888
+        },
+        {
+          "id": "tail_crystal_shot",
+          "frames": [
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/tail_crystal_shot/00.png",
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/tail_crystal_shot/01.png",
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/tail_crystal_shot/02.png",
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/tail_crystal_shot/03.png",
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/tail_crystal_shot/04.png",
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/tail_crystal_shot/05.png"
+          ],
+          "frame_count": 6,
+          "fps": 6.75,
+          "loop": false,
+          "canvas": [
+            192,
+            160
+          ],
+          "anchor": [
+            96,
+            140
+          ],
+          "unique_frames": 6,
+          "sha256": [
+            "c5033f28d30bd8e54e59d3bcdb5acd74f4b53f1748d24d0554fccd9eddde5d35",
+            "c5c4b6311426b7c34fa48dc259ec9f4eb654dcf0f72caf0b295741f26f678fa4",
+            "5be03894447f919a7e6d13c81a3c4efda76d76b3c14282d6983acaeed204bdd7",
+            "24d0e1525fa82c0b4788621f9bbedd33bd039b0d488d88a15e6d21d50eb49701",
+            "e0993a56ae5dae1dab28f2e02a72ec67cb6c0df65d6e0b059c51f1013f737c6a",
+            "a49f6d7d8973065c996e36050bbd6398ac8f37e38b0fed4a40aea6a1270159b1"
+          ],
+          "visible_rects": [
+            [
+              34,
+              74,
+              162,
+              139
+            ],
+            [
+              37,
+              49,
+              160,
+              139
+            ],
+            [
+              35,
+              36,
+              163,
+              139
+            ],
+            [
+              37,
+              24,
+              162,
+              139
+            ],
+            [
+              36,
+              47,
+              161,
+              139
+            ],
+            [
+              33,
+              73,
+              161,
+              139
+            ]
+          ],
+          "grounded": true,
+          "phase_tags": [
+            "prepare",
+            "prepare",
+            "extend",
+            "active",
+            "recover",
+            "recover"
+          ],
+          "suggested_emission_frame": 3,
+          "base_fps": 9,
+          "speed_multiplier": 0.75,
+          "duration_seconds": 0.8888888888888888
+        }
+      ],
+      "base_hp": null,
+      "base_damage": null,
+      "defense": null,
+      "poise": null,
+      "resist": {
+        "physical": null,
+        "magic": null
+      },
+      "combat_implemented": false
+    }
+  ],
+  "effects": [
+    {
+      "id": "bone_arrow",
+      "name": "箭矢",
+      "canvas": [
+        48,
+        16
+      ],
+      "anchor": [
+        24,
+        8
+      ],
+      "sprite_frames": "res://assets/PROCESSED/enemies/CAVE-BONE/v001/godot/bone_arrow.tres",
+      "actions": [
+        {
+          "id": "fly",
+          "frames": [
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/projectiles/arrow/frames/00.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/projectiles/arrow/frames/01.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/projectiles/arrow/frames/02.png",
+            "res://assets/PROCESSED/enemies/CAVE-BONE/v001/projectiles/arrow/frames/03.png"
+          ],
+          "fps": 7.5,
+          "loop": true,
+          "frame_count": 4,
+          "base_fps": 10.0,
+          "speed_multiplier": 0.75,
+          "duration_seconds": 0.5333333333333333
+        }
+      ],
+      "damage": null,
+      "speed": null,
+      "lifetime": null
+    },
+    {
+      "id": "web_thread",
+      "name": "丝线弹",
+      "canvas": [
+        48,
+        32
+      ],
+      "anchor": [
+        24,
+        16
+      ],
+      "sprite_frames": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/effects/web_thread/sprite_frames.tres",
+      "actions": [
+        {
+          "id": "web_thread",
+          "frames": [
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/effects/web_thread/00.png",
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/effects/web_thread/01.png",
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/effects/web_thread/02.png",
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/effects/web_thread/03.png",
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/effects/web_thread/04.png",
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/effects/web_thread/05.png"
+          ],
+          "fps": 9.0,
+          "loop": true,
+          "frame_count": 6,
+          "base_fps": 12.0,
+          "speed_multiplier": 0.75,
+          "duration_seconds": 0.6666666666666666
+        }
+      ],
+      "damage": null,
+      "speed": null,
+      "lifetime": null
+    },
+    {
+      "id": "sharp_crystal",
+      "name": "尖晶石",
+      "canvas": [
+        48,
+        32
+      ],
+      "anchor": [
+        24,
+        16
+      ],
+      "sprite_frames": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/effects/sharp_crystal/sprite_frames.tres",
+      "actions": [
+        {
+          "id": "sharp_crystal",
+          "frames": [
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/effects/sharp_crystal/00.png",
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/effects/sharp_crystal/01.png",
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/effects/sharp_crystal/02.png",
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/effects/sharp_crystal/03.png",
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/effects/sharp_crystal/04.png",
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/effects/sharp_crystal/05.png"
+          ],
+          "fps": 9.0,
+          "loop": true,
+          "frame_count": 6,
+          "base_fps": 12.0,
+          "speed_multiplier": 0.75,
+          "duration_seconds": 0.6666666666666666
+        }
+      ],
+      "damage": null,
+      "speed": null,
+      "lifetime": null
+    },
+    {
+      "id": "ground_shockwave",
+      "name": "下砸震荡波",
+      "canvas": [
+        160,
+        64
+      ],
+      "anchor": [
+        80,
+        56
+      ],
+      "sprite_frames": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/effects/ground_shockwave/sprite_frames.tres",
+      "actions": [
+        {
+          "id": "ground_shockwave",
+          "frames": [
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/effects/ground_shockwave/00.png",
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/effects/ground_shockwave/01.png",
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/effects/ground_shockwave/02.png",
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/effects/ground_shockwave/03.png",
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/effects/ground_shockwave/04.png",
+            "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/effects/ground_shockwave/05.png"
+          ],
+          "fps": 9.0,
+          "loop": true,
+          "frame_count": 6,
+          "base_fps": 12.0,
+          "speed_multiplier": 0.75,
+          "duration_seconds": 0.6666666666666666
+        }
+      ],
+      "damage": null,
+      "speed": null,
+      "lifetime": null
+    }
+  ],
+  "source_catalogs": [
+    "res://assets/PROCESSED/enemies/CAVE-BONE/v001/catalog.json",
+    "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/catalog.json"
+  ],
+  "animation_speed_multiplier": 0.75,
+  "art_revision": "imagemagick_v002"
+}

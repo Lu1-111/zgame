@@ -2,7 +2,7 @@ class_name RoomDoor
 extends Area2D
 ## 房间门：玩家进入后切换到目标房间，并从目标房间的同名门内侧出现。
 ## 元数据约定（房间生成脚本写入）：
-##   target_room   目标房间 id（对应 res://scenes/rooms/<id>.tscn）
+##   target_room   目标房间 id（对应 res://scenes/maps/<id>.tscn）
 ##   target_door   目标房间里的门节点名（通常是本门的对门）
 ##   arrive_offset 到达目标门后的落点偏移（相对目标门位置，像素）
 

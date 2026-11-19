@@ -10,8 +10,8 @@
   ],
   "sword": {
     "phase_indices": [
-      3,
-      5,
+      1,
+      6,
       7
     ],
     "length": 27,
@@ -22,44 +22,22 @@
     "shadow": "#414f56",
     "grip": "#5c4637",
     "gold": "#9d9579",
-    "angles": [
-      [
-        -130,
-        -120,
-        -105,
-        -50,
-        25,
-        160,
-        165,
-        0
-      ],
-      [
-        160,
-        150,
-        150,
-        40,
-        -35,
-        -100,
-        -40,
-        0
-      ],
-      [
-        -145,
-        -130,
-        -160,
-        -20,
-        0,
-        20,
-        -35,
-        0
-      ]
-    ],
     "depth": [
       [
         1,
         1,
         1,
         1,
+        0.8,
+        0.65,
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        0.65,
+        0.8,
         1,
         1,
         1,
@@ -68,24 +46,49 @@
       [
         1,
         1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ],
-      [
-        0.8,
-        0.8,
         0.7,
-        0.8,
+        0.65,
         1,
-        0.85,
-        0.8,
-        0.8
+        0.7,
+        1,
+        1
       ]
-    ]
+    ],
+    "hand_to_guard": 3,
+    "pose_pitch": [
+      [
+        0,
+        -15,
+        0,
+        10,
+        -5,
+        -15,
+        10,
+        10
+      ],
+      [
+        10,
+        10,
+        -15,
+        -5,
+        0,
+        -5,
+        -5,
+        -5
+      ],
+      [
+        -5,
+        -10,
+        -15,
+        0,
+        15,
+        -5,
+        0,
+        0
+      ]
+    ],
+    "frame_manifest": "res://data/sword_frames_v8.json",
+    "presentation_version": 8
   },
   "rifle": {
     "barrel_length": 28,
@@ -99,10 +102,13 @@
   "guard": {
     "raise_frame_seconds": 0.1,
     "hold_frame": 2,
-    "release_seconds": 0.18
+    "release_seconds": 0.18,
+    "damage_reduction": 0.5,
+    "stamina_multiplier": 1.2,
+    "reflect_ratio": 0.3
   },
   "native_motion": {
-    "version": 6,
+    "version": 8,
     "frames": {
       "idle": {
         "path": "res://assets/PROCESSED/characters/CHR-01/v001/frames/CHR-01_player_idle_right_v001_f01.png",
@@ -137,8 +143,14 @@
           [
             0,
             10,
-            20,
-            24
+            23,
+            30
+          ],
+          [
+            23,
+            10,
+            2,
+            26
           ]
         ],
         "hand_region": [
@@ -199,7 +211,8 @@
           14,
           11
         ],
-        "weapon_angle": 40
+        "weapon_angle": 40,
+        "sword_angle": 40
       },
       "hammer_1_4": {
         "path": "res://assets/PROCESSED/characters/CHR-01/v001/frames/CHR-01_player_hammer_1_right_v001_f04.png",
@@ -407,7 +420,8 @@
           14,
           11
         ],
-        "weapon_angle": 55
+        "weapon_angle": 55,
+        "sword_angle": 55
       },
       "hammer_3_4": {
         "path": "res://assets/PROCESSED/characters/CHR-01/v001/frames/CHR-01_player_hammer_3_right_v001_f04.png",
@@ -804,33 +818,33 @@
     },
     "sword_sequences": [
       [
-        "staff_sweep_1",
         "hammer_3_1",
         "hammer_3_1",
         "hammer_2_3",
         "hammer_1_2",
-        "hammer_3_3",
-        "hammer_1_3",
-        "hammer_1_4"
-      ],
-      [
         "hammer_1_3",
         "hammer_3_3",
         "hammer_2_1",
+        "hammer_2_1"
+      ],
+      [
+        "hammer_2_1",
+        "hammer_2_1",
+        "hammer_3_3",
+        "hammer_1_3",
         "hammer_1_2",
-        "hammer_2_2",
-        "hammer_2_3",
-        "hammer_2_4",
-        "hammer_1_4"
+        "hammer_3_1",
+        "hammer_1_1",
+        "hammer_1_1"
       ],
       [
         "hammer_1_1",
-        "staff_sweep_1",
         "hammer_1_1",
+        "staff_sweep_1",
         "staff_sweep_2",
         "hammer_1_2",
         "hammer_1_3",
-        "staff_sweep_4",
+        "hammer_1_4",
         "hammer_1_4"
       ]
     ],
@@ -868,6 +882,8 @@
     "body_split_hand_threshold": 43,
     "waist_x": 33,
     "waist_offset": 2,
-    "upper_overlap": 2
+    "upper_overlap": 2,
+    "sword_upper_overlap": 2,
+    "sword_body_split": 48
   }
 }

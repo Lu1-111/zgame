@@ -1,0 +1,404 @@
+{
+  "sprites": {
+    "rifle_02": {
+      "name": "十字弩",
+      "canvas": [
+        48,
+        24
+      ],
+      "visible_limit": [
+        34,
+        18
+      ],
+      "anchor": [
+        18,
+        12
+      ],
+      "world_size": [
+        48,
+        24
+      ]
+    },
+    "rifle_03": {
+      "name": "霰弹枪",
+      "canvas": [
+        48,
+        24
+      ],
+      "visible_limit": [
+        34,
+        18
+      ],
+      "anchor": [
+        18,
+        12
+      ],
+      "world_size": [
+        48,
+        24
+      ]
+    },
+    "rifle_04": {
+      "name": "狙击步枪",
+      "canvas": [
+        48,
+        24
+      ],
+      "visible_limit": [
+        34,
+        18
+      ],
+      "anchor": [
+        18,
+        12
+      ],
+      "world_size": [
+        48,
+        24
+      ]
+    },
+    "rifle_05": {
+      "name": "冲锋枪",
+      "canvas": [
+        48,
+        24
+      ],
+      "visible_limit": [
+        34,
+        18
+      ],
+      "anchor": [
+        18,
+        12
+      ],
+      "world_size": [
+        48,
+        24
+      ],
+      "palette": "iron"
+    },
+    "rifle_06": {
+      "name": "撕裂者TP-03",
+      "canvas": [
+        48,
+        24
+      ],
+      "visible_limit": [
+        34,
+        18
+      ],
+      "anchor": [
+        18,
+        12
+      ],
+      "world_size": [
+        48,
+        24
+      ]
+    },
+    "accessory_01": {
+      "name": "铭牌",
+      "canvas": [
+        32,
+        32
+      ],
+      "visible_limit": [
+        24,
+        24
+      ],
+      "anchor": [
+        16,
+        16
+      ],
+      "world_size": [
+        32,
+        32
+      ]
+    },
+    "accessory_02": {
+      "name": "回春护符",
+      "canvas": [
+        32,
+        32
+      ],
+      "visible_limit": [
+        24,
+        24
+      ],
+      "anchor": [
+        16,
+        16
+      ],
+      "world_size": [
+        32,
+        32
+      ]
+    },
+    "accessory_03": {
+      "name": "锈蚀之剑",
+      "canvas": [
+        32,
+        32
+      ],
+      "visible_limit": [
+        24,
+        24
+      ],
+      "anchor": [
+        16,
+        16
+      ],
+      "world_size": [
+        32,
+        32
+      ]
+    },
+    "accessory_04": {
+      "name": "腐朽之弓",
+      "canvas": [
+        32,
+        32
+      ],
+      "visible_limit": [
+        24,
+        24
+      ],
+      "anchor": [
+        16,
+        16
+      ],
+      "world_size": [
+        32,
+        32
+      ]
+    },
+    "accessory_05": {
+      "name": "破败之盾",
+      "canvas": [
+        32,
+        32
+      ],
+      "visible_limit": [
+        24,
+        24
+      ],
+      "anchor": [
+        16,
+        16
+      ],
+      "world_size": [
+        32,
+        32
+      ]
+    },
+    "accessory_06": {
+      "name": "弑血护符",
+      "canvas": [
+        32,
+        32
+      ],
+      "visible_limit": [
+        24,
+        24
+      ],
+      "anchor": [
+        16,
+        16
+      ],
+      "world_size": [
+        32,
+        32
+      ]
+    },
+    "accessory_07": {
+      "name": "追猎",
+      "canvas": [
+        32,
+        32
+      ],
+      "visible_limit": [
+        24,
+        24
+      ],
+      "anchor": [
+        16,
+        16
+      ],
+      "world_size": [
+        32,
+        32
+      ]
+    },
+    "accessory_08": {
+      "name": "弹丸腰带",
+      "canvas": [
+        32,
+        32
+      ],
+      "visible_limit": [
+        24,
+        24
+      ],
+      "anchor": [
+        16,
+        16
+      ],
+      "world_size": [
+        32,
+        32
+      ]
+    },
+    "accessory_09": {
+      "name": "豪情",
+      "canvas": [
+        32,
+        32
+      ],
+      "visible_limit": [
+        24,
+        24
+      ],
+      "anchor": [
+        16,
+        16
+      ],
+      "world_size": [
+        32,
+        32
+      ]
+    },
+    "accessory_10": {
+      "name": "战意披风",
+      "canvas": [
+        32,
+        32
+      ],
+      "visible_limit": [
+        24,
+        24
+      ],
+      "anchor": [
+        16,
+        16
+      ],
+      "world_size": [
+        32,
+        32
+      ]
+    },
+    "accessory_11": {
+      "name": "能量立方",
+      "canvas": [
+        32,
+        32
+      ],
+      "visible_limit": [
+        24,
+        24
+      ],
+      "anchor": [
+        16,
+        16
+      ],
+      "world_size": [
+        32,
+        32
+      ]
+    },
+    "accessory_12": {
+      "name": "超频外骨骼",
+      "canvas": [
+        32,
+        32
+      ],
+      "visible_limit": [
+        24,
+        24
+      ],
+      "anchor": [
+        16,
+        16
+      ],
+      "world_size": [
+        32,
+        32
+      ]
+    },
+    "accessory_13": {
+      "name": "虚空意志",
+      "canvas": [
+        32,
+        32
+      ],
+      "visible_limit": [
+        24,
+        24
+      ],
+      "anchor": [
+        16,
+        16
+      ],
+      "world_size": [
+        32,
+        32
+      ]
+    },
+    "accessory_14": {
+      "name": "坚盾护符",
+      "canvas": [
+        32,
+        32
+      ],
+      "visible_limit": [
+        24,
+        24
+      ],
+      "anchor": [
+        16,
+        16
+      ],
+      "world_size": [
+        32,
+        32
+      ]
+    },
+    "accessory_15": {
+      "name": "元素护符",
+      "canvas": [
+        32,
+        32
+      ],
+      "visible_limit": [
+        24,
+        24
+      ],
+      "anchor": [
+        16,
+        16
+      ],
+      "world_size": [
+        32,
+        32
+      ]
+    },
+    "accessory_16": {
+      "name": "活力护符",
+      "canvas": [
+        32,
+        32
+      ],
+      "visible_limit": [
+        24,
+        24
+      ],
+      "anchor": [
+        16,
+        16
+      ],
+      "world_size": [
+        32,
+        32
+      ]
+    }
+  }
+}

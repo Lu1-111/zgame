@@ -1,0 +1,269 @@
+{
+  "id": "web_thread",
+  "name": "丝线弹",
+  "source": "effects.png",
+  "row": 0,
+  "rows": 3,
+  "canvas": [
+    48,
+    32
+  ],
+  "anchor": [
+    24,
+    16
+  ],
+  "reference_width": 24,
+  "fps": 9.0,
+  "loop": true,
+  "kind": "projectile",
+  "owner": "cave_spider",
+  "frames": [
+    "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/effects/web_thread/00.png",
+    "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/effects/web_thread/01.png",
+    "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/effects/web_thread/02.png",
+    "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/effects/web_thread/03.png",
+    "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/effects/web_thread/04.png",
+    "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/effects/web_thread/05.png"
+  ],
+  "frame_count": 6,
+  "sprite_frames": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/effects/web_thread/sprite_frames.tres",
+  "palette": [
+    "#10131d",
+    "#202431",
+    "#343a49",
+    "#525c6c",
+    "#8794a0",
+    "#c5ced0",
+    "#edf1e9",
+    "#49403c",
+    "#77614f",
+    "#b59970",
+    "#e6d5ab",
+    "#187180",
+    "#65d1d5",
+    "#d9ffff",
+    "#292e3c",
+    "#424959"
+  ],
+  "runtime_scale": [
+    1,
+    1
+  ],
+  "unique_frames": 6,
+  "body_scale": 0.11374407582938388,
+  "conversion": [
+    {
+      "source_pixels": [
+        296,
+        296
+      ],
+      "sampled_pixels": [
+        34,
+        34
+      ],
+      "canvas_pixels": [
+        48,
+        32
+      ],
+      "scale": 0.11374407582938388,
+      "source_anchor": [
+        133.5,
+        178.5
+      ],
+      "anchor": [
+        24,
+        16
+      ],
+      "paste": [
+        9,
+        -4
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "source_pixels": [
+        295,
+        296
+      ],
+      "sampled_pixels": [
+        34,
+        34
+      ],
+      "canvas_pixels": [
+        48,
+        32
+      ],
+      "scale": 0.11374407582938388,
+      "source_anchor": [
+        145.5,
+        174.5
+      ],
+      "anchor": [
+        24,
+        16
+      ],
+      "paste": [
+        7,
+        -4
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "source_pixels": [
+        296,
+        296
+      ],
+      "sampled_pixels": [
+        34,
+        34
+      ],
+      "canvas_pixels": [
+        48,
+        32
+      ],
+      "scale": 0.11374407582938388,
+      "source_anchor": [
+        151.0,
+        169.0
+      ],
+      "anchor": [
+        24,
+        16
+      ],
+      "paste": [
+        7,
+        -3
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "source_pixels": [
+        296,
+        296
+      ],
+      "sampled_pixels": [
+        34,
+        34
+      ],
+      "canvas_pixels": [
+        48,
+        32
+      ],
+      "scale": 0.11374407582938388,
+      "source_anchor": [
+        144.0,
+        167.0
+      ],
+      "anchor": [
+        24,
+        16
+      ],
+      "paste": [
+        8,
+        -3
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "source_pixels": [
+        295,
+        296
+      ],
+      "sampled_pixels": [
+        34,
+        34
+      ],
+      "canvas_pixels": [
+        48,
+        32
+      ],
+      "scale": 0.11374407582938388,
+      "source_anchor": [
+        148.5,
+        164.0
+      ],
+      "anchor": [
+        24,
+        16
+      ],
+      "paste": [
+        7,
+        -3
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "source_pixels": [
+        296,
+        296
+      ],
+      "sampled_pixels": [
+        34,
+        34
+      ],
+      "canvas_pixels": [
+        48,
+        32
+      ],
+      "scale": 0.11374407582938388,
+      "source_anchor": [
+        145.5,
+        172.5
+      ],
+      "anchor": [
+        24,
+        16
+      ],
+      "paste": [
+        7,
+        -4
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    }
+  ],
+  "damage": null,
+  "speed": null,
+  "lifetime": null,
+  "base_fps": 12.0,
+  "speed_multiplier": 0.75,
+  "duration_seconds": 0.6666666666666666,
+  "pixel_conversion": "res://data/art/cave_enemy_imagemagick.json",
+  "art_revision": "imagemagick_v002",
+  "processing": "ImageMagick point sampling from RAW; no dithering; shared 16-color palette; fixed native canvas and anchor"
+}

@@ -1,0 +1,381 @@
+{
+  "id": "cave_spider",
+  "name": "洞穴蜘蛛",
+  "canvas": [
+    128,
+    96
+  ],
+  "anchor": [
+    64,
+    80
+  ],
+  "palette": [
+    "#10131d",
+    "#181b28",
+    "#202431",
+    "#292e3c",
+    "#343a49",
+    "#424959",
+    "#525c6c",
+    "#687585",
+    "#8794a0",
+    "#a7b2b7",
+    "#c5ced0",
+    "#edf1e9",
+    "#49403c",
+    "#77614f",
+    "#b59970",
+    "#e6d5ab",
+    "#185664",
+    "#187180",
+    "#3aafbb",
+    "#65d1d5",
+    "#a2edeb",
+    "#d9ffff",
+    "#2d2944",
+    "#5c4e81",
+    "#a493c5",
+    "#d3c5eb",
+    "#736953",
+    "#b4a58a",
+    "#eddfc2",
+    "#fff2d4",
+    "#d9a14b",
+    "#e9bd6b"
+  ],
+  "native_pixel_scale": 1,
+  "runtime_scale": [
+    1,
+    1
+  ],
+  "filter": "nearest",
+  "base_hp": null,
+  "base_damage": null,
+  "poise": null,
+  "resist": {
+    "physical": null,
+    "magic": null
+  },
+  "direction": "right",
+  "combat_implemented": false,
+  "source": "res://assets/RAW/enemies/CAVE-BEASTS/v001/spider.png",
+  "source_sha256": "0110a7099925f9cbefe5de538ffde740c828112907b60acbdafbc23c8de43ab0",
+  "body_scale": 0.34408602150537637,
+  "reference_visible_height": 48,
+  "animations": {
+    "idle": {
+      "frames": [
+        "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/idle/00.png",
+        "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/idle/01.png",
+        "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/idle/02.png",
+        "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/idle/03.png",
+        "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/idle/04.png",
+        "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/idle/05.png"
+      ],
+      "frame_count": 6,
+      "fps": 6,
+      "loop": true,
+      "canvas": [
+        128,
+        96
+      ],
+      "anchor": [
+        64,
+        80
+      ],
+      "unique_frames": 6,
+      "sha256": [
+        "cd31729c435cc981c0674d295106f6400749a19222ffdc74f726ae16d1d341f1",
+        "2d724d3ddeee380a4a429b3e4be48bed660ad5dd129bce71d0d2a7fcdf2c7920",
+        "54f78df06c086bad2007c73d8c37c01b973c72f463726b8fa8552c41efe6a257",
+        "5d5fe92e77d63557f87c53daeef1f865efe9f56c67bf4735957e969da8f4af72",
+        "da8ca16eb0f23534b9d351a7e70cf7edc6867eaa032ac13bb5b0994a1f8d2af4",
+        "0e5be205faa9416a54997c1d0f4f8cdeba68a3744e9bfbfee880a0672a4c64b6"
+      ],
+      "visible_rects": [
+        [
+          23,
+          35,
+          104,
+          80
+        ],
+        [
+          24,
+          32,
+          104,
+          80
+        ],
+        [
+          25,
+          29,
+          105,
+          79
+        ],
+        [
+          25,
+          32,
+          105,
+          79
+        ],
+        [
+          25,
+          36,
+          105,
+          80
+        ],
+        [
+          25,
+          38,
+          105,
+          80
+        ]
+      ],
+      "grounded": true,
+      "phase_tags": [
+        "cycle",
+        "cycle",
+        "cycle",
+        "cycle",
+        "cycle",
+        "cycle"
+      ]
+    },
+    "move": {
+      "frames": [
+        "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/move/00.png",
+        "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/move/01.png",
+        "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/move/02.png",
+        "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/move/03.png",
+        "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/move/04.png",
+        "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/move/05.png"
+      ],
+      "frame_count": 6,
+      "fps": 10,
+      "loop": true,
+      "canvas": [
+        128,
+        96
+      ],
+      "anchor": [
+        64,
+        80
+      ],
+      "unique_frames": 6,
+      "sha256": [
+        "05a6e3f69199f8fd8c9ac45a5e6cb5d82c67255876cb2753e5ca3b9944edc99a",
+        "44daa75a572b26129b9061694b66eab16084be9477afa2ebb181dbb5a2c39f28",
+        "1a0ddf4d2cb5efc8c1228d266115bb7cb9443d3c20ab5a0c9edeb98c535367cb",
+        "d36a937f3bd57470269fd1afc43ca81230ef068594f0ab9203412e19b056a195",
+        "e801e5f41b6e17c80f98dbc1ec0c9d39a480a8611b0fa8a144a9c90a752d27a5",
+        "863c6321618fe41608d1cbd525f3ace73a4327ac5bef4aa781b7d2eeac487a4b"
+      ],
+      "visible_rects": [
+        [
+          24,
+          37,
+          104,
+          80
+        ],
+        [
+          24,
+          34,
+          105,
+          80
+        ],
+        [
+          25,
+          30,
+          106,
+          79
+        ],
+        [
+          27,
+          37,
+          107,
+          80
+        ],
+        [
+          27,
+          35,
+          106,
+          80
+        ],
+        [
+          28,
+          34,
+          105,
+          80
+        ]
+      ],
+      "grounded": true,
+      "phase_tags": [
+        "cycle",
+        "cycle",
+        "cycle",
+        "cycle",
+        "cycle",
+        "cycle"
+      ]
+    },
+    "claw_attack": {
+      "frames": [
+        "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/claw_attack/00.png",
+        "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/claw_attack/01.png",
+        "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/claw_attack/02.png",
+        "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/claw_attack/03.png",
+        "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/claw_attack/04.png",
+        "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/claw_attack/05.png"
+      ],
+      "frame_count": 6,
+      "fps": 10,
+      "loop": false,
+      "canvas": [
+        128,
+        96
+      ],
+      "anchor": [
+        64,
+        80
+      ],
+      "unique_frames": 6,
+      "sha256": [
+        "5febb3edd2a8eb3c05e8ee5fe6bbc1d638bfab375cdc67593c1344b3da83c436",
+        "0583ea999dc44ce372503774b3196bb8ac6d7b364b782a29a29d37a177de8225",
+        "609fe9685846205995145b2dccda15c3ec358051f7c0482b73cc0b38a56b28f2",
+        "8e9811932e0bd50fc7fc47438683c8fdb89c745e7c5e3aafca4be8ddc6a7c8e1",
+        "62c4d9f3fdb0e734a80333342ef71f5ffa774b54ff8a74ea5db9dc51f8aae3f3",
+        "d55f95d58cea4ac348c6366585585401448414e1844afd07ded91e8c1bbb45d5"
+      ],
+      "visible_rects": [
+        [
+          24,
+          35,
+          103,
+          80
+        ],
+        [
+          24,
+          30,
+          104,
+          80
+        ],
+        [
+          25,
+          16,
+          105,
+          79
+        ],
+        [
+          24,
+          31,
+          107,
+          80
+        ],
+        [
+          24,
+          38,
+          106,
+          80
+        ],
+        [
+          26,
+          36,
+          104,
+          80
+        ]
+      ],
+      "grounded": true,
+      "phase_tags": [
+        "prepare",
+        "prepare",
+        "extend",
+        "active",
+        "recover",
+        "recover"
+      ]
+    },
+    "web_spit": {
+      "frames": [
+        "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/web_spit/00.png",
+        "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/web_spit/01.png",
+        "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/web_spit/02.png",
+        "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/web_spit/03.png",
+        "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/web_spit/04.png",
+        "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/frames/web_spit/05.png"
+      ],
+      "frame_count": 6,
+      "fps": 9,
+      "loop": false,
+      "canvas": [
+        128,
+        96
+      ],
+      "anchor": [
+        64,
+        80
+      ],
+      "unique_frames": 6,
+      "sha256": [
+        "9d3485cedd151b829658b8edfcb222997372a13d16cc583c189c2c0eb2efb963",
+        "4dc973f01226c871363262c9743b92e573d4e80346c08560fadc4660ff524414",
+        "81b2df7d4ca07f2616d601be9275e071a27ce4e7f626cc8478d0a5c4fa3a9a1a",
+        "983871ab88478dcd331a2a1607c6b960a9023f3420c2e8a4398257f5b5ed845a",
+        "e3678a13eaa2c79257a797b25f325465a6d1d1cd085a5c21b84df03ef1acfde2",
+        "6bae5ccbea94934013e162aea6d2d43360ad76aa480bf16339631a95f399fb24"
+      ],
+      "visible_rects": [
+        [
+          24,
+          35,
+          104,
+          80
+        ],
+        [
+          24,
+          39,
+          102,
+          80
+        ],
+        [
+          24,
+          35,
+          105,
+          80
+        ],
+        [
+          25,
+          35,
+          103,
+          80
+        ],
+        [
+          26,
+          35,
+          106,
+          80
+        ],
+        [
+          26,
+          35,
+          105,
+          79
+        ]
+      ],
+      "grounded": true,
+      "phase_tags": [
+        "prepare",
+        "prepare",
+        "extend",
+        "active",
+        "recover",
+        "recover"
+      ],
+      "suggested_emission_frame": 3
+    }
+  },
+  "projectiles": {
+    "web_thread": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/effects/web_thread/catalog.json"
+  },
+  "effects": {},
+  "sprite_frames": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cave_spider/sprite_frames.tres"
+}

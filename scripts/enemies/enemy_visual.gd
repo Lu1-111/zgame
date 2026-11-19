@@ -3,6 +3,8 @@ extends Node2D
 ## 以资源包清单驱动敌人表现；共同语义根负责镜像，画布留白不影响落点。
 signal action_completed(action: StringName)
 var body := AnimatedSprite2D.new()
+var _body_rate := 1.0
+var _action_rate := 1.0
 var effect := AnimatedSprite2D.new()
 var entries: Dictionary = {}
 var effects: Dictionary = {}
@@ -93,9 +95,10 @@ func play_action(value: StringName, left: bool, duration: float = 0.0) -> bool:
 	body.offset = -Vector2(current.anchor[0], current.anchor[1])
 	body.modulate.a = 1.0
 	body.stop()
-	body.speed_scale = 1.0
+	_body_rate = 1.0
 	if duration > 0.0:
-		body.speed_scale = float(current.get("frame_count", current.get("frames", []).size())) / float(current.fps) / duration
+		_body_rate = float(current.get("frame_count", current.get("frames", []).size())) / float(current.fps) / duration
+	set_action_speed(_action_rate)
 	body.play(value)
 	if value != &"recover":
 		effect.stop()
@@ -110,6 +113,12 @@ func play_action(value: StringName, left: bool, duration: float = 0.0) -> bool:
 		effect.show()
 		effect.play(StringName(str(effect_current.name)))
 	return true
+
+## 保留动作原有帧速比例，在其上应用异常缩放。
+func set_action_speed(ratio: float) -> void:
+	_action_rate = ratio
+	body.speed_scale = _body_rate * ratio
+	effect.speed_scale = ratio
 
 func _process(_delta: float) -> void:
 	_fade(body, current)

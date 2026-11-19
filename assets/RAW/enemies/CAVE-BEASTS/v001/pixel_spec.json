@@ -1,0 +1,19 @@
+{
+  "palette": ["#10131d","#181b28","#202431","#292e3c","#343a49","#424959","#525c6c","#687585","#8794a0","#a7b2b7","#c5ced0","#edf1e9","#49403c","#77614f","#b59970","#e6d5ab","#185664","#187180","#3aafbb","#65d1d5","#a2edeb","#d9ffff","#2d2944","#5c4e81","#a493c5","#d3c5eb","#736953","#b4a58a","#eddfc2","#fff2d4","#d9a14b","#e9bd6b"],
+  "max_colors": 32,
+  "alpha_cutoff": 224,
+  "columns": 6,
+  "frames_per_action": 6,
+  "runtime_scale": [1,1],
+  "enemies": [
+    {"id":"stonehelm_beast","name":"岩盔兽","source":"stone.png","canvas":[128,96],"anchor":[64,80],"reference_visible_height":44,"rows":["idle","move","ram","shell_defense"],"fps":[6,9,10,8]},
+    {"id":"cave_spider","name":"洞穴蜘蛛","source":"spider.png","canvas":[128,96],"anchor":[64,80],"reference_visible_height":48,"rows":["idle","move","claw_attack","web_spit"],"fps":[6,10,10,9]},
+    {"id":"animated_crystal","name":"活化晶石","source":"crystal.png","canvas":[96,96],"anchor":[48,48],"reference_visible_height":56,"floating":true,"rows":["idle","move","charge_ready"],"fps":[7,9,8]},
+    {"id":"cavern_hunter","name":"岩穴猎手","source":"hunter.png","canvas":[192,160],"anchor":[96,140],"reference_visible_height":70,"rows":["idle","move","elbow_blade","leap_slam","tail_crystal_shot"],"fps":[6,9,10,9,9],"pose_vertical_offset":{"leap_slam":[0,-12,-30,-16,0,0]}}
+  ],
+  "effects":[
+    {"id":"web_thread","name":"丝线弹","source":"effects.png","row":0,"rows":3,"canvas":[48,32],"anchor":[24,16],"reference_width":24,"fps":12,"loop":true,"kind":"projectile","owner":"cave_spider"},
+    {"id":"sharp_crystal","name":"尖晶石","source":"effects.png","row":1,"rows":3,"canvas":[48,32],"anchor":[24,16],"reference_width":32,"fps":12,"loop":true,"kind":"projectile","owner":"cavern_hunter"},
+    {"id":"ground_shockwave","name":"下砸震荡波","source":"effects.png","row":2,"rows":3,"canvas":[160,64],"anchor":[80,56],"max_visible_width":128,"fps":12,"loop":false,"kind":"effect","owner":"cavern_hunter"}
+  ]
+}

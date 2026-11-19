@@ -1,0 +1,25 @@
+{
+  "danger_warning": {
+    "frames": "res://assets/effects/danger_warning_v1/DangerWarning_frames.tres",
+    "seconds": 0.2,
+    "offset": [
+      0,
+      0
+    ],
+    "opacity": 0.85,
+    "scale": 4.0
+  },
+  "player_hit": {
+    "light_threshold": 0.05,
+    "light": {
+      "seconds": 0.05,
+      "opacity": 0.65,
+      "shake_px": 0.0
+    },
+    "heavy": {
+      "seconds": 0.1,
+      "opacity": 0.85,
+      "shake_px": 1.5
+    }
+  }
+}

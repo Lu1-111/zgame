@@ -1,0 +1,1502 @@
+{
+  "art_revision": "imagemagick_v002",
+  "images": 114,
+  "max_colors": 16,
+  "alpha": [
+    0,
+    255
+  ],
+  "world_scale": [
+    1,
+    1
+  ],
+  "speed_multiplier": 0.75,
+  "actual_rgba_changed": 114,
+  "actions": 19,
+  "minimum_unique_poses": 6,
+  "errors": 0,
+  "image_info": [
+    {
+      "id": "stonehelm_beast_idle_00",
+      "canvas": [
+        128,
+        96
+      ],
+      "visible_rect": [
+        28,
+        38,
+        100,
+        80
+      ]
+    },
+    {
+      "id": "stonehelm_beast_idle_01",
+      "canvas": [
+        128,
+        96
+      ],
+      "visible_rect": [
+        28,
+        37,
+        100,
+        80
+      ]
+    },
+    {
+      "id": "stonehelm_beast_idle_02",
+      "canvas": [
+        128,
+        96
+      ],
+      "visible_rect": [
+        27,
+        34,
+        99,
+        80
+      ]
+    },
+    {
+      "id": "stonehelm_beast_idle_03",
+      "canvas": [
+        128,
+        96
+      ],
+      "visible_rect": [
+        28,
+        33,
+        98,
+        79
+      ]
+    },
+    {
+      "id": "stonehelm_beast_idle_04",
+      "canvas": [
+        128,
+        96
+      ],
+      "visible_rect": [
+        28,
+        35,
+        99,
+        80
+      ]
+    },
+    {
+      "id": "stonehelm_beast_idle_05",
+      "canvas": [
+        128,
+        96
+      ],
+      "visible_rect": [
+        27,
+        39,
+        99,
+        80
+      ]
+    },
+    {
+      "id": "stonehelm_beast_move_00",
+      "canvas": [
+        128,
+        96
+      ],
+      "visible_rect": [
+        28,
+        38,
+        100,
+        80
+      ]
+    },
+    {
+      "id": "stonehelm_beast_move_01",
+      "canvas": [
+        128,
+        96
+      ],
+      "visible_rect": [
+        28,
+        36,
+        100,
+        80
+      ]
+    },
+    {
+      "id": "stonehelm_beast_move_02",
+      "canvas": [
+        128,
+        96
+      ],
+      "visible_rect": [
+        27,
+        38,
+        100,
+        80
+      ]
+    },
+    {
+      "id": "stonehelm_beast_move_03",
+      "canvas": [
+        128,
+        96
+      ],
+      "visible_rect": [
+        28,
+        40,
+        100,
+        80
+      ]
+    },
+    {
+      "id": "stonehelm_beast_move_04",
+      "canvas": [
+        128,
+        96
+      ],
+      "visible_rect": [
+        28,
+        39,
+        100,
+        80
+      ]
+    },
+    {
+      "id": "stonehelm_beast_move_05",
+      "canvas": [
+        128,
+        96
+      ],
+      "visible_rect": [
+        28,
+        38,
+        99,
+        80
+      ]
+    },
+    {
+      "id": "stonehelm_beast_ram_00",
+      "canvas": [
+        128,
+        96
+      ],
+      "visible_rect": [
+        28,
+        39,
+        101,
+        80
+      ]
+    },
+    {
+      "id": "stonehelm_beast_ram_01",
+      "canvas": [
+        128,
+        96
+      ],
+      "visible_rect": [
+        28,
+        42,
+        99,
+        80
+      ]
+    },
+    {
+      "id": "stonehelm_beast_ram_02",
+      "canvas": [
+        128,
+        96
+      ],
+      "visible_rect": [
+        27,
+        43,
+        99,
+        80
+      ]
+    },
+    {
+      "id": "stonehelm_beast_ram_03",
+      "canvas": [
+        128,
+        96
+      ],
+      "visible_rect": [
+        23,
+        42,
+        103,
+        80
+      ]
+    },
+    {
+      "id": "stonehelm_beast_ram_04",
+      "canvas": [
+        128,
+        96
+      ],
+      "visible_rect": [
+        26,
+        40,
+        101,
+        80
+      ]
+    },
+    {
+      "id": "stonehelm_beast_ram_05",
+      "canvas": [
+        128,
+        96
+      ],
+      "visible_rect": [
+        28,
+        38,
+        100,
+        80
+      ]
+    },
+    {
+      "id": "stonehelm_beast_shell_defense_00",
+      "canvas": [
+        128,
+        96
+      ],
+      "visible_rect": [
+        28,
+        39,
+        100,
+        80
+      ]
+    },
+    {
+      "id": "stonehelm_beast_shell_defense_01",
+      "canvas": [
+        128,
+        96
+      ],
+      "visible_rect": [
+        27,
+        41,
+        100,
+        80
+      ]
+    },
+    {
+      "id": "stonehelm_beast_shell_defense_02",
+      "canvas": [
+        128,
+        96
+      ],
+      "visible_rect": [
+        27,
+        45,
+        97,
+        80
+      ]
+    },
+    {
+      "id": "stonehelm_beast_shell_defense_03",
+      "canvas": [
+        128,
+        96
+      ],
+      "visible_rect": [
+        28,
+        47,
+        97,
+        80
+      ]
+    },
+    {
+      "id": "stonehelm_beast_shell_defense_04",
+      "canvas": [
+        128,
+        96
+      ],
+      "visible_rect": [
+        28,
+        43,
+        98,
+        80
+      ]
+    },
+    {
+      "id": "stonehelm_beast_shell_defense_05",
+      "canvas": [
+        128,
+        96
+      ],
+      "visible_rect": [
+        28,
+        39,
+        100,
+        80
+      ]
+    },
+    {
+      "id": "cave_spider_idle_00",
+      "canvas": [
+        128,
+        96
+      ],
+      "visible_rect": [
+        23,
+        33,
+        104,
+        80
+      ]
+    },
+    {
+      "id": "cave_spider_idle_01",
+      "canvas": [
+        128,
+        96
+      ],
+      "visible_rect": [
+        24,
+        31,
+        104,
+        80
+      ]
+    },
+    {
+      "id": "cave_spider_idle_02",
+      "canvas": [
+        128,
+        96
+      ],
+      "visible_rect": [
+        25,
+        29,
+        105,
+        79
+      ]
+    },
+    {
+      "id": "cave_spider_idle_03",
+      "canvas": [
+        128,
+        96
+      ],
+      "visible_rect": [
+        25,
+        31,
+        105,
+        79
+      ]
+    },
+    {
+      "id": "cave_spider_idle_04",
+      "canvas": [
+        128,
+        96
+      ],
+      "visible_rect": [
+        25,
+        35,
+        105,
+        80
+      ]
+    },
+    {
+      "id": "cave_spider_idle_05",
+      "canvas": [
+        128,
+        96
+      ],
+      "visible_rect": [
+        25,
+        37,
+        105,
+        80
+      ]
+    },
+    {
+      "id": "cave_spider_move_00",
+      "canvas": [
+        128,
+        96
+      ],
+      "visible_rect": [
+        24,
+        37,
+        104,
+        80
+      ]
+    },
+    {
+      "id": "cave_spider_move_01",
+      "canvas": [
+        128,
+        96
+      ],
+      "visible_rect": [
+        24,
+        33,
+        105,
+        80
+      ]
+    },
+    {
+      "id": "cave_spider_move_02",
+      "canvas": [
+        128,
+        96
+      ],
+      "visible_rect": [
+        25,
+        30,
+        106,
+        79
+      ]
+    },
+    {
+      "id": "cave_spider_move_03",
+      "canvas": [
+        128,
+        96
+      ],
+      "visible_rect": [
+        27,
+        37,
+        107,
+        80
+      ]
+    },
+    {
+      "id": "cave_spider_move_04",
+      "canvas": [
+        128,
+        96
+      ],
+      "visible_rect": [
+        27,
+        33,
+        106,
+        80
+      ]
+    },
+    {
+      "id": "cave_spider_move_05",
+      "canvas": [
+        128,
+        96
+      ],
+      "visible_rect": [
+        28,
+        32,
+        105,
+        80
+      ]
+    },
+    {
+      "id": "cave_spider_claw_attack_00",
+      "canvas": [
+        128,
+        96
+      ],
+      "visible_rect": [
+        24,
+        35,
+        103,
+        80
+      ]
+    },
+    {
+      "id": "cave_spider_claw_attack_01",
+      "canvas": [
+        128,
+        96
+      ],
+      "visible_rect": [
+        24,
+        30,
+        104,
+        80
+      ]
+    },
+    {
+      "id": "cave_spider_claw_attack_02",
+      "canvas": [
+        128,
+        96
+      ],
+      "visible_rect": [
+        25,
+        16,
+        105,
+        79
+      ]
+    },
+    {
+      "id": "cave_spider_claw_attack_03",
+      "canvas": [
+        128,
+        96
+      ],
+      "visible_rect": [
+        24,
+        31,
+        107,
+        80
+      ]
+    },
+    {
+      "id": "cave_spider_claw_attack_04",
+      "canvas": [
+        128,
+        96
+      ],
+      "visible_rect": [
+        24,
+        38,
+        106,
+        80
+      ]
+    },
+    {
+      "id": "cave_spider_claw_attack_05",
+      "canvas": [
+        128,
+        96
+      ],
+      "visible_rect": [
+        26,
+        35,
+        104,
+        80
+      ]
+    },
+    {
+      "id": "cave_spider_web_spit_00",
+      "canvas": [
+        128,
+        96
+      ],
+      "visible_rect": [
+        24,
+        35,
+        104,
+        80
+      ]
+    },
+    {
+      "id": "cave_spider_web_spit_01",
+      "canvas": [
+        128,
+        96
+      ],
+      "visible_rect": [
+        24,
+        39,
+        102,
+        80
+      ]
+    },
+    {
+      "id": "cave_spider_web_spit_02",
+      "canvas": [
+        128,
+        96
+      ],
+      "visible_rect": [
+        24,
+        35,
+        105,
+        80
+      ]
+    },
+    {
+      "id": "cave_spider_web_spit_03",
+      "canvas": [
+        128,
+        96
+      ],
+      "visible_rect": [
+        25,
+        35,
+        103,
+        80
+      ]
+    },
+    {
+      "id": "cave_spider_web_spit_04",
+      "canvas": [
+        128,
+        96
+      ],
+      "visible_rect": [
+        26,
+        35,
+        106,
+        80
+      ]
+    },
+    {
+      "id": "cave_spider_web_spit_05",
+      "canvas": [
+        128,
+        96
+      ],
+      "visible_rect": [
+        26,
+        34,
+        105,
+        80
+      ]
+    },
+    {
+      "id": "animated_crystal_idle_00",
+      "canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        22,
+        19,
+        75,
+        77
+      ]
+    },
+    {
+      "id": "animated_crystal_idle_01",
+      "canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        22,
+        19,
+        71,
+        75
+      ]
+    },
+    {
+      "id": "animated_crystal_idle_02",
+      "canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        23,
+        19,
+        72,
+        74
+      ]
+    },
+    {
+      "id": "animated_crystal_idle_03",
+      "canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        22,
+        17,
+        72,
+        78
+      ]
+    },
+    {
+      "id": "animated_crystal_idle_04",
+      "canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        22,
+        19,
+        71,
+        75
+      ]
+    },
+    {
+      "id": "animated_crystal_idle_05",
+      "canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        24,
+        19,
+        73,
+        75
+      ]
+    },
+    {
+      "id": "animated_crystal_move_00",
+      "canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        19,
+        19,
+        72,
+        77
+      ]
+    },
+    {
+      "id": "animated_crystal_move_01",
+      "canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        18,
+        18,
+        71,
+        73
+      ]
+    },
+    {
+      "id": "animated_crystal_move_02",
+      "canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        18,
+        18,
+        73,
+        73
+      ]
+    },
+    {
+      "id": "animated_crystal_move_03",
+      "canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        18,
+        20,
+        73,
+        71
+      ]
+    },
+    {
+      "id": "animated_crystal_move_04",
+      "canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        16,
+        20,
+        74,
+        72
+      ]
+    },
+    {
+      "id": "animated_crystal_move_05",
+      "canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        20,
+        18,
+        75,
+        76
+      ]
+    },
+    {
+      "id": "animated_crystal_charge_ready_00",
+      "canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        22,
+        19,
+        72,
+        76
+      ]
+    },
+    {
+      "id": "animated_crystal_charge_ready_01",
+      "canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        23,
+        20,
+        69,
+        73
+      ]
+    },
+    {
+      "id": "animated_crystal_charge_ready_02",
+      "canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        26,
+        20,
+        70,
+        71
+      ]
+    },
+    {
+      "id": "animated_crystal_charge_ready_03",
+      "canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        25,
+        18,
+        70,
+        71
+      ]
+    },
+    {
+      "id": "animated_crystal_charge_ready_04",
+      "canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        22,
+        18,
+        74,
+        73
+      ]
+    },
+    {
+      "id": "animated_crystal_charge_ready_05",
+      "canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        24,
+        18,
+        75,
+        73
+      ]
+    },
+    {
+      "id": "cavern_hunter_idle_00",
+      "canvas": [
+        192,
+        160
+      ],
+      "visible_rect": [
+        33,
+        72,
+        162,
+        140
+      ]
+    },
+    {
+      "id": "cavern_hunter_idle_01",
+      "canvas": [
+        192,
+        160
+      ],
+      "visible_rect": [
+        33,
+        69,
+        159,
+        140
+      ]
+    },
+    {
+      "id": "cavern_hunter_idle_02",
+      "canvas": [
+        192,
+        160
+      ],
+      "visible_rect": [
+        36,
+        68,
+        160,
+        140
+      ]
+    },
+    {
+      "id": "cavern_hunter_idle_03",
+      "canvas": [
+        192,
+        160
+      ],
+      "visible_rect": [
+        35,
+        69,
+        161,
+        140
+      ]
+    },
+    {
+      "id": "cavern_hunter_idle_04",
+      "canvas": [
+        192,
+        160
+      ],
+      "visible_rect": [
+        33,
+        71,
+        162,
+        140
+      ]
+    },
+    {
+      "id": "cavern_hunter_idle_05",
+      "canvas": [
+        192,
+        160
+      ],
+      "visible_rect": [
+        32,
+        74,
+        162,
+        140
+      ]
+    },
+    {
+      "id": "cavern_hunter_move_00",
+      "canvas": [
+        192,
+        160
+      ],
+      "visible_rect": [
+        30,
+        72,
+        162,
+        140
+      ]
+    },
+    {
+      "id": "cavern_hunter_move_01",
+      "canvas": [
+        192,
+        160
+      ],
+      "visible_rect": [
+        30,
+        71,
+        164,
+        140
+      ]
+    },
+    {
+      "id": "cavern_hunter_move_02",
+      "canvas": [
+        192,
+        160
+      ],
+      "visible_rect": [
+        31,
+        67,
+        164,
+        140
+      ]
+    },
+    {
+      "id": "cavern_hunter_move_03",
+      "canvas": [
+        192,
+        160
+      ],
+      "visible_rect": [
+        32,
+        71,
+        164,
+        140
+      ]
+    },
+    {
+      "id": "cavern_hunter_move_04",
+      "canvas": [
+        192,
+        160
+      ],
+      "visible_rect": [
+        31,
+        72,
+        165,
+        140
+      ]
+    },
+    {
+      "id": "cavern_hunter_move_05",
+      "canvas": [
+        192,
+        160
+      ],
+      "visible_rect": [
+        30,
+        73,
+        163,
+        140
+      ]
+    },
+    {
+      "id": "cavern_hunter_elbow_blade_00",
+      "canvas": [
+        192,
+        160
+      ],
+      "visible_rect": [
+        33,
+        71,
+        162,
+        140
+      ]
+    },
+    {
+      "id": "cavern_hunter_elbow_blade_01",
+      "canvas": [
+        192,
+        160
+      ],
+      "visible_rect": [
+        33,
+        63,
+        156,
+        140
+      ]
+    },
+    {
+      "id": "cavern_hunter_elbow_blade_02",
+      "canvas": [
+        192,
+        160
+      ],
+      "visible_rect": [
+        33,
+        51,
+        153,
+        140
+      ]
+    },
+    {
+      "id": "cavern_hunter_elbow_blade_03",
+      "canvas": [
+        192,
+        160
+      ],
+      "visible_rect": [
+        31,
+        69,
+        161,
+        140
+      ]
+    },
+    {
+      "id": "cavern_hunter_elbow_blade_04",
+      "canvas": [
+        192,
+        160
+      ],
+      "visible_rect": [
+        32,
+        76,
+        163,
+        140
+      ]
+    },
+    {
+      "id": "cavern_hunter_elbow_blade_05",
+      "canvas": [
+        192,
+        160
+      ],
+      "visible_rect": [
+        35,
+        70,
+        164,
+        140
+      ]
+    },
+    {
+      "id": "cavern_hunter_leap_slam_00",
+      "canvas": [
+        192,
+        160
+      ],
+      "visible_rect": [
+        33,
+        79,
+        162,
+        140
+      ]
+    },
+    {
+      "id": "cavern_hunter_leap_slam_01",
+      "canvas": [
+        192,
+        160
+      ],
+      "visible_rect": [
+        33,
+        41,
+        158,
+        128
+      ]
+    },
+    {
+      "id": "cavern_hunter_leap_slam_02",
+      "canvas": [
+        192,
+        160
+      ],
+      "visible_rect": [
+        35,
+        21,
+        155,
+        110
+      ]
+    },
+    {
+      "id": "cavern_hunter_leap_slam_03",
+      "canvas": [
+        192,
+        160
+      ],
+      "visible_rect": [
+        32,
+        47,
+        160,
+        124
+      ]
+    },
+    {
+      "id": "cavern_hunter_leap_slam_04",
+      "canvas": [
+        192,
+        160
+      ],
+      "visible_rect": [
+        33,
+        84,
+        164,
+        140
+      ]
+    },
+    {
+      "id": "cavern_hunter_leap_slam_05",
+      "canvas": [
+        192,
+        160
+      ],
+      "visible_rect": [
+        35,
+        75,
+        163,
+        140
+      ]
+    },
+    {
+      "id": "cavern_hunter_tail_crystal_shot_00",
+      "canvas": [
+        192,
+        160
+      ],
+      "visible_rect": [
+        34,
+        73,
+        162,
+        140
+      ]
+    },
+    {
+      "id": "cavern_hunter_tail_crystal_shot_01",
+      "canvas": [
+        192,
+        160
+      ],
+      "visible_rect": [
+        36,
+        49,
+        160,
+        140
+      ]
+    },
+    {
+      "id": "cavern_hunter_tail_crystal_shot_02",
+      "canvas": [
+        192,
+        160
+      ],
+      "visible_rect": [
+        36,
+        36,
+        163,
+        140
+      ]
+    },
+    {
+      "id": "cavern_hunter_tail_crystal_shot_03",
+      "canvas": [
+        192,
+        160
+      ],
+      "visible_rect": [
+        36,
+        24,
+        162,
+        140
+      ]
+    },
+    {
+      "id": "cavern_hunter_tail_crystal_shot_04",
+      "canvas": [
+        192,
+        160
+      ],
+      "visible_rect": [
+        36,
+        47,
+        161,
+        140
+      ]
+    },
+    {
+      "id": "cavern_hunter_tail_crystal_shot_05",
+      "canvas": [
+        192,
+        160
+      ],
+      "visible_rect": [
+        33,
+        73,
+        161,
+        140
+      ]
+    },
+    {
+      "id": "web_thread_00",
+      "canvas": [
+        48,
+        32
+      ],
+      "visible_rect": [
+        19,
+        12,
+        33,
+        21
+      ]
+    },
+    {
+      "id": "web_thread_01",
+      "canvas": [
+        48,
+        32
+      ],
+      "visible_rect": [
+        16,
+        10,
+        35,
+        22
+      ]
+    },
+    {
+      "id": "web_thread_02",
+      "canvas": [
+        48,
+        32
+      ],
+      "visible_rect": [
+        14,
+        10,
+        35,
+        23
+      ]
+    },
+    {
+      "id": "web_thread_03",
+      "canvas": [
+        48,
+        32
+      ],
+      "visible_rect": [
+        13,
+        10,
+        37,
+        23
+      ]
+    },
+    {
+      "id": "web_thread_04",
+      "canvas": [
+        48,
+        32
+      ],
+      "visible_rect": [
+        12,
+        8,
+        37,
+        24
+      ]
+    },
+    {
+      "id": "web_thread_05",
+      "canvas": [
+        48,
+        32
+      ],
+      "visible_rect": [
+        15,
+        10,
+        37,
+        22
+      ]
+    },
+    {
+      "id": "sharp_crystal_00",
+      "canvas": [
+        48,
+        32
+      ],
+      "visible_rect": [
+        10,
+        9,
+        40,
+        22
+      ]
+    },
+    {
+      "id": "sharp_crystal_01",
+      "canvas": [
+        48,
+        32
+      ],
+      "visible_rect": [
+        9,
+        8,
+        37,
+        24
+      ]
+    },
+    {
+      "id": "sharp_crystal_02",
+      "canvas": [
+        48,
+        32
+      ],
+      "visible_rect": [
+        9,
+        8,
+        39,
+        24
+      ]
+    },
+    {
+      "id": "sharp_crystal_03",
+      "canvas": [
+        48,
+        32
+      ],
+      "visible_rect": [
+        9,
+        9,
+        39,
+        24
+      ]
+    },
+    {
+      "id": "sharp_crystal_04",
+      "canvas": [
+        48,
+        32
+      ],
+      "visible_rect": [
+        9,
+        8,
+        39,
+        25
+      ]
+    },
+    {
+      "id": "sharp_crystal_05",
+      "canvas": [
+        48,
+        32
+      ],
+      "visible_rect": [
+        8,
+        9,
+        40,
+        22
+      ]
+    },
+    {
+      "id": "ground_shockwave_00",
+      "canvas": [
+        160,
+        64
+      ],
+      "visible_rect": [
+        54,
+        46,
+        109,
+        56
+      ]
+    },
+    {
+      "id": "ground_shockwave_01",
+      "canvas": [
+        160,
+        64
+      ],
+      "visible_rect": [
+        29,
+        39,
+        130,
+        56
+      ]
+    },
+    {
+      "id": "ground_shockwave_02",
+      "canvas": [
+        160,
+        64
+      ],
+      "visible_rect": [
+        17,
+        28,
+        137,
+        56
+      ]
+    },
+    {
+      "id": "ground_shockwave_03",
+      "canvas": [
+        160,
+        64
+      ],
+      "visible_rect": [
+        13,
+        25,
+        141,
+        56
+      ]
+    },
+    {
+      "id": "ground_shockwave_04",
+      "canvas": [
+        160,
+        64
+      ],
+      "visible_rect": [
+        15,
+        32,
+        142,
+        55
+      ]
+    },
+    {
+      "id": "ground_shockwave_05",
+      "canvas": [
+        160,
+        64
+      ],
+      "visible_rect": [
+        20,
+        37,
+        141,
+        56
+      ]
+    }
+  ]
+}

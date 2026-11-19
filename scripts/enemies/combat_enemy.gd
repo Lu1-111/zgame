@@ -9,7 +9,12 @@ var target: Node2D
 var tuning: Dictionary = {}
 var definition: Dictionary = {}
 var state: StringName = &"patrol"
-var hp := 0
+var statuses: EnemyStatusEffects
+var hp := 0:
+	set(value):
+		if value <= hp or statuses == null or not statuses.healing_blocked():
+			hp = value
+var poise := EnemyPoise.new()
 var facing := 1
 var elapsed := 0.0
 var origin := Vector2.ZERO
@@ -17,6 +22,8 @@ var visual: CombatEnemyVisual
 var hurtbox: HurtboxComponent
 var _attack_area: Area2D
 var _hit_in_attack := false
+var _attack_variant: Dictionary = {}
+var _attack_cycle := 0
 var _rewarded := false
 var _flying := false
 var _slow_left := 0.0
@@ -31,17 +38,20 @@ var _flash_left := 0.0
 var _health_trail := 1.0
 
 func _ready() -> void:
+	enemy_id = DataDB.canonical_enemy_id(enemy_id)
 	if not is_instance_valid(target):
 		target = get_tree().get_first_node_in_group(&"player") as Node2D
 	tuning = JSON.parse_string(FileAccess.get_file_as_string(CONFIG_PATH))
 	tuning.merge(tuning.get("per_enemy", {}).get(String(enemy_id), {}), true)
 	tuning.detect_range = float(EncounterRules.config().perception.detect_range)
 	tuning.lose_range = float(EncounterRules.config().perception.lose_range)
-	definition = DataDB.get_enemy(enemy_id)
+	var spawn_context := DataDB.enemy_spawn_context(self,GameState.current_room)
+	definition = DataDB.get_enemy_for_room(enemy_id,spawn_context.room_id,spawn_context.region_id)
 	if definition.is_empty():
 		queue_free()
 		return
 	hp = int(definition.hp)
+	poise.configure(float(definition.get("poise",PoiseRules.config().enemy_max)))
 	add_to_group(&"enemies")
 	origin = global_position
 	_flying = str(definition.ai.type) in ["fly", "float"]
@@ -53,6 +63,9 @@ func _ready() -> void:
 	_body_offset = Vector2.ZERO if _flying else Vector2(0, -_body_size.y / 2.0)
 	if tuning.has("body_offset"):
 		_body_offset = _vector(tuning.body_offset)
+	statuses = EnemyStatusEffects.new()
+	add_child(statuses)
+	statuses.configure(_body_size, _body_offset)
 	_add_shape(self, _body_size, _body_offset)
 	hurtbox = HurtboxComponent.new()
 	hurtbox.collision_layer = 32
@@ -92,8 +105,22 @@ func _vector(value: Array) -> Vector2:
 func _physics_process(delta: float) -> void:
 	if definition.is_empty():
 		return
-	elapsed += delta
-	_time += delta
+	visual.position = poise.feedback_offset(delta)
+	var action_speed := statuses.action_speed()
+	var action_delta := delta * action_speed
+	visual.set_action_speed(action_speed)
+	var skill_stunned := SkillControl.stunned(self) and state != &"death"
+	visual.process_mode = Node.PROCESS_MODE_DISABLED if skill_stunned else Node.PROCESS_MODE_INHERIT
+	if skill_stunned:
+		velocity.x = 0
+		if not _flying:
+			velocity.y += float(tuning.gravity)*delta
+		else:
+			velocity.y = 0
+		move_and_slide()
+		return
+	elapsed += action_delta
+	_time += action_delta
 	_slow_left = maxf(0.0, _slow_left - delta)
 	_feedback_left = maxf(0.0,_feedback_left-delta)
 	_flash_left = maxf(0.0,_flash_left-delta)
@@ -102,23 +129,31 @@ func _physics_process(delta: float) -> void:
 	if not _flying:
 		velocity.y += float(tuning.gravity) * delta
 	if state == &"death":
+		queue_redraw()
 		velocity.x = 0.0
 		move_and_slide()
 		if elapsed >= float(tuning.death_duration):
 			queue_free()
 		return
-	if not is_instance_valid(target) or GameState.hp <= 0:
+	if state == &"hurt":
+		_tick_hurt(action_delta)
+	elif not is_instance_valid(target) or GameState.hp <= 0:
 		_return_home()
 	else:
-		_update_state(delta)
+		_update_state(action_delta)
 	if not _flying and state not in [&"hurt",&"death"] and not EnemyAwareness.has_support_ahead(self,velocity.x,_body_size.x):
 		facing = -1 if velocity.x > 0 else 1
 		velocity.x = 0
+	velocity.x *= SkillControl.movement_ratio(self) * action_speed
+	if _flying:
+		velocity.y *= SkillControl.movement_ratio(self) * action_speed
 	move_and_slide()
+	velocity.x /= action_speed
+	if _flying:
+		velocity.y /= action_speed
 	queue_redraw()
 
 func _update_state(delta: float) -> void:
-	var distance := global_position.distance_to(target.global_position)
 	var sees := EnemyAwareness.can_sense(self,target,_body_offset,_flying,state == &"chase")
 	match state:
 		&"idle":
@@ -152,7 +187,7 @@ func _update_state(delta: float) -> void:
 				if definition.ai.features.has("sine"):
 					velocity.y += sin(_time * float(tuning.sine_frequency)) * float(tuning.sine_amplitude)
 			visual.play_action(&"move", facing < 0)
-			if state == &"chase" and sees and distance <= float(tuning.get("attack_range", definition.ai.attack_range)):
+			if state == &"chase" and sees and _target_in_attack_range():
 				_set_state(&"telegraph")
 		&"telegraph":
 			velocity = Vector2.ZERO
@@ -164,20 +199,24 @@ func _update_state(delta: float) -> void:
 				velocity.y = 0.0
 			if _uses_charge() and not is_on_wall():
 				velocity = _charge_direction * float(tuning.charge_speed)
-			if elapsed >= float(tuning.attack_hit_start) and elapsed <= float(tuning.attack_hit_end):
+			if elapsed >= float(_combat_value("attack_hit_start")) and elapsed <= float(_combat_value("attack_hit_end")):
 				_attack()
-			if elapsed >= float(tuning.attack_duration):
+			if elapsed >= float(_combat_value("attack_duration")):
 				_set_state(&"recover")
 		&"recover":
 			velocity.x = 0.0
 			if _flying:
 				velocity.y = 0.0
-			if elapsed >= float(tuning.recover_duration):
+			if elapsed >= float(_combat_value("recover_duration")):
 				_set_state(&"chase")
 		&"hurt":
-			velocity.x = move_toward(velocity.x, 0.0, float(tuning.knockback_decay) * delta)
-			if elapsed >= float(tuning.hurt_duration):
-				_set_state(&"chase")
+			_tick_hurt(delta)
+
+func _tick_hurt(delta: float) -> void:
+	velocity.x = move_toward(velocity.x,0.0,float(tuning.knockback_decay)*delta)
+	if elapsed >= (EnemyStats.paralysis_seconds(definition) if definition.get("rank","") == "boss" else float(tuning.hurt_duration)):
+		_set_state(&"chase" if is_instance_valid(target) and GameState.hp > 0 else &"idle")
+
 
 func _return_home() -> void:
 	if global_position.distance_to(origin) <= _body_size.x:
@@ -195,11 +234,15 @@ func _return_home() -> void:
 
 # 预警时长可被单敌素材时序覆盖，默认沿用AI数据并守住最小预警窗口。
 func _telegraph_duration() -> float:
-	return maxf(float(tuning.minimum_telegraph), float(tuning.get("telegraph_duration", definition.ai.telegraph_time)))
+	return maxf(float(tuning.minimum_telegraph), float(_attack_variant.get("telegraph_duration",tuning.get("telegraph_duration", definition.ai.telegraph_time))))
 
 func _set_state(value: StringName) -> void:
+	if state == &"hurt" and value != &"hurt":
+		poise.recover()
 	state = value
 	elapsed = 0.0
+	if value == &"telegraph":
+		_select_attack()
 	if value in [&"idle", &"telegraph", &"recover", &"death"]:
 		velocity.x = 0.0
 		if _flying:
@@ -215,12 +258,12 @@ func _set_state(value: StringName) -> void:
 			_has_aim = true
 			_charge_direction = (_aim_point - global_position).normalized()
 	elif value in [&"attack", &"recover", &"hurt", &"death"]:
-		duration = float(tuning[String(value) + "_duration"])
+		duration = float(_combat_value(String(value) + "_duration"))
 	if value in [&"telegraph", &"attack"]:
 		_attack_area.position = _attack_offset() * Vector2(facing, 1)
 	if value == &"attack":
 		_hit_in_attack = false
-	var animation_map: Dictionary = tuning.get("animation_map", {})
+	var animation_map: Dictionary = _attack_variant.get("animation_map",tuning.get("animation_map", {}))
 	action = StringName(str(animation_map.get(String(action), String(action))))
 	visual.action = &""
 	visual.play_action(action, facing < 0, duration)
@@ -229,13 +272,64 @@ func _uses_charge() -> bool:
 	return definition.ai.features.has("charge") or definition.ai.features.has("dive")
 
 func _attack_offset() -> Vector2:
-	var offset := _vector(tuning.hitbox_offset)
+	var offset := _vector(_combat_value("hitbox_offset"))
 	if _flying:
 		offset.y = 0.0
 	return offset
 
+func _combat_value(key: String) -> Variant:
+	return _attack_variant.get(key,tuning.get(key))
+
+
+func _next_attack_range() -> float:
+	var variants: Array = tuning.get("attack_variants",[])
+	var next: Dictionary = variants[_attack_cycle % variants.size()] if not variants.is_empty() else {}
+	return float(next.get("attack_range",tuning.get("attack_range",definition.ai.attack_range)))
+
+
+## 攻击距离以双方实体边缘间隙判断；大体型与飞行怪不再被中心距离挡在出招范围外。
+func _target_in_attack_range() -> bool:
+	if not is_instance_valid(target):
+		return false
+	var own := Rect2(global_position+_body_offset-_body_size/2.0,_body_size)
+	var other := _target_collision_rect(false)
+	var gap := Vector2(maxf(0.0,maxf(own.position.x-other.end.x,other.position.x-own.end.x)),maxf(0.0,maxf(own.position.y-other.end.y,other.position.y-own.end.y)))
+	if gap.length()>_next_attack_range():
+		return false
+	if _uses_charge() or float(definition.ai.attack_range)>=float(tuning.ranged_threshold):
+		return true
+	# 近战还须能覆盖目标受击体，避免改用实体边缘后反而在判定外反复空挥。
+	var variants: Array = tuning.get("attack_variants",[])
+	var next: Dictionary = variants[_attack_cycle%variants.size()] if not variants.is_empty() else {}
+	var size := _vector(next.get("hitbox_size",tuning.hitbox_size))
+	var offset := _vector(next.get("hitbox_offset",tuning.hitbox_offset))
+	if _flying:
+		offset.y = 0.0
+	var reach := Rect2(global_position+offset*Vector2(facing,1)-size/2.0,size)
+	return reach.intersects(_target_collision_rect(true))
+
+
+func _target_collision_rect(use_hurtbox: bool) -> Rect2:
+	var shape_parent := target.get_node_or_null("Hurtbox") if use_hurtbox else target
+	if shape_parent!=null:
+		for child in shape_parent.get_children():
+			if child is CollisionShape2D and not child.disabled and child.shape!=null:
+				return child.global_transform*child.shape.get_rect()
+	return Rect2(target.global_position,Vector2.ZERO)
+
+
+func _select_attack() -> void:
+	var variants: Array = tuning.get("attack_variants",[])
+	_attack_variant = variants[_attack_cycle % variants.size()] if not variants.is_empty() else {}
+	_attack_cycle += 1
+	var shape := _attack_area.get_child(0) as CollisionShape2D
+	(shape.shape as RectangleShape2D).size = _vector(_combat_value("hitbox_size"))
+
+
 func _packet() -> DamagePacket:
-	return DamagePacket.new(int(definition.damage), DamagePacket.DamageType.PHYSICAL, float(tuning.attack_knockback), global_position, enemy_id)
+	var packet := DamagePacket.new(roundi(float(definition.damage)*float(_combat_value("damage_multiplier"))), DamagePacket.DamageType.PHYSICAL, float(_combat_value("attack_knockback")), global_position, enemy_id)
+	packet.origin_actor = self
+	return packet
 
 func _attack() -> void:
 	if _hit_in_attack:
@@ -263,15 +357,15 @@ func _attack() -> void:
 func receive_hit(packet: DamagePacket) -> int:
 	if state == &"death" or packet == null:
 		return 0
-	var resist_key := "magic" if packet.type == DamagePacket.DamageType.MAGIC else "physical"
-	var resist := float(definition.resist.get(resist_key, 1.0))
-	var defense := float(definition.defense)
-	if packet.type == DamagePacket.DamageType.PHYSICAL:
-		defense *= 1.0 - InventoryService.talent_effect("defense_ignore_pct") / 100.0
-	var damage := maxi(0, roundi(float(packet.amount) * resist * (1.0 - defense / (defense + float(tuning.defense_constant)))))
+	var damage := EnemyStats.damage_taken(definition,packet,float(tuning.defense_constant),InventoryService.talent_effect("defense_ignore_pct"))
 	if damage == 0:
+		if packet.amount > 0:
+			_react_to_hit(packet)
 		return 0
 	hp = maxi(0, hp - damage)
+	if hp == 0:
+		_health_trail = 0.0
+	queue_redraw()
 	_feedback_left = float(EncounterRules.config().feedback.health_seconds)
 	_flash_left = float(EncounterRules.config().feedback.flash_seconds)
 	var number := DamageNumber.new()
@@ -280,22 +374,41 @@ func receive_hit(packet: DamagePacket) -> int:
 	get_parent().add_child(number)
 	number.global_position = global_position+_body_offset+Vector2.UP*_body_size.y/2
 	AttackEffect.play_impact(get_parent(),global_position+_body_offset,number.magic)
-	if str(packet.source_id).begins_with("skill_"):
+	if str(packet.source_id).begins_with("skill_") and not packet.skill_proc_handled:
 		GameState.mana = mini(GameState.mana_max,GameState.mana + int(InventoryService.talent_effect("skill_hit_mana_regen")))
 	if packet.source_id == &"skill_bubble":
 		_slow_left = float(tuning.slow_duration)
 	if hp == 0:
 		_die()
 	else:
-		if visual.entries.has(&"hurt"):
-			_set_state(&"hurt")
-		velocity.x = signf(global_position.x - packet.from_position.x) * packet.knockback
+		_react_to_hit(packet)
 	return damage
+
+func _react_to_hit(packet: DamagePacket) -> void:
+	if poise.receive(packet, statuses.poise_multiplier()):
+		_set_state(&"hurt")
+		velocity.x = signf(global_position.x-packet.from_position.x)*packet.knockback
+
+
+## 有效命中的武器可施加异常。
+func apply_status(id: String, duration: float, multiplier: float = 1.0) -> void:
+	if hp > 0:
+		statuses.apply(id, duration, multiplier)
+
+## 异常按最大生命扣血，并沿用正式死亡与掉落结算。
+func apply_status_damage(amount: int) -> void:
+	hp = maxi(0, hp - amount)
+	_feedback_left = float(EncounterRules.config().feedback.health_seconds)
+	queue_redraw()
+	if hp == 0:
+		_health_trail = 0
+		_die()
 
 func _die() -> void:
 	if _rewarded:
 		return
 	_rewarded = true
+	statuses.clear()
 	_set_state(&"death")
 	collision_layer = 0
 	hurtbox.set_deferred("monitorable", false)
@@ -310,13 +423,15 @@ func _die() -> void:
 	defeated.emit(self)
 
 func _on_animation_completed(action: StringName) -> void:
+	if state == &"hurt" and action == &"hurt" and definition.get("rank","") != "boss":
+		_set_state(&"chase" if is_instance_valid(target) else &"idle")
 	if state == &"death" and action == &"death":
 		queue_free()
 
 func _draw() -> void:
 	if visual == null or not visual.body.visible:
 		draw_rect(Rect2(_body_offset - _body_size / 2.0, _body_size), Color.DARK_OLIVE_GREEN)
-	if definition.is_empty() or state == &"death" or (_feedback_left <= 0 and state not in [&"chase",&"attack",&"telegraph"]):
+	if definition.is_empty() or (_feedback_left <= 0 and state not in [&"chase",&"attack",&"telegraph"]):
 		return
 	var cfg: Dictionary = EncounterRules.config().feedback
 	var rect := Rect2(Vector2(-float(cfg.health_bar_width)/2,_body_offset.y-_body_size.y/2-float(cfg.health_bar_gap)),Vector2(float(cfg.health_bar_width),float(cfg.health_bar_height)))

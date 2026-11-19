@@ -1,0 +1,836 @@
+{
+  "wall": {
+    "texture": "res://assets/environments/terrain/forest/v002/rock_field.png",
+    "world_size": [
+      256,
+      256
+    ],
+    "tint": "#ffffff",
+    "edge_width": 16,
+    "edge_tint": "#51674f",
+    "surface_thickness": 24,
+    "surface_style": "solid",
+    "surface_segment": 320,
+    "surface_cap": 12
+  },
+  "solid": {
+    "texture": "res://assets/environments/terrain/forest/v002/solid_top.png",
+    "region": [
+      0,
+      0,
+      64,
+      32
+    ],
+    "surface_y": 0,
+    "body_source_depth": 32,
+    "cap_source_width": 8,
+    "cap_world_width": 8,
+    "segment_world_width": 64,
+    "tint": "#ffffff"
+  },
+  "oneway": {
+    "texture": "res://assets/environments/terrain/forest/v002/branch_platform.png",
+    "region": [
+      0,
+      0,
+      64,
+      12
+    ],
+    "surface_y": 0,
+    "body_source_depth": 12,
+    "cap_source_width": 8,
+    "cap_world_width": 8,
+    "segment_world_width": 64,
+    "tint": "#ffffff"
+  },
+  "gate": {
+    "texture": "res://assets/environments/props/forest/v002/wood_gate.png",
+    "region": [
+      0,
+      0,
+      16,
+      64
+    ],
+    "post_width": 7,
+    "post_spacing": 8,
+    "brace_width": 5,
+    "brace_tint": "#93a06c"
+  },
+  "decorations": [
+    {
+      "id": "ground_detail_00",
+      "texture": "res://assets/environments/props/forest/v002/fern_mushrooms.png",
+      "pos": [
+        176,
+        304
+      ],
+      "scale": 1,
+      "flip_h": true,
+      "asset_id": "fern_mushrooms"
+    },
+    {
+      "id": "ground_detail_01",
+      "texture": "res://assets/environments/props/forest/v002/fern_mushrooms.png",
+      "pos": [
+        992,
+        304
+      ],
+      "scale": 1,
+      "flip_h": false,
+      "asset_id": "fern_mushrooms"
+    },
+    {
+      "id": "ground_detail_02",
+      "texture": "res://assets/environments/props/forest/v002/moss_rocks.png",
+      "pos": [
+        2480,
+        304
+      ],
+      "scale": 1,
+      "flip_h": true,
+      "asset_id": "moss_rocks"
+    },
+    {
+      "id": "ground_detail_03",
+      "texture": "res://assets/environments/props/forest/v002/fern_mushrooms.png",
+      "pos": [
+        1408,
+        688
+      ],
+      "scale": 1,
+      "flip_h": false,
+      "asset_id": "fern_mushrooms"
+    },
+    {
+      "id": "ground_detail_04",
+      "texture": "res://assets/environments/props/forest/v002/fern_mushrooms.png",
+      "pos": [
+        2304,
+        688
+      ],
+      "scale": 1,
+      "flip_h": true,
+      "asset_id": "fern_mushrooms"
+    },
+    {
+      "id": "ground_detail_05",
+      "texture": "res://assets/environments/props/forest/v002/moss_rocks.png",
+      "pos": [
+        544,
+        784
+      ],
+      "scale": 1,
+      "flip_h": false,
+      "asset_id": "moss_rocks"
+    },
+    {
+      "id": "ground_detail_06",
+      "texture": "res://assets/environments/props/forest/v002/fern_mushrooms.png",
+      "pos": [
+        848,
+        688
+      ],
+      "scale": 1,
+      "flip_h": true,
+      "asset_id": "fern_mushrooms"
+    },
+    {
+      "id": "ground_detail_07",
+      "texture": "res://assets/environments/props/forest/v002/fern_mushrooms.png",
+      "pos": [
+        496,
+        1216
+      ],
+      "scale": 1,
+      "flip_h": false,
+      "asset_id": "fern_mushrooms"
+    },
+    {
+      "id": "ground_detail_08",
+      "texture": "res://assets/environments/props/forest/v002/moss_rocks.png",
+      "pos": [
+        912,
+        1216
+      ],
+      "scale": 1,
+      "flip_h": true,
+      "asset_id": "moss_rocks"
+    },
+    {
+      "id": "ground_detail_09",
+      "texture": "res://assets/environments/props/forest/v002/fern_mushrooms.png",
+      "pos": [
+        1712,
+        1216
+      ],
+      "scale": 1,
+      "flip_h": false,
+      "asset_id": "fern_mushrooms"
+    },
+    {
+      "id": "ground_detail_10",
+      "texture": "res://assets/environments/props/forest/v002/moss_rocks.png",
+      "pos": [
+        2032,
+        1216
+      ],
+      "scale": 1,
+      "flip_h": true,
+      "asset_id": "moss_rocks"
+    },
+    {
+      "id": "ground_detail_11",
+      "texture": "res://assets/environments/props/forest/v002/fern_mushrooms.png",
+      "pos": [
+        192,
+        1712
+      ],
+      "scale": 1,
+      "flip_h": false,
+      "asset_id": "fern_mushrooms"
+    },
+    {
+      "id": "ground_detail_12",
+      "texture": "res://assets/environments/props/forest/v002/moss_rocks.png",
+      "pos": [
+        736,
+        1712
+      ],
+      "scale": 1,
+      "flip_h": true,
+      "asset_id": "moss_rocks"
+    },
+    {
+      "id": "ground_detail_13",
+      "texture": "res://assets/environments/props/forest/v002/fern_mushrooms.png",
+      "pos": [
+        1904,
+        1584
+      ],
+      "scale": 1,
+      "flip_h": false,
+      "asset_id": "fern_mushrooms"
+    },
+    {
+      "id": "ground_detail_14",
+      "texture": "res://assets/environments/props/forest/v002/fern_mushrooms.png",
+      "pos": [
+        2512,
+        1712
+      ],
+      "scale": 1,
+      "flip_h": true,
+      "asset_id": "fern_mushrooms"
+    },
+    {
+      "id": "ground_detail_15",
+      "texture": "res://assets/environments/props/forest/v002/moss_rocks.png",
+      "pos": [
+        2640,
+        1712
+      ],
+      "scale": 1,
+      "flip_h": false,
+      "asset_id": "moss_rocks"
+    }
+  ],
+  "vines": [
+    {
+      "pos": [
+        464,
+        96
+      ],
+      "scale": 1,
+      "flip_h": true
+    },
+    {
+      "pos": [
+        1024,
+        96
+      ],
+      "scale": 1,
+      "flip_h": false
+    },
+    {
+      "pos": [
+        1680,
+        96
+      ],
+      "scale": 1,
+      "flip_h": false
+    },
+    {
+      "pos": [
+        2352,
+        96
+      ],
+      "scale": 1,
+      "flip_h": false
+    },
+    {
+      "pos": [
+        2464,
+        480
+      ],
+      "scale": 1,
+      "flip_h": false
+    },
+    {
+      "pos": [
+        896,
+        448
+      ],
+      "scale": 1,
+      "flip_h": false
+    },
+    {
+      "pos": [
+        176,
+        448
+      ],
+      "scale": 1,
+      "flip_h": true
+    },
+    {
+      "pos": [
+        656,
+        880
+      ],
+      "scale": 1,
+      "flip_h": true
+    },
+    {
+      "pos": [
+        1616,
+        832
+      ],
+      "scale": 1,
+      "flip_h": true
+    },
+    {
+      "pos": [
+        1920,
+        896
+      ],
+      "scale": 1,
+      "flip_h": false
+    },
+    {
+      "pos": [
+        512,
+        1472
+      ],
+      "scale": 1,
+      "flip_h": false
+    },
+    {
+      "pos": [
+        1472,
+        1360
+      ],
+      "scale": 1,
+      "flip_h": true
+    },
+    {
+      "pos": [
+        2016,
+        1360
+      ],
+      "scale": 1,
+      "flip_h": true
+    }
+  ],
+  "vine_texture": "res://assets/environments/props/forest/v002/vine.png",
+  "background_panels": 2,
+  "chest": {
+    "texture": "res://assets/environments/props/forest/v002/wooden_chest.png",
+    "width": 48,
+    "normal_tint": "#ffffff",
+    "sealed_tint": "#d2b4ec",
+    "seal_color": "#c894ef"
+  },
+  "mechanism": {
+    "stone_tint": "#68796b",
+    "metal": "#a5b5a0",
+    "dark": "#263e35",
+    "active": "#7ee7aa",
+    "opened": "#bfd8a5",
+    "switch_size": [
+      56,
+      76
+    ],
+    "crystal_size": [
+      24,
+      32
+    ],
+    "post_width": 10,
+    "bar_spacing": 14,
+    "bar_width": 5,
+    "line_width": 2,
+    "seal_width": 3,
+    "pulse_seconds": 2.4,
+    "pulse_min": 0.65,
+    "pulse_max": 1.0,
+    "gate_fade_seconds": 0.45,
+    "sealed_chest": "#c894ef",
+    "seal_size": [
+      12,
+      14
+    ],
+    "switch_texture": "res://assets/environments/props/forest/v002/ruin_switch.png",
+    "switch_width": 31,
+    "switch_tint": "#c8d0c3",
+    "activated_tint": "#f0ffe7",
+    "hint_offset": -136,
+    "switch_visible_rect": [
+      1,
+      28,
+      31,
+      20
+    ]
+  },
+  "decoration_assets": {
+    "fallen_log": {
+      "texture": "res://assets/environments/props/forest/v002/fallen_log.png",
+      "tint": "#ffffff",
+      "visible_rect": [
+        0,
+        0,
+        95,
+        40
+      ],
+      "embed_y": 1,
+      "anchor_pixel": [
+        46,
+        40
+      ],
+      "pixel_native": true
+    },
+    "broken_waystone": {
+      "texture": "res://assets/environments/props/forest/v002/broken_waystone.png",
+      "tint": "#ffffff",
+      "visible_rect": [
+        1,
+        16,
+        31,
+        32
+      ],
+      "embed_y": 1,
+      "anchor_pixel": [
+        16,
+        48
+      ],
+      "pixel_native": true
+    },
+    "forest_fungi": {
+      "texture": "res://assets/environments/props/forest/v002/forest_fungi.png",
+      "tint": "#ffffff",
+      "visible_rect": [
+        1,
+        5,
+        47,
+        27
+      ],
+      "embed_y": 1,
+      "anchor_pixel": [
+        23,
+        32
+      ],
+      "pixel_native": true
+    },
+    "hanging_roots": {
+      "texture": "res://assets/environments/props/forest/v002/hanging_roots.png",
+      "tint": "#ffffff",
+      "visible_rect": [
+        1,
+        0,
+        46,
+        40
+      ],
+      "embed_y": -6,
+      "anchor_pixel": [
+        24,
+        0
+      ],
+      "pixel_native": true
+    }
+  },
+  "new_decorations": [
+    {
+      "id": "fallen_log_00",
+      "asset": "fallen_log",
+      "pos": [
+        560,
+        304
+      ],
+      "width": 180,
+      "anchor": "ground",
+      "flip_h": false
+    },
+    {
+      "id": "broken_waystone_01",
+      "asset": "broken_waystone",
+      "pos": [
+        1504,
+        304
+      ],
+      "width": 62,
+      "anchor": "ground",
+      "flip_h": true
+    },
+    {
+      "id": "forest_fungi_02",
+      "asset": "forest_fungi",
+      "pos": [
+        2288,
+        304
+      ],
+      "width": 104,
+      "anchor": "ground",
+      "flip_h": false
+    },
+    {
+      "id": "broken_waystone_03",
+      "asset": "broken_waystone",
+      "pos": [
+        1400,
+        688
+      ],
+      "width": 48,
+      "anchor": "ground",
+      "flip_h": false
+    },
+    {
+      "id": "fallen_log_04",
+      "asset": "fallen_log",
+      "pos": [
+        1648,
+        688
+      ],
+      "width": 168,
+      "anchor": "ground",
+      "flip_h": true
+    },
+    {
+      "id": "forest_fungi_05",
+      "asset": "forest_fungi",
+      "pos": [
+        2112,
+        688
+      ],
+      "width": 92,
+      "anchor": "ground",
+      "flip_h": false
+    },
+    {
+      "id": "forest_fungi_06",
+      "asset": "forest_fungi",
+      "pos": [
+        280,
+        784
+      ],
+      "width": 82,
+      "anchor": "ground",
+      "flip_h": false
+    },
+    {
+      "id": "broken_waystone_07",
+      "asset": "broken_waystone",
+      "pos": [
+        456,
+        784
+      ],
+      "width": 40,
+      "anchor": "ground",
+      "flip_h": true
+    },
+    {
+      "id": "fallen_log_08",
+      "asset": "fallen_log",
+      "pos": [
+        608,
+        1216
+      ],
+      "width": 176,
+      "anchor": "ground",
+      "flip_h": false
+    },
+    {
+      "id": "forest_fungi_09",
+      "asset": "forest_fungi",
+      "pos": [
+        224,
+        1216
+      ],
+      "width": 84,
+      "anchor": "ground",
+      "flip_h": false
+    },
+    {
+      "id": "broken_waystone_10",
+      "asset": "broken_waystone",
+      "pos": [
+        2008,
+        1216
+      ],
+      "width": 46,
+      "anchor": "ground",
+      "flip_h": true
+    },
+    {
+      "id": "fallen_log_11",
+      "asset": "fallen_log",
+      "pos": [
+        1880,
+        1216
+      ],
+      "width": 166,
+      "anchor": "ground",
+      "flip_h": false
+    },
+    {
+      "id": "forest_fungi_12",
+      "asset": "forest_fungi",
+      "pos": [
+        1376,
+        1216
+      ],
+      "width": 86,
+      "anchor": "ground",
+      "flip_h": false
+    },
+    {
+      "id": "forest_fungi_13",
+      "asset": "forest_fungi",
+      "pos": [
+        160,
+        1712
+      ],
+      "width": 72,
+      "anchor": "ground",
+      "flip_h": true
+    },
+    {
+      "id": "fallen_log_14",
+      "asset": "fallen_log",
+      "pos": [
+        536,
+        1712
+      ],
+      "width": 188,
+      "anchor": "ground",
+      "flip_h": false
+    },
+    {
+      "id": "broken_waystone_15",
+      "asset": "broken_waystone",
+      "pos": [
+        940,
+        1712
+      ],
+      "width": 38,
+      "anchor": "ground",
+      "flip_h": false
+    },
+    {
+      "id": "broken_waystone_16",
+      "asset": "broken_waystone",
+      "pos": [
+        1408,
+        1584
+      ],
+      "width": 40,
+      "anchor": "ground",
+      "flip_h": true
+    },
+    {
+      "id": "fallen_log_17",
+      "asset": "fallen_log",
+      "pos": [
+        1808,
+        1584
+      ],
+      "width": 154,
+      "anchor": "ground",
+      "flip_h": false
+    },
+    {
+      "id": "forest_fungi_18",
+      "asset": "forest_fungi",
+      "pos": [
+        2496,
+        1712
+      ],
+      "width": 88,
+      "anchor": "ground",
+      "flip_h": false
+    },
+    {
+      "id": "fallen_log_19",
+      "asset": "fallen_log",
+      "pos": [
+        2640,
+        1712
+      ],
+      "width": 130,
+      "anchor": "ground",
+      "flip_h": true
+    },
+    {
+      "id": "hanging_roots_20",
+      "asset": "hanging_roots",
+      "pos": [
+        640,
+        96
+      ],
+      "width": 82,
+      "anchor": "ceiling",
+      "flip_h": false
+    },
+    {
+      "id": "hanging_roots_21",
+      "asset": "hanging_roots",
+      "pos": [
+        1700,
+        96
+      ],
+      "width": 92,
+      "anchor": "ceiling",
+      "flip_h": false
+    },
+    {
+      "id": "hanging_roots_22",
+      "asset": "hanging_roots",
+      "pos": [
+        2360,
+        96
+      ],
+      "width": 138,
+      "anchor": "ceiling",
+      "flip_h": false
+    },
+    {
+      "id": "hanging_roots_23",
+      "asset": "hanging_roots",
+      "pos": [
+        1472,
+        496
+      ],
+      "width": 98,
+      "anchor": "ceiling",
+      "flip_h": false
+    },
+    {
+      "id": "hanging_roots_24",
+      "asset": "hanging_roots",
+      "pos": [
+        1776,
+        496
+      ],
+      "width": 90,
+      "anchor": "ceiling",
+      "flip_h": true
+    },
+    {
+      "id": "hanging_roots_25",
+      "asset": "hanging_roots",
+      "pos": [
+        2300,
+        480
+      ],
+      "width": 96,
+      "anchor": "ceiling",
+      "flip_h": false
+    },
+    {
+      "id": "hanging_roots_26",
+      "asset": "hanging_roots",
+      "pos": [
+        360,
+        448
+      ],
+      "width": 78,
+      "anchor": "ceiling",
+      "flip_h": true
+    },
+    {
+      "id": "hanging_roots_27",
+      "asset": "hanging_roots",
+      "pos": [
+        904,
+        448
+      ],
+      "width": 94,
+      "anchor": "ceiling",
+      "flip_h": false
+    },
+    {
+      "id": "hanging_roots_28",
+      "asset": "hanging_roots",
+      "pos": [
+        730,
+        880
+      ],
+      "width": 74,
+      "anchor": "ceiling",
+      "flip_h": false
+    },
+    {
+      "id": "hanging_roots_29",
+      "asset": "hanging_roots",
+      "pos": [
+        1536,
+        832
+      ],
+      "width": 98,
+      "anchor": "ceiling",
+      "flip_h": true
+    },
+    {
+      "id": "hanging_roots_30",
+      "asset": "hanging_roots",
+      "pos": [
+        1808,
+        832
+      ],
+      "width": 110,
+      "anchor": "ceiling",
+      "flip_h": false
+    },
+    {
+      "id": "hanging_roots_31",
+      "asset": "hanging_roots",
+      "pos": [
+        590,
+        1472
+      ],
+      "width": 116,
+      "anchor": "ceiling",
+      "flip_h": false
+    },
+    {
+      "id": "hanging_roots_32",
+      "asset": "hanging_roots",
+      "pos": [
+        1550,
+        1360
+      ],
+      "width": 92,
+      "anchor": "ceiling",
+      "flip_h": false
+    },
+    {
+      "id": "hanging_roots_33",
+      "asset": "hanging_roots",
+      "pos": [
+        2000,
+        1360
+      ],
+      "width": 98,
+      "anchor": "ceiling",
+      "flip_h": false
+    }
+  ],
+  "pixel_native": true,
+  "pixel_manifest": "res://data/art/forest_v002.json"
+}

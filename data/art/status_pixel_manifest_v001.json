@@ -1,0 +1,87 @@
+{
+  "id": "status_v001",
+  "pixel_standard": "res://data/art/pixel_standards.json",
+  "pixel_spec": "res://data/art/status_pixel_spec_v001.json",
+  "assets": [
+    {
+      "path": "res://assets/PROCESSED/effects/status_v001/bleeding.png",
+      "native_canvas": [
+        2,
+        2
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        1,
+        1
+      ],
+      "world_size": [
+        2,
+        2
+      ],
+      "authored_native": true
+    },
+    {
+      "path": "res://assets/PROCESSED/effects/status_v001/poison.png",
+      "native_canvas": [
+        3,
+        3
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        1,
+        1
+      ],
+      "world_size": [
+        3,
+        3
+      ],
+      "authored_native": true
+    },
+    {
+      "path": "res://assets/PROCESSED/effects/status_v001/chill.png",
+      "native_canvas": [
+        5,
+        5
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        2,
+        2
+      ],
+      "world_size": [
+        5,
+        5
+      ],
+      "authored_native": true
+    },
+    {
+      "path": "res://assets/PROCESSED/effects/status_v001/bolt.png",
+      "native_canvas": [
+        24,
+        7
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        23,
+        3
+      ],
+      "world_size": [
+        24,
+        7
+      ],
+      "authored_native": true
+    }
+  ]
+}

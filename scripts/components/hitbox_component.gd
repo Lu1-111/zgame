@@ -10,6 +10,8 @@ var packet: DamagePacket = null
 var source_actor: Node = null   ## 攻击归属方（与 HurtboxComponent.owner_actor 比对，排除命中自己）
 var _already_hit: Dictionary = {}
 var _active := false
+var manual_scan := false
+var deduplicate_actors := false
 
 
 func _ready() -> void:
@@ -27,7 +29,7 @@ func activate(p_packet: DamagePacket) -> void:
 	packet = p_packet
 	_already_hit.clear()
 	_active = true
-	monitoring = true
+	monitoring = not manual_scan
 
 
 ## 关闭判定窗。
@@ -38,15 +40,38 @@ func deactivate() -> void:
 
 
 func _physics_process(_delta: float) -> void:
-	if not _active or packet == null:
+	if manual_scan or not _active or packet == null:
 		return
 	for area in get_overlapping_areas():
-		if _already_hit.has(area):
-			continue
-		# 归属过滤：层6 是双方共用受击层，绝不命中攻击归属者自己的受击框
-		if area is HurtboxComponent and area.owner_actor != null and area.owner_actor == source_actor:
-			continue
-		if area.has_method("receive_hit"):
-			_already_hit[area] = true
-			var dmg := int(area.receive_hit(packet))
-			hit_landed.emit(area, dmg)
+		try_hit_area(area)
+
+
+## 将接触结果送入统一结算，保留归属过滤与单次命中；多受击框可按宿主去重。
+func try_hit_area(area: Area2D) -> void:
+	if not _active or packet == null or not is_instance_valid(area):
+		return
+	if area is HurtboxComponent and area.owner_actor != null and area.owner_actor == source_actor:
+		return
+	var key: Node = area
+	if deduplicate_actors and area is HurtboxComponent and is_instance_valid(area.owner_actor):
+		key = area.owner_actor
+	if _already_hit.has(key) or not area.has_method("receive_hit"):
+		return
+	_already_hit[key] = true
+	var dmg := int(area.receive_hit(packet))
+	hit_landed.emit(area, dmg)
+
+
+## 当帧查询可见轮廓对应的凸形，避免 Area2D 重叠缓存落后高速剑光一帧。
+func scan_shape_contacts(shapes: Array[Shape2D], world_transform: Transform2D, max_results: int) -> void:
+	if not _active or packet == null or not is_inside_tree():
+		return
+	var query := PhysicsShapeQueryParameters2D.new()
+	query.transform = world_transform
+	query.collision_mask = collision_mask
+	query.collide_with_areas = true
+	query.collide_with_bodies = false
+	for shape in shapes:
+		query.shape = shape
+		for result in get_world_2d().direct_space_state.intersect_shape(query,max_results):
+			try_hit_area(result.collider as Area2D)

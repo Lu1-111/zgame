@@ -1,0 +1,1711 @@
+{
+  "arena": {
+    "background_darkness": 0.55,
+    "boss_position": [
+      840.0,
+      560.0
+    ],
+    "camera_zoom": 0.8,
+    "floor_y": 560.0,
+    "platforms": [
+      [
+        320.0,
+        425.0,
+        200.0
+      ],
+      [
+        1040.0,
+        425.0,
+        200.0
+      ]
+    ],
+    "player_position": [
+      320.0,
+      530.0
+    ],
+    "size": [
+      1680.0,
+      640.0
+    ]
+  },
+  "art": {
+    "anchor_modes": {
+      "phase_1_idle": "root",
+      "phase_2_idle": "flower_center"
+    },
+    "anchors": {
+      "phase_1_idle": [
+        [
+          64,
+          112
+        ],
+        [
+          64,
+          112
+        ],
+        [
+          64,
+          112
+        ],
+        [
+          64,
+          112
+        ],
+        [
+          64,
+          112
+        ],
+        [
+          64,
+          112
+        ],
+        [
+          64,
+          112
+        ],
+        [
+          64,
+          112
+        ]
+      ],
+      "phase_2_idle": [
+        [
+          64,
+          64
+        ],
+        [
+          64,
+          64
+        ],
+        [
+          64,
+          64
+        ],
+        [
+          64,
+          64
+        ],
+        [
+          64,
+          64
+        ],
+        [
+          64,
+          64
+        ],
+        [
+          64,
+          64
+        ],
+        [
+          64,
+          64
+        ]
+      ]
+    },
+    "combat_anchors": {
+      "arm_idle": [
+        [
+          48,
+          288
+        ],
+        [
+          48,
+          288
+        ],
+        [
+          48,
+          288
+        ],
+        [
+          48,
+          288
+        ]
+      ],
+      "slam": [
+        [
+          48,
+          288
+        ],
+        [
+          48,
+          288
+        ],
+        [
+          48,
+          288
+        ],
+        [
+          48,
+          288
+        ],
+        [
+          48,
+          288
+        ],
+        [
+          48,
+          288
+        ],
+        [
+          48,
+          288
+        ],
+        [
+          48,
+          288
+        ],
+        [
+          48,
+          288
+        ],
+        [
+          48,
+          288
+        ]
+      ],
+      "slam_downstroke": [
+        [
+          48,
+          288
+        ],
+        [
+          48,
+          288
+        ],
+        [
+          48,
+          288
+        ],
+        [
+          48,
+          288
+        ],
+        [
+          48,
+          288
+        ],
+        [
+          48,
+          288
+        ]
+      ],
+      "spikes": [
+        [
+          48,
+          288
+        ],
+        [
+          48,
+          288
+        ],
+        [
+          48,
+          288
+        ],
+        [
+          48,
+          288
+        ],
+        [
+          48,
+          288
+        ],
+        [
+          48,
+          288
+        ],
+        [
+          48,
+          288
+        ],
+        [
+          48,
+          288
+        ]
+      ],
+      "needles": [
+        [
+          48,
+          288
+        ],
+        [
+          48,
+          288
+        ],
+        [
+          48,
+          288
+        ],
+        [
+          48,
+          288
+        ]
+      ],
+      "gravity": [
+        [
+          48,
+          288
+        ],
+        [
+          48,
+          288
+        ],
+        [
+          48,
+          288
+        ],
+        [
+          48,
+          288
+        ]
+      ],
+      "spores": [
+        [
+          48,
+          288
+        ],
+        [
+          48,
+          288
+        ],
+        [
+          48,
+          288
+        ],
+        [
+          48,
+          288
+        ]
+      ],
+      "repel": [
+        [
+          48,
+          288
+        ],
+        [
+          48,
+          288
+        ],
+        [
+          48,
+          288
+        ],
+        [
+          48,
+          288
+        ]
+      ]
+    },
+    "combat_native_widths": {
+      "gravity": 320,
+      "needles": 320,
+      "phase_1_idle": 320,
+      "repel": 320,
+      "slam": 320,
+      "slam_downstroke": 320,
+      "spikes": 320,
+      "spores": 320
+    },
+    "combat_reference": {
+      "central_height": 330.0,
+      "native_width": 444.0
+    },
+    "combat_sheets": {
+      "gravity": {
+        "anchor_x": 0.5,
+        "body": true,
+        "columns": 4.0,
+        "count": 4.0,
+        "fps": 8.0,
+        "path": "combat/phase_1_spells.png",
+        "rows": 4.0,
+        "start": 4.0
+      },
+      "gravity_ring": {
+        "columns": 4.0,
+        "count": 4.0,
+        "fps": 8.0,
+        "loop": true,
+        "path": "combat/phase_1_entities.png",
+        "row_edges": [
+          0.0,
+          225.0,
+          490.0,
+          773.0,
+          1030.0,
+          1323.0,
+          1536.0
+        ],
+        "rows": 6.0,
+        "start": 12.0
+      },
+      "impact": {
+        "columns": 4.0,
+        "count": 4.0,
+        "fps": 8.0,
+        "loop": false,
+        "path": "combat/phase_1_entities.png",
+        "row_edges": [
+          0.0,
+          225.0,
+          490.0,
+          773.0,
+          1030.0,
+          1323.0,
+          1536.0
+        ],
+        "rows": 6.0,
+        "start": 20.0
+      },
+      "needle": {
+        "columns": 4.0,
+        "count": 4.0,
+        "fps": 8.0,
+        "loop": true,
+        "path": "combat/phase_1_entities.png",
+        "row_edges": [
+          0.0,
+          225.0,
+          490.0,
+          773.0,
+          1030.0,
+          1323.0,
+          1536.0
+        ],
+        "rows": 6.0,
+        "start": 0.0
+      },
+      "needles": {
+        "anchor_x": 0.5,
+        "body": true,
+        "columns": 4.0,
+        "count": 4.0,
+        "fps": 8.0,
+        "path": "combat/phase_1_spells.png",
+        "rows": 4.0,
+        "start": 0.0
+      },
+      "repel": {
+        "anchor_x": 0.5,
+        "body": true,
+        "columns": 4.0,
+        "count": 4.0,
+        "fps": 8.0,
+        "path": "combat/phase_1_spells.png",
+        "rows": 4.0,
+        "start": 12.0
+      },
+      "repel_ring": {
+        "columns": 2.0,
+        "count": 4.0,
+        "fps": 10.0,
+        "loop": false,
+        "path": "combat/phase_1_repel.png",
+        "rows": 2.0,
+        "start": 0.0
+      },
+      "slam": {
+        "anchor_x": 0.35,
+        "body": true,
+        "columns": 2.0,
+        "count": 8.0,
+        "fps": 8.0,
+        "path": "combat/phase_1_slam_long.png",
+        "row_edges": [
+          0.0,
+          264.0,
+          476.0,
+          685.0,
+          887.0
+        ],
+        "rows": 4.0,
+        "start": 0.0
+      },
+      "spike": {
+        "columns": 4.0,
+        "count": 4.0,
+        "fps": 8.0,
+        "loop": false,
+        "path": "combat/phase_1_entities.png",
+        "row_edges": [
+          0.0,
+          225.0,
+          490.0,
+          773.0,
+          1030.0,
+          1323.0,
+          1536.0
+        ],
+        "rows": 6.0,
+        "start": 8.0
+      },
+      "spikes": {
+        "anchor_x": 0.5,
+        "body": true,
+        "columns": 4.0,
+        "count": 8.0,
+        "fps": 8.0,
+        "path": "combat/phase_1_tendrils.png",
+        "rows": 4.0,
+        "start": 8.0
+      },
+      "spore": {
+        "columns": 4.0,
+        "count": 4.0,
+        "fps": 8.0,
+        "loop": true,
+        "path": "combat/phase_1_entities.png",
+        "row_edges": [
+          0.0,
+          225.0,
+          490.0,
+          773.0,
+          1030.0,
+          1323.0,
+          1536.0
+        ],
+        "rows": 6.0,
+        "start": 4.0
+      },
+      "spores": {
+        "anchor_x": 0.5,
+        "body": true,
+        "columns": 4.0,
+        "count": 4.0,
+        "fps": 8.0,
+        "path": "combat/phase_1_spells.png",
+        "rows": 4.0,
+        "start": 8.0
+      }
+    },
+    "frame_count": 8.0,
+    "idle_fps": 8.0,
+    "native_cell": {
+      "phase_1_idle": [
+        128,
+        128
+      ],
+      "phase_2_idle": [
+        128,
+        128
+      ]
+    },
+    "phase_1_master": "masters/phase_1_idle.png",
+    "phase_2_master": "masters/phase_2_idle.png",
+    "phase_2_preview_center_y": 0.52,
+    "phase_2_preview_visible_width": 260.0,
+    "phase_2_revision": "正面正交视角、仅花体无根茎、三层刀刃状花瓣",
+    "pixel": {
+      "body_canvas": [
+        128,
+        128
+      ],
+      "body_anchor": [
+        64,
+        112
+      ],
+      "body_height": 84,
+      "body_width": 68,
+      "render_scale": 1,
+      "pixels_per_world_unit": 1,
+      "flower_canvas": [
+        128,
+        128
+      ],
+      "flower_anchor": [
+        64,
+        64
+      ],
+      "animations": {
+        "phase_1_idle": {
+          "frames": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "kind": "body"
+        },
+        "arm_idle": {
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "kind": "arm"
+        },
+        "slam": {
+          "frames": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "kind": "arm"
+        },
+        "slam_downstroke": {
+          "frames": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "kind": "arm"
+        },
+        "spikes": {
+          "frames": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "kind": "arm"
+        },
+        "needles": {
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "kind": "arm"
+        },
+        "gravity": {
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "kind": "arm"
+        },
+        "spores": {
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "kind": "arm"
+        },
+        "repel": {
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "kind": "arm"
+        },
+        "phase_2_idle": {
+          "frames": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "kind": "flower"
+        },
+        "needle": {
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "kind": "fx"
+        },
+        "spore": {
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "kind": "fx"
+        },
+        "spike": {
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "kind": "fx"
+        },
+        "gravity_ring": {
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "kind": "fx"
+        },
+        "repel_ring": {
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "kind": "fx"
+        },
+        "impact": {
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "kind": "fx"
+        }
+      }
+    },
+    "preview_width": 320.0,
+    "root": "res://assets/PROCESSED/enemies/BOSS-CLAFFERT/v005/",
+    "sheet_columns": 4.0,
+    "sheet_rows": 2.0,
+    "sheets": {
+      "phase_1_idle": "pixel_sources/idle_1.png",
+      "phase_2_idle": "pixel_sources/idle_2.png"
+    },
+    "visible_widths": {
+      "phase_1_idle": 354.0,
+      "phase_2_idle": 356.0
+    },
+    "unified": {
+      "root": "res://assets/PROCESSED/enemies/BOSS-CLAFFERT/v005/",
+      "body_source": "sources/body_master.png",
+      "arm_source": "sources/arm_actions.png",
+      "palette": [
+        "#00000000",
+        "#0b0711",
+        "#1a1021",
+        "#2c1935",
+        "#422448",
+        "#5a2c65",
+        "#74347d",
+        "#91429a",
+        "#ad59b3",
+        "#c97acc",
+        "#e3a7e1",
+        "#f6dbf1",
+        "#3d1d37",
+        "#612443",
+        "#87385e",
+        "#ad4e75",
+        "#191b11",
+        "#2a2f1b",
+        "#424629",
+        "#5d6035",
+        "#7b7c49",
+        "#a2a063",
+        "#c6bd84",
+        "#e5d4a0",
+        "#322921",
+        "#554334",
+        "#7f6550",
+        "#ac8a67",
+        "#8a3fd1",
+        "#bf6cf0",
+        "#edd2ff",
+        "#ffffff"
+      ],
+      "player_reference": "res://assets/PROCESSED/characters/CHR-01/v001/frames/CHR-01_player_idle_right_v001_f01.png",
+      "player_visible_height": 42,
+      "body_visible_height": 84,
+      "body_visible_width": 68,
+      "body_canvas": [
+        128,
+        128
+      ],
+      "body_anchor": [
+        64,
+        112
+      ],
+      "body_pulse_deltas": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          -1,
+          0
+        ],
+        [
+          -1,
+          0
+        ]
+      ],
+      "arm_canvas": [
+        352,
+        320
+      ],
+      "arm_anchor": [
+        48,
+        288
+      ],
+      "arm_attachment": [
+        20,
+        -4
+      ],
+      "arm_source_grid": [
+        4,
+        4
+      ],
+      "idle_lengths": [
+        48,
+        49,
+        48,
+        47
+      ],
+      "idle_heights": [
+        22,
+        23,
+        22,
+        21
+      ],
+      "raise_lengths": [
+        26,
+        120,
+        210,
+        238
+      ],
+      "raise_heights": [
+        22,
+        74,
+        120,
+        160
+      ],
+      "swing_lengths": [
+        238,
+        238,
+        238,
+        238,
+        238,
+        238
+      ],
+      "swing_heights": [
+        146,
+        120,
+        94,
+        64,
+        34,
+        6
+      ],
+      "retract_lengths": [
+        180,
+        112,
+        64
+      ],
+      "retract_heights": [
+        12,
+        18,
+        22
+      ],
+      "cast_pulse_speed": 1.4,
+      "two_arm_casts": [],
+      "preview_canvas": [
+        640,
+        352
+      ],
+      "preview_anchor": [
+        320,
+        304
+      ],
+      "fps": 8,
+      "flower_size": 84,
+      "flower_canvas": [
+        128,
+        128
+      ],
+      "flower_anchor": [
+        64,
+        64
+      ],
+      "effect_sizes": {
+        "needle": [
+          40,
+          16
+        ],
+        "spore": [
+          20,
+          20
+        ],
+        "spike": [
+          32,
+          40
+        ],
+        "gravity_ring": [
+          96,
+          12
+        ],
+        "repel_ring": [
+          96,
+          12
+        ],
+        "impact": [
+          236,
+          32
+        ]
+      },
+      "swing_sources": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "arm_source_row_edges": [
+        0,
+        230,
+        539,
+        791,
+        1049
+      ],
+      "body_source_shared_by_all_states": true,
+      "body_runtime_reference_root": "res://assets/PROCESSED/enemies/BOSS-CLAFFERT/v005/sources/approved_reference/",
+      "arm_fit": "isotropic_reach",
+      "arm_ground_clip_y": 292,
+      "arm_row_edges": [
+        0,
+        230,
+        539,
+        791,
+        1049
+      ],
+      "arm_source_anchors": [
+        [
+          77.1,
+          219.36
+        ],
+        [
+          453.8,
+          219.4
+        ],
+        [
+          827.9,
+          219.2
+        ],
+        [
+          1177.8,
+          219.52
+        ],
+        [
+          76.2,
+          523.8
+        ],
+        [
+          452.0,
+          521.56
+        ],
+        [
+          822.4,
+          519.8
+        ],
+        [
+          1200.3,
+          517.32
+        ],
+        [
+          75.3,
+          769.88
+        ],
+        [
+          450.2,
+          771.2
+        ],
+        [
+          825.2,
+          773.16
+        ],
+        [
+          1196.5,
+          774.84
+        ],
+        [
+          77.1,
+          1002.0
+        ],
+        [
+          450.2,
+          998.88
+        ],
+        [
+          911,
+          983
+        ],
+        [
+          1204.0,
+          993.52
+        ]
+      ],
+      "effect_source": "sources/effects.png",
+      "effect_columns": 4,
+      "effect_rows": {
+        "needle": [
+          0,
+          145
+        ],
+        "spore": [
+          145,
+          315
+        ],
+        "spike": [
+          315,
+          540
+        ],
+        "gravity_ring": [
+          548,
+          631
+        ],
+        "repel_ring": [
+          631,
+          713
+        ],
+        "impact": [
+          713,
+          885
+        ]
+      },
+      "ring_rendering": {
+        "mode": "native_pixel_ribbon",
+        "kinds": [
+          "gravity_ring",
+          "repel_ring"
+        ],
+        "pixel_pitch": 1,
+        "repeat_pixels": 96,
+        "strip_height": 12,
+        "shader": "res://assets/effects/corrumpt/pixel_ring.gdshader"
+      },
+      "effect_frame_boxes": {
+        "needle": [
+          [
+            192,
+            62,
+            336,
+            100
+          ],
+          [
+            178,
+            58,
+            320,
+            106
+          ],
+          [
+            159,
+            53,
+            306,
+            107
+          ],
+          [
+            161,
+            57,
+            312,
+            106
+          ]
+        ],
+        "spore": [
+          [
+            183,
+            14,
+            318,
+            157
+          ],
+          [
+            155,
+            9,
+            296,
+            157
+          ],
+          [
+            148,
+            8,
+            281,
+            157
+          ],
+          [
+            142,
+            16,
+            271,
+            153
+          ]
+        ],
+        "spike": [
+          [
+            166,
+            5,
+            326,
+            205
+          ],
+          [
+            160,
+            5,
+            320,
+            205
+          ],
+          [
+            136,
+            5,
+            296,
+            205
+          ],
+          [
+            124,
+            5,
+            284,
+            205
+          ]
+        ],
+        "gravity_ring": [
+          [
+            29,
+            2,
+            441,
+            56
+          ],
+          [
+            22,
+            0,
+            433,
+            55
+          ],
+          [
+            13,
+            0,
+            424,
+            55
+          ],
+          [
+            5,
+            1,
+            416,
+            57
+          ]
+        ],
+        "repel_ring": [
+          [
+            30,
+            1,
+            441,
+            62
+          ],
+          [
+            22,
+            1,
+            433,
+            82
+          ],
+          [
+            13,
+            3,
+            424,
+            61
+          ],
+          [
+            5,
+            2,
+            416,
+            67
+          ]
+        ],
+        "impact": [
+          [
+            28,
+            50,
+            442,
+            142
+          ],
+          [
+            19,
+            0,
+            437,
+            142
+          ],
+          [
+            10,
+            20,
+            427,
+            142
+          ],
+          [
+            3,
+            52,
+            420,
+            142
+          ]
+        ]
+      },
+      "effect_fit": {
+        "needle": "uniform",
+        "spore": "uniform",
+        "spike": "uniform",
+        "gravity_ring": "canvas",
+        "repel_ring": "canvas",
+        "impact": "canvas"
+      },
+      "arm_overrides": {
+        "7": {
+          "path": "sources/raised_arm.png",
+          "source_anchor": [
+            56,
+            1035.5
+          ],
+          "offline_rotation_degrees": -10
+        }
+      },
+      "idle_sources": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "isolate_arm_component": true
+    },
+    "phase2": {
+      "root": "res://assets/PROCESSED/enemies/BOSS-CLAFFERT/phase2_v001/",
+      "idle_source_root": "res://assets/PROCESSED/enemies/BOSS-CLAFFERT/v005/frames/phase_2_idle/",
+      "palette_reference": "res://assets/PROCESSED/enemies/BOSS-CLAFFERT/v005/palette.png",
+      "canvas": [
+        128,
+        128
+      ],
+      "anchor": [
+        64,
+        64
+      ],
+      "visible_diameter": 84,
+      "fps": 8,
+      "render_scale": 1,
+      "core_radius": 6,
+      "idle_offsets": [
+        [
+          -1,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          2,
+          -1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "blade_source": "sources/blade_extend.png",
+      "blade_grid": [
+        4,
+        2
+      ],
+      "blade_diameters": [
+        84,
+        90,
+        96,
+        102,
+        108,
+        114,
+        118,
+        120
+      ],
+      "spin_angles": [
+        0,
+        45,
+        90,
+        135,
+        180,
+        225,
+        270,
+        315
+      ],
+      "spin_fps": 32,
+      "airflow_source": "sources/airflow.png",
+      "airflow_size": [
+        96,
+        24
+      ],
+      "airflow_offset": 56,
+      "airflow_fps": 20
+    }
+  },
+  "base_damage": 10.0,
+  "coin_drop": [
+    0.0,
+    0.0
+  ],
+  "combat": {
+    "attack_chance": 0.3333333333333333,
+    "body_offset": [
+      0,
+      -40
+    ],
+    "body_size": [
+      56,
+      80
+    ],
+    "close_range": 70,
+    "cooldown": 2.0,
+    "defeat_fade_seconds": 1.2,
+    "direction_variants": {
+      "slam": {
+        "left": "mirrored_complete_frames",
+        "right": "source_frames"
+      },
+      "spikes": {
+        "left": "mirrored_complete_frames",
+        "right": "source_frames"
+      }
+    },
+    "far_weights": {
+      "needles": 30,
+      "spores": 30,
+      "gravity": 40
+    },
+    "flash_seconds": 0.12,
+    "gravity_followup_weights": {
+      "slam": 1.0,
+      "spikes": 1.0
+    },
+    "hurt_shake": 2.0,
+    "implemented_phase": 2,
+    "melee_range": 280,
+    "moves": {
+      "gravity": {
+        "active_seconds": 0.45,
+        "damage_multiplier": 0.0,
+        "pull_seconds": 0.45,
+        "pull_speed": 560.0,
+        "recovery_seconds": 0.15,
+        "ring_extent_ratio": 1.15,
+        "safe_radius": 50,
+        "stun_seconds": 0.45,
+        "windup_seconds": 0.35
+      },
+      "needles": {
+        "count": 10.0,
+        "damage_multiplier": 0.5,
+        "damage_type": "physical",
+        "lifetime": 0.0,
+        "radius": 8,
+        "recovery_seconds": 0.55,
+        "spawn_height": 82,
+        "spawn_radius": 0.0,
+        "speed": 530.0,
+        "visual_size": [
+          40,
+          16
+        ],
+        "windup_seconds": 0.5,
+        "homing_seconds": 0.0,
+        "collision_length": 40,
+        "sweep_probe_pixels": 0.25,
+        "phase2_spawn_height": 42,
+        "fan_step_degrees": 15.0,
+        "aimed_needle_index": 5
+      },
+      "repel": {
+        "cooldown": 0,
+        "damage_multiplier": 0.0,
+        "duration": 0.35,
+        "push_seconds": 0.35,
+        "push_speed": 340.0,
+        "radius": 172.0,
+        "stun_seconds": 0.25,
+        "close_accumulation_seconds": 4.0,
+        "outside_range_margin": 48,
+        "visual_only": true
+      },
+      "slam": {
+        "active_seconds": 0.18,
+        "damage_multiplier": 2.0,
+        "damage_type": "physical",
+        "hit_offset": [
+          146,
+          -16
+        ],
+        "hit_size": [
+          236,
+          32
+        ],
+        "hold_frame": 3.0,
+        "hold_seconds": 0.2,
+        "impact_frame": 5.0,
+        "impact_seconds": 0.5,
+        "raise_frames": [
+          0.0,
+          1.0,
+          2.0,
+          3.0
+        ],
+        "raise_seconds": 0.45,
+        "reach_body_lengths": 3.5,
+        "recovery_frames": [
+          6,
+          7,
+          8,
+          9
+        ],
+        "recovery_seconds": 0.55,
+        "swing_animation": "slam_downstroke",
+        "swing_frames": [
+          0.0,
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          5.0
+        ],
+        "swing_seconds": 0.5,
+        "lift_height": 160,
+        "contact_damage": true,
+        "impact_damage": false,
+        "collision_alpha_cutoff": 0.5,
+        "collision_simplify_epsilon": 1.0,
+        "minimum_polygon_area": 2.0
+      },
+      "spikes": {
+        "active_seconds": 0.4,
+        "bury_seconds": 0.4,
+        "count": 8,
+        "damage_multiplier": 2.5,
+        "damage_type": "physical",
+        "delay_seconds": 1.5,
+        "first_distance": 50,
+        "ground_probe_down": 85.0,
+        "ground_probe_up": 45.0,
+        "height": 40,
+        "recovery_seconds": 0.5,
+        "spacing": 32,
+        "width": 32,
+        "spawn_interval": 0.2
+      },
+      "spores": {
+        "count": 7,
+        "damage_multiplier": 1.0,
+        "damage_type": "physical",
+        "lifetime": 8.0,
+        "radius": 9,
+        "recovery_seconds": 0.55,
+        "spawn_radius": 42,
+        "speed": 175.0,
+        "visual_size": [
+          20,
+          20
+        ],
+        "windup_seconds": 0.65,
+        "passes_walls": false,
+        "max_bounces": 2,
+        "terrain_mask": 129,
+        "collision_epsilon": 0.25
+      }
+    },
+    "near_weights": {
+      "needles": 20.0,
+      "slam": 40.0,
+      "spikes": 40.0
+    },
+    "paralysis_damage_multiplier": 1.3,
+    "ready_interval": 1.0,
+    "same_layer_tolerance": 45.0,
+    "visual_width": 240.0,
+    "entry_melee_weights": {
+      "slam": 1,
+      "spikes": 1
+    }
+  },
+  "combat_enabled": true,
+  "defense": 0.0,
+  "exp": 0.0,
+  "health_bar": {
+    "overhead": false,
+    "position_requirement": "屏幕左上方居中",
+    "status": "implemented",
+    "type": "boss"
+  },
+  "id": "corrumpt",
+  "name": "奶化病毒催化体-克拉弗特",
+  "phases": [
+    {
+      "base_hp": 600,
+      "id": "bud",
+      "idle": "phase_1_idle",
+      "name": "腐朽花苞",
+      "poise": 300
+    },
+    {
+      "base_hp": 1000,
+      "id": "bloom",
+      "idle": "phase_2_idle",
+      "name": "深渊之花",
+      "poise": 450
+    }
+  ],
+  "poise": 300,
+  "provisional_parameters": [
+    "所有有伤害招式暂按物理类型，未改变已确认倍率和时序。",
+    "抗性单位为百分数，0表示不减伤，100表示该类免疫。",
+    "攻击距离、层高容差、速度、碰撞尺寸、非指定起手/收招、演练场与界面布局为调试值。",
+    "防御暂为0；经验与奶币未定，演练场暂不发放奖励。"
+  ],
+  "rank": "boss",
+  "region": "forest",
+  "resist": {
+    "magic": 0.0,
+    "physical": 0.0
+  },
+  "skill_selection": {
+    "constraints": [
+      "player_distance",
+      "player_remaining_hp",
+      "previous_move",
+      "boss_phase"
+    ],
+    "mode": "random_from_currently_eligible",
+    "skills": [
+      "slam",
+      "spikes",
+      "needles",
+      "gravity",
+      "spores",
+      "repel",
+      "blade",
+      "impact"
+    ],
+    "status": "two_phases_mode_selection"
+  },
+  "status": "two_phases_implemented",
+  "ui": {
+    "border": "#a18c6b",
+    "fill": "#793c69",
+    "health_height": 9.0,
+    "name_font_size": 12.0,
+    "position": [
+      220.0,
+      12.0
+    ],
+    "size": [
+      360.0,
+      40.0
+    ],
+    "trail": "#b68962",
+    "trail_speed": 0.45,
+    "poise": {
+      "frames": "res://assets/ui/corrumpt_poise_v1/CorrumptPoise_frames.tres",
+      "break_seconds": 0.24,
+      "recover_seconds": 0.24,
+      "shake_seconds": 0.28,
+      "shake_amplitude": 6.0,
+      "shake_frequency": 28.0,
+      "overlay_alpha": 1.0
+    }
+  },
+  "unconfirmed": {
+    "coin_drop": null,
+    "exp": null
+  },
+  "phase2_combat": {
+    "enabled": true,
+    "body_radius": 42,
+    "blade_radius": 60,
+    "boundary_margin": 64,
+    "entry_seconds": 0.8,
+    "entry_lift": 150,
+    "skill_interval": 0.0,
+    "ground_recovery": {
+      "stagger_seconds": 4.0,
+      "poise_damage_multiplier": 2.0,
+      "landing_speed": 240.0,
+      "grounded_bottom": 39.0,
+      "grounded_frame": 0,
+      "ground_mask": 129
+    },
+    "roam_after_third_wait": 4.0,
+    "roam_offset": [
+      320,
+      -180
+    ],
+    "close_distance": 160,
+    "avoid_wall_mask": 1,
+    "roam_weights": {
+      "needles": 50,
+      "spores": 50
+    },
+    "close_sequence": [
+      "blade",
+      "impact",
+      "impact",
+      "impact",
+      "blade"
+    ],
+    "moves": {
+      "blade": {
+        "extend_seconds": 0.5,
+        "spin_start_seconds": 0.25,
+        "initial_offset": [
+          -200,
+          -160
+        ],
+        "approach_speed": 650,
+        "hover_seconds": 1.5,
+        "dash_distance": 420,
+        "dash_speed": 900,
+        "cycles_min": 3,
+        "cycles_max": 5,
+        "spin_stop_seconds": 0.3,
+        "retract_seconds": 0.5,
+        "damage_multiplier": 1.5,
+        "damage_type": "physical",
+        "knockback": 700,
+        "knockback_seconds": 0.35,
+        "stun_seconds": 0.35
+      },
+      "impact": {
+        "align_speed": 900,
+        "charge_distance": 70,
+        "charge_speed": 340,
+        "hold_seconds": 0.2,
+        "dash_distance": 480,
+        "dash_speed": 1150,
+        "recover_side_distance": 180,
+        "recover_speed": 750,
+        "damage_multiplier": 2.0,
+        "damage_type": "physical",
+        "knockback": 700,
+        "knockback_seconds": 0.35,
+        "stun_seconds": 0.35
+      },
+      "spores": {
+        "count": 10,
+        "rounds": 3,
+        "round_interval": 2.0,
+        "damage_multiplier": 0.5,
+        "lifetime": 15.0,
+        "terrain_mask": 449,
+        "terrain_areas": true
+      },
+      "needles": {
+        "rounds": 4,
+        "round_interval": 0.7,
+        "damage_multiplier": 0.2
+      }
+    },
+    "motion_epsilon": 0.01,
+    "min_roam_height_gap": 100,
+    "min_roam_distance": 260,
+    "roam_skill_interval": 3.0,
+    "roam_speed_multiplier": 1.0,
+    "reposition_speed_multiplier": 2.0,
+    "close_skill_speed_multiplier": 0.75,
+    "player_speed_fallback": 160,
+    "route_player_radius": 16,
+    "route_clearance": 16,
+    "route_margin": 12
+  },
+  "sequence": {
+    "root": "res://assets/PROCESSED/enemies/BOSS-CLAFFERT/sequence_v001/",
+    "canvas": [
+      128,
+      128
+    ],
+    "opening_anchor": [
+      64,
+      112
+    ],
+    "flower_center": [
+      64,
+      64
+    ],
+    "letterbox_fraction": 0.12,
+    "flash_color": "#af79ec",
+    "transition": {
+      "opening_seconds": 1.8,
+      "rise_seconds": 1.2,
+      "rise_distance": 128.0,
+      "hover_seconds": 2.0,
+      "flash_in_seconds": 0.25,
+      "flash_hold_seconds": 0.5,
+      "flash_out_seconds": 0.65
+    },
+    "defeat": {
+      "center_seconds": 0.6,
+      "grow_seconds": 5.0,
+      "radius_multiplier": 10.0,
+      "damage_per_frame": 1,
+      "shake_amplitude": 5.0,
+      "shake_frequency": 33.0,
+      "gravity_interval": 0.5,
+      "gravity_seconds": 0.45,
+      "pull_speed": 80.0,
+      "pull_seconds": 0.35,
+      "flash_in_seconds": 0.3,
+      "flash_hold_seconds": 0.6,
+      "flash_out_seconds": 0.8
+    },
+    "wilt_color": "#53443c",
+    "void_source_radius": 34
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "version": "pixel_v1",
+  "alpha_cutoff": 0.25,
+  "surface_snap_distance": 64,
+  "contact_probe": 1,
+  "contact_embed": 1,
+  "palette": [
+    "#152523",
+    "#20352d",
+    "#2d4935",
+    "#3b5838",
+    "#526d3f",
+    "#71834c",
+    "#94a265",
+    "#b2b88b",
+    "#1d2520",
+    "#2d3026",
+    "#41412e",
+    "#595138",
+    "#726346",
+    "#917b57",
+    "#af9870",
+    "#d1ba8e",
+    "#263b3e",
+    "#36545a",
+    "#4b6b6a",
+    "#6e8c7c",
+    "#9ab29a",
+    "#c7d0ac",
+    "#353f3d",
+    "#4e5951",
+    "#687664",
+    "#87947b",
+    "#e2d8b2",
+    "#f1e7c3",
+    "#cba865",
+    "#9a7a42",
+    "#dec27d",
+    "#a7d2bd"
+  ],
+  "props": {
+    "fallen_log": {
+      "source": "res://assets/environments/props/forest_pixel_v1/sources/fallen_log.png",
+      "texture": "res://assets/environments/props/forest_pixel_v1/fallen_log.png",
+      "size": [
+        96,
+        40
+      ],
+      "anchor": "ground"
+    },
+    "broken_waystone": {
+      "source": "res://assets/environments/props/forest_pixel_v1/sources/broken_waystone.png",
+      "texture": "res://assets/environments/props/forest_pixel_v1/broken_waystone.png",
+      "size": [
+        32,
+        48
+      ],
+      "anchor": "ground"
+    },
+    "forest_fungi": {
+      "source": "res://assets/environments/props/forest_pixel_v1/sources/forest_fungi.png",
+      "texture": "res://assets/environments/props/forest_pixel_v1/forest_fungi.png",
+      "size": [
+        48,
+        24
+      ],
+      "anchor": "ground"
+    },
+    "hanging_roots": {
+      "source": "res://assets/environments/props/forest_pixel_v1/sources/hanging_roots.png",
+      "texture": "res://assets/environments/props/forest_pixel_v1/hanging_roots.png",
+      "size": [
+        48,
+        64
+      ],
+      "anchor": "ceiling"
+    },
+    "glow_fungi": {
+      "source": "res://assets/environments/props/forest_pixel_v1/sources/glow_fungi.png",
+      "texture": "res://assets/environments/props/forest_pixel_v1/glow_fungi.png",
+      "size": [
+        48,
+        32
+      ],
+      "anchor": "ground"
+    },
+    "seedpod_vines": {
+      "source": "res://assets/environments/props/forest_pixel_v1/sources/seedpod_vines.png",
+      "texture": "res://assets/environments/props/forest_pixel_v1/seedpod_vines.png",
+      "size": [
+        48,
+        80
+      ],
+      "anchor": "ceiling"
+    },
+    "root_arch": {
+      "source": "res://assets/environments/props/forest_pixel_v1/sources/root_arch.png",
+      "texture": "res://assets/environments/props/forest_pixel_v1/root_arch.png",
+      "size": [
+        96,
+        48
+      ],
+      "anchor": "ground"
+    }
+  }
+}

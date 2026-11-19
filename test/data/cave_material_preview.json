@@ -1,0 +1,274 @@
+{
+  "bounds": [
+    1280,
+    720
+  ],
+  "spawn": [
+    96,
+    620
+  ],
+  "body_half": 17,
+  "camera_zoom": 1,
+  "overview_zoom": 0.5,
+  "ambient": "#a0abc1",
+  "background_tint": "#8b9aad",
+  "interaction_range": 62,
+  "solid_rects": [
+    [
+      0,
+      640,
+      1280,
+      80
+    ],
+    [
+      0,
+      0,
+      1280,
+      64
+    ],
+    [
+      0,
+      0,
+      64,
+      720
+    ],
+    [
+      1216,
+      0,
+      64,
+      720
+    ],
+    [
+      0,
+      448,
+      192,
+      64
+    ],
+    [
+      1088,
+      384,
+      192,
+      256
+    ],
+    [
+      448,
+      64,
+      384,
+      128
+    ]
+  ],
+  "cut_rects": [
+    [
+      512,
+      128,
+      128,
+      64
+    ]
+  ],
+  "platforms": [
+    {
+      "pos": [
+        240,
+        544
+      ],
+      "count": 3
+    },
+    {
+      "pos": [
+        448,
+        448
+      ],
+      "count": 3
+    },
+    {
+      "pos": [
+        704,
+        352
+      ],
+      "count": 3
+    },
+    {
+      "pos": [
+        896,
+        448
+      ],
+      "count": 3
+    },
+    {
+      "pos": [
+        320,
+        304
+      ],
+      "count": 3
+    }
+  ],
+  "props": [
+    {
+      "id": "crystal_01",
+      "pos": [
+        112,
+        640
+      ]
+    },
+    {
+      "id": "crystal_02",
+      "pos": [
+        432,
+        640
+      ]
+    },
+    {
+      "id": "crystal_03",
+      "pos": [
+        1136,
+        384
+      ]
+    },
+    {
+      "id": "crystal_04",
+      "pos": [
+        784,
+        352
+      ]
+    },
+    {
+      "id": "rock_01",
+      "pos": [
+        148,
+        640
+      ]
+    },
+    {
+      "id": "rock_02",
+      "pos": [
+        896,
+        640
+      ]
+    },
+    {
+      "id": "rock_03",
+      "pos": [
+        1192,
+        384
+      ]
+    },
+    {
+      "id": "rock_04",
+      "pos": [
+        1024,
+        640
+      ]
+    },
+    {
+      "id": "ore_01",
+      "pos": [
+        352,
+        304
+      ]
+    },
+    {
+      "id": "ore_02",
+      "pos": [
+        400,
+        304
+      ]
+    },
+    {
+      "id": "ore_03",
+      "pos": [
+        944,
+        448
+      ]
+    },
+    {
+      "id": "ore_04",
+      "pos": [
+        992,
+        448
+      ]
+    },
+    {
+      "id": "bones_01",
+      "pos": [
+        496,
+        640
+      ]
+    },
+    {
+      "id": "bones_02",
+      "pos": [
+        848,
+        640
+      ]
+    },
+    {
+      "id": "bones_03",
+      "pos": [
+        336,
+        544
+      ]
+    },
+    {
+      "id": "bones_04",
+      "pos": [
+        528,
+        448
+      ]
+    }
+  ],
+  "chests": [
+    {
+      "name": "NormalChest",
+      "condition": "none",
+      "pos": [
+        224,
+        640
+      ]
+    },
+    {
+      "name": "EncounterChest",
+      "condition": "encounter",
+      "pos": [
+        288,
+        640
+      ]
+    },
+    {
+      "name": "KeyChest",
+      "condition": "key",
+      "pos": [
+        352,
+        640
+      ]
+    }
+  ],
+  "hazards": [
+    {
+      "pos": [
+        592,
+        640
+      ],
+      "count": 4
+    }
+  ],
+  "terrain_seed": 17,
+  "platform_thickness": 4,
+  "light_preview_frames": 12,
+  "trap_message": "触及石笋：已回到入口（演示不扣生命）",
+  "ui": {
+    "font_size": 9,
+    "padding": [
+      8,
+      8
+    ],
+    "help": "CAVE 素材预览 · A/D 移动 · Space 跳跃 · E 开箱\n1 模拟清场解锁 · 2 模拟使用钥匙解锁 · R 重置 · F5 全景",
+    "color": "#dbe3ee"
+  },
+  "physics_layers": {
+    "world": 1,
+    "player": 2,
+    "one_way": 128,
+    "hazard": 256
+  },
+  "collision_alpha_threshold": 0.9
+}

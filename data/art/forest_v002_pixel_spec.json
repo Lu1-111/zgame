@@ -1,0 +1,267 @@
+{
+  "id": "forest_v002_pixels",
+  "standard": "res://data/art/pixel_standards.json",
+  "palette": [
+    "#152523",
+    "#20352d",
+    "#2d4935",
+    "#3b5838",
+    "#526d3f",
+    "#71834c",
+    "#94a265",
+    "#b2b88b",
+    "#1d2520",
+    "#2d3026",
+    "#41412e",
+    "#595138",
+    "#726346",
+    "#917b57",
+    "#af9870",
+    "#d1ba8e",
+    "#263b3e",
+    "#36545a",
+    "#4b6b6a",
+    "#6e8c7c",
+    "#9ab29a",
+    "#c7d0ac",
+    "#353f3d",
+    "#4e5951",
+    "#687664",
+    "#87947b",
+    "#e2d8b2",
+    "#f1e7c3",
+    "#cba865",
+    "#9a7a42",
+    "#dec27d",
+    "#a7d2bd"
+  ],
+  "max_colors": 32,
+  "sprite_canvases": {
+    "rock_field": [
+      256,
+      256
+    ],
+    "forest_background": [
+      640,
+      360
+    ],
+    "fallen_log": [
+      96,
+      40
+    ],
+    "broken_waystone": [
+      32,
+      48
+    ],
+    "forest_fungi": [
+      48,
+      32
+    ],
+    "hanging_roots": [
+      48,
+      64
+    ],
+    "glow_fungi": [
+      48,
+      32
+    ],
+    "seedpod_vines": [
+      48,
+      64
+    ],
+    "root_arch": [
+      96,
+      64
+    ],
+    "moss_rocks": [
+      48,
+      32
+    ],
+    "wooden_chest": [
+      48,
+      32
+    ],
+    "ruin_switch": [
+      32,
+      48
+    ],
+    "fern_mushrooms": [
+      48,
+      32
+    ],
+    "vine": [
+      32,
+      64
+    ],
+    "solid_top": [
+      64,
+      32
+    ],
+    "branch_platform": [
+      64,
+      12
+    ],
+    "wood_gate": [
+      16,
+      64
+    ],
+    "fire_01": [
+      32,
+      56
+    ],
+    "fire_02": [
+      32,
+      56
+    ],
+    "fire_03": [
+      32,
+      56
+    ],
+    "fire_04": [
+      32,
+      56
+    ],
+    "fire_05": [
+      32,
+      56
+    ],
+    "edge_top_00": [
+      64,
+      64
+    ],
+    "edge_top_01": [
+      64,
+      64
+    ],
+    "edge_top_02": [
+      64,
+      64
+    ],
+    "edge_top_03": [
+      64,
+      64
+    ],
+    "edge_top_04": [
+      64,
+      64
+    ],
+    "edge_top_05": [
+      64,
+      64
+    ],
+    "edge_top_06": [
+      64,
+      64
+    ],
+    "edge_top_07": [
+      64,
+      64
+    ],
+    "edge_bottom_00": [
+      64,
+      64
+    ],
+    "edge_bottom_01": [
+      64,
+      64
+    ],
+    "edge_bottom_02": [
+      64,
+      64
+    ],
+    "edge_bottom_03": [
+      64,
+      64
+    ],
+    "edge_bottom_04": [
+      64,
+      64
+    ],
+    "edge_bottom_05": [
+      64,
+      64
+    ],
+    "edge_bottom_06": [
+      64,
+      64
+    ],
+    "edge_bottom_07": [
+      64,
+      64
+    ],
+    "edge_left_00": [
+      64,
+      64
+    ],
+    "edge_left_01": [
+      64,
+      64
+    ],
+    "edge_left_02": [
+      64,
+      64
+    ],
+    "edge_left_03": [
+      64,
+      64
+    ],
+    "edge_left_04": [
+      64,
+      64
+    ],
+    "edge_left_05": [
+      64,
+      64
+    ],
+    "edge_left_06": [
+      64,
+      64
+    ],
+    "edge_left_07": [
+      64,
+      64
+    ],
+    "edge_right_00": [
+      64,
+      64
+    ],
+    "edge_right_01": [
+      64,
+      64
+    ],
+    "edge_right_02": [
+      64,
+      64
+    ],
+    "edge_right_03": [
+      64,
+      64
+    ],
+    "edge_right_04": [
+      64,
+      64
+    ],
+    "edge_right_05": [
+      64,
+      64
+    ],
+    "edge_right_06": [
+      64,
+      64
+    ],
+    "edge_right_07": [
+      64,
+      64
+    ],
+    "mist_sheet": [
+      256,
+      32
+    ]
+  },
+  "conversion_report": "res://docs/art/audits/forest_pixel_conversion.json",
+  "surface_snap_distance": 96,
+  "contact_probe": 1,
+  "contact_embed": 1,
+  "platform_tile_width": 64,
+  "background_opacity": 0.75
+}

@@ -1,0 +1,930 @@
+{
+  "art_revision": "imagemagick_v002",
+  "images": 70,
+  "max_colors": 16,
+  "alpha": [
+    0,
+    255
+  ],
+  "world_scale": [
+    1,
+    1
+  ],
+  "speed_multiplier": 0.75,
+  "actual_rgba_changed": 70,
+  "actions": 12,
+  "minimum_unique_poses": 4,
+  "errors": 0,
+  "image_info": [
+    {
+      "id": "bone_dragon_blade_idle_00",
+      "canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        23,
+        38,
+        65,
+        80
+      ]
+    },
+    {
+      "id": "bone_dragon_blade_idle_01",
+      "canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        22,
+        36,
+        64,
+        80
+      ]
+    },
+    {
+      "id": "bone_dragon_blade_idle_02",
+      "canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        22,
+        34,
+        64,
+        80
+      ]
+    },
+    {
+      "id": "bone_dragon_blade_idle_03",
+      "canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        22,
+        38,
+        65,
+        80
+      ]
+    },
+    {
+      "id": "bone_dragon_blade_idle_04",
+      "canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        22,
+        39,
+        64,
+        80
+      ]
+    },
+    {
+      "id": "bone_dragon_blade_idle_05",
+      "canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        23,
+        39,
+        65,
+        80
+      ]
+    },
+    {
+      "id": "bone_dragon_blade_move_00",
+      "canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        22,
+        39,
+        64,
+        80
+      ]
+    },
+    {
+      "id": "bone_dragon_blade_move_01",
+      "canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        22,
+        40,
+        64,
+        80
+      ]
+    },
+    {
+      "id": "bone_dragon_blade_move_02",
+      "canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        25,
+        37,
+        66,
+        80
+      ]
+    },
+    {
+      "id": "bone_dragon_blade_move_03",
+      "canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        24,
+        35,
+        65,
+        80
+      ]
+    },
+    {
+      "id": "bone_dragon_blade_move_04",
+      "canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        22,
+        38,
+        64,
+        80
+      ]
+    },
+    {
+      "id": "bone_dragon_blade_move_05",
+      "canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        23,
+        40,
+        65,
+        80
+      ]
+    },
+    {
+      "id": "bone_dragon_blade_slash_down_00",
+      "canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        22,
+        39,
+        65,
+        80
+      ]
+    },
+    {
+      "id": "bone_dragon_blade_slash_down_01",
+      "canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        22,
+        40,
+        64,
+        80
+      ]
+    },
+    {
+      "id": "bone_dragon_blade_slash_down_02",
+      "canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        21,
+        29,
+        60,
+        80
+      ]
+    },
+    {
+      "id": "bone_dragon_blade_slash_down_03",
+      "canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        19,
+        42,
+        65,
+        80
+      ]
+    },
+    {
+      "id": "bone_dragon_blade_slash_down_04",
+      "canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        19,
+        43,
+        61,
+        80
+      ]
+    },
+    {
+      "id": "bone_dragon_blade_slash_down_05",
+      "canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        22,
+        40,
+        65,
+        80
+      ]
+    },
+    {
+      "id": "bone_dragon_blade_slash_up_00",
+      "canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        22,
+        39,
+        65,
+        80
+      ]
+    },
+    {
+      "id": "bone_dragon_blade_slash_up_01",
+      "canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        22,
+        43,
+        63,
+        80
+      ]
+    },
+    {
+      "id": "bone_dragon_blade_slash_up_02",
+      "canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        21,
+        40,
+        61,
+        80
+      ]
+    },
+    {
+      "id": "bone_dragon_blade_slash_up_03",
+      "canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        19,
+        36,
+        59,
+        80
+      ]
+    },
+    {
+      "id": "bone_dragon_blade_slash_up_04",
+      "canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        19,
+        39,
+        60,
+        80
+      ]
+    },
+    {
+      "id": "bone_dragon_blade_slash_up_05",
+      "canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        22,
+        38,
+        65,
+        80
+      ]
+    },
+    {
+      "id": "bone_dragon_blade_thrust_00",
+      "canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        21,
+        40,
+        62,
+        80
+      ]
+    },
+    {
+      "id": "bone_dragon_blade_thrust_01",
+      "canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        19,
+        40,
+        62,
+        80
+      ]
+    },
+    {
+      "id": "bone_dragon_blade_thrust_02",
+      "canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        17,
+        40,
+        66,
+        80
+      ]
+    },
+    {
+      "id": "bone_dragon_blade_thrust_03",
+      "canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        17,
+        40,
+        69,
+        80
+      ]
+    },
+    {
+      "id": "bone_dragon_blade_thrust_04",
+      "canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        19,
+        40,
+        63,
+        80
+      ]
+    },
+    {
+      "id": "bone_dragon_blade_thrust_05",
+      "canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        22,
+        38,
+        65,
+        80
+      ]
+    },
+    {
+      "id": "bone_dragon_spear_idle_00",
+      "canvas": [
+        128,
+        96
+      ],
+      "visible_rect": [
+        19,
+        39,
+        68,
+        80
+      ]
+    },
+    {
+      "id": "bone_dragon_spear_idle_01",
+      "canvas": [
+        128,
+        96
+      ],
+      "visible_rect": [
+        20,
+        36,
+        70,
+        80
+      ]
+    },
+    {
+      "id": "bone_dragon_spear_idle_02",
+      "canvas": [
+        128,
+        96
+      ],
+      "visible_rect": [
+        21,
+        34,
+        70,
+        80
+      ]
+    },
+    {
+      "id": "bone_dragon_spear_idle_03",
+      "canvas": [
+        128,
+        96
+      ],
+      "visible_rect": [
+        20,
+        37,
+        70,
+        80
+      ]
+    },
+    {
+      "id": "bone_dragon_spear_idle_04",
+      "canvas": [
+        128,
+        96
+      ],
+      "visible_rect": [
+        19,
+        41,
+        70,
+        80
+      ]
+    },
+    {
+      "id": "bone_dragon_spear_idle_05",
+      "canvas": [
+        128,
+        96
+      ],
+      "visible_rect": [
+        20,
+        39,
+        70,
+        80
+      ]
+    },
+    {
+      "id": "bone_dragon_spear_move_00",
+      "canvas": [
+        128,
+        96
+      ],
+      "visible_rect": [
+        17,
+        38,
+        70,
+        80
+      ]
+    },
+    {
+      "id": "bone_dragon_spear_move_01",
+      "canvas": [
+        128,
+        96
+      ],
+      "visible_rect": [
+        18,
+        41,
+        71,
+        80
+      ]
+    },
+    {
+      "id": "bone_dragon_spear_move_02",
+      "canvas": [
+        128,
+        96
+      ],
+      "visible_rect": [
+        21,
+        37,
+        71,
+        80
+      ]
+    },
+    {
+      "id": "bone_dragon_spear_move_03",
+      "canvas": [
+        128,
+        96
+      ],
+      "visible_rect": [
+        20,
+        35,
+        71,
+        80
+      ]
+    },
+    {
+      "id": "bone_dragon_spear_move_04",
+      "canvas": [
+        128,
+        96
+      ],
+      "visible_rect": [
+        19,
+        38,
+        72,
+        80
+      ]
+    },
+    {
+      "id": "bone_dragon_spear_move_05",
+      "canvas": [
+        128,
+        96
+      ],
+      "visible_rect": [
+        18,
+        40,
+        71,
+        80
+      ]
+    },
+    {
+      "id": "bone_dragon_spear_thrust_00",
+      "canvas": [
+        128,
+        96
+      ],
+      "visible_rect": [
+        19,
+        38,
+        68,
+        80
+      ]
+    },
+    {
+      "id": "bone_dragon_spear_thrust_01",
+      "canvas": [
+        128,
+        96
+      ],
+      "visible_rect": [
+        15,
+        42,
+        67,
+        80
+      ]
+    },
+    {
+      "id": "bone_dragon_spear_thrust_02",
+      "canvas": [
+        128,
+        96
+      ],
+      "visible_rect": [
+        12,
+        40,
+        71,
+        80
+      ]
+    },
+    {
+      "id": "bone_dragon_spear_thrust_03",
+      "canvas": [
+        128,
+        96
+      ],
+      "visible_rect": [
+        9,
+        42,
+        77,
+        80
+      ]
+    },
+    {
+      "id": "bone_dragon_spear_thrust_04",
+      "canvas": [
+        128,
+        96
+      ],
+      "visible_rect": [
+        15,
+        40,
+        68,
+        80
+      ]
+    },
+    {
+      "id": "bone_dragon_spear_thrust_05",
+      "canvas": [
+        128,
+        96
+      ],
+      "visible_rect": [
+        19,
+        38,
+        69,
+        80
+      ]
+    },
+    {
+      "id": "bone_dragon_bow_idle_00",
+      "canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        23,
+        38,
+        60,
+        80
+      ]
+    },
+    {
+      "id": "bone_dragon_bow_idle_01",
+      "canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        23,
+        37,
+        60,
+        80
+      ]
+    },
+    {
+      "id": "bone_dragon_bow_idle_02",
+      "canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        23,
+        35,
+        60,
+        80
+      ]
+    },
+    {
+      "id": "bone_dragon_bow_idle_03",
+      "canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        23,
+        38,
+        60,
+        80
+      ]
+    },
+    {
+      "id": "bone_dragon_bow_idle_04",
+      "canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        23,
+        39,
+        60,
+        80
+      ]
+    },
+    {
+      "id": "bone_dragon_bow_idle_05",
+      "canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        23,
+        39,
+        60,
+        80
+      ]
+    },
+    {
+      "id": "bone_dragon_bow_move_00",
+      "canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        22,
+        39,
+        60,
+        80
+      ]
+    },
+    {
+      "id": "bone_dragon_bow_move_01",
+      "canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        22,
+        41,
+        61,
+        80
+      ]
+    },
+    {
+      "id": "bone_dragon_bow_move_02",
+      "canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        23,
+        40,
+        61,
+        80
+      ]
+    },
+    {
+      "id": "bone_dragon_bow_move_03",
+      "canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        23,
+        38,
+        61,
+        80
+      ]
+    },
+    {
+      "id": "bone_dragon_bow_move_04",
+      "canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        23,
+        38,
+        62,
+        80
+      ]
+    },
+    {
+      "id": "bone_dragon_bow_move_05",
+      "canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        23,
+        38,
+        60,
+        80
+      ]
+    },
+    {
+      "id": "bone_dragon_bow_shoot_00",
+      "canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        21,
+        39,
+        59,
+        80
+      ]
+    },
+    {
+      "id": "bone_dragon_bow_shoot_01",
+      "canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        20,
+        39,
+        62,
+        80
+      ]
+    },
+    {
+      "id": "bone_dragon_bow_shoot_02",
+      "canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        20,
+        39,
+        63,
+        80
+      ]
+    },
+    {
+      "id": "bone_dragon_bow_shoot_03",
+      "canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        21,
+        39,
+        65,
+        80
+      ]
+    },
+    {
+      "id": "bone_dragon_bow_shoot_04",
+      "canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        20,
+        39,
+        60,
+        80
+      ]
+    },
+    {
+      "id": "bone_dragon_bow_shoot_05",
+      "canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        20,
+        39,
+        59,
+        80
+      ]
+    },
+    {
+      "id": "bone_arrow_fly_00",
+      "canvas": [
+        48,
+        16
+      ],
+      "visible_rect": [
+        8,
+        4,
+        40,
+        12
+      ]
+    },
+    {
+      "id": "bone_arrow_fly_01",
+      "canvas": [
+        48,
+        16
+      ],
+      "visible_rect": [
+        8,
+        4,
+        40,
+        12
+      ]
+    },
+    {
+      "id": "bone_arrow_fly_02",
+      "canvas": [
+        48,
+        16
+      ],
+      "visible_rect": [
+        11,
+        4,
+        40,
+        12
+      ]
+    },
+    {
+      "id": "bone_arrow_fly_03",
+      "canvas": [
+        48,
+        16
+      ],
+      "visible_rect": [
+        8,
+        4,
+        40,
+        12
+      ]
+    }
+  ]
+}

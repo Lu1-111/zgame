@@ -22,6 +22,7 @@ static func capacity() -> int:
 ## 兼容旧存档的紧凑数组，并保持空格位置；材料迁入独立页。
 static func ensure_state() -> void:
 	RPGService.ensure_state()
+	ProgressionService.ensure_state()
 	GameState.bag_upgrades = clampi(GameState.bag_upgrades,0,int(config().inventory.max_upgrades))
 	for index in GameState.inventory.size():
 		var entry: Variant = GameState.inventory[index]
@@ -310,7 +311,15 @@ static func equip_skill(id: StringName, index: int) -> bool:
 
 ## 施法与 HUD 共用天赋修正后的实际奶力消耗。
 static func skill_mana_cost(id: StringName) -> int:
-	return ceili(float(DataDB.get_skill(id).get("mana_cost",0)) * (1.0 + talent_effect("skill_mana_pct") / 100.0))
+	return AccessoryRules.mana_cost(int(DataDB.get_skill(id).get("mana_cost", 0)))
+
+
+## 蓄力技能以最低可释放档判断 HUD 灰显；实际扣费仍在释放时按档位计算。
+static func skill_minimum_mana_cost(id: StringName) -> int:
+	var spec := SkillLibrary.runtime(id)
+	if str(spec.get("behavior","")) == "beam":
+		return AccessoryRules.mana_cost(int(spec.charge.tiers[0].mana_cost))
+	return skill_mana_cost(id)
 
 
 static func _use_from(array: Array, slot: int, actor: Node = null) -> bool:
@@ -326,11 +335,15 @@ static func _use_from(array: Array, slot: int, actor: Node = null) -> bool:
 			var old := int(GameState.get(resource))
 			var maximum := int(GameState.get(resource + "_max"))
 			if old < maximum:
-				GameState.set(resource, mini(maximum, old + int(effect[key])))
+				var amount := int(effect[key])
+				if resource == "hp":
+					amount = roundi(amount * AccessoryRules.healing_multiplier())
+				GameState.set(resource, mini(maximum, old + amount))
 				used = true
 	for resource in ["hp", "sta", "mana"]:
 		var key: String = str(resource) + "_max"
 		if effect.has(key):
+			GameState.permanent_bonuses[key] = int(GameState.permanent_bonuses.get(key,0))+int(effect[key])
 			GameState.set(key, int(GameState.get(key)) + int(effect[key]))
 			GameState.set(resource, int(GameState.get(resource)) + int(effect[key]))
 			used = true
@@ -361,4 +374,4 @@ static func _use_from(array: Array, slot: int, actor: Node = null) -> bool:
 
 ## 物理技能只消耗体力；奶术技能同时消耗少量体力。
 static func skill_stamina_cost(id: StringName) -> int:
-	return int(DataDB.get_skill(id).get("stamina_cost",0))
+	return AccessoryRules.stamina_cost(float(DataDB.get_skill(id).get("stamina_cost", 0)))

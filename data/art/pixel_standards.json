@@ -1,0 +1,99 @@
+{
+  "version": "2026-11-17",
+  "logical_viewport": [
+    640,
+    360
+  ],
+  "world_units_per_texel": 1,
+  "runtime_foreground_scale": [
+    1,
+    1
+  ],
+  "default_sprite_modulus": 8,
+  "default_terrain_modulus": 16,
+  "default_palette_limit": 32,
+  "alpha_values": [
+    0,
+    255
+  ],
+  "texture_filter": "nearest",
+  "mipmaps": false,
+  "screen_enlargement": "integer nearest; overview/debug thumbnails are not density references",
+  "reference": {
+    "player_path": "res://assets/PROCESSED/characters/CHR-01/v001/frames/CHR-01_player_idle_right_v001_f01.png",
+    "player_canvas": [
+      64,
+      64
+    ],
+    "player_visible_height": 42,
+    "boss_canvas": [
+      128,
+      128
+    ],
+    "boss_body_visible_height": 84
+  },
+  "source_policy": "Generated and high-resolution source art stays in RAW; convert once to declared native target before runtime use.",
+  "effects_exception": "Only separately declared lighting/particles/masks may use continuous alpha; do not bake smoothing into hard-edge albedo.",
+  "legacy_policy": "Audit old noncompliant environment art separately; do not silently rescale approved actor masters.",
+  "known_legacy": [
+    {
+      "path": "res://assets/environments/terrain/forest_01/moss_root_cliff_v1.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "world_size": [
+        512,
+        512
+      ],
+      "status": "backed_up_original; active shared copy retained only for camp dependency; not a new-art reference"
+    },
+    {
+      "path": "res://assets/environments/terrain/forest_01/platform_sheet_v1.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "status": "backed_up_original; active shared copy retained only for camp dependency; not a new-art reference"
+    }
+  ],
+  "converter_required": true,
+  "generation_is_runtime_asset": false,
+  "approved_converter_paths": [
+    "tools/assets/pixel_grid.py",
+    "tools/assets/build_cave_beasts_art.py",
+    "tools/assets/recover_pixel_grid.py",
+    "tools/assets/convert_cave_imagemagick.py",
+    "tools/assets/convert_weapon_art.py",
+    "tools/assets/convert_arsenal_art.py"
+  ],
+  "required_asset_data": [
+    "native_canvas",
+    "visible_rect",
+    "anchor",
+    "runtime_scale",
+    "palette_limit",
+    "conversion_tool",
+    "sampling"
+  ],
+  "animation_policy": {
+    "independent_auto_grid_per_frame": false,
+    "body_scale_from_idle_only": true,
+    "anchor_fixed_within_animation": true,
+    "fit_to_weapon_bbox": false
+  },
+  "packages": "res://data/art/pixel_packages.json",
+  "cave_enemy_conversion": {
+    "tool": "tools/assets/convert_cave_imagemagick.py",
+    "recipe": "res://data/art/cave_enemy_imagemagick.json",
+    "filter": "point",
+    "dither": "none",
+    "palette_limit": 16,
+    "resampling_passes": 1,
+    "runtime_scale": [
+      1,
+      1
+    ],
+    "animation_speed_multiplier": 0.75
+  }
+}

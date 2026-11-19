@@ -1,0 +1,41 @@
+{
+  "id": "rifle_03",
+  "weapon_type": "rifle",
+  "source": {
+    "id": "rifle_03",
+    "name": "霰弹枪",
+    "weapon_type": "rifle",
+    "texture": "res://assets/PROCESSED/weapons/rifle_03/v001/model.png",
+    "native_canvas": [
+      48,
+      24
+    ],
+    "grip": [
+      18,
+      12
+    ],
+    "source_angle_degrees": 0,
+    "runtime_scale": [
+      1,
+      1
+    ]
+  },
+  "animations": {
+    "rifle_shot": [
+      "res://assets/PROCESSED/weapons/rifle_03/v001/frames/rifle_shot/00.png",
+      "res://assets/PROCESSED/weapons/rifle_03/v001/frames/rifle_shot/01.png",
+      "res://assets/PROCESSED/weapons/rifle_03/v001/frames/rifle_shot/02.png",
+      "res://assets/PROCESSED/weapons/rifle_03/v001/frames/rifle_shot/03.png",
+      "res://assets/PROCESSED/weapons/rifle_03/v001/frames/rifle_shot/04.png",
+      "res://assets/PROCESSED/weapons/rifle_03/v001/frames/rifle_shot/05.png",
+      "res://assets/PROCESSED/weapons/rifle_03/v001/frames/rifle_shot/06.png",
+      "res://assets/PROCESSED/weapons/rifle_03/v001/frames/rifle_shot/07.png"
+    ],
+    "guard_rifle": [
+      "res://assets/PROCESSED/weapons/rifle_03/v001/frames/guard_rifle/00.png",
+      "res://assets/PROCESSED/weapons/rifle_03/v001/frames/guard_rifle/01.png",
+      "res://assets/PROCESSED/weapons/rifle_03/v001/frames/guard_rifle/02.png"
+    ]
+  },
+  "resampling": "native nearest rotation only; scale=1; no body edits"
+}

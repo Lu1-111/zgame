@@ -23,11 +23,11 @@
 从项目根目录执行，先让 Node 能找到已安装的 sharp 库，再运行：
 
 ```bash
-node tools/process_skill_nb01.mjs
+node tools/assets/process_skill_nb01.mjs
 ```
 
 本机 bundled sharp 路径可由工作区依赖工具获得，运行时通过 `NODE_PATH` 指定。脚本只机械分帧、最近邻缩小、透明画布排布和资源打包，不调用生图，也不修改 RAW 源图。
 
 ## 对应交付
 
-`assets/PROCESSED/skills/SKL-NB01/v001/`；设计与玩法待定项见 `docs/主角六技能设计与素材-SKL-NB01.md`。全部提示词以各文件中保存的全文为准。
+`assets/PROCESSED/skills/SKL-NB01/v001/`；设计与玩法待定项见 `docs/art/主角六技能设计与素材-SKL-NB01.md`。全部提示词以各文件中保存的全文为准。

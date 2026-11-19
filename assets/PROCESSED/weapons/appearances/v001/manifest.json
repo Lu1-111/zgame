@@ -1,0 +1,3808 @@
+{
+  "animations": {
+    "hammer_1": {
+      "module": "hammer",
+      "frames": [
+        {
+          "source": {
+            "path": "res://assets/PROCESSED/characters/CHR-01/v001/CHR-01_atlas_right_v001.png",
+            "region": [
+              384,
+              576,
+              96,
+              96
+            ]
+          },
+          "canvas": [
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            90
+          ],
+          "socket": {
+            "position": [
+              41.0,
+              69.0
+            ],
+            "angle_degrees": -151.05154821950865
+          },
+          "mask": "res://assets/PROCESSED/weapons/appearances/v001/hammer_1/hammer_1_00_mask.png",
+          "body": "res://assets/PROCESSED/weapons/appearances/v001/hammer_1/hammer_1_00_body.png",
+          "foreground": "res://assets/PROCESSED/weapons/appearances/v001/hammer_1/hammer_1_00_fingers.png",
+          "skins": {
+            "original": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/hammer_1/hammer_1_00_original_weapon.png"
+            },
+            "bronze": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/hammer_1/hammer_1_00_bronze_weapon.png"
+            },
+            "frost": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/hammer_1/hammer_1_00_frost_weapon.png"
+            },
+            "hammer_02": {
+              "weapon": "res://assets/PROCESSED/weapons/hammer_02/v001/frames/hammer_1/00.png"
+            },
+            "hammer_03": {
+              "weapon": "res://assets/PROCESSED/weapons/hammer_03/v001/frames/hammer_1/00.png"
+            },
+            "hammer_04": {
+              "weapon": "res://assets/PROCESSED/weapons/hammer_04/v001/frames/hammer_1/00.png"
+            },
+            "hammer_05": {
+              "weapon": "res://assets/PROCESSED/weapons/hammer_05/v001/frames/hammer_1/00.png"
+            }
+          },
+          "changed_pixels": 335
+        },
+        {
+          "source": {
+            "path": "res://assets/PROCESSED/characters/CHR-01/v001/CHR-01_atlas_right_v001.png",
+            "region": [
+              480,
+              576,
+              96,
+              96
+            ]
+          },
+          "canvas": [
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            90
+          ],
+          "socket": {
+            "position": [
+              59.0,
+              72.0
+            ],
+            "angle_degrees": 4.075944973936911
+          },
+          "mask": "res://assets/PROCESSED/weapons/appearances/v001/hammer_1/hammer_1_01_mask.png",
+          "body": "res://assets/PROCESSED/weapons/appearances/v001/hammer_1/hammer_1_01_body.png",
+          "foreground": "res://assets/PROCESSED/weapons/appearances/v001/hammer_1/hammer_1_01_fingers.png",
+          "skins": {
+            "original": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/hammer_1/hammer_1_01_original_weapon.png"
+            },
+            "bronze": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/hammer_1/hammer_1_01_bronze_weapon.png"
+            },
+            "frost": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/hammer_1/hammer_1_01_frost_weapon.png"
+            },
+            "hammer_02": {
+              "weapon": "res://assets/PROCESSED/weapons/hammer_02/v001/frames/hammer_1/01.png"
+            },
+            "hammer_03": {
+              "weapon": "res://assets/PROCESSED/weapons/hammer_03/v001/frames/hammer_1/01.png"
+            },
+            "hammer_04": {
+              "weapon": "res://assets/PROCESSED/weapons/hammer_04/v001/frames/hammer_1/01.png"
+            },
+            "hammer_05": {
+              "weapon": "res://assets/PROCESSED/weapons/hammer_05/v001/frames/hammer_1/01.png"
+            }
+          },
+          "changed_pixels": 292
+        },
+        {
+          "source": {
+            "path": "res://assets/PROCESSED/characters/CHR-01/v001/CHR-01_atlas_right_v001.png",
+            "region": [
+              576,
+              576,
+              96,
+              96
+            ]
+          },
+          "canvas": [
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            90
+          ],
+          "socket": {
+            "position": [
+              60.0,
+              76.0
+            ],
+            "angle_degrees": 21.794656890093943
+          },
+          "mask": "res://assets/PROCESSED/weapons/appearances/v001/hammer_1/hammer_1_02_mask.png",
+          "body": "res://assets/PROCESSED/weapons/appearances/v001/hammer_1/hammer_1_02_body.png",
+          "foreground": "res://assets/PROCESSED/weapons/appearances/v001/hammer_1/hammer_1_02_fingers.png",
+          "skins": {
+            "original": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/hammer_1/hammer_1_02_original_weapon.png"
+            },
+            "bronze": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/hammer_1/hammer_1_02_bronze_weapon.png"
+            },
+            "frost": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/hammer_1/hammer_1_02_frost_weapon.png"
+            },
+            "hammer_02": {
+              "weapon": "res://assets/PROCESSED/weapons/hammer_02/v001/frames/hammer_1/02.png"
+            },
+            "hammer_03": {
+              "weapon": "res://assets/PROCESSED/weapons/hammer_03/v001/frames/hammer_1/02.png"
+            },
+            "hammer_04": {
+              "weapon": "res://assets/PROCESSED/weapons/hammer_04/v001/frames/hammer_1/02.png"
+            },
+            "hammer_05": {
+              "weapon": "res://assets/PROCESSED/weapons/hammer_05/v001/frames/hammer_1/02.png"
+            }
+          },
+          "changed_pixels": 260
+        },
+        {
+          "source": {
+            "path": "res://assets/PROCESSED/characters/CHR-01/v001/CHR-01_atlas_right_v001.png",
+            "region": [
+              672,
+              576,
+              96,
+              96
+            ]
+          },
+          "canvas": [
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            90
+          ],
+          "socket": {
+            "position": [
+              55.0,
+              75.0
+            ],
+            "angle_degrees": 20.02977893050468
+          },
+          "mask": "res://assets/PROCESSED/weapons/appearances/v001/hammer_1/hammer_1_03_mask.png",
+          "body": "res://assets/PROCESSED/weapons/appearances/v001/hammer_1/hammer_1_03_body.png",
+          "foreground": "res://assets/PROCESSED/weapons/appearances/v001/hammer_1/hammer_1_03_fingers.png",
+          "skins": {
+            "original": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/hammer_1/hammer_1_03_original_weapon.png"
+            },
+            "bronze": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/hammer_1/hammer_1_03_bronze_weapon.png"
+            },
+            "frost": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/hammer_1/hammer_1_03_frost_weapon.png"
+            },
+            "hammer_02": {
+              "weapon": "res://assets/PROCESSED/weapons/hammer_02/v001/frames/hammer_1/03.png"
+            },
+            "hammer_03": {
+              "weapon": "res://assets/PROCESSED/weapons/hammer_03/v001/frames/hammer_1/03.png"
+            },
+            "hammer_04": {
+              "weapon": "res://assets/PROCESSED/weapons/hammer_04/v001/frames/hammer_1/03.png"
+            },
+            "hammer_05": {
+              "weapon": "res://assets/PROCESSED/weapons/hammer_05/v001/frames/hammer_1/03.png"
+            }
+          },
+          "changed_pixels": 244
+        }
+      ]
+    },
+    "hammer_2": {
+      "module": "hammer",
+      "frames": [
+        {
+          "source": {
+            "path": "res://assets/PROCESSED/characters/CHR-01/v001/CHR-01_atlas_right_v001.png",
+            "region": [
+              0,
+              672,
+              96,
+              96
+            ]
+          },
+          "canvas": [
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            90
+          ],
+          "socket": {
+            "position": [
+              39.0,
+              75.0
+            ],
+            "angle_degrees": 173.85858325051203
+          },
+          "mask": "res://assets/PROCESSED/weapons/appearances/v001/hammer_2/hammer_2_00_mask.png",
+          "body": "res://assets/PROCESSED/weapons/appearances/v001/hammer_2/hammer_2_00_body.png",
+          "foreground": "res://assets/PROCESSED/weapons/appearances/v001/hammer_2/hammer_2_00_fingers.png",
+          "skins": {
+            "original": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/hammer_2/hammer_2_00_original_weapon.png"
+            },
+            "bronze": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/hammer_2/hammer_2_00_bronze_weapon.png"
+            },
+            "frost": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/hammer_2/hammer_2_00_frost_weapon.png"
+            },
+            "hammer_02": {
+              "weapon": "res://assets/PROCESSED/weapons/hammer_02/v001/frames/hammer_2/00.png"
+            },
+            "hammer_03": {
+              "weapon": "res://assets/PROCESSED/weapons/hammer_03/v001/frames/hammer_2/00.png"
+            },
+            "hammer_04": {
+              "weapon": "res://assets/PROCESSED/weapons/hammer_04/v001/frames/hammer_2/00.png"
+            },
+            "hammer_05": {
+              "weapon": "res://assets/PROCESSED/weapons/hammer_05/v001/frames/hammer_2/00.png"
+            }
+          },
+          "changed_pixels": 310
+        },
+        {
+          "source": {
+            "path": "res://assets/PROCESSED/characters/CHR-01/v001/CHR-01_atlas_right_v001.png",
+            "region": [
+              96,
+              672,
+              96,
+              96
+            ]
+          },
+          "canvas": [
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            90
+          ],
+          "socket": {
+            "position": [
+              58.0,
+              64.0
+            ],
+            "angle_degrees": -42.45402659690323
+          },
+          "mask": "res://assets/PROCESSED/weapons/appearances/v001/hammer_2/hammer_2_01_mask.png",
+          "body": "res://assets/PROCESSED/weapons/appearances/v001/hammer_2/hammer_2_01_body.png",
+          "foreground": "res://assets/PROCESSED/weapons/appearances/v001/hammer_2/hammer_2_01_fingers.png",
+          "skins": {
+            "original": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/hammer_2/hammer_2_01_original_weapon.png"
+            },
+            "bronze": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/hammer_2/hammer_2_01_bronze_weapon.png"
+            },
+            "frost": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/hammer_2/hammer_2_01_frost_weapon.png"
+            },
+            "hammer_02": {
+              "weapon": "res://assets/PROCESSED/weapons/hammer_02/v001/frames/hammer_2/01.png"
+            },
+            "hammer_03": {
+              "weapon": "res://assets/PROCESSED/weapons/hammer_03/v001/frames/hammer_2/01.png"
+            },
+            "hammer_04": {
+              "weapon": "res://assets/PROCESSED/weapons/hammer_04/v001/frames/hammer_2/01.png"
+            },
+            "hammer_05": {
+              "weapon": "res://assets/PROCESSED/weapons/hammer_05/v001/frames/hammer_2/01.png"
+            }
+          },
+          "changed_pixels": 363
+        },
+        {
+          "source": {
+            "path": "res://assets/PROCESSED/characters/CHR-01/v001/CHR-01_atlas_right_v001.png",
+            "region": [
+              192,
+              672,
+              96,
+              96
+            ]
+          },
+          "canvas": [
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            90
+          ],
+          "socket": {
+            "position": [
+              58.0,
+              63.0
+            ],
+            "angle_degrees": -48.921649106163805
+          },
+          "mask": "res://assets/PROCESSED/weapons/appearances/v001/hammer_2/hammer_2_02_mask.png",
+          "body": "res://assets/PROCESSED/weapons/appearances/v001/hammer_2/hammer_2_02_body.png",
+          "foreground": "res://assets/PROCESSED/weapons/appearances/v001/hammer_2/hammer_2_02_fingers.png",
+          "skins": {
+            "original": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/hammer_2/hammer_2_02_original_weapon.png"
+            },
+            "bronze": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/hammer_2/hammer_2_02_bronze_weapon.png"
+            },
+            "frost": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/hammer_2/hammer_2_02_frost_weapon.png"
+            },
+            "hammer_02": {
+              "weapon": "res://assets/PROCESSED/weapons/hammer_02/v001/frames/hammer_2/02.png"
+            },
+            "hammer_03": {
+              "weapon": "res://assets/PROCESSED/weapons/hammer_03/v001/frames/hammer_2/02.png"
+            },
+            "hammer_04": {
+              "weapon": "res://assets/PROCESSED/weapons/hammer_04/v001/frames/hammer_2/02.png"
+            },
+            "hammer_05": {
+              "weapon": "res://assets/PROCESSED/weapons/hammer_05/v001/frames/hammer_2/02.png"
+            }
+          },
+          "changed_pixels": 283
+        },
+        {
+          "source": {
+            "path": "res://assets/PROCESSED/characters/CHR-01/v001/CHR-01_atlas_right_v001.png",
+            "region": [
+              288,
+              672,
+              96,
+              96
+            ]
+          },
+          "canvas": [
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            90
+          ],
+          "socket": {
+            "position": [
+              55.0,
+              75.0
+            ],
+            "angle_degrees": 12.02338718428742
+          },
+          "mask": "res://assets/PROCESSED/weapons/appearances/v001/hammer_2/hammer_2_03_mask.png",
+          "body": "res://assets/PROCESSED/weapons/appearances/v001/hammer_2/hammer_2_03_body.png",
+          "foreground": "res://assets/PROCESSED/weapons/appearances/v001/hammer_2/hammer_2_03_fingers.png",
+          "skins": {
+            "original": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/hammer_2/hammer_2_03_original_weapon.png"
+            },
+            "bronze": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/hammer_2/hammer_2_03_bronze_weapon.png"
+            },
+            "frost": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/hammer_2/hammer_2_03_frost_weapon.png"
+            },
+            "hammer_02": {
+              "weapon": "res://assets/PROCESSED/weapons/hammer_02/v001/frames/hammer_2/03.png"
+            },
+            "hammer_03": {
+              "weapon": "res://assets/PROCESSED/weapons/hammer_03/v001/frames/hammer_2/03.png"
+            },
+            "hammer_04": {
+              "weapon": "res://assets/PROCESSED/weapons/hammer_04/v001/frames/hammer_2/03.png"
+            },
+            "hammer_05": {
+              "weapon": "res://assets/PROCESSED/weapons/hammer_05/v001/frames/hammer_2/03.png"
+            }
+          },
+          "changed_pixels": 280
+        }
+      ]
+    },
+    "hammer_3": {
+      "module": "hammer",
+      "frames": [
+        {
+          "source": {
+            "path": "res://assets/PROCESSED/characters/CHR-01/v001/CHR-01_atlas_right_v001.png",
+            "region": [
+              384,
+              672,
+              96,
+              96
+            ]
+          },
+          "canvas": [
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            90
+          ],
+          "socket": {
+            "position": [
+              45.0,
+              54.0
+            ],
+            "angle_degrees": -133.61021181748484
+          },
+          "mask": "res://assets/PROCESSED/weapons/appearances/v001/hammer_3/hammer_3_00_mask.png",
+          "body": "res://assets/PROCESSED/weapons/appearances/v001/hammer_3/hammer_3_00_body.png",
+          "foreground": "res://assets/PROCESSED/weapons/appearances/v001/hammer_3/hammer_3_00_fingers.png",
+          "skins": {
+            "original": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/hammer_3/hammer_3_00_original_weapon.png"
+            },
+            "bronze": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/hammer_3/hammer_3_00_bronze_weapon.png"
+            },
+            "frost": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/hammer_3/hammer_3_00_frost_weapon.png"
+            },
+            "hammer_02": {
+              "weapon": "res://assets/PROCESSED/weapons/hammer_02/v001/frames/hammer_3/00.png"
+            },
+            "hammer_03": {
+              "weapon": "res://assets/PROCESSED/weapons/hammer_03/v001/frames/hammer_3/00.png"
+            },
+            "hammer_04": {
+              "weapon": "res://assets/PROCESSED/weapons/hammer_04/v001/frames/hammer_3/00.png"
+            },
+            "hammer_05": {
+              "weapon": "res://assets/PROCESSED/weapons/hammer_05/v001/frames/hammer_3/00.png"
+            }
+          },
+          "changed_pixels": 267
+        },
+        {
+          "source": {
+            "path": "res://assets/PROCESSED/characters/CHR-01/v001/CHR-01_atlas_right_v001.png",
+            "region": [
+              480,
+              672,
+              96,
+              96
+            ]
+          },
+          "canvas": [
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            90
+          ],
+          "socket": {
+            "position": [
+              59.0,
+              78.0
+            ],
+            "angle_degrees": 23.393797627692766
+          },
+          "mask": "res://assets/PROCESSED/weapons/appearances/v001/hammer_3/hammer_3_01_mask.png",
+          "body": "res://assets/PROCESSED/weapons/appearances/v001/hammer_3/hammer_3_01_body.png",
+          "foreground": "res://assets/PROCESSED/weapons/appearances/v001/hammer_3/hammer_3_01_fingers.png",
+          "skins": {
+            "original": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/hammer_3/hammer_3_01_original_weapon.png"
+            },
+            "bronze": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/hammer_3/hammer_3_01_bronze_weapon.png"
+            },
+            "frost": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/hammer_3/hammer_3_01_frost_weapon.png"
+            },
+            "hammer_02": {
+              "weapon": "res://assets/PROCESSED/weapons/hammer_02/v001/frames/hammer_3/01.png"
+            },
+            "hammer_03": {
+              "weapon": "res://assets/PROCESSED/weapons/hammer_03/v001/frames/hammer_3/01.png"
+            },
+            "hammer_04": {
+              "weapon": "res://assets/PROCESSED/weapons/hammer_04/v001/frames/hammer_3/01.png"
+            },
+            "hammer_05": {
+              "weapon": "res://assets/PROCESSED/weapons/hammer_05/v001/frames/hammer_3/01.png"
+            }
+          },
+          "changed_pixels": 319
+        },
+        {
+          "source": {
+            "path": "res://assets/PROCESSED/characters/CHR-01/v001/CHR-01_atlas_right_v001.png",
+            "region": [
+              576,
+              672,
+              96,
+              96
+            ]
+          },
+          "canvas": [
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            90
+          ],
+          "socket": {
+            "position": [
+              59.0,
+              78.0
+            ],
+            "angle_degrees": 21.12730595056808
+          },
+          "mask": "res://assets/PROCESSED/weapons/appearances/v001/hammer_3/hammer_3_02_mask.png",
+          "body": "res://assets/PROCESSED/weapons/appearances/v001/hammer_3/hammer_3_02_body.png",
+          "foreground": "res://assets/PROCESSED/weapons/appearances/v001/hammer_3/hammer_3_02_fingers.png",
+          "skins": {
+            "original": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/hammer_3/hammer_3_02_original_weapon.png"
+            },
+            "bronze": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/hammer_3/hammer_3_02_bronze_weapon.png"
+            },
+            "frost": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/hammer_3/hammer_3_02_frost_weapon.png"
+            },
+            "hammer_02": {
+              "weapon": "res://assets/PROCESSED/weapons/hammer_02/v001/frames/hammer_3/02.png"
+            },
+            "hammer_03": {
+              "weapon": "res://assets/PROCESSED/weapons/hammer_03/v001/frames/hammer_3/02.png"
+            },
+            "hammer_04": {
+              "weapon": "res://assets/PROCESSED/weapons/hammer_04/v001/frames/hammer_3/02.png"
+            },
+            "hammer_05": {
+              "weapon": "res://assets/PROCESSED/weapons/hammer_05/v001/frames/hammer_3/02.png"
+            }
+          },
+          "changed_pixels": 331
+        },
+        {
+          "source": {
+            "path": "res://assets/PROCESSED/characters/CHR-01/v001/CHR-01_atlas_right_v001.png",
+            "region": [
+              672,
+              672,
+              96,
+              96
+            ]
+          },
+          "canvas": [
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            90
+          ],
+          "socket": {
+            "position": [
+              55.0,
+              75.0
+            ],
+            "angle_degrees": 13.007335055750463
+          },
+          "mask": "res://assets/PROCESSED/weapons/appearances/v001/hammer_3/hammer_3_03_mask.png",
+          "body": "res://assets/PROCESSED/weapons/appearances/v001/hammer_3/hammer_3_03_body.png",
+          "foreground": "res://assets/PROCESSED/weapons/appearances/v001/hammer_3/hammer_3_03_fingers.png",
+          "skins": {
+            "original": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/hammer_3/hammer_3_03_original_weapon.png"
+            },
+            "bronze": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/hammer_3/hammer_3_03_bronze_weapon.png"
+            },
+            "frost": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/hammer_3/hammer_3_03_frost_weapon.png"
+            },
+            "hammer_02": {
+              "weapon": "res://assets/PROCESSED/weapons/hammer_02/v001/frames/hammer_3/03.png"
+            },
+            "hammer_03": {
+              "weapon": "res://assets/PROCESSED/weapons/hammer_03/v001/frames/hammer_3/03.png"
+            },
+            "hammer_04": {
+              "weapon": "res://assets/PROCESSED/weapons/hammer_04/v001/frames/hammer_3/03.png"
+            },
+            "hammer_05": {
+              "weapon": "res://assets/PROCESSED/weapons/hammer_05/v001/frames/hammer_3/03.png"
+            }
+          },
+          "changed_pixels": 285
+        }
+      ]
+    },
+    "staff_sweep": {
+      "module": "staff",
+      "frames": [
+        {
+          "source": {
+            "path": "res://assets/PROCESSED/characters/CHR-01/v001/CHR-01_atlas_right_v001.png",
+            "region": [
+              0,
+              864,
+              96,
+              96
+            ]
+          },
+          "canvas": [
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            90
+          ],
+          "socket": {
+            "position": [
+              40.0,
+              63.0
+            ],
+            "angle_degrees": -125
+          },
+          "mask": "res://assets/PROCESSED/weapons/appearances/v001/staff_sweep/staff_sweep_00_mask.png",
+          "body": "res://assets/PROCESSED/weapons/appearances/v001/staff_sweep/staff_sweep_00_body.png",
+          "foreground": "res://assets/PROCESSED/weapons/appearances/v001/staff_sweep/staff_sweep_00_fingers.png",
+          "skins": {
+            "original": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/staff_sweep/staff_sweep_00_original_weapon.png"
+            },
+            "bronze": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/staff_sweep/staff_sweep_00_bronze_weapon.png"
+            },
+            "frost": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/staff_sweep/staff_sweep_00_frost_weapon.png"
+            }
+          },
+          "changed_pixels": 187
+        },
+        {
+          "source": {
+            "path": "res://assets/PROCESSED/characters/CHR-01/v001/CHR-01_atlas_right_v001.png",
+            "region": [
+              96,
+              864,
+              96,
+              96
+            ]
+          },
+          "canvas": [
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            90
+          ],
+          "socket": {
+            "position": [
+              51.0,
+              70.0
+            ],
+            "angle_degrees": 0
+          },
+          "mask": "res://assets/PROCESSED/weapons/appearances/v001/staff_sweep/staff_sweep_01_mask.png",
+          "body": "res://assets/PROCESSED/weapons/appearances/v001/staff_sweep/staff_sweep_01_body.png",
+          "foreground": "res://assets/PROCESSED/weapons/appearances/v001/staff_sweep/staff_sweep_01_fingers.png",
+          "skins": {
+            "original": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/staff_sweep/staff_sweep_01_original_weapon.png"
+            },
+            "bronze": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/staff_sweep/staff_sweep_01_bronze_weapon.png"
+            },
+            "frost": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/staff_sweep/staff_sweep_01_frost_weapon.png"
+            }
+          },
+          "changed_pixels": 350
+        },
+        {
+          "source": {
+            "path": "res://assets/PROCESSED/characters/CHR-01/v001/CHR-01_atlas_right_v001.png",
+            "region": [
+              192,
+              864,
+              96,
+              96
+            ]
+          },
+          "canvas": [
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            90
+          ],
+          "socket": {
+            "position": [
+              56.0,
+              76.0
+            ],
+            "angle_degrees": 40
+          },
+          "mask": "res://assets/PROCESSED/weapons/appearances/v001/staff_sweep/staff_sweep_02_mask.png",
+          "body": "res://assets/PROCESSED/weapons/appearances/v001/staff_sweep/staff_sweep_02_body.png",
+          "foreground": "res://assets/PROCESSED/weapons/appearances/v001/staff_sweep/staff_sweep_02_fingers.png",
+          "skins": {
+            "original": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/staff_sweep/staff_sweep_02_original_weapon.png"
+            },
+            "bronze": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/staff_sweep/staff_sweep_02_bronze_weapon.png"
+            },
+            "frost": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/staff_sweep/staff_sweep_02_frost_weapon.png"
+            }
+          },
+          "changed_pixels": 345
+        },
+        {
+          "source": {
+            "path": "res://assets/PROCESSED/characters/CHR-01/v001/CHR-01_atlas_right_v001.png",
+            "region": [
+              288,
+              864,
+              96,
+              96
+            ]
+          },
+          "canvas": [
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            90
+          ],
+          "socket": {
+            "position": [
+              57.0,
+              70.0
+            ],
+            "angle_degrees": -35
+          },
+          "mask": "res://assets/PROCESSED/weapons/appearances/v001/staff_sweep/staff_sweep_03_mask.png",
+          "body": "res://assets/PROCESSED/weapons/appearances/v001/staff_sweep/staff_sweep_03_body.png",
+          "foreground": "res://assets/PROCESSED/weapons/appearances/v001/staff_sweep/staff_sweep_03_fingers.png",
+          "skins": {
+            "original": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/staff_sweep/staff_sweep_03_original_weapon.png"
+            },
+            "bronze": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/staff_sweep/staff_sweep_03_bronze_weapon.png"
+            },
+            "frost": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/staff_sweep/staff_sweep_03_frost_weapon.png"
+            }
+          },
+          "changed_pixels": 221
+        }
+      ]
+    },
+    "SKL-N01_stance": {
+      "module": "sword",
+      "frames": [
+        {
+          "source": {
+            "path": "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N01_stance_right_v001_f01.png"
+          },
+          "canvas": [
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            84
+          ],
+          "socket": {
+            "position": [
+              56.0,
+              68.0
+            ],
+            "angle_degrees": 35
+          },
+          "mask": "res://assets/PROCESSED/weapons/appearances/v001/SKL-N01_stance/SKL-N01_stance_00_mask.png",
+          "body": "res://assets/PROCESSED/weapons/appearances/v001/SKL-N01_stance/SKL-N01_stance_00_body.png",
+          "foreground": "res://assets/PROCESSED/weapons/appearances/v001/SKL-N01_stance/SKL-N01_stance_00_fingers.png",
+          "skins": {
+            "original": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/SKL-N01_stance/SKL-N01_stance_00_original_weapon.png"
+            },
+            "bronze": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/SKL-N01_stance/SKL-N01_stance_00_bronze_weapon.png"
+            },
+            "frost": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/SKL-N01_stance/SKL-N01_stance_00_frost_weapon.png"
+            },
+            "sword_02": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_02/v001/frames/SKL-N01_stance/00.png"
+            },
+            "sword_03": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_03/v001/frames/SKL-N01_stance/00.png"
+            },
+            "sword_04": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_04/v001/frames/SKL-N01_stance/00.png"
+            },
+            "sword_05": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_05/v001/frames/SKL-N01_stance/00.png"
+            },
+            "sword_06": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_06/v001/frames/SKL-N01_stance/00.png"
+            }
+          },
+          "changed_pixels": 45
+        },
+        {
+          "source": {
+            "path": "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N01_stance_right_v001_f02.png"
+          },
+          "canvas": [
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            84
+          ],
+          "socket": {
+            "position": [
+              55.0,
+              68.0
+            ],
+            "angle_degrees": 35
+          },
+          "mask": "res://assets/PROCESSED/weapons/appearances/v001/SKL-N01_stance/SKL-N01_stance_01_mask.png",
+          "body": "res://assets/PROCESSED/weapons/appearances/v001/SKL-N01_stance/SKL-N01_stance_01_body.png",
+          "foreground": "res://assets/PROCESSED/weapons/appearances/v001/SKL-N01_stance/SKL-N01_stance_01_fingers.png",
+          "skins": {
+            "original": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/SKL-N01_stance/SKL-N01_stance_01_original_weapon.png"
+            },
+            "bronze": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/SKL-N01_stance/SKL-N01_stance_01_bronze_weapon.png"
+            },
+            "frost": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/SKL-N01_stance/SKL-N01_stance_01_frost_weapon.png"
+            },
+            "sword_02": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_02/v001/frames/SKL-N01_stance/01.png"
+            },
+            "sword_03": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_03/v001/frames/SKL-N01_stance/01.png"
+            },
+            "sword_04": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_04/v001/frames/SKL-N01_stance/01.png"
+            },
+            "sword_05": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_05/v001/frames/SKL-N01_stance/01.png"
+            },
+            "sword_06": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_06/v001/frames/SKL-N01_stance/01.png"
+            }
+          },
+          "changed_pixels": 32
+        },
+        {
+          "source": {
+            "path": "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N01_stance_right_v001_f03.png"
+          },
+          "canvas": [
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            84
+          ],
+          "socket": {
+            "position": [
+              55.0,
+              72.0
+            ],
+            "angle_degrees": 30
+          },
+          "mask": "res://assets/PROCESSED/weapons/appearances/v001/SKL-N01_stance/SKL-N01_stance_02_mask.png",
+          "body": "res://assets/PROCESSED/weapons/appearances/v001/SKL-N01_stance/SKL-N01_stance_02_body.png",
+          "foreground": "res://assets/PROCESSED/weapons/appearances/v001/SKL-N01_stance/SKL-N01_stance_02_fingers.png",
+          "skins": {
+            "original": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/SKL-N01_stance/SKL-N01_stance_02_original_weapon.png"
+            },
+            "bronze": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/SKL-N01_stance/SKL-N01_stance_02_bronze_weapon.png"
+            },
+            "frost": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/SKL-N01_stance/SKL-N01_stance_02_frost_weapon.png"
+            },
+            "sword_02": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_02/v001/frames/SKL-N01_stance/02.png"
+            },
+            "sword_03": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_03/v001/frames/SKL-N01_stance/02.png"
+            },
+            "sword_04": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_04/v001/frames/SKL-N01_stance/02.png"
+            },
+            "sword_05": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_05/v001/frames/SKL-N01_stance/02.png"
+            },
+            "sword_06": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_06/v001/frames/SKL-N01_stance/02.png"
+            }
+          },
+          "changed_pixels": 35
+        },
+        {
+          "source": {
+            "path": "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N01_stance_right_v001_f04.png"
+          },
+          "canvas": [
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            84
+          ],
+          "socket": {
+            "position": [
+              54.0,
+              72.0
+            ],
+            "angle_degrees": 30
+          },
+          "mask": "res://assets/PROCESSED/weapons/appearances/v001/SKL-N01_stance/SKL-N01_stance_03_mask.png",
+          "body": "res://assets/PROCESSED/weapons/appearances/v001/SKL-N01_stance/SKL-N01_stance_03_body.png",
+          "foreground": "res://assets/PROCESSED/weapons/appearances/v001/SKL-N01_stance/SKL-N01_stance_03_fingers.png",
+          "skins": {
+            "original": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/SKL-N01_stance/SKL-N01_stance_03_original_weapon.png"
+            },
+            "bronze": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/SKL-N01_stance/SKL-N01_stance_03_bronze_weapon.png"
+            },
+            "frost": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/SKL-N01_stance/SKL-N01_stance_03_frost_weapon.png"
+            },
+            "sword_02": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_02/v001/frames/SKL-N01_stance/03.png"
+            },
+            "sword_03": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_03/v001/frames/SKL-N01_stance/03.png"
+            },
+            "sword_04": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_04/v001/frames/SKL-N01_stance/03.png"
+            },
+            "sword_05": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_05/v001/frames/SKL-N01_stance/03.png"
+            },
+            "sword_06": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_06/v001/frames/SKL-N01_stance/03.png"
+            }
+          },
+          "changed_pixels": 36
+        }
+      ]
+    },
+    "SKL-N01_counter_slash": {
+      "module": "sword",
+      "frames": [
+        {
+          "source": {
+            "path": "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N01_counter_slash_right_v001_f01.png"
+          },
+          "canvas": [
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            84
+          ],
+          "socket": {
+            "position": [
+              53.0,
+              70.0
+            ],
+            "angle_degrees": -170
+          },
+          "mask": "res://assets/PROCESSED/weapons/appearances/v001/SKL-N01_counter_slash/SKL-N01_counter_slash_00_mask.png",
+          "body": "res://assets/PROCESSED/weapons/appearances/v001/SKL-N01_counter_slash/SKL-N01_counter_slash_00_body.png",
+          "foreground": "res://assets/PROCESSED/weapons/appearances/v001/SKL-N01_counter_slash/SKL-N01_counter_slash_00_fingers.png",
+          "skins": {
+            "original": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/SKL-N01_counter_slash/SKL-N01_counter_slash_00_original_weapon.png"
+            },
+            "bronze": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/SKL-N01_counter_slash/SKL-N01_counter_slash_00_bronze_weapon.png"
+            },
+            "frost": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/SKL-N01_counter_slash/SKL-N01_counter_slash_00_frost_weapon.png"
+            },
+            "sword_02": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_02/v001/frames/SKL-N01_counter_slash/00.png"
+            },
+            "sword_03": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_03/v001/frames/SKL-N01_counter_slash/00.png"
+            },
+            "sword_04": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_04/v001/frames/SKL-N01_counter_slash/00.png"
+            },
+            "sword_05": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_05/v001/frames/SKL-N01_counter_slash/00.png"
+            },
+            "sword_06": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_06/v001/frames/SKL-N01_counter_slash/00.png"
+            }
+          },
+          "changed_pixels": 26
+        },
+        {
+          "source": {
+            "path": "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N01_counter_slash_right_v001_f02.png"
+          },
+          "canvas": [
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            84
+          ],
+          "socket": {
+            "position": [
+              54.0,
+              71.0
+            ],
+            "angle_degrees": 0
+          },
+          "mask": "res://assets/PROCESSED/weapons/appearances/v001/SKL-N01_counter_slash/SKL-N01_counter_slash_01_mask.png",
+          "body": "res://assets/PROCESSED/weapons/appearances/v001/SKL-N01_counter_slash/SKL-N01_counter_slash_01_body.png",
+          "foreground": "res://assets/PROCESSED/weapons/appearances/v001/SKL-N01_counter_slash/SKL-N01_counter_slash_01_fingers.png",
+          "skins": {
+            "original": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/SKL-N01_counter_slash/SKL-N01_counter_slash_01_original_weapon.png"
+            },
+            "bronze": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/SKL-N01_counter_slash/SKL-N01_counter_slash_01_bronze_weapon.png"
+            },
+            "frost": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/SKL-N01_counter_slash/SKL-N01_counter_slash_01_frost_weapon.png"
+            },
+            "sword_02": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_02/v001/frames/SKL-N01_counter_slash/01.png"
+            },
+            "sword_03": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_03/v001/frames/SKL-N01_counter_slash/01.png"
+            },
+            "sword_04": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_04/v001/frames/SKL-N01_counter_slash/01.png"
+            },
+            "sword_05": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_05/v001/frames/SKL-N01_counter_slash/01.png"
+            },
+            "sword_06": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_06/v001/frames/SKL-N01_counter_slash/01.png"
+            }
+          },
+          "changed_pixels": 16
+        },
+        {
+          "source": {
+            "path": "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N01_counter_slash_right_v001_f03.png"
+          },
+          "canvas": [
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            84
+          ],
+          "socket": {
+            "position": [
+              54.0,
+              71.0
+            ],
+            "angle_degrees": 0
+          },
+          "mask": "res://assets/PROCESSED/weapons/appearances/v001/SKL-N01_counter_slash/SKL-N01_counter_slash_02_mask.png",
+          "body": "res://assets/PROCESSED/weapons/appearances/v001/SKL-N01_counter_slash/SKL-N01_counter_slash_02_body.png",
+          "foreground": "res://assets/PROCESSED/weapons/appearances/v001/SKL-N01_counter_slash/SKL-N01_counter_slash_02_fingers.png",
+          "skins": {
+            "original": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/SKL-N01_counter_slash/SKL-N01_counter_slash_02_original_weapon.png"
+            },
+            "bronze": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/SKL-N01_counter_slash/SKL-N01_counter_slash_02_bronze_weapon.png"
+            },
+            "frost": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/SKL-N01_counter_slash/SKL-N01_counter_slash_02_frost_weapon.png"
+            },
+            "sword_02": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_02/v001/frames/SKL-N01_counter_slash/02.png"
+            },
+            "sword_03": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_03/v001/frames/SKL-N01_counter_slash/02.png"
+            },
+            "sword_04": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_04/v001/frames/SKL-N01_counter_slash/02.png"
+            },
+            "sword_05": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_05/v001/frames/SKL-N01_counter_slash/02.png"
+            },
+            "sword_06": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_06/v001/frames/SKL-N01_counter_slash/02.png"
+            }
+          },
+          "changed_pixels": 22
+        },
+        {
+          "source": {
+            "path": "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N01_counter_slash_right_v001_f04.png"
+          },
+          "canvas": [
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            84
+          ],
+          "socket": {
+            "position": [
+              57.0,
+              69.0
+            ],
+            "angle_degrees": 35
+          },
+          "mask": "res://assets/PROCESSED/weapons/appearances/v001/SKL-N01_counter_slash/SKL-N01_counter_slash_03_mask.png",
+          "body": "res://assets/PROCESSED/weapons/appearances/v001/SKL-N01_counter_slash/SKL-N01_counter_slash_03_body.png",
+          "foreground": "res://assets/PROCESSED/weapons/appearances/v001/SKL-N01_counter_slash/SKL-N01_counter_slash_03_fingers.png",
+          "skins": {
+            "original": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/SKL-N01_counter_slash/SKL-N01_counter_slash_03_original_weapon.png"
+            },
+            "bronze": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/SKL-N01_counter_slash/SKL-N01_counter_slash_03_bronze_weapon.png"
+            },
+            "frost": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/SKL-N01_counter_slash/SKL-N01_counter_slash_03_frost_weapon.png"
+            },
+            "sword_02": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_02/v001/frames/SKL-N01_counter_slash/03.png"
+            },
+            "sword_03": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_03/v001/frames/SKL-N01_counter_slash/03.png"
+            },
+            "sword_04": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_04/v001/frames/SKL-N01_counter_slash/03.png"
+            },
+            "sword_05": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_05/v001/frames/SKL-N01_counter_slash/03.png"
+            },
+            "sword_06": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_06/v001/frames/SKL-N01_counter_slash/03.png"
+            }
+          },
+          "changed_pixels": 43
+        }
+      ]
+    },
+    "SKL-N03_leap": {
+      "module": "hammer",
+      "frames": [
+        {
+          "source": {
+            "path": "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N03_leap_right_v001_f01.png"
+          },
+          "canvas": [
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            84
+          ],
+          "socket": {
+            "position": [
+              54.0,
+              72.0
+            ],
+            "angle_degrees": 6.378634226156068
+          },
+          "mask": "res://assets/PROCESSED/weapons/appearances/v001/SKL-N03_leap/SKL-N03_leap_00_mask.png",
+          "body": "res://assets/PROCESSED/weapons/appearances/v001/SKL-N03_leap/SKL-N03_leap_00_body.png",
+          "foreground": "res://assets/PROCESSED/weapons/appearances/v001/SKL-N03_leap/SKL-N03_leap_00_fingers.png",
+          "skins": {
+            "original": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/SKL-N03_leap/SKL-N03_leap_00_original_weapon.png"
+            },
+            "bronze": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/SKL-N03_leap/SKL-N03_leap_00_bronze_weapon.png"
+            },
+            "frost": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/SKL-N03_leap/SKL-N03_leap_00_frost_weapon.png"
+            },
+            "hammer_02": {
+              "weapon": "res://assets/PROCESSED/weapons/hammer_02/v001/frames/SKL-N03_leap/00.png"
+            },
+            "hammer_03": {
+              "weapon": "res://assets/PROCESSED/weapons/hammer_03/v001/frames/SKL-N03_leap/00.png"
+            },
+            "hammer_04": {
+              "weapon": "res://assets/PROCESSED/weapons/hammer_04/v001/frames/SKL-N03_leap/00.png"
+            },
+            "hammer_05": {
+              "weapon": "res://assets/PROCESSED/weapons/hammer_05/v001/frames/SKL-N03_leap/00.png"
+            }
+          },
+          "changed_pixels": 264
+        },
+        {
+          "source": {
+            "path": "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N03_leap_right_v001_f02.png"
+          },
+          "canvas": [
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            84
+          ],
+          "socket": {
+            "position": [
+              54.0,
+              65.0
+            ],
+            "angle_degrees": 42.333670290357766
+          },
+          "mask": "res://assets/PROCESSED/weapons/appearances/v001/SKL-N03_leap/SKL-N03_leap_01_mask.png",
+          "body": "res://assets/PROCESSED/weapons/appearances/v001/SKL-N03_leap/SKL-N03_leap_01_body.png",
+          "foreground": "res://assets/PROCESSED/weapons/appearances/v001/SKL-N03_leap/SKL-N03_leap_01_fingers.png",
+          "skins": {
+            "original": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/SKL-N03_leap/SKL-N03_leap_01_original_weapon.png"
+            },
+            "bronze": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/SKL-N03_leap/SKL-N03_leap_01_bronze_weapon.png"
+            },
+            "frost": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/SKL-N03_leap/SKL-N03_leap_01_frost_weapon.png"
+            },
+            "hammer_02": {
+              "weapon": "res://assets/PROCESSED/weapons/hammer_02/v001/frames/SKL-N03_leap/01.png"
+            },
+            "hammer_03": {
+              "weapon": "res://assets/PROCESSED/weapons/hammer_03/v001/frames/SKL-N03_leap/01.png"
+            },
+            "hammer_04": {
+              "weapon": "res://assets/PROCESSED/weapons/hammer_04/v001/frames/SKL-N03_leap/01.png"
+            },
+            "hammer_05": {
+              "weapon": "res://assets/PROCESSED/weapons/hammer_05/v001/frames/SKL-N03_leap/01.png"
+            }
+          },
+          "changed_pixels": 246
+        },
+        {
+          "source": {
+            "path": "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N03_leap_right_v001_f03.png"
+          },
+          "canvas": [
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            84
+          ],
+          "socket": {
+            "position": [
+              54.0,
+              44.0
+            ],
+            "angle_degrees": -154.2827470838705
+          },
+          "mask": "res://assets/PROCESSED/weapons/appearances/v001/SKL-N03_leap/SKL-N03_leap_02_mask.png",
+          "body": "res://assets/PROCESSED/weapons/appearances/v001/SKL-N03_leap/SKL-N03_leap_02_body.png",
+          "foreground": "res://assets/PROCESSED/weapons/appearances/v001/SKL-N03_leap/SKL-N03_leap_02_fingers.png",
+          "skins": {
+            "original": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/SKL-N03_leap/SKL-N03_leap_02_original_weapon.png"
+            },
+            "bronze": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/SKL-N03_leap/SKL-N03_leap_02_bronze_weapon.png"
+            },
+            "frost": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/SKL-N03_leap/SKL-N03_leap_02_frost_weapon.png"
+            },
+            "hammer_02": {
+              "weapon": "res://assets/PROCESSED/weapons/hammer_02/v001/frames/SKL-N03_leap/02.png"
+            },
+            "hammer_03": {
+              "weapon": "res://assets/PROCESSED/weapons/hammer_03/v001/frames/SKL-N03_leap/02.png"
+            },
+            "hammer_04": {
+              "weapon": "res://assets/PROCESSED/weapons/hammer_04/v001/frames/SKL-N03_leap/02.png"
+            },
+            "hammer_05": {
+              "weapon": "res://assets/PROCESSED/weapons/hammer_05/v001/frames/SKL-N03_leap/02.png"
+            }
+          },
+          "changed_pixels": 377
+        },
+        {
+          "source": {
+            "path": "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N03_leap_right_v001_f04.png"
+          },
+          "canvas": [
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            84
+          ],
+          "socket": {
+            "position": [
+              54.0,
+              44.0
+            ],
+            "angle_degrees": -154.63718485621695
+          },
+          "mask": "res://assets/PROCESSED/weapons/appearances/v001/SKL-N03_leap/SKL-N03_leap_03_mask.png",
+          "body": "res://assets/PROCESSED/weapons/appearances/v001/SKL-N03_leap/SKL-N03_leap_03_body.png",
+          "foreground": "res://assets/PROCESSED/weapons/appearances/v001/SKL-N03_leap/SKL-N03_leap_03_fingers.png",
+          "skins": {
+            "original": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/SKL-N03_leap/SKL-N03_leap_03_original_weapon.png"
+            },
+            "bronze": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/SKL-N03_leap/SKL-N03_leap_03_bronze_weapon.png"
+            },
+            "frost": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/SKL-N03_leap/SKL-N03_leap_03_frost_weapon.png"
+            },
+            "hammer_02": {
+              "weapon": "res://assets/PROCESSED/weapons/hammer_02/v001/frames/SKL-N03_leap/03.png"
+            },
+            "hammer_03": {
+              "weapon": "res://assets/PROCESSED/weapons/hammer_03/v001/frames/SKL-N03_leap/03.png"
+            },
+            "hammer_04": {
+              "weapon": "res://assets/PROCESSED/weapons/hammer_04/v001/frames/SKL-N03_leap/03.png"
+            },
+            "hammer_05": {
+              "weapon": "res://assets/PROCESSED/weapons/hammer_05/v001/frames/SKL-N03_leap/03.png"
+            }
+          },
+          "changed_pixels": 382
+        }
+      ]
+    },
+    "SKL-N03_slam": {
+      "module": "hammer",
+      "frames": [
+        {
+          "source": {
+            "path": "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N03_slam_right_v001_f01.png"
+          },
+          "canvas": [
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            84
+          ],
+          "socket": {
+            "position": [
+              54.0,
+              52.0
+            ],
+            "angle_degrees": -149.82564628616763
+          },
+          "mask": "res://assets/PROCESSED/weapons/appearances/v001/SKL-N03_slam/SKL-N03_slam_00_mask.png",
+          "body": "res://assets/PROCESSED/weapons/appearances/v001/SKL-N03_slam/SKL-N03_slam_00_body.png",
+          "foreground": "res://assets/PROCESSED/weapons/appearances/v001/SKL-N03_slam/SKL-N03_slam_00_fingers.png",
+          "skins": {
+            "original": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/SKL-N03_slam/SKL-N03_slam_00_original_weapon.png"
+            },
+            "bronze": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/SKL-N03_slam/SKL-N03_slam_00_bronze_weapon.png"
+            },
+            "frost": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/SKL-N03_slam/SKL-N03_slam_00_frost_weapon.png"
+            },
+            "hammer_02": {
+              "weapon": "res://assets/PROCESSED/weapons/hammer_02/v001/frames/SKL-N03_slam/00.png"
+            },
+            "hammer_03": {
+              "weapon": "res://assets/PROCESSED/weapons/hammer_03/v001/frames/SKL-N03_slam/00.png"
+            },
+            "hammer_04": {
+              "weapon": "res://assets/PROCESSED/weapons/hammer_04/v001/frames/SKL-N03_slam/00.png"
+            },
+            "hammer_05": {
+              "weapon": "res://assets/PROCESSED/weapons/hammer_05/v001/frames/SKL-N03_slam/00.png"
+            }
+          },
+          "changed_pixels": 362
+        },
+        {
+          "source": {
+            "path": "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N03_slam_right_v001_f02.png"
+          },
+          "canvas": [
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            84
+          ],
+          "socket": {
+            "position": [
+              54.0,
+              72.0
+            ],
+            "angle_degrees": 22.39070297920149
+          },
+          "mask": "res://assets/PROCESSED/weapons/appearances/v001/SKL-N03_slam/SKL-N03_slam_01_mask.png",
+          "body": "res://assets/PROCESSED/weapons/appearances/v001/SKL-N03_slam/SKL-N03_slam_01_body.png",
+          "foreground": "res://assets/PROCESSED/weapons/appearances/v001/SKL-N03_slam/SKL-N03_slam_01_fingers.png",
+          "skins": {
+            "original": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/SKL-N03_slam/SKL-N03_slam_01_original_weapon.png"
+            },
+            "bronze": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/SKL-N03_slam/SKL-N03_slam_01_bronze_weapon.png"
+            },
+            "frost": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/SKL-N03_slam/SKL-N03_slam_01_frost_weapon.png"
+            },
+            "hammer_02": {
+              "weapon": "res://assets/PROCESSED/weapons/hammer_02/v001/frames/SKL-N03_slam/01.png"
+            },
+            "hammer_03": {
+              "weapon": "res://assets/PROCESSED/weapons/hammer_03/v001/frames/SKL-N03_slam/01.png"
+            },
+            "hammer_04": {
+              "weapon": "res://assets/PROCESSED/weapons/hammer_04/v001/frames/SKL-N03_slam/01.png"
+            },
+            "hammer_05": {
+              "weapon": "res://assets/PROCESSED/weapons/hammer_05/v001/frames/SKL-N03_slam/01.png"
+            }
+          },
+          "changed_pixels": 242
+        },
+        {
+          "source": {
+            "path": "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N03_slam_right_v001_f03.png"
+          },
+          "canvas": [
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            84
+          ],
+          "socket": {
+            "position": [
+              53.0,
+              73.0
+            ],
+            "angle_degrees": 18.13441833263537
+          },
+          "mask": "res://assets/PROCESSED/weapons/appearances/v001/SKL-N03_slam/SKL-N03_slam_02_mask.png",
+          "body": "res://assets/PROCESSED/weapons/appearances/v001/SKL-N03_slam/SKL-N03_slam_02_body.png",
+          "foreground": "res://assets/PROCESSED/weapons/appearances/v001/SKL-N03_slam/SKL-N03_slam_02_fingers.png",
+          "skins": {
+            "original": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/SKL-N03_slam/SKL-N03_slam_02_original_weapon.png"
+            },
+            "bronze": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/SKL-N03_slam/SKL-N03_slam_02_bronze_weapon.png"
+            },
+            "frost": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/SKL-N03_slam/SKL-N03_slam_02_frost_weapon.png"
+            },
+            "hammer_02": {
+              "weapon": "res://assets/PROCESSED/weapons/hammer_02/v001/frames/SKL-N03_slam/02.png"
+            },
+            "hammer_03": {
+              "weapon": "res://assets/PROCESSED/weapons/hammer_03/v001/frames/SKL-N03_slam/02.png"
+            },
+            "hammer_04": {
+              "weapon": "res://assets/PROCESSED/weapons/hammer_04/v001/frames/SKL-N03_slam/02.png"
+            },
+            "hammer_05": {
+              "weapon": "res://assets/PROCESSED/weapons/hammer_05/v001/frames/SKL-N03_slam/02.png"
+            }
+          },
+          "changed_pixels": 251
+        },
+        {
+          "source": {
+            "path": "res://assets/PROCESSED/skills/SKL-NB01/v001/frames/SKL-N03_slam_right_v001_f04.png"
+          },
+          "canvas": [
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            84
+          ],
+          "socket": {
+            "position": [
+              57.0,
+              69.0
+            ],
+            "angle_degrees": 22.284521063696346
+          },
+          "mask": "res://assets/PROCESSED/weapons/appearances/v001/SKL-N03_slam/SKL-N03_slam_03_mask.png",
+          "body": "res://assets/PROCESSED/weapons/appearances/v001/SKL-N03_slam/SKL-N03_slam_03_body.png",
+          "foreground": "res://assets/PROCESSED/weapons/appearances/v001/SKL-N03_slam/SKL-N03_slam_03_fingers.png",
+          "skins": {
+            "original": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/SKL-N03_slam/SKL-N03_slam_03_original_weapon.png"
+            },
+            "bronze": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/SKL-N03_slam/SKL-N03_slam_03_bronze_weapon.png"
+            },
+            "frost": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/SKL-N03_slam/SKL-N03_slam_03_frost_weapon.png"
+            },
+            "hammer_02": {
+              "weapon": "res://assets/PROCESSED/weapons/hammer_02/v001/frames/SKL-N03_slam/03.png"
+            },
+            "hammer_03": {
+              "weapon": "res://assets/PROCESSED/weapons/hammer_03/v001/frames/SKL-N03_slam/03.png"
+            },
+            "hammer_04": {
+              "weapon": "res://assets/PROCESSED/weapons/hammer_04/v001/frames/SKL-N03_slam/03.png"
+            },
+            "hammer_05": {
+              "weapon": "res://assets/PROCESSED/weapons/hammer_05/v001/frames/SKL-N03_slam/03.png"
+            }
+          },
+          "changed_pixels": 235
+        }
+      ]
+    },
+    "sword_1": {
+      "module": "sword",
+      "frames": [
+        {
+          "source": {
+            "path": "res://assets/PROCESSED/characters/CHR-01/rpg_v8/sword_1_00.png"
+          },
+          "canvas": [
+            96,
+            96
+          ],
+          "anchor": [
+            48.0,
+            84.0
+          ],
+          "socket": {
+            "position": [
+              45.0,
+              48.0
+            ],
+            "angle_degrees": -110
+          },
+          "mask": "res://assets/PROCESSED/weapons/appearances/v001/sword_1/sword_1_00_mask.png",
+          "body": "res://assets/PROCESSED/weapons/appearances/v001/sword_1/sword_1_00_body.png",
+          "foreground": "res://assets/PROCESSED/weapons/appearances/v001/sword_1/sword_1_00_fingers.png",
+          "skins": {
+            "original": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/sword_1/sword_1_00_original_weapon.png"
+            },
+            "bronze": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/sword_1/sword_1_00_bronze_weapon.png"
+            },
+            "frost": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/sword_1/sword_1_00_frost_weapon.png"
+            },
+            "sword_02": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_02/v001/frames/sword_1/00.png"
+            },
+            "sword_03": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_03/v001/frames/sword_1/00.png"
+            },
+            "sword_04": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_04/v001/frames/sword_1/00.png"
+            },
+            "sword_05": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_05/v001/frames/sword_1/00.png"
+            },
+            "sword_06": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_06/v001/frames/sword_1/00.png"
+            }
+          },
+          "changed_pixels": 79
+        },
+        {
+          "source": {
+            "path": "res://assets/PROCESSED/characters/CHR-01/rpg_v8/sword_1_01.png"
+          },
+          "canvas": [
+            96,
+            96
+          ],
+          "anchor": [
+            48.0,
+            84.0
+          ],
+          "socket": {
+            "position": [
+              38.92463961238323,
+              49.85305634947244
+            ],
+            "angle_degrees": -125
+          },
+          "mask": "res://assets/PROCESSED/weapons/appearances/v001/sword_1/sword_1_01_mask.png",
+          "body": "res://assets/PROCESSED/weapons/appearances/v001/sword_1/sword_1_01_body.png",
+          "foreground": "res://assets/PROCESSED/weapons/appearances/v001/sword_1/sword_1_01_fingers.png",
+          "skins": {
+            "original": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/sword_1/sword_1_01_original_weapon.png"
+            },
+            "bronze": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/sword_1/sword_1_01_bronze_weapon.png"
+            },
+            "frost": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/sword_1/sword_1_01_frost_weapon.png"
+            },
+            "sword_02": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_02/v001/frames/sword_1/01.png"
+            },
+            "sword_03": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_03/v001/frames/sword_1/01.png"
+            },
+            "sword_04": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_04/v001/frames/sword_1/01.png"
+            },
+            "sword_05": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_05/v001/frames/sword_1/01.png"
+            },
+            "sword_06": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_06/v001/frames/sword_1/01.png"
+            }
+          },
+          "changed_pixels": 83
+        },
+        {
+          "source": {
+            "path": "res://assets/PROCESSED/characters/CHR-01/rpg_v8/sword_1_02.png"
+          },
+          "canvas": [
+            96,
+            96
+          ],
+          "anchor": [
+            48.0,
+            84.0
+          ],
+          "socket": {
+            "position": [
+              58.0,
+              57.0
+            ],
+            "angle_degrees": -52
+          },
+          "mask": "res://assets/PROCESSED/weapons/appearances/v001/sword_1/sword_1_02_mask.png",
+          "body": "res://assets/PROCESSED/weapons/appearances/v001/sword_1/sword_1_02_body.png",
+          "foreground": "res://assets/PROCESSED/weapons/appearances/v001/sword_1/sword_1_02_fingers.png",
+          "skins": {
+            "original": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/sword_1/sword_1_02_original_weapon.png"
+            },
+            "bronze": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/sword_1/sword_1_02_bronze_weapon.png"
+            },
+            "frost": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/sword_1/sword_1_02_frost_weapon.png"
+            },
+            "sword_02": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_02/v001/frames/sword_1/02.png"
+            },
+            "sword_03": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_03/v001/frames/sword_1/02.png"
+            },
+            "sword_04": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_04/v001/frames/sword_1/02.png"
+            },
+            "sword_05": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_05/v001/frames/sword_1/02.png"
+            },
+            "sword_06": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_06/v001/frames/sword_1/02.png"
+            }
+          },
+          "changed_pixels": 89
+        },
+        {
+          "source": {
+            "path": "res://assets/PROCESSED/characters/CHR-01/rpg_v8/sword_1_03.png"
+          },
+          "canvas": [
+            96,
+            96
+          ],
+          "anchor": [
+            48.0,
+            84.0
+          ],
+          "socket": {
+            "position": [
+              59.88996659612366,
+              67.82763525859605
+            ],
+            "angle_degrees": 10
+          },
+          "mask": "res://assets/PROCESSED/weapons/appearances/v001/sword_1/sword_1_03_mask.png",
+          "body": "res://assets/PROCESSED/weapons/appearances/v001/sword_1/sword_1_03_body.png",
+          "foreground": "res://assets/PROCESSED/weapons/appearances/v001/sword_1/sword_1_03_fingers.png",
+          "skins": {
+            "original": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/sword_1/sword_1_03_original_weapon.png"
+            },
+            "bronze": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/sword_1/sword_1_03_bronze_weapon.png"
+            },
+            "frost": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/sword_1/sword_1_03_frost_weapon.png"
+            },
+            "sword_02": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_02/v001/frames/sword_1/03.png"
+            },
+            "sword_03": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_03/v001/frames/sword_1/03.png"
+            },
+            "sword_04": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_04/v001/frames/sword_1/03.png"
+            },
+            "sword_05": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_05/v001/frames/sword_1/03.png"
+            },
+            "sword_06": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_06/v001/frames/sword_1/03.png"
+            }
+          },
+          "changed_pixels": 70
+        },
+        {
+          "source": {
+            "path": "res://assets/PROCESSED/characters/CHR-01/rpg_v8/sword_1_04.png"
+          },
+          "canvas": [
+            96,
+            96
+          ],
+          "anchor": [
+            48.0,
+            84.0
+          ],
+          "socket": {
+            "position": [
+              59.78383019351389,
+              69.04889743359226
+            ],
+            "angle_degrees": 35
+          },
+          "mask": "res://assets/PROCESSED/weapons/appearances/v001/sword_1/sword_1_04_mask.png",
+          "body": "res://assets/PROCESSED/weapons/appearances/v001/sword_1/sword_1_04_body.png",
+          "foreground": "res://assets/PROCESSED/weapons/appearances/v001/sword_1/sword_1_04_fingers.png",
+          "skins": {
+            "original": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/sword_1/sword_1_04_original_weapon.png"
+            },
+            "bronze": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/sword_1/sword_1_04_bronze_weapon.png"
+            },
+            "frost": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/sword_1/sword_1_04_frost_weapon.png"
+            },
+            "sword_02": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_02/v001/frames/sword_1/04.png"
+            },
+            "sword_03": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_03/v001/frames/sword_1/04.png"
+            },
+            "sword_04": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_04/v001/frames/sword_1/04.png"
+            },
+            "sword_05": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_05/v001/frames/sword_1/04.png"
+            },
+            "sword_06": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_06/v001/frames/sword_1/04.png"
+            }
+          },
+          "changed_pixels": 56
+        },
+        {
+          "source": {
+            "path": "res://assets/PROCESSED/characters/CHR-01/rpg_v8/sword_1_05.png"
+          },
+          "canvas": [
+            96,
+            96
+          ],
+          "anchor": [
+            48.0,
+            84.0
+          ],
+          "socket": {
+            "position": [
+              58.65925826289069,
+              69.41180954897479
+            ],
+            "angle_degrees": 40
+          },
+          "mask": "res://assets/PROCESSED/weapons/appearances/v001/sword_1/sword_1_05_mask.png",
+          "body": "res://assets/PROCESSED/weapons/appearances/v001/sword_1/sword_1_05_body.png",
+          "foreground": "res://assets/PROCESSED/weapons/appearances/v001/sword_1/sword_1_05_fingers.png",
+          "skins": {
+            "original": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/sword_1/sword_1_05_original_weapon.png"
+            },
+            "bronze": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/sword_1/sword_1_05_bronze_weapon.png"
+            },
+            "frost": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/sword_1/sword_1_05_frost_weapon.png"
+            },
+            "sword_02": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_02/v001/frames/sword_1/05.png"
+            },
+            "sword_03": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_03/v001/frames/sword_1/05.png"
+            },
+            "sword_04": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_04/v001/frames/sword_1/05.png"
+            },
+            "sword_05": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_05/v001/frames/sword_1/05.png"
+            },
+            "sword_06": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_06/v001/frames/sword_1/05.png"
+            }
+          },
+          "changed_pixels": 55
+        },
+        {
+          "source": {
+            "path": "res://assets/PROCESSED/characters/CHR-01/rpg_v8/sword_1_06.png"
+          },
+          "canvas": [
+            96,
+            96
+          ],
+          "anchor": [
+            48.0,
+            84.0
+          ],
+          "socket": {
+            "position": [
+              39.67286700287872,
+              67.30909496429408
+            ],
+            "angle_degrees": 175
+          },
+          "mask": "res://assets/PROCESSED/weapons/appearances/v001/sword_1/sword_1_06_mask.png",
+          "body": "res://assets/PROCESSED/weapons/appearances/v001/sword_1/sword_1_06_body.png",
+          "foreground": "res://assets/PROCESSED/weapons/appearances/v001/sword_1/sword_1_06_fingers.png",
+          "skins": {
+            "original": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/sword_1/sword_1_06_original_weapon.png"
+            },
+            "bronze": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/sword_1/sword_1_06_bronze_weapon.png"
+            },
+            "frost": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/sword_1/sword_1_06_frost_weapon.png"
+            },
+            "sword_02": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_02/v001/frames/sword_1/06.png"
+            },
+            "sword_03": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_03/v001/frames/sword_1/06.png"
+            },
+            "sword_04": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_04/v001/frames/sword_1/06.png"
+            },
+            "sword_05": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_05/v001/frames/sword_1/06.png"
+            },
+            "sword_06": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_06/v001/frames/sword_1/06.png"
+            }
+          },
+          "changed_pixels": 90
+        },
+        {
+          "source": {
+            "path": "res://assets/PROCESSED/characters/CHR-01/rpg_v8/sword_1_07.png"
+          },
+          "canvas": [
+            96,
+            96
+          ],
+          "anchor": [
+            48.0,
+            84.0
+          ],
+          "socket": {
+            "position": [
+              39.67286700287872,
+              67.30909496429408
+            ],
+            "angle_degrees": 175
+          },
+          "mask": "res://assets/PROCESSED/weapons/appearances/v001/sword_1/sword_1_07_mask.png",
+          "body": "res://assets/PROCESSED/weapons/appearances/v001/sword_1/sword_1_07_body.png",
+          "foreground": "res://assets/PROCESSED/weapons/appearances/v001/sword_1/sword_1_07_fingers.png",
+          "skins": {
+            "original": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/sword_1/sword_1_07_original_weapon.png"
+            },
+            "bronze": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/sword_1/sword_1_07_bronze_weapon.png"
+            },
+            "frost": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/sword_1/sword_1_07_frost_weapon.png"
+            },
+            "sword_02": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_02/v001/frames/sword_1/07.png"
+            },
+            "sword_03": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_03/v001/frames/sword_1/07.png"
+            },
+            "sword_04": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_04/v001/frames/sword_1/07.png"
+            },
+            "sword_05": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_05/v001/frames/sword_1/07.png"
+            },
+            "sword_06": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_06/v001/frames/sword_1/07.png"
+            }
+          },
+          "changed_pixels": 90
+        }
+      ]
+    },
+    "sword_2": {
+      "module": "sword",
+      "frames": [
+        {
+          "source": {
+            "path": "res://assets/PROCESSED/characters/CHR-01/rpg_v8/sword_2_00.png"
+          },
+          "canvas": [
+            96,
+            96
+          ],
+          "anchor": [
+            48.0,
+            84.0
+          ],
+          "socket": {
+            "position": [
+              39.67286700287872,
+              67.30909496429408
+            ],
+            "angle_degrees": 175
+          },
+          "mask": "res://assets/PROCESSED/weapons/appearances/v001/sword_2/sword_2_00_mask.png",
+          "body": "res://assets/PROCESSED/weapons/appearances/v001/sword_2/sword_2_00_body.png",
+          "foreground": "res://assets/PROCESSED/weapons/appearances/v001/sword_2/sword_2_00_fingers.png",
+          "skins": {
+            "original": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/sword_2/sword_2_00_original_weapon.png"
+            },
+            "bronze": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/sword_2/sword_2_00_bronze_weapon.png"
+            },
+            "frost": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/sword_2/sword_2_00_frost_weapon.png"
+            },
+            "sword_02": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_02/v001/frames/sword_2/00.png"
+            },
+            "sword_03": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_03/v001/frames/sword_2/00.png"
+            },
+            "sword_04": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_04/v001/frames/sword_2/00.png"
+            },
+            "sword_05": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_05/v001/frames/sword_2/00.png"
+            },
+            "sword_06": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_06/v001/frames/sword_2/00.png"
+            }
+          },
+          "changed_pixels": 90
+        },
+        {
+          "source": {
+            "path": "res://assets/PROCESSED/characters/CHR-01/rpg_v8/sword_2_01.png"
+          },
+          "canvas": [
+            96,
+            96
+          ],
+          "anchor": [
+            48.0,
+            84.0
+          ],
+          "socket": {
+            "position": [
+              39.67286700287872,
+              67.30909496429408
+            ],
+            "angle_degrees": 175
+          },
+          "mask": "res://assets/PROCESSED/weapons/appearances/v001/sword_2/sword_2_01_mask.png",
+          "body": "res://assets/PROCESSED/weapons/appearances/v001/sword_2/sword_2_01_body.png",
+          "foreground": "res://assets/PROCESSED/weapons/appearances/v001/sword_2/sword_2_01_fingers.png",
+          "skins": {
+            "original": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/sword_2/sword_2_01_original_weapon.png"
+            },
+            "bronze": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/sword_2/sword_2_01_bronze_weapon.png"
+            },
+            "frost": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/sword_2/sword_2_01_frost_weapon.png"
+            },
+            "sword_02": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_02/v001/frames/sword_2/01.png"
+            },
+            "sword_03": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_03/v001/frames/sword_2/01.png"
+            },
+            "sword_04": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_04/v001/frames/sword_2/01.png"
+            },
+            "sword_05": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_05/v001/frames/sword_2/01.png"
+            },
+            "sword_06": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_06/v001/frames/sword_2/01.png"
+            }
+          },
+          "changed_pixels": 90
+        },
+        {
+          "source": {
+            "path": "res://assets/PROCESSED/characters/CHR-01/rpg_v8/sword_2_02.png"
+          },
+          "canvas": [
+            96,
+            96
+          ],
+          "anchor": [
+            48.0,
+            84.0
+          ],
+          "socket": {
+            "position": [
+              58.65925826289069,
+              69.41180954897479
+            ],
+            "angle_degrees": 40
+          },
+          "mask": "res://assets/PROCESSED/weapons/appearances/v001/sword_2/sword_2_02_mask.png",
+          "body": "res://assets/PROCESSED/weapons/appearances/v001/sword_2/sword_2_02_body.png",
+          "foreground": "res://assets/PROCESSED/weapons/appearances/v001/sword_2/sword_2_02_fingers.png",
+          "skins": {
+            "original": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/sword_2/sword_2_02_original_weapon.png"
+            },
+            "bronze": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/sword_2/sword_2_02_bronze_weapon.png"
+            },
+            "frost": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/sword_2/sword_2_02_frost_weapon.png"
+            },
+            "sword_02": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_02/v001/frames/sword_2/02.png"
+            },
+            "sword_03": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_03/v001/frames/sword_2/02.png"
+            },
+            "sword_04": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_04/v001/frames/sword_2/02.png"
+            },
+            "sword_05": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_05/v001/frames/sword_2/02.png"
+            },
+            "sword_06": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_06/v001/frames/sword_2/02.png"
+            }
+          },
+          "changed_pixels": 55
+        },
+        {
+          "source": {
+            "path": "res://assets/PROCESSED/characters/CHR-01/rpg_v8/sword_2_03.png"
+          },
+          "canvas": [
+            96,
+            96
+          ],
+          "anchor": [
+            48.0,
+            84.0
+          ],
+          "socket": {
+            "position": [
+              59.78383019351389,
+              69.04889743359226
+            ],
+            "angle_degrees": 35
+          },
+          "mask": "res://assets/PROCESSED/weapons/appearances/v001/sword_2/sword_2_03_mask.png",
+          "body": "res://assets/PROCESSED/weapons/appearances/v001/sword_2/sword_2_03_body.png",
+          "foreground": "res://assets/PROCESSED/weapons/appearances/v001/sword_2/sword_2_03_fingers.png",
+          "skins": {
+            "original": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/sword_2/sword_2_03_original_weapon.png"
+            },
+            "bronze": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/sword_2/sword_2_03_bronze_weapon.png"
+            },
+            "frost": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/sword_2/sword_2_03_frost_weapon.png"
+            },
+            "sword_02": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_02/v001/frames/sword_2/03.png"
+            },
+            "sword_03": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_03/v001/frames/sword_2/03.png"
+            },
+            "sword_04": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_04/v001/frames/sword_2/03.png"
+            },
+            "sword_05": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_05/v001/frames/sword_2/03.png"
+            },
+            "sword_06": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_06/v001/frames/sword_2/03.png"
+            }
+          },
+          "changed_pixels": 56
+        },
+        {
+          "source": {
+            "path": "res://assets/PROCESSED/characters/CHR-01/rpg_v8/sword_2_04.png"
+          },
+          "canvas": [
+            96,
+            96
+          ],
+          "anchor": [
+            48.0,
+            84.0
+          ],
+          "socket": {
+            "position": [
+              59.0,
+              66.0
+            ],
+            "angle_degrees": 0
+          },
+          "mask": "res://assets/PROCESSED/weapons/appearances/v001/sword_2/sword_2_04_mask.png",
+          "body": "res://assets/PROCESSED/weapons/appearances/v001/sword_2/sword_2_04_body.png",
+          "foreground": "res://assets/PROCESSED/weapons/appearances/v001/sword_2/sword_2_04_fingers.png",
+          "skins": {
+            "original": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/sword_2/sword_2_04_original_weapon.png"
+            },
+            "bronze": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/sword_2/sword_2_04_bronze_weapon.png"
+            },
+            "frost": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/sword_2/sword_2_04_frost_weapon.png"
+            },
+            "sword_02": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_02/v001/frames/sword_2/04.png"
+            },
+            "sword_03": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_03/v001/frames/sword_2/04.png"
+            },
+            "sword_04": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_04/v001/frames/sword_2/04.png"
+            },
+            "sword_05": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_05/v001/frames/sword_2/04.png"
+            },
+            "sword_06": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_06/v001/frames/sword_2/04.png"
+            }
+          },
+          "changed_pixels": 66
+        },
+        {
+          "source": {
+            "path": "res://assets/PROCESSED/characters/CHR-01/rpg_v8/sword_2_05.png"
+          },
+          "canvas": [
+            96,
+            96
+          ],
+          "anchor": [
+            48.0,
+            84.0
+          ],
+          "socket": {
+            "position": [
+              42.92348338168922,
+              48.43995021678873
+            ],
+            "angle_degrees": -115
+          },
+          "mask": "res://assets/PROCESSED/weapons/appearances/v001/sword_2/sword_2_05_mask.png",
+          "body": "res://assets/PROCESSED/weapons/appearances/v001/sword_2/sword_2_05_body.png",
+          "foreground": "res://assets/PROCESSED/weapons/appearances/v001/sword_2/sword_2_05_fingers.png",
+          "skins": {
+            "original": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/sword_2/sword_2_05_original_weapon.png"
+            },
+            "bronze": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/sword_2/sword_2_05_bronze_weapon.png"
+            },
+            "frost": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/sword_2/sword_2_05_frost_weapon.png"
+            },
+            "sword_02": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_02/v001/frames/sword_2/05.png"
+            },
+            "sword_03": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_03/v001/frames/sword_2/05.png"
+            },
+            "sword_04": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_04/v001/frames/sword_2/05.png"
+            },
+            "sword_05": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_05/v001/frames/sword_2/05.png"
+            },
+            "sword_06": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_06/v001/frames/sword_2/05.png"
+            }
+          },
+          "changed_pixels": 77
+        },
+        {
+          "source": {
+            "path": "res://assets/PROCESSED/characters/CHR-01/rpg_v8/sword_2_06.png"
+          },
+          "canvas": [
+            96,
+            96
+          ],
+          "anchor": [
+            48.0,
+            84.0
+          ],
+          "socket": {
+            "position": [
+              40.24604073053712,
+              63.73149365915555
+            ],
+            "angle_degrees": -145
+          },
+          "mask": "res://assets/PROCESSED/weapons/appearances/v001/sword_2/sword_2_06_mask.png",
+          "body": "res://assets/PROCESSED/weapons/appearances/v001/sword_2/sword_2_06_body.png",
+          "foreground": "res://assets/PROCESSED/weapons/appearances/v001/sword_2/sword_2_06_fingers.png",
+          "skins": {
+            "original": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/sword_2/sword_2_06_original_weapon.png"
+            },
+            "bronze": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/sword_2/sword_2_06_bronze_weapon.png"
+            },
+            "frost": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/sword_2/sword_2_06_frost_weapon.png"
+            },
+            "sword_02": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_02/v001/frames/sword_2/06.png"
+            },
+            "sword_03": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_03/v001/frames/sword_2/06.png"
+            },
+            "sword_04": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_04/v001/frames/sword_2/06.png"
+            },
+            "sword_05": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_05/v001/frames/sword_2/06.png"
+            },
+            "sword_06": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_06/v001/frames/sword_2/06.png"
+            }
+          },
+          "changed_pixels": 96
+        },
+        {
+          "source": {
+            "path": "res://assets/PROCESSED/characters/CHR-01/rpg_v8/sword_2_07.png"
+          },
+          "canvas": [
+            96,
+            96
+          ],
+          "anchor": [
+            48.0,
+            84.0
+          ],
+          "socket": {
+            "position": [
+              40.24604073053712,
+              63.73149365915555
+            ],
+            "angle_degrees": -145
+          },
+          "mask": "res://assets/PROCESSED/weapons/appearances/v001/sword_2/sword_2_07_mask.png",
+          "body": "res://assets/PROCESSED/weapons/appearances/v001/sword_2/sword_2_07_body.png",
+          "foreground": "res://assets/PROCESSED/weapons/appearances/v001/sword_2/sword_2_07_fingers.png",
+          "skins": {
+            "original": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/sword_2/sword_2_07_original_weapon.png"
+            },
+            "bronze": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/sword_2/sword_2_07_bronze_weapon.png"
+            },
+            "frost": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/sword_2/sword_2_07_frost_weapon.png"
+            },
+            "sword_02": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_02/v001/frames/sword_2/07.png"
+            },
+            "sword_03": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_03/v001/frames/sword_2/07.png"
+            },
+            "sword_04": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_04/v001/frames/sword_2/07.png"
+            },
+            "sword_05": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_05/v001/frames/sword_2/07.png"
+            },
+            "sword_06": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_06/v001/frames/sword_2/07.png"
+            }
+          },
+          "changed_pixels": 96
+        }
+      ]
+    },
+    "sword_3": {
+      "module": "sword",
+      "frames": [
+        {
+          "source": {
+            "path": "res://assets/PROCESSED/characters/CHR-01/rpg_v8/sword_3_00.png"
+          },
+          "canvas": [
+            96,
+            96
+          ],
+          "anchor": [
+            48.0,
+            84.0
+          ],
+          "socket": {
+            "position": [
+              40.24604073053712,
+              63.73149365915555
+            ],
+            "angle_degrees": -145
+          },
+          "mask": "res://assets/PROCESSED/weapons/appearances/v001/sword_3/sword_3_00_mask.png",
+          "body": "res://assets/PROCESSED/weapons/appearances/v001/sword_3/sword_3_00_body.png",
+          "foreground": "res://assets/PROCESSED/weapons/appearances/v001/sword_3/sword_3_00_fingers.png",
+          "skins": {
+            "original": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/sword_3/sword_3_00_original_weapon.png"
+            },
+            "bronze": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/sword_3/sword_3_00_bronze_weapon.png"
+            },
+            "frost": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/sword_3/sword_3_00_frost_weapon.png"
+            },
+            "sword_02": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_02/v001/frames/sword_3/00.png"
+            },
+            "sword_03": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_03/v001/frames/sword_3/00.png"
+            },
+            "sword_04": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_04/v001/frames/sword_3/00.png"
+            },
+            "sword_05": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_05/v001/frames/sword_3/00.png"
+            },
+            "sword_06": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_06/v001/frames/sword_3/00.png"
+            }
+          },
+          "changed_pixels": 96
+        },
+        {
+          "source": {
+            "path": "res://assets/PROCESSED/characters/CHR-01/rpg_v8/sword_3_01.png"
+          },
+          "canvas": [
+            96,
+            96
+          ],
+          "anchor": [
+            48.0,
+            84.0
+          ],
+          "socket": {
+            "position": [
+              39.558704376899954,
+              64.52591564422556
+            ],
+            "angle_degrees": -150
+          },
+          "mask": "res://assets/PROCESSED/weapons/appearances/v001/sword_3/sword_3_01_mask.png",
+          "body": "res://assets/PROCESSED/weapons/appearances/v001/sword_3/sword_3_01_body.png",
+          "foreground": "res://assets/PROCESSED/weapons/appearances/v001/sword_3/sword_3_01_fingers.png",
+          "skins": {
+            "original": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/sword_3/sword_3_01_original_weapon.png"
+            },
+            "bronze": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/sword_3/sword_3_01_bronze_weapon.png"
+            },
+            "frost": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/sword_3/sword_3_01_frost_weapon.png"
+            },
+            "sword_02": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_02/v001/frames/sword_3/01.png"
+            },
+            "sword_03": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_03/v001/frames/sword_3/01.png"
+            },
+            "sword_04": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_04/v001/frames/sword_3/01.png"
+            },
+            "sword_05": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_05/v001/frames/sword_3/01.png"
+            },
+            "sword_06": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_06/v001/frames/sword_3/01.png"
+            }
+          },
+          "changed_pixels": 102
+        },
+        {
+          "source": {
+            "path": "res://assets/PROCESSED/characters/CHR-01/rpg_v8/sword_3_02.png"
+          },
+          "canvas": [
+            96,
+            96
+          ],
+          "anchor": [
+            48.0,
+            84.0
+          ],
+          "socket": {
+            "position": [
+              36.42438188686057,
+              59.84048401158665
+            ],
+            "angle_degrees": -140
+          },
+          "mask": "res://assets/PROCESSED/weapons/appearances/v001/sword_3/sword_3_02_mask.png",
+          "body": "res://assets/PROCESSED/weapons/appearances/v001/sword_3/sword_3_02_body.png",
+          "foreground": "res://assets/PROCESSED/weapons/appearances/v001/sword_3/sword_3_02_fingers.png",
+          "skins": {
+            "original": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/sword_3/sword_3_02_original_weapon.png"
+            },
+            "bronze": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/sword_3/sword_3_02_bronze_weapon.png"
+            },
+            "frost": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/sword_3/sword_3_02_frost_weapon.png"
+            },
+            "sword_02": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_02/v001/frames/sword_3/02.png"
+            },
+            "sword_03": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_03/v001/frames/sword_3/02.png"
+            },
+            "sword_04": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_04/v001/frames/sword_3/02.png"
+            },
+            "sword_05": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_05/v001/frames/sword_3/02.png"
+            },
+            "sword_06": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_06/v001/frames/sword_3/02.png"
+            }
+          },
+          "changed_pixels": 49
+        },
+        {
+          "source": {
+            "path": "res://assets/PROCESSED/characters/CHR-01/rpg_v8/sword_3_03.png"
+          },
+          "canvas": [
+            96,
+            96
+          ],
+          "anchor": [
+            48.0,
+            84.0
+          ],
+          "socket": {
+            "position": [
+              51.0,
+              64.0
+            ],
+            "angle_degrees": 0
+          },
+          "mask": "res://assets/PROCESSED/weapons/appearances/v001/sword_3/sword_3_03_mask.png",
+          "body": "res://assets/PROCESSED/weapons/appearances/v001/sword_3/sword_3_03_body.png",
+          "foreground": "res://assets/PROCESSED/weapons/appearances/v001/sword_3/sword_3_03_fingers.png",
+          "skins": {
+            "original": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/sword_3/sword_3_03_original_weapon.png"
+            },
+            "bronze": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/sword_3/sword_3_03_bronze_weapon.png"
+            },
+            "frost": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/sword_3/sword_3_03_frost_weapon.png"
+            },
+            "sword_02": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_02/v001/frames/sword_3/03.png"
+            },
+            "sword_03": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_03/v001/frames/sword_3/03.png"
+            },
+            "sword_04": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_04/v001/frames/sword_3/03.png"
+            },
+            "sword_05": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_05/v001/frames/sword_3/03.png"
+            },
+            "sword_06": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_06/v001/frames/sword_3/03.png"
+            }
+          },
+          "changed_pixels": 39
+        },
+        {
+          "source": {
+            "path": "res://assets/PROCESSED/characters/CHR-01/rpg_v8/sword_3_04.png"
+          },
+          "canvas": [
+            96,
+            96
+          ],
+          "anchor": [
+            48.0,
+            84.0
+          ],
+          "socket": {
+            "position": [
+              60.21217253350581,
+              68.79263549329079
+            ],
+            "angle_degrees": 15
+          },
+          "mask": "res://assets/PROCESSED/weapons/appearances/v001/sword_3/sword_3_04_mask.png",
+          "body": "res://assets/PROCESSED/weapons/appearances/v001/sword_3/sword_3_04_body.png",
+          "foreground": "res://assets/PROCESSED/weapons/appearances/v001/sword_3/sword_3_04_fingers.png",
+          "skins": {
+            "original": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/sword_3/sword_3_04_original_weapon.png"
+            },
+            "bronze": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/sword_3/sword_3_04_bronze_weapon.png"
+            },
+            "frost": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/sword_3/sword_3_04_frost_weapon.png"
+            },
+            "sword_02": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_02/v001/frames/sword_3/04.png"
+            },
+            "sword_03": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_03/v001/frames/sword_3/04.png"
+            },
+            "sword_04": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_04/v001/frames/sword_3/04.png"
+            },
+            "sword_05": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_05/v001/frames/sword_3/04.png"
+            },
+            "sword_06": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_06/v001/frames/sword_3/04.png"
+            }
+          },
+          "changed_pixels": 76
+        },
+        {
+          "source": {
+            "path": "res://assets/PROCESSED/characters/CHR-01/rpg_v8/sword_3_05.png"
+          },
+          "canvas": [
+            96,
+            96
+          ],
+          "anchor": [
+            48.0,
+            84.0
+          ],
+          "socket": {
+            "position": [
+              59.78383019351389,
+              69.04889743359226
+            ],
+            "angle_degrees": 35
+          },
+          "mask": "res://assets/PROCESSED/weapons/appearances/v001/sword_3/sword_3_05_mask.png",
+          "body": "res://assets/PROCESSED/weapons/appearances/v001/sword_3/sword_3_05_body.png",
+          "foreground": "res://assets/PROCESSED/weapons/appearances/v001/sword_3/sword_3_05_fingers.png",
+          "skins": {
+            "original": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/sword_3/sword_3_05_original_weapon.png"
+            },
+            "bronze": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/sword_3/sword_3_05_bronze_weapon.png"
+            },
+            "frost": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/sword_3/sword_3_05_frost_weapon.png"
+            },
+            "sword_02": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_02/v001/frames/sword_3/05.png"
+            },
+            "sword_03": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_03/v001/frames/sword_3/05.png"
+            },
+            "sword_04": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_04/v001/frames/sword_3/05.png"
+            },
+            "sword_05": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_05/v001/frames/sword_3/05.png"
+            },
+            "sword_06": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_06/v001/frames/sword_3/05.png"
+            }
+          },
+          "changed_pixels": 51
+        },
+        {
+          "source": {
+            "path": "res://assets/PROCESSED/characters/CHR-01/rpg_v8/sword_3_06.png"
+          },
+          "canvas": [
+            96,
+            96
+          ],
+          "anchor": [
+            48.0,
+            84.0
+          ],
+          "socket": {
+            "position": [
+              55.0,
+              69.0
+            ],
+            "angle_degrees": 0
+          },
+          "mask": "res://assets/PROCESSED/weapons/appearances/v001/sword_3/sword_3_06_mask.png",
+          "body": "res://assets/PROCESSED/weapons/appearances/v001/sword_3/sword_3_06_body.png",
+          "foreground": "res://assets/PROCESSED/weapons/appearances/v001/sword_3/sword_3_06_fingers.png",
+          "skins": {
+            "original": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/sword_3/sword_3_06_original_weapon.png"
+            },
+            "bronze": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/sword_3/sword_3_06_bronze_weapon.png"
+            },
+            "frost": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/sword_3/sword_3_06_frost_weapon.png"
+            },
+            "sword_02": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_02/v001/frames/sword_3/06.png"
+            },
+            "sword_03": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_03/v001/frames/sword_3/06.png"
+            },
+            "sword_04": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_04/v001/frames/sword_3/06.png"
+            },
+            "sword_05": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_05/v001/frames/sword_3/06.png"
+            },
+            "sword_06": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_06/v001/frames/sword_3/06.png"
+            }
+          },
+          "changed_pixels": 70
+        },
+        {
+          "source": {
+            "path": "res://assets/PROCESSED/characters/CHR-01/rpg_v8/sword_3_07.png"
+          },
+          "canvas": [
+            96,
+            96
+          ],
+          "anchor": [
+            48.0,
+            84.0
+          ],
+          "socket": {
+            "position": [
+              55.0,
+              69.0
+            ],
+            "angle_degrees": 0
+          },
+          "mask": "res://assets/PROCESSED/weapons/appearances/v001/sword_3/sword_3_07_mask.png",
+          "body": "res://assets/PROCESSED/weapons/appearances/v001/sword_3/sword_3_07_body.png",
+          "foreground": "res://assets/PROCESSED/weapons/appearances/v001/sword_3/sword_3_07_fingers.png",
+          "skins": {
+            "original": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/sword_3/sword_3_07_original_weapon.png"
+            },
+            "bronze": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/sword_3/sword_3_07_bronze_weapon.png"
+            },
+            "frost": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/sword_3/sword_3_07_frost_weapon.png"
+            },
+            "sword_02": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_02/v001/frames/sword_3/07.png"
+            },
+            "sword_03": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_03/v001/frames/sword_3/07.png"
+            },
+            "sword_04": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_04/v001/frames/sword_3/07.png"
+            },
+            "sword_05": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_05/v001/frames/sword_3/07.png"
+            },
+            "sword_06": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_06/v001/frames/sword_3/07.png"
+            }
+          },
+          "changed_pixels": 70
+        }
+      ]
+    },
+    "rifle_shot": {
+      "module": "rifle",
+      "frames": [
+        {
+          "source": {
+            "path": "res://assets/PROCESSED/characters/CHR-01/rpg_v6/rifle_2_00.png"
+          },
+          "canvas": [
+            96,
+            96
+          ],
+          "anchor": [
+            48.0,
+            84.0
+          ],
+          "socket": {
+            "position": [
+              49.0,
+              62.0
+            ],
+            "angle_degrees": 0
+          },
+          "mask": "res://assets/PROCESSED/weapons/appearances/v001/rifle_shot/rifle_shot_00_mask.png",
+          "body": "res://assets/PROCESSED/weapons/appearances/v001/rifle_shot/rifle_shot_00_body.png",
+          "foreground": "res://assets/PROCESSED/weapons/appearances/v001/rifle_shot/rifle_shot_00_fingers.png",
+          "skins": {
+            "original": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/rifle_shot/rifle_shot_00_original_weapon.png"
+            },
+            "bronze": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/rifle_shot/rifle_shot_00_bronze_weapon.png"
+            },
+            "frost": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/rifle_shot/rifle_shot_00_frost_weapon.png"
+            },
+            "rifle_02": {
+              "weapon": "res://assets/PROCESSED/weapons/rifle_02/v001/frames/rifle_shot/00.png"
+            },
+            "rifle_03": {
+              "weapon": "res://assets/PROCESSED/weapons/rifle_03/v001/frames/rifle_shot/00.png"
+            },
+            "rifle_04": {
+              "weapon": "res://assets/PROCESSED/weapons/rifle_04/v001/frames/rifle_shot/00.png"
+            },
+            "rifle_05": {
+              "weapon": "res://assets/PROCESSED/weapons/rifle_05/v001/frames/rifle_shot/00.png"
+            },
+            "rifle_06": {
+              "weapon": "res://assets/PROCESSED/weapons/rifle_06/v001/frames/rifle_shot/00.png"
+            }
+          },
+          "changed_pixels": 182
+        },
+        {
+          "source": {
+            "path": "res://assets/PROCESSED/characters/CHR-01/rpg_v6/rifle_2_01.png"
+          },
+          "canvas": [
+            96,
+            96
+          ],
+          "anchor": [
+            48.0,
+            84.0
+          ],
+          "socket": {
+            "position": [
+              49.0,
+              62.0
+            ],
+            "angle_degrees": 0
+          },
+          "mask": "res://assets/PROCESSED/weapons/appearances/v001/rifle_shot/rifle_shot_01_mask.png",
+          "body": "res://assets/PROCESSED/weapons/appearances/v001/rifle_shot/rifle_shot_01_body.png",
+          "foreground": "res://assets/PROCESSED/weapons/appearances/v001/rifle_shot/rifle_shot_01_fingers.png",
+          "skins": {
+            "original": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/rifle_shot/rifle_shot_01_original_weapon.png"
+            },
+            "bronze": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/rifle_shot/rifle_shot_01_bronze_weapon.png"
+            },
+            "frost": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/rifle_shot/rifle_shot_01_frost_weapon.png"
+            },
+            "rifle_02": {
+              "weapon": "res://assets/PROCESSED/weapons/rifle_02/v001/frames/rifle_shot/01.png"
+            },
+            "rifle_03": {
+              "weapon": "res://assets/PROCESSED/weapons/rifle_03/v001/frames/rifle_shot/01.png"
+            },
+            "rifle_04": {
+              "weapon": "res://assets/PROCESSED/weapons/rifle_04/v001/frames/rifle_shot/01.png"
+            },
+            "rifle_05": {
+              "weapon": "res://assets/PROCESSED/weapons/rifle_05/v001/frames/rifle_shot/01.png"
+            },
+            "rifle_06": {
+              "weapon": "res://assets/PROCESSED/weapons/rifle_06/v001/frames/rifle_shot/01.png"
+            }
+          },
+          "changed_pixels": 182
+        },
+        {
+          "source": {
+            "path": "res://assets/PROCESSED/characters/CHR-01/rpg_v6/rifle_2_02.png"
+          },
+          "canvas": [
+            96,
+            96
+          ],
+          "anchor": [
+            48.0,
+            84.0
+          ],
+          "socket": {
+            "position": [
+              49.0,
+              62.0
+            ],
+            "angle_degrees": 0
+          },
+          "mask": "res://assets/PROCESSED/weapons/appearances/v001/rifle_shot/rifle_shot_02_mask.png",
+          "body": "res://assets/PROCESSED/weapons/appearances/v001/rifle_shot/rifle_shot_02_body.png",
+          "foreground": "res://assets/PROCESSED/weapons/appearances/v001/rifle_shot/rifle_shot_02_fingers.png",
+          "skins": {
+            "original": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/rifle_shot/rifle_shot_02_original_weapon.png"
+            },
+            "bronze": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/rifle_shot/rifle_shot_02_bronze_weapon.png"
+            },
+            "frost": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/rifle_shot/rifle_shot_02_frost_weapon.png"
+            },
+            "rifle_02": {
+              "weapon": "res://assets/PROCESSED/weapons/rifle_02/v001/frames/rifle_shot/02.png"
+            },
+            "rifle_03": {
+              "weapon": "res://assets/PROCESSED/weapons/rifle_03/v001/frames/rifle_shot/02.png"
+            },
+            "rifle_04": {
+              "weapon": "res://assets/PROCESSED/weapons/rifle_04/v001/frames/rifle_shot/02.png"
+            },
+            "rifle_05": {
+              "weapon": "res://assets/PROCESSED/weapons/rifle_05/v001/frames/rifle_shot/02.png"
+            },
+            "rifle_06": {
+              "weapon": "res://assets/PROCESSED/weapons/rifle_06/v001/frames/rifle_shot/02.png"
+            }
+          },
+          "changed_pixels": 182
+        },
+        {
+          "source": {
+            "path": "res://assets/PROCESSED/characters/CHR-01/rpg_v6/rifle_2_03.png"
+          },
+          "canvas": [
+            96,
+            96
+          ],
+          "anchor": [
+            48.0,
+            84.0
+          ],
+          "socket": {
+            "position": [
+              49.0,
+              61.0
+            ],
+            "angle_degrees": 0
+          },
+          "mask": "res://assets/PROCESSED/weapons/appearances/v001/rifle_shot/rifle_shot_03_mask.png",
+          "body": "res://assets/PROCESSED/weapons/appearances/v001/rifle_shot/rifle_shot_03_body.png",
+          "foreground": "res://assets/PROCESSED/weapons/appearances/v001/rifle_shot/rifle_shot_03_fingers.png",
+          "skins": {
+            "original": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/rifle_shot/rifle_shot_03_original_weapon.png"
+            },
+            "bronze": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/rifle_shot/rifle_shot_03_bronze_weapon.png"
+            },
+            "frost": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/rifle_shot/rifle_shot_03_frost_weapon.png"
+            },
+            "rifle_02": {
+              "weapon": "res://assets/PROCESSED/weapons/rifle_02/v001/frames/rifle_shot/03.png"
+            },
+            "rifle_03": {
+              "weapon": "res://assets/PROCESSED/weapons/rifle_03/v001/frames/rifle_shot/03.png"
+            },
+            "rifle_04": {
+              "weapon": "res://assets/PROCESSED/weapons/rifle_04/v001/frames/rifle_shot/03.png"
+            },
+            "rifle_05": {
+              "weapon": "res://assets/PROCESSED/weapons/rifle_05/v001/frames/rifle_shot/03.png"
+            },
+            "rifle_06": {
+              "weapon": "res://assets/PROCESSED/weapons/rifle_06/v001/frames/rifle_shot/03.png"
+            }
+          },
+          "changed_pixels": 191
+        },
+        {
+          "source": {
+            "path": "res://assets/PROCESSED/characters/CHR-01/rpg_v6/rifle_2_04.png"
+          },
+          "canvas": [
+            96,
+            96
+          ],
+          "anchor": [
+            48.0,
+            84.0
+          ],
+          "socket": {
+            "position": [
+              50.0,
+              61.0
+            ],
+            "angle_degrees": 0
+          },
+          "mask": "res://assets/PROCESSED/weapons/appearances/v001/rifle_shot/rifle_shot_04_mask.png",
+          "body": "res://assets/PROCESSED/weapons/appearances/v001/rifle_shot/rifle_shot_04_body.png",
+          "foreground": "res://assets/PROCESSED/weapons/appearances/v001/rifle_shot/rifle_shot_04_fingers.png",
+          "skins": {
+            "original": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/rifle_shot/rifle_shot_04_original_weapon.png"
+            },
+            "bronze": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/rifle_shot/rifle_shot_04_bronze_weapon.png"
+            },
+            "frost": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/rifle_shot/rifle_shot_04_frost_weapon.png"
+            },
+            "rifle_02": {
+              "weapon": "res://assets/PROCESSED/weapons/rifle_02/v001/frames/rifle_shot/04.png"
+            },
+            "rifle_03": {
+              "weapon": "res://assets/PROCESSED/weapons/rifle_03/v001/frames/rifle_shot/04.png"
+            },
+            "rifle_04": {
+              "weapon": "res://assets/PROCESSED/weapons/rifle_04/v001/frames/rifle_shot/04.png"
+            },
+            "rifle_05": {
+              "weapon": "res://assets/PROCESSED/weapons/rifle_05/v001/frames/rifle_shot/04.png"
+            },
+            "rifle_06": {
+              "weapon": "res://assets/PROCESSED/weapons/rifle_06/v001/frames/rifle_shot/04.png"
+            }
+          },
+          "changed_pixels": 191
+        },
+        {
+          "source": {
+            "path": "res://assets/PROCESSED/characters/CHR-01/rpg_v6/rifle_2_05.png"
+          },
+          "canvas": [
+            96,
+            96
+          ],
+          "anchor": [
+            48.0,
+            84.0
+          ],
+          "socket": {
+            "position": [
+              51.0,
+              61.0
+            ],
+            "angle_degrees": 0
+          },
+          "mask": "res://assets/PROCESSED/weapons/appearances/v001/rifle_shot/rifle_shot_05_mask.png",
+          "body": "res://assets/PROCESSED/weapons/appearances/v001/rifle_shot/rifle_shot_05_body.png",
+          "foreground": "res://assets/PROCESSED/weapons/appearances/v001/rifle_shot/rifle_shot_05_fingers.png",
+          "skins": {
+            "original": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/rifle_shot/rifle_shot_05_original_weapon.png"
+            },
+            "bronze": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/rifle_shot/rifle_shot_05_bronze_weapon.png"
+            },
+            "frost": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/rifle_shot/rifle_shot_05_frost_weapon.png"
+            },
+            "rifle_02": {
+              "weapon": "res://assets/PROCESSED/weapons/rifle_02/v001/frames/rifle_shot/05.png"
+            },
+            "rifle_03": {
+              "weapon": "res://assets/PROCESSED/weapons/rifle_03/v001/frames/rifle_shot/05.png"
+            },
+            "rifle_04": {
+              "weapon": "res://assets/PROCESSED/weapons/rifle_04/v001/frames/rifle_shot/05.png"
+            },
+            "rifle_05": {
+              "weapon": "res://assets/PROCESSED/weapons/rifle_05/v001/frames/rifle_shot/05.png"
+            },
+            "rifle_06": {
+              "weapon": "res://assets/PROCESSED/weapons/rifle_06/v001/frames/rifle_shot/05.png"
+            }
+          },
+          "changed_pixels": 194
+        },
+        {
+          "source": {
+            "path": "res://assets/PROCESSED/characters/CHR-01/rpg_v6/rifle_2_06.png"
+          },
+          "canvas": [
+            96,
+            96
+          ],
+          "anchor": [
+            48.0,
+            84.0
+          ],
+          "socket": {
+            "position": [
+              52.0,
+              60.0
+            ],
+            "angle_degrees": 0
+          },
+          "mask": "res://assets/PROCESSED/weapons/appearances/v001/rifle_shot/rifle_shot_06_mask.png",
+          "body": "res://assets/PROCESSED/weapons/appearances/v001/rifle_shot/rifle_shot_06_body.png",
+          "foreground": "res://assets/PROCESSED/weapons/appearances/v001/rifle_shot/rifle_shot_06_fingers.png",
+          "skins": {
+            "original": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/rifle_shot/rifle_shot_06_original_weapon.png"
+            },
+            "bronze": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/rifle_shot/rifle_shot_06_bronze_weapon.png"
+            },
+            "frost": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/rifle_shot/rifle_shot_06_frost_weapon.png"
+            },
+            "rifle_02": {
+              "weapon": "res://assets/PROCESSED/weapons/rifle_02/v001/frames/rifle_shot/06.png"
+            },
+            "rifle_03": {
+              "weapon": "res://assets/PROCESSED/weapons/rifle_03/v001/frames/rifle_shot/06.png"
+            },
+            "rifle_04": {
+              "weapon": "res://assets/PROCESSED/weapons/rifle_04/v001/frames/rifle_shot/06.png"
+            },
+            "rifle_05": {
+              "weapon": "res://assets/PROCESSED/weapons/rifle_05/v001/frames/rifle_shot/06.png"
+            },
+            "rifle_06": {
+              "weapon": "res://assets/PROCESSED/weapons/rifle_06/v001/frames/rifle_shot/06.png"
+            }
+          },
+          "changed_pixels": 208
+        },
+        {
+          "source": {
+            "path": "res://assets/PROCESSED/characters/CHR-01/rpg_v6/rifle_2_07.png"
+          },
+          "canvas": [
+            96,
+            96
+          ],
+          "anchor": [
+            48.0,
+            84.0
+          ],
+          "socket": {
+            "position": [
+              52.0,
+              60.0
+            ],
+            "angle_degrees": 0
+          },
+          "mask": "res://assets/PROCESSED/weapons/appearances/v001/rifle_shot/rifle_shot_07_mask.png",
+          "body": "res://assets/PROCESSED/weapons/appearances/v001/rifle_shot/rifle_shot_07_body.png",
+          "foreground": "res://assets/PROCESSED/weapons/appearances/v001/rifle_shot/rifle_shot_07_fingers.png",
+          "skins": {
+            "original": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/rifle_shot/rifle_shot_07_original_weapon.png"
+            },
+            "bronze": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/rifle_shot/rifle_shot_07_bronze_weapon.png"
+            },
+            "frost": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/rifle_shot/rifle_shot_07_frost_weapon.png"
+            },
+            "rifle_02": {
+              "weapon": "res://assets/PROCESSED/weapons/rifle_02/v001/frames/rifle_shot/07.png"
+            },
+            "rifle_03": {
+              "weapon": "res://assets/PROCESSED/weapons/rifle_03/v001/frames/rifle_shot/07.png"
+            },
+            "rifle_04": {
+              "weapon": "res://assets/PROCESSED/weapons/rifle_04/v001/frames/rifle_shot/07.png"
+            },
+            "rifle_05": {
+              "weapon": "res://assets/PROCESSED/weapons/rifle_05/v001/frames/rifle_shot/07.png"
+            },
+            "rifle_06": {
+              "weapon": "res://assets/PROCESSED/weapons/rifle_06/v001/frames/rifle_shot/07.png"
+            }
+          },
+          "changed_pixels": 208
+        }
+      ]
+    },
+    "guard_sword": {
+      "module": "sword",
+      "frames": [
+        {
+          "source": {
+            "path": "res://assets/PROCESSED/characters/CHR-01/guard_v3/guard_sword_00.png"
+          },
+          "canvas": [
+            96,
+            96
+          ],
+          "anchor": [
+            48.0,
+            84.0
+          ],
+          "socket": {
+            "position": [
+              55.0,
+              69.0
+            ],
+            "angle_degrees": -5.0
+          },
+          "mask": "res://assets/PROCESSED/weapons/appearances/v001/guard_sword/guard_sword_00_mask.png",
+          "body": "res://assets/PROCESSED/weapons/appearances/v001/guard_sword/guard_sword_00_body.png",
+          "foreground": "res://assets/PROCESSED/weapons/appearances/v001/guard_sword/guard_sword_00_fingers.png",
+          "skins": {
+            "original": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/guard_sword/guard_sword_00_original_weapon.png"
+            },
+            "bronze": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/guard_sword/guard_sword_00_bronze_weapon.png"
+            },
+            "frost": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/guard_sword/guard_sword_00_frost_weapon.png"
+            },
+            "sword_02": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_02/v001/frames/guard_sword/00.png"
+            },
+            "sword_03": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_03/v001/frames/guard_sword/00.png"
+            },
+            "sword_04": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_04/v001/frames/guard_sword/00.png"
+            },
+            "sword_05": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_05/v001/frames/guard_sword/00.png"
+            },
+            "sword_06": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_06/v001/frames/guard_sword/00.png"
+            }
+          },
+          "changed_pixels": 112
+        },
+        {
+          "source": {
+            "path": "res://assets/PROCESSED/characters/CHR-01/guard_v3/guard_sword_01.png"
+          },
+          "canvas": [
+            96,
+            96
+          ],
+          "anchor": [
+            48.0,
+            84.0
+          ],
+          "socket": {
+            "position": [
+              60.0,
+              70.0
+            ],
+            "angle_degrees": -20.0
+          },
+          "mask": "res://assets/PROCESSED/weapons/appearances/v001/guard_sword/guard_sword_01_mask.png",
+          "body": "res://assets/PROCESSED/weapons/appearances/v001/guard_sword/guard_sword_01_body.png",
+          "foreground": "res://assets/PROCESSED/weapons/appearances/v001/guard_sword/guard_sword_01_fingers.png",
+          "skins": {
+            "original": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/guard_sword/guard_sword_01_original_weapon.png"
+            },
+            "bronze": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/guard_sword/guard_sword_01_bronze_weapon.png"
+            },
+            "frost": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/guard_sword/guard_sword_01_frost_weapon.png"
+            },
+            "sword_02": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_02/v001/frames/guard_sword/01.png"
+            },
+            "sword_03": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_03/v001/frames/guard_sword/01.png"
+            },
+            "sword_04": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_04/v001/frames/guard_sword/01.png"
+            },
+            "sword_05": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_05/v001/frames/guard_sword/01.png"
+            },
+            "sword_06": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_06/v001/frames/guard_sword/01.png"
+            }
+          },
+          "changed_pixels": 120
+        },
+        {
+          "source": {
+            "path": "res://assets/PROCESSED/characters/CHR-01/guard_v3/guard_sword_02.png"
+          },
+          "canvas": [
+            96,
+            96
+          ],
+          "anchor": [
+            48.0,
+            84.0
+          ],
+          "socket": {
+            "position": [
+              59.0,
+              66.0
+            ],
+            "angle_degrees": -40.0
+          },
+          "mask": "res://assets/PROCESSED/weapons/appearances/v001/guard_sword/guard_sword_02_mask.png",
+          "body": "res://assets/PROCESSED/weapons/appearances/v001/guard_sword/guard_sword_02_body.png",
+          "foreground": "res://assets/PROCESSED/weapons/appearances/v001/guard_sword/guard_sword_02_fingers.png",
+          "skins": {
+            "original": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/guard_sword/guard_sword_02_original_weapon.png"
+            },
+            "bronze": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/guard_sword/guard_sword_02_bronze_weapon.png"
+            },
+            "frost": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/guard_sword/guard_sword_02_frost_weapon.png"
+            },
+            "sword_02": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_02/v001/frames/guard_sword/02.png"
+            },
+            "sword_03": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_03/v001/frames/guard_sword/02.png"
+            },
+            "sword_04": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_04/v001/frames/guard_sword/02.png"
+            },
+            "sword_05": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_05/v001/frames/guard_sword/02.png"
+            },
+            "sword_06": {
+              "weapon": "res://assets/PROCESSED/weapons/sword_06/v001/frames/guard_sword/02.png"
+            }
+          },
+          "changed_pixels": 108
+        }
+      ]
+    },
+    "guard_rifle": {
+      "module": "rifle",
+      "frames": [
+        {
+          "source": {
+            "path": "res://assets/PROCESSED/characters/CHR-01/guard_v3/guard_rifle_00.png"
+          },
+          "canvas": [
+            96,
+            96
+          ],
+          "anchor": [
+            48.0,
+            84.0
+          ],
+          "socket": {
+            "position": [
+              55.0,
+              69.0
+            ],
+            "angle_degrees": -5.0
+          },
+          "mask": "res://assets/PROCESSED/weapons/appearances/v001/guard_rifle/guard_rifle_00_mask.png",
+          "body": "res://assets/PROCESSED/weapons/appearances/v001/guard_rifle/guard_rifle_00_body.png",
+          "foreground": "res://assets/PROCESSED/weapons/appearances/v001/guard_rifle/guard_rifle_00_fingers.png",
+          "skins": {
+            "original": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/guard_rifle/guard_rifle_00_original_weapon.png"
+            },
+            "bronze": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/guard_rifle/guard_rifle_00_bronze_weapon.png"
+            },
+            "frost": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/guard_rifle/guard_rifle_00_frost_weapon.png"
+            },
+            "rifle_02": {
+              "weapon": "res://assets/PROCESSED/weapons/rifle_02/v001/frames/guard_rifle/00.png"
+            },
+            "rifle_03": {
+              "weapon": "res://assets/PROCESSED/weapons/rifle_03/v001/frames/guard_rifle/00.png"
+            },
+            "rifle_04": {
+              "weapon": "res://assets/PROCESSED/weapons/rifle_04/v001/frames/guard_rifle/00.png"
+            },
+            "rifle_05": {
+              "weapon": "res://assets/PROCESSED/weapons/rifle_05/v001/frames/guard_rifle/00.png"
+            },
+            "rifle_06": {
+              "weapon": "res://assets/PROCESSED/weapons/rifle_06/v001/frames/guard_rifle/00.png"
+            }
+          },
+          "changed_pixels": 231
+        },
+        {
+          "source": {
+            "path": "res://assets/PROCESSED/characters/CHR-01/guard_v3/guard_rifle_01.png"
+          },
+          "canvas": [
+            96,
+            96
+          ],
+          "anchor": [
+            48.0,
+            84.0
+          ],
+          "socket": {
+            "position": [
+              60.0,
+              70.0
+            ],
+            "angle_degrees": -20.0
+          },
+          "mask": "res://assets/PROCESSED/weapons/appearances/v001/guard_rifle/guard_rifle_01_mask.png",
+          "body": "res://assets/PROCESSED/weapons/appearances/v001/guard_rifle/guard_rifle_01_body.png",
+          "foreground": "res://assets/PROCESSED/weapons/appearances/v001/guard_rifle/guard_rifle_01_fingers.png",
+          "skins": {
+            "original": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/guard_rifle/guard_rifle_01_original_weapon.png"
+            },
+            "bronze": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/guard_rifle/guard_rifle_01_bronze_weapon.png"
+            },
+            "frost": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/guard_rifle/guard_rifle_01_frost_weapon.png"
+            },
+            "rifle_02": {
+              "weapon": "res://assets/PROCESSED/weapons/rifle_02/v001/frames/guard_rifle/01.png"
+            },
+            "rifle_03": {
+              "weapon": "res://assets/PROCESSED/weapons/rifle_03/v001/frames/guard_rifle/01.png"
+            },
+            "rifle_04": {
+              "weapon": "res://assets/PROCESSED/weapons/rifle_04/v001/frames/guard_rifle/01.png"
+            },
+            "rifle_05": {
+              "weapon": "res://assets/PROCESSED/weapons/rifle_05/v001/frames/guard_rifle/01.png"
+            },
+            "rifle_06": {
+              "weapon": "res://assets/PROCESSED/weapons/rifle_06/v001/frames/guard_rifle/01.png"
+            }
+          },
+          "changed_pixels": 223
+        },
+        {
+          "source": {
+            "path": "res://assets/PROCESSED/characters/CHR-01/guard_v3/guard_rifle_02.png"
+          },
+          "canvas": [
+            96,
+            96
+          ],
+          "anchor": [
+            48.0,
+            84.0
+          ],
+          "socket": {
+            "position": [
+              59.0,
+              66.0
+            ],
+            "angle_degrees": -40.0
+          },
+          "mask": "res://assets/PROCESSED/weapons/appearances/v001/guard_rifle/guard_rifle_02_mask.png",
+          "body": "res://assets/PROCESSED/weapons/appearances/v001/guard_rifle/guard_rifle_02_body.png",
+          "foreground": "res://assets/PROCESSED/weapons/appearances/v001/guard_rifle/guard_rifle_02_fingers.png",
+          "skins": {
+            "original": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/guard_rifle/guard_rifle_02_original_weapon.png"
+            },
+            "bronze": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/guard_rifle/guard_rifle_02_bronze_weapon.png"
+            },
+            "frost": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/guard_rifle/guard_rifle_02_frost_weapon.png"
+            },
+            "rifle_02": {
+              "weapon": "res://assets/PROCESSED/weapons/rifle_02/v001/frames/guard_rifle/02.png"
+            },
+            "rifle_03": {
+              "weapon": "res://assets/PROCESSED/weapons/rifle_03/v001/frames/guard_rifle/02.png"
+            },
+            "rifle_04": {
+              "weapon": "res://assets/PROCESSED/weapons/rifle_04/v001/frames/guard_rifle/02.png"
+            },
+            "rifle_05": {
+              "weapon": "res://assets/PROCESSED/weapons/rifle_05/v001/frames/guard_rifle/02.png"
+            },
+            "rifle_06": {
+              "weapon": "res://assets/PROCESSED/weapons/rifle_06/v001/frames/guard_rifle/02.png"
+            }
+          },
+          "changed_pixels": 239
+        }
+      ]
+    },
+    "guard_hammer": {
+      "module": "hammer",
+      "frames": [
+        {
+          "source": {
+            "path": "res://assets/PROCESSED/characters/CHR-01/guard_v3/guard_hammer_00.png"
+          },
+          "canvas": [
+            96,
+            96
+          ],
+          "anchor": [
+            48.0,
+            84.0
+          ],
+          "socket": {
+            "position": [
+              55.0,
+              69.0
+            ],
+            "angle_degrees": -1.5155900649221772
+          },
+          "mask": "res://assets/PROCESSED/weapons/appearances/v001/guard_hammer/guard_hammer_00_mask.png",
+          "body": "res://assets/PROCESSED/weapons/appearances/v001/guard_hammer/guard_hammer_00_body.png",
+          "foreground": "res://assets/PROCESSED/weapons/appearances/v001/guard_hammer/guard_hammer_00_fingers.png",
+          "skins": {
+            "original": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/guard_hammer/guard_hammer_00_original_weapon.png"
+            },
+            "bronze": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/guard_hammer/guard_hammer_00_bronze_weapon.png"
+            },
+            "frost": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/guard_hammer/guard_hammer_00_frost_weapon.png"
+            },
+            "hammer_02": {
+              "weapon": "res://assets/PROCESSED/weapons/hammer_02/v001/frames/guard_hammer/00.png"
+            },
+            "hammer_03": {
+              "weapon": "res://assets/PROCESSED/weapons/hammer_03/v001/frames/guard_hammer/00.png"
+            },
+            "hammer_04": {
+              "weapon": "res://assets/PROCESSED/weapons/hammer_04/v001/frames/guard_hammer/00.png"
+            },
+            "hammer_05": {
+              "weapon": "res://assets/PROCESSED/weapons/hammer_05/v001/frames/guard_hammer/00.png"
+            }
+          },
+          "changed_pixels": 258
+        },
+        {
+          "source": {
+            "path": "res://assets/PROCESSED/characters/CHR-01/guard_v3/guard_hammer_01.png"
+          },
+          "canvas": [
+            96,
+            96
+          ],
+          "anchor": [
+            48.0,
+            84.0
+          ],
+          "socket": {
+            "position": [
+              60.0,
+              70.0
+            ],
+            "angle_degrees": -16.676420262482928
+          },
+          "mask": "res://assets/PROCESSED/weapons/appearances/v001/guard_hammer/guard_hammer_01_mask.png",
+          "body": "res://assets/PROCESSED/weapons/appearances/v001/guard_hammer/guard_hammer_01_body.png",
+          "foreground": "res://assets/PROCESSED/weapons/appearances/v001/guard_hammer/guard_hammer_01_fingers.png",
+          "skins": {
+            "original": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/guard_hammer/guard_hammer_01_original_weapon.png"
+            },
+            "bronze": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/guard_hammer/guard_hammer_01_bronze_weapon.png"
+            },
+            "frost": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/guard_hammer/guard_hammer_01_frost_weapon.png"
+            },
+            "hammer_02": {
+              "weapon": "res://assets/PROCESSED/weapons/hammer_02/v001/frames/guard_hammer/01.png"
+            },
+            "hammer_03": {
+              "weapon": "res://assets/PROCESSED/weapons/hammer_03/v001/frames/guard_hammer/01.png"
+            },
+            "hammer_04": {
+              "weapon": "res://assets/PROCESSED/weapons/hammer_04/v001/frames/guard_hammer/01.png"
+            },
+            "hammer_05": {
+              "weapon": "res://assets/PROCESSED/weapons/hammer_05/v001/frames/guard_hammer/01.png"
+            }
+          },
+          "changed_pixels": 234
+        },
+        {
+          "source": {
+            "path": "res://assets/PROCESSED/characters/CHR-01/guard_v3/guard_hammer_02.png"
+          },
+          "canvas": [
+            96,
+            96
+          ],
+          "anchor": [
+            48.0,
+            84.0
+          ],
+          "socket": {
+            "position": [
+              59.0,
+              66.0
+            ],
+            "angle_degrees": -37.47617956136139
+          },
+          "mask": "res://assets/PROCESSED/weapons/appearances/v001/guard_hammer/guard_hammer_02_mask.png",
+          "body": "res://assets/PROCESSED/weapons/appearances/v001/guard_hammer/guard_hammer_02_body.png",
+          "foreground": "res://assets/PROCESSED/weapons/appearances/v001/guard_hammer/guard_hammer_02_fingers.png",
+          "skins": {
+            "original": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/guard_hammer/guard_hammer_02_original_weapon.png"
+            },
+            "bronze": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/guard_hammer/guard_hammer_02_bronze_weapon.png"
+            },
+            "frost": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/guard_hammer/guard_hammer_02_frost_weapon.png"
+            },
+            "hammer_02": {
+              "weapon": "res://assets/PROCESSED/weapons/hammer_02/v001/frames/guard_hammer/02.png"
+            },
+            "hammer_03": {
+              "weapon": "res://assets/PROCESSED/weapons/hammer_03/v001/frames/guard_hammer/02.png"
+            },
+            "hammer_04": {
+              "weapon": "res://assets/PROCESSED/weapons/hammer_04/v001/frames/guard_hammer/02.png"
+            },
+            "hammer_05": {
+              "weapon": "res://assets/PROCESSED/weapons/hammer_05/v001/frames/guard_hammer/02.png"
+            }
+          },
+          "changed_pixels": 246
+        }
+      ]
+    },
+    "guard_staff": {
+      "module": "staff",
+      "frames": [
+        {
+          "source": {
+            "path": "res://assets/PROCESSED/characters/CHR-01/guard_v3/guard_staff_00.png"
+          },
+          "canvas": [
+            96,
+            96
+          ],
+          "anchor": [
+            48.0,
+            84.0
+          ],
+          "socket": {
+            "position": [
+              55.0,
+              69.0
+            ],
+            "angle_degrees": -5.0
+          },
+          "mask": "res://assets/PROCESSED/weapons/appearances/v001/guard_staff/guard_staff_00_mask.png",
+          "body": "res://assets/PROCESSED/weapons/appearances/v001/guard_staff/guard_staff_00_body.png",
+          "foreground": "res://assets/PROCESSED/weapons/appearances/v001/guard_staff/guard_staff_00_fingers.png",
+          "skins": {
+            "original": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/guard_staff/guard_staff_00_original_weapon.png"
+            },
+            "bronze": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/guard_staff/guard_staff_00_bronze_weapon.png"
+            },
+            "frost": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/guard_staff/guard_staff_00_frost_weapon.png"
+            }
+          },
+          "changed_pixels": 202
+        },
+        {
+          "source": {
+            "path": "res://assets/PROCESSED/characters/CHR-01/guard_v3/guard_staff_01.png"
+          },
+          "canvas": [
+            96,
+            96
+          ],
+          "anchor": [
+            48.0,
+            84.0
+          ],
+          "socket": {
+            "position": [
+              60.0,
+              70.0
+            ],
+            "angle_degrees": -20.0
+          },
+          "mask": "res://assets/PROCESSED/weapons/appearances/v001/guard_staff/guard_staff_01_mask.png",
+          "body": "res://assets/PROCESSED/weapons/appearances/v001/guard_staff/guard_staff_01_body.png",
+          "foreground": "res://assets/PROCESSED/weapons/appearances/v001/guard_staff/guard_staff_01_fingers.png",
+          "skins": {
+            "original": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/guard_staff/guard_staff_01_original_weapon.png"
+            },
+            "bronze": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/guard_staff/guard_staff_01_bronze_weapon.png"
+            },
+            "frost": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/guard_staff/guard_staff_01_frost_weapon.png"
+            }
+          },
+          "changed_pixels": 180
+        },
+        {
+          "source": {
+            "path": "res://assets/PROCESSED/characters/CHR-01/guard_v3/guard_staff_02.png"
+          },
+          "canvas": [
+            96,
+            96
+          ],
+          "anchor": [
+            48.0,
+            84.0
+          ],
+          "socket": {
+            "position": [
+              59.0,
+              66.0
+            ],
+            "angle_degrees": -40.0
+          },
+          "mask": "res://assets/PROCESSED/weapons/appearances/v001/guard_staff/guard_staff_02_mask.png",
+          "body": "res://assets/PROCESSED/weapons/appearances/v001/guard_staff/guard_staff_02_body.png",
+          "foreground": "res://assets/PROCESSED/weapons/appearances/v001/guard_staff/guard_staff_02_fingers.png",
+          "skins": {
+            "original": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/guard_staff/guard_staff_02_original_weapon.png"
+            },
+            "bronze": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/guard_staff/guard_staff_02_bronze_weapon.png"
+            },
+            "frost": {
+              "weapon": "res://assets/PROCESSED/weapons/appearances/v001/guard_staff/guard_staff_02_frost_weapon.png"
+            }
+          },
+          "changed_pixels": 191
+        }
+      ]
+    }
+  },
+  "source_policy": "Approved character masters unchanged. Layers are native pixel copies, not generated images.",
+  "frames": 76
+}

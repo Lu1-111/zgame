@@ -1,0 +1,2251 @@
+{
+  "id": "cave_v001",
+  "category": "cave",
+  "native_pixel_scale": 1,
+  "filter": "nearest",
+  "tile_size": 64,
+  "pixel_standard": "res://data/art/pixel_standards.json",
+  "pixel_spec": "res://data/art/cave_v001_pixel_spec.json",
+  "palette": [
+    "#10131d",
+    "#181b28",
+    "#202431",
+    "#292e3c",
+    "#343a49",
+    "#424959",
+    "#525c6c",
+    "#687585",
+    "#8794a0",
+    "#a7b2b7",
+    "#c5ced0",
+    "#edf1e9",
+    "#49403c",
+    "#77614f",
+    "#b59970",
+    "#e6d5ab",
+    "#185664",
+    "#187180",
+    "#3aafbb",
+    "#65d1d5",
+    "#a2edeb",
+    "#d9ffff",
+    "#2d2944",
+    "#5c4e81",
+    "#a493c5",
+    "#d3c5eb",
+    "#736953",
+    "#b4a58a",
+    "#eddfc2",
+    "#fff2d4",
+    "#314d78",
+    "#7eb4ed"
+  ],
+  "terrain": {
+    "atlas": "res://assets/environments/tilesets/cave/v001/terrain_atlas.png",
+    "tileset": "res://assets/environments/tilesets/cave/v001/cave_terrain.tres",
+    "continuous_field": "res://assets/environments/terrain/cave/v001/rock_field.png",
+    "variants": [
+      {
+        "id": "fill_00",
+        "kind": "fill",
+        "atlas": [
+          0,
+          0
+        ],
+        "path": "res://assets/environments/terrain/cave/v001/tiles/fill_00.png",
+        "native_canvas": [
+          64,
+          64
+        ],
+        "runtime_scale": [
+          1,
+          1
+        ]
+      },
+      {
+        "id": "fill_01",
+        "kind": "fill",
+        "atlas": [
+          1,
+          0
+        ],
+        "path": "res://assets/environments/terrain/cave/v001/tiles/fill_01.png",
+        "native_canvas": [
+          64,
+          64
+        ],
+        "runtime_scale": [
+          1,
+          1
+        ]
+      },
+      {
+        "id": "fill_02",
+        "kind": "fill",
+        "atlas": [
+          2,
+          0
+        ],
+        "path": "res://assets/environments/terrain/cave/v001/tiles/fill_02.png",
+        "native_canvas": [
+          64,
+          64
+        ],
+        "runtime_scale": [
+          1,
+          1
+        ]
+      },
+      {
+        "id": "fill_03",
+        "kind": "fill",
+        "atlas": [
+          3,
+          0
+        ],
+        "path": "res://assets/environments/terrain/cave/v001/tiles/fill_03.png",
+        "native_canvas": [
+          64,
+          64
+        ],
+        "runtime_scale": [
+          1,
+          1
+        ]
+      },
+      {
+        "id": "fill_04",
+        "kind": "fill",
+        "atlas": [
+          4,
+          0
+        ],
+        "path": "res://assets/environments/terrain/cave/v001/tiles/fill_04.png",
+        "native_canvas": [
+          64,
+          64
+        ],
+        "runtime_scale": [
+          1,
+          1
+        ]
+      },
+      {
+        "id": "fill_05",
+        "kind": "fill",
+        "atlas": [
+          5,
+          0
+        ],
+        "path": "res://assets/environments/terrain/cave/v001/tiles/fill_05.png",
+        "native_canvas": [
+          64,
+          64
+        ],
+        "runtime_scale": [
+          1,
+          1
+        ]
+      },
+      {
+        "id": "fill_06",
+        "kind": "fill",
+        "atlas": [
+          6,
+          0
+        ],
+        "path": "res://assets/environments/terrain/cave/v001/tiles/fill_06.png",
+        "native_canvas": [
+          64,
+          64
+        ],
+        "runtime_scale": [
+          1,
+          1
+        ]
+      },
+      {
+        "id": "fill_07",
+        "kind": "fill",
+        "atlas": [
+          7,
+          0
+        ],
+        "path": "res://assets/environments/terrain/cave/v001/tiles/fill_07.png",
+        "native_canvas": [
+          64,
+          64
+        ],
+        "runtime_scale": [
+          1,
+          1
+        ]
+      },
+      {
+        "id": "fill_08",
+        "kind": "fill",
+        "atlas": [
+          0,
+          1
+        ],
+        "path": "res://assets/environments/terrain/cave/v001/tiles/fill_08.png",
+        "native_canvas": [
+          64,
+          64
+        ],
+        "runtime_scale": [
+          1,
+          1
+        ]
+      },
+      {
+        "id": "fill_09",
+        "kind": "fill",
+        "atlas": [
+          1,
+          1
+        ],
+        "path": "res://assets/environments/terrain/cave/v001/tiles/fill_09.png",
+        "native_canvas": [
+          64,
+          64
+        ],
+        "runtime_scale": [
+          1,
+          1
+        ]
+      },
+      {
+        "id": "fill_10",
+        "kind": "fill",
+        "atlas": [
+          2,
+          1
+        ],
+        "path": "res://assets/environments/terrain/cave/v001/tiles/fill_10.png",
+        "native_canvas": [
+          64,
+          64
+        ],
+        "runtime_scale": [
+          1,
+          1
+        ]
+      },
+      {
+        "id": "fill_11",
+        "kind": "fill",
+        "atlas": [
+          3,
+          1
+        ],
+        "path": "res://assets/environments/terrain/cave/v001/tiles/fill_11.png",
+        "native_canvas": [
+          64,
+          64
+        ],
+        "runtime_scale": [
+          1,
+          1
+        ]
+      },
+      {
+        "id": "fill_12",
+        "kind": "fill",
+        "atlas": [
+          4,
+          1
+        ],
+        "path": "res://assets/environments/terrain/cave/v001/tiles/fill_12.png",
+        "native_canvas": [
+          64,
+          64
+        ],
+        "runtime_scale": [
+          1,
+          1
+        ]
+      },
+      {
+        "id": "fill_13",
+        "kind": "fill",
+        "atlas": [
+          5,
+          1
+        ],
+        "path": "res://assets/environments/terrain/cave/v001/tiles/fill_13.png",
+        "native_canvas": [
+          64,
+          64
+        ],
+        "runtime_scale": [
+          1,
+          1
+        ]
+      },
+      {
+        "id": "fill_14",
+        "kind": "fill",
+        "atlas": [
+          6,
+          1
+        ],
+        "path": "res://assets/environments/terrain/cave/v001/tiles/fill_14.png",
+        "native_canvas": [
+          64,
+          64
+        ],
+        "runtime_scale": [
+          1,
+          1
+        ]
+      },
+      {
+        "id": "fill_15",
+        "kind": "fill",
+        "atlas": [
+          7,
+          1
+        ],
+        "path": "res://assets/environments/terrain/cave/v001/tiles/fill_15.png",
+        "native_canvas": [
+          64,
+          64
+        ],
+        "runtime_scale": [
+          1,
+          1
+        ]
+      },
+      {
+        "id": "edge_top_00",
+        "kind": "edge_top",
+        "atlas": [
+          0,
+          2
+        ],
+        "path": "res://assets/environments/terrain/cave/v001/tiles/edge_top_00.png",
+        "native_canvas": [
+          64,
+          64
+        ],
+        "runtime_scale": [
+          1,
+          1
+        ]
+      },
+      {
+        "id": "edge_top_01",
+        "kind": "edge_top",
+        "atlas": [
+          1,
+          2
+        ],
+        "path": "res://assets/environments/terrain/cave/v001/tiles/edge_top_01.png",
+        "native_canvas": [
+          64,
+          64
+        ],
+        "runtime_scale": [
+          1,
+          1
+        ]
+      },
+      {
+        "id": "edge_top_02",
+        "kind": "edge_top",
+        "atlas": [
+          2,
+          2
+        ],
+        "path": "res://assets/environments/terrain/cave/v001/tiles/edge_top_02.png",
+        "native_canvas": [
+          64,
+          64
+        ],
+        "runtime_scale": [
+          1,
+          1
+        ]
+      },
+      {
+        "id": "edge_top_03",
+        "kind": "edge_top",
+        "atlas": [
+          3,
+          2
+        ],
+        "path": "res://assets/environments/terrain/cave/v001/tiles/edge_top_03.png",
+        "native_canvas": [
+          64,
+          64
+        ],
+        "runtime_scale": [
+          1,
+          1
+        ]
+      },
+      {
+        "id": "edge_top_04",
+        "kind": "edge_top",
+        "atlas": [
+          4,
+          2
+        ],
+        "path": "res://assets/environments/terrain/cave/v001/tiles/edge_top_04.png",
+        "native_canvas": [
+          64,
+          64
+        ],
+        "runtime_scale": [
+          1,
+          1
+        ]
+      },
+      {
+        "id": "edge_top_05",
+        "kind": "edge_top",
+        "atlas": [
+          5,
+          2
+        ],
+        "path": "res://assets/environments/terrain/cave/v001/tiles/edge_top_05.png",
+        "native_canvas": [
+          64,
+          64
+        ],
+        "runtime_scale": [
+          1,
+          1
+        ]
+      },
+      {
+        "id": "edge_top_06",
+        "kind": "edge_top",
+        "atlas": [
+          6,
+          2
+        ],
+        "path": "res://assets/environments/terrain/cave/v001/tiles/edge_top_06.png",
+        "native_canvas": [
+          64,
+          64
+        ],
+        "runtime_scale": [
+          1,
+          1
+        ]
+      },
+      {
+        "id": "edge_top_07",
+        "kind": "edge_top",
+        "atlas": [
+          7,
+          2
+        ],
+        "path": "res://assets/environments/terrain/cave/v001/tiles/edge_top_07.png",
+        "native_canvas": [
+          64,
+          64
+        ],
+        "runtime_scale": [
+          1,
+          1
+        ]
+      },
+      {
+        "id": "edge_bottom_00",
+        "kind": "edge_bottom",
+        "atlas": [
+          0,
+          3
+        ],
+        "path": "res://assets/environments/terrain/cave/v001/tiles/edge_bottom_00.png",
+        "native_canvas": [
+          64,
+          64
+        ],
+        "runtime_scale": [
+          1,
+          1
+        ]
+      },
+      {
+        "id": "edge_bottom_01",
+        "kind": "edge_bottom",
+        "atlas": [
+          1,
+          3
+        ],
+        "path": "res://assets/environments/terrain/cave/v001/tiles/edge_bottom_01.png",
+        "native_canvas": [
+          64,
+          64
+        ],
+        "runtime_scale": [
+          1,
+          1
+        ]
+      },
+      {
+        "id": "edge_bottom_02",
+        "kind": "edge_bottom",
+        "atlas": [
+          2,
+          3
+        ],
+        "path": "res://assets/environments/terrain/cave/v001/tiles/edge_bottom_02.png",
+        "native_canvas": [
+          64,
+          64
+        ],
+        "runtime_scale": [
+          1,
+          1
+        ]
+      },
+      {
+        "id": "edge_bottom_03",
+        "kind": "edge_bottom",
+        "atlas": [
+          3,
+          3
+        ],
+        "path": "res://assets/environments/terrain/cave/v001/tiles/edge_bottom_03.png",
+        "native_canvas": [
+          64,
+          64
+        ],
+        "runtime_scale": [
+          1,
+          1
+        ]
+      },
+      {
+        "id": "edge_bottom_04",
+        "kind": "edge_bottom",
+        "atlas": [
+          4,
+          3
+        ],
+        "path": "res://assets/environments/terrain/cave/v001/tiles/edge_bottom_04.png",
+        "native_canvas": [
+          64,
+          64
+        ],
+        "runtime_scale": [
+          1,
+          1
+        ]
+      },
+      {
+        "id": "edge_bottom_05",
+        "kind": "edge_bottom",
+        "atlas": [
+          5,
+          3
+        ],
+        "path": "res://assets/environments/terrain/cave/v001/tiles/edge_bottom_05.png",
+        "native_canvas": [
+          64,
+          64
+        ],
+        "runtime_scale": [
+          1,
+          1
+        ]
+      },
+      {
+        "id": "edge_bottom_06",
+        "kind": "edge_bottom",
+        "atlas": [
+          6,
+          3
+        ],
+        "path": "res://assets/environments/terrain/cave/v001/tiles/edge_bottom_06.png",
+        "native_canvas": [
+          64,
+          64
+        ],
+        "runtime_scale": [
+          1,
+          1
+        ]
+      },
+      {
+        "id": "edge_bottom_07",
+        "kind": "edge_bottom",
+        "atlas": [
+          7,
+          3
+        ],
+        "path": "res://assets/environments/terrain/cave/v001/tiles/edge_bottom_07.png",
+        "native_canvas": [
+          64,
+          64
+        ],
+        "runtime_scale": [
+          1,
+          1
+        ]
+      },
+      {
+        "id": "edge_left_00",
+        "kind": "edge_left",
+        "atlas": [
+          0,
+          4
+        ],
+        "path": "res://assets/environments/terrain/cave/v001/tiles/edge_left_00.png",
+        "native_canvas": [
+          64,
+          64
+        ],
+        "runtime_scale": [
+          1,
+          1
+        ]
+      },
+      {
+        "id": "edge_left_01",
+        "kind": "edge_left",
+        "atlas": [
+          1,
+          4
+        ],
+        "path": "res://assets/environments/terrain/cave/v001/tiles/edge_left_01.png",
+        "native_canvas": [
+          64,
+          64
+        ],
+        "runtime_scale": [
+          1,
+          1
+        ]
+      },
+      {
+        "id": "edge_left_02",
+        "kind": "edge_left",
+        "atlas": [
+          2,
+          4
+        ],
+        "path": "res://assets/environments/terrain/cave/v001/tiles/edge_left_02.png",
+        "native_canvas": [
+          64,
+          64
+        ],
+        "runtime_scale": [
+          1,
+          1
+        ]
+      },
+      {
+        "id": "edge_left_03",
+        "kind": "edge_left",
+        "atlas": [
+          3,
+          4
+        ],
+        "path": "res://assets/environments/terrain/cave/v001/tiles/edge_left_03.png",
+        "native_canvas": [
+          64,
+          64
+        ],
+        "runtime_scale": [
+          1,
+          1
+        ]
+      },
+      {
+        "id": "edge_left_04",
+        "kind": "edge_left",
+        "atlas": [
+          4,
+          4
+        ],
+        "path": "res://assets/environments/terrain/cave/v001/tiles/edge_left_04.png",
+        "native_canvas": [
+          64,
+          64
+        ],
+        "runtime_scale": [
+          1,
+          1
+        ]
+      },
+      {
+        "id": "edge_left_05",
+        "kind": "edge_left",
+        "atlas": [
+          5,
+          4
+        ],
+        "path": "res://assets/environments/terrain/cave/v001/tiles/edge_left_05.png",
+        "native_canvas": [
+          64,
+          64
+        ],
+        "runtime_scale": [
+          1,
+          1
+        ]
+      },
+      {
+        "id": "edge_left_06",
+        "kind": "edge_left",
+        "atlas": [
+          6,
+          4
+        ],
+        "path": "res://assets/environments/terrain/cave/v001/tiles/edge_left_06.png",
+        "native_canvas": [
+          64,
+          64
+        ],
+        "runtime_scale": [
+          1,
+          1
+        ]
+      },
+      {
+        "id": "edge_left_07",
+        "kind": "edge_left",
+        "atlas": [
+          7,
+          4
+        ],
+        "path": "res://assets/environments/terrain/cave/v001/tiles/edge_left_07.png",
+        "native_canvas": [
+          64,
+          64
+        ],
+        "runtime_scale": [
+          1,
+          1
+        ]
+      },
+      {
+        "id": "edge_right_00",
+        "kind": "edge_right",
+        "atlas": [
+          0,
+          5
+        ],
+        "path": "res://assets/environments/terrain/cave/v001/tiles/edge_right_00.png",
+        "native_canvas": [
+          64,
+          64
+        ],
+        "runtime_scale": [
+          1,
+          1
+        ]
+      },
+      {
+        "id": "edge_right_01",
+        "kind": "edge_right",
+        "atlas": [
+          1,
+          5
+        ],
+        "path": "res://assets/environments/terrain/cave/v001/tiles/edge_right_01.png",
+        "native_canvas": [
+          64,
+          64
+        ],
+        "runtime_scale": [
+          1,
+          1
+        ]
+      },
+      {
+        "id": "edge_right_02",
+        "kind": "edge_right",
+        "atlas": [
+          2,
+          5
+        ],
+        "path": "res://assets/environments/terrain/cave/v001/tiles/edge_right_02.png",
+        "native_canvas": [
+          64,
+          64
+        ],
+        "runtime_scale": [
+          1,
+          1
+        ]
+      },
+      {
+        "id": "edge_right_03",
+        "kind": "edge_right",
+        "atlas": [
+          3,
+          5
+        ],
+        "path": "res://assets/environments/terrain/cave/v001/tiles/edge_right_03.png",
+        "native_canvas": [
+          64,
+          64
+        ],
+        "runtime_scale": [
+          1,
+          1
+        ]
+      },
+      {
+        "id": "edge_right_04",
+        "kind": "edge_right",
+        "atlas": [
+          4,
+          5
+        ],
+        "path": "res://assets/environments/terrain/cave/v001/tiles/edge_right_04.png",
+        "native_canvas": [
+          64,
+          64
+        ],
+        "runtime_scale": [
+          1,
+          1
+        ]
+      },
+      {
+        "id": "edge_right_05",
+        "kind": "edge_right",
+        "atlas": [
+          5,
+          5
+        ],
+        "path": "res://assets/environments/terrain/cave/v001/tiles/edge_right_05.png",
+        "native_canvas": [
+          64,
+          64
+        ],
+        "runtime_scale": [
+          1,
+          1
+        ]
+      },
+      {
+        "id": "edge_right_06",
+        "kind": "edge_right",
+        "atlas": [
+          6,
+          5
+        ],
+        "path": "res://assets/environments/terrain/cave/v001/tiles/edge_right_06.png",
+        "native_canvas": [
+          64,
+          64
+        ],
+        "runtime_scale": [
+          1,
+          1
+        ]
+      },
+      {
+        "id": "edge_right_07",
+        "kind": "edge_right",
+        "atlas": [
+          7,
+          5
+        ],
+        "path": "res://assets/environments/terrain/cave/v001/tiles/edge_right_07.png",
+        "native_canvas": [
+          64,
+          64
+        ],
+        "runtime_scale": [
+          1,
+          1
+        ]
+      },
+      {
+        "id": "outer_tl_00",
+        "kind": "outer",
+        "atlas": [
+          0,
+          6
+        ],
+        "path": "res://assets/environments/terrain/cave/v001/tiles/outer_tl_00.png",
+        "native_canvas": [
+          64,
+          64
+        ],
+        "runtime_scale": [
+          1,
+          1
+        ]
+      },
+      {
+        "id": "outer_tl_01",
+        "kind": "outer",
+        "atlas": [
+          1,
+          6
+        ],
+        "path": "res://assets/environments/terrain/cave/v001/tiles/outer_tl_01.png",
+        "native_canvas": [
+          64,
+          64
+        ],
+        "runtime_scale": [
+          1,
+          1
+        ]
+      },
+      {
+        "id": "outer_tl_02",
+        "kind": "outer",
+        "atlas": [
+          2,
+          6
+        ],
+        "path": "res://assets/environments/terrain/cave/v001/tiles/outer_tl_02.png",
+        "native_canvas": [
+          64,
+          64
+        ],
+        "runtime_scale": [
+          1,
+          1
+        ]
+      },
+      {
+        "id": "outer_tl_03",
+        "kind": "outer",
+        "atlas": [
+          3,
+          6
+        ],
+        "path": "res://assets/environments/terrain/cave/v001/tiles/outer_tl_03.png",
+        "native_canvas": [
+          64,
+          64
+        ],
+        "runtime_scale": [
+          1,
+          1
+        ]
+      },
+      {
+        "id": "outer_tr_00",
+        "kind": "outer",
+        "atlas": [
+          4,
+          6
+        ],
+        "path": "res://assets/environments/terrain/cave/v001/tiles/outer_tr_00.png",
+        "native_canvas": [
+          64,
+          64
+        ],
+        "runtime_scale": [
+          1,
+          1
+        ]
+      },
+      {
+        "id": "outer_tr_01",
+        "kind": "outer",
+        "atlas": [
+          5,
+          6
+        ],
+        "path": "res://assets/environments/terrain/cave/v001/tiles/outer_tr_01.png",
+        "native_canvas": [
+          64,
+          64
+        ],
+        "runtime_scale": [
+          1,
+          1
+        ]
+      },
+      {
+        "id": "outer_tr_02",
+        "kind": "outer",
+        "atlas": [
+          6,
+          6
+        ],
+        "path": "res://assets/environments/terrain/cave/v001/tiles/outer_tr_02.png",
+        "native_canvas": [
+          64,
+          64
+        ],
+        "runtime_scale": [
+          1,
+          1
+        ]
+      },
+      {
+        "id": "outer_tr_03",
+        "kind": "outer",
+        "atlas": [
+          7,
+          6
+        ],
+        "path": "res://assets/environments/terrain/cave/v001/tiles/outer_tr_03.png",
+        "native_canvas": [
+          64,
+          64
+        ],
+        "runtime_scale": [
+          1,
+          1
+        ]
+      },
+      {
+        "id": "outer_bl_00",
+        "kind": "outer",
+        "atlas": [
+          0,
+          7
+        ],
+        "path": "res://assets/environments/terrain/cave/v001/tiles/outer_bl_00.png",
+        "native_canvas": [
+          64,
+          64
+        ],
+        "runtime_scale": [
+          1,
+          1
+        ]
+      },
+      {
+        "id": "outer_bl_01",
+        "kind": "outer",
+        "atlas": [
+          1,
+          7
+        ],
+        "path": "res://assets/environments/terrain/cave/v001/tiles/outer_bl_01.png",
+        "native_canvas": [
+          64,
+          64
+        ],
+        "runtime_scale": [
+          1,
+          1
+        ]
+      },
+      {
+        "id": "outer_bl_02",
+        "kind": "outer",
+        "atlas": [
+          2,
+          7
+        ],
+        "path": "res://assets/environments/terrain/cave/v001/tiles/outer_bl_02.png",
+        "native_canvas": [
+          64,
+          64
+        ],
+        "runtime_scale": [
+          1,
+          1
+        ]
+      },
+      {
+        "id": "outer_bl_03",
+        "kind": "outer",
+        "atlas": [
+          3,
+          7
+        ],
+        "path": "res://assets/environments/terrain/cave/v001/tiles/outer_bl_03.png",
+        "native_canvas": [
+          64,
+          64
+        ],
+        "runtime_scale": [
+          1,
+          1
+        ]
+      },
+      {
+        "id": "outer_br_00",
+        "kind": "outer",
+        "atlas": [
+          4,
+          7
+        ],
+        "path": "res://assets/environments/terrain/cave/v001/tiles/outer_br_00.png",
+        "native_canvas": [
+          64,
+          64
+        ],
+        "runtime_scale": [
+          1,
+          1
+        ]
+      },
+      {
+        "id": "outer_br_01",
+        "kind": "outer",
+        "atlas": [
+          5,
+          7
+        ],
+        "path": "res://assets/environments/terrain/cave/v001/tiles/outer_br_01.png",
+        "native_canvas": [
+          64,
+          64
+        ],
+        "runtime_scale": [
+          1,
+          1
+        ]
+      },
+      {
+        "id": "outer_br_02",
+        "kind": "outer",
+        "atlas": [
+          6,
+          7
+        ],
+        "path": "res://assets/environments/terrain/cave/v001/tiles/outer_br_02.png",
+        "native_canvas": [
+          64,
+          64
+        ],
+        "runtime_scale": [
+          1,
+          1
+        ]
+      },
+      {
+        "id": "outer_br_03",
+        "kind": "outer",
+        "atlas": [
+          7,
+          7
+        ],
+        "path": "res://assets/environments/terrain/cave/v001/tiles/outer_br_03.png",
+        "native_canvas": [
+          64,
+          64
+        ],
+        "runtime_scale": [
+          1,
+          1
+        ]
+      },
+      {
+        "id": "inner_tl_00",
+        "kind": "inner",
+        "atlas": [
+          0,
+          8
+        ],
+        "path": "res://assets/environments/terrain/cave/v001/tiles/inner_tl_00.png",
+        "native_canvas": [
+          64,
+          64
+        ],
+        "runtime_scale": [
+          1,
+          1
+        ]
+      },
+      {
+        "id": "inner_tl_01",
+        "kind": "inner",
+        "atlas": [
+          1,
+          8
+        ],
+        "path": "res://assets/environments/terrain/cave/v001/tiles/inner_tl_01.png",
+        "native_canvas": [
+          64,
+          64
+        ],
+        "runtime_scale": [
+          1,
+          1
+        ]
+      },
+      {
+        "id": "inner_tl_02",
+        "kind": "inner",
+        "atlas": [
+          2,
+          8
+        ],
+        "path": "res://assets/environments/terrain/cave/v001/tiles/inner_tl_02.png",
+        "native_canvas": [
+          64,
+          64
+        ],
+        "runtime_scale": [
+          1,
+          1
+        ]
+      },
+      {
+        "id": "inner_tl_03",
+        "kind": "inner",
+        "atlas": [
+          3,
+          8
+        ],
+        "path": "res://assets/environments/terrain/cave/v001/tiles/inner_tl_03.png",
+        "native_canvas": [
+          64,
+          64
+        ],
+        "runtime_scale": [
+          1,
+          1
+        ]
+      },
+      {
+        "id": "inner_tr_00",
+        "kind": "inner",
+        "atlas": [
+          4,
+          8
+        ],
+        "path": "res://assets/environments/terrain/cave/v001/tiles/inner_tr_00.png",
+        "native_canvas": [
+          64,
+          64
+        ],
+        "runtime_scale": [
+          1,
+          1
+        ]
+      },
+      {
+        "id": "inner_tr_01",
+        "kind": "inner",
+        "atlas": [
+          5,
+          8
+        ],
+        "path": "res://assets/environments/terrain/cave/v001/tiles/inner_tr_01.png",
+        "native_canvas": [
+          64,
+          64
+        ],
+        "runtime_scale": [
+          1,
+          1
+        ]
+      },
+      {
+        "id": "inner_tr_02",
+        "kind": "inner",
+        "atlas": [
+          6,
+          8
+        ],
+        "path": "res://assets/environments/terrain/cave/v001/tiles/inner_tr_02.png",
+        "native_canvas": [
+          64,
+          64
+        ],
+        "runtime_scale": [
+          1,
+          1
+        ]
+      },
+      {
+        "id": "inner_tr_03",
+        "kind": "inner",
+        "atlas": [
+          7,
+          8
+        ],
+        "path": "res://assets/environments/terrain/cave/v001/tiles/inner_tr_03.png",
+        "native_canvas": [
+          64,
+          64
+        ],
+        "runtime_scale": [
+          1,
+          1
+        ]
+      },
+      {
+        "id": "inner_bl_00",
+        "kind": "inner",
+        "atlas": [
+          0,
+          9
+        ],
+        "path": "res://assets/environments/terrain/cave/v001/tiles/inner_bl_00.png",
+        "native_canvas": [
+          64,
+          64
+        ],
+        "runtime_scale": [
+          1,
+          1
+        ]
+      },
+      {
+        "id": "inner_bl_01",
+        "kind": "inner",
+        "atlas": [
+          1,
+          9
+        ],
+        "path": "res://assets/environments/terrain/cave/v001/tiles/inner_bl_01.png",
+        "native_canvas": [
+          64,
+          64
+        ],
+        "runtime_scale": [
+          1,
+          1
+        ]
+      },
+      {
+        "id": "inner_bl_02",
+        "kind": "inner",
+        "atlas": [
+          2,
+          9
+        ],
+        "path": "res://assets/environments/terrain/cave/v001/tiles/inner_bl_02.png",
+        "native_canvas": [
+          64,
+          64
+        ],
+        "runtime_scale": [
+          1,
+          1
+        ]
+      },
+      {
+        "id": "inner_bl_03",
+        "kind": "inner",
+        "atlas": [
+          3,
+          9
+        ],
+        "path": "res://assets/environments/terrain/cave/v001/tiles/inner_bl_03.png",
+        "native_canvas": [
+          64,
+          64
+        ],
+        "runtime_scale": [
+          1,
+          1
+        ]
+      },
+      {
+        "id": "inner_br_00",
+        "kind": "inner",
+        "atlas": [
+          4,
+          9
+        ],
+        "path": "res://assets/environments/terrain/cave/v001/tiles/inner_br_00.png",
+        "native_canvas": [
+          64,
+          64
+        ],
+        "runtime_scale": [
+          1,
+          1
+        ]
+      },
+      {
+        "id": "inner_br_01",
+        "kind": "inner",
+        "atlas": [
+          5,
+          9
+        ],
+        "path": "res://assets/environments/terrain/cave/v001/tiles/inner_br_01.png",
+        "native_canvas": [
+          64,
+          64
+        ],
+        "runtime_scale": [
+          1,
+          1
+        ]
+      },
+      {
+        "id": "inner_br_02",
+        "kind": "inner",
+        "atlas": [
+          6,
+          9
+        ],
+        "path": "res://assets/environments/terrain/cave/v001/tiles/inner_br_02.png",
+        "native_canvas": [
+          64,
+          64
+        ],
+        "runtime_scale": [
+          1,
+          1
+        ]
+      },
+      {
+        "id": "inner_br_03",
+        "kind": "inner",
+        "atlas": [
+          7,
+          9
+        ],
+        "path": "res://assets/environments/terrain/cave/v001/tiles/inner_br_03.png",
+        "native_canvas": [
+          64,
+          64
+        ],
+        "runtime_scale": [
+          1,
+          1
+        ]
+      }
+    ]
+  },
+  "assets": {
+    "crystal_01": {
+      "path": "res://assets/environments/props/cave/v001/crystal/crystal_01.png",
+      "kind": "crystal",
+      "size": [
+        32,
+        24
+      ],
+      "native_canvas": [
+        32,
+        24
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        16,
+        24
+      ],
+      "z_index": 1,
+      "light": {
+        "color": "#79e7f0",
+        "energy": 0.85,
+        "radius": 80
+      }
+    },
+    "crystal_02": {
+      "path": "res://assets/environments/props/cave/v001/crystal/crystal_02.png",
+      "kind": "crystal",
+      "size": [
+        32,
+        32
+      ],
+      "native_canvas": [
+        32,
+        32
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        16,
+        32
+      ],
+      "z_index": 1,
+      "light": {
+        "color": "#79e7f0",
+        "energy": 0.85,
+        "radius": 80
+      }
+    },
+    "crystal_03": {
+      "path": "res://assets/environments/props/cave/v001/crystal/crystal_03.png",
+      "kind": "crystal",
+      "size": [
+        32,
+        48
+      ],
+      "native_canvas": [
+        32,
+        48
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        16,
+        48
+      ],
+      "z_index": 1,
+      "light": {
+        "color": "#79e7f0",
+        "energy": 0.85,
+        "radius": 80
+      }
+    },
+    "crystal_04": {
+      "path": "res://assets/environments/props/cave/v001/crystal/crystal_04.png",
+      "kind": "crystal",
+      "size": [
+        32,
+        24
+      ],
+      "native_canvas": [
+        32,
+        24
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        16,
+        24
+      ],
+      "z_index": 1,
+      "light": {
+        "color": "#b09fe7",
+        "energy": 0.85,
+        "radius": 80
+      }
+    },
+    "rock_01": {
+      "path": "res://assets/environments/props/cave/v001/rock/rock_01.png",
+      "kind": "rock",
+      "size": [
+        32,
+        16
+      ],
+      "native_canvas": [
+        32,
+        16
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        16,
+        16
+      ],
+      "z_index": 1
+    },
+    "rock_02": {
+      "path": "res://assets/environments/props/cave/v001/rock/rock_02.png",
+      "kind": "rock",
+      "size": [
+        40,
+        32
+      ],
+      "native_canvas": [
+        40,
+        32
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        20,
+        32
+      ],
+      "z_index": 1
+    },
+    "rock_03": {
+      "path": "res://assets/environments/props/cave/v001/rock/rock_03.png",
+      "kind": "rock",
+      "size": [
+        32,
+        48
+      ],
+      "native_canvas": [
+        32,
+        48
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        16,
+        48
+      ],
+      "z_index": 1
+    },
+    "rock_04": {
+      "path": "res://assets/environments/props/cave/v001/rock/rock_04.png",
+      "kind": "rock",
+      "size": [
+        48,
+        32
+      ],
+      "native_canvas": [
+        48,
+        32
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        24,
+        32
+      ],
+      "z_index": 1
+    },
+    "ore_01": {
+      "path": "res://assets/environments/props/cave/v001/ore/ore_01.png",
+      "kind": "ore",
+      "size": [
+        32,
+        32
+      ],
+      "native_canvas": [
+        32,
+        32
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        16,
+        32
+      ],
+      "z_index": 1
+    },
+    "ore_02": {
+      "path": "res://assets/environments/props/cave/v001/ore/ore_02.png",
+      "kind": "ore",
+      "size": [
+        32,
+        32
+      ],
+      "native_canvas": [
+        32,
+        32
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        16,
+        32
+      ],
+      "z_index": 1
+    },
+    "ore_03": {
+      "path": "res://assets/environments/props/cave/v001/ore/ore_03.png",
+      "kind": "ore",
+      "size": [
+        32,
+        32
+      ],
+      "native_canvas": [
+        32,
+        32
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        16,
+        32
+      ],
+      "z_index": 1
+    },
+    "ore_04": {
+      "path": "res://assets/environments/props/cave/v001/ore/ore_04.png",
+      "kind": "ore",
+      "size": [
+        32,
+        32
+      ],
+      "native_canvas": [
+        32,
+        32
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        16,
+        32
+      ],
+      "z_index": 1
+    },
+    "bones_01": {
+      "path": "res://assets/environments/props/cave/v001/bones/bones_01.png",
+      "kind": "bones",
+      "size": [
+        32,
+        24
+      ],
+      "native_canvas": [
+        32,
+        24
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        16,
+        24
+      ],
+      "z_index": 1
+    },
+    "bones_02": {
+      "path": "res://assets/environments/props/cave/v001/bones/bones_02.png",
+      "kind": "bones",
+      "size": [
+        48,
+        32
+      ],
+      "native_canvas": [
+        48,
+        32
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        24,
+        32
+      ],
+      "z_index": 1
+    },
+    "bones_03": {
+      "path": "res://assets/environments/props/cave/v001/bones/bones_03.png",
+      "kind": "bones",
+      "size": [
+        48,
+        16
+      ],
+      "native_canvas": [
+        48,
+        16
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        24,
+        16
+      ],
+      "z_index": 1
+    },
+    "bones_04": {
+      "path": "res://assets/environments/props/cave/v001/bones/bones_04.png",
+      "kind": "bones",
+      "size": [
+        48,
+        24
+      ],
+      "native_canvas": [
+        48,
+        24
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        24,
+        24
+      ],
+      "z_index": 1
+    },
+    "chest_closed": {
+      "path": "res://assets/environments/props/cave/v001/chests/chest_closed.png",
+      "kind": "chest",
+      "size": [
+        48,
+        40
+      ],
+      "native_canvas": [
+        48,
+        40
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        24,
+        40
+      ],
+      "z_index": 1
+    },
+    "chest_locked": {
+      "path": "res://assets/environments/props/cave/v001/chests/chest_locked.png",
+      "kind": "chest",
+      "size": [
+        48,
+        40
+      ],
+      "native_canvas": [
+        48,
+        40
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        24,
+        40
+      ],
+      "z_index": 1
+    },
+    "chest_opening": {
+      "path": "res://assets/environments/props/cave/v001/chests/chest_opening.png",
+      "kind": "chest",
+      "size": [
+        48,
+        40
+      ],
+      "native_canvas": [
+        48,
+        40
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        24,
+        40
+      ],
+      "z_index": 1
+    },
+    "chest_open": {
+      "path": "res://assets/environments/props/cave/v001/chests/chest_open.png",
+      "kind": "chest",
+      "size": [
+        48,
+        40
+      ],
+      "native_canvas": [
+        48,
+        40
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        24,
+        40
+      ],
+      "z_index": 1
+    },
+    "platform_01": {
+      "path": "res://assets/environments/terrain/cave/v001/platforms/platform_01.png",
+      "kind": "platform",
+      "size": [
+        48,
+        24
+      ],
+      "native_canvas": [
+        48,
+        24
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        24,
+        24
+      ],
+      "z_index": 1,
+      "surface_y": 0,
+      "one_way": true
+    },
+    "platform_02": {
+      "path": "res://assets/environments/terrain/cave/v001/platforms/platform_02.png",
+      "kind": "platform",
+      "size": [
+        48,
+        24
+      ],
+      "native_canvas": [
+        48,
+        24
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        24,
+        24
+      ],
+      "z_index": 1,
+      "surface_y": 0,
+      "one_way": true
+    },
+    "stalagmites_01": {
+      "path": "res://assets/environments/terrain/cave/v001/hazards/stalagmites_01.png",
+      "kind": "hazard",
+      "size": [
+        48,
+        40
+      ],
+      "native_canvas": [
+        48,
+        40
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        24,
+        40
+      ],
+      "z_index": 1,
+      "damage": null,
+      "repeat_step": 48,
+      "collision": "alpha_contour",
+      "top_profile": [
+        37,
+        36,
+        35,
+        34,
+        29,
+        27,
+        25,
+        23,
+        21,
+        20,
+        21,
+        24,
+        26,
+        28,
+        32,
+        32,
+        29,
+        25,
+        22,
+        20,
+        16,
+        13,
+        11,
+        9,
+        8,
+        9,
+        12,
+        15,
+        16,
+        17,
+        21,
+        25,
+        29,
+        30,
+        27,
+        24,
+        22,
+        20,
+        19,
+        19,
+        20,
+        23,
+        25,
+        28,
+        33,
+        35,
+        36,
+        37
+      ]
+    },
+    "stalagmites_02": {
+      "path": "res://assets/environments/terrain/cave/v001/hazards/stalagmites_02.png",
+      "kind": "hazard",
+      "size": [
+        48,
+        40
+      ],
+      "native_canvas": [
+        48,
+        40
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        24,
+        40
+      ],
+      "z_index": 1,
+      "damage": null,
+      "repeat_step": 48,
+      "collision": "alpha_contour",
+      "top_profile": [
+        37,
+        36,
+        35,
+        33,
+        29,
+        26,
+        22,
+        20,
+        18,
+        17,
+        17,
+        18,
+        21,
+        23,
+        26,
+        29,
+        32,
+        34,
+        34,
+        32,
+        29,
+        27,
+        25,
+        24,
+        24,
+        25,
+        29,
+        30,
+        33,
+        33,
+        31,
+        29,
+        25,
+        21,
+        18,
+        15,
+        12,
+        11,
+        12,
+        15,
+        18,
+        21,
+        22,
+        29,
+        31,
+        35,
+        36,
+        37
+      ]
+    },
+    "stalagmites_03": {
+      "path": "res://assets/environments/terrain/cave/v001/hazards/stalagmites_03.png",
+      "kind": "hazard",
+      "size": [
+        48,
+        40
+      ],
+      "native_canvas": [
+        48,
+        40
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        24,
+        40
+      ],
+      "z_index": 1,
+      "damage": null,
+      "repeat_step": 48,
+      "collision": "alpha_contour",
+      "top_profile": [
+        37,
+        36,
+        35,
+        33,
+        28,
+        25,
+        23,
+        20,
+        19,
+        19,
+        20,
+        22,
+        24,
+        27,
+        30,
+        29,
+        25,
+        21,
+        17,
+        16,
+        15,
+        12,
+        9,
+        8,
+        9,
+        11,
+        13,
+        16,
+        20,
+        22,
+        25,
+        29,
+        32,
+        32,
+        28,
+        26,
+        24,
+        21,
+        20,
+        21,
+        23,
+        25,
+        27,
+        29,
+        34,
+        35,
+        36,
+        37
+      ]
+    },
+    "stalagmites_04": {
+      "path": "res://assets/environments/terrain/cave/v001/hazards/stalagmites_04.png",
+      "kind": "hazard",
+      "size": [
+        48,
+        40
+      ],
+      "native_canvas": [
+        48,
+        40
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        24,
+        40
+      ],
+      "z_index": 1,
+      "damage": null,
+      "repeat_step": 48,
+      "collision": "alpha_contour",
+      "top_profile": [
+        37,
+        36,
+        35,
+        31,
+        29,
+        22,
+        21,
+        18,
+        15,
+        12,
+        11,
+        12,
+        15,
+        18,
+        21,
+        25,
+        29,
+        31,
+        33,
+        33,
+        30,
+        29,
+        25,
+        24,
+        24,
+        25,
+        27,
+        29,
+        32,
+        34,
+        34,
+        32,
+        29,
+        26,
+        23,
+        21,
+        18,
+        17,
+        17,
+        18,
+        20,
+        22,
+        26,
+        29,
+        33,
+        35,
+        36,
+        37
+      ]
+    },
+    "deep_cavern": {
+      "path": "res://assets/environments/backgrounds/cave/v001/deep_cavern.png",
+      "kind": "background",
+      "size": [
+        640,
+        360
+      ],
+      "native_canvas": [
+        640,
+        360
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "anchor": [
+        0,
+        0
+      ],
+      "z_index": -30,
+      "space": "screen"
+    }
+  },
+  "chest": {
+    "frame_seconds": 0.12,
+    "states": [
+      "closed",
+      "locked",
+      "opening",
+      "open"
+    ],
+    "unlock_conditions": [
+      "none",
+      "encounter",
+      "key"
+    ]
+  },
+  "crystal": {
+    "pulse_seconds": 2.4,
+    "pulse_amount": 0.1,
+    "light_texture_size": 128,
+    "minimum_energy": 0.1
+  },
+  "platform": {
+    "collision_thickness": 4,
+    "collision_margin": 1.0
+  },
+  "physics_layers": {
+    "world": 1,
+    "player": 2,
+    "one_way": 128,
+    "hazard": 256
+  },
+  "hazard": {
+    "damage": null,
+    "contract": "emit contact; room supplies configured damage; no invented balance values"
+  },
+  "production_note": "Runtime resources are pixel-quantized crops of imagegen source art. RAW files are never loaded by scenes."
+}

@@ -1,0 +1,79 @@
+{
+  "revision": 3,
+  "scope": "ordinary_attacks_only",
+  "time_rule": "duration = type base duration / weapon attack_speed_multiplier; larger is faster; speed must be positive and finite",
+  "types": {
+    "sword": {
+      "base_poise": [
+        30,
+        30,
+        40
+      ],
+      "base_attack_time": {
+        "startup": 0.17,
+        "active": 0.18,
+        "recovery": 0.18
+      },
+      "base_total_seconds": 0.53
+    },
+    "hammer": {
+      "base_poise": [
+        40,
+        40,
+        60
+      ],
+      "base_attack_time": {
+        "startup": 0.24,
+        "active": 0.12,
+        "recovery": 0.14
+      },
+      "base_total_seconds": 0.5
+    },
+    "staff": {
+      "base_poise": [
+        30
+      ],
+      "base_attack_time": {
+        "startup": 0.18,
+        "active": 0.12,
+        "recovery": 0.22
+      },
+      "base_total_seconds": 0.52
+    },
+    "rifle": {
+      "base_poise": [
+        25
+      ],
+      "base_attack_time": {
+        "startup": 0.14,
+        "active": 0.04,
+        "recovery": 0.82
+      },
+      "base_total_seconds": 1.0
+    }
+  },
+  "source_note": "2026-11-18 freezes current four ordinary attack modules. Rifle inherits filled milk_gun poise=25; old bow_01 null entry retained as legacy, not edited.",
+  "rifle": {
+    "base_projectile_speed": 760,
+    "ammo_capacity_units": 1000,
+    "shockwave_radius": 48,
+    "shockwave_poise": 0,
+    "shockwave_max_contacts": 64,
+    "projectile_visuals": {
+      "arrow": {
+        "texture": "res://assets/PROCESSED/effects/status_v001/bolt.png",
+        "anchor": [23, 3]
+      },
+      "electromagnetic": {
+        "bullet_color": "#55bfff",
+        "trail_color": "#217bd466",
+        "arc_color": "#b7eaff",
+        "arc_seconds": 0.2,
+        "arc_segments": 6,
+        "arc_points": 5,
+        "arc_span": 0.8,
+        "arc_jagged_px": 3
+      }
+    }
+  }
+}

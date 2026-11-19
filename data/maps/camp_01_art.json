@@ -1,6 +1,6 @@
 {
   "wall": {
-    "texture": "res://assets/terrain/forest_01/moss_root_cliff_v1.png",
+    "texture": "res://assets/environments/terrain/forest_01/moss_root_cliff_v1.png",
     "world_size": [
       512,
       512
@@ -10,7 +10,7 @@
     "edge_tint": "#51674f"
   },
   "solid": {
-    "texture": "res://assets/terrain/forest_01/platform_sheet_v1.png",
+    "texture": "res://assets/environments/terrain/forest_01/platform_sheet_v1.png",
     "region": [
       35,
       344,
@@ -25,7 +25,7 @@
     "tint": "#bfcebb"
   },
   "oneway": {
-    "texture": "res://assets/terrain/forest_01/platform_sheet_v1.png",
+    "texture": "res://assets/environments/terrain/forest_01/platform_sheet_v1.png",
     "region": [
       40,
       896,
@@ -229,7 +229,7 @@
     }
   ],
   "vine_texture": "res://assets/PROCESSED/environments/ENV-B01/v001/ENV-02/props/vine.png",
-  "atlas": "res://assets/props/camp_01/expedition_props_v1.png",
+  "atlas": "res://assets/environments/props/camp_01/expedition_props_v1.png",
   "regions": {
     "tent_cream": [
       0,

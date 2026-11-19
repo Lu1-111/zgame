@@ -1,0 +1,463 @@
+{
+  "id": "cavern_hunter",
+  "name": "岩穴猎手",
+  "canvas": [
+    192,
+    160
+  ],
+  "anchor": [
+    96,
+    140
+  ],
+  "palette": [
+    "#10131d",
+    "#202431",
+    "#343a49",
+    "#525c6c",
+    "#8794a0",
+    "#c5ced0",
+    "#edf1e9",
+    "#49403c",
+    "#77614f",
+    "#b59970",
+    "#e6d5ab",
+    "#187180",
+    "#65d1d5",
+    "#d9ffff",
+    "#292e3c",
+    "#424959"
+  ],
+  "native_pixel_scale": 1,
+  "runtime_scale": [
+    1,
+    1
+  ],
+  "filter": "nearest",
+  "base_hp": null,
+  "base_damage": null,
+  "poise": null,
+  "resist": {
+    "physical": null,
+    "magic": null
+  },
+  "direction": "right",
+  "combat_implemented": false,
+  "source": "res://assets/RAW/enemies/CAVE-BEASTS/v001/hunter.png",
+  "source_sha256": "c4bfd24b89914081b6f4c92b43ea1b2aa8f3fd8cb70c56316607d92149f7b7ef",
+  "body_scale": 0.7692307692307693,
+  "reference_visible_height": 70,
+  "animations": {
+    "idle": {
+      "frames": [
+        "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/idle/00.png",
+        "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/idle/01.png",
+        "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/idle/02.png",
+        "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/idle/03.png",
+        "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/idle/04.png",
+        "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/idle/05.png"
+      ],
+      "frame_count": 6,
+      "fps": 4.5,
+      "loop": true,
+      "canvas": [
+        192,
+        160
+      ],
+      "anchor": [
+        96,
+        140
+      ],
+      "unique_frames": 6,
+      "sha256": [
+        "14147a52ae2a55838edda9e809898a36960cb98e56c7636b37457b90d8b081b8",
+        "647b33e0161d7ba1bfba336b983efd6b6c293e7f8111ac98ed3db75cb9e2c4f9",
+        "90e8f4cb8caa3605fb55ab3ac47e1947c6be26771102e1c1d846e04fed96d2a8",
+        "2746f979f7219ae074d287354309f0d57d868cbfc5de7add364647de28a2c784",
+        "15933c90d37df40cdd5d0bf3f554fdf6560836b2832dcebcba20b9e1c238ae0a",
+        "de7733e69b1f421cf45b7c5a72237f674b861385c5118e856250ac7953f15371"
+      ],
+      "visible_rects": [
+        [
+          33,
+          72,
+          162,
+          140
+        ],
+        [
+          33,
+          69,
+          159,
+          140
+        ],
+        [
+          36,
+          68,
+          160,
+          140
+        ],
+        [
+          35,
+          69,
+          161,
+          140
+        ],
+        [
+          33,
+          71,
+          162,
+          140
+        ],
+        [
+          32,
+          74,
+          162,
+          140
+        ]
+      ],
+      "grounded": true,
+      "phase_tags": [
+        "cycle",
+        "cycle",
+        "cycle",
+        "cycle",
+        "cycle",
+        "cycle"
+      ],
+      "base_fps": 6,
+      "speed_multiplier": 0.75,
+      "duration_seconds": 1.3333333333333333
+    },
+    "move": {
+      "frames": [
+        "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/move/00.png",
+        "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/move/01.png",
+        "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/move/02.png",
+        "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/move/03.png",
+        "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/move/04.png",
+        "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/move/05.png"
+      ],
+      "frame_count": 6,
+      "fps": 6.75,
+      "loop": true,
+      "canvas": [
+        192,
+        160
+      ],
+      "anchor": [
+        96,
+        140
+      ],
+      "unique_frames": 6,
+      "sha256": [
+        "6e5f2fad1d4446f2739380fe8cf37ec90a5806131edf90517bb5fe16b67daaac",
+        "4cebf9d9784dd311be98aba8b7f14e31d609b6d5deaabeeefe72c4b9327da41b",
+        "5f38c4cfb9e5947ffc488861384501490f8c781c9f85a67c834a663f93ac67d8",
+        "a06d9504454ff69777ee59b205214e912271d6077cad1a3b25d87803bc5c883d",
+        "ceef74eeec547c3f163499c421f0092d293940e043c2195e91e54a4d1f76b988",
+        "1252a69e1e96eabea4cb75df3b376c3c94e6e742089c6af8b0f5eca31da577af"
+      ],
+      "visible_rects": [
+        [
+          30,
+          72,
+          162,
+          140
+        ],
+        [
+          30,
+          71,
+          164,
+          140
+        ],
+        [
+          31,
+          67,
+          164,
+          140
+        ],
+        [
+          32,
+          71,
+          164,
+          140
+        ],
+        [
+          31,
+          72,
+          165,
+          140
+        ],
+        [
+          30,
+          73,
+          163,
+          140
+        ]
+      ],
+      "grounded": true,
+      "phase_tags": [
+        "cycle",
+        "cycle",
+        "cycle",
+        "cycle",
+        "cycle",
+        "cycle"
+      ],
+      "base_fps": 9,
+      "speed_multiplier": 0.75,
+      "duration_seconds": 0.8888888888888888
+    },
+    "elbow_blade": {
+      "frames": [
+        "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/elbow_blade/00.png",
+        "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/elbow_blade/01.png",
+        "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/elbow_blade/02.png",
+        "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/elbow_blade/03.png",
+        "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/elbow_blade/04.png",
+        "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/elbow_blade/05.png"
+      ],
+      "frame_count": 6,
+      "fps": 7.5,
+      "loop": false,
+      "canvas": [
+        192,
+        160
+      ],
+      "anchor": [
+        96,
+        140
+      ],
+      "unique_frames": 6,
+      "sha256": [
+        "8e0cb74fa04007b2ed1dfc146e4ff13af1ef21559d4c82bd1541365230b9219d",
+        "d7c701622a2a9deb0e8fada8aabbb944603726512f9416b04f17549249104156",
+        "bf0ea200f658005bec5b83b85a43c2e4ceb164bfbfeeb1bb4dd9d9625a004bd1",
+        "ec33669a4c49cb6c6abedd008db2337ac791a85e124f8332754eba1955179f13",
+        "1ca80338adf4740f944989d9ff9e8b88eb3f9e6db6de6518a97eab8a304bd4e0",
+        "4613744643abf54f7ef16548ede75d785d5b3445b24c8d08c4793cb962763a4d"
+      ],
+      "visible_rects": [
+        [
+          33,
+          71,
+          162,
+          140
+        ],
+        [
+          33,
+          63,
+          156,
+          140
+        ],
+        [
+          33,
+          51,
+          153,
+          140
+        ],
+        [
+          31,
+          69,
+          161,
+          140
+        ],
+        [
+          32,
+          76,
+          163,
+          140
+        ],
+        [
+          35,
+          70,
+          164,
+          140
+        ]
+      ],
+      "grounded": true,
+      "phase_tags": [
+        "prepare",
+        "prepare",
+        "extend",
+        "active",
+        "recover",
+        "recover"
+      ],
+      "base_fps": 10,
+      "speed_multiplier": 0.75,
+      "duration_seconds": 0.8
+    },
+    "leap_slam": {
+      "frames": [
+        "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/leap_slam/00.png",
+        "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/leap_slam/01.png",
+        "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/leap_slam/02.png",
+        "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/leap_slam/03.png",
+        "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/leap_slam/04.png",
+        "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/leap_slam/05.png"
+      ],
+      "frame_count": 6,
+      "fps": 6.75,
+      "loop": false,
+      "canvas": [
+        192,
+        160
+      ],
+      "anchor": [
+        96,
+        140
+      ],
+      "unique_frames": 6,
+      "sha256": [
+        "5d295e90fe72c44fae4be0ad31f7d6f25a0d267e8538049ba1e23f0600152a96",
+        "e77e59a3a7b6486281c6ef17e9b2c45c798b5081ef45e4b6b6c3b7ebcbc957c6",
+        "ea8b8fbc501c9db29d39e20fa99270b062fddd4cfb74d0098b8537adb3c4af47",
+        "e2eb423d8606f95f17fc86e190c6099560871010144a5500b472ed02900e3972",
+        "44d9750df240161c7391ec2f1f92779bdc71f715e7c5434fc0fda1e9199db43d",
+        "94da209fe0fbb37d59d2968ba7382f7b82794deec454069995ffdc216d1f5ea8"
+      ],
+      "visible_rects": [
+        [
+          33,
+          79,
+          162,
+          140
+        ],
+        [
+          33,
+          41,
+          158,
+          128
+        ],
+        [
+          35,
+          21,
+          155,
+          110
+        ],
+        [
+          32,
+          47,
+          160,
+          124
+        ],
+        [
+          33,
+          84,
+          164,
+          140
+        ],
+        [
+          35,
+          75,
+          163,
+          140
+        ]
+      ],
+      "grounded": true,
+      "phase_tags": [
+        "prepare",
+        "prepare",
+        "extend",
+        "active",
+        "recover",
+        "recover"
+      ],
+      "suggested_impact_frame": 4,
+      "base_fps": 9,
+      "speed_multiplier": 0.75,
+      "duration_seconds": 0.8888888888888888
+    },
+    "tail_crystal_shot": {
+      "frames": [
+        "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/tail_crystal_shot/00.png",
+        "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/tail_crystal_shot/01.png",
+        "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/tail_crystal_shot/02.png",
+        "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/tail_crystal_shot/03.png",
+        "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/tail_crystal_shot/04.png",
+        "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/frames/tail_crystal_shot/05.png"
+      ],
+      "frame_count": 6,
+      "fps": 6.75,
+      "loop": false,
+      "canvas": [
+        192,
+        160
+      ],
+      "anchor": [
+        96,
+        140
+      ],
+      "unique_frames": 6,
+      "sha256": [
+        "8ad49c25e65f302fb8611f9db28acc115db1a878401e3dcfb2fe544b9e98866f",
+        "0d8e0c76a997b9ff2a79159038d433e8aeb715a7f1163ba4c653e8e75e5443e2",
+        "30840e5bc28ac35ecc6c8581433bb73410117d233cfa1233a149b1d1e09deb41",
+        "8afc19b1849868b201bb201beedf9736ce3dfaad1f209e80910df48bf12533ea",
+        "e5cc2cb0ee14f9cdcb2ed790f3c71b10c519e7194c5e3fd106fbe7699b5cc01b",
+        "05ec9e44bbe3b90a6cc4ac689e5af4cb13242fea3e3dbed502e048ad27db8fdd"
+      ],
+      "visible_rects": [
+        [
+          34,
+          73,
+          162,
+          140
+        ],
+        [
+          36,
+          49,
+          160,
+          140
+        ],
+        [
+          36,
+          36,
+          163,
+          140
+        ],
+        [
+          36,
+          24,
+          162,
+          140
+        ],
+        [
+          36,
+          47,
+          161,
+          140
+        ],
+        [
+          33,
+          73,
+          161,
+          140
+        ]
+      ],
+      "grounded": true,
+      "phase_tags": [
+        "prepare",
+        "prepare",
+        "extend",
+        "active",
+        "recover",
+        "recover"
+      ],
+      "suggested_emission_frame": 3,
+      "base_fps": 9,
+      "speed_multiplier": 0.75,
+      "duration_seconds": 0.8888888888888888
+    }
+  },
+  "projectiles": {
+    "sharp_crystal": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/effects/sharp_crystal/catalog.json"
+  },
+  "effects": {
+    "ground_shockwave": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/effects/ground_shockwave/catalog.json"
+  },
+  "sprite_frames": "res://assets/PROCESSED/enemies/CAVE-BEASTS/v001/cavern_hunter/sprite_frames.tres",
+  "pixel_conversion": "res://data/art/cave_enemy_imagemagick.json",
+  "art_revision": "imagemagick_v002",
+  "processing": "ImageMagick point sampling from RAW; no dithering; shared 16-color palette; fixed native canvas and anchor"
+}

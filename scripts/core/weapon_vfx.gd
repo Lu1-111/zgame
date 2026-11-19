@@ -15,6 +15,10 @@ func _ready() -> void:
 	visual.name = "Sprite"
 	visual.sprite_frames = WeaponRuntime.effect_frames(kind)
 	visual.scale = WeaponRuntime.effect_scale(kind)
+	var independent: Dictionary = WeaponRuntime.config().independent_fx.get(kind,{})
+	if independent.has("anchor"):
+		visual.centered = false
+		visual.offset = -Vector2(independent.anchor[0],independent.anchor[1])
 	visual.texture_filter = CanvasItem.TEXTURE_FILTER_LINEAR
 	add_child(visual)
 	visual.animation_finished.connect(func() -> void: finished.emit())

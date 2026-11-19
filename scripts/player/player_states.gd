@@ -19,6 +19,7 @@ class Idle extends PlayerState:
 			sm.to(&"Fall")
 			return
 		if absf(p.input_dir()) > 0.01:
+			p.set_facing_by_input(p.input_dir())
 			sm.to(&"Run")
 			return
 		p.velocity.x = move_toward(p.velocity.x, 0.0, PlayerTuning.GROUND_DECEL * delta)
@@ -96,6 +97,7 @@ class Dodge extends PlayerState:
 			dir = float(p.facing)
 		p.set_facing(int(signf(dir)))
 		p.begin_dodge()
+		p.dodge_iframe = true
 		p.gravity_enabled = false  # 闪避期间冻结重力（水平位移承诺）
 		p._dodge_air = not p.is_on_floor()  # 选动画：地面闪避 vs 空中闪避
 		_t = PlayerTuning.DODGE_TIME
@@ -112,6 +114,7 @@ class Dodge extends PlayerState:
 		if _t <= 0.0:
 			p.dodge_iframe = false
 			p.velocity.x = 0.0  # 取消惯性：闪避结束即停，不带残余滑行
+			p.on_dodge_completed()
 			sm.to(&"Fall" if not p.is_on_floor() else &"Idle")
 
 	func exit() -> void:
@@ -125,11 +128,12 @@ class Guard extends PlayerState:
 	func enter(_msg: Dictionary) -> void:
 		p.is_guarding = true
 		p.guard_pose_time = 0.0
-		p.guard_perfect = PlayerTuning.PERFECT_GUARD_WINDOW
+		p.guard_perfect = p.guard_raise_duration()
 		p.velocity.x = 0.0
 
 	func tick(delta: float) -> void:
 		p.guard_pose_time += delta
+		p.guard_perfect = maxf(0,p.guard_raise_duration()-p.guard_pose_time)
 		if not p.is_on_floor():
 			sm.to(&"Fall")
 			return
@@ -141,10 +145,11 @@ class Guard extends PlayerState:
 		if absf(dir) > 0.01:
 			p.set_facing_by_input(dir)
 		p.velocity.x = move_toward(p.velocity.x,
-				dir * PlayerTuning.MAX_SPEED * PlayerTuning.GUARD_MOVE_MULT,
+			dir * p.movement_speed() * PlayerTuning.GUARD_MOVE_MULT,
 				PlayerTuning.GROUND_ACCEL * delta)
 		# 防御可取消：普攻 / 闪避 / 技能（防反衔接）
-		if p.buffer_consume(&"attack") and not p.weapon_cfg().is_empty():
+		if (p.buffer_peek(&"attack") or p.attack_held()) and p.can_start_weapon_attack():
+			p.buffer_consume(&"attack")
 			sm.to(&"Attack", {"combo": p.next_combo()})
 			return
 		if p.buffer_consume(&"dodge") and p.can_dodge():
@@ -155,12 +160,13 @@ class Guard extends PlayerState:
 
 	func exit() -> void:
 		p.is_guarding = false
+		p.guard_perfect = 0.0
 
 
 class GuardRelease extends PlayerState:
 	const NAME: StringName = &"GuardRelease"
 	func enter(_msg: Dictionary) -> void:
-		p.guard_release_from = maxi(0,mini(p.guard_visual_frame(),int(p._pixel_rig.cfg.guard.hold_frame))-1)
+		p.guard_release_from = maxi(0,mini(p.sprite.frame,int(p._pixel_rig.cfg.guard.hold_frame))-1)
 		p.guard_pose_time = 0.0
 		p.is_guarding = false
 	func tick(delta: float) -> void:
@@ -184,7 +190,8 @@ class Attack extends PlayerState:
 		_combo = clampi(int(msg.get("combo",1)),1,p.max_combo())
 		_t = 0.0
 		_opened = false
-		_module = WeaponRuntime.module(p.weapon_type())
+		p.begin_weapon_attack()
+		_module = p.normal_attack_module()
 		p.velocity.x = 0.0
 		p.attack_charge = 0.0
 		p.attack_release_t = -1.0
@@ -207,23 +214,19 @@ class Attack extends PlayerState:
 				p.spawn_weapon_projectile()
 			else:
 				p.spawn_melee_effect(_combo)
-		# 骨骼直剑在后摇中完成收剑与下一段预备，保留连击缓冲直到完整过渡结束。
-		var chain_ready := active_end
-		if p.uses_skeletal_animation() and p.weapon_type() == "sword":
-			chain_ready += float(_module.get("recovery",PlayerTuning.ATK_RECOVERY))
 		if _t >= active_end:
-			if _combo < p.max_combo() and p.attack_chain and _t >= chain_ready:
-				sm.to(&"Attack",{"combo":_combo+1})
-				return
 			if p.buffer_peek(&"dodge") and p.can_dodge():
 				p.buffer_consume(&"dodge")
 				sm.to(&"Dodge",{"dir":p.input_dir()})
 				return
 			if p.try_selected_skill():
 				return
-		if _t >= active_end+float(_module.get("recovery",PlayerTuning.ATK_RECOVERY)):
-			# 步枪单次按下只开火一次；长按保留双手瞄准姿势，松键后结束。
-			if p.weapon_type() == "rifle" and Input.is_action_pressed(&"attack"):
+		var total := active_end + float(_module.get("recovery", PlayerTuning.ATK_RECOVERY))
+		if _t >= total or is_equal_approx(_t, total):
+			var repeat_attack: bool = p.attack_held() or (p.attack_chain and _combo < p.max_combo())
+			if repeat_attack and p.can_start_weapon_attack():
+				var next_segment := 1 if _combo >= p.max_combo() else _combo + 1
+				sm.to(&"Attack", {"combo": next_segment})
 				return
 			_finish()
 
@@ -234,42 +237,33 @@ class Attack extends PlayerState:
 		p.hitbox.deactivate()
 		p.attack_phase = &""
 		p.attack_chain = false
+		p.finish_weapon_attack()
 
 
 class Skill extends PlayerState:
 	const NAME: StringName = &"Skill"
-	var _t := 0.0
-	var _fired := false
 
 	func enter(_msg: Dictionary) -> void:
-		_t = 0.0
-		_fired = false
-		if p._current_skill == &"skill_cleave":
-			p._last_attack_time = p._clock
-		p.set_facing(int(signf(p.aim_vector().x)))  # M1.5 鼠标自动转向：施法朝鼠标方位
-		p.velocity.x = 0.0  # 施放期间锁定水平位移
+		p.set_facing(int(signf(p.aim_vector().x)))
+		p.velocity.x = 0
+		p.skills.begin(p._current_skill)
 
 	func tick(delta: float) -> void:
-		_t += delta
-		p.velocity.x = 0.0
-		if not _fired and _t >= PlayerTuning.SKILL_STARTUP:
-			_fired = true
-			p.fire_skill(p._current_skill)  # 分派：奶泡弹/治愈之乳/挤奶冲击
-		if _fired:
-			# ---- 弹已出手/效果已结算：可被闪避/普攻取消后摇 ----
-			if p.buffer_peek(&"dodge") and p.can_dodge():
-				p.buffer_consume(&"dodge")
-				sm.to(&"Dodge", {"dir": p.input_dir()})
-				return
-			if p.buffer_peek(&"attack") or p.attack_chain:
-				sm.to(&"Attack", {"combo": p.next_combo()})
-				return
-		if _t >= PlayerTuning.SKILL_STARTUP + PlayerTuning.SKILL_RECOVERY:
-			sm.to(&"Fall" if not p.is_on_floor()
-					else (&"Run" if absf(p.input_dir()) > 0.01 else &"Idle"))
+		var done: bool = p.skills.tick(delta)
+		if p.skills.can_cancel() and p.buffer_peek(&"dodge") and p.can_dodge():
+			p.buffer_consume(&"dodge")
+			sm.to(&"Dodge", {"dir":p.input_dir()})
+			return
+		if p.skills.can_attack_cancel() and p.buffer_peek(&"attack") and p.can_start_weapon_attack():
+			p.buffer_consume(&"attack")
+			sm.to(&"Attack", {"combo":p.next_combo()})
+			return
+		if done:
+			sm.to(&"Fall" if not p.is_on_floor() else (&"Run" if absf(p.input_dir()) > 0.01 else &"Idle"))
 
 	func exit() -> void:
-		p.hitbox.deactivate()  # 静态判定节点兜底关闭（slam 判定已走 AttackEffect，自会关闭）
+		p.skills.end_cast()
+		p.hitbox.deactivate()
 
 
 class Hurt extends PlayerState:
@@ -296,6 +290,7 @@ class Dead extends PlayerState:
 	var _t := 0.0
 
 	func enter(_msg: Dictionary) -> void:
+		p.reset_weapon_traits()
 		_t = 0.0
 		p.gravity_enabled = false
 		p.velocity = Vector2.ZERO

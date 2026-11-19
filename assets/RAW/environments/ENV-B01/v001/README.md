@@ -9,4 +9,4 @@
 
 每套目录保留 prompt 与来源校验记录；`manifest.json` 是全批原图索引。RAW 保持生图输出像素，不覆盖、不抠图；机械裁片、像素化、接缝校准及完整地图在对应 PROCESSED 批次中。具体提示词以各目录的 `prompts.json`、`*.prompt.txt` 为准。
 
-本批研究和逐房设计见 `docs/地图设计研究-ENV-B01.md`；对应地图入口为 `assets/PROCESSED/environments/ENV-B01/v001/preview.html`。
+本批研究和逐房设计见 `docs/maps/地图设计研究-ENV-B01.md`；对应地图入口为 `assets/PROCESSED/environments/ENV-B01/v001/preview.html`。

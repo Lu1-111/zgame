@@ -7,6 +7,10 @@ extends Node
 # ---- 等级 / 经济 ----
 var level := 1            ## 当前等级（本期上限 15）
 var exp := 0              ## 当前经验值
+var milk_energy := 0
+var attribute_points: Dictionary = {"vitality":0,"endurance":0,"strength":0,"intellect":0,"perception":0}
+var permanent_bonuses: Dictionary = {}
+var progression_revision := 1
 var coin := 0             ## 奶币数量
 
 # ---- 三条资源 ----
@@ -16,6 +20,7 @@ var sta := 100            ## 体力（100/100）
 var sta_max := 100
 var mana := 60            ## 奶力（60/60）
 var mana_max := 60
+var ammo_units := WeaponAttributes.ammo_capacity() ## 弹药以整数单位储存，支持0.4%消耗。
 
 # ---- 装备与成长 ----
 var weapon_id: StringName = &"hammer_01"   ## 当前武器：奶瓶锤
@@ -29,8 +34,11 @@ var materials: Array = []                   ## 材料独立页，不占行囊消
 var storage: Array = []                     ## 篝火无限仓库
 var bag_upgrades := 0
 var owned_weapons: Array[StringName] = [&"sword_01",&"bow_01",&"milk_staff"]
-var learned_skills: Array[StringName] = [&"skill_bubble"]
-var equipped_skills: Array[StringName] = [&"skill_bubble",&"skill_cleave",&""]
+var owned_accessories: Array[StringName] = []
+var equipped_accessories: Array[StringName] = []
+var learned_skills: Array[StringName] = []
+var equipped_skills: Array[StringName] = [&"skill_comet_dash",&"skill_giga_milk_beam",&"skill_milk_spring"]
+var skill_buffs: Dictionary = {}             ## 瞬态技能增益，不入存档
 var equipped_passives: Array[StringName] = [&"",&""]
 var selected_skill := 0
 var equipment_revision := 1
@@ -44,6 +52,9 @@ var in_combat := false                      ## 瞬态战斗标记，不入存档
 var opened_chests: Array[StringName] = []     ## 已开启宝箱 id
 var opened_shortcuts: Array[StringName] = []  ## 已从另一侧开启的捷径 id
 var visited_rooms: Array[StringName] = []     ## 已到访房间 id
+var unlocked_campfires: Array[StringName] = [] ## 实际互动过的篝火，供地图与快速旅行使用。
+var quest_state: Dictionary = {}            ## 接受、完成和领奖状态；任务条件由配置和世界进度判定。
+var tracked_quest: StringName = &""         ## 同时只追踪一个任务。
 var defeated_bosses: Array[StringName] = []   ## 已击败 BOSS id
 var current_room: StringName = &"camp_01"     ## 当前房间
 var checkpoint_id: StringName = &"cp_camp_01" ## 最近检查点（篝火）
@@ -57,6 +68,10 @@ func reset() -> void:
 	## 恢复全部默认值（新开局 / 读档覆盖前调用）
 	level = 1
 	exp = 0
+	milk_energy = 0
+	attribute_points = {"vitality":0,"endurance":0,"strength":0,"intellect":0,"perception":0}
+	permanent_bonuses = {}
+	progression_revision = 1
 	coin = 0
 	hp = 80
 	hp_max = 80
@@ -64,6 +79,7 @@ func reset() -> void:
 	sta_max = 100
 	mana = 60
 	mana_max = 60
+	ammo_units = WeaponAttributes.ammo_capacity()
 	weapon_id = &"hammer_01"
 	abilities = []
 	talents = []
@@ -73,8 +89,11 @@ func reset() -> void:
 	storage = []
 	bag_upgrades = 0
 	owned_weapons = [&"sword_01",&"bow_01",&"milk_staff"]
-	learned_skills = [&"skill_bubble"]
-	equipped_skills = [&"skill_bubble",&"skill_cleave",&""]
+	owned_accessories.clear()
+	equipped_accessories.clear()
+	learned_skills = []
+	equipped_skills.assign(RPGService.config().default_active)
+	skill_buffs.clear()
 	equipped_passives = [&"",&""]
 	selected_skill = 0
 	equipment_revision = 1
@@ -86,6 +105,9 @@ func reset() -> void:
 	opened_chests = []
 	opened_shortcuts = []
 	visited_rooms = []
+	unlocked_campfires = []
+	quest_state = {}
+	tracked_quest = &""
 	defeated_bosses = []
 	current_room = &"camp_01"
 	checkpoint_id = &"cp_camp_01"
@@ -98,12 +120,17 @@ func to_save_dict() -> Dictionary:
 		"level": level,
 		"exp": exp,
 		"coin": coin,
+		"milk_energy": milk_energy,
+		"attribute_points": attribute_points.duplicate(true),
+		"permanent_bonuses": permanent_bonuses.duplicate(true),
+		"progression_revision": progression_revision,
 		"hp": hp,
 		"hp_max": hp_max,
 		"sta": sta,
 		"sta_max": sta_max,
 		"mana": mana,
 		"mana_max": mana_max,
+		"ammo_units": ammo_units,
 		"weapon_id": String(weapon_id),
 		"abilities": _names_to_strings(abilities),
 		"talents": _names_to_strings(talents),
@@ -113,6 +140,8 @@ func to_save_dict() -> Dictionary:
 		"storage": storage.duplicate(true),
 		"bag_upgrades": bag_upgrades,
 		"owned_weapons": _names_to_strings(owned_weapons),
+		"owned_accessories": _names_to_strings(owned_accessories),
+		"equipped_accessories": _names_to_strings(equipped_accessories),
 		"learned_skills": _names_to_strings(learned_skills),
 		"equipped_skills": _names_to_strings(equipped_skills),
 		"equipped_passives": _names_to_strings(equipped_passives),
@@ -125,6 +154,9 @@ func to_save_dict() -> Dictionary:
 		"opened_chests": _names_to_strings(opened_chests),
 		"opened_shortcuts": _names_to_strings(opened_shortcuts),
 		"visited_rooms": _names_to_strings(visited_rooms),
+		"unlocked_campfires": _names_to_strings(unlocked_campfires),
+		"quest_state": quest_state.duplicate(true),
+		"tracked_quest": str(tracked_quest),
 		"defeated_bosses": _names_to_strings(defeated_bosses),
 		"current_room": String(current_room),
 		"checkpoint_id": String(checkpoint_id),
@@ -136,12 +168,17 @@ func load_from_dict(d: Dictionary) -> void:
 	level = int(d.get("level", level))
 	exp = int(d.get("exp", exp))
 	coin = int(d.get("coin", coin))
+	attribute_points = d.get("attribute_points",{}).duplicate(true) if d.get("attribute_points",{}) is Dictionary else {}
+	permanent_bonuses = d.get("permanent_bonuses",{}).duplicate(true) if d.get("permanent_bonuses",{}) is Dictionary else {}
+	milk_energy = maxi(0,int(d.get("milk_energy",maxi(0,level-1))))
+	progression_revision = int(d.get("progression_revision",0))
 	hp = int(d.get("hp", hp))
 	hp_max = int(d.get("hp_max", hp_max))
 	sta = int(d.get("sta", sta))
 	sta_max = int(d.get("sta_max", sta_max))
 	mana = int(d.get("mana", mana))
 	mana_max = int(d.get("mana_max", mana_max))
+	ammo_units = clampi(int(d.get("ammo_units", WeaponAttributes.ammo_capacity())), 0, WeaponAttributes.ammo_capacity())
 	weapon_id = StringName(String(d.get("weapon_id", weapon_id)))
 	abilities = _to_names(d.get("abilities", abilities), abilities)
 	talents = _to_names(d.get("talents", talents), talents)
@@ -151,8 +188,11 @@ func load_from_dict(d: Dictionary) -> void:
 	storage = _dup_array(d.get("storage", []), [])
 	bag_upgrades = int(d.get("bag_upgrades", 0))
 	owned_weapons = _to_names(d.get("owned_weapons", ["hammer_01"]), [])
-	learned_skills = _to_names(d.get("learned_skills", ["skill_bubble"]), [])
-	equipped_skills = _to_names(d.get("equipped_skills", ["skill_bubble","skill_shield","skill_heal","skill_slam"]), [])
+	owned_accessories = _to_names(d.get("owned_accessories", []), [])
+	equipped_accessories = _to_names(d.get("equipped_accessories", []), [])
+	learned_skills = _to_names(d.get("learned_skills", []), [])
+	equipped_skills = _to_names(d.get("equipped_skills", RPGService.config().default_active), [])
+	skill_buffs.clear()
 	equipped_passives = _to_names(d.get("equipped_passives", ["",""]), [])
 	selected_skill = int(d.get("selected_skill",0))
 	equipment_revision = int(d.get("equipment_revision",0))
@@ -163,10 +203,18 @@ func load_from_dict(d: Dictionary) -> void:
 	opened_chests = _to_names(d.get("opened_chests", opened_chests), opened_chests)
 	opened_shortcuts = _to_names(d.get("opened_shortcuts", []), [])
 	visited_rooms = _to_names(d.get("visited_rooms", visited_rooms), visited_rooms)
+	unlocked_campfires = _to_names(d.get("unlocked_campfires", []), [])
+	quest_state = d.get("quest_state",{}).duplicate(true) if d.get("quest_state",{}) is Dictionary else {}
+	tracked_quest = StringName(str(d.get("tracked_quest","")))
 	defeated_bosses = _to_names(d.get("defeated_bosses", defeated_bosses), defeated_bosses)
 	current_room = StringName(String(d.get("current_room", current_room)))
 	checkpoint_id = StringName(String(d.get("checkpoint_id", checkpoint_id)))
+	# 旧存档只继承最后记录的篝火，不把所有到访房间误当作已解锁。
+	if not d.has("unlocked_campfires") and not checkpoint_position.is_empty():
+		unlocked_campfires.append(checkpoint_id)
 	play_time = float(d.get("play_time", play_time))
+	SkillLibrary.migrate_state(self)
+	ProgressionService.ensure_state()
 
 static func _names_to_strings(arr: Array[StringName]) -> Array[String]:
 	## StringName 数组 → String 数组（JSON 友好）

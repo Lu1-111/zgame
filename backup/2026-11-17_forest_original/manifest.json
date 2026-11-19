@@ -1,0 +1,576 @@
+{
+  "date": "2026-11-17",
+  "kind": "immutable pre-forest-pixel replacement backup",
+  "files": [
+    {
+      "path": "assets/environments/backgrounds/forest_01/ancient_tree_v1.png",
+      "bytes": 3027510,
+      "sha256": "df90e4d63c0d5ad12d45f0757cbf07e5c20e5ef18c66e30354917ba65af58631"
+    },
+    {
+      "path": "assets/environments/backgrounds/forest_01/ancient_tree_v1.png.import",
+      "bytes": 991,
+      "sha256": "5b1e39667c44645644dd8c82337a19ec372557b9245cf1a6ada02536a685ba33"
+    },
+    {
+      "path": "assets/environments/backgrounds/forest_01/README.md",
+      "bytes": 1581,
+      "sha256": "498ecdbd2c54126f60c6d66beb9b6f1944ba7cfc4b434c8c0ae5a499c4e00c70"
+    },
+    {
+      "path": "assets/environments/props/forest_02/ancient_ruin_switch_v1.png",
+      "bytes": 2966684,
+      "sha256": "ff1eba6ace103eed11a58cd096f73448bb59da8d7d5fa62062a0ef414443b677"
+    },
+    {
+      "path": "assets/environments/props/forest_02/ancient_ruin_switch_v1.png.import",
+      "bytes": 1006,
+      "sha256": "5f7a672013b84760d0e4df114bbfe15c57492b65f9108231020a13c7e3c0c5dc"
+    },
+    {
+      "path": "assets/environments/props/forest_02/ancient_ruin_switch_v1.prompt.txt",
+      "bytes": 1608,
+      "sha256": "7dab27ba249b0bb864c52045677df4b97816f0722c1f4f0eb30111645eece7aa"
+    },
+    {
+      "path": "assets/environments/props/forest_02/broken_waystone_v1.png",
+      "bytes": 1734536,
+      "sha256": "982bbaa3599aa0231e286b280a3f539d5bd5b6fdd6e27d88e5c5f2459e67d6c8"
+    },
+    {
+      "path": "assets/environments/props/forest_02/broken_waystone_v1.png.import",
+      "bytes": 993,
+      "sha256": "e05020c30c4166fdd11497fd4022faa8d8521f3f85453f65e72acf0c6401f26c"
+    },
+    {
+      "path": "assets/environments/props/forest_02/broken_waystone_v1.prompt.txt",
+      "bytes": 1191,
+      "sha256": "cee096379f69384ab420d3c24dca06ff731d5a39e0603cee7baaa6d8cbec300b"
+    },
+    {
+      "path": "assets/environments/props/forest_02/DECORATIONS.md",
+      "bytes": 1100,
+      "sha256": "81ebf0e0bbcc2870c3444285fc4a45102e4ac92316c797787bdfda1629accaeb"
+    },
+    {
+      "path": "assets/environments/props/forest_02/fallen_log_v1.png",
+      "bytes": 2164200,
+      "sha256": "83085d7debaf20dfda211e7170317ad79be0962b1e5a6bce4718ea6deb3d78a4"
+    },
+    {
+      "path": "assets/environments/props/forest_02/fallen_log_v1.png.import",
+      "bytes": 978,
+      "sha256": "51c8ab4c7eefa212834f4fba09bbe5bd226e7bec89376b184e0243b426d58d24"
+    },
+    {
+      "path": "assets/environments/props/forest_02/fallen_log_v1.prompt.txt",
+      "bytes": 1195,
+      "sha256": "3a565fe6788c449196c89ada66b8f09483b8dae4dd36ab6f6992b4a0ab4f7cd5"
+    },
+    {
+      "path": "assets/environments/props/forest_02/forest_fungi_v1.png",
+      "bytes": 2072424,
+      "sha256": "7b5bb52e7f484a86ea4079e77ccef222b5de08adba7146393374cde8e5d68fc0"
+    },
+    {
+      "path": "assets/environments/props/forest_02/forest_fungi_v1.png.import",
+      "bytes": 985,
+      "sha256": "e7108ba750a30a819af49f5b20e9091938af289fa296826a230b13aea28a40e1"
+    },
+    {
+      "path": "assets/environments/props/forest_02/forest_fungi_v1.prompt.txt",
+      "bytes": 1172,
+      "sha256": "19f2b082504009b7463bed78c9fe5f53691c89724232677e204cc3fea6852b6f"
+    },
+    {
+      "path": "assets/environments/props/forest_02/hanging_roots_v1.png",
+      "bytes": 2323165,
+      "sha256": "43a9b2decb6245088fe11e30c8959a9bc073b8d7aa4d98aa061f81719b2b7401"
+    },
+    {
+      "path": "assets/environments/props/forest_02/hanging_roots_v1.png.import",
+      "bytes": 988,
+      "sha256": "2efac319d0b1f37e6a0fd1fe3f10ddbf1fcd1bed155c17537dd06acd503ca210"
+    },
+    {
+      "path": "assets/environments/props/forest_02/hanging_roots_v1.prompt.txt",
+      "bytes": 1278,
+      "sha256": "4810833033045ea5a0e78d5c2c9036ab94f78c85ce9d6464a2503d1b9883ba15"
+    },
+    {
+      "path": "assets/environments/props/forest_03/glow_fungi_v1.png",
+      "bytes": 1445839,
+      "sha256": "b4fe69af251c0b2d885f27a01b352ca51b89b3fd06f66985d4d4e395cbdcf5a2"
+    },
+    {
+      "path": "assets/environments/props/forest_03/glow_fungi_v1.png.import",
+      "bytes": 978,
+      "sha256": "b64ffee7e54e7f9d2cc4d96b1520383739f95a95855b8123d524a33e58a4104c"
+    },
+    {
+      "path": "assets/environments/props/forest_03/glow_fungi_v1.prompt.txt",
+      "bytes": 676,
+      "sha256": "d1ce63943f67e5b32be814a882c171ae75a419a10152f7d62d1cab9f36b86ea1"
+    },
+    {
+      "path": "assets/environments/props/forest_03/README.md",
+      "bytes": 1450,
+      "sha256": "ab0667fea0d0c760bfd69884a3b1655c1a4e38893fcb9d4b2206f6b580147001"
+    },
+    {
+      "path": "assets/environments/props/forest_03/root_arch_v1.png",
+      "bytes": 1001759,
+      "sha256": "fabdb0d12410fb5b5a59c047c4e1ccc32bcd987c863aab4ffa5436a89510bacb"
+    },
+    {
+      "path": "assets/environments/props/forest_03/root_arch_v1.png.import",
+      "bytes": 975,
+      "sha256": "3cad32eb66cc1b6b3abad3cd84cbcb9481d549181b811260205cf8bd600be5b1"
+    },
+    {
+      "path": "assets/environments/props/forest_03/root_arch_v1.prompt.txt",
+      "bytes": 691,
+      "sha256": "3acedf4ea3a3d4ae701426a19cf35a0aa563182081075ac92031646c18b56423"
+    },
+    {
+      "path": "assets/environments/props/forest_03/seedpod_vines_v1.png",
+      "bytes": 1500939,
+      "sha256": "bf2caf19381ce3bcaa969329559c890f682a56a57c61449dfd8a19ac3279a54a"
+    },
+    {
+      "path": "assets/environments/props/forest_03/seedpod_vines_v1.png.import",
+      "bytes": 988,
+      "sha256": "e5e96bf3907c72982879802f1b8426f34f43f8f623ae07d7e20da020b55ac637"
+    },
+    {
+      "path": "assets/environments/props/forest_03/seedpod_vines_v1.prompt.txt",
+      "bytes": 647,
+      "sha256": "075b51ea87506c80a011f17e961922e8b95c8146d2fe8874fcb070de2ec27b25"
+    },
+    {
+      "path": "assets/environments/props/forest_pixel_v1/sources/.gdignore",
+      "bytes": 47,
+      "sha256": "3c9e3e4196315575143d0c7ff4baf8f2f4b1e2ad8a771c866049f8c238b7c90d"
+    },
+    {
+      "path": "assets/environments/terrain/forest_01/moss_root_cliff_v1.png",
+      "bytes": 3597396,
+      "sha256": "97b103f9de6ba956e0c71bc3b7e0a24a3cf72dbd8ad087423bcd966662f3080a"
+    },
+    {
+      "path": "assets/environments/terrain/forest_01/moss_root_cliff_v1.png.import",
+      "bytes": 995,
+      "sha256": "38e1ea10432f916277c600b072f546f31949f1b494348e31ffa52efb90497c94"
+    },
+    {
+      "path": "assets/environments/terrain/forest_01/platform_sheet_v1.png",
+      "bytes": 1037343,
+      "sha256": "898169e9e2a0499d33a786a8fde65c04b8b50a64d983d02caa7c5f2e77dd93c8"
+    },
+    {
+      "path": "assets/environments/terrain/forest_01/platform_sheet_v1.png.import",
+      "bytes": 993,
+      "sha256": "1b0d80f685bd37e51db0adf9f8186ff67ac18d91ce2313a42c9268aca2c26b21"
+    },
+    {
+      "path": "assets/environments/terrain/forest_01/README.md",
+      "bytes": 4336,
+      "sha256": "63f579b45b57c1f2338d5c306327f0609c5848a354de9b89b8e0fb63aa975b44"
+    },
+    {
+      "path": "assets/environments/terrain/forest_01/wall_material.gdshader",
+      "bytes": 1900,
+      "sha256": "ff51a4cf4c13c7e5811732abe8d1b5d0a21c926d7c31b300763e8eaf5a4b5eea"
+    },
+    {
+      "path": "assets/environments/terrain/forest_01/wall_material.gdshader.uid",
+      "bytes": 19,
+      "sha256": "11d2f72d9e88efc42e77cb07be3dd370f52e2cf147881fef80e3759485ae4945"
+    },
+    {
+      "path": "assets/environments/tilesets/forest_ground.tres",
+      "bytes": 1292,
+      "sha256": "25c0bb555d8ec376005ad96b4f4b449042443b447bf104fda457d6a2e36a0525"
+    },
+    {
+      "path": "assets/environments/tilesets/forest_sketch.tres",
+      "bytes": 19341,
+      "sha256": "1baa86a07fa88c58423a779d13bf514797407e2a845b1601c1ee01d2942a8d88"
+    },
+    {
+      "path": "assets/environments/tilesets/forest_sketch_atlas.png",
+      "bytes": 363,
+      "sha256": "3eb6b549b77de470450f00955e1b2998e0c3512790d7547d46b333d4c409fd70"
+    },
+    {
+      "path": "assets/environments/tilesets/forest_sketch_atlas.png.import",
+      "bytes": 989,
+      "sha256": "369f399154a0d4f235627b8edc7ef5e5dbcde0ffb9e28e8cd307ed97342da88a"
+    },
+    {
+      "path": "assets/PROCESSED/environments/ENV-B01/v001/ENV-01/props/chest.png",
+      "bytes": 3598,
+      "sha256": "2a51d3da9060f171199e5e433bc66ed27db2a067049e8e0b7951e6ca2730bc1f"
+    },
+    {
+      "path": "assets/PROCESSED/environments/ENV-B01/v001/ENV-02/props/fern_mushrooms.png",
+      "bytes": 14559,
+      "sha256": "62a76dd0b0d9cc0871a4c5cef3a432b963c43afb7f280826858b295333fe7e34"
+    },
+    {
+      "path": "assets/PROCESSED/environments/ENV-B01/v001/ENV-02/props/moss_rocks.png",
+      "bytes": 19792,
+      "sha256": "47103561e2d73ac638a10eca3c44bb78b353ad712d98909229d1b3a4dfcc9d35"
+    },
+    {
+      "path": "assets/PROCESSED/environments/ENV-B01/v001/ENV-02/props/vine.png",
+      "bytes": 15445,
+      "sha256": "e30d8329468130874101173f51c199d38cdadc38678e06955b34b3c093bb9d89"
+    },
+    {
+      "path": "assets/third_party/metroidvania_forge/ch_02_world_building_foundations/forgotten_forest_example_tileset.png",
+      "bytes": 161881,
+      "sha256": "7363d4a410c257f88c38fe51e9b98e723b898169dce0329f62da2a55c1f5010f"
+    },
+    {
+      "path": "data/maps/forest_01.json",
+      "bytes": 15151,
+      "sha256": "a5b084b4022fa33b932740b5275741133e6de7f6643558a16f0794c68681ec95"
+    },
+    {
+      "path": "data/maps/forest_01_art.json",
+      "bytes": 3638,
+      "sha256": "5f716f0faddd4dcda0f8a36b51e7d02e8e0bb203023fdba228c6034cda3b31cb"
+    },
+    {
+      "path": "data/maps/forest_02.json",
+      "bytes": 24561,
+      "sha256": "827dcdd2fe7f19a012ab99aad14315eb79acdfc2e175b39b6acff1dbd548c7e7"
+    },
+    {
+      "path": "data/maps/forest_02_art.json",
+      "bytes": 16032,
+      "sha256": "571154af4cbc8a7af88464efe3bb6e8a9df29621002220156b0abf10e1d43933"
+    },
+    {
+      "path": "data/maps/forest_03.json",
+      "bytes": 15521,
+      "sha256": "3cb95b8f6ec4d65fbed866819e912a726654067ace41895faafcb6400fd53ba3"
+    },
+    {
+      "path": "data/maps/forest_03_art.json",
+      "bytes": 10813,
+      "sha256": "c61ca84395a1436624b7914571b17290061dd89a53c35cc7d0c016c4c18c1003"
+    },
+    {
+      "path": "scenes/maps/forest_01.tscn",
+      "bytes": 213959,
+      "sha256": "613b158b16077b746ddffd3d5a12cdc0700f03ba18d582740cc5c17180083183"
+    },
+    {
+      "path": "scenes/maps/forest_02.tscn",
+      "bytes": 2267202,
+      "sha256": "42344072e19827c642cdbaf38640dcceb34d321fe135a80550b79205dd2f78d9"
+    },
+    {
+      "path": "scenes/maps/forest_03.tscn",
+      "bytes": 1964578,
+      "sha256": "f17eec2aae1b94ea833e210dae03112a3df4df4aba43c72f7f3c62a3ce5669b8"
+    },
+    {
+      "path": "scripts/world/forest_02_room.gd",
+      "bytes": 3452,
+      "sha256": "33971194564a87fc34408e9077e44339d0775621266189230b3be3410784f50e"
+    },
+    {
+      "path": "scripts/world/forest_02_room.gd.uid",
+      "bytes": 19,
+      "sha256": "e5e459211a9a69097e3a66ffa385e912083148510321dd182d012b257d099ad7"
+    },
+    {
+      "path": "scripts/world/forest_03_room.gd",
+      "bytes": 3045,
+      "sha256": "9fd642000444d2cf4f21f1bd252e7432abea15b04c5fbc04d23d82047f7a0968"
+    },
+    {
+      "path": "scripts/world/forest_03_room.gd.uid",
+      "bytes": 20,
+      "sha256": "101a40cd3063179660426af9ff161c0f3270dd789eb6f99b8253e090b43a32c2"
+    },
+    {
+      "path": "scripts/world/forest_mechanism_art.gd",
+      "bytes": 3886,
+      "sha256": "a13cf2c25d43153626c71f8493349d1c2686cba7d16f6dad641489e657dfb372"
+    },
+    {
+      "path": "scripts/world/forest_mechanism_art.gd.uid",
+      "bytes": 20,
+      "sha256": "3e1ceb656643aa0335fb3cc7f33ab1861a49843d7a39ddecb34aa44a5d2e2e22"
+    },
+    {
+      "path": "scripts/world/forest_mist_gate.gd",
+      "bytes": 1643,
+      "sha256": "4fddd32ec68be85bf3aa2f0fee586cbfd6994b852449aadb64111cb880c3da6f"
+    },
+    {
+      "path": "scripts/world/forest_mist_gate.gd.uid",
+      "bytes": 19,
+      "sha256": "dbdf28033db4c785ed5ba982a47331c6ea9712f971f62e1dc8727b6ad309bf81"
+    },
+    {
+      "path": "scripts/world/forest_passage.gd",
+      "bytes": 1353,
+      "sha256": "3c50b944aa9a7ccec9f786cb1d475c62d3867926505ff0c0132028366c52c21b"
+    },
+    {
+      "path": "scripts/world/forest_passage.gd.uid",
+      "bytes": 20,
+      "sha256": "8534b4e7858527f4141b2d727d073514ea53d57a1b43ad60c5d8e8e774936201"
+    },
+    {
+      "path": "scripts/world/forest_reserved_exit.gd",
+      "bytes": 335,
+      "sha256": "196a9546d0b221043f446b83252c43893b48d79e2f6e4dc04f1815d151323704"
+    },
+    {
+      "path": "scripts/world/forest_reserved_exit.gd.uid",
+      "bytes": 20,
+      "sha256": "57e5624b68bb165ff5f16f25ccb16c54ca05a2ee8989f7f826c6693b41c99370"
+    },
+    {
+      "path": "scripts/world/forest_room.gd",
+      "bytes": 2588,
+      "sha256": "1f869fa73d556bd7125f45a1dd5f3eb9be537dc796c1df3dd4a5467819088240"
+    },
+    {
+      "path": "scripts/world/forest_room.gd.uid",
+      "bytes": 20,
+      "sha256": "0ebb21ba444ca2c106278b388ac024e1cff0277e2ff84acc1f339e1f23b95894"
+    },
+    {
+      "path": "test/data/forest_candidates/05A.json",
+      "bytes": 15867,
+      "sha256": "e44b6e931a3041045847c9223a97594380dc06b85bab0e06c48b8e9190acc692"
+    },
+    {
+      "path": "test/data/forest_candidates/05B.json",
+      "bytes": 9465,
+      "sha256": "dad172defaf67303bfc7a5e8266f689ad8c108ea79069031631a152e011ded20"
+    },
+    {
+      "path": "test/data/forest_candidates/06A.json",
+      "bytes": 15899,
+      "sha256": "fe85b19b724905f29ae93567e07bd9ffd874af62916662074922e3e263669d33"
+    },
+    {
+      "path": "test/data/forest_candidates/06B.json",
+      "bytes": 17462,
+      "sha256": "695f51483b1f87b10a22edc42d4901a46369f11a9e55383b315b8634cf3dd17a"
+    },
+    {
+      "path": "test/data/forest_candidates/07A.json",
+      "bytes": 18177,
+      "sha256": "ca344824f9a6e328ccd3ea557aa303b756487897f32a6cc27878a1812571b346"
+    },
+    {
+      "path": "test/data/forest_candidates/07B.json",
+      "bytes": 22636,
+      "sha256": "031232b3d1b9ee5d261d1d842aa223cd3a8243cd547524f64c89369ea56c160a"
+    },
+    {
+      "path": "test/data/forest_candidates/08A.json",
+      "bytes": 17036,
+      "sha256": "ff72d7212491443a58102cbac354eb904b0a9d3f3207800cc6b89955c9243694"
+    },
+    {
+      "path": "test/data/forest_candidates/08B.json",
+      "bytes": 12442,
+      "sha256": "368a6992f10d0f8a294d2783ff8ccfb5b48a755aa1aac9341dc8bb898a2e1d8b"
+    },
+    {
+      "path": "test/data/forest_candidates/09A.json",
+      "bytes": 17237,
+      "sha256": "c992d2876f976e3e40959b1c529b2c1d50ac90ed34c210e95d7d6d570044d424"
+    },
+    {
+      "path": "test/data/forest_candidates/09B.json",
+      "bytes": 13649,
+      "sha256": "25a6794686d65b878b35b6b108e95d607145d8a0b32d5e4a328108f2c2b570a0"
+    },
+    {
+      "path": "test/data/forest_candidates/manifest.json",
+      "bytes": 3183,
+      "sha256": "1adfaaabd0055a95320a961ac447e14b059791a09b35a6afeea736d70b349b3d"
+    },
+    {
+      "path": "test/data/forest_candidates_rules.json",
+      "bytes": 2598,
+      "sha256": "9419d7224e99afe797ed0b87737c392854eaff1c33bf44bd359fc427815d0e00"
+    },
+    {
+      "path": "test/scenes/forest_candidates/forest_05A.tscn",
+      "bytes": 1028609,
+      "sha256": "a5e31dd3988d4202ec9fe3cc6bea90bc0b055754ff93e30fea7238acf9f90773"
+    },
+    {
+      "path": "test/scenes/forest_candidates/forest_05B.tscn",
+      "bytes": 962503,
+      "sha256": "df0b7cc88e7a870b9f206fdc4ec6522a24e82d4ff29e27d8262e9d3884b3b3ae"
+    },
+    {
+      "path": "test/scenes/forest_candidates/forest_06A.tscn",
+      "bytes": 977808,
+      "sha256": "3e6255444f0f87e619a5b8cb5b1f4dc7c59358a0fc9a997fcfbde7402842cbb5"
+    },
+    {
+      "path": "test/scenes/forest_candidates/forest_06B.tscn",
+      "bytes": 1038667,
+      "sha256": "631ae710acd62c5ab793ea91002e77a4af6ccd0d3cd6b06dbdf12f1296e79bdc"
+    },
+    {
+      "path": "test/scenes/forest_candidates/forest_07A.tscn",
+      "bytes": 1003572,
+      "sha256": "7cf7a2d3016c4d8f0a380eb7bdaf3644b01c64c55739d53807d37ba810b26d4a"
+    },
+    {
+      "path": "test/scenes/forest_candidates/forest_07B.tscn",
+      "bytes": 1064411,
+      "sha256": "6fc6ebf70ed3c2d4f407754bd6e063570d259fc03200f9d0a75e5f6b011512f2"
+    },
+    {
+      "path": "test/scenes/forest_candidates/forest_08A.tscn",
+      "bytes": 1017598,
+      "sha256": "a8aa49f695d560b65512895cea20597ebf0356e8f5d18e73352d49039a4b3f3a"
+    },
+    {
+      "path": "test/scenes/forest_candidates/forest_08B.tscn",
+      "bytes": 972389,
+      "sha256": "6f7c5f2746fb964484b8a3fd44130e8af786be7e3c175aadd3a2e698c1b8ee91"
+    },
+    {
+      "path": "test/scenes/forest_candidates/forest_09A.tscn",
+      "bytes": 1009749,
+      "sha256": "384b63e6aef7bf5ccb565395a436ddc9df5eb0d6d7f5978bf48cca90fb5476fc"
+    },
+    {
+      "path": "test/scenes/forest_candidates/forest_09B.tscn",
+      "bytes": 947635,
+      "sha256": "435a6398d39ffa828f36cf4bc5953accf12722fe1bbc1ba6074dd64e2161ca59"
+    },
+    {
+      "path": "tools/maps/build_forest.gd",
+      "bytes": 143,
+      "sha256": "e7f99e24d1e6c073fe81a7ac4f0c0e0d38906e9c74c1789ef3daf1514d87c747"
+    },
+    {
+      "path": "tools/maps/build_forest.gd.uid",
+      "bytes": 20,
+      "sha256": "ecd330acb23d7a9dfb43d4116fbe939a2412518a331a10de121415d4d1990df4"
+    },
+    {
+      "path": "tools/maps/build_forest_02.gd",
+      "bytes": 26123,
+      "sha256": "35895fac11ea8709042eea88308f9d5b9f9196685deeb227b02e99d94b408fea"
+    },
+    {
+      "path": "tools/maps/build_forest_02.gd.uid",
+      "bytes": 20,
+      "sha256": "1e984987812e3a9a025a525fd0cd4030a196ec06d9642ea5a162d2274d58ca48"
+    },
+    {
+      "path": "tools/maps/build_forest_03.gd",
+      "bytes": 1904,
+      "sha256": "d39b033090c046f5d46c7233af67ff42bb57d5decc790204d4acee5c5c5f6bbc"
+    },
+    {
+      "path": "tools/maps/build_forest_03.gd.uid",
+      "bytes": 20,
+      "sha256": "d11b8e5bdd55a4685bb0f66f755773ec01c117d6a43ec2b8874e7c598f85b452"
+    },
+    {
+      "path": "tools/maps/build_forest_candidates.gd",
+      "bytes": 4986,
+      "sha256": "5bbdce0a50ee52b785ddfd507260ee76bedc28491c39503b020821e3a46558db"
+    },
+    {
+      "path": "tools/maps/build_forest_candidates.gd.uid",
+      "bytes": 20,
+      "sha256": "7d2fe2b9ef3be61d52986fe630201719f7c2978f06009a284a86837b220b2bd2"
+    },
+    {
+      "path": "tools/maps/build_forest_dark.gd",
+      "bytes": 149,
+      "sha256": "9a0bf1cbc5faacff00e3aff1a799c28c2040952522aad946bf07e48d834b937b"
+    },
+    {
+      "path": "tools/maps/build_forest_dark.gd.uid",
+      "bytes": 20,
+      "sha256": "52230fe711a2781789edb9a088d96cbb262462a7eaf9939176f89dad0ea83e90"
+    },
+    {
+      "path": "tools/maps/build_forest_sketch.gd",
+      "bytes": 18800,
+      "sha256": "1631e61dcee00f390bad3b8e0f6e59ec829c3847e2d7aef6ce305924b86f42a7"
+    },
+    {
+      "path": "tools/maps/build_forest_sketch.gd.uid",
+      "bytes": 20,
+      "sha256": "0017501bd951bc0ee46cc0b42493c3fcd8800a75be2fbbbc65137679b174d7f3"
+    },
+    {
+      "path": "tools/maps/process_forest_decor.gd",
+      "bytes": 2883,
+      "sha256": "905e0287eb992dbfbdc1e667496e682ba53e20f0c980d98ceb11be5b50f41c32"
+    },
+    {
+      "path": "tools/maps/process_forest_decor.gd.uid",
+      "bytes": 20,
+      "sha256": "04d4d611c22b0a3d84e32472ca1670c2f5fff16c97ec55d6357f52f45d40de9b"
+    },
+    {
+      "path": "tools/maps/process_forest_mist.gd",
+      "bytes": 1921,
+      "sha256": "4ecbdf0e5a70177f7ebb383379c2831771b9ff9850ef15e598bd8374ad87ea51"
+    },
+    {
+      "path": "tools/maps/process_forest_mist.gd.uid",
+      "bytes": 20,
+      "sha256": "084d2446009401bc1e40d5338672c7d1eef8f9bacf858bf81599fd5857e252de"
+    },
+    {
+      "path": "data/forest_mist.json",
+      "bytes": 316,
+      "sha256": "294ada931df4946d6332d78eea759bf2f4a2c315dbe5c332233228f043ac6983"
+    },
+    {
+      "path": "assets/effects/forest_mist_v1/mist_sheet.png",
+      "bytes": 180224,
+      "sha256": "5ff2422f330a5cb401db7c24e88842b18ff8b3b8a44ff9f31f6aa6c98ccc5cf1"
+    },
+    {
+      "path": "assets/effects/forest_mist_v1/mist_sheet.png.import",
+      "bytes": 962,
+      "sha256": "206797175c1a0149fae99ff4311bf3cfadfdf9be8a62bc2100ff70422e4bf0ce"
+    },
+    {
+      "path": "assets/effects/forest_mist_v1/mist_v1.prompt.txt",
+      "bytes": 852,
+      "sha256": "0f34dfb3be76e44a3d06476c506badda9cceef614fd4522e4706dfedc365af49"
+    },
+    {
+      "path": "assets/effects/forest_mist_v1/README.md",
+      "bytes": 807,
+      "sha256": "f6f9481515d0ca55a846f422da4849b7b373ff5e24f10c7fc96d3e51aee2faf8"
+    },
+    {
+      "path": "assets/effects/forest_mist_v1/source.png",
+      "bytes": 2038567,
+      "sha256": "9f78547bfe10e117f6c21f4d64024bc00fcb552ac800628fa0b684b7d1b6f084"
+    },
+    {
+      "path": "assets/effects/forest_mist_v1/source.png.import",
+      "bytes": 952,
+      "sha256": "4aa4e2014fb27b545236d87c0c23b144e00b074312a675d79de2e8d6b8158958"
+    }
+  ]
+}

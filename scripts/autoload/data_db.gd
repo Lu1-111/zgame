@@ -9,6 +9,7 @@ const REGIONS_PATH := "res://data/world/regions.json"
 const COLLECTION_PATHS := {
 	"items": "res://data/items.json",
 	"weapons": "res://data/weapons.json",
+	"accessories": "res://data/accessories.json",
 	"skills": "res://data/skills.json",
 	"talents": "res://data/talents.json",
 	"enemies": "res://data/enemies.json",
@@ -19,9 +20,14 @@ var regions: Array = []      ## 区域列表（保持表内顺序，供地图生
 var rooms: Dictionary = {}   ## 房间 id → 房间 dict
 var items: Dictionary = {}   ## 道具 id → 道具 dict
 var weapons: Dictionary = {} ## 武器 id → 武器 dict
+var accessories: Dictionary = {} ## 饰品 id → 饰品定义
 var skills: Dictionary = {}  ## 技能 id → 技能 dict
 var talents: Dictionary = {} ## 天赋 id → 天赋 dict
 var enemies: Dictionary = {} ## 敌人 id → 敌人 dict
+var bosses: Dictionary = {}  ## 独立首领档案；与旧12种怪物兼容，按阶段解析基础生命。
+var enemy_records: Dictionary = {} ## 固定数字ID登记，含尚未实装的储备。
+var enemy_aliases: Dictionary = {}
+var enemy_drafts: Dictionary = {} ## 储备档案也读取登记来源，填写后查询与文档保持一致。
 
 func _ready() -> void:
 	## 启动自动载入一次
@@ -37,14 +43,38 @@ func load_all() -> Error:
 	rooms = {}
 	items = {}
 	weapons = {}
+	accessories = {}
 	skills = {}
 	talents = {}
 	enemies = {}
+	bosses = {}
+	enemy_records = {}
+	enemy_aliases = {}
+	enemy_drafts = {}
 	var err := _load_regions()
 	if err != OK:
 		return err
 	for coll_name in COLLECTION_PATHS:
 		_load_collection(coll_name, COLLECTION_PATHS[coll_name])
+	var boss_data: Variant = _read_json("res://data/bosses/claffert.json")
+	if boss_data is Dictionary and boss_data.has("id"):
+		bosses[StringName(str(boss_data.id))] = boss_data
+	var registry: Variant = _read_json("res://data/enemy_registry.json")
+	if registry is Dictionary:
+		for row: Dictionary in registry.entries:
+			var key := StringName(str(row.runtime_id))
+			enemy_records[key] = row
+			enemy_aliases[str(row.numeric_id)] = key
+			for alias: String in row.aliases:enemy_aliases[alias] = key
+			if not enemies.has(key) and not bosses.has(key):
+				var draft: Dictionary = row.draft.duplicate(true)
+				if row.get("source") is Dictionary:
+					var source: Dictionary = row.source
+					var catalog: Variant = _read_json("res://"+str(source.file))
+					if catalog is Dictionary and source.has("collection"):
+						for entry: Dictionary in catalog.get(str(source.collection),[]):
+							if str(entry.id) == str(source.id):draft.merge(entry,true)
+				enemy_drafts[key] = draft
 	loaded = true
 	return OK
 
@@ -67,9 +97,13 @@ func get_weapon(id: StringName) -> Dictionary:
 	## 按 id 查询武器定义；缺失返回 {}
 	return weapons.get(id, {}) as Dictionary
 
+## 按稳定ID查询饰品定义。
+func get_accessory(id: StringName) -> Dictionary:
+	return accessories.get(id, {}) as Dictionary
+
 func get_skill(id: StringName) -> Dictionary:
 	## 按 id 查询技能定义；缺失返回 {}
-	return skills.get(id, {}) as Dictionary
+	return skills.get(SkillLibrary.canonical(id), {}) as Dictionary
 
 func get_talent(id: StringName) -> Dictionary:
 	## 按 id 查询天赋定义；缺失返回 {}
@@ -77,7 +111,61 @@ func get_talent(id: StringName) -> Dictionary:
 
 func get_enemy(id: StringName) -> Dictionary:
 	## 按 id 查询敌人定义；缺失返回 {}
-	return enemies.get(id, {}) as Dictionary
+	id = canonical_enemy_id(id)
+	var result: Dictionary = enemies.get(id,bosses.get(id,{})).duplicate(true)
+	if result.is_empty() and enemy_records.has(id):
+		result = enemy_drafts.get(id,{}).duplicate(true)
+		result["id"] = str(id)
+		result["name"] = enemy_records[id].name
+		result["rank"] = enemy_records[id].category
+	if enemy_records.has(id):result["numeric_id"] = enemy_records[id].numeric_id
+	return result
+
+## 数字ID及明确别名映射到稳定运行标识；不把有歧义的ENM素材号用作运行ID。
+func canonical_enemy_id(id: StringName) -> StringName:
+	return StringName(str(enemy_aliases.get(str(id),id)))
+
+## 从实际地图祖先读取房间和区域，备选场景同样使用显式region而非玩家旧房间。
+func enemy_spawn_context(actor: Node, fallback_room: StringName) -> Dictionary:
+	var room_id := fallback_room
+	var region_id := ""
+	var node := actor.get_parent()
+	while node != null:
+		if node.has_meta("layout_data"):
+			var layout: Variant = _read_json(str(node.get_meta("layout_data")))
+			if layout is Dictionary:
+				room_id = StringName(str(layout.get("id",room_id)))
+				region_id = str(layout.get("region",""))
+				break
+		node = node.get_parent()
+	if region_id.is_empty():region_id = str(get_room(room_id).get("region",""))
+	return {"room_id":room_id,"region_id":StringName(region_id)}
+
+## 读取首领原始档案；美术文件夹保留旧命名，运行ID使用制作人指定占位名。
+func get_boss(id: StringName) -> Dictionary:
+	return bosses.get(canonical_enemy_id(id),{}) as Dictionary
+
+## 首领按阶段生成独立最终属性，只有基础生命与基础攻击乘区域倍率。
+func get_boss_for_room(id: StringName, room_id: StringName, phase_index: int = 0, region_hint: StringName = &"") -> Dictionary:
+	id = canonical_enemy_id(id)
+	var base := get_boss(id).duplicate(true)
+	if base.is_empty() or phase_index < 0 or phase_index >= base.phases.size():
+		return {}
+	base.base_hp = base.phases[phase_index].base_hp
+	base.poise = base.phases[phase_index].get("poise",base.poise)
+	var room := get_room(room_id)
+	base["numeric_id"] = enemy_records.get(id,{}).get("numeric_id","")
+	return EnemyStats.resolve(base,get_region(region_hint if region_hint != &"" else StringName(str(room.get("region","")))))
+
+## 放入实际房间时解析区域倍率；数据表里的基础属性不会被运行时改写。
+func get_enemy_for_room(id: StringName, room_id: StringName, region_hint: StringName = &"") -> Dictionary:
+	id = canonical_enemy_id(id)
+	if bosses.has(id):
+		return get_boss_for_room(id,room_id,0,region_hint)
+	if not enemies.has(id):return {} # 仅美术/未设定参数的记录不能作为可战斗实例出生。
+	var room := get_room(room_id)
+	var region := get_region(region_hint if region_hint != &"" else StringName(str(room.get("region",""))))
+	return EnemyStats.resolve(get_enemy(id),region)
 
 func get_rooms() -> Array:
 	## 全部房间定义列表
@@ -128,6 +216,8 @@ func _collection_dict(coll_name: String) -> Dictionary:
 			return items
 		"weapons":
 			return weapons
+		"accessories":
+			return accessories
 		"skills":
 			return skills
 		"talents":

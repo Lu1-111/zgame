@@ -1,0 +1,974 @@
+{
+  "tool": "tools/assets/pixel_grid.py",
+  "conversions": [
+    {
+      "id": "rock_field",
+      "source_pixels": [
+        1254,
+        1254
+      ],
+      "source_crop": [
+        0,
+        0,
+        1254,
+        1254
+      ],
+      "sampled_pixels": [
+        256,
+        256
+      ],
+      "canvas_pixels": [
+        256,
+        256
+      ],
+      "resampling_passes": 1,
+      "sampling": "alpha_weighted_area_then_palette",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32,
+      "anchor": "bottom"
+    },
+    {
+      "id": "crystal_01",
+      "source_cell": [
+        0,
+        0,
+        4,
+        4
+      ],
+      "source_pixels": [
+        314,
+        314
+      ],
+      "source_crop": [
+        85,
+        176,
+        236,
+        273
+      ],
+      "sampled_pixels": [
+        32,
+        21
+      ],
+      "canvas_pixels": [
+        32,
+        24
+      ],
+      "resampling_passes": 1,
+      "sampling": "alpha_weighted_area_then_palette",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32,
+      "anchor": "bottom"
+    },
+    {
+      "id": "crystal_02",
+      "source_cell": [
+        1,
+        0,
+        4,
+        4
+      ],
+      "source_pixels": [
+        313,
+        314
+      ],
+      "source_crop": [
+        40,
+        127,
+        269,
+        273
+      ],
+      "sampled_pixels": [
+        32,
+        20
+      ],
+      "canvas_pixels": [
+        32,
+        32
+      ],
+      "resampling_passes": 1,
+      "sampling": "alpha_weighted_area_then_palette",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32,
+      "anchor": "bottom"
+    },
+    {
+      "id": "crystal_03",
+      "source_cell": [
+        2,
+        0,
+        4,
+        4
+      ],
+      "source_pixels": [
+        313,
+        314
+      ],
+      "source_crop": [
+        47,
+        53,
+        267,
+        273
+      ],
+      "sampled_pixels": [
+        32,
+        32
+      ],
+      "canvas_pixels": [
+        32,
+        48
+      ],
+      "resampling_passes": 1,
+      "sampling": "alpha_weighted_area_then_palette",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32,
+      "anchor": "bottom"
+    },
+    {
+      "id": "crystal_04",
+      "source_cell": [
+        3,
+        0,
+        4,
+        4
+      ],
+      "source_pixels": [
+        314,
+        314
+      ],
+      "source_crop": [
+        69,
+        175,
+        227,
+        273
+      ],
+      "sampled_pixels": [
+        32,
+        20
+      ],
+      "canvas_pixels": [
+        32,
+        24
+      ],
+      "resampling_passes": 1,
+      "sampling": "alpha_weighted_area_then_palette",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32,
+      "anchor": "bottom"
+    },
+    {
+      "id": "rock_01",
+      "source_cell": [
+        0,
+        1,
+        4,
+        4
+      ],
+      "source_pixels": [
+        314,
+        313
+      ],
+      "source_crop": [
+        37,
+        217,
+        276,
+        273
+      ],
+      "sampled_pixels": [
+        32,
+        7
+      ],
+      "canvas_pixels": [
+        32,
+        16
+      ],
+      "resampling_passes": 1,
+      "sampling": "alpha_weighted_area_then_palette",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32,
+      "anchor": "bottom"
+    },
+    {
+      "id": "rock_02",
+      "source_cell": [
+        1,
+        1,
+        4,
+        4
+      ],
+      "source_pixels": [
+        313,
+        313
+      ],
+      "source_crop": [
+        25,
+        126,
+        288,
+        274
+      ],
+      "sampled_pixels": [
+        40,
+        23
+      ],
+      "canvas_pixels": [
+        40,
+        32
+      ],
+      "resampling_passes": 1,
+      "sampling": "alpha_weighted_area_then_palette",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32,
+      "anchor": "bottom"
+    },
+    {
+      "id": "rock_03",
+      "source_cell": [
+        2,
+        1,
+        4,
+        4
+      ],
+      "source_pixels": [
+        313,
+        313
+      ],
+      "source_crop": [
+        56,
+        38,
+        258,
+        273
+      ],
+      "sampled_pixels": [
+        32,
+        37
+      ],
+      "canvas_pixels": [
+        32,
+        48
+      ],
+      "resampling_passes": 1,
+      "sampling": "alpha_weighted_area_then_palette",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32,
+      "anchor": "bottom"
+    },
+    {
+      "id": "rock_04",
+      "source_cell": [
+        3,
+        1,
+        4,
+        4
+      ],
+      "source_pixels": [
+        314,
+        313
+      ],
+      "source_crop": [
+        32,
+        152,
+        283,
+        274
+      ],
+      "sampled_pixels": [
+        48,
+        23
+      ],
+      "canvas_pixels": [
+        48,
+        32
+      ],
+      "resampling_passes": 1,
+      "sampling": "alpha_weighted_area_then_palette",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32,
+      "anchor": "bottom"
+    },
+    {
+      "id": "ore_01",
+      "source_cell": [
+        0,
+        2,
+        4,
+        4
+      ],
+      "source_pixels": [
+        314,
+        313
+      ],
+      "source_crop": [
+        37,
+        149,
+        276,
+        274
+      ],
+      "sampled_pixels": [
+        32,
+        17
+      ],
+      "canvas_pixels": [
+        32,
+        32
+      ],
+      "resampling_passes": 1,
+      "sampling": "alpha_weighted_area_then_palette",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32,
+      "anchor": "bottom"
+    },
+    {
+      "id": "ore_02",
+      "source_cell": [
+        1,
+        2,
+        4,
+        4
+      ],
+      "source_pixels": [
+        313,
+        313
+      ],
+      "source_crop": [
+        31,
+        124,
+        276,
+        274
+      ],
+      "sampled_pixels": [
+        32,
+        20
+      ],
+      "canvas_pixels": [
+        32,
+        32
+      ],
+      "resampling_passes": 1,
+      "sampling": "alpha_weighted_area_then_palette",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32,
+      "anchor": "bottom"
+    },
+    {
+      "id": "ore_03",
+      "source_cell": [
+        2,
+        2,
+        4,
+        4
+      ],
+      "source_pixels": [
+        313,
+        313
+      ],
+      "source_crop": [
+        33,
+        103,
+        281,
+        274
+      ],
+      "sampled_pixels": [
+        32,
+        22
+      ],
+      "canvas_pixels": [
+        32,
+        32
+      ],
+      "resampling_passes": 1,
+      "sampling": "alpha_weighted_area_then_palette",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32,
+      "anchor": "bottom"
+    },
+    {
+      "id": "ore_04",
+      "source_cell": [
+        3,
+        2,
+        4,
+        4
+      ],
+      "source_pixels": [
+        314,
+        313
+      ],
+      "source_crop": [
+        32,
+        124,
+        283,
+        274
+      ],
+      "sampled_pixels": [
+        32,
+        19
+      ],
+      "canvas_pixels": [
+        32,
+        32
+      ],
+      "resampling_passes": 1,
+      "sampling": "alpha_weighted_area_then_palette",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32,
+      "anchor": "bottom"
+    },
+    {
+      "id": "bones_01",
+      "source_cell": [
+        0,
+        3,
+        4,
+        4
+      ],
+      "source_pixels": [
+        314,
+        314
+      ],
+      "source_crop": [
+        41,
+        153,
+        276,
+        257
+      ],
+      "sampled_pixels": [
+        32,
+        14
+      ],
+      "canvas_pixels": [
+        32,
+        24
+      ],
+      "resampling_passes": 1,
+      "sampling": "alpha_weighted_area_then_palette",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32,
+      "anchor": "bottom"
+    },
+    {
+      "id": "bones_02",
+      "source_cell": [
+        1,
+        3,
+        4,
+        4
+      ],
+      "source_pixels": [
+        313,
+        314
+      ],
+      "source_crop": [
+        24,
+        143,
+        286,
+        252
+      ],
+      "sampled_pixels": [
+        48,
+        20
+      ],
+      "canvas_pixels": [
+        48,
+        32
+      ],
+      "resampling_passes": 1,
+      "sampling": "alpha_weighted_area_then_palette",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32,
+      "anchor": "bottom"
+    },
+    {
+      "id": "bones_03",
+      "source_cell": [
+        2,
+        3,
+        4,
+        4
+      ],
+      "source_pixels": [
+        313,
+        314
+      ],
+      "source_crop": [
+        28,
+        170,
+        287,
+        257
+      ],
+      "sampled_pixels": [
+        48,
+        16
+      ],
+      "canvas_pixels": [
+        48,
+        16
+      ],
+      "resampling_passes": 1,
+      "sampling": "alpha_weighted_area_then_palette",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32,
+      "anchor": "bottom"
+    },
+    {
+      "id": "bones_04",
+      "source_cell": [
+        3,
+        3,
+        4,
+        4
+      ],
+      "source_pixels": [
+        314,
+        314
+      ],
+      "source_crop": [
+        25,
+        157,
+        288,
+        252
+      ],
+      "sampled_pixels": [
+        48,
+        17
+      ],
+      "canvas_pixels": [
+        48,
+        24
+      ],
+      "resampling_passes": 1,
+      "sampling": "alpha_weighted_area_then_palette",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32,
+      "anchor": "bottom"
+    },
+    {
+      "id": "chest_closed",
+      "source_cell": [
+        0,
+        0,
+        4,
+        2
+      ],
+      "source_pixels": [
+        444,
+        444
+      ],
+      "source_crop": [
+        47,
+        188,
+        397,
+        421
+      ],
+      "sampled_pixels": [
+        40,
+        26
+      ],
+      "canvas_pixels": [
+        48,
+        40
+      ],
+      "resampling_passes": 1,
+      "sampling": "alpha_weighted_area_then_palette",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32,
+      "anchor": "bottom"
+    },
+    {
+      "id": "chest_locked",
+      "source_cell": [
+        1,
+        0,
+        4,
+        2
+      ],
+      "source_pixels": [
+        443,
+        444
+      ],
+      "source_crop": [
+        46,
+        188,
+        396,
+        421
+      ],
+      "sampled_pixels": [
+        40,
+        26
+      ],
+      "canvas_pixels": [
+        48,
+        40
+      ],
+      "resampling_passes": 1,
+      "sampling": "alpha_weighted_area_then_palette",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32,
+      "anchor": "bottom"
+    },
+    {
+      "id": "chest_opening",
+      "source_cell": [
+        2,
+        0,
+        4,
+        2
+      ],
+      "source_pixels": [
+        443,
+        444
+      ],
+      "source_crop": [
+        43,
+        152,
+        397,
+        421
+      ],
+      "sampled_pixels": [
+        40,
+        30
+      ],
+      "canvas_pixels": [
+        48,
+        40
+      ],
+      "resampling_passes": 1,
+      "sampling": "alpha_weighted_area_then_palette",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32,
+      "anchor": "bottom"
+    },
+    {
+      "id": "chest_open",
+      "source_cell": [
+        3,
+        0,
+        4,
+        2
+      ],
+      "source_pixels": [
+        444,
+        444
+      ],
+      "source_crop": [
+        47,
+        103,
+        398,
+        421
+      ],
+      "sampled_pixels": [
+        40,
+        36
+      ],
+      "canvas_pixels": [
+        48,
+        40
+      ],
+      "resampling_passes": 1,
+      "sampling": "alpha_weighted_area_then_palette",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32,
+      "anchor": "bottom"
+    },
+    {
+      "id": "platform_01",
+      "source_cell": [
+        0,
+        1,
+        4,
+        2
+      ],
+      "source_pixels": [
+        444,
+        443
+      ],
+      "source_crop": [
+        32,
+        233,
+        413,
+        390
+      ],
+      "sampled_pixels": [
+        48,
+        20
+      ],
+      "canvas_pixels": [
+        48,
+        24
+      ],
+      "resampling_passes": 1,
+      "sampling": "alpha_weighted_area_then_palette",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32,
+      "anchor": "top"
+    },
+    {
+      "id": "platform_02",
+      "source_cell": [
+        1,
+        1,
+        4,
+        2
+      ],
+      "source_pixels": [
+        443,
+        443
+      ],
+      "source_crop": [
+        32,
+        233,
+        412,
+        391
+      ],
+      "sampled_pixels": [
+        48,
+        20
+      ],
+      "canvas_pixels": [
+        48,
+        24
+      ],
+      "resampling_passes": 1,
+      "sampling": "alpha_weighted_area_then_palette",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32,
+      "anchor": "top"
+    },
+    {
+      "id": "stalagmites_01",
+      "source_cell": [
+        2,
+        1,
+        4,
+        2
+      ],
+      "source_pixels": [
+        443,
+        443
+      ],
+      "source_crop": [
+        33,
+        137,
+        411,
+        391
+      ],
+      "sampled_pixels": [
+        48,
+        32
+      ],
+      "canvas_pixels": [
+        48,
+        40
+      ],
+      "resampling_passes": 1,
+      "sampling": "alpha_weighted_area_then_palette",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32,
+      "anchor": "bottom"
+    },
+    {
+      "id": "stalagmites_02",
+      "source_cell": [
+        3,
+        1,
+        4,
+        2
+      ],
+      "source_pixels": [
+        444,
+        443
+      ],
+      "source_crop": [
+        34,
+        161,
+        413,
+        391
+      ],
+      "sampled_pixels": [
+        48,
+        29
+      ],
+      "canvas_pixels": [
+        48,
+        40
+      ],
+      "resampling_passes": 1,
+      "sampling": "alpha_weighted_area_then_palette",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32,
+      "anchor": "bottom"
+    },
+    {
+      "id": "stalagmites_03",
+      "source_cell": [
+        2,
+        1,
+        4,
+        2
+      ],
+      "source_pixels": [
+        443,
+        443
+      ],
+      "source_crop": [
+        33,
+        137,
+        411,
+        391
+      ],
+      "sampled_pixels": [
+        48,
+        32
+      ],
+      "canvas_pixels": [
+        48,
+        40
+      ],
+      "resampling_passes": 1,
+      "sampling": "alpha_weighted_area_then_palette",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32,
+      "anchor": "bottom"
+    },
+    {
+      "id": "stalagmites_04",
+      "source_cell": [
+        3,
+        1,
+        4,
+        2
+      ],
+      "source_pixels": [
+        444,
+        443
+      ],
+      "source_crop": [
+        34,
+        161,
+        413,
+        391
+      ],
+      "sampled_pixels": [
+        48,
+        29
+      ],
+      "canvas_pixels": [
+        48,
+        40
+      ],
+      "resampling_passes": 1,
+      "sampling": "alpha_weighted_area_then_palette",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32,
+      "anchor": "bottom"
+    },
+    {
+      "id": "deep_cavern",
+      "source_pixels": [
+        1672,
+        941
+      ],
+      "source_crop": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "sampled_pixels": [
+        640,
+        360
+      ],
+      "canvas_pixels": [
+        640,
+        360
+      ],
+      "resampling_passes": 1,
+      "sampling": "alpha_weighted_area_then_palette",
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32,
+      "anchor": "bottom"
+    }
+  ],
+  "tool_version": "native-grid-v1"
+}

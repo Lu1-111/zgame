@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://test/scripts/weapon_appearance_gallery.gd" id="1"]
+
+[node name="WeaponAppearanceGallery" type="Node2D"]
+script = ExtResource("1")
+metadata/disable_save = true

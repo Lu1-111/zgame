@@ -1,0 +1,44 @@
+{
+  "background": "res://assets/environments/backgrounds/cave/v001/deep_cavern.png",
+  "background_tint": "#707a91",
+  "ground_texture": "res://assets/environments/terrain/cave/v001/rock_field.png",
+  "stage_width": 640,
+  "stage_height": 360,
+  "ground_y": 290,
+  "flying_y": 220,
+  "actor_origin": [
+    390,
+    290
+  ],
+  "player_reference_origin": [
+    260,
+    269
+  ],
+  "effect_origin": [
+    350,
+    190
+  ],
+  "effect_demo_speed": 45,
+  "effect_demo_seconds": 3,
+  "ui_pos": [
+    12,
+    12
+  ],
+  "font_size": 10,
+  "action_labels": {
+    "idle": "闲置",
+    "move": "移动",
+    "slash_down": "举刀下劈",
+    "slash_up": "挑斩上挥",
+    "thrust": "突刺",
+    "shoot": "拉弓射击",
+    "ram": "撞击",
+    "shell_defense": "缩壳防御",
+    "claw_attack": "爪击",
+    "web_spit": "吐丝",
+    "charge_ready": "发光攻击准备",
+    "elbow_blade": "前臂岩刃攻击",
+    "leap_slam": "跳起下砸",
+    "tail_crystal_shot": "扬尾发射晶石"
+  }
+}

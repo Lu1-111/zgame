@@ -1,8 +1,8 @@
 class_name PlayerTuning
 extends RefCounted
 ## 玩家手感参数表（参考书 §3.1，60Hz 物理）。
-## 刻意独立成叶文件（零引用）：player.gd 与 player_states.gd 都从这里取常量，
-## 避免二者循环引用导致内部类注册失败；调手感只动这个文件。
+## player.gd 与 player_states.gd 共用此叶文件，避免二者循环引用。
+## 土狼时间与闪避从data/player_movement.json读取，其余常量保留既有值。
 
 # ---- 移动 ----
 const MAX_SPEED := 160.0          ## 水平最大速度
@@ -19,20 +19,21 @@ const MAX_FALL := 700.0           ## 最大下落速度
 const JUMP_VELOCITY := 636.0      ## 跳跃初速（跳高 112.4px ≈ 7 格，制作人要求 2 倍）
 const JUMP_CUT_MULT := 0.45       ## 松键短跳倍率
 const DOUBLE_JUMP_VELOCITY := 566.0  ## 二段跳初速（奶泡跃，跳高 89px 同步翻倍）
-const COYOTE_TIME := 0.10         ## 土狼时间
+static var _movement: Dictionary = JSON.parse_string(FileAccess.get_file_as_string("res://data/player_movement.json"))
+static var COYOTE_TIME: float = float(_movement.jump.coyote_time) ## 离开支撑后的普通跳宽限。
 const JUMP_BUFFER := 0.12         ## 跳跃缓冲
 
 # ---- 闪避（2026-10-24 制作人调参：距离调低/速度调快/取消残余惯性；偏离 §3.1 原值 900/0.18）----
-const DODGE_SPEED := 1100.0        ## 闪避速度
-const DODGE_TIME := 0.10           ## 闪避时长（110px ≈ 0.7 个身位）
-const DODGE_IFRAME_START := 0.03   ## 无敌帧窗口随总时长等比缩（起手约 2 帧非无敌）
-const DODGE_IFRAME_END := 0.09
-const DODGE_COOLDOWN := 0.45
-const DODGE_STA_COST := 12
+static var _dodge: Dictionary = _movement.dodge
+static var DODGE_SPEED: float = float(_dodge.speed) ## 2026-11-02：距离×1.5、时长×2；速度×0.75。
+static var DODGE_TIME: float = float(_dodge.duration)
+static var DODGE_IFRAME_START: float = float(_dodge.iframe_start)
+static var DODGE_IFRAME_END: float = float(_dodge.iframe_end)
+static var DODGE_COOLDOWN: float = float(_dodge.cooldown)
+static var DODGE_STA_COST: int = int(_dodge.stamina_cost)
 
 # ---- 防御 ----
 const GUARD_MOVE_MULT := 0.4         ## 防御移速 40%（减伤/反弹比例在 CombatMath）
-const PERFECT_GUARD_WINDOW := 0.12   ## 完美格挡窗口
 const GUARD_BREAK_STUN := 0.6        ## 破防硬直
 
 # ---- 受击 ----

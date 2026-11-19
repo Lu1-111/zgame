@@ -5,27 +5,45 @@
   "sprite_resources": {
     "milk_moth": {
       "frames": "res://assets/PROCESSED/enemies/ENM-02/v001/godot/ENM-02_sprite_frames.tres",
-      "anchor": [32, 32]
+      "anchor": [
+        32,
+        32
+      ]
     },
     "milk_slime": {
       "frames": "res://assets/PROCESSED/enemies/ENM-03/v002/godot/ENM-03_sprite_frames.tres",
-      "anchor": [32, 58]
+      "anchor": [
+        32,
+        58
+      ]
     },
     "shadow_wraith": {
       "frames": "res://assets/PROCESSED/enemies/ENM-06/v002/godot/ENM-06_sprite_frames.tres",
-      "anchor": [32, 32]
+      "anchor": [
+        32,
+        32
+      ]
     },
     "vine_flower": {
       "frames": "res://assets/PROCESSED/enemies/ENM-07/v002/godot/ENM-07_sprite_frames.tres",
-      "anchor": [32, 58]
+      "anchor": [
+        32,
+        58
+      ]
     },
     "wax_bee": {
       "frames": "res://assets/PROCESSED/enemies/ENM-08/v002/godot/ENM-08_sprite_frames.tres",
-      "anchor": [32, 32]
+      "anchor": [
+        32,
+        32
+      ]
     },
     "honey_queen": {
       "frames": "res://assets/PROCESSED/enemies/ENM-B04/v001/godot/BOSS-01.tres",
-      "anchor": [96, 64]
+      "anchor": [
+        96,
+        64
+      ]
     }
   },
   "sprite_scale": 1.0,
@@ -178,5 +196,6 @@
   },
   "projectile_catalog_path": "res://assets/PROCESSED/enemies/ENM-B04/v001/projectiles.json",
   "charge_speed": 400,
-  "idle_duration": 0.0
+  "idle_duration": 0.0,
+  "damage_multiplier": 1.0
 }

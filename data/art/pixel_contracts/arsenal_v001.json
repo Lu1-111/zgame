@@ -1,0 +1,1601 @@
+{
+  "manifest": "data/art/arsenal_v001.json",
+  "assets": {
+    "res://assets/PROCESSED/weapons/rifle_02/v001/model.png": {
+      "native_canvas": [
+        48,
+        24
+      ],
+      "visible_rect": [
+        7,
+        4,
+        41,
+        19
+      ],
+      "anchor": [
+        18,
+        12
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32
+    },
+    "res://assets/PROCESSED/weapons/rifle_03/v001/model.png": {
+      "native_canvas": [
+        48,
+        24
+      ],
+      "visible_rect": [
+        7,
+        7,
+        41,
+        17
+      ],
+      "anchor": [
+        18,
+        12
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32
+    },
+    "res://assets/PROCESSED/weapons/rifle_04/v001/model.png": {
+      "native_canvas": [
+        48,
+        24
+      ],
+      "visible_rect": [
+        7,
+        7,
+        41,
+        16
+      ],
+      "anchor": [
+        18,
+        12
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32
+    },
+    "res://assets/PROCESSED/weapons/rifle_05/v001/model.png": {
+      "native_canvas": [
+        48,
+        24
+      ],
+      "visible_rect": [
+        7,
+        4,
+        41,
+        19
+      ],
+      "anchor": [
+        18,
+        12
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32
+    },
+    "res://assets/PROCESSED/weapons/rifle_06/v001/model.png": {
+      "native_canvas": [
+        48,
+        24
+      ],
+      "visible_rect": [
+        7,
+        6,
+        41,
+        18
+      ],
+      "anchor": [
+        18,
+        12
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32
+    },
+    "res://assets/PROCESSED/accessories/accessory_01/v001/icon.png": {
+      "native_canvas": [
+        32,
+        32
+      ],
+      "visible_rect": [
+        7,
+        4,
+        24,
+        28
+      ],
+      "anchor": [
+        16,
+        16
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32
+    },
+    "res://assets/PROCESSED/accessories/accessory_02/v001/icon.png": {
+      "native_canvas": [
+        32,
+        32
+      ],
+      "visible_rect": [
+        7,
+        4,
+        24,
+        28
+      ],
+      "anchor": [
+        16,
+        16
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32
+    },
+    "res://assets/PROCESSED/accessories/accessory_03/v001/icon.png": {
+      "native_canvas": [
+        32,
+        32
+      ],
+      "visible_rect": [
+        4,
+        4,
+        28,
+        28
+      ],
+      "anchor": [
+        16,
+        16
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32
+    },
+    "res://assets/PROCESSED/accessories/accessory_04/v001/icon.png": {
+      "native_canvas": [
+        32,
+        32
+      ],
+      "visible_rect": [
+        11,
+        4,
+        21,
+        28
+      ],
+      "anchor": [
+        16,
+        16
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32
+    },
+    "res://assets/PROCESSED/accessories/accessory_05/v001/icon.png": {
+      "native_canvas": [
+        32,
+        32
+      ],
+      "visible_rect": [
+        4,
+        4,
+        27,
+        28
+      ],
+      "anchor": [
+        16,
+        16
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32
+    },
+    "res://assets/PROCESSED/accessories/accessory_06/v001/icon.png": {
+      "native_canvas": [
+        32,
+        32
+      ],
+      "visible_rect": [
+        8,
+        4,
+        24,
+        28
+      ],
+      "anchor": [
+        16,
+        16
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32
+    },
+    "res://assets/PROCESSED/accessories/accessory_07/v001/icon.png": {
+      "native_canvas": [
+        32,
+        32
+      ],
+      "visible_rect": [
+        5,
+        4,
+        27,
+        28
+      ],
+      "anchor": [
+        16,
+        16
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32
+    },
+    "res://assets/PROCESSED/accessories/accessory_08/v001/icon.png": {
+      "native_canvas": [
+        32,
+        32
+      ],
+      "visible_rect": [
+        4,
+        9,
+        28,
+        23
+      ],
+      "anchor": [
+        16,
+        16
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32
+    },
+    "res://assets/PROCESSED/accessories/accessory_09/v001/icon.png": {
+      "native_canvas": [
+        32,
+        32
+      ],
+      "visible_rect": [
+        5,
+        4,
+        26,
+        28
+      ],
+      "anchor": [
+        16,
+        16
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32
+    },
+    "res://assets/PROCESSED/accessories/accessory_10/v001/icon.png": {
+      "native_canvas": [
+        32,
+        32
+      ],
+      "visible_rect": [
+        4,
+        4,
+        28,
+        27
+      ],
+      "anchor": [
+        16,
+        16
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32
+    },
+    "res://assets/PROCESSED/accessories/accessory_11/v001/icon.png": {
+      "native_canvas": [
+        32,
+        32
+      ],
+      "visible_rect": [
+        5,
+        4,
+        26,
+        28
+      ],
+      "anchor": [
+        16,
+        16
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32
+    },
+    "res://assets/PROCESSED/accessories/accessory_12/v001/icon.png": {
+      "native_canvas": [
+        32,
+        32
+      ],
+      "visible_rect": [
+        4,
+        4,
+        28,
+        28
+      ],
+      "anchor": [
+        16,
+        16
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32
+    },
+    "res://assets/PROCESSED/accessories/accessory_13/v001/icon.png": {
+      "native_canvas": [
+        32,
+        32
+      ],
+      "visible_rect": [
+        4,
+        4,
+        27,
+        28
+      ],
+      "anchor": [
+        16,
+        16
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32
+    },
+    "res://assets/PROCESSED/accessories/accessory_14/v001/icon.png": {
+      "native_canvas": [
+        32,
+        32
+      ],
+      "visible_rect": [
+        8,
+        4,
+        24,
+        28
+      ],
+      "anchor": [
+        16,
+        16
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32
+    },
+    "res://assets/PROCESSED/accessories/accessory_15/v001/icon.png": {
+      "native_canvas": [
+        32,
+        32
+      ],
+      "visible_rect": [
+        10,
+        4,
+        21,
+        28
+      ],
+      "anchor": [
+        16,
+        16
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32
+    },
+    "res://assets/PROCESSED/accessories/accessory_16/v001/icon.png": {
+      "native_canvas": [
+        32,
+        32
+      ],
+      "visible_rect": [
+        7,
+        4,
+        25,
+        28
+      ],
+      "anchor": [
+        16,
+        16
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32
+    },
+    "res://assets/PROCESSED/weapons/rifle_02/v001/frames/rifle_shot/00.png": {
+      "native_canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        38,
+        54,
+        72,
+        69
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32
+    },
+    "res://assets/PROCESSED/weapons/rifle_03/v001/frames/rifle_shot/00.png": {
+      "native_canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        38,
+        57,
+        72,
+        67
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32
+    },
+    "res://assets/PROCESSED/weapons/rifle_04/v001/frames/rifle_shot/00.png": {
+      "native_canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        38,
+        57,
+        72,
+        66
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32
+    },
+    "res://assets/PROCESSED/weapons/rifle_05/v001/frames/rifle_shot/00.png": {
+      "native_canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        38,
+        54,
+        72,
+        69
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32
+    },
+    "res://assets/PROCESSED/weapons/rifle_06/v001/frames/rifle_shot/00.png": {
+      "native_canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        38,
+        56,
+        72,
+        68
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32
+    },
+    "res://assets/PROCESSED/weapons/rifle_02/v001/frames/rifle_shot/01.png": {
+      "native_canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        38,
+        54,
+        72,
+        69
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32
+    },
+    "res://assets/PROCESSED/weapons/rifle_03/v001/frames/rifle_shot/01.png": {
+      "native_canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        38,
+        57,
+        72,
+        67
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32
+    },
+    "res://assets/PROCESSED/weapons/rifle_04/v001/frames/rifle_shot/01.png": {
+      "native_canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        38,
+        57,
+        72,
+        66
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32
+    },
+    "res://assets/PROCESSED/weapons/rifle_05/v001/frames/rifle_shot/01.png": {
+      "native_canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        38,
+        54,
+        72,
+        69
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32
+    },
+    "res://assets/PROCESSED/weapons/rifle_06/v001/frames/rifle_shot/01.png": {
+      "native_canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        38,
+        56,
+        72,
+        68
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32
+    },
+    "res://assets/PROCESSED/weapons/rifle_02/v001/frames/rifle_shot/02.png": {
+      "native_canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        38,
+        54,
+        72,
+        69
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32
+    },
+    "res://assets/PROCESSED/weapons/rifle_03/v001/frames/rifle_shot/02.png": {
+      "native_canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        38,
+        57,
+        72,
+        67
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32
+    },
+    "res://assets/PROCESSED/weapons/rifle_04/v001/frames/rifle_shot/02.png": {
+      "native_canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        38,
+        57,
+        72,
+        66
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32
+    },
+    "res://assets/PROCESSED/weapons/rifle_05/v001/frames/rifle_shot/02.png": {
+      "native_canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        38,
+        54,
+        72,
+        69
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32
+    },
+    "res://assets/PROCESSED/weapons/rifle_06/v001/frames/rifle_shot/02.png": {
+      "native_canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        38,
+        56,
+        72,
+        68
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32
+    },
+    "res://assets/PROCESSED/weapons/rifle_02/v001/frames/rifle_shot/03.png": {
+      "native_canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        38,
+        53,
+        72,
+        68
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32
+    },
+    "res://assets/PROCESSED/weapons/rifle_03/v001/frames/rifle_shot/03.png": {
+      "native_canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        38,
+        56,
+        72,
+        66
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32
+    },
+    "res://assets/PROCESSED/weapons/rifle_04/v001/frames/rifle_shot/03.png": {
+      "native_canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        38,
+        56,
+        72,
+        65
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32
+    },
+    "res://assets/PROCESSED/weapons/rifle_05/v001/frames/rifle_shot/03.png": {
+      "native_canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        38,
+        53,
+        72,
+        68
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32
+    },
+    "res://assets/PROCESSED/weapons/rifle_06/v001/frames/rifle_shot/03.png": {
+      "native_canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        38,
+        55,
+        72,
+        67
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32
+    },
+    "res://assets/PROCESSED/weapons/rifle_02/v001/frames/rifle_shot/04.png": {
+      "native_canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        39,
+        53,
+        73,
+        68
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32
+    },
+    "res://assets/PROCESSED/weapons/rifle_03/v001/frames/rifle_shot/04.png": {
+      "native_canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        39,
+        56,
+        73,
+        66
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32
+    },
+    "res://assets/PROCESSED/weapons/rifle_04/v001/frames/rifle_shot/04.png": {
+      "native_canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        39,
+        56,
+        73,
+        65
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32
+    },
+    "res://assets/PROCESSED/weapons/rifle_05/v001/frames/rifle_shot/04.png": {
+      "native_canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        39,
+        53,
+        73,
+        68
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32
+    },
+    "res://assets/PROCESSED/weapons/rifle_06/v001/frames/rifle_shot/04.png": {
+      "native_canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        39,
+        55,
+        73,
+        67
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32
+    },
+    "res://assets/PROCESSED/weapons/rifle_02/v001/frames/rifle_shot/05.png": {
+      "native_canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        40,
+        53,
+        74,
+        68
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32
+    },
+    "res://assets/PROCESSED/weapons/rifle_03/v001/frames/rifle_shot/05.png": {
+      "native_canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        40,
+        56,
+        74,
+        66
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32
+    },
+    "res://assets/PROCESSED/weapons/rifle_04/v001/frames/rifle_shot/05.png": {
+      "native_canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        40,
+        56,
+        74,
+        65
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32
+    },
+    "res://assets/PROCESSED/weapons/rifle_05/v001/frames/rifle_shot/05.png": {
+      "native_canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        40,
+        53,
+        74,
+        68
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32
+    },
+    "res://assets/PROCESSED/weapons/rifle_06/v001/frames/rifle_shot/05.png": {
+      "native_canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        40,
+        55,
+        74,
+        67
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32
+    },
+    "res://assets/PROCESSED/weapons/rifle_02/v001/frames/rifle_shot/06.png": {
+      "native_canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        41,
+        52,
+        75,
+        67
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32
+    },
+    "res://assets/PROCESSED/weapons/rifle_03/v001/frames/rifle_shot/06.png": {
+      "native_canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        41,
+        55,
+        75,
+        65
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32
+    },
+    "res://assets/PROCESSED/weapons/rifle_04/v001/frames/rifle_shot/06.png": {
+      "native_canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        41,
+        55,
+        75,
+        64
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32
+    },
+    "res://assets/PROCESSED/weapons/rifle_05/v001/frames/rifle_shot/06.png": {
+      "native_canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        41,
+        52,
+        75,
+        67
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32
+    },
+    "res://assets/PROCESSED/weapons/rifle_06/v001/frames/rifle_shot/06.png": {
+      "native_canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        41,
+        54,
+        75,
+        66
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32
+    },
+    "res://assets/PROCESSED/weapons/rifle_02/v001/frames/rifle_shot/07.png": {
+      "native_canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        41,
+        52,
+        75,
+        67
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32
+    },
+    "res://assets/PROCESSED/weapons/rifle_03/v001/frames/rifle_shot/07.png": {
+      "native_canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        41,
+        55,
+        75,
+        65
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32
+    },
+    "res://assets/PROCESSED/weapons/rifle_04/v001/frames/rifle_shot/07.png": {
+      "native_canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        41,
+        55,
+        75,
+        64
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32
+    },
+    "res://assets/PROCESSED/weapons/rifle_05/v001/frames/rifle_shot/07.png": {
+      "native_canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        41,
+        52,
+        75,
+        67
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32
+    },
+    "res://assets/PROCESSED/weapons/rifle_06/v001/frames/rifle_shot/07.png": {
+      "native_canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        41,
+        54,
+        75,
+        66
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32
+    },
+    "res://assets/PROCESSED/weapons/rifle_02/v001/frames/guard_rifle/00.png": {
+      "native_canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        44,
+        60,
+        78,
+        75
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32
+    },
+    "res://assets/PROCESSED/weapons/rifle_03/v001/frames/guard_rifle/00.png": {
+      "native_canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        44,
+        62,
+        78,
+        75
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32
+    },
+    "res://assets/PROCESSED/weapons/rifle_04/v001/frames/guard_rifle/00.png": {
+      "native_canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        44,
+        63,
+        78,
+        74
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32
+    },
+    "res://assets/PROCESSED/weapons/rifle_05/v001/frames/guard_rifle/00.png": {
+      "native_canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        44,
+        60,
+        78,
+        76
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32
+    },
+    "res://assets/PROCESSED/weapons/rifle_06/v001/frames/guard_rifle/00.png": {
+      "native_canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        44,
+        63,
+        78,
+        75
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32
+    },
+    "res://assets/PROCESSED/weapons/rifle_02/v001/frames/guard_rifle/01.png": {
+      "native_canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        49,
+        59,
+        81,
+        78
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32
+    },
+    "res://assets/PROCESSED/weapons/rifle_03/v001/frames/guard_rifle/01.png": {
+      "native_canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        49,
+        58,
+        81,
+        79
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32
+    },
+    "res://assets/PROCESSED/weapons/rifle_04/v001/frames/guard_rifle/01.png": {
+      "native_canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        49,
+        61,
+        81,
+        78
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32
+    },
+    "res://assets/PROCESSED/weapons/rifle_05/v001/frames/guard_rifle/01.png": {
+      "native_canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        49,
+        59,
+        82,
+        78
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32
+    },
+    "res://assets/PROCESSED/weapons/rifle_06/v001/frames/guard_rifle/01.png": {
+      "native_canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        49,
+        60,
+        82,
+        77
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32
+    },
+    "res://assets/PROCESSED/weapons/rifle_02/v001/frames/guard_rifle/02.png": {
+      "native_canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        50,
+        51,
+        76,
+        76
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32
+    },
+    "res://assets/PROCESSED/weapons/rifle_03/v001/frames/guard_rifle/02.png": {
+      "native_canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        50,
+        49,
+        76,
+        77
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32
+    },
+    "res://assets/PROCESSED/weapons/rifle_04/v001/frames/guard_rifle/02.png": {
+      "native_canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        50,
+        51,
+        76,
+        76
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32
+    },
+    "res://assets/PROCESSED/weapons/rifle_05/v001/frames/guard_rifle/02.png": {
+      "native_canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        49,
+        49,
+        77,
+        76
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32
+    },
+    "res://assets/PROCESSED/weapons/rifle_06/v001/frames/guard_rifle/02.png": {
+      "native_canvas": [
+        96,
+        96
+      ],
+      "visible_rect": [
+        49,
+        51,
+        77,
+        76
+      ],
+      "anchor": [
+        48,
+        84
+      ],
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "palette_limit": 32
+    }
+  }
+}

@@ -1,0 +1,4188 @@
+{
+  "tool": "tools/assets/build_cave_beasts_art.py (fixed-scale one-pass pixel-grid sampler)",
+  "conversions": [
+    {
+      "id": "stonehelm_beast_idle_00",
+      "action": "idle",
+      "frame": 0,
+      "source_pixels": [
+        241,
+        272
+      ],
+      "sampled_pixels": [
+        83,
+        94
+      ],
+      "canvas_pixels": [
+        128,
+        96
+      ],
+      "scale": 0.3464566929133858,
+      "source_anchor": [
+        120.5,
+        222
+      ],
+      "anchor": [
+        64,
+        80
+      ],
+      "paste": [
+        22,
+        3
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "stonehelm_beast_idle_01",
+      "action": "idle",
+      "frame": 1,
+      "source_pixels": [
+        242,
+        272
+      ],
+      "sampled_pixels": [
+        84,
+        94
+      ],
+      "canvas_pixels": [
+        128,
+        96
+      ],
+      "scale": 0.3464566929133858,
+      "source_anchor": [
+        121.0,
+        222
+      ],
+      "anchor": [
+        64,
+        80
+      ],
+      "paste": [
+        22,
+        3
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "stonehelm_beast_idle_02",
+      "action": "idle",
+      "frame": 2,
+      "source_pixels": [
+        241,
+        272
+      ],
+      "sampled_pixels": [
+        83,
+        94
+      ],
+      "canvas_pixels": [
+        128,
+        96
+      ],
+      "scale": 0.3464566929133858,
+      "source_anchor": [
+        120.5,
+        222
+      ],
+      "anchor": [
+        64,
+        80
+      ],
+      "paste": [
+        22,
+        3
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "stonehelm_beast_idle_03",
+      "action": "idle",
+      "frame": 3,
+      "source_pixels": [
+        241,
+        272
+      ],
+      "sampled_pixels": [
+        83,
+        94
+      ],
+      "canvas_pixels": [
+        128,
+        96
+      ],
+      "scale": 0.3464566929133858,
+      "source_anchor": [
+        120.5,
+        221
+      ],
+      "anchor": [
+        64,
+        80
+      ],
+      "paste": [
+        22,
+        3
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "stonehelm_beast_idle_04",
+      "action": "idle",
+      "frame": 4,
+      "source_pixels": [
+        242,
+        272
+      ],
+      "sampled_pixels": [
+        84,
+        94
+      ],
+      "canvas_pixels": [
+        128,
+        96
+      ],
+      "scale": 0.3464566929133858,
+      "source_anchor": [
+        121.0,
+        222
+      ],
+      "anchor": [
+        64,
+        80
+      ],
+      "paste": [
+        22,
+        3
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "stonehelm_beast_idle_05",
+      "action": "idle",
+      "frame": 5,
+      "source_pixels": [
+        241,
+        272
+      ],
+      "sampled_pixels": [
+        83,
+        94
+      ],
+      "canvas_pixels": [
+        128,
+        96
+      ],
+      "scale": 0.3464566929133858,
+      "source_anchor": [
+        120.5,
+        222
+      ],
+      "anchor": [
+        64,
+        80
+      ],
+      "paste": [
+        22,
+        3
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "stonehelm_beast_move_00",
+      "action": "move",
+      "frame": 0,
+      "source_pixels": [
+        241,
+        271
+      ],
+      "sampled_pixels": [
+        83,
+        94
+      ],
+      "canvas_pixels": [
+        128,
+        96
+      ],
+      "scale": 0.3464566929133858,
+      "source_anchor": [
+        120.5,
+        222
+      ],
+      "anchor": [
+        64,
+        80
+      ],
+      "paste": [
+        22,
+        3
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "stonehelm_beast_move_01",
+      "action": "move",
+      "frame": 1,
+      "source_pixels": [
+        242,
+        271
+      ],
+      "sampled_pixels": [
+        84,
+        94
+      ],
+      "canvas_pixels": [
+        128,
+        96
+      ],
+      "scale": 0.3464566929133858,
+      "source_anchor": [
+        121.0,
+        222
+      ],
+      "anchor": [
+        64,
+        80
+      ],
+      "paste": [
+        22,
+        3
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "stonehelm_beast_move_02",
+      "action": "move",
+      "frame": 2,
+      "source_pixels": [
+        241,
+        271
+      ],
+      "sampled_pixels": [
+        83,
+        94
+      ],
+      "canvas_pixels": [
+        128,
+        96
+      ],
+      "scale": 0.3464566929133858,
+      "source_anchor": [
+        120.5,
+        222
+      ],
+      "anchor": [
+        64,
+        80
+      ],
+      "paste": [
+        22,
+        3
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "stonehelm_beast_move_03",
+      "action": "move",
+      "frame": 3,
+      "source_pixels": [
+        241,
+        271
+      ],
+      "sampled_pixels": [
+        83,
+        94
+      ],
+      "canvas_pixels": [
+        128,
+        96
+      ],
+      "scale": 0.3464566929133858,
+      "source_anchor": [
+        120.5,
+        223
+      ],
+      "anchor": [
+        64,
+        80
+      ],
+      "paste": [
+        22,
+        3
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "stonehelm_beast_move_04",
+      "action": "move",
+      "frame": 4,
+      "source_pixels": [
+        242,
+        271
+      ],
+      "sampled_pixels": [
+        84,
+        94
+      ],
+      "canvas_pixels": [
+        128,
+        96
+      ],
+      "scale": 0.3464566929133858,
+      "source_anchor": [
+        121.0,
+        223
+      ],
+      "anchor": [
+        64,
+        80
+      ],
+      "paste": [
+        22,
+        3
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "stonehelm_beast_move_05",
+      "action": "move",
+      "frame": 5,
+      "source_pixels": [
+        241,
+        271
+      ],
+      "sampled_pixels": [
+        83,
+        94
+      ],
+      "canvas_pixels": [
+        128,
+        96
+      ],
+      "scale": 0.3464566929133858,
+      "source_anchor": [
+        120.5,
+        222
+      ],
+      "anchor": [
+        64,
+        80
+      ],
+      "paste": [
+        22,
+        3
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "stonehelm_beast_ram_00",
+      "action": "ram",
+      "frame": 0,
+      "source_pixels": [
+        241,
+        271
+      ],
+      "sampled_pixels": [
+        83,
+        94
+      ],
+      "canvas_pixels": [
+        128,
+        96
+      ],
+      "scale": 0.3464566929133858,
+      "source_anchor": [
+        120.5,
+        222
+      ],
+      "anchor": [
+        64,
+        80
+      ],
+      "paste": [
+        22,
+        3
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "stonehelm_beast_ram_01",
+      "action": "ram",
+      "frame": 1,
+      "source_pixels": [
+        242,
+        271
+      ],
+      "sampled_pixels": [
+        84,
+        94
+      ],
+      "canvas_pixels": [
+        128,
+        96
+      ],
+      "scale": 0.3464566929133858,
+      "source_anchor": [
+        121.0,
+        222
+      ],
+      "anchor": [
+        64,
+        80
+      ],
+      "paste": [
+        22,
+        3
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "stonehelm_beast_ram_02",
+      "action": "ram",
+      "frame": 2,
+      "source_pixels": [
+        241,
+        271
+      ],
+      "sampled_pixels": [
+        83,
+        94
+      ],
+      "canvas_pixels": [
+        128,
+        96
+      ],
+      "scale": 0.3464566929133858,
+      "source_anchor": [
+        120.5,
+        225
+      ],
+      "anchor": [
+        64,
+        80
+      ],
+      "paste": [
+        22,
+        2
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "stonehelm_beast_ram_03",
+      "action": "ram",
+      "frame": 3,
+      "source_pixels": [
+        241,
+        271
+      ],
+      "sampled_pixels": [
+        83,
+        94
+      ],
+      "canvas_pixels": [
+        128,
+        96
+      ],
+      "scale": 0.3464566929133858,
+      "source_anchor": [
+        120.5,
+        224
+      ],
+      "anchor": [
+        64,
+        80
+      ],
+      "paste": [
+        22,
+        2
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "stonehelm_beast_ram_04",
+      "action": "ram",
+      "frame": 4,
+      "source_pixels": [
+        242,
+        271
+      ],
+      "sampled_pixels": [
+        84,
+        94
+      ],
+      "canvas_pixels": [
+        128,
+        96
+      ],
+      "scale": 0.3464566929133858,
+      "source_anchor": [
+        121.0,
+        224
+      ],
+      "anchor": [
+        64,
+        80
+      ],
+      "paste": [
+        22,
+        2
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "stonehelm_beast_ram_05",
+      "action": "ram",
+      "frame": 5,
+      "source_pixels": [
+        241,
+        271
+      ],
+      "sampled_pixels": [
+        83,
+        94
+      ],
+      "canvas_pixels": [
+        128,
+        96
+      ],
+      "scale": 0.3464566929133858,
+      "source_anchor": [
+        120.5,
+        222
+      ],
+      "anchor": [
+        64,
+        80
+      ],
+      "paste": [
+        22,
+        3
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "stonehelm_beast_shell_defense_00",
+      "action": "shell_defense",
+      "frame": 0,
+      "source_pixels": [
+        241,
+        272
+      ],
+      "sampled_pixels": [
+        83,
+        94
+      ],
+      "canvas_pixels": [
+        128,
+        96
+      ],
+      "scale": 0.3464566929133858,
+      "source_anchor": [
+        120.5,
+        222
+      ],
+      "anchor": [
+        64,
+        80
+      ],
+      "paste": [
+        22,
+        3
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "stonehelm_beast_shell_defense_01",
+      "action": "shell_defense",
+      "frame": 1,
+      "source_pixels": [
+        242,
+        272
+      ],
+      "sampled_pixels": [
+        84,
+        94
+      ],
+      "canvas_pixels": [
+        128,
+        96
+      ],
+      "scale": 0.3464566929133858,
+      "source_anchor": [
+        121.0,
+        222
+      ],
+      "anchor": [
+        64,
+        80
+      ],
+      "paste": [
+        22,
+        3
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "stonehelm_beast_shell_defense_02",
+      "action": "shell_defense",
+      "frame": 2,
+      "source_pixels": [
+        241,
+        272
+      ],
+      "sampled_pixels": [
+        83,
+        94
+      ],
+      "canvas_pixels": [
+        128,
+        96
+      ],
+      "scale": 0.3464566929133858,
+      "source_anchor": [
+        120.5,
+        222
+      ],
+      "anchor": [
+        64,
+        80
+      ],
+      "paste": [
+        22,
+        3
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "stonehelm_beast_shell_defense_03",
+      "action": "shell_defense",
+      "frame": 3,
+      "source_pixels": [
+        241,
+        272
+      ],
+      "sampled_pixels": [
+        83,
+        94
+      ],
+      "canvas_pixels": [
+        128,
+        96
+      ],
+      "scale": 0.3464566929133858,
+      "source_anchor": [
+        120.5,
+        222
+      ],
+      "anchor": [
+        64,
+        80
+      ],
+      "paste": [
+        22,
+        3
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "stonehelm_beast_shell_defense_04",
+      "action": "shell_defense",
+      "frame": 4,
+      "source_pixels": [
+        242,
+        272
+      ],
+      "sampled_pixels": [
+        84,
+        94
+      ],
+      "canvas_pixels": [
+        128,
+        96
+      ],
+      "scale": 0.3464566929133858,
+      "source_anchor": [
+        121.0,
+        222
+      ],
+      "anchor": [
+        64,
+        80
+      ],
+      "paste": [
+        22,
+        3
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "stonehelm_beast_shell_defense_05",
+      "action": "shell_defense",
+      "frame": 5,
+      "source_pixels": [
+        241,
+        272
+      ],
+      "sampled_pixels": [
+        83,
+        94
+      ],
+      "canvas_pixels": [
+        128,
+        96
+      ],
+      "scale": 0.3464566929133858,
+      "source_anchor": [
+        120.5,
+        222
+      ],
+      "anchor": [
+        64,
+        80
+      ],
+      "paste": [
+        22,
+        3
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "cave_spider_idle_00",
+      "action": "idle",
+      "frame": 0,
+      "source_pixels": [
+        256,
+        256
+      ],
+      "sampled_pixels": [
+        88,
+        88
+      ],
+      "canvas_pixels": [
+        128,
+        96
+      ],
+      "scale": 0.34408602150537637,
+      "source_anchor": [
+        128.0,
+        215
+      ],
+      "anchor": [
+        64,
+        80
+      ],
+      "paste": [
+        20,
+        6
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "cave_spider_idle_01",
+      "action": "idle",
+      "frame": 1,
+      "source_pixels": [
+        256,
+        256
+      ],
+      "sampled_pixels": [
+        88,
+        88
+      ],
+      "canvas_pixels": [
+        128,
+        96
+      ],
+      "scale": 0.34408602150537637,
+      "source_anchor": [
+        128.0,
+        215
+      ],
+      "anchor": [
+        64,
+        80
+      ],
+      "paste": [
+        20,
+        6
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "cave_spider_idle_02",
+      "action": "idle",
+      "frame": 2,
+      "source_pixels": [
+        256,
+        256
+      ],
+      "sampled_pixels": [
+        88,
+        88
+      ],
+      "canvas_pixels": [
+        128,
+        96
+      ],
+      "scale": 0.34408602150537637,
+      "source_anchor": [
+        128.0,
+        215
+      ],
+      "anchor": [
+        64,
+        80
+      ],
+      "paste": [
+        20,
+        6
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "cave_spider_idle_03",
+      "action": "idle",
+      "frame": 3,
+      "source_pixels": [
+        256,
+        256
+      ],
+      "sampled_pixels": [
+        88,
+        88
+      ],
+      "canvas_pixels": [
+        128,
+        96
+      ],
+      "scale": 0.34408602150537637,
+      "source_anchor": [
+        128.0,
+        215
+      ],
+      "anchor": [
+        64,
+        80
+      ],
+      "paste": [
+        20,
+        6
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "cave_spider_idle_04",
+      "action": "idle",
+      "frame": 4,
+      "source_pixels": [
+        256,
+        256
+      ],
+      "sampled_pixels": [
+        88,
+        88
+      ],
+      "canvas_pixels": [
+        128,
+        96
+      ],
+      "scale": 0.34408602150537637,
+      "source_anchor": [
+        128.0,
+        215
+      ],
+      "anchor": [
+        64,
+        80
+      ],
+      "paste": [
+        20,
+        6
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "cave_spider_idle_05",
+      "action": "idle",
+      "frame": 5,
+      "source_pixels": [
+        256,
+        256
+      ],
+      "sampled_pixels": [
+        88,
+        88
+      ],
+      "canvas_pixels": [
+        128,
+        96
+      ],
+      "scale": 0.34408602150537637,
+      "source_anchor": [
+        128.0,
+        215
+      ],
+      "anchor": [
+        64,
+        80
+      ],
+      "paste": [
+        20,
+        6
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "cave_spider_move_00",
+      "action": "move",
+      "frame": 0,
+      "source_pixels": [
+        256,
+        256
+      ],
+      "sampled_pixels": [
+        88,
+        88
+      ],
+      "canvas_pixels": [
+        128,
+        96
+      ],
+      "scale": 0.34408602150537637,
+      "source_anchor": [
+        128.0,
+        210
+      ],
+      "anchor": [
+        64,
+        80
+      ],
+      "paste": [
+        20,
+        8
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "cave_spider_move_01",
+      "action": "move",
+      "frame": 1,
+      "source_pixels": [
+        256,
+        256
+      ],
+      "sampled_pixels": [
+        88,
+        88
+      ],
+      "canvas_pixels": [
+        128,
+        96
+      ],
+      "scale": 0.34408602150537637,
+      "source_anchor": [
+        128.0,
+        210
+      ],
+      "anchor": [
+        64,
+        80
+      ],
+      "paste": [
+        20,
+        8
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "cave_spider_move_02",
+      "action": "move",
+      "frame": 2,
+      "source_pixels": [
+        256,
+        256
+      ],
+      "sampled_pixels": [
+        88,
+        88
+      ],
+      "canvas_pixels": [
+        128,
+        96
+      ],
+      "scale": 0.34408602150537637,
+      "source_anchor": [
+        128.0,
+        215
+      ],
+      "anchor": [
+        64,
+        80
+      ],
+      "paste": [
+        20,
+        6
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "cave_spider_move_03",
+      "action": "move",
+      "frame": 3,
+      "source_pixels": [
+        256,
+        256
+      ],
+      "sampled_pixels": [
+        88,
+        88
+      ],
+      "canvas_pixels": [
+        128,
+        96
+      ],
+      "scale": 0.34408602150537637,
+      "source_anchor": [
+        128.0,
+        213
+      ],
+      "anchor": [
+        64,
+        80
+      ],
+      "paste": [
+        20,
+        7
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "cave_spider_move_04",
+      "action": "move",
+      "frame": 4,
+      "source_pixels": [
+        256,
+        256
+      ],
+      "sampled_pixels": [
+        88,
+        88
+      ],
+      "canvas_pixels": [
+        128,
+        96
+      ],
+      "scale": 0.34408602150537637,
+      "source_anchor": [
+        128.0,
+        213
+      ],
+      "anchor": [
+        64,
+        80
+      ],
+      "paste": [
+        20,
+        7
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "cave_spider_move_05",
+      "action": "move",
+      "frame": 5,
+      "source_pixels": [
+        256,
+        256
+      ],
+      "sampled_pixels": [
+        88,
+        88
+      ],
+      "canvas_pixels": [
+        128,
+        96
+      ],
+      "scale": 0.34408602150537637,
+      "source_anchor": [
+        128.0,
+        212
+      ],
+      "anchor": [
+        64,
+        80
+      ],
+      "paste": [
+        20,
+        7
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "cave_spider_claw_attack_00",
+      "action": "claw_attack",
+      "frame": 0,
+      "source_pixels": [
+        256,
+        256
+      ],
+      "sampled_pixels": [
+        88,
+        88
+      ],
+      "canvas_pixels": [
+        128,
+        96
+      ],
+      "scale": 0.34408602150537637,
+      "source_anchor": [
+        128.0,
+        218
+      ],
+      "anchor": [
+        64,
+        80
+      ],
+      "paste": [
+        20,
+        5
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "cave_spider_claw_attack_01",
+      "action": "claw_attack",
+      "frame": 1,
+      "source_pixels": [
+        256,
+        256
+      ],
+      "sampled_pixels": [
+        88,
+        88
+      ],
+      "canvas_pixels": [
+        128,
+        96
+      ],
+      "scale": 0.34408602150537637,
+      "source_anchor": [
+        128.0,
+        219
+      ],
+      "anchor": [
+        64,
+        80
+      ],
+      "paste": [
+        20,
+        5
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "cave_spider_claw_attack_02",
+      "action": "claw_attack",
+      "frame": 2,
+      "source_pixels": [
+        256,
+        256
+      ],
+      "sampled_pixels": [
+        88,
+        88
+      ],
+      "canvas_pixels": [
+        128,
+        96
+      ],
+      "scale": 0.34408602150537637,
+      "source_anchor": [
+        128.0,
+        215
+      ],
+      "anchor": [
+        64,
+        80
+      ],
+      "paste": [
+        20,
+        6
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "cave_spider_claw_attack_03",
+      "action": "claw_attack",
+      "frame": 3,
+      "source_pixels": [
+        256,
+        256
+      ],
+      "sampled_pixels": [
+        88,
+        88
+      ],
+      "canvas_pixels": [
+        128,
+        96
+      ],
+      "scale": 0.34408602150537637,
+      "source_anchor": [
+        128.0,
+        218
+      ],
+      "anchor": [
+        64,
+        80
+      ],
+      "paste": [
+        20,
+        5
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "cave_spider_claw_attack_04",
+      "action": "claw_attack",
+      "frame": 4,
+      "source_pixels": [
+        256,
+        256
+      ],
+      "sampled_pixels": [
+        88,
+        88
+      ],
+      "canvas_pixels": [
+        128,
+        96
+      ],
+      "scale": 0.34408602150537637,
+      "source_anchor": [
+        128.0,
+        222
+      ],
+      "anchor": [
+        64,
+        80
+      ],
+      "paste": [
+        20,
+        4
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "cave_spider_claw_attack_05",
+      "action": "claw_attack",
+      "frame": 5,
+      "source_pixels": [
+        256,
+        256
+      ],
+      "sampled_pixels": [
+        88,
+        88
+      ],
+      "canvas_pixels": [
+        128,
+        96
+      ],
+      "scale": 0.34408602150537637,
+      "source_anchor": [
+        128.0,
+        222
+      ],
+      "anchor": [
+        64,
+        80
+      ],
+      "paste": [
+        20,
+        4
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "cave_spider_web_spit_00",
+      "action": "web_spit",
+      "frame": 0,
+      "source_pixels": [
+        256,
+        256
+      ],
+      "sampled_pixels": [
+        88,
+        88
+      ],
+      "canvas_pixels": [
+        128,
+        96
+      ],
+      "scale": 0.34408602150537637,
+      "source_anchor": [
+        128.0,
+        224
+      ],
+      "anchor": [
+        64,
+        80
+      ],
+      "paste": [
+        20,
+        3
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "cave_spider_web_spit_01",
+      "action": "web_spit",
+      "frame": 1,
+      "source_pixels": [
+        256,
+        256
+      ],
+      "sampled_pixels": [
+        88,
+        88
+      ],
+      "canvas_pixels": [
+        128,
+        96
+      ],
+      "scale": 0.34408602150537637,
+      "source_anchor": [
+        128.0,
+        224
+      ],
+      "anchor": [
+        64,
+        80
+      ],
+      "paste": [
+        20,
+        3
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "cave_spider_web_spit_02",
+      "action": "web_spit",
+      "frame": 2,
+      "source_pixels": [
+        256,
+        256
+      ],
+      "sampled_pixels": [
+        88,
+        88
+      ],
+      "canvas_pixels": [
+        128,
+        96
+      ],
+      "scale": 0.34408602150537637,
+      "source_anchor": [
+        128.0,
+        224
+      ],
+      "anchor": [
+        64,
+        80
+      ],
+      "paste": [
+        20,
+        3
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "cave_spider_web_spit_03",
+      "action": "web_spit",
+      "frame": 3,
+      "source_pixels": [
+        256,
+        256
+      ],
+      "sampled_pixels": [
+        88,
+        88
+      ],
+      "canvas_pixels": [
+        128,
+        96
+      ],
+      "scale": 0.34408602150537637,
+      "source_anchor": [
+        128.0,
+        224
+      ],
+      "anchor": [
+        64,
+        80
+      ],
+      "paste": [
+        20,
+        3
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "cave_spider_web_spit_04",
+      "action": "web_spit",
+      "frame": 4,
+      "source_pixels": [
+        256,
+        256
+      ],
+      "sampled_pixels": [
+        88,
+        88
+      ],
+      "canvas_pixels": [
+        128,
+        96
+      ],
+      "scale": 0.34408602150537637,
+      "source_anchor": [
+        128.0,
+        224
+      ],
+      "anchor": [
+        64,
+        80
+      ],
+      "paste": [
+        20,
+        3
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "cave_spider_web_spit_05",
+      "action": "web_spit",
+      "frame": 5,
+      "source_pixels": [
+        256,
+        256
+      ],
+      "sampled_pixels": [
+        88,
+        88
+      ],
+      "canvas_pixels": [
+        128,
+        96
+      ],
+      "scale": 0.34408602150537637,
+      "source_anchor": [
+        128.0,
+        224
+      ],
+      "anchor": [
+        64,
+        80
+      ],
+      "paste": [
+        20,
+        3
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "animated_crystal_idle_00",
+      "action": "idle",
+      "frame": 0,
+      "source_pixels": [
+        296,
+        296
+      ],
+      "sampled_pixels": [
+        80,
+        80
+      ],
+      "canvas_pixels": [
+        96,
+        96
+      ],
+      "scale": 0.2685851318944844,
+      "source_anchor": [
+        148.0,
+        148.0
+      ],
+      "anchor": [
+        48,
+        48
+      ],
+      "paste": [
+        8,
+        8
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "animated_crystal_idle_01",
+      "action": "idle",
+      "frame": 1,
+      "source_pixels": [
+        295,
+        296
+      ],
+      "sampled_pixels": [
+        79,
+        80
+      ],
+      "canvas_pixels": [
+        96,
+        96
+      ],
+      "scale": 0.2685851318944844,
+      "source_anchor": [
+        147.5,
+        148.0
+      ],
+      "anchor": [
+        48,
+        48
+      ],
+      "paste": [
+        8,
+        8
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "animated_crystal_idle_02",
+      "action": "idle",
+      "frame": 2,
+      "source_pixels": [
+        296,
+        296
+      ],
+      "sampled_pixels": [
+        80,
+        80
+      ],
+      "canvas_pixels": [
+        96,
+        96
+      ],
+      "scale": 0.2685851318944844,
+      "source_anchor": [
+        148.0,
+        148.0
+      ],
+      "anchor": [
+        48,
+        48
+      ],
+      "paste": [
+        8,
+        8
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "animated_crystal_idle_03",
+      "action": "idle",
+      "frame": 3,
+      "source_pixels": [
+        296,
+        296
+      ],
+      "sampled_pixels": [
+        80,
+        80
+      ],
+      "canvas_pixels": [
+        96,
+        96
+      ],
+      "scale": 0.2685851318944844,
+      "source_anchor": [
+        148.0,
+        148.0
+      ],
+      "anchor": [
+        48,
+        48
+      ],
+      "paste": [
+        8,
+        8
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "animated_crystal_idle_04",
+      "action": "idle",
+      "frame": 4,
+      "source_pixels": [
+        295,
+        296
+      ],
+      "sampled_pixels": [
+        79,
+        80
+      ],
+      "canvas_pixels": [
+        96,
+        96
+      ],
+      "scale": 0.2685851318944844,
+      "source_anchor": [
+        147.5,
+        148.0
+      ],
+      "anchor": [
+        48,
+        48
+      ],
+      "paste": [
+        8,
+        8
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "animated_crystal_idle_05",
+      "action": "idle",
+      "frame": 5,
+      "source_pixels": [
+        296,
+        296
+      ],
+      "sampled_pixels": [
+        80,
+        80
+      ],
+      "canvas_pixels": [
+        96,
+        96
+      ],
+      "scale": 0.2685851318944844,
+      "source_anchor": [
+        148.0,
+        148.0
+      ],
+      "anchor": [
+        48,
+        48
+      ],
+      "paste": [
+        8,
+        8
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "animated_crystal_move_00",
+      "action": "move",
+      "frame": 0,
+      "source_pixels": [
+        296,
+        295
+      ],
+      "sampled_pixels": [
+        80,
+        79
+      ],
+      "canvas_pixels": [
+        96,
+        96
+      ],
+      "scale": 0.2685851318944844,
+      "source_anchor": [
+        148.0,
+        147.5
+      ],
+      "anchor": [
+        48,
+        48
+      ],
+      "paste": [
+        8,
+        8
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "animated_crystal_move_01",
+      "action": "move",
+      "frame": 1,
+      "source_pixels": [
+        295,
+        295
+      ],
+      "sampled_pixels": [
+        79,
+        79
+      ],
+      "canvas_pixels": [
+        96,
+        96
+      ],
+      "scale": 0.2685851318944844,
+      "source_anchor": [
+        147.5,
+        147.5
+      ],
+      "anchor": [
+        48,
+        48
+      ],
+      "paste": [
+        8,
+        8
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "animated_crystal_move_02",
+      "action": "move",
+      "frame": 2,
+      "source_pixels": [
+        296,
+        295
+      ],
+      "sampled_pixels": [
+        80,
+        79
+      ],
+      "canvas_pixels": [
+        96,
+        96
+      ],
+      "scale": 0.2685851318944844,
+      "source_anchor": [
+        148.0,
+        147.5
+      ],
+      "anchor": [
+        48,
+        48
+      ],
+      "paste": [
+        8,
+        8
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "animated_crystal_move_03",
+      "action": "move",
+      "frame": 3,
+      "source_pixels": [
+        296,
+        295
+      ],
+      "sampled_pixels": [
+        80,
+        79
+      ],
+      "canvas_pixels": [
+        96,
+        96
+      ],
+      "scale": 0.2685851318944844,
+      "source_anchor": [
+        148.0,
+        147.5
+      ],
+      "anchor": [
+        48,
+        48
+      ],
+      "paste": [
+        8,
+        8
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "animated_crystal_move_04",
+      "action": "move",
+      "frame": 4,
+      "source_pixels": [
+        295,
+        295
+      ],
+      "sampled_pixels": [
+        79,
+        79
+      ],
+      "canvas_pixels": [
+        96,
+        96
+      ],
+      "scale": 0.2685851318944844,
+      "source_anchor": [
+        147.5,
+        147.5
+      ],
+      "anchor": [
+        48,
+        48
+      ],
+      "paste": [
+        8,
+        8
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "animated_crystal_move_05",
+      "action": "move",
+      "frame": 5,
+      "source_pixels": [
+        296,
+        295
+      ],
+      "sampled_pixels": [
+        80,
+        79
+      ],
+      "canvas_pixels": [
+        96,
+        96
+      ],
+      "scale": 0.2685851318944844,
+      "source_anchor": [
+        148.0,
+        147.5
+      ],
+      "anchor": [
+        48,
+        48
+      ],
+      "paste": [
+        8,
+        8
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "animated_crystal_charge_ready_00",
+      "action": "charge_ready",
+      "frame": 0,
+      "source_pixels": [
+        296,
+        296
+      ],
+      "sampled_pixels": [
+        80,
+        80
+      ],
+      "canvas_pixels": [
+        96,
+        96
+      ],
+      "scale": 0.2685851318944844,
+      "source_anchor": [
+        148.0,
+        148.0
+      ],
+      "anchor": [
+        48,
+        48
+      ],
+      "paste": [
+        8,
+        8
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "animated_crystal_charge_ready_01",
+      "action": "charge_ready",
+      "frame": 1,
+      "source_pixels": [
+        295,
+        296
+      ],
+      "sampled_pixels": [
+        79,
+        80
+      ],
+      "canvas_pixels": [
+        96,
+        96
+      ],
+      "scale": 0.2685851318944844,
+      "source_anchor": [
+        147.5,
+        148.0
+      ],
+      "anchor": [
+        48,
+        48
+      ],
+      "paste": [
+        8,
+        8
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "animated_crystal_charge_ready_02",
+      "action": "charge_ready",
+      "frame": 2,
+      "source_pixels": [
+        296,
+        296
+      ],
+      "sampled_pixels": [
+        80,
+        80
+      ],
+      "canvas_pixels": [
+        96,
+        96
+      ],
+      "scale": 0.2685851318944844,
+      "source_anchor": [
+        148.0,
+        148.0
+      ],
+      "anchor": [
+        48,
+        48
+      ],
+      "paste": [
+        8,
+        8
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "animated_crystal_charge_ready_03",
+      "action": "charge_ready",
+      "frame": 3,
+      "source_pixels": [
+        296,
+        296
+      ],
+      "sampled_pixels": [
+        80,
+        80
+      ],
+      "canvas_pixels": [
+        96,
+        96
+      ],
+      "scale": 0.2685851318944844,
+      "source_anchor": [
+        148.0,
+        148.0
+      ],
+      "anchor": [
+        48,
+        48
+      ],
+      "paste": [
+        8,
+        8
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "animated_crystal_charge_ready_04",
+      "action": "charge_ready",
+      "frame": 4,
+      "source_pixels": [
+        295,
+        296
+      ],
+      "sampled_pixels": [
+        79,
+        80
+      ],
+      "canvas_pixels": [
+        96,
+        96
+      ],
+      "scale": 0.2685851318944844,
+      "source_anchor": [
+        147.5,
+        148.0
+      ],
+      "anchor": [
+        48,
+        48
+      ],
+      "paste": [
+        8,
+        8
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "animated_crystal_charge_ready_05",
+      "action": "charge_ready",
+      "frame": 5,
+      "source_pixels": [
+        296,
+        296
+      ],
+      "sampled_pixels": [
+        80,
+        80
+      ],
+      "canvas_pixels": [
+        96,
+        96
+      ],
+      "scale": 0.2685851318944844,
+      "source_anchor": [
+        148.0,
+        148.0
+      ],
+      "anchor": [
+        48,
+        48
+      ],
+      "paste": [
+        8,
+        8
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "cavern_hunter_idle_00",
+      "action": "idle",
+      "frame": 0,
+      "source_pixels": [
+        229,
+        229
+      ],
+      "sampled_pixels": [
+        176,
+        176
+      ],
+      "canvas_pixels": [
+        192,
+        160
+      ],
+      "scale": 0.7692307692307693,
+      "source_anchor": [
+        114.5,
+        181
+      ],
+      "anchor": [
+        96,
+        140
+      ],
+      "paste": [
+        8,
+        1
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "cavern_hunter_idle_01",
+      "action": "idle",
+      "frame": 1,
+      "source_pixels": [
+        229,
+        229
+      ],
+      "sampled_pixels": [
+        176,
+        176
+      ],
+      "canvas_pixels": [
+        192,
+        160
+      ],
+      "scale": 0.7692307692307693,
+      "source_anchor": [
+        114.5,
+        181
+      ],
+      "anchor": [
+        96,
+        140
+      ],
+      "paste": [
+        8,
+        1
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "cavern_hunter_idle_02",
+      "action": "idle",
+      "frame": 2,
+      "source_pixels": [
+        229,
+        229
+      ],
+      "sampled_pixels": [
+        176,
+        176
+      ],
+      "canvas_pixels": [
+        192,
+        160
+      ],
+      "scale": 0.7692307692307693,
+      "source_anchor": [
+        114.5,
+        181
+      ],
+      "anchor": [
+        96,
+        140
+      ],
+      "paste": [
+        8,
+        1
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "cavern_hunter_idle_03",
+      "action": "idle",
+      "frame": 3,
+      "source_pixels": [
+        229,
+        229
+      ],
+      "sampled_pixels": [
+        176,
+        176
+      ],
+      "canvas_pixels": [
+        192,
+        160
+      ],
+      "scale": 0.7692307692307693,
+      "source_anchor": [
+        114.5,
+        181
+      ],
+      "anchor": [
+        96,
+        140
+      ],
+      "paste": [
+        8,
+        1
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "cavern_hunter_idle_04",
+      "action": "idle",
+      "frame": 4,
+      "source_pixels": [
+        229,
+        229
+      ],
+      "sampled_pixels": [
+        176,
+        176
+      ],
+      "canvas_pixels": [
+        192,
+        160
+      ],
+      "scale": 0.7692307692307693,
+      "source_anchor": [
+        114.5,
+        181
+      ],
+      "anchor": [
+        96,
+        140
+      ],
+      "paste": [
+        8,
+        1
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "cavern_hunter_idle_05",
+      "action": "idle",
+      "frame": 5,
+      "source_pixels": [
+        229,
+        229
+      ],
+      "sampled_pixels": [
+        176,
+        176
+      ],
+      "canvas_pixels": [
+        192,
+        160
+      ],
+      "scale": 0.7692307692307693,
+      "source_anchor": [
+        114.5,
+        182
+      ],
+      "anchor": [
+        96,
+        140
+      ],
+      "paste": [
+        8,
+        0
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "cavern_hunter_move_00",
+      "action": "move",
+      "frame": 0,
+      "source_pixels": [
+        229,
+        229
+      ],
+      "sampled_pixels": [
+        176,
+        176
+      ],
+      "canvas_pixels": [
+        192,
+        160
+      ],
+      "scale": 0.7692307692307693,
+      "source_anchor": [
+        114.5,
+        181
+      ],
+      "anchor": [
+        96,
+        140
+      ],
+      "paste": [
+        8,
+        1
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "cavern_hunter_move_01",
+      "action": "move",
+      "frame": 1,
+      "source_pixels": [
+        229,
+        229
+      ],
+      "sampled_pixels": [
+        176,
+        176
+      ],
+      "canvas_pixels": [
+        192,
+        160
+      ],
+      "scale": 0.7692307692307693,
+      "source_anchor": [
+        114.5,
+        181
+      ],
+      "anchor": [
+        96,
+        140
+      ],
+      "paste": [
+        8,
+        1
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "cavern_hunter_move_02",
+      "action": "move",
+      "frame": 2,
+      "source_pixels": [
+        229,
+        229
+      ],
+      "sampled_pixels": [
+        176,
+        176
+      ],
+      "canvas_pixels": [
+        192,
+        160
+      ],
+      "scale": 0.7692307692307693,
+      "source_anchor": [
+        114.5,
+        181
+      ],
+      "anchor": [
+        96,
+        140
+      ],
+      "paste": [
+        8,
+        1
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "cavern_hunter_move_03",
+      "action": "move",
+      "frame": 3,
+      "source_pixels": [
+        229,
+        229
+      ],
+      "sampled_pixels": [
+        176,
+        176
+      ],
+      "canvas_pixels": [
+        192,
+        160
+      ],
+      "scale": 0.7692307692307693,
+      "source_anchor": [
+        114.5,
+        181
+      ],
+      "anchor": [
+        96,
+        140
+      ],
+      "paste": [
+        8,
+        1
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "cavern_hunter_move_04",
+      "action": "move",
+      "frame": 4,
+      "source_pixels": [
+        229,
+        229
+      ],
+      "sampled_pixels": [
+        176,
+        176
+      ],
+      "canvas_pixels": [
+        192,
+        160
+      ],
+      "scale": 0.7692307692307693,
+      "source_anchor": [
+        114.5,
+        181
+      ],
+      "anchor": [
+        96,
+        140
+      ],
+      "paste": [
+        8,
+        1
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "cavern_hunter_move_05",
+      "action": "move",
+      "frame": 5,
+      "source_pixels": [
+        229,
+        229
+      ],
+      "sampled_pixels": [
+        176,
+        176
+      ],
+      "canvas_pixels": [
+        192,
+        160
+      ],
+      "scale": 0.7692307692307693,
+      "source_anchor": [
+        114.5,
+        181
+      ],
+      "anchor": [
+        96,
+        140
+      ],
+      "paste": [
+        8,
+        1
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "cavern_hunter_elbow_blade_00",
+      "action": "elbow_blade",
+      "frame": 0,
+      "source_pixels": [
+        229,
+        229
+      ],
+      "sampled_pixels": [
+        176,
+        176
+      ],
+      "canvas_pixels": [
+        192,
+        160
+      ],
+      "scale": 0.7692307692307693,
+      "source_anchor": [
+        114.5,
+        180
+      ],
+      "anchor": [
+        96,
+        140
+      ],
+      "paste": [
+        8,
+        2
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "cavern_hunter_elbow_blade_01",
+      "action": "elbow_blade",
+      "frame": 1,
+      "source_pixels": [
+        229,
+        229
+      ],
+      "sampled_pixels": [
+        176,
+        176
+      ],
+      "canvas_pixels": [
+        192,
+        160
+      ],
+      "scale": 0.7692307692307693,
+      "source_anchor": [
+        114.5,
+        180
+      ],
+      "anchor": [
+        96,
+        140
+      ],
+      "paste": [
+        8,
+        2
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "cavern_hunter_elbow_blade_02",
+      "action": "elbow_blade",
+      "frame": 2,
+      "source_pixels": [
+        229,
+        229
+      ],
+      "sampled_pixels": [
+        176,
+        176
+      ],
+      "canvas_pixels": [
+        192,
+        160
+      ],
+      "scale": 0.7692307692307693,
+      "source_anchor": [
+        114.5,
+        180
+      ],
+      "anchor": [
+        96,
+        140
+      ],
+      "paste": [
+        8,
+        2
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "cavern_hunter_elbow_blade_03",
+      "action": "elbow_blade",
+      "frame": 3,
+      "source_pixels": [
+        229,
+        229
+      ],
+      "sampled_pixels": [
+        176,
+        176
+      ],
+      "canvas_pixels": [
+        192,
+        160
+      ],
+      "scale": 0.7692307692307693,
+      "source_anchor": [
+        114.5,
+        180
+      ],
+      "anchor": [
+        96,
+        140
+      ],
+      "paste": [
+        8,
+        2
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "cavern_hunter_elbow_blade_04",
+      "action": "elbow_blade",
+      "frame": 4,
+      "source_pixels": [
+        229,
+        229
+      ],
+      "sampled_pixels": [
+        176,
+        176
+      ],
+      "canvas_pixels": [
+        192,
+        160
+      ],
+      "scale": 0.7692307692307693,
+      "source_anchor": [
+        114.5,
+        180
+      ],
+      "anchor": [
+        96,
+        140
+      ],
+      "paste": [
+        8,
+        2
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "cavern_hunter_elbow_blade_05",
+      "action": "elbow_blade",
+      "frame": 5,
+      "source_pixels": [
+        229,
+        229
+      ],
+      "sampled_pixels": [
+        176,
+        176
+      ],
+      "canvas_pixels": [
+        192,
+        160
+      ],
+      "scale": 0.7692307692307693,
+      "source_anchor": [
+        114.5,
+        180
+      ],
+      "anchor": [
+        96,
+        140
+      ],
+      "paste": [
+        8,
+        2
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "cavern_hunter_leap_slam_00",
+      "action": "leap_slam",
+      "frame": 0,
+      "source_pixels": [
+        229,
+        229
+      ],
+      "sampled_pixels": [
+        176,
+        176
+      ],
+      "canvas_pixels": [
+        192,
+        160
+      ],
+      "scale": 0.7692307692307693,
+      "source_anchor": [
+        114.5,
+        181
+      ],
+      "anchor": [
+        96,
+        140
+      ],
+      "paste": [
+        8,
+        1
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "cavern_hunter_leap_slam_01",
+      "action": "leap_slam",
+      "frame": 1,
+      "source_pixels": [
+        229,
+        229
+      ],
+      "sampled_pixels": [
+        176,
+        176
+      ],
+      "canvas_pixels": [
+        192,
+        160
+      ],
+      "scale": 0.7692307692307693,
+      "source_anchor": [
+        114.5,
+        174
+      ],
+      "anchor": [
+        96,
+        140
+      ],
+      "paste": [
+        8,
+        -6
+      ],
+      "vertical_motion": -12,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "cavern_hunter_leap_slam_02",
+      "action": "leap_slam",
+      "frame": 2,
+      "source_pixels": [
+        229,
+        229
+      ],
+      "sampled_pixels": [
+        176,
+        176
+      ],
+      "canvas_pixels": [
+        192,
+        160
+      ],
+      "scale": 0.7692307692307693,
+      "source_anchor": [
+        114.5,
+        151
+      ],
+      "anchor": [
+        96,
+        140
+      ],
+      "paste": [
+        8,
+        -6
+      ],
+      "vertical_motion": -30,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "cavern_hunter_leap_slam_03",
+      "action": "leap_slam",
+      "frame": 3,
+      "source_pixels": [
+        229,
+        229
+      ],
+      "sampled_pixels": [
+        176,
+        176
+      ],
+      "canvas_pixels": [
+        192,
+        160
+      ],
+      "scale": 0.7692307692307693,
+      "source_anchor": [
+        114.5,
+        159
+      ],
+      "anchor": [
+        96,
+        140
+      ],
+      "paste": [
+        8,
+        2
+      ],
+      "vertical_motion": -16,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "cavern_hunter_leap_slam_04",
+      "action": "leap_slam",
+      "frame": 4,
+      "source_pixels": [
+        229,
+        229
+      ],
+      "sampled_pixels": [
+        176,
+        176
+      ],
+      "canvas_pixels": [
+        192,
+        160
+      ],
+      "scale": 0.7692307692307693,
+      "source_anchor": [
+        114.5,
+        181
+      ],
+      "anchor": [
+        96,
+        140
+      ],
+      "paste": [
+        8,
+        1
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "cavern_hunter_leap_slam_05",
+      "action": "leap_slam",
+      "frame": 5,
+      "source_pixels": [
+        229,
+        229
+      ],
+      "sampled_pixels": [
+        176,
+        176
+      ],
+      "canvas_pixels": [
+        192,
+        160
+      ],
+      "scale": 0.7692307692307693,
+      "source_anchor": [
+        114.5,
+        181
+      ],
+      "anchor": [
+        96,
+        140
+      ],
+      "paste": [
+        8,
+        1
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "cavern_hunter_tail_crystal_shot_00",
+      "action": "tail_crystal_shot",
+      "frame": 0,
+      "source_pixels": [
+        229,
+        229
+      ],
+      "sampled_pixels": [
+        176,
+        176
+      ],
+      "canvas_pixels": [
+        192,
+        160
+      ],
+      "scale": 0.7692307692307693,
+      "source_anchor": [
+        114.5,
+        179
+      ],
+      "anchor": [
+        96,
+        140
+      ],
+      "paste": [
+        8,
+        2
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "cavern_hunter_tail_crystal_shot_01",
+      "action": "tail_crystal_shot",
+      "frame": 1,
+      "source_pixels": [
+        229,
+        229
+      ],
+      "sampled_pixels": [
+        176,
+        176
+      ],
+      "canvas_pixels": [
+        192,
+        160
+      ],
+      "scale": 0.7692307692307693,
+      "source_anchor": [
+        114.5,
+        179
+      ],
+      "anchor": [
+        96,
+        140
+      ],
+      "paste": [
+        8,
+        2
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "cavern_hunter_tail_crystal_shot_02",
+      "action": "tail_crystal_shot",
+      "frame": 2,
+      "source_pixels": [
+        229,
+        229
+      ],
+      "sampled_pixels": [
+        176,
+        176
+      ],
+      "canvas_pixels": [
+        192,
+        160
+      ],
+      "scale": 0.7692307692307693,
+      "source_anchor": [
+        114.5,
+        179
+      ],
+      "anchor": [
+        96,
+        140
+      ],
+      "paste": [
+        8,
+        2
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "cavern_hunter_tail_crystal_shot_03",
+      "action": "tail_crystal_shot",
+      "frame": 3,
+      "source_pixels": [
+        229,
+        229
+      ],
+      "sampled_pixels": [
+        176,
+        176
+      ],
+      "canvas_pixels": [
+        192,
+        160
+      ],
+      "scale": 0.7692307692307693,
+      "source_anchor": [
+        114.5,
+        179
+      ],
+      "anchor": [
+        96,
+        140
+      ],
+      "paste": [
+        8,
+        2
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "cavern_hunter_tail_crystal_shot_04",
+      "action": "tail_crystal_shot",
+      "frame": 4,
+      "source_pixels": [
+        229,
+        229
+      ],
+      "sampled_pixels": [
+        176,
+        176
+      ],
+      "canvas_pixels": [
+        192,
+        160
+      ],
+      "scale": 0.7692307692307693,
+      "source_anchor": [
+        114.5,
+        179
+      ],
+      "anchor": [
+        96,
+        140
+      ],
+      "paste": [
+        8,
+        2
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "cavern_hunter_tail_crystal_shot_05",
+      "action": "tail_crystal_shot",
+      "frame": 5,
+      "source_pixels": [
+        229,
+        229
+      ],
+      "sampled_pixels": [
+        176,
+        176
+      ],
+      "canvas_pixels": [
+        192,
+        160
+      ],
+      "scale": 0.7692307692307693,
+      "source_anchor": [
+        114.5,
+        179
+      ],
+      "anchor": [
+        96,
+        140
+      ],
+      "paste": [
+        8,
+        2
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "web_thread_00",
+      "source_pixels": [
+        296,
+        296
+      ],
+      "sampled_pixels": [
+        34,
+        34
+      ],
+      "canvas_pixels": [
+        48,
+        32
+      ],
+      "scale": 0.11374407582938388,
+      "source_anchor": [
+        133.5,
+        178.5
+      ],
+      "anchor": [
+        24,
+        16
+      ],
+      "paste": [
+        9,
+        -4
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "web_thread_01",
+      "source_pixels": [
+        295,
+        296
+      ],
+      "sampled_pixels": [
+        34,
+        34
+      ],
+      "canvas_pixels": [
+        48,
+        32
+      ],
+      "scale": 0.11374407582938388,
+      "source_anchor": [
+        145.5,
+        174.5
+      ],
+      "anchor": [
+        24,
+        16
+      ],
+      "paste": [
+        7,
+        -4
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "web_thread_02",
+      "source_pixels": [
+        296,
+        296
+      ],
+      "sampled_pixels": [
+        34,
+        34
+      ],
+      "canvas_pixels": [
+        48,
+        32
+      ],
+      "scale": 0.11374407582938388,
+      "source_anchor": [
+        151.0,
+        169.0
+      ],
+      "anchor": [
+        24,
+        16
+      ],
+      "paste": [
+        7,
+        -3
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "web_thread_03",
+      "source_pixels": [
+        296,
+        296
+      ],
+      "sampled_pixels": [
+        34,
+        34
+      ],
+      "canvas_pixels": [
+        48,
+        32
+      ],
+      "scale": 0.11374407582938388,
+      "source_anchor": [
+        144.0,
+        167.0
+      ],
+      "anchor": [
+        24,
+        16
+      ],
+      "paste": [
+        8,
+        -3
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "web_thread_04",
+      "source_pixels": [
+        295,
+        296
+      ],
+      "sampled_pixels": [
+        34,
+        34
+      ],
+      "canvas_pixels": [
+        48,
+        32
+      ],
+      "scale": 0.11374407582938388,
+      "source_anchor": [
+        148.5,
+        164.0
+      ],
+      "anchor": [
+        24,
+        16
+      ],
+      "paste": [
+        7,
+        -3
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "web_thread_05",
+      "source_pixels": [
+        296,
+        296
+      ],
+      "sampled_pixels": [
+        34,
+        34
+      ],
+      "canvas_pixels": [
+        48,
+        32
+      ],
+      "scale": 0.11374407582938388,
+      "source_anchor": [
+        145.5,
+        172.5
+      ],
+      "anchor": [
+        24,
+        16
+      ],
+      "paste": [
+        7,
+        -4
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "sharp_crystal_00",
+      "source_pixels": [
+        296,
+        295
+      ],
+      "sampled_pixels": [
+        46,
+        45
+      ],
+      "canvas_pixels": [
+        48,
+        32
+      ],
+      "scale": 0.15384615384615385,
+      "source_anchor": [
+        151.5,
+        154.5
+      ],
+      "anchor": [
+        24,
+        16
+      ],
+      "paste": [
+        1,
+        -8
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "sharp_crystal_01",
+      "source_pixels": [
+        295,
+        295
+      ],
+      "sampled_pixels": [
+        45,
+        45
+      ],
+      "canvas_pixels": [
+        48,
+        32
+      ],
+      "scale": 0.15384615384615385,
+      "source_anchor": [
+        155.5,
+        145.0
+      ],
+      "anchor": [
+        24,
+        16
+      ],
+      "paste": [
+        0,
+        -6
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "sharp_crystal_02",
+      "source_pixels": [
+        296,
+        295
+      ],
+      "sampled_pixels": [
+        46,
+        45
+      ],
+      "canvas_pixels": [
+        48,
+        32
+      ],
+      "scale": 0.15384615384615385,
+      "source_anchor": [
+        158.5,
+        149.0
+      ],
+      "anchor": [
+        24,
+        16
+      ],
+      "paste": [
+        0,
+        -7
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "sharp_crystal_03",
+      "source_pixels": [
+        296,
+        295
+      ],
+      "sampled_pixels": [
+        46,
+        45
+      ],
+      "canvas_pixels": [
+        48,
+        32
+      ],
+      "scale": 0.15384615384615385,
+      "source_anchor": [
+        152.5,
+        158.5
+      ],
+      "anchor": [
+        24,
+        16
+      ],
+      "paste": [
+        1,
+        -8
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "sharp_crystal_04",
+      "source_pixels": [
+        295,
+        295
+      ],
+      "sampled_pixels": [
+        45,
+        45
+      ],
+      "canvas_pixels": [
+        48,
+        32
+      ],
+      "scale": 0.15384615384615385,
+      "source_anchor": [
+        150.5,
+        150.0
+      ],
+      "anchor": [
+        24,
+        16
+      ],
+      "paste": [
+        1,
+        -7
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "sharp_crystal_05",
+      "source_pixels": [
+        296,
+        295
+      ],
+      "sampled_pixels": [
+        46,
+        45
+      ],
+      "canvas_pixels": [
+        48,
+        32
+      ],
+      "scale": 0.15384615384615385,
+      "source_anchor": [
+        158.0,
+        149.0
+      ],
+      "anchor": [
+        24,
+        16
+      ],
+      "paste": [
+        0,
+        -7
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "ground_shockwave_00",
+      "source_pixels": [
+        296,
+        296
+      ],
+      "sampled_pixels": [
+        136,
+        136
+      ],
+      "canvas_pixels": [
+        160,
+        64
+      ],
+      "scale": 0.460431654676259,
+      "source_anchor": [
+        148.0,
+        187
+      ],
+      "anchor": [
+        80,
+        56
+      ],
+      "paste": [
+        12,
+        -30
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "ground_shockwave_01",
+      "source_pixels": [
+        295,
+        296
+      ],
+      "sampled_pixels": [
+        136,
+        136
+      ],
+      "canvas_pixels": [
+        160,
+        64
+      ],
+      "scale": 0.460431654676259,
+      "source_anchor": [
+        147.5,
+        187
+      ],
+      "anchor": [
+        80,
+        56
+      ],
+      "paste": [
+        12,
+        -30
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "ground_shockwave_02",
+      "source_pixels": [
+        296,
+        296
+      ],
+      "sampled_pixels": [
+        136,
+        136
+      ],
+      "canvas_pixels": [
+        160,
+        64
+      ],
+      "scale": 0.460431654676259,
+      "source_anchor": [
+        148.0,
+        187
+      ],
+      "anchor": [
+        80,
+        56
+      ],
+      "paste": [
+        12,
+        -30
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "ground_shockwave_03",
+      "source_pixels": [
+        296,
+        296
+      ],
+      "sampled_pixels": [
+        136,
+        136
+      ],
+      "canvas_pixels": [
+        160,
+        64
+      ],
+      "scale": 0.460431654676259,
+      "source_anchor": [
+        148.0,
+        187
+      ],
+      "anchor": [
+        80,
+        56
+      ],
+      "paste": [
+        12,
+        -30
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "ground_shockwave_04",
+      "source_pixels": [
+        295,
+        296
+      ],
+      "sampled_pixels": [
+        136,
+        136
+      ],
+      "canvas_pixels": [
+        160,
+        64
+      ],
+      "scale": 0.460431654676259,
+      "source_anchor": [
+        147.5,
+        186
+      ],
+      "anchor": [
+        80,
+        56
+      ],
+      "paste": [
+        12,
+        -30
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    },
+    {
+      "id": "ground_shockwave_05",
+      "source_pixels": [
+        296,
+        296
+      ],
+      "sampled_pixels": [
+        136,
+        136
+      ],
+      "canvas_pixels": [
+        160,
+        64
+      ],
+      "scale": 0.460431654676259,
+      "source_anchor": [
+        148.0,
+        185
+      ],
+      "anchor": [
+        80,
+        56
+      ],
+      "paste": [
+        12,
+        -29
+      ],
+      "vertical_motion": 0,
+      "resampling_passes": 1,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "sampling": "constant_scale_cell_area_then_32_palette"
+    }
+  ],
+  "tool_version": "native-grid-v1"
+}

@@ -6,7 +6,6 @@ const CONFIG := "res://data/maps/forest_01.json"
 var config: Dictionary
 var _gate: StaticBody2D
 var _prompt: Label
-var _map: TextureRect
 
 
 func _ready() -> void:
@@ -22,17 +21,6 @@ func _ready() -> void:
 	if not connection_preview:
 		$Chest.visible = not GameState.opened_chests.has(StringName(config.chest.id))
 		$Campfire.play(&"burn")
-	var canvas := CanvasLayer.new()
-	add_child(canvas)
-	if not connection_preview:
-		_map = TextureRect.new()
-		_map.texture = load("res://docs/previews/forest_01_layout.png")
-		_map.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
-		_map.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
-		_map.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
-		_map.mouse_filter = Control.MOUSE_FILTER_IGNORE
-		_map.visible = false
-		canvas.add_child(_map)
 
 
 func _process(_delta: float) -> void:
@@ -40,8 +28,6 @@ func _process(_delta: float) -> void:
 
 
 func _unhandled_input(event: InputEvent) -> void:
-	if event.is_action_pressed(&"map") and _map != null:
-		_map.visible = not _map.visible
 	if event.is_action_pressed(&"interact"):
 		interact_nearby()
 

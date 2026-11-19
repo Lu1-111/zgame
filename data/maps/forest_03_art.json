@@ -1,0 +1,580 @@
+{
+  "wall": {
+    "texture": "res://assets/environments/terrain/forest/v002/rock_field.png",
+    "world_size": [
+      256,
+      256
+    ],
+    "tint": "#ffffff",
+    "edge_width": 16,
+    "edge_tint": "#51674f",
+    "surface_thickness": 24,
+    "surface_style": "solid",
+    "surface_segment": 320,
+    "surface_cap": 12
+  },
+  "solid": {
+    "texture": "res://assets/environments/terrain/forest/v002/solid_top.png",
+    "region": [
+      0,
+      0,
+      64,
+      32
+    ],
+    "surface_y": 0,
+    "body_source_depth": 32,
+    "cap_source_width": 8,
+    "cap_world_width": 8,
+    "segment_world_width": 64,
+    "tint": "#ffffff"
+  },
+  "oneway": {
+    "texture": "res://assets/environments/terrain/forest/v002/branch_platform.png",
+    "region": [
+      0,
+      0,
+      64,
+      12
+    ],
+    "surface_y": 0,
+    "body_source_depth": 12,
+    "cap_source_width": 8,
+    "cap_world_width": 8,
+    "segment_world_width": 64,
+    "tint": "#ffffff"
+  },
+  "gate": {
+    "texture": "res://assets/environments/props/forest/v002/wood_gate.png",
+    "region": [
+      0,
+      0,
+      16,
+      64
+    ],
+    "post_width": 7,
+    "post_spacing": 8,
+    "brace_width": 5,
+    "brace_tint": "#93a06c"
+  },
+  "decorations": [],
+  "vines": [],
+  "vine_texture": "res://assets/environments/props/forest/v002/vine.png",
+  "background_panels": 2,
+  "chest": {
+    "texture": "res://assets/environments/props/forest/v002/wooden_chest.png",
+    "width": 48,
+    "normal_tint": "#ffffff",
+    "sealed_tint": "#d2b4ec",
+    "seal_color": "#c894ef"
+  },
+  "mechanism": {
+    "stone_tint": "#68796b",
+    "metal": "#a5b5a0",
+    "dark": "#263e35",
+    "active": "#7ee7aa",
+    "opened": "#bfd8a5",
+    "switch_size": [
+      56,
+      76
+    ],
+    "crystal_size": [
+      24,
+      32
+    ],
+    "post_width": 10,
+    "bar_spacing": 14,
+    "bar_width": 5,
+    "line_width": 2,
+    "seal_width": 3,
+    "pulse_seconds": 2.4,
+    "pulse_min": 0.65,
+    "pulse_max": 1.0,
+    "gate_fade_seconds": 0.45,
+    "sealed_chest": "#c894ef",
+    "seal_size": [
+      12,
+      14
+    ],
+    "switch_texture": "res://assets/environments/props/forest/v002/ruin_switch.png",
+    "switch_width": 31,
+    "switch_tint": "#c8d0c3",
+    "activated_tint": "#f0ffe7",
+    "hint_offset": -136,
+    "switch_visible_rect": [
+      1,
+      28,
+      31,
+      20
+    ]
+  },
+  "decoration_assets": {
+    "fallen_log": {
+      "texture": "res://assets/environments/props/forest/v002/fallen_log.png",
+      "tint": "#ffffff",
+      "visible_rect": [
+        0,
+        0,
+        95,
+        40
+      ],
+      "embed_y": 1,
+      "anchor_pixel": [
+        46,
+        40
+      ],
+      "pixel_native": true
+    },
+    "broken_waystone": {
+      "texture": "res://assets/environments/props/forest/v002/broken_waystone.png",
+      "tint": "#ffffff",
+      "visible_rect": [
+        1,
+        16,
+        31,
+        32
+      ],
+      "embed_y": 1,
+      "anchor_pixel": [
+        16,
+        48
+      ],
+      "pixel_native": true
+    },
+    "forest_fungi": {
+      "texture": "res://assets/environments/props/forest/v002/forest_fungi.png",
+      "tint": "#ffffff",
+      "visible_rect": [
+        1,
+        5,
+        47,
+        27
+      ],
+      "embed_y": 1,
+      "anchor_pixel": [
+        23,
+        32
+      ],
+      "pixel_native": true
+    },
+    "hanging_roots": {
+      "texture": "res://assets/environments/props/forest/v002/hanging_roots.png",
+      "tint": "#ffffff",
+      "visible_rect": [
+        1,
+        0,
+        46,
+        40
+      ],
+      "embed_y": -6,
+      "anchor_pixel": [
+        24,
+        0
+      ],
+      "pixel_native": true
+    },
+    "glow_fungi": {
+      "texture": "res://assets/environments/props/forest/v002/glow_fungi.png",
+      "tint": "#ffffff",
+      "visible_rect": [
+        4,
+        0,
+        42,
+        32
+      ],
+      "embed_y": 0,
+      "anchor_pixel": [
+        22,
+        32
+      ],
+      "pixel_native": true
+    },
+    "seedpod_vines": {
+      "texture": "res://assets/environments/props/forest/v002/seedpod_vines.png",
+      "tint": "#ffffff",
+      "visible_rect": [
+        0,
+        0,
+        47,
+        41
+      ],
+      "embed_y": -6,
+      "anchor_pixel": [
+        26,
+        0
+      ],
+      "pixel_native": true
+    },
+    "root_arch": {
+      "texture": "res://assets/environments/props/forest/v002/root_arch.png",
+      "tint": "#ffffff",
+      "visible_rect": [
+        1,
+        1,
+        94,
+        63
+      ],
+      "embed_y": 1,
+      "anchor_pixel": [
+        36,
+        64
+      ],
+      "pixel_native": true
+    }
+  },
+  "new_decorations": [
+    {
+      "id": "f03_decor_00",
+      "asset": "forest_fungi",
+      "pos": [
+        360,
+        224
+      ],
+      "width": 90,
+      "anchor": "ground",
+      "flip_h": false
+    },
+    {
+      "id": "f03_decor_01",
+      "asset": "fallen_log",
+      "pos": [
+        624,
+        224
+      ],
+      "width": 160,
+      "anchor": "ground",
+      "flip_h": true
+    },
+    {
+      "id": "f03_decor_02",
+      "asset": "broken_waystone",
+      "pos": [
+        1192,
+        224
+      ],
+      "width": 48,
+      "anchor": "ground",
+      "flip_h": false
+    },
+    {
+      "id": "f03_decor_03",
+      "asset": "glow_fungi",
+      "pos": [
+        1920,
+        224
+      ],
+      "width": 132,
+      "anchor": "ground",
+      "flip_h": true
+    },
+    {
+      "id": "f03_decor_04",
+      "asset": "root_arch",
+      "pos": [
+        2200,
+        224
+      ],
+      "width": 184,
+      "anchor": "ground",
+      "flip_h": false
+    },
+    {
+      "id": "f03_decor_05",
+      "asset": "fallen_log",
+      "pos": [
+        512,
+        512
+      ],
+      "width": 152,
+      "anchor": "ground",
+      "flip_h": true
+    },
+    {
+      "id": "f03_decor_06",
+      "asset": "glow_fungi",
+      "pos": [
+        880,
+        512
+      ],
+      "width": 112,
+      "anchor": "ground",
+      "flip_h": false
+    },
+    {
+      "id": "f03_decor_07",
+      "asset": "broken_waystone",
+      "pos": [
+        1272,
+        512
+      ],
+      "width": 54,
+      "anchor": "ground",
+      "flip_h": true
+    },
+    {
+      "id": "f03_decor_08",
+      "asset": "root_arch",
+      "pos": [
+        1600,
+        512
+      ],
+      "width": 174,
+      "anchor": "ground",
+      "flip_h": false
+    },
+    {
+      "id": "f03_decor_09",
+      "asset": "forest_fungi",
+      "pos": [
+        2048,
+        512
+      ],
+      "width": 88,
+      "anchor": "ground",
+      "flip_h": true
+    },
+    {
+      "id": "f03_decor_10",
+      "asset": "forest_fungi",
+      "pos": [
+        624,
+        912
+      ],
+      "width": 80,
+      "anchor": "ground",
+      "flip_h": false
+    },
+    {
+      "id": "f03_decor_11",
+      "asset": "broken_waystone",
+      "pos": [
+        976,
+        912
+      ],
+      "width": 42,
+      "anchor": "ground",
+      "flip_h": true
+    },
+    {
+      "id": "f03_decor_12",
+      "asset": "glow_fungi",
+      "pos": [
+        1728,
+        912
+      ],
+      "width": 126,
+      "anchor": "ground",
+      "flip_h": false
+    },
+    {
+      "id": "f03_decor_13",
+      "asset": "root_arch",
+      "pos": [
+        2120,
+        912
+      ],
+      "width": 116,
+      "anchor": "ground",
+      "flip_h": true
+    },
+    {
+      "id": "f03_decor_14",
+      "asset": "forest_fungi",
+      "pos": [
+        2392,
+        1168
+      ],
+      "width": 92,
+      "anchor": "ground",
+      "flip_h": false
+    },
+    {
+      "id": "f03_decor_15",
+      "asset": "glow_fungi",
+      "pos": [
+        2080,
+        1168
+      ],
+      "width": 72,
+      "anchor": "ground",
+      "flip_h": true
+    },
+    {
+      "id": "f03_decor_16",
+      "asset": "broken_waystone",
+      "pos": [
+        248,
+        1744
+      ],
+      "width": 46,
+      "anchor": "ground",
+      "flip_h": false
+    },
+    {
+      "id": "f03_decor_17",
+      "asset": "root_arch",
+      "pos": [
+        448,
+        1744
+      ],
+      "width": 172,
+      "anchor": "ground",
+      "flip_h": true
+    },
+    {
+      "id": "f03_decor_18",
+      "asset": "glow_fungi",
+      "pos": [
+        736,
+        1744
+      ],
+      "width": 104,
+      "anchor": "ground",
+      "flip_h": false
+    },
+    {
+      "id": "f03_decor_19",
+      "asset": "forest_fungi",
+      "pos": [
+        1040,
+        1744
+      ],
+      "width": 72,
+      "anchor": "ground",
+      "flip_h": true
+    },
+    {
+      "id": "f03_decor_20",
+      "asset": "broken_waystone",
+      "pos": [
+        1656,
+        1744
+      ],
+      "width": 42,
+      "anchor": "ground",
+      "flip_h": false
+    },
+    {
+      "id": "f03_ceiling_00",
+      "asset": "seedpod_vines",
+      "pos": [
+        480,
+        48
+      ],
+      "width": 90,
+      "anchor": "ceiling",
+      "flip_h": false
+    },
+    {
+      "id": "f03_ceiling_01",
+      "asset": "hanging_roots",
+      "pos": [
+        1232,
+        48
+      ],
+      "width": 100,
+      "anchor": "ceiling",
+      "flip_h": true
+    },
+    {
+      "id": "f03_ceiling_02",
+      "asset": "seedpod_vines",
+      "pos": [
+        2048,
+        48
+      ],
+      "width": 88,
+      "anchor": "ceiling",
+      "flip_h": false
+    },
+    {
+      "id": "f03_ceiling_03",
+      "asset": "hanging_roots",
+      "pos": [
+        704,
+        336
+      ],
+      "width": 80,
+      "anchor": "ceiling",
+      "flip_h": true
+    },
+    {
+      "id": "f03_ceiling_04",
+      "asset": "seedpod_vines",
+      "pos": [
+        1680,
+        336
+      ],
+      "width": 80,
+      "anchor": "ceiling",
+      "flip_h": false
+    },
+    {
+      "id": "f03_ceiling_05",
+      "asset": "seedpod_vines",
+      "pos": [
+        624,
+        584
+      ],
+      "width": 82,
+      "anchor": "ceiling",
+      "flip_h": true
+    },
+    {
+      "id": "f03_ceiling_06",
+      "asset": "hanging_roots",
+      "pos": [
+        1216,
+        688
+      ],
+      "width": 76,
+      "anchor": "ceiling",
+      "flip_h": false
+    },
+    {
+      "id": "f03_ceiling_07",
+      "asset": "seedpod_vines",
+      "pos": [
+        1944,
+        688
+      ],
+      "width": 96,
+      "anchor": "ceiling",
+      "flip_h": true
+    },
+    {
+      "id": "f03_ceiling_08",
+      "asset": "seedpod_vines",
+      "pos": [
+        1120,
+        1328
+      ],
+      "width": 112,
+      "anchor": "ceiling",
+      "flip_h": false
+    },
+    {
+      "id": "f03_ceiling_09",
+      "asset": "hanging_roots",
+      "pos": [
+        1456,
+        1328
+      ],
+      "width": 80,
+      "anchor": "ceiling",
+      "flip_h": true
+    },
+    {
+      "id": "f03_ceiling_10",
+      "asset": "hanging_roots",
+      "pos": [
+        360,
+        1616
+      ],
+      "width": 60,
+      "anchor": "ceiling",
+      "flip_h": false
+    }
+  ],
+  "pixel_native": true,
+  "pixel_manifest": "res://data/art/forest_v002.json"
+}
